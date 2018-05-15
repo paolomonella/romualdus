@@ -1,0 +1,33 @@
+Grapheme	Alphabeme(s)	Grapheme visualization	Type	Notes	Image(s)
+a	a	a	Alphabetic	Unchecked	
+b	b	b	Alphabetic	Unchecked	
+c	c	c	Alphabetic	Unchecked	
+d	d	d	Alphabetic	Unchecked	
+e	e	e	Alphabetic	Unchecked	
+f	f	f	Alphabetic	Unchecked	
+g	g	g	Alphabetic	Unchecked	
+h	h	h	Alphabetic	Unchecked	
+i	i	i	Alphabetic	Unchecked	
+k	k	k	Alphabetic	Unchecked	
+l	l	l	Alphabetic	Unchecked	
+m	m	m	Alphabetic	Unchecked	
+n	n	n	Alphabetic	Unchecked	
+o	o	o	Alphabetic	Unchecked	
+p	p	p	Alphabetic	Unchecked	
+q	q	q	Alphabetic	Unchecked	
+r	r	r	Alphabetic	Unchecked	
+s	s	s	Alphabetic	Unchecked	
+t	t	t	Alphabetic	Unchecked	
+u	u	u	Alphabetic	A better character for encoding might be found	
+x	x	x	Alphabetic	Unchecked	
+y	y	y	Alphabetic	Unchecked	
+z	z	z	Alphabetic	Unchecked	
+þ	per	ꝑ	Brevigraph	"Shaped like a ""p"" with a horizontal stroke crossing the descending trait"	
+ŋ	et	⁊	Brevigraph	A better character for encoding might be found	
+4	rum	ꝝ	Brevigraph	"It means a final ""rum"" for plural genitives. Best option for visualization: ꝝ U+A75D, but it is not visualized correctly on my own system. Other options for visualization: Ꝛ U+A75A"	
+0		̄	Abbreviation mark	Macron	
+5		̾	Abbreviation mark	"Shaped like a little ""s"", its lower part goes left. It is written above the base grapheme (it might be an allograph of ""2""). Alternative options for visualization are  ᷤ (U+1DE4) or   ̾ (U+033E), which is the best one, though some browsers might not visualize it correctly. Character  ̉ (U+0309, the simplest one) is not suitable because it looks more like the ""w"" abbreviation."	
+9		;	Abbreviation mark	"It looks like a modern semicolon (;), written on the right of a final letter (mostly ""q;"" for ""que"" and ""b;"" for ""bus""). There is a Unicode character  U+F1AC (LATIN ABBREVIATION SIGN SEMICOLON), but it is not correctly visualized on my system (it is in the private use area). Also, I’m using this only for visualization"	
+¹		ͥ	Abbreviation mark	"Shaped like a little ""i"" above the base grapheme. To key it in: ALT GR + 1. Visualization: U+0365"	
+ø		ͦ	Abbreviation mark	"Shaped like a little ""o"" above the base grapheme. To key it in: ALT GR + O. Visualization: U+0366"	
+ª		ͣ	Abbreviation mark	"Shaped like a little ""a"" above the base grapheme. To key it: ALT GR+ SHIFT + F. Visualization: U+0363"	

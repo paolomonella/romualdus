@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, Garufi</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Garufi</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="notreviewed" default="true">
+            <p>OCR not reviewed.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="reviewed">
+            <p>OCR reviewed.</p>
+            <!-- Markup boilerplate: p decls="#reviewed" -->
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
+            <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized
+                in the printed Garufi edition).
+                All text is now in lowercase (to capitalize words at the beginning of a paragraph or after
+                punctuation, a script will be needed).
+                The text is now ready to be collated upon individual manuscripts.
+            </p>
+        </editorialDecl>
+        <listPrefixDef>
+        </listPrefixDef>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+<p xml:id="g3.1-3.6" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/>prima mundi etas est ab <rs>adam</rs> usque ad diluuium, continens annos, juxta he<lb break="no" rend="-" type="g"/>braicam 
+ueritatem mille sexcentos quinquaginta sex, juxta septuaginta uero in<lb break="no" rend="-" type="g"/>terpretes 
+duo milia ducentos quadraginta duos; generationes uero juxta utram<lb break="no" rend="-" type="g"/>que 
+editionem numero decem, que uniuersali est deleta diluuio, sicut primam 
+<lb type="g"/>cujusque hominis obliuio demergere consueuit etatem. 
+</p>
+
+<p xml:id="g3.7-3.16" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/>fuerunt <rs>noe</rs> filii tres ex quibus ita sunt orte gentes. de <rs>japhet</rs> quindecim, de <rs>chan</rs> 
+<lb type="g"/>triginta, de <rs>sem</rs> xxvii. <rs>sem</rs> annos duos post diluuium genuit <rs>arfaxad</rs> a quo sunt <rs>chaldei</rs>. 
+<lb type="g"/><rs>arfaxad</rs> genuit <rs>salem</rs> a quo <rs>samarite</rs> et <rs>indi</rs>. <rs>salem</rs> genuit <rs>heber</rs>, a quo <rs>hebrei</rs>. <rs>heber</rs> 
+<lb type="g"/>genuit <rs>falech</rs>, cuius tempore turris edificatur et linguarum diuisio sit. in solo <rs>heber</rs> prisca <lb type="g"/>remansit lingua, quia in ea conspiratione non fuit. turris uero altitudo duo milia clxxiiii <lb type="g"/>dicitur passuum. hanc <rs>nebroth</rs> gigas construxit. hac etate <rs>scytarum</rs> regnum oritur ubi 
+<lb type="g"/>primus regnauit <rs>thannus</rs>. tunc et regnum <rs>egiptiorum</rs> ubi primus regnauit <rs>thoes</rs>. dehinc 
+<lb type="g"/>regnum <rs>assyriorum</rs>, ubi primus regnauit <rs>belus</rs>, quem dicunt <rs>saturnum</rs> quidam; deinde <rs>ni<lb break="no" rend="-" type="g"/>nus</rs> 
+qui condidit' <rs>niniuem</rs>. hoc tempore <rs>abraham</rs> nascitur, et post mortem <rs>nini</rs> a <rs>semi<lb break="no" rend="-" type="g"/>ramide</rs> 
+regina rehedificata est <rs>babilonia</rs>, ubi regnauit annos quadraginta. 
+</p> 
+
+
+<p xml:id="g3.17-4.2" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/>secunda etas a <rs>noe</rs> usque ad <rs>abraam</rs> generationes juxta hebraicam ueritatem complexa, 
+<lb type="g"/>decem, annos autem ducentos nonaginta duos; porro juxta septuaginta interpretes anni 
+<lb type="g"/>mlxxii. generationes uero xi haec uero quasi pueritia fuit generationis populi <rs>dei</rs>, et 
+<lb type="g"/>ideo in lingua inuenta est <rs>hebrea</rs>, a pueritia namque homo incipit nosse loqui, que idcirco 
+<lb type="g"/>appellata est, quod fari non potest. ab <rs>adam</rs> itaque usque ad <rs>abraham</rs> juxta hebraicam 
+<lb type="g"/>ueritatem computantur anni mille nungenti quadraginta octo, secundum septuaginta interpre<lb break="no" rend="-" type="g"/>tes 
+fiunt anni tria milia trecenti xiiii. 
+</p> 
+
+
+<p xml:id="g4.3-4.10" decls="#ocr">
+<lb type="g"/>tertia ab <rs>abraam</rs> usque ad <rs>dauid</rs> generationes juxta utramque auctoritatem xiv annos
+<lb type="g"/>uero, secundum <rs>hebreorum</rs> auctoritatem nungentos quadraginta duos complectens; juxta
+<lb type="g"/>septuaginta uero interpretes anni tria milia cxxxvii. hec velud quedam adolescentia fuit
+<lb type="g"/>populi <rs>dei</rs>, a qua etate incipit homo posse generare, propterea <rs>matheus</rs> <rs>euangelista</rs> gene<lb break="no" rend="-" type="g"/>rationum
+ab <rs>abraham</rs> sumpsit exordium, qui etiam pater multarum gentium constitutus est,
+<lb type="g"/>quando mutatum nomen accepit. ab <rs>adam</rs> uero juxta <rs>hebreorum</rs> auctoritatem usque ad
+<lb type="g"/><rs>dauid</rs> fiunt anni duo millia octingenti nonaginta, secundum septuaginta interpretes tria mi<lb break="no" rend="-" type="g"/>lia 
+cv. cur autem annorum hec diuersitas sit, in sequentibus ostendetur.
+</p>
+
+
+<p xml:id="g4.11-4.17" decls="#ocr">
+<lb type="g"/>quarta a <rs>dauid</rs> usque ad transmigrationem <rs>babilonis</rs> annos habens, juxta hebraicam ue<lb break="no" rend="-" type="g"/>ritatem,
+cccclxxiii, juxta uero septuaginta translationem xii amplius generationes juxta
+<lb type="g"/>utrosque codices xvii, quas tamen <rs>euangelista</rs> <rs>matheus</rs> certii misterii gratia xiiii ponit a
+<lb type="g"/>qua uelud  juvenili etate populo <rs>dei</rs> regum tempora ceperunt; hec namque in hominibus etas
+<lb type="g"/>apta gubernando solet existere regno. ab exordio autem prime etatis, usque ad trasmi<lb break="no" rend="-" type="g"/>grationem
+<rs>babilonis</rs> computantur anni tria milia ccclxxiii secundum <rs>hebreorum</rs> auctorita<lb break="no" rend="-" type="g"/>tem,
+juxta lxx uero interpretes anni tria milia quingenti nonaginta.
+</p>
+
+<p xml:id="g4.18-4.25" decls="#ocr">
+<lb type="g"/>quinta quasi senilis etas a transmigratione <rs>babilonis</rs> usque ad aduentum <rs>domini</rs> <rs>salua<lb break="no" rend="-" type="g"/>toris</rs>
+in carne. generationibus et ipsa xiiii. porro annis, secundum <rs>hebreorum</rs> auctoritatem,
+<lb type="g"/>quingentis octoginta ix extenta; juxta septuaginta autem annis quingentis septuaginta viii,
+<lb type="g"/>in qua graue senectute fessa malis crebrioribus plebs hebrea quassatur. taliter itaque ab
+<lb type="g"/>exordio temporum usque ad incarnationem <rs>christi</rs> <rs>domini</rs> secundum <rs>hebreorum</rs> auctoritatem
+<lb type="g"/>prosequente beato <rs>hieronymo</rs> fiunt anni tria milia dcccclii. verum juxta septuaginta in<lb break="no" rend="-" type="g"/>terpretes,
+quos omnino <rs>greci</rs> secuntur, numerantur anni vdviii. <rs>eusebius</rs> autem, quem <rs>oro<lb break="no" rend="-" type="g"/>sius</rs>
+secutus est, inter utrosque numerat annos vcxcviiii quibus pene omnes latini utuntur.
+</p>
+
+<p xml:id="g4.26-5.2" decls="#ocr">
+<lb type="g"/>sexta etas, que nunc agitur, nulla generationum, uel temporum serie certa, sed ut etas
+<lb type="g"/>decrepita, ipsa totius seculi morte consumenda: has erumpnosas, plenasque laboribus mundi
+<lb type="g"/>etates, quique beati felici morte uicerunt septimam jam sabbati perhennis etatem suscepti,
+<lb type="g"/>octauam beate resurrectionis etatem, in qua semper cum <rs>domino</rs> regnent, expectant.
+</p>
+
+
+<p xml:id="g5.3-5.10" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/>etas quippe duobus modis dicitur: aut enim hominis, sicut a natiuitate infantia usque in 
+<lb type="g"/>annos septem, pueritia usque ad annos quatuordecim, adolescentia a quintodecimo usque in 
+<lb type="g"/>uicesimus octauum, juuentus usque ad xlviiii, senectus a quinquagesimo usque ad lxxviiii, 
+<lb type="g"/>decrepita ab anno octogesimo quousque uita finitur. <rs>aut</rs> mundi, cujus prima etas ab <rs>adam</rs> 
+<lb type="g"/>usque ad <rs>noe</rs>, secunda a <rs>noe</rs> usque ad <rs>abraham</rs>, tertia ab <rs>abraham</rs> usque ad <rs>dauid</rs>, quarta 
+<lb type="g"/>a <rs>dauid</rs> usque ad captiuitatem <rs>judeorum</rs> in <rs>babyloniam</rs>, quinta deinde usque ad aduentum 
+<lb type="g"/><rs>saluatoris</rs>, sexta, que nunc est usque quo mundus iste finiatur, quarum decursus per gene<lb break="no" rend="-" type="g"/>rationes, 
+et regna euidentius infra, prout inuenire potui, explicabo. 
+</p> 
+
+
+<p xml:id="g5.11-5.18" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/>creator omnium uisibilium et inuisibilium, qui trinus et unus <rs>deus</rs> est, in principio creauit 
+<lb type="g"/>celum, terram, mare, et omnia, que in eis sunt, tempora quoque instituit, nam prima die in 
+<lb type="g"/>lucis nomine condidit angelos, secunda die celos in appellatione firmamenti, tertia die in 
+<lb type="g"/>discretionis uocabulo speciem aquarum, quarta luminaria celi, uidelicet solem, et lunam, et 
+<lb type="g"/>stellas, que temporum sunt ordinationes, quinta animantia ex aquis, sexta animantia ex terra, 
+<lb type="g"/>et hominem, quem appellauit <rs>adam</rs>, et posuit in paradiso, cujus de latere dormientis costam 
+<lb type="g"/>tollens, mulierem edificauit, ut eius adjutorio genus propagaret humanum, septima autem die 
+<lb type="g"/>requieuit <rs>deus</rs> ab omni opere prime ac noue conditionis; hoc autem secundum licteram. 
+</p> 
+
+
+<p xml:id="g5.19-5.19" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/>incipit prima etas. 
+</p> 
+
+
+<p xml:id="g5.20-5.25" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/>primo igitur anno, postquam de paradiso <rs>adam</rs> ligni uetiti culpa projectus est, cognouit 
+<lb type="g"/>uxorem suam genuitque <rs>cain</rs>, deinde <rs>abel</rs>, quorum unus, uidelicet <rs>abel</rs>, justus simplex ac 
+<lb type="g"/>innocens fuit et <rs>deo</rs> placens, ideoque justus. <rs>cain</rs> uero superbus, inuidus, ac nocens, et 
+<lb type="g"/><rs>deo</rs> displicens, ideoque injustus, qui sola inuidia fratrem occidit. unde et fratricide <rs>deus</rs> 
+<lb type="g"/>iratus, maledictionem intulit, eiusque progeniem execratus est, atque ex eo filii hominum 
+<lb type="g"/>dicti sunt. 
+</p> 
+
+
+<p xml:id="g5.26-5.32" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/><rs>adam</rs> uero cum cxxx esset annorum, genuit filium, nomine <rs>seth</rs>. hic fuit uir bonus, 
+<lb type="g"/>et justus, de cujus prosapia homines exorti, filii <rs>dei</rs> dicti sunt. superuixit autem <rs>adam</rs>, 
+<lb type="g"/>postquam genuit <rs>seth</rs>, annis dccc secundum hebraicam ueritatem, usque ad quinquagesimum 
+<lb type="g"/>sextum annum natiuitatis <rs>lamech</rs>. verum septuaginta interpretes ante natum <rs>seth</rs> po<lb break="no" rend="-" type="g"/>suere 
+annos cccxxx, postea dcc. <rs>seth</rs> interpretatur resurrectio, significans resurrectionem 
+<lb type="g"/><rs>christi</rs> a mortuis, cujus mortem illatam a <rs>judeis</rs> significat <rs>abel</rs>, qui dicitur justus, a fratre 
+<lb type="g"/><rs>cain</rs> occisus, secundum septuaginta, annos cccxxxv, secundum <rs>hebreos</rs> ccxxxv. 
+</p>
+
+<!--Original end of scanned text-->
+
+</body>
+  </text>
+</TEI>

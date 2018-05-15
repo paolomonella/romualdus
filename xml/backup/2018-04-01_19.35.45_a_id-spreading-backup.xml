@@ -1,0 +1,715 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, codex A</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Vat. lat. 3973</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="ag" default="true">
+            <p>Paragraph encoded at the Graphematic and Alphabetic Layers.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="a">
+            <p>Paragraph encoded at the Alphabetic Layer only.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
+            <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p>
+        </editorialDecl>
+        <listPrefixDef>
+            <prefixDef ident="vat"
+                matchPattern="([0-9]+)"
+                replacementPattern="img/vat.lat.3973.pdf#page=$1">
+                <p> In the context of this project, private URIs with
+                    the prefix "vat" point to a specific page of external
+                    PDF file vat.lat.3973.pdf, including the digital images
+                    of the manuscript. For example, <code>vat:29</code>
+                    dereferences to <code>img/vat.lat.3973.pdf#page=29</code>.
+                </p>
+            </prefixDef>
+        </listPrefixDef>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+<p xml:id="g3.2-3.6">
+<pb n="15r" facs="vat:21"/>
+<lb type="g"/>prima mundi etas e0 ab <rs>ada3</rs> usq9 ad diluuiu3, continens annos, iuxta he<lb break="no" rend="-" type="g"/>braica3
+<lb type="g"/>ueritate3, mille sexcentos quinquaginta sex, iuxta septuaginta uero in<lb break="no" rend="-" type="g"/>terpretes
+<lb type="g"/>duo milia ducentos quadraginta duos; generationes uero iuxta utra3<lb break="no" rend="-" type="g"/>q9
+editione3 numero dece3, que uniu2sali est deleta diluuio, si<choice><abbr>c0</abbr><expan>cu</expan></choice>t prima3 
+<lb type="g"/>cuiusq9 hominis obliuio demergere c0sueuit etate3.
+</p>
+
+<p xml:id="g3.7-3.16"/>
+
+<p xml:id="g3.17-4.2">
+<lb type="g"/>secunda etas a <rs>noe</rs> usq9 ad <rs>abraa3</rs> generationes iuxta hebraica3 ueritate3 complexa 
+<lb type="g"/>dece3, annos au0 ducentos nonaginta duos. porro iuxta septuaginta int0pretes anni 
+<lb type="g"/>mlxxii. generationes uero xi. hec uero quasi pueritia fuit generationis popl0i <rs>di0</rs>. et 
+<lb type="g"/>ideo in lingua inuenta e0 <rs>hebrea</rs>. a pueritia namq9 homo incipit nosse loqui, que idcirco 
+<lb type="g"/>appellata e0, qd0 fari non potest. ab <rs>ada3</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
+<pb n="15v" facs="vat:22"/>
+<lb type="g"/>ueritatem computant2 anni mille nungenti quadraginta octo, secundu3 septuaginta int0pre<lb break="no" rend="-" type="g"/>tes fiunt anni tria milia trecenti x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>.
+</p>
+
+
+<p xml:id="g4.3-4.10">
+<lb type="g"/>tertia ab <rs>abraham</rs> usq9 ad <rs>dauid</rs>, generationes iuxta utramq9 auctoritate3 xiii annos
+<lb type="g"/>uero, secdm0 <rs>hebreo4</rs> auctoritatem nungentos quadraginta duos complectens; iuxta
+<lb type="g"/>septuaginta uero int0pretes anni tria milia c xxxvii. hec uelud queda3 adolescentia fuit
+<lb type="g"/>popl0i <rs>dei</rs>, a qua etate incipit homo posse generare, ŋpterea <rs>matheus</rs> <rs>euangelista</rs> gene<lb break="no" rend="-" type="g"/>rationum
+ab <rs>abraha3</rs> sumpsit exordiu3, qui etia3 pat0 multaru3 gentiu3 constitutus est,
+<lb type="g"/>quando mutatu3 nom0 accepit. ab <rs>ada3</rs> uero iuxta <rs>hebreo4</rs> auctoritate3 usq9 ad
+<lb type="g"/><rs>dauid</rs> fiunt anni duo milia octingenti nonaginta, secdm0 septuaginta int0pretes tria mi<lb break="no" rend="-" type="g"/>lia 
+cv. cur au0 annorum hec diu2sitas sit, in sequentib9 ostendet2.
+</p>
+
+<p xml:id="g4.11-4.17">
+<lb type="g"/>quarta a <rs>dauid</rs> usq9 ad transmigratio0e3 <rs>babilonis</rs> annos habens, iuxta hebraicam ue<lb break="no" rend="-" type="g"/>ritate3,
+cccclxxiii, iuxta uero septuaginta translatione3 xii amplius generationes iuxta
+<lb type="g"/>utrosq9 codices xvii,
+<pb n="16r" facs="vat:22"/>
+quas tamen <rs>euangelista</rs> <rs>mat<choice><abbr>h0</abbr><expan>heu</expan></choice>s</rs> certi mister<choice><abbr>i8</abbr><expan>ii</expan></choice> gra0 x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> ponit a
+<lb type="g"/>qua uelud iuuenili etat<choice><abbr>i0</abbr><expan>i</expan></choice> popl0o <rs>dei</rs> regum tempora ceperunt; hec na3q9 in hominib9 etas
+<lb type="g"/>apta gubernando solet existere regno. ab exordio au0 prime etatis, usq9 ad trasmi<lb break="no" rend="-" type="g"/>gratione3
+<rs>babilonis</rs> co0putant2 anni tria milia ccclxxiii secdm0 <rs>hebreoru3</rs> auctorita<lb break="no" rend="-" type="g"/>te3,
+iuxta lxx uero int0pretes anni tria milia quingenti nonaginta.
+</p>
+
+<p xml:id="g4.18-4.25">
+<lb type="g"/>quinta quasi senilis etas a transmigratione <rs>babilonis</rs> usq9 in aduentu3 <rs>dni0</rs> <rs>salua<lb break="no" rend="-" type="g"/>toris</rs>
+in carne. generationib9 et ipsa x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>. porro annis, secdm0 <rs>hebreo4</rs> auctoritate3,
+<lb type="g"/>quingentis octoginta v<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> extenta; iuxta septuaginta au0 annis quingentis septuaginta viii,
+<lb type="g"/>in qua graue senectute fessa malis crebriorib9 plebs <rs>hebrea</rs> quassat2. talit0 itaq9 ab
+<lb type="g"/>exordio tempo4 usq9 ad incarnatione3 <rs>xpi0</rs> <rs>dni0</rs> secdm0 <rs>hebreo4</rs> auctoritate3
+<lb type="g"/>ŋsequente beato <rs>ieronimo</rs> fiunt anni tria milia dcccclii. uerum iuxta septuaginta in<lb break="no" rend="-" type="g"/>t0pretes,
+quos <choice><abbr>oi0</abbr><expan>omni</expan></choice>no <rs>greci</rs> secunt2, numerant2 anni vdviii. <rs>eusebius</rs> au0, que3 <rs>oro<lb break="no" rend="-" type="g"/>sius</rs>
+secutus e0, int0 utrosq9 numerat annos vcxcv<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> quibus pene oms0
+<pb n="16v" facs="vat:23"/>
+latini utuntur.
+</p>
+
+<p xml:id="g4.26-5.2">
+<lb type="g"/>sexta etas, que nunc agit2, nulla generationum, uel teporu3<note>Missing middle 'm'</note> serie certa, sed ut etas
+<lb type="g"/>decrepita, ipsa totius secl0i morte co0sum0da: has erumpnosas, plenasq9 laborib9 mundi
+<lb type="g"/>etates, quiq9 beati felici morte uicerunt septima3 ia3 sabbati þhennis etate3 suscepti,
+<lb type="g"/>octaua3 beate resurrectionis etate3, in qua semper cum <rs>dno0</rs> regnent, expectant.
+</p>
+
+
+<p xml:id="g5.3-5.10"> 
+<lb type="g"/>etas quippe duob9 modis dicitur: aut eni0 hominis, si<choice><abbr>c0</abbr><expan>cu</expan></choice>t a natiuitate infantia usq9 in 
+<lb type="g"/>annos septe3, pueritia usq9 ad annos quattuordeci3, adolescentia a quinto decimo usq9 in 
+<lb type="g"/>uicesimu3 octauu3, iuuentus usq9 ad xlv<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>, senectus a quinquagesimo usq9 ad lxxv<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>, 
+<lb type="g"/>decrepita ab anno octogesimo quousq9 uita finit2. <rs>aut</rs> mundi, cuius prima etas ab <rs>ada3</rs> 
+<lb type="g"/>usq9 ad <rs>noe</rs>, secda0 a <rs>noe</rs> usq9 ad <rs>abraha3</rs>, tertia ab <rs>abraha3</rs> usq9 ad <rs>dauid</rs>, quarta 
+<lb type="g"/>a <rs>dauid</rs> usq9 ad captiuitate3 <rs>iudeo4</rs> in <rs>babilonia3</rs>, quinta deinde usq9 ad aduentu3 
+<lb type="g"/><rs>saluatoris</rs>, sexta, que nunc e0 usq9 quo mundus iste finiat2, quaru3 decursus þ gene<lb break="no" rend="-" type="g"/>rationes, 
+et regna euidentius infra, ŋut inuenire potui, explicabo. 
+</p> 
+
+
+<p xml:id="g5.11-5.18"> 
+<pb n="17r" facs="vat:23"/>
+<lb type="g"/>creator omi0u3 uisibiliu3 et inuisibiliu3, ¢ trinus et unus <rs>ds0</rs> e0, in principio creauit 
+<lb type="g"/>celum et t0ra3, mare, et omi0a, que in eis sunt, tempora quoq9 instituit, na3 prima die in 
+<lb type="g"/>lucis nomine condidit angelos, secunda die in 
+<lb type="g"/>discretionis uocabulo specie3 aqua4, quarta luminaria celi, uidelicet sole3, et luna3, et 
+<lb type="g"/>stellas, que tempo4 sunt ordinationes, quinta animantia ex aquis, sexta animantia ex terra, 
+<lb type="g"/>et homine3, que3 appellauit <rs>ada3</rs>, et posuit in paradiso, cuius de latere dormientis costa3 
+<lb type="g"/>tollens, muliere3 edificauit, ut eł adiutorio genus ŋpagaret humanu3, septima au0 die 
+<lb type="g"/>requieuit <rs>ds0</rs> ab omi0 opere prime ac noue conditionis; hoc au0 secdm0 lictera3. 
+</p> 
+
+<p xml:id="g5.19-5.19"> 
+<lb type="g"/>incipit prima etas. 
+</p> 
+
+<p xml:id="g5.20-5.25"> 
+<lb type="g"/>primo igit2 anno, postqua3 de paradiso <rs>ada3</rs> ligni uetiti culpa ŋiectus e0, cognouit 
+<lb type="g"/>uxorem sua3 genuitq9 <rs>ca<choice><abbr>y0</abbr><expan>yn</expan></choice></rs>, deinde <rs>abel</rs>, quo4 unus, uidelicet <rs>abel</rs>, iustus simplex ac 
+<lb type="g"/>innocenß fuit et <rs>do0</rs> placens, ideoq9 iustus. <rs>cain</rs> uero suþbus, inuidus, ac nocens, et 
+<lb type="g"/><rs>do0</rs> displicens, ideoq9 iniustus, qui sola <choice><abbr>i0</abbr><expan>in</expan></choice>uidia fre0m occidit. unde et fri0cide <rs>ds0</rs> 
+<lb type="g"/>iratus, maledictione3 intulit, 
+<pb n="17v" facs="vat:24"/>
+eiusq9 ŋgenie3 execratus e0, atq9 ex eo filii hominu3 
+<lb type="g"/>dicti sunt. 
+</p> 
+
+<p xml:id="g5.26-5.32"> 
+<lb type="g"/><rs>adam</rs> uero cu3 cxxx esset anno4, genuit filiu3, nomine <rs>seth</rs>. hic fuit uir bonus, 
+<lb type="g"/>et iustus, de cuius ŋsapia homines exorti, filii <rs>di0</rs> dicti sunt. suþuixit au0 <rs>ada3</rs>, 
+<lb type="g"/>postqua3 genuit <rs>seth</rs>, annis dccc secdm0 hebraicam ueritatem, usq9 ad quinquagesimu3 
+<lb type="g"/>sextu3 annum natiuitatis <rs>lamech</rs>. veru3 septuaginta int0pretes ante natu3 <rs>seth</rs> po<lb break="no" rend="-" type="g"/>suere 
+annos cccxxx, postea dcc. <rs>seth</rs> int0pretatur resurrectio, significans resurrectionem 
+<lb type="g"/><rs>xpi0</rs> a mortuis, cuius morte3 illata3 a <rs>iudeis</rs> significat <rs>abel</rs>, qui dicit2 iustus, a fre0 
+<lb type="g"/><rs>cain</rs> occisus, secdm0 septuaginta, <choice><abbr>anu0</abbr><expan>annum</expan></choice> cccxxxv,  secdm0 <rs>he<choice><abbr>br0</abbr><expan>breos</expan></choice></rs> ccxxxv. 
+</p>
+
+<p xml:id="g6.1-6.6"> 
+<lb type="g"/><rs>seth</rs> habens annos cv genuit <rs>enos</rs>, cui suþuixit annos dcccxvi usq9 ad clxvii 
+<lb type="g"/>annu3 nativitatis<note>Garufi mistakingly has -tes</note> <rs>lamech</rs>, porro septuaginta int0pretes ante natu3 <rs>enos</rs> annos ccv postea 
+<lb type="g"/>posuere annos dccvii. <rs>enos</rs> int0pretat2 homo, de quo <add place="above"><rs>deus</rs></add> benedi<add place="above">ci</add>t2, iste cepit 
+<lb type="g"/>inuocare nomen <rs>dni0</rs>, quia hominu3 e0 ŋprium, ut suæ fragilitatis memores, inuocent 
+<lb type="g"/><choice><abbr>co0</abbr><expan>con</expan></choice>ditoris auxilium, eo4 dumtaxat, qui in fide <rs>xpi0</rs>
+<pb n="18r" facs="vat:24"/>
+uiuentes, filii resurrectionis sic 
+<lb type="g"/>esse letant2, secdm0 sept0, ann7 dcxxv, <rs>hebrei</rs> cccxxv. 
+</p> 
+
+
+<p xml:id="g6.7-6.10"> 
+<lb type="g"/><rs>enos</rs> habens annos xc genuit <rs>cainan</rs>, cui suþuixit annos dcccxv secdm0 <rs>hebreos</rs>, 
+<lb type="g"/>idest usq9 ad lxxxiv annu3 nativitatis <rs>noe</rs>, sed septuaginta int0pretes an0 natu3 
+<lb type="g"/>cainan cxc annos, postea dccxv posuere, secdm0 lxx ann7 dccxxv iuxta <rs>hebreos</rs> 
+<lb type="g"/>cccxcv. 
+</p> 
+
+
+<p xml:id="g6.11-6.13"> 
+<lb type="g"/><rs>cainan</rs> habens annos lxx genuit <rs>malalehel</rs><note>Garufi mistakingly has Malahelel</note>, post cuius ortu3 uixit annos dcccxl id e0 
+<lb type="g"/>usq9 ad clxxix annu3 nativitatis <rs>noe</rs>; septuaginta int0pretes ante natu3 <rs>malalehel</rs> 
+<lb type="g"/>clxx postea dixere <add place="margin">dccxl</add>, secdm0 sept0 ann7 dccccxcv iuxta <rs>hebreos</rs> cccclx. 
+</p> 
+
+
+<p xml:id="g6.14-1.16"> 
+<lb type="g"/><rs>malalehel</rs> anno4 lxv genuit <rs>iareth</rs>, cui superuixit annos dcccxxx usq9 ad ccxxxiv 
+<lb type="g"/>annu3 nativitatis <rs>noe</rs>; septuaginta uero ante natu3 <rs>iareth</rs> clxv postea posuere dccxxx. 
+<lb type="g"/><choice><abbr>septuag7</abbr><expan>septuaginta</expan></choice> <choice><abbr>ann7</abbr><expan>annos</expan></choice> mcxxii, <rs>hebreos</rs> dcxxii. 
+</p> 
+
+
+<p xml:id="g6.17-6.25"> 
+<lb type="g"/><rs>iareth</rs> anno4 clxii genuit <rs>enoch</rs>, cui suþuixit annis dccc usq9 ad ccclxvi annu3 
+<lb type="g"/>natiuitatis <rs>noe</rs>. in hac generatione nusqua3
+<pb n="18v" facs="vat:25"/>
+codices discrepant. hunc <rs>enoch</rs> n0 nulla 
+<lb type="g"/>diuina scripsisse <rs>iuda</rs> a<choice><abbr>plo0</abbr><expan>postolo</expan></choice> attestante comperimus. sed ut beatus <rs>agustinus</rs> dicit: 
+<lb type="g"/>n0 frustra non sunt in eo canones scripturaru3, ¢ seruabant2 in templo <rs>hebrei</rs> popl0i 
+<lb type="g"/>succedentium diligentia sacerdotu3, nisi ¢a ob antiquitate3 suspecte fidei iudicata sunt, 
+<lb type="g"/>nec ueru3 esse, quæ ille scripsisse poterat inuenire, unde illa, quæ sub eius nomine ŋ<lb break="no" rend="-" type="g"/>ferunt, 
+et co0tinet illas de gigantib9 fabulas, qd0 n0 habuerint homines patres, recte 
+<lb type="g"/>a prudentib9 iudicant2 n0 ipsius esse credenda. septua<choice><abbr>gin7</abbr><expan>ginta</expan></choice> mdcclxxxvii, <rs>hebrei</rs> 
+<lb type="g"/>dclxxxvii. 
+</p> 
+
+<p xml:id="g6.26-6.34"> 
+<lb type="g"/><rs>enoch</rs> annos lxv genuit <rs>mathusalam</rs> post eł ortu3 ambulauit cu3 <rs>do0</rs> ccc anniß, 
+<lb type="g"/>idest usq9 ad cxiii annu3 natiuitatis <rs>lamech</rs> secdm0 <rs>hebreos</rs>. septuaginta int0p0<lb break="no" rend="-" type="g"/>tes 
+ante natu3 <rs>mathusala3</rs> posuere clxv annos, postea cc. iste quide3 n0 apparuit 
+<lb type="g"/>mortalib9, ¢a tulit illu3 <rs>ds0</rs> ab eis. bene au0 in septima generatione <rs>enoc</rs>, qui 
+<lb type="g"/>int0pretat2 dedicatio, tulit a mortalib9 <rs>ds0</rs>, ¢a ciuitas electo4 in sex huius se<lb break="no" rend="-" type="g"/>cl0i 
+ŋ <rs>do0</rs> laborans etatib9, in septima sabbati futuri <choice><abbr>gl0</abbr><expan>glori</expan></choice>a3 dedi<pb n="19r" facs="vat:25"/>cationis expectat, 
+<lb type="g"/>atq9 reŋbi sola presenti sunt felicitate c0tenti. <rs>cain</rs> uero ciuitate3, qua3 statuit 
+<lb type="g"/>n0 in septima generati<choice><abbr>o0</abbr><expan>on</expan></choice>es, sed in primogenito <rs>enoch</rs> filio c0secrat. septuaginta 
+<lb type="g"/>mcccl<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>, <rs>he<choice><abbr>br0</abbr><expan>brei</expan></choice></rs> dccclxx<choice><orig>ii<add place="above">i</add>i</orig><reg type="numeral">iv</reg></choice>. 
+</p> 
+
+<p xml:id="g7.1-7.7" decls="#a"> 
+<lb type="g"/><rs>mathusalam</rs> annos clxxxvii genuit <rs>lamech</rs>, cui superuixit annos dcclxxxii idest 
+<lb type="g"/>usque ad diluuium. septuaginta interpretes ante natum <rs>lamech</rs> clxvii, ponunt annos, 
+<lb type="g"/>postea dcccii qui numerus, ut lector facillime uidebit, iuxta hebraicam veritatem xx annos; 
+<lb type="g"/>iuxta ipsorum vero auctoritatem x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> annis diluuii tempora transiit. de qua famosissima 
+<lb type="g"/>questione doctissimi patres <rs>ieronimus</rs> in libro <title>questionum hebraicarum</title>, <rs>augustinus</rs> in 
+<lb type="g"/>libro <title>de ciuitate <rs>dei</rs></title> quinto decimo plenissime disputant. septuaginta mdcxlvi, <rs>he<lb break="no" rend="-" type="g"/>brei</rs> 
+mille lvi. 
+</p> 
+
+<p xml:id="g7.8-7.12" decls="#a"> 
+<lb type="g"/><rs>lamech</rs> annos clxxxii genuit <rs>noe</rs>, cui superuixit annos dxcv usque ad sextum annum 
+<lb type="g"/>ante diluuium. septuaginta ante natum <rs>noe</rs> ponunt annos clxxxviii et postea dlxv. 
+<lb type="g"/>in hac sola generatione summa uniuersitatis discrepat, quia xx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> annis plus
+<pb n="19v" facs="vat:26"/>
+uixisse <rs>lamech</rs> 
+<lb type="g"/>in <rs>hebreis</rs>, quam in septuaginta translatorum codicibus inuenitur. septuaginta <choice><orig>duo  millia</orig><reg type="numeral">mm</reg></choice><lb type="g"/>ccxlii. <rs>hebrei</rs> mdclvi. 
+</p> 
+
+
+<p xml:id="g7.13-7.27" decls="#a"> 
+<lb type="g"/><rs>noe</rs> anno dc diluuium factum est, mense secundo septima decima die mensis. hic 
+<lb type="g"/>perficitur prima etas continens secundum hebraicam ueritatem annos mille dclvi; iuxta sep<lb break="no" rend="-" type="g"/>tuaginta 
+uero annos duo milia ccxlii. sane de differentia annorum inter hebream, et lxx 
+<lb type="g"/>interpretum auctoritatem ne quis nos laceret, nouas mouisse questiones, legat prephatorum 
+<lb type="g"/>patrum memorata opuscula, et intelliget hanc iam olim notissimam fuisse distantia cuius 
+<lb type="g"/>originis distantiam cum beatus <rs>augustinus</rs> sollertissime quesisset, dixit in libro suprascripto, 
+<lb type="g"/>capitulo tertio decimo inter alia sic: credibilis ergo quis dixerit cum primo de bibliotheca 
+<lb type="g"/>ptolomei describi ista ceperunt tunc aliquid tale fieri potuisse in codice uno, sed primitus 
+<lb type="g"/>inde scripto, unde iam lacius emanaret, ubi potuit quidem accidere etiam scriptoris error. 
+<lb type="g"/>sed hoc in illa questione de uita <rs>mathusalem</rs>, non absurdum est suspicari: quamuis de 
+<lb type="g"/>eo quidam dicant, quod tempore diluuii <rs>mathu<pb n="20r" facs="vat:26"/>salam</rs>, ubi pater eius <rs>enoch</rs> <rs>deo</rs> uolente ser<lb break="no" rend="-" type="g"/>uatus 
+fuerit, posteaque in hoc mundo xx annis uixerit. et post aliquanta beatus idem 
+<lb type="g"/><rs>augustinus</rs> in eodem: recte inquid fieri nullo modo dubitauerim, ut cum diuersum aliquid in 
+<lb type="g"/>utrisque codicibus inuenitur, quandoquidem ad fidem rerum gestarum utrumque esse non 
+<lb type="g"/>potest, uerum ei lingue potius credatur unde est in aliam per interpretes facta translatio. 
+</p> 
+
+<p xml:id="g7.28-7.28" decls="#a"> 
+<lb type="g"/>explicit prima etas. 
+</p> 
+
+<p xml:id="g7.29-7.29" decls="#a"> 
+<lb type="g"/>incipit secunda. 
+</p> 
+
+<p xml:id="g7.30-8.6" decls="#a"> 
+<lb type="g"/>secunda seculi etate, prima <add place="above">hora</add> huius diei, quae<note>E caudatum</note> est uicesima septima mensis secundi, egres<lb break="no" rend="-" type="g"/>sus 
+est <rs>noe</rs> de arca, in qua pauci, idest octo anime salue facte sunt per aquam, quod com<lb break="no" rend="-" type="g"/>memorans
+in epistola beatus apostolus <rs>petrus</rs> mirifice statim exponere curauit, cum subiun<lb break="no" rend="-" type="g"/>xit: 
+quos, et uos nunc similis forme salvos fecit baptisma non carnis depositio sordium, 
+<lb type="g"/>sed conscientie bone interrogatio in <rs>deum</rs> per resurrectionem <rs>iesu</rs> <rs>christi</rs>, qui est in dex<lb break="no" rend="-" type="g"/>tera 
+<rs>dei</rs>. in aqua diluvii baptismum in arca, et his que<note>E caudatum</note> continebat ecclesiam, et fideles 
+<lb type="g"/>illius in octonario animarum numero misterium dominice resurrectionis, in cuius fide bapti<lb break="no" rend="-" type="g"/>zamur, 
+docens esse figuram. 
+</p> 
+
+<p xml:id="g8.7-8.11" decls="#a"> 
+<lb type="g"/>uixit quoque <rs>noe</rs> post diluuium annos cccl <pb n="20v" facs="vat:27"/>usque ad lviii anuum natiuitatis <rs>abrahe</rs>. 
+<lb type="g"/><rs>sem</rs> uero centum ac duorum annorum <rs>arfaxat</rs> <rs>chal<lb break="no" rend="-" type="g"/>deos</rs> 
+originem duxisse <rs>ieronimus</rs> scribit. supervixit autem <rs>sem</rs> nato <rs>arfaxat</rs> quingentis an<lb break="no" rend="-" type="g"/>nis, 
+idest usque ad quinquagesimum annum natiuitatis <rs>iacobus</rs>. septuaginta mmccclxx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>, 
+<lb type="g"/><rs>hebrei</rs> mdcxciii. 
+</p> 
+
+<p xml:id="g8.12-8.23" decls="#a"> 
+<lb type="g"/>arfaxat annos xxxv genuit <rs>sale</rs>. hic septuaginta interpretes unam generationem plus 
+<lb type="g"/>quam hebraica ueritas<note>First hand: meritas; the same hand corrected to ueritas</note> posuere, dicentes, quod <rs>arfaxat</rs> tum esset cccxxxv annorum ge<lb break="no" rend="-" type="g"/>nuerit 
+<rs>cainam</rs>, qui cum cxxx annorum fuerit, ipse genuerit <rs>sale</rs>, quorum translationem 
+<lb type="g"/>euangelista <rs>lucas</rs> hoc loco uidetur esse secutus. uerum chronografi grecorum cum gene<lb break="no" rend="-" type="g"/>rationum 
+seriem ad auctoritatem hebraicam castigassent, ablata una generatione <rs>cainan</rs>, 
+<lb type="g"/>nec tamen numerum annorum in generationibus, quas cum eis habuere communes, ad eorum 
+<lb type="g"/>auctoritatem castigare curassent, propriam secuti auctoritatem dederunt huic etati annorum 
+<lb type="g"/>summam minorem quidem septuaginta translatorum editione annis cxxx sed super hebrai<lb break="no" rend="-" type="g"/>cam 
+veritatem annis dcl maiorem, idest annos dcccxlii. vixit autem <rs>arfaxat</rs> post natum 
+<lb type="g"/><rs>salem</rs><pb n="21r" facs="vat:27"/> annis ccciii cui tamen septuaginta interpretes post natum <rs>cainan</rs> scribunt annos 
+<lb type="g"/><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx et <rs>cainan</rs> post natum <rs>salem</rs> <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxxviii. a <rs>sale</rs> <rs>samaritani</rs> et <rs>indi</rs>. septua<lb break="no" rend="-" type="g"/>ginta 
+mmdcxxxix, <add place="above"><rs>hebrei</rs></add> mdccxxiii. 
+</p> 
+
+<p xml:id="g8.24-8.27" decls="#a"> 
+<lb type="g"/><rs>sale</rs> annos xxx genuit <rs>heber</rs>, cui superuixit annos <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>iii usque ad xvi annum nati<lb break="no" rend="-" type="g"/>uitatis 
+<rs>iacob</rs>. septuaginta interpretes ante natum <rs>heber</rs> posuere annos cxxx, postea ccciii. 
+<lb type="g"/>ab hoc <rs>heber</rs> hebreorum nomen, et genus oritur. septuaginta duo m septingenti xxxix, 
+<lb type="g"/><rs>hebrei</rs> m octingentos lvii. 
+</p> 
+
+<p xml:id="g8.28-9.11" decls="#a">
+<lb type="g"/><rs>heber</rs> annos xxx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> genuit <rs>falech</rs>, cui superuixit annos <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx usque ad lxxix an<lb break="no" rend="-" type="g"/>num 
+nativitatis <rs>esau</rs>, et <rs>iacob</rs>. septuaginta ante natum <rs>falech</rs> annos posuere cxxx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> po<lb break="no" rend="-" type="g"/>stea 
+cccxxx. <rs>falech</rs> interpretatur divisio, cui propterea tale nomen<note>Mistake in Garufi: 'nomem' for 'nomen'.</note> imposuere parentes, quia 
+<lb type="g"/>tempore nativitatis ipsius, turris hedificata, et terra per linguarum confusionem divisa est, 
+<lb type="g"/>cuius divisionis <rs>arnobius</rs> rethor in expositionem psalmi c<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> ita meminit: <rs>sem</rs> primogenito 
+<lb type="g"/><rs>noe</rs> pars facta est a <rs>perfida</rs>, et <rs>bactris</rs> usque in <rs>indiam</rs> longe, et<pb n="21v" facs="vat:28"/> usque <rs>rinocururis</rs>, que 
+<lb type="g"/>spacia terrarum habent linguas sermone barbarico xxvii, in quibus linguis gentes sunt pa<lb break="no" rend="-" type="g"/>triarum 
+quadringente et sex, non diuersarum linguarum, sed, ut dixi, diuersarum patriarum. 
+<lb type="g"/>verbi gratia, cum una lingua latina sit, sub una lingua diuerse sunt patriae, <rs>apulorum</rs>, <rs>ca<lb break="no" rend="-" type="g"/>labrorum</rs>, 
+<rs>lucanorum</rs>, <rs>brutiorum</rs>, <rs>sampnitum</rs>, <rs>picenorum</rs>, <rs>tuscorum</rs>, ex his, atque huius<lb break="no" rend="-" type="g"/>modi 
+similia si dicamus. <rs>cham</rs> uero filius secundus <rs>noe</rs> <rs>arinocururis</rs> usque <rs>gadira</rs> 
+<lb type="g"/>habens linguas sermone punico a parte <rs>garamantum</rs>, latinum a parte <rs>boree</rs>, barbarico<note>Garufi prints 'barbaricum' after Bede.</note> 
+<lb type="g"/>a parte meridiei. <rs>etiopum</rs> et <rs>egyptiorum</rs> a barbaris interioribus uario sermone uiginti 
+<lb type="g"/>duabus linguis in patriis ccc nonaginta quattuor; <rs>iafeth</rs> autem tertius a <rs>media</rs> usque ad 
+<lb type="g"/>gadira ad <rs>boream</rs>: habet autem <rs>iafeth</rs> flumen <rs>tigridem</rs>, qui diuidit <rs>mediam</rs>, et <rs>babilo<lb break="no" rend="-" type="g"/>niam</rs> 
+in patriis ducentis sermones uarios in linguis uiginti et tribus. sunt omnes simul lin<lb break="no" rend="-" type="g"/>gue 
+septuaginte due; patrie autem generationum mille, in tripartito secundo hoc ordine 
+<lb type="g"/>site sunt. habet autem, ut diximus, <rs>iafeth</rs> flumen <rs>tigridem</rs>, qui diuidit <rs>mediam</rs>, et <rs>ba<lb break="no" rend="-" type="g"/>biloniam</rs>: 
+<rs>sem</rs> autem <rs>eufratem</rs>: <rs>cham</rs> uero <rs>geon</rs>, qui uocatur <rs>nilus</rs>. <pb n="22r" facs="vat:28"/>septuaginta 
+<lb type="g"/>mm<choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>iii, <rs>hebrei</rs> mcdlxxxvii. 
+</p> 
+
+<p xml:id="g9.12-9.14" decls="#a"> 
+<lb type="g"/><rs>falech</rs> annos xxx genuit <rs>reu</rs> cui superuixit annos ccix. septuaginta ante natum <rs>reu</rs>, 
+<lb type="g"/>cxxx annos ponunt, postea c<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. his temporibus primum templa constructa, et quidam prin<lb break="no" rend="-" type="g"/>cipes 
+gentium tanquam dii sunt adorati. septuaginta, mmmxxxv, hebrei mdccc<choice><orig>xviiii</orig><reg type="numeral">xix</reg>.</choice> 
+</p> 
+
+<p xml:id="g9.15-9.17" decls="#a"> 
+<lb type="g"/><rs>reu</rs> annos xxxii genuit <rs>seruch</rs>, cui superuixit annos ccvii. septuaginta ante natum 
+<lb type="g"/><rs>seruch</rs> cxxxii posuere annos, postea ccvii. tunc <rs>citharum</rs> regnum dicitur exortum, ubi primus 
+<lb type="g"/>regnauit <rs>thanaus</rs>. septuaginta mmmclxv, hebrei mdcccxl<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. 
+</p> 
+
+<p xml:id="g9.18-9.21" decls="#a"> 
+<lb type="g"/><rs>seruch</rs> annos xxx genuit <rs>nabor</rs> cui superuixit annos ccc: septuaginta ante natum 
+<lb type="g"/><rs>nahor</rs> ponunt annos cxxx postea cc. tunc <rs>egyptiorum</rs> imperium dicitur inchoasse, pri<lb break="no" rend="-" type="g"/>mo 
+eis regnante <rs>uizoues</rs>; secundum <rs>septuaginta</rs> mmmccxl<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>, secundum <rs>hebrei</rs> 
+<lb type="g"/>m<choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxviii. 
+</p> 
+
+<p xml:id="g9.22-9.24" decls="#a"> 
+<lb type="g"/><rs>nahor</rs> annos xxix genuit <rs>thare</rs>, cui superuixit annos cxxviii. septuaginta ante natum 
+<lb type="g"/><rs>thare</rs> ponunt annos lxx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice> postea cxx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. tunc <rs>assiriorum</rs><note>Garufi mistakingly has 'assisiorum'</note>, <rs>siciniorumque</rs> regnum nasci<lb break="no" rend="-" type="g"/>tur, 
+his primum <rs>belo</rs>, illis <rs>agialeo</rs> regnante. 
+</p> 
+
+<p xml:id="g9.25-9.25" decls="#a"> 
+<pb n="22v" facs="vat:29"/> 
+<lb type="g"/><rs>hebrei</rs> m<choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xlviii. 
+</p> 
+
+<p xml:id="g9.26-9.31" decls="#a"> 
+<lb type="g"/><rs>thare</rs> annos lxx genuit <rs>abraham</rs> cui superuixit annis cxxxv. hactenus seculi secunda 
+<lb type="g"/>etas protenditur, cuius tota series recensita, beatus <rs>augustinus</rs> in libro <title>de ciuitate <rs>dei</rs></title> xvi 
+<lb type="g"/>capitulo x hoc modo conclusit. fiunt itaque anni a diluuio usque ad <rs>abraham</rs> mille sep<lb break="no" rend="-" type="g"/>tuaginta 
+duo, secundum uulgatam editionem, hoc est interpretum septuaginta. in hebreis 
+<lb type="g"/>autem codicibus longe pauciores annos videlicet ccxcii perhibent inueniri, de quibus, ra<lb break="no" rend="-" type="g"/>tionem 
+nullam, aut difficillimam reddunt. <rs>otosius</rs>: 
+</p> 
+
+<!-- § reviewed on ms a until here-->
+
+<p xml:id="g10.1-10.5" decls="#ocr"> 
+<lb type="g"/>ab <rs>adam</rs> primo homine usque ad <rs>ninum</rs> magnum regem, cujus anno xlii natus est 
+<lb type="g"/><rs>abraham</rs>, anni tria milia clxxx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>. a <rs>nino</rs> autem uel <rs>abraham</rs>, usque ad <rs>cesarem</rs> 
+<lb type="g"/><rs>augustum</rs>, id est usque ad natiuitatem <rs>christi</rs>, que fuit anno imperii <rs>cesaris</rs> xlii cum facta 
+<lb type="g"/>pace cum <rs>parthis</rs>, jani porte clause sunt et bella toto orbe cessarent, colliguntur anni 
+<lb type="g"/>duo milia xv. 
+</p> 
+
+
+<p xml:id="g10.6-10.6" decls="#ocr"> 
+<lb type="g"/>incipit tertia etas. 
+</p> 
+
+
+<p xml:id="g10.7-10.12" decls="#ocr"> 
+<lb type="g"/>tertia mundi etas a natiuitate cepit <rs>abrahe</rs> patriarche, qui cum septuaginta quinque 
+<lb type="g"/>annorum esset, relicta gente, et patria ad imperium<pb n="23r" facs="vat:29"/> <rs>dei</rs> uenit in terram <rs>canaan</rs>, accipiens 
+<lb type="g"/>promissionem nascituro de semine suo saluatore, in quo benedicentur omnes gentes simul, 
+<lb type="g"/>et se ipsum in gentem magnam esse futurum, quarum una spiritualis, altera promissio car<lb break="no" rend="-" type="g"/>nalis. 
+<rs>his</rs> temporibus <rs>ninus</rs>, et <rs>semiramis</rs> ejus uxor <rs>assiriis</rs> regnabant. zoroas magi<lb break="no" rend="-" type="g"/>cam 
+artem tunc primum inuenit. <rs>orosius</rs>: 
+</p> 
+
+
+<p xml:id="g10.13-10.20" decls="#ocr"> 
+<lb type="g"/>ante annos <rs>urbis</rs> condite mccc rex primum apud <rs>assirios</rs>, qui eminere ceteris po<lb break="no" rend="-" type="g"/>tuit, 
+<rs>ninus</rs> fuit, quique primus dominationis libidine arma foris extulit, atque cruentam ui<lb break="no" rend="-" type="g"/>tam 
+per totam <rs>asiam</rs> bellis egit: quamuis pater ejus <rs>belus</rs> prius obscure regnauerit. re<lb break="no" rend="-" type="g"/>gnauit 
+autem <rs>ninus</rs> annis lii quo occiso, successit ei uxor sua <rs>semiramis</rs>, que cum et ipsa 
+<lb type="g"/>xlii annos regnauerit, non minus crudeliter medio imperii sui tempore totius <rs>asie</rs> regina 
+<lb type="g"/><rs>babyloniam</rs> urbem instaurauit, caputque regni <rs>assyriorum</rs> ut esset, instituit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>xxxiii. 
+</p> 
+
+
+<p xml:id="g10.10-10.20" decls="#ocr"> 
+<lb type="g"/><rs>abraham</rs> anno lxxxvi genuit <rs>ysmahel</rs>, a quo <rs>ysmahelite</rs>. genuit autem <rs>ysmahel</rs> duo<lb break="no" rend="-" type="g"/>decim 
+duces, et uixit annos cxxxvii. mmxlviii. 
+</p> 
+
+
+<p xml:id="g10.21-10.24" decls="#ocr"> 
+<lb type="g"/>idem <rs>abraham</rs> cum esset annorum centum genuit <rs>ysach</rs>, qui primus, et solus in tota 
+<lb type="g"/>testamenti ueteris serie legitur octaua die circumcisus quod<pb n="23v" facs="vat:30"/> non sine magno misterio pri<lb break="no" rend="-" type="g"/>uilegium 
+est filio promissionis donatum, et postquam genuit ysach uixit <rs>abraham</rs> lxxv 
+<lb type="g"/>annos usque ad xv annum natiuitatis <rs>esau</rs>, et <rs>jacob</rs>. mmcviii. 
+</p> 
+
+
+<p xml:id="g10.25-10.27" decls="#ocr"> 
+<lb type="g"/><rs>ysach</rs> habens annos lx genuit <rs>esau</rs>, et <rs>jacob</rs> patriarchas <rs>idumee</rs>, et <rs>israelitice</rs> gentis, 
+<lb type="g"/>post quorum ortum uixit ysach annos cxx. his temporibus primus <rs>argos</rs> regnauit <rs>inanchus</rs> 
+<lb type="g"/>cujus filia <rs>jo</rs>, quam <rs>egyptii</rs> mutato nomine <rs>ysidem</rs> colunt. 
+</p> 
+
+
+<p xml:id="g10.28-10.28" decls="#ocr"> 
+<lb type="g"/>duo milia c nonaginta ix. 
+</p> 
+
+
+<p xml:id="g10.29-11.4" decls="#ocr"> 
+<lb type="g"/><rs>jacob</rs> habens annos xci genuit <rs>joseph</rs>: joseph autem annorum xvi erat, quando uen<lb break="no" rend="-" type="g"/>ditus 
+est a fratribus suis, quique xxx erat annorum cum post uincula carceris stetit in pre<lb break="no" rend="-" type="g"/>sentia 
+<rs>pharaonis</rs>, et cum xxxix annorum esset etatis, <rs>jacob</rs> pater ejus descendit in <rs>egyp<lb break="no" rend="-" type="g"/>tum</rs> 
+in animabus lxx ipse autem <rs>jacob</rs> tunc erat cxxx annorum, qui postea in <rs>egipto</rs> uixit 
+<lb type="g"/>annos xvii. hujus temporibus <rs>memphis</rs> in <rs>egypto</rs> ab <rs>ape</rs> <rs>argiuorum</rs> condita, sparta quo<lb break="no" rend="-" type="g"/>que 
+a <rs>sparto</rs> filio <rs>foronei</rs> regis argiuorum condita. ab <rs>abraham</rs> uero usque ad introi<lb break="no" rend="-" type="g"/>tum 
+filiorum <rs>israhel</rs> in <rs>egypto</rs> fiunt anni ccxc. <rs>orosius</rs>: 
+</p> 
+
+
+<p xml:id="g11.5-11.6" decls="#ocr"> 
+<lb type="g"/>ante annos <rs>urbis</rs> condite mxl in <rs>achaja</rs> <pb n="24r" facs="vat:30"/>fuit seuum diluuium totam eandem pro<lb break="no" rend="-" type="g"/>uinciam 
+uastans. item <rs>orosius</rs>: 
+</p> 
+
+
+<p xml:id="g11.7-11.9" decls="#ocr"> 
+<lb type="g"/>ante annos <rs>urbis</rs> condite mviii fuit apud <rs>egyptum</rs> insolita fastidiendaque ubertas, 
+<lb type="g"/>deinde jugis et intolerabilis fames, cui <rs>joseph</rs> uir justus et sapiens diuina prouisione su<lb break="no" rend="-" type="g"/>buenit. 
+eo tempore <rs>foroneus</rs> <rs>grecie</rs> leges dedit. juxta <rs>hebreos</rs> anni <choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>liii. 
+</p> 
+
+
+<p xml:id="g11.10-11.26" decls="#ocr"> 
+<lb type="g"/>abitatio filiorum <rs>israhel</rs> qua mansuerunt in <rs>egypto</rs> fuit annorum <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx, quibus ex<lb break="no" rend="-" type="g"/>pletis 
+eadem die egressus est omnis exercitus domini de terra <rs>egypti</rs>, ut scriptura testatur 
+<lb type="g"/>exodi. quorum tamen summam annorum chronografi ejus a septuagesimo quinto anno 
+<lb type="g"/>natiuitatis <rs>abrahe</rs>, quando terram repromissionis intrauit, computant, sequentes editionem 
+<lb type="g"/>septuaginta interpretum, que dicit: habitatio autem filiorum <rs>israhel</rs> qua intrauerunt in <rs>egy<lb break="no" rend="-" type="g"/>pto,</rs> 
+et in terra <rs>chanaan</rs>, ipsi, et patres eorum a septuagesimo quinto anno natiuitatis <rs>abrahe</rs> 
+<lb type="g"/>anni <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx quam necessario sequendam et ipsa <rs>hebraica</rs> ueritas ostendit, que narrat 
+<lb type="g"/>chaat filium <rs>leui</rs>, quem natum esse constat in terra <rs>chanaam</rs>, uixisse anni cxxxiii et filium 
+<lb type="g"/>ejus <rs>amram</rs> patrem <rs>moysi</rs> annos cxxxvii et ipsam <rs>moysen</rs> lxxx fuisse annorum tempor<pb n="24v" facs="vat:31"/>e 
+<lb type="g"/>egressionis de <rs>egypto</rs>. quia nimirum horum summam annorum constat quadringentos et 
+<lb type="g"/>triginta implere non posse: annuit autem horum translationi et <rs>apostolus</rs>, cum ait: <rs>abrahe</rs> 
+<lb type="g"/>dicte sunt promissiones, et semini ejus: non dicit et seminibus, quasi in multis, sed quasi 
+<lb type="g"/>in uno, et semini tuo qui est <rs>christus</rs>. hoc autem dico testamentum confirmatum a <rs>deo</rs>, 
+<lb type="g"/>que post <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx annos facta est lex non irritam fecit ad euacuandas promissiones patrum. 
+<lb type="g"/>erat autem <rs>moyses</rs> lxxx annorum et <rs>aaron</rs> lxxxiv annorum, quando locuti sunt ad <rs>pha<lb break="no" rend="-" type="g"/>raonem,</rs> 
+qui postea uixerunt annos xl donec habitatio filiorum <rs>israhel</rs> fuit per desertum. 
+<lb type="g"/><rs>orosius</rs>: 
+</p> 
+
+
+<p xml:id="g11.27-12.4" decls="#ocr"> 
+<lb type="g"/>ante annos <rs>urbis</rs> condite dcccx. ansectione <rs>athenius</rs> tertius a <rs>cerope</rs> regnauit, 
+<lb type="g"/>cujus temporibus aquarum illuuies majorem partem populorum <rs>thessalie</rs> assumpsit, paucis per 
+<lb type="g"/>refugia monitum libertatis, maxime in monte <rs>parnaso</rs>: in cuius circuitu <rs>deucalion</rs> tunc regno 
+<lb type="g"/>potiebatur qui tunc ad se ratibus confugientibus susceptos per gemina <rs>parnasi</rs> juga fouit 
+<lb type="g"/>aluitque, a quo propterea genus hominum reparatum ferunt. tunc etiam in <rs>ethiopia</rs> partes 
+<lb type="g"/>plurimas dirosque morbos pene usque ad<pb n="25r" facs="vat:31"/> desolationem exestuauisse, et ne forte diuisa tem<lb break="no" rend="-" type="g"/>pora 
+esse credantur, ut <rs>dei</rs> furoris bellici, et tempestate subacta, <rs>mediam</rs> <rs>liber</rs> pater san<lb break="no" rend="-" type="g"/>guine 
+madefecit cedibus oppleuit, libidinibus polluit, gentem utique nulli unquam hominum 
+<lb type="g"/>obnoxiam uernacula tantum quiete contentam. item <rs>orosius</rs>: 
+</p> 
+
+
+<p xml:id="g12.5-12.11" decls="#ocr"> 
+<lb type="g"/>anno ante <rs>urbem</rs> conditam dcccv <rs>egyptus</rs> decem plagis attrita est per manum <rs>moysi</rs> 
+<lb type="g"/>ducis, quem <rs>deus</rs> misit ad <rs>pharaonem</rs>, ut dimitteret populum suum. postquam uero <rs>pharao</rs> 
+<lb type="g"/>dimisit <rs>israhelem</rs>, insecutus est eum cum omni suo exercitu usque ad mare rubrum: et <rs>hebreis</rs> 
+<lb type="g"/>per medium sicci maris tuto gradientibus, uniuersa <rs>egyptiorum</rs> multitudo simul cum rege suo 
+<lb type="g"/>aquarum inundatione in mare necata est, quorum multitudo hoc solo uel maxime argumento 
+<lb type="g"/>conjicere possumus, quod eos sexcenta milia uirorum timuerunt atque fugerunt. tunc quoque 
+<lb type="g"/>temporis <rs>athlans</rs> <rs>astrologiam</rs> inuenit. 
+</p> 
+
+
+<p xml:id="g12.12-12.12" decls="#ocr"> 
+<lb type="g"/><choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xciii. 
+</p> 
+
+
+<p xml:id="g12.13-12.26" decls="#ocr"> 
+<lb type="g"/><rs>moyses</rs> autem annos xl eductum ex <rs>egypto</rs> regit populum <rs>israhel</rs> in deserto. quorum 
+<lb type="g"/>primo anno tabernaculum <rs>domino</rs> construit, et vii mensibus<pb n="25v" facs="vat:32"/> opus perficiens, mense primo 
+<lb type="g"/>anni secundi prima die mensis erexit. hucusque ut <rs>eusebius</rs> commemorat quinque libri <rs>moysi</rs> 
+<lb type="g"/>continent gesta annorum milia dccxxx secundum septuaginta seniorum interpretationem, quot 
+<lb type="g"/>uero annos hujus temporis hebraica ueritas contineat <rs>joseppus</rs> in primo contra <rs>appionem</rs> 
+<lb type="g"/>grammaticum libro ita commemorat; neque igitur apud nos habentur innumera uolumina 
+<lb type="g"/>inter se discordantia, sed duo tantum et xx sunt libri, qui omnium temporum seriem con<lb break="no" rend="-" type="g"/>tinentes 
+leges uite et successionis humane prosapiam usque ad ipsius <rs>moysis</rs> terminum per<lb break="no" rend="-" type="g"/>tendentes, 
+qui paulo minus ad tria milia annorum continentiam gerunt. a <rs>moyse</rs> uero 
+<lb type="g"/><rs>hebrei</rs> literas habere ceperunt. his autem temporibus <rs>job</rs> de filiis <rs>edom</rs> quintus ad 
+<lb type="g"/><rs>abraham</rs>, pronepos <rs>ysaac</rs> in terra <rs>us</rs> que est in regione <rs>philistinorum</rs>, tunc patrie rector 
+<lb type="g"/>principabatur. <rs>esau</rs> namque ipse est. <rs>edom</rs>, qui genuit <rs>rahuel</rs>, <rs>rahuel</rs> autem genuit 
+<lb type="g"/>job, qui alio nomine dicitur <rs>johab</rs>. hucusque ex libro <rs>genesis</rs> prosecuti sumus. <pb n="26r" facs="vat:32"/>ex hoc 
+<lb type="g"/>autem ex libro <rs>josue</rs>, et <rs>judicum</rs> usque ad regum tempora <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dxix. 
+</p> 
+
+
+<p xml:id="g12.27-13.14" decls="#ocr"> 
+<lb type="g"/><rs>josue</rs> annos xxvi regit populum, ut <rs>joseppus</rs> docet. nam scriptura sancta quod fuerint 
+<lb type="g"/>anni ducatus illius tacet. quare autem <rs>eusebius</rs> in <rs>chronicis</rs> xxvi annos posuerit infra 
+<lb type="g"/>dicemus. primo namque ducatus sui anno decimo die primi mensis populum, patefacto 
+<lb type="g"/>jordanis alueo, in terram repromissionis induxit, quo uidelicet anno, ut in <rs>chronicis</rs> prefati 
+<lb type="g"/>eusebii repperimus, principium erat quinquagesimi primi <rs>jobelei</rs>, secundum <rs>hebreos</rs>: idest 
+<lb type="g"/>anni duo milia quingenti erant ab initio mundi completi, singulis <rs>jobeleorum</rs> ordinibus per 
+<lb type="g"/>quinquagenos deputatis. constat enim a principio quia mdclvi ad diluuium usque fuere 
+<lb type="g"/>anni. inde ad <rs>abraham</rs> ccxcii qui lxxv erat annorum, quando promissionem <rs>dei</rs> acceperit. 
+<lb type="g"/>promissionis anni <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx, ducatus <rs>moysi</rs> anni xl qui profecto numerus non duo milia quin<lb break="no" rend="-" type="g"/>gentos, 
+sed septem minus, idest duo milia <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xciii ut prenotamus, annos implent. josue 
+<lb type="g"/>autem impetrauit a <rs>deo</rs>, et <rs>solem</rs> uersus in meridiem in eodem loco stare fecit diei unius 
+<lb type="g"/>spa<pb n="26v" facs="vat:33"/>tio, ut non effugiendi solatium hostibus, cum quibus pugnabat, minime preberet, quousque 
+<lb type="g"/>idem <rs>josue</rs> de inimicis ulcisceretur. erant ipsi enim quinque reges <rs>amorreorum</rs>. dominus 
+<lb type="g"/>quoque misit super eos lapides magnos de celo, et multo plures mortuo sunt lapidibus gran<lb break="no" rend="-" type="g"/>dinis, 
+quam gladio. iosue cx annorum mortuus est. eo tempore <rs>troja</rs> in quadrigis ui<lb break="no" rend="-" type="g"/>gebat, 
+in qua <rs>trous</rs> prius regnauit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dlix. 
+<lb type="g"/>
+</p> 
+
+
+<p xml:id="g13.15-13.18" decls="#ocr"> 
+<lb type="g"/><rs>othoniel</rs> annos xl populum <rs>dei</rs> rexit. hic autem de tribu <rs>juda</rs> primus in <rs>israhel</rs> 
+<lb type="g"/><rs>domino</rs> jubente, constituitur. hujus temporibus primis, filii <rs>israhel</rs> seruire <rs>chusan</rs> <rs>rasathaim</rs> 
+<lb type="g"/>regi <rs>mesopotamie</rs> annis viii. eodem tempore <rs>charinus</rs> filius <rs>agenoris</rs> litteras <rs>grecie</rs> 
+<lb type="g"/>dedit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcxxxix. 
+</p> 
+
+
+<p xml:id="g13.19-13.22" decls="#ocr"> 
+<lb type="g"/><rs>loth</rs> annos lxxx filius <rs>gera</rs>, filius <rs>gemini</rs>, qui utraque manu utebatur pro dextera, 
+<lb type="g"/>cujus in principiis seruiuit <rs>israhel</rs> <rs>eglon</rs> regi <rs>moab</rs> annis xviii donec [eum] ipsum percusso 
+<lb type="g"/>eglon ipse liberauit. hoc tempore <rs>cirene</rs> ciuitas condita est in <rs>libia</rs>. tunc quoque 
+<lb type="g"/>fabule ficte de rebus gestis ab hominibus sceleratis <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dclxxx. 
+</p> 
+
+
+<p xml:id="g13.23-13.26" decls="#ocr"> 
+<lb type="g"/><rs>deborra</rs> prophetissa annos xl de tribu <rs>effraym</rs> <pb n="27r" facs="vat:33"/>cum <rs>barah</rs> de tribu <rs>neptalim</rs> cujus in 
+<lb type="g"/>initio ducatus oppressit filios <rs>israel</rs> <rs>jabin</rs> rex <rs>chanaan</rs> xx annis qui regnabat in <rs>asor</rs>. sed 
+<lb type="g"/>occiso ab <rs>israel</rs> principe militie eius <rs>sisara</rs>, prostratus tandem, ac humiliatus est. hoc 
+<lb type="g"/>tempore <rs>miletus</rs> condita. et tunc <rs>apollo</rs> cytharam repperit<note>Garufi mistakingly prints repperlt</note> mmdccxxx. 
+</p> 
+
+
+<p xml:id="g13.27-13.32" decls="#ocr"> 
+<lb type="g"/><rs>gedeon</rs>, qui et <rs>jeroboal</rs> xl annis de tribu <rs>manasse</rs>, sub quo seruiuit <rs>israhel</rs> <rs>madia<lb break="no" rend="-" type="g"/>nitis,</rs> 
+et <rs>amalechitis</rs> vii annis. sed <rs>gedeon</rs> pugnante liberatus est. nam per uelleris si<lb break="no" rend="-" type="g"/>gnum, 
+sicut a <rs>deo</rs> petiit, confortatus ipse cum ccc solummodo uiris, quos secum habuit, uicit 
+<lb type="g"/>hoc bellum, in quo cesa sunt cxx milia uirorum. eo tempore <rs>tyrus</rs> condita ante templum 
+<lb type="g"/>jerosolymorum anni ccxl ut scribit <rs>joseppus</rs>. mercurius <rs>lyram</rs> condidit. in <rs>italia</rs> 
+<lb type="g"/>primus <rs>janus</rs> regnauit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxlii. 
+</p> 
+
+
+<p xml:id="g13.33-14.3" decls="#ocr"> 
+<lb type="g"/><rs>abimelech</rs> <rs>gedeonis</rs> filius annos iii, qui regnabat in <rs>sichem</rs>. hic autem <rs>gedeonis</rs> 
+<lb type="g"/>filius ex concubina occidit lxx fratres suos filios patris ejus ex matrimoniis. remansitque 
+<lb type="g"/>jonathas filius <rs>jeroboal</rs> minimus, et absconditus est. ipso quoque tempore <rs>hercules</rs> <rs>ilium</rs> 
+<lb type="g"/>uastat.<pb n="27v" facs="vat:34"/> saturnus in <rs>italiam</rs> fugiens, ibi post <rs>janum</rs> regnauit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxlv. 
+</p> 
+
+
+<p xml:id="g14.4-14.7" decls="#ocr"> 
+<lb type="g"/><rs>pthola</rs> annis xxiii filius <rs>phoa</rs> patrui <rs>abimelech</rs>, uir de <rs>ysachar</rs>, qui habitabat in <rs>sanir</rs> 
+<lb type="g"/>montis <rs>effraym</rs>. fuitque his temporibus bellum <rs>lapitharum</rs>, et <rs>centaurorum</rs>, quod scribit 
+<lb type="g"/>palefatus primo de incredibilibus libro. notabiles fuisse dicuntur equites <rs>thessalorum</rs>. 
+<lb type="g"/>in <rs>troja</rs> post <rs>laomedontem</rs> regnauit <rs>priamus</rs> <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclvii. 
+</p> 
+
+
+<p xml:id="g14.8-14.10" decls="#ocr"> 
+<lb type="g"/><rs>jahir</rs> annis xxii ex tribu <rs>manasse</rs>. his diebus <rs>hercules</rs> agonem <rs>oljmpiacum</rs> con<lb break="no" rend="-" type="g"/>stituit, 
+a quod usque ad primam <rs>olimpiadem</rs> supputantur anni <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx. carmentes litteras 
+<lb type="g"/>latinas inuenit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclxxiii. 
+</p> 
+
+<p xml:id="g14.11-14.14" decls="#ocr"> 
+<lb type="g"/><rs>jephte</rs> <rs>galaadites</rs> annis vi <rs>philjstjm</rs>, et <rs>ammanite</rs> deprimunt <rs>israhel</rs>, ex quibus <rs>am<lb break="no" rend="-" type="g"/>manite</rs> 
+debellantur a <rs>jephte</rs>, qui in libro <rs>judicum</rs> ab etate <rs>moysi</rs> usque ad semetipsum 
+<lb type="g"/>ait supputari annos ccc. hercules in flammis se injecit. amazonum tunc regnum uige<lb break="no" rend="-" type="g"/>bat, 
+quod usque ad <rs>alexandri</rs> <rs>magni</rs> tempora mansisse legimus <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcc<choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice>. 
+</p> 
+
+
+<p xml:id="g14.15-14.16" decls="#ocr"> 
+<lb type="g"/><rs>abessan</rs> de <rs>bethleem</rs> annos vii <rs>agamenon</rs> <rs>micenis</rs> imperat annos xxxv<pb n="28r" facs="vat:34"/> cujus anno xv. 
+<lb type="g"/>troja capitur <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxc. 
+</p> 
+
+
+<p xml:id="g14.17-14.21" decls="#ocr"> 
+<lb type="g"/><rs>achilon</rs> <rs>zabulonites</rs> annis x. hic cum annis x suis in septuaginta interpretibus non 
+<lb type="g"/>babetur, pro quo annos supplendo <rs>eusebius</rs> <rs>josue</rs> filio <rs>nun</rs>, samuheli et <rs>sauli</rs>, quorum annos 
+<lb type="g"/>scriptura non dicit, plures annos, quam in <rs>joseppo</rs> legebat, annotauit, quatenus ab egressu 
+<lb type="g"/>filiorum <rs>israhel</rs> ex <rs>egypto</rs>, usque ad edificationem templi <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxx annorum summam 
+<lb type="g"/>scriptura predicat habere<note>Garufi mistakingly has hahere</note>. <rs>orosius</rs>: 
+</p> 
+
+
+<p xml:id="g14.22-14.25" decls="#ocr"> 
+<lb type="g"/>ante <rs>urbem</rs> conditam <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx annos raptus <rs>helene</rs>, conjuratio <rs>grecorum</rs>, et concursus 
+<lb type="g"/>mille nauium, dehinc decennis obsidio, ac postremo famosum <rs>troje</rs> excidium predicatur. 
+<lb type="g"/>in quo bello per decem annos cruentissime gestos; quas nationes quantosque populos idem 
+<lb type="g"/>turbo inuoluerit, omerus poeta in primis clarus luculentissimo carmine palam fecit. 
+</p> 
+
+
+<p xml:id="g14.26-14.28" decls="#ocr"> 
+<lb type="g"/><rs>dare</rs> autem <rs>frigius</rs>, qui <rs>troje</rs> historiam scripsit, dicit: quia in illo bello perierunt ex 
+<lb type="g"/>achiuis ccclxii milia. ex <rs>trojanis</rs> autem usque ad ciuitatem perditam clxvi milia; ciuitate 
+<lb type="g"/>uero perdita cclxvi milia <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxcviii. 
+</p> 
+
+
+<p xml:id="g14.29-15.4" decls="#ocr"> 
+<lb type="g"/><pb n="28v" facs="vat:35"/><rs>labdon</rs> de tribu <rs>effraim</rs> annis viii. hujus anno tertio <rs>troja</rs> capta est, regnante in 
+<lb type="g"/>italia <rs>latino</rs>, completis a primo anno <rs>cecropis</rs>, qui primus apud <rs>atticam</rs> regnauit ccclxxv 
+<lb type="g"/>a quadragesimo autem et tertio anno <rs>nini</rs> regis <rs>assiriorum</rs>. juxta <rs>eusebium</rs> autem ex<lb break="no" rend="-" type="g"/>pletis 
+a mundi principio annis quatuor milia xix. a diluuio anni[s] mlxxxvii. a natiuitate 
+<lb type="g"/><rs>abrahe</rs>, et quadragesimo tertio anno <rs>nini</rs> regis annos dcccxxxv. a natiuitate <rs>moysi</rs> anni 
+<lb type="g"/><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>x. capta igitur <rs>troja</rs>, eneas, paucis interuenientibus annis, in <rs>italia</rs> profugus ue<lb break="no" rend="-" type="g"/>niens, 
+arma commouit, bella excitauit cum <rs>turno</rs> <rs>dauni</rs> filio regis <rs>tuscorum</rs>, dimicans eum 
+<lb type="g"/>interemit, ejusque sponsam sibi uxorem accepit, et per triennium regnans multos populos 
+<lb type="g"/>implicuit odio, excidioque afflixit mmdcccxxxix. 
+</p> 
+
+
+<p xml:id="g15.5-15.5" decls="#ocr"> 
+<lb type="g"/>mortuo autem <rs>labdon</rs>, seruiuit <rs>israhel</rs> <rs>philisteis</rs> annis xl <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcccxcix. 
+</p> 
+
+
+<p xml:id="g15.6-15.8" decls="#ocr"> 
+<lb type="g"/><rs>sanson</rs> de tribu <rs>dan</rs> annos xx. hactenus <rs>judicum</rs> tempora liber signat habens annos 
+<lb type="g"/><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xcix. quibus transactis ex libris regnorum, et prophetarum, et ex romanorum hi<lb break="no" rend="-" type="g"/>storiis 
+diu jam inchoatis acta prosecuntur. 
+</p> 
+
+
+<p xml:id="g15.9-15.12" decls="#ocr"> 
+<lb type="g"/><pb n="29r" facs="vat:35"/>judices autem latini duodecim, qui postea romani nuncupati sunt, post tertium annum 
+<lb type="g"/>captiuitatis <rs>troje</rs>, ut quidam uolunt, octauum, regnauit <rs>eneas</rs> annis iii. post quem <rs>asca<lb break="no" rend="-" type="g"/>nius</rs> 
+annis xxxix. ante <rs>eneam</rs> uero <rs>janus</rs>, saturnus, picus, faunus, latinus in <rs>italia</rs> re<lb break="no" rend="-" type="g"/>gnauerunt 
+annis circiter cl <rs>ascanius</rs> <rs>enee</rs> filius <rs>albam</rs> urbem condidit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccc. 
+</p> 
+
+
+<p xml:id="g15.13-15.19" decls="#ocr"> 
+<lb type="g"/><rs>heli</rs> sacerdos anni xl. in <rs>ebreorum</rs> libro xl anni inueniuntur. in septuaginta autem 
+<lb type="g"/>interpretatione xx. hectoris filii <rs>ilium</rs> receperunt, expulsis <rs>antenoris</rs> posteris, heleno sibi 
+<lb type="g"/>subsidium ferente. latinorum tertius <rs>siluius</rs> <rs>enee</rs> filius frater <rs>ascanii</rs> regnat annis xxix, 
+<lb type="g"/>quique post mortem patris editus ruri fuerat educatus, et <rs>siluii</rs>, posthumii nomen accepit, 
+<lb type="g"/>a quo omnes <rs>albanorum</rs> reges <rs>siluii</rs> uocati sunt. reges <rs>sicioniis</rs> defecerunt, qui ab <rs>egealeo</rs> 
+<lb type="g"/>usque ad <rs>zeuxippum</rs>, regnauerunt annis nongentis lxii. post quos sacerdotes <rs>carnii</rs> con<lb break="no" rend="-" type="g"/>stituti 
+sunt <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccc. 
+</p> 
+
+
+<p xml:id="g15.20-15.21" decls="#ocr"> 
+<lb type="g"/><rs>samuhel</rs> annos xii ut docet <rs>josephus</rs>: in scriptura enim sancta quandiu prefuerit mi<lb break="no" rend="-" type="g"/>nime 
+patet. ab hoc tempora prophetarum incipiunt. 
+</p> 
+
+
+<p xml:id="g15.22-15.23" decls="#ocr"> 
+<lb type="g"/>latinorum quartus <rs>eneas</rs> <rs>siluius</rs> regnat annis xxxi. tunc temporis <rs>omerus</rs> poeta 
+<lb type="g"/>clarus fuisse<pb n="29v" facs="vat:36"/> putatur, juxta <rs>ysidorum</rs> <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcccxc. 
+</p> 
+
+
+<p xml:id="g15.24-15.26" decls="#ocr"> 
+<lb type="g"/><rs>saul</rs> primus <rs>hebreorum</rs> rex annos xx et hujus quia in canonica scriptura non habetur, 
+<lb type="g"/>de antiquitatis <rs>joseppi</rs> libro, tempus regni notauimus. in <rs>lacedemone</rs> regnauit primus 
+<lb type="g"/>euristeus annos xlii. corinthi primus <rs>arethis</rs> annis xxxv. 
+</p> 
+
+
+<p xml:id="g15.27-15.27" decls="#ocr"> 
+<lb type="g"/>quarta etas. 
+</p> 
+
+
+<p xml:id="g15.28-15.31" decls="#ocr"> 
+<lb type="g"/>quarta mundi etas non solum cum inchoato <rs>judee</rs> gentis imperio, sed et cum inno<lb break="no" rend="-" type="g"/>uata 
+promissione, que patribus olim data est, imperii <rs>christiani</rs> sumit exordium, jurante 
+<lb type="g"/>domino <rs>dauid</rs> ueritatem: de fructu uentris ejus sedere super sedem eius. ex hoc autem 
+<lb type="g"/>reges <rs>juda</rs> designantur <choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxx. 
+</p> 
+
+<!-- § original end of scanned text-->
+
+</body>
+  </text>
+</TEI>

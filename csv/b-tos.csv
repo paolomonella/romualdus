@@ -1,0 +1,34 @@
+Grapheme	Alphabeme(s)	Grapheme visualization	Type	Notes	Image(s)
+a	a	a	Alphabetic		
+b	b	b	Alphabetic		
+c	c	c	Alphabetic		
+d	d	d	Alphabetic		
+e	e	e	Alphabetic		
+f	f	f	Alphabetic		
+g	g	g	Alphabetic		
+h	h	h	Alphabetic		
+i	i	i	Alphabetic		
+k	k	k	Alphabetic	Unchecked	
+l	l	l	Alphabetic		
+m	m	m	Alphabetic		
+n	n	n	Alphabetic		
+o	o	o	Alphabetic		
+p	p	p	Alphabetic		
+q	q	q	Alphabetic		
+r	r	r	Alphabetic		
+s	s	s	Alphabetic		
+t	t	t	Alphabetic		
+u	u	u	Alphabetic		
+x	x	x	Alphabetic		
+y	y	y	Alphabetic		
+z	z	z	Alphabetic	Unchecked	
+ŋ	et	⁊	Brevigraph	Tironian note	
+4	rum	ꝝ	Brevigraph	"It means a final ""rum"" for plural genitives. Best option for visualization: ꝝ U+A75D, but it is not visualized correctly on my own system. Other options for visualization: Ꝛ U+A75A"	
+0		̄	Abbreviation mark	Allographs: tilde or macron	
+2		ᷣ	Abbreviation mark	"Shaped like a little 2, its lower part goes right; it is written above the base grapheme, mostly meaning ""r""  (it might be an allograph of ""5""). Alternatives for visualization are  ᷣ (U+1DE3, the best option) or  ᷦ (U+1DE6; which is worse) or  ̉ (U+0309, the simplest one, but its shape might be a little too simplified)"	
+5		̾	Abbreviation mark	"Sometimes shaped like an apostroph, sometimes like a little ""s"", its lower part goes left. It is written above the base grapheme (it might be an allograph of ""2""). Alternative options for visualization are  ᷤ (U+1DE4) or   ̾ (U+033E); the latter which is the best one, though some browsers might not visualize it correctly. Character  ̉ (U+0309, the simplest one) is not suitable because it looks more like the ""w"" abbreviation."	
+7		̚	Abbreviation mark	7-shaped, written above the base grapheme. Worse alternative for visualization:   (U+F1C7, which also is in the private use area)	
+9		;	Abbreviation mark	"It looks like a modern semicolon (;), written on the right of a final letter (mostly ""q;"" for ""que"" and ""b;"" for ""bus""). There is a Unicode character  U+F1AC (LATIN ABBREVIATION SIGN SEMICOLON), but it is not correctly visualized on my system (it is in the private use area). Also, I’m using this only for visualization"	
+w		̃	Abbreviation mark	"Shaped like a rounded ""w"", written above the base grapheme, it often means ""r"". Alternatives for visualization:  ̃ U+0303 (combining tilde),  ᷓ U+1DD3 (which is the best visualization option, but is not visualized correctly on my own system)"	
+æ		ͤ	Abbreviation mark	"Shaped like a little ""e"" above the base grapheme. To key it in: ALT GR + A. Visualization: U+0364"	
+ø		ͦ	Abbreviation mark	"Shaped like a little ""o"" above the base grapheme. To key it in: ALT GR + O. Visualization: U+0366"	

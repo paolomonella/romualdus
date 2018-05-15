@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, codex A</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Vat. lat. 3973</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="ag" default="true">
+            <p>Paragraph encoded at the Graphematic and Alphabetic Layers.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="a">
+            <p>Paragraph encoded at the Alphabetic Layer only.</p>
+            <!-- When a paragraph is encoded at the AL only: p decls="#a" -->
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
+            <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p>
+            <!-- When a paragraph is encoded at the AL only: p decls="#a" -->
+        </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+<p xml:id="g3.2-3.6" facs="img/vat.lat.3973.pdf#page=21">
+<pb n="29"/>
+<lb type="g"/>prima mundi etas e0 ab <rs>ada3</rs> usq9 ad diluuiu3, continens annos, iuxta he<lb break="no" rend="-" type="g"/>braica3
+<lb type="g"/>ueritate3, mille sexcentos quinquaginta sex, iuxta septuaginta uero in<lb break="no" rend="-" type="g"/>terpretes
+<lb type="g"/>duo milia ducentos quadraginta duos; generationes uero iuxta utra3<lb break="no" rend="-" type="g"/>q9
+editione3 numero dece3, que uniu2sali est deleta diluuio, si<choice><abbr>c0</abbr><expan>cu</expan></choice>t prima3 
+<lb type="g"/>cuiusq9 hominis obliuio demergere c0sueuit etate3.
+</p>
+
+<p xml:id="g3.7-3.16"/>
+
+<p xml:id="g3.17-4.2" facs="img/vat.lat.3973.pdf#page=21 img/vat.lat.3973.pdf#page=22">
+<lb type="g"/>secunda etas a <rs>noe</rs> usq9 ad <rs>abraa3</rs> generationes iuxta hebraica3 ueritate3 complexa 
+<lb type="g"/>dece3, annos au0 ducentos nonaginta duos. porro iuxta septuaginta int0pretes anni 
+<lb type="g"/>mlxxii. generationes uero xi. hec uero quasi pueritia fuit generationis popl0i <rs>di0</rs>. et 
+<lb type="g"/>ideo in lingua inuenta e0 <rs>hebrea</rs>. a pueritia namq9 homo incipit nosse loqui, que idcirco 
+<lb type="g"/>appellata e0, qd0 fari non potest. ab <rs>ada3</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
+<pb n="30"/>
+<lb type="g"/>ueritatem computant2 anni mille nungenti quadraginta octo, secundu3 septuaginta int0pre<lb break="no" rend="-" type="g"/>tes fiunt anni tria milia trecenti xiiii.
+</p>
+
+
+<p xml:id="g4.3-10" facs="img/vat.lat.3973.pdf#page=22">
+<lb type="g"/>tertia ab <rs>abraham</rs> usq9 ad <rs>dauid</rs>, generationes iuxta utramq9 auctoritate3 xiii annos
+<lb type="g"/>uero, secdm0 <rs>hebreo4</rs> auctoritatem nungentos quadraginta duos complectens; iuxta
+<lb type="g"/>septuaginta uero int0pretes anni tria milia c xxxvii. hec uelud queda3 adolescentia fuit
+<lb type="g"/>popl0i <rs>dei</rs>, a qua etate incipit homo posse generare, ŋpterea <rs>matheus</rs> <rs>euangelista</rs> gene<lb break="no" rend="-" type="g"/>rationum
+ab <rs>abraha3</rs> sumpsit exordiu3, qui etia3 pat0 multaru3 gentiu3 constitutus est,
+<lb type="g"/>quando mutatu3 nom0 accepit. ab <rs>ada3</rs> uero iuxta <rs>hebreo4</rs> auctoritate3 usq9 ad
+<lb type="g"/><rs>dauid</rs> fiunt anni duo milia octingenti nonaginta, secdm0 septuaginta int0pretes tria mi<lb break="no" rend="-" type="g"/>lia 
+cv. cur au0 annorum hec diu2sitas sit, in sequentib9 ostendet2.
+</p>
+
+<p xml:id="g4.11-17" facs="img/vat.lat.3973.pdf#page=22">
+<lb type="g"/>quarta a <rs>dauid</rs> usq9 ad transmigratio0e3 <rs>babilonis</rs> annos habens, iuxta hebraicam ue<lb break="no" rend="-" type="g"/>ritate3,
+cccclxxiii, iuxta uero septuaginta translatione3 xii amplius generationes iuxta
+<lb type="g"/>utrosq9 codices xvii,
+<pb n="31"/>
+quas tamen <rs>euangelista</rs> <rs>mat<choice><abbr>h0</abbr><expan>heu</expan></choice>s</rs> certi misteri¨ gra0 xiiii ponit a
+<lb type="g"/>qua uelud iuuenili etat<choice><abbr>i0</abbr><expan>i</expan></choice> popl0o <rs>dei</rs> regum tempora ceperunt; hec na3q9 in hominib9 etas
+<lb type="g"/>apta gubernando solet existere regno. ab exordio au0 prime etatis, usq9 ad trasmi<lb break="no" rend="-" type="g"/>gratione3
+<rs>babilonis</rs> co0putant2 anni tria milia ccclxxiii secdm0 <rs>hebreoru3</rs> auctorita<lb break="no" rend="-" type="g"/>te3,
+iuxta lxx uero int0pretes anni tria milia quingenti nonaginta.
+</p>
+
+<p xml:id="g4.18-25" facs="img/vat.lat.3973.pdf#page=22 img/vat.lat.3973.pdf#page=23">
+<lb type="g"/>quinta quasi senilis etas a transmigratione <rs>babilonis</rs> usq9 in aduentu3 <rs>dni0</rs> <rs>salua<lb break="no" rend="-" type="g"/>toris</rs>
+in carne. generationib9 et ipsa xiiii. porro annis, secdm0 <rs>hebreo4</rs> auctoritate3,
+<lb type="g"/>quingentis octoginta viiii extenta; iuxta septuaginta au0 annis quingentis septuaginta viii,
+<lb type="g"/>in qua graue senectute fessa malis crebriorib9 plebs hebrea quassat2. talit0 itaq9 ab
+<lb type="g"/>exordio tempo4 usq9 ad incarnatione3 <rs>xpi0</rs> <rs>dni0</rs> secdm0 <rs>hebreo4</rs> auctoritate3
+<lb type="g"/>ŋsequente beato <rs>ieronimo</rs> fiunt anni tria milia dcccclii. uerum iuxta septuaginta in<lb break="no" rend="-" type="g"/>t0pretes,
+quos <choice><abbr>oi0</abbr><expan>omni</expan></choice>no <rs>greci</rs> secunt2, numerant2 anni vdviii. <rs>eusebius</rs> au0, que3 <rs>oro<lb break="no" rend="-" type="g"/>sius</rs>
+secutus e0, int0 utrosq9 numerat annos vcxcviiii quibus pene oms0
+<pb n="32"/>
+latini utuntur.
+</p>
+
+<p xml:id="g4.26-5.2" facs="img/vat.lat.3973.pdf#page=23">
+<lb type="g"/>sexta etas, que nunc agit2, nulla generationum, uel teporu3<!--missing middle m--> serie certa, sed ut etas
+<lb type="g"/>decrepita, ipsa totius secl0i morte co0sum0da: has erumpnosas, plenasq9 laborib9 mundi
+<lb type="g"/>etates, quiq9 beati felici morte uicerunt septima3 ia3 sabbati þhennis etate3 suscepti,
+<lb type="g"/>octaua3 beate resurrectionis etate3, in qua semper cum <rs>dno0</rs> regnent, expectant.
+</p>
+
+
+<p xml:id="g5.3-5.10" facs="img/vat.lat.3973.pdf#page=23"> 
+    <lb type="g"/>etas quippe duob9 modis dicitur: aut eni0 hominis, si<choice><abbr>c0</abbr><expan>cu</expan></choice>t a natiuitate infantia usq9 in 
+<lb type="g"/>annos septe3, pueritia usq9 ad annos quattuordeci3, adolescentia a quinto decimo usq9 in 
+<lb type="g"/>uicesimu3 octauu3, iuuentus usq9 ad xlviiii, senectus a quinquagesimo usq9 ad lxxviiii, 
+<lb type="g"/>decrepita ab anno octogesimo quousq9 uita finit2. <rs>aut</rs> mundi, cuius prima etas ab <rs>ada3</rs> 
+<lb type="g"/>usq9 ad <rs>noe</rs>, secda0 a <rs>noe</rs> usq9 ad <rs>abraha3</rs>, tertia ab <rs>abraha3</rs> usq9 ad <rs>dauid</rs>, quarta 
+<lb type="g"/>a <rs>dauid</rs> usq9 ad captiuitate3 <rs>iudeo4</rs> in <rs>babilonia3</rs>, quinta deinde usq9 ad aduentu3 
+<lb type="g"/><rs>saluatoris</rs>, sexta, que nunc e0 usq9 quo mundus iste finiat2, quaru3 decursus þ gene<lb break="no" rend="-" type="g"/>rationes, 
+et regna euidentius infra, ŋut inuenire potui, explicabo. 
+</p> 
+
+
+<p xml:id="g5.11-5.18" facs="img/vat.lat.3973.pdf#page=23"> 
+<pb n="33"/>
+<lb type="g"/>creator omi0u3 uisibiliu3 et inuisibiliu3, ¢ trinus et unus <rs>ds0</rs> e0, in principio creauit 
+<lb type="g"/>celum et t0ra3, mare, et omi0a, que in eis sunt, tempora quoq9 instituit, na3 prima die in 
+<lb type="g"/>lucis nomine condidit angelos, secunda die in 
+<lb type="g"/>discretionis uocabulo specie3 aqua4, quarta luminaria celi, uidelicet sole3, et luna3, et 
+<lb type="g"/>stellas, que tempo4 sunt ordinationes, quinta animantia ex aquis, sexta animantia ex terra, 
+<lb type="g"/>et homine3, que3 appellauit <rs>ada3</rs>, et posuit in paradiso, cuius de latere dormientis costa3 
+<lb type="g"/>tollens, muliere3 edificauit, ut eł adiutorio genus ŋpagaret humanu3, septima au0 die 
+<lb type="g"/>requieuit <rs>ds0</rs> ab omi0 opere prime ac noue conditionis; hoc au0 secdm0 lictera3. 
+</p> 
+
+<p xml:id="g5.19-5.19" facs="img/vat.lat.3973.pdf#page=23"> 
+<lb type="g"/>incipit prima etas. 
+</p> 
+
+<p xml:id="g5.20-5.25" facs="img/vat.lat.3973.pdf#page=23 img/vat.lat.3973.pdf#page=24"> 
+<lb type="g"/>primo igit2 anno, postqua3 de paradiso <rs>ada3</rs> ligni uetiti culpa ŋiectus e0, cognouit 
+<lb type="g"/>uxorem sua3 genuitq9 <rs>ca<choice><abbr>y0</abbr><expan>yn</expan></choice></rs>, deinde <rs>abel</rs>, quo4 unus, uidelicet <rs>abel</rs>, iustus simplex ac 
+<lb type="g"/>innocen© fuit et <rs>do0</rs> placens, ideoq9 iustus. <rs>cain</rs> uero suþbus, inuidus, ac nocens, et 
+<lb type="g"/><rs>do0</rs> displicens, ideoq9 iniustus, qui sola <choice><abbr>i0</abbr><expan>in</expan></choice>uidia fre0m occidit. unde et fri0cide <rs>ds0</rs> 
+<lb type="g"/>iratus, maledictione3 intulit, 
+<pb n="34"/>
+eiusq9 ŋgenie3 execratus e0, atq9 ex eo filii hominu3 
+<lb type="g"/>dicti sunt. 
+</p> 
+
+<p xml:id="g5.26-5.32" facs="img/vat.lat.3973.pdf#page=24"> 
+<lb type="g"/><rs>adam</rs> uero cu3 cxxx esset anno4, genuit filiu3, nomine <rs>seth</rs>. hic fuit uir bonus, 
+<lb type="g"/>et iustus, de cuius ŋsapia homines exorti, filii <rs>di0</rs> dicti sunt. suþuixit au0 <rs>ada3</rs>, 
+<lb type="g"/>postqua3 genuit <rs>seth</rs>, annis dccc secdm0 hebraicam ueritatem, usq9 ad quinquagesimu3 
+<lb type="g"/>sextu3 annum natiuitatis <rs>lamech</rs>. veru3 septuaginta int0pretes ante natu3 <rs>seth</rs> po<lb break="no" rend="-" type="g"/>suere 
+annos cccxxx, postea dcc. <rs>seth</rs> int0pretatur resurrectio, significans resurrectionem 
+<lb type="g"/><rs>xpi0</rs> a mortuis, cuius morte3 illata3 a <rs>iudeis</rs> significat <rs>abel</rs>, qui dicit2 iustus, a fre0 
+<lb type="g"/><rs>cain</rs> occisus, secdm0 septuaginta, <choice><abbr>anu0</abbr><expan>annum</expan></choice> cccxxxv,  secdm0 <rs>he<choice><abbr>br0</abbr><expan>breos</expan></choice></rs> ccxxxv. 
+</p>
+
+<!--original end of scanned text-->
+
+<p xml:id="g6.1-6.6" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/><rs>seth</rs> habens annos cv genuit <rs>enos</rs>, cui suþuixit annos dcccxvi usq9 ad clxvii 
+<lb type="g"/>annu3 nativitatis<!--garufi mistakingly has natiuitates--> <rs>lamech</rs>, porro septuaginta int0pretes ante natu3 <rs>enos</rs> annos ccv postea 
+<lb type="g"/>posuere annos dccvii. <rs>enos</rs> int0pretat2 homo, de quo <add place="above"><rs>deus</rs></add> benedi<add place="above">ci</add>t2, iste cepit 
+<lb type="g"/>inuocare nomen <rs>domini</rs>, quia hominu3 e0 ŋpriu3, ut sue fragilitatis memores, inuocent 
+<lb type="g"/>conditoris auxiliu3, eo4 dumtaxat, qui in fide <rs>christi</rs> uiuentes, filii resurrectionis sic 
+<lb type="g"/>esse letant2, secdm0 septuaginta, annu3 dcxxv, <rs>hebrei</rs> cccxxv. 
+</p> 
+
+
+<p xml:id="g6.7-6.10" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/><rs>enos</rs> habens annos xc genuit <rs>cainan</rs>, cui superuixit annos dcccxv secdm0 hebreos, 
+<lb type="g"/>idest usq9 ad lxxxiv annu3 nativitatis <rs>noe</rs>, sed septuaginta int0pretes ante natu3 
+<lb type="g"/>cainan cxc annos, postea dccxv posuere, secdm0 lxx annu3 dccxxv iuxta <rs>hebreos</rs> 
+<lb type="g"/>cccxcv. 
+</p> 
+
+
+<p xml:id="g6.11-6.13" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/><rs>cainan</rs> habens annos lxx genuit <rs>malahelel</rs>, post cuius ortu3 uixit annos dcccxl idest 
+<lb type="g"/>usq9 ad clxxix annu3 nativitatis <rs>noe</rs>; septuaginta int0pretes ante natu3 <rs>malalehel</rs> 
+<lb type="g"/>clxx postea dixere dccxl, secdm0 septuaginta annu3 dccccxcv iuxta <rs>hebreos</rs> cccclx. 
+</p> 
+
+
+<p xml:id="g6.14-1.16" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/><rs>malalehel</rs> anno4 lxv genuit <rs>jareth</rs>, cui superuixit annos dcccxxx usq9 ad ccxxxiv 
+<lb type="g"/>annu3 nativitatis <rs>noe</rs>; septuaginta uero ante natu3 <rs>jareth</rs> clxv postea posuere dccxxx. 
+<lb type="g"/>septuaginta annos mcxxii, <rs>hebreos</rs> dcxxii. 
+</p> 
+
+
+<p xml:id="g6.17-6.25" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/><rs>jareth</rs> anno4 clxii genuit <rs>enoch</rs>, cui superuixit annis dccc usq9 ad ccclxvi annu3 
+<lb type="g"/>natiuitatis <rs>noe</rs>. in hac generatione nusqua3 codices discrepant. hunc <rs>enoch</rs> nonnulla 
+<lb type="g"/>diuina scripsisse <rs>juda</rs> apostolo attestante comperimus. sed ut beatus <rs>augustinus</rs> dicit: 
+<lb type="g"/>non frustra non sunt in eo canones scriptura4, qui seruabant2 in templo hebrei populi 
+<lb type="g"/>succedentiu3 diligentia sacerdotu3, nisi quia ob antiquitate3 suspecte fidei iudicata sunt, 
+<lb type="g"/>nec ue4 esse, que ille scripsisse poterat inuenire, unde illa, que sub eius nomine ŋ<lb break="no" rend="-" type="g"/>ferunt, 
+et continent illas de gigantib9 fabulas, qd0 non habuerint homines patres, recte 
+<lb type="g"/>a prudentib9 iudicant2 non ipsius esse credenda. septuaginta mdcclxxxvii, hebrei 
+<lb type="g"/>dclxxxvii. 
+</p> 
+
+
+<p xml:id="g6.26-6.34" decls="#ocr" facs="img/vat.lat.3973.pdf#page=21"> 
+<lb type="g"/><rs>enoch</rs> annos lxv genuit <rs>mathusala3</rs> post eius ortu3 ambulauit cu3 <rs>deo</rs> ccc annis, 
+<lb type="g"/>idest usq9 ad cxiii annu3 natiuitatis <rs>lamech</rs> secdm0 <rs>hebreos</rs>. septuaginta int0pre<lb break="no" rend="-" type="g"/>tes 
+ante natu3 <rs>mathusala3</rs> posuere clxv annos, postea cc. iste quide3 non apparuit 
+<lb type="g"/>mortalib9, quia tulit illu3 <rs>deus</rs> ab eis. bene au0 in septima generatione <rs>enoch</rs>, qui 
+<lb type="g"/>int0pretat2 dedicatio, tulit a mortalib9 <rs>deus</rs>, quia ciuitas electo4 in sex huius se<lb break="no" rend="-" type="g"/>culi 
+pro <rs>deo</rs> laborans etatib9, in septima sabbatii futuri gloria3 dedicationis expectat, 
+<lb type="g"/>atq9 reprobi sola presenti sunt felicitate contenti. <rs>cain</rs> uero ciuitate3, qua3 statuit 
+<lb type="g"/>non in septima generatione, sed in primogenito <rs>enoch</rs> filio consecrata. septuaginta 
+<lb type="g"/>mcccliv, <rs>hebrei</rs> dccclxxiv. 
+</p> 
+
+</body>
+  </text>
+</TEI>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, codex C</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Paris, Bibliothèque Nationale, Latinus 4933</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="ag" default="true">
+            <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="a">
+            <p>Paragraph encoded at the Alphabetic layer only.</p>
+            <!-- When a paragraph is encoded at the AL only: p decls="#a" -->
+        </editorialDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+<p xml:id="g3.2-3.6">
+<pb n="1r"/>
+<cb n="1r.a"/>
+prima <choice><abbr>m0</abbr><expan>mun</expan></choice>di etas est ab <rs>adam</rs> usque ad diluuium, continens annos, iuxta hebraicam ueritate0 mille sexcentos quinquaginta sex, iuxta septuaginta uø interpretes
+duo milia ducentos quadraginta duos; generationes uero iuxta utra0q9
+edicionem numero decem, que uniuersali est deleta diluuio, sicut prima0 
+cuiusque hominis obliuio demergere consueuit etatem.
+</p>
+
+<p xml:id="g3.7-3.16">
+secunda etas a <rs>noe</rs> usq9 ad <rs>abraham</rs>.
+fuerunt <rs>noe</rs> filii tres, ex q¹b9 ita s<choice><abbr>u0</abbr><expan>un</expan></choice>t orte
+<cb n="1r.b"/>
+gentes. de <rs>iafeth</rs> xu, de <rs>cham</rs>
+xxx, de <rs>sem</rs> xxuii. <rs>sem</rs> an<choice><abbr>n0</abbr><expan>nos</expan></choice> <choice><abbr>iiø</abbr><expan>ii</expan> </choice> post diluuium genuit <rs>arphaxath</rs>, a quo st0 <rs>chaldei</rs>. 
+<rs>arphaxath</rs> genuit <rs>salam</rs>, a quo <rs>samarite</rs>. <rs>salam</rs> genuit <rs>eber</rs>, a quo <rs>hebrei</rs>. <rs>heber</rs> 
+genuit <rs>salech</rs>, cuius <choice><abbr>tþ0</abbr><expan>tempo</expan></choice>re turris hedificatur et linguarum diuisio fit. in solo <rs>heber</rs> prisca 
+remansit l<choice><abbr>i0</abbr><expan>in</expan></choice>gua quia in ea conspiratione non fuit. turris uero altitudo <choice><abbr>ii0</abbr><expan>duo milia</expan></choice> clxxiiii 
+dicitur passus. hanc <rs>nebroth</rs> gig<choice><abbr>a0</abbr><expan>an</expan></choice>s construxit. hac etate <rs>scitharum</rs> regnum oritur, ubi 
+<choice><abbr>p¹</abbr><expan>pri</expan></choice>us regnauit <rs>thannus</rs>. tunc regnum <rs>egiptiorum</rs> ubi prius regnauit <rs>thoes</rs>. deinde 
+regnu0 <rs>assirio4</rs>, ubi prius regnauit <rs>belus</rs>, que0 dic<choice><abbr>u0</abbr><expan>un</expan></choice>t <rs>saturnu0</rs> quida0; deinde <rs>ninus</rs>
+qui condidit <rs>niniue0</rs>. hoc tempore <rs>abraam</rs> nascitur, ŋ post mortem <rs>nini</rs> a <rs>ssemiramide</rs>
+regina rehedificatur<note type="h2">Deleted "h"</note> <rs>babilonia</rs>, ubi regna<choice><abbr>u0</abbr><expan>uit</expan></choice> a<choice><abbr>n0</abbr><expan>nnos</expan></choice> xl. 
+</p>
+
+<p xml:id="g3.17-4.2">
+generationes iuxta hebraica0 ueritatem complexa decem, annos autem ducentos nonaginta duos. porro iuxta septua<pb n="1v"/><cb n="1v.a"/>ginta interpretes anni m septuaginta duos
+generationes uero undecim. hec uero quasi pueritia fuit generacionis populi <rs>dei</rs>. ŋ
+ideo in lingua inuenta est <rs>hebrea</rs>. a puericia namq9 homo incipit nosse loqui, que idcirco 
+appellata est, quod fari non potest. ab <rs>ada0</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
+ueritatem conputantur anni mille nongenti quadraginta octo, secundum septuaginta int5pretes fiunt tria milia trecenti qªttuordecim.
+</p>
+
+<p xml:id="g4.3-4.10"/>
+<p xml:id="g4.11-4.17"/>
+<p xml:id="g4.18-4.25"/>
+<p xml:id="g4.26-5.2"/>
+<p xml:id="g5.3-5.10"/>
+<p xml:id="g5.11-5.18"/>
+<p xml:id="g5.19-5.19"/>
+<p xml:id="g5.20-5.25"/>
+<p xml:id="g5.26-5.32"/>
+<p xml:id="g6.1-6.6"/> 
+<p xml:id="g6.7-6.10"/> 
+<p xml:id="g6.11-6.13"/> 
+<p xml:id="g6.14-1.16"/> 
+<p xml:id="g6.17-6.25"/> 
+<p xml:id="g6.26-6.34"/> 
+
+<p xml:id="g7.1-7.7"/>
+<p xml:id="g7.8-7.12"/>
+<p xml:id="g7.13-7.27"/>
+<p xml:id="g7.28-7.28"/>
+<p xml:id="g7.29-7.29"/>
+<p xml:id="g7.30-8.6"/>
+<p xml:id="g8.7-8.11"/>
+<p xml:id="g8.12-8.23"/>
+<p xml:id="g8.24-8.27"/>
+<p xml:id="g8.28-9.11"/>
+<p xml:id="g9.12-9.14"/>
+<p xml:id="g9.15-9.17"/>
+<p xml:id="g9.18-9.21"/>
+<p xml:id="g9.22-9.24"/>
+<p xml:id="g9.25-9.25"/>
+<p xml:id="g9.26-9.31"/>
+<p xml:id="g10.1-10.5"/>
+<p xml:id="g10.6-10.6"/>
+<p xml:id="g10.7-10.12"/>
+<p xml:id="g10.13-10.18"/>
+<p xml:id="g10.19-10.20"/>
+<p xml:id="g10.21-10.24"/>
+<p xml:id="g10.25-10.27"/>
+<p xml:id="g10.28-10.28"/>
+<p xml:id="g10.29-11.4"/>
+<p xml:id="g11.5-11.6"/>
+<p xml:id="g11.7-11.9"/>
+<p xml:id="g11.10-11.26"/>
+<p xml:id="g11.27-12.4"/>
+<p xml:id="g12.5-12.11"/>
+<p xml:id="g12.12-12.12"/>
+<p xml:id="g12.13-12.26"/>
+<p xml:id="g12.27-13.14"/>
+<p xml:id="g13.15-13.18"/>
+<p xml:id="g13.19-13.22"/>
+<p xml:id="g13.23-13.26"/>
+<p xml:id="g13.27-13.32"/>
+<p xml:id="g13.33-14.3"/>
+<p xml:id="g14.4-14.7"/>
+<p xml:id="g14.8-14.10"/>
+<p xml:id="g14.11-14.14"/>
+<p xml:id="g14.15-14.16"/>
+<p xml:id="g14.17-14.21"/>
+<p xml:id="g14.22-14.25"/>
+<p xml:id="g14.26-14.28"/>
+<p xml:id="g14.29-15.4"/>
+<p xml:id="g15.5-15.5"/>
+<p xml:id="g15.6-15.8"/>
+<p xml:id="g15.9-15.12"/>
+<p xml:id="g15.13-15.19"/>
+<p xml:id="g15.20-15.21"/>
+<p xml:id="g15.22-15.23"/>
+<p xml:id="g15.24-15.26"/>
+<p xml:id="g15.27-15.27"/>
+<p xml:id="g15.28-15.31"/>
+<p xml:id="g16.1-16.5"/>
+<p xml:id="g16.6-16.12"/>
+<p xml:id="g16.13-16.20"/>
+<p xml:id="g16.21-16.23"/>
+<p xml:id="g16.24-16.29"/>
+<p xml:id="g16.30-17.5"/>
+<p xml:id="g17.6-17.13"/>
+<p xml:id="g17.14-17.17"/>
+<p xml:id="g17.18-17.22"/>
+<p xml:id="g17.23-17.30"/>
+<p xml:id="g17.31-17.34"/>
+</body>
+  </text>
+</TEI>

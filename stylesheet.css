@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "Cardo";
+	src:
+	url("fonts/cardo104/Cardo104s.woff") format("woff"),
+	url("fonts/cardo104/Cardob101.woff") format("woff"),
+	url("fonts/cardo104/Cardoi99.woff")  format("woff");
+}
+
+p {
+	font-family: Cardo;
+	}
+
+.pb, .cb, .garufi, .note{
+	color: grey;
+	font-size: 0.8em;
+}
+
+.note:before { content: " {" }
+
+.note:after { content: "}" }
+
+/* The next 3 lines are limited to the AL because I don't want quote marks to appear in the GL visualization */
+td.acell span.title:before { content: "“" }
+td.acell span.title:after { content: "”" }
+td.acell span.title {
+        text-transform: capitalize;
+}
+
+span.reg {
+	display: none;
+    }
+
+
+  /*******************/
+ /* ALIGNMENT TABLE */
+/*******************/
+
+#syntab {
+	margin: 1em 1em 1em 1em;
+}
+
+#syntab td {
+	padding: 1em 1em 1em 1em;
+	vertical-align: top;
+}
+
+.gcell {
+	background-color: lightgrey;
+}
+
+/*
+.msb {
+	display: none;
+}
+
+.msc {
+	display: none;
+}
+*/

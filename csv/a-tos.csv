@@ -1,0 +1,38 @@
+Grapheme	Alphabeme(s)	Grapheme visualization	Type	Notes	Image(s)
+a	a	a	Alphabetic		
+b	b	b	Alphabetic		
+c	c	c	Alphabetic		
+d	d	d	Alphabetic		
+e	e	e	Alphabetic		
+æ	ae	ę	Alphabetic	"This is an ""e caudatum"": an ""e"" grapheme with a tail on the bottom left or left side, used to represent an alphabeme ""e"" in lieu of which in classical and modern Latin orthography we would have the diphthong ""ae"". An allograph looks like a ""e"" with a dot below."	
+f	f	f	Alphabetic		
+g	g	g	Alphabetic		
+h	h	h	Alphabetic		
+i	i	i	Alphabetic		
+k	k	k	Alphabetic	Unchecked	
+l	l	l	Alphabetic		
+m	m	m	Alphabetic		
+n	n	n	Alphabetic		
+o	o	o	Alphabetic		
+p	p	p	Alphabetic		
+q	q	q	Alphabetic		
+r	r	r	Alphabetic		
+s	s	s	Alphabetic		
+t	t	t	Alphabetic		
+u	u	u	Alphabetic		
+x	x	x	Alphabetic		
+y	y	y	Alphabetic		
+z	z	z	Alphabetic		
+ŋ	pro	ꝓ	Brevigraph	"""p"" written with a tail originating from the round trait of the """"p"""" on the bottom left side"	
+þ	per	ꝑ	Brevigraph	"""p"" with a horizontal stroke crossing the descending trait"	
+4	rum	ꝝ	Brevigraph	"It means a final ""rum"" for plural genitives. Best option for visualization: ꝝ U+A75D, but it is not visualized correctly on my own system. Other options for visualization: Ꝛ U+A75A"	
+¢	qui	ꝗ	Brevigraph	"""q"" with a horizontal stroke crossing the descending trait"	
+ł	ius	ɟ	Brevigraph	"""j"" with a horizontal stroke crossing the descending trait. Visualization: Unicode U+025F"	
+0		̄	Abbreviation mark	"Macron/tilde over one or more graphemes (""e-"" in independent word means ""est"": then I use corr/abbr/expan)"	
+2		ᷣ	Abbreviation mark	"Written over another grapheme, mostly for a missing ""r"", resembling a ""2"" (or better an ""r rotunda"").  Alternatives for visualization are  ᷣ (U+1DE3) or  ᷦ (U+1DE6; which is worse) or  ̉ (U+0309, the simplest one, but its shape might be a little too simplified)"	
+3		꣣	Abbreviation mark	"Written over another grapheme, mostly for a missing ""m"" (or ""n""). Alternatives for visualization are ³ (U+00B3, but it is not combining), ꣣ (U+A8E3) or  ̂ (U+0302, which however is too simple)"	
+7		̚	Abbreviation mark	7-shaped, written above the base grapheme. Worse alternative for visualization:   (U+F1C7, which also is in the private use area)	
+9		;	Abbreviation mark	"It looks like a modern semicolon (;), written on the right of a final letter (mostly ""q;"" for ""que"" and ""b;"" for ""bus""). There is a Unicode character  U+F1AC (LATIN ABBREVIATION SIGN SEMICOLON), but it is not correctly visualized on my system (it is in the private use area). Also, I’m using this only for visualization"	
+8		¨	Abbreviation mark	It looks like a double acute accent	
+ß	s	ᷥ	Abbreviation mark	It looks like a superscript long “s” (just smaller, like a superscript “c”, U+0368) acute accent. Used at the end of the word, it means “s”. Visualization: Unicode U+1DE5 or U+0368	
+v	v	v	Numeric	"Never used for the alphabetic letter ""v"", which is not part of the alphabetic system of the scribe. It is only used for number five. It could be considered an allograph of grapheme ""u""."	

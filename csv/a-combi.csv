@@ -1,0 +1,34 @@
+Graphemes	Alphabemes	Notes
+b9	bus	Normally at the end of the word (in dative or ablative plurals)
+q9	que	
+c0	con	"In other cases, initial ""con"" is abbreviated with “co” plus macron"
+l0	ul	
+m0	men	
+t0	ter	
+t2	tur	Normally at the end of the word (in verb endings)
+u2	uer	"Normally found when when ""r"" is followed by another consonant"
+cdm0	cundum	Normally in word secundum
+cda0	cunda	Normally in word secundum
+omi0	omni	As in omnia, omnium etc.
+fre0	fratre	
+fri0	fratri	
+pl0	pul	As in populi, populo etc.
+p0	pre	
+[aeiouy]3	[aeiouy]m	A vowel + 3 = that vowel + m
+[aeiouy]0	[aeiouy]m	A vowel + 0 = that vowel + m
+[aeiouyn]ß	[aeiouyn]s	"A vowel or an ""n"" + ß = that grapheme + s"
+<qd0>	quod	qd0, but only if it’s a whole word
+<au0>	autem	"au0, but only if it’s a whole word. This does not interfere with the ""V0"" pattern because whole-word abbreviation combinations are processed before other combinations"
+<e0>	est	"e0, but only if it’s a whole word. This does not interfere with the ""V0"" pattern because whole-word abbreviation combinations are processed before other combinations"
+<ds0>	deus	
+<di0>	dei	"d0-, but only if it’s a whole word. This does not interfere with the ""V0"" pattern because whole-word abbreviation combinations are processed before other combinations"
+<do0>	deo	
+<gra0>	gratia	
+<dni0>	domini	
+<dno0>	domino	
+<xpi0>	christi	
+<oms0>	omnes	Also see the omn0 abbreviation above
+<an0>	ante	
+<ann7>	annum	
+<sept0>	septuaginta	
+<n0>	non	
