@@ -81,7 +81,7 @@ def listNames (properNamesInputXmlFile, myNamespace):
     print('\n---\n')
 
 def sorted_nicely( l ): 
-    """ Sort the given iterable in the way that humans expect.""" 
+    ''' Sort the given iterable in the way that humans expect.''' 
     convert = lambda text: int(text) if text.isdigit() else text 
     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
     return sorted(l, key = alphanum_key)
@@ -173,52 +173,58 @@ class ocr:
     def lowercasize (self):
         ''' First, transform "est. Adam" to "est. <rs>Adam</rs>" (based on a list of all
             proper names already marked with <rs> in g.xml).
-            Then transform uppercase initials to lowercase after punctuation such as full stop.
-            E.g.: "est. Ergo..." becomes  "est. ergo...".
+            Then mark capitalized names with <seg type="cg"> (cg = capitalized in Garufi)
+            and lowercase the initial letter
+            after punctuation such as full stop. E.g.: "est. Ergo..." becomes  "est. <seg type="cg">ergo</seg>".
             Chances are that some cases such as "est. Adam"
             are left unmarked and turned to lowercase ("est. adam"), because "Adam" is not recognized
             as a proper name (because it had not been marked with <rs> previously in the g.xml file).
-            The block "if after_tag_search" does the same, but with case "<blabla>Adam...".
+            The block "if after_tag_search" does the same, but with case "<blablabla>Adam...".
             '''
         names = properNames('../xml/g.xml') # Create list of proper names previously marked 
-        punct_pattern = re.compile('([' + punctuation + '] )([A-Z]\w*\W)')
-        after_tag_pattern = re.compile('(>)([A-Z]\w*\W)')
+        after_tag_pattern = re.compile('(>)([A-Z]\w*\W)')                   # E.g.: "<blablabla>Adam"
+        punct_pattern = re.compile('([' + punctuation + '] )([A-Z]\w*\W)')  # E.g.: "est. Adam"
 
         for l in self.lines:
             i = self.lines.index(l)
-            punct_search =  punct_pattern.search(l)
-            after_tag_search = after_tag_pattern.search(l)
+            after_tag_search = after_tag_pattern.search(l)  # E.g.: "<blablabla>Adam"
+            punct_search =  punct_pattern.search(l)         # E.g.: "est. Adam"
 
-            if after_tag_search:
+            if after_tag_search:    # E.g.: "<blablabla>Adam"
                 tword = after_tag_search.group(2)[:-1]
                 if tword.lower() in names: # If the word after tag is recognized as a proper name
                     l = re.sub(tword, '<rs>' + tword.lower() + '</rs>', l) #... mark it with <rs>
-                else:   # Transform "<blabla>Ergo" to "<blabla>ergo"
+                elif False:   # Transform "<blablabla>Adam" to "<blablabla>Adam" -- This is how I did this before
                     callback = lambda pat: pat.group(1) + pat.group(2).lower()
                     l = re.sub('(>)([A-Z])', callback, l)
+                else    #... mark the word with <seg type="cg"> (ug = capitalized in Garufi)
+                    l = re.sub(tword, '<seg type="cg">' + tword.lower() + '</seg>', l)
 
-            if punct_search:
+            if punct_search:        # E.g.: "est. Adam"
                 pword = punct_search.group(2)[:-1]
                 if pword.lower() in names: # If the word after punctuation is recognized as a proper name
                     l = re.sub(pword, '<rs>' + pword.lower() + '</rs>', l) #... mark it with <rs>
-                else:   # Transform "est. Ergo" to "est. ergo"
+                elif False:   # Transform "est. Ergo" to "est. ergo"
                     callback = lambda pat: pat.group(1) + pat.group(2).lower()
                     l = re.sub('([' + punctuation + '] )([A-Z])', callback, l)
+                else:   #... mark the word with <seg type="cg"> (ug = capitalized in Garufi)
+                    l = re.sub(pword, '<seg type="cg">' + pword.lower() + '</seg>', l) #... mark it with <seg type="cg">
 
             self.lines[i] = l
 
 
     def garufize (self):
-        ''' Remove syllabation dashes at the end of lines. Replace each dash with &lb;
-            (corresponding to <lb break="no" rend="-" type="g"/>).  Reunite words separated
-            by those dashes in the first line. 
-            Wrap everything inside a temporary <div> element.
-            Insert <p>s; transform Garufi's pages and lines (e.g.: 3.7-3.16)
-            to @xml:id="g3.7-3.16"; append other attributes (@decs) to <p>;
-            put &lbs; (corresponding to <lb type="g"/>) at the beginning of each line except for
-            1) lines with Garufi's pages and lines (like 3.7-3.16)
-            2) lines whose previous line already has a <lb break="no" rend="-" type=) g"/> inside.
-            For lines in case 2, function manage_dashes() had inserted a comment <!--nolb--> at
+        ''' 1. Remove syllabation dashes at the end of lines.
+            2. Replace each dash with &lb; (corresponding to <lb break="no" rend="-" type="g"/>).
+            3. Reunite words separated by those dashes in the first line. 
+            4. Wrap everything inside a temporary <div> element.
+            5. Insert <p>s.
+            6. Transform Garufi's pages and lines (e.g.: 3.7-3.16) to @xml:id="g3.7-3.16".
+            7. Append other attributes (@decs) to <p>.
+            8. Put &lbs; (corresponding to <lb type="g"/>) at the beginning of each line except for
+                a) lines with Garufi's pages and lines (like 3.7-3.16)
+                b) lines whose previous line already has a <lb break="no" rend="-" type=) g"/> inside.
+            9. For lines in case 2, function manage_dashes() had inserted a comment <!--nolb--> at
             the their beginning.
             '''
 
@@ -273,8 +279,8 @@ class ocr:
             for t in words:
                 wi = words.index(t)
                 if re.match('[A-Z][a-z]', t[0:2]):  # 1st char is uppercase, 2nd is lowercase
-                    # Note that the following 'if' case is not necessary if I use &lb;
-                    # instead of <lb break="no" rend="-" type="g"/>
+                    # Note that the following 'if' case is not necessary if I use &lb; instead
+                    # of <lb break="no" rend="-" type="g"/>, but it doesn't hurt either, so I'm leaving it
                     if '<lb' in t:  # If the proper name has <lb> inside, like: Ni<lb break="no" rend="-" type="g"/>nus
                         t = ''.join(['<rs>', t])    # Append <rs> before: <rs>Ni<lb break="no" rend="-" type="g"/>nus</rs>
                         words[wi + 3] = ''.join([   # words[wi + 3] is a token like: type="g"/>nus
