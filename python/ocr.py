@@ -416,9 +416,9 @@ o = ocr('../xml/input.txt')
 o.garufize()
 o.lowercasize()
 o.wrap_proper_names()
-o.export_to_txt('../xml/temp_g.xml')
+#o.export_to_txt('../xml/temp_g.xml')
 
-#spread_ids('g', ['a', 'b', 'c'])
+spread_ids('g', ['a', 'b', 'c'])
     
 #proofread = ocr('../xml/temp_g.xml')
 #proofread.a_abbrev('a')
