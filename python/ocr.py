@@ -1,7 +1,7 @@
 #!/usr/bin/python3.6
 # -*- coding: utf-8 -*-
 
-bom = False     # Set to True if you want to get rid of the initial BOM
+bom = True     # Set to True if you want to get rid of the initial BOM
 
 ''' 
 
@@ -15,10 +15,11 @@ bom = False     # Set to True if you want to get rid of the initial BOM
     3. Comment/uncomment the last lines of this script;
     4. Run this script in the 'python' folder, where it is;
     5. The output will be appended to files g_temp.xml, a.xml or g.xml in the 'xml' folder.
-    6. Check with vim   /\v[A-Z][a-z]   and   /\v[.!?-]   to see if <rs>'s are OK
-    7. Un-capitalize everything
-    8. Substitute j → i in a.xml
-    9. Eventually check empty <p>s appended (with the same xml:id's) to b.xml and c.xml
+    6. Check if <rs>'s and <hi>'s and all remaining uppercase chars are OK (vim /\v[A-Z][a-z]  and   /\v[.!?-]   etc.)
+    7. You *can* add <seg type="num">
+    8. Un-capitalize everything
+    9. Substitute j → i in a.xml
+    10. Eventually check empty <p>s appended (with the same xml:id's) to b.xml and c.xml
 
 The input.txt file must look like this
 
@@ -135,9 +136,6 @@ def spread_ids (get_p_ids_from, append_p_ids_to):
         It creates backup files in the same 'xml' directory as the
         original XML files.
         '''
-    #get_p_ids_from = 'g'
-    #append_p_ids_to = ['a', 'b', 'c']
-    
     input_tree = etree.parse('../xml/%s.xml' % get_p_ids_from)
     input_body = input_tree.find('.//t:body', constants.ns)
     pp = input_body.findall('.//t:p', constants.ns)
@@ -173,16 +171,16 @@ class ocr:
     def lowercasize (self):
         ''' First, transform "est. Adam" to "est. <rs>Adam</rs>" (based on a list of all
             proper names already marked with <rs> in g.xml).
-            Then mark capitalized names with <seg type="cg"> (cg = capitalized in Garufi)
-            and lowercase the initial letter
-            after punctuation such as full stop. E.g.: "est. Ergo..." becomes  "est. <seg type="cg">ergo</seg>".
+            Then mark the rest of the capitalized names with <hi> and transform their initial letter to
+            lowercase after punctuation such as full stop. E.g.: "est. Ergo..." becomes  "est. <hi>ergo</hi>".
             Chances are that some cases such as "est. Adam"
-            are left unmarked and turned to lowercase ("est. adam"), because "Adam" is not recognized
+            are wrongly transformed to "est. <hi>adam</hi>), if "Adam" is not recognized
             as a proper name (because it had not been marked with <rs> previously in the g.xml file).
-            The block "if after_tag_search" does the same, but with case "<blablabla>Adam...".
+            The block "if after_tag_search" does the same, but with case "<blablabla>Adam..." or "&lbs;Adam"
+
             '''
         names = properNames('../xml/g.xml') # Create list of proper names previously marked 
-        after_tag_pattern = re.compile('(>)([A-Z]\w*\W)')                   # E.g.: "<blablabla>Adam"
+        after_tag_pattern = re.compile('([;>])([A-Z]\w*\W)')                   # E.g.: "<blablabla>Adam" or "&lbs;Adam"
         punct_pattern = re.compile('([' + punctuation + '] )([A-Z]\w*\W)')  # E.g.: "est. Adam"
 
         for l in self.lines:
@@ -192,23 +190,23 @@ class ocr:
 
             if after_tag_search:    # E.g.: "<blablabla>Adam"
                 tword = after_tag_search.group(2)[:-1]
-                if tword.lower() in names: # If the word after tag is recognized as a proper name
+                if tword.lower() in names: # If the word after the entity is recognized as a proper name
                     l = re.sub(tword, '<rs>' + tword.lower() + '</rs>', l) #... mark it with <rs>
-                elif False:   # Transform "<blablabla>Adam" to "<blablabla>Adam" -- This is how I did this before
+                elif False:   # Transform "<blablabla>Adam" to "<blablabla>Adam" -- This is how I used to do this before
                     callback = lambda pat: pat.group(1) + pat.group(2).lower()
                     l = re.sub('(>)([A-Z])', callback, l)
-                else    #... mark the word with <seg type="cg"> (ug = capitalized in Garufi)
-                    l = re.sub(tword, '<seg type="cg">' + tword.lower() + '</seg>', l)
+                else:    #... mark the word with <hi>
+                    l = re.sub(tword, '<hi>' + tword.lower() + '</hi>', l)  #... mark it with <hi>
 
             if punct_search:        # E.g.: "est. Adam"
                 pword = punct_search.group(2)[:-1]
                 if pword.lower() in names: # If the word after punctuation is recognized as a proper name
                     l = re.sub(pword, '<rs>' + pword.lower() + '</rs>', l) #... mark it with <rs>
-                elif False:   # Transform "est. Ergo" to "est. ergo"
+                elif False:   # Transform "est. Ergo" to "est. ergo" -- This is how I used to do this before
                     callback = lambda pat: pat.group(1) + pat.group(2).lower()
                     l = re.sub('([' + punctuation + '] )([A-Z])', callback, l)
-                else:   #... mark the word with <seg type="cg"> (ug = capitalized in Garufi)
-                    l = re.sub(pword, '<seg type="cg">' + pword.lower() + '</seg>', l) #... mark it with <seg type="cg">
+                else:   #... mark the word with <hi>
+                    l = re.sub(pword, '<hi>' + pword.lower() + '</hi>', l) #... mark it with <hi>
 
             self.lines[i] = l
 
@@ -291,7 +289,7 @@ class ocr:
                         punct = ''
                         if t[-1] in punctuation:    # If the token ends with punctuation, like: homo,
                             word, punct = t[:-1], t[-1]
-                        t = '<rs>' + word + '</rs>' + punct
+                        t = '<rs>' + word.lower() + '</rs>' + punct
                 s.append(t)
             s.append('\n')
             self.lines[i] = ' '.join(s)
