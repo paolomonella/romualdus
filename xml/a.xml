@@ -17,6 +17,9 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
+        <editorialDecl xml:id="num">
+            <p>Starting from the paragraph with id g16.6-16.12, I marked numerals with <tag>seg type="num"</tag>.</p>
+        </editorialDecl>
         <editorialDecl xml:id="ag">
             <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
         </editorialDecl>
@@ -668,42 +671,43 @@ promissione, que patribus olim data est, imperii christiani sumit exordium, iura
 </p> 
 
 <p xml:id="g16.1-16.5" decls="#ocr"> 
-&lbs;<rs>dauid</rs> ex tribu <rs>iuda</rs> rex regnauit annis xl. <hi>hunc</hi> propheta <rs>nathan</rs> arguit propter 
+&lbs;<rs>dauid</rs> ex tribu <rs>iuda</rs> rex regnauit annis <seg type="num">xl</seg>. <hi>hunc</hi> propheta <rs>nathan</rs> arguit propter 
 &lbs;peccatum, atque legem <rs>dei</rs> docuit eum. <hi>quo</hi> tempore regnauit <rs>latinorum</rs> quintus <rs>latinus</rs> 
-&lbs;<rs>siluius</rs> annis l. <hi>tunc</hi> <rs>ephesus</rs> condita ab <rs>andronico</rs>. <rs>carthago</rs> quoque condita est, ut 
-&lbs;quidam uolunt, a <rs>harcedone</rs> <rs>tyrio</rs>, ut uero alii, a <rs>didone</rs> filia eius anno cxliii post 
-&lbs;<rs>troianum</rs> excidium <choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx. 
+&lbs;<rs>siluius</rs> annis <seg type="num">l</seg>. <hi>tunc</hi> <rs>ephesus</rs> condita ab <rs>andronico</rs>. <rs>carthago</rs> quoque condita est, ut 
+&lbs;quidam uolunt, a <rs>harcedone</rs> <rs>thyrio</rs>, ut uero alii, a <rs>didone</rs> filia eius anno <seg type="num">cxliii</seg> post 
+&lbs;<rs>troianum</rs> excidium. <seg type="num"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</seg>. 
 </p> 
 
 <p xml:id="g16.6-16.12" decls="#ocr"> 
-&lbs;<rs>salomon</rs> filius <rs>dauid</rs> annos xl qui quarto regni sui anno, mense secundo templum 
-&lbs;<rs>domino</rs> <pb n="30r" facs="vat:36"/>edificare coepit in <rs>ierusalem</rs>, collectis ab ingressu <rs>israhelis</rs> ex <rs>egypto</rs> annis <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxx 
+&lbs;<rs>salomon</rs> filius <rs>dauid</rs> annos <seg type="num">xl</seg> qui quarto regni sui anno, mense secundo templum 
+&lbs;<rs>domino</rs> <pb n="30r" facs="vat:36"/>edificare coepit et in <rs>ierusalem</rs>, collectis ab egressu <rs>israhelis</rs> ex <rs>egypto</rs> annis <seg type="num"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxx</seg> 
 &lbs;ut regum quoque liber testimonio est, quod in figura uniuersi temporis, quo in hoc seculo 
 &lbs;<rs>christi</rs> edificatur ecclesia, que in futuro perficitur; septem annis perfecit, et septimo octaui 
-&lbs;anni mense dedicauit. <rs>achias</rs> sylonites propheta <rs>salomoni</rs> regi predixit quod per mu&lb;lieres 
+&lbs;anni mense dedicauit. <rs>achias</rs> <rs>sylonites</rs> propheta <rs>salomoni</rs> regi predixit quod per mu&lb;lieres 
 a mandatis <rs>domini</rs> declinaret. <hi>regina</hi> <rs>saba</rs> uenit audire sapientiam <rs>salomonis</rs>. <hi>la&lb;tinorum</hi> 
-sextus <rs>alba</rs> <rs>siluius</rs> <rs>siluii</rs> <rs>enee</rs> filius regnauit annis xxix <choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxvii. 
+sextus <rs>alba</rs> <rs>siluius</rs> <rs>siluii</rs> <rs>enee</rs> filius regnauit annis <seg type="num">xxix</seg> <seg type="num"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxvii</seg>. 
 </p> 
 
 <p xml:id="g16.13-16.20" decls="#ocr"> 
-&lbs;<rs>roboam</rs> filius <rs>salomonis</rs> annos xvii. <hi>ex</hi> eo quippe regnum <rs>israhel</rs> a <rs>iuda</rs> diuiditur. 
-&lbs;<rs>ieroboam</rs> namque de tribu <rs>effraim</rs> separauit decem tribus a domo <rs>dauid</rs>, et a <rs>domino</rs>: 
+&lbs;<rs>roboam</rs> filius <rs>salomonis</rs> annos <seg type="num">xvii</seg>. <hi>ex</hi> eo quippe regnum <rs>israhel</rs> a <rs>iuda</rs> diuiditur. 
+&lbs;<rs>hieroboam</rs> namque de tribu <rs>effraim</rs> separauit decem tribus a domo <rs>dauid</rs>, et a <rs>domino</rs>: 
 &lbs;in figuram hereticorum, qui se suosque sequaces a <rs>christo</rs>, et ecclesia segregant. <hi>huius</hi> 
 &lbs;quinto anno <rs>sisac</rs> rex <rs>egypti</rs> <rs>ierosolimam</rs> templum expoliauit. <rs>iaddo</rs> propheta in <rs>samaria</rs> 
 &lbs;natus. <hi>hic</hi> ad <rs>ieroboam</rs> immolantem uitulis missus in sermone <rs>domini</rs> uenit, eumque arguit 
-&lbs;immolantem. <hi>hunc</hi> ad propria reuertentem leo in uiam strangulauit, eo quod propheta alius 
+&lbs;immolantem. <hi>hunc</hi> ad propriam reuertentem leo in uiam strangulauit, eo quod propheta alius 
 &lbs;eum fefellit. <rs>latinorum</rs> septimus <rs>egyppus</rs> <rs>siluius</rs> <rs>albe</rs> superioris regis filius <pb n="30v" facs="vat:37"/>regnauit 
-&lbs;annis xxxiv. <rs>samus</rs> condita, et <rs>smirna</rs> in urbis modum amplificata <choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xx. 
+&lbs;annis <seg type="num">xxxiii</seg>. <rs>samus</rs> condita, et <rs>smirna</rs> in urbis modum amplificata. <seg type="num"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xx</seg>. 
 </p> 
 
 <p xml:id="g16.21-16.23" decls="#ocr"> 
-&lbs;<rs>abia</rs> filius <rs>roboam</rs> annos iii. <hi>hic</hi> pugnantem contra se <rs>ieroboam</rs> superauit, occisis 
-&lbs;de exercitu eius md eo quod sperasset in <rs>domino</rs>. <hi>sub</hi> hoc <rs>abimelech</rs> pontifex fuit 
-&lbs;<choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>xxxi. 
+&lbs;<rs>abia</rs> filius <rs>roboam</rs> annos <seg type="num">iii</seg>. <hi>hic</hi> pugnantem contra se <rs>ieroboam</rs> superauit, occisis 
+&lbs;de exercitu eius <seg type="num">md</seg> eo quod sperasset in <rs>domino</rs>. <hi>sub</hi> hoc <rs>abymelech</rs> pontifex fuit 
+&lbs;<seg type="num"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>xxxi</seg>. 
 </p> 
 
+<!-- ricomincia da qui a riportare la collazione sul file partendo dalle stampe-->
 <p xml:id="g16.24-16.29" decls="#ocr"> 
-&lbs;<rs>asa</rs> filius <rs>abia</rs> annos xli. <hi>ab</hi> hoc conductus <rs>benadab</rs> rex <rs>sirie</rs> contra <rs>israhel</rs> per&lb;cussit 
+&lbs;<rs>asa</rs> filius <rs>abia</rs> annos <seg type="num">xli</seg>. <hi>ab</hi> hoc conductus <rs>benadab</rs> rex <rs>sirie</rs> contra <rs>israhel</rs> per&lb;cussit 
 omnem terram <rs>neptalim</rs>. <rs>asa</rs> ydola destruit, templum mundat, egredientem contra 
 &lbs;se <rs>zara</rs> <rs>ethiopem</rs> cum suo sternit exercitu. <rs>amri</rs> rex <rs>israhel</rs> emit montem <rs>samarie</rs> a <rs>somer</rs> 
 &lbs;duobus talentis argenti, et edificauit eum. <rs>hahiel</rs> de <rs>bethel</rs> <rs>hierico</rs> instaurat. <rs>latinorum</rs> 
@@ -770,8 +774,6 @@ annis xviii qui presidium <rs>albanorum</rs> inter montes, ubi nunc <rs>roma</rs
 &lbs;maior regnauit annis xxxvii atque in eo monte, qui nunc pars est urbis, mortuus, ac se&lb;pultus 
 eternum loco uocabulum dedit <choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>cxii. 
 </p> 
-
-<!-- from this point on, i am temporarily marking numerals with seg type="num" -->
 
 <p xml:id="g18.1-18.4" decls="#ocr"> 
 &lbs;<rs>azarias</rs>, qui et <rs>ozias</rs> filius <rs>amasie</rs> annis <seg type="num">liii</seg>. <rs>ysayas</rs> prophetare cepit in diebus 
