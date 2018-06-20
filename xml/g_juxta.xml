@@ -22,9 +22,9 @@
             <p>OCR not reviewed.</p>
         </editorialDecl>
         <editorialDecl xml:id="ocr">
-            <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized
+            <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
                 in the printed Garufi edition).
-                All text is now in lowercase (to capitalize words at the beginning of a paragraph or after
+                All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
                 punctuation, a script will be needed).
                 The text is now ready to be collated upon individual manuscripts.
             </p>
@@ -36,9 +36,9 @@
          </tagsDecl>
         <listPrefixDef>
             <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
-                <p> In the context of this edition, private URIs with
-                    the prefix "vat" point to a specific page of external
-                    PDF file vat.lat.3973.pdf, including the digital images
+                <p> In the context of this edition, private URIs with 
+                    the prefix "vat" point to a specific page of external 
+                    PDF file vat.lat.3973.pdf, including the digital images 
                     of the manuscript. For example, <code>vat:29</code>
                     dereferences to <code>img/vat.lat.3973.pdf#page=29</code>.
                 </p>
@@ -79,22 +79,22 @@ fiunt anni tria milia trecenti xiiii.
 </p> 
 
 <p xml:id="g4.3-4.10" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><hi>tertia</hi> ab <rs>abraam</rs> usque ad <rs>dauid</rs> generationes <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta utramque auctoritatem xiv annos
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>uero, secundum <rs>hebreorum</rs> auctoritatem nungentos quadraginta duos complectens; <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><rs>septuaginta</rs> uero interpretes anni tria milia cxxxvii. <hi>hec</hi> velud quedam adolescentia fuit
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>populi <rs>dei</rs>, a qua etate incipit homo posse generare, propterea <rs>matheus</rs> <rs>euangelista</rs> gene<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>rationum
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><hi>tertia</hi> ab <rs>abraam</rs> usque ad <rs>dauid</rs> generationes <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta utramque auctoritatem xiv annos 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>uero, secundum <rs>hebreorum</rs> auctoritatem nungentos quadraginta duos complectens; <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><rs>septuaginta</rs> uero interpretes anni tria milia cxxxvii. <hi>hec</hi> velud quedam adolescentia fuit 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>populi <rs>dei</rs>, a qua etate incipit homo posse generare, propterea <rs>matheus</rs> <rs>euangelista</rs> gene<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>rationum 
 ab <rs>abraham</rs> sumpsit exordium, qui etiam pater multarum gentium constitutus est,
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>quando mutatum nomen accepit. <hi>ab</hi> <rs>adam</rs> uero <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta <rs>hebreorum</rs> auctoritatem usque ad
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>quando mutatum nomen accepit. <hi>ab</hi> <rs>adam</rs> uero <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta <rs>hebreorum</rs> auctoritatem usque ad 
 <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><rs>dauid</rs> fiunt anni duo millia octingenti nonaginta, secundum <rs>septuaginta</rs> interpretes tria mi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>lia 
 cv. <hi>cur</hi> autem annorum hec diuersitas sit, in sequentibus ostendetur.
 </p>
 
 <p xml:id="g4.11-4.17" decls="#ocr">
 <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><hi>quarta</hi> a <rs>dauid</rs> usque ad transmigrationem <rs>babilonis</rs> annos habens, <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta hebraicam ue<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>ritatem,
-<choice><reg type="numeral">cd</reg></choice>lxxiii, <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta uero <rs>septuaginta</rs> translationem xii amplius generationes <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>utrosque codices xvii, quas tamen <rs>euangelista</rs> <rs>matheus</rs> certii misterii gratia xiiii ponit a
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>qua uelud  <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uvenili etate populo <rs>dei</rs> regum tempora ceperunt; hec namque in hominibus etas
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>apta gubernando solet existere regno. <hi>ab</hi> exordio autem prime etatis, usque ad trasmi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>grationem
+<choice><reg type="numeral">cd</reg></choice>lxxiii, <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta uero <rs>septuaginta</rs> translationem xii amplius generationes <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>utrosque codices xvii, quas tamen <rs>euangelista</rs> <rs>matheus</rs> certii misterii gratia xiiii ponit a 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>qua uelud  <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uvenili etate populo <rs>dei</rs> regum tempora ceperunt; hec namque in hominibus etas 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>apta gubernando solet existere regno. <hi>ab</hi> exordio autem prime etatis, usque ad trasmi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>grationem 
 <rs>babilonis</rs> computantur anni tria milia ccclxxiii secundum <rs>hebreorum</rs> auctorita<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>tem,
 <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta lxx uero interpretes anni tria milia quingenti nonaginta.
 </p>
@@ -103,16 +103,16 @@ cv. <hi>cur</hi> autem annorum hec diuersitas sit, in sequentibus ostendetur.
 <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><hi>quinta</hi> quasi senilis etas a transmigratione <rs>babilonis</rs> usque ad aduentum <rs>domini</rs> <rs>salua<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>toris</rs>
 in carne. <hi>generationibus</hi> et ipsa xiiii. <hi>porro</hi> annis, secundum <rs>hebreorum</rs> auctoritatem,
 <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>quingentis octoginta ix extenta; <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta <rs>septuaginta</rs> autem annis quingentis <rs>septuaginta</rs> viii,
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>in qua graue senectute fessa malis crebrioribus plebs hebrea quassatur. <hi>taliter</hi> itaque ab
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>exordio temporum usque ad incarnationem <rs>christi</rs> <rs>domini</rs> secundum <rs>hebreorum</rs> auctoritatem
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>in qua graue senectute fessa malis crebrioribus plebs hebrea quassatur. <hi>taliter</hi> itaque ab 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>exordio temporum usque ad incarnationem <rs>christi</rs> <rs>domini</rs> secundum <rs>hebreorum</rs> auctoritatem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>prosequente beato <rs>hieronymo</rs> fiunt anni tria milia <choice><reg type="numeral">cm</reg></choice>lii. <hi>verum</hi> <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>uxta <rs>septuaginta</rs> in<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>terpretes,
 quos omnino <rs>greci</rs> secuntur, numerantur anni vdviii. <rs>eusebius</rs> autem, quem <rs>oro<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>sius</rs>
 secutus est, inter utrosque numerat annos vcxcviiii quibus pene omnes latini utuntur.
 </p>
 
 <p xml:id="g4.26-5.2" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><hi>sexta</hi> etas, que nunc agitur, nulla generationum, uel temporum serie certa, sed ut etas
-<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>decrepita, ipsa totius seculi morte consumenda: has erumpnosas, plenasque laboribus mundi
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/><hi>sexta</hi> etas, que nunc agitur, nulla generationum, uel temporum serie certa, sed ut etas 
+<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>decrepita, ipsa totius seculi morte consumenda: has erumpnosas, plenasque laboribus mundi 
 <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>etates, quique beati felici morte uicerunt septimam <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>am sabbati perhennis etatem suscepti,
 <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>octauam beate resurrectionis etatem, in qua semper cum <rs>domino</rs> regnent, expectant.
 </p>

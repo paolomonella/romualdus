@@ -24,9 +24,9 @@
             <p>OCR not reviewed.</p>
         </editorialDecl>
         <editorialDecl xml:id="ocr">
-            <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized
+            <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
                 in the printed Garufi edition).
-                All text is now in lowercase (to capitalize words at the beginning of a paragraph or after
+                All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
                 punctuation, a script will be needed).
                 The text is now ready to be collated upon individual manuscripts.
             </p>
@@ -38,9 +38,9 @@
          </tagsDecl>
         <listPrefixDef>
             <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
-                <p> In the context of this edition, private URIs with
-                    the prefix "vat" point to a specific page of external
-                    PDF file vat.lat.3973.pdf, including the digital images
+                <p> In the context of this edition, private URIs with 
+                    the prefix "vat" point to a specific page of external 
+                    PDF file vat.lat.3973.pdf, including the digital images 
                     of the manuscript. For example, <code>vat:29</code>
                     dereferences to <code>img/vat.lat.3973.pdf#page=29</code>.
                 </p>
@@ -81,22 +81,22 @@ fiunt anni tria milia trecenti xiiii.
 </p> 
 
 <p xml:id="g4.3-4.10" decls="#ocr">
-&lbs;<hi>tertia</hi> ab <rs>abraam</rs> usque ad <rs>dauid</rs> generationes &jj;uxta utramque auctoritatem xiv annos
-&lbs;uero, secundum <rs>hebreorum</rs> auctoritatem nungentos quadraginta duos complectens; &jj;uxta
-&lbs;<rs>septuaginta</rs> uero interpretes anni tria milia cxxxvii. <hi>hec</hi> velud quedam adolescentia fuit
-&lbs;populi <rs>dei</rs>, a qua etate incipit homo posse generare, propterea <rs>matheus</rs> <rs>euangelista</rs> gene&lb;rationum
+&lbs;<hi>tertia</hi> ab <rs>abraam</rs> usque ad <rs>dauid</rs> generationes &jj;uxta utramque auctoritatem xiv annos 
+&lbs;uero, secundum <rs>hebreorum</rs> auctoritatem nungentos quadraginta duos complectens; &jj;uxta 
+&lbs;<rs>septuaginta</rs> uero interpretes anni tria milia cxxxvii. <hi>hec</hi> velud quedam adolescentia fuit 
+&lbs;populi <rs>dei</rs>, a qua etate incipit homo posse generare, propterea <rs>matheus</rs> <rs>euangelista</rs> gene&lb;rationum 
 ab <rs>abraham</rs> sumpsit exordium, qui etiam pater multarum gentium constitutus est,
-&lbs;quando mutatum nomen accepit. <hi>ab</hi> <rs>adam</rs> uero &jj;uxta <rs>hebreorum</rs> auctoritatem usque ad
+&lbs;quando mutatum nomen accepit. <hi>ab</hi> <rs>adam</rs> uero &jj;uxta <rs>hebreorum</rs> auctoritatem usque ad 
 &lbs;<rs>dauid</rs> fiunt anni duo millia octingenti nonaginta, secundum <rs>septuaginta</rs> interpretes tria mi&lb;lia 
 cv. <hi>cur</hi> autem annorum hec diuersitas sit, in sequentibus ostendetur.
 </p>
 
 <p xml:id="g4.11-4.17" decls="#ocr">
 &lbs;<hi>quarta</hi> a <rs>dauid</rs> usque ad transmigrationem <rs>babilonis</rs> annos habens, &jj;uxta hebraicam ue&lb;ritatem,
-<choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxiii, &jj;uxta uero <rs>septuaginta</rs> translationem xii amplius generationes &jj;uxta
-&lbs;utrosque codices xvii, quas tamen <rs>euangelista</rs> <rs>matheus</rs> certii misterii gratia xiiii ponit a
-&lbs;qua uelud  &jj;uvenili etate populo <rs>dei</rs> regum tempora ceperunt; hec namque in hominibus etas
-&lbs;apta gubernando solet existere regno. <hi>ab</hi> exordio autem prime etatis, usque ad trasmi&lb;grationem
+<choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxiii, &jj;uxta uero <rs>septuaginta</rs> translationem xii amplius generationes &jj;uxta 
+&lbs;utrosque codices xvii, quas tamen <rs>euangelista</rs> <rs>matheus</rs> certii misterii gratia xiiii ponit a 
+&lbs;qua uelud  &jj;uvenili etate populo <rs>dei</rs> regum tempora ceperunt; hec namque in hominibus etas 
+&lbs;apta gubernando solet existere regno. <hi>ab</hi> exordio autem prime etatis, usque ad trasmi&lb;grationem 
 <rs>babilonis</rs> computantur anni tria milia ccclxxiii secundum <rs>hebreorum</rs> auctorita&lb;tem,
 &jj;uxta lxx uero interpretes anni tria milia quingenti nonaginta.
 </p>
@@ -105,16 +105,16 @@ cv. <hi>cur</hi> autem annorum hec diuersitas sit, in sequentibus ostendetur.
 &lbs;<hi>quinta</hi> quasi senilis etas a transmigratione <rs>babilonis</rs> usque ad aduentum <rs>domini</rs> <rs>salua&lb;toris</rs>
 in carne. <hi>generationibus</hi> et ipsa xiiii. <hi>porro</hi> annis, secundum <rs>hebreorum</rs> auctoritatem,
 &lbs;quingentis octoginta ix extenta; &jj;uxta <rs>septuaginta</rs> autem annis quingentis <rs>septuaginta</rs> viii,
-&lbs;in qua graue senectute fessa malis crebrioribus plebs hebrea quassatur. <hi>taliter</hi> itaque ab
-&lbs;exordio temporum usque ad incarnationem <rs>christi</rs> <rs>domini</rs> secundum <rs>hebreorum</rs> auctoritatem
+&lbs;in qua graue senectute fessa malis crebrioribus plebs hebrea quassatur. <hi>taliter</hi> itaque ab 
+&lbs;exordio temporum usque ad incarnationem <rs>christi</rs> <rs>domini</rs> secundum <rs>hebreorum</rs> auctoritatem 
 &lbs;prosequente beato <rs>hieronymo</rs> fiunt anni tria milia <choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lii. <hi>verum</hi> &jj;uxta <rs>septuaginta</rs> in&lb;terpretes,
 quos omnino <rs>greci</rs> secuntur, numerantur anni vdviii. <rs>eusebius</rs> autem, quem <rs>oro&lb;sius</rs>
 secutus est, inter utrosque numerat annos vcxcviiii quibus pene omnes latini utuntur.
 </p>
 
 <p xml:id="g4.26-5.2" decls="#ocr">
-&lbs;<hi>sexta</hi> etas, que nunc agitur, nulla generationum, uel temporum serie certa, sed ut etas
-&lbs;decrepita, ipsa totius seculi morte consumenda: has erumpnosas, plenasque laboribus mundi
+&lbs;<hi>sexta</hi> etas, que nunc agitur, nulla generationum, uel temporum serie certa, sed ut etas 
+&lbs;decrepita, ipsa totius seculi morte consumenda: has erumpnosas, plenasque laboribus mundi 
 &lbs;etates, quique beati felici morte uicerunt septimam &jj;am sabbati perhennis etatem suscepti,
 &lbs;octauam beate resurrectionis etatem, in qua semper cum <rs>domino</rs> regnent, expectant.
 </p>

@@ -36,9 +36,9 @@
          </tagsDecl>
         <listPrefixDef>
             <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
-                <p> In the context of this edition, private URIs with
-                    the prefix "vat" point to a specific page of external
-                    PDF file vat.lat.3973.pdf, including the digital images
+                <p> In the context of this edition, private URIs with 
+                    the prefix "vat" point to a specific page of external 
+                    PDF file vat.lat.3973.pdf, including the digital images 
                     of the manuscript. For example, <code>vat:29</code>
                     dereferences to <code>img/vat.lat.3973.pdf#page=29</code>.
                 </p>
@@ -51,8 +51,8 @@
 
 <p xml:id="g3.2-3.6" decls="#ag">
 <pb n="15r" facs="vat:21"/>
-&lbs;<hi>prima</hi> mundi etas e0 ab <rs>ada3</rs> usq9 ad diluuiu3, continens annos, iuxta he&lb;braica3
-ueritate3, mille sexcentos quinquaginta sex, iuxta <rs>septuaginta</rs> uero in&lb;terpretes
+&lbs;<hi>prima</hi> mundi etas e0 ab <rs>ada3</rs> usq9 ad diluuiu3, continens annos, iuxta he&lb;braica3 
+ueritate3, mille sexcentos quinquaginta sex, iuxta <rs>septuaginta</rs> uero in&lb;terpretes 
 duo milia ducentos quadraginta duos; generationes uero iuxta utra3&lb;q9 editione3 numero dece3, que uniu2sali est deleta diluuio, si<choice><abbr>c0</abbr><expan>cu</expan></choice>t prima3 
 &lbs;cuiusq9 hominis obliuio demergere c0sueuit etate3.
 </p>
@@ -64,30 +64,30 @@ duo milia ducentos quadraginta duos; generationes uero iuxta utra3&lb;q9 edition
 &lbs;dece3, annos au0 ducentos nonaginta duos. <hi>porro</hi> iuxta <rs>septuaginta</rs> int0pretes anni 
 &lbs;mlxxii. <hi>generationes</hi> uero xi. hec uero quasi pueritia fuit generationis popl0i <rs>di0</rs>. et 
 &lbs;ideo in lingua inuenta e0 <rs>hebrea</rs>. <hi>a</hi> pueritia namq9 homo incipit nosse loqui, que idcirco 
-&lbs;appellata e0, qd0 fari non potest. <hi>ab</hi> <rs>ada3</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
+&lbs;appellata e0, qd0 fari non potest. <hi>ab</hi> <rs>ada3</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam 
 <pb n="15v" facs="vat:22"/>
 &lbs;ueritatem computant2 anni mille nungenti quadraginta octo, secundu3 <rs>septuaginta</rs> int0pre&lb;tes fiunt anni tria milia trecenti x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>.
 </p>
 
 <p xml:id="g4.3-4.10" decls="#ag">
-&lbs;<hi>tertia</hi> ab <rs>abraham</rs> usq9 ad <rs>dauid</rs>, generationes iuxta utramq9 auctoritate3 xiii annos
-&lbs;uero, secdm0 <rs>hebreo4</rs> auctoritatem nungentos quadraginta duos complectens; iuxta
-&lbs;<rs>septuaginta</rs> uero int0pretes anni tria milia c xxxvii. <hi>hec</hi> uelud queda3 adolescentia fuit
-&lbs;popl0i <rs>dei</rs>, a qua etate incipit homo posse generare, ŋpterea <rs>matheus</rs> <rs>euangelista</rs> gene&lb;rationum
+&lbs;<hi>tertia</hi> ab <rs>abraham</rs> usq9 ad <rs>dauid</rs>, generationes iuxta utramq9 auctoritate3 xiii annos 
+&lbs;uero, secdm0 <rs>hebreo4</rs> auctoritatem nungentos quadraginta duos complectens; iuxta 
+&lbs;<rs>septuaginta</rs> uero int0pretes anni tria milia c xxxvii. <hi>hec</hi> uelud queda3 adolescentia fuit 
+&lbs;popl0i <rs>dei</rs>, a qua etate incipit homo posse generare, ŋpterea <rs>matheus</rs> <rs>euangelista</rs> gene&lb;rationum 
 ab <rs>abraha3</rs> sumpsit exordiu3, qui etia3 pat0 multaru3 gentiu3 constitutus est,
-&lbs;quando mutatu3 nom0 accepit. <hi>ab</hi> <rs>ada3</rs> uero iuxta <rs>hebreo4</rs> auctoritate3 usq9 ad
+&lbs;quando mutatu3 nom0 accepit. <hi>ab</hi> <rs>ada3</rs> uero iuxta <rs>hebreo4</rs> auctoritate3 usq9 ad 
 &lbs;<rs>dauid</rs> fiunt anni duo milia octingenti nonaginta, secdm0 <rs>septuaginta</rs> int0pretes tria mi&lb;lia 
 cv. <hi>cur</hi> au0 annorum hec diu2sitas sit, in sequentib9 ostendet2.
 </p>
 
 <p xml:id="g4.11-4.17" decls="#ag">
 &lbs;<hi>quarta</hi> a <rs>dauid</rs> usq9 ad transmigratio0e3 <rs>babilonis</rs> annos habens, iuxta hebraicam ue&lb;ritate3,
-cccclxxiii, iuxta uero <rs>septuaginta</rs> translatione3 xii amplius generationes iuxta
+cccclxxiii, iuxta uero <rs>septuaginta</rs> translatione3 xii amplius generationes iuxta 
 &lbs;utrosq9 codices xvii,
 <pb n="16r" facs="vat:22"/>
-quas tamen <rs>euangelista</rs> <rs>mat<choice><abbr>h0</abbr><expan>heu</expan></choice>s</rs> certi mister<choice><abbr>i8</abbr><expan>ii</expan></choice> gra0 x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> ponit a
-&lbs;qua uelud iuuenili etat<choice><abbr>i0</abbr><expan>i</expan></choice> popl0o <rs>dei</rs> regum tempora ceperunt; hec na3q9 in hominib9 etas
-&lbs;apta gubernando solet existere regno. <hi>ab</hi> exordio au0 prime etatis, usq9 ad trasmi&lb;gratione3
+quas tamen <rs>euangelista</rs> <rs>mat<choice><abbr>h0</abbr><expan>heu</expan></choice>s</rs> certi mister<choice><abbr>i8</abbr><expan>ii</expan></choice> gra0 x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> ponit a 
+&lbs;qua uelud iuuenili etat<choice><abbr>i0</abbr><expan>i</expan></choice> popl0o <rs>dei</rs> regum tempora ceperunt; hec na3q9 in hominib9 etas 
+&lbs;apta gubernando solet existere regno. <hi>ab</hi> exordio au0 prime etatis, usq9 ad trasmi&lb;gratione3 
 <rs>babilonis</rs> co0putant2 anni tria milia ccclxxiii secdm0 <rs>hebreoru3</rs> auctorita&lb;te3,
 iuxta lxx uero int0pretes anni tria milia quingenti nonaginta.
 </p>
@@ -96,18 +96,18 @@ iuxta lxx uero int0pretes anni tria milia quingenti nonaginta.
 &lbs;<hi>quinta</hi> quasi senilis etas a transmigratione <rs>babilonis</rs> usq9 in aduentu3 <rs>dni0</rs> <rs>salua&lb;toris</rs>
 in carne. <hi>generationib9</hi> et ipsa x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>. <hi>porro</hi> annis, secdm0 <rs>hebreo4</rs> auctoritate3,
 &lbs;quingentis octoginta v<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> extenta; iuxta <rs>septuaginta</rs> au0 annis quingentis <rs>septuaginta</rs> viii,
-&lbs;in qua graue senectute fessa malis crebriorib9 plebs <rs>hebrea</rs> quassat2. <hi>talit0</hi> itaq9 ab
-&lbs;exordio tempo4 usq9 ad incarnatione3 <rs>xpi0</rs> <rs>dni0</rs> secdm0 <rs>hebreo4</rs> auctoritate3
+&lbs;in qua graue senectute fessa malis crebriorib9 plebs <rs>hebrea</rs> quassat2. <hi>talit0</hi> itaq9 ab 
+&lbs;exordio tempo4 usq9 ad incarnatione3 <rs>xpi0</rs> <rs>dni0</rs> secdm0 <rs>hebreo4</rs> auctoritate3 
 &lbs;ŋsequente beato <rs>ieronimo</rs> fiunt anni tria milia dcccclii. <hi>uerum</hi> iuxta <rs>septuaginta</rs> in&lb;t0pretes,
 quos <choice><abbr>oi0</abbr><expan>omni</expan></choice>no <rs>greci</rs> secunt2, numerant2 anni vdviii. <rs>eusebius</rs> au0, que3 <rs>oro&lb;sius</rs>
-secutus e0, int0 utrosq9 numerat annos vcxcv<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> quibus pene oms0
+secutus e0, int0 utrosq9 numerat annos vcxcv<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> quibus pene oms0 
 <pb n="16v" facs="vat:23"/>
 latini utuntur.
 </p>
 
 <p xml:id="g4.26-5.2" decls="#ag">
-&lbs;<hi>sexta</hi> etas, que nunc agit2, nulla generationum, uel teporu3<note>Missing middle 'm'</note> serie certa, sed ut etas
-&lbs;decrepita, ipsa totius secl0i morte co0sum0da: has erumpnosas, plenasq9 laborib9 mundi
+&lbs;<hi>sexta</hi> etas, que nunc agit2, nulla generationum, uel teporu3<note>Missing middle 'm'</note> serie certa, sed ut etas 
+&lbs;decrepita, ipsa totius secl0i morte co0sum0da: has erumpnosas, plenasq9 laborib9 mundi 
 &lbs;etates, quiq9 beati felici morte uicerunt septima3 ia3 sabbati þhennis etate3 suscepti,
 &lbs;octaua3 beate resurrectionis etate3, in qua semper cum <rs>dno0</rs> regnent, expectant.
 </p>
@@ -192,7 +192,7 @@ uiuentes, filii resurrectionis sic
 
 <p xml:id="g6.17-6.25" decls="#ag"> 
 &lbs;<rs>iareth</rs> anno4 clxii genuit <rs>enoch</rs>, cui suþuixit annis dccc usq9 ad ccclxvi annu3 
-&lbs;natiuitatis <rs>noe</rs>. <hi>in</hi> hac generatione nusqua3
+&lbs;natiuitatis <rs>noe</rs>. <hi>in</hi> hac generatione nusqua3 
 <pb n="18v" facs="vat:25"/>
 codices discrepant. <hi>hunc</hi> <rs>enoch</rs> n0 nulla 
 &lbs;diuina scripsisse <rs>iuda</rs> a<choice><abbr>plo0</abbr><expan>postolo</expan></choice> attestante comperimus. <hi>sed</hi> ut beatus <rs>agustinus</rs> dicit: 
@@ -229,7 +229,7 @@ mille lvi.
 <p xml:id="g7.8-7.12"> 
 &lbs;<rs>lamech</rs> annos clxxxii genuit <rs>noe</rs>, cui superuixit annos dxcv usque ad sextum annum 
 &lbs;ante diluuium. <rs>septuaginta</rs> ante natum <rs>noe</rs> ponunt annos clxxxviii et postea dlxv. 
-&lbs;in hac sola generatione summa uniuersitatis discrepat, quia xx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> annis plus
+&lbs;in hac sola generatione summa uniuersitatis discrepat, quia xx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> annis plus 
 <pb n="19v" facs="vat:26"/>
 uixisse <rs>lamech</rs> 
 &lbs;in <rs>hebreis</rs>, quam in <rs>septuaginta</rs> translatorum codicibus inuenitur. <rs>septuaginta</rs> duo  millia &lbs;ccxlii. <rs>hebrei</rs> mdclvi. 
@@ -263,7 +263,7 @@ fuerit, posteaque in hoc mundo xx annis uixerit. <hi>et</hi> post aliquanta beat
 
 <p xml:id="g7.30-8.6"> 
 &lbs;<hi>secunda</hi> seculi etate, prima <add place="above">hora</add> huius diei, quae<note>E caudatum</note> est uicesima septima mensis secundi, egres&lb;sus 
-est <rs>noe</rs> de arca, in qua pauci, idest octo anime salue facte sunt per aquam, quod com&lb;memorans
+est <rs>noe</rs> de arca, in qua pauci, idest octo anime salue facte sunt per aquam, quod com&lb;memorans 
 in epistola beatus apostolus <rs>petrus</rs> mirifice statim exponere curauit, cum subiun&lb;xit: 
 quos, et uos nunc similis forme salvos fecit baptisma non carnis depositio sordium, 
 &lbs;sed conscientie bone interrogatio in <rs>deum</rs> per resurrectionem <rs>iesu</rs> <rs>christi</rs>, qui est in dex&lb;tera 
@@ -388,7 +388,7 @@ artem tunc primum inuenit. <rs>otosius</rs>:
 <p xml:id="g10.13-10.18"> 
 &lbs;<hi>ante</hi> annos <rs>urbis</rs> condite mccc rex primus apud <rs>assyrios</rs>, qui eminere ceteris po&lb;tuit, 
 <rs>ninus</rs> fuit, quique primus dominationis libidini arma foris extulit, atque cruentam ui&lb;tam 
-per totam <rs>asiam</rs> bellis egit: quamuis pater eius <rs>belus</rs> prius obscure regnauerit
+per totam <rs>asiam</rs> bellis egit: quamuis pater eius <rs>belus</rs> prius obscure regnauerit 
 autem annis lii, quo occiso, successit ei uxor sua <rs>semiramis</rs>, que cum et ipsa 
 &lbs;xlii annos regnauit, non minus crudeliter medio imperi sui tempore totius <rs>asie</rs> regina 
 &lbs;<rs>babyloniam</rs> urbem instaurauit, caputque regni <rs>assyriorum</rs> ut esset, instituit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>xxxiii. 
