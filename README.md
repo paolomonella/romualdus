@@ -40,3 +40,16 @@ A copy of g.xml in which I added <app>s 'by hand' with the help of "vim -d"
 
 y--ms_a.xml
 A 'foo' copy of a.xml. I gave "vim -d x.xml y--ms_a.xml" to create the <app>s in x.xml
+
+## JuxtaCommons links
+
+# Link JuxtaCommons
+
+G:
+http://juxtacommons.org/shares/L1MiI3
+
+A:
+http://juxtacommons.org/shares/Y07PP4
+
+Collazione:
+http://juxtacommons.org/shares/3BAYYx
