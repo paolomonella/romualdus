@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
-<!ENTITY lb '<---lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>'>
-<!ENTITY lbs '<---lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>'>
+<!ENTITY lb '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>'>
+<!ENTITY lbs '<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>'>
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>

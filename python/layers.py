@@ -198,9 +198,9 @@ def extractLayers (siglum, baretext=False):
     for e in a_alltext.findall('.//h:span[@class="rs"]', ns):
         if e.text:  # If the content of <rs> starts with a text node, capitalize it
             e.text = e.text.capitalize()
-        else:
-            rsexpan = e.find('.//h:span[@class="expan"]', ns)   # If not, 'find' should only find the 1 expansion and capitalize it
-            rsexpan.text = rsexpan.text.capitalize()
+        else:   # If not, get the text of <rs>'s first child and capitalize it
+            rschild = e[0]
+            rschild.text = rschild.text.capitalize()
 
     if baretext:
         baretextize(a_alltext)
