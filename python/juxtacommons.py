@@ -22,6 +22,7 @@ from replace import genericBaseReplaceAll
 class msTree:
 
     def __init__ (self, siglum):
+        self.siglum = siglum
         self.xmlfile = '%s/%s.xml' % (constants.xmlpath, siglum)
         # Source of next, commented, line: https://stackoverflow.com/questions/14731633/
         # how-to-resolve-external-entities-with-xml-etree-like-lxml-etree#19400397
@@ -62,21 +63,43 @@ class msTree:
                 'j' for <reg type="j"> etc.
             '''
         '''
-        #for reg in self.tree.findall('.//t:reg[@type="j"]', ns):
-        for xy in self.tree.findall('.//t:app', ns):
+        #for reg in self.tree.findall('.//t:reg[@type="j"]', constants.ns):
+        for xy in self.tree.findall('.//t:app', constants.ns):
             print(reg.get('type'))
         '''
 
-        for reg in self.tree.findall('.//t:reg[@type="%s"]' % (regtype), ns):
-            orig = reg.getparent().find('.//t:orig', ns)
+        for reg in self.tree.findall('.//t:reg[@type="%s"]' % (regtype), constants.ns):
+            orig = reg.getparent().find('.//t:orig', constants.ns)
 
             # The following 'remove' functions should be safe b/c <orig> or <reg> never have a tail
-            # (otherwise, the tail would d be removed too)
+            # b/c <orig> and <reg> are the only children of <choice>
+            # (otherwise, the tail would be removed too)
             if form == 'reg':
-                #print('Orig:', orig.text, '\tReg:', reg.text) # debug
                 orig.getparent().remove(orig)
             if form == 'orig':
                 reg.getparent().remove(reg)
+
+    def recapitalize (self):
+        ''' Re-capitalize words included in <rs> or in <hi> '''
+        for mytagname in ['rs', 'hi']:
+            for e in self.tree.findall('.//t:%s' % (mytagname), constants.ns):
+                if e.text:  # If the content of <rs>/<hi> starts with a text node, capitalize it
+                    e.text = e.text.capitalize()
+                else:   # If the content of <rs>/<hi> starts with an element...
+                    echild = e[0]
+                    if echild.tag == constants.tei_ns + 'choice': # In case <rs><choice>etc. or <hi><choice>etc.
+                        # ...capitalize text of all children of <choice>
+                        for alternative in echild:
+                            alternative.text = alternative.text.capitalize()
+                    else:   # If first child of <rs>/<hi> is not <choice>
+                        # ...get the text of <rs>/<hi>'s first child and capitalize it
+                        if echild.text:
+                            echild.text = echild.text.capitalize()
+                        else:
+                            # ... or capitalize the first child of the first child of <rs>/</hi>
+                            echild[0].text = echild[0].text.capitalize()
+                            # print('File',self.siglum,'→ Tag',mytagname,'→ Child',echild.tag,'→ Text',echild.text) #debug
+
 
     def write (self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
@@ -88,4 +111,11 @@ atree.write()
 gtree = msTree('g')
 gtree.reg_orig('numeral', form='reg') 
 gtree.reg_orig('j', form='reg') 
+gtree.recapitalize() 
+gtree.write()
+
+gtree = msTree('b')
+gtree.reg_orig('numeral', form='reg') 
+gtree.reg_orig('j', form='reg') 
+gtree.recapitalize() 
 gtree.write()

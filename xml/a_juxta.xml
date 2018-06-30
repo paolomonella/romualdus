@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
-<!ENTITY lb '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" type="g"/>'>
-<!ENTITY lbs '<lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>'>
-]>
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>'>
+<!-- gd = Garufi Dash--><!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>'>
+<!-- glb = Garufi Line Beginning--><!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="b"/>'>
+<!-- gd = Bonetti Dash--><!ENTITY blb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="b"/>'>
+<!-- glb = Bonetti Line Beginning-->]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>

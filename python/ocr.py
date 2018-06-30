@@ -64,10 +64,14 @@ def properNames (properNamesInputXmlFile):
     names_tree = etree.parse(properNamesInputXmlFile)
     rss = names_tree.findall('.//t:rs', constants.ns)
     # namelist = [rs.text.lower() for rs in rss]
+    namelist = [rs.text.lower() for rs in rss if len(list(rs)) == 0 ]   # The 'if' excludes <rs>'s with element children
+    '''
+    # This was a longer and less efficient solution for the issue of <rs>'s with element children
     namelist = []
     for rs in rss:
         if rs.text:
             namelist.append(rs.text.lower())
+            '''
 
     with open ('rs.txt', 'r') as rstxt:
         for l in rstxt:
@@ -223,6 +227,7 @@ class ocr:
             2. Replace each dash with &lb; (corresponding to <lb break="no" rend="-" type="g"/>).
             3. Reunite words separated by those dashes in the first line. 
             4. Wrap everything inside a temporary <div> element.
+            4bis. If edition=Bonetti, then add a <>
             5. Insert <p>s.
             6. Transform Garufi's/Bonetti's pages and lines (e.g.: 3.7-3.16) to @xml:id="g3.7-3.16" (or b3.7-3.16)
             7. Append other attributes (@decs) to <p>.
