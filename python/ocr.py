@@ -9,12 +9,12 @@ bom = True     # Set to True if you want to get rid of the initial BOM
     1. Review the OCR before running the script:
         1a. Perform OCR twice with gImageReader
         1b. Use "vim -d x.txt y.txt" to check differences
-        1c. Use gespeaker to read the OCR txt aloud and check it on the Garufi PDF print
+        1c. Use gespeaker to read the OCR txt aloud (or Boschetti/Molinari's site) and check it on the Garufi/Boschetti PDF print
     2. Put an input file named 'input.txt' in the 'xml' folder
 	(where the MSS transcriptions already are);
     3. Comment/uncomment the last lines of this script;
     4. Run this script in the 'python' folder, where it is;
-    5. The output will be appended to files g_temp.xml, a.xml or g.xml in the 'xml' folder.
+    5. The output will be appended to files temp.xml, a.xml or g.xml in the 'xml' folder.
     6. Check if <rs>'s and <hi>'s and all remaining uppercase chars are OK (vim /\v[A-Z][a-z]  and   /\v[.!?-]   etc.)
     7. You *can* add <seg type="num">
     8. Un-capitalize everything
@@ -63,7 +63,12 @@ def properNames (properNamesInputXmlFile):
         '''
     names_tree = etree.parse(properNamesInputXmlFile)
     rss = names_tree.findall('.//t:rs', constants.ns)
-    namelist = [rs.text.lower() for rs in rss]
+    # namelist = [rs.text.lower() for rs in rss]
+    namelist = []
+    for rs in rss:
+        if rs.text:
+            namelist.append(rs.text.lower())
+
     with open ('rs.txt', 'r') as rstxt:
         for l in rstxt:
             namelist.append(l.strip().lower())
@@ -71,7 +76,7 @@ def properNames (properNamesInputXmlFile):
 
 
 def listNames (properNamesInputXmlFile, myNamespace):
-    ''' This script parses the ../xml/temp_g.xml file and lists
+    ''' This script parses the ../xml/temp.xml file and lists
         the textual content of all its <rs> elements.
         All names in the list are in lowercase.
         '''
@@ -211,32 +216,45 @@ class ocr:
             self.lines[i] = l
 
 
-    def garufize (self):
-        ''' 1. Remove syllabation dashes at the end of lines.
+    def markup (self, edition):
+        ''' Edition can be 'g' (Garufi) or 'b' (Bonetti).
+        
+            1. Remove syllabation dashes at the end of lines.
             2. Replace each dash with &lb; (corresponding to <lb break="no" rend="-" type="g"/>).
             3. Reunite words separated by those dashes in the first line. 
             4. Wrap everything inside a temporary <div> element.
             5. Insert <p>s.
-            6. Transform Garufi's pages and lines (e.g.: 3.7-3.16) to @xml:id="g3.7-3.16".
+            6. Transform Garufi's/Bonetti's pages and lines (e.g.: 3.7-3.16) to @xml:id="g3.7-3.16" (or b3.7-3.16)
             7. Append other attributes (@decs) to <p>.
-            8. Put &lbs; (corresponding to <lb type="g"/>) at the beginning of each line except for
-                a) lines with Garufi's pages and lines (like 3.7-3.16)
-                b) lines whose previous line already has a <lb break="no" rend="-" type=) g"/> inside.
+            8. Put
+                    &glb; (Garufi  Line Beginning, corresponding to <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>)
+                    or
+                    &blb; (Bonetti Line Beginning, corresponding to <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>)
+                    at the beginning of each line
+                    except for
+                a) lines with Garufi's/Bonetti's pages and lines (like 3.7-3.16)
+                b) lines whose previous line already has a <lb break="no" rend="-" type="g"/> (or type="b") inside.
             9. For lines in case 2, function manage_dashes() had inserted a comment <!--nolb--> at
-            the their beginning.
+                the their beginning.
             '''
+
+        if edition == 'g':
+            dash = '&gd;'
+            begin = '&glb;'
+        elif edition == 'b':
+            dash = '&bd;'
+            begin = '&blb;'
 
 
         for l in self.lines:
             i = self.lines.index(l)
 
             if i < len(self.lines) - 1:  # If it's not the last line of the file
-                ''' This 'if' manages syllabation dashes '''
                 nextline = self.lines[i+1]
-                if len(l) > 1 and l[-2] == '-':
+                if len(l) > 1 and l[-2] == '-':     # This 'if' manages syllabation dashes
                     firstword, nextline = nextline.split(' ', 1)
                     #self.lines[i] = ''.join( [ l[:-2], '<lb break="no" rend="-" type="g"/>', firstword, '\n' ] )
-                    self.lines[i] = ''.join( [ l[:-2], '&lb;', firstword, '\n' ] )
+                    self.lines[i] = ''.join( [ l[:-2], dash, firstword, '\n' ] )
                     # The <!--nolb--> comment prevents the next 'if' block from inserting another <lb>
                     # at the beginning of lines following the lines with '&lb;'
                     # (corresponding to <lb break="no" rend="-" type="g"/>)
@@ -256,9 +274,9 @@ class ocr:
             elif l.startswith('<!--nolb-->'):
                 self.lines[i] = self.lines[i].replace('<!--nolb-->', '')
             elif len(l) > 1:
-                self.lines[i] = ''.join([    # Pre-pend <lb type="g"/> to the line
+                self.lines[i] = ''.join([    # Pre-pend <lb type="g"/> (or "b") to the line
                         #'<lb type="g"/>',
-                        '&lbs;',            # This line was: '<lb type="g"/>',
+                        begin,            # This line was: '<lb type="g"/>'; then it was: '&lbs;'
                         self.lines[i]
                         ])
         self.lines.append('\n</p>')
@@ -413,10 +431,10 @@ class ocr:
 ''' ACTUAL OCR '''
 
 o = ocr('../xml/input.txt')
-o.garufize()
+o.markup('b')
 o.lowercasize()
 o.wrap_proper_names()
-#o.export_to_txt('../xml/temp_g.xml')
+o.export_to_txt('../xml/temp.xml')
 
 spread_ids('g', ['a', 'b', 'c'])
     
