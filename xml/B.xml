@@ -12,7 +12,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Romualdi Salernitani Chronicon, Garufi</title>
+        <title>Romualdi Salernitani Chronicon, Bonetti</title>
       </titleStmt>
       <publicationStmt>
         <p>Encoding experiments</p>
@@ -27,7 +27,7 @@
         </editorialDecl>
         <editorialDecl xml:id="ocr">
             <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
-                in the printed Garufi edition).
+                in the printed Bonetti edition).
                 All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
                 punctuation, a script will be needed).
                 The text is now ready to be collated upon individual manuscripts.
@@ -35,7 +35,7 @@
         </editorialDecl>
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
-                <tagUsage gi="hi">Used to mark words capitalized in Garufi, but not constituting
+                <tagUsage gi="hi">Used to mark words capitalized in Bonetti, but not constituting
                     a proper noun, such as "Sed" at the beginning of a sentence.</tagUsage>
              </namespace>
          </tagsDecl>
