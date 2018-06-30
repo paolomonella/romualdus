@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd"
+[
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>'><!-- gd = Garufi Dash-->
+<!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>'><!-- glb = Garufi Line Beginning-->
+]
+>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, codex B</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="ag">
+            <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="a" default="true">
+            <p>Paragraph encoded at the Alphabetic layer only.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
+            <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p>
+        </editorialDecl>
+        <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+                 <tagUsage gi="hi">Used to mark words capitalized in Garufi, such as "Sed".</tagUsage>
+             </namespace>
+         </tagsDecl>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+<p xml:id="g3.2-3.6" decls="#ag">
+<pb n="1r" ed="msb"/><cb n="1r.b"/>
+&glb;prima mundi etas est ab <rs>adam</rs> usq9 ad diluuium, continens annos, iuxta he&gd;braycam
+ueritatem mille sexcentos quinquag<choice><abbr>i0</abbr><expan>in</expan></choice>ta sex, et iuxta lxx in&gd;ter<choice><abbr>p5</abbr><expan>pr</expan></choice>etes
+duo milia ducentos lx duos; gnawtiones uø iuxta utramq9 editione0 numero decem, qæ uni<choice><abbr>u5</abbr><expan>uer</expan></choice>sali est deleta diluuio, sicut p2mam 
+&glb;cuiusq9 hominis obliuio demergere consue<choice><abbr>u7</abbr><expan>uit</expan></choice> etatem.
+</p>
+
+<p xml:id="g3.7-3.16" decls="#ag">
+&glb;fuerunt <rs>noe</rs> filii tres, ex quib9 ita sunt orte gentes. de <rs>iafeth</rs> quindecim, de <rs>cham</rs>
+&glb;triginta, de <rs>sem</rs> xxuii. <rs>sem</rs> annos duos pt7 diluuium genuit <rs>arfaxath</rs>, a quo sunt <rs>chaldei</rs>. 
+&glb;<rs>arfaxath</rs> genuit <rs>salem</rs>, a quo <rs>samarite</rs> ŋ <rs>indi</rs>. <rs>sale</rs> genuit <rs>heber</rs>, a quo <rs>hebrei</rs>. <rs>heber</rs> 
+&glb;genuit <rs>falech</rs>, cuius <choice><abbr>tpr0</abbr><expan>tempor</expan></choice>e turris hedificatw ŋ linguaru0 diuisio fit. in solo <rs>heber</rs> prisca 
+&glb;remansit lin<choice><abbr>gw</abbr><expan>gua</expan></choice>, quia in ea conspiratione n<choice><abbr>o0</abbr><expan>on</expan></choice> fuit. turris uø duo milia clxxiiii 
+&glb;<choice><abbr>dr5</abbr><expan>dicitur</expan></choice> passuu0. hanc <rs>nebroth</rs> gigans construxit. hac etate <rs>scitha<choice><abbr>r5</abbr><expan>rum</expan></choice></rs><note type="2h">Added initial "s" and final "5".</note> regnum oritw, ubi 
+&glb;p2mus regnauit <rs>thannus</rs>. t<choice><abbr>u0</abbr><expan>un</expan></choice>c et regnum <rs>egyptio4</rs> ubi p2imus regna<choice><abbr>u5</abbr><expan>uit</expan></choice> <rs>thoes</rs>. dehinc 
+&glb;regnum <rs>assirio4</rs>, ubi prius regnauit <rs>belus</rs>, que0 dicunt <rs>satwnum</rs> quidam; deinde <rs>ni<choice><abbr>n2</abbr><expan>nus</expan></choice></rs>
+&glb;qui condidit <rs>niniuen</rs>. hoc tpr0 <rs>abraam</rs> nascitw, ŋ post morte0 <rs>nini</rs> a <rs>ssemiramide</rs>
+&glb;regina rehedificata e0 <rs>babilonia</rs>, u2 regnauit annos quadraginta. 
+</p>
+
+<p xml:id="g3.17-4.2" decls="#ag">
+&glb;secunda etas a <rs>noe</rs> usque ad <rs>habraam</rs> gnawtiones oms0 iuxta hebraycam ueritatem conplexa 
+&glb;de<cb n="1r.b"/>cem <gap reason="blank" quantity="2" unit="words"/> nonaginta duos. porro lxx <gap reason="blank" quantity="2" unit="words"/> septua<choice><abbr>g0</abbr><expan>ginta</expan></choice> duos. gnawtiones uø undecim. hec uø quasi <gap reason="blank" quantity="2" unit="words"/> gnawtionis ppli5 <rs>dei</rs>. et 
+&glb;ideo in lingua inuenta est <rs>he<choice><abbr>b2</abbr><expan>bra</expan></choice>ica</rs>. a pu<choice><abbr>ewi</abbr><expan>eri</expan></choice>tia namq9 h0 inci<choice><abbr>p0</abbr><expan>pit</expan></choice> nosse loqui, que idcirco 
+&glb;appellata est, q2 fari non po<choice><abbr>t5</abbr><expan>test</expan></choice>. ab <rs>adam</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
+&glb;ueritatem computantw anni mille <choice><abbr>n0</abbr><expan>nun</expan></choice>genti xl uiii, se<choice><abbr>cd5</abbr><expan>cundum</expan></choice> interp5tes lxx fi<choice><abbr>uw</abbr><expan>un</expan></choice>t <choice><abbr>a0</abbr><expan>an</expan></choice>ni tria milia <choice><abbr>ccc2</abbr><expan>ccc</expan></choice> xiiii.
+</p>
+
+<p xml:id="g4.3-4.10" decls="#ag"/>
+<p xml:id="g4.11-4.17" decls="#ag"/>
+<p xml:id="g4.18-4.25" decls="#ag"/>
+<p xml:id="g4.26-5.2" decls="#ag"/>
+<p xml:id="g5.3-5.10" decls="#ag"/>
+<p xml:id="g5.11-5.18" decls="#ag"/>
+<p xml:id="g5.19-5.19" decls="#ag"/>
+<p xml:id="g5.20-5.25" decls="#ag"/>
+<p xml:id="g5.26-5.32" decls="#ag"/>
+<p xml:id="g6.1-6.6" decls="#ag"/> 
+<p xml:id="g6.7-6.10" decls="#ag"/> 
+<p xml:id="g6.11-6.13" decls="#ag"/> 
+<p xml:id="g6.14-1.16" decls="#ag"/> 
+<p xml:id="g6.17-6.25" decls="#ag"/> 
+<p xml:id="g6.26-6.34" decls="#ag"/> 
+<p xml:id="g7.1-7.7" decls="#ag"/>
+<p xml:id="g7.8-7.12" decls="#ag"/>
+<p xml:id="g7.13-7.27" decls="#ag"/>
+<p xml:id="g7.28-7.28" decls="#ag"/>
+<p xml:id="g7.29-7.29" decls="#ag"/>
+<p xml:id="g7.30-8.6" decls="#ag"/>
+<p xml:id="g8.7-8.11" decls="#ag"/>
+<p xml:id="g8.12-8.23" decls="#ag"/>
+<p xml:id="g8.24-8.27" decls="#ag"/>
+<p xml:id="g8.28-9.11" decls="#ag"/>
+<p xml:id="g9.12-9.14" decls="#ag"/>
+<p xml:id="g9.15-9.17" decls="#ag"/>
+<p xml:id="g9.18-9.21" decls="#ag"/>
+<p xml:id="g9.22-9.24" decls="#ag"/>
+<p xml:id="g9.25-9.25" decls="#ag"/>
+<p xml:id="g9.26-9.31" decls="#ag"/>
+<p xml:id="g10.1-10.5" decls="#ag"/>
+<p xml:id="g10.6-10.6" decls="#ag"/>
+<p xml:id="g10.7-10.12" decls="#ag"/>
+<p xml:id="g10.13-10.18" decls="#ag"/>
+<p xml:id="g10.19-10.20" decls="#ag"/>
+<p xml:id="g10.21-10.24" decls="#ag"/>
+<p xml:id="g10.25-10.27" decls="#ag"/>
+<p xml:id="g10.28-10.28" decls="#ag"/>
+<p xml:id="g10.29-11.4" decls="#ag"/>
+<p xml:id="g11.5-11.6" decls="#ag"/>
+<p xml:id="g11.7-11.9" decls="#ag"/>
+<p xml:id="g11.10-11.26" decls="#ag"/>
+<p xml:id="g11.27-12.4" decls="#ag"/>
+<p xml:id="g12.5-12.11" decls="#ag"/>
+<p xml:id="g12.12-12.12" decls="#ag"/>
+<p xml:id="g12.13-12.26" decls="#ag"/>
+<p xml:id="g12.27-13.14" decls="#ag"/>
+<p xml:id="g13.15-13.18" decls="#ag"/>
+<p xml:id="g13.19-13.22" decls="#ag"/>
+<p xml:id="g13.23-13.26" decls="#ag"/>
+<p xml:id="g13.27-13.32" decls="#ag"/>
+<p xml:id="g13.33-14.3" decls="#ag"/>
+<p xml:id="g14.4-14.7" decls="#ag"/>
+<p xml:id="g14.8-14.10" decls="#ag"/>
+<p xml:id="g14.11-14.14" decls="#ag"/>
+<p xml:id="g14.15-14.16" decls="#ag"/>
+<p xml:id="g14.17-14.21" decls="#ag"/>
+<p xml:id="g14.22-14.25" decls="#ag"/>
+<p xml:id="g14.26-14.28" decls="#ag"/>
+<p xml:id="g14.29-15.4" decls="#ag"/>
+<p xml:id="g15.5-15.5" decls="#ag"/>
+<p xml:id="g15.6-15.8" decls="#ag"/>
+<p xml:id="g15.9-15.12" decls="#ag"/>
+<p xml:id="g15.13-15.19" decls="#ag"/>
+<p xml:id="g15.20-15.21" decls="#ag"/>
+<p xml:id="g15.22-15.23" decls="#ag"/>
+<p xml:id="g15.24-15.26" decls="#ag"/>
+<p xml:id="g15.27-15.27" decls="#ag"/>
+<p xml:id="g15.28-15.31" decls="#ag"/>
+<p xml:id="g16.1-16.5" decls="#ag"/>
+<p xml:id="g16.6-16.12" decls="#ag"/>
+<p xml:id="g16.13-16.20" decls="#ag"/>
+<p xml:id="g16.21-16.23" decls="#ag"/>
+<p xml:id="g16.24-16.29" decls="#ag"/>
+<p xml:id="g16.30-17.5" decls="#ag"/>
+<p xml:id="g17.6-17.13" decls="#ag"/>
+<p xml:id="g17.14-17.17" decls="#ag"/>
+<p xml:id="g17.18-17.22" decls="#ag"/>
+<p xml:id="g17.23-17.30" decls="#ag"/>
+<p xml:id="g17.31-17.34" decls="#ag"/>
+<p xml:id="g18.1-18.4" decls="#ag"/>
+<p xml:id="g18.5-18.5" decls="#ag"/>
+<p xml:id="g18.6-18.23" decls="#ag"/>
+<p xml:id="g18.24-18.24" decls="#ag"/>
+<p xml:id="g18.25-18.33" decls="#ag"/>
+<p xml:id="g19.1-19.6" decls="#ag"/>
+<p xml:id="g19.6-19.16" decls="#ag"/>
+<p xml:id="g19.17-19.17" decls="#ag"/>
+<p xml:id="g19.18-19.24" decls="#ag"/>
+<p xml:id="g19.25-19.35" decls="#ag"/>
+<p xml:id="g20.1-20.3" decls="#ag"/>
+<p xml:id="g20.4-20.4" decls="#ag"/>
+<p xml:id="g20.5-20.24" decls="#ag"/>
+<p xml:id="g20.25-20.27" decls="#ag"/>
+<p xml:id="g20.28-20.28" decls="#ag"/>
+<p xml:id="g20.29-20.33" decls="#ag"/>
+</body>
+  </text>
+</TEI>
