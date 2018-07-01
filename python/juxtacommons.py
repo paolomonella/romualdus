@@ -98,7 +98,6 @@ class msTree:
                         else:
                             # ... or capitalize the first child of the first child of <rs>/</hi>
                             echild[0].text = echild[0].text.capitalize()
-                            # print('File',self.siglum,'→ Tag',mytagname,'→ Child',echild.tag,'→ Text',echild.text) #debug
 
 
     def write (self):
@@ -114,7 +113,7 @@ gtree.reg_orig('j', form='reg')
 gtree.recapitalize() 
 gtree.write()
 
-gtree = msTree('b')
+gtree = msTree('B')
 gtree.reg_orig('numeral', form='reg') 
 gtree.reg_orig('j', form='reg') 
 gtree.recapitalize() 

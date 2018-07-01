@@ -9,7 +9,7 @@ from detectcombinations import detectCommonAbbrCombinations
 
 os.system('clear')
 
-mss = ['a', 'b', 'c']     # The sigla of the three manuscripts (in the future, it might include 'd')
+mss = ['a', 'b', 'c']     # The sigla of the three manuscripts (in the future, it might include 'd' or others)
 
 for x in mss:
     tosLint(x)
