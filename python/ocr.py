@@ -263,29 +263,15 @@ class ocr:
 
                 nextline = self.lines[i+1]
 
-                #if len(l) > 1 and l[-2] == '-' and l != '<!--nolb-->':     # This 'if' manages syllabation dashes
                 if len(l) > 1 and l[-2] == '-':     # This 'if' manages syllabation dashes
                     
                     if len(nextline.split(' ', 1)) == 1:
                         firstword = nextline
-                        #print('Firstword:', firstword)  # debug
                         nextline = ''
-                        #print('Nextline:', nextline)  # debug
                     else:
                         firstword, nextline = nextline.split(' ', 1)
 
-                    '''
-                    try:
-                    except Exception as e:
-                        pass
-                        print('Riga attuale:', self.lines[i][:-1], '\nRiga successiva:', nextline, end='')   # debug
-                        print('Errore:', e, end='\n\n')
-                        #print(traceback.format_exception(*sys.exc_info()))
-                        #raise # reraises the exception
-                    '''
 
-                    if len(l) > 0 and l[0].isdigit():
-                        print('foooooooooooooooooooo')
                     #self.lines[i] = ''.join( [ l[:-2], '<lb break="no" rend="-" type="g"/>', firstword, '\n' ] )
                     self.lines[i] = ''.join( [ l[:-2], dash, firstword, '\n' ] )
 
@@ -294,9 +280,6 @@ class ocr:
                     # (corresponding to <lb break="no" rend="-" type="g"/>)
                     self.lines[i+1] = ''.join(['<!--nolb-->', nextline])
                     
-                    if l == '<!--nolb-->':
-                        print('Dopo:\n', l) # Debug
-
 
 
             if re.match('\d*\.\d*-.*', l): # Digits + full stop + digit(s) + dash + the rest of the line
