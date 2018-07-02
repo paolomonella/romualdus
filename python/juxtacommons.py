@@ -99,10 +99,33 @@ class msTree:
                             # ... or capitalize the first child of the first child of <rs>/</hi>
                             echild[0].text = echild[0].text.capitalize()
 
+    def simplify_to_scanlike_text (self, tagslist, removepar=False):
+        ''' Strip all tags included in list tagslist within paragraphs.
+            If removepar='True':
+                Replace <p xml:id="g163.8-163.10" decls="#ocr"> with 163.8-163.10 and
+                remove also <p>s;
+                if 'False', leave them.
+            Finally, re-insert the "-" dashes at the end of line and remove all <lb>s?? (not implemented so far)
+            All tags are assuming to belong to the TEI XML namespace.
+            '''
+        for p in self.tree.findall('.//t:p', ns):   # Strip markup inside <p>s
+            for t in tagslist:
+                etree.strip_tags(p, constants.tei_ns + t)
+        if removepar:
+            body = self.tree.find('.//t:body', ns)
+            for p in body.findall('.//t:p', ns):   # Replace <p xml:id="g163.8-163.10" decls="#ocr"> with 163.8-163.10
+                xmlid = p.get(constants.xml_ns + 'id')
+                try:
+                    p.text = ''.join([xmlid, p.text])
+                except:
+                    print(p.text)
+                #etree.strip_tags(p, '*')
+            etree.strip_tags(body, constants.tei_ns + 'p')
 
     def write (self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
+'''
 atree = msTree('a')
 atree.reg_orig('numeral', form='reg') 
 atree.write()
@@ -118,3 +141,9 @@ gtree.reg_orig('numeral', form='reg')
 gtree.reg_orig('j', form='reg') 
 gtree.recapitalize() 
 gtree.write()
+'''
+
+btree = msTree('bonetti')
+btree.recapitalize() 
+btree.simplify_to_scanlike_text(['rs', 'hi', 'note'], removepar=True)
+btree.write()
