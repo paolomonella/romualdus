@@ -18,18 +18,26 @@ import constants
 from lxml import etree
 import time
 
-def nameset (properNamesInputXmlFile):
+def nameset (properNamesInputXmlFile, mytag='rs', addrstxt=True):
     ''' Parse an xml file and return a set (not list) of names marked
-        with <rs> in that file. All names in the set are in lowercase.
-        Add to that set the proper names in file rs.txt
+        with mytag (typipcally <rs> or <hi>) in that file. All names in the set are in lowercase.
+        If addrstxt=True, add to that set the proper names in file rs.txt
         '''
     names_tree = etree.parse(properNamesInputXmlFile)
-    rss = names_tree.findall('.//t:rs', constants.ns)
-    namelist = [rs.text.lower() for rs in rss if len(list(rs)) == 0 ]   # The 'if' excludes <rs>'s with element children
-    with open ('rs.txt', 'r') as rstxt:
-        for l in rstxt:
-            namelist.append(l.strip().lower())
+    #rss = names_tree.findall('.//t:rs', constants.ns)  # Old version
+    mynames = names_tree.findall('.//t:%s' % (mytag), constants.ns)
+    namelist = [rs.text.lower() for rs in mynames if len(list(rs)) == 0 ]   # The 'if' excludes <rs>'s with element children
+    if addrstxt:
+        with open ('rs.txt', 'r') as rstxt:
+            for l in rstxt:
+                namelist.append(l.strip().lower())
     return set(namelist)
+
+def write_to_output_file (myiterable):
+    datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
+    with open ('%s_output.txt' % (datetime), 'w') as outfile:
+        for x in myiterable:
+            print(x, file=outfile)
 
 
 def listnames (properNamesInputXmlFile, myNamespace):
