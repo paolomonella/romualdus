@@ -20,7 +20,7 @@
         <editorialDecl xml:id="ag">
             <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
         </editorialDecl>
-        <editorialDecl xml:id="a" default="true">
+        <editorialDecl xml:id="a">
             <p>Paragraph encoded at the Alphabetic layer only.</p>
             <!-- When a paragraph is encoded at the AL only: p decls="#a" -->
         </editorialDecl>

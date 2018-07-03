@@ -22,7 +22,7 @@
         <editorialDecl xml:id="ag">
             <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
         </editorialDecl>
-        <editorialDecl xml:id="a" default="true">
+        <editorialDecl xml:id="a">
             <p>Paragraph encoded at the Alphabetic Layer only.</p>
         </editorialDecl>
         <editorialDecl xml:id="ocr">
@@ -234,7 +234,7 @@ ante natu3 <rs>mathusala3</rs> posuere clxv annos, postea cc. <hi>iste</hi> quid
 mille lvi. 
 </p> 
 
-<p xml:id="g7.8-7.12"> 
+<p xml:id="g7.8-7.12" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>lamech</rs> annos clxxxii genuit <rs>noe</rs>, cui superuixit annos dxcv usque ad sextum annum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>ante diluuium. <rs>septuaginta</rs> ante natum <rs>noe</rs> ponunt annos clxxxviii et postea dlxv. 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>in hac sola generatione summa uniuersitatis discrepat, quia xx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> annis plus 
@@ -243,7 +243,7 @@ uixisse <rs>lamech</rs>
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>in <rs>hebreis</rs>, quam in <rs>septuaginta</rs> translatorum codicibus inuenitur. <rs>septuaginta</rs> duo  millia <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>ccxlii. <rs>hebrei</rs> mdclvi. 
 </p> 
 
-<p xml:id="g7.13-7.27"> 
+<p xml:id="g7.13-7.27" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>noe</rs> anno dc diluuium factum est, mense secundo septima decima die mensis. <hi>hic</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>perficitur prima etas continens secundum hebraicam ueritatem annos mille dclvi; iuxta sep<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>tuaginta 
 uero annos duo milia ccxlii. <hi>sane</hi> de differentia annorum inter hebream, et lxx 
@@ -261,11 +261,11 @@ fuerit, posteaque in hoc mundo xx annis uixerit. <hi>et</hi> post aliquanta beat
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>potest, uerum ei lingue potius credatur unde est in aliam per interpretes facta translatio. 
 </p> 
 
-<p xml:id="g7.28-7.28"> 
+<p xml:id="g7.28-7.28" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>explicit</hi> prima etas. 
 </p> 
 
-<p xml:id="g7.29-7.29"> 
+<p xml:id="g7.29-7.29" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>incipit</hi> secunda. 
 </p> 
 
@@ -280,7 +280,7 @@ quos, et uos nunc similis forme salvos fecit baptisma non carnis depositio sordi
 docens esse figuram. 
 </p> 
 
-<p xml:id="g8.7-8.11"> 
+<p xml:id="g8.7-8.11" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>uixit</hi> quoque <rs>noe</rs> post diluuium annos cccl <pb n="20v" facs="vat:27" ed="a"/>usque ad lviii anuum natiuitatis <rs>abrahe</rs>. 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>sem</rs> uero centum ac duorum annorum <rs>arfaxat</rs> <rs>chal<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>deos</rs> 
 originem duxisse <rs>ieronimus</rs> scribit. <hi>supervixit</hi> autem <rs>sem</rs> nato <rs>arfaxat</rs> quingentis an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>nis, 
@@ -288,7 +288,7 @@ idest usque ad quinquagesimum annum natiuitatis <rs>iacobus</rs>. <rs>septuagint
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>hebrei</rs> mdcxciii. 
 </p> 
 
-<p xml:id="g8.12-8.23"> 
+<p xml:id="g8.12-8.23" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>arfaxat</rs> annos xxxv genuit <rs>sale</rs>. <hi>hic</hi> <rs>septuaginta</rs> interpretes unam generationem plus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>quam hebraica ueritas<note>First hand: meritas; the same hand corrected to ueritas</note> posuere, dicentes, quod <rs>arfaxat</rs> tum esset cccxxxv annorum ge<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>nuerit 
 <rs>cainam</rs>, qui cum cxxx annorum fuerit, ipse genuerit <rs>sale</rs>, quorum translationem 
@@ -303,14 +303,14 @@ veritatem annis dcl maiorem, idest annos dcccxlii. <hi>vixit</hi> autem <rs>arfa
 mmdcxxxix, <add place="above"><rs>hebrei</rs></add> mdccxxiii. 
 </p> 
 
-<p xml:id="g8.24-8.27"> 
+<p xml:id="g8.24-8.27" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>sale</rs> annos xxx genuit <rs>heber</rs>, cui superuixit annos <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>iii usque ad xvi annum nati<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>uitatis 
 <rs>iacob</rs>. <rs>septuaginta</rs> interpretes ante natum <rs>heber</rs> posuere annos cxxx, postea ccciii. 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>ab hoc <rs>heber</rs> <rs>hebreorum</rs> nomen, et genus oritur. <rs>septuaginta</rs> duo m septingenti xxxix, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>hebrei</rs> m octingentos lvii. 
 </p> 
 
-<p xml:id="g8.28-9.11">
+<p xml:id="g8.28-9.11" decls="a">
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>heber</rs> annos xxx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> genuit <rs>falech</rs>, cui superuixit annos <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx usque ad lxxix an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>num 
 nativitatis <rs>esau</rs>, et <rs>iacob</rs>. <rs>septuaginta</rs> ante natum <rs>falech</rs> annos posuere cxxx<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice> po<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>stea 
 cccxxx. <rs>falech</rs> interpretatur divisio, cui propterea tale nomen<note>Mistake in Garufi: 'nomem' for 'nomen'.</note> imposuere parentes, quia 
@@ -333,37 +333,37 @@ septuaginte due; patrie autem generationum mille, in tripartito secundo hoc ordi
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>mm<choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>iii, <rs>hebrei</rs> mcdlxxxvii. 
 </p> 
 
-<p xml:id="g9.12-9.14"> 
+<p xml:id="g9.12-9.14" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>falech</rs> annos xxx genuit <rs>reu</rs> cui superuixit annos ccix. <rs>septuaginta</rs> ante natum <rs>reu</rs>, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>cxxx annos ponunt, postea c<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. <hi>his</hi> temporibus primum templa constructa, et quidam prin<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>cipes 
 gentium tanquam dii sunt adorati. <rs>septuaginta</rs>, mmmxxxv, <rs>hebrei</rs> mdccc<choice><orig>xviiii</orig><reg type="numeral">xix</reg></choice>. 
 </p> 
 
-<p xml:id="g9.15-9.17"> 
+<p xml:id="g9.15-9.17" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>reu</rs> annos xxxii genuit <rs>seruch</rs>, cui superuixit annos ccvii. <rs>septuaginta</rs> ante natum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>seruch</rs> cxxxii posuere annos, postea ccvii. <hi>tunc</hi> <rs>citharum</rs> regnum dicitur exortum, ubi primus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>regnauit <rs>thanaus</rs>. <rs>septuaginta</rs> mmmclxv, <rs>hebrei</rs> mdcccxl<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. 
 </p> 
 
-<p xml:id="g9.18-9.21"> 
+<p xml:id="g9.18-9.21" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>seruch</rs> annos xxx genuit <rs>nabor</rs> cui superuixit annos ccc: <rs>septuaginta</rs> ante natum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>nahor</rs> ponunt annos cxxx postea cc. <hi>tunc</hi> <rs>egyptiorum</rs> imperium dicitur inchoasse, pri<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>mo 
 eis regnante <rs>uizoues</rs>; secundum <rs>septuaginta</rs> mmmccxl<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice>, secundum <rs>hebrei</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>m<choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxviii. 
 </p> 
 
-<p xml:id="g9.22-9.24"> 
+<p xml:id="g9.22-9.24" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>nahor</rs> annos xxix genuit <rs>thare</rs>, cui superuixit annos cxxviii. <rs>septuaginta</rs> ante natum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>thare</rs> ponunt annos lxx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice> postea cxx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. <hi>tunc</hi> <rs>assiriorum</rs><note>Garufi mistakingly has 'assisiorum'</note>, <rs>siciniorumque</rs> regnum nasci<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>tur, 
 his primum <rs>belo</rs>, illis <rs>agialeo</rs> regnante. 
 </p> 
 
-<p xml:id="g9.25-9.25"> 
+<p xml:id="g9.25-9.25" decls="a"> 
 <pb n="22v" facs="vat:29" ed="a"/> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>hebrei</rs> m<choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xlviii. 
 </p> 
 
-<p xml:id="g9.26-9.31"> 
+<p xml:id="g9.26-9.31" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>thare</rs> annos lxx genuit <rs>abraham</rs> cui superuixit annis cxxxv. <hi>hactenus</hi> seculi secunda 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>etas protenditur, cuius tota series recensita, beatus <rs>augustinus</rs> in libro <title>de ciuitate <rs>dei</rs></title> xvi 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>capitulo x hoc modo conclusit. <hi>fiunt</hi> itaque anni a diluuio usque ad <rs>abraham</rs> mille sep<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>tuaginta 
@@ -384,7 +384,7 @@ nullam, aut difficillimam reddunt. <rs>otosius</rs>:
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>incipit</hi> tertia etas. 
 </p> 
 
-<p xml:id="g10.7-10.12"> 
+<p xml:id="g10.7-10.12" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>tertia</hi> mundi etas a natiuitate certe <rs>abrahe</rs> patriarche, qui cum <rs>septuaginta</rs> quinque 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>annorum esset, relicta gente et patria ad imperium<pb n="23r" facs="vat:29" ed="a"/> <rs>dei</rs> uenit in terram <rs>canaan</rs>, accipiens 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>promissionem nascituro de semine suo saluatore, in quo benedicentur omnes gentes simul, 
@@ -393,7 +393,7 @@ his temporibus <rs>ninus</rs>, et <rs>semiramis</rs> eius uxor <rs>assiriis</rs>
 artem tunc primum inuenit. <rs>otosius</rs>: 
 </p> 
 
-<p xml:id="g10.13-10.18"> 
+<p xml:id="g10.13-10.18" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>ante</hi> annos <rs>urbis</rs> condite mccc rex primus apud <rs>assyrios</rs>, qui eminere ceteris po<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>tuit, 
 <rs>ninus</rs> fuit, quique primus dominationis libidini arma foris extulit, atque cruentam ui<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>tam 
 per totam <rs>asiam</rs> bellis egit: quamuis pater eius <rs>belus</rs> prius obscure regnauerit 
@@ -402,25 +402,25 @@ autem annis lii, quo occiso, successit ei uxor sua <rs>semiramis</rs>, que cum e
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>babyloniam</rs> urbem instaurauit, caputque regni <rs>assyriorum</rs> ut esset, instituit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>xxxiii. 
 </p> 
 
-<p xml:id="g10.19-10.20"> 
+<p xml:id="g10.19-10.20" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>abraham</rs> anno lxxxvi genuit <rs>ysmahel</rs>, a quo <rs>ysmahelitem</rs>. genuit autem <rs>ysmahel</rs> duo<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>decim 
 duces, et uixit annos cxxxvii. mm<add place="nextline">xlviii</add>. 
 </p> 
 
-<p xml:id="g10.21-10.24"> 
+<p xml:id="g10.21-10.24" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>idem</hi> <rs>abraham</rs> cum esset annorum c genuit <rs>ysahac</rs>, qui primus, et solus in tota 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>testamenti ueteris serie legitur octaua die circumcisus quod<pb n="23v" facs="vat:30" ed="a"/> non sine magno misterio pri<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>uilegium 
 est filio promissionis donatum, et postquam genuit <rs>ysahac</rs> uixit <rs>abraham</rs> lxxv 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>annos usque ad xv annum natiuitatis <rs>esau</rs>, et <rs>iacob</rs>. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>cviii. 
 </p> 
 
-<p xml:id="g10.25-10.27"> 
+<p xml:id="g10.25-10.27" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>ysahac</rs> habens annos lx genuit <rs>esau</rs>, et <rs>iacob</rs> patriarchas <rs>idumee</rs>, et <rs>israelitice</rs> gentis, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>post quorum ortum uixit <rs>ysahac</rs> annos cxx. <hi>his</hi> temporibus primus <rs>argos</rs> regnauit <rs>inanchus</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>cuius filia <rs>io</rs>, quam <rs>egiptiii</rs> mutato nomine <rs>ysidem</rs> colunt. 
 </p> 
 
-<p xml:id="g10.28-10.28"> 
+<p xml:id="g10.28-10.28" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>duo</hi> milia c nona<add place="nextline">ginta <choice><orig>viiii</orig><reg type="numeral">ix</reg></choice></add>. 
 </p> 
 
@@ -445,7 +445,7 @@ uastans. <hi>item</hi> <rs>orosius</rs>:
 eo tempore <rs>foroneus</rs> <rs>grecie</rs> leges dedit. <hi>iuxta</hi> <rs>hebreos</rs> anni <choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lii. 
 </p> 
 
-<p xml:id="g11.10-11.26"> 
+<p xml:id="g11.10-11.26" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>abitatio</hi> filiorum <rs>israhel</rs> qua manserunt in <rs>egypto</rs> fuit annorum <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx, quibus ex<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>pletis 
 eadem die egressus est omnis exercitus <rs>domini</rs> de terra <rs>egypti</rs>, ut scriptura testatur 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>exodi. <hi>quorum</hi> tamen summam annorum chronografi ei a septuagesimo quinto anno 
@@ -477,7 +477,7 @@ madefecit, cedibus oppleuit, libidinibus polluit, gentem utique nulli unquam hom
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>obnoxiam uernacula tantum quiete contentam. <hi>item</hi> <rs>orosius</rs>: 
 </p> 
 
-<p xml:id="g12.5-12.11"> 
+<p xml:id="g12.5-12.11" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>anno</hi> ante <rs>urbem</rs> conditam dcccv <rs>egyptus</rs> decem plagis attrita est per manum <rs>moysi</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>ducis, quem <rs>deus</rs> misit ad <rs>pharaonem</rs>, ut dimitteret populum suum. <hi>postquam</hi> uero <rs>pharao</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>dimisit <rs>israhelem</rs>, insecutus est eum cum omni suo exercitu usque ad mare rubrum: et <rs>hebreis</rs> 
@@ -487,11 +487,11 @@ madefecit, cedibus oppleuit, libidinibus polluit, gentem utique nulli unquam hom
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>temporis <rs>athlans</rs> astrologiam inuenit. 
 </p> 
 
-<p xml:id="g12.12-12.12"> 
+<p xml:id="g12.12-12.12" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><choice><orig>ii</orig><reg type="numeral">mm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xciii. 
 </p> 
 
-<p xml:id="g12.13-12.26"> 
+<p xml:id="g12.13-12.26" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>moyses</rs> autem annos xl eductum ex <rs>egypto</rs> regit populum <rs>israhel</rs> in deserto. <hi>quorum</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>primo anno tabernaculum <rs>domino</rs> construit, et vii mensibus<pb n="25v" facs="vat:32" ed="a"/> opus perficiens, mense primo 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>anni secundi prima die mensis erexit. <hi>hucusque</hi> ut <rs>eusepius</rs> commemorat quinque libri <rs>moysi</rs> 
@@ -508,7 +508,7 @@ qui paulo minus ad tria milia annorum continentiam gerunt. <hi>a</hi> <rs>moyse<
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>autem ex libro <title>iosue</title>, et <title>iudicum</title> usque ad regum tempora. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. 
 </p> 
 
-<p xml:id="g12.27-13.14"> 
+<p xml:id="g12.27-13.14" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>iosue</rs> annos xxvi regit populum, ut <rs>ioseppus</rs> docet. <hi>nam</hi> scriptura sancta quod fuerint 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>anni ducatus illius tacet. <hi>quare</hi> autem <rs>eusebius</rs> in <title>chronicis</title> xxvii annos posuerit infra 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>dicemus. <hi>primo</hi> namque ducatus sui anno decimo die primi mensis populum, patefacto 
@@ -528,28 +528,28 @@ in qua <rs>trous</rs> prius regnauit. <choice><orig>ii</orig><reg type="numeral"
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>
 </p> 
 
-<p xml:id="g13.15-13.18"> 
+<p xml:id="g13.15-13.18" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>othonihel</rs> annos xl populum <rs>dei</rs> rexit. <hi>hic</hi> autem de tribu <rs>iuda</rs> primus in <rs>israhel</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>domino</rs> iubente, constituitur. <hi>huius</hi> temporibus primis, filii <rs>israhel</rs> seruire <rs>chusan</rs> <rs>rasathaim</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>regi <rs>mesopotamie</rs> annis viii. <hi>eodem</hi> tempore <rs>cathinus</rs> filius <rs>agenoris</rs> litteras <rs>grecie</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>dedit. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcxxxix. 
 </p> 
 
-<p xml:id="g13.19-13.22"> 
+<p xml:id="g13.19-13.22" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>loth</rs> annos lxxx filius <rs>gera</rs>, filius <rs>gemini</rs>, qui utraque manu utebatur pro dextera, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>cuius in principiis seruiuit <rs>israhel</rs> <rs>eglon</rs> regi <rs>moab</rs> annis xviii donec cum ipse percusso 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>eglon</rs> ipse liberauit. <hi>hoc</hi> tempore <rs>cirene</rs> ciuitas condita est in <rs>libia</rs>. <hi>tunc</hi> quoque 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>fabule ficte de rebus gestis ab hominibus sceleratis. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dclxxx. 
 </p> 
 
-<p xml:id="g13.23-13.26"> 
+<p xml:id="g13.23-13.26" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>deborra</rs> prophetissa annos xl de tribu <rs>effraim</rs> <pb n="27r" facs="vat:33" ed="a"/>cum <rs>barach</rs> de tribu <rs>neptalim</rs> cuius in 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>initio ducatus oppressit filios <rs>israel</rs> <rs>iabin</rs> rex <rs>chanaan</rs> xx annis qui regnabat in <rs>asor</rs>. <hi>sed</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>occiso ab <rs>israel</rs> principe militie eius <rs>sisara</rs>, prostratus tandem, ac humiliatus est. <hi>hoc</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>tempore <rs>miltus</rs> condita. <hi>et</hi> tunc <rs>apollo</rs> cytharam repperit<note>Garufi mistakingly prints repperlt</note>. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxxx. 
 </p> 
 
-<p xml:id="g13.27-13.32"> 
+<p xml:id="g13.27-13.32" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>gedeon</rs>, qui et <rs>ieroboal</rs> xl annis de tribu <rs>manasse</rs>, sub quo seruiuit <rs>israhel</rs> <rs>madia<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>nitis,</rs> 
 et <rs>amalechitis</rs> vii annis. <hi>sed</hi> <rs>gedeon</rs> pugnante liberatus est. <hi>nam</hi> per uelleris si<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>gnum, 
 sicut a <rs>deo</rs> petiit, confortatus ipse cum ccc solummodo uiris, quos secum habuit, uicit 
@@ -572,25 +572,25 @@ sicut a <rs>deo</rs> petiit, confortatus ipse cum ccc solummodo uiris, quos secu
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>in <rs>troia</rs> post <rs>laomedontem</rs> regnauit <rs>priamus</rs>. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclxvii. 
 </p> 
 
-<p xml:id="g14.8-14.10"> 
+<p xml:id="g14.8-14.10" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>iahyr</rs> annis xxii ex tribu <rs>manasse</rs>. <hi>his</hi> diebus <rs>hercules</rs> agonem <rs>olimpiacum</rs> con<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>stituit, 
 a quo usque ad primam <rs>olimpiadem</rs> supputantur anni <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx. <rs>carmentes</rs> litteras 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>latinas inuenit. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclxxiii. 
 </p> 
 
-<p xml:id="g14.11-14.14"> 
+<p xml:id="g14.11-14.14" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>iepte</rs> <rs>galaadites</rs> annis vi <rs>philistim</rs>, et <rs>ammanite</rs> deprimunt <rs>israhel</rs>, ex quibus <rs>am<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>manite</rs> 
 debellantur a <rs>zepte</rs>, qui in libro <title>iudicum</title> ab ete <rs>moysi</rs> usque ad semetipsum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>ait supputari annos ccc. <rs>hercules</rs> in flammis se iniecit. <rs>amazonum</rs> tunc regnum uige<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>bat, 
 quod usque ad <rs>alexandri</rs> <rs>magni</rs> tempora mansisse legimus <add place="nextline"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclxxx</add>. 
 </p> 
 
-<p xml:id="g14.15-14.16"> 
+<p xml:id="g14.15-14.16" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>abessan</rs> de <rs>bethleem</rs> annos vii <rs>agamenon</rs> <rs>micenis</rs> imperat annos xxxv<pb n="28r" facs="vat:34" ed="a"/> cuius annos xv 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>troia</rs> capitur. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxc. 
 </p> 
 
-<p xml:id="g14.17-14.21"> 
+<p xml:id="g14.17-14.21" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>achilon</rs> <rs>zabulonites</rs> annis x. <hi>hic</hi> cum annis x suis in <rs>septuaginta</rs> interpretibus non 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>habetur, pro quo annos supplendo <rs>eusebius</rs> <rs>iosue</rs> filio <rs>nun</rs>, <rs>samuheli</rs> et <rs>sauli</rs>, quorum annos 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>scriptura non dicit, plures annos, quam in <rs>iosep<add place="above">h</add>o</rs> legebat, annotauit, quatenus ab egressu 
@@ -598,14 +598,14 @@ quod usque ad <rs>alexandri</rs> <rs>magni</rs> tempora mansisse legimus <add pl
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>scriptura predicat habere<note>Garufi mistakingly has hahere</note>. <rs>orosius</rs>: 
 </p> 
 
-<p xml:id="g14.22-14.25"> 
+<p xml:id="g14.22-14.25" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>ante</hi> <rs>urbem</rs> conditam <choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx annos raptus <rs>helene</rs>, coniuratio <rs>grecorum</rs>, et concursus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>mille nauium, dehinc decennis obsidio, ac postremo famosium <rs>troie</rs> excidium predicatur. 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>in quo bello per decem annos cruentissime gestos; quas nationes quantosque populos idem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>turbo inuoluerit, <rs>omerus</rs> poeta in primis clarus luculentissimo carmine palam fecit. 
 </p> 
 
-<p xml:id="g14.26-14.28"> 
+<p xml:id="g14.26-14.28" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>thares</rs> autem <rs>frigius</rs>, qui <rs>troie</rs> hystoriam scripsit, dicit: quia in illo bello perierunt ex 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>achiuis</rs> ccclxii milia. <hi>ex</hi> <rs>troianis</rs> autem usque ad ciuitatem perditam clxvi milia; ciuitate 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>uero perdita cclxvi milia <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxcviii. 
@@ -633,7 +633,7 @@ commouit, bella excitauit cum <rs>turno</rs> <rs>dauni</rs> filio regis <rs>tusc
 diu iam inchoatis acta prosecuntur. 
 </p> 
 
-<p xml:id="g15.9-15.12"> 
+<p xml:id="g15.9-15.12" decls="a"> 
 <pb n="29r" facs="vat:35" ed="a"/>
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>iudices</hi> autem latini duodecim, qui postea romani nuncupati sunt, post tertium annum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>captiuitatis <rs>troie</rs>, ut quidam uolunt, octauum, regnauit <rs>eneas</rs> annis iii. <hi>post</hi> quem <rs>asca<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>nius</rs> 
@@ -641,7 +641,7 @@ annis xxx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>. <hi>an
 annis circiter cl <rs>ascanius</rs> <rs>enee</rs> filius <rs>albam</rs> urbem condidit <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccc. 
 </p> 
 
-<p xml:id="g15.13-15.19"> 
+<p xml:id="g15.13-15.19" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>heli</rs> sacerdos annis xl. <hi>in</hi> <rs>ebreorum</rs> libro xl anni inueniuntur. <hi>in</hi> <rs>septuaginta</rs> autem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>interpretatione xx. <rs>hectoris</rs> filii <rs>ilium</rs> receperunt, expulsis <rs>antenoris</rs> posteris, <rs>heleno</rs> sibi 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>subsidium ferente. <rs>latinorum</rs> tertius <rs>siluius</rs> <rs>enee</rs> filius frater <rs>ascanii</rs> regnat annis xx<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice>, 
@@ -651,27 +651,27 @@ annis circiter cl <rs>ascanius</rs> <rs>enee</rs> filius <rs>albam</rs> urbem co
 sunt. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccc. 
 </p> 
 
-<p xml:id="g15.20-15.21"> 
+<p xml:id="g15.20-15.21" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>samuhel</rs> annos xii ut docet <rs>iosephus</rs>: in scriptura enim sancta quandiu prefuerit mi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>nime 
 patet. <hi>ab</hi> hoc tempora prophetarum incipiunt. 
 </p> 
 
-<p xml:id="g15.22-15.23"> 
+<p xml:id="g15.22-15.23" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>latinorum</rs> quartus <rs>eneas</rs> <rs>siluius</rs> regnat annis xxxi. <hi>tunc</hi> temporis <rs>omerus</rs> poeta 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>clarus fuis<pb n="29v" facs="vat:36" ed="a"/>se putatur, iuxta <rs>ysidorum</rs>. <choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcccxc. 
 </p> 
 
-<p xml:id="g15.24-15.26"> 
+<p xml:id="g15.24-15.26" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>saul</rs> primus <rs>hebreorum</rs> rex annos xx et huius quia in canonica scriptura non habetur, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>de antiquitatis <rs>iosep<add place="above">h</add>i</rs> libro, tempus regni notauimus. <hi>in</hi> <rs>lacedemone</rs> regnauit primus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><rs>euristeus</rs> annos xlii. <rs>corinthi</rs> primus <rs>arethis</rs> annis xxxv. 
 </p> 
 
-<p xml:id="g15.27-15.27"> 
+<p xml:id="g15.27-15.27" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>quarta</hi> etas. 
 </p> 
 
-<p xml:id="g15.28-15.31"> 
+<p xml:id="g15.28-15.31" decls="a"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/><hi>quarta</hi> mundi etas non solum cum inchoato <rs>iudee</rs> gentis imperio, sed et cum inno<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>uata 
 promissione, que patribus olim data est, imperii christiani sumit exordium, iurante 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>domino <rs>dauid</rs> ueritatem: de fructu uentris eius sedere super sedem eius. <hi>ex</hi> hoc autem 
