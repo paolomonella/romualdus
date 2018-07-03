@@ -18,6 +18,9 @@ Transcription of MS C
 g.xml
 OCR from the Garufi edition
 
+bonetti.xml
+OCR from the Bonetti edition
+
 a_juxta.xml
 Transcription of MS A, modified to be uploaded to JuxtaCommons for collation. E.g.: numbers are normalized
 
@@ -27,19 +30,8 @@ OCR from the Garufi edition, modified to be uploaded to JuxtaCommons for collati
 input.txt
 Temporary file in which the un-checked OCR from Garufi is put, so it can be processed by ocr.py
 
-Romualdus G vs A-punct-and-capital-ignored.xml
-Parallel segmentation method output from JuxtaCommons, with punctuation and capitals ignored.
-Version 1.0: produced from g.xml and a.xml without further edits.
-Version 2.0: produced from a_juxta.xml (numbers normalized) and g_juxta.xml (j's transformed into i's)
-
-temp_g.xml
-Temporary file in which the OCR from Garufi is put, so it can be exported into g.xml
-
-x.xml
-A copy of g.xml in which I added <app>s 'by hand' with the help of "vim -d"
-
-y--ms_a.xml
-A 'foo' copy of a.xml. I gave "vim -d x.xml y--ms_a.xml" to create the <app>s in x.xml
+temp.xml
+Temporary file in which the OCR from Garufi or Bonetti is put, so it can be exported into g.xml or bonetti.xml
 
 ## JuxtaCommons links
 
