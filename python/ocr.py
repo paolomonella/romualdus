@@ -17,9 +17,9 @@ bom = False     # Set to True if you want to get rid of the initial BOM
     4. Run this script in the 'python' folder, where it is;
     5. The output will be appended to files temp.xml, a.xml or g.xml in the 'xml' folder.
     6. Check if <rs>'s and <hi>'s and all remaining uppercase chars are OK (vim /\v[A-Z][a-z]  and   /\v[.!?-]   etc.)
-    7. You *can* add <seg type="num">
+    7. Add <num>
     8. Un-capitalize everything
-    9. Substitute j → i in a.xml
+    9. Substitute j → i in a.xml (and use &jj; in bonetti.xml and g.xml)
     10. Eventually check empty <p>s appended (with the same xml:id's) to b.xml and c.xml
 
 The input.txt file must look like this
