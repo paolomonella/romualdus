@@ -110,6 +110,9 @@ class msTree:
             '''
         for p in self.tree.findall('.//t:p', ns):   # Strip markup inside <p>s
             for t in tagslist:
+                for reg in p.findall('.//t:reg', ns):   # Remove all regularizations, i.e. all <reg> elements
+                    regparent = reg.getparent()
+                    regparent.remove(reg)
                 etree.strip_tags(p, constants.tei_ns + t)
         if removepar:
             body = self.tree.find('.//t:body', ns)
@@ -145,5 +148,5 @@ gtree.write()
 
 btree = msTree('bonetti')
 btree.recapitalize() 
-btree.simplify_to_scanlike_text(['rs', 'hi', 'note'], removepar=True)
+btree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num'], removepar=True)
 btree.write()
