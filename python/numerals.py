@@ -12,7 +12,7 @@ import constants
 from lxml import etree
 import roman
 
-siglum = 'bonetti' # XML filename to parse ('a' for 'a.xml'; 'bonetti' for 'bonetti.xml')
+siglum = 'g' # XML filename to parse ('a' for 'a.xml'; 'bonetti' for 'bonetti.xml')
 
 def romanContent(num):
     r = ''
@@ -46,7 +46,6 @@ def romanContent(num):
             print('L\'elemento non ha contenuto:', r)
     return(r)
 
-
 n = constants.ns
 tree = etree.parse('../xml/%s.xml' % siglum)
 #numbers = tree.findall('.//t:seg[@type="num"]', constants.ns)
@@ -61,12 +60,13 @@ for number in numbers:
             myvalue = roman.fromRoman(content.upper())
             #print(roman.fromRoman(content.upper()))    # debug
             number.set('value', str(myvalue))
+            number.set('type', 'guessedvalue')
         except roman.InvalidRomanNumeralError:
             print('Numero romano non parsabile:', content.upper())
             number.set('type', 'foo')
     else:
-        print('Il valore di', content.upper(), 'era già settato a', number.get('value'))
-
+        #print('Il valore di @value era già settato a', number.get('value'))
+        pass
 
 tree.write('../xml/numerals-%s.xml' % (siglum), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
