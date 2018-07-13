@@ -427,7 +427,7 @@ est filio promissionis donatum, et postquam genuit <rs>ysahac</rs> uixit <rs>abr
 </p> 
 
 <p xml:id="g10.28-10.28" decls="#a"> 
-&glb;;<hi>duo</hi> milia c nona<add place="nextline">ginta <num value="9"><choice><orig>viiii</orig><reg type="numeral">ix</reg></choice></num></add>. 
+&glb;;<hi>duo</hi> milia <num value="100">c</num> nona<add place="nextline">ginta <num value="9"><choice><orig>viiii</orig><reg type="numeral">ix</reg></choice></num></add>. 
 </p> 
 
 <p xml:id="g10.29-11.4"> 
@@ -564,14 +564,14 @@ sicut a <rs>deo</rs> petiit, confortatus ipse cum <num value="300">ccc</num> sol
 &glb;;primus <rs>ianus</rs> regnauit. <num value="2742"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxlii</num>. 
 </p> 
 
-<p xml:id="g13.33-14.3"> 
+<p xml:id="g13.33-14.3" decls="#a"> 
 &glb;;<rs>abimelech</rs> <rs>gedeonis</rs> filius annos <num value="3">iii</num>, qui regnabat in <rs>sichem</rs>. <hi>hic</hi> autem <rs>gedeonis</rs> 
 &glb;;filius ex concubina occidit <num value="70">lxx</num> fratres suos filios patris eius ex matrimoniis. <hi>remansitque</hi> 
 &glb;;<rs>ionathas</rs> filius <rs>ieroboal</rs> minimus, et absconditus est. <hi>ipso</hi> quoque tempore <rs>hercules</rs> <rs>ilium</rs> 
 &glb;;uastat. <pb n="27v" facs="vat:34" ed="a"/>uastat <rs>saturnus</rs> in <rs>italiam</rs> fugiens, ibi post <rs>ianum</rs> regnauit. <num value="2745"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccxlv</num>. 
 </p> 
 
-<p xml:id="g14.4-14.7"> 
+<p xml:id="g14.4-14.7" decls="#a"> 
 &glb;;<rs>pthola</rs> annis <num value="23">xxiii</num> filius <rs>phoa</rs> patrui <rs>abimelech</rs>, uir de <rs>ysachar</rs>, qui habitabat in <rs>sanir</rs> 
 &glb;;montis <rs>effraym</rs>. <hi>fuitque</hi> his temporibus bellum <rs>laphitarum</rs>, et <rs>centaurorum</rs>, quod scribit 
 &glb;;<rs>palefactus</rs> primo <title>de incredibilibus</title> libro. <hi>notabiles</hi> fuisse dicuntur equites <rs>thessalorum</rs>. 
@@ -1083,7 +1083,7 @@ apostoli et euangeliste de <rs>pestana</rs> ciuitate <rs>bricie</rs> in <rs>sale
 translatum est, principante tunc in eadem ciuitate <rs>gisulfo</rs>. 
 &blb;<hi>at</hi> uero in <rs>gallia</rs> <rs>carolus</rs> frater <rs>lotharii</rs> <rs>francorum</rs> regis euo 
 &blb;iunior priuatis in rebus senuit. <hi>fuerant</hi> autem <rs>ugoni</rs> <rs>magno</rs> filii 
-&blb;<hi>otto</hi> et <rs>ugo</rs> atque <rs>enricus</rs>, nati ex filia <hi>ottonis</hi> regis <rs>saxonum</rs>. 
+&blb;<rs>otto</rs> et <rs>ugo</rs> atque <rs>enricus</rs>, nati ex filia <rs>ottonis</rs> regis <rs>saxonum</rs>. 
 &blb;<hi>defuncto</hi> itaque <rs>ugone</rs> <rs>magno</rs>, successit ei <rs>otto</rs> filius eius qui 
 &blb;non post multum temporis mortuus est, et <rs>ugo</rs> frater eius effec&bd;tus 
 est dux <rs>francorum</rs> regis, <rs>enricus</rs> quoque effectus est dux regis 
@@ -1106,26 +1106,26 @@ incarnationis <num value="963"><choice><orig>dcccc</orig><reg type="numeral">cm<
 </p> 
 
 
-<p xml:id="g167.1-167.3" decls="#ocr"> 
-&blb;<hi>sequente</hi> uero anno <note resp="bonetti">(sed 962)</note> idem <rs>otto</rs> <rs>saxonum</rs> rex <rs>ro&bd;mam</rs> 
+<p xml:id="g167.1-167.3" decls="#a"> 
+&blb;<hi>sequente</hi> uero anno <note resp="bonetti">sed 962</note> idem <rs>otto</rs> <rs>saxonum</rs> rex <rs>ro&bd;mam</rs> 
 uenit nobiliter cum exercitu et a <rs>iohanne</rs> papa coronatus 
 &blb;est, accipiens ab eo totius <rs>italie</rs> uexillum cum imperii dignitate, 
-&blb;professus iureiurando seruare fidem <rs>romane</rs> ecclesie. <hi>et</hi> tunc 
+&blb;professus iureiurando seruare fidem <rs>romane</rs> ecclesie. <hi>ex</hi> tunc 
 &blb;itaque <rs>otto</rs> rex appellatus est imperator. 
 </p> 
 
 
-<p xml:id="g167.4-168.4" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="968"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxvii&jj;</num>, hic in <rs>apuliam</rs> 
+<p xml:id="g167.4-168.4" decls="#a"> 
+&blb;<hi>anno</hi> dominice incarnationis <num value="967"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxvi&jj;</num>, hic in <rs>apuliam</rs> 
 &blb;uenit cum exercitu et oppidum <rs>barum</rs> expugnando cepit, cepit&bd;que 
 ciuitatem <rs>bibinum</rs> atque <rs>asculum</rs>, <rs>grecos</rs> expellens. <hi>interea</hi> 
 &blb;apud <rs>constantinopolim</rs> defuncto imperatore <rs>niceforo</rs>, <rs>iohan&bd;nes</rs> 
 cognomento <rs>simiski</rs> tenuit imperium annis <num value="6">vi</num>. <hi>quo</hi> defunc&bd;to 
 <rs>basilius</rs> et <rs>constantinus</rs> filii eius ceperunt imperare ab an&bd;no 
-incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> (sed 976), regnaueruntque 
+incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> <note resp="bonetti">sed 976</note>, regnaueruntque 
 &blb;annis <num value="55">lv</num>. <hi>at</hi> uero <rs>rome</rs> defuncto <rs>iohanne</rs> papa <rs>benedictus</rs> papa 
-&blb;sedit annis <num value="2">ii</num>, et post eum <rs>leo</rs> sedit anno uno mensibus <num value="2">ii</num>. <hi>dein</hi>&bd;de 
-uero <rs>iohannes</rs> sedit annis <num value="6">vi</num> mensibus <num value="11">xi</num>. <hi>hic</hi> a <rs>petro</rs> prefec&bd;to 
+&blb;sedit annis <num value="2">ii</num>, et post eum <rs>leo</rs> sedit annis <num value="6">vi</num> mensibus <num value="11">xi</num>. <hi>hic</hi> a <rs>petro</rs> prefec&bd;to 
+<pb n="198r" facs="vat:223" ed="a"/>
 <rs>romane</rs> urbis comprehensus et in castello sancti <rs>angeli</rs> retru&bd;sus, 
 deinde in <rs>campaniam</rs> in exilium missus et post menses de&bd;cem 
 <rs>romam</rs> reuersus est, et de persecutoribus eius ab <rs>ottone</rs> 
@@ -1136,62 +1136,62 @@ accepta corona <rs>aquisgranum</rs> reuersus est.
 &blb;<hi>hic</hi> etiam papa <rs>iohannes</rs> nobilitauit <rs>capuam</rs> archiepiscopa&bd;tu, 
 in qua ciuitate tunc principabatur <rs>pandulfus</rs> cognomento <rs>ca&bd;pudferreus</rs>. 
 <milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>eodem</hi> tempore <rs>saraceni</rs> uenerunt in <rs>apuliam</rs> et expugnaue&bd;runt 
+&blb;<hi>eodem</hi> tempore <rs>sarraceni</rs> uenerunt in <rs>apuliam</rs> et expugnaue&bd;runt 
 ciuitatem <rs>grauinam</rs> eamque ceperunt. <hi>hinc</hi> quoque secun&bd;do 
 anno post hec ceperunt ciuitatem <rs>bibinum</rs> ignique combus&bd;serunt. 
 </p>
 
-
-<p xml:id="g168.5-168.7" decls="#ocr">
-<hi>anno</hi> incarnationis <rs>domini</rs> <num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxv&jj;</num> (sed 986), <rs>lotha&bd;rius</rs> 
+<p xml:id="g168.5-168.7" decls="#a">
+<hi>anno</hi> incarnationis <rs>domini</rs> <add place="nextline"><num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxv&jj;</num></add> <note resp="bonetti">sed 986</note>, <rs>lotha&bd;rius</rs> 
 <rs>francorum</rs> rex senex plenus dierum obiit, postquam regnau&bd;it 
 annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice></num>, sepultusque in basilica <rs>sancti remigii</rs> <rs>remis</rs>. <hi>cui</hi> 
 &blb;successit <rs>ludouicus</rs> filius eius adhuc iuuenis. 
 </p> 
 
 
-<p xml:id="g168.8-169.4" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&jj;</num> (sed 972) de&bd;functo 
+<p xml:id="g168.8-169.4" decls="#a"> 
+&blb;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&jj;</num> <note resp="bonetti">sed 972</note> de&bd;functo 
 <rs>iohanne</rs> papa <rs>benedictus</rs> ei in pontificatus honorem suc<pb n="70" ed="b"/>cessit. 
-&blb;<hi>eodem</hi> anno (sed 973) <hi>otto</hi> maior imperator obiit anno 
+&blb;<hi>eodem</hi> anno <note resp="bonetti">sed 973</note> <rs>otto</rs> maior imperator obiit anno 
 &blb;<num value="18">xviii</num> ex quo imperator appellatus est. <hi>successit</hi> autem ei <rs>otto</rs> 
 &blb;imperator, qui dictus est minor, qui postquam imperii coronam 
 &blb;accepit, ueniens <rs>salernum</rs> obsedit cepitque illam expugnans. 
+<pb n="198v" facs="vat:224" ed="a"/>
 &blb;<hi>dehinc</hi> per <rs>briciam</rs> et <rs>lucaniam</rs> in <rs>calabriam</rs> perrexit et apud 
 &blb;<rs>stilum</rs> <rs>calabrie</rs> oppidum cum <rs>sarracenis</rs> pugnauit eosque deui&bd;cit, 
 <rs>regium</rs> quoque cepit. <hi>regnauit</hi> autem annis <num value="2">ii</num>. <hi>eo</hi> itaque de&bd;functo 
 successit illi tercius <rs>otto</rs>. <hi>quo</hi> tempore <rs>iohannes</rs> factus 
 &blb;est princeps <rs>salerni</rs>. <hi>interea</hi> papa <rs>benedictus</rs> postquam annum 
-&blb;unum sedit, diem obiit, et successit ei <rs>bonus</rs> qui sedit anno uno 
-&blb;mensibus <num value="6">vi</num>. <hi>quo</hi> uita decedente <rs>bonifacius</rs> sedit mense uno. 
+&blb;unum sedit, diem obiit, et successit ei <rs>bonus</rs> qui sedit anno <num value="1">i</num> 
+&blb;mensibus <num value="6">vi</num>. <hi>quo</hi> uita decedente <rs>bonifacius</rs> sedit mense <num value="1">i</num>. 
 &blb;<hi>cui</hi> expulso <rs>benedictus</rs> successit in pontificatus honore qui se&bd;dit 
 annis <num value="9"><choice><orig>viiii</orig><reg type="numeral">ix</reg></choice></num>. 
 </p> 
 
 
 <p xml:id="g169.5-170.14" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxv</num>, (sed 987) obiit 
+&blb;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxv</num>, <note resp="bonetti">sed 987</note> obiit 
 &blb;<rs>ludouicus</rs> <rs>francorum</rs> rex iuuenis, postquam regnauit annis 
 &blb;nouem, sepultusque est in basilica beati <rs>cornelii</rs> <rs>compendio</rs>. 
 &blb;<hi>cui</hi> successit <rs>carolus</rs> frater eius filius <rs>lotharii</rs> regis. <hi>eodem</hi> anno 
-&blb;quo <rs>carolus</rs> hic cepit regnare, <rs>ugo</rs> dux eius cognomento <rs>cha&bd;pet</rs> 
+&blb;quo <rs>carolus</rs> hic cepit regnare, <rs>ugo</rs> dux eius cognomento <rs>cha&bd;fet</rs> 
 rebellauit contra <rs>carolum</rs> regem consilioque habito cum 
-&blb;<rs>ascelino</rs> qui erat episcopus <rs>laudunensis</rs> et consiliarius <rs>caroli</rs> 
+&blb;<rs>ascelino</rs> qui erat episcopus <rs>laudum</rs> et consiliarius <rs>caroli</rs> 
 &blb;quatenus eum sibi traderet. <hi>qui</hi> dolis acquiescens tradidit eum 
-&blb;<rs>ugoni</rs> duci quadam nocte cunctis quiescentibus. "<hi>uinctus</hi> est 
+&blb;<rs>ugoni</rs> duci quadam nocte cunctis quiescentibus. <hi>uinctus</hi> est 
 &blb;itaque <rs>carolus</rs> rex cum uxore sua et positus in custodia <rs>aurelia&bd;nis</rs> 
-ciuitate in turri", in qua uitam finiuit. <hi>habuit</hi> autem ex eadem 
-&blb;uxore filios duos <rs>ludouicum</rs> et <rs>carolum</rs>. <hi>ugo</hi> itaque dux re&bd;gnum 
-sibi <rs>francorum</rs> arripuit, contituitque regem filium suum 
+ciuitate in turri, in qua uitam finiuit. <hi>habuit</hi> tamen ex eadem 
+&blb;uxore duos filios <rs>ludouicum</rs> et <rs>carolum</rs>. <rs>ugo</rs> itaque dux re&bd;gnum 
+sibi <rs>francorum</rs> <pb n="199r" facs="vat:224" ed="a"/><!--§-->arripuit, contituitque regem filium suum 
 &blb;nomine <rs>robbertum</rs>. <hi>sicque</hi> defecit prosapia regum a <rs>carolo</rs> im&bd;peratore 
 descendentium et ex tunc <rs>francorum</rs> reges regali tan&bd;tum 
-honore contenti imperii dignitatem amiserunt. "<hi>in</hi> illis die&bd;bus 
+honore contenti imperii dignitatem amiserunt. <hi>in</hi> illis die&bd;bus 
 in <rs>remensium</rs> ciuitate erat archiepiscopus, uir bonus et mo&bd;destus, 
 iam senex, frater <rs>lotharii</rs> regis ex concubina nomine <rs>ar&bd;nulfus</rs>. 
 <rs>ugo</rs> autem dux inuidebat ei uolens exterminare proge&bd;niem 
 <rs>lotharii</rs> regis. <hi>congregansque</hi> in eadem ciuitate sinodum, 
 &blb;fecit degradare domnum <rs>arnulfum</rs> in loco uero eius consecrare 
-&blb;fecit domnum <rs>gibbertum</rs> monachum philosophum". <rs>seguinus</rs> 
+&blb;fecit domnum <rs>gibbertum</rs> monachum philosophum. <rs>seguinus</rs> 
 &blb;autem archiepiscopus <rs>senonum</rs> non consensit in degradatione 
 <pb n="72" ed="b"/> 
 &blb;<rs>arnulfi</rs> neque in ordinatione <rs>gibberti</rs>, sed plus timens <rs>deum</rs> 
