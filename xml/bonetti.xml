@@ -1,28 +1,46 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
-<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="g"/>'>
-<!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="g"/>'>
-<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="b"/>'>
-<!ENTITY blb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="b"/>'>
+
+
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
+<!ENTITY blb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'>
 <!ENTITY jj '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">j</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>'>
 ]>
-<!--gd  = Garufi Dash-->
-<!--glb = Garufi Line Beginning-->
-<!--gd  = Bonetti Dash-->
-<!--glb = Bonetti Line Beginning-->
+
+
+<!--bd  = Bonetti Dash-->
+<!--blb = Bonetti Line Beginning-->
 <!--jj  = Annotation on alphabeme 'i', saying that it is represented by allograph j in Bonetti or Garufi-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Romualdi Salernitani Chronicon, Bonetti</title>
+        <title>Romualdi Salernitani Chronicon, Bonetti edition</title>
+        <editor xml:id="pm">Paolo Monella</editor>
       </titleStmt>
       <publicationStmt>
         <p>Encoding experiments</p>
       </publicationStmt>
       <sourceDesc>
-        <p>Garufi</p>
-      </sourceDesc>
+        <biblStruct xml:id="b">
+            <monogr>     
+                <author>Guarna, Romualdus</author>
+                <title>Romualdo II Guarna, Chronicon</title>
+                <editor>Bonetti, Cinzia</editor>
+                <imprint>
+                    <publisher>Avagliano</publisher>
+                    <date>2001</date>
+                    <pubPlace>Salerno</pubPlace>
+                </imprint>
+            </monogr>
+            <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+                <biblScope unit="volume">6</biblScope>
+            </series>
+            <idno type="ISBN">9788883090561</idno>
+            <note>Saggi introduttivi di G. Andenna, Hubert Houben, M. Oldoni.</note>
+        </biblStruct>
+    </sourceDesc>
     </fileDesc>
     <encodingDesc>
         <editorialDecl xml:id="norev">
@@ -30,7 +48,7 @@
         </editorialDecl>
         <editorialDecl xml:id="ocr">
             <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
-                in the printed Bonetti edition).
+                in the print edition).
                 All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
                 punctuation, a script will be needed).
                 The text is now ready to be collated upon individual manuscripts.
@@ -39,14 +57,8 @@
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
                 <tagUsage gi="hi">
-                    Used to mark words capitalized in Bonetti, but not constituting
+                    Used to mark words capitalized in the print edition, but not constituting
                     a proper noun, such as "Sed" at the beginning of a sentence.
-                </tagUsage>
-                <tagUsage gi="pb">
-                    Used with @ed="a" to mark page breaks in MS A, with @ed="b" to mark page breaks in Bonetti.
-                </tagUsage>
-                <tagUsage gi="seg">
-                    I marked numerals with <tag>seg type="num"</tag>.
                 </tagUsage>
              </namespace>
          </tagsDecl>
@@ -67,7 +79,7 @@
 
 
 
-<pb n="62" ed="b"/> 
+<pb n="62" ed="#b"/> 
 
 <p xml:id="b062heading" decls="#ocr"> 
 &blb;<rs>romoaldi</rs> <num value="2">ii</num> archiepiscopi salernitani annales 
@@ -114,7 +126,7 @@ imperium, regnauitque annis sex.
 &blb;<hi>anno</hi> domini <num value="913"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xii&jj;</num>, defuncto <rs>constantino</rs> imperatore 
 &blb;<rs>romano</rs>, <rs>heliopolitanus</rs> <rs>constantinopolitanum</rs> suscepit impe&bd;rium 
 tenuitque annis <num value="25">xxv</num>. 
-<pb n="64" ed="b"/> 
+<pb n="64" ed="#b"/> 
 </p> 
 
 
@@ -134,7 +146,7 @@ factus est, et <rs>sergius</rs> in sede pontificali constitutus qui
 
 
 <p xml:id="g164.19-164.25" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>eodem</hi> anno <rs>landulfus</rs> princeps <rs>beneuenti</rs> preliatus est cum 
 <rs>ursileone</rs> patricio <rs>grecorum</rs> in <rs>apulia</rs> eumque uicit. "<hi>at</hi> uero in 
 &blb;<rs>gallia</rs> <rs>ludouicus</rs> <rs>francorum</rs> rex captus est a <rs>normannis</rs> dolo 
@@ -175,7 +187,7 @@ ingressi non modicam ipsius prouincie partem igni ac
 
 <p xml:id="g165.10-166.2" decls="#ocr"> 
 &blb;<hi>anno</hi> dominice incarnationis <num value="939"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxx<choice><orig>viii&jj;</orig><reg type="numeral">ix</reg></choice></num>, <rs>constantinus</rs> 
-&blb;cum filio <rs>constantino</rs> apud <rs>constantinopolim</rs> post <rs>romano</rs> <rs>he<pb n="66" ed="b"/>liopolitanum</rs> 
+&blb;cum filio <rs>constantino</rs> apud <rs>constantinopolim</rs> post <rs>romano</rs> <rs>he<pb n="66" ed="#b"/>liopolitanum</rs> 
 &blb;cepit imperare, regnaueruntque annis <num value="16">xvi</num>. <hi>post</hi> 
 &blb;quos filius eiusdem <rs>constantini</rs> <rs>romano</rs> cum filio suo <rs>basilio</rs> an&bd;nis 
 tribus imperauit, et post eos <rs>niceforus</rs> imperauit annis <num value="6">vi</num>. <hi>his</hi> 
@@ -218,7 +230,7 @@ ad portam ciuitatis, incenso suburbio illius. <rs>lotharius</rs> igitur
 &blb;usque ad fluuium qui fluit iuxta <rs>ardennam</rs>, interfecta hostium 
 &blb;multitudine cum uictoria in <rs>franciam</rs> reuersus est. <hi>post</hi> hec non 
 &blb;apposuit ultra <rs>otto</rs> rex ut ueniret in <rs>franciam</rs>. 
-<pb n="68" ed="b"/> 
+<pb n="68" ed="#b"/> 
 &blb;<hi>in</hi> ipso autem anno <rs>lotharius</rs> rex consilio <rs>ugonis</rs> ducis sui 
 &blb;pacificatus est cum <rs>ottone</rs> rege <rs>remis</rs> ciuitate, deditque <rs>lotha&bd;rius</rs> 
 rex <rs>ottoni</rs> regi in beneficio <rs>lotharium</rs> regnum in anno do&bd;minice 
@@ -227,7 +239,7 @@ incarnationis <num value="963"><choice><orig>dcccc</orig><reg type="numeral">cm<
 
 
 <p xml:id="g167.1-167.3" decls="#ocr"> 
-&blb;<hi>sequente</hi> uero anno <note resp="bonetti">sed 962</note> idem <rs>otto</rs> <rs>saxonum</rs> rex <rs>ro&bd;mam</rs> 
+&blb;<hi>sequente</hi> uero anno <note resp="#b">sed 962</note> idem <rs>otto</rs> <rs>saxonum</rs> rex <rs>ro&bd;mam</rs> 
 uenit nobiliter cum exercitu et a <rs>iohanne</rs> papa coronatus 
 &blb;est, accipiens ab eo totius <rs>italie</rs> uexillum cum imperii dignitate, 
 &blb;professus iureiurando seruare fidem <rs>romane</rs> ecclesie. <hi>et</hi> tunc 
@@ -242,7 +254,7 @@ ciuitatem <rs>bibinum</rs> atque <rs>asculum</rs>, <rs>grecos</rs> expellens. <h
 &blb;apud <rs>constantinopolim</rs> defuncto imperatore <rs>niceforo</rs>, <rs>iohan&bd;nes</rs> 
 cognomento <rs>simiski</rs> tenuit imperium annis <num value="6">vi</num>. <hi>quo</hi> defunc&bd;to 
 <rs>basilius</rs> et <rs>constantinus</rs> filii eius ceperunt imperare ab an&bd;no 
-incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> <note resp="bonetti">sed 976</note>, regnaueruntque 
+incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> <note resp="#b">sed 976</note>, regnaueruntque 
 &blb;annis <num value="55">lv</num>. <hi>at</hi> uero <rs>rome</rs> defuncto <rs>iohanne</rs> papa <rs>benedictus</rs> papa 
 &blb;sedit annis <num value="2">ii</num>, et post eum <rs>leo</rs> sedit anno uno mensibus <num value="2">ii</num>. <hi>dein</hi>&bd;de 
 uero <rs>iohannes</rs> sedit annis <num value="6">vi</num> mensibus <num value="11">xi</num>. <hi>hic</hi> a <rs>petro</rs> prefec&bd;to 
@@ -252,10 +264,10 @@ deinde in <rs>campaniam</rs> in exilium missus et post menses de&bd;cem
 &blb;imperatore in urbe <rs>roma</rs> supplicium sumptum est. <hi>iste</hi> quoque 
 &blb;papa <rs>iohannes</rs> coronam posuit imperii <rs>ottoni</rs> imperatori, qui&bd;que 
 accepta corona <rs>aquisgranum</rs> reuersus est.
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>hic</hi> etiam papa <rs>iohannes</rs> nobilitauit <rs>capuam</rs> archiepiscopa&bd;tu, 
 in qua ciuitate tunc principabatur <rs>pandulfus</rs> cognomento <rs>ca&bd;pudferreus</rs>. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eodem</hi> tempore <rs>saraceni</rs> uenerunt in <rs>apuliam</rs> et expugnaue&bd;runt 
 ciuitatem <rs>grauinam</rs> eamque ceperunt. <hi>hinc</hi> quoque secun&bd;do 
 anno post hec ceperunt ciuitatem <rs>bibinum</rs> ignique combus&bd;serunt. 
@@ -263,7 +275,7 @@ anno post hec ceperunt ciuitatem <rs>bibinum</rs> ignique combus&bd;serunt.
 
 
 <p xml:id="g168.5-168.7" decls="#ocr">
-<hi>anno</hi> incarnationis <rs>domini</rs> <num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxv&jj;</num><note resp="bonetti">sed 986</note>, <rs>lotha&bd;rius</rs> 
+<hi>anno</hi> incarnationis <rs>domini</rs> <num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxv&jj;</num><note resp="#b">sed 986</note>, <rs>lotha&bd;rius</rs> 
 <rs>francorum</rs> rex senex plenus dierum obiit, postquam regnau&bd;it 
 annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice></num>, sepultusque in basilica <rs>sancti remigii</rs> <rs>remis</rs>. <hi>cui</hi> 
 &blb;successit <rs>ludouicus</rs> filius eius adhuc iuuenis. 
@@ -271,9 +283,9 @@ annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">iv</reg></ch
 
 
 <p xml:id="g168.8-189.4" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&jj;</num> <note resp="bonetti">sed 972</note> de&bd;functo 
-<rs>iohanne</rs> papa <rs>benedictus</rs> ei in pontificatus honorem suc<pb n="70" ed="b"/>cessit. 
-&blb;<hi>eodem</hi> anno <note resp="bonetti">sed 973</note> <hi>otto</hi> maior imperator obiit anno 
+&blb;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&jj;</num> <note resp="#b">sed 972</note> de&bd;functo 
+<rs>iohanne</rs> papa <rs>benedictus</rs> ei in pontificatus honorem suc<pb n="70" ed="#b"/>cessit. 
+&blb;<hi>eodem</hi> anno <note resp="#b">sed 973</note> <hi>otto</hi> maior imperator obiit anno 
 &blb;<num value="18">xviii</num> ex quo imperator appellatus est. <hi>successit</hi> autem ei <rs>otto</rs> 
 &blb;imperator, qui dictus est minor, qui postquam imperii coronam 
 &blb;accepit, ueniens <rs>salernum</rs> obsedit cepitque illam expugnans. 
@@ -290,7 +302,7 @@ annis <num value="9"><choice><orig>viiii</orig><reg type="numeral">ix</reg></cho
 
 
 <p xml:id="g189.5-170.14" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxv</num>, <note resp="bonetti">sed 987</note> obiit 
+&blb;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxv</num>, <note resp="#b">sed 987</note> obiit 
 &blb;<rs>ludouicus</rs> <rs>francorum</rs> rex iuuenis, postquam regnauit annis 
 &blb;nouem, sepultusque est in basilica beati <rs>cornelii</rs> <rs>compendio</rs>. 
 &blb;<hi>cui</hi> successit <rs>carolus</rs> frater eius filius <rs>lotharii</rs> regis. <hi>eodem</hi> anno 
@@ -302,7 +314,7 @@ rebellauit contra <rs>carolum</rs> regem consilioque habito cum
 &blb;itaque <rs>carolus</rs> rex cum uxore sua et positus in custodia <rs>aurelia&bd;nis</rs> 
 ciuitate in turri", in qua uitam finiuit. <hi>habuit</hi> autem ex eadem 
 &blb;uxore filios duos <rs>ludouicum</rs> et <rs>carolum</rs>. <rs>ugo</rs> itaque dux re&bd;gnum 
-sibi <rs>francorum</rs> arripuit, constituitque<note resp="pm">bonetti has contituitque</note> regem filium suum 
+sibi <rs>francorum</rs> arripuit, constituitque<note resp="#pm">bonetti has contituitque</note> regem filium suum 
 &blb;nomine <rs>robbertum</rs>. <hi>sicque</hi> defecit prosapia regum a <rs>carolo</rs> im&bd;peratore 
 descendentium et ex tunc <rs>francorum</rs> reges regali tan&bd;tum 
 honore contenti imperii dignitatem amiserunt. "<hi>in</hi> illis die&bd;bus 
@@ -313,7 +325,7 @@ iam senex, frater <rs>lotharii</rs> regis ex concubina nomine <rs>ar&bd;nulfus</
 &blb;fecit degradare domnum <rs>arnulfum</rs> in loco uero eius consecrare 
 &blb;fecit domnum <rs>gibbertum</rs> monachum philosophum". <rs>seguinus</rs> 
 &blb;autem archiepiscopus <rs>senonum</rs> non consensit in degradatione 
-<pb n="72" ed="b"/> 
+<pb n="72" ed="#b"/> 
 &blb;<rs>arnulfi</rs> neque in ordinatione <rs>gibberti</rs>, sed plus timens <rs>deum</rs> 
 &blb;quam terrenum regem, ipsum regem in quantum potuit redar&bd;guit. 
 <hi>rex</hi> itaque cum magno dedecore expelli iussit <rs>arnulfum</rs> de 
@@ -360,7 +372,7 @@ et in ciuitate <rs>apriano</rs> plures ecclesias subuertit. <hi>ciuitas</hi> quo
 &blb;<hi>preterea</hi> <rs>rome</rs> defuncto papa <rs>benedicto</rs>, <rs>iohannes</rs> papa se&bd;dit 
 mensibus <num value="9"><choice><orig>viiii</orig><reg type="numeral">ix</reg></choice></num>. <hi>hic</hi> autem in castello <rs>sancti angeli</rs> retrusus et 
 &blb;per menses <num value="4">iv</num> fame afflictus mortuus est. <hi>et</hi> iterum superior 
-&blb;<rs>bonifacius</rs> qui expulsus fuerat sedit mensibus <num value="11">xi</num>. <hi>quo</hi> uita dece<pb n="74" ed="b"/>dente 
+&blb;<rs>bonifacius</rs> qui expulsus fuerat sedit mensibus <num value="11">xi</num>. <hi>quo</hi> uita dece<pb n="74" ed="#b"/>dente 
 &blb;<rs>iohannes</rs> sedit mensibus <num value="4"><choice><orig>iiii</orig><reg type="numeral">iv</reg></choice></num>. <hi>post</hi> quem alius <rs>iohannes</rs> se&bd;dit 
 annis <num value="10">x</num> mensibus <num value="6">vi</num>. <hi>cuius</hi> temporibus <rs>romani</rs> capitanei pa&bd;triciatus 
 sibi tirannidem uendicauere. 
@@ -413,7 +425,7 @@ qui primitus abbas <rs>bobiensis</rs>, postea archiepiscopus
 &blb;terre motus factus est multa diruens edificia. <rs>siluestro</rs> autem 
 &blb;obeunte, <rs>iohannes</rs> qui uocatur <rs>sigo</rs> papalem sedit cathedram 
 &blb;mensibus <num value="5">v</num>. <hi>quo</hi> defuncto <rs>iohannes</rs> papa qui uocatur <rs>fassanus</rs> 
-<pb n="76" ed="b"/> 
+<pb n="76" ed="#b"/> 
 &blb;sedit anno <num value="1">i</num>. <hi>hic</hi> <rs>ottonem</rs> regem <rs>saxonum</rs> coronauit impera&bd;torem. 
 <hi>post</hi> <rs>iohannem</rs> uero <rs>siluester</rs> <rs>tiburtinus</rs>, qui uocatur 
 &blb;<hi>osporco</hi>, <rs>romanum</rs> suscepit pontificatum qui sedit annis <num value="2">ii</num>. 
@@ -456,7 +468,7 @@ defunctus est et <rs>benedictus</rs> frater <rs>alberici</rs> papalem suscepit
 &blb;uenit et ab eodem <rs>benedicto</rs> papa coronam accepit imperii et 
 &blb;imperator appellatus est. <hi>sedit</hi> autem ipse <rs>benedictus</rs> annis <num value="11">xi</num> 
 &blb;mense <num value="1">i</num>. <hi>per</hi> idem tempus <rs>basilius</rs> et <rs>constantinus</rs> frater eius 
-<pb n="78" ed="b"/> 
+<pb n="78" ed="#b"/> 
 &blb;<rs>constantinopolitani</rs> catholici imperatores catipanum suum no&bd;mine 
 <rs>bugano</rs> magna cum thesauri pecunia direxerunt ut <rs>apu&bd;liam</rs> 
 circumquaque regionibus sibi uendicaret ac imperiali iuri 
@@ -477,7 +489,7 @@ quoque <rs>dioclitiani</rs> et <rs>maximiniani</rs> imperatorum extitit in
 &blb;hac <rs>ecana</rs> ciuitate <rs>marcus</rs> episcopus, qui martyrio uitam finiuit. 
 &blb;<hi>et</hi> post aliquantorum annorum curricula fuit in eadem urbe <rs>se&bd;cundinus</rs> 
 episcopus, qui confessor et sanctus multas sanctorum 
-&blb;ecclesias renouauit. <milestone type="bonetti-paragraph-break" ed="b"/> 
+&blb;ecclesias renouauit. <milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>ipse</hi> etiam prenominatus catipanus in finibus <rs>samnii</rs> et <rs>apu&bd;lie</rs> 
 edificauit ac constituit plures urbes et oppida; ipsaque regio 
 &blb;usque hodie <rs>catipania</rs> ex suo nomine dicitur. <hi>quarto</hi> autem an&bd;no 
@@ -504,7 +516,7 @@ pace cum ciuibus, obsidibusque ab eis receptis ad propria
 <p xml:id="g177.1-177.4" decls="#ocr"> 
 &blb;<hi>anno</hi> dominice incarnationis <num value="1025">mxxv</num> indictione <num value="8">vii&jj;</num>, <rs>henricus</rs> 
 &blb;<rs>alamannorum</rs> imperator defunctus est, cui successit <rs>churradus</rs> 
-&blb;qui dux eius fuerat. <hi>eodem</hi> anno papa <rs>benedictus</rs> obiit et suc<pb n="80" ed="b"/>cessit 
+&blb;qui dux eius fuerat. <hi>eodem</hi> anno papa <rs>benedictus</rs> obiit et suc<pb n="80" ed="#b"/>cessit 
 &blb;ei <rs>iohannes</rs> frater eius, "qui uno eodemque die et laicus 
 &blb;fuit et pontifex", seditque annos <num value="9"><choice><orig>viii&jj;</orig><reg type="numeral">ix</reg></choice></num> et dies <num value="9"><choice><orig>viii&jj;</orig><reg type="numeral">ix</reg></choice></num>. 
 </p> 
@@ -518,7 +530,7 @@ pace cum ciuibus, obsidibusque ab eis receptis ad propria
 
 
 <p xml:id="g177.7-177.8" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>anno</hi> 
 &blb;dominice incarnationis <num value="1030">mxxx</num>, indictione <num value="13">xii&jj;</num>; <rs>iohannes</rs> prince&bd;ps 
 <rs>salerni</rs> defunctus est anno principatus sui <num value="57">lvii</num>, et successit ei 
@@ -573,7 +585,7 @@ graui prelio dimicarum inter <rs>aufidum</rs> amnem et <rs>oliuentem</rs>,
 
 <p xml:id="g179.3-179.7" decls="#ocr"> 
 &blb;<hi>anno</hi> domini <num value="1040">mxl</num> indictione <num value="8">viii</num>; defunctus est <rs>michael</rs> 
-<pb n="82" ed="b"/> 
+<pb n="82" ed="#b"/> 
 &blb;<rs>etheriarchis</rs> imperator <rs>constantinopolitanus</rs> anno secundo 
 &blb;postquam imperare ceperat. <hi>et</hi> successit ei imperator <rs>michael</rs> 
 &blb;<rs>archontopanthiu</rs> cum <rs>zoy</rs> imperatrice. <hi>quo</hi> uita decedente ipso 
@@ -636,7 +648,7 @@ in mense <hi>octobris</hi> et in mense <hi>decembris</hi> depopulaue&bd;runt
 
 
 <p xml:id="g181.1-181.1" decls="#ocr"> 
-<pb n="84" ed="b"/> 
+<pb n="84" ed="#b"/> 
 &blb;<hi>anno</hi> domini <num value="1048">mxlvii&jj;</num> indictione <num value="1">&jj;</num>; <rs>zoy</rs> imperatrix obiit. 
 </p> 
 
@@ -688,10 +700,10 @@ princeps <rs>salerni</rs> a suis interfectus est anno principatus sui
 cesa est, ipso perspiciente. <hi>non</hi> enim <rs>dominus</rs> discipulis 
 &blb;suis" neque idem apostoli "suis successoribus" preceperunt ut 
 &blb;curis secularibus, ueluti principes, materiali gladio <rs>dei</rs> populum 
-<pb n="86" ed="b"/> 
+<pb n="86" ed="#b"/> 
 &blb;tuerentur "sed uerbo doctrine monerent et pie conuersationis 
 &blb;exemplo instruerent". 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eodem</hi> anno <rs>constantinus</rs> <rs>monomachus</rs> imperator <rs>constan&bd;tinopolitanus</rs> 
 obiit, post quem <rs>theodora</rs>, soror <rs>zoy</rs> imperatricis 
 &blb;uirgo existens, imperium <rs>constantinopolitanum</rs> uiriliter biennio 
@@ -700,7 +712,7 @@ est, qui eodem anno fuit inuitus monachus factus. <hi>cui</hi> <rs>isa&bd;chius<
 <rs>commiano</rs> imperator successit, qui post annos quattuor 
 &blb;ex quo imperauit imperio eiectus ac monachus factus est. <hi>cui</hi> 
 &blb;<rs>constantinus</rs> cognomento <rs>dioclici</rs> in imperium successit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>at</hi> uero <rs>leo</rs> papa sequenti anno postquam cum <rs>normannis</rs> 
 &blb;preliatus est diem obiit mense <hi>aprilis</hi>. <hi>et</hi> successit ei <rs>uictor</rs> qui 
 &blb;<rs>gebeardus</rs> uocabatur seditque annis duobus, mensibus duobus. 
@@ -708,7 +720,7 @@ est, qui eodem anno fuit inuitus monachus factus. <hi>cui</hi> <rs>isa&bd;chius<
 est <rs>fredericus</rs>, sedit mensibus septem. <hi>quo</hi> defuncto <rs>bene&bd;dictus</rs> 
 <rs>belliternensis</rs> episcopus <rs>romanum</rs> inuasit pontificatum, 
 &blb;qui sedit mensibus nouem. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>quibus</hi> temporibus <rs>patarea</rs> idest <rs>patareanorum</rs> secta apud 
 &blb;<rs>mediolanum</rs> exorta est. 
 </p> 
@@ -734,7 +746,7 @@ cognomento <rs>uiscardus</rs>, eiusdem <rs>unfridi</rs> comitis frater,
 in <rs>apulia</rs> ducatus honorem adeptus est. <hi>qui</hi> non multo post 
 &blb;sibi subegit <rs>apuliam</rs> et <rs>calabriam</rs>, <rs>lucaniam</rs> atque <rs>siciliam</rs>, mili&bd;tarem 
 namque disciplinam gloriosissime rexit. <hi>octauus</hi> autem 
-<pb n="88" ed="b"/> 
+<pb n="88" ed="#b"/> 
 &blb;<rs>alberedus</rs> armis strenuus. <hi>nonus</hi> <rs>tancredus</rs>. <rs>decimus</rs> <rs>willelmus</rs> 
 &blb;de <rs>sancto nicandro</rs>, pater <rs>robberti</rs> comitis de <rs>principatu</rs>. <hi>fuit</hi> 
 &blb;ipse <rs>willelmus</rs> acer ingenio, inconstans animo, seuusque natura. 
@@ -779,7 +791,7 @@ per uexillum de honore ducatus sui cum tota terra.
 &blb;<hi>anno</hi> dominice incarnationis <num value="1062">mlxi&jj;</num> indictione <num value="15">xv</num> <rs>nicolaus</rs> 
 &blb;papa defungitur anno ordinationis sue secundo, mense octauo. 
 &blb;<hi>et</hi> <rs>alexander</rs> qui uocatus est <rs>anselmus</rs> papa an&bd;no 
-princeps <rs>riccardus</rs> <rs>capuam</rs> cepit sibique ordinauit. <hi>his</hi> au<pb n="90" ed="b"/>tem 
+princeps <rs>riccardus</rs> <rs>capuam</rs> cepit sibique ordinauit. <hi>his</hi> au<pb n="90" ed="#b"/>tem 
 &blb;diebus <rs>robbertus</rs> dux ad <rs>alexandrum</rs> papam proficiscens" 
 &blb;liggius eius homo "deuenit" et sicut <rs>nicolao</rs> pape ita et huic 
 &blb;iusiurandum fecit et per uexillum ab eo terram cum honore du&bd;catus 
@@ -849,7 +861,7 @@ et dimissa ibi obsidione cum paucis abiit <rs>abianum</rs> et cepit
 &blb;<hi>anno</hi> dominice incarnationis <num value="1070">mlxx</num> indictione <num value="8">vii&jj;</num>, apud 
 &blb;<rs>constantinopolim</rs> <rs>romano</rs> <rs>diogenes</rs> imperator transacto quar&bd;to 
 imperii eius anno defunctus est. <hi>cui</hi> in imperio <rs>michael</rs> filius 
-<pb n="92" ed="b"/> 
+<pb n="92" ed="#b"/> 
 &blb;<rs>constantini</rs> <rs>dioclizi</rs> successit. "<hi>hoc</hi> anno mense ianuarii ma&bd;gnum 
 homicidium actum est in <rs>brundusii</rs> ciuitate. <hi>nam</hi> <rs>nor&bd;manni</rs> 
 uolentes eam comprehendere, tenti sunt ab eis quadra&bd;ginta 
@@ -857,9 +869,9 @@ cum aliis eorum ministris et capita omnium predictorum
 &blb;ad imperatorem deportata sunt". <hi>eodem</hi> anno <rs>robbertus</rs> dux 
 &blb;"cepit <rs>barum</rs> ciuitatem longa obsidione fatigatam, indeque 
 &blb;mouens exercitum, <rs>siciliam</rs> properauit obseditque" "<rs>panormum</rs>, 
-&blb;<supplied resp="bonetti">per terram et per mare, duxitque ante eam naues 58</supplied> ditissi&bd;mam 
+&blb;<supplied resp="#b">per terram et per mare, duxitque ante eam naues 58</supplied> ditissi&bd;mam 
 <rs>sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam an&bd;no 
-dominice incarnationis <num value="1071">mlxx&jj;</num>, indictione <supplied resp="bonetti"><num value="10">x</num></supplied>. <hi>et</hi> exinde por&bd;tas 
+dominice incarnationis <num value="1071">mlxx&jj;</num>, indictione <supplied resp="#b"><num value="10">x</num></supplied>. <hi>et</hi> exinde por&bd;tas 
 ferreas et columpnas marmoreas quam plures cum capitibus 
 &blb;fecit afferri <rs>troiam</rs> causa uictorie sue. <hi>anno</hi> autem subsequente 
 &blb;ordinatis ibi in <rs>panormo</rs> municipiis, ipse dux in <rs>apuliam</rs> ueniens 
@@ -896,7 +908,7 @@ cepit. "<hi>hoc</hi> anno <rs>robbertus</rs> dux dedit filiam suam
 utique artis diu famosam atque precipuam. <rs>gisolfum</rs> 
 &blb;autem frater uxoris eiusdem ducis tunc in eadem ciuitate mora&bd;batur. 
 <hi>hanc</hi> incessanter terra marique expugnauit, nec destitit 
-&blb;donec post <num value="7">vi&jj;</num> menses obsidionis sue cepit illam mense <hi>decem<pb n="94" ed="b"/>bris</hi>. 
+&blb;donec post <num value="7">vi&jj;</num> menses obsidionis sue cepit illam mense <hi>decem<pb n="94" ed="#b"/>bris</hi>. 
 &blb;<hi>anno</hi> dominice incarnationis <num value="1076">mlxxv&jj;</num>, indictione <num value="15">xv</num>; cepit&bd;que 
 <rs>gisulfum</rs> principem qui fame coactus se eidem duci traddit, 
 &blb;atque <rs>turrim</rs> maiorem in qua se tutabatur. <hi>in</hi> eadem uero ciuita&bd;te 
@@ -913,9 +925,9 @@ undique ut eam ui caperet. <hi>sed</hi> eodem anno in eadem
 <num value="1">i</num>. <hi>fuit</hi> autem hic statura procerus, forti animo, ingenio 
 &blb;astutus, largitate famosus, circa beniuolos et sibi fideles mansue&bd;tus 
 atque benignus, rebellibus autem ac perfidis ualde terribilis. 
-&blb;<hi>cui</hi> <rs>iordanus</rs> filius eius successit. <hi>hic</hi> autem <supplied resp="bonetti"><rs>iordanus</rs></supplied> in matri&bd;monio 
+&blb;<hi>cui</hi> <rs>iordanus</rs> filius eius successit. <hi>hic</hi> autem <supplied resp="#b"><rs>iordanus</rs></supplied> in matri&bd;monio 
 accepit filiam <rs>guaymarii</rs> principis <rs>salernitani</rs>, ex qua ha&bd;buit 
-filios <rs>riccardum</rs> et <rs>robbertum</rs> atque <rs>iordanum</rs>". <supplied resp="bonetti"><hi>hoc</hi> an&bd;no 
+filios <rs>riccardum</rs> et <rs>robbertum</rs> atque <rs>iordanum</rs>". <supplied resp="#b"><hi>hoc</hi> an&bd;no 
 obsessa est <rs>salernum</rs> a <rs>robberto</rs> duce et comprehensa est 
 &blb;ab eo</supplied>. 
 </p> 
@@ -944,7 +956,7 @@ fuerat, ab <rs>arnaldo</rs> leuatur archiepiscopo et in sancte <rs>dei</rs> ge&b
 &blb;<hi>anno</hi> <rs>domini</rs> <num value="1080">mlxxx</num>, indictione <num value="3">ii&jj;</num>, dux <rs>robbertus</rs> <rs>guiscar&bd;dus</rs> 
 cepit <rs>spinazolam</rs>. <hi>paucis</hi> etiam euolutis diebus ipse dux 
 &blb;cepit <rs>ydrontum</rs> cepitque <rs>tarentum</rs>. <hi>his</hi> autem diebus uenit ad 
-<pb n="96" ed="b"/> 
+<pb n="96" ed="#b"/> 
 &blb;eum uir quidam dicens se <rs>michaelem</rs> imperatorem fuisse, con&bd;querens 
 se male tractatum a suis et expulsum poposcitque auxi&bd;lium 
 sibi dari. <hi>dux</hi> itaque, ut ei mos erat, diligenter illum exci&bd;piens 
@@ -956,7 +968,7 @@ accipiens ab eo uexillum sancti <rs>petri</rs> mense <hi>iunio</hi>.
 
 
 <p xml:id="g191.13-194.5" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>anno</hi> dominice incarnationis <num value="1080">mlxxx</num> indictione <num value="4">iv</num> dux <rs>rob&bd;bertus</rs> 
 magnum apud <rs>ydrontum</rs> "assumpsit exercitum, super 
 &blb;<rs>constantinopolim</rs> ire cupiens. <hi>qui</hi> mare transiens cum <rs>boamun&bd;do</rs> 
@@ -985,7 +997,7 @@ et uestes quibus utebatur quibusdam largiebatur dicens: "<hi>si</hi>
 &blb;esset mihi posse, tam prudentes uiros uelut estis, de meis uobis 
 &blb;ego largiendo ditissimos facerem". <hi>et</hi> hec incessanter machina&bd;batur 
 ut omnium ad se militum uoluntates subtraheret. <hi>quibus</hi> 
-<pb n="98" ed="b"/> 
+<pb n="98" ed="#b"/> 
 &blb;etiam locutus est: "<hi>ibo</hi> ad imperatorem ego pro uobis loquens, ut 
 &blb;uestra uobis omnibus donatiua transmittat". <hi>qui</hi> dum <rs>constanti&bd;nopolim</rs> 
 perrexisset, quoscumque potuit simili modo donis ac 
@@ -1019,7 +1031,7 @@ plerisque sanctimonialibus ac <rs>deo</rs> dicatis ab eis stu&bd;pratis.
 &blb;fieri iussit. <rs>alexius</rs> itaque palatium ingressus, <rs>constantinopolita&bd;num</rs> 
 imperium arripuit. <hi>ut</hi> autem <rs>dominice</rs> resurrectionis die 
 &blb;coronatus est, exercitum a preda et rapinis reuocari iussit. <hi>qui</hi> ut 
-<pb n="100" ed="b"/> 
+<pb n="100" ed="#b"/> 
 &blb;se non quasi cupidum imperii magnatibus ostenderet, constituit 
 &blb;secum in imperio <rs>michaelem</rs> filium predicti <rs>michaeli</rs> imperato&bd;ris, 
 dicens omnibus: <hi>non</hi> propter me sed propter hunc qui iure 
@@ -1046,20 +1058,20 @@ imperatoris, non diu imperator, statim in primo conflictu
 
 
 <p xml:id="g194.6-195.5" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>eodem</hi> anno <rs>henricus</rs> <rs>alamannorum</rs> imperator uenit <rs>ro&bd;mam</rs> 
 cum exercitu, obseditque <rs>gregorium</rs> papam, qui excom&bd;municauerat 
 eum, eo quod imperator ipse inuestituram episco&bd;patus 
 per anulum et uirgam tradebat electis episcopis in ciuita&bd;tibus 
 sue potestatis. <hi>dicebat</hi> enim imperator ipse hanc sibi hac&bd;tenus 
-suisque predecessoribus <supplied resp="bonetti">imperatoribus</supplied> inuestituram a 
+suisque predecessoribus <supplied resp="#b">imperatoribus</supplied> inuestituram a 
 &blb;<rs>romanis</rs> pontificibus esse permissam ut episcopali electioni 
 &blb;taliter assensum preberet. <rs>gregorius</rs> papa ex preceptione sui 
 &blb;mandauit, ut quicumque eidem imperatori iusiurandum fecerat, 
 &blb;nullus ei fidem nisi <rs>romane</rs> ecclesie sibique obseruaret ut pari&bd;ter 
 rex et pontifex ipse et regni dominaretur et ecclesiam pro&bd;curaret. 
 <hi>quamobrem</hi> ipse imperator una cum clero et populo 
-<pb n="102" ed="b"/> 
+<pb n="102" ed="#b"/> 
 &blb;<rs>romano</rs> <rs>gibertum</rs> archiepiscopum <rs>rauenne</rs> fecit eligi atque 
 &blb;constituit in ordine summi pontificis, nuncupans eum <rs>clemen&bd;tem</rs>. 
 <hi>quo</hi> audito dux <rs>robbertus</rs> in ultramarinis partibus sibi re&bd;bus 
@@ -1107,7 +1119,7 @@ uero imperator uicit, non tamen ui sed insidiose agens.
 &blb;<hi>anno</hi> dominice incarnationis <num value="1085">mlxxxv</num>, indictione <num value="8">vii&jj;</num> dux 
 &blb;<rs>robbertus</rs> collecto agmine iterato in ultramarinas partes statuit 
 &blb;proficisci. <hi>quod</hi> cum imperatori <rs>alexio</rs> compertum esset, suum 
-&blb;direxit exercitum cum multitudinem nauium simul eum exerci<pb n="104" ed="b"/>tu 
+&blb;direxit exercitum cum multitudinem nauium simul eum exerci<pb n="104" ed="#b"/>tu 
 <!-- in this page 104 of bonetti there are three 'v' instead of 'u' --> 
 &blb;<rs>uenecianorum</rs>, ut maris iter duci prohiberetur. <hi>contra</hi> quos 
 &blb;dux <rs>robbertus</rs> una cum filio suo <rs>rogerio</rs> cum navibus suis non 
@@ -1151,7 +1163,7 @@ quam potentie austeritate. <hi>eodem</hi> anno <num value="13">xii&jj;</num> kal
 &blb;<rs>barum</rs> <rs>apulie</rs> ciuitatem fuitque uirtus <rs>domini</rs> ad sanandum mul&bd;tos 
 infirmos. <hi>eodem</hi> mense <rs>uictor</rs> qui et <rs>desiderius</rs>, <rs>casinensis</rs> 
 &blb;abbas, genere <rs>samnis</rs>, post duos annos ex quo <rs>gregorius</rs> papa 
-<pb n="106" ed="b"/> 
+<pb n="106" ed="#b"/> 
 &blb;obiit, papa est ipse ordinatus, qui post menses quattuor et dies 
 &blb;<num value="6">v&jj;</num> ordinationis sue diem obiit. <hi>cui</hi> successit in <rs>romanum</rs> ponti&bd;ficatum 
 <rs>hostiensis</rs> episcopus nomine <rs>otto</rs> ex genere <rs>francorum</rs> 
@@ -1179,7 +1191,7 @@ uiriliter eum uicit. <hi>in</hi> quo siquidem bello, mirum dictu,
 
 
 <p xml:id="g198.12-198.13" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>eodem</hi> anno comprehensa est <rs>siracu&bd;sa</rs>, 
 <rs>sicilie</rs> quondam caput, a <rs>rogerio</rs> comite, in qua fertur homi&bd;nes 
 comesos ac infantes ob diuturnitatem obsidionis. 
@@ -1193,7 +1205,7 @@ in ortu suo passa est eclipsim.
 
 
 <p xml:id="g198.16-198.17" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>eodem</hi> anno papa <rs>urbanus</rs> 
 &blb;uenit in ciuitatem <rs>barum</rs> et sacrauit illic confessionem sancti <rs>ni&bd;cholai</rs> 
 et <rs>canusinam</rs> ecclesiam. 
@@ -1212,7 +1224,7 @@ ab eo terram cum ducatus honore. <hi>eodem</hi> anno <rs>sikelgaita</rs>
 &blb;enim eodem uastata est igne, ut nulla domus, nullum inueniretur 
 &blb;edificium quod non ab igne consumptum deperierit. <hi>homines</hi> 
 &blb;etiam <num value="25">xxv</num> eodem incendio mortui sunt. 
-<pb n="108" ed="b"/> 
+<pb n="108" ed="#b"/> 
 </p> 
 
 
@@ -1269,7 +1281,7 @@ fecit, et tunc multitudo christianorum innumera exortatio&bd;ne
 &blb;"<hi>anno</hi> <rs>domini</rs> <num value="1096">m<choice><orig>lxxxx</orig><reg type="numeral">xc</reg></choice>v&jj;</num>, <rs>rogerius</rs> comes <rs>sicilie</rs> cum uigin&bd;ti 
 milibus <rs>agarenorum</rs> et cum innumera multitudine aliarum 
 &blb;gencium et uniuersis comitibus <rs>apulie</rs> obsedit <rs>amalfim</rs>, ibique 
-&blb;subito inspiratione <rs>dei</rs> <rs>boamundus</rs> cum aliis comitibus et mili<pb n="110" ed="b"/>tibus 
+&blb;subito inspiratione <rs>dei</rs> <rs>boamundus</rs> cum aliis comitibus et mili<pb n="110" ed="#b"/>tibus 
 &blb;<rs>rogerii</rs> comitis sumpserunt signum sancte crucis in ume&bd;ribus 
 suis et in frontibus et sic reliquerunt obsidionem. <hi>uidens</hi> 
 &blb;hec comes <rs>rogerius</rs> cum dedecore reuersus est in <rs>siciliam</rs>". 
@@ -1307,7 +1319,7 @@ anno kalendas <hi>augusti</hi> flagrauit incendio.
 
 
 <p xml:id="g201.19-201.20" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;"<hi>hoc</hi> eodem anno 
 &blb;papa <rs>urbanus</rs> congregauit uniuersalem sinodum in ciuitate <rs>baro</rs>, 
 &blb;in qua affuerunt ex diuersis partibus episcopi <num value="130">cxxx</num>". 
@@ -1321,7 +1333,7 @@ anno kalendas <hi>augusti</hi> flagrauit incendio.
 cardinalis natione <rs>tuscus</rs> succedens, sublimatus est hono&bd;re 
 pontificali et <rs>paschalis</rs> est papa nuncupatus, seditque annis 
 &blb;<num value="19">x<choice><orig>viii&jj;</orig><reg type="numeral">ix</reg></choice></num> mensibus sex. 
-<pb n="112" ed="b"/> 
+<pb n="112" ed="#b"/> 
 </p> 
 
 
@@ -1361,7 +1373,7 @@ eam dimisit.
 
 
 <p xml:id="g203.6-203.6" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>hoc</hi> tempore <rs>boamundus</rs> dimissus et rediit 
 &blb;in <rs>antiochiam</rs>. 
 </p> 
@@ -1386,7 +1398,7 @@ princeps <rs>capuanus</rs> defunctus est mense <hi>iunii</hi> anno sui prin&bd;c
 anno apparuit stella cometis magna a parte occidentis sero 
 &blb;per totum mensem februarii. <hi>ipso</hi> quoque anno mense <hi>iulii</hi> cor&bd;pora 
 sanctorum <rs>pontiani</rs> pape et martyris et <rs>eleutherii</rs> episcopi 
-<pb n="114" ed="b"/> 
+<pb n="114" ed="#b"/> 
 &blb;et martyris et <rs>anastasii</rs> confessoris de <rs>roma</rs> in <rs>troiam</rs> <rs>apulie</rs> 
 &blb;ciuitatem translata sunt, quorum meritis uirtus <rs>domini</rs> fuit ad sa&bd;nandum 
 multos infirmos. 
@@ -1440,7 +1452,7 @@ sibi promiserat, optinere se non posse uideret, cepit ipsum
 &blb;menses in custodia habere fecit, propter inuestituram episcopa&bd;tus 
 per anulum et uirgam quam rex petebat. <hi>et</hi> papa predeces&bd;soris 
 sui <rs>gregorii</rs> cognomento <rs>ildeprandi</rs>, qui hoc inchoauerat 
-<pb n="116" ed="b"/> 
+<pb n="116" ed="#b"/> 
 &blb;negotium, statuta tenens, concedere sibi nullo modo uolebat. 
 &blb;<hi>tandem</hi> uero <rs>paschalis</rs>, non tam terrore sui coactus, quam etiam 
 &blb;suorum, eorum maxime qui sibi fideliores quidem esse uide&bd;bantur, 
@@ -1476,10 +1488,10 @@ uirtute in bello preualidus. <hi>huic</hi> autem <rs>boamundus</rs> filius
 &blb;eius una cum matre sua domna <rs>constantia</rs> successit. 
 </p>
 
-<pb n="118" ed="b"/> 
+<pb n="118" ed="#b"/> 
 
 <p xml:id="g206.n4-206.n5" decls="#ocr">
-<note resp="pm" type="segmentation"><rs>garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
 &blb;<hi>anno</hi> <rs>domini</rs> 1112. <hi>hoc</hi> anno mense <hi>augusti</hi> <rs>agerenum</rs> 
 &blb;iterum ignis combustione uastatur. 
 </p> 
@@ -1533,10 +1545,10 @@ ducis defuncta est.
 
 
 <p xml:id="g208.1-208.9" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;"<hi>eodem</hi> anno regina et <rs>tancredus</rs> cum aliis multis, 
 &blb;idest <rs>goffrido</rs> <rs>britton</rs> et <rs>unfredo</rs> <rs>grauina</rs>, dominio et equitibus 
-<pb n="120" ed="b"/> 
+<pb n="120" ed="#b"/> 
 &blb;ut fertur usus ad <num value="120">cxx</num> peditumque non exigua manu, audacter 
 &blb;pergebant iuxta flumen <rs>bradanum</rs>. <hi>quibus</hi> comes occurrens 
 &blb;<rs>alexander</rs> cum suis ita detriuit ac debellauit eos, ut <rs>tancredus</rs> 
@@ -1581,7 +1593,7 @@ communionem. <hi>imperator</hi> autem hoc uidens, conuocato
 &blb;populo <rs>romano</rs> cum quibusdam clericis, iussit eligi in ordine 
 &blb;summi pontificis quemdam <rs>burdinum</rs> nomine, cui nomen im&bd;positum 
 est <rs>gregorius</rs> papa seditque in ecclesia beati <rs>petri</rs>. <hi>hic</hi> 
-&blb;autem <rs>burdinus</rs> prius in <rs>toletana</rs> ecclesia <rs>hispanie</rs> archidiaco<pb n="122" ed="b"/>nus 
+&blb;autem <rs>burdinus</rs> prius in <rs>toletana</rs> ecclesia <rs>hispanie</rs> archidiaco<pb n="122" ed="#b"/>nus 
 &blb;fuit, de qua postea assumptus fuit episcopus in ciuitate <rs>co&bd;nimbro</rs>, 
 et imposuit sibi nomen <rs>mauricius</rs>; dehinc mortuo <rs>bra&bd;carensi</rs> 
 archiepiscopo, effectus est ipse ciuitatis eiusdem archie&bd;piscopus, 
@@ -1600,7 +1612,7 @@ ut in archiepiscopatum sibi commissum rediret et ipse
 celebrauit. <hi>eodem</hi> anno quo papa <rs>gelasius</rs> ordinatus est 
 &blb;mense <hi>martii</hi> indictione <num value="11">x&jj;</num> in ciuitate <rs>gaieta</rs> ipso <rs>gelasio</rs> cum 
 &blb;cardinalibus residente in episcopali ecclesia eiusdem ciuitatis, 
-&blb;<rs>w<supplied resp="bonetti">illelmus</supplied></rs> dux liggius eius homo iure deuenit, et statim ipse 
+&blb;<rs>w<supplied resp="#b">illelmus</supplied></rs> dux liggius eius homo iure deuenit, et statim ipse 
 &blb;papa per uexillum tradidit eidem duci totam terram suam cum 
 &blb;honore sui ducatus dicens: <hi>quemadmodum</hi> <rs>gregorius</rs> papa 
 &blb;tradidit illam <rs>robberto</rs> <rs>guiscardo</rs> auo tuo et sicut <rs>urbanus</rs> 
@@ -1619,12 +1631,12 @@ ei in imperium <rs>calo iohannes</rs> filius eius.
     &blb;<hi>anno</hi> dominice incarnationis <num value="1119">mcx<choice><orig>viii&jj;</orig><reg type="numeral">ix</reg></choice></num> indictione <num value="12">xi&jj;</num> pridie 
 &blb;kalendas <hi>decembris</hi> luna passa est eclipsin a media nocte usque 
 &blb;in matutinum. <hi>eodem</hi> anno mense <hi>ianuarii</hi> <rs>gelasius</rs> papa post&bd;quam 
-per annum <supplied resp="bonetti">unum</supplied> <rs>romanam</rs> gubernauit ecclesiam, cum 
+per annum <supplied resp="#b">unum</supplied> <rs>romanam</rs> gubernauit ecclesiam, cum 
 &blb;esset in <rs>gallie</rs> partibus defunctus est. <hi>tunc</hi> cardinales qui cum eo 
 &blb;ibi fuerant, elegerunt in ordine <rs>romani</rs> pontificis archiepisco&bd;pum 
 <rs>uiennensem</rs> nomine <rs>guidonem</rs>, uirum utique nobilem, 
 &blb;quem <rs>calixtum</rs> papam nuncupauerunt. <hi>qui</hi> <rs>romano</rs> pontificio 
-<pb n="124" ed="b"/> 
+<pb n="124" ed="#b"/> 
 &blb;sublimatus, post annum unum <rs>romam</rs> uenit et papalem in <rs>late&bd;ranensi</rs> 
 palatio cathedram sedit. <hi>anno</hi> quo <rs>gelasius</rs> papa defunc&bd;tus 
 est mense <hi>augusto</hi> <rs>sarraceni</rs> inuaserunt <rs>antiochiam</rs>. <hi>contra</hi> 
@@ -1641,7 +1653,7 @@ dimicans propter impatientiam suam uictus ac mortuus
 
 
 <p xml:id="g210.23-210.24" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;"<hi>hoc</hi> tempore mense <hi>augusti</hi> regina <rs>constantia</rs> comprehensa 
 &blb;est a comite <rs>alexandro</rs> et <rs>grimoaldo</rs> <rs>barense</rs> in <rs>iuuenatia</rs> ciui&bd;tate 
 et cum ea equites <num value="50">l</num> traditione quorumdam ciuium". 
@@ -1652,7 +1664,7 @@ et cum ea equites <num value="50">l</num> traditione quorumdam ciuium".
 &blb;<hi>anno</hi> dominice incarnationis <num value="1120">mcxx</num> indictione <num value="13">xii&jj;</num> mense 
 &blb;<hi>iunio</hi> <rs>robbertus</rs> <rs>capuanorum</rs> princeps defunctus est cui <rs>ior&bd;danus</rs> 
 frater eius successit in honore principatus ipsius. <hi>mense</hi> 
-&blb;octubris indictione <num value="12">x<choice><orig>iii&jj;</orig><reg type="numeral">iv</reg></choice></num> in <rs>beneuenti</rs> palatio <rs>w<supplied resp="bonetti">illelmus</supplied></rs> dux 
+&blb;octubris indictione <num value="12">x<choice><orig>iii&jj;</orig><reg type="numeral">iv</reg></choice></num> in <rs>beneuenti</rs> palatio <rs>w<supplied resp="#b">illelmus</supplied></rs> dux 
 &blb;deuenit liggius homo pape <rs>calixti</rs> per directum contra omnes 
 &blb;homines. <hi>et</hi> ipse papa statim eidem duci donauit et concessit ac 
 &blb;per uexillum tradidit omnem terram ipsius ducis cum toto hono&bd;re 
@@ -1669,13 +1681,13 @@ idem papa <rs>calixtus</rs> <rs>troiam</rs> uenit. <hi>audiensque</hi> itaque <r
 dux eiusdem pontificis aduentum obuius festinanter extra 
 &blb;ciuitatem aduenit cum primatibus suis. <hi>cui</hi> uice stratoris ipse 
 &blb;pedes iuxta sellam usque ad ecclesiam episcopatus eiusdem 
-<pb n="126" ed="b"/> 
+<pb n="126" ed="#b"/> 
 &blb;civitatis ingenti cum honore deduxit. 
 </p> 
 
 
 <p xml:id="g211.15-211.17" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;"<hi>hoc</hi> tempore dux <rs>guillel&bd;mus</rs> 
 una cum <rs>constancia</rs> regina et <rs>tancredo</rs> obsederunt castel&bd;lum 
 <rs>sancte</rs> <rs>trinitatis</rs>, quod situm est super flumen <rs>basantum</rs>, et 
@@ -1711,7 +1723,7 @@ dimittitur.
 
 
 <p xml:id="g212.12-212.16" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>hoc</hi> tempore in mense <hi>iunio</hi> <rs>roggerius</rs> comes 
 &blb;<rs>sicilie</rs> cum turba non exigua equitum et peditum transfetauit in 
 &blb;<rs>calabriam</rs> et castellum <rs>sancti mauri</rs> nomine cepit et cremauit". 
@@ -1726,16 +1738,16 @@ dimittitur.
 <hi>anno</hi> dominice incarnationis <num value="1125">mcxxv</num> indictione <num value="4">iv</num>. <hi>huic</hi> suc&bd;cessit 
 <rs>honorius</rs> secundus natione <rs>lombardus</rs>, prius archidiaco&bd;nus 
 <rs>bononiensis</rs>, post cardinalis, deinde episcopus <rs>hostiensis</rs>, 
-&blb;qui et <rs>lambertus</rs> dictus est. <hi>hic</hi> ducem <rs>w<supplied resp="bonetti">ilhelmum</supplied></rs>, secundum 
+&blb;qui et <rs>lambertus</rs> dictus est. <hi>hic</hi> ducem <rs>w<supplied resp="#b">ilhelmum</supplied></rs>, secundum 
 &blb;statuta predecessorum suorum, per uexillum de ducatu <rs>apulie</rs> 
 &blb;inuestiuit, et ab eo liggium hominium et iuramentum accepit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<note resp="bonetti"><hi>da</hi> questo punto la narrazione è opera di <rs>romualdo</rs> <num value="2">ii</num>.</note> 
-&blb;<hi>dux</hi> autem <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, licet a baronibus et hominibus suis 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<note resp="#b"><hi>da</hi> questo punto la narrazione è opera di <rs>romualdo</rs> <num value="2">ii</num>.</note> 
+&blb;<hi>dux</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, licet a baronibus et hominibus suis 
 &blb;multum diligeretur, tamen propter benignitatem et patientiam 
 &blb;suam ab eis quodammodo habebatur contemptui, qui inter ip&bd;sum 
 et <rs>roggerium</rs> comitem <rs>sicilie</rs> liggium hominem eius et 
-<pb n="128" ed="b"/> 
+<pb n="128" ed="#b"/> 
 &blb;patruum consobrinum, discordie materiam ministrabant. <hi>cum</hi>&bd;que 
 inter predictum ducem et comitem sepe esset pax et con&bd;cordia 
 reformata, ipsi inter eos guerram et discordiam innoua&bd;bant. 
@@ -1755,12 +1767,12 @@ confirmauit, et <rs>iuda&jj;cam</rs> pro magna parte adiunxit. <rs>ca&bd;strum</
 &blb;incarnationis <num value="1127">mcxxvii</num> mense <hi>iulio</hi>, in festo beati <rs>nazarii</rs>, indic&bd;tione 
 <num value="5">v</num>, sepultus est autem apud <rs>salernum</rs> in tumulo patris sui 
 &blb;in ecclesia beati <rs>mathei</rs> apostoli, quam <rs>robbertus</rs> dux auus eius 
-&blb;a fundamentis edificauerat. <hi>fuit</hi> autem <rs>w<supplied resp="bonetti">illelmus</supplied></rs> dux statura 
+&blb;a fundamentis edificauerat. <hi>fuit</hi> autem <rs>w<supplied resp="#b">illelmus</supplied></rs> dux statura 
 &blb;mediocris, corpore gracilis, miles audax et strenuus, et in milita&bd;ri 
 arte peritus, largus, humilis, benignus et patiens, affabilis omni&bd;bus, 
 pius et misericors, et a suis hominibus multum dilectus, ec&bd;clesias 
 <rs>dei</rs> et ministros eius uehementer honorans. <hi>comes</hi> uero 
-&blb;<rs>roggerius</rs>, audita morte <rs>w<supplied resp="bonetti">illelmi</supplied></rs> ducis, qui eum heredem insti&bd;tuerat, 
+&blb;<rs>roggerius</rs>, audita morte <rs>w<supplied resp="#b">illelmi</supplied></rs> ducis, qui eum heredem insti&bd;tuerat, 
 statim cum galeis <rs>salernum</rs> uenit, et a <rs>salernitanis</rs> ciuibus 
 &blb;honorifice receptus est, quibus tenimenta et possessiones et an&bd;tiquas 
 consuetudines confirmauit, et eos in suo recepit hominio. 
@@ -1777,7 +1789,7 @@ ciuitate ab <rs>alfano</rs> <rs>caputaquensi</rs> episcopo est unctus in
 &blb;princeps in loco patris sui, et omnes ciuitates suas <rs>apulie</rs> comi&bd;ti 
 domno <rs>alexandro</rs> consanguineo sui reliquid, ut uice sua eis 
 &blb;uteretur. <hi>hoc</hi> anno <rs>rogerius</rs> comes <rs>sicilie</rs> excommunicatur ab 
-<pb n="130" ed="b"/> 
+<pb n="130" ed="#b"/> 
 &blb;<rs>honorio</rs> papa quia non permittebat ut episcopi <rs>sicilie</rs> ueni&bd;rent 
 <rs>romam</rs>. <hi>denuo</hi> excommunicatur ab eodem papa eo quod 
 &blb;indebitum sibi nomen ducis inconsulto <rs>romano</rs> pontifice ar&bd;ripuit". 
@@ -1819,8 +1831,8 @@ in sua potestate recepit.
 
 
 <p xml:id="g219.5-219.8" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
-<note resp="pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> insert this paragraph at different points of the text</note> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
+<note resp="#pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> insert this paragraph at different points of the text</note> 
 &blb;<hi>post</hi> hec <rs>apuliam</rs> rediens obsedit <rs>barum</rs>, que se ei reddit, et tunc 
 &blb;<rs>grimoaldum</rs> principem eiusdem ciuitatis principem et nobiles 
 &blb;ciues et potentes qui ei repugnauerunt secum in <rs>siciliam</rs> tran&bd;sportauit. 
@@ -1831,9 +1843,9 @@ in sua potestate recepit.
 
 
 <p xml:id="g219.3-219.4" decls="#ocr"> 
-<note resp="pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> insert this paragraph at different points of the text</note> 
+<note resp="#pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> insert this paragraph at different points of the text</note> 
 &blb;"<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bello 
-<pb n="132" ed="b"/> 
+<pb n="132" ed="#b"/> 
 &blb;iusta <rs>damascum</rs> occubuit, cuius corpus sine capite fertur esse 
 &blb;sepultum". 
 </p>
@@ -1875,7 +1887,7 @@ multitudine <rs>siculum</rs> transmeans fretum uenit in partes
 nullo clauditur numero. <hi>qui</hi> ueniens cepit omnes ter&bd;ras 
 quas <rs>iudith</rs> cum uiro suo tenebat <rs>rogerio</rs>, id est <rs>tursium</rs>, 
 &blb;<rs>obmanum</rs>, <rs>pistiquinum</rs>, <rs>cracum</rs>, omniaque oppida ac uillas 
-<pb n="134" ed="b"/> 
+<pb n="134" ed="#b"/> 
 &blb;circumquaque positas, posuitque obsidionem circa castellum 
 &blb;<rs>sancti archangeli</rs>, quod uidens <rs>goffridus</rs>, filius domni <rs>alexan&bd;dri</rs> 
 comitis, exiit ad eum ueniam querens, cui et gratanter 
@@ -1926,11 +1938,11 @@ reuersus est in <rs>siciliam</rs>.
 &blb;<hi>decembris</hi> die natali <rs>domini</rs> prephatus dux <rs>rogerius</rs> precepit 
 &blb;congregare in <rs>sicilie</rs> prouinciam omnes episcopos diuersa&bd;rum 
 prouinciarum <rs>calabrie</rs>, <rs>apulie</rs>, <rs>campanie</rs> qui iussione 
-<pb n="136" ed="b"/> 
-&blb;<rs>calixti</rs> pape<note resp="bonetti"><hi>errore</hi> nel testo: <rs>callisto</rs> <num value="2">ii</num> era morto nel 1124. <hi>si</hi> tratta di <rs>anacleto</rs> <num value="2">ii</num>.</note> unxerunt eum in regem ac super caput eius co&bd;ronam 
+<pb n="136" ed="#b"/> 
+&blb;<rs>calixti</rs> pape<note resp="#b"><hi>errore</hi> nel testo: <rs>callisto</rs> <num value="2">ii</num> era morto nel 1124. <hi>si</hi> tratta di <rs>anacleto</rs> <num value="2">ii</num>.</note> unxerunt eum in regem ac super caput eius co&bd;ronam 
 regiam posuerunt et ab omnibus uocari regem iusse&bd;runt. 
 
-<milestone type="bonetti-paragraph-break" ed="b"/>
+<milestone type="bonetti-paragraph-break" ed="#b"/>
 
 &blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bel&bd;lo
 iuxta <rs>damascum</rs> occubuit cuius corpus sine capite inuen&bd;tum
@@ -1971,7 +1983,7 @@ a <rs>sicilia</rs>, uenit in <rs>apuliam</rs> ac perrexit <rs>tarentum</rs>. <hi
 ac direptione cuncta permiscendo, quin etiam et christia&bd;norum 
 sanguinem a <rs>sarracenis</rs> crudeliter fundi precipiendo, 
 &blb;nam senes interficiebant, pueros de sinu auferentes matrum 
-<pb n="138" ed="b"/> 
+<pb n="138" ed="#b"/> 
 &blb;allidebant gladiisque findebant, sacerdotes iuxta crucem et 
 &blb;altare stantes interimebant, sacramenta ecclesie id est sanc&bd;tum 
 crisma in suius peronibus deridendo seu culponibus fun&bd;debant, 
@@ -1989,7 +2001,7 @@ qui de intus erant simili modo confecerunt balistas et
 &blb;nullo modo suum preualere ingenium uidens, omnem exerci&bd;tum 
 fame afflictum, ignem in turrem missum suam <rs>tarenti</rs> 
 &blb;reuertitur. 
-&blb;<note resp="pm" type="segmentation"><rs>garufi</rs>, page 128, line 16 of the apparatus notes, adds the following phrase, not present in in <rs>bonetti</rs>, to the paragraph:: "cum illis pepiget facta autem pacem".</note> 
+&blb;<note resp="#pm" type="segmentation"><rs>garufi</rs>, page 128, line 16 of the apparatus notes, adds the following phrase, not present in in <rs>bonetti</rs>, to the paragraph:: "cum illis pepiget facta autem pacem".</note> 
 </p> 
 
 
@@ -2011,13 +2023,13 @@ celebrauit. <hi>dehinc</hi> in <rs>galliam</rs> uenit et a <rs>ludouico</rs> reg
 et tota occidentali ecclesia est receptus. <rs>anacletus</rs> uero <rs>urbis</rs> 
 &blb;dominio potitus nuntium ad <rs>roggerium</rs> regem <rs>sicilie</rs> misit. <hi>a</hi> 
 &blb;quo et receptus est. <hi>cuius</hi> auctoritate <rs>apuliam</rs> intrauit et apud 
-&blb;<rs>melfiam</rs> concilium celebrauit. <hi>qui</hi> cum per nuntios suos prepha<pb n="140" ed="b"/>tum 
+&blb;<rs>melfiam</rs> concilium celebrauit. <hi>qui</hi> cum per nuntios suos prepha<pb n="140" ed="#b"/>tum 
 &blb;regem sepe rogasset ut cum eo haberet colloquium et ei de 
 &blb;more hominium faceret, ipse utpote uir astutus et sapiens et pre&bd;cauens 
 in futurum ab eius se colloquio et aspectu subtraxit. <hi>ana</hi>&bd;cletus 
 autem aliquandiu in <rs>apulia</rs> commoratus <rs>romam</rs> rediit et 
 &blb;ibi usque ad uite sue terminum mansit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>interea</hi> <rs>robbertus</rs> <rs>capuanus</rs> princeps et <rs>raydulfus</rs> comes 
 &blb;<rs>ayrole</rs> cum aliis comitibus et baronibus <rs>apulie</rs> regi <rs>roggerio</rs> 
 &blb;sunt rebelles effecti. <hi>quo</hi> cognito rex <rs>roggerius</rs> congregato na&bd;uali 
@@ -2029,7 +2041,7 @@ uiribus iterum in <rs>apuliam</rs> rediit, <rs>conuersanes</rs> obsdedit,
 &blb;eorum ciuitates et castella uiriliter expugnauit et quosdam de 
 &blb;eis captos in <rs>siciliam</rs> misit. <hi>transacto</hi> uero aliquanto spatio tem&bd;poris 
 cum magno exercitu in <rs>terram laboris</rs> uenit, <rs>nuceriam</rs> 
-&blb;cepit et diruit, <rs>auers<supplied resp="bonetti">i</supplied>am</rs> destruxit, <rs>capuam</rs> et pene totam <rs>ter&bd;ram</rs> 
+&blb;cepit et diruit, <rs>auers<supplied resp="#b">i</supplied>am</rs> destruxit, <rs>capuam</rs> et pene totam <rs>ter&bd;ram</rs> 
 <rs>laboris</rs> occupauit. <hi>princeps</hi> uero <rs>capuanus</rs> simul cum co&bd;mite 
 <rs>raydulfo</rs> <rs>neapolim</rs> se receptauit, sed quia ciuitas illa par&bd;tim 
 situ loci partim militia munita erat, eam expugnare non po&bd;tuit, 
@@ -2049,7 +2061,7 @@ uero <rs>pisanorum</rs> super <rs>amalfiam</rs> uenientes eam inmunitam
 &blb;<rs>pisas</rs> redierunt. <hi>rex</hi> autem <rs>roggerius</rs> uir discretus et prouidus 
 &blb;qui in agendis suis negotiis magis consilio quam uiribus uteba&bd;tur, 
 nunc in <rs>terra laboris</rs> nunc in <rs>apulia</rs> inimicos suos uiriliter 
-&blb;inpugnabat et quosdam eorum minis et terroribus, quosdam ue<pb n="142" ed="b"/>ro 
+&blb;inpugnabat et quosdam eorum minis et terroribus, quosdam ue<pb n="142" ed="#b"/>ro 
 &blb;beneficiis et promissis ad suam amicitiam attraebat. <rs>robber&bd;tus</rs> 
 uero <rs>capuanus</rs> princeps et comes <rs>raydulfus</rs> et quidam alii 
 &blb;de baronibus cognoscentes quod regi <rs>roggerio</rs> resistere non ua&bd;lerent, 
@@ -2087,12 +2099,12 @@ cum magno esercitu <rs>italiam</rs> intrauit et per partes <rs>ancone</rs>
 &blb;et frequentes nuntios in exercitum imperatoris mittens, princi&bd;pes 
 eius promissionibus et muneribus ad suum amorem et gra&bd;tiam 
 attrahebat. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<rs>capuanus</rs> uero princeps cum comite <rs>raydulfo</rs> <rs>terram labo&bd;ris</rs> 
 ingressus, eam et ducatum <rs>amalfie</rs> potenter obtinuit et cum 
 &blb;magno exercitu militum et galeis <rs>pisanorum</rs> <rs>salernum</rs> ueniens 
 &blb;eam obsedit. <rs>salernitani</rs> autem ciues qui de antiquo suis dominis 
-&blb;fideles extiterant, in fidelitate solita firmiter perdurantes, eis uiri<pb n="144" ed="b"/>liter 
+&blb;fideles extiterant, in fidelitate solita firmiter perdurantes, eis uiri<pb n="144" ed="#b"/>liter 
 &blb;restiterunt. <hi>erat</hi> tunc <rs>salerni</rs> <rs>robertus</rs> regis <rs>roggerii</rs> cancel&bd;larius 
 cum militia regia et baronibus plurimis, qui simul cum <rs>sa&bd;lernitanis</rs> 
 ciuibus in exercitu principis et <rs>pisanorum</rs> insultum se&bd;pius 
@@ -2127,7 +2139,7 @@ pontificis pertinere et hoc a suis predecessoribus fuisse
 &blb;iam longo tempore firmiter obseruatum. <hi>imperator</hi> e contrario 
 &blb;affirmabat, hoc ad ius pertinere imperii, et ducatum <rs>apulie</rs> debe&bd;re 
 auctoritate imperatoria ordinari. <hi>sed</hi> quia uterque in procinc&bd;tu 
-erat itineris, et deficientibus ad presens utriusque partis in<pb n="146" ed="b"/>strumentis 
+erat itineris, et deficientibus ad presens utriusque partis in<pb n="146" ed="#b"/>strumentis 
 &blb;et rationibus, controuersia hec ad plenum difiniri non 
 &blb;poterat, communi consensu ad hunc finem concordie deuene&bd;runt: 
 ut apostolicus et imperator per uexillum comitem <rs>raydul&bd;fum</rs> 
@@ -2169,7 +2181,7 @@ militum <rs>neapolitanorum</rs> gladio percussus occubuit. <hi>rex</hi>
 &blb;ciuibus more solito est reuerenter exceptus. <hi>qui</hi> in ea ciuitate 
 &blb;aliquantulum moratus, ciuitates suas et castella militibus et pedi&bd;tibus 
 premuniuit. <hi>tunc</hi> <rs>willelmus</rs> natione <rs>rauennas</rs> et electus 
-<pb n="148" ed="b"/> 
+<pb n="148" ed="#b"/> 
 &blb;<rs>capue</rs>, in <rs>salernitana</rs> ecclesia est electus. <hi>deinde</hi> recepta <rs>neapo&bd;lim</rs> 
 et dispositis et ordinatis partibus regionis illius, cum <rs>rogge&bd;rio</rs> 
 duce et <rs>tancredo</rs> principe filiis suis in <rs>siciliam</rs> est reuersus. 
@@ -2190,7 +2202,7 @@ misit. <hi>qui</hi> ueniens castrum obsidione liberauit, <rs>romanos</rs>
 qui cum eo capti fuerant, regem in gratia sua recepit, et re&bd;cepto 
 ab eo sacramento et hominio, ipsum per uexillum de re&bd;gno 
 <rs>sicilie</rs> et ducatu <rs>apulie</rs> inuestiuit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eo</hi> tempore comes <rs>raydulfus</rs>, qui dux dicebatur, occasione 
 &blb;flebothomie, <rs>troie</rs> mortuus est. <hi>tunc</hi> etiam <rs>vesevus</rs> mons emisit 
 &blb;pulverem ferruginei coloris et subrubei in tanta copia, quod 
@@ -2209,7 +2221,7 @@ possedit. <hi>papa</hi> uero <rs>innocentius</rs> <rs>romam</rs> rediit et eam
 <rs>teotonicorum</rs> imperator obiit et ei <rs>corradus</rs> in imperio suc&bd;cessit. 
 <hi>similiter</hi> et <rs>lodouicus</rs> rex <rs>francorum</rs> mortuus est et ei 
 &blb;<rs>lodouicus</rs> filius eius in regno successit. 
-<pb n="150" ed="b"/> 
+<pb n="150" ed="#b"/> 
 &blb;<hi>rex</hi> autem <rs>roggerius</rs> in regno suo perfecte pacis tranquilli&bd;tate 
 potitus, pro conseruanda pace camerarios et iustitiarios per 
 &blb;totam terram instituit, leges a se nouiter conditas promulgauit, 
@@ -2237,7 +2249,7 @@ maximum stolium imperatoris apud <rs>capud</rs> <rs>malee</rs>, et ibi uiri&bd;l
 pugnauit, <rs>grecos</rs> deuicit, et <rs>angelum</rs> <rs>despoti</rs>, magistrum 
 &blb;stolii et consanguineum imperatoris, cum multis aliis captiuos in 
 &blb;<rs>siciliam</rs> duxit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>interea</hi> <rs>innocentius</rs> papa <rs>roma</rs> mortuus est et sepultus apud 
 &blb;<rs>lateranum</rs> anno pontificatus sui <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice></num>, anno uero <rs>dominice</rs> in&bd;carnationis 
 <num value="1143">mcxliii</num> indictione <num value="7">vii</num>. <hi>huic</hi> successit <rs>guido</rs>, natio&bd;ne 
@@ -2248,7 +2260,7 @@ in dubium. <hi>mortuus</hi> est autem sexto mense pontificatus
 &blb;sui. <hi>cui</hi> successit <rs>girardus</rs> natione <rs>bononiensis</rs> prius presbiter 
 &blb;cardinalis <rs>sancte crucis</rs> et cancellarius, qui et <rs>lucius</rs> secundus 
 &blb;appellatus est. <hi>audiens</hi> autem rex <rs>roggerius</rs> promotionem <rs>lucii</rs> 
-&blb;pape, gauisus est ualde, eo quod compater et amicus eius exti<pb n="152" ed="b"/>terat. 
+&blb;pape, gauisus est ualde, eo quod compater et amicus eius exti<pb n="152" ed="#b"/>terat. 
 &blb;<hi>qui</hi> statim missis nuntiis suis predicto pape per mare 
 &blb;usque <rs>gaietam</rs> ueniens, ei apud <rs>ceperanum</rs> occurrit. <hi>cumque</hi> 
 &blb;de pace inter eos componenda diu tractatum esset, repugnanti&bd;bus 
@@ -2269,7 +2281,7 @@ cardinalis, qui <rs>eugenius</rs> tertius est appellatus. <hi>hic</hi> propter
 &blb;proficiscens a <rs>lodouico</rs> iuniore rege <rs>francorum</rs> et tota <rs>gallica&bd;na</rs> 
 ecclesia honorifice est receptus. <hi>hic</hi> <rs>remis</rs> generale conci&bd;lium 
 celebrauit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eo</hi> autem tempore <rs>corradus</rs> rex <rs>teutonicorum</rs> cum magna 
 &blb;multitudine militum et peditum <rs>ierosolimam</rs> proficiscens <rs>con&bd;stantinopolim</rs> 
 uenit et ab <rs>emanuele</rs> imperatore tum timore, tum 
@@ -2287,7 +2299,7 @@ et labore itineris <rs>teotonicos</rs> expugnauerunt, multos eorum
 <hi>imperator</hi> autem, ammissa maiori parte exercitus, uix cum 
 &blb;paucis <rs>ierosolimam</rs> uenit. <rs>lodouicus</rs> autem rex <rs>francorum</rs> cum 
 &blb;magno exercitu militum et peditum predictum regem <rs>corradum</rs> 
-&blb;eodem anno et eodem itinere prosecutus, ab <rs>emanuele</rs> impera<pb n="154" ed="b"/>tore 
+&blb;eodem anno et eodem itinere prosecutus, ab <rs>emanuele</rs> impera<pb n="154" ed="#b"/>tore 
 &blb;simili modo receptus est et deceptus. <hi>nam</hi> postquam <rs>bra&bd;chium</rs> 
 <rs>sancti georgii</rs> pertransiit, cum ex larga promissione im&bd;peratoris 
 crederet sibi et exercitui suo uictui necessaria reper&bd;turum, 
@@ -2302,7 +2314,7 @@ in <rs>alamanniam</rs> rediit, rex autem <rs>francie</rs> per <rs>apuliam</rs> a
 remeauit. <hi>quem</hi> rex <rs>roggerius</rs> satis officiose suscepit, equi&bd;taturas 
 multas et munera plurima contulit, et eum per terram 
 &blb;suam honorifice conduci precepit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>papa</hi> uero <rs>eugenius</rs> postquam in <rs>francia</rs> aliquantulum est de&bd;moratus, 
 <rs>ytaliam</rs> repetens apud <rs>tusculanum</rs> se recepit, et con&bd;gregata 
 militia, <rs>romanos</rs> sibi inobedientes iussit constringere et 
@@ -2322,12 +2334,12 @@ filium quem recipit, postquam <rs>deus</rs> omnipotens regem
 &blb;succedentia prospera animum eius plus iusto extollerent et in 
 &blb;superbiam eleuarent, eum quarumdam aduersitatum flagellis pa&bd;terna 
 miseratione corripuit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>nam</hi> primo <rs>albidia</rs> illustris regina uxor eius, ex qua tot filios 
 &blb;habuerat, mortua est, et filia eius. <hi>post</hi> hec <rs>tarentinus</rs> princeps et 
 &blb;<rs>anfusus</rs> <rs>capuanorum</rs> princeps et <rs>henricus</rs> mortui sunt. <hi>nouis</hi>&bd;sime 
 autem <rs>roggerius</rs> dux <rs>apulie</rs>, primogenitus eius, mortuus 
-&blb;est anno <rs>dominice</rs> incarnationis <num value="1159">mclix</num> indictione <num value="12">xii</num>, uir qui<pb n="156" ed="b"/>dem 
+&blb;est anno <rs>dominice</rs> incarnationis <num value="1159">mclix</num> indictione <num value="12">xii</num>, uir qui<pb n="156" ed="#b"/>dem 
 &blb;speciosus et miles strenuus, pius, benignus, misericors et a 
 &blb;suo populo multum dilectus. <hi>rex</hi> autem <rs>roggerius</rs> tot flagellis 
 &blb;aflictus constanti animo pii patris flagella sustinuit, et sic se me&bd;dium 
@@ -2345,7 +2357,7 @@ inter prospera et aduersa exhibuit, ut nec eum prospera
 quam <rs>constantiam</rs> appellauit. <hi>biennio</hi> autem antequam 
 &blb;moreretur, <rs>willelmum</rs> filium suum <rs>capuanorum</rs> principem in 
 &blb;regem <rs>sicilie</rs> fecit inungi et secum iussit pariter conregnare. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>interea</hi> <rs>eugenius</rs> papa apud <rs>tusculanum</rs> aliquanto tempore 
 &blb;demoratus, pacem cum <rs>romanis</rs> fecit et a senatoribus et ab uni&bd;uerso 
 populo <rs>romano</rs> cum summo est honore susceptus. <hi>hic</hi> 
@@ -2357,10 +2369,10 @@ disponere; et nisi esset mors emula, que illum cito de
 rex mortuus est, et ei <rs>fredericus</rs> nepos eius in regno suc&bd;cessit. 
 <hi>non</hi> multo uero post <rs>eugenius</rs> papa <rs>rome</rs> mortuus est, 
 &blb;et apud <rs>sanctum petrum</rs> est sepultus, anno pontificatus sui 
-&blb;<supplied resp="bonetti"><num value="8">viii</num>, m. <num value="4">iv</num> die <num value="12">xii</num></supplied>. <hi>huic</hi> successit <rs>corradus</rs> natione <rs>romanus</rs>, 
+&blb;<supplied resp="#b"><num value="8">viii</num>, m. <num value="4">iv</num> die <num value="12">xii</num></supplied>. <hi>huic</hi> successit <rs>corradus</rs> natione <rs>romanus</rs>, 
 &blb;senex et plenus dierum, prius presbiter cardinalis deinde episco&bd;pus 
 <rs>sauinensis</rs> et uicarius <rs>romane</rs> ecclesie, qui et <rs>anastasius</rs> est 
-&blb;appellatus, anno dominice incarnationis <num value="1153">m<supplied resp="bonetti">cliii</supplied></num>. 
+&blb;appellatus, anno dominice incarnationis <num value="1153">m<supplied resp="#b">cliii</supplied></num>. 
 </p> 
 
 
@@ -2368,7 +2380,7 @@ rex mortuus est, et ei <rs>fredericus</rs> nepos eius in regno suc&bd;cessit.
 &blb;<hi>interea</hi> rex <rs>roggerius</rs>, qui tempore pacis et belli otiosus esse 
 &blb;nesciuit, regni sui pace et tranquillitate potitus, <rs>panormi</rs> pala&bd;tium 
 satis pulcrum iussit edificari, in quo fecit capellam miro 
-<pb n="158" ed="b"/> 
+<pb n="158" ed="#b"/> 
 &blb;lapide tabulatam, quam etiam deaurata testitudine cooperuit, et 
 &blb;ornamentis uariis ditauit pariter et ornauit. <hi>et</hi> ne tanto uiro aqua&bd;rum 
 et terre delicie tempore ullo deessent, in loco, qui <rs>fabara</rs> 
@@ -2414,9 +2426,9 @@ edificari, in qua ecclesiam <rs>sancti saluatoris</rs> pulcram satis et
 
 
 <p xml:id="g234.n1-236.n10" decls="#ocr">
-<note resp="pm" type="segmentation"><rs>garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
 &blb;<hi>ut</hi> autem universus mundus evidenter agnoscat, qualiter 
-<pb n="160" ed="b"/> 
+<pb n="160" ed="#b"/> 
 &blb;rex <rs>rogerius</rs> tota fuerit intencione catholicus, qualiter chri&bd;stiane 
 fidei zelo et fervore succensus, subsequentis operis testi&bd;monium 
 declarabit. <hi>rex</hi> <rs>rogerius</rs> quendam eunuchum ha&bd;buit 
@@ -2452,11 +2464,11 @@ hominum testimonio comprobarunt. <rs>philippus</rs> autem
 &blb;convictum se esse considerans, regis iusticiam metuens, cepit 
 &blb;veniam petere et regis misericordiam postulare, et de cetero 
 &blb;futurum se esse christianum catholicum repromittere. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>tunc</hi> rex fidei flamma succensus, prorumpens in lacrimas, 
 &blb;ait: <hi>noscat</hi> vestra fidelitas, dilectissimi, quod animus meus 
 &blb;maximo dolore compungitur, et magnis iracundie stimulis 
-<pb n="162" ed="b"/> 
+<pb n="162" ed="#b"/> 
 &blb;agitatur, quia hic minister meus, quem a puero enutrieram 
 &blb;ut catholicum, peccatis suis exigentibus, inventus est sarrace&bd;nus, 
 et sarracenus et sub nomine fidei opera infidelitatis exer&bd;cuit. 
@@ -2495,7 +2507,7 @@ et nutrito proprio non pepercit, set pro eius honore et
 
 <p xml:id="g236.1-237.5" decls="#ocr"> 
 &blb;<hi>circa</hi> finem autem uite sue secularibus negotiis aliquantulum 
-<pb n="164" ed="b"/> 
+<pb n="164" ed="#b"/> 
 &blb;postpositis et ommissis, <rs>iudeos</rs> et <rs>sarracenos</rs> ad fidem <rs>christi</rs> 
 &blb;conuertere modis omnibus laborabat, et conuersis dona plurima 
 &blb;et necessaria conferebat. <hi>ecclesiam</hi> etiam <rs>sancti nicolai</rs> de 
@@ -2523,13 +2535,13 @@ largiens, infidelibus contumelias et supplicia inferens. <hi>erat</hi>
 
 
 <p xml:id="g237.6-237.12" decls="#ocr"> 
-&blb;<hi>defuncto</hi> autem rege <rs>rogerio</rs>, <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> filius eius, qui 
+&blb;<hi>defuncto</hi> autem rege <rs>rogerio</rs>, <rs>w<supplied resp="#b">ilhelmus</supplied></rs> filius eius, qui 
 &blb;cum patre duobus annis et mensibus decem regnauerat, illi in re&bd;gni 
 amministratione successit. <hi>hic</hi> autem post mortem patris, 
 &blb;conuocatis magnatibus regni sui, proximo pascha est sollempni&bd;ter 
 coronatus, cui curie <rs>robbertus</rs> de <rs>basauilla</rs> comes de <rs>co&bd;nuersano</rs> 
 consobrinus frater eiusdem regis interfuit. <hi>huic</hi> rex 
-&blb;<rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> comitatum de <rs>lauritello</rs> concessit et eum in <rs>apu&bd;liam</rs> 
+&blb;<rs>w<supplied resp="#b">ilhelmus</supplied></rs> comitatum de <rs>lauritello</rs> concessit et eum in <rs>apu&bd;liam</rs> 
 cum honore emisit. <hi>postmodum</hi> <rs>maionem</rs> cancellarium ma&bd;gnum 
 ammiratum constituit, cuius consilio et prouidencia regni 
 &blb;sui negocia precipue pertractabat. 
@@ -2541,12 +2553,12 @@ ammiratum constituit, cuius consilio et prouidencia regni
 &blb;anno <num value="5">v</num>, dominice incarnationis <num value="1154">mcl<choice><orig>iiii</orig><reg type="numeral">iv</reg></choice></num>. <hi>cui</hi> successit <rs>nicolaus</rs> 
 &blb;natione <rs>anglicus</rs>, prius canonicus regularis et abbas <rs>sancti rufi</rs>, 
 &blb;et post <rs>albanensis</rs> episcopus, qui et <rs>adrianus</rs> quartus est appel&bd;latus. 
-<hi>quo</hi> audito, rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> nuncios ad eum de pace com<pb n="166" ed="b"/>ponenda transmisit, set optinere non potuit. <hi>postmodum</hi> circa 
+<hi>quo</hi> audito, rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> nuncios ad eum de pace com<pb n="166" ed="#b"/>ponenda transmisit, set optinere non potuit. <hi>postmodum</hi> circa 
 &blb;quadragesimam rex <rs>salernum</rs> uenit et ibi usque ad pascha est 
 &blb;demoratus. <hi>quo</hi> cognito, <rs>adrianus</rs> papa <rs>henricum</rs> cardinalem 
 &blb;<hi>sanctorum</hi> <rs>nerei</rs> et <rs>achillei</rs> ad eum misit, quem rex recipere 
 &blb;noluit, set <rs>romam</rs> redire precepit, eo quod in litteris apostolicis, 
-&blb;quas regi portabat, papa ipsum non regem, sed <rs>w<supplied resp="bonetti">ilhelmum</supplied></rs> 
+&blb;quas regi portabat, papa ipsum non regem, sed <rs>w<supplied resp="#b">ilhelmum</supplied></rs> 
 &blb;dominum <rs>sicilie</rs> nominabat. <hi>pro</hi> quo facto <rs>adrianus</rs> papa et tota 
 &blb;<rs>romana</rs> curia contra regem turbata est et commota. <hi>rex</hi> autem 
 &blb;celebrata festiuitate paschali <rs>ascittino</rs> <rs>catheniensi</rs> archidiacono, 
@@ -2569,7 +2581,7 @@ guerram maximam in <rs>apulia</rs> excitauerant. <hi>quo</hi> audito baro&bd;nes
 &blb;eum expectare timentes, in <rs>buteria</rs> se receperunt, et cum ali&bd;quanto 
 tempore eos obsedisset, mediante <rs>maione</rs> ammirato, eis 
 &blb;condonauit et in suam gratiam illos recepit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>interea</hi> estate proxima <rs>fredericus</rs> rex <rs>theotonicorum</rs> <rs>ro&bd;mam</rs> 
 uenit, et ab <rs>adriano</rs> papa facto illi sacramento, ut moris est, 
 &blb;in ecclesia beati <rs>petri</rs> sollempniter est coronatus. <hi>qui</hi> cum ante 
@@ -2579,12 +2591,12 @@ redigeret, post perceptionem corone circa <rs>urbem</rs> aliquantu&bd;lum
 demoratus, in <rs>alamanniam</rs> rediit. <hi>papa</hi> uero sua promissio&bd;ne 
 frustratus, congregato exercitu cum <rs>robberto</rs> <rs>capuano</rs> prin&bd;cipe 
 et <rs>andrea</rs> de <rs>rupecanina</rs> <rs>terram laboris</rs> ingressus, eam uio&bd;lenter 
-optinuit, et a <rs>beneuentanis</rs> est cum honore receptus. <hi>in</hi><pb n="168" ed="b"/>terea 
+optinuit, et a <rs>beneuentanis</rs> est cum honore receptus. <hi>in</hi><pb n="168" ed="#b"/>terea 
 &blb;<rs>emmanuel</rs> <rs>constantinopolitanus</rs> imperator, inuenta opor&bd;tunitate, 
 quod de iniuriis sibi a rege <rs>rogerio</rs> illatis uindicaret in 
 &blb;filium, <rs>paliologo</rs> uirum quendam nobilem cum multa pecunia ad 
 &blb;comitem <rs>robbertum</rs> et barones <rs>apulie</rs> transmisit, ut de ea mili&bd;tes 
-retinerent, et <rs>w<supplied resp="bonetti">illelmo</supplied></rs> regi guerram inferrent. <hi>misit</hi> etiam 
+retinerent, et <rs>w<supplied resp="#b">illelmo</supplied></rs> regi guerram inferrent. <hi>misit</hi> etiam 
 &blb;<hi>comminianum</hi> (et) <rs>sebastum</rs> et alios potentes uiros cum suo 
 &blb;stolio, qui uenientes <rs>brundusium</rs> ceperunt preter castrum in 
 &blb;quo regis militia se recepit. <rs>barum</rs> autem et relique ciuitates ma&bd;ritime 
@@ -2592,23 +2604,23 @@ retinerent, et <rs>w<supplied resp="bonetti">illelmo</supplied></rs> regi guerra
 &blb;quod partim a <rs>robberto</rs> <rs>capuano</rs> principe, partim a comite 
 &blb;<rs>robberto</rs> tota terra occupata est preter <rs>neapolim</rs>, <rs>amalfiam</rs>, <rs>sa&bd;lernum</rs>, 
 <rs>troiam</rs> et <rs>melfiam</rs> et quasdam alias ciuitates et castra 
-&blb;munita. <hi>quo</hi> cognito rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, prout melius potuit per 
+&blb;munita. <hi>quo</hi> cognito rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, prout melius potuit per 
 &blb;mare et terram congregauit exercitum, et recto itinere <rs>brun&bd;dusium</rs> 
 uenit. <hi>in</hi> quo <rs>sebastum</rs> et <rs>cominianum</rs> et reliquos po&bd;tentes 
 <rs>grecorum</rs> cum multo exercitu et stolio congregatos inue&bd;nit, 
 qui castrum <rs>brundusii</rs> et gentem regis uehementer impu&bd;gnabant. 
 <hi>comes</hi> autem <rs>robbertus</rs>, aduentu regis cognito, <rs>brun&bd;dusium</rs> 
-reliquit et <rs>beneuentum</rs> se contulit. <hi>rex</hi> uero <rs>w<supplied resp="bonetti">ilhel&bd;mus</supplied></rs> 
+reliquit et <rs>beneuentum</rs> se contulit. <hi>rex</hi> uero <rs>w<supplied resp="#b">ilhel&bd;mus</supplied></rs> 
 per mare et per terram <rs>brundusium</rs> potenter obsedit, et 
 &blb;per mare et terram uiriliter impugnando, in ore gladii debellauit, 
 &blb;cepit <rs>grecorum</rs> nobiles, et stolium ac pecuniam multam, et plu&bd;res 
-de baroni<supplied resp="bonetti">bus</supplied> <rs>ap<supplied resp="bonetti">ulie</supplied></rs> et hom<supplied resp="bonetti">inibus</supplied> qui ei rebelles exti&bd;terant, 
+de baroni<supplied resp="#b">bus</supplied> <rs>ap<supplied resp="#b">ulie</supplied></rs> et hom<supplied resp="#b">inibus</supplied> qui ei rebelles exti&bd;terant, 
 de quibus multos suspendi et excecari fecit. <hi>quo</hi> facto 
 &blb;<rs>barum</rs> uenit et eam cepit, et quia <rs>barenses</rs> castrum regis de&bd;struxerant, 
 rex ira commotus ciuitatem a fundamentis subuertit. 
 &blb;<hi>dehinc</hi> per maritimam <rs>apulie</rs> rediens omnes ciuitates maritime 
 &blb;cepit, et totam terram quam perdiderat, sine bello recuperauit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>ipse</hi> autem recto tramite <rs>beneuentum</rs> uenit, quo inimici et 
 &blb;rebelles eius ad auxilium domni pape confugerant. <rs>robbertus</rs> 
 &blb;uero <rs>capuanorum</rs> princeps, dum pre timore regis uellet aufu&bd;gere 
@@ -2618,26 +2630,26 @@ ipsum cepit et regis baiulis assignauit, sicque sub hoc tem&bd;pore,
 proditionis genere, gratiam regis, quam perdiderat, recupe&bd;rauit. 
 <hi>rex</hi> autem predictum principem incarcerandum in <rs>sici&bd;liam</rs> 
 transmisit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>comitem</hi> <rs>robbertum</rs>, <rs>andream</rs> de <rs>rupecanina</rs> et reliquos ini<pb n="170" ed="b"/>micos 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<hi>comitem</hi> <rs>robbertum</rs>, <rs>andream</rs> de <rs>rupecanina</rs> et reliquos ini<pb n="170" ed="#b"/>micos 
 &blb;suos, qui <rs>beneuentum</rs> ad domnum papam confugerant, 
 &blb;eiusdem pape precibus liberos et illesos cum rebus suis de 
 &blb;regno exire permisit. <hi>ipse</hi> autem multis nuntiis intercurrentibus 
 &blb;et capitulis pacis hinc inde dispositis, cum papa concordatus 
 &blb;est. <hi>nam</hi> <rs>adrianus</rs> papa cum cardinalibus suis ad ecclesiam sanc&bd;ti 
 <rs>marciani</rs>, que prope <rs>calorem</rs> fluuium sita est, ueniens, regem 
-&blb;<rs>w<supplied resp="bonetti">ilhelmum</supplied></rs> ad pedes suos humiliter accedentem benigne re&bd;cepit. 
+&blb;<rs>w<supplied resp="#b">ilhelmum</supplied></rs> ad pedes suos humiliter accedentem benigne re&bd;cepit. 
 <hi>qui</hi> facto iuramento, ut moris erat, liggius homo pape de&bd;uenit, 
 et papa ipsum per unum uexillum de regno <rs>sicilie</rs>, per 
 &blb;aliud de ducatu <rs>apulie</rs>, per tercium de principatu <rs>capue</rs> inue&bd;stiuit. 
-<hi>hic</hi> autem amore regis <rs>w<supplied resp="bonetti">ilhelmi</supplied></rs>, precibus etiam et stu&bd;dio 
+<hi>hic</hi> autem amore regis <rs>w<supplied resp="#b">ilhelmi</supplied></rs>, precibus etiam et stu&bd;dio 
 <rs>maionis</rs> ammirati et <rs>ugonis</rs> <rs>panormitani</rs> archiepiscopi inte&bd;rueniente, 
 <rs>agrigentinam</rs> et <rs>mazariensem</rs> ecclesias, que ad ius <rs>ro&bd;mane</rs> 
 ecclesie specialiter pertinebant, ecclesie <rs>panormitane</rs> su&bd;biecit, 
 et earumdem ecclesiarum episcopos eiusdem ecclesie 
 &blb;suffraganeos in perpetuum esse concessit. <hi>quo</hi> facto <rs>adrianus</rs> 
 &blb;papa in <rs>campaniam</rs> rediit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>rex</hi> autem plures de inimicis suis de regno expulit, quosdam 
 &blb;in carcere posuit, quosdam in sua gratia et amore recepit. <hi>de</hi>&bd;hinc 
 <rs>symonem</rs> senescalcum, cognatum <rs>maionis</rs> ammirati, magi&bd;strum 
@@ -2652,15 +2664,15 @@ combussit, <hi>egripum</hi> et uicinas ciuitates expoliauit et sic
 &blb;suis a rege <rs>sicilie</rs> captos, nec posse cum eo de pari contendere, 
 &blb;missis frequentibus nuntiis, cum rege concordatus est, et pacis 
 &blb;federa sunt hinc inde iurata. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eodem</hi> tempore <rs>mesemuti</rs> a <rs>marrocho</rs> uenientes, totam ter&bd;ram 
 usque in <rs>africam</rs> in ore gladii ceperunt. <rs>africana</rs> uero ciui&bd;tas 
-adhuc sub potestate regis <rs>w<supplied resp="bonetti">ilhelmi</supplied></rs> erat, et multos in ea mi&bd;lites 
+adhuc sub potestate regis <rs>w<supplied resp="#b">ilhelmi</supplied></rs> erat, et multos in ea mi&bd;lites 
 et pedites ad eius custodiam et defensionem posuerat. <hi>me</hi>&bd;semuti 
-autem eam undique per terram et mare obsederunt, chri<pb n="172" ed="b"/>stiani 
+autem eam undique per terram et mare obsederunt, chri<pb n="172" ed="#b"/>stiani 
 &blb;uero, qui in ea erant, illis uiriliter resistebant, nec in aliquo 
 &blb;eos formidabant, nisi quod uictualium maximam inopiam patie&bd;bantur. 
-<hi>quo</hi> cognito, rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> stolium suum, quod in 
+<hi>quo</hi> cognito, rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> stolium suum, quod in 
 &blb;<rs>ispaniam</rs> miserat, festinanter reuocari fecit, precipiens ut ad libe&bd;rationem 
 <rs>africe</rs> quantocius festinarent. <hi>ueniens</hi> autem gaytus 
 &blb;<rs>petrus</rs> eunuchus regis, qui stolio preerat, ad <rs>africam</rs>, cum stolio 
@@ -2669,17 +2681,17 @@ autem eam undique per terram et mare obsederunt, chri<pb n="172" ed="b"/>stiani
 cum nullum possent habere subsidium et uictualia 
 &blb;eis penitus defecissent, facta pace cum <rs>mesemutis</rs>, relicta eis 
 &blb;<rs>africe</rs> ciuitate, ipsi cum rebus suis in <rs>siciliam</rs> sunt reuersi. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>rex</hi> autem <rs>w<supplied resp="bonetti">illelmus</supplied></rs>, adhuc uiuente patre cum esset prin&bd;ceps 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<hi>rex</hi> autem <rs>w<supplied resp="#b">illelmus</supplied></rs>, adhuc uiuente patre cum esset prin&bd;ceps 
 <rs>capuanorum</rs>, <rs>margaritam</rs> filiam <rs>garsie</rs> regis <rs>nauarre</rs> duxit 
 &blb;uxorem, de qua plures liberos habuit; <rs>rogerium</rs> quem ducem 
 &blb;<rs>apulie</rs> constituit, <rs>robbertum</rs> quem <rs>capuanorum</rs> principem or&bd;dinauit, 
-<rs>w<supplied resp="bonetti">illelmum</supplied></rs> et <rs>henricum</rs>. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<rs>w<supplied resp="#b">illelmum</supplied></rs> et <rs>henricum</rs>. 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>audiens</hi> autem <rs>fredericus</rs> imperator <rs>adrianum</rs> papam cum 
-&blb;rege <rs>w<supplied resp="bonetti">illelmo</supplied></rs> concordatum et quod eum de regno <rs>sicilie</rs> et 
+&blb;rege <rs>w<supplied resp="#b">illelmo</supplied></rs> concordatum et quod eum de regno <rs>sicilie</rs> et 
 &blb;ducatu <rs>apulie</rs> inuestisset, molestissime tulit. <hi>anni</hi> <rs>domini</rs> 
-&blb;<num value="1157">m<supplied resp="bonetti">clvii</supplied></num>. 
+&blb;<num value="1157">m<supplied resp="#b">clvii</supplied></num>. 
 </p> 
 
 
@@ -2701,7 +2713,7 @@ in obsidione moratus, et nichil ciuitati per uiolenciam posset
 baiulum constituere, et eam pro suo arbitrio ordinare, <hi>me</hi>&bd;diolanenses 
 <rs>theutonicorum</rs> superbiam pati nequeuntes, cepe&bd;runt 
 resistere et pacis federa uiolare. <hi>qui</hi> super castrum, in quo 
-<pb n="174" ed="b"/> 
+<pb n="174" ed="#b"/> 
 &blb;eorum obsides tenebantur uenientes, ipsum ceperunt, et recu&bd;peratis 
 obsidibus sunt in suam ciuitatem reuersi. <hi>quo</hi> cognito, 
 &blb;imperator plurimum indignatus, cum non posset eos in campo 
@@ -2741,8 +2753,8 @@ uero auxilio <rs>ocdonis</rs> <rs>fraiapane</rs> et aliorum nobilium cum
 &blb;ab <rs>hubaldo</rs> <rs>hostiensi</rs> episcopo et reliquis episcopis et cardina&bd;libus 
 est sollempniter consecratus, et postea <rs>terracinam</rs> uenit. 
 &blb;<rs>octauianus</rs> uero in <rs>urbe</rs> aliquantulum demoratus, cum in ea pa&bd;rum 
-posset proficere, <rs>campaniam</rs> uenit, et apud <rs>segniam</rs> man<pb n="176" ed="b"/>sit. 
-&blb;<hi>rex</hi> autem <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, auditus promocione pape <rs>alexandri</rs>, 
+posset proficere, <rs>campaniam</rs> uenit, et apud <rs>segniam</rs> man<pb n="176" ed="#b"/>sit. 
+&blb;<hi>rex</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, auditus promocione pape <rs>alexandri</rs>, 
 &blb;nuncios ad eum misit, et eum in patrem et dominum cum suo 
 &blb;regno recepit. 
 </p> 
@@ -2755,7 +2767,7 @@ et <rs>boamundus</rs> comes <rs>monopelli</rs>, et <rs>rogerius</rs> comes <rs>a
 &blb;multi barones cum <rs>melfiensibus</rs> et <rs>neapolitanis</rs> et quibusdam 
 &blb;aliis contra <rs>maionem</rs> ammiratum coniurationem fecerunt, asse&bd;rentes 
 eum regis esse proditorem et ad regni dominium aspira&bd;re. 
-<hi>quod</hi> audiens rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, quia ammiratum tenere dili&bd;gebat 
+<hi>quod</hi> audiens rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, quia ammiratum tenere dili&bd;gebat 
 et de eo plurimum confidebat, contra eos uehementer est 
 &blb;indignatus, et per frequentes nuncios et litteras eis precipiendo 
 &blb;mandauit, ut ab hoc proposito desisterent, quia ipsum ammira&bd;tum 
@@ -2763,7 +2775,7 @@ pro fideli et legali uiro habebat. <hi>quod</hi> ipsi facere neglexe&bd;runt
 dicentes, se ammirati dominium et amministrationem nolle 
 &blb;ulterius sustinere. <hi>qua</hi> de causa in tota <rs>apulia</rs> guerra maxima et 
 &blb;diuisio est exorta. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<rs>matheus</rs> autem <rs>bonella</rs>, qui filiam ammirati in uxorem iuraue&bd;rat 
 se ducturum, cum quibusdam aliis baronibus <rs>sicilie</rs> huic co&bd;niurationi, 
 licet occulte, fauebat. <hi>promissum</hi> enim illi erat a comi&bd;tibus, 
@@ -2774,17 +2786,17 @@ sub occasione fidelitatis regie, de occidendo ammirato
 &blb;hoc esset sepe premonitus, tum pro parentela que inter eos con&bd;tracta 
 erat, tum pro multis beneficiis que illi contulerat, hoc cre&bd;dere 
 recusauit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>dum</hi> autem in uigilia beati <rs>martini</rs> ammiratus a uisitando 
 &blb;<rs>panormitano</rs> archiepiscopo inchoata iam nocte reuerteretur, 
 &blb;<rs>matheus</rs> <rs>bonella</rs> positis insidiis in uia, que est iusta portam bea&bd;te 
 <rs>agathe</rs>, ei obuiam uenit, et illum ense percutiens interfecit, et 
 &blb;eadem nocte a <rs>panormo</rs> exiens ad suam terram confugit. <hi>quo</hi> 
-&blb;cognito, rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> multum turbatus est, et condoluit, sed 
+&blb;cognito, rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> multum turbatus est, et condoluit, sed 
 &blb;quia tumultus propter hoc erat in ciuitate, et <rs>matheus</rs> <rs>bonel&bd;la</rs> 
 habebat sociam multitudinem, dissimulauit dolorem et uisus 
 &blb;est mortem ammirati equanimiter tolerasse. <hi>unde</hi> uxorem eius 
-<pb n="178" ed="b"/> 
+<pb n="178" ed="#b"/> 
 &blb;et filios, sorores et fratrem, et omnes res eorum capi precepit. 
 &blb;<hi>post</hi> hec rogatus a multis, <rs>matheum</rs> <rs>bonellam</rs> quodammodo 
 &blb;in suo amore recepit. <hi>barones</hi> autem et multi de populo, qui in 
@@ -2795,7 +2807,7 @@ esse pariter et molestum, ceperunt ualde timere ne rex
 &blb;deliberare, qualiter regem caperent uel morte dampnarent; quod 
 &blb;factum est. <hi>nam</hi> adueniente prima quinta feria quadragesime, 
 &blb;dum rex uellet ad audiendam missam pergere, consentiente ca&bd;stellano 
-et seruientibus, carceres sunt aperti, et comes <rs>w<supplied resp="bonetti">ilhel&bd;mus</supplied></rs> 
+et seruientibus, carceres sunt aperti, et comes <rs>w<supplied resp="#b">ilhel&bd;mus</supplied></rs> 
 de <rs>principatu</rs> et <rs>riccardus</rs> de <rs>mandra</rs> et <rs>alexander</rs> <rs>mo&bd;nachus</rs> 
 et multi alii prisones subito exeuntes carcerem, arreptis 
 &blb;armis, ceperunt insilire palatium. <hi>multi</hi> etiam de solidariis et de 
@@ -2815,14 +2827,14 @@ ingredi permiserunt. <hi>facto</hi> uero mane, die ueneris, iterum
 &blb;<rs>roggerium</rs> ducem per ciuitatem equitare fecerunt. <hi>interea</hi> inter 
 &blb;<rs>sarracenos</rs> et christianos eiusdem ciuitatis bellum maximum est 
 &blb;exortum, et multi de <rs>sarracenis</rs> mortui sunt et expoliati. <hi>adue</hi>&bd;niente 
-autem nocte sabbati, <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> comes de <rs>principatu</rs> et 
+autem nocte sabbati, <rs>w<supplied resp="#b">ilhelmus</supplied></rs> comes de <rs>principatu</rs> et 
 &blb;<rs>tancredus</rs> comes de <rs>lycia</rs> cum quibusdam aliis ad <rs>matheum</rs> 
 &blb;<rs>bonellam</rs>, qui huius coniurationis caput extiterat et tunc erat 
 &blb;apud <rs>mestrectam</rs>, uelociter iuerunt, et ipsum cum sua militia <rs>pa&bd;normum</rs> 
 festinanter adducerunt; timebant enim, quod euenit, ne 
 &blb;si diu moram facerent, rex, qui iniuste captus fuerat, auxilio po&bd;puli 
 de eorum manibus tolleretur. 
-<pb n="180" ed="b"/> 
+<pb n="180" ed="#b"/> 
 &blb;<hi>die</hi> uero sabbati <rs>romoaldus</rs> <rs>salernitanus</rs> et <rs>robbertus</rs> <rs>massa&bd;nensis</rs> 
 archiepiscopi, et <rs>riccardus</rs> <rs>siracusanus</rs> electus, et <rs>tusti&bd;nus</rs> 
 <rs>mazariensis</rs> episcopus, uidentes regem iniuste captum et pa&bd;latium 
@@ -2844,7 +2856,7 @@ ascenderunt, et regem de infortunio, quod acciderat, pro
 &blb;palatio fieret, <rs>rogerius</rs> dux <rs>apulie</rs>, filius eius, sagitta iusta ocu&bd;lum
 est percussus, qui non post multos dies huius uulneris occa&bd;sione
 interiit.
-<milestone type="bonetti-paragraph-break" ed="b"/>
+<milestone type="bonetti-paragraph-break" ed="#b"/>
 <rs>matheus</rs> uero <rs>bonella</rs>, audiens regis liberationem, plurimum
 &blb;doluit, sed dissimilauit, et per nuncios suos regi mandauit, sed de
 &blb;eius captione plurimum doluisse et quod pro eo liberando cum
@@ -2858,9 +2870,9 @@ aliis usque <rs>fabaram</rs> uenit, et frequentibus nuntiis inter eos et
 &blb;regem discurrentibus, ad hunc modum concordie deuenerunt.
 <hi>rex</hi> liberalitate sua et gratia omnibus eis offensam, quam in eum
 &blb;fecerant, remisit; <rs>matheo</rs> <rs>bonelle</rs> et aliis baronibus <rs>sicilie</rs> gra&bd;tiam
-et terras suas restituit; <rs>w<supplied resp="bonetti">illelmum</supplied></rs> <rs>symonem</rs> et <rs>tancredum</rs>
+et terras suas restituit; <rs>w<supplied resp="#b">illelmum</supplied></rs> <rs>symonem</rs> et <rs>tancredum</rs>
 &blb;comites cum multis aliis, qui in terra remanere nolebant, saluos
-<pb n="182" ed="b"/>
+<pb n="182" ed="#b"/>
 &blb;et illesos cum rebus suis usque <rs>terracenam</rs> cum galea fecit con&bd;duci, 
 alios uero <rs>ierosolimam</rs> ire permisit. <hi>metuens</hi> autem rex, ne 
 &blb;comites <rs>apulie</rs>, qui cum eo occasione ammirati fuerunt discor&bd;dati, 
@@ -2870,7 +2882,7 @@ rebelles fierent, <rs>romoaldum</rs> <rs>salernitanum</rs> archiepiscopum
 &blb;baronum et comitum turbatos animos mitigauit et eos ad amo&bd;rem 
 et fidelitatem regiam uehementer adtraxit, adeo quod una&bd;nimiter 
 uolebant in <rs>siciliam</rs> pergere et regis iniuriam uindicare. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>adueniente</hi> autem pascha rex per litteras suas predictis comi&bd;tibus 
 mandauit, ut sacramenta, que fecerant, abiurarent, quod ipsi 
 &blb;nullatenus facere uoluenrunt. <hi>sed</hi> de regis recuperanda gratia 
@@ -2880,22 +2892,22 @@ ad <rs>robertum</rs> comitem de <rs>lauritello</rs> iuerunt, et facto ei
 <rs>roggerius</rs> autem <rs>sclauo</rs> simul cum <rs>lombardis</rs> cepit sedi&bd;tionem 
 in <rs>sicilia</rs> excitare, terram de demanio regis inuadere et 
 &blb;<rs>sarracenos</rs> ubicumque inuenire poterat trucidare. <hi>quo</hi> cognito, 
-&blb;rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> primo <rs>matheum</rs> <rs>bonellam</rs> capi et in carcerem 
+&blb;rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> primo <rs>matheum</rs> <rs>bonellam</rs> capi et in carcerem 
 &blb;retrudi fecit, dehinc congregato exercitu <rs>plazzam</rs> uenit et eam 
 &blb;destruxit et <rs>lombardos</rs> in fugam uertit. <rs>roggerius</rs> autem <rs>sclauo</rs> 
 &blb;cum multis <rs>lombardis</rs> a facie regis fugiens, in <rs>buteria</rs> se recepit. 
 &blb;<hi>quo</hi> rex eos persecutus <rs>buteriam</rs> undique cum suo exercitu ob&bd;sedit, 
-et quia rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> guerram in <rs>terra laboris</rs> et <rs>apulia</rs> 
+et quia rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> guerram in <rs>terra laboris</rs> et <rs>apulia</rs> 
 &blb;exortam audiuit, <rs>aquinum</rs> de <rs>mohec</rs> in <rs>terram laboris</rs> misit, ut 
 &blb;milites retineret et inimicis suis resisteret — iam enim <rs>andreas</rs> de 
 &blb;<rs>rupecanina</rs> eandem terram ex parte inuaserat — comes etiam 
 &blb;<rs>robbertus</rs> terram <rs>apulie</rs>, resistente nemine, occupabat. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>qui</hi> <rs>salernum</rs> ueniens, eam habere credidit. <hi>sed</hi> <rs>salernitani</rs> 
 &blb;regi de more fideles existentes, ipsum recipere noluerunt. <hi>de</hi>&bd;hinc 
 <rs>beneuentum</rs> ueniens a <rs>beneuentanis</rs> est cum honore re&bd;ceptus. 
 <hi>post</hi> hec in <rs>apuliam</rs> regressus <rs>tarentum</rs> usque peruenit. 
-&blb;<hi>rex</hi> autem <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> pene per totam estatem in obsidione 
+&blb;<hi>rex</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs> pene per totam estatem in obsidione 
 &blb;<rs>buterie</rs> est moratus. <hi>sed</hi> cum eam situ loci et fortium virorum 
 &blb;numerositate munitam expugnare non posset, facta concordia, 
 &blb;<rs>roggerium</rs> <rs>sclauonem</rs> cum <rs>lombardis</rs> ultra mare illesos ire per&bd;misit. 
@@ -2903,7 +2915,7 @@ et quia rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> guerram in <r
 &blb;et <rs>panormum</rs> est cum triumpho reuersus. 
 </p> 
 
-<pb n="184" ed="b"/> 
+<pb n="184" ed="#b"/> 
 
 <p xml:id="g249.11-250.13" decls="#ocr"> 
 &blb;<hi>interea</hi> <rs>alexander</rs> papa, cum apud <rs>anagniam</rs> et <rs>terracenam</rs> 
@@ -2919,7 +2931,7 @@ congregato, <rs>octauianum</rs>, qui <rs>victor</rs> dicebatur, in catholicum
 &blb;papam recepit, promittens publice et legaliter, quod nec ipse 
 &blb;nec successores eius <rs>alexandro</rs> uel successoribus eius ulterius 
 &blb;obedirent. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>imperator</hi> uero, cum per quinquennium <rs>mediolanum</rs> inpu&bd;gnasset, 
 et ciuitatem resistentibus bellicosis ciuibus expugnare 
 &blb;non potuisset, tandem cum eis ad concordiam deuenit, promit&bd;tens 
@@ -2944,7 +2956,7 @@ placuit, qui in prefixo die et termino cum paucis militibus
 &blb;peditum et cum <rs>octaviano</rs> ad eumdem locum uenire curauit. 
 &blb;<hi>quod</hi> rex <rs>francie</rs> cognoscens, eius versutias metuens, uenire ad 
 &blb;illius colloquium recusauit. <hi>quare</hi> imperator indignatus, cum 
-<pb n="186" ed="b"/> 
+<pb n="186" ed="#b"/> 
 &blb;<rs>octauiano</rs> in <rs>alamanniam</rs> rediit. <rs>octauianus</rs> autem aliquantu&bd;lum 
 in <rs>alamanniam</rs> demoratus, nec ab <rs>alamannis</rs> reuerenter 
 &blb;exceptus, intrauit <rs>italiam</rs>, et post hec <rs>luccam</rs> ueniens, ibidem 
@@ -2962,11 +2974,11 @@ rex <rs>anglie</rs> ad eum ueniens, ipsum cum uniuerso regno suo
 &blb;<hi>qui</hi> non multo post <rs>turonis</rs> uniuersale concilium celebrauit, in 
 &blb;quo archiepiscopi episcopi abbates <rs>anglie</rs>, <rs>scozzie</rs>, <rs>hybernie</rs>, 
 &blb;<rs>hyspaniarum</rs> et totius <rs>gallie</rs> conuenerunt. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eo</hi> tempore <rs>corradus</rs> quidam nobilis clericus <rs>alammannie</rs> et 
 &blb;imperatoris consanguineus, qui in <rs>maguntina</rs> ecclesia erat elec&bd;tus, 
 nolens <rs>octauiani</rs> et imperatoris scismati consentire, eccle&bd;siam 
-suam deserens, ignorante imperatore, ad <rs>a<supplied resp="bonetti">lexandrum</supplied></rs> pa&bd;pam 
+suam deserens, ignorante imperatore, ad <rs>a<supplied resp="#b">lexandrum</supplied></rs> pa&bd;pam 
 in <rs>franciam</rs> festinus aduenit, quem papa satis benigne reci&bd;piens, 
 postmodum secus <rs>romam</rs> usque deduxit; dehinc in car&bd;dinalem 
 et <rs>sabinensem</rs> episcopum promouit, postremo in <rs>ma&bd;guntinum</rs> 
@@ -2981,7 +2993,7 @@ est appellatus.
 
 
 <p xml:id="g251.5-252.2" decls="#ocr"> 
-&blb;<hi>interea</hi> rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, sedata <rs>sicilia</rs>, congregato per mare 
+&blb;<hi>interea</hi> rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, sedata <rs>sicilia</rs>, congregato per mare 
 &blb;et per terram exercitu, in <rs>apuliam</rs> uenit, et primo <rs>tabernas</rs> in 
 &blb;ore gladii cepit atque detruxit. <hi>dehinc</hi> <rs>tarentum</rs> ueniens ipsum 
 &blb;obsedit et habuit, in quo uindictam maximam de suis proditori&bd;bus 
@@ -2989,10 +3001,10 @@ fecit. <hi>post</hi> hec exercitum suum uersus maritimam <rs>apulie</rs>
 &blb;direxit. <hi>quod</hi> audiens comes <rs>robbertus</rs>, qui tunc apud <rs>salpas</rs> 
 &blb;cum suo exercitu morabatur, metuens ne barones <rs>apulie</rs> ipsum 
 &blb;solito more relinquerent, in <rs>abrutium</rs> est reuersus. <hi>quo</hi> cognito, 
-&blb;rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> <rs>riccardum</rs> de <rs>saya</rs> cum magno exercitu post 
+&blb;rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> <rs>riccardum</rs> de <rs>saya</rs> cum magno exercitu post 
 &blb;eum misit. <hi>sed</hi> comes <rs>robbertus</rs>, utpote vir astutus et sapiens, 
-<pb n="188" ed="b"/> 
-&blb;ante aduentum illius regnum exire curauit. <hi>rex</hi> autem <rs>w<supplied resp="bonetti">ilhel&bd;mus</supplied></rs> 
+<pb n="188" ed="#b"/> 
+&blb;ante aduentum illius regnum exire curauit. <hi>rex</hi> autem <rs>w<supplied resp="#b">ilhel&bd;mus</supplied></rs> 
 usque <rs>sanctum germanum</rs> cum suo exercitu uenit, comi&bd;tem 
 <rs>riccardum</rs> de <rs>aquila</rs> a regno expulit, et <rs>montem archanum</rs>, 
 &blb;quem ipse de nouo edificauerat, a galiotis suis capi fecit et dex&bd;trui, 
@@ -3003,8 +3015,8 @@ ciuibus, urbem intrare noluit, sed iuxta eam tentoria fixit.
 &blb;statim soluere non possent, inuenta occasione plurimum indi&bd;gnatus, 
 quosdam ex eis suspendi fecit, cominatus aliis, quod nisi 
 &blb;pecuniam cito soluerent, urbem dextrueret. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>beatus</hi> autem apostolus <rs>m<supplied resp="bonetti">atheus</supplied></rs>, qui <rs>salernitane</rs> ciuitati a 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<hi>beatus</hi> autem apostolus <rs>m<supplied resp="#b">atheus</supplied></rs>, qui <rs>salernitane</rs> ciuitati a 
 &blb;<rs>deo</rs> patronus datus est et defensor, ciuitatem suam in tanto di&bd;scrimine 
 non reliquit. <hi>nam</hi> cum rex in eo esset proposito, quod 
 &blb;multa mala <rs>salerno</rs> inferret, media die cum tanta esset celi sere&bd;nitas, 
@@ -3014,7 +3026,7 @@ quod nulla in aere nubes appareret, subito a septemtrione
 in eminenti positum sic a loco, in quo fixum fuerat, im&bd;pulit 
 et commouit, quod regem dormientem pene prostrauit. 
 &blb;<hi>expergefactus</hi> rex et tanta inundatione attonitus cepit fugere et 
-&blb;apostoli auxilium inuocare et uix in quodam paruo tentorio <supplied resp="bonetti">fu&bd;giens</supplied> 
+&blb;apostoli auxilium inuocare et uix in quodam paruo tentorio <supplied resp="#b">fu&bd;giens</supplied> 
 se recepit. <hi>et</hi> licet rex animi sui timorem super hoc facto 
 &blb;dissimularet, magnates tamen curie et uiri prudentes manifeste 
 &blb;nouerunt, hoc miraculum uirtute apostolica perpetratum; apo&bd;stolus 
@@ -3032,7 +3044,7 @@ et festinanter in <rs>siciliam</rs> rediit.
 &blb;<hi>interea</hi> <rs>romani</rs>, morte <rs>octauiani</rs> cognita, nuntios suos ad <rs>ale&bd;xandrum</rs> 
 in <rs>franciam</rs> transmiserunt, affectuose rogantes ut ad 
 &blb;<rs>urbem</rs> rediret et commissum sibi populum uisitaret, quia ipsi 
-<pb n="190" ed="b"/> 
+<pb n="190" ed="#b"/> 
 &blb;eum cum honore et devotione reciperent. <rs>alexander</rs> autem cre&bd;dens 
 hoc sibi et ecclesie profuturum, <rs>magalonem</rs> uenit, et pre&bd;parata 
 quadam magna naui, que erat <rs>hospitalis</rs>, cum eam pene 
@@ -3047,18 +3059,18 @@ et non inuento ibi apostolico, eam in pace liberam
 &blb;cum cardinalibus qui remanserant et <rs>maguntino</rs> archiepiscopo 
 &blb;quandam minorem nauim intrauit et alto se committens pelago, 
 &blb;licet multis exagitatus procellis, saluus tamen cum omnibus suis 
-&blb;<rs>messanam</rs> <rs>domino</rs> ducente, peruenit. <hi>quo</hi> cognito rex <rs>w<supplied resp="bonetti">ilhel&bd;mus</supplied></rs>, 
+&blb;<rs>messanam</rs> <rs>domino</rs> ducente, peruenit. <hi>quo</hi> cognito rex <rs>w<supplied resp="#b">ilhel&bd;mus</supplied></rs>, 
 qui tunc erat <rs>panormi</rs>, nuntios suos cum muneribus ad 
 &blb;papam transmisit, et eum cum quinque galeis usque <rs>romam</rs> 
-&blb;conduci precepit. <hi>qui</hi> <rs>salernum</rs> ueniens, a <rs>r<supplied resp="bonetti">omoaldo</supplied></rs> <rs>salerni&bd;tano</rs> 
+&blb;conduci precepit. <hi>qui</hi> <rs>salernum</rs> ueniens, a <rs>r<supplied resp="#b">omoaldo</supplied></rs> <rs>salerni&bd;tano</rs> 
 archiepiscopo et toto populo ciuitatis cum debita est reue&bd;rentia 
 et honore susceptus. <hi>qui</hi> postmodum cum eisdem galeis 
 &blb;usque <rs>tyberim</rs>, et per <rs>tyberim</rs> usque ad <rs>sanctum paulum</rs> cum 
 &blb;omnibus cardinalibus uenit. <hi>cui</hi> clerus et <rs>romanus</rs> populus 
 &blb;obuiantes, ipsum cum magno honore et gloria usque <rs>lateranum</rs> 
 &blb;unanimiter conduxerunt. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>eo</hi> tempore rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> palatium quoddam altum satis et 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<hi>eo</hi> tempore rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> palatium quoddam altum satis et 
 &blb;miro artificio laboratum prope <rs>panormum</rs> beneficari fecit, quod 
 &blb;<rs>sisam</rs> appellauit, et ipsum pulchris pomiferis et amenis uiridariis 
 &blb;circumdedit, et diuersis aquarum conductibus et piscariis satis 
@@ -3067,25 +3079,25 @@ et honore susceptus. <hi>qui</hi> postmodum cum eisdem galeis
 
 
 <p xml:id="g253.3-254.5" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
-&blb;<hi>rex</hi> autem <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> circa quadragesi&bd;mam 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
+&blb;<hi>rex</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs> circa quadragesi&bd;mam 
 fluxu uentris et molestia cepit affligi, quam passionem 
 &blb;cum aliquanto tempore occultasset, circa mediam quadragesi&bd;mam 
 eadem passione crescente, credens se moriturum, peniten&bd;tiam 
 et confessionem accepit, quosdam de captiuis liberauit, 
 &blb;redemptionem pecunie, quam <rs>apulie</rs> imposuerat, condonauit, 
-&blb;testamentum fecit, in quo <rs>w<supplied resp="bonetti">ilhelmum</supplied></rs> filium suum maiorem 
+&blb;testamentum fecit, in quo <rs>w<supplied resp="#b">ilhelmum</supplied></rs> filium suum maiorem 
 &blb;totius regni heredem instituit. <rs>henrico</rs> alteri filio principatum 
 &blb;<rs>capue</rs>, quem concesserat, comfirmauit, pecuniam magnam 
-&blb;expendendam pro salute sue anime dereliquit; <rs>margaritam</rs> regi<pb n="192" ed="b"/>nam 
+&blb;expendendam pro salute sue anime dereliquit; <rs>margaritam</rs> regi<pb n="192" ed="#b"/>nam 
 &blb;uxorem suam, totius regni et filiorum suorum tutricem et 
 &blb;gubernatricem pariter ordinauit, <rs>riccardum</rs> uero <rs>siracusanum</rs> 
 &blb;electum et <rs>matheum</rs> suorum notariorum magistrum, uiros uti&bd;que 
 legales, prouidos et discretos, illius et filiorum suorum con&bd;siliarios 
 et familiares esse disposuit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>sed</hi> cum predicta passio ingrauesceret, rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> 
-&blb;<rs>r<supplied resp="bonetti">omualdum</supplied></rs> secundum <rs>salernitanum</rs> archiepiscopum, qui in 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<hi>sed</hi> cum predicta passio ingrauesceret, rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> 
+&blb;<rs>r<supplied resp="#b">omualdum</supplied></rs> secundum <rs>salernitanum</rs> archiepiscopum, qui in 
 &blb;arte erat medicine ualde peritus, ad se uocari precepit. <hi>qui</hi> ad 
 &blb;eum circa pascha ueniens, ab ipso honorifice est susceptus, cui 
 &blb;multa salutaria medicine consilia tribuit. <hi>sed</hi> ipse sui ingenii auc&bd;toritate 
@@ -3093,13 +3105,13 @@ confisus, sibi nonnisi que ei oportuna uidebantur medi&bd;camina
 adhibebat. <hi>unde</hi> accidit quod sabbato ante octauas pa&bd;sche 
 emitritea illum febris inuasit, et inualescente passione mor&bd;tuus 
 est et sepultus est in cappella beati <rs>petri</rs> in palatio suo. <hi>de</hi>&bd;functus 
-est autem rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> anno uite sue quadragesimo 
+est autem rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> anno uite sue quadragesimo 
 &blb;sexto, anno autem regni sui, quo cum patre suo et per se re&bd;gnauerat 
 <num value="15">xv</num>, mense <num value="10">x</num>, anno ab incarnatione <rs>domini</rs> <num value="1166">mclxvi</num>, 
 &blb;indictione <num value="14">xiv</num> mense madii, septimo die intrantis eiusdem men&bd;sis 
 circa horam nonam. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>fuit</hi> autem rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> pulchra facie et decorus aspectu, 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<hi>fuit</hi> autem rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> pulchra facie et decorus aspectu, 
 &blb;corpore pinguis, statura sublimis, honoris cupidus et elatus, in 
 &blb;preliis per mare et terram uictoriosus, regno suo odibilis et plus 
 &blb;formidini quam amori, in congreganda pecunia multum sollici&bd;tus, 
@@ -3117,18 +3129,18 @@ plurimum ueneratus. <hi>cappellam</hi> <rs>sancti petri</rs>, que erat in
 
 
 <p xml:id="g254.6-254.22" decls="#ocr"> 
-&blb;<hi>quo</hi> defuncto, <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> filius eius maior natus, annos duo&bd;decim, 
+&blb;<hi>quo</hi> defuncto, <rs>w<supplied resp="#b">ilhelmus</supplied></rs> filius eius maior natus, annos duo&bd;decim, 
 illi in regno successit. <hi>hic</hi> autem secundo die post mor&bd;tem 
 patris, ex mandato regine, consilio archiepiscoporum et epi&bd;scoporum 
 et baronum et populi in regem est promotus. <hi>nam</hi> eo 
-&blb;die cum maxima gloria et apparatu regio ad ecclesiam beate <rs>ma<pb n="194" ed="b"/>rie</rs> 
+&blb;die cum maxima gloria et apparatu regio ad ecclesiam beate <rs>ma<pb n="194" ed="#b"/>rie</rs> 
 &blb;de <rs>panormo</rs> ueniens, assistentibus plurimis archiepiscopis et 
-&blb;episcopis et baronibus, a <rs>r<supplied resp="bonetti">omualdo</supplied></rs> secundo <rs>salernitano</rs> ar&bd;chiepiscopo 
+&blb;episcopis et baronibus, a <rs>r<supplied resp="#b">omualdo</supplied></rs> secundo <rs>salernitano</rs> ar&bd;chiepiscopo 
 in regem unctus est et coronatus. <hi>postmodum</hi> uero 
 &blb;cum magno honore et totius populi gaudio et letitia ad palatium 
 &blb;rediit coronatus. <hi>regina</hi> uero, utpote mulier sapiens et discre&bd;ta, 
 manifeste cognoscens animos populi sui, propter molestias 
-&blb;quas a rege <rs>w<supplied resp="bonetti">ilhelmo</supplied></rs> passi fuerant, plurimum esse turbatos, il&bd;los 
+&blb;quas a rege <rs>w<supplied resp="#b">ilhelmo</supplied></rs> passi fuerant, plurimum esse turbatos, il&bd;los 
 ad amorem et fidelitatem filii sui beneficiis credidit prouo&bd;candos. 
 <hi>inde</hi> est, quod salutari usa consilio, carceres aperuit, 
 &blb;captiuos plurimos liberauit, liberatis terras restituit, debita re&bd;laxauit, 
@@ -3138,7 +3150,7 @@ militibus terras multas regia liberalitate concessit. <hi>his</hi>
 &blb;autem et plurimis aliis beneficiis, totius populi sui animos in 
 &blb;fidelitatem et dilectionem filii sui uehementer accendit, ita quod 
 &blb;de fidelibus fideliores et de deuotis deuotiores effecit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eodem</hi> tempore gaytus <rs>petrus</rs> eunuchus et magister came&bd;rarius 
 palatii cum quibusdam aliis fugam petiit, et ad regem de 
 &blb;<rs>morrocho</rs> ueniens multam secum pecuniam transportauit. 
@@ -3147,7 +3159,7 @@ palatii cum quibusdam aliis fugam petiit, et ad regem de
 
 <p xml:id="g254.23-255.9" decls="#ocr"> 
 &blb;<rs>emmanuel</rs> autem imperator <rs>constantinopolitanus</rs>, cognita 
-&blb;morte regis <rs>w<supplied resp="bonetti">ilhelmi</supplied></rs>, nuntios suos ad regem <rs>w<supplied resp="bonetti">ilhelmum</supplied></rs> 
+&blb;morte regis <rs>w<supplied resp="#b">ilhelmi</supplied></rs>, nuntios suos ad regem <rs>w<supplied resp="#b">ilhelmum</supplied></rs> 
 &blb;iuniorem in <rs>siciliam</rs> misit, mandans quod libenter pacem cum 
 &blb;eo innouaret, et filiam suam unicam et heredem sui imperii si&bd;mul 
 cum imperio illi in uxorem traderet. <hi>rex</hi> autem et regina, 
@@ -3155,8 +3167,8 @@ cum imperio illi in uxorem traderet. <hi>rex</hi> autem et regina,
 misit et recepit, pacem cum eo pristinam innouauit, nego&bd;tio 
 parentele propter multa capitula, que interueniebant, indi&bd;scusso 
 manente. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
-&blb;<hi>rex</hi> autem <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> propter multa beneficia, que ipse et 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
+&blb;<hi>rex</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs> propter multa beneficia, que ipse et 
 &blb;regina suo populo contulerunt, multum cepit a suis hominibus 
 &blb;diligi et regnum suum in pace et tranquillitate tenere. <hi>eo</hi> tempo&bd;re 
 <rs>henricus</rs> naturalis frater regine in <rs>sicilia</rs> ad regem uenit, cui 
@@ -3165,7 +3177,7 @@ manente.
 &blb;de <rs>percia</rs>, clericus et consanguineus regine, in <rs>sicilia</rs> ad regem 
 &blb;uenit, quem rex et regina primo cancellarium, post hec in <rs>pa&bd;normitana</rs> 
 ecclesia eligi fecerunt. <hi>qui</hi> in brevi spatio temporis 
-<pb n="196" ed="b"/> 
+<pb n="196" ed="#b"/> 
 &blb;tantam regis et regine gratiam et familiaritatem optinuit, quod 
 &blb;totum regnum pro suo arbitrio disponebat. 
 </p> 
@@ -3186,12 +3198,12 @@ se recipere potuerunt. <hi>quod</hi> factum <rs>alexandrum</rs> papam et
 &blb;uehementer incussit. <hi>cancellarius</hi> autem nuntios ad imperato&bd;rem 
 misit, mandans ut cito ad <rs>urbem</rs> ueniret, quia eam posset 
 &blb;pro sua uoluntate disponere. <hi>qui</hi> licet <rs>anconam</rs> iam expugnas&bd;set, 
-et in eo esset, ut terram <rs>w<supplied resp="bonetti">ilhelmi</supplied></rs> regis inuaderet, festinus 
+et in eo esset, ut terram <rs>w<supplied resp="#b">ilhelmi</supplied></rs> regis inuaderet, festinus 
 &blb;tamen in <hi>augusto</hi> ad <rs>urbem</rs> rediit, et iusta ecclesiam beati <rs>petri</rs> 
 &blb;sua castra locauit. <rs>romani</rs> uero tum pro morte parentum suo&bd;rum, 
 tum quia multi ex eis ab imperatore capti detinebantur, ei 
 &blb;resistere non potuerunt. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>unde</hi> imperator, hac occasione inuenta, armata manu eccle&bd;siam 
 beati <rs>petri</rs> uiolenter inuasit. <hi>porticum</hi>, que erat ante eccle&bd;siam, 
 comburi fecit, <rs>guidonem</rs> <rs>cremensem</rs> in ecclesiam induxit 
@@ -3207,12 +3219,12 @@ inuasit, ita quod cancellarius et <rs>carolus</rs> <rs>corradi</rs> filius, et
 interiit. <hi>quod</hi> imperator uidens et <rs>dei</rs> uindictam manifeste 
 &blb;cognoscens, relicto apud <rs>urbem</rs> prefecto, uix cum paucis tristis 
 &blb;et merens in <rs>alamanniam</rs> rediit. 
-<pb n="198" ed="b"/> 
+<pb n="198" ed="#b"/> 
 </p> 
 
 
 <p xml:id="g256.12-258.13" decls="#ocr"> 
-&blb;<hi>rex</hi> autem <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, ut prediximus, propter multa benefi&bd;cia, 
+&blb;<hi>rex</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, ut prediximus, propter multa benefi&bd;cia, 
 que ipse cum matre sua regno contulit, ab hominibus suis 
 &blb;cepit multum diligi, et regnum suum uiriliter in pace tenere. 
 &blb;<rs>stephanus</rs> autem cancellarius primo quidem omnibus se humi&bd;lem 
@@ -3228,7 +3240,7 @@ consilio prauorum hominum, indigenas terre cepit habere
 et comitis <rs>gilberti</rs> iurasset. <hi>pro</hi> qua occasione <rs>riccardus</rs> co&bd;mes 
 de <rs>mulisio</rs>, <rs>bartholomeus</rs> de <rs>parisio</rs>, <rs>iohannes</rs> de <rs>sinopoli</rs> 
 &blb;et multi alii capti sunt et in custodia positi. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>quod</hi> factum animos hominum regni non modicum pertur&bd;bauit. 
 <hi>post</hi> hec consilio et auxilio cancellarii <rs>gilbertus</rs> comes 
 &blb;<rs>gravine</rs> comitatum <rs>loritelli</rs> cum omnibus suis pertinentiis a re&bd;ge 
@@ -3250,9 +3262,9 @@ similiter in sedicionem uersus, insultum in cancellarium
 &blb;quibusdam de suis galeam intrauit. <hi>sed</hi> cum uenisset apud <rs>le&bd;catam</rs>, 
 galea fracta est. <hi>qui</hi> postmodum nauim ingressus in <rs>ieru&bd;solimam</rs> 
 uenit, et ibi non multo tempore demoratus interiit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<rs>gilbertus</rs> etiam comes <rs>loritelli</rs> cum <rs>berteraimo</rs> filio suo 
-<pb n="200" ed="b"/> 
+<pb n="200" ed="#b"/> 
 &blb;comite <rs>andrie</rs> cum omnibus suis terram abiurauit, et <rs>ierosoli&bd;mam</rs> 
 perrexit. <hi>comes</hi> uero <rs>henricus</rs> et comes <rs>ryccardus</rs>, post&bd;quam 
 de carcere exierunt, simul cum <rs>messanensibus</rs> cum uigin&bd;ti 
@@ -3268,9 +3280,9 @@ rogatus, illius amore et gratia predictum electum con&bd;cessit
 a suis suffraganeis consecrari, et per <rs>iohannem</rs> <rs>neapoli&bd;tanum</rs> 
 cardinalem suum pallium illi transmisit. <hi>qui</hi> recepto ab 
 &blb;eo sacramento obedientie, pallium illi de more concessit. <rs>rob&bd;bertus</rs> 
-uero comes de <rs>loritello</rs>, qui frequenter regis <rs>w<supplied resp="bonetti">ilhelmi</supplied></rs> 
+uero comes de <rs>loritello</rs>, qui frequenter regis <rs>w<supplied resp="#b">ilhelmi</supplied></rs> 
 &blb;gratiam postulauerat nec potuerat impetrare, nouissime frequen&bd;tes 
-litteras et nuntios regi <rs>w<supplied resp="bonetti">ilhelmo</supplied></rs> iuniori transmisit, humili&bd;ter 
+litteras et nuntios regi <rs>w<supplied resp="#b">ilhelmo</supplied></rs> iuniori transmisit, humili&bd;ter 
 postulans ut ei amorem suum et gratiam restitueret. <hi>rex</hi> 
 &blb;autem et regina solita pietate eius miserti illum in suam gratiam 
 &blb;receperunt, cui etiam rex liberalitate solita comitatum <rs>loritelli</rs>, 
@@ -3298,7 +3310,7 @@ etiam <rs>mohec</rs>, et multa alia castra <rs>sicilie</rs> pro terre motu
 &blb;<hi>papa</hi> autem <rs>alexander</rs>, uir catholicus et honestus, cum suis car&bd;dinalibus 
 apud <rs>beneuentum</rs> morabatur, et ibi ab imperatore <rs>gre&bd;corum</rs>, 
 a rege <rs>francie</rs> et <rs>anglie</rs>, et a prelatis ecclesiarum nuntios 
-<pb n="202" ed="b"/> 
+<pb n="202" ed="#b"/> 
 &blb;recipiens, negotia ecclesiastica sapienter et prouide disponebat. 
 &blb;<hi>post</hi> hec <rs>campaniam</rs> rediit, et rogante <rs>ionatha</rs> domino <rs>tuscula&bd;ni</rs> 
 et eiusdem loci ciuibus, eadem ciuitatem in sua protectione 
@@ -3337,14 +3349,14 @@ custodia, <rs>anagniam</rs> rediit, et ibi multo est tempore de&bd;moratus.
 &blb;eo est permittente reuersus. <hi>transacto</hi> autem aliquanto tempore, 
 &blb;rex <rs>anglie</rs> suggestione prauorum hominum cepit personas ec&bd;clesiasticas 
 molestare et ecclesiis sua iura subtrahere. <hi>quod</hi> ubi 
-<pb n="204" ed="b"/> 
+<pb n="204" ed="#b"/> 
 &blb;archiepiscopus comperit, ab equitatis tramite non declinans, 
 &blb;omni timore postposito, cepit se ei pro iusticia recta fronte op&bd;ponere, 
 et tamquam bonus pastor pro liberando grege regi uer&bd;bo 
 et opere contraire. <hi>cumque</hi> hec discordia de die in diem cre&bd;sceret, 
 et <rs>cantuariensis</rs> archiepiscopi dicta simul et facta regem 
 &blb;plurimum pregrauarent, quidam milites <rs>anglie</rs>, uidelicet <rs>hugo</rs> 
-&blb;de <rs>moruille</rs>, <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> de <rs>trachi</rs>, <rs>renaldus</rs> filius <rs>ursi</rs>, <rs>riccar&bd;dus</rs> 
+&blb;de <rs>moruille</rs>, <rs>w<supplied resp="#b">ilhelmus</supplied></rs> de <rs>trachi</rs>, <rs>renaldus</rs> filius <rs>ursi</rs>, <rs>riccar&bd;dus</rs> 
 <rs>britto</rs>, <rs>robbertus</rs> de <rs>borroch</rs> regi in hoc placere credentes, 
 &blb;sacerdotalis reuerentie et diuini timoris obliti, altera die post fe&bd;stum 
 <rs>innocentium</rs> <rs>thomam</rs> <rs>cantuariensem</rs> archiepiscopum an&bd;te 
@@ -3364,7 +3376,7 @@ qui pro testimonio ueritatis occisus fuerat, et quem pena
 &blb;simul et causa martirem fecerat, multis signorum indiciis et 
 &blb;nouis miraculorum argumentis toti mundo celebrem reddidit et 
 &blb;famosum. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>cumque</hi> ad aures pape <rs>alexandri</rs> miraculorum eius certa fa&bd;ma 
 et ueridica peruenisset, communicato fratrum suorum con&bd;silio, 
 prenominatum archiepiscopum auctoritate apostolica ca&bd;nonizauit 
@@ -3375,7 +3387,7 @@ annis singulis sollempniter celebrari. <hi>rex</hi> autem <rs>anglie</rs>
 &blb;illius rei fuisset conscius, opinio eum quodammodo uulgaris 
 &blb;attingeret, et mendax illum sine culpa fama morderet, de sue in&bd;nocentie 
 puritate confisus, quosdam de episcopis suis et clericis 
-<pb n="206" ed="b"/> 
+<pb n="206" ed="#b"/> 
 &blb;<rs>anagniam</rs> ad <rs>alexandrum</rs> papam direxit. <hi>qui</hi> coram eo et suis 
 &blb;cardinalibus, tactis sacrosantis euangeliis, publice iurauerunt, 
 &blb;quod prenominatus rex ab efusione iusti sanguinis erat innoxius 
@@ -3398,7 +3410,7 @@ agerent et <rs>dei</rs> misericordiam iugiter postularent.
 
 <p xml:id="g261.16-262.7" decls="#ocr"> 
 &blb;<hi>eo</hi> tempore cum <rs>emmanuel</rs> imperator <rs>constantinopolitanus</rs> 
-&blb;frequentibus nuntiis delegatis filiam suam <rs>zura</rs> <rs>mariam</rs> <rs>w<supplied resp="bonetti">ilhel&bd;mo</supplied></rs> 
+&blb;frequentibus nuntiis delegatis filiam suam <rs>zura</rs> <rs>mariam</rs> <rs>w<supplied resp="#b">ilhel&bd;mo</supplied></rs> 
 regi <rs>sicilie</rs> in uxorem tradere promisisset, tandem ex co&bd;nuentione 
 utriusque partis factum est, quod imperator, presenti&bd;bus 
 legatis eiusdem regis, in anima sua iurare fecit, et iuramen&bd;tum 
@@ -3406,7 +3418,7 @@ suum magnatum suorum iureiurando firmari, quod in termi&bd;no
 et loco ab utraque parte prefixo filiam suam regi pro uxore 
 &blb;transmitteret. <hi>et</hi> simile iuramentum ex parte regis et suorum fa&bd;miliarium 
 de filia imperatoris recipienda prestitum est et iura&bd;tum. 
-<hi>quo</hi> facto, rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, utpote uir legalis et <rs>deum</rs> me&bd;tuens, 
+<hi>quo</hi> facto, rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, utpote uir legalis et <rs>deum</rs> me&bd;tuens, 
 iuramentum suum obseruare desiderans, simul cum <rs>hen&bd;rico</rs> 
 fratre suo <rs>capuanorum</rs> principe <rs>tarentum</rs> uenit, et ibi nun&bd;tios 
 imperatoris cum eius filia in prefixo loco et termino ali&bd;quandiu 
@@ -3415,7 +3427,7 @@ orationis studio deuotus princeps accessit, et post hec <rs>ba&bd;rolum</rs>
 rediit, et ibi aliquantis diebus demoratus est. <hi>sed</hi> impera&bd;tor 
 iuramenti sui et promissionis oblitus, filiam suam regi statu&bd;to 
 loco et termino non transmisit. <hi>quo</hi> rex cognito per terram 
-&blb;<rs>beneuentanam</rs> transiens, <rs>henricum</rs> <rs>capuanorum</rs> principem fra<pb n="208" ed="b"/>trem 
+&blb;<rs>beneuentanam</rs> transiens, <rs>henricum</rs> <rs>capuanorum</rs> principem fra<pb n="208" ed="#b"/>trem 
 &blb;suum, quia infirmus erat, <rs>salernum</rs> misit, et ipse primo <rs>ca&bd;puam</rs> 
 dehinc <rs>salernum</rs> uenit. <hi>prenominatus</hi> autem princeps ga&bd;leam 
 ingressus <rs>panormum</rs> rediit, et ibi corporis inualescente 
@@ -3450,7 +3462,7 @@ intrauit.
 
 
 <p xml:id="g262.17-266.4" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis millesimo <supplied resp="bonetti"><num value="173">clxxiii</num></supplied>. <hi>primo</hi> au&bd;tem 
+&blb;<hi>anno</hi> dominice incarnationis millesimo <supplied resp="#b"><num value="173">clxxiii</num></supplied>. <hi>primo</hi> au&bd;tem 
 ingressu suo <rs>astensem</rs> ciuitatem, <rs>taurinum</rs> et uicinas ciui&bd;tates, 
 ipsis se sponte reddentibus, occupauit. <hi>dehinc</hi> marchionis 
 &blb;<rs>montisferrati</rs> et <rs>papiensium</rs> suggestione <rs>alexandriam</rs> ciuitatem 
@@ -3460,14 +3472,14 @@ illius insolentiam perpeti non ualentes, relictis habitationi&bd;bus
 suis in quadam planicie pariter convenerunt, et adiuvantibus 
 &blb;eos <rs>mediolanensibus</rs> et aliis <rs>lombardis</rs>, in eadem planicie ciui&bd;tatem 
 de nouo edificare ceperunt, et eam ob reuerentiam pape 
-<pb n="210" ed="b"/> 
+<pb n="210" ed="#b"/> 
 &blb;<rs>alexandri</rs> <rs>alexandriam</rs> uocauerunt. <hi>cum</hi> autem hec ciuitas ab 
 &blb;imperatore fuisset obsessa, propter sui nouitatem necdum tota 
 &blb;erat fossatis circumdata et domus eius erant palea cooperte, un&bd;de 
 et a <rs>teuthonicis</rs> in contemptum et ironiam, <hi>palearum</hi> ciuitas 
 &blb;est appellata, que postmodum in conflictu bellico ferrea est 
 &blb;inuenta. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>imperator</hi> autem, animantibus eum <rs>papiensibus</rs> et marchio&bd;ne, 
 cepit ciuitatem uiriliter impugnare, machinas circumquaque 
 &blb;instruere, fossata diruere et replere, et eam frequentibus insulti&bd;bus 
@@ -3478,7 +3490,7 @@ fossas suas defendere et illius machinas suis machinis
 &blb;oppugnare. <hi>superueniente</hi> autem hyeme, que solito asperior 
 &blb;inorruerat, adeo quo pro inundatione ualida et algore nimio de 
 &blb;equis et hominibus exercitus plures extingueret, imperator ta&bd;men 
-in suo proposito <supplied resp="bonetti">firmus</supplied> perseuerans, noluit ab obsidione 
+in suo proposito <supplied resp="#b">firmus</supplied> perseuerans, noluit ab obsidione 
 &blb;recedere, set eam frequentibus preliis et insultibus uariis non de&bd;stitit 
 inpugnare. <hi>adueniente</hi> autem pascha, in die parasceue et 
 &blb;sabbati sancti propter dierum reuerenciam imperator eis imagi&bd;nariam 
@@ -3498,7 +3510,7 @@ igne simul cum militibus combusserunt. <hi>imperator</hi> autem sua
 &blb;spe et intentione frustratus, et de morte suorum uehementer af&bd;flictus, 
 non ualens ultra progredi, se intra castra recepit. 
 &blb;<rs>lombardi</rs> autem et alii, qui cum <rs>alexandrinis</rs> coniurauerant, 
-<pb n="212" ed="b"/> 
+<pb n="212" ed="#b"/> 
 &blb;oppressione ciuitatis cognita, magna militum et peditum multi&bd;tudine 
 congregata, ad eius liberationem festinare ceperunt, et se&bd;cundo 
 die post <hi>pascha</hi> circa <rs>alexandriam</rs> castra metati sunt. <hi>quo</hi> 
@@ -3513,7 +3525,7 @@ eligerentur, quorum dispositione et arbitrio eorum deberet
 &blb;pax et concordia terminari. <hi>cumque</hi> hoc pactum et imperatori 
 &blb;et <rs>lombardi</rs> non modicum placuisset, imperator <rs>papiam</rs> rediit, 
 &blb;et <rs>lombardi</rs> ad propria sunt reuersi. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>imperator</hi> interim nuntios ad <rs>alexandrum</rs> papam apud <rs>ana&bd;gniam</rs> 
 direxit, rogans ut aliquos de fratribus suis ad eum in 
 &blb;<rs>lombardiam</rs> mitteret, qui simul cum <rs>lombardis</rs> tractande pacis 
@@ -3526,7 +3538,7 @@ pacis colloquium habuerunt. <hi>sed</hi> cum neque cardinales
 &blb;neque <rs>lombardi</rs> aliquem fructum pacis ab imperatore consequi 
 &blb;potuissent, cardinales et <rs>lombardi</rs> infectis negotiis ad propria 
 &blb;redierunt. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>imperator</hi> autem spe pacis consequende frustratus, de nouo 
 &blb;guerram <rs>lombardis</rs> facere cepit et <rs>alexandriam</rs> modis quibus 
 &blb;poterat infestare. <rs>lombardi</rs> autem e conuerso ceperunt illi pro 
@@ -3537,15 +3549,15 @@ et repugnante horrore yemis, in obsidione <rs>alexandrie</rs> stare
 temporis, frequenter circa <rs>alexandriam</rs> discurrebat, eius 
 &blb;labores et uineas deuastabat, capiebat ciues, et dampna eis quan&bd;tacumque 
 poterat inferebat. <rs>alexandrini</rs> autem tum per se tum 
-<pb n="214" ed="b"/> 
+<pb n="214" ed="#b"/> 
 &blb;<rs>lombardorum</rs> auxilio ei uiriliter resistebant, et uicina loca, que 
 &blb;imperatori fauebant, inpugnare et destruere non cessabant. <hi>im</hi>&bd;perator 
-<supplied resp="bonetti">uero</supplied> uires suas debilitatas et militiam suam pro maiori 
+<supplied resp="#b">uero</supplied> uires suas debilitatas et militiam suam pro maiori 
 &blb;parte defecisse considerans, frequentes nuntios principibus suis 
 &blb;in <rs>alamanniam</rs> direxit, rogans atque precipiens, ut ei, misso mili&bd;tari 
 auxilio, proxima estate succurrerent, quo se posset ab iniu&bd;ria 
 illi a <rs>lombardis</rs> illata uiriliter uindicare. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<rs>christianus</rs> autem prenominati imperatoris cancellarius, 
 &blb;quem ipse in <rs>tuscia</rs> premiserat, sicut uir prouidus et discretus, 
 &blb;partim uiribus, partim precibus <rs>tusciam</rs> pacificauit, et imperato&bd;ris 
@@ -3556,18 +3568,18 @@ preceptum iurare fecit. <hi>dehinc</hi> ad ducatum <rs>spolitinum</rs> et ad
 &blb;<rs>grecum</rs> quemdam <rs>constantinopolitani</rs> imperatoris nuntium, 
 &blb;qui in eadem ciuitate erat, cum sua pecunia capere; sed quia 
 &blb;ciues eiusdem ciuitatis ei uiriliter resistebant, et comitissa de 
-&blb;<rs>berthenora</rs> cum <rs>w<supplied resp="bonetti">illelmo</supplied></rs> de <rs>markysella</rs> nobili <rs>ferrariensi</rs> cata&bd;nio, 
+&blb;<rs>berthenora</rs> cum <rs>w<supplied resp="#b">illelmo</supplied></rs> de <rs>markysella</rs> nobili <rs>ferrariensi</rs> cata&bd;nio, 
 cum magna multitudine militum et peditum ad succursum 
 &blb;eiusdem ciuitatis ueniebat, non potuit quod intendebat perfice&bd;re, 
 sed recepta ad <rs>anconitanis</rs> magna pecunia, ab obsidione re&bd;cessit. 
 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 
 &blb;<hi>interea</hi> predictus cancellarius ex mandato imperatoris nun&bd;tios
-ad <rs>w<supplied resp="bonetti">illelmum</supplied></rs> <rs>sicilie</rs> regem transmisit, suadens et postu&bd;lans,
+ad <rs>w<supplied resp="#b">illelmum</supplied></rs> <rs>sicilie</rs> regem transmisit, suadens et postu&bd;lans,
 ut ipse, imperatoris filia in uxorem accepta, cum eo pacem
 &blb;perpetuam faceret et ipsi se amicabiliter couniret. <hi>sed</hi> rex
-&blb;<rs>w<supplied resp="bonetti">ilhelmus</supplied></rs>, utpote christianissimus et religiosus princeps,
+&blb;<rs>w<supplied resp="#b">ilhelmus</supplied></rs>, utpote christianissimus et religiosus princeps,
 &blb;sciens hoc matrimonium <rs>alexandro</rs> pape plurimum displicere
 &blb;et <rs>romane</rs> ecclesie non modicam iacturam inferre, <rs>deum</rs> et <rs>ale&bd;xandrum</rs>
 papam in hac parte reueritus, imperatoris filiam in
@@ -3579,7 +3591,7 @@ papam in hac parte reueritus, imperatoris filiam in
 <p xml:id="g266.5-267.12" decls="#ocr">
 &blb;<hi>adueniente</hi> autem estate, <rs>philippus</rs> <rs>coloniensis</rs> archiepisco&bd;pus
 cum quibusdam principibus <rs>alamannie</rs> et magna multitudi&bd;ne 
-strenuorum militum per montana <rs>cumarum</rs> <rs>italiam</rs> intran<pb n="216" ed="b"/>tes, 
+strenuorum militum per montana <rs>cumarum</rs> <rs>italiam</rs> intran<pb n="216" ed="#b"/>tes, 
 &blb;imperatori succurrere festinabant. <hi>quo</hi> cognito, imperator 
 &blb;eis obuiam perrexit, et simul cum illis uersus partes <rs>mediolani</rs> 
 &blb;ad deuastandum eorum segetes ire disponebat. <hi>quo</hi> audito <rs>lom&bd;bardi</rs>, 
@@ -3608,7 +3620,7 @@ plurimos in flumine submerserunt. <hi>deinde</hi> reddeuntes ad
 sunt. <hi>sed</hi> quia uictoria solet elationis spiritum uictoribus mi&bd;nistrare, 
 in eodem loco moram facere negligentes, ad propria 
 &blb;sunt reuersi. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>imperator</hi> autem cum in prenominata pugna uiriliter dimi&bd;casset, 
 et fugientium pene ultimus extitisset, superueniente noc&bd;te 
 delituit, et cum aliquantis diebus fuisset absconditus et quo di&bd;uertisset 
@@ -3616,7 +3628,7 @@ esset incognitum, nocte cum paucis <rs>papiam</rs> intrauit.
 &blb;<hi>tunc</hi> uero manifeste cognoscens <rs>dei</rs> sibi repugnare potentiam, 
 &blb;cuius ecclesiam et ministros persequi non cessabat, ad cor re&bd;diens, 
 habito saniori consilio, <rs>madeburgensem</rs> archiepiscopum, 
-&blb;electum <rs>guarmaciensiem</rs> et protonotarium suum cum <rs>christia<pb n="218" ed="b"/>no</rs> 
+&blb;electum <rs>guarmaciensiem</rs> et protonotarium suum cum <rs>christia<pb n="218" ed="#b"/>no</rs> 
 &blb;cancellario, qui in partibus illis erat, ad <rs>alexandrum</rs> papam 
 &blb;pro consequenda pace <rs>anagniam</rs> direxit. <hi>qui</hi> cum aliquantis die&bd;bus 
 circa papam et eius curiam moram fecissent, habito cum eo 
@@ -3656,7 +3668,7 @@ treuguas quales potuit fecit, et sic in terram suam, rebus et
 &blb;quod imperator, neglecta religione fidei, de filia sua illustri regi 
 &blb;<rs>sicilie</rs> tradenda in matrimonio, periurauerat, per inimicos fidei 
 &blb;de eo uoluit uindicari, et indignum reputans crucem suam ab in&bd;fideli 
-principe debere seruari, passus est eam in ultionem impe<pb n="220" ed="b"/>ratoris 
+principe debere seruari, passus est eam in ultionem impe<pb n="220" ed="#b"/>ratoris 
 &blb;et iniuriam ab infidelibus occupari. <hi>qui</hi> tamen eam cum 
 &blb;magna reuerentia detinentes, facta treugua, imperatori honorifi&bd;ce 
 remiserunt. 
@@ -3664,7 +3676,7 @@ remiserunt.
 
 
 <p xml:id="g268.7-269.6" decls="#ocr"> 
-&blb;<hi>interea</hi> rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> consilio pape <rs>alexandri</rs> <rs>heliam</rs> <rs>troia&bd;num</rs> 
+&blb;<hi>interea</hi> rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> consilio pape <rs>alexandri</rs> <rs>heliam</rs> <rs>troia&bd;num</rs> 
 electum et <rs>arnulfum</rs> <rs>caputaquensem</rs> epicopum et <rs>florium</rs> 
 &blb;de <rs>camerota</rs> regium iustitiarium ad regem <rs>henricum</rs> in <rs>angliam</rs> 
 &blb;misit, ut ei <rs>iohannam</rs> minorem filiam suam in uxorem daret. 
@@ -3672,15 +3684,15 @@ electum et <rs>arnulfum</rs> <rs>caputaquensem</rs> epicopum et <rs>florium</rs>
 acquiescens, peticionis regie prebuit gratanter ascensum, 
 &blb;et filiam suam cum nuntiis eiusdem regis et principibus suis 
 &blb;usque ad <rs>sanctum egidium</rs> honeste transmisit. <hi>quo</hi> cognito, rex 
-&blb;<rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> <rs>alfanum</rs> <rs>capuanum</rs> archiepiscopum et <rs>riccardum</rs> 
+&blb;<rs>w<supplied resp="#b">ilhelmus</supplied></rs> <rs>alfanum</rs> <rs>capuanum</rs> archiepiscopum et <rs>riccardum</rs> 
 &blb;<rs>siracusanum</rs> episcopum et comitem <rs>robbertum</rs> de <rs>caserta</rs> cum 
 &blb;<num value="25">xxv</num> galeis ei obuiam misit. <hi>qui</hi> uenientes ad <rs>sanctum egidium</rs>, 
 &blb;prenominatam regis filiam intra galeas recipientes, eam usque 
 &blb;<rs>neapolim</rs> deduxerunt. <hi>sed</hi> quia puella, nauigationis insolita, 
 &blb;fluctus maris pati non poterat, celebrato <rs>neapolim</rs> dominice na&bd;tiuitatis 
 festo, per <rs>salernum</rs> et <rs>calabriam</rs> <rs>panormum</rs> uenit, ibi&bd;que 
-a rege <rs>w<supplied resp="bonetti">ilhelmo</supplied></rs> et magnatibus suis, sicut decuit, satis est 
-&blb;honeste suscepta. <hi>conuocatis</hi> autem rex <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> proceri&bd;bus 
+a rege <rs>w<supplied resp="#b">ilhelmo</supplied></rs> et magnatibus suis, sicut decuit, satis est 
+&blb;honeste suscepta. <hi>conuocatis</hi> autem rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> proceri&bd;bus 
 <rs>sicilie</rs> et magna populi multitudine, prenominatam filiam 
 &blb;regis <rs>anglie</rs> in cappella sua desponsauit, et se et eam gloriose co&bd;ronari 
 fecit, et sollempnes de illa nuptias celebrauit anno domi&bd;nice 
@@ -3699,22 +3711,22 @@ sunt recepti, et presentibus eis et <rs>lombardis</rs>, treugue et se&bd;curitat
 hinc inde sunt prestite, et ut colloquium tractande pa&bd;cis 
 apud <rs>bononiam</rs> fieret, utriusque partis assensu ordinatum est 
 &blb;et dispositum. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<rs>cremonenses</rs> autem et <rs>terdonenses</rs>, audito quod papa uen&bd;turus 
 esset in <rs>lombardiam</rs>, ut inter imperatorem et <rs>lombardos</rs> 
 &blb;pacem componeret, credentes anticipare alios et ob hoc maio&bd;rem 
-imperatoris gratiam impetrare, obliti promissionibus iura<pb n="222" ed="b"/>menti, 
+imperatoris gratiam impetrare, obliti promissionibus iura<pb n="222" ed="#b"/>menti, 
 &blb;quod aliis ciuitatibus fecerant, eis nolentibus et contradi&bd;centibus, 
 cum imperatore sunt concordati. <hi>unde</hi> postmodum a 
 &blb;papa et ab omnibus, qui hoc audierunt, uiles et proditores sunt 
 &blb;habiti. <hi>papa</hi> uero antequam iter arriperet, nuntios suos ad regem 
-&blb;<rs>w<supplied resp="bonetti">ilhelmum</supplied></rs> in <rs>siciliam</rs> misit, ut aliquos de magnatibus suis a la&bd;tere 
+&blb;<rs>w<supplied resp="#b">ilhelmum</supplied></rs> in <rs>siciliam</rs> misit, ut aliquos de magnatibus suis a la&bd;tere 
 suo ad eum transmitteret, qui cum illo et pro parte eius trac&bd;tande 
 pacis colloquio interessent; papa enim firmiter in suo ha&bd;bebat 
-proposito, nequaquam cum imperatore sine rege <rs>w<supplied resp="bonetti">ilhel&bd;mo</supplied></rs> 
+proposito, nequaquam cum imperatore sine rege <rs>w<supplied resp="#b">ilhel&bd;mo</supplied></rs> 
 pacem facere, ut qui adiutor ecclesie et defensor in tribula&bd;tione 
 fuerat, in compositione pacis ecclesiastice socius et parti&bd;ceps 
-fieret. <hi>rex</hi> autem <rs>w<supplied resp="bonetti">ilhelmus</supplied></rs> <rs>romoaldo</rs> secundo <rs>saler&bd;nitano</rs> 
+fieret. <hi>rex</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs> <rs>romoaldo</rs> secundo <rs>saler&bd;nitano</rs> 
 archiepiscopo et <rs>roggerio</rs> comiti <rs>andrie</rs> magno comesta&bd;bulo 
 et magistro iustitiario totius <rs>apulie</rs> et <rs>terre laboris</rs> per lit&bd;teras 
 suas dedit in mandatis, ut honorifice preparati simul cum 
@@ -3724,15 +3736,15 @@ suas dedit in mandatis, ut honorifice preparati simul cum
 
 
 <p xml:id="g270.5-271.9" decls="#ocr"> 
-&blb;<rs>alexander</rs> igitur papa ab <rs>anagnia</rs> <supplied resp="bonetti">se</supplied> mouens et per <rs>terram 
+&blb;<rs>alexander</rs> igitur papa ab <rs>anagnia</rs> <supplied resp="#b">se</supplied> mouens et per <rs>terram 
 &blb;laboris</rs> <rs>beneuentum</rs> ueniens, a festo natiuitatis usque in epipha&bd;niam 
 ibidem est demoratus. <hi>dehinc</hi> per <rs>troiam</rs> et <rs>sipontum</rs> <rs>ve&bd;stam</rs> 
-uenit, et <rs>w<supplied resp="bonetti">illelmu</supplied>m</rs> <rs>portuensem</rs> episcopum et <rs>iacin&bd;thum</rs> 
+uenit, et <rs>w<supplied resp="#b">illelmu</supplied>m</rs> <rs>portuensem</rs> episcopum et <rs>iacin&bd;thum</rs> 
 cardinalem <rs>sancte</rs> <rs>marie</rs> de <rs>scola greca</rs> et quosdam alios 
 &blb;cardinales per terram premisit, quia mare propter eius procel&bd;las 
 et inundationes intrare metuebant. <hi>quos</hi> exeuntes de terra 
 &blb;<rs>aprutii</rs> et de finibus regni, <rs>christianus</rs> cancellarius per <rs>mar&bd;chyam</rs> 
-satis honeste ad imperatorem <supplied resp="bonetti">et</supplied> <rs>rauennam</rs> usque de&bd;duxit. 
+satis honeste ad imperatorem <supplied resp="#b">et</supplied> <rs>rauennam</rs> usque de&bd;duxit. 
 <hi>imperator</hi> autem eos officiose recepit, et sicut decuit, mul&bd;tum 
 honoris et reuerentie illis exhibuit. <rs>alexander</rs> uero papa 
 &blb;simul cum <rs>manfredo</rs> <rs>prenestrino</rs> episcopo et <rs>iohanne</rs> <rs>neapoli&bd;tano</rs> 
@@ -3742,12 +3754,12 @@ et prenominatis regis nuntiis, impediente tempestate,
 nono scilicet die intrante mensis <hi>martii</hi> demoratus, cum 
 &blb;undecim galeis mare <rs>adriaticum</rs> est ingressus, et dominico die 
 &blb;primo uenturo <rs>iadaram</rs> applicuit, ubi ab archiepiscopo et epi&bd;scopis 
-regionis illius et comite et popolo ciuitatis satis honorifi<pb n="224" ed="b"/>ce 
+regionis illius et comite et popolo ciuitatis satis honorifi<pb n="224" ed="#b"/>ce 
 &blb;est receptus. <hi>dehinc</hi> per insulas <rs>dalmatie</rs> nauigans, nono die 
 &blb;stante mensis <hi>martii</hi> ad portum <rs>venetie</rs> aura flante secunda pe&bd;ruenit. 
 <hi>et</hi> ibidem cum omnibus suis de galea descendens, in mo&bd;nasterio 
 <rs>sancti nicolay</rs>, quod dicitur ad litus, ipso die quieuit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>altera</hi> autem die dux <rs>venetie</rs> cum magna nauium et populi 
 &blb;multitudine et patriarcha <rs>venetie</rs> simul cum patriarcha <rs>aquileie</rs> 
 &blb;et omnibus suis suffraganeis ad pedes <rs>alexandri</rs> pape humiliter 
@@ -3757,7 +3769,7 @@ populum benedixit. <hi>dehinc</hi> nauem ducis cum ipso simul
 &blb;ingressus, usque ad palatium patriarche ueniens, in ipso hospitio 
 &blb;se recepit. <hi>episcopi</hi> autem et abbates uicinarum partium, aduen&bd;tu 
 pape cognito, omnes cum suis clericis ad eius uestigia deuo&bd;te 
-<supplied resp="bonetti">et</supplied> humiliter accesserunt. <hi>in</hi> festo autem <rs>annuntiationis</rs> <rs>vir&bd;ginis</rs> 
+<supplied resp="#b">et</supplied> humiliter accesserunt. <hi>in</hi> festo autem <rs>annuntiationis</rs> <rs>vir&bd;ginis</rs> 
 papa a duce <rs>venetie</rs> et magnatibus eius affectuose rogatus 
 &blb;ad ecclesiam <rs>sancti marci</rs> cum cardinalibus suis accessit, et in ea 
 &blb;missam publice decantauit. 
@@ -3784,7 +3796,7 @@ sine communi consilio immutari". <hi>qua</hi> de causa <rs>alexander</rs>
 &blb;eorum consilio, imperatori de loco, in quo habendum esset pa&bd;cis 
 colloquium, et de aliis suis petitionibus responderet. <hi>ipse</hi> ue&bd;ro 
 cum <rs>venetiis</rs> diebus esset quindecim demoratus, per mare 
-&blb;<rs>lauretum</rs> uenit, dehinc per <rs>padum</rs> <rs>ferrariam</rs> cum galeis unde<pb n="226" ed="b"/>cim 
+&blb;<rs>lauretum</rs> uenit, dehinc per <rs>padum</rs> <rs>ferrariam</rs> cum galeis unde<pb n="226" ed="#b"/>cim 
 &blb;in dominica passionis ascendit. <hi>ubi</hi> ab episcopis multis et 
 &blb;eiusdem urbis ciuibus et magna populi multitudine, que illuc 
 &blb;propter feriam, que illuc celebrabatur, conuenerat, satis est ma&bd;gnifice 
@@ -3815,7 +3827,7 @@ dei tunicam, quantum in eo fuit, diuidere non ex&bd;pauit.
 <rs>romane</rs> ecclesie dignitas pene deperiit, et que domina gen&bd;tium 
 et princeps prouinciarum fuerat, facta est sub tributo. <hi>et</hi> 
 &blb;quia, imminente ualide persecutionis articulo, <rs>romane</rs> ecclesie 
-&blb;quodammodo est debilitata auctoritas, cum non esset <supplied resp="bonetti">qui</supplied> de&bd;linquentium 
+&blb;quodammodo est debilitata auctoritas, cum non esset <supplied resp="#b">qui</supplied> de&bd;linquentium 
 errores et peccata corrigeret, sanctorum patrum 
 &blb;statuta et canones de suo ordine sunt et iure mutata. <hi>sicque</hi> fac&bd;tum 
 est, quod occasione huius scismatis et discordie multe ec&bd;clesie 
@@ -3825,7 +3837,7 @@ sine uindice perpetrata, castella et urbes sunt dirute et incen&bd;dio
 concremate, res uiduarum et pauperum prede sunt et direp&bd;tioni 
 exposite. <hi>sed</hi> licet iustus iudex et patiens retributor, culpa 
 &blb;humani generis exigente, iam per decem et octo annos uirgam 
-<pb n="228" ed="b"/> 
+<pb n="228" ed="#b"/> 
 &blb;peccatorum super sortem iustorum iusto iudicio, sed occulto, 
 &blb;reliquerit, et ecclesiam suam persecutione ualida passus sit ue&bd;hementer 
 affligi; tandem motus ad ueniam pio compassionis 
@@ -3858,7 +3870,7 @@ dominatur in regno hominum, et cui uoluerit dabit illud. <hi>et</hi>
 et qualiter pro statu ecclesie et libertate <rs>ytalie</rs> uiriliter 
 &blb;decertastis, oblatam nobis imperatoris pacem recipere sine uo&bd;bis 
 nolumus, ut sicut fuistis sociis tribulationis, participes sitis et 
-&blb;gaudii. <hi>inde</hi> est, quod non attendentes honoris proprii digni<pb n="230" ed="b"/>tatem, 
+&blb;gaudii. <hi>inde</hi> est, quod non attendentes honoris proprii digni<pb n="230" ed="#b"/>tatem, 
 &blb;nec causati corporis fatiscentis etatem, nec maris ueriti 
 &blb;tempestatem, nos et fratres nostros labori et periculo exponere 
 &blb;non timuimus, sed ad uos per ignem et aquam indubitanter ac&bd;cessimus, 
@@ -3886,7 +3898,7 @@ quas mundus auditu didicit, nos in nostris tribulationibus
 primo nos illius furori obiecimus, et ne ad destruendam 
 &blb;<rs>ytaliam</rs> et libertatem ecclesie opprimendam propius posset ac&bd;cedere, 
 nostrorum corporum et armorum obice prohibuimus. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>nos</hi> pro honore et libertate <rs>ytalie</rs> et <rs>romane</rs> ecclesie digni&bd;tate 
 seruanda imperatorem cum suis scismaticis nec recipere 
 &blb;nec audire uoluimus. <hi>et</hi> ob hoc expensas non modicas, labores 
@@ -3897,7 +3909,7 @@ imperatoris pacem non solum sine nobis non recipere, sed
 &blb;etiam audire debeatis. <hi>ipse</hi> namquam sepe nobis pacem sine 
 &blb;ecclesia optulit, nec recepimus; concordiam nobiscum sine uo&bd;bis 
 facere uoluit, nec admisimus; magis enim uolumus guerram 
-<pb n="232" ed="b"/> 
+<pb n="232" ed="#b"/> 
 &blb;illius cum ecclesie unitate incurrere, quam pacem eius cum ec&bd;clesie 
 diuisione seruare. <hi>quod</hi> autem personam uestram et fra&bd;trum 
 uestrorum exposuistis periculo et labori, paternitati uestre 
@@ -3938,7 +3950,7 @@ esse uolumus dominum et amicum".
 ad papam uenientes, residentibus cum eo regis nuntiis et 
 &blb;<rs>lombardis</rs>, in consistorio publice protestati sunt, et dixerunt: 
 &blb;"<hi>venerande</hi> pater et domine, sicut imperator <rs>romanus</rs> vobis per 
-<pb n="234" ed="b"/> 
+<pb n="234" ed="#b"/> 
 &blb;suos nuntios apud <rs>anagniam</rs> repromisit, paratus est uobiscum et 
 &blb;cum ecclesia, cum illustri rege <rs>sicilie</rs> et cum <rs>lombardis</rs> per nos 
 &blb;pacem facere et seruare. <hi>et</hi> ideo nobis septem faciende pacis 
@@ -3981,7 +3993,7 @@ prebuere consensum et se ituros <rs>venetias</rs>, prestitis tamen
 <rs>venetias</rs> misit, ut a duce et populo <rs>venetie</rs> securitatem reci&bd;perent, 
 quod ipse cum iis, qui essent ad colloquium profectu&bd;ri, 
 secure possent intrare <rs>venetias</rs> et exire, et in eis cum rebus 
-<pb n="236" ed="b"/> 
+<pb n="236" ed="#b"/> 
 &blb;suis salui et sine timore persistere, et quod imperatorem sine 
 &blb;mandato pape intrare fines <rs>venetiarum</rs> ullatenus non permitte&bd;rent. 
 </p>
@@ -3990,7 +4002,7 @@ secure possent intrare <rs>venetias</rs> et exire, et in eis cum rebus
 <p xml:id="g275.4-275.11" decls="#ocr">
 <hi>his</hi> autem abeuntibus, <rs>christianus</rs> cancellarius, qui <rs>ferrarien&bd;ses</rs>, 
 quos in bello offenderat, plurimum metuebat, quinta feria 
-&blb;maioris <supplied resp="bonetti">h</supplied>ebdomade a <rs>ferraria</rs> mouens, <rs>venetias</rs> festinus adue&bd;nit. 
+&blb;maioris <supplied resp="#b">h</supplied>ebdomade a <rs>ferraria</rs> mouens, <rs>venetias</rs> festinus adue&bd;nit. 
 <hi>papa</hi> autem <rs>alexander</rs> cum magno conuentu archiepiscopo&bd;rum, 
 episcoporum et abbatum paschalem festiuitatem, que vice&bd;simo 
 quarta die mensis <hi>aprilis</hi> eo tempore occurrebat, usque ad 
@@ -4003,7 +4015,7 @@ prestita responsum ydoneum accepisset, nono die intrante
 
 
 <p xml:id="g275.12-275.18" decls="#ocr">
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>altera</hi> uero die per mare ad <rs>sanctum nicolaum</rs>, qui dici&bd;tur 
 ad litus, applicuit. <hi>tertia</hi> autem die a duce et populo <rs>venetie</rs>, 
 &blb;a patriarcha et uniuerso clero, primo ad <rs>sanctum marcum</rs>, de&bd;hinc 
@@ -4033,7 +4045,7 @@ reddere consueuerunt, illi faciatis".
 &blb;<hi>quo</hi> audito, <rs>girardus</rs> <rs>pesta</rs> <rs>mediolanensis</rs> iudex pro parte 
 &blb;<rs>lombardorum</rs> respondit: "<hi>nos</hi> quidem imperatori, undecumque 
 &blb;nos appellauerit, parati sumus sicut domino iustitiam facere, sed 
-<pb n="238" ed="b"/> 
+<pb n="238" ed="#b"/> 
 &blb;quia hec iustitia non est unius hominis sed multorum, non unius 
 &blb;ciuitatis sed plurium, secundum causarum merita inducias po&bd;stulamus, 
 ut deliberantes plenius super his, que nobis obiecta 
@@ -4072,7 +4084,7 @@ reddiderunt, recipere, parati sumus in pace persoluere.
 <p xml:id="g277.8-277.29" decls="#ocr"> 
 &blb;<hi>cum</hi> autem scriptura de tractatu pacis habita et per <rs>cre&bd;monenses</rs> 
 <rs>lombardis</rs> aliis delegata producta fuisset in medium, 
-&blb;ceperunt <rs>teotonici</rs> quibusdam scripture capitulis diligenter op<pb n="240" ed="b"/>ponere 
+&blb;ceperunt <rs>teotonici</rs> quibusdam scripture capitulis diligenter op<pb n="240" ed="#b"/>ponere 
 &blb;et eorum sensum ad sue partis commodum retorquere, 
 &blb;quedam uero capitula denegare. <hi>e</hi> contra <rs>lombardi</rs> ceperunt il&bd;lorum 
 responsiones suis responsionibus confutare, et his, que 
@@ -4113,7 +4125,7 @@ locus quidam delactabilis et nemorosus inter <rs>rauennam</rs> et
 &blb;et de faciendis treuguis cum <rs>lombardis</rs> usque ad annos sex per 
 &blb;ordinem exposuissent, adversus eos uehementer indignatus in&bd;fremuit, 
 asserens illos in hoc tractatu pacis magis <rs>alexandri</rs> pape 
-<pb n="242" ed="b"/> 
+<pb n="242" ed="#b"/> 
 &blb;honori et commodo, quam dignitati imperii prouidisse. <hi>quare</hi> 
 &blb;precepit eis, ut ad papam redeuntes firmiter ei ex sua parte pro&bd;ponerent, 
 quod ipse cum eo et ecclesia pacem libenter face&bd;ret, 
@@ -4135,7 +4147,7 @@ quod si cardinales electi petitione cognita de ea complenda
 
 
 <p xml:id="g278.17-278.28" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>ex</hi> mandato itaque pape <rs>hubaldus</rs> <rs>hostiensis</rs> episcopus et 
 &blb;<rs>theodinus</rs> cardinalis ad hoc negotium sunt electi, quibus impe&bd;ratoris 
 petitio ab eius nuntiis priuatim est et studiose exposita. 
@@ -4152,7 +4164,7 @@ non spectaret, libenter eam effectui manciparet. <hi>quo</hi> audi&bd;to,
 <rs>gottifridus</rs> minor cancellarius indignatus ad imperatorem 
 &blb;rediit. <hi>episcopus</hi> autem <rs>clarimontis</rs> cum abbate de <rs>bonaualle</rs>, 
 &blb;qui remanserant, uidentes quod nullum a papa possent habere 
-<pb n="244" ed="b"/> 
+<pb n="244" ed="#b"/> 
 &blb;responsum, licet inviti, petitionem imperatoris pape exposue&bd;runt. 
 </p>
 
@@ -4193,7 +4205,7 @@ et redeundo sine fructu tempora longa consumunt, impe&bd;rator
 prolixitate temporis affectus tedio desideratam pacem 
 &blb;abhorreat et suggestione prauorum hominum infecta pace rece&bd;dat. 
 <rs>consulimus</rs> ergo discretioni uestre, ut si uobis placuerit, 
-<pb n="246" ed="b"/> 
+<pb n="246" ed="#b"/> 
 &blb;propius imperator accedat, ut uestris et suis nuntiis cito ire et re&bd;dire 
 ualentibus inchoata pax, uolente <rs>domino</rs>, cito ualeat com&bd;summari". 
 </p>
@@ -4237,7 +4249,7 @@ habiturus. <hi>imperator</hi> uero, quia aures suas uerbis <rs>venetum</rs>
 &blb;expectabat, cepit cardinalibus de uerbo pacis, quasi novum esset 
 &blb;et sibi incognitum, respondere et longis consultationibus de die 
 &blb;in diem sua responsa differre. <hi>quo</hi> cognito cardinales turbati 
-<pb n="248" ed="b"/> 
+<pb n="248" ed="#b"/> 
 &blb;sunt plurimum et mirati, et quidnam deberent facere, nescie&bd;bant. 
 </p>
 
@@ -4264,7 +4276,7 @@ uiros in anima omnium nostrorum iurare fecimus, quod
 debeamus huc aduocare". <hi>cui</hi> illi protinus responderunt: 
 &blb;"<hi>postquam</hi> ex mandato pape <rs>clo&jj;am</rs>, que intra fines est <rs>venetie</rs>, 
 &blb;imperator intrauit, plane a nostri iuramenti sumus uinculis ab&bd;soluti". 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>cumque</hi> super hoc a duce et populo esset diutius discepta&bd;tum, 
 tandem de communi consensu quidam <rs>veneti</rs> sunt ad pa&bd;pam 
 directi. <hi>qui</hi> uenientes, sicut uiri improbi et superbi, dor&bd;mientem 
@@ -4276,7 +4288,7 @@ quod <rs>venetias</rs> imperator intraret. <hi>quod</hi> uerbum admodum
 licentia et mandato uenire. <hi>volumus</hi> ergo, ut cardinales no&bd;stros, 
 qui ad imperatorem iuerunt, cum eius nuntiis usque in 
 &blb;diem crastinum expectetis. <hi>et</hi> eis uenientibus, quid nobis facien&bd;dum 
-sit, uobis respondere curabimus". <hi>quod</hi> uerbum licet <rs>ve<pb n="250" ed="b"/>netis</rs> 
+sit, uobis respondere curabimus". <hi>quod</hi> uerbum licet <rs>ve<pb n="250" ed="#b"/>netis</rs> 
 &blb;displicuisset, plurimum tamen precibus pape deuicti, pe&bd;titioni 
 eius, quamuis inuiti, prebentes assensum, ad propria re&bd;dierunt. 
 </p>
@@ -4315,7 +4327,7 @@ inducti, et de uobis tamquam de amicis domini regis
 &blb;et fidelibus multam spem et fiduciam obtinentes, papam et <rs>lom&bd;bardos</rs> 
 inuitos pariter et renitentes <rs>venetiam</rs> uenire coegerimus, 
 &blb;iuramento tamen prius a uobis prestito, quod sine pape licentia 
-&blb;non deberetis imperatorem intra <rs>venetie</rs> fines recipere. <hi>sed</hi> ec<pb n="252" ed="b"/>ce, 
+&blb;non deberetis imperatorem intra <rs>venetie</rs> fines recipere. <hi>sed</hi> ec<pb n="252" ed="#b"/>ce, 
 &blb;ut audiuimus, uestri iuramenti et promissionis obliti, pace 
 &blb;nondum disposita et firmata, imperatorem non iuratum ad ciui&bd;tatem 
 istam, papa contradicente, uocatis: et sic pax ecclesie et 
@@ -4341,7 +4353,7 @@ uoluimus, ut in ciuitate nostra pacis domini regis tamquam
 &blb;licentiam non tribuimus, sed prudentiam uestram affectuose ro&bd;gamus, 
 ut tamquam in domibus uestris securi et sine timore ali&bd;quo 
 imperatoris expectetis aduentum". 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>non</hi> autem idcirco taliter dux respondit, quin ei et aliis sa&bd;pientibus 
 talis imperatoris displiceret aduentus, sed quia timebat 
 &blb;plebem et popularem tumultum plurimum formidabat. 
@@ -4359,7 +4371,7 @@ tubas canere, arma et totam suppellectilem in galeas indu&bd;cere.
 &blb;maximus <rs>venetos</rs> occupauit. <hi>timebant</hi> enim, ne si regis nuntii in&bd;dignati 
 recederent, hac occasione rex <rs>venetos</rs>, qui in terra sua 
 &blb;erant, capti faceret et in custodia detineri. <hi>qua</hi> de causa magna 
-<pb n="254" ed="b"/> 
+<pb n="254" ed="#b"/> 
 &blb;multitudo uirorum ac mulierum, quorum parentes in <rs>apuliam</rs> 
 &blb;uenerant, ad ducem properans, proclamauit: "<hi>vestram</hi> et totius 
 &blb;<rs>venetie</rs> prudentiam, illustris dux, latere non credimus, quanta 
@@ -4397,7 +4409,7 @@ graue et perpetuum odium debeamus incurrere". <hi>cumque</hi>
 nomina dux euidenter exprimeret; metuens, si noti fierent, 
 &blb;ob hoc pugna in ciuitate maxima et seditio inualesceret, saniori 
 &blb;usus consilio, nobiliores et prudentiores, quos habere potuit, ad 
-<pb n="256" ed="b"/> 
+<pb n="256" ed="#b"/> 
 &blb;papam direxit, pro parte totius populi ueniam humiliter postu&bd;lans 
 et affectuose deposcens, ut quod illi in eum stulte et super&bd;be 
 peccauerant, ipse eis ex innata humilitate et gratia relaxaret 
@@ -4435,14 +4447,14 @@ communicato cum eo consilio, quid nobis faciendum sit, di&bd;sponemus".
 
 
 <p xml:id="g282.26-283.5" decls="#ocr">
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>quibus</hi> auditis, <rs>veneti</rs> ad ducem suum redeuntes, ea, 
 &blb;que a papa et nuntiis regis audierant, illi per ordinem retulerunt. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>altera</hi> autem die dux sano usus consilio, apud <rs>rivumaltum</rs> 
 &blb;sub uoce preconis fecit publice declamare, ut nullus de aduentu 
 &blb;imperatoris auderet uerbum facere, nisi cum <rs>alexander</rs> papa 
-<pb n="258" ed="b"/> 
+<pb n="258" ed="#b"/> 
 &blb;precepisset. <hi>cum</hi> autem ea, que apud <rs>venetias</rs> dicta et facta fue&bd;rant, 
 ad imperatoris adhuc <rs>clo&jj;am</rs> demorantis audientiam perue&bd;nissent, 
 sua spe et intentione frustratus, cepit de suo rigore mol&bd;lescere 
@@ -4480,7 +4492,7 @@ respondit dicens: "<hi>noscat</hi> uestra fidelitas, dilectissimi, quod
 cordibus omnis super hoc dubitationis scrupulus excluda&bd;tur, 
 comiti <rs>henrico</rs> de <rs>diessa</rs>, qui est in presentiarum, precipi&bd;mus, 
 ut uobiscum et cum cardinalibus <rs>venetias</rs> ueniens, coram 
-<pb n="260" ed="b"/> 
+<pb n="260" ed="#b"/> 
 &blb;papa in anima mea iuret, quod ex quo <rs>venetias</rs> intrauero, in ani&bd;ma 
 mea iurare faciam, quod pacem ecclesie et imperii, regis <rs>si&bd;cilie</rs> 
 et <rs>lombardorum</rs>, sicut disposita est et tractata, firmiter 
@@ -4516,7 +4528,7 @@ cum suis in galeis recipientes, eum usque ad <rs>sanctum
 &blb;<hi>iulii</hi>, in uigiliis beati <rs>iacobi</rs>, papa cognito imperatoris aduentu, 
 &blb;galeas ingressus cum nuntiis regis et magna <rs>lombardorum</rs> ac 
 &blb;populi multitudine, ad ecclesiam <rs>sancti marci</rs> summo mane de&bd;uotus 
-accessit, et <rs>hubaldum</rs> <rs>hostiensem</rs> et <rs>w<supplied resp="bonetti">illelmum</supplied></rs> <hi>por</hi>&bd;tuensem 
+accessit, et <rs>hubaldum</rs> <rs>hostiensem</rs> et <rs>w<supplied resp="#b">illelmum</supplied></rs> <hi>por</hi>&bd;tuensem 
 et <rs>malfridum</rs> <rs>penestrinum</rs> episcopos et quosdam de 
 &blb;cardinalibus ad imperatorem transmisit. <hi>qui</hi> uenientes, ipsum et 
 &blb;suos ab excommunicationis uinculo absoluerunt. <rs>christianus</rs> 
@@ -4532,7 +4544,7 @@ ait: "<hi>ut</hi> omnes euidenter agnoscant, me esse nomine et
 <p xml:id="g284.15-284.22" decls="#ocr"> 
 &blb;<hi>dux</hi> autem <rs>venetie</rs>, cognito quod imperator ab excommuni&bd;cationis 
 esset nexibus absolutus, cum patriarcha et magna cleri 
-<pb n="262" ed="b"/> 
+<pb n="262" ed="#b"/> 
 &blb;ac populi et nauium multitudine usque ad ecclesiam <rs>sancti ni&bd;colai</rs> 
 illi obuiam uenit, quem in naui sua recipiens, usque ad litus 
 &blb;<rs>sancti marci</rs> satis honorifice et pompose deduxit. <hi>imperator</hi> 
@@ -4574,7 +4586,7 @@ et processionaliter uenienti uiam tamquam ostiarius prepa&bd;rauit.
 missam domini pape deuote satis et humiliter audiebat. 
 </p> 
 
-<pb n="264" ed="b"/> 
+<pb n="264" ed="#b"/> 
 
 <p xml:id="g285.16-285.27" decls="#ocr"> 
 &blb;<hi>cumque</hi> dicto euangelio papa ascendisset pulpitum, ut allo&bd;queretur 
@@ -4616,7 +4628,7 @@ de errore ad ueritatem rediit, de tenebris ad lumen transiit,
 &blb;tamquam ouis erratica repedauit. <hi>exultet</hi> igitur fidelium uotiua 
 &blb;religio, quia hodie pater iuniorem recepit filium, catholicum 
 &blb;principem <rs>romanum</rs> recuperauit imperium, mater ecclesia 
-<pb n="266" ed="b"/> 
+<pb n="266" ed="#b"/> 
 &blb;suum euaginatum in uagina conuertit gladium, nauis piscatoris 
 &blb;egregii, que culpis exigentibus, aduersitatum turbine pene de&bd;mersa 
 iam fuerat, nunc procellis cessantibus, ad litus solidum et 
@@ -4656,7 +4668,7 @@ ad propria redeuntes, deuotionem nostram, quam erga <rs>dei</rs>
 agnoscat, quod licet nos <rs>romani</rs> imperii dignitate et glo&bd;ria 
 fulgeamus, tamen a nobis humane conditionis proprium di&bd;gnitas 
 <rs>romana</rs> non abstulit, nec ignorantie uitium maiestas 
-<pb n="268" ed="b"/> 
+<pb n="268" ed="#b"/> 
 &blb;imperialis exclusit. <hi>nam</hi> suggestione prauorum hominum igno&bd;rantie 
 fuimus tenebris inuoluti et per uiam ueritatis credentes 
 &blb;incedere, extra iustitie semitas nos inuenimus. <hi>ecce</hi> enim <rs>dei</rs> 
@@ -4690,12 +4702,12 @@ reddimus".
 &blb;acclamassent, iterum facto silentio, sancta <rs>dei</rs> euangelia cum 
 &blb;sanctorum reliquiis et cruce de ligno <rs>domini</rs> sunt producta in 
 &blb;medium. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>mandante</hi> itaque imperatore, comes <rs>henricus</rs> de <rs>diessa</rs> in 
 &blb;anima imperatoris iurauit, quod ipse pacem ecclesie et imperii, 
 &blb;pacem regis <rs>sicilie</rs> usque ad annos quindecim et treuguas <rs>lom&bd;bardorum</rs> 
 usque ad annos sex, sicut per mediatores hinc inde 
-<pb n="270" ed="b"/> 
+<pb n="270" ed="#b"/> 
 &blb;tractatum et scriptum fuerat, bona fide, sine fraude et malo inge&bd;nio 
 firmiter obseruaret, et <rs>henricum</rs> regem filium suum id 
 &blb;ipsum iurare faceret et seruare. <hi>dehinc</hi> duodecim principes im&bd;perii, 
@@ -4707,7 +4719,7 @@ imperator nuntios suos propter hoc ad regem in <rs>siciliam</rs>
 suorum de obseruanda imperatori pace usque ad annos 
 &blb;quindecim in anima sua iurare faciet, et decem principes suos 
 &blb;iuramentum ueri simile faciet exhibere. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>comes</hi> etiam <rs>roggerius</rs>, sicut archiepiscopus fecerat, id 
 &blb;ipsum manu sua iurauit. <hi>dehinc</hi> rectores <rs>lombardie</rs>, qui ibi ade&bd;rant, 
 iurauerunt, quod usque ad sex annos bona fide et sine frau&bd;de 
@@ -4735,7 +4747,7 @@ accedens ait: "<hi>nouit</hi> uestra sanctitas, uenerande pater, nouit
 &blb;otium commutaui. <hi>bene</hi> potestis recolere, quantum catholice ec&bd;clesie 
 meus aduentus contulerit et qualiter partem uestram 
 &blb;adhuc nutantem et debilem plurimum roborauerit. <hi>vos</hi> autem 
-<pb n="272" ed="b"/> 
+<pb n="272" ed="#b"/> 
 &blb;uestri gratia mihi uicem congruam pro tempore rependistis, 
 &blb;nam primo me in presbyterum cardinalem, dehinc in <rs>sabinen&bd;sem</rs> 
 episcopum, postremo in <rs>maguntinum</rs> archiepiscopum con&bd;secrastis. 
@@ -4777,7 +4789,7 @@ sedis fuerit prelatione deiectus. <hi>nos</hi> autem absque uestra
 <p xml:id="g288.37-289.7" decls="#ocr"> 
 &blb;<hi>tunc</hi> <rs>corradus</rs> benignam apostolici responsionem conside&bd;rans, 
 et uoluntatem eius rationi consentaneam esse cognoscens, 
-<pb n="274" ed="b"/> 
+<pb n="274" ed="#b"/> 
 &blb;consultandi super hoc cum amicis suis a papa inducias petiit et 
 &blb;accepit. <hi>habito</hi> itaque consilio, ad papam rediit et humili uoce 
 &blb;respondit: "<hi>licet</hi>, reuerende pater, mihi iniuriosum sit pariter et 
@@ -4820,7 +4832,7 @@ et tam ei quam <rs>philippo</rs> <rs>coloniensi</rs> archiepiscopo, qui a
 &blb;quam erga <rs>romanam</rs> ecclesiam semper habuerat recolens, ad 
 &blb;petitionem ipsius archiepiscopi, communicato fratrum suorum 
 &blb;consilio, ipsi et successoribus eius usum et dignitatem portande 
-<pb n="276" ed="b"/> 
+<pb n="276" ed="#b"/> 
 &blb;crucis per ciuitatem et totam suam parrochiam apostolica auc&bd;toritate 
 concessit, et donum, quod exinde <rs>salernitane</rs> ecclesie in 
 &blb;perpetuum fecerat, sui priuilegii munimine roborauit. <hi>hoc</hi> etiam 
@@ -4862,7 +4874,7 @@ essemus pariter et presentes, non quod dominus noster rex
 &blb;christianos principes diligit, et quantum in eo est, cum illis pa&bd;cem 
 et concordiam habere credit. <hi>solos</hi> inimicos crucis <rs>christi</rs> 
 &blb;crudeli odio mari et terra persequitur. <hi>inde</hi> est, quod non parcit 
-<pb n="278" ed="b"/> 
+<pb n="278" ed="#b"/> 
 &blb;pecunie, non indulget expensis, sed singulis annis biremes suas 
 &blb;preparat, et cum eis armatam militiam destinat, ut hostes chri&bd;stiane 
 fidei deuincat pariter et confundat et euntibus ad sepul&bd;chrum 
@@ -4888,7 +4900,7 @@ magnificentia perfecte pacis uinculo fuerit counita, ecclesie
 
 
 <p xml:id="g290.33-291.12" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>archiepiscopus</hi> uerba finierat. <hi>protinus</hi> imperator per <rs>got&bd;tifridum</rs> 
 cancellarium suum ad eius uerba respondit, dicens: 
 &blb;"<hi>salutes</hi> ex parte illustris regis <rs>sicilie</rs> per uos magnificentie no&bd;stre 
@@ -4900,7 +4912,7 @@ nostre colloquium destinauit, nostre excellentie satis gratum
 simul et facetia, delegantis domini auctoritatem perpendi&bd;mus, 
 et a nobis merito in numero summorum principum repu&bd;tatur, 
 qui talibus et tantis personis preesse dinoscitur. <hi>quod</hi> uero 
-&blb;significastis, eum erga serenitatem nostram amicam gerere uo<pb n="280" ed="b"/>luntatem, 
+&blb;significastis, eum erga serenitatem nostram amicam gerere uo<pb n="280" ed="#b"/>luntatem, 
 &blb;hoc uerum esse rerum experientia comprobauimus. 
 &blb;<hi>nam</hi> licet popularis opinio nos ad inuicem esse crederet inimi&bd;cos, 
 tamen inter nos haberi pacem et concordiam operis exhi&bd;bitio 
@@ -4940,8 +4952,8 @@ scriptura seruaret. <hi>ad</hi> petitionem igitur eorum pacis inter
 <rs>dei</rs> gratia <rs>romanorum</rs> imperator et semper augustus, et 
 &blb;<rs>heinricus</rs> rex filius noster, interuentu uenerabilis patris nostri 
 &blb;<rs>alexandri</rs> <rs>dei</rs> gratia summi pontificis et fratrum suorum cardi&bd;nalium, 
-pro parte nostra et heredum nostrorum paciscimur uo<pb n="282" ed="b"/>biscum, 
-&blb;domine <rs>w<supplied resp="bonetti">illelm</supplied>e</rs>, eadem gratia illustris rex <rs>sicilie</rs>, 
+pro parte nostra et heredum nostrorum paciscimur uo<pb n="282" ed="#b"/>biscum, 
+&blb;domine <rs>w<supplied resp="#b">illelm</supplied>e</rs>, eadem gratia illustris rex <rs>sicilie</rs>, 
 &blb;quod amodo usque ad quindecim annos obseruabimus uobis et 
 &blb;heredibus uestris et uniuerso regno uestro et toti terre domina&bd;tionis 
 uestre ueram et firman<!--typo in bonetti for firmam--> pacem. <hi>et</hi> quod per nos uel per 
@@ -4953,7 +4965,7 @@ annos non inuademus nec inuadere faciemus, nec uobis aut
 modo faciemus. <hi>et</hi> ut hec omnia suprascripta firmiter et illi&bd;bata 
 a nobis supradicto <rs>frederico</rs> <rs>dei</rs> gratia <rs>romanorum</rs> impe&bd;ratore 
 et semper augusto et <rs>heinrico</rs> filio nostro rege et heredi&bd;bus 
-nostris tam uobis supradicto illustri regi <rs>w<supplied resp="bonetti">illelm</supplied>o</rs>, quam 
+nostris tam uobis supradicto illustri regi <rs>w<supplied resp="#b">illelm</supplied>o</rs>, quam 
 &blb;heredibus uestris et regno uestro et toti terre dominationis ue&bd;stre 
 attendantur et obseruentur, nos predictus imperator bona 
 &blb;fide, sine fraude et malo ingenio, in presentia beatissimi patris 
@@ -4976,10 +4988,10 @@ markyonem <rs>theodericum</rs> de <rs>lusiz</rs>, <rs>florentium</rs> comitem
 &blb;presens priuilegium nostrum per manus <rs>wortwini</rs> protonotarii 
 &blb;nostri scribi fecimus, et imperiali sigillo nostro aureo sigillatum 
 &blb;et predictorum principum iuramento communitum uobis supra&bd;scripto 
-illustri regi <rs>w<supplied resp="bonetti">illelm</supplied>o</rs> fecimus assignari. <hi>anno</hi> dominice 
-&blb;incarnationis m<supplied resp="bonetti">illesim</supplied>o c<supplied resp="bonetti">entesim</supplied>o septuagesimo septimo, 
+illustri regi <rs>w<supplied resp="#b">illelm</supplied>o</rs> fecimus assignari. <hi>anno</hi> dominice 
+&blb;incarnationis m<supplied resp="#b">illesim</supplied>o c<supplied resp="#b">entesim</supplied>o septuagesimo septimo, 
 &blb;mense <hi>augusti</hi>, decima indictione". 
-<pb n="284" ed="b"/> 
+<pb n="284" ed="#b"/> 
 </p> 
 
 
@@ -5020,9 +5032,9 @@ multitudine in ecclesia beati <rs>marci</rs> conueniens, solempne
 &blb;de pace habito, <rs>alexander</rs> papa candelas accensas imperatori et 
 &blb;clericis et laycis, qui ibi aderant, dari precepit. <hi>et</hi> ipse excommu&bd;nicationis 
 formam hoc modo proposuit: 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;"<hi>nos</hi> ex parte <rs>dei</rs> omnipotentis et beate <rs>marie</rs> semper uirgi&bd;nis 
-et beatorum apostolorum <rs>petri</rs> et <rs>pauli</rs> et omnium sancto<pb n="286" ed="b"/>rum 
+et beatorum apostolorum <rs>petri</rs> et <rs>pauli</rs> et omnium sancto<pb n="286" ed="#b"/>rum 
 &blb;excommunicamus et a gremio matris ecclesie separamus 
 &blb;omnes personas tam ecclesiasticas quam seculares, quecumque 
 &blb;pacem, que inter ecclesiam et imperium modo facta est, et pa&bd;cem 
@@ -5030,7 +5042,7 @@ regis <rs>sicilie</rs> usque ad annos quindecim, et treuguas <rs>lom&bd;bardorum
 usque ad annos sex, aliquo modo disturbare uel impe&bd;dire 
 presumpserint. <hi>et</hi> sicut he candele extinguuntur, sic eorum 
 &blb;anime eterne uisionis lumine et claritate priuentur". 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>cumque</hi> candele proiecte essent de manibus et extincte, im&bd;perator 
 alta uoce cum aliis: "<hi>fiat</hi>, fiat" pariter acclamauit. <hi>sicque</hi> 
 &blb;concilium celebratum est et solutum. 
@@ -5061,7 +5073,7 @@ modum et seriem plenissime retulerunt, et priuilegium pa&bd;pe
 &blb;priuilegiorum preter spem et opinionem suam pacem ad hono&bd;rem 
 suum et commodum factam esse considerans, archiepisco&bd;pi 
 et comitis super hoc fidem et prudentiam plurimum com&bd;mendauit, 
-dans illis in mandatis, ut imperatoris nuntios, qui in <rs>si<pb n="288" ed="b"/>ciliam</rs> 
+dans illis in mandatis, ut imperatoris nuntios, qui in <rs>si<pb n="288" ed="#b"/>ciliam</rs> 
 &blb;erant uenturi pro recipiendis iuramentis, equanimiter 
 &blb;expectarent. 
 </p> 
@@ -5091,7 +5103,7 @@ die stante eiusdem mensis <rs>sipontum</rs> applicuit, et inde per
 in <rs>romaniam</rs> descenderunt pro restauratione regalium, 
 &blb;que imperator inuaserat, recipienda. <hi>dum</hi> autem papa a <rs>siponto</rs> 
 &blb;<rs>anagniam</rs> ueniret, ecclesie peccatis exigentibus, <rs>hugo</rs> de <rs>bono&bd;nia</rs> 
-cardinalis <rs>beneuenti</rs> est mortuus, <rs>w<supplied resp="bonetti">illelmus</supplied></rs> de <rs>papia</rs> <rs>por&bd;tuensis</rs> 
+cardinalis <rs>beneuenti</rs> est mortuus, <rs>w<supplied resp="#b">illelmus</supplied></rs> de <rs>papia</rs> <rs>por&bd;tuensis</rs> 
 episcopus apud <rs>auersam</rs> obiit, <rs>malfridus</rs> <rs>penestrinus</rs> 
 &blb;episcopus apud <rs>anagniam</rs> diem clausit extremum. 
 </p> 
@@ -5113,15 +5125,15 @@ rediit. <rs>salernitanus</rs> archiepiscopus, precipiente rege, usque
 &blb;in mediam quadragesimam <rs>panormi</rs> est demoratus. <hi>cumque</hi> im&bd;peratoris 
 nuntii iter suum differrent, simili modo impetrata li&bd;centia 
 ad ecclesiam suam feliciter est reuersus. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>papa</hi> uero <rs>alexander</rs> aliquantis diebus apud <rs>anagniam</rs> demo&bd;ratus, 
 inuitantibus eum <rs>romanis</rs>, cum summo honore et gloria in 
 &blb;festo beati <rs>gregorii</rs> <rs>urbem</rs> feliciter est ingressus, in qua iuxta 
-<pb n="290" ed="b"/> 
+<pb n="290" ed="#b"/> 
 &blb;morem <rs>romanorum</rs> pontificum in diuersis ecclesiis, secundum 
 &blb;stadia ab antiquo disposita, processionaliter et pompose proce&bd;dens, 
 missarum officia solempniter celebrauit. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>imperator</hi> uero a <rs>rauenna</rs> usque in uallem <rs>spolitinam</rs> de&bd;scendens, 
 per <rs>tusciam</rs> et <rs>ianuam</rs> usque in <rs>lombardiam</rs> rediit, 
 &blb;<rs>maguntino</rs> archiepiscopo circa partes <rs>urbis</rs> ad pape <rs>alexandri</rs> 
@@ -5161,7 +5173,7 @@ auxilium postularunt. <rs>romani</rs> uero more suo fidem
 &blb;confligerent, multa inde homicidia prouenirent, missis cardinali&bd;bus 
 suis, mandauit cancellario et <rs>bitervensibus</rs>, ut intra <rs>bitervi</rs> 
 &blb;menia se continerent et nullam <rs>romanis</rs> pugnandi copiam pre&bd;berent. 
-<rs>romani</rs> autem uenientes, nemine resistente, <rs>biterven<pb n="292" ed="b"/>sium</rs> 
+<rs>romani</rs> autem uenientes, nemine resistente, <rs>biterven<pb n="292" ed="#b"/>sium</rs> 
 &blb;segetes uastauerunt, oliuas et uineas inciderunt, et sic in&bd;fectis 
 negotiis <rs>romam</rs> reuersi sunt. <hi>prefectus</hi> uero ad pedes <rs>ale&bd;xandri</rs> 
 pape accedens, confirmata sibi prefectura, eius homo 
@@ -5189,7 +5201,7 @@ omnes ad eum pro celebrando uniuersali concilio conue&bd;nirent.
 &blb;archiepiscopo et <rs>roggerio</rs> comite <rs>andrie</rs> apud <rs>uenetias</rs> con&bd;dixerat, 
 nuntios suos, <rs>hugolinum</rs> scilicet <rs>boni</rs> comitis et <rs>rode&bd;garium</rs> 
 magistrum camerarium suum pro recipiendis iuramentis 
-&blb;de confirmanda pace ad regem <rs>w<supplied resp="bonetti">illelmum</supplied></rs> in <rs>siciliam</rs> misit. 
+&blb;de confirmanda pace ad regem <rs>w<supplied resp="#b">illelmum</supplied></rs> in <rs>siciliam</rs> misit. 
 &blb;<hi>quos</hi> rex, sicut decuit, honorifice et honeste suscepit, et eis pre&bd;sentibus, 
 comitem <rs>roggerium</rs> de <rs>auellino</rs> in anima sua iurare 
 &blb;fecit, quod ipse et totum regnum eius imperatori <rs>frederico</rs> et 
@@ -5199,7 +5211,7 @@ comitem <rs>roggerium</rs> de <rs>auellino</rs> in anima sua iurare
 et bulla aurea insignitum eisdem fecit nuntiis assignari. <hi>qui</hi>, 
 &blb;accepta a rege licentia, reuersi sunt, quodam regis armigero eos, 
 &blb;ut moris est, usque ad fines regni deducente. 
-<milestone type="bonetti-paragraph-break" ed="b"/> 
+<milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>cumque</hi> ad castrum quoddam, quod <rs>lacusniger</rs> dicitur, 
 &blb;peruenissent, inter rusticos eiusdem castri et regis armigerum 
 &blb;rixa exorta est. <hi>cumque</hi> regis armiger rusticos metuens, ad nun&bd;tiorum 
@@ -5208,10 +5220,10 @@ domum in qua erant nuntii, cum lapidibus sunt aggressi, et
 &blb;eos male et inhoneste tractantes, scrinium <rs>hugolini</rs> <rs>boni</rs> comi&bd;tis 
 fregerunt, et ex eo coppam unam argenteam et priuilegium, 
 &blb;quod rex imperatori fecerat, asportarunt. <hi>nuntii</hi> uero, recepta 
-<pb n="294" ed="b"/> 
+<pb n="294" ed="#b"/> 
 &blb;hac iniuria, indignati <rs>salernum</rs> uenerunt, et <rs>gualterio</rs> ammirato 
 &blb;et archiepiscopo totius geste rei seriem exposuerunt. <hi>quod</hi> cum 
-&blb;ad regis <rs>w<supplied resp="bonetti">illelm</supplied>i</rs> notitiam peruenisset, indignatus plurimum et 
+&blb;ad regis <rs>w<supplied resp="#b">illelm</supplied>i</rs> notitiam peruenisset, indignatus plurimum et 
 &blb;turbatus, <rs>dauid</rs> hostiarium suum cum litteris suis ad iustitiarios 
 &blb;regionis illius transmisit, precipiens eis, ut huius mali factores et 
 &blb;complices diligenter inquirerent, et inuentos cruce suspende&bd;rent. 
@@ -5221,7 +5233,7 @@ iustitiarii cum hostiario regis, quoscumque potuerunt de
 &blb;quosdam ex eis apud <rs>barolum</rs>, quosdam apud <rs>troiam</rs>, unum 
 &blb;<rs>salerni</rs>, alium <rs>capue</rs>, et duos apud <rs>sanctum germanum</rs> suspen&bd;di 
 fecerunt, ut uniuersus mundus euidenter agnosceret, quod 
-&blb;rex <rs>w<supplied resp="bonetti">illemus</supplied></rs> iustitie et equitatis amator, si qua maleficia in 
+&blb;rex <rs>w<supplied resp="#b">illemus</supplied></rs> iustitie et equitatis amator, si qua maleficia in 
 &blb;regno suo fiunt, non uult silentio et impunita transire. <hi>precepit</hi> 
 &blb;etiam rex aliud priuilegium de confirmanda pace scribi, et bulla 
 &blb;sua aurea insignitum per <rs>tancredum</rs> notarium ad imperatorem 
@@ -5235,7 +5247,7 @@ fecerunt, ut uniuersus mundus euidenter agnosceret, quod
 &blb;quibusdam monachis, qui ibidem erant, <rs>matheum</rs> abbatem <rs>sanc&bd;ti</rs> 
 <rs>benedicti</rs> de <rs>salerno</rs> cum gladiis et fustibus et lanceis inua&bd;serunt, 
 et eum percussum in uentre et gutture crudeliter occi&bd;derunt. 
-<hi>quo</hi> cognito, rex <rs>w<supplied resp="bonetti">illelmus</supplied></rs> <hi>luce</hi> <rs>guarne</rs> et <rs>florio</rs> de 
+<hi>quo</hi> cognito, rex <rs>w<supplied resp="#b">illelmus</supplied></rs> <hi>luce</hi> <rs>guarne</rs> et <rs>florio</rs> de 
 &blb;<rs>cammarota</rs> iustitiariis precipiendo mandauit, ut huius sceleris 
 &blb;auctores cum summo studio et cautela inquirerent et inuentos 
 &blb;carceri manciparent. <hi>qui</hi> adhibita diligentia competenti, quo&bd;sdam 
@@ -5252,7 +5264,7 @@ qui et a suis <rs>callixtus</rs> appellatus est, reatum suum agno&bd;scens,
 <rs>montem albanum</rs> deseruit et apud <rs>tusculanum</rs> ad pedes 
 &blb;pape <rs>alexandri</rs> cum quibusdam de suis clericis humilis et deuo&bd;tus 
 accessit. <hi>in</hi> conspectu cardinalium et multorum se peccasse 
-<pb n="296" ed="b"/> 
+<pb n="296" ed="#b"/> 
 &blb;publice confessus est dicens: "<rs>domine</rs> uenerande pater, pecca&bd;tum 
 meum manifeste confiteor, et me auctoritate imperiali con&bd;tra 
 <rs>deum</rs> et sanctam ecclesiam et uos egisse cognosco. <hi>sed</hi> 
@@ -5273,14 +5285,14 @@ papa eum et in curia et in mensa sua honorifice habuit.
 
 
 <p xml:id="g297.19-297.21" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="b"/> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>secundo</hi> autem die stante eiusdem mensis, luna in signo uir&bd;ginis 
 post mediam noctem passa est eclypsim, et pene in tertia 
 &blb;parte sui obscurata est. <hi>tertio</hi> decimo uero die intrantis mensis 
 &blb;<hi>septembris</hi>, indictione <num value="12">xii</num>, sol in signo uirginis circa horam... 
 </p>
 
-<pb n="298" ed="b"/> 
+<pb n="298" ed="#b"/> 
 
 <p xml:id="v-b298a" decls="#ocr"> 
 &blb;de pace veneta relatio 
@@ -5289,7 +5301,7 @@ post mediam noctem passa est eclypsim, et pene in tertia
 <p xml:id="v-b298b" decls="#ocr"> 
 &blb;<hi>edente</hi> <rs>wilhelmo</rs> <rs>arndt</rs> 
 &blb;(ex codice <rs>musei britannici</rs>, <rs>kings</rs> 6. c <num value="2">ii</num>) 
-<note resp="bonetti"><hi>la</hi> relazione, contenuta in un codice del <num value="12">xii</num> secolo, scritto a <rs>venezia</rs>, non è di <rs>romualdo</rs>, ma di un autore contemporaneo ai fatti e ben informato.</note> 
+<note resp="#b"><hi>la</hi> relazione, contenuta in un codice del <num value="12">xii</num> secolo, scritto a <rs>venezia</rs>, non è di <rs>romualdo</rs>, ma di un autore contemporaneo ai fatti e ben informato.</note> 
 </p> 
 
 <p xml:id="v-b298c" decls="#ocr"> 
@@ -5325,7 +5337,7 @@ converterunt. <hi>totiens</hi> vero apud <rs>alexandriam</rs>, civitatulam
 devictus est. <hi>cancellarius</hi> autem in armis strenuus, domnus 
 &blb;scilicet <rs>christianus</rs> <rs>mogontensis</rs> archiepiscopus, alium exerci&bd;tum 
 per <rs>italiam</rs> conducens, infirmiora terrae funditus devastans, 
-<pb n="300" ed="b"/> 
+<pb n="300" ed="#b"/> 
 &blb;civitates multas obsedit ac debellavit, seque in omnibus pruden&bd;ter 
 ac viriliter agebat. 
 </p> 
@@ -5365,7 +5377,7 @@ statura mediocris, facie decorus. <hi>secundus</hi> post illum erat
 &blb;archiepiscopus <rs>coloniensis</rs>, scilicet etate iuvenis, statura ma&bd;gnus, 
 eleganti forma spetiosus. <hi>tertius</hi> fuit archiepiscopus <rs>mac&bd;deburgensis</rs>, 
 vir bonus mitis et modestus, sed prioribus etate 
-&blb;provectior. <hi>aderant</hi> et nuntii regis <rs>siculi</rs>, archiepiscopus scili<pb n="302" ed="b"/>cet 
+&blb;provectior. <hi>aderant</hi> et nuntii regis <rs>siculi</rs>, archiepiscopus scili<pb n="302" ed="#b"/>cet 
 &blb;<rs>salernie</rs> et comes quidam nobilissimus nomine <rs>rogerius</rs>. 
 </p> 
 
@@ -5410,7 +5422,7 @@ dependebant; litus autem maris, quod dicitur <rs>marmoreum</rs>,
 <p xml:id="v-b302d" decls="#ocr"> 
 &blb;<hi>ubi</hi> ante horam diei primam adveniens papa, auditaque ibi 
 &blb;missa, mox gradum throni celsiorem ascendit, illicque adventum 
-<pb n="304" ed="b"/> 
+<pb n="304" ed="#b"/> 
 &blb;imperatoris expectaturus cum patriarchis, cardinalibus, archie&bd;piscopis, 
 episcopis aliisque innumerabilibus resedit, a dextris 
 &blb;autem eius sedit patriarcha <rs>venetie</rs>, a sinistris vero patriarcha 
@@ -5457,7 +5469,7 @@ tenuit ac deinde in palatium ducis sese recepit. <hi>hec</hi> omnia
 &blb;diei primam, domnus papa iterum ad ecclesiam <rs>sancti marci</rs> 
 &blb;properavit; imperator vero de palatio ducis, quod iuxta atrium 
 &blb;ecclesie erat, advenit. <hi>post</hi> cuius adventum inchoata est missa 
-<pb n="306" ed="b"/> 
+<pb n="306" ed="#b"/> 
 &blb;quam et papa celebravit. <hi>lecto</hi> autem euangelio, mox pulpitum 
 &blb;ascendit, ibique sermonem ad populum facit, quo facto ascendit 
 &blb;ad eum imperator cum patriarca <rs>aquileie</rs>, a quo etiam pax est ibi 
