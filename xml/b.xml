@@ -2,15 +2,9 @@
 <!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
 <!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
-
-
-
 ]>
 <!--gd  = Garufi Dash-->
 <!--glb = Garufi Line Beginning-->
-
-
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -63,31 +57,31 @@
 
 <p xml:id="g3.2-3.6" decls="#algl">
 <pb n="1r" ed="#msb"/><cb n="1r.b" ed="#msb"/>
-&glb;prima mundi etas est ab <rs>adam</rs> usq9 ad diluuium, continens annos, iuxta he&gd;braycam
-ueritatem mille sexcentos quinquag<choice><abbr>i0</abbr><expan>in</expan></choice>ta sex, et iuxta lxx in&gd;ter<choice><abbr>p5</abbr><expan>pr</expan></choice>etes
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>prima mundi etas est ab <rs>adam</rs> usq9 ad diluuium, continens annos, iuxta he<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>braycam
+ueritatem mille sexcentos quinquag<choice><abbr>i0</abbr><expan>in</expan></choice>ta sex, et iuxta lxx in<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>ter<choice><abbr>p5</abbr><expan>pr</expan></choice>etes
 duo milia ducentos lx duos; gnawtiones uø iuxta utramq9 editione0 numero decem, qæ uni<choice><abbr>u5</abbr><expan>uer</expan></choice>sali est deleta diluuio, sicut p2mam 
-&glb;cuiusq9 hominis obliuio demergere consue<choice><abbr>u7</abbr><expan>uit</expan></choice> etatem.
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>cuiusq9 hominis obliuio demergere consue<choice><abbr>u7</abbr><expan>uit</expan></choice> etatem.
 </p>
 
 <p xml:id="g3.7-3.16" decls="#algl">
-&glb;fuerunt <rs>noe</rs> filii tres, ex quib9 ita sunt orte gentes. de <rs>iafeth</rs> quindecim, de <rs>cham</rs>
-&glb;triginta, de <rs>sem</rs> xxuii. <rs>sem</rs> annos duos pt7 diluuium genuit <rs>arfaxath</rs>, a quo sunt <rs>chaldei</rs>. 
-&glb;<rs>arfaxath</rs> genuit <rs>salem</rs>, a quo <rs>samarite</rs> ŋ <rs>indi</rs>. <rs>sale</rs> genuit <rs>heber</rs>, a quo <rs>hebrei</rs>. <rs>heber</rs> 
-&glb;genuit <rs>falech</rs>, cuius <choice><abbr>tpr0</abbr><expan>tempor</expan></choice>e turris hedificatw ŋ linguaru0 diuisio fit. in solo <rs>heber</rs> prisca 
-&glb;remansit lin<choice><abbr>gw</abbr><expan>gua</expan></choice>, quia in ea conspiratione n<choice><abbr>o0</abbr><expan>on</expan></choice> fuit. turris uø duo milia clxxiiii 
-&glb;<choice><abbr>dr5</abbr><expan>dicitur</expan></choice> passuu0. hanc <rs>nebroth</rs> gigans construxit. hac etate <rs>scitha<choice><abbr>r5</abbr><expan>rum</expan></choice></rs><note type="2h">Added initial "s" and final "5".</note> regnum oritw, ubi 
-&glb;p2mus regnauit <rs>thannus</rs>. t<choice><abbr>u0</abbr><expan>un</expan></choice>c et regnum <rs>egyptio4</rs> ubi p2imus regna<choice><abbr>u5</abbr><expan>uit</expan></choice> <rs>thoes</rs>. dehinc 
-&glb;regnum <rs>assirio4</rs>, ubi prius regnauit <rs>belus</rs>, que0 dicunt <rs>satwnum</rs> quidam; deinde <rs>ni<choice><abbr>n2</abbr><expan>nus</expan></choice></rs>
-&glb;qui condidit <rs>niniuen</rs>. hoc tpr0 <rs>abraam</rs> nascitw, ŋ post morte0 <rs>nini</rs> a <rs>ssemiramide</rs>
-&glb;regina rehedificata e0 <rs>babilonia</rs>, u2 regnauit annos quadraginta. 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>fuerunt <rs>noe</rs> filii tres, ex quib9 ita sunt orte gentes. de <rs>iafeth</rs> quindecim, de <rs>cham</rs>
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>triginta, de <rs>sem</rs> xxuii. <rs>sem</rs> annos duos pt7 diluuium genuit <rs>arfaxath</rs>, a quo sunt <rs>chaldei</rs>. 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/><rs>arfaxath</rs> genuit <rs>salem</rs>, a quo <rs>samarite</rs> ŋ <rs>indi</rs>. <rs>sale</rs> genuit <rs>heber</rs>, a quo <rs>hebrei</rs>. <rs>heber</rs> 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>genuit <rs>falech</rs>, cuius <choice><abbr>tpr0</abbr><expan>tempor</expan></choice>e turris hedificatw ŋ linguaru0 diuisio fit. in solo <rs>heber</rs> prisca 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>remansit lin<choice><abbr>gw</abbr><expan>gua</expan></choice>, quia in ea conspiratione n<choice><abbr>o0</abbr><expan>on</expan></choice> fuit. turris uø duo milia clxxiiii 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/><choice><abbr>dr5</abbr><expan>dicitur</expan></choice> passuu0. hanc <rs>nebroth</rs> gigans construxit. hac etate <rs>scitha<choice><abbr>r5</abbr><expan>rum</expan></choice></rs><note type="2h">Added initial "s" and final "5".</note> regnum oritw, ubi 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>p2mus regnauit <rs>thannus</rs>. t<choice><abbr>u0</abbr><expan>un</expan></choice>c et regnum <rs>egyptio4</rs> ubi p2imus regna<choice><abbr>u5</abbr><expan>uit</expan></choice> <rs>thoes</rs>. dehinc 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>regnum <rs>assirio4</rs>, ubi prius regnauit <rs>belus</rs>, que0 dicunt <rs>satwnum</rs> quidam; deinde <rs>ni<choice><abbr>n2</abbr><expan>nus</expan></choice></rs>
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>qui condidit <rs>niniuen</rs>. hoc tpr0 <rs>abraam</rs> nascitw, ŋ post morte0 <rs>nini</rs> a <rs>ssemiramide</rs>
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>regina rehedificata e0 <rs>babilonia</rs>, u2 regnauit annos quadraginta. 
 </p>
 
 <p xml:id="g3.17-4.2" decls="#algl">
-&glb;secunda etas a <rs>noe</rs> usque ad <rs>habraam</rs> gnawtiones oms0 iuxta hebraycam ueritatem conplexa 
-&glb;de<cb n="1r.b" ed="#msb"/>cem <gap reason="blank" quantity="2" unit="words"/> nonaginta duos. porro lxx <gap reason="blank" quantity="2" unit="words"/> septua<choice><abbr>g0</abbr><expan>ginta</expan></choice> duos. gnawtiones uø undecim. hec uø quasi <gap reason="blank" quantity="2" unit="words"/> gnawtionis ppli5 <rs>dei</rs>. et 
-&glb;ideo in lingua inuenta est <rs>he<choice><abbr>b2</abbr><expan>bra</expan></choice>ica</rs>. a pu<choice><abbr>ewi</abbr><expan>eri</expan></choice>tia namq9 h0 inci<choice><abbr>p0</abbr><expan>pit</expan></choice> nosse loqui, que idcirco 
-&glb;appellata est, q2 fari non po<choice><abbr>t5</abbr><expan>test</expan></choice>. ab <rs>adam</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
-&glb;ueritatem computantw anni mille <choice><abbr>n0</abbr><expan>nun</expan></choice>genti xl uiii, se<choice><abbr>cd5</abbr><expan>cundum</expan></choice> interp5tes lxx fi<choice><abbr>uw</abbr><expan>un</expan></choice>t <choice><abbr>a0</abbr><expan>an</expan></choice>ni tria milia <choice><abbr>ccc2</abbr><expan>ccc</expan></choice> xiiii.
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>secunda etas a <rs>noe</rs> usque ad <rs>habraam</rs> gnawtiones oms0 iuxta hebraycam ueritatem conplexa 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>de<cb n="1r.b" ed="#msb"/>cem <gap reason="blank" quantity="2" unit="words"/> nonaginta duos. porro lxx <gap reason="blank" quantity="2" unit="words"/> septua<choice><abbr>g0</abbr><expan>ginta</expan></choice> duos. gnawtiones uø undecim. hec uø quasi <gap reason="blank" quantity="2" unit="words"/> gnawtionis ppli5 <rs>dei</rs>. et 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>ideo in lingua inuenta est <rs>he<choice><abbr>b2</abbr><expan>bra</expan></choice>ica</rs>. a pu<choice><abbr>ewi</abbr><expan>eri</expan></choice>tia namq9 h0 inci<choice><abbr>p0</abbr><expan>pit</expan></choice> nosse loqui, que idcirco 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>appellata est, q2 fari non po<choice><abbr>t5</abbr><expan>test</expan></choice>. ab <rs>adam</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>ueritatem computantw anni mille <choice><abbr>n0</abbr><expan>nun</expan></choice>genti xl uiii, se<choice><abbr>cd5</abbr><expan>cundum</expan></choice> interp5tes lxx fi<choice><abbr>uw</abbr><expan>un</expan></choice>t <choice><abbr>a0</abbr><expan>an</expan></choice>ni tria milia <choice><abbr>ccc2</abbr><expan>ccc</expan></choice> xiiii.
 </p>
 
 <p xml:id="g4.3-4.10" decls="#algl"/>
@@ -187,6 +181,6 @@ duo milia ducentos lx duos; gnawtiones uø iuxta utramq9 editione0 numero decem,
 <p xml:id="g20.25-20.27" decls="#algl"/>
 <p xml:id="g20.28-20.28" decls="#algl"/>
 <p xml:id="g20.29-20.33" decls="#algl"/>
-</body>
+<p xml:id="g163.6-163.7"/><p xml:id="g163.8-163.10"/><p xml:id="g163.11-164.9"/><p xml:id="g164.10-164.11"/><p xml:id="g164.12-164.19"/><p xml:id="g164.19-164.25"/><p xml:id="g165.1-165.3"/><p xml:id="g165.4-165.7"/><p xml:id="g165.8-165.9"/><p xml:id="g165.10-166.2"/><p xml:id="g166.3-166.8"/><p xml:id="g166.9-166.25"/><p xml:id="g167.1-167.3"/><p xml:id="g167.4-168.4"/><p xml:id="g168.5-168.7"/><p xml:id="g168.8-169.4"/><p xml:id="g169.5-170.14"/><p xml:id="g170.15-170.16"/><p xml:id="g170.17-171.1"/><p xml:id="g171.2-171.6"/><p xml:id="g171.7-171.8"/><p xml:id="g171.9-171.14"/><p xml:id="g172.1-172.9"/><p xml:id="g172.10-173.11"/><p xml:id="g173.12-173.13"/><p xml:id="g173.14-174.7"/><p xml:id="g174.8-175.15"/><p xml:id="g176.1-176.2"/><p xml:id="g177.1-177.4"/><p xml:id="g177.5-177.6"/><p xml:id="g177.7-177.8"/><p xml:id="g177.9-178.3"/><p xml:id="g178.4-178.10"/><p xml:id="g178.11-178.12"/><p xml:id="g178.13-179.2"/><p xml:id="g179.3-179.7"/><p xml:id="g179.8-179.9"/><p xml:id="g179.10-179.11"/><p xml:id="g179.12-179.14"/><p xml:id="g179.15-180.12"/><p xml:id="g180.13-180.15"/><p xml:id="g181.1-181.1"/><p xml:id="g181.2-181.5"/><p xml:id="g181.6-181.10"/><p xml:id="g181.10-181.11"/><p xml:id="g181.12-182.19"/></body>
   </text>
 </TEI>
