@@ -23,7 +23,7 @@ html_ns = "{%s}" % ns['h']
 # Whitespace and punctuation
 myspace = [' ', '\n', '\t']             # These whitespace Unicode chars will be allowed at both GL and AL
 
-alp = [r'.', ',', ':', ';', '!', '?']   # alp = A(lphabetic) L(ayer) P(unctuation):
+alp = [r'.', ',', ':', ';', '!', '?', "'", '–', '—', '(', ')']   # alp = A(lphabetic) L(ayer) P(unctuation):
                                         # AL punctuation that will nevertheless be allowed also in the GL XML code.
                                         # These chars will be removed when extracting/visualizing the GL
 
