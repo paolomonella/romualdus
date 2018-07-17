@@ -1818,14 +1818,14 @@ et dimissa ibi obsidionem cum paucis uenit <rs>abianum</rs> et c<seg type="ecaud
 imperii eius anno defunctus est. <hi>cui</hi> in imperio <rs>michael</rs> filius 
 <pb n="92" ed="#b"/> 
 &blb;<rs>constantini</rs> <rs>dioclizi</rs> successit.
-<note resp="#pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> arrange the sentences in this paragraph differently than codex <hi>a</hi>.</note> 
+<note resp="#pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> arrange the sentences in this paragraph differently than codex <hi>a</hi>. They insert here the addition with id g187.9-188.4add100.</note> 
 <hi>eodem</hi> anno <rs>robbertus</rs> dux 
 &blb;cepit <rs>barum</rs> ciuitatem longa obsidione fatigatam, indeque 
 &blb;mouens exercitum, <rs>siciliam</rs> properauit obseditque <rs>panormum</rs>, 
 &blb;ditissi&bd;mam 
 <rs>sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam.
 
-<add place="footer" hand="#hand2">
+<add place="footer" hand="#hand2" xml:id="g187.9-188.4add100">
 <num value="1070">mlxx</num> indictione <num value="8">viii</num> hoc anno mense ianuarii ma&bd;gnum 
 homicidium actum est in <rs>brundusii</rs> ciuitate. <hi>nam</hi> <rs>nor&bd;manni</rs> 
 uolentes eam comprehendere, tenti sunt ab eis quadra&bd;ginta 
@@ -1841,6 +1841,78 @@ ferreas et columpnas marmoreas quam plures cum capitibus
 &blb;cepit <rs>tranum</rs> <rs>apulie</rs> ciuitatem. 
 </p> 
 
+<p xml:id="g188.5-188.7" decls="#al"> 
+<add place="footer" hand="#hand2">
+&blb;<hi>eodem</hi> anno <rs>robbertus</rs> dux fecit fieri pontem in mari qua&bd;tinus 
+concluderet portum prephat<seg type="ecaud">ae</seg> urbis <rs>bari</rs>, et in quintadeci&bd;ma 
+die mensis <hi>aprilis</hi> <rs>robertus</rs> dux predictam ciuitatem c<seg type="ecaud">ae</seg>pit, 
+&blb;et in sequenti pr<seg type="ecaud">ae</seg>dictus dux c<seg type="ecaud">ae</seg>pit ciuitatem <rs>panormum</rs> in men&bd;se <hi>ianuarii</hi>. 
+</add>
+</p> 
+
+
+<p xml:id="g188.8-188.11" decls="#al"> 
+&blb;<rs>anno</rs> dominice incarnationis <num value="1075">mlxxu</num>, indictione <num value="13">xiii</num>, <rs>alexan&bd;der</rs> 
+papa diem obiit, et archidiaconus eius nomine <rs>ildeprandus</rs> 
+&blb;ipsa eadem die in ordine pontificali electus et papa <rs>gregorius</rs> 
+&blb;est nuncupatus, seditque annis <num value="12">xii</num>, mense <num value="1">i</num>. <hi>hic</hi> autem pontifex 
+&blb;amministrationem regni sibi primus ut rex assumpsit. 
+</p> 
+
+
+<p xml:id="g188.12-190.8" decls="#al"> 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1075">mlxxu</num></add>, dux <rs>robbertus</rs> <rs>sanc&bd;tam</rs> 
+<rs>seuerinam</rs> <rs>calabrie</rs> cubrie ciuitatem loco munitissimam tertio an&bd;no 
+postquam illam obsederat, cepit. <hi>hinc</hi> quoque cepit ciuitatem 
+&blb;<rs>comsanam</rs> obsesso castello <rs>sancte</rs> <rs>agathe</rs>, quod incessabili op&bd;pugnatione 
+cepit.
+
+<note resp="#pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> arrange the sentences in this paragraph differently than codex <hi>a</hi>. They insert here the addition with id g188.12-190.8add100.</note> 
+
+<hi>his</hi> etiam diebus 
+&blb;cum exercitu dux proficiscens obsedit <rs>salernum</rs>, ciuitatem me&bd;dicine 
+utique artis diu famosam atque precipuam. <rs>gisolfus</rs> 
+&blb;autem frater uxoris eiusdem ducis tunc in eadem ciuitate mora&bd;batur. 
+<hi>hanc</hi> incessanter terra marique expugnauit, nec destitit 
+&blb;donec post <num value="7">uii</num> menses obsidionis sue cepit illam mense <hi>decem<pb n="94" ed="#b"/>bris</hi>. 
+
+<add place="margin" hand="#hand2" xml:id="g188.12-190.8add100">
+<hi>hoc</hi> anno <rs>robertus</rs> dux dedit filiam suam 
+&blb;nurum ad imperatorem <rs>constantinopolitanum</rs> (ex codice <rs>sancti petri</rs>).
+</add>
+
+&blb;<hi>anno</hi> dominice incarnationis <num value="1076">mlxxui</num>, indictione <num value="15">xu</num>; cepit&bd;que 
+<rs>gisulfum</rs> principem qui fame coactus se eidem duci tradidit, 
+&blb;atque <rs>turrim</rs> maiorem in qua se tutabatur. <hi>in</hi> eadem uero ciuita&bd;te 
+ipse dux construxit eccelsiam in honore beati <rs>mathei</rs> aposto&bd;li 
+et euangeliste. <hi>in</hi> <rs>panormo</rs> quoque fecit ecclesiam <pb n="207v" facs="vat:235" ed="#a"/>in honorem 
+&blb;<rs>dei</rs> genitricis semperque uirginis <rs>marie</rs>, anno primo postquam 
+&blb;cepit <rs>salernum</rs>. <rs>robbertus</rs> dux <rs>beneuentum</rs> obsedit, acriter 
+&blb;eam expugnans. <hi>et</hi> nisi <rs>romanus</rs> pontifex, cuius precepto pare&bd;bat, 
+hoc idem duci prohibuisset, nequaquam ab incepto desiste&bd;ret 
+donec eam caperet. <hi>simili</hi> modo et <rs>riccardus</rs> princeps <rs>nea&bd;polim</rs> 
+obsedit ipso eodem anno, fortiter illam ciuitatem expu&bd;gnans 
+undique ut eam ui caperet. <hi>sed</hi> eodem anno in eadem 
+&blb;obsidione princeps iste mortuus est anno principatus sui <num value="20">xx</num>, in&bd;dictione 
+<num value="1">i</num>. <hi>fuit</hi> autem hic statura procerus, forti animo, ingenio 
+&blb;astutus, largitate famosus, circa beniuolos et sibi fideles mansue&bd;tus 
+atque benignus, rebellibus autem ac perfidis ualde terribilis. 
+&blb;<hi>cui</hi> successit <rs>iordanus</rs> filius eius. <hi>hic</hi> autem in matri&bd;monio 
+accepit filiam <rs>guaymarii</rs> principis <rs>salernitani</rs>, ex qua ha&bd;buit 
+filios <rs>riccardum</rs> et <rs>robbertum</rs> atque <rs>iordanum</rs>.
+</p> 
+
+
+<p xml:id="g190.9-191.2" decls="#ocr"> 
+&blb;<hi>anno</hi> dominice incarnationis <num value="1079">mlxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, indictione <num value="2">ii</num>, apud 
+&blb;<rs>constantinopolim</rs> <rs>michael</rs> filius <rs>constantini</rs> imperatoris anno 
+&blb;eius imperii octauo ipse cum filiis suis <rs>michael</rs>, <rs>andronico</rs> et 
+&blb;<rs>constantino</rs> expulsus est. <hi>et</hi> <rs>niceforus</rs> <rs>butanioth</rs> imperium sibi 
+&blb;arripuit. "<hi>ipso</hi> anno dux <rs>robbertus</rs> obsidens <rs>uicum</rs> cepit ipsam 
+&blb;ciuitatem, ibique <rs>gradelonem</rs> nepotem suum capiens utroque 
+&blb;statim priuari lumine fecit, eo quod ipse et alii plerique baronum 
+&blb;rebelles ei extiterant. <hi>ceteri</hi> uero metu perculsi ei se subdide&bd;runt. 
+</p>
     </body>
   </text>
 </TEI>
