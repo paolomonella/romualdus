@@ -119,7 +119,7 @@ def writeToMultiMSTableFile (mymss, myl, wbaretext=False):
 
             if 'gl' in myl: # Create <td>s for Graphemic Layer
                 gp = gall[ms].find('.//h:p[@id="%s-graph-%s"]' % (ms, pid), ns)    # gp: GL paragraph
-                if 'decls' in gp.attrib and gp.get('decls') == '#a': # If the <p> is encoded at the AL only: <p decls="#a">
+                if 'decls' in gp.attrib and gp.get('decls') == '#al': # If the <p> is encoded at the AL only: <p decls="#al">
                     for c in gp:
                         if c.tag == 'span' and c.get('class') == 'metatext garufi':
                             garufiAlOnlySpan = c # Stores <span class="metatext garufi">[Garufi 3,2 - 3,6] </span>

@@ -33,15 +33,21 @@ class msTree:
 
     def remove_comments (self):
         ''' Remove XML comments such as <!-- comment --> '''
-        els = []
         commentElements = self.tree.xpath('//comment()')
         for element in commentElements:
             parent = element.getparent()
             parent.remove(element)
 
-    def list_elements (self):
+    def list_elements (self, onlybody=True):
         ''' Print a set of element names in the XML file '''
-        for element in self.tree.iter():
+        els = []
+        if onlybody:
+            mybody = self.tree.find('.//t:body', ns)
+            allelements = mybody.iter()
+        else:
+            allelements = self.tree.iter()
+        #for element in self.tree.iter():
+        for element in allelements:
             if etree.iselement:
                 tag = element.tag
                 #print(element.tag.split('}')[1])
@@ -62,12 +68,6 @@ class msTree:
                 'numeral' for <reg type="numeral">,
                 'j' for <reg type="j"> etc.
             '''
-        '''
-        #for reg in self.tree.findall('.//t:reg[@type="j"]', constants.ns):
-        for xy in self.tree.findall('.//t:app', constants.ns):
-            print(reg.get('type'))
-        '''
-
         for reg in self.tree.findall('.//t:reg[@type="%s"]' % (regtype), constants.ns):
             orig = reg.getparent().find('.//t:orig', constants.ns)
 
@@ -78,6 +78,25 @@ class msTree:
                 orig.getparent().remove(orig)
             if form == 'orig':
                 reg.getparent().remove(reg)
+
+    def sic_corr (self, corrtype, form = 'corr'):
+        ''' Remove all <corr> or (default) all <sic> in structures such as
+            '<choice><sic>nomem</orig><sic type="typo">nomen</reg></choice>':
+                If form = 'corr',  remove all 'sic' (default);
+                if form = 'sic', remove all 'corr'.
+            Argument 'regtype' should be
+                'typo' for <corr type="typo">, etc.
+            '''
+        for corr in self.tree.findall('.//t:corr[@type="%s"]' % (corrtype), constants.ns):
+            sic = corr.getparent().find('.//t:sic', constants.ns)
+
+            # The following 'remove' functions should be safe b/c <sic> or <corr> never have a tail
+            # b/c <sic> and <corr> are the only children of <choice>
+            # (otherwise, the tail would be removed too)
+            if form == 'corr':
+                sic.getparent().remove(sic)
+            if form == 'sic':
+                corr.getparent().remove(corr)
 
     def recapitalize (self):
         ''' Re-capitalize words included in <rs> or in <hi> '''
@@ -139,14 +158,19 @@ gtree.reg_orig('j', form='reg')
 gtree.recapitalize() 
 gtree.write()
 
-gtree = msTree('B')
-gtree.reg_orig('numeral', form='reg') 
-gtree.reg_orig('j', form='reg') 
-gtree.recapitalize() 
-gtree.write()
-'''
-
 btree = msTree('bonetti')
 btree.recapitalize() 
 btree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num'], removepar=True)
 btree.write()
+
+atree = msTree('a')
+atree.list_elements()
+'''
+
+gtree = msTree('g')
+gtree.reg_orig('numeral', form='reg') 
+gtree.reg_orig('j', form='reg') 
+gtree.sic_corr ('typo', form = 'corr')
+gtree.recapitalize() 
+gtree.write()
+

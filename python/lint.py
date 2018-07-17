@@ -49,8 +49,10 @@ def tosLint (lintSiglum):
                     if c not in alegalset:
                         print('[RomualdusLint] Illegal Unicode character «%s» at Alphabetic Layer in MS %s, string «%s»' % \
                                 (c, lintSiglum.upper(), myt))
-            elif e.tag not in gfz:
+            if e.tag not in gfz:
                 for c in myt:           # Check GL
-                    if c not in glegal:
+                    if c not in glegal and e.getparent().tag not in gfz and e.getparent().getparent().tag not in gfz:
+                        # The above 'if 'is necessary because of cases such as <note><hi>i</hi> was <rs>joyful</rs></note>,
+                        # in which 'was' is not skipped by the lint b/c it's <hi>.tail and 'joyful' is not b/c it's <rs>.text
                         print('[RomualdusLint] Illegal Unicode character «%s» at Graphematic Layer in MS %s, string «%s»' % \
                                 (c, lintSiglum.upper(), myt))
