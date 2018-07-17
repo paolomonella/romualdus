@@ -62,6 +62,14 @@
                     Used to mark words capitalized in the print edition, but not constituting
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
+                <tagUsage gi="note">
+                    With type="content": note on the text content.
+                    With type="graphic": note on glyphs or graphemes.
+                    With type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
+                    With type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
+                    With type="textcrit": note on textual critical matters.
+                    With type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
+                </tagUsage>
              </namespace>
          </tagsDecl>
         <listPrefixDef>
@@ -241,7 +249,7 @@ incarnationis <num value="963"><choice><orig>dcccc</orig><reg type="numeral">cm<
 
 
 <p xml:id="g167.1-167.3" decls="#ocr"> 
-&blb;<hi>sequente</hi> uero anno <note resp="#b">sed 962</note> idem <rs>otto</rs> <rs>saxonum</rs> rex <rs>ro&bd;mam</rs> 
+&blb;<hi>sequente</hi> uero anno <note resp="#b" type="year">sed 962</note> idem <rs>otto</rs> <rs>saxonum</rs> rex <rs>ro&bd;mam</rs> 
 uenit nobiliter cum exercitu et a <rs>iohanne</rs> papa coronatus 
 &blb;est, accipiens ab eo totius <rs>italie</rs> uexillum cum imperii dignitate, 
 &blb;professus iureiurando seruare fidem <rs>romane</rs> ecclesie. <hi>et</hi> tunc 
@@ -256,7 +264,7 @@ ciuitatem <rs>bibinum</rs> atque <rs>asculum</rs>, <rs>grecos</rs> expellens. <h
 &blb;apud <rs>constantinopolim</rs> defuncto imperatore <rs>niceforo</rs>, <rs>iohan&bd;nes</rs> 
 cognomento <rs>simiski</rs> tenuit imperium annis <num value="6">&uu;i</num>. <hi>quo</hi> defunc&bd;to 
 <rs>basilius</rs> et <rs>constantinus</rs> filii eius ceperunt imperare ab an&bd;no 
-incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> <note resp="#b">sed 976</note>, regnaueruntque 
+incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> <note resp="#b" type="year">sed 976</note>, regnaueruntque 
 &blb;annis <num value="55">l&uu;</num>. <hi>at</hi> uero <rs>rome</rs> defuncto <rs>iohanne</rs> papa <rs>benedictus</rs> papa 
 &blb;sedit annis <num value="2">ii</num>, et post eum <rs>leo</rs> sedit anno uno mensibus <num value="2">ii</num>. <hi>dein</hi>&bd;de 
 uero <rs>iohannes</rs> sedit annis <num value="6">&uu;i</num> mensibus <num value="11">xi</num>. <hi>hic</hi> a <rs>petro</rs> prefec&bd;to 
@@ -277,7 +285,7 @@ anno post hec ceperunt ciuitatem <rs>bibinum</rs> ignique combus&bd;serunt.
 
 
 <p xml:id="g168.5-168.7" decls="#ocr">
-<hi>anno</hi> incarnationis <rs>domini</rs> <num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx&uu;&jj;</num><note resp="#b">sed 986</note>, <rs>lotha&bd;rius</rs> 
+<hi>anno</hi> incarnationis <rs>domini</rs> <num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx&uu;&jj;</num><note resp="#b" type="year">sed 986</note>, <rs>lotha&bd;rius</rs> 
 <rs>francorum</rs> rex senex plenus dierum obiit, postquam regnau&bd;it 
 annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">i&uu;</reg></choice></num>, sepultusque in basilica <rs>sancti remigii</rs> <rs>remis</rs>. <hi>cui</hi> 
 &blb;successit <rs>ludouicus</rs> filius eius adhuc iuuenis. 
@@ -285,9 +293,9 @@ annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">i&uu;</reg><
 
 
 <p xml:id="g168.8-189.4" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&jj;</num> <note resp="#b">sed 972</note> de&bd;functo 
+&blb;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&jj;</num> <note resp="#b" type="year">sed 972</note> de&bd;functo 
 <rs>iohanne</rs> papa <rs>benedictus</rs> ei in pontificatus honorem suc<pb n="70" ed="#b"/>cessit. 
-&blb;<hi>eodem</hi> anno <note resp="#b">sed 973</note> <hi>otto</hi> maior imperator obiit anno 
+&blb;<hi>eodem</hi> anno <note resp="#b" type="year">sed 973</note> <hi>otto</hi> maior imperator obiit anno 
 &blb;<num value="18">x&uu;iii</num> ex quo imperator appellatus est. <hi>successit</hi> autem ei <rs>otto</rs> 
 &blb;imperator, qui dictus est minor, qui postquam imperii coronam 
 &blb;accepit, ueniens <rs>salernum</rs> obsedit cepitque illam expugnans. 
@@ -304,7 +312,7 @@ annis <num value="9"><choice><orig>&uu;iiii</orig><reg type="numeral">ix</reg></
 
 
 <p xml:id="g189.5-170.14" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&uu;</num>, <note resp="#b">sed 987</note> obiit 
+&blb;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&uu;</num>, <note resp="#b" type="year">sed 987</note> obiit 
 &blb;<rs>ludouicus</rs> <rs>francorum</rs> rex iuuenis, postquam regnauit annis 
 &blb;nouem, sepultusque est in basilica beati <rs>cornelii</rs> <rs>compendio</rs>. 
 &blb;<hi>cui</hi> successit <rs>carolus</rs> frater eius filius <rs>lotharii</rs> regis. <hi>eodem</hi> anno 
@@ -316,7 +324,7 @@ rebellauit contra <rs>carolum</rs> regem consilioque habito cum
 &blb;itaque <rs>carolus</rs> rex cum uxore sua et positus in custodia <rs>aurelia&bd;nis</rs> 
 ciuitate in turri", in qua uitam finiuit. <hi>habuit</hi> autem ex eadem 
 &blb;uxore filios duos <rs>ludouicum</rs> et <rs>carolum</rs>. <rs>ugo</rs> itaque dux re&bd;gnum 
-sibi <rs>francorum</rs> arripuit, constituitque<note resp="#pm">bonetti has contituitque</note> regem filium suum 
+sibi <rs>francorum</rs> arripuit, <choice><sic>contituitque</sic><corr type="typo">constituitque</corr></choice> regem filium suum 
 &blb;nomine <rs>robbertum</rs>. <hi>sicque</hi> defecit prosapia regum a <rs>carolo</rs> im&bd;peratore 
 descendentium et ex tunc <rs>francorum</rs> reges regali tan&bd;tum 
 honore contenti imperii dignitatem amiserunt. "<hi>in</hi> illis die&bd;bus 
@@ -577,7 +585,7 @@ papatum <rs>iohannes</rs> <rs>sabinensis</rs> episcopus cui nomen <rs>si&bd;lues
 &blb;diem obiit anno <num value="7">&uu;ii</num> eius imperii. <hi>cui</hi> <rs>michael</rs> qui <rs>etheriarchis</rs> di&bd;cebatur 
 successit cum <rs>zoy</rs> imperatrice. <hi>eodem</hi> anno mense <rs>fe&bd;bruarii</rs> 
 <rs>normanni</rs> ingressi iam in <rs>apuliam</rs>, ter uno die cum <rs>gre&bd;cis</rs> 
-graui prelio dimicarum<note resp="#pm"><hi>probable</hi> mistake by <rs>bonetti</rs> for dimicarunt.</note> inter <rs>aufidum</rs> amnem et <rs>oliuentem</rs>, 
+graui prelio <choice><sic>dimicarum</sic><corr type="typo">dimicarunt</corr></choice> inter <rs>aufidum</rs> amnem et <rs>oliuentem</rs>, 
 &blb;et <rs>normanni</rs> uictores extiterunt. <hi>in</hi> ipso quidem prelio fuit <rs>dro&bd;go</rs> 
 <rs>normannorum</rs> comes et quattuor ex fratribus eius. <hi>in</hi> ipso 
 &blb;quoque anno <rs>chunradus</rs> imperator defunctus est anno eius im&bd;perii 
@@ -668,7 +676,7 @@ in mense <hi>octobris</hi> et in mense <hi>decembris</hi> depopulaue&bd;runt
 <hi>anno</hi> domini <num value="1051">ml&jj;</num> indictione <num value="3">ii&jj;</num> mense <hi>augusti</hi> <rs>drogo</rs> <rs>nor&bd;mannorum</rs> 
 comes defunctus est. "<hi>fuitque</hi> uir egregius, pius, stre&bd;nuus 
 atque famosus, qui propter animi mansuetudinem et iusti&bd;cie 
-sertatam<note resp="#pm"><hi>possibly</hi> a mistake by <rs>bonetti</rs> for 'seruatam'</note> equitatem a cunctis est dilectus". <hi>cui</hi> <rs>unfridus</rs> fra&bd;ter 
+<choice><sic>sertatam</sic><corr type="typo">seruatam</corr></choice> equitatem a cunctis est dilectus". <hi>cui</hi> <rs>unfridus</rs> fra&bd;ter 
 eius <rs>normannorum</rs> comes successit, tenuitque potestatem 
 &blb;ipsius honoris per annos septem. 
 </p> 
@@ -1450,7 +1458,7 @@ illum excepit in ecclesia beati <rs>petri</rs>. <hi>rex</hi> autem suo&bd;rum
 militum caterua stipatus, post pacis osculum benedictio&bd;nemque 
 ab eo acceptam, dum ab eodem papa quod ipse per le&bd;gatos 
 sibi promiserat, optinere se non posse uideret, cepit ipsum 
-&blb;papam cum omnnibus<!--typo in bonetti for omnibus--> qui cum eo illic erant, atque per duos 
+&blb;papam cum <choice><sic>omnnibus</sic><corr type="typo">omnibus</corr></choice> qui cum eo illic erant, atque per duos 
 &blb;menses in custodia habere fecit, propter inuestituram episcopa&bd;tus 
 per anulum et uirgam quam rex petebat. <hi>et</hi> papa predeces&bd;soris 
 sui <rs>gregorii</rs> cognomento <rs>ildeprandi</rs>, qui hoc inchoauerat 
@@ -1744,7 +1752,7 @@ dimittitur.
 &blb;statuta predecessorum suorum, per uexillum de ducatu <rs>apulie</rs> 
 &blb;inuestiuit, et ab eo liggium hominium et iuramentum accepit. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
-&blb;<note resp="#b"><hi>da</hi> questo punto la narrazione è opera di <rs>romualdo</rs> <num value="2">ii</num>.</note> 
+&blb;<note resp="#b" type="content"><hi>da</hi> questo punto la narrazione è opera di <rs>romualdo</rs> <num value="2">ii</num>.</note> 
 &blb;<hi>dux</hi> autem <rs>w<supplied resp="#b">ilhelmus</supplied></rs>, licet a baronibus et hominibus suis 
 &blb;multum diligeretur, tamen propter benignitatem et patientiam 
 &blb;suam ab eis quodammodo habebatur contemptui, qui inter ip&bd;sum 
@@ -1941,7 +1949,7 @@ reuersus est in <rs>siciliam</rs>.
 &blb;congregare in <rs>sicilie</rs> prouinciam omnes episcopos diuersa&bd;rum 
 prouinciarum <rs>calabrie</rs>, <rs>apulie</rs>, <rs>campanie</rs> qui iussione 
 <pb n="136" ed="#b"/> 
-&blb;<rs>calixti</rs> pape<note resp="#b"><hi>errore</hi> nel testo: <rs>callisto</rs> <num value="2">ii</num> era morto nel 1124. <hi>si</hi> tratta di <rs>anacleto</rs> <num value="2">ii</num>.</note> unxerunt eum in regem ac super caput eius co&bd;ronam 
+&blb;<rs>calixti</rs> pape<note resp="#b" type="content"><hi>errore</hi> nel testo: <rs>callisto</rs> <num value="2">ii</num> era morto nel 1124. <hi>si</hi> tratta di <rs>anacleto</rs> <num value="2">ii</num>.</note> unxerunt eum in regem ac super caput eius co&bd;ronam 
 regiam posuerunt et ab omnibus uocari regem iusse&bd;runt. 
 
 <milestone type="bonetti-paragraph-break" ed="#b"/>
@@ -2008,7 +2016,7 @@ fame afflictum, ignem in turrem missum suam <rs>tarenti</rs>
 
 
 <p xml:id="g219.8-222.4" decls="#ocr"> 
-&blb;<hi>quo</hi> defuncto scisma in <rs>romama</rs><!--typo in bonetti for romana--> ecclesia exortum est, nam 
+&blb;<hi>quo</hi> defuncto scisma in <choice><sic><rs>romama</rs></sic><corr type="typo"><rs>romana</rs></corr></choice> ecclesia exortum est, nam 
 &blb;maior et sanior pars cardinalium <rs>gregorium</rs> natione <rs>romanum</rs> 
 &blb;diaconum cardinalem <rs>sancti angeli</rs> in pontificem elegerunt qui 
 &blb;et <rs>innocentius</rs> secundus est appellatus. <hi>alia</hi> uero pars cardina&bd;lium 
@@ -4191,7 +4199,7 @@ iustitiam faceret.
 
 
 <p xml:id="g279.3-279.15" decls="#ocr"> 
-&blb;<hi>postqum</hi><!--typo in bonetti for postquam--> autem hic modus petitionis implende per episco&bd;pum 
+&blb;<choice><sic><hi>postqum</hi></sic><corr type="typo"><hi>postquam</hi></corr></choice> autem hic modus petitionis implende per episco&bd;pum 
 <rs>clarimontis</rs> et abbatem de <rs>bonaualle</rs> fuit imperatori pro&bd;positus, 
 plurimum illi displicuit, et sic concordia per illos tracta&bd;ta 
 remansit. <rs>christianus</rs> autem cancellarius et reliqui, qui cum eo 
@@ -4958,7 +4966,7 @@ pro parte nostra et heredum nostrorum paciscimur uo<pb n="282" ed="#b"/>biscum,
 &blb;domine <rs>w<supplied resp="#b">illelm</supplied>e</rs>, eadem gratia illustris rex <rs>sicilie</rs>, 
 &blb;quod amodo usque ad quindecim annos obseruabimus uobis et 
 &blb;heredibus uestris et uniuerso regno uestro et toti terre domina&bd;tionis 
-uestre ueram et firman<!--typo in bonetti for firmam--> pacem. <hi>et</hi> quod per nos uel per 
+uestre ueram et <choice><sic>firman</sic><corr type="typo">firman</corr></choice> pacem. <hi>et</hi> quod per nos uel per 
 &blb;quoslibet alios, mari uel terra, uos predictum illustrem regem et 
 &blb;heredes uestros aut regnum uestrum et terram dominationis 
 &blb;uestre, sicut prescriptum et determinatum est, usque ad quinde&bd;cim 
@@ -5303,7 +5311,7 @@ post mediam noctem passa est eclypsim, et pene in tertia
 <p xml:id="v-b298b" decls="#ocr"> 
 &blb;<hi>edente</hi> <rs>wilhelmo</rs> <rs>arndt</rs> 
 &blb;(ex codice <rs>musei britannici</rs>, <rs>kings</rs> 6. c <num value="2">ii</num>) 
-<note resp="#b"><hi>la</hi> relazione, contenuta in un codice del <num value="12">xii</num> secolo, scritto a <rs>venezia</rs>, non è di <rs>romualdo</rs>, ma di un autore contemporaneo ai fatti e ben informato.</note> 
+<note resp="#b" type="content"><hi>la</hi> relazione, contenuta in un codice del <num value="12">xii</num> secolo, scritto a <rs>venezia</rs>, non è di <rs>romualdo</rs>, ma di un autore contemporaneo ai fatti e ben informato.</note> 
 </p> 
 
 <p xml:id="v-b298c" decls="#ocr"> 

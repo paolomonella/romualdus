@@ -63,6 +63,14 @@
                     Used to mark words capitalized in the print edition, but not constituting
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
+                <tagUsage gi="note">
+                    With type="content": note on the text content.
+                    With type="graphic": note on glyphs or graphemes.
+                    With type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
+                    With type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
+                    With type="textcrit": note on textual critical matters.
+                    With type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
+                </tagUsage>
              </namespace>
          </tagsDecl>
         <listPrefixDef>
@@ -204,7 +212,7 @@ annos <num value="330">cccxxx</num>, postea <num value="700">dcc</num>. <rs>seth
 
 <p xml:id="g6.1-6.6" decls="#ocr"> 
 &glb;<rs>seth</rs> habens annos <num value="105">c&uu;</num> genuit <rs>enos</rs>, cui superuixit annos <num value="816">dcccx&uu;i</num> usque ad <num value="167">clx&uu;ii</num> 
-&glb;annum nati&uu;itates<note resp="#pm">Garufi mistakingly has -tes</note> <rs>lamech</rs>, porro <rs>septuaginta</rs> interpretes ante natum <rs>enos</rs> annos <num value="205">cc&uu;</num> postea 
+&glb;annum <choice><sic>nati&uu;itates</sic><corr type="typo">nati&uu;itatis</corr></choice> <rs>lamech</rs>, porro <rs>septuaginta</rs> interpretes ante natum <rs>enos</rs> annos <num value="205">cc&uu;</num> postea 
 &glb;posuere annos <num value="707">dcc&uu;ii</num>. <rs>enos</rs> interpretatur homo, de quo <rs>deus</rs> benedicitur, iste cepit 
 &glb;inuocare nomen <rs>domini</rs>, quia hominum est proprium, ut sue fragilitatis memores, inuocent 
 &glb;conditoris auxilium, eorum dumtaxat, qui in fide <rs>christi</rs>
@@ -221,7 +229,7 @@ uiuentes, filii resurrectionis sic
 </p> 
 
 <p xml:id="g6.11-6.13" decls="#ocr"> 
-&glb;<rs>cainan</rs> habens annos <num value="70">lxx</num> genuit <rs>malahelel</rs><note resp="#pm">Garufi mistakingly has Malahelel</note>, post cu&jj;us ortum uixit annos <num value="840">dcccxl</num> idest 
+&glb;<rs>cainan</rs> habens annos <num value="70">lxx</num> genuit <choice><sic><rs>malahelel</rs></sic><corr type="typo"><rs>malalehel</rs></corr></choice>, post cu&jj;us ortum uixit annos <num value="840">dcccxl</num> idest 
 &glb;usque ad <num value="179">clxxix</num> annum nati&uu;itatis <rs>noe</rs>; <rs>septuaginta</rs> interpretes ante natum <rs>malalehel</rs> 
 &glb;<num value="170">clxx</num> postea dixere <num value="740">dccxl</num>, secundum <rs>septuaginta</rs> annum <num value="995"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xc&uu;</num> &jj;uxta <rs>hebreos</rs> <num value="460"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lx</num>. 
 </p> 
@@ -305,7 +313,7 @@ fuerit, posteaque in hoc mundo <num value="20">xx</num> annis uixerit. <hi>et</h
 
 <p xml:id="g7.30-8.6" decls="#ocr"> 
 &glb;<hi>secunda</hi> seculi etate, prima huius diei, que est uicesima septima mensis secundi, egres&gd;sus 
-est <rs>noe</rs> de arca, in qua pauci, idest octo anime salue facte sunt per aquam, quod com&gd;memoras<note resp="#pm">mistake in garufi: commemoras for commemorans</note>
+est <rs>noe</rs> de arca, in qua pauci, idest octo anime salue facte sunt per aquam, quod <choice><sic>com&gd;memoras</sic><corr type="typo">com&gd;memorans</corr></choice>
 in epistola beatus apostolus <rs>petrus</rs> mirifice statim exponere curauit, cum sub&jj;un&gd;xit: 
 quos, et uos nunc similis forme sal&uu;os fecit baptisma non carnis depositio sordium, 
 &glb;sed conscientie bone interrogatio in <rs>deum</rs> per resurrectionem <rs>&jj;esu</rs> <rs>christi</rs>, qui est in dex&gd;tera 
@@ -347,7 +355,7 @@ seriem ad auctoritatem hebraicam castigassent, ablata una generatione <rs>cainan
 <p xml:id="g8.28-9.11" decls="#ocr"> 
 &glb;<rs>heber</rs> annos <num value="34">xxxi&uu;</num> genuit <rs>falech</rs>, cui superuixit annos <num value="430"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx</num> usque ad <num value="79">lxxix</num> an&gd;num 
 nati&uu;itatis <rs>esau</rs>, et <rs>iacob</rs>. <rs>septuaginta</rs> ante natum <rs>falech</rs> annos posuere <num value="144">c<choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice>i&uu;</num> po&gd;stea 
-<num value="330">cccxxx</num>. <rs>falech</rs> interpretatur di&uu;isio, cui propterea tale nomen<note resp="#pm">Mistake in Garufi: 'nomem' for 'nomen'.</note> imposuere parentes, quia 
+<num value="330">cccxxx</num>. <rs>falech</rs> interpretatur di&uu;isio, cui propterea tale <choice><sic>nomem</sic><corr type="typo">nomen</corr></choice> imposuere parentes, quia 
 &glb;tempore nati&uu;itatis ipsius, turris edificata, et terra per linguarum confusionem di&uu;isa est, 
 &glb;cu&jj;us di&uu;isionis <rs>arnobius</rs> rethor in expositionem psalmi <num value="104">ci&uu;</num> ita meminit: <rs>sem</rs> primogenito 
 &glb;<rs>noe</rs> pars facta est a <rs>perfida</rs>, et <rs>bactris</rs> usque in <rs>indiam</rs> longe, et<pb n="21v" facs="vat:28" ed="#a"/> usque <rs>rinocururis</rs>, que 
@@ -356,7 +364,7 @@ quadrigente et sex, non diuersarum linguarum, sed, ut dixi, diuersarum patriarum
 &glb;&uu;erbi gratia, cum una lingua latina sit, sub una lingua diuerse sunt patriae, <rs>apulorum</rs>, <rs>ca&gd;labrorum</rs>, 
 <rs>lucanorum</rs>, <rs>brutiorum</rs>, <rs>sampnitum</rs>, <rs>picenorum</rs>, <rs>tuscorum</rs>, ex his, atque hu&jj;us&gd;modi 
 similia si dicamus. <rs>cham</rs> uero filius secundus <rs>noe</rs> <rs>&lt;a&gt;rinocururis</rs> usque <rs>gadira</rs> 
-&glb;habens linguas sermone punico a parte <rs>garamantum</rs>, latinum a parte <rs>boree</rs>, barbaricum<note resp="#pm">Garufi prints 'barbaricum' after Bede.</note> 
+&glb;habens linguas sermone punico a parte <rs>garamantum</rs>, latinum a parte <rs>boree</rs>, barbaricum 
 &glb;a parte meridiei. <rs>etiopum</rs> et <rs>egyptiorum</rs> a barbaris interioribus uario sermone uiginti 
 &glb;duabus linguis in patriis <num value="300">ccc</num> nonaginta quattuor; <rs>&jj;afeth</rs> autem tertius a <rs>media</rs> usque ad 
 &glb;gadira ad <rs>boream</rs>: habet autem <rs>&jj;afeth</rs> flumen <rs>tigridem</rs>, qui diuidit <rs>mediam</rs>, et <rs>babilo&gd;niam</rs> 
@@ -388,7 +396,7 @@ eis regnante <rs>uizoues</rs>; secundum <rs>septuaginta</rs> <num value="3244">m
 
 <p xml:id="g9.22-9.24" decls="#ocr"> 
 &glb;<rs>nahor</rs> annos <num value="29">xxix</num> genuit <rs>thare</rs>, cui superuixit annos <num value="128">cxx&uu;iii</num>. <rs>septuaginta</rs> ante natum 
-&glb;<rs>thare</rs> ponunt annos <num value="79">lxxix</num> postea <num value="129">cxxix</num>. <hi>tunc</hi> <rs>assisiorum</rs><note resp="#pm">Garufi mistakingly has 'assisiorum'</note>, <rs>siciniorumque</rs> regnum nasci&gd;tur, 
+&glb;<rs>thare</rs> ponunt annos <num value="79">lxxix</num> postea <num value="129">cxxix</num>. <hi>tunc</hi> <choice><sic><rs>assisiorum</rs></sic><corr type="typo"><rs>assiriorum</rs></corr></choice>, <rs>siciniorumque</rs> regnum nasci&gd;tur, 
 his primum <rs>belo</rs>, illis <rs>agialeo</rs> regnante. 
 </p> 
 
@@ -581,7 +589,7 @@ in qua <rs>trous</rs> prius regnauit <num value="2559"><choice><orig>ii</orig><r
 &glb;<rs>deborra</rs> prophetissa annos <num value="40">xl</num> de tribu <rs>effraym</rs> <pb n="27r" facs="vat:33" ed="#a"/>cum <rs>barah</rs> de tribu <rs>neptalim</rs> cu&jj;us in 
 &glb;initio ducatus oppressit filios <rs>israel</rs> <rs>&jj;abin</rs> rex <rs>chanaan</rs> <num value="20">xx</num> annis qui regnabat in <rs>asor</rs>. <hi>sed</hi> 
 &glb;occiso ab <rs>israel</rs> principe militie eius <rs>sisara</rs>, prostratus tandem, ac humiliatus est. <hi>hoc</hi> 
-&glb;tempore <rs>miletus</rs> condita. <hi>et</hi> tunc <rs>apollo</rs> cytharam repperit<note resp="#pm">Garufi mistakingly prints repperlt</note> <num value="2730">mmdccxxx</num>. 
+&glb;tempore <rs>miletus</rs> condita. <hi>et</hi> tunc <rs>apollo</rs> cytharam <choice><sic>repperlt</sic><corr type="typo">repperit</corr></choice> <num value="2730">mmdccxxx</num>. 
 </p> 
 
 <p xml:id="g13.27-13.32" decls="#ocr"> 
@@ -630,7 +638,7 @@ quod usque ad <rs>alexandri</rs> <rs>magni</rs> tempora mansisse legimus <num va
 &glb;babetur, pro quo annos supplendo <rs>eusebius</rs> <rs>&jj;osue</rs> filio <rs>nun</rs>, <rs>samuheli</rs> et <rs>sauli</rs>, quorum annos 
 &glb;scriptura non dicit, plures annos, quam in <rs>&jj;oseppo</rs> legebat, annotauit, quatenus ab egressu 
 &glb;filiorum <rs>israhel</rs> ex <rs>egypto</rs>, usque ad edificationem templi <num value="480"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxx</num> annorum summam 
-&glb;scriptura predicat habere<note resp="#pm">Garufi mistakingly has hahere</note>. <rs>orosius</rs>: 
+&glb;scriptura predicat <choice><sic>hahere</sic><corr type="typo">habere</corr></choice>. <rs>orosius</rs>: 
 </p> 
 
 <p xml:id="g14.22-14.25" decls="#ocr"> 
@@ -681,7 +689,7 @@ annis circiter <num value="150">cl</num> <rs>ascanius</rs> <rs>enee</rs> filius 
 &glb;<rs>heli</rs> sacerdos anni <num value="40">xl</num>. <hi>in</hi> <rs>ebreorum</rs> libro <num value="40">xl</num> anni inueniuntur. <hi>in</hi> <rs>septuaginta</rs> autem 
 &glb;interpretatione <num value="20">xx</num>. <rs>hectoris</rs> filii <rs>ilium</rs> receperunt, expulsis <rs>antenoris</rs> posteris, <rs>heleno</rs> sibi 
 &glb;subsidium ferente. <rs>latinorum</rs> tertius <rs>siluius</rs> <rs>enee</rs> filius frater <rs>ascanii</rs> regnat annis <num value="29">xxix</num>, 
-&glb;quique post mortem patris editus ruri fuerat educatus, et <rs>siluii</rs>, posthumii<note resp="#pm"><rs>garufi</rs> has 'posthumii'; other manuscripts have 'post iunii'; both readings 'post iunii' and 'postumii' are equivalent in terms of vertical lines: all depends on how these lines are connected to create different graphemes.</note> nomen accepit, 
+&glb;quique post mortem patris editus ruri fuerat educatus, et <rs>siluii</rs>, posthumii nomen accepit, 
 &glb;a quo omnes <rs>albanorum</rs> reges <rs>siluii</rs> uocati sunt. <hi>reges</hi> <rs>sicioniis</rs> defecerunt, qui ab <rs>egealeo</rs> 
 &glb;usque ad <rs>zeuxippum</rs>, regnauerunt annis nongentis <num value="62">lxii</num>. <hi>post</hi> quos sacerdotes <rs>carnii</rs> con&gd;stituti 
 sunt <num value="2800"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dccc</num>. 
@@ -800,7 +808,7 @@ ab <rs>hocozia</rs> ad <rs>heliam</rs> missus, cui et petitus percepit<pb n="31v
 <p xml:id="g17.14-17.17" decls="#ocr"> 
 &glb;<rs>azarias</rs> filius <rs>&jj;oram</rs> anno primo. <hi>hunc</hi> <rs>azariam</rs> cum filio <rs>&jj;oas</rs>, et nepote <rs>amasia</rs> ob 
 &glb;enormitatem scelerum, et quia nec patrem, filiumue quispiam eorum bonum habebat, inde 
-&glb;eos <rs>matheus</rs> euangelista a <rs>domini</rs> <rs>saluatoris</rs> genealogia se cludit<note resp="#pm">Garufi has se cludit, but I think it is a typo for secludit</note>. <rs>&jj;o&jj;adab</rs> filius <rs>rechab</rs> 
+&glb;eos <rs>matheus</rs> euangelista a <rs>domini</rs> <rs>saluatoris</rs> genealogia se cludit. <rs>&jj;o&jj;adab</rs> filius <rs>rechab</rs> 
 &glb;clarus sacerdos habetur, qui uixit annis <num value="130">cxxx</num> <num value="3071"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>lxxi</num>. 
 </p> 
 
@@ -926,7 +934,7 @@ ab hoc conductus <rs>thegath</rs> <rs>falasar</rs> rex <rs>assiryorum</rs>, et <
 
 <p xml:id="g19.25-19.35" decls="#ocr"> 
 &glb;<hi>anno</hi> post euersionem <rs>tro&jj;e</rs> <num value="418"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>x&uu;iii</num> si&uu;e, ut placet <rs>orosio</rs>, annis <num value="404"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice><choice><orig>iiii</orig><reg type="numeral">i&uu;</reg></choice></num>. <hi>olym<pb n="34v" facs="vat:41" ed="#a"/>&gd;piade</hi> autem sexta, que quinto demum anno, quatuor in medio expletis, apud <rs>helydem</rs> <rs>grecie</rs> 
-&glb;ciuitatem <rs>agone</rs>, et ludis exercere solet. <rs>urbi</rs> <num value="11">xi</num> kalendas<note resp="#pm">Abbreviated in Garufi as kal.</note> ma&jj;as, ante sex annos quam decem 
+&glb;ciuitatem <rs>agone</rs>, et ludis exercere solet. <rs>urbi</rs> <num value="11">xi</num> kalendas<note type="graphic">Abbreviated in Garufi as kal.</note> ma&jj;as, ante sex annos quam decem 
 &glb;tribus <rs>israhel</rs> a <rs>sennacherib</rs> rege <rs>chaldeorum</rs> transferrentur, <rs>roma</rs> in <rs>italia</rs> condita in 
 &glb;monte <rs>palatino</rs> a <rs>remo</rs> et <rs>romulo</rs> geminis auctoribus natis annos <num value="18">x&uu;iii</num> filii <rs>rehe</rs> <rs>siluie</rs>, 
 &glb;que erat filia <rs>numitoris</rs> fratris regis <rs>amulii</rs> uirgo <rs>&uu;estalis</rs>, sed constuprata consualibus ludis. 
