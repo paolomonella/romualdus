@@ -56,6 +56,18 @@
                 The text is now ready to be collated upon individual manuscripts.
             </p>
         </editorialDecl>
+        <editorialDecl>
+            <quotation marks="some">
+                <p>Quotation marks were always represented by double quotation marks, open and closed, in the print edition.</p>
+                <p>Those marks have been retained when they meant a quotation or rewording of a specific source
+                    or manuscript.</p>
+                <p>They have not been retained when I marked the quote with <gi>said</gi>.</p>
+                <p>When I mark a passage with <gi>said</gi>, it is implied that the print edition had double quotation
+                    marks, open and closed, and that I am not retaining them. However, I am marking some passages with
+                    <gi>said</gi> though the source print edition had no quotation marks. In these cases, I am adding
+                    @rend="none"  to <gi>said</gi>.</p>
+            </quotation>
+        </editorialDecl>
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
                 <tagUsage gi="hi">
@@ -999,13 +1011,13 @@ pergens, quoscumque poterat suscipiebat, susceptos
 &blb;facere studebat, quibus unicuique priuatim multa tribuebat et 
 &blb;plurima iurando promittebat. <hi>ceteris</hi> autem militibus quibus 
 &blb;adhuc animum suum aperire timebat nil interim tribuebat, sed 
-&blb;eos sepe sic alloquebatur dicens: "<hi>libenter</hi> uobis ego darem si 
+&blb;eos sepe sic alloquebatur dicens: <said><hi>libenter</hi> uobis ego darem si 
 &blb;imperator, uelud ipse promiserat mihi thesauros mitteret, sepe 
-&blb;enim propter hoc ad eum direxi et quia non misit ualde doleo". 
+&blb;enim propter hoc ad eum direxi et quia non misit ualde doleo"</said>. 
 &blb;<hi>qui</hi> ut se suis auditoribus quasi ueridicum redderet, uasa pro&bd;pria 
-et uestes quibus utebatur quibusdam largiebatur dicens: "<hi>si</hi> 
+et uestes quibus utebatur quibusdam largiebatur dicens: <said><hi>si</hi> 
 &blb;esset mihi posse, tam prudentes uiros uelut estis, de meis uobis 
-&blb;ego largiendo ditissimos facerem". <hi>et</hi> hec incessanter machina&bd;batur 
+&blb;ego largiendo ditissimos facerem</said>. <hi>et</hi> hec incessanter machina&bd;batur 
 ut omnium ad se militum uoluntates subtraheret. <hi>quibus</hi> 
 <pb n="98" ed="#b"/> 
 &blb;etiam locutus est: "<hi>ibo</hi> ad imperatorem ego pro uobis loquens, ut 
@@ -1024,12 +1036,12 @@ uos omnes ditabo". <hi>quorum</hi> omnium uoluntates dum sue
 &blb;uoluntati uidit concordes, statim cum omni exercitu armato 
 &blb;super <rs>constantinopolim</rs> perrexit. <hi>imperator</hi> quippe supra quam 
 &blb;credi potest stupefactus, se et ciuitatem, prout potuit muniuit. 
-&blb;<rs>alexius</rs> autem quendam magistrum militum, imperatoris <rs>arno&bd;nem</rs> 
+&blb;<rs>alexius</rs> autem quendam magistrum militum imperatoris, <rs>arno&bd;nem</rs> 
 nomine, ex genere <rs>alamannorum</rs>, promissionibus magnis 
 &blb;seduxit ut sibi ciuitatem proderet. <hi>qui</hi> dolis acquiescens per 
 &blb;noctem aperuit sibi portam, que <rs>uulgarorum</rs> dicitur. <rs>alexius</rs> igi&bd;tur 
 cum omni christianorum et paganorum exercitu ciuitatem 
-&blb;ingressus nocte die <rs>iouis</rs>, que cena <rs>domini</rs> dicitur totam exer&bd;citui 
+&blb;ingressus nocte die <rs>iouis</rs>, que cena <rs>domini</rs> dicitur, totam exer&bd;citui 
 suo predam ciuitatis triduo, quem admodum spoponderat, 
 &blb;dono tribuit. <hi>qui</hi> nulli indulgendo hostiliter queque inuenire po&bd;terant 
 uastantes, depredati sunt. <hi>non</hi> solum autem, uerum etiam 
@@ -1044,8 +1056,8 @@ imperium arripuit. <hi>ut</hi> autem <rs>dominice</rs> resurrectionis die
 <pb n="100" ed="#b"/> 
 &blb;se non quasi cupidum imperii magnatibus ostenderet, constituit 
 &blb;secum in imperio <rs>michaelem</rs> filium predicti <rs>michaeli</rs> imperato&bd;ris, 
-dicens omnibus: <hi>non</hi> propter me sed propter hunc qui iure 
-&blb;in solio residere debet hoc quod factum est peregi. <hi>postquam</hi> 
+dicens omnibus: <said rend="none"><hi>non</hi> propter me sed propter hunc qui iure 
+&blb;in solio residere debet hoc quod factum est peregi</said>. <hi>postquam</hi> 
 &blb;<rs>alexius</rs>, qui et <rs>commiano</rs> dictus est, imperialia sibi iura compo&bd;suit, 
 statim cum ingenti copia exercitus undique collecta una 
 &blb;cum imperatore quem sibi quasi socium statuerat, contra ducem 
@@ -1053,8 +1065,8 @@ statim cum ingenti copia exercitus undique collecta una
 &blb;suis ad dimicandum, ipse imperator tuto in loco positus premi&bd;sit 
 in prima acie eum quem secum imperatorem fecerat, ut in 
 &blb;bello interiret, nam diu socium eum habere nolebat, solus enim 
-&blb;imperare cupiebat. <hi>quid</hi> multa? <rs>commisso</rs> prelio <rs>robbertus</rs> 
-&blb;<rs>guiscardus</rs> imperatorem fugauit ac deuicit. <rs>filius</rs> autem <rs>mi&bd;chaelis</rs> 
+&blb;imperare cupiebat. <hi>quid</hi> multa? <hi>commisso</hi> prelio <rs>robbertus</rs> 
+&blb;<rs>guiscardus</rs> imperatorem fugauit ac deuicit. <hi>filius</hi> autem <rs>mi&bd;chaelis</rs> 
 imperatoris, non diu imperator, statim in primo conflictu 
 &blb;interiit. <hi>in</hi> ipsa namque pugna imperator <num value="60">lx</num> milia milites et <num value="10">x</num> 
 &blb;milia sagittarios <rs>turchos</rs> habuit. <hi>dux</hi> uero <rs>robbertus</rs> habuit mi&bd;lites 
@@ -1118,7 +1130,7 @@ cepit maximam partem <rs>urbis</rs>, hostiliter incendens et uastans
 &blb;a palatio <rs>laterani</rs> usque castellum sancti <rs>angeli</rs>, ubi papa <rs>grego&bd;rius</rs> 
 oppugnabatur. <rs>romani</rs> enim simul cum imperatore erant in&bd;sidiantes 
 <rs>gregorio</rs> pape. <hi>tunc</hi> dux extraxit eundem papam de 
-&blb;ipso castello, duxtique eum secum usque <rs>salernum</rs>. <hi>inter</hi> hec 
+&blb;ipso castello, <choice><sic>duxtique</sic><corr type="typo">duxitque</corr></choice> eum secum usque <rs>salernum</rs>. <hi>inter</hi> hec 
 &blb;<rs>boamundus</rs> filius ducis absente patre duo cum <rs>alexio</rs> imperato&bd;re 
 prelia gessit, quorum unum <rs>boamundus</rs> ipse uiriliter uicit, al&bd;terum 
 uero imperator uicit, non tamen ui sed insidiose agens. 
@@ -1130,7 +1142,6 @@ uero imperator uicit, non tamen ui sed insidiose agens.
 &blb;<rs>robbertus</rs> collecto agmine iterato in ultramarinas partes statuit 
 &blb;proficisci. <hi>quod</hi> cum imperatori <rs>alexio</rs> compertum esset, suum 
 &blb;direxit exercitum cum multitudinem nauium simul eum exerci<pb n="104" ed="#b"/>tu 
-<!-- in this page 104 of bonetti there are three 'v' instead of 'u' --> 
 &blb;<rs>uenecianorum</rs>, ut maris iter duci prohiberetur. <hi>contra</hi> quos 
 &blb;dux <rs>robbertus</rs> una cum filio suo <rs>rogerio</rs> cum na&uu;ibus suis non 
 &blb;signiter progressus, cum eis acriter conflixit mense <hi>no&uu;embris</hi>, 

@@ -57,6 +57,18 @@
                 The text is now ready to be collated upon individual manuscripts.
             </p>
         </editorialDecl>
+        <editorialDecl>
+            <quotation marks="some">
+                <p>Quotation marks were always represented by double quotation marks, open and closed, in the print edition.</p>
+                <p>Those marks have been retained when they meant a quotation or rewording of a specific source
+                    or manuscript.</p>
+                <p>They have not been retained when I marked the quote with <gi>said</gi>.</p>
+                <p>When I mark a passage with <gi>said</gi>, it is implied that the print edition had double quotation
+                    marks, open and closed, and that I am not retaining them. However, I am marking some passages with
+                    <gi>said</gi> though the source print edition had no quotation marks. In these cases, I am adding
+                    @rend="none"  to <gi>said</gi>.</p>
+            </quotation>
+        </editorialDecl>
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
                 <tagUsage gi="hi">
