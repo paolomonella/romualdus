@@ -19,10 +19,15 @@ p {
 
 .note:after { content: "}" }
 
-/* The next 3 lines are limited to the AL because I don't want quote marks to appear in the GL visualization */
+/* The next lines are limited to the AL (.acell) because I don't want quote marks to appear in the GL visualization */
 td.acell span.title:before { content: "“" }
 td.acell span.title:after { content: "”" }
 td.acell span.title {
+        text-transform: capitalize;
+}
+td.acell span.said:before { content: "“" }
+td.acell span.said:after { content: "”" }
+td.acell span.said {
         text-transform: capitalize;
 }
 

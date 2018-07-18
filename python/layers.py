@@ -65,8 +65,8 @@ def extractLayers (siglum, baretext=False):
             x.text = '[' + pcdict[tag] + pbcbn + ']'
             x.set('title', pbcbn)
     
-    # Transform some TEI tags to HTML <span class="meta xml-tag-name">
-    for tag in ['rs', 'choice', 'abbr', 'expan', 'pb', 'cb', 'note', 'title', 'orig', 'reg', 'sic', 'corr']:
+    # Transform some TEI tags to HTML <span class="xml-tag-name"> or <span class="meta xml-tag-name">
+    for tag in ['rs', 'choice', 'abbr', 'expan', 'pb', 'cb', 'note', 'title', 'orig', 'reg', 'sic', 'corr', 'said']:
         for x in alltext.findall('.//h:' + tag, ns):
             l = etree.QName(x).localname
             if tag in constants.metatextlist:     # Add class "metatext" to those tags that don't belong to the medieval text
