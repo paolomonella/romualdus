@@ -83,6 +83,10 @@
                     With type="textcrit": note on textual critical matters.
                     With type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
                 </tagUsage>
+                <tagUsage gi="surplus">
+                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt;
+                    I am omitting those brackets in this file.
+                </tagUsage>
              </namespace>
          </tagsDecl>
         <listPrefixDef>
@@ -375,7 +379,7 @@ nati&uu;itatis <rs>esau</rs>, et <rs>iacob</rs>. <rs>septuaginta</rs> ante natum
 quadrigente et sex, non diuersarum linguarum, sed, ut dixi, diuersarum patriarum. 
 &glb;&uu;erbi gratia, cum una lingua latina sit, sub una lingua diuerse sunt patriae, <rs>apulorum</rs>, <rs>ca&gd;labrorum</rs>, 
 <rs>lucanorum</rs>, <rs>brutiorum</rs>, <rs>sampnitum</rs>, <rs>picenorum</rs>, <rs>tuscorum</rs>, ex his, atque hu&jj;us&gd;modi 
-similia si dicamus. <rs>cham</rs> uero filius secundus <rs>noe</rs> <rs>&lt;a&gt;rinocururis</rs> usque <rs>gadira</rs> 
+similia si dicamus. <rs>cham</rs> uero filius secundus <rs>noe</rs> <rs><surplus resp="#g">a</surplus>rinocururis</rs> usque <rs>gadira</rs> 
 &glb;habens linguas sermone punico a parte <rs>garamantum</rs>, latinum a parte <rs>boree</rs>, barbaricum 
 &glb;a parte meridiei. <rs>etiopum</rs> et <rs>egyptiorum</rs> a barbaris interioribus uario sermone uiginti 
 &glb;duabus linguis in patriis <num value="300">ccc</num> nonaginta quattuor; <rs>&jj;afeth</rs> autem tertius a <rs>media</rs> usque ad 
