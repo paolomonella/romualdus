@@ -82,6 +82,10 @@
                     With type="textcrit": note on textual critical matters.
                     With type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
                 </tagUsage>
+                <tagUsage gi="surplus">
+                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt;
+                    I am omitting those brackets in this file.
+                </tagUsage>
              </namespace>
          </tagsDecl>
         <listPrefixDef>
@@ -336,7 +340,7 @@ rebellauit contra <rs>carolum</rs> regem consilioque habito cum
 &blb;itaque <rs>carolus</rs> rex cum uxore sua et positus in custodia <rs>aurelia&bd;nis</rs> 
 ciuitate in turri", in qua uitam finiuit. <hi>habuit</hi> autem ex eadem 
 &blb;uxore filios duos <rs>ludouicum</rs> et <rs>carolum</rs>. <rs>ugo</rs> itaque dux re&bd;gnum 
-sibi <rs>francorum</rs> arripuit, <choice><sic>contituitque</sic><corr type="typo">constituitque</corr></choice> regem filium suum 
+sibi <rs>francorum</rs> arripuit, <choice><sic>contituitque</sic><corr resp="#pm" type="typo">constituitque</corr></choice> regem filium suum 
 &blb;nomine <rs>robbertum</rs>. <hi>sicque</hi> defecit prosapia regum a <rs>carolo</rs> im&bd;peratore 
 descendentium et ex tunc <rs>francorum</rs> reges regali tan&bd;tum 
 honore contenti imperii dignitatem amiserunt. "<hi>in</hi> illis die&bd;bus 
@@ -597,7 +601,7 @@ papatum <rs>iohannes</rs> <rs>sabinensis</rs> episcopus cui nomen <rs>si&bd;lues
 &blb;diem obiit anno <num value="7">&uu;ii</num> eius imperii. <hi>cui</hi> <rs>michael</rs> qui <rs>etheriarchis</rs> di&bd;cebatur 
 successit cum <rs>zoy</rs> imperatrice. <hi>eodem</hi> anno mense <hi>fe&bd;bruarii</hi> 
 <rs>normanni</rs> ingressi iam in <rs>apuliam</rs>, ter uno die cum <rs>gre&bd;cis</rs> 
-graui prelio <choice><sic>dimicarum</sic><corr type="typo">dimicarunt</corr></choice> inter <rs>aufidum</rs> amnem et <rs>oliuentem</rs>, 
+graui prelio <choice><sic>dimicarum</sic><corr resp="#pm" type="typo">dimicarunt</corr></choice> inter <rs>aufidum</rs> amnem et <rs>oliuentem</rs>, 
 &blb;et <rs>normanni</rs> uictores extiterunt. <hi>in</hi> ipso quidem prelio fuit <rs>dro&bd;go</rs> 
 <rs>normannorum</rs> comes et quattuor ex fratribus eius. <hi>in</hi> ipso 
 &blb;quoque anno <rs>chunradus</rs> imperator defunctus est anno eius im&bd;perii 
@@ -688,7 +692,7 @@ in mense <hi>octobris</hi> et in mense <hi>decembris</hi> depopulaue&bd;runt
 <hi>anno</hi> domini <num value="1051">ml&jj;</num> indictione <num value="3">ii&jj;</num> mense <hi>augusti</hi> <rs>drogo</rs> <rs>nor&bd;mannorum</rs> 
 comes defunctus est. "<hi>fuitque</hi> uir egregius, pius, stre&bd;nuus 
 atque famosus, qui propter animi mansuetudinem et iusti&bd;cie 
-<choice><sic>sertatam</sic><corr type="typo">seruatam</corr></choice> equitatem a cunctis est dilectus". <hi>cui</hi> <rs>unfridus</rs> fra&bd;ter 
+<choice><sic>sertatam</sic><corr resp="#pm" type="typo">seruatam</corr></choice> equitatem a cunctis est dilectus". <hi>cui</hi> <rs>unfridus</rs> fra&bd;ter 
 eius <rs>normannorum</rs> comes successit, tenuitque potestatem 
 &blb;ipsius honoris per annos septem. 
 </p> 
@@ -891,7 +895,7 @@ cum aliis eorum ministris et capita omnium predictorum
 &blb;ad imperatorem deportata sunt". <hi>eodem</hi> anno <rs>robbertus</rs> dux 
 &blb;"cepit <rs>barum</rs> ciuitatem longa obsidione fatigatam, indeque 
 &blb;mouens exercitum, <rs>siciliam</rs> properauit obseditque" "<rs>panormum</rs>, 
-&blb;<supplied resp="#b">per terram et per mare, duxitque ante eam naues <num value="58"><choice><orig>58</orig><reg type="numeral">luiii</reg></choice></num>58</supplied> ditissi&bd;mam 
+&blb;<supplied resp="#b">per terram et per mare, duxitque ante eam naues <num value="58"><choice><orig>58</orig><reg type="numeral">luiii</reg></choice></num></supplied> ditissi&bd;mam 
 <rs>sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam an&bd;no 
 dominice incarnationis <num value="1071">mlxx&jj;</num>, indictione <supplied resp="#b"><num value="10">x</num></supplied>. <hi>et</hi> exinde por&bd;tas 
 ferreas et columpnas marmoreas quam plures cum capitibus 
@@ -1130,7 +1134,7 @@ cepit maximam partem <rs>urbis</rs>, hostiliter incendens et uastans
 &blb;a palatio <rs>laterani</rs> usque castellum sancti <rs>angeli</rs>, ubi papa <rs>grego&bd;rius</rs> 
 oppugnabatur. <rs>romani</rs> enim simul cum imperatore erant in&bd;sidiantes 
 <rs>gregorio</rs> pape. <hi>tunc</hi> dux extraxit eundem papam de 
-&blb;ipso castello, <choice><sic>duxtique</sic><corr type="typo">duxitque</corr></choice> eum secum usque <rs>salernum</rs>. <hi>inter</hi> hec 
+&blb;ipso castello, <choice><sic>duxtique</sic><corr resp="#pm" type="typo">duxitque</corr></choice> eum secum usque <rs>salernum</rs>. <hi>inter</hi> hec 
 &blb;<rs>boamundus</rs> filius ducis absente patre duo cum <rs>alexio</rs> imperato&bd;re 
 prelia gessit, quorum unum <rs>boamundus</rs> ipse uiriliter uicit, al&bd;terum 
 uero imperator uicit, non tamen ui sed insidiose agens. 
@@ -1469,7 +1473,7 @@ illum excepit in ecclesia beati <rs>petri</rs>. <hi>rex</hi> autem suo&bd;rum
 militum caterua stipatus, post pacis osculum benedictio&bd;nemque 
 ab eo acceptam, dum ab eodem papa quod ipse per le&bd;gatos 
 sibi promiserat, optinere se non posse uideret, cepit ipsum 
-&blb;papam cum <choice><sic>omnnibus</sic><corr type="typo">omnibus</corr></choice> qui cum eo illic erant, atque per duos 
+&blb;papam cum <choice><sic>omnnibus</sic><corr resp="#pm" type="typo">omnibus</corr></choice> qui cum eo illic erant, atque per duos 
 &blb;menses in custodia habere fecit, propter inuestituram episcopa&bd;tus 
 per anulum et uirgam quam rex petebat. <hi>et</hi> papa predeces&bd;soris 
 sui <rs>gregorii</rs> cognomento <rs>ildeprandi</rs>, qui hoc inchoauerat 
@@ -1546,7 +1550,7 @@ ducatus, quemadmodum <rs>gregorius</rs> papa concessit et tradidit
 &blb;<rs>melfia</rs>, et sicut idem <rs>paschalis</rs> papa concessit et tradidit eidem 
 &blb;duci <rs>roggerio</rs> apud sanctum <rs>trophimenem</rs> per illud idem do&bd;num 
 atque consensum. <hi>in</hi> predicta quidem synodo <rs>landulfus</rs> 
-&blb;<rs>beneuentanus</rs> archiepiscopus ab ordine <choice><sic>pontificalis</sic><corr type="typo">pontificali</corr></choice> deiectus est 
+&blb;<rs>beneuentanus</rs> archiepiscopus ab ordine <choice><sic>pontificalis</sic><corr resp="#pm" type="typo">pontificali</corr></choice> deiectus est 
 &blb;eo quod inobediens pape fuit, quique non post multum tempo&bd;ris 
 largito munere in sede sua ab eodem papa restitutus est. 
 &blb;<hi>eodem</hi> anno mense <hi>decembris</hi> in <rs>syria</rs> ante natalem <rs>domini</rs> 
@@ -1689,7 +1693,7 @@ frater eius successit in honore principatus ipsius. <hi>mense</hi>
 &blb;deuenit liggius homo pape <rs>calixti</rs> per directum contra omnes 
 &blb;homines. <hi>et</hi> ipse papa statim eidem duci donauit et concessit ac 
 &blb;per uexillum tradidit omnem terram ipsius ducis cum toto hono&bd;re 
-ducatus ipsius dicens: "<hi>ad</hi> honorem <rs>dei</rs> et beati <rs>petri</rs> aposto&bd;lorum 
+ducatus ipsius dicens: <said><hi>ad</hi> honorem <rs>dei</rs> et beati <rs>petri</rs> aposto&bd;lorum 
 principis nec non et <rs>pauli</rs>, fidelitatem quoque <rs>romani</rs> 
 &blb;pontificatus et nostram nostrorumque successorum canonice 
 &blb;intrantium, donamus et concedimus tibi terram et omnem hono&bd;rem, 
@@ -1697,7 +1701,7 @@ quemcunque nostri predecessores, uidelicet papa <rs>nicolaus</rs>
 &blb;et <rs>alexander</rs> atque <rs>gregorius</rs>, donauerunt olim <rs>robberto</rs> <rs>gui&bd;scardo</rs> 
 auo tuo ac deinde <rs>urbanus</rs> papa et <rs>paschalis</rs> eius suc&bd;cessor 
 donauerunt duci <rs>roggerio</rs> patri tuo, idemque <rs>paschalis</rs> 
-&blb;postea atque <rs>gelasius</rs> papa donauerunt tibi". <hi>eodem</hi> uero men&bd;se 
+&blb;postea atque <rs>gelasius</rs> papa donauerunt tibi</said>. <hi>eodem</hi> uero men&bd;se 
 idem papa <rs>calixtus</rs> <rs>troiam</rs> uenit. <hi>audiensque</hi> itaque <rs>willel&bd;mus</rs> 
 dux eiusdem pontificis aduentum obuius festinanter extra 
 &blb;ciuitatem aduenit cum primatibus suis. <hi>cui</hi> uice stratoris ipse 
@@ -1717,8 +1721,8 @@ una cum <rs>constancia</rs> regina et <rs>tancredo</rs> obsederunt castel&bd;lum
 
 
 <p xml:id="g212.1-212.4" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="1121">mcxx&jj;</num> indictione <num value="14">x<choice><orig>iii&jj;</orig><reg type="numeral">i&uu;</reg></choice></num> &lt;men&bd;se 
-<hi>iunii</hi>&gt; <rs>calixtus</rs> papa cum multitudine armatorum obsedit 
+&blb;<hi>anno</hi> dominice incarnationis <num value="1121">mcxx&jj;</num> indictione <num value="14">x<choice><orig>iii&jj;</orig><reg type="numeral">i&uu;</reg></choice></num> <surplus resp="#b">men&bd;se 
+<hi>iunii</hi></surplus> <rs>calixtus</rs> papa cum multitudine armatorum obsedit 
 &blb;<rs>gregorium</rs> papam, cognomento <rs>burdinum</rs>, qui secesserat in 
 &blb;ciuitate <rs>sutri</rs>; ab obsidione <rs>callixtus</rs> papa destitit, donec <rs>bur&bd;dinum</rs> 
 cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs> 
@@ -1755,7 +1759,8 @@ dimittitur.
 </p>
 
 
-<p xml:id="g213.1-214.11" decls="#ocr">
+<p xml:id="g213.1-213.8" decls="#ocr">
+<note resp="#pm" type="segmentation">Paragraphs with id "g213.1-213.8" and "g213.8-214.11" do not correspond to a paragraph in Garufi: Garufi's paragraph runs from page 213 line 1 to page 214 line 11 without interruptions. I broke that paragraph into two in this file because manuscript <hi>a</hi> has an addition in the middle of it.</note>
 <hi>anno</hi> dominice incarnationis <num value="1125">mcxx&uu;</num> indictione <num value="4">i&uu;</num>. <hi>huic</hi> suc&bd;cessit 
 <rs>honorius</rs> secundus natione <rs>lombardus</rs>, prius archidiaco&bd;nus 
 <rs>bononiensis</rs>, post cardinalis, deinde episcopus <rs>hostiensis</rs>, 
@@ -1769,12 +1774,16 @@ dimittitur.
 &blb;suam ab eis quodammodo habebatur contemptui, qui inter ip&bd;sum 
 et <rs>roggerium</rs> comitem <rs>sicilie</rs> liggium hominem eius et 
 <pb n="128" ed="#b"/> 
-&blb;patruum consobrinum, discordie materiam ministrabant. <hi>cum</hi>&bd;que 
+&blb;patruum consobrinum, discordie materiam ministrabant.
+</p>
+
+<p xml:id="g213.8-214.11" decls="#ocr">
+<hi>cum&bd;que</hi> 
 inter predictum ducem et comitem sepe esset pax et con&bd;cordia 
 reformata, ipsi inter eos guerram et discordiam innoua&bd;bant. 
 <hi>et</hi> quia predictus dux homo erat liberalis et largus et que&bd;cumque 
 habere poterat militibus erogabat, necessitate coactus 
-&blb;primo <rs>calabriam</rs> pro sexaginta milibus bisantiorum prephato 
+&blb;primo <rs>calabriam</rs> pro sexaginta milibus <rs>bisantiorum</rs> prephato 
 &blb;comiti in pignore posuit. <hi>postea</hi> mediam ciuitatem <rs>panormi</rs>, que 
 &blb;ei iure hereditario pertinebat, illi uendidit. <hi>postremo</hi> cum de 
 &blb;uxore sua filium habere non posset, recepta a prenominato 
@@ -1804,12 +1813,17 @@ ciuitate ab <rs>alfano</rs> <rs>caputaquensi</rs> episcopo est unctus in
 </p> 
 
 
-<p xml:id="g214.12-215.3" decls="#ocr"> 
+<p xml:id="g214.12-214.14" decls="#ocr"> 
 &blb;"<hi>anno</hi> <rs>domini</rs> <num value="1127">mcxx&uu;ii</num> indictione <num value="6">&uu;i</num> mense <hi>septembris</hi> 
 &blb;<rs>boamundus</rs> iuuenis transfretauit in <rs>antiochiam</rs>, et factus est 
 &blb;princeps in loco patris sui, et omnes ciuitates suas <rs>apulie</rs> comi&bd;ti 
-domno <rs>alexandro</rs> consanguineo sui reliquid, ut uice sua eis 
-&blb;uteretur. <hi>hoc</hi> anno <rs>rogerius</rs> comes <rs>sicilie</rs> excommunicatur ab 
+domno <rs>alexandro</rs> consanguineo sui <choice><sic>reliquid</sic><corr resp="#pm" type="typo">reliquit</corr></choice>, ut uice sua eis 
+&blb;uteretur.
+</p>
+
+
+<p xml:id="g214.14-215.3" decls="#ocr"> 
+<hi>hoc</hi> anno <rs>rogerius</rs> comes <rs>sicilie</rs> excommunicatur ab 
 <pb n="130" ed="#b"/> 
 &blb;<rs>honorio</rs> papa quia non permittebat ut episcopi <rs>sicilie</rs> ueni&bd;rent 
 <rs>romam</rs>. <hi>denuo</hi> excommunicatur ab eodem papa eo quod 
@@ -1817,12 +1831,17 @@ domno <rs>alexandro</rs> consanguineo sui reliquid, ut uice sua eis
 </p>
 
 
-<p xml:id="g216.1-217.12" decls="#ocr">
+<p xml:id="g216.1-217.1" decls="#ocr">
 <hi>altero</hi> uero anno cum magno exercitu <rs>apuliam</rs> intrauit. <hi>papa</hi> 
 &blb;autem <rs>honorius</rs>, cognito quod prephatus dux auctoritate sua 
 &blb;uellet sibi ducatum <rs>apulie</rs> usurpare, cuius inuestitura et domi&bd;nium 
 sibi predecessorum suorum iure legitimo pertinebat, <rs>apu&bd;liam</rs> 
-ingressus cum <rs>robberto</rs> <rs>capuano</rs> principe, <rs>raydulfo</rs> comi&bd;te 
+ingressus cum <rs>robberto</rs> <rs>capuano</rs> principe,
+</p>
+
+
+<p xml:id="g217.1-217.12" decls="#ocr">
+<rs>raydulfo</rs> comi&bd;te 
 <rs>ayrole</rs> cognato predicti ducis, cum <rs>conuersanensibus</rs>, <rs>gri&bd;moaldo</rs> 
 principe <rs>barensi</rs>, et aliis baronibus <rs>apulie</rs>, contra eum 
 &blb;uenit ut eum de <rs>apulia</rs> expelleret. <hi>dux</hi> uero <rs>rogerius</rs>, uir erudi&bd;tus 
@@ -1864,7 +1883,7 @@ in sua potestate recepit.
 
 
 <p xml:id="g219.3-219.4" decls="#ocr"> 
-<note resp="#pm" type="segmentation"><rs>bonetti</rs> and <rs>garufi</rs> insert this paragraph at different points of the text</note> 
+<note resp="#pm" type="segmentation"><rs>bonetti</rs>, <rs>garufi</rs> and manuscript <hi>a</hi> insert this paragraph at different points of the text</note> 
 &blb;"<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bello 
 <pb n="132" ed="#b"/> 
 &blb;iusta <rs>damascum</rs> occubuit, cuius corpus sine capite fertur esse 
@@ -2027,7 +2046,7 @@ fame afflictum, ignem in turrem missum suam <rs>tarenti</rs>
 
 
 <p xml:id="g219.8-222.4" decls="#ocr"> 
-&blb;<hi>quo</hi> defuncto scisma in <choice><sic><rs>romama</rs></sic><corr type="typo"><rs>romana</rs></corr></choice> ecclesia exortum est, nam 
+&blb;<hi>quo</hi> defuncto scisma in <choice><sic><rs>romama</rs></sic><corr resp="#pm" type="typo"><rs>romana</rs></corr></choice> ecclesia exortum est, nam 
 &blb;maior et sanior pars cardinalium <rs>gregorium</rs> natione <rs>romanum</rs> 
 &blb;diaconum cardinalem <rs>sancti angeli</rs> in pontificem elegerunt qui 
 &blb;et <rs>innocentius</rs> secundus est appellatus. <hi>alia</hi> uero pars cardina&bd;lium 
@@ -4161,7 +4180,7 @@ pacem regis <rs>sicilie</rs> usque ad annos quindecim et usque ad sex
 &blb;annos <rs>lombardorum</rs> treuguas concederet, si papa cuidam sue 
 &blb;petitioni preberet assensum. <hi>quam</hi> tamen petitionem ei &uu;olebat 
 &blb;penitus esse incognitam, sed duobus cardinalibus, quos ipse 
-&blb;e&lt;c&gt;legisset, uolebat illam diligenter exponi, ea tamen conditio&bd;ne, 
+&blb;e<surplus resp="#b">c</surplus>legisset, uolebat illam diligenter exponi, ea tamen conditio&bd;ne, 
 quod si cardinales electi petitione cognita de ea complenda 
 &blb;consilium pape tribuerent, ipse eam sine dilatione perficeret. 
 </p> 
@@ -4210,7 +4229,7 @@ iustitiam faceret.
 
 
 <p xml:id="g279.3-279.15" decls="#ocr"> 
-&blb;<choice><sic><hi>postqum</hi></sic><corr type="typo"><hi>postquam</hi></corr></choice> autem hic modus petitionis implende per episco&bd;pum 
+&blb;<choice><sic><hi>postqum</hi></sic><corr resp="#pm" type="typo"><hi>postquam</hi></corr></choice> autem hic modus petitionis implende per episco&bd;pum 
 <rs>clarimontis</rs> et abbatem de <rs>bonaualle</rs> fuit imperatori pro&bd;positus, 
 plurimum illi displicuit, et sic concordia per illos tracta&bd;ta 
 remansit. <rs>christianus</rs> autem cancellarius et reliqui, qui cum eo 
@@ -4977,7 +4996,7 @@ pro parte nostra et heredum nostrorum paciscimur uo<pb n="282" ed="#b"/>biscum,
 &blb;domine <rs>w<supplied resp="#b">illelm</supplied>e</rs>, eadem gratia illustris rex <rs>sicilie</rs>, 
 &blb;quod amodo usque ad quindecim annos obseruabimus uobis et 
 &blb;heredibus uestris et uniuerso regno uestro et toti terre domina&bd;tionis 
-uestre ueram et <choice><sic>firman</sic><corr type="typo">firman</corr></choice> pacem. <hi>et</hi> quod per nos uel per 
+uestre ueram et <choice><sic>firman</sic><corr resp="#pm" type="typo">firman</corr></choice> pacem. <hi>et</hi> quod per nos uel per 
 &blb;quoslibet alios, mari uel terra, uos predictum illustrem regem et 
 &blb;heredes uestros aut regnum uestrum et terram dominationis 
 &blb;uestre, sicut prescriptum et determinatum est, usque ad quinde&bd;cim 
