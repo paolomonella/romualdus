@@ -39,6 +39,12 @@ span.sic {
 	display: none;
     }
 
+
+span.del {
+        text-decoration:line-through;
+    }
+
+
   /*******************/
  /* ALIGNMENT TABLE */
 /*******************/
