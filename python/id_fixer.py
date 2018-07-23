@@ -4,6 +4,7 @@
 import constants
 from lxml import etree
 import time
+import os
 
 def spread_ids (get_p_ids_from, append_p_ids_to):
     ''' This function takes xml:id's from XML file "get_p_ids_from"

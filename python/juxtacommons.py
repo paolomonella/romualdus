@@ -19,6 +19,8 @@ from replace import myReplaceAll
 from replace import genericBaseReplaceAll
 '''
 
+
+
 class msTree:
 
     def __init__ (self, siglum):
@@ -59,44 +61,25 @@ class msTree:
             msg_fmt = "{entity.name!r}, {entity.content!r}, {entity.orig!r}"
             print(msg_fmt.format(entity=entity))
 
-    def reg_orig (self, regtype, form = 'reg'):
-        ''' Remove all <reg> or (default) all <orig> in structures such as
-            '<choice><orig>j</orig><reg type="j">i</reg></choice>':
-                If form = 'reg',  remove all 'orig' (default);
-                if form = 'orig', remove all 'reg'.
-            Argument 'regtype' should be
-                'numeral' for <reg type="numeral">,
-                'j' for <reg type="j"> etc.
+    def choose (self, parenttag, keeptag, keeptype, removetag):
+        ''' Remove all elements with tag name 'keeptag' and remove those with name 'removetag' in structures such as
+            '<choice><orig>j</orig><reg type="j">i</reg></choice>'
+            or
+            <choice><sic>dimicarum</sic><corr type="typo">dimicarunt</corr></choice>
+            Note that the element to keep (<reg> or <corr>) always has a @type, that goes to argument "keeptype"
             '''
-        for reg in self.tree.findall('.//t:reg[@type="%s"]' % (regtype), constants.ns):
-            orig = reg.getparent().find('.//t:orig', constants.ns)
-
-            # The following 'remove' functions should be safe b/c <orig> or <reg> never have a tail
-            # b/c <orig> and <reg> are the only children of <choice>
-            # (otherwise, the tail would be removed too)
-            if form == 'reg':
-                orig.getparent().remove(orig)
-            if form == 'orig':
-                reg.getparent().remove(reg)
-
-    def sic_corr (self, corrtype, form = 'corr'):
-        ''' Remove all <corr> or (default) all <sic> in structures such as
-            '<choice><sic>nomem</orig><sic type="typo">nomen</reg></choice>':
-                If form = 'corr',  remove all 'sic' (default);
-                if form = 'sic', remove all 'corr'.
-            Argument 'regtype' should be
-                'typo' for <corr type="typo">, etc.
-            '''
-        for corr in self.tree.findall('.//t:corr[@type="%s"]' % (corrtype), constants.ns):
-            sic = corr.getparent().find('.//t:sic', constants.ns)
-
-            # The following 'remove' functions should be safe b/c <sic> or <corr> never have a tail
-            # b/c <sic> and <corr> are the only children of <choice>
-            # (otherwise, the tail would be removed too)
-            if form == 'corr':
-                sic.getparent().remove(sic)
-            if form == 'sic':
-                corr.getparent().remove(corr)
+        for k in self.tree.findall('.//t:%s[@type="%s"]' % (keeptag, keeptype), constants.ns):
+            # If parenttag is the parent and keeptag is the sibling:
+            parent = k.getparent()
+            if parent.tag == constants.tei_ns + parenttag and parent.find('.//t:%s' % (removetag), constants.ns) is not None:   
+                # The following 'remove' functions should be safe b/c <orig>, <reg> and the other children of <choice>,
+                # as wella as <add> / <del> children of <subst>
+                # never have a tail b/c <orig> and <reg> are the only children of <choice>
+                # (otherwise, the tail would be removed too)
+                r = k.getparent().find('.//t:%s' % (removetag), constants.ns)   # The element to remove
+                if r.tail is not None:
+                    print('Warning: element', r.tag, 'has tail text «' + r.tail + '» that is also being removed')
+                r.getparent().remove(r)
 
     def recapitalize (self):
         ''' Re-capitalize words included in <rs> or in <hi> '''
@@ -131,7 +114,7 @@ class msTree:
             for t in tagslist:
                 for reg in p.findall('.//t:reg', ns):   # Remove all regularizations, i.e. all <reg> elements
                     regparent = reg.getparent()
-                    regparent.remove(reg)
+                    regparent.remove(reg)   # This is safe because <reg> never has a tail
                 etree.strip_tags(p, constants.tei_ns + t)
         if removepar:
             body = self.tree.find('.//t:body', ns)
@@ -141,8 +124,15 @@ class msTree:
                     p.text = ''.join([xmlid, p.text])
                 except:
                     print(p.text)
-                #etree.strip_tags(p, '*')
             etree.strip_tags(body, constants.tei_ns + 'p')
+
+    def  my_strip_tags (self, tagname):
+        '''Remove start and end tag but keep text and tail'''
+        etree.strip_tags(self.tree, tagname)
+
+    def  my_strip_elements (self, tagname, my_with_tail=False):
+        '''Remove start and end tag; remove text; keep tail if my_with_tail=False (default)'''
+        etree.strip_elements(self.tree, constants.tei_ns + tagname, with_tail=my_with_tail)
 
     def write (self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
@@ -167,10 +157,35 @@ atree = msTree('a')
 atree.list_elements()
 '''
 
-gtree = msTree('g')
-gtree.reg_orig('numeral', form='reg') 
-gtree.reg_orig('j', form='reg') 
-gtree.sic_corr ('typo', form = 'corr')
-gtree.recapitalize() 
-gtree.write()
+'''
+OLDER VERSION USING OLD FUNCTIONS
 
+mytree = msTree('bonetti')
+mytree.reg_orig('numeral', form='reg') 
+mytree.reg_orig('j', form='reg') 
+mytree.reg_orig('v', form='reg') 
+mytree.sic_corr('typo', form = 'corr')
+mytree.strip_elements(['del'])
+mytree.recapitalize() 
+mytree.write()
+
+mytree = msTree('a')
+mytree.reg_orig('numeral', form='reg') 
+mytree.reg_orig('j', form='reg') 
+mytree.reg_orig('v', form='reg') 
+mytree.sic_corr ('typo', form = 'corr')
+mytree.strip_elements(['del'])
+mytree.recapitalize() 
+mytree.write()
+'''
+
+for edition in ['a', 'bonetti']:
+    mytree = msTree(edition)
+    mytree.choose('choice', 'corr', 'typo', 'sic')
+    mytree.choose('choice', 'reg', 'numeral', 'orig')
+    mytree.choose('choice', 'reg', 'j', 'orig')
+    mytree.choose('choice', 'reg', 'v', 'orig')
+    mytree.choose('subst', 'add', 'correction', 'del')
+    mytree.my_strip_elements('del')
+    mytree.recapitalize() 
+    mytree.write()
