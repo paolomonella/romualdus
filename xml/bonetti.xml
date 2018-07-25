@@ -1861,9 +1861,15 @@ in sua potestate recepit.
 </p> 
 
 
-<p xml:id="g218.1-219.2" decls="#ocr"> 
+<p xml:id="g218.1-218.2" decls="#al"> 
+<note resp="#pm" type="segmentation">Garufi's paragraph runs from page 218 line 1 to page 219 line 2 without interruptions. I split Garufi's paragraph because Garufi inserts one of the additions (the paragraph with id g218.n16-218.n23) after "coronari fecit".</note>
 &blb;<hi>postmodum</hi> baronum et populi consilio apud <rs>panormum</rs> se 
-&blb;in regem <rs>sicilie</rs> inungi et coronari fecit. <hi>qui</hi> regni solio potitus 
+&blb;in regem <rs>sicilie</rs> inungi et coronari fecit.
+</p>
+
+
+<p xml:id="g218.2-219.2" decls="#al"> 
+<hi>qui</hi> regni solio potitus 
 &blb;cum nauali exercitu et magna militia <rs>salernum</rs> uenit, et <rs>amal&bd;fiam</rs>, 
 <rs>rauellum</rs> et <rs>scalam</rs> potenter obsedit et longa obsidione 
 &blb;cepit, et tam castra eorum quam ciuitates suo dominio subdidit. 
@@ -1883,7 +1889,7 @@ in sua potestate recepit.
 
 
 <p xml:id="g219.3-219.4" decls="#ocr"> 
-<note resp="#pm" type="segmentation"><rs>bonetti</rs>, <rs>garufi</rs> and manuscript <hi>a</hi> insert this paragraph at different points of the text</note> 
+<note resp="#pm" type="segmentation"><rs>bonetti</rs>, <rs>garufi</rs> and manuscript <hi>a</hi> insert this paragraph at different points of the text. <hi>also</hi>, <rs>bonetti</rs> prints two sentences about the death of <rs>boamundus</rs>, the son of prince <rs>boamundus</rs>, almost identical at page 126 and 130-131.</note> 
 &blb;"<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bello 
 <pb n="132" ed="#b"/> 
 &blb;iusta <rs>damascum</rs> occubuit, cuius corpus sine capite fertur esse 
@@ -1984,6 +1990,7 @@ regiam posuerunt et ab omnibus uocari regem iusse&bd;runt.
 
 <milestone type="bonetti-paragraph-break" ed="#b"/>
 
+<note resp="#pm" type="segmentation"><rs>bonetti</rs>, <rs>garufi</rs> and manuscript <hi>a</hi> insert this paragraph at different points of the text. <hi>also</hi>, <rs>bonetti</rs> prints two sentences about the death of <rs>boamundus</rs>, the son of prince <rs>boamundus</rs>, almost identical at page 126 and 130-131.</note> 
 &blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bel&bd;lo
 iuxta <rs>damascum</rs> occubuit cuius corpus sine capite inuen&bd;tum
 est, et sepultum in monasterio sancte <rs>marie</rs> quod est

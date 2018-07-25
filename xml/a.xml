@@ -114,7 +114,8 @@
                     (and the correction, if any) are done by the main hand of the manuscript.
                 </tagUsage>
                 <tagUsage gi="add">
-                    It is used either alone (with @rend="nextline", "above", "footer", "addedfolios204and205", "margin")
+                    It is used either alone (with @rend="nextline", "above", "footer", "addedfolios204and205",
+                    "margin", "marginandfooter")
                     or in combination with <gi>del</gi> in the following structure to mark a substitution:
                     <gi>subst</gi>, parent /
                     <gi>del</gi> (@rend="rasura"), child
@@ -2909,16 +2910,17 @@ domino <rs>alexandro</rs> consanguineo sui reliquit, ut uice sua eis
 </p>
 
 
+<anchor xml:id="g214.14-215.3bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--hoc anno rogerius comes excommunicatur... pontifice arripuit-->
+
+
 <anchor xml:id="g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/><!-- anno ab incarnatione...1127... boamundus... accersitus ab anteochenis... prede data sunt-->
 
 
-<anchor xml:id="g214.14-215.3garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/><!--hoc anno rogerius comes... pontifice arripuit-->
+§ VEDI SE DAVVERO QUESTA È LA COLLOCAZIONE GIUSTA IN GARUFI
+<anchor xml:id="g214.14-215.3garuficollocation" type="transposition" subtype="garuficollocation"/><!--hoc anno rogerius comes excommunicatur... pontifice arripuit-->
 
 
-§ garufi  metti hoc anno... congregata militum... fautores cum eo
-cioè g215.n14-215.n10 (ma ancora non ho fatto link/anchor perché non so dove lo mette A)
-§§§§§
-<anchor xml:id="g215.n14-215.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+<anchor xml:id="g215.n10-217.n1garuficollocation" type="transposition" subtype="garuficollocation"/><!-- anno... sexaginta ut fertur... sancti guillelmi-->
 
 
 <p xml:id="g216.1-217.1" decls="#al">
@@ -2932,7 +2934,8 @@ ingressus cum <rs>robberto</rs> <rs>capuano</rs> principe,
 
 
 <p xml:id="g214.14-215.3" decls="#al"> 
-<link target="#g214.14-215.3 #g214.14-215.3garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
+<link target="#g214.14-215.3 #g214.14-215.3garuficollocation" type="transposition" subtype="garuficollocation"/>
+<link target="#g214.14-215.3 #g214.14-215.3bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <add place="footer" hand="#hand2" xml:id="g214.14-215.3add100">
 <hi>hoc</hi> anno <rs>rogerius</rs> comes <rs>sicili<seg type="ae">ae</seg></rs> excommunicatur ab 
 <pb n="130" ed="#b"/> 
@@ -2964,6 +2967,50 @@ in sua potestate recepit.
 </p> 
 
 
+<!--Bonetti paragraph sequence-->
+
+<anchor xml:id="g218.1-218.2bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--postmodum baronum...coronari fecit-->
+
+
+<anchor xml:id="g218.2-219.2bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--qui regni solio potitus... subdidit-->
+
+
+<anchor xml:id="g219.5-219.8bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--post hec apuliam... indictione uiii-->
+
+
+<anchor xml:id="g219.3-219.4bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--hoc tempore boamundus...damascum occubuit... sepultum-->
+
+
+<anchor xml:id="g214.n8-215.n14bonetticollocation" type="transposition" subtype="bonetticollocation"/><!-- anno ab incarnatione...1127... boamundus... accersitus ab anteochenis... prede data sunt-->
+
+
+<anchor xml:id="g215.n14-215.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--anno dominice incarnationis 1128, indictione 7. hoc anno... congregata militum... fautores cum eo-->
+
+
+<anchor xml:id="g215.n10-217.n1bonetticollocation" type="transposition" subtype="bonetticollocation"/><!-- anno... sexaginta ut fertur... sancti guillelmi-->
+
+
+<anchor xml:id="g217.n4-217.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--anno... dux itaque rogerius postquam omnes... reuersus est in siciliam-->
+
+
+<anchor xml:id="g218.n16-218.n23bonetticollocation" type="transposition" subtype="bonetticollocation"/><!-- [anno]... die natali domini... sepulcri, mense februarii-->
+
+
+<anchor xml:id="g219.n1-219.n13bonetticollocation" type="transposition" subtype="bonetticollocation"/><!-- [anno]... dum rogerius dux brundisium ac turrem... abire permisit-->
+
+
+<anchor xml:id="g217.n10-218.n16bonetticollocation" type="transposition" subtype="bonetticollocation"/><!-- [anno]... dux transfretauit a sicilia, uenit in apuliam... reuertitur" (oppure finisce in "facta autem pacem") -->
+
+
+
+<!--Garufi paragraph sequence-->
+
+<anchor xml:id="g217.n4-217.n10garuficollocation" type="transposition" subtype="garuficollocation"/><!--anno... dux itaque rogerius postquam omnes... reuersus est in siciliam-->
+
+
+<anchor xml:id="g217.n10-218.n16garuficollocation" type="transposition" subtype="garuficollocation"/><!-- [anno]... dux transfretauit a sicilia, uenit in apuliam... reuertitur" (oppure finisce in "facta autem pacem") -->
+
+
 <p xml:id="g219.3-219.4" decls="#al"> 
 <link target="#g219.3-219.4 #g219.3-219.4garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g219.3-219.4 #g219.3-219.4bonetticollocation" type="transposition" subtype="bonetticollocation"/>
@@ -2978,30 +3025,47 @@ in sua potestate recepit.
 </p>
 
 
+<p xml:id="g218.1-218.2" decls="#al"> 
+<link target="#g218.1-218.2 #g218.1-218.2bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+<note resp="#pm" type="segmentation">Garufi's paragraph runs from page 218 line 1 to page 219 line 2 without interruptions. I split Garufi's paragraph because Garufi inserts one of the additions (the paragraph with id g218.n16-218.n23) after "coronari fecit".</note>
 <p xml:id="g218.1-219.2" decls="#al"> 
 &blb;<hi>postmodum</hi> baronum et populi consilio <pb n="220v" facs="vat:248" ed="#a"/>apud <rs>panormum</rs> se 
-&blb;in regem <rs>sicilie</rs> inungi et coronari fecit. <hi>qui</hi> regni solio potitus 
+&blb;in regem <rs>sicilie</rs> inungi et coronari fecit.
+</p>
+
+
+<anchor xml:id="g218.n16-218.n23garuficollocation" type="transposition" subtype="garufiandbonetticollocation"/><!-- [anno]... die natali domini... sepulcri, mense februarii-->
+
+
+<p xml:id="g218.2-219.2" decls="#al"> 
+<link target="#g218.2-219.2 #g218.2-219.2bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+<hi>qui</hi> regni solio potitus 
 &blb;cum nauali exercitu et magna militia <rs>salernum</rs> uenit, et <rs>amal&bd;fiam</rs>, 
 <rs>rauellum</rs> et <rs>scalam</rs> potenter obsedit et longa obsidione 
 &blb;cepit, et tam castra eorum quam ciuitates suo dominio subdidit. 
 </p> 
 
 
+<anchor xml:id="g219.n1-219.n13garuficollocation" type="transposition" subtype="garuficollocation"/><!-- [anno]... dum rogerius dux brundisium ac turrem... abire permisit-->
+
+
 <anchor xml:id="g219.3-219.4garuficollocation" type="transposition" subtype="garuficollocation"/><!--hoc tempore boamundus...damascum occubuit... sepultum-->
 
 
-<anchor xml:id="g219.5-219.8garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/><!--post hec apuliam... indictione uiii-->
+<anchor xml:id="g219.5-219.8garuficollocation" type="transposition" subtype="garuficollocation"/><!--post hec apuliam... indictione uiii-->
+
+
+<anchor xml:id="g219.8-221.14garuficollocation" type="transposition" subtype="garuficollocation"/><!--quo defuncto scisma in romana... filiam unam--
+
 
 <!-- A questo punto Garufi NEL CORPO DEL TESTO ha g219.8-222.4: quo defuncto scisma in romana... filiam unam
-     (che non ho copiato da B)
      e poi g222.5-224.19: interea innocentius papa... ei potenter occurrit
+    che sono in A in 220v
      -->
-
-<anchor xml:id="g219.3-219.4bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--hoc tempore boamundus...damascum occubuit... sepultum-->
-
 
 <!-- il seguente P è al posto giusto in A e in Bonetti-->
 <p xml:id="g214.n8-215.n14" decls="#ocr">
+<link target="#g214.n8-215.n14 #g214.n8-215.n14bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <link target="#g214.n8-215.n14 #g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/>
 <add place="footer" hand="#hand2" xml:id="g214.n8-215.n14add100">
 &blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1127, indictione 6. <hi>hoc</hi> an&bd;no 
@@ -3029,12 +3093,11 @@ militum caterua super eos irruentes, ita illos protriuerunt
 </add>
 </p>
 
-<anchor xml:id="g215.n14-215.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-<!-- devo ancora vedere se anche Garufi lo mette qui -->
 
-<!-- il seguente P è al posto giusto in A-->
+<!-- il seguente P è al posto giusto in A; non è una aggiunta-->
 <p xml:id="g219.5-219.8" decls="#ocr"> 
-<link target="#g219.5-219.8 #g219.5-219.8garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
+<link target="#g219.5-219.8 #g219.5-219.8bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+<link target="#g219.5-219.8 #g219.5-219.8garuficollocation" type="transposition" subtype="garuficollocation"/>
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
 &blb;<hi>post</hi> hec <rs>apuliam</rs> rediens obsedit <rs>barum</rs>, que se ei reddit, et tunc 
 &blb;<rs>grimoaldum</rs> principem eiusdem ciuitatis principem et nobiles 
@@ -3046,7 +3109,7 @@ militum caterua super eos irruentes, ita illos protriuerunt
 
 <!-- A questo punto A nel corpo del testo ha g219.8-222.4: quo defuncto scisma in romana... filiam unam -->
 
-<p xml:id="g215.n14-215.n10" decls="#ocr">
+<p xml:id="g215.n14-215.n10" decls="#ocr"><!-- Sembra proprio non esserci in A!!!-->
 <link target="#g215.n14-215.n10 #g215.n14-215.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 &blb;<hi>anno</hi> dominice incarnationis 1128, indictione 7. <hi>hoc</hi> an&bd;no 
 mense <hi>maii</hi> comes <rs>rogerius</rs> congregata militum peditum&bd;que 
@@ -3068,120 +3131,9 @@ uenit papa <rs>honorius</rs> in ciuitatem <rs>troiam</rs> et sinodalem
 sue arrogancie fautores cum eo. 
 </p>
 
-<!-- saltato in A-->
-<p xml:id="g215.n10-217.n1" decls="#ocr">
-&blb;<hi>anno</hi> <rs>domini</rs> 1129, indictione 8, mense <hi>iunii</hi>, dum ducis 
-&blb;<rs>rogerii</rs>, a quadraginta usque ad sexaginta ut fertur ueloces ga&bd;lee 
-erant, uelocissime circumdederunt ciuitatem <rs>barum</rs> ita 
-&blb;ut nec intrandi nec egrediendi in urbem esset aliquibus locus 
-&blb;caupolis uel lintribus <rs>barinorum</rs>. <hi>dux</hi> itaque cum exercitu 
-&blb;suo ueniens apprehendit <rs>salpim</rs> in mense <hi>augusti</hi>, etiam et 
-&blb;ciuitatem <rs>rubum</rs> ut fertur tradicione ciuium. <hi>cumque</hi> dom&bd;nus 
-<rs>tancredus</rs> et corporali molestaretur infirmitate et ducis 
-&blb;<rs>rogerii</rs> molestaretur oppressione, tandem cum domno <rs>ale&bd;xandro</rs> 
-comite fratre suo, et cum domno <rs>grimoaldo</rs> <rs>barensi</rs> 
-&blb;principi, medio estatis, id est decima die <hi>augusti</hi>, facta est pax 
-&blb;cum dicto duce <rs>rogerio</rs>, reddentes etiam terras ab eisdem 
-&blb;comprehensas, id est <rs>grauinum</rs> <rs>roberto</rs>, <rs>aquamuiuam</rs> 
-&blb;<rs>cornulo</rs>(...) prioribus domus sancti <rs>guillelmi</rs>. 
-</p>
-
-
-<!-- saltato in A-->
-<p xml:id="g217.n4-217.n10" decls="#ocr">
-&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1130, indictione 9, mense 
-&blb;<hi>septembris</hi>, dux itaque <rs>rogerius</rs> postquam omnes <rs>apulie</rs> ciui&bd;tates 
-suo subiungauit dominio, id est <rs>troiam</rs>, <rs>sipontum</rs> et 
-&blb;<rs>montem garganum</rs> et <rs>tranem</rs> cum omnibus castellis et uillis 
-&blb;circumquaque positis, uenit <rs>melfim</rs> fecitque ibidem congre&bd;gari 
-omnes comites <rs>calabrie</rs>, <rs>apulie</rs>, <rs>salentine</rs>, <rs>brizie</rs> et <rs>lu&bd;canie</rs>, 
-<rs>campanie</rs>, etiam episcopos et abbates; iussitque omni&bd;bus 
-comitibus ut sibi filiisque suis idest <rs>rogerio</rs> et <rs>tancredo</rs> 
-&blb;omni tempore fideles essent et obedirent suis preceptis, nec in 
-&blb;terris eorum furta et latrocinia sinerent esse nec consentirent. 
-&blb;<hi>et</hi> his omnibus prescriptis sacramento firmatis mense <rs>octu&bd;bris</rs> 
-reuersus est in <rs>siciliam</rs>. 
-</p>
-
-
-<!-- saltato in A-->
-<p xml:id="g218.n16-218.n23" decls="#ocr">
-&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1131, indictione 11, mense 
-&blb;<hi>decembris</hi> die natali <rs>domini</rs> prephatus dux <rs>rogerius</rs> precepit 
-&blb;congregare in <rs>sicilie</rs> prouinciam omnes episcopos diuersa&bd;rum 
-prouinciarum <rs>calabrie</rs>, <rs>apulie</rs>, <rs>campanie</rs> qui iussione 
-<pb n="136" ed="#b"/> 
-&blb;<rs>calixti</rs> pape<note resp="#b" type="content"><hi>errore</hi> nel testo: <rs>callisto</rs> <num value="2">ii</num> era morto nel 1124. <hi>si</hi> tratta di <rs>anacleto</rs> <num value="2">ii</num>.</note> unxerunt eum in regem ac super caput eius co&bd;ronam 
-regiam posuerunt et ab omnibus uocari regem iusse&bd;runt. 
-
-<milestone type="bonetti-paragraph-break" ed="#b"/>
-
-&blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bel&bd;lo
-iuxta <rs>damascum</rs> occubuit cuius corpus sine capite inuen&bd;tum
-est, et sepultum in monasterio sancte <rs>marie</rs> quod est
-&blb;iuxta sepulcrum nostri redemptoris, in dextera parte eiusdem
-&blb;sepulcri, mense <hi>februarii</hi>.
-</p>
-
-
-<!-- saltato in A-->
-<p xml:id="g219.n1-219.n13" decls="#ocr">
-&blb;<hi>anno</hi> <rs>domini</rs> 1132, indictione 8, mense <hi>septembris</hi>, dum
-&blb;<rs>rogerius</rs> dux <rs>brundusium</rs> ac turrem in eo constructam sue
-&blb;subdidit potestati ipseque reuersus <rs>sicilie</rs> fuisset, comes <rs>tan&bd;credus</rs>
-ad obsidendam turrem perrexit, ubi tota ingenii arte 
-&blb;decertauit ut caperet eam, set ut uidit inexpugnabilem eius 
-&blb;esse municionem accensus ira fertur iurasse quod nulli qui in 
-&blb;eadem erat turre parceret set alios patibulis alios ignibus 
-&blb;daret, alios uero uiuos sepeliret si capere illos aliquando pos&bd;set. 
-<hi>set</hi> hoc iuramento magis nocuit quam profuit, nam custo&bd;des 
-et defensores turris contra se hoc iuramentum factum 
-&blb;cognoscentes inuicem coartantur magis se mori uiriliter pu&bd;gnando 
-quam se prodere eligentes. <hi>cum</hi> eius obsidio nichil 
-&blb;proficeret, iram suam ad consilium reuocat ut <rs>barensis</rs> prin&bd;ceps 
-<rs>grimoaldus</rs> ueniret et dulci alloquio eos moneret ut ean&bd;dem 
-turrim seseque ipsi <rs>grimoaldo</rs> darent, ipse autem <rs>tan&bd;credus</rs> 
-cum suis <rs>gallipolim</rs> ad obsidendum pergeret. <hi>quod</hi> et 
-&blb;factum est. <hi>mense</hi> autem <hi>decembris</hi> predictus princeps plus 
-&blb;mansuetudine quam ferocitate cepit prephatam turrem, nulli 
-&blb;malum faciens cum suis rebus abire permisit. 
-</p>
-
-
-<!-- saltato in A-->
-<p xml:id="g217.n10-218.n16" decls="#ocr">
-&blb;<hi>anno</hi> <rs>domini</rs> 1129, indictione 8. <rs>rogerius</rs> dux transfre&bd;tauit 
-a <rs>sicilia</rs>, uenit in <rs>apuliam</rs> ac perrexit <rs>tarentum</rs>. <hi>deinde</hi> 
-&blb;babiit <rs>nerito</rs> cum grandi exercitu, fertur enim tria milia 
-&blb;habuisse equites, pedites uero ac sagittarios et <rs>sarracenos</rs> 
-&blb;usque ad sex milia, quam uacue factam inueniens cepit, pre&bd;de 
-ac direptione cuncta permiscendo, quin etiam et christia&bd;norum 
-sanguinem a <rs>sarracenis</rs> crudeliter fundi precipiendo, 
-&blb;nam senes interficiebant, pueros de sinu auferentes matrum 
-<pb n="138" ed="#b"/> 
-&blb;allidebant gladiisque findebant, sacerdotes iuxta crucem et 
-&blb;altare stantes interimebant, sacramenta ecclesie id est sanc&bd;tum 
-crisma in suius peronibus deridendo seu culponibus fun&bd;debant, 
-mulieres coram maritis adulterantes, reliquos uero 
-&blb;qui superfuerunt uinculatos <rs>sicilie</rs> asportare precepit. <hi>et</hi> exin&bd;de 
-amaro exercitu adhiit <rs>brundusium</rs>, posuitque sibi obsi&bd;dionem 
-in mense <hi>iunii</hi> per terram et mare, fecitque ante eam 
-&blb;turrem fieri ex trabibus proceris et altissimis, ferreisque ne&bd;xibus, 
-coriis uiminibusque muniuit, cuius altitudo predicte 
-&blb;urbis muros precelleret. <hi>set</hi> nichil huiusmodi infermentum 
-&blb;machine profuit sibi nec obfuit <rs>brundusinis</rs>; <rs>gofredus</rs> enim 
-&blb;domni <rs>alandri</rs> comitis filius, et <rs>riccardus</rs> <rs>clerimonti</rs> domi&bd;nus 
-qui de intus erant simili modo confecerunt balistas et 
-&blb;machinas que totam subito destruxerunt turrem. <hi>dux</hi> uero 
-&blb;nullo modo suum preualere ingenium uidens, omnem exerci&bd;tum 
-fame afflictum, ignem in turrem missum suam <rs>tarenti</rs> 
-&blb;reuertitur. 
-&blb;<note resp="#pm" type="segmentation"><rs>garufi</rs>, page 128, line 16 of the apparatus notes, adds the following phrase, not present in in <rs>bonetti</rs>, to the paragraph:: "cum illis pepiget facta autem pacem".</note> 
-</p> 
-
-
 <!-- qui ricomincia il corpo del testo in A; d'ora in poi tutti i <p> sono al loro posto giusto in A fino a fine file-->
 <p xml:id="g219.8-221.14" decls="#ocr"> 
+<link target="#g219.8-221.14 #g219.8-221.14garuficollocation" type="transposition" subtype="garuficollocation"/>
 <note resp="#pm" type="segmentation">Garufi's paragraph runs from page 219 line 8 to page 222 line 4 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.</note>
 &blb;<hi>quo</hi> defuncto scisma in <choice><sic><rs>romama</rs></sic><corr resp="#pm" type="typo"><rs>romana</rs></corr></choice> ecclesia exortum est, nam 
 &blb;maior et sanior pars cardinalium <rs>gregorium</rs> natione <rs>romanum</rs> 
@@ -3233,14 +3185,33 @@ uero <rs>pisanorum</rs> super <rs>amalfiam</rs> uenientes eam inmunitam
 &blb;et huius rei insciam ceperunt et expoliauerunt. <hi>quod</hi> audiens 
 &blb;rex <rs>roggerius</rs> qui tunc temporis in <rs>terra laboris</rs> erat, misso 
 &blb;exercitu suo <rs>pisanos</rs> qui adhuc in <rs>amalfie</rs> partibus morabantur 
-&blb;fugauit et multos eorum in ore gladii perdidit et sic ciuitatem li&bd;berauit. 
+&blb;fugauit et multos eorum in ore gladii perdidit et sic ciuitatem li&bd;berauit. <!--quintultimo rigo pag. 140 Bonetti-->
 </p>
 
 
-<!-- qui A ha un'aggiunta footer "sexaginta ut fertur... sancti guillelmi", che è g215.n10-217.n1 -->
+<p xml:id="g215.n10-217.n1" decls="#ocr">
+<add place="footer" hand="#hand2" xml:id="g215.n10-217.n1add100">
+<link target="#g215.n10-217.n1 #g215.n10-217.n1garuficollocation" type="transposition" subtype="garuficollocation"/>
+<link target="#g215.n10-217.n1 #g215.n10-217.n1bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+&blb;<hi>anno</hi> <rs>domini</rs> 1129, indictione 8, mense <hi>iunii</hi>, dum ducis 
+&blb;<rs>rogerii</rs>, a quadraginta usque ad sexaginta ut fertur ueloces ga&bd;lee 
+erant, uelocissime circumdederunt ciuitatem <rs>barum</rs> ita 
+&blb;ut nec intrandi nec egrediendi in urbem esset aliquibus locus 
+&blb;caupolis uel lintribus <rs>barinorum</rs>. <hi>dux</hi> itaque cum exercitu 
+&blb;suo ueniens apprehendit <rs>salpim</rs> in mense <hi>augusti</hi>, etiam et 
+&blb;ciuitatem <rs>rubum</rs> ut fertur tradicione ciuium. <hi>cumque</hi> dom&bd;nus 
+<rs>tancredus</rs> et corporali molestaretur infirmitate et ducis 
+&blb;<rs>rogerii</rs> molestaretur oppressione, tandem cum domno <rs>ale&bd;xandro</rs> 
+comite fratre suo, et cum domno <rs>grimoaldo</rs> <rs>barensi</rs> 
+&blb;principi, medio estatis, id est decima die <hi>augusti</hi>, facta est pax 
+&blb;cum dicto duce <rs>rogerio</rs>, reddentes etiam terras ab eisdem 
+&blb;comprehensas, id est <rs>grauinum</rs> <rs>roberto</rs>, <rs>aquamuiuam</rs> 
+&blb;<rs>cornulo</rs>(...) prioribus domus sancti <rs>guillelmi</rs>. 
+</add>
+</p>
 
 
-<p xml:id="g221.14-222.4" decls="#ocr"> 
+<p xml:id="g221.14-222.4" decls="#ocr"> <!--quintultimo rigo pag. 140 Bonetti-->
 <rs>pisani</rs> uero deuicti et confusi primo <rs>neapolim</rs> postea 
 &blb;<rs>pisas</rs> redierunt. <hi>rex</hi> autem <rs>roggerius</rs> uir discretus et prouidus 
 &blb;qui in agendis suis negotiis magis consilio quam uiribus uteba&bd;tur, 
@@ -3254,11 +3225,31 @@ ad <rs>lotharii</rs> imperatoris <rs>teutonici</rs> auxilium confugerunt
 &blb;asserentes <rs>apuliam</rs> et <rs>siciliam</rs> ad ius sui imperii pertinere. <hi>rex</hi> 
 &blb;autem <rs>roggerius</rs> postquam inimicos et rebelles suos a regno 
 &blb;repulit et fugauit, totam terram in pace et tranquillitate possedit 
-&blb;preter <rs>neapolim</rs> quam expugnare non potuit.
+&blb;preter <rs>neapolim</rs> quam expugnare non potuit.<!--nono rigo pag. 142 Bonetti-->
 </p>
-<!-- Il MS A qui ha un'aggiunta margin: "anno... dux itaque rogerius postquam omnes... reuersus est in siciliam" g217.n4-217.n10 -->
 
-<p xml:id="g222.1-222.4" decls="#ocr"> 
+
+<p xml:id="g217.n4-217.n10" decls="#ocr">
+<add place="margin" hand="#hand2" xml:id="g217.n4-217.n10add100">
+<link target="#g217.n4-217.n10 #g217.n4-217.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
+<link target="#g217.n4-217.n10 #g217.n4-217.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1130, indictione 9, mense 
+&blb;<hi>septembris</hi>, dux itaque <rs>rogerius</rs> postquam omnes <rs>apulie</rs> ciui&bd;tates 
+suo subiungauit dominio, id est <rs>troiam</rs>, <rs>sipontum</rs> et 
+&blb;<rs>montem garganum</rs> et <rs>tranem</rs> cum omnibus castellis et uillis 
+&blb;circumquaque positis, uenit <rs>melfim</rs> fecitque ibidem congre&bd;gari 
+omnes comites <rs>calabrie</rs>, <rs>apulie</rs>, <rs>salentine</rs>, <rs>brizie</rs> et <rs>lu&bd;canie</rs>, 
+<rs>campanie</rs>, etiam episcopos et abbates; iussitque omni&bd;bus 
+comitibus ut sibi filiisque suis idest <rs>rogerio</rs> et <rs>tancredo</rs> 
+&blb;omni tempore fideles essent et obedirent suis preceptis, nec in 
+&blb;terris eorum furta et latrocinia sinerent esse nec consentirent. 
+&blb;<hi>et</hi> his omnibus prescriptis sacramento firmatis mense <rs>octu&bd;bris</rs> 
+reuersus est in <rs>siciliam</rs>. 
+</add>
+</p>
+
+
+<p xml:id="g222.1-222.4" decls="#ocr"><!--nel corpo del testo in A-->
 <hi>hic</hi> autem cum 
 &blb;esset comes et iuuenis <rs>albyriam</rs> filiam regis <rs>hispanie</rs> duxit uxo&bd;rem 
 ex qua plures liberos habuit, <rs>roggerium</rs> quem <rs>apulie</rs> du&bd;cem 
@@ -3268,10 +3259,31 @@ quem <rs>capue</rs> principem ordinauit, <rs>willelmum</rs> et <rs>henricum</rs>
 </p> 
 
 
-<!-- Il MS A qui ha un'aggiunta margin: "[anno]... die natali domini... sepulcri, mense februarii" g218.n16-218.n23 -->
+<p xml:id="g218.n16-218.n23" decls="#ocr">
+<link target="#g218.n16-218.n23 #g218.n16-218.n23garuficollocation" type="transposition" subtype="garuficollocation"/>
+<link target="#g218.n16-218.n23 #g218.n16-218.n23bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+<add place="footer" hand="#hand2" xml:id="g218.n16-218.n23add100">
+&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1131, indictione 11, mense 
+&blb;<hi>decembris</hi> die natali <rs>domini</rs> prephatus dux <rs>rogerius</rs> precepit 
+&blb;congregare in <rs>sicilie</rs> prouinciam omnes episcopos diuersa&bd;rum 
+prouinciarum <rs>calabrie</rs>, <rs>apulie</rs>, <rs>campanie</rs> qui iussione 
+<pb n="136" ed="#b"/> 
+&blb;<rs>calixti</rs> pape<note resp="#b" type="content"><hi>errore</hi> nel testo: <rs>callisto</rs> <num value="2">ii</num> era morto nel 1124. <hi>si</hi> tratta di <rs>anacleto</rs> <num value="2">ii</num>.</note> unxerunt eum in regem ac super caput eius co&bd;ronam 
+regiam posuerunt et ab omnibus uocari regem iusse&bd;runt. 
+
+<milestone type="bonetti-paragraph-break" ed="#b"/>
+
+&blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bel&bd;lo
+iuxta <rs>damascum</rs> occubuit cuius corpus sine capite inuen&bd;tum
+est, et sepultum in monasterio sancte <rs>marie</rs> quod est
+&blb;iuxta sepulcrum nostri redemptoris, in dextera parte eiusdem
+&blb;sepulcri, mense <hi>februarii</hi>.
+</add>
+</p>
 
 
-<p xml:id="g222.5-222.12" decls="#ocr"> 
+
+<p xml:id="g222.5-222.12" decls="#ocr"><!-- nel corpo del testo in A-->
 <note resp="#pm" type="segmentation">Garufi's paragraph runs from page 222 line 5 to page 224 line 19 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.</note>
 &blb;<hi>interea</hi> <rs>innocentius</rs> papa in <rs>francia</rs> aliquantulum demoratus 
 &blb;<rs>alamanniam</rs> uenit et ab imperatore <rs>lothario</rs> et ab uniuersis 
@@ -3283,10 +3295,37 @@ cum magno esercitu <rs>italiam</rs> intrauit et per partes <rs>ancone</rs>
 &blb;<rs>capuanum</rs> principem cum comite <rs>raydulfo</rs> et aliis exulibus et 
 &blb;quadam parte sui exercitus <rs>terram laboris</rs> intrare iussit, galeas 
 &blb;etiam <rs>pisanorum</rs> in eorum auxilio uenire precepit. <hi>imperator</hi> 
-&blb;autem totam <rs>apuliam</rs>, resistente sibi nemine, occupauit.
+&blb;autem totam <rs>apuliam</rs>, resistente sibi nemine, occupauit.<!--metà paragrafo 'Interea' p. 142 Bonetti-->
 </p>
 
-<!-- qui A ha l'aggiunta footer: "[anno]... dum rogerius dux brundisium ac turrem... abire permisit" g219.n1-219.n13 -->
+
+<!-- siamo in 222v-->
+<p xml:id="g219.n1-219.n13" decls="#ocr">
+<link target="#g219.n1-219.n13 #g219.n1-219.n13garuficollocation" type="transposition" subtype="garuficollocation"/>
+<link target="#g219.n1-219.n13 #g219.n1-219.n13bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+<add place="footer" hand="#hand2" xml:id="g219.n1-219.n13add100">
+&blb;<hi>anno</hi> <rs>domini</rs> 1132, indictione 8, mense <hi>septembris</hi>, dum
+&blb;<rs>rogerius</rs> dux <rs>brundusium</rs> ac turrem in eo constructam sue
+&blb;subdidit potestati ipseque reuersus <rs>sicilie</rs> fuisset, comes <rs>tan&bd;credus</rs>
+ad obsidendam turrem perrexit, ubi tota ingenii arte 
+&blb;decertauit ut caperet eam, set ut uidit inexpugnabilem eius 
+&blb;esse municionem accensus ira fertur iurasse quod nulli qui in 
+&blb;eadem erat turre parceret set alios patibulis alios ignibus 
+&blb;daret, alios uero uiuos sepeliret si capere illos aliquando pos&bd;set. 
+<hi>set</hi> hoc iuramento magis nocuit quam profuit, nam custo&bd;des 
+et defensores turris contra se hoc iuramentum factum 
+&blb;cognoscentes inuicem coartantur magis se mori uiriliter pu&bd;gnando 
+quam se prodere eligentes. <hi>cum</hi> eius obsidio nichil 
+&blb;proficeret, iram suam ad consilium reuocat ut <rs>barensis</rs> prin&bd;ceps 
+<rs>grimoaldus</rs> ueniret et dulci alloquio eos moneret ut ean&bd;dem 
+turrim seseque ipsi <rs>grimoaldo</rs> darent, ipse autem <rs>tan&bd;credus</rs> 
+cum suis <rs>gallipolim</rs> ad obsidendum pergeret. <hi>quod</hi> et 
+&blb;factum est. <hi>mense</hi> autem <hi>decembris</hi> predictus princeps plus 
+&blb;mansuetudine quam ferocitate cepit prephatam turrem, nulli 
+&blb;malum faciens cum suis rebus abire permisit. 
+</add>
+</p>
+
 
 <p xml:id="g222.12-223.12" decls="#ocr"> 
 <hi>rex</hi> ue&bd;ro 
@@ -3321,11 +3360,46 @@ liberarent. <hi>ciues</hi> uero eius preceptis obtemperantes pacem
 quadrigentos milites qui in ciuitate fuerant, ad regem <rs>rog&bd;gerium</rs> 
 cum rebus suis illesos abire fecerunt. <hi>cancellarius</hi> autem 
 &blb;cum baronibus et quibusdam militibus se in <rs>turrim</rs> maiorem 
-&blb;recepit.
+&blb;recepit.<!-- quasi metà pag. 144 Bonetti-->
 </p>
 
 
-<!-- A ha l'aggiunta: "[anno]... dux transfretauit a sicilia, uenit in apuliam... reuertitur" (oppure finisce in "facta autem pacem") g217.n10-218.n16 -->
+<!--siamo in 223r-->
+<p xml:id="g217.n10-218.n16" decls="#ocr">
+<link target="#g217.n10-218.n16 #g217.n10-218.n16garuficollocation" type="transposition" subtype="garuficollocation"/>
+<link target="#g217.n10-218.n16 #g217.n10-218.n16bonetticollocation" type="transposition" subtype="bonetticollocation"/>
+<add place="marginandfooter" hand="#hand2" xml:id="g217.n10-218.n16add100">
+<note resp="#pm">Garufi writes that this addition is from a hand more recent than hand2: "l'ultima interpolazione, cioè la settima, cf. p. 218 n. 2, dovuta ad uno interpolatore diverso da colui che scrisse le altre sei, come si può desumere dal differente sistema cronologico e dallo stile".</note>
+&blb;<hi>anno</hi> <rs>domini</rs> 1129, indictione 8. <rs>rogerius</rs> dux transfre&bd;tauit 
+a <rs>sicilia</rs>, uenit in <rs>apuliam</rs> ac perrexit <rs>tarentum</rs>. <hi>deinde</hi> 
+&blb;babiit <rs>nerito</rs> cum grandi exercitu, fertur enim tria milia 
+&blb;habuisse equites, pedites uero ac sagittarios et <rs>sarracenos</rs> 
+&blb;usque ad sex milia, quam uacue factam inueniens cepit, pre&bd;de 
+ac direptione cuncta permiscendo, quin etiam et christia&bd;norum 
+sanguinem a <rs>sarracenis</rs> crudeliter fundi precipiendo, 
+&blb;nam senes interficiebant, pueros de sinu auferentes matrum 
+<pb n="138" ed="#b"/> 
+&blb;allidebant gladiisque findebant, sacerdotes iuxta crucem et 
+&blb;altare stantes interimebant, sacramenta ecclesie id est sanc&bd;tum 
+crisma in suius peronibus deridendo seu culponibus fun&bd;debant, 
+mulieres coram maritis adulterantes, reliquos uero 
+&blb;qui superfuerunt uinculatos <rs>sicilie</rs> asportare precepit. <hi>et</hi> exin&bd;de 
+amaro exercitu adhiit <rs>brundusium</rs>, posuitque sibi obsi&bd;dionem 
+in mense <hi>iunii</hi> per terram et mare, fecitque ante eam 
+&blb;turrem fieri ex trabibus proceris et altissimis, ferreisque ne&bd;xibus, 
+coriis uiminibusque muniuit, cuius altitudo predicte 
+&blb;urbis muros precelleret. <hi>set</hi> nichil huiusmodi infermentum 
+&blb;machine profuit sibi nec obfuit <rs>brundusinis</rs>; <rs>gofredus</rs> enim 
+&blb;domni <rs>alandri</rs> comitis filius, et <rs>riccardus</rs> <rs>clerimonti</rs> domi&bd;nus 
+qui de intus erant simili modo confecerunt balistas et 
+&blb;machinas que totam subito destruxerunt turrem. <hi>dux</hi> uero 
+&blb;nullo modo suum preualere ingenium uidens, omnem exerci&bd;tum 
+fame afflictum, ignem in turrem missum suam <rs>tarenti</rs> 
+&blb;reuertitur. 
+&blb;<note resp="#pm" type="segmentation"><rs>garufi</rs>, page 128, line 16 of the apparatus notes, adds the following phrase, not present in in <rs>bonetti</rs>, to the paragraph:: "cum illis pepiget facta autem pacem".</note> 
+</add>
+</p> 
+
 
 
 <p xml:id="223.12-224.19" decls="#ocr"> 
@@ -3371,9 +3445,10 @@ duxit. <hi>dehinc</hi> acies suas uersus <rs>apuliam</rs> dirigens totam
 &blb;comes <rs>raydulfus</rs>, qui se ducem uocari faciebat, congregato exer&bd;citu 
 militum et infinita multitudine maritimarum ciuitatum apud 
 &blb;<rs>ranianum</rs> ei potenter occurrit. 
-<!-- qui siamo in vat:251, 224r, 7a riga dal basso, penultima parola. Da qui in poi non ci dovrebbero essere più grandi aggiunte marginali in A quindi la vita dovrebbe essere un po' più semplice-->
+<!-- qui siamo in vat:251, 224r, 7a riga dal basso, penultima parola. Bonetti, pag. 146. Da qui in poi non ci dovrebbero essere più grandi aggiunte marginali in A quindi la vita dovrebbe essere un po' più semplice-->
 </p> 
 
+<!-- §§§ ho finito di controllare la sequenza Bonetti fino a qui (e quindi tutta). Ora verifica la sequenza di Garufi, e in ultimo facendo la collazione controllerò la sequenza di A e la posizione footer/margin delle add, e se sono add o sono nel corpo del testo.-->
 
 
 
