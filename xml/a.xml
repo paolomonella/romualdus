@@ -2913,16 +2913,18 @@ domino <rs>alexandro</rs> consanguineo sui reliquit, ut uice sua eis
 <anchor xml:id="g214.14-215.3bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--hoc anno rogerius comes excommunicatur... pontifice arripuit-->
 
 
+<!-- Ma garufi dice che alcuni codici lo mettono qui, non che va messo qui-->
 <anchor xml:id="g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/><!-- anno ab incarnatione...1127... boamundus... accersitus ab anteochenis... prede data sunt-->
 
 
-§ VEDI SE DAVVERO QUESTA È LA COLLOCAZIONE GIUSTA IN GARUFI
 <anchor xml:id="g214.14-215.3garuficollocation" type="transposition" subtype="garuficollocation"/><!--hoc anno rogerius comes excommunicatur... pontifice arripuit-->
 
+<anchor xml:id="g215.n14-215.n10garuficollocation" type="transposition" subtype="garuficollocation"/><!--anno dominice incarnationis 1128, indictione 7. hoc anno... congregata militum... fautores cum eo-->
 
 <anchor xml:id="g215.n10-217.n1garuficollocation" type="transposition" subtype="garuficollocation"/><!-- anno... sexaginta ut fertur... sancti guillelmi-->
 
 
+<!-- Questa è una boa per l'alignment-->
 <p xml:id="g216.1-217.1" decls="#al">
 <note resp="#pm" type="segmentation">Garufi's paragraph runs from page 216 line 1 to page 217 line 12 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.</note>
 <hi>altero</hi> uero anno cum magno exercitu <rs>apuliam</rs> intrauit. <hi>papa</hi> 
@@ -2969,6 +2971,7 @@ in sua potestate recepit.
 
 <!--Bonetti paragraph sequence-->
 
+
 <anchor xml:id="g218.1-218.2bonetticollocation" type="transposition" subtype="bonetticollocation"/><!--postmodum baronum...coronari fecit-->
 
 
@@ -3004,6 +3007,7 @@ in sua potestate recepit.
 
 
 <!--Garufi paragraph sequence-->
+
 
 <anchor xml:id="g217.n4-217.n10garuficollocation" type="transposition" subtype="garuficollocation"/><!--anno... dux itaque rogerius postquam omnes... reuersus est in siciliam-->
 
@@ -3055,15 +3059,10 @@ in sua potestate recepit.
 <anchor xml:id="g219.5-219.8garuficollocation" type="transposition" subtype="garuficollocation"/><!--post hec apuliam... indictione uiii-->
 
 
-<anchor xml:id="g219.8-221.14garuficollocation" type="transposition" subtype="garuficollocation"/><!--quo defuncto scisma in romana... filiam unam--
+<anchor xml:id="g219.8-221.14garuficollocation" type="transposition" subtype="garuficollocation"/><!--quo defuncto scisma in romana... civitatem liberauit-->
 
 
-<!-- A questo punto Garufi NEL CORPO DEL TESTO ha g219.8-222.4: quo defuncto scisma in romana... filiam unam
-     e poi g222.5-224.19: interea innocentius papa... ei potenter occurrit
-    che sono in A in 220v
-     -->
-
-<!-- il seguente P è al posto giusto in A e in Bonetti-->
+<!-- il seguente P è al posto giusto in A -->
 <p xml:id="g214.n8-215.n14" decls="#ocr">
 <link target="#g214.n8-215.n14 #g214.n8-215.n14bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <link target="#g214.n8-215.n14 #g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/>
@@ -3096,8 +3095,8 @@ militum caterua super eos irruentes, ita illos protriuerunt
 
 <!-- il seguente P è al posto giusto in A; non è una aggiunta-->
 <p xml:id="g219.5-219.8" decls="#ocr"> 
-<link target="#g219.5-219.8 #g219.5-219.8bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <link target="#g219.5-219.8 #g219.5-219.8garuficollocation" type="transposition" subtype="garuficollocation"/>
+<link target="#g219.5-219.8 #g219.5-219.8bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
 &blb;<hi>post</hi> hec <rs>apuliam</rs> rediens obsedit <rs>barum</rs>, que se ei reddit, et tunc 
 &blb;<rs>grimoaldum</rs> principem eiusdem ciuitatis principem et nobiles 
@@ -3107,9 +3106,9 @@ militum caterua super eos irruentes, ita illos protriuerunt
 <num value="8">uiii</num>. 
 </p> 
 
-<!-- A questo punto A nel corpo del testo ha g219.8-222.4: quo defuncto scisma in romana... filiam unam -->
 
 <p xml:id="g215.n14-215.n10" decls="#ocr"><!-- Sembra proprio non esserci in A!!!-->
+<link target="#g215.n14-215.n10 #g215.n14-215.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g215.n14-215.n10 #g215.n14-215.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 &blb;<hi>anno</hi> dominice incarnationis 1128, indictione 7. <hi>hoc</hi> an&bd;no 
 mense <hi>maii</hi> comes <rs>rogerius</rs> congregata militum peditum&bd;que 
@@ -3211,7 +3210,7 @@ comite fratre suo, et cum domno <rs>grimoaldo</rs> <rs>barensi</rs>
 </p>
 
 
-<p xml:id="g221.14-222.4" decls="#ocr"> <!--quintultimo rigo pag. 140 Bonetti-->
+<p xml:id="g221.14-222.1" decls="#ocr"> <!--quintultimo rigo pag. 140 Bonetti-->
 <rs>pisani</rs> uero deuicti et confusi primo <rs>neapolim</rs> postea 
 &blb;<rs>pisas</rs> redierunt. <hi>rex</hi> autem <rs>roggerius</rs> uir discretus et prouidus 
 &blb;qui in agendis suis negotiis magis consilio quam uiribus uteba&bd;tur, 
@@ -3448,7 +3447,7 @@ militum et infinita multitudine maritimarum ciuitatum apud
 <!-- qui siamo in vat:251, 224r, 7a riga dal basso, penultima parola. Bonetti, pag. 146. Da qui in poi non ci dovrebbero essere più grandi aggiunte marginali in A quindi la vita dovrebbe essere un po' più semplice-->
 </p> 
 
-<!-- §§§ ho finito di controllare la sequenza Bonetti fino a qui (e quindi tutta). Ora verifica la sequenza di Garufi, e in ultimo facendo la collazione controllerò la sequenza di A e la posizione footer/margin delle add, e se sono add o sono nel corpo del testo.-->
+<!-- ho finito di controllare la sequenza Bonetti  e quella Garufi fino a qui (e quindi tutta). Ora facendo la collazione controllerò la sequenza di A e la posizione footer/margin delle add, e se sono add o sono nel corpo del testo.-->
 
 
 
