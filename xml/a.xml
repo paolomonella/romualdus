@@ -89,6 +89,7 @@
                     by grapheme 'e caudatum' in the manuscript.
                 </tagUsage>
                 <tagUsage gi="note">
+                    With @resp="#pm" (Paolo Monella):
                     <list>
                         <item>With @type="content": note on the text content.</item>
                         <item>With @type="graphic": note on glyphs or graphemes.</item>
@@ -99,9 +100,15 @@
                         <item>With @type="textcrit": note on textual critical matters.</item>
                         <item>With @type="year": note on the year in which a fact actually happened, according
                             to a scholar (with @resp; it is normally @resp="#b" for Bonetti).</item>
-                        <item>With @type="hand2" and @hand="#hand2": a whole additional note handwritten by hand2
-                            on the manuscript (usually saying that a marg or footer note has been taken by manuscript
+                    </list>
+                    With @resp="#hand2" (the hand from the XVII century):
+                    <list>
+                        <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript
+                            saying that a marg or footer note has been taken by manuscript
                             B ("codex sancti Petri").</item>
+                        <item>With @type="etcetera": a note handwritten by hand2 on the manuscript
+                            reporting the first words of the portion of the text that is supposed to follow a
+                            marginal or footer addition by "hand2". The note normally ends with "et cetera…"</item>
                     </list>
                 </tagUsage>
                 <tagUsage gi="del">
@@ -1961,7 +1968,7 @@ utique artis diu famosam atque precipuam. <rs>gisolfus</rs>
 <add place="margin" hand="#hand2" xml:id="g188.12-190.8add100">
 <hi>hoc</hi> anno <rs>robertus</rs> dux dedit filiam suam 
 &blb;nurum ad imperatorem <rs>constantinopolitanum</rs>.
-<note resp="#hand2" type="hand2"><hi>ex</hi> codice sancti <rs>petri</rs>.</note> 
+<note resp="#hand2" type="sanctipetri"><hi>ex</hi> codice sancti <rs>petri</rs>.</note> 
 </add>
 </p>
 
@@ -2150,7 +2157,7 @@ combussitque eam igni.
 &blb;<num value="1083">mlxxxiii</num> indictione sexta. <hi>hoc</hi> anno intrauerunt 
 &blb;<rs>langobardi</rs> <rs>italiam</rs> et dux in mense <hi>maio</hi> posuit ante <rs>cannas</rs> 
 &blb;ciuitatem <rs>apuli<seg type="ae">ae</seg></rs> obsidionem et mense <hi>iulio</hi> comprehendit eam.
-<note resp="#hand2" type="hand2"><hi>particul<seg type="ae">ae</seg></hi> desumpt<seg type="ae">ae</seg> ex codice sancti <rs>petri</rs>.</note>
+<note resp="#hand2" type="sanctipetri"><hi>particul<seg type="ae">ae</seg></hi> desumpt<seg type="ae">ae</seg> ex codice sancti <rs>petri</rs>.</note>
 </add>
 </p> 
 
@@ -2255,7 +2262,7 @@ uiriliter eum uicit. <hi>in</hi> quo siquidem bello, mirum dictu,
 &blb;<hi>eodem</hi> anno comprehensa est <rs>siracu&bd;sa</rs>, 
 <rs>sicili<seg type="ae">ae</seg></rs> quondam caput, in qua fertur homi&bd;nes 
 comedisse infantes ob diuturnitatem obsidionis.
-<note resp="#hand2" type="hand2"><hi>h<seg type="ae">ae</seg></hi> du<seg type="ae">ae</seg> particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs>.</note>
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg></hi> du<seg type="ae">ae</seg> particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs>.</note>
 </add>
 </p> 
 
@@ -2273,7 +2280,7 @@ in ortu suo passa est eclipsim.
 &blb;<num value="1089">mlxxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, indictione <num value="12">xii</num>, papa <rs>urbanus</rs> 
 &blb;uenit in ciuitatem <rs>barum</rs> et sacrauit illic confessionem sancti <rs>ni&bd;colai</rs> 
 et <rs>bandussianam</rs> ecclesiam.
-<note resp="#hand2" type="hand2"><hi>h<seg type="ae">ae</seg></hi> particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs>.</note>
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg></hi> particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs>.</note>
 </add>
 </p> 
 
@@ -2352,7 +2359,7 @@ millibus <rs>agarenorum</rs> et cum innumera multitudine aliarum
 &blb;<rs>rogerii</rs> comitis sumpserunt signum sancte <hi>crucis</hi> in hume&bd;ris 
 suis et frontibus et sic reliquerunt obsidionem. <hi>uidens</hi> 
 &blb;h<seg type="ae">ae</seg>c comes <rs>rogerius</rs> cum dedecore reuersus est in <rs>siciliam</rs>.
-<note resp="#hand2" type="hand2">particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> ex codice sancti <rs>petri</rs>.</note>
+<note resp="#hand2" type="sanctipetri">particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> ex codice sancti <rs>petri</rs>.</note>
 </add>
 </p> 
 
@@ -2583,7 +2590,7 @@ uirtute in bello preualidus. <hi>huic</hi> autem <rs>boamundus</rs> filius
 &blb;oliuas et arbores ac uineas <rs>barenorum</rs>. <hi>tunc</hi> <rs>barenses</rs> fecerunt 
 &blb;sibi caput et dominum <rs>risonum</rs> archiepiscopum, et c<seg type="ae">ae</seg>perunt 
 &blb;habere guerram cum pr<seg type="ae">ae</seg>dicto <rs>roberto</rs> comite.
-<note resp="#hand2" type="hand2"><hi>h<seg type="ae">ae</seg>c</hi> particula desumpta est ex codice sancti <rs>petri</rs>.</note>
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg>c</hi> particula desumpta est ex codice sancti <rs>petri</rs>.</note>
 </add> 
 </p> 
 
@@ -2644,7 +2651,7 @@ cum multis aliis caperentur equitibus, omniaque eorum
 &blb;et in <rs>alexandri</rs> comitis custodia; sed minime hoc impleuit. <hi>in&bd;super</hi> 
 mense <hi>maio</hi> cum <num value="200">cc</num> equitibus et peditum turba terram 
 &blb;uastauit <rs>alexandri</rs> comitis <rs>barensis</rs>.
-<note resp="#hand2" type="hand2"><hi>h<seg type="ae">ae</seg>c</hi> particula desumpta est ex codice sancti <rs>petri</rs>.</note> 
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg>c</hi> particula desumpta est ex codice sancti <rs>petri</rs>.</note> 
 </add>
 </p> 
 
@@ -2744,7 +2751,7 @@ dimicans propter impatientiam suam uictus ac mortuus
 &blb;<hi>hoc</hi> tempore mense <hi>augusti</hi> regina <rs>constantia</rs> comprehensa 
 &blb;a comite <rs>alexandro</rs> et <rs>grimoaldo</rs> <rs>barense</rs> in <rs>menantia</rs> ciui&bd;tate 
 et cum ea equites <num value="50">l</num> traditione quorumdam ciuium. 
-<note resp="#hand2" type="hand2"><hi>h<seg type="ae">ae</seg>c</hi> particula desumpta est ex codice sancti <rs>petri</rs>.</note> 
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg>c</hi> particula desumpta est ex codice sancti <rs>petri</rs>.</note> 
 </add>
 </p> 
 
@@ -2802,7 +2809,8 @@ cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs>
 <add place="footer" hand="#hand2" xml:id="g212.12-212.16add100">
 &blb;<hi>hoc</hi> tempore in mense <hi>iunio</hi> <rs>rogerius</rs> comes 
 &blb;<rs>sicili<seg type="ae">ae</seg></rs> cum turba non exigua equitum et peditum transfetauit in 
-&blb;<rs>calabriam</rs> et castellum <rs>sancti mauri</rs> nomine c<seg type="ae">ae</seg>pit et cremauit. <hi>hic</hi> autem <rs>callixtus</rs> et cetera…
+&blb;<rs>calabriam</rs> et castellum <rs>sancti mauri</rs> nomine c<seg type="ae">ae</seg>pit et cremauit.
+<note resp="#hand2" type="etcetera"><hi>hic</hi> autem <rs>callixtus</rs> et cetera…</note>
 </add>
 &blb;<hi>hic</hi> autem <rs>calixtus</rs> papatum <rs>romanum</rs> in pace et tranquillitate 
 &blb;possedit et urbem 
@@ -2818,7 +2826,7 @@ cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs>
 &blb;potuit facere. <hi>sed</hi> mense <hi>februarii</hi> dux et <rs>roggerius</rs> pr<seg type="ae">ae</seg>dictus 
 &blb;comes inter se paciscuntur, et acceptis a comite <rs>rogerio</rs> sep&bd;tingentis 
 equitibus exeredauit comitem <rs>iordanum</rs>. 
-<note resp="#hand2" type="hand2"><hi>desumpta</hi> ex codice sancti <rs>petri</rs>.</note>
+<note resp="#hand2" type="sanctipetri"><hi>desumpta</hi> ex codice sancti <rs>petri</rs>.</note>
 </add>
 </p> 
 
@@ -2853,10 +2861,11 @@ et <rs>roggerium</rs> comitem <rs>sicilie</rs> liggium hominem eius et
 <p xml:id="g212.10-212.11" decls="#al"> 
 <link target="#g212.10-212.11 #g212.10-212.11garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
 <add place="margin" hand="#hand2" xml:id="g212.10-212.11add100">
-<note resp="#hand2" type="hand2">interponenda h<seg type="ae">ae</seg>c uerba et particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> ex codice sancti <rs>petri</rs>:</note>
+<note resp="#hand2" type="sanctipetri">interponenda h<seg type="ae">ae</seg>c uerba et particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> ex codice sancti <rs>petri</rs>:</note>
 &blb;<hi>anno</hi> <num value="1123">mcxxiii</num> in mense <hi>aprilis</hi> <rs>boamundus</rs><note resp="#pm" type="textcrit"><hi>note</hi> the important variant: ms <hi>a</hi> has "boamundus" while <rs>garufi</rs> and <rs>bonetti</rs> have "balduinus".</note> rex <rs>hiero&bd;solim<seg type="ae">ae</seg></rs> 
 capitur a paganis dum rediret de <rs>antiochia</rs>, sed breui tem&bd;pore 
-dimittitur. <hi>cumque</hi> et cetera…
+dimittitur.
+<note resp="#hand2" type="etcetera"><hi>cumque</hi> et cetera…</note>
 </add>
 </p> 
 
@@ -2904,8 +2913,9 @@ ciuitate ab <rs>alfano</rs> <rs>capudaquensi</rs> episcopo est unctus in
 &blb;<rs>boamundus</rs> ueniens transfretauit in <rs>antiochiam</rs>, et factus est 
 &blb;princeps in loco patris sui, et omnes ciuitates suas <rs>apuli<seg type="ae">ae</seg></rs> comi&bd;ti 
 domino <rs>alexandro</rs> consanguineo sui reliquit, ut uice sua eis 
-&blb;uteretur. <hi>altero</hi> uero et cetera…
-<note resp="#hand2" type="hand2">ex codice sancti <rs>petri</rs>.</note>
+&blb;uteretur.
+<note resp="#hand2" type="etcetera"><hi>altero</hi> uero et cetera…</note>
+<note resp="#hand2" type="sanctipetri">ex codice sancti <rs>petri</rs>.</note>
 </add>
 </p>
 
@@ -2943,7 +2953,8 @@ ingressus cum <rs>robberto</rs> <rs>capuano</rs> principe,
 <pb n="130" ed="#b"/> 
 &blb;<rs>honorio</rs> papa quia non permittebat ut episcopi <rs>sicili<seg type="ae">ae</seg></rs> ueni&bd;rent 
 <rs>romam</rs>. <hi>denuo</hi> excommunicatur ab eodem papa quod 
-&blb;indebitum sibi nomen ducis inconsulto <rs>romano</rs> pontifice ar&bd;ripuit. <rs>raydulpho</rs> et cetera…
+&blb;indebitum sibi nomen ducis inconsulto <rs>romano</rs> pontifice ar&bd;ripuit.
+<note resp="#hand2" type="etcetera"><rs>raydulpho</rs> et cetera…</note>
 </add>
 </p>
 
@@ -3023,7 +3034,7 @@ in sua potestate recepit.
 <pb n="132" ed="#b"/> 
 &blb;iuxta <rs>damascum</rs> occubuit, cuius corpus sine capite fertur esse 
 &blb;sepultum. 
-<note resp="#hand2" type="hand2"><hi>h<seg type="ae">ae</seg></hi> du<seg type="ae">ae</seg> particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs>.</note>
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg></hi> du<seg type="ae">ae</seg> particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs>.</note>
 <note resp="#pm" type="graphic">The note above ("Hae particulae desumptae sunt ex codice sancti Petri") by hand2 refer to additions with id "g219.3-219.4add100" and "g214.14-215.3add100".</note>
 </add>
 </p>
@@ -3062,52 +3073,52 @@ in sua potestate recepit.
 <anchor xml:id="g219.8-221.14garuficollocation" type="transposition" subtype="garuficollocation"/><!--quo defuncto scisma in romana... civitatem liberauit-->
 
 
-<!-- il seguente P è al posto giusto in A -->
 <p xml:id="g214.n8-215.n14" decls="#ocr">
 <link target="#g214.n8-215.n14 #g214.n8-215.n14bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <link target="#g214.n8-215.n14 #g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/>
 <add place="footer" hand="#hand2" xml:id="g214.n8-215.n14add100">
-&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1127, indictione 6. <hi>hoc</hi> an&bd;no 
+&blb;<num value="1127">mcxxuii</num>, indictione <num value="6">ui</num>. <hi>hoc</hi> an&bd;no 
 mense <hi>septembris</hi> <rs>boamundus</rs> filius <rs>boamundi</rs> principis 
-&blb;accersitus ab <rs>anteochenis</rs> ut in loco patris optineret regnum 
-&blb;<rs>antiochenum</rs>, reliquid omnes ciuitates <rs>apulie</rs>, quas tenebat, 
-&blb;domno <rs>alexandro</rs> comiti, ut uice sua eis uteretur, et ipse cum 
-&blb;triremis nauibus 14 absque aliis sex honerariis, et cum iu&bd;uenum 
-electa multitudine pontica sulcans equora perrexit 
+&blb;accersitus ab <rs>antiochenis</rs> ut in loco patris regnum obtineret 
+&blb;<rs>antiochenum</rs>, reliquit omnes ciuitates <rs>apuli<seg type="ae">ae</seg></rs>, quas tenebat, 
+&blb;dompno <rs>alexandro</rs> comiti, ut uice sua eis uteretur, et ipse cum 
+&blb;triremis nauibus <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> absque aliis sex honerariis, et cum iu&bd;uenum 
+electa multitudine pontica sulcans <seg type="ae">ae</seg>quora perrexit 
 &blb;<rs>antiochiam</rs>. <hi>mense</hi> <hi>iunii</hi> eadem indictione, dum castellum 
 &blb;<rs>obmanum</rs> iussione <rs>roggerii</rs> comitis <rs>siciliensis</rs> a comitibus 
-&blb;<rs>calabrie</rs>, id est <rs>alexandro</rs> <rs>senesii</rs> et a <rs>robberto</rs> <rs>grandi-ma&bd;ruli</rs> 
+&blb;<rs>calabrie</rs>, id est <rs>alexandro</rs> <rs>senesii</rs> et a <rs>robberto</rs> <rs>grandi-ma&bd;rulia</rs> 
 et aliis multis, aduentante etiam ab eodem <rs>rogerio</rs> comi&bd;te 
 militum peditum <rs>sarracenorumque</rs> non minima multitu&bd;dine, 
-obsideretur, <rs>rogerius</rs> uir <rs>iudith</rs> de intus cum militum 
-&blb;eque strenuissime agone illis resisteret, subito oriente sole 
-&blb;quadam die <rs>rogerius</rs> <rs>terlizus</rs> et <rs>robertus</rs> <rs>ricinnus</rs> cum elec&bd;ta 
+<rs>rogerius</rs> uir iuuenis de intus cum militum 
+&blb;<seg type="ae">ae</seg>que strenuissime agone illis resisteret, subito oriente sole 
+&blb;quadam die <rs>rogerius</rs> <rs>terlizus</rs> et <rs>robertus</rs> <rs>ricuinus</rs> cum elec&bd;ta 
 militum caterua super eos irruentes, ita illos protriuerunt 
-&blb;ut nullus ex eis esset, qui non aut fuge presidio liberaretur aut 
-&blb;capcionis neuo innodaretur, seu uictoris gladio perimeretur. 
+&blb;ut nullus ex eis esset, qui non aut fug<seg type="ae">ae</seg> presidio liberaretur aut 
+&blb;captionis pr<seg type="ae">ae</seg>tio uenumdaretur, seu uictoris gladio pr<seg type="ae">ae</seg>meretur. 
 &blb;<rs>sarracenorum</rs> uero, aliorumque peditum nec referendus est 
 &blb;numerus occisorum, qui, ut fertur, tota castra sanguine ut 
-&blb;aqua maduerunt. <hi>eorum</hi> uero omnia direptioni et prede data 
+&blb;aqua maduerunt. <hi>eorum</hi> uero omnia direptioni et pr<seg type="ae">ae</seg>d<seg type="ae">ae</seg> data 
 &blb;sunt. 
+<note resp="#hand2" type="etcetera">post h<seg type="ae">e</seg>c et cetera…</note>
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg></hi> du<seg type="ae">ae</seg> particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs>.</note>
 </add>
 </p>
 
 
-<!-- il seguente P è al posto giusto in A; non è una aggiunta-->
-<p xml:id="g219.5-219.8" decls="#ocr"> 
+<p xml:id="g219.5-219.8" decls="#al"> 
 <link target="#g219.5-219.8 #g219.5-219.8garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g219.5-219.8 #g219.5-219.8bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
-&blb;<hi>post</hi> hec <rs>apuliam</rs> rediens obsedit <rs>barum</rs>, que se ei reddit, et tunc 
-&blb;<rs>grimoaldum</rs> principem eiusdem ciuitatis principem et nobiles 
+&blb;<hi>post</hi> hec <rs>apuliam</rs> rediens obsedit <rs>barum</rs>, que se ei reddidit, et tunc 
+&blb;<rs>grimoaldum</rs> eiusdem ciuitatis principem et nobiles 
 &blb;ciues et potentes qui ei repugnauerunt secum in <rs>siciliam</rs> tran&bd;sportauit. 
 <hi>interea</hi> <rs>honorius</rs> papa mortuus est anno pontificatus 
-&blb;sui sexto, anno uero dominice incarnationis <num value="1130">mcxxx</num> indictio&bd;ne 
+&blb;sui sexto, anno dominice incarnationis <num value="1132">mcxxxii</num> indictio&bd;ne 
 <num value="8">uiii</num>. 
 </p> 
 
 
-<p xml:id="g215.n14-215.n10" decls="#ocr"><!-- Sembra proprio non esserci in A!!!-->
+<p xml:id="g215.n14-215.n10" decls="#ocr"><!-- §§§ Sembra proprio non esserci in A!!!-->
 <link target="#g215.n14-215.n10 #g215.n14-215.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g215.n14-215.n10 #g215.n14-215.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 &blb;<hi>anno</hi> dominice incarnationis 1128, indictione 7. <hi>hoc</hi> an&bd;no 

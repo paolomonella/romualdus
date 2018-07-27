@@ -1817,7 +1817,7 @@ ciuitate ab <rs>alfano</rs> <rs>caputaquensi</rs> episcopo est unctus in
 &blb;"<hi>anno</hi> <rs>domini</rs> <num value="1127">mcxx&uu;ii</num> indictione <num value="6">&uu;i</num> mense <hi>septembris</hi> 
 &blb;<rs>boamundus</rs> iuuenis transfretauit in <rs>antiochiam</rs>, et factus est 
 &blb;princeps in loco patris sui, et omnes ciuitates suas <rs>apulie</rs> comi&bd;ti 
-domno <rs>alexandro</rs> consanguineo sui <choice><sic>reliquid</sic><corr resp="#pm" type="typo">reliquit</corr></choice>, ut uice sua eis 
+domno <rs>alexandro</rs> consanguineo sui reliquid, ut uice sua eis 
 &blb;uteretur.
 </p>
 
@@ -1898,12 +1898,12 @@ in sua potestate recepit.
 
 
 <p xml:id="g214.n8-215.n14" decls="#ocr">
-&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1127, indictione 6. <hi>hoc</hi> an&bd;no 
+&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1127"><choice><orig>1127</orig><reg type="numeral">mcxxuii</reg></choice></num> , indictione <num value="6"><choice><orig>6</orig><reg type="numeral">ui</reg></choice></num>. <hi>hoc</hi> an&bd;no 
 mense <hi>septembris</hi> <rs>boamundus</rs> filius <rs>boamundi</rs> principis 
 &blb;accersitus ab <rs>anteochenis</rs> ut in loco patris optineret regnum 
 &blb;<rs>antiochenum</rs>, reliquid omnes ciuitates <rs>apulie</rs>, quas tenebat, 
 &blb;domno <rs>alexandro</rs> comiti, ut uice sua eis uteretur, et ipse cum 
-&blb;triremis nauibus 14 absque aliis sex honerariis, et cum iu&bd;uenum 
+&blb;triremis nauibus <num value="14">14</num> absque aliis sex honerariis, et cum iu&bd;uenum 
 electa multitudine pontica sulcans equora perrexit 
 &blb;<rs>antiochiam</rs>. <hi>mense</hi> <hi>iunii</hi> eadem indictione, dum castellum 
 &blb;<rs>obmanum</rs> iussione <rs>roggerii</rs> comitis <rs>siciliensis</rs> a comitibus 
