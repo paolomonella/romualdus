@@ -31,7 +31,7 @@ class msTree:
         parser = etree.XMLParser(load_dtd=True, resolve_entities=True)
         #parser = etree.XMLParser(resolve_entities=True)
         self.tree = etree.parse(self.xmlfile, parser=parser)
-        self.outputXmlFile = '%s/%s%s.xml' % (constants.xmlpath, siglum, '_juxta')
+        self.outputXmlFile = '%s/juxtacommons/%s%s.xml' % (constants.xmlpath, siglum, '_juxta')
 
     def remove_comments (self):
         ''' Remove XML comments such as <!-- comment --> '''
