@@ -38,3 +38,7 @@ def spread_ids (get_p_ids_from, append_p_ids_to):
                 output_body.append(newp)
                 #print('Nel MS %s NON c\'era %s' % (ms, ii))
         output_tree.write('../xml/%s.xml' % (ms), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
+
+
+spread_ids ('a', 'b')
+spread_ids ('a', 'c')
