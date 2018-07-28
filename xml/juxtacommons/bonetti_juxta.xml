@@ -103,6 +103,11 @@
 
 <pb n="62" ed="#b"/> 
 
+<p xml:id="b062heading" decls="#ocr"> 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Romoaldi</rs> <num value="2">ii</num> archiepiscopi salernitani annales 
+</p>
+
+
 <p xml:id="g163.6-163.7" decls="#ocr"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> dominice incarnationis <num value="893">dcccxcii<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num>. <hi>Primus</hi> <rs>Guaimarius</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>suscepit principatum in <rs>Salerno</rs>, et regnauit annis <num value="39">xxx<choice><reg type="numeral">ix</reg></choice></num>. 
@@ -331,7 +336,7 @@ rebellauit contra <rs>Carolum</rs> regem consilioque habito cum
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>itaque <rs>Carolus</rs> rex cum uxore sua et positus in custodia <rs>Aurelia<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>nis</rs> 
 ciuitate in turri", in qua uitam finiuit. <hi>Habuit</hi> autem ex eadem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uxore filios duos <rs>Ludouicum</rs> et <rs>Carolum</rs>. <rs>Ugo</rs> itaque dux re<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gnum 
-sibi <rs>Francorum</rs> arripuit, <choice><corr type="typo">constituitque</corr></choice> regem filium suum 
+sibi <rs>Francorum</rs> arripuit, <choice><corr resp="#pm" type="typo">constituitque</corr></choice> regem filium suum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>nomine <rs>Robbertum</rs>. <hi>Sicque</hi> defecit prosapia regum a <rs>Carolo</rs> im<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>peratore 
 descendentium et ex tunc <rs>Francorum</rs> reges regali tan<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tum 
 honore contenti imperii dignitatem amiserunt. "<hi>In</hi> illis die<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bus 
@@ -592,7 +597,7 @@ papatum <rs>Iohannes</rs> <rs>Sabinensis</rs> episcopus cui nomen <rs>Si<lb xmln
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>diem obiit anno <num value="7"><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ii</num> eius imperii. <hi>Cui</hi> <rs>Michael</rs> qui <rs>Etheriarchis</rs> di<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cebatur 
 successit cum <rs>Zoy</rs> imperatrice. <hi>Eodem</hi> anno mense <hi>Fe<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bruarii</hi> 
 <rs>Normanni</rs> ingressi iam in <rs>Apuliam</rs>, ter uno die cum <rs>Gre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cis</rs> 
-graui prelio <choice><corr type="typo">dimicarunt</corr></choice> inter <rs>Aufidum</rs> amnem et <rs>Oliuentem</rs>, 
+graui prelio <choice><corr resp="#pm" type="typo">dimicarunt</corr></choice> inter <rs>Aufidum</rs> amnem et <rs>Oliuentem</rs>, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>et <rs>Normanni</rs> uictores extiterunt. <hi>In</hi> ipso quidem prelio fuit <rs>Dro<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>go</rs> 
 <rs>Normannorum</rs> comes et quattuor ex fratribus eius. <hi>In</hi> ipso 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>quoque anno <rs>Chunradus</rs> imperator defunctus est anno eius im<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>perii 
@@ -683,7 +688,7 @@ in mense <hi>Octobris</hi> et in mense <hi>Decembris</hi> depopulaue<lb xmlns="h
 <hi>Anno</hi> domini <num value="1051">ml<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num> indictione <num value="3">ii<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num> mense <hi>Augusti</hi> <rs>Drogo</rs> <rs>Nor<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>mannorum</rs> 
 comes defunctus est. "<hi>Fuitque</hi> uir egregius, pius, stre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>nuus 
 atque famosus, qui propter animi mansuetudinem et iusti<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cie 
-<choice><corr type="typo">seruatam</corr></choice> equitatem a cunctis est dilectus". <hi>Cui</hi> <rs>Unfridus</rs> fra<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ter 
+<choice><corr resp="#pm" type="typo">seruatam</corr></choice> equitatem a cunctis est dilectus". <hi>Cui</hi> <rs>Unfridus</rs> fra<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ter 
 eius <rs>Normannorum</rs> comes successit, tenuitque potestatem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ipsius honoris per annos septem. 
 </p> 
@@ -1125,7 +1130,7 @@ cepit maximam partem <rs>Urbis</rs>, hostiliter incendens et uastans
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>a palatio <rs>Laterani</rs> usque castellum sancti <rs>Angeli</rs>, ubi papa <rs>Grego<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rius</rs> 
 oppugnabatur. <rs>Romani</rs> enim simul cum imperatore erant in<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sidiantes 
 <rs>Gregorio</rs> pape. <hi>Tunc</hi> dux extraxit eundem papam de 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ipso castello, <choice><corr type="typo">duxitque</corr></choice> eum secum usque <rs>Salernum</rs>. <hi>Inter</hi> hec 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ipso castello, <choice><corr resp="#pm" type="typo">duxitque</corr></choice> eum secum usque <rs>Salernum</rs>. <hi>Inter</hi> hec 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Boamundus</rs> filius ducis absente patre duo cum <rs>Alexio</rs> imperato<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>re 
 prelia gessit, quorum unum <rs>Boamundus</rs> ipse uiriliter uicit, al<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>terum 
 uero imperator uicit, non tamen ui sed insidiose agens. 
@@ -1274,7 +1279,7 @@ qui postea eidem duci in honore ducatus successit.
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> dominice incarnationis <num value="1093">m<choice><reg type="numeral">xc</reg></choice>ii<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num> indictione <num value="1"><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num> mense 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Martio</hi> <rs>Urbanus</rs> papa <rs>Troie</rs> sinodum celebrauit. <hi>Eodem</hi> anno <num value="9">ix</num> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>kalendas<note resp="#pm" type="graphic"><hi>Abbreviated</hi> as 'kal.' in <rs>Bonetti</rs></note> <hi>Octobris</hi> fuit solis eclipsis circa horam tertiam diei, feria <num value="6"><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>indictione 2. 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>indictione <num value="2"><choice><reg type="numeral">ii</reg></choice></num>. 
 </p> 
 
 
@@ -1464,7 +1469,7 @@ illum excepit in ecclesia beati <rs>Petri</rs>. <hi>Rex</hi> autem suo<lb xmlns=
 militum caterua stipatus, post pacis osculum benedictio<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>nemque 
 ab eo acceptam, dum ab eodem papa quod ipse per le<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gatos 
 sibi promiserat, optinere se non posse uideret, cepit ipsum 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>papam cum <choice><corr type="typo">omnibus</corr></choice> qui cum eo illic erant, atque per duos 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>papam cum <choice><corr resp="#pm" type="typo">omnibus</corr></choice> qui cum eo illic erant, atque per duos 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>menses in custodia habere fecit, propter inuestituram episcopa<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tus 
 per anulum et uirgam quam rex petebat. <hi>Et</hi> papa predeces<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>soris 
 sui <rs>Gregorii</rs> cognomento <rs>Ildeprandi</rs>, qui hoc inchoauerat 
@@ -1508,7 +1513,7 @@ uirtute in bello preualidus. <hi>Huic</hi> autem <rs>Boamundus</rs> filius
 
 <p xml:id="g206.n4-206.n5" decls="#ocr">
 <note resp="#pm" type="segmentation"><rs>Garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> 1112. <hi>Hoc</hi> anno mense <hi>Augusti</hi> <rs>Agerenum</rs> 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> <num value="1112"><choice><reg type="numeral">mcxii</reg></choice></num>. <hi>Hoc</hi> anno mense <hi>Augusti</hi> <rs>Agerenum</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>iterum ignis combustione uastatur. 
 </p> 
 
@@ -1541,7 +1546,7 @@ ducatus, quemadmodum <rs>Gregorius</rs> papa concessit et tradidit
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Melfia</rs>, et sicut idem <rs>Paschalis</rs> papa concessit et tradidit eidem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>duci <rs>Roggerio</rs> apud sanctum <rs>Trophimenem</rs> per illud idem do<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>num 
 atque consensum. <hi>In</hi> predicta quidem synodo <rs>Landulfus</rs> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Beneuentanus</rs> archiepiscopus ab ordine <choice><corr type="typo">pontificali</corr></choice> deiectus est 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Beneuentanus</rs> archiepiscopus ab ordine <choice><corr resp="#pm" type="typo">pontificali</corr></choice> deiectus est 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>eo quod inobediens pape fuit, quique non post multum tempo<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ris 
 largito munere in sede sua ab eodem papa restitutus est. 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Eodem</hi> anno mense <hi>Decembris</hi> in <rs>Syria</rs> ante natalem <rs>Domini</rs> 
@@ -1774,7 +1779,7 @@ inter predictum ducem et comitem sepe esset pax et con<lb xmlns="http://www.tei-
 reformata, ipsi inter eos guerram et discordiam innoua<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bant. 
 <hi>Et</hi> quia predictus dux homo erat liberalis et largus et que<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cumque 
 habere poterat militibus erogabat, necessitate coactus 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>primo <rs>Calabriam</rs> pro sexaginta milibus bisantiorum prephato 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>primo <rs>Calabriam</rs> pro sexaginta milibus <rs>Bisantiorum</rs> prephato 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>comiti in pignore posuit. <hi>Postea</hi> mediam ciuitatem <rs>Panormi</rs>, que 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ei iure hereditario pertinebat, illi uendidit. <hi>Postremo</hi> cum de 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uxore sua filium habere non posset, recepta a prenominato 
@@ -1804,12 +1809,17 @@ ciuitate ab <rs>Alfano</rs> <rs>Caputaquensi</rs> episcopo est unctus in
 </p> 
 
 
-<p xml:id="g214.12-215.3" decls="#ocr"> 
+<p xml:id="g214.12-214.14" decls="#ocr"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>"<hi>Anno</hi> <rs>Domini</rs> <num value="1127">mcxx<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ii</num> indictione <num value="6"><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>i</num> mense <hi>Septembris</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Boamundus</rs> iuuenis transfretauit in <rs>Antiochiam</rs>, et factus est 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>princeps in loco patris sui, et omnes ciuitates suas <rs>Apulie</rs> comi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ti 
 domno <rs>Alexandro</rs> consanguineo sui reliquid, ut uice sua eis 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uteretur. <hi>Hoc</hi> anno <rs>Rogerius</rs> comes <rs>Sicilie</rs> excommunicatur ab 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uteretur.
+</p>
+
+
+<p xml:id="g214.14-215.3" decls="#ocr"> 
+<hi>Hoc</hi> anno <rs>Rogerius</rs> comes <rs>Sicilie</rs> excommunicatur ab 
 <pb n="130" ed="#b"/> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Honorio</rs> papa quia non permittebat ut episcopi <rs>Sicilie</rs> ueni<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rent 
 <rs>Romam</rs>. <hi>Denuo</hi> excommunicatur ab eodem papa eo quod 
@@ -1817,12 +1827,17 @@ domno <rs>Alexandro</rs> consanguineo sui reliquid, ut uice sua eis
 </p>
 
 
-<p xml:id="g216.1-217.12" decls="#ocr">
+<p xml:id="g216.1-217.1" decls="#ocr">
 <hi>Altero</hi> uero anno cum magno exercitu <rs>Apuliam</rs> intrauit. <hi>Papa</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>autem <rs>Honorius</rs>, cognito quod prephatus dux auctoritate sua 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uellet sibi ducatum <rs>Apulie</rs> usurpare, cuius inuestitura et domi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>nium 
 sibi predecessorum suorum iure legitimo pertinebat, <rs>Apu<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>liam</rs> 
-ingressus cum <rs>Robberto</rs> <rs>Capuano</rs> principe, <rs>Raydulfo</rs> comi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>te 
+ingressus cum <rs>Robberto</rs> <rs>Capuano</rs> principe,
+</p>
+
+
+<p xml:id="g217.1-217.12" decls="#ocr">
+<rs>Raydulfo</rs> comi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>te 
 <rs>Ayrole</rs> cognato predicti ducis, cum <rs>Conuersanensibus</rs>, <rs>Gri<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>moaldo</rs> 
 principe <rs>Barensi</rs>, et aliis baronibus <rs>Apulie</rs>, contra eum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uenit ut eum de <rs>Apulia</rs> expelleret. <hi>Dux</hi> uero <rs>Rogerius</rs>, uir erudi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tus 
@@ -1842,9 +1857,15 @@ in sua potestate recepit.
 </p> 
 
 
-<p xml:id="g218.1-219.2" decls="#ocr"> 
+<p xml:id="g218.1-218.2" decls="#al"> 
+<note resp="#pm" type="segmentation">Garufi's paragraph runs from page 218 line 1 to page 219 line 2 without interruptions. I split Garufi's paragraph because Garufi inserts one of the additions (the paragraph with id g218.n16-218.n23) after "coronari fecit".</note>
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Postmodum</hi> baronum et populi consilio apud <rs>Panormum</rs> se 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>in regem <rs>Sicilie</rs> inungi et coronari fecit. <hi>Qui</hi> regni solio potitus 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>in regem <rs>Sicilie</rs> inungi et coronari fecit.
+</p>
+
+
+<p xml:id="g218.2-219.2" decls="#al"> 
+<hi>Qui</hi> regni solio potitus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>cum nauali exercitu et magna militia <rs>Salernum</rs> uenit, et <rs>Amal<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>fiam</rs>, 
 <rs>Rauellum</rs> et <rs>Scalam</rs> potenter obsedit et longa obsidione 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>cepit, et tam castra eorum quam ciuitates suo dominio subdidit. 
@@ -1864,7 +1885,7 @@ in sua potestate recepit.
 
 
 <p xml:id="g219.3-219.4" decls="#ocr"> 
-<note resp="#pm" type="segmentation"><rs>Bonetti</rs> and <rs>Garufi</rs> insert this paragraph at different points of the text</note> 
+<note resp="#pm" type="segmentation"><rs>Bonetti</rs>, <rs>Garufi</rs> and manuscript <hi>A</hi> insert this paragraph at different points of the text. <hi>Also</hi>, <rs>Bonetti</rs> prints two sentences about the death of <rs>Boamundus</rs>, the son of prince <rs>Boamundus</rs>, almost identical at page 126 and 130-131.</note> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>"<hi>Hoc</hi> tempore <rs>Boamundus</rs> filius principis <rs>Boamundi</rs> in bello 
 <pb n="132" ed="#b"/> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>iusta <rs>Damascum</rs> occubuit, cuius corpus sine capite fertur esse 
@@ -1873,12 +1894,12 @@ in sua potestate recepit.
 
 
 <p xml:id="g214.n8-215.n14" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> ab incarnatione <rs>Domini</rs> 1127, indictione 6. <hi>Hoc</hi> an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>no 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> ab incarnatione <rs>Domini</rs> <num value="1127"><choice><reg type="numeral">mcxxuii</reg></choice></num> , indictione <num value="6"><choice><reg type="numeral">ui</reg></choice></num>. <hi>Hoc</hi> an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>no 
 mense <hi>Septembris</hi> <rs>Boamundus</rs> filius <rs>Boamundi</rs> principis 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>accersitus ab <rs>Anteochenis</rs> ut in loco patris optineret regnum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Antiochenum</rs>, reliquid omnes ciuitates <rs>Apulie</rs>, quas tenebat, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>domno <rs>Alexandro</rs> comiti, ut uice sua eis uteretur, et ipse cum 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>triremis nauibus 14 absque aliis sex honerariis, et cum iu<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>uenum 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>triremis nauibus <num value="14">14</num> absque aliis sex honerariis, et cum iu<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>uenum 
 electa multitudine pontica sulcans equora perrexit 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Antiochiam</rs>. <hi>Mense</hi> <hi>Iunii</hi> eadem indictione, dum castellum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Obmanum</rs> iussione <rs>Roggerii</rs> comitis <rs>Siciliensis</rs> a comitibus 
@@ -1898,8 +1919,8 @@ militum caterua super eos irruentes, ita illos protri<choice xmlns="http://www.t
 </p>
 
 
-<p xml:id="g215.n14-215.n10" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> dominice incarnationis 1128, indictione 7. <hi>Hoc</hi> an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>no 
+<p xml:id="g215.n14-216.n10" decls="#ocr">
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> dominice incarnationis <num value="1128"><choice><reg type="numeral">mcxxuiii</reg></choice></num>, indictione <num value="7"><choice><reg type="numeral">uii</reg></choice></num>. <hi>Hoc</hi> an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>no 
 mense <hi>Maii</hi> comes <rs>Rogerius</rs> congregata militum peditum<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>que 
 multitudine <rs>Siculum</rs> transmeans fretum uenit in partes 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Apulie</rs>. <hi>Fuisse</hi> autem in eius exercitu duo milia equitum et 
@@ -1920,8 +1941,8 @@ sue arrogancie fautores cum eo.
 </p>
 
 
-<p xml:id="g215.n10-217.n1" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> 1129, indictione 8, mense <hi>Iunii</hi>, dum ducis 
+<p xml:id="g216.n10-217.n1" decls="#ocr">
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> <num value="1129"><choice><reg type="numeral">mcxxix</reg></choice></num>, indictione <num value="8"><choice><reg type="numeral">uiii</reg></choice></num>, mense <hi>Iunii</hi>, dum ducis 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Rogerii</rs>, a quadraginta usque ad sexaginta ut fertur ueloces ga<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>lee 
 erant, uelocissime circumdederunt ciuitatem <rs>Barum</rs> ita 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ut nec intrandi nec egrediendi in urbem esset aliquibus locus 
@@ -1939,7 +1960,7 @@ comite fratre suo, et cum domno <rs>Grimoaldo</rs> <rs>Barensi</rs>
 
 
 <p xml:id="g217.n4-217.n10" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> ab incarnatione <rs>Domini</rs> 1130, indictione 9, mense 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> ab incarnatione <rs>Domini</rs> <num value="1130"><choice><reg type="numeral">mcxxx</reg></choice></num>, indictione <num value="9"><choice><reg type="numeral">ix</reg></choice></num>, mense 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Septembris</hi>, dux itaque <rs>Rogerius</rs> postquam omnes <rs>Apulie</rs> ciui<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tates 
 suo subiungauit dominio, id est <rs>Troiam</rs>, <rs>Sipontum</rs> et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Montem garganum</rs> et <rs>Tranem</rs> cum omnibus castellis et uillis 
@@ -1955,7 +1976,7 @@ reuersus est in <rs>Siciliam</rs>.
 
 
 <p xml:id="g218.n16-218.n23" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> ab incarnatione <rs>Domini</rs> 1131, indictione 11, mense 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> ab incarnatione <rs>Domini</rs> <num value="1131"><choice><reg type="numeral">mcxxxi</reg></choice></num>, indictione <num value="11"><choice><reg type="numeral">xi</reg></choice></num>, mense 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Decembris</hi> die natali <rs>Domini</rs> prephatus dux <rs>Rogerius</rs> precepit 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>congregare in <rs>Sicilie</rs> prouinciam omnes episcopos diuersa<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rum 
 prouinciarum <rs>Calabrie</rs>, <rs>Apulie</rs>, <rs>Campanie</rs> qui iussione 
@@ -1965,6 +1986,7 @@ regiam posuerunt et ab omnibus uocari regem iusse<lb xmlns="http://www.tei-c.org
 
 <milestone type="bonetti-paragraph-break" ed="#b"/>
 
+<note resp="#pm" type="segmentation"><rs>Bonetti</rs>, <rs>Garufi</rs> and manuscript <hi>A</hi> insert this paragraph at different points of the text. <hi>Also</hi>, <rs>Bonetti</rs> prints two sentences about the death of <rs>Boamundus</rs>, the son of prince <rs>Boamundus</rs>, almost identical at page 126 and 130-131 of the <rs>Bonetti</rs> edition.</note> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Hoc</hi> tempore <rs>Boamundus</rs> filius principis <rs>Boamundi</rs> in bel<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>lo
 iuxta <rs>Damascum</rs> occubuit cuius corpus sine capite inuen<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tum
 est, et sepultum in monasterio sancte <rs>Marie</rs> quod est
@@ -1972,8 +1994,9 @@ est, et sepultum in monasterio sancte <rs>Marie</rs> quod est
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>sepulcri, mense <hi>Februarii</hi>.
 </p>
 
+
 <p xml:id="g219.n1-219.n13" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> 1132, indictione 8, mense <hi>Septembris</hi>, dum
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> <num value="1132"><choice><reg type="numeral">mcxxxii</reg></choice></num>, indictione <num value="8"><choice><reg type="numeral">uiii</reg></choice></num>, mense <hi>Septembris</hi>, dum
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Rogerius</rs> dux <rs>Brundusium</rs> ac turrem in eo constructam sue
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>subdidit potestati ipseque reuersus <rs>Sicilie</rs> fuisset, comes <rs>Tan<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>credus</rs>
 ad obsidendam turrem perrexit, ubi tota ingenii arte 
@@ -1996,7 +2019,7 @@ cum suis <rs>Gallipolim</rs> ad obsidendum pergeret. <hi>Quod</hi> et
 
 
 <p xml:id="g217.n10-218.n16" decls="#ocr">
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> 1129, indictione 8. <rs>Rogerius</rs> dux transfre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tauit 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> <num value="1129"><choice><reg type="numeral">mcxxix</reg></choice></num>, indictione <num value="8"><choice><reg type="numeral">uiii</reg></choice></num>. <rs>Rogerius</rs> dux transfre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tauit 
 a <rs>Sicilia</rs>, uenit in <rs>Apuliam</rs> ac perrexit <rs>Tarentum</rs>. <hi>Deinde</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>babiit <rs>Nerito</rs> cum grandi exercitu, fertur enim tria milia 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>habuisse equites, pedites uero ac sagittarios et <rs>Sarracenos</rs> 
@@ -2026,8 +2049,8 @@ fame afflictum, ignem in turrem missum suam <rs>Tarenti</rs>
 </p> 
 
 
-<p xml:id="g219.8-222.4" decls="#ocr"> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Quo</hi> defuncto scisma in <choice><corr type="typo"><rs>Romana</rs></corr></choice> ecclesia exortum est, nam 
+<p xml:id="g219.8-221.14" decls="#ocr"> 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Quo</hi> defuncto scisma in <choice><corr resp="#pm" type="typo"><rs>Romana</rs></corr></choice> ecclesia exortum est, nam 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>maior et sanior pars cardinalium <rs>Gregorium</rs> natione <rs>Romanum</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>diaconum cardinalem <rs>Sancti angeli</rs> in pontificem elegerunt qui 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>et <rs>Innocentius</rs> secundus est appellatus. <hi>Alia</hi> uero pars cardina<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>lium 
@@ -2047,7 +2070,7 @@ et tota occidentali ecclesia est receptus. <rs>Anacletus</rs> uero <rs>Urbis</rs
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Melfiam</rs> concilium celebrauit. <hi>Qui</hi> cum per nuntios suos prepha<pb n="140" ed="#b"/>tum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>regem sepe rogasset ut cum eo haberet colloquium et ei de 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>more hominium faceret, ipse utpote uir astutus et sapiens et pre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cauens 
-in futurum ab eius se colloquio et aspectu subtraxit. <hi>Ana</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cletus 
+in futurum ab eius se colloquio et aspectu subtraxit. <rs>Ana<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cletus</rs> 
 autem aliquandiu in <rs>Apulia</rs> commoratus <rs>Romam</rs> rediit et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ibi usque ad uite sue terminum mansit. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
@@ -2078,6 +2101,10 @@ uero <rs>Pisanorum</rs> super <rs>Amalfiam</rs> uenientes eam inmunitam
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>rex <rs>Roggerius</rs> qui tunc temporis in <rs>Terra laboris</rs> erat, misso 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>exercitu suo <rs>Pisanos</rs> qui adhuc in <rs>Amalfie</rs> partibus morabantur 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>fugauit et multos eorum in ore gladii perdidit et sic ciuitatem li<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>berauit. 
+</p>
+
+
+<p xml:id="g221.14-222.1" decls="#ocr"> 
 <rs>Pisani</rs> uero deuicti et confusi primo <rs>Neapolim</rs> postea 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Pisas</rs> redierunt. <hi>Rex</hi> autem <rs>Roggerius</rs> uir discretus et prouidus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>qui in agendis suis negotiis magis consilio quam uiribus uteba<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tur, 
@@ -2091,7 +2118,12 @@ ad <rs>Lotharii</rs> imperatoris <rs>Teutonici</rs> auxilium confugerunt
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>asserentes <rs>Apuliam</rs> et <rs>Siciliam</rs> ad ius sui imperii pertinere. <hi>Rex</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>autem <rs>Roggerius</rs> postquam inimicos et rebelles suos a regno 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>repulit et fugauit, totam terram in pace et tranquillitate possedit 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>preter <rs>Neapolim</rs> quam expugnare non potuit. <hi>Hic</hi> autem cum 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>preter <rs>Neapolim</rs> quam expugnare non potuit.
+</p>
+
+
+<p xml:id="g222.1-222.4" decls="#ocr"> 
+<hi>Hic</hi> autem cum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>esset comes et iuuenis <rs>Albyriam</rs> filiam regis <rs>Hispanie</rs> duxit uxo<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rem 
 ex qua plures liberos habuit, <rs>Roggerium</rs> quem <rs>Apulie</rs> du<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cem 
 instituit, <rs>Tancredum</rs> quem <rs>Tarenti</rs> principem fecit, <rs>Anfu<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sium</rs> 
@@ -2100,7 +2132,8 @@ quem <rs>Capue</rs> principem ordinauit, <rs>Willelmum</rs> et <rs>Henricum</rs>
 </p> 
 
 
-<p xml:id="g222.5-224.19" decls="#ocr"> 
+<p xml:id="g222.5-222.12" decls="#ocr"> 
+<note resp="#pm" type="segmentation">Garufi's paragraph runs from page 222 line 5 to page 224 line 19 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.</note>
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Interea</hi> <rs>Innocentius</rs> papa in <rs>Francia</rs> aliquantulum demoratus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Alamanniam</rs> uenit et ab imperatore <rs>Lothario</rs> et ab uniuersis 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>principibus eius cum summa est gloria et deuotione susceptus. 
@@ -2111,7 +2144,12 @@ cum magno esercitu <rs>Italiam</rs> intrauit et per partes <rs>Ancone</rs>
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Capuanum</rs> principem cum comite <rs>Raydulfo</rs> et aliis exulibus et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>quadam parte sui exercitus <rs>Terram laboris</rs> intrare iussit, galeas 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>etiam <rs>Pisanorum</rs> in eorum auxilio uenire precepit. <hi>Imperator</hi> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>autem totam <rs>Apuliam</rs>, resistente sibi nemine, occupauit. <hi>Rex</hi> ue<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ro 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>autem totam <rs>Apuliam</rs>, resistente sibi nemine, occupauit.
+</p>
+
+
+<p xml:id="g222.12-223.12" decls="#ocr"> 
+<hi>Rex</hi> ue<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ro 
 <rs>Roggerius</rs> cognoscens quod imperatori resistere non ualeret, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>eo quod barones eius et ciuitates pro maiori parte recesserant 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ab ipso, ciuitates et castra sua fortia premuniuit; ipse uero cum 
@@ -2143,7 +2181,12 @@ liberarent. <hi>Ciues</hi> uero eius preceptis obtemperantes pacem
 quadrigentos milites qui in ciuitate fuerant, ad regem <rs>Rog<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gerium</rs> 
 cum rebus suis illesos abire fecerunt. <hi>Cancellarius</hi> autem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>cum baronibus et quibusdam militibus se in <rs>Turrim</rs> maiorem 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>recepit. <hi>Facta</hi> autem pace, <rs>Pisani</rs> utpote superbi et elati ceperunt 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>recepit.
+</p>
+
+
+<p xml:id="g223.12-224.19" decls="#ocr"> 
+<hi>Facta</hi> autem pace, <rs>Pisani</rs> utpote superbi et elati ceperunt 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>iniurias et molestias ciuibus <rs>Salernitanis</rs> inferre. <hi>Qui</hi> eorum su<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>perbiam 
 non ferentes, accipientes arma in eos irruerunt, et maxi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>mum 
 castrum ligneum, quod ad expugnationem ciuitatis fece<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rant, 
@@ -4210,7 +4253,7 @@ iustitiam faceret.
 
 
 <p xml:id="g279.3-279.15" decls="#ocr"> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><choice><corr type="typo"><hi>Postquam</hi></corr></choice> autem hic modus petitionis implende per episco<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>pum 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><choice><corr resp="#pm" type="typo"><hi>Postquam</hi></corr></choice> autem hic modus petitionis implende per episco<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>pum 
 <rs>Clarimontis</rs> et abbatem de <rs>Bonaualle</rs> fuit imperatori pro<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>positus, 
 plurimum illi displicuit, et sic concordia per illos tracta<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ta 
 remansit. <rs>Christianus</rs> autem cancellarius et reliqui, qui cum eo 
@@ -4977,7 +5020,7 @@ pro parte nostra et heredum nostrorum paciscimur uo<pb n="282" ed="#b"/>biscum,
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>domine <rs>W<supplied resp="#b">illelm</supplied>e</rs>, eadem gratia illustris rex <rs>Sicilie</rs>, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>quod amodo usque ad quindecim annos obseruabimus uobis et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>heredibus uestris et uniuerso regno uestro et toti terre domina<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tionis 
-uestre ueram et <choice><corr type="typo">firman</corr></choice> pacem. <hi>Et</hi> quod per nos uel per 
+uestre ueram et <choice><corr resp="#pm" type="typo">firman</corr></choice> pacem. <hi>Et</hi> quod per nos uel per 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>quoslibet alios, mari uel terra, uos predictum illustrem regem et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>heredes uestros aut regnum uestrum et terram dominationis 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uestre, sicut prescriptum et determinatum est, usque ad quinde<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cim 
