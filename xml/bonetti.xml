@@ -1283,7 +1283,7 @@ qui postea eidem duci in honore ducatus successit.
 &blb;<hi>anno</hi> dominice incarnationis <num value="1093">m<choice><orig>lxxxx</orig><reg type="numeral">xc</reg></choice>ii&jj;</num> indictione <num value="1">&jj;</num> mense 
 &blb;<hi>martio</hi> <rs>urbanus</rs> papa <rs>troie</rs> sinodum celebrauit. <hi>eodem</hi> anno <num value="9">ix</num> 
 &blb;kalendas<note resp="#pm" type="graphic"><hi>abbreviated</hi> as 'kal.' in <rs>bonetti</rs></note> <hi>octobris</hi> fuit solis eclipsis circa horam tertiam diei, feria <num value="6">&uu;&jj;</num> 
-&blb;indictione 2. 
+&blb;indictione <num value="2"><choice><orig>2</orig><reg type="numeral">ii</reg></choice></num>. 
 </p> 
 
 
@@ -1517,7 +1517,7 @@ uirtute in bello preualidus. <hi>huic</hi> autem <rs>boamundus</rs> filius
 
 <p xml:id="g206.n4-206.n5" decls="#ocr">
 <note resp="#pm" type="segmentation"><rs>garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
-&blb;<hi>anno</hi> <rs>domini</rs> 1112. <hi>hoc</hi> anno mense <hi>augusti</hi> <rs>agerenum</rs> 
+&blb;<hi>anno</hi> <rs>domini</rs> <num value="1112"><choice><orig>1112</orig><reg type="numeral">mcxii</reg></choice></num>. <hi>hoc</hi> anno mense <hi>augusti</hi> <rs>agerenum</rs> 
 &blb;iterum ignis combustione uastatur. 
 </p> 
 
@@ -1923,8 +1923,8 @@ militum caterua super eos irruentes, ita illos protri&uu;erunt
 </p>
 
 
-<p xml:id="g215.n14-215.n10" decls="#ocr">
-&blb;<hi>anno</hi> dominice incarnationis 1128, indictione 7. <hi>hoc</hi> an&bd;no 
+<p xml:id="g215.n14-216.n10" decls="#ocr">
+&blb;<hi>anno</hi> dominice incarnationis <num value="1128"><choice><orig>1128</orig><reg type="numeral">mcxxuiii</reg></choice></num>, indictione <num value="7"><choice><orig>7</orig><reg type="numeral">uii</reg></choice></num>. <hi>hoc</hi> an&bd;no 
 mense <hi>maii</hi> comes <rs>rogerius</rs> congregata militum peditum&bd;que 
 multitudine <rs>siculum</rs> transmeans fretum uenit in partes 
 &blb;<rs>apulie</rs>. <hi>fuisse</hi> autem in eius exercitu duo milia equitum et 
@@ -1945,8 +1945,8 @@ sue arrogancie fautores cum eo.
 </p>
 
 
-<p xml:id="g215.n10-217.n1" decls="#ocr">
-&blb;<hi>anno</hi> <rs>domini</rs> 1129, indictione 8, mense <hi>iunii</hi>, dum ducis 
+<p xml:id="g216.n10-217.n1" decls="#ocr">
+&blb;<hi>anno</hi> <rs>domini</rs> <num value="1129"><choice><orig>1129</orig><reg type="numeral">mcxxix</reg></choice></num>, indictione <num value="8"><choice><orig>8</orig><reg type="numeral">uiii</reg></choice></num>, mense <hi>iunii</hi>, dum ducis 
 &blb;<rs>rogerii</rs>, a quadraginta usque ad sexaginta ut fertur ueloces ga&bd;lee 
 erant, uelocissime circumdederunt ciuitatem <rs>barum</rs> ita 
 &blb;ut nec intrandi nec egrediendi in urbem esset aliquibus locus 
@@ -1964,7 +1964,7 @@ comite fratre suo, et cum domno <rs>grimoaldo</rs> <rs>barensi</rs>
 
 
 <p xml:id="g217.n4-217.n10" decls="#ocr">
-&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1130, indictione 9, mense 
+&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1130"><choice><orig>1130</orig><reg type="numeral">mcxxx</reg></choice></num>, indictione <num value="9"><choice><orig>9</orig><reg type="numeral">ix</reg></choice></num>, mense 
 &blb;<hi>septembris</hi>, dux itaque <rs>rogerius</rs> postquam omnes <rs>apulie</rs> ciui&bd;tates 
 suo subiungauit dominio, id est <rs>troiam</rs>, <rs>sipontum</rs> et 
 &blb;<rs>montem garganum</rs> et <rs>tranem</rs> cum omnibus castellis et uillis 
@@ -1980,7 +1980,7 @@ reuersus est in <rs>siciliam</rs>.
 
 
 <p xml:id="g218.n16-218.n23" decls="#ocr">
-&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> 1131, indictione 11, mense 
+&blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1131"><choice><orig>1131</orig><reg type="numeral">mcxxxi</reg></choice></num>, indictione <num value="11"><choice><orig>11</orig><reg type="numeral">xi</reg></choice></num>, mense 
 &blb;<hi>decembris</hi> die natali <rs>domini</rs> prephatus dux <rs>rogerius</rs> precepit 
 &blb;congregare in <rs>sicilie</rs> prouinciam omnes episcopos diuersa&bd;rum 
 prouinciarum <rs>calabrie</rs>, <rs>apulie</rs>, <rs>campanie</rs> qui iussione 
@@ -1990,7 +1990,7 @@ regiam posuerunt et ab omnibus uocari regem iusse&bd;runt.
 
 <milestone type="bonetti-paragraph-break" ed="#b"/>
 
-<note resp="#pm" type="segmentation"><rs>bonetti</rs>, <rs>garufi</rs> and manuscript <hi>a</hi> insert this paragraph at different points of the text. <hi>also</hi>, <rs>bonetti</rs> prints two sentences about the death of <rs>boamundus</rs>, the son of prince <rs>boamundus</rs>, almost identical at page 126 and 130-131.</note> 
+<note resp="#pm" type="segmentation"><rs>bonetti</rs>, <rs>garufi</rs> and manuscript <hi>a</hi> insert this paragraph at different points of the text. <hi>also</hi>, <rs>bonetti</rs> prints two sentences about the death of <rs>boamundus</rs>, the son of prince <rs>boamundus</rs>, almost identical at page 126 and 130-131 of the <rs>bonetti</rs> edition.</note> 
 &blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bel&bd;lo
 iuxta <rs>damascum</rs> occubuit cuius corpus sine capite inuen&bd;tum
 est, et sepultum in monasterio sancte <rs>marie</rs> quod est
@@ -2000,7 +2000,7 @@ est, et sepultum in monasterio sancte <rs>marie</rs> quod est
 
 
 <p xml:id="g219.n1-219.n13" decls="#ocr">
-&blb;<hi>anno</hi> <rs>domini</rs> 1132, indictione 8, mense <hi>septembris</hi>, dum
+&blb;<hi>anno</hi> <rs>domini</rs> <num value="1132"><choice><orig>1132</orig><reg type="numeral">mcxxxii</reg></choice></num>, indictione <num value="8"><choice><orig>8</orig><reg type="numeral">uiii</reg></choice></num>, mense <hi>septembris</hi>, dum
 &blb;<rs>rogerius</rs> dux <rs>brundusium</rs> ac turrem in eo constructam sue
 &blb;subdidit potestati ipseque reuersus <rs>sicilie</rs> fuisset, comes <rs>tan&bd;credus</rs>
 ad obsidendam turrem perrexit, ubi tota ingenii arte 
@@ -2023,7 +2023,7 @@ cum suis <rs>gallipolim</rs> ad obsidendum pergeret. <hi>quod</hi> et
 
 
 <p xml:id="g217.n10-218.n16" decls="#ocr">
-&blb;<hi>anno</hi> <rs>domini</rs> 1129, indictione 8. <rs>rogerius</rs> dux transfre&bd;tauit 
+&blb;<hi>anno</hi> <rs>domini</rs> <num value="1129"><choice><orig>1129</orig><reg type="numeral">mcxxix</reg></choice></num>, indictione <num value="8"><choice><orig>8</orig><reg type="numeral">uiii</reg></choice></num>. <rs>rogerius</rs> dux transfre&bd;tauit 
 a <rs>sicilia</rs>, uenit in <rs>apuliam</rs> ac perrexit <rs>tarentum</rs>. <hi>deinde</hi> 
 &blb;babiit <rs>nerito</rs> cum grandi exercitu, fertur enim tria milia 
 &blb;habuisse equites, pedites uero ac sagittarios et <rs>sarracenos</rs> 
@@ -2074,7 +2074,7 @@ et tota occidentali ecclesia est receptus. <rs>anacletus</rs> uero <rs>urbis</rs
 &blb;<rs>melfiam</rs> concilium celebrauit. <hi>qui</hi> cum per nuntios suos prepha<pb n="140" ed="#b"/>tum 
 &blb;regem sepe rogasset ut cum eo haberet colloquium et ei de 
 &blb;more hominium faceret, ipse utpote uir astutus et sapiens et pre&bd;cauens 
-in futurum ab eius se colloquio et aspectu subtraxit. <hi>ana</hi>&bd;cletus 
+in futurum ab eius se colloquio et aspectu subtraxit. <rs>ana&bd;cletus</rs> 
 autem aliquandiu in <rs>apulia</rs> commoratus <rs>romam</rs> rediit et 
 &blb;ibi usque ad uite sue terminum mansit. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
@@ -2189,7 +2189,7 @@ cum rebus suis illesos abire fecerunt. <hi>cancellarius</hi> autem
 </p>
 
 
-<p xml:id="223.12-224.19" decls="#ocr"> 
+<p xml:id="g223.12-224.19" decls="#ocr"> 
 <hi>facta</hi> autem pace, <rs>pisani</rs> utpote superbi et elati ceperunt 
 &blb;iniurias et molestias ciuibus <rs>salernitanis</rs> inferre. <hi>qui</hi> eorum su&bd;perbiam 
 non ferentes, accipientes arma in eos irruerunt, et maxi&bd;mum 
