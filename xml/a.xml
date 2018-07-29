@@ -3342,7 +3342,7 @@ cum suis <rs>gallipolim</rs> ad obsidendum pergeret. <hi>quod</hi> et
 </p>
 
 
-<p xml:id="g222.12-223.12" decls="#ocr"> 
+<p xml:id="g222.12-223.12" decls="#al"> 
 <hi>rex</hi> ue&bd;ro 
 <rs>roggerius</rs> cognoscens quod imperatori resistere non ualeret, 
 &blb;eo quod barones eius et ciuitates pro maiori parte recesserant 
@@ -3372,49 +3372,49 @@ ciuibus ex parte regis precepit ut cum imperatore con&bd;cordiam
 facerent et se et regis militiam que in ciuitate erat a peri&bd;culo 
 liberarent. <hi>ciues</hi> uero eius preceptis obtemperantes pacem 
 &blb;cum imperatore fecerunt et data de suis imperatori magna pecu&bd;nia, 
-quadrigentos milites qui in ciuitate fuerant, ad regem <rs>rog&bd;gerium</rs> 
+quadringentos milites qui in ciuitate fuerant, ad regem <rs>rog&bd;gerium</rs> 
 cum rebus suis illesos abire fecerunt. <hi>cancellarius</hi> autem 
 &blb;cum baronibus et quibusdam militibus se in <rs>turrim</rs> maiorem 
 &blb;recepit.<!-- quasi metà pag. 144 bonetti-->
 </p>
 
 
-<!--siamo in 223r-->
-<p xml:id="g217.n10-218.n16" decls="#ocr">
+<p xml:id="g217.n10-218.n16" decls="#al">
 <link target="#g217.n10-218.n16 #g217.n10-218.n16garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g217.n10-218.n16 #g217.n10-218.n16bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <add place="marginandfooter" hand="#hand2" xml:id="g217.n10-218.n16add100">
-<note resp="#pm"><rs>garufi</rs> writes that this addition is from a hand more recent than hand2: "l'ultima interpolazione, cioè la settima, cf. p. 218 n. 2, dovuta ad uno interpolatore diverso da colui che scrisse le altre sei, come si può desumere dal differente sistema cronologico e dallo stile".</note>
-&blb;<hi>anno</hi> <rs>domini</rs> <num value="1129">mcxxix</num>, indictione <num value="8"><choice><orig>8</orig><reg type="numeral">uiii</reg></choice></num>. <rs>rogerius</rs> dux transfre&bd;tauit 
-a <rs>sicilia</rs>, uenit in <rs>apuliam</rs> ac perrexit <rs>tarentum</rs>. <hi>deinde</hi> 
-&blb;babiit <rs>nerito</rs> cum grandi exercitu, fertur enim tria milia 
-&blb;habuisse equites, pedites uero ac sagittarios et <rs>sarracenos</rs> 
-&blb;usque ad sex milia, quam uacue factam inueniens cepit, pre&bd;de 
-ac direptione cuncta permiscendo, quin etiam et christia&bd;norum 
-sanguinem a <rs>sarracenis</rs> crudeliter fundi precipiendo, 
+<note resp="#pm"><rs>garufi</rs> writes that this addition is from a hand more recent than hand2: "l'ultima interpolazione, cioè la settima, cf. p. 218 n. 2, dovuta ad uno interpolatore diverso da colui che scrisse le altre sei, come si può desumere dal differente sistema cronologico e dallo stile". <hi>however</hi>, <hi>i</hi> don't see a significant difference between the handwriting of this note and that of hand2.</note>
+&blb;<num value="1129">mcxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, indictione <num value="8">uiii</num>. <hi>hoc</hi> anno mense madii <rs>rogerius</rs> dux transfre&bd;tauit 
+a <rs>sicilia</rs>, uenitque in <rs>apuliam</rs> ac perrexit <rs>tarentum</rs>. <hi>deinde</hi> 
+&blb;abiit <rs>neriton</rs> cum grand exercitu, fertur enim tria millia 
+&blb;habuisse equites, pedites uero ac sagitarios et <rs>sarracenos</rs> 
+&blb;usque ad sex milia, quam uacue factam<note resp="#pm" type="graphic"><hi>from</hi> this point on, the note is written in the footer, not in the right margin of the page.</note> inueniens cepit, pr<seg type="ae">ae</seg>&bd;d<seg type="ae">ae</seg> 
+ac direptioni cuncta permiscenda, quin etiam et christia&bd;norum 
+sanguinem a <rs>sarracenis</rs> crudeliter fundi pr<seg type="ae">ae</seg>cipiendo, 
 &blb;nam senes interficiebant, pueros de sinu auferentes matrum 
 <pb n="138" ed="#b"/> 
-&blb;allidebant gladiisque findebant, sacerdotes iuxta crucem et 
-&blb;altare stantes interimebant, sacramenta ecclesie id est sanc&bd;tum 
-crisma in suius peronibus deridendo seu culponibus fun&bd;debant, 
+&blb;allidebant gladiisque fundebant, sacerdotes iuxta crucem et 
+&blb;altare stantes interimebant, sacramenta ecclesi<seg type="ae">ae</seg> id est sanc&bd;tum 
+chrisma in suius peronibus deridendo seu corporibus fun&bd;debant, 
 mulieres coram maritis adulterantes, reliquos uero 
-&blb;qui superfuerunt uinculatos <rs>sicilie</rs> asportare precepit. <hi>et</hi> exin&bd;de 
-amaro exercitu adhiit <rs>brundusium</rs>, posuitque sibi obsi&bd;dionem 
+&blb;qui superfuerunt uinculatos <rs>sicili<seg type="ae">ae</seg></rs> asportare precepit. <hi>et</hi> exin&bd;de 
+ammoto exercitu abiit <rs>brundusium</rs>, posuitque ibi obsi&bd;dionem 
 in mense <hi>iunii</hi> per terram et mare, fecitque ante eam 
 &blb;turrem fieri ex trabibus proceris et altissimis, ferreisque ne&bd;xibus, 
-coriis uiminibusque muniuit, cuius altitudo predicte 
-&blb;urbis muros precelleret. <hi>set</hi> nichil huiusmodi infermentum 
-&blb;machine profuit sibi nec obfuit <rs>brundusinis</rs>; <rs>gofredus</rs> enim 
-&blb;domni <rs>alandri</rs> comitis filius, et <rs>riccardus</rs> <rs>clerimonti</rs> domi&bd;nus 
-qui de intus erant simili modo confecerunt balistas et 
-&blb;machinas que totam subito destruxerunt turrem. <hi>dux</hi> uero 
-&blb;nullo modo suum preualere ingenium uidens, omnem exerci&bd;tum 
-fame afflictum, ignem in turrem missum suam <rs>tarenti</rs> 
-&blb;reuertitur. 
-&blb;<note resp="#pm" type="segmentation"><rs>garufi</rs>, page 128, line 16 of the apparatus notes, adds the following phrase, not present in in <rs>bonetti</rs>, to the paragraph:: "cum illis pepiget facta autem pacem".</note> 
+coriis uiminibusque munitam, cuius altitudo muros pr<seg type="ae">ae</seg>dict<seg type="ae">ae</seg> 
+&blb;urbis muros pr<seg type="ae">ae</seg>celleret. <hi>sed</hi> nihil huiusmodi instrumentum 
+&blb;machin<seg type="ae">ae</seg> profuit sibi nec obfuit <rs>brundusinis</rs>; <rs>goffredus</rs> enim 
+&blb;domni <rs>alexandri</rs> comitis filius, et <rs>riccardus</rs> <rs>clarimonti</rs> domi&bd;nus 
+qui de ratus erant simili modo confecerunt balistas et 
+&blb;machinas qu<seg type="ae">ae</seg> totam subito destruxerunt turrem. <hi>dux</hi> uero uidens 
+&blb;nullo modo suum pr<seg type="ae">ae</seg>ualere ingenium, uidens omnem exerci&bd;tum 
+fame afflictum, ignem in turri misit, et 
+&blb;cum illis pepigit.
+<note resp="#hand2" type="etcetera"><hi>facta</hi> autem pacem et cetera…</note>
+<note resp="#hand2" type="sanctipetri"><hi>h<seg type="ae">ae</seg></hi>c particula qu<seg type="ae">ae</seg> qu<seg type="ae">ae</seg> hic heerat, desumpta est ex codice sancti <rs>petri</rs> et cetera…</note>
 </add>
 </p> 
-
+<!-- vedi tutti i finali in -e che mi sembravano finali in -i nei vari 'add', collazionando con vim -d bonetti e a-->
 
 
 <p xml:id="g223.12-224.19" decls="#ocr"> 
