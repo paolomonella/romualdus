@@ -883,20 +883,33 @@ et dimissa ibi obsidione cum paucis abiit <rs>abianum</rs> et cepit
 </p> 
 
 
-<p xml:id="g187.9-188.4" decls="#ocr"> 
+<p xml:id="g187.9-187.11" decls="#ocr"> 
 &blb;<hi>anno</hi> dominice incarnationis <num value="1070">mlxx</num> indictione <num value="8">&uu;ii&jj;</num>, apud 
 &blb;<rs>constantinopolim</rs> <rs>romano</rs> <rs>diogenes</rs> imperator transacto quar&bd;to 
 imperii eius anno defunctus est. <hi>cui</hi> in imperio <rs>michael</rs> filius 
 <pb n="92" ed="#b"/> 
-&blb;<rs>constantini</rs> <rs>dioclizi</rs> successit. "<hi>hoc</hi> anno mense <hi>ianuarii</hi> ma&bd;gnum 
+&blb;<rs>constantini</rs> <rs>dioclizi</rs> successit. 
+</p>
+
+
+<p xml:id="g187.11-187.14" decls="#al"> 
+"<hi>hoc</hi> anno mense <hi>ianuarii</hi> ma&bd;gnum 
 homicidium actum est in <rs>brundusii</rs> ciuitate. <hi>nam</hi> <rs>nor&bd;manni</rs> 
 uolentes eam comprehendere, tenti sunt ab eis quadra&bd;ginta 
 cum aliis eorum ministris et capita omnium predictorum 
-&blb;ad imperatorem deportata sunt". <hi>eodem</hi> anno <rs>robbertus</rs> dux 
+&blb;ad imperatorem deportata sunt".
+</p>
+
+<p xml:id="g187.14-188.1" decls="#al"> 
+<hi>eodem</hi> anno <rs>robbertus</rs> dux 
 &blb;"cepit <rs>barum</rs> ciuitatem longa obsidione fatigatam, indeque 
 &blb;mouens exercitum, <rs>siciliam</rs> properauit obseditque" "<rs>panormum</rs>, 
 &blb;<supplied resp="#b">per terram et per mare, duxitque ante eam naues <num value="58"><choice><orig>58</orig><reg type="numeral">luiii</reg></choice></num></supplied> ditissi&bd;mam 
-<rs>sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam an&bd;no 
+<rs>sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam.
+</p>
+
+<p xml:id="g188.1-188.4" decls="#al"> 
+an&bd;no 
 dominice incarnationis <num value="1071">mlxx&jj;</num>, indictione <supplied resp="#b"><num value="10">x</num></supplied>. <hi>et</hi> exinde por&bd;tas 
 ferreas et columpnas marmoreas quam plures cum capitibus 
 &blb;fecit afferri <rs>troiam</rs> causa uictorie sue. <hi>anno</hi> autem subsequente 
@@ -2509,7 +2522,7 @@ declarabit. <hi>rex</hi> <rs>rogerius</rs> quendam eunuchum ha&bd;buit
 <rs>philippum</rs> nomine, qui pro sui probitate ser&uu;icii ei gra&bd;tus 
 erat admodum et acceptus. <hi>et</hi> quia ipsum in agendis suis 
 &blb;fidelem et negociorum suorum idoneum exsecutorem in&uu;ene&bd;rat, 
-uni&uu;ero hunc prefecit palatio, et totius domus sue statuit 
+<choice><sic>uni&uu;ero</sic><corr resp="#pm" type="typo">uni&uu;erso</corr></choice> hunc prefecit palatio, et totius domus sue statuit 
 &blb;esse magistrum. <hi>qui</hi> sic per incrementa temporum in eius 
 &blb;gratia et amore profecit, quod illum stolii sui ammiratum es&bd;se 
 disposuit et cum eodem <rs>bonam</rs> misit, quam in ore gladii 
@@ -2546,7 +2559,7 @@ hominum testimonio comprobarunt. <rs>philippus</rs> autem
 &blb;agitatur, quia hic minister meus, quem a puero enutrieram 
 &blb;ut catholicum, peccatis suis exigentibus, in&uu;entus est sarrace&bd;nus, 
 et sarracenus et sub nomine fidei opera infidelitatis exer&bd;cuit. 
-<hi>et</hi> quidem si maiestatem nostram in rebus aliis offendi&bd;scet, 
+<hi>et</hi> quidem si maiestatem nostram in rebus aliis <choice><sic>offendi&bd;scet</sic><corr resp="#pm" type="typo">offendi&bd;sset</corr></choice>, 
 si thesauri nostri partem licet maxima exportasset, ser&bd;&uu;icii 
 sui recolenda memoria pro certo apud nos promereretur 
 &blb;&uu;eniam, et gratiam impetrasset. <hi>set</hi> quia in facto suo princi&bd;paliter 
@@ -2671,7 +2684,7 @@ quod de iniuriis sibi a rege <rs>rogerio</rs> illatis uindicaret in
 &blb;filium, <rs>paliologo</rs> uirum quendam nobilem cum multa pecunia ad 
 &blb;comitem <rs>robbertum</rs> et barones <rs>apulie</rs> transmisit, ut de ea mili&bd;tes 
 retinerent, et <rs>w<supplied resp="#b">illelmo</supplied></rs> regi guerram inferrent. <hi>misit</hi> etiam 
-&blb;<hi>comminianum</hi> (et) <rs>sebastum</rs> et alios potentes uiros cum suo 
+&blb;<rs>comminianum</rs> <supplied resp="#b">et</supplied> <rs>sebastum</rs> et alios potentes uiros cum suo 
 &blb;stolio, qui uenientes <rs>brundusium</rs> ceperunt preter castrum in 
 &blb;quo regis militia se recepit. <rs>barum</rs> autem et relique ciuitates ma&bd;ritime 
 <rs>grecis</rs> et comiti <rs>robberto</rs> adheserunt. <hi>sicque</hi> factum est, 
