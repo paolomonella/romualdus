@@ -278,7 +278,7 @@ cognomento <rs>Simiski</rs> tenuit imperium annis <num value="6"><choice xmlns="
 <rs>Basilius</rs> et <rs>Constantinus</rs> filii eius ceperunt imperare ab an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>no 
 incarnationis domini <num value="970"><choice><reg type="numeral">cm</reg></choice>lxx</num> <note resp="#b" type="year">sed 976</note>, regnaueruntque 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>annis <num value="55">l<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice></num>. <hi>At</hi> uero <rs>Rome</rs> defuncto <rs>Iohanne</rs> papa <rs>Benedictus</rs> papa 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>sedit annis <num value="2">ii</num>, et post eum <rs>Leo</rs> sedit anno uno mensibus <num value="2">ii</num>. <hi>Dein</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>de 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>sedit annis <num value="2">ii</num>, et post eum <rs>Leo</rs> sedit anno uno mensibus <num value="2">ii</num>. <hi>Dein<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>de</hi> 
 uero <rs>Iohannes</rs> sedit annis <num value="6"><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>i</num> mensibus <num value="11">xi</num>. <hi>Hic</hi> a <rs>Petro</rs> prefec<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>to 
 <rs>Romane</rs> urbis comprehensus et in castello sancti <rs>Angeli</rs> retru<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sus, 
 deinde in <rs>Campaniam</rs> in exilium missus et post menses de<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cem 
@@ -506,7 +506,7 @@ ciuitatem diu dirutam nuncupauitque eam <rs>Troiam</rs>, que
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>per statutum priuilegium eidem stabiliuit ciuitati. <hi>In</hi> hanc ciuita<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tem 
 olim tempore <rs>Adriani</rs> imperatoris, qui <rs>Traiano</rs> successerat, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>fuit ab apostolica sede missus <rs>Eleutherius</rs> episcopus qui post 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>duos annos iussu ipsius <rs>Adriani</rs> <rs>Rome</rs> ductus ac passus est. <hi>Tem</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>pore 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>duos annos iussu ipsius <rs>Adriani</rs> <rs>Rome</rs> ductus ac passus est. <hi>Tem<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>pore</hi> 
 quoque <rs>Dioclitiani</rs> et <rs>Maximiniani</rs> imperatorum extitit in 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>hac <rs>Ecana</rs> ciuitate <rs>Marcus</rs> episcopus, qui martyrio uitam finiuit. 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Et</hi> post aliquantorum annorum curricula fuit in eadem urbe <rs>Se<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>cundinus</rs> 
@@ -879,20 +879,33 @@ et dimissa ibi obsidione cum paucis abiit <rs>Abianum</rs> et cepit
 </p> 
 
 
-<p xml:id="g187.9-188.4" decls="#ocr"> 
+<p xml:id="g187.9-187.11" decls="#ocr"> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> dominice incarnationis <num value="1070">mlxx</num> indictione <num value="8"><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ii<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num>, apud 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Constantinopolim</rs> <rs>Romano</rs> <rs>Diogenes</rs> imperator transacto quar<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>to 
 imperii eius anno defunctus est. <hi>Cui</hi> in imperio <rs>Michael</rs> filius 
 <pb n="92" ed="#b"/> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Constantini</rs> <rs>Dioclizi</rs> successit. "<hi>Hoc</hi> anno mense <hi>Ianuarii</hi> ma<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gnum 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Constantini</rs> <rs>Dioclizi</rs> successit. 
+</p>
+
+
+<p xml:id="g187.11-187.14" decls="#al"> 
+"<hi>Hoc</hi> anno mense <hi>Ianuarii</hi> ma<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gnum 
 homicidium actum est in <rs>Brundusii</rs> ciuitate. <hi>Nam</hi> <rs>Nor<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>manni</rs> 
 uolentes eam comprehendere, tenti sunt ab eis quadra<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ginta 
 cum aliis eorum ministris et capita omnium predictorum 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ad imperatorem deportata sunt". <hi>Eodem</hi> anno <rs>Robbertus</rs> dux 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ad imperatorem deportata sunt".
+</p>
+
+<p xml:id="g187.14-188.1" decls="#al"> 
+<hi>Eodem</hi> anno <rs>Robbertus</rs> dux 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>"cepit <rs>Barum</rs> ciuitatem longa obsidione fatigatam, indeque 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>mouens exercitum, <rs>Siciliam</rs> properauit obseditque" "<rs>Panormum</rs>, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><supplied resp="#b">per terram et per mare, duxitque ante eam naues <num value="58"><choice><reg type="numeral">luiii</reg></choice></num></supplied> ditissi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>mam 
-<rs>Sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>no 
+<rs>Sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam.
+</p>
+
+<p xml:id="g188.1-188.4" decls="#al"> 
+an<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>no 
 dominice incarnationis <num value="1071">mlxx<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice></num>, indictione <supplied resp="#b"><num value="10">x</num></supplied>. <hi>Et</hi> exinde por<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tas 
 ferreas et columpnas marmoreas quam plures cum capitibus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>fecit afferri <rs>Troiam</rs> causa uictorie sue. <hi>Anno</hi> autem subsequente 
@@ -1334,7 +1347,7 @@ cum machinis, undique eam aggressi sunt et uiriliter eam
 statuerunt sibi <rs>Gothifredum</rs> ducem ac protectorem. <hi>Ipso</hi> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>quoque anno eadem indictione <rs>Roggerius</rs> dux una cum <rs>Rogge<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rio</rs> 
 <rs>Sicilie</rs> comite urbem <rs>Capuam</rs> obsedit, et quadragesimo die 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>eius obsidionis acquisitam eam <rs>Riccardo</rs> principi reddidit. <hi>Eo</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>dem 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>eius obsidionis acquisitam eam <rs>Riccardo</rs> principi reddidit. <hi>Eo<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>dem</hi> 
 anno kalendas <hi>Augusti</hi> flagrauit incendio. 
 </p> 
 
@@ -1578,7 +1591,7 @@ cum multis aliis caperentur equitibus, omniaque eorum
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>direptioni predeque data sunt. <hi>Regina</hi> uero ducta sub custodia 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>est in <rs>Materam</rs> ciuitatem, in qua aliquanto peracto tempore 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>retenta, dimissa est sub iureiurando ut reuerteretur in <rs>Materam</rs> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>et in <rs>Alexandri</rs> comitis custodia; set minime hoc impleuit. <hi>In</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>super 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>et in <rs>Alexandri</rs> comitis custodia; set minime hoc impleuit. <hi>In<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>super</hi> 
 mense <hi>Maio</hi> cum <num value="200">cc</num> equitibus et peditum turba terram 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uastauit <rs>Alexandri</rs> comitis <rs>Barensis</rs>". 
 </p> 
@@ -2021,7 +2034,7 @@ cum suis <rs>Gallipolim</rs> ad obsidendum pergeret. <hi>Quod</hi> et
 <p xml:id="g217.n10-218.n16" decls="#ocr">
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> <num value="1129"><choice><reg type="numeral">mcxxix</reg></choice></num>, indictione <num value="8"><choice><reg type="numeral">uiii</reg></choice></num>. <rs>Rogerius</rs> dux transfre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tauit 
 a <rs>Sicilia</rs>, uenit in <rs>Apuliam</rs> ac perrexit <rs>Tarentum</rs>. <hi>Deinde</hi> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>babiit <rs>Nerito</rs> cum grandi exercitu, fertur enim tria milia 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>habiit <rs>Nerito</rs> cum grandi exercitu, fertur enim tria milia 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>habuisse equites, pedites uero ac sagittarios et <rs>Sarracenos</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>usque ad sex milia, quam uacue factam inueniens cepit, pre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>de 
 ac direptione cuncta permiscendo, quin etiam et christia<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>norum 
@@ -2301,7 +2314,7 @@ obiit, cui <rs>Emanuel</rs> filius eius in imperio successit. <hi>Hic</hi>
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>autem ad regem <rs>Roggerium</rs> legatos de parentela inter eos com<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ponenda 
 mandauit. <hi>Rex</hi> autem pro hac causa perficienda hono<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rabiles 
 legatos ad imperatorem misit, qui eos uerbis suis more 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>solito diutius detinuit, et postmodum in carcere retrudi fecit. <hi>Un</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>de 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>solito diutius detinuit, et postmodum in carcere retrudi fecit. <hi>Un<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>de</hi> 
 rex indignatus apud <rs>Ydrontum</rs> galeas et naues plurimas pre<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>parari 
 fecit et eas cum comitibus et multa militia in <rs>Romaniam</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>misit. <hi>Qui</hi> uenientes <rs>Corpho</rs> et multas alias insulas depopulati 
@@ -2401,7 +2414,7 @@ miseratione corripuit.
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Nam</hi> primo <rs>Albidia</rs> illustris regina uxor eius, ex qua tot filios 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>habuerat, mortua est, et filia eius. <hi>Post</hi> hec <rs>Tarentinus</rs> princeps et 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Anfusus</rs> <rs>Capuanorum</rs> princeps et <rs>Henricus</rs> mortui sunt. <hi>Nouis</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sime 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Anfusus</rs> <rs>Capuanorum</rs> princeps et <rs>Henricus</rs> mortui sunt. <hi>Nouis<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sime</hi> 
 autem <rs>Roggerius</rs> dux <rs>Apulie</rs>, primogenitus eius, mortuus 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>est anno <rs>Dominice</rs> incarnationis <num value="1159">mclix</num> indictione <num value="12">xii</num>, uir qui<pb n="156" ed="#b"/>dem 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>speciosus et miles strenuus, pius, benignus, misericors et a 
@@ -2461,7 +2474,8 @@ satis et speciosum edificari palatium. <hi>Quosdam</hi> autem
 </p> 
 
 
-<p xml:id="g233.1-235.5" decls="#ocr"> 
+<p xml:id="g233.1-g234.3" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><rs>Garufi</rs>'s paragraph runs from page 233 line 1 to page 235 line 5 without interruptions. <hi>I</hi> split <rs>Garufi</rs>'s paragraph because the text segmentation in manuscript <hi>A</hi> is different than in <rs>Garufi</rs>.</note>
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Sic</hi> uir sapiens et discretus predictis deliciis, prout temporis 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>expetebat qualitas, utebatur; nam in hyeme et quadragesimali 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>tempore pro copia piscium in <rs>Fabare</rs> palatio morabatur; in esta<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>te 
@@ -2478,7 +2492,12 @@ adductum, magnum constituit ammiratum, cuius consilio et
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>temporum cancellarios ordinauit. <hi>Et</hi> si quos probos et sapientes 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uiros, siue de terra sua siue aliunde genitos, laicos seu clericos 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>inuenire poterat, sibi adherere iubebat, et prout cuiusque exige<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bat 
-conditio, eos diuersis honoribus et diuitiis exaltabat. <hi>Nouis</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sime 
+conditio, eos diuersis honoribus et diuitiis exaltabat.
+</p>
+
+
+<p xml:id="g234.3-235.5" decls="#ocr"> 
+<hi>Nouis<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sime</hi> 
 <rs>Maionem</rs> iuuenem de <rs>Baro</rs> oriundum, uirum utique facun<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>dum 
 satis prouidum et discretum, primo scriniarium, dehinc 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uicecancellarium, postremo cancellarium fecit. <hi>De</hi> nouo multos 
@@ -2715,7 +2734,7 @@ et earumdem ecclesiarum episcopos eiusdem ecclesie
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>papa in <rs>Campaniam</rs> rediit. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Rex</hi> autem plures de inimicis suis de regno expulit, quosdam 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>in carcere posuit, quosdam in sua gratia et amore recepit. <hi>De</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>hinc 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>in carcere posuit, quosdam in sua gratia et amore recepit. <hi>De<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>hinc</hi> 
 <rs>Symonem</rs> senescalcum, cognatum <rs>Maionis</rs> ammirati, magi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>strum 
 capitanium <rs>Apulie</rs> constituit, ipse uero tanta potitus uic<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>toria, 
 cum ammirato in <rs>Siciliam</rs> rediit. <hi>Non</hi> multo post tempore 
@@ -2732,7 +2751,7 @@ combussit, <rs>Egripum</rs> et uicinas ciuitates expoliauit et sic
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Eodem</hi> tempore <rs>Mesemuti</rs> a <rs>Marrocho</rs> uenientes, totam ter<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ram 
 usque in <rs>Africam</rs> in ore gladii ceperunt. <rs>Africana</rs> uero ciui<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tas 
 adhuc sub potestate regis <rs>W<supplied resp="#b">ilhelmi</supplied></rs> erat, et multos in ea mi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>lites 
-et pedites ad eius custodiam et defensionem posuerat. <hi>Me</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>semuti 
+et pedites ad eius custodiam et defensionem posuerat. <rs>Me<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>semuti</rs> 
 autem eam undique per terram et mare obsederunt, chri<pb n="172" ed="#b"/>stiani 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uero, qui in ea erant, illis uiriliter resistebant, nec in aliquo 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>eos formidabant, nisi quod uictualium maximam inopiam patie<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bantur. 
@@ -2774,7 +2793,7 @@ autem utpote uiri bellicosi et strenui, ciuitatem
 in obsidione moratus, et nichil ciuitati per uiolenciam posset 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>inferre, habito consilio, receptis obsidibus, cum eis ad pacem et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>concordiam deuenit. <hi>Non</hi> multo post cum imperator uellet in ci<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>uitate 
-baiulum constituere, et eam pro suo arbitrio ordinare, <hi>Me</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>diolanenses 
+baiulum constituere, et eam pro suo arbitrio ordinare, <rs>Me<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>diolanenses</rs> 
 <rs>Theutonicorum</rs> superbiam pati nequeuntes, cepe<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>runt 
 resistere et pacis federa uiolare. <hi>Qui</hi> super castrum, in quo 
 <pb n="174" ed="#b"/> 
@@ -2803,7 +2822,7 @@ incarnationis, <num value="1159">mclix</num>, indictione <num value="8"><choice 
 sarcinam, pro posse restitit et repugnauit. <hi>Episcopi</hi> uero et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>cardinales adtendentes indignum fore sacerdocio, nisi fuerit 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ordinatus in<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>itus, predictum cancellarium humiliter repugnan<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tem 
-elegerunt, et papam <rs>Alexandrum</rs> tercium nominarunt. <hi>Epi</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>scopus 
+elegerunt, et papam <rs>Alexandrum</rs> tercium nominarunt. <hi>Epi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>scopus</hi> 
 uero <rs>Tusculanus</rs> cum <rs>Iohanne</rs> <rs>Pisano</rs>, cardinali <rs>Sancti 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>martini</rs>, et <rs>Guidone</rs> <rs>Cremense</rs>, auxilio quorundam laicorum et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>falsagraui et comitis <rs>Blandacensis</rs> nunciorum imperatoris, qui 
@@ -2890,7 +2909,7 @@ equo per totam ciuitatem <rs>Panormi</rs> circumduxerunt, uolentes
 ingredi permiserunt. <hi>Facto</hi> uero mane, die ueneris, iterum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Roggerium</rs> ducem per ciuitatem equitare fecerunt. <hi>Interea</hi> inter 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Sarracenos</rs> et christianos eiusdem ciuitatis bellum maximum est 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>exortum, et multi de <rs>Sarracenis</rs> mortui sunt et expoliati. <hi>Adue</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>niente 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>exortum, et multi de <rs>Sarracenis</rs> mortui sunt et expoliati. <hi>Adue<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>niente</hi> 
 autem nocte sabbati, <rs>W<supplied resp="#b">ilhelmus</supplied></rs> comes de <rs>Principatu</rs> et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Tancredus</rs> comes de <rs>Lycia</rs> cum quibusdam aliis ad <rs>Matheum</rs> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Bonellam</rs>, qui huius coniurationis caput extiterat et tunc erat 
@@ -2968,7 +2987,7 @@ et quia rex <rs>W<supplied resp="#b">ilhelmus</supplied></rs> guerram in <rs>Ter
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Robbertus</rs> terram <rs>Apulie</rs>, resistente nemine, occupabat. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Qui</hi> <rs>Salernum</rs> ueniens, eam habere credidit. <hi>Sed</hi> <rs>Salernitani</rs> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>regi de more fideles existentes, ipsum recipere noluerunt. <hi>De</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>hinc 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>regi de more fideles existentes, ipsum recipere noluerunt. <hi>De<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>hinc</hi> 
 <rs>Beneuentum</rs> ueniens a <rs>Beneuentanis</rs> est cum honore re<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ceptus. 
 <hi>Post</hi> hec in <rs>Apuliam</rs> regressus <rs>Tarentum</rs> usque peruenit. 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Rex</hi> autem <rs>W<supplied resp="#b">ilhelmus</supplied></rs> pene per totam estatem in obsidione 
@@ -2989,7 +3008,7 @@ et quia rex <rs>W<supplied resp="#b">ilhelmus</supplied></rs> guerram in <rs>Ter
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>cum summa est deuotione susceptus. <hi>Dehinc</hi> cum galeis eorum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>usque <rs>Prouinciam</rs> perrexit. <rs>Octauianus</rs> autem, qui apud <rs>Se<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gniam</rs>, 
 moratus fuerat cognito recessu <rs>Alexandri</rs>, in <rs>Lombardiam</rs> 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ad imperatorem uenit, a quo satis honorifice est receptus. <hi>De</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>hinc 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>ad imperatorem uenit, a quo satis honorifice est receptus. <hi>De<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>hinc</hi> 
 imperator, episcoporum conuentu apud <rs>Papiam</rs> sollempni<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>ter 
 congregato, <rs>Octauianum</rs>, qui <rs><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">U</reg></choice>ictor</rs> dicebatur, in catholicum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>papam recepit, promittens publice et legaliter, quod nec ipse 
@@ -3168,7 +3187,7 @@ et familiares esse disposuit.
 confisus, sibi nonnisi que ei oportuna uidebantur medi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>camina 
 adhibebat. <hi>Unde</hi> accidit quod sabbato ante octauas pa<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>sche 
 emitritea illum febris inuasit, et inualescente passione mor<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tuus 
-est et sepultus est in cappella beati <rs>Petri</rs> in palatio suo. <hi>De</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>functus 
+est et sepultus est in cappella beati <rs>Petri</rs> in palatio suo. <hi>De<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>functus</hi> 
 est autem rex <rs>W<supplied resp="#b">ilhelmus</supplied></rs> anno uite sue quadragesimo 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>sexto, anno autem regni sui, quo cum patre suo et per se re<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gnauerat 
 <num value="15">x<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice></num>, mense <num value="10">x</num>, anno ab incarnatione <rs>Domini</rs> <num value="1166">mclx<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>i</num>, 
@@ -3359,7 +3378,7 @@ plenioris comitatum <rs>Conuersani</rs> illi adiecit.
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Eo</hi> tempore in <rs>Sicilia</rs> terremotus factus est maximus, ita quod 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>castrum <rs>Siracusanum</rs> pro maxima parte cecidit. <hi>Ciuitas</hi> etiam 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Catheniensium</rs> a fundamentis euersa ruit. <hi>Ecclesia</hi> etiam sancte 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Agathe</rs> corruens, episcopum cum <num value="45">xl<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice></num> monachis occidit. <hi>Len</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tinum 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Agathe</rs> corruens, episcopum cum <num value="45">xl<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice></num> monachis occidit. <rs>Len<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tinum</rs> 
 etiam <rs>Mohec</rs>, et multa alia castra <rs>Sicilie</rs> pro terre motu 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>corruerunt. <hi>Apud</hi> <rs>Messanam</rs> etiam maximus et manifestus terre 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>motus fuit. <hi>Hoc</hi> autem factum est anno <rs>Domini</rs> <num value="1168">mclx<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>iii</num>, indic<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tione 
@@ -3512,7 +3531,7 @@ in <rs>Domino</rs> consolationem accepit.
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Anno</hi> <rs>Domini</rs> millesimo <num value="173">clxxiii</num> <rs>Fredericus</rs> autem <rs>Romano<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>rum</rs> 
 imperator recolens et alta mente re<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ol<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ens iniurias sibi a 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Lombardis</rs> frequenter illatas, et quod pene contra eum omnes 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>coniurassent, et quod <rs>Mediola</rs>nenses, eo prohibente, <rs>Mediola</rs><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>num 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>coniurassent, et quod <rs>Mediola</rs>nenses, eo prohibente, <rs>Mediola<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>num</rs> 
 reedificassent, et <rs>Alexandrini</rs> ciuitatem suam de nouo edifi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>care 
 cepissent, primo <rs>Christianum</rs> cancellarium suum et <rs>Ma<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>guntinum</rs> 
 archiepiscopum, uirum utique prouidum et discretum 
@@ -3615,7 +3634,7 @@ temporis, frequenter circa <rs>Alexandriam</rs> discurrebat, eius
 poterat inferebat. <rs>Alexandrini</rs> autem tum per se tum 
 <pb n="214" ed="#b"/> 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Lombardorum</rs> auxilio ei uiriliter resistebant, et uicina loca, que 
-<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>imperatori fauebant, inpugnare et destruere non cessabant. <hi>Im</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>perator 
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>imperatori fauebant, inpugnare et destruere non cessabant. <hi>Im<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>perator</hi> 
 <supplied resp="#b">uero</supplied> uires suas debilitatas et militiam suam pro maiori 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>parte defecisse considerans, frequentes nuntios principibus suis 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>in <rs>Alamanniam</rs> direxit, rogans atque precipiens, ut ei, misso mili<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tari 
@@ -4045,7 +4064,7 @@ autem imperatoris nuntii reclamabant, se nequaquam pro tali
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>causa <rs>Bononiam</rs> profecturos, eo quod <rs>Christianus</rs> cancellarius 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Bononiensibus</rs> odiosus esset plurimum et infestus, sed cum illis 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>pro hoc negotio libenter <rs><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">U</reg></choice>enetiis</rs> conuenirent, ubi utreque par<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tes 
-possent sine timore pergere et cum securitate manere. <hi>Lom</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bardi 
+possent sine timore pergere et cum securitate manere. <rs>Lom<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bardi</rs> 
 autem e diuerso suspectos habebant <rs><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">U</reg></choice>enetos</rs>, asserentes, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>illos pacis cum eis inite federa uiolasse, et sepe imperatoris nun<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tios 
 contra hoc, quod statutum inter eos fuerat, recepisse. 
@@ -4374,7 +4393,7 @@ et periculum posset <rs>Dei</rs> ecclesie prouenire. <hi>Audientes</hi>
 in aliquo uel metuere, ecce enim quatuor galeas domini re<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gis 
 <rs>Sicilie</rs> ad uestrum obsequium preparatas habemus, quas cum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>uobis intrare placuerit, secure uos de hoc loco et absque peri<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>culo, 
-inuitis etiam <rs><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">U</reg></choice>enetis</rs> et contradicentibus, educemus". <hi>Qui</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bus 
+inuitis etiam <rs><choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">U</reg></choice>enetis</rs> et contradicentibus, educemus". <hi>Qui<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>bus</hi> 
 uerbis papa plurimum animatus respondit quod de suo erat 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>proposito, ut cardinales, qui ad imperatorem iuerant, usque in 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>diem crastinum expectaret, ne si eis inconsultis recederet, pos<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>set 
@@ -4592,7 +4611,7 @@ cum suis in galeis recipientes, eum usque ad <rs>Sanctum
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>Iulii</hi>, in uigiliis beati <rs>Iacobi</rs>, papa cognito imperatoris aduentu, 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>galeas ingressus cum nuntiis regis et magna <rs>Lombardorum</rs> ac 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>populi multitudine, ad ecclesiam <rs>Sancti marci</rs> summo mane de<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>uotus 
-accessit, et <rs>Hubaldum</rs> <rs>Hostiensem</rs> et <rs>W<supplied resp="#b">illelmum</supplied></rs> <hi>Por</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tuensem 
+accessit, et <rs>Hubaldum</rs> <rs>Hostiensem</rs> et <rs>W<supplied resp="#b">illelmum</supplied></rs> <hi>Por<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tuensem</hi> 
 et <rs>Malfridum</rs> <rs>Penestrinum</rs> episcopos et quosdam de 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>cardinalibus ad imperatorem transmisit. <hi>Qui</hi> uenientes, ipsum et 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>suos ab excommunicationis uinculo absoluerunt. <rs>Christianus</rs> 
@@ -4954,7 +4973,7 @@ habeat, uos, domine imperator, qui ecclesie <rs>Dei</rs> specialis
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>mundi principibus dominum regem et uenerari debetis pariter 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>et amplecti, qui <rs>Dei</rs> ecclesiam semper intendit extollere, et ini<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>micos 
 eius non desinit impugnare. <hi>Nulla</hi> etiam inter uos et domi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>num 
-regem discidii causa uel odii seminarium interuenit. <hi>Do</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>minus 
+regem discidii causa uel odii seminarium interuenit. <hi>Do<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>minus</hi> 
 enim rex a magnificentia uestra se numquam offensum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>meminit, uel uos in aliquo offendisse cognoscit, sed certum 
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>apud eum et firmum existit, quod si imperialis maiestas cum re<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gia 
@@ -5393,7 +5412,7 @@ per partes discussa fluctuabat.
 <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><rs>Italia</rs> propter quasdam importunas et antea inauditas quas exi<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gebat 
 consuetudines ab illo discessit. <hi>Ille</hi> <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ero maxima indigna<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>tione 
 commotus undique terram de<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>astabat, tandem <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ero <rs>Me<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>diolanum</rs> 
-cum exercitu magno <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>eniens ci<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>itatem obsedit. <hi>Obses</hi><lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>si 
+cum exercitu magno <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>eniens ci<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>itatem obsedit. <hi>Obses<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>si</hi> 
 <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ero <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>iriliter de ci<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>itate exierunt, stragem non modicam de ho<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>stibus 
 facientes, ipsum imperatorem cum exercitu suo bis in fu<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>gam 
 con<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>erterunt. <hi>Totiens</hi> <choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>ero apud <rs>Alexandriam</rs>, ci<choice xmlns="http://www.tei-c.org/ns/1.0"><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>itatulam 
