@@ -189,3 +189,15 @@ for edition in ['a', 'bonetti']:
     mytree.my_strip_elements('del')
     mytree.recapitalize() 
     mytree.write()
+
+
+for edition in ['afoo', 'bfoo']:
+    mytree = msTree(edition)
+    mytree.choose('choice', 'corr', 'typo', 'sic')
+    mytree.choose('choice', 'reg', 'numeral', 'orig')
+    mytree.choose('choice', 'reg', 'j', 'orig')
+    mytree.choose('choice', 'reg', 'v', 'orig')
+    mytree.choose('subst', 'add', 'correction', 'del')
+    mytree.recapitalize() 
+    mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
+    mytree.write()
