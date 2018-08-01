@@ -116,7 +116,7 @@
                     It is used either alone (with #rend="overstrike"), for a passage deleted and not substituted by
                     the scribe, or in combination with <gi>add</gi> in the following structure to mark a substitution:
                     <gi>subst</gi>, parent /
-                    <gi>del</gi> (@rend="rasura"), child
+                    <gi>del</gi> (@rend="rasura" or @rend="overwrite"), child
                     <gi>add</gi> (@place="overwrite" and @type="correction"), child.
                     If no @hand attribute is provided, it is implied that the deletion
                     (and the correction, if any) are done by the main hand of the manuscript.
@@ -126,7 +126,7 @@
                     "margin", "marginandfooter", "inline")
                     or in combination with <gi>del</gi> in the following structure to mark a substitution:
                     <gi>subst</gi>, parent /
-                    <gi>del</gi> (@rend="rasura"), child
+                    <gi>del</gi> (@rend="rasura" or @rend="overwrite"), child
                     <gi>add</gi> (@place="overwrite" and @type="correction"), child.
                 </tagUsage>
                 <tagUsage gi="link">
@@ -5058,7 +5058,7 @@ incarnationis <num value="1176">mclxxui</num>, mense <hi>februarii</hi>, indicti
 </p> 
 
 
-<p xml:id="g269.7-270.4" decls="#ocr"> 
+<p xml:id="g269.7-270.4" decls="#al"> 
 &blb;<hi>papa</hi> autem <rs>alexander</rs> in <rs>lombardiam</rs> iturus, ante festum <hi>na&bd;tiuitatis</hi> 
 <rs>hubaldum</rs> <rs>hostiensem</rs> episcopum et <rs>raynerium</rs> cardi&bd;nalem 
 in <rs>lombardiam</rs> premisit, ut <rs>lombardorum</rs> consilio secu&bd;ritatem 
@@ -5073,92 +5073,92 @@ apud <rs>bononiam</rs> fieret, utriusque partis assensu ordinatum est
 &blb;<rs>cremonenses</rs> autem et <rs>terdonenses</rs>, audito quod papa uen&bd;turus 
 esset in <rs>lombardiam</rs>, ut inter imperatorem et <rs>lombardos</rs> 
 &blb;pacem componeret, credentes anticipare alios et ob hoc maio&bd;rem 
-imperatoris gratiam impetrare, obliti promissionibus iura<pb n="222" ed="#b"/>menti, 
+imperatoris gratiam impetrare, obliti promissionibus et iura<pb n="222" ed="#b"/>menti, 
 &blb;quod aliis ciuitatibus fecerant, eis nolentibus et contradi&bd;centibus, 
 cum imperatore sunt concordati. <hi>unde</hi> postmodum a 
 &blb;papa et ab omnibus, qui hoc audierunt, uiles et proditores sunt 
-&blb;habiti. <hi>papa</hi> uero antequam iter arriperet, nuntios suos ad regem 
+&blb;abiti. <hi>papa</hi> uero antequam iter ar<pb n="254r" facs="vat:291" ed="#a"/>riperet, nuntios suos ad regem 
 &blb;<rs ana="#ab">wilhelmum</rs> in <rs>siciliam</rs> misit, ut aliquos de magnatibus suis a la&bd;tere 
 suo ad eum transmitteret, qui cum illo et pro parte eius trac&bd;tande 
 pacis colloquio interessent; papa enim firmiter in suo ha&bd;bebat 
 proposito, nequaquam cum imperatore sine rege <rs ana="#ab">wilhel&bd;mo</rs> 
 pacem facere, ut qui adiutor ecclesie et defensor in tribula&bd;tione 
 fuerat, in compositione pacis ecclesiastice socius et parti&bd;ceps 
-fieret. <hi>rex</hi> autem <rs ana="#ab">wilhelmus</rs> <rs>romoaldo</rs> secundo <rs>saler&bd;nitano</rs> 
-archiepiscopo et <rs>roggerio</rs> comiti <rs>andrie</rs> magno comesta&bd;bulo 
-et magistro iustitiario totius <rs>apulie</rs> et <rs>terre laboris</rs> per lit&bd;teras 
+fieret. <hi>rex</hi> autem <rs ana="#ab">wilhelmus</rs> <rs ana="#ab">romoaldo</rs><note resp="#pm" type="graphic"><hi>the</hi> only two alphabetical graphemes are "rom", so it's impossible o ascertain whether it is "romualdus" or "romoaldus".</note> secundo <rs>saler&bd;nitano</rs> 
+archiepiscopo et <rs>roggerio</rs> comiti <rs>andrie</rs> et magistro comesta&bd;bulo 
+et magistro iusticiario totius <rs>apulie</rs> et <rs>terre laboris</rs> per lit&bd;teras 
 suas dedit in mandatis, ut honorifice preparati simul cum 
-&blb;papa in <rs>lombardiam</rs> pergerent, et pro parte regis componende 
+&blb;papa in <rs>lombardiam</rs> pergerent, et pro parte regia componende 
 &blb;pacis cum imperatore tractatui interessent. 
 </p> 
 
 
-<p xml:id="g270.5-271.9" decls="#ocr"> 
-&blb;<rs>alexander</rs> igitur papa ab <rs>anagnia</rs> <supplied resp="#b">se</supplied> mouens et per <rs>terram 
-&blb;laboris</rs> <rs>beneuentum</rs> ueniens, a festo natiuitatis usque in epipha&bd;niam 
+<p xml:id="g270.5-271.9" decls="#al"> 
+&blb;<rs>alexander</rs> igitur papa ab <rs>anagnia</rs> se mouens et per <rs>terram 
+    &blb;laboris</rs> <rs>beneuentum</rs> ueniens, a festo <hi>natiuitatis</hi> usque in <hi>epypha&bd;niam</hi> 
 ibidem est demoratus. <hi>dehinc</hi> per <rs>troiam</rs> et <rs>sipontum</rs> <rs>ue&bd;stam</rs> 
 uenit, et <rs ana="#ab">willelmum</rs> <rs>portuensem</rs> episcopum et <rs>iacin&bd;thum</rs> 
-cardinalem <rs>sancte</rs> <rs>marie</rs> de <rs>scola greca</rs> et quosdam alios 
-&blb;cardinales per terram premisit, quia mare propter eius procel&bd;las 
-et inundationes intrare metuebant. <hi>quos</hi> exeuntes de terra 
-&blb;<rs>aprutii</rs> et de finibus regni, <rs>christianus</rs> cancellarius per <rs>mar&bd;chyam</rs> 
-satis honeste ad imperatorem <supplied resp="#b">et</supplied> <rs>rauennam</rs> usque de&bd;duxit. 
+cardinalem <rs>sancte marie de scola greca</rs> et quosdam alios 
+&blb;cardinales per terram premisit, quia mare propter eius inundationes 
+et procel&bd;las intrare metuebant. <hi>quos</hi> exeuntes de terra 
+&blb;<rs>aprutii</rs> et de finibus regni, <rs>christianus</rs> cancellarius per <rs>mar&bd;kyam</rs> 
+satis honeste ad imperatorem <rs>rauennam</rs> usque de&bd;duxit. 
 <hi>imperator</hi> autem eos officiose recepit, et sicut decuit, mul&bd;tum 
 honoris et reuerentie illis exhibuit. <rs>alexander</rs> uero papa 
-&blb;simul cum <rs>manfredo</rs> <rs>prenestrino</rs> episcopo et <rs>iohanne</rs> <rs>neapoli&bd;tano</rs> 
+&blb;simul cum <rs>malfredo</rs> <rs>prenestrino</rs> episcopo et <rs>iohanne</rs> <rs>neapoli&bd;tano</rs> 
 et <rs>hugone</rs> de <rs>bononia</rs> et <rs>bosone</rs> et <rs>cencio</rs> <rs>cappello</rs> cardi&bd;nalibus 
-et prenominatis regis nuntiis, impediente tempestate, 
+et prenominatis regis <pb n="254v" facs="vat:292" ed="#a"/>nuntiis, impediente tempestate, 
 &blb;apud <rs>uestam</rs> usque in quartam feriam, quando ieiunium inchoa&bd;batur, 
 nono scilicet die intrante mensis <hi>martii</hi> demoratus, cum 
-&blb;undecim galeis mare <rs>adriaticum</rs> est ingressus, et dominico die 
+&blb;undecim galeis mare <rs>andriaticum</rs> est ingressus, et dominico die 
 &blb;primo uenturo <rs>iadaram</rs> applicuit, ubi ab archiepiscopo et epi&bd;scopis 
 regionis illius et comite et popolo ciuitatis satis honorifi<pb n="224" ed="#b"/>ce 
-&blb;est receptus. <hi>dehinc</hi> per insulas <rs>dalmatie</rs> nauigans, nono die 
+&blb;est receptus. <hi>dehinc</hi> per insulas <rs>dalmacie</rs> nauigans, nono die 
 &blb;stante mensis <hi>martii</hi> ad portum <rs>uenetie</rs> aura flante secunda pe&bd;ruenit. 
 <hi>et</hi> ibidem cum omnibus suis de galea descendens, in mo&bd;nasterio 
-<rs>sancti nicolay</rs>, quod dicitur ad litus, ipso die quieuit. 
+<rs>sancti nycolay</rs>, quod dicitur ad litus, ipso die quieuit. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
-&blb;<hi>altera</hi> autem die dux <rs>uenetie</rs> cum magna nauium et populi 
-&blb;multitudine et patriarcha <rs>uenetie</rs> simul cum patriarcha <rs>aquileie</rs> 
-&blb;et omnibus suis suffraganeis ad pedes <rs>alexandri</rs> pape humiliter 
+&blb;<hi>altera</hi> autem die dux <rs>uenecie</rs> cum magna nauium et populi 
+&blb;multitudine et patriarcha <rs>uenecie</rs> simul cum patriarcha <rs>aquileie</rs> 
+&blb;et omnibus suis suffraganeis a<choice><del rend="overwrite">p</del><add place="overwrite" type="correction">d</add></choice> pedes <rs>alexandri</rs> pape humiliter 
 &blb;accedentes, ipsum processionaliter cum summo honore et glo&bd;ria 
 usque ad <rs>sancti marci</rs> ecclesiam deduxerunt, in qua facta ora&bd;tione 
 populum benedixit. <hi>dehinc</hi> nauem ducis cum ipso simul 
 &blb;ingressus, usque ad palatium patriarche ueniens, in ipso hospitio 
 &blb;se recepit. <hi>episcopi</hi> autem et abbates uicinarum partium, aduen&bd;tu 
 pape cognito, omnes cum suis clericis ad eius uestigia deuo&bd;te 
-<supplied resp="#b">et</supplied> humiliter accesserunt. <hi>in</hi> festo autem <rs>annuntiationis</rs> <rs>uir&bd;ginis</rs> 
+et humiliter accesserunt. <hi>in</hi> festo autem <hi>annuntiationis</hi> <rs>uir&bd;ginis</rs> 
 papa a duce <rs>uenetie</rs> et magnatibus eius affectuose rogatus 
 &blb;ad ecclesiam <rs>sancti marci</rs> cum cardinalibus suis accessit, et in ea 
 &blb;missam publice decantauit. 
 </p> 
 
 
-<p xml:id="g271.10-272.4" decls="#ocr"> 
-&blb;<rs>fridericus</rs> autem imperator, qui apud <rs>cesenas</rs> morabatur, 
-&blb;cum aduentum pape in <rs>uenetiis</rs> cognouisset, <rs>madeburgensem</rs> 
-&blb;archiepiscopum et electum <rs>guarmaciensem</rs> et protonotarium 
+<p xml:id="g271.10-272.4" decls="#al"> 
+&blb;<rs>fredericus</rs> autem imperator, qui apud <pb n="255r" facs="vat:292" ed="#a"/><rs>cesenas</rs> morabatur, 
+&blb;cum aduentum pape in <rs>ueneciis</rs> cognouisset, <rs>madeburgensem</rs> 
+&blb;archiepiscopum et electum <rs>guarmacensem</rs> et protonotarium 
 &blb;suum ad eum transmisit, affectuose postulans, ut, si ei placeret, 
 &blb;locum futuri colloquii a <rs>bononia</rs> transmutaret; non enim sibi tu&bd;tum 
 fore arbitrabatur <rs>christianum</rs> cancellarium suum cum aliis 
 &blb;nuntiis illuc dirigere, eo quod eiusdem loci ciuibus odiosus esset 
 &blb;pariter et offensus, quia eos in bello deuicerat et iniurias pluri&bd;mas 
-et dampna intulerat. <hi>quibus</hi> papa respondit: "<hi>imperator</hi> le&bd;gatorum 
+et dampna intulerat. <hi>quibus</hi> papa respondit: <said><hi>imperator</hi> le&bd;gatorum 
 nostrorum et <rs>lombardorum</rs> consilio, communi pariter 
 &blb;et assensu, tractatum pacis apud <rs>bononiam</rs> habere disposuit, 
 &blb;quod ergo de eorum communi uoluntate est dispositum, non de&bd;bet 
-sine communi consilio immutari". <hi>qua</hi> de causa <rs>alexander</rs> 
+sine communi consilio immutari</said>. <hi>qua</hi> de causa <rs>alexander</rs> 
 &blb;papa cardinalibus, qui erant <rs>rauenne</rs>, archiepiscopis, episcopis 
 &blb;et abbatibus, potestatibus, consulibus et rectoribus <rs>lombardie</rs> 
 &blb;mandauit, ut ei <rs>ferrariam</rs> occurrerent, quatinus, communicato 
 &blb;eorum consilio, imperatori de loco, in quo habendum esset pa&bd;cis 
 colloquium, et de aliis suis petitionibus responderet. <hi>ipse</hi> ue&bd;ro 
-cum <rs>uenetiis</rs> diebus esset quindecim demoratus, per mare 
+cum <rs>ueneciis</rs> diebus esset quindecim demoratus, per mare 
 &blb;<rs>lauretum</rs> uenit, dehinc per <rs>padum</rs> <rs>ferrariam</rs> cum galeis unde<pb n="226" ed="#b"/>cim 
-&blb;in dominica passionis ascendit. <hi>ubi</hi> ab episcopis multis et 
+&blb;in dominica <hi>passionis</hi> ascendit. <hi>ubi</hi> ab episcopis multis et 
 &blb;eiusdem urbis ciuibus et magna populi multitudine, que illuc 
 &blb;propter feriam, que illuc celebrabatur, conuenerat, satis est ma&bd;gnifice 
-et honeste susceptus. <hi>proxima</hi> uero septimana <rs>rauennas</rs> 
+et honeste susceptus. <hi>proxima</hi> uero <pb n="255v" facs="vat:293" ed="#a"/>septimana <rs>rauennas</rs> 
 &blb;archiepiscopus cum suis suffraganeis, <rs>mediolanensis</rs> archiepi&bd;scopus 
 cum episcopis et abbatibus <rs>lombardie</rs>, potestates, rec&bd;tores, 
 consules et multi prudentes de ciuitatibus <rs>lombardie</rs> <rs>fer&bd;rariam</rs> 
