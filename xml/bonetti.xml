@@ -58,14 +58,24 @@
         </editorialDecl>
         <editorialDecl>
             <quotation marks="some">
-                <p>Quotation marks were always represented by double quotation marks, open and closed, in the print edition.</p>
-                <p>Those marks have been retained when they meant a quotation or rewording of a specific source
-                    or manuscript.</p>
-                <p>They have not been retained when I marked the quote with <gi>said</gi>.</p>
-                <p>When I mark a passage with <gi>said</gi>, it is implied that the print edition had double quotation
-                    marks, open and closed, and that I am not retaining them. However, I am marking some passages with
-                    <gi>said</gi> though the source print edition had no quotation marks. In these cases, I am adding
-                    @rend="none"  to <gi>said</gi>.</p>
+                <list>
+                    <item label="1">Quotation marks were almost always represented in the source print edition
+                        by “double quotation marks”, open and closed. In this case, those marks were noti retained
+                        in the digital edition, and the quote was marked up with <gi>said</gi> and @rend="double".</item>
+                    <item label="2">In one case, a direct speech was represented in print by «Swiss quotation marks»,
+                        open and closed. These were marked up in the digital edition like case 1,
+                        but with @rend="swiss".</item>
+                    <item label="3">In print, there are instances of quotations of a medieval speech or epistle without
+                        quotation marks. These were also marked up with <gi>said</gi>, with @rend="none".</item>
+                    <item label="4">In other cases, in print “double quotation marks” are used to highlight
+                        additions not present in all branches of the textual tradition. In these cases, quotation
+                        marks have been retained in the digital edition and no specific markup was added.</item>
+                    <item label="5">In other cases, “double quotation marks” are used in print for quotations from
+                        literary works. These are marked up with <gi>quote</gi> and @rend="double" in this digital edition.
+                        In these cases, quotation marks have been retained, and @type="biblia" means that it
+                        is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in
+                        http://it.alim.unisi.it/documentazione/</item>
+                </list>
             </quotation>
         </editorialDecl>
         <tagsDecl>
@@ -1028,11 +1038,11 @@ pergens, quoscumque poterat suscipiebat, susceptos
 &blb;facere studebat, quibus unicuique priuatim multa tribuebat et 
 &blb;plurima iurando promittebat. <hi>ceteris</hi> autem militibus quibus 
 &blb;adhuc animum suum aperire timebat nil interim tribuebat, sed 
-&blb;eos sepe sic alloquebatur dicens: <said><hi>libenter</hi> uobis ego darem si 
+&blb;eos sepe sic alloquebatur dicens: <said rend="double"><hi>libenter</hi> uobis ego darem si 
 &blb;imperator, uelud ipse promiserat mihi thesauros mitteret, sepe 
 &blb;enim propter hoc ad eum direxi et quia non misit ualde doleo"</said>. 
 &blb;<hi>qui</hi> ut se suis auditoribus quasi ueridicum redderet, uasa pro&bd;pria 
-et uestes quibus utebatur quibusdam largiebatur dicens: <said><hi>si</hi> 
+et uestes quibus utebatur quibusdam largiebatur dicens: <said rend="double"><hi>si</hi> 
 &blb;esset mihi posse, tam prudentes uiros uelut estis, de meis uobis 
 &blb;ego largiendo ditissimos facerem</said>. <hi>et</hi> hec incessanter machina&bd;batur 
 ut omnium ad se militum uoluntates subtraheret. <hi>quibus</hi> 
@@ -1045,7 +1055,7 @@ amore. <hi>sed</hi> quia infidelitas numquam de se secura est, <rs>ale&bd;xius</
 ipse postquam cum imperatore tamquam cum domino fide&bd;lis, 
 ut eum securum redderet simpliciter est locutus, de se ti&bd;mens, 
 noctu a <rs>constantinopolim</rs> fugiit, et ad exrcitum quem sibi 
-&blb;preparauerat, reuersus est dicens: <said><hi>imperator</hi> pro eo quod uestra 
+&blb;preparauerat, reuersus est dicens: <said rend="double"><hi>imperator</hi> pro eo quod uestra 
 &blb;sibi donatiua petii, minatus est me capi et male tractari. <hi>et</hi> quia 
 &blb;mihi credidistis ideo reuersus sum, uobis omnino consulturus, 
 &blb;ita ut si uestra uoluntas mihi non defuerit, beneficiis et honori&bd;bus 
@@ -1706,7 +1716,7 @@ frater eius successit in honore principatus ipsius. <hi>mense</hi>
 &blb;deuenit liggius homo pape <rs>calixti</rs> per directum contra omnes 
 &blb;homines. <hi>et</hi> ipse papa statim eidem duci donauit et concessit ac 
 &blb;per uexillum tradidit omnem terram ipsius ducis cum toto hono&bd;re 
-ducatus ipsius dicens: <said><hi>ad</hi> honorem <rs>dei</rs> et beati <rs>petri</rs> aposto&bd;lorum 
+ducatus ipsius dicens: <said rend="double"><hi>ad</hi> honorem <rs>dei</rs> et beati <rs>petri</rs> aposto&bd;lorum 
 principis nec non et <rs>pauli</rs>, fidelitatem quoque <rs>romani</rs> 
 &blb;pontificatus et nostram nostrorumque successorum canonice 
 &blb;intrantium, donamus et concedimus tibi terram et omnem hono&bd;rem, 
@@ -3872,7 +3882,7 @@ papa a duce <rs>&uu;enetie</rs> et magnatibus eius affectuose rogatus
 fore arbitrabatur <rs>christianum</rs> cancellarium suum cum aliis 
 &blb;nuntiis illuc dirigere, eo quod eiusdem loci ciuibus odiosus esset 
 &blb;pariter et offensus, quia eos in bello deuicerat et iniurias pluri&bd;mas 
-et dampna intulerat. <hi>quibus</hi> papa respondit: <said><hi>imperator</hi> le&bd;gatorum 
+et dampna intulerat. <hi>quibus</hi> papa respondit: <said rend="double"><hi>imperator</hi> le&bd;gatorum 
 nostrorum et <rs>lombardorum</rs> consilio, communi pariter 
 &blb;et assensu, tractatum pacis apud <rs>bononiam</rs> habere disposuit, 
 &blb;quod ergo de eorum communi &uu;oluntate est dispositum, non de&bd;bet 
@@ -3900,7 +3910,7 @@ suscepit.
 <p xml:id="g272.5-273.10" decls="#ocr"> 
 &blb;<hi>altera</hi> uero die cum eis in maiori ecclesia <rs>sancti georgii</rs>, con&bd;gregata 
 populi multitudine magna, conuenit, quos facto silentio 
-&blb;tamquam filios taliter est allocutus: «<hi>nouit</hi> uestra discretio, filii 
+&blb;tamquam filios taliter est allocutus: <said rend="swiss">«<hi>nouit</hi> uestra discretio, filii 
 &blb;dilectissimi, quod, peccatis nostris exigentibus, nauis ecclesie, 
 &blb;que in portu placido et tranquillo deberet consistere, adeo per&bd;secutionis 
 ualide procellas sustinuit, adeo iniquorum hominum 
@@ -3932,7 +3942,7 @@ affligi; tandem motus ad ueniam pio compassionis
 sue cum <rs>petri</rs> uicario et suis fratribus persecutionis unda pe&bd;ne 
 demersam noctis medio uisitauit, et de salute propria et futu&bd;ra 
 tranquillitate penitus desperantes uoce salutifera confortauit 
-&blb;dicens: "<hi>confidite</hi>, ego sum, nolite timere". <hi>ad</hi> cuius uocis impe&bd;rium 
+&blb;dicens: <quote rend="double" type="biblia">"<hi>confidite</hi>, ego sum, nolite timere"</quote>. <hi>ad</hi> cuius uocis impe&bd;rium 
 uentus tribulationis siluit et unda persecutionis quieuit. 
 &blb;<hi>operante</hi> enim illo, qui uoluntates principum pro suo benepla&bd;cito 
 dirigit et corda regum, sicut &uu;ult trutinat et disponit, impe&bd;rator 
@@ -3963,7 +3973,7 @@ nolumus, ut sicut fuistis sociis tribulationis, participes sitis et
 &blb;non timuimus, sed ad uos per ignem et aquam indubitanter ac&bd;cessimus, 
 ut uestro communicato consilio, oblatam imperatoris 
 &blb;pacem, si ecclesie et illustri regi <rs>sicilie</rs> et uobis con&uu;eniens fue&bd;rit 
-et idonea, suscipere debeamus». 
+et idonea, suscipere debeamus»</said>. 
 </p> 
 
 

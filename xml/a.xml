@@ -74,14 +74,19 @@
         </editorialDecl>
         <editorialDecl>
             <quotation marks="none">
-                <p>The manuscript does not have quotation marks.</p>
-                <p>Some passaged are marked with <gi>said</gi>, without quotation marks.</p>
+                <p>The manuscript does not have quotation marks.
+                    Some passages (direct speech or epistle quotations) are marked up with
+                    <gi>said</gi>, without quotation marks.</p>
+                <p>Quotations from literary works are marked up with <gi>quote</gi>.
+                    In these cases, @type="biblia" means that it is a biblical quote, according
+                    to the "Manuale di codifica dei testi ALIM in TEI XML" in
+                    http://it.alim.unisi.it/documentazione/</p>
             </quotation>
         </editorialDecl>
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
                 <tagUsage gi="hi">
-                    Used to mark words capitalized in the print edition, but not constituting
+                    Used to mark up words capitalized in the print edition, but not constituting
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
                 <tagUsage gi="seg">
@@ -5171,13 +5176,13 @@ suscepit.
 <p xml:id="g272.5-273.10" decls="#ocr"> 
 &blb;<hi>altera</hi> uero die cum eis in maiori ecclesia <rs>sancti georgii</rs>, con&bd;gregata 
 populi multitudine magna, conuenit, quos facto silentio 
-&blb;tamquam filios taliter est allocutus: «<hi>nouit</hi> uestra discretio, filii 
+&blb;tanquam filios taliter est allocutus: <said><hi>nouit</hi> uestra discretio, filii 
 &blb;dilectissimi, quod, peccatis nostris exigentibus, nauis ecclesie, 
 &blb;que in portu placido et tranquillo deberet consistere, adeo per&bd;secutionis 
 ualide procellas sustinuit, adeo iniquorum hominum 
 &blb;turbines et fluctus incurrit, quod pene est in profundo pelagi 
 &blb;cum suo gubernatore demersa. <hi>imperator</hi> enim <rs>romanus</rs>, qui 
-&blb;ecclesiam tamquam illius aduocatus gubernare et defensare de&bd;buit, 
+&blb;ecclesiam tanquam illius aduocatus gubernare et defensare de&bd;buit, 
 impugnauit, et sue uoluntatis non rationis sequens arbi&bd;trium, 
 eam a sua unitate diuisit, altare contra altare extulit, et in&bd;consutilem 
 dei tunicam, quantum in eo fuit, diuidere non ex&bd;pauit. 
@@ -5185,12 +5190,12 @@ dei tunicam, quantum in eo fuit, diuidere non ex&bd;pauit.
 <rs>romane</rs> ecclesie dignitas pene deperiit, et que domina gen&bd;tium 
 et princeps prouinciarum fuerat, facta est sub tributo. <hi>et</hi> 
 &blb;quia, imminente ualide persecutionis articulo, <rs>romane</rs> ecclesie 
-&blb;quodammodo est debilitata auctoritas, cum non esset <supplied resp="#b">qui</supplied> de&bd;linquentium 
-errores et peccata corrigeret, sanctorum patrum 
+&blb;quodammodo est debilitata auctoritas, cum non esset <add hand="#unknownhand">qui</add> de&bd;linquentium 
+errores <pb n="256r" facs="vat:293" ed="#a"/>et peccata corrigeret, sanctorum patrum 
 &blb;statuta et canones de suo ordine sunt et iure mutata. <hi>sicque</hi> fac&bd;tum 
 est, quod occasione huius scismatis et discordie multe ec&bd;clesie 
 et monasteria sunt destructa, honestas ex parte perdita et 
-&blb;religio uiolata, adulteria plurima, fornicationes, furta et homici&bd;dia 
+&blb;religio uiolata, adulteria plurima, fornicationes, furta et omici&bd;dia 
 sine uindice perpetrata, castella et urbes sunt dirute et incen&bd;dio 
 concremate, res uiduarum et pauperum prede sunt et direp&bd;tioni 
 exposite. <hi>sed</hi> licet iustus iudex et patiens retributor, culpa 
@@ -5203,7 +5208,7 @@ affligi; tandem motus ad ueniam pio compassionis
 sue cum <rs>petri</rs> uicario et suis fratribus persecutionis unda pe&bd;ne 
 demersam noctis medio uisitauit, et de salute propria et futu&bd;ra 
 tranquillitate penitus desperantes uoce salutifera confortauit 
-&blb;dicens: "<hi>confidite</hi>, ego sum, nolite timere". <hi>ad</hi> cuius uocis impe&bd;rium 
+&blb;dicens: <quote type="biblia"><hi>confidite</hi>, ego sum, nolite timere</quote>. <hi>ad</hi> cuius uocis impe&bd;rium 
 uentus tribulationis siluit et unda persecutionis quieuit. 
 &blb;<hi>operante</hi> enim illo, qui uoluntates principum pro suo benepla&bd;cito 
 dirigit et corda regum, sicut uult trutinat et disponit, impe&bd;rator 
@@ -5234,7 +5239,7 @@ nolumus, ut sicut fuistis sociis tribulationis, participes sitis et
 &blb;non timuimus, sed ad uos per ignem et aquam indubitanter ac&bd;cessimus, 
 ut uestro communicato consilio, oblatam imperatoris 
 &blb;pacem, si ecclesie et illustri regi <rs>sicilie</rs> et uobis conueniens fue&bd;rit 
-et idonea, suscipere debeamus». 
+et idonea, suscipere debeamus</said>. 
 </p> 
 
 
