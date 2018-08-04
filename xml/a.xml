@@ -85,6 +85,15 @@
         </editorialDecl>
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
+                <!-- mettili in ordine alfabetico (anche in bonetti.xml, ma lì dovrebbero esserlo già-->
+                <tagUsage gi="add">
+                    It is used either alone (with @place="nextline", "above", "footer", "addedfolios",
+                    "margin", "marginandfooter", "inline")
+                    or in combination with <gi>del</gi> in the following structure to mark a substitution:
+                    <gi>subst</gi>, parent /
+                    <gi>del</gi> (@rend="rasura" or @rend="overwrite"), child
+                    <gi>add</gi> (@place="overwrite" and @type="correction"), child.
+                </tagUsage>
                 <tagUsage gi="hi">
                     Used to mark up words capitalized in the print edition, but not constituting
                     a proper noun, such as "Sed" at the beginning of a sentence.
@@ -117,6 +126,9 @@
                             The note normally ends with "et cetera…"</item>
                     </list>
                 </tagUsage>
+                <tagUsage gi="soCalled">
+                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
+                </tagUsage>
                 <tagUsage gi="del">
                     It is used either alone (with #rend="overstrike"), for a passage deleted and not substituted by
                     the scribe, or in combination with <gi>add</gi> in the following structure to mark a substitution:
@@ -125,15 +137,7 @@
                     <gi>add</gi> (@place="overwrite" and @type="correction"), child.
                     If no @hand attribute is provided, it is implied that the deletion
                     (and the correction, if any) are done by the main hand of the manuscript.
-                </tagUsage>
-                <tagUsage gi="add">
-                    It is used either alone (with @place="nextline", "above", "footer", "addedfolios",
-                    "margin", "marginandfooter", "inline")
-                    or in combination with <gi>del</gi> in the following structure to mark a substitution:
-                    <gi>subst</gi>, parent /
-                    <gi>del</gi> (@rend="rasura" or @rend="overwrite"), child
-                    <gi>add</gi> (@place="overwrite" and @type="correction"), child.
-                </tagUsage>
+                </tagUsage> 
                 <tagUsage gi="link">
                     With @type="transposition", it links a paragraph (first teidata.pointer in the value)
                     of the manuscript text to an <gi>anchor</gi> (second teidata.pointer in the value)
@@ -166,6 +170,9 @@
                         <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put at a point of the text
                             in which Bonetti has a paragraph break but Garufi does not.</item>
                     </list>
+                <tagUsage gi="title">
+                    Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus".
+                </tagUsage>
     </tagUsage>
 
 
@@ -5121,7 +5128,7 @@ regionis illius et comite et popolo ciuitatis satis honorifi<pb n="224" ed="#b"/
 &blb;est receptus. <hi>dehinc</hi> per insulas <rs>dalmacie</rs> nauigans, nono die 
 &blb;stante mensis <hi>martii</hi> ad portum <rs>uenetie</rs> aura flante secunda pe&bd;ruenit. 
 <hi>et</hi> ibidem cum omnibus suis de galea descendens, in mo&bd;nasterio 
-<rs>sancti nycolay</rs>, quod dicitur ad litus, ipso die quieuit. 
+<rs>sancti nycolay</rs>, quod dicitur <soCalled>ad litus</soCalled>, ipso die quieuit. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>altera</hi> autem die dux <rs>uenecie</rs> cum magna nauium et populi 
 &blb;multitudine et patriarcha <rs>uenecie</rs> simul cum patriarcha <rs>aquileie</rs> 
@@ -5381,7 +5388,7 @@ prestita responsum ydoneum accepisset, nono die intrante
 <p xml:id="g275.12-275.18" decls="#al">
 <milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
 &blb;<hi>altera</hi> uero <add place="above">die</add> per mare ad <rs>sanctum nicolaum</rs>, qui dici&bd;tur 
-ad litus, applicuit. <hi>tertia</hi> autem die a duce et populo <rs>uenecie</rs>, 
+<soCalled>ad litus</soCalled>, applicuit. <hi>tertia</hi> autem die a duce et populo <rs>uenecie</rs>, 
 &blb;a patriarcha et uniuerso clero, primo ad <rs>sanctum marcum</rs>, de&bd;hinc 
 ad patriarche palatium cum magna gloria est et honore 
 &blb;deductus. <hi>postquam</hi> autem cardinales et <rs>lombardi</rs>, qui papam 
@@ -5553,14 +5560,14 @@ iustitiam faceret.
 </p> 
 
 
-<p xml:id="g279.3-279.15" decls="#ocr"> 
-&blb;<choice><sic><hi>postqum</hi></sic><corr resp="#pm" type="typo"><hi>postquam</hi></corr></choice> autem hic modus petitionis implende per episco&bd;pum 
+<p xml:id="g279.3-279.15" decls="#al"> 
+&blb;<hi>postquam</hi> autem hic modus petitionis implende per episco&bd;pum 
 <rs>clarimontis</rs> et abbatem de <rs>bonaualle</rs> fuit imperatori pro&bd;positus, 
 plurimum illi displicuit, et sic concordia per illos tracta&bd;ta 
 remansit. <rs>christianus</rs> autem cancellarius et reliqui, qui cum eo 
 &blb;mediatores pacis fuerant constituti, cognito quod imperator per 
 &blb;alios pacem ecclesie tractare uoluisset, nimium doluerunt et ue&bd;nientes 
-ad papam <rs>alexandrum</rs>, dixerunt: "<hi>sanctitati</hi> uestre, domi&bd;ne, 
+ad papam <rs>alexandrum</rs>, dixerunt: <said><hi>sanctitati</hi> uestre, domi&bd;ne, 
 esse uolumus non incognitum, quod nostro odio et inuidia 
 &blb;pax ecclesie prepeditur. <hi>quidam</hi> enim nostri emuli falsa de no&bd;bis 
 imperatori suggerunt et uolunt in hac parte nos ei odiosos 
@@ -5568,21 +5575,22 @@ imperatori suggerunt et uolunt in hac parte nos ei odiosos
 &blb;dum nos absentes sumus, qui pacem diligimus et nuntii in eun&bd;do 
 et redeundo sine fructu tempora longa consumunt, impe&bd;rator 
 prolixitate temporis affectus tedio desideratam pacem 
-&blb;abhorreat et suggestione prauorum hominum infecta pace rece&bd;dat. 
+&blb;aborreat et suggestione prauorum hominum infecta pace rece&bd;dat. 
 <rs>consulimus</rs> ergo discretioni uestre, ut si uobis placuerit, 
 <pb n="246" ed="#b"/> 
 &blb;propius imperator accedat, ut uestris et suis nuntiis cito ire et re&bd;dire 
-ualentibus inchoata pax, uolente <rs>domino</rs>, cito ualeat com&bd;summari". 
+ualentibus inchoata pax, uolente <rs>domino</rs>, cito ualeat com&bd;sumari</said>. 
 </p>
 
 
 <p xml:id="g279.16-279.24" decls="#ocr">
+<pb n="263r" facs="vat:300" ed="#a"/>
 <hi>papa</hi> autem habito cum nuntiis regis <rs>sicilie</rs> et <rs>lombardis</rs> con&bd;silio, 
-respondit: "<hi>nobis</hi> quidem placet admodum, ut imperator 
+respondit: <said><hi>nobis</hi> quidem placet admodum, ut imperator 
 &blb;<rs>cloiam</rs>, que a <rs>uenetiis</rs> quindecim distat milibus, cum paucis 
 &blb;ueniat, ea tamen conditione, quod uos in anima uestra iurare fa&bd;ciatis, 
 ut postquam illuc uenerit, absque nostro mandato et licen&bd;tia 
-ulterius non procedat". <hi>iuramento</hi> itaque in hunc modum 
+ulterius non procedat</said>. <hi>iuramento</hi> itaque in hunc modum 
 &blb;prestito, <rs>coloniensis</rs> archiepiscopus cum quibusdam aliis <rs>ce&bd;senam</rs> 
 ad imperatorem uenit et eum cum suis <rs>cloiam</rs> usque de&bd;duxit. 
 <hi>quidam</hi> autem populares <rs>ueneti</rs>, cognito imperatoris ad&bd;uentu, 
@@ -5622,7 +5630,7 @@ habiturus. <hi>imperator</hi> uero, quia aures suas uerbis <rs>uenetum</rs>
 <p xml:id="g279.40-280.21" decls="#ocr">
 <hi>interea</hi> populares <rs>ueneti</rs> a <rs>cloia</rs> <rs>uenetias</rs> redeuntes, in sancti 
 &blb;<rs>marci</rs> ecclesia congregati, totius pene populi seditionem et tu&bd;multum 
-contra ducem suum excitauerunt, dicentes: "<hi>domine</hi> 
+contra ducem suum excitauerunt, dicentes: <said><hi>domine</hi> 
 &blb;dux, non bene honori et commodo commissi uobis populi 
 &blb;prouidetis. <hi>ecce</hi> enim imperator <rs>romanus</rs> apud <rs>cloiam</rs> iam die&bd;bus 
 aliquantis est demoratus, ubi caloris distemperantias et mu&bd;scarum 
@@ -5632,15 +5640,15 @@ intrare. <hi>quod</hi> ipse multum grauiter recipit et uindicandum
 &blb;offensa quandoque uniuerso populo periculosa possit esse pari&bd;ter 
 et dampnosa. <hi>quare</hi> de nostra uoluntate est, ut si uestre resi&bd;det 
 celsitudini, imperator <rs>uenetias</rs> a uobis et a populo inuitatus 
-&blb;accedat". <hi>quibus</hi> dux benigne respondit: "<hi>bene</hi> potestis firmiter 
+&blb;accedat</said>. <hi>quibus</hi> dux benigne respondit: <said><hi>bene</hi> potestis firmiter 
 &blb;recolere, domini, quod ad petitionem pape per duodecim pru&bd;dentes 
 uiros in anima omnium nostrorum iurare fecimus, quod 
 &blb;absque mandato eius et licentia imperatorem intra fines <rs>uenetie</rs> 
 &blb;nullatenus recipere deberemus. <hi>prouideat</hi> ergo uestra discretio, 
 &blb;si contra tenorem iuramenti nostri, papa inconsulto, imperato&bd;rem 
-debeamus huc aduocare". <hi>cui</hi> illi protinus responderunt: 
-&blb;"<hi>postquam</hi> ex mandato pape <rs>cloiam</rs>, que intra fines est <rs>uenetie</rs>, 
-&blb;imperator intrauit, plane a nostri iuramenti sumus uinculis ab&bd;soluti". 
+debeamus huc aduocare</said>. <hi>cui</hi> illi protinus responderunt: 
+&blb;<said><hi>postquam</hi> ex mandato pape <rs>cloiam</rs>, que intra fines est <rs>uenetie</rs>, 
+&blb;imperator intrauit, plane a nostri iuramenti sumus uinculis ab&bd;soluti</said>. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>cumque</hi> super hoc a duce et populo esset diutius discepta&bd;tum, 
 tandem de communi consensu quidam <rs>ueneti</rs> sunt ad pa&bd;pam 
@@ -5648,12 +5656,12 @@ directi. <hi>qui</hi> uenientes, sicut uiri improbi et superbi, dor&bd;mientem
 papam excitare non timuerunt, proponentes ei ex 
 &blb;parte ducis et populi, quod de eorum erat uoluntate et benepla&bd;cito, 
 quod <rs>uenetias</rs> imperator intraret. <hi>quod</hi> uerbum admodum 
-&blb;pape displicuit et multum graue resedit, dicens eis: "<hi>uos</hi> nobis ex 
+&blb;pape displicuit et multum graue resedit, dicens eis: <said><hi>uos</hi> nobis ex 
 &blb;iuramento tenemini, ut imperator <rs>uenetias</rs> non debeat sine no&bd;stra 
 licentia et mandato uenire. <hi>uolumus</hi> ergo, ut cardinales no&bd;stros, 
 qui ad imperatorem iuerunt, cum eius nuntiis usque in 
 &blb;diem crastinum expectetis. <hi>et</hi> eis uenientibus, quid nobis facien&bd;dum 
-sit, uobis respondere curabimus". <hi>quod</hi> uerbum licet <rs>ue<pb n="250" ed="#b"/>netis</rs> 
+sit, uobis respondere curabimus</said>. <hi>quod</hi> uerbum licet <rs>ue<pb n="250" ed="#b"/>netis</rs> 
 &blb;displicuisset, plurimum tamen precibus pape deuicti, pe&bd;titioni 
 eius, quamuis inuiti, prebentes assensum, ad propria re&bd;dierunt. 
 </p>
@@ -5671,17 +5679,17 @@ qui secum remanserant, cepit contristari et mestus
 &blb;iuramento non prestito, <rs>uenetias</rs> introiret, magnum ex hoc dam&bd;pnum 
 et periculum posset <rs>dei</rs> ecclesie prouenire. <hi>audientes</hi> 
 &blb;autem hoc nuntii regis <rs>sicilie</rs>, uenientes ad papam ceperunt 
-&blb;eum uiriliter animare, dicentes: "<hi>domine</hi>, non oportet uos dubi&bd;tare 
+&blb;eum uiriliter animare, dicentes: <said><hi>domine</hi>, non oportet uos dubi&bd;tare 
 in aliquo uel metuere, ecce enim quatuor galeas domini re&bd;gis 
 <rs>sicilie</rs> ad uestrum obsequium preparatas habemus, quas cum 
 &blb;uobis intrare placuerit, secure uos de hoc loco et absque peri&bd;culo, 
-inuitis etiam <rs>uenetis</rs> et contradicentibus, educemus". <hi>qui&bd;bus</hi> 
+inuitis etiam <rs>uenetis</rs> et contradicentibus, educemus</said>. <hi>qui&bd;bus</hi> 
 uerbis papa plurimum animatus respondit quod de suo erat 
 &blb;proposito, ut cardinales, qui ad imperatorem iuerant, usque in 
 &blb;diem crastinum expectaret, ne si eis inconsultis recederet, pos&bd;set 
 merito leuitatis argui et de uiolata fraternitate culpari. <hi>quo</hi> 
 &blb;audito, regis nuntii ad palatium ducis, ubi cum multis <rs>uenetis</rs> 
-&blb;dux de more conuenerat, accedentes, eos taliter sunt allocuti:"<hi>a</hi> 
+&blb;dux de more conuenerat, accedentes, eos taliter sunt allocuti: <said><hi>a</hi> 
 &blb;uestra memoria excidisse non credimus, quanta beneficia domi&bd;nus 
 rex huic ciuitati contulerit, et quod hodie princeps aliquis 
 &blb;sub celo non uiuit, cuius amicitia tantum sit uobis idonea, cuius 
@@ -5700,12 +5708,12 @@ istam, papa contradicente, uocatis: et sic pax ecclesie et
 &blb;sciatis, quod nos in ciuitate ista non prestolabimur imperatoris 
 &blb;aduentum, sed die crastina ad propria redeuntes, domino regi si&bd;gnificare 
 curabimus, qualiter pro tot et tantis beneficiis uobis a 
-&blb;regia liberalitate collatis, mala et dampna plurima rependere stu&bd;deatis." 
+&blb;regia liberalitate collatis, mala et dampna plurima rependere stu&bd;deatis</said>. 
 </p>
 
 
 <p xml:id="g281.8-281.18" decls="#ocr">
-<hi>quibus</hi> auditis, dux satis placide et benigne respondit:"<hi>quod</hi> 
+<hi>quibus</hi> auditis, dux satis placide et benigne respondit: <said><hi>quod</hi> 
 &blb;uos indignatos aspicimus et contra nos commotos esse cogno&bd;scimus, 
 egre multum patimur et molestissime sustinemus. <hi>nos</hi> 
 &blb;enim, qui dominum regem toto corde diligimus et pro honore 
@@ -5717,7 +5725,7 @@ uoluimus, ut in ciuitate nostra pacis domini regis tamquam
 &blb;amicissimi nostri fieret consummatio. <hi>et</hi> ideo recedendi uobis 
 &blb;licentiam non tribuimus, sed prudentiam uestram affectuose ro&bd;gamus, 
 ut tamquam in domibus uestris securi et sine timore ali&bd;quo 
-imperatoris expectetis aduentum". 
+imperatoris expectetis aduentum</said>. 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>non</hi> autem idcirco taliter dux respondit, quin ei et aliis sa&bd;pientibus 
 talis imperatoris displiceret aduentus, sed quia timebat 
@@ -5727,9 +5735,9 @@ talis imperatoris displiceret aduentus, sed quia timebat
 
 <p xml:id="g281.19-281.39" decls="#ocr"> 
 &blb;<hi>nuntii</hi> autem regis hoc audientes, surgentes cum indignatio&bd;ne 
-dixerunt: "<hi>nos</hi> hic cum licentia uestra non uenimus nec cum 
+dixerunt: <said><hi>nos</hi> hic cum licentia uestra non uenimus nec cum 
 &blb;uestra licentia recedemus, sed crastina die iter arripientes, domi&bd;ni 
-nostri regis iniuriam non uerbis sed operibus uendicare cura&bd;bimus". 
+nostri regis iniuriam non uerbis sed operibus uendicare cura&bd;bimus</said>. 
 <hi>qui</hi> ad domos suas redeuntes statim iusserunt galeas pa&bd;rari, 
 tubas canere, arma et totam suppellectilem in galeas indu&bd;cere. 
 <hi>quod</hi> factum postquam fuit per <rs>uenetias</rs> diuulgatum, timor 
@@ -5738,7 +5746,7 @@ recederent, hac occasione rex <rs>uenetos</rs>, qui in terra sua
 &blb;erant, capti faceret et in custodia detineri. <hi>qua</hi> de causa magna 
 <pb n="254" ed="#b"/> 
 &blb;multitudo uirorum ac mulierum, quorum parentes in <rs>apuliam</rs> 
-&blb;uenerant, ad ducem properans, proclamauit: "<hi>uestram</hi> et totius 
+&blb;uenerant, ad ducem properans, proclamauit: <said><hi>uestram</hi> et totius 
 &blb;<rs>uenetie</rs> prudentiam, illustris dux, latere non credimus, quanta 
 &blb;beneficia magnificus rex <rs>sicilie</rs> nostre regioni sua liberalitate 
 &blb;prestiterit, et qualiter nostre famis inediam sue terre uictualibus 
@@ -5756,20 +5764,20 @@ nuntios regis <rs>sicilie</rs> ab incepto itinere reuocetis, nec
 &blb;sinatis. <hi>si</hi> qui enim sunt, qui contra hoc aliquid dicere uel at&bd;temptare 
 presumserint, parati sumus cum nostris parentibus et 
 &blb;amicis eos morti tradere, et proximos nostros, qui in regno regis 
-&blb;sunt, a futuro periculo liberare". 
+&blb;sunt, a futuro periculo liberare</said>. 
 </p> 
 
 
 <p xml:id="g281.40-282.7" decls="#ocr"> 
 &blb;<hi>dux</hi> autem eorum querimonia diligenter et gratanter audita, 
-&blb;respondit: "<hi>quod</hi> nuntii regis <rs>sicilie</rs> uolunt indignati recedere, 
+&blb;respondit: <said><hi>quod</hi> nuntii regis <rs>sicilie</rs> uolunt indignati recedere, 
 &blb;non mee imprudentie, sed quorumdam popolarium seditioni est 
 &blb;et malitie ascribendum, qui mea et prudentum uirorum zelo et 
 &blb;inuidia prouocati, non ciuitatis honori et glorie, sed suis utilitati&bd;bus 
 prouidentes, die et nocte dant studium et operam diligen&bd;tem, 
 ut imperatorem, nobis contradicentibus, <rs>uenetias</rs> introdu&bd;cant, 
 et ob hoc periurii crimen et infamiam et pape et regis <rs>si&bd;cilie</rs> 
-graue et perpetuum odium debeamus incurrere". <hi>cumque</hi> 
+graue et perpetuum odium debeamus incurrere</said>. <hi>cumque</hi> 
 &blb;illi iterum proclamassent, ut eorum, qui auctores erant seditio&bd;nis, 
 nomina dux euidenter exprimeret; metuens, si noti fierent, 
 &blb;ob hoc pugna in ciuitate maxima et seditio inualesceret, saniori 
