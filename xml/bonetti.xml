@@ -124,10 +124,8 @@
     <body>
 
 
-
-<pb n="62" ed="#b"/> 
-
 <p xml:id="b062heading" decls="#ocr"> 
+<pb n="62" ed="#b"/> 
 &blb;<rs>romoaldi</rs> <num value="2">ii</num> archiepiscopi salernitani annales 
 </p>
 
@@ -783,7 +781,7 @@ cognomento <rs>uiscardus</rs>, eiusdem <rs>unfridi</rs> comitis frater,
 &blb;<hi>quorum</hi> primus quidem fuit <rs>sarnus</rs>, qui miles insignis extitit. 
 &blb;<hi>secundus</hi> autem comes <rs>goffridus</rs> pater <rs>robberti</rs> comitis de <rs>lau&bd;ritello</rs>. 
 <hi>tercius</hi> uero <rs>drogo</rs> comes, de quo superius scriptum est. 
-&blb;<hi>quartus</hi> autem <rs>willemus</rs>, et ipse comes, qui propter fortitudinis 
+&blb;<hi>quartus</hi> autem <choice><sic><rs>willemus</rs></sic><corr resp="#pm" type="typo"><rs>willelmus</rs></corr></choice>, et ipse comes, qui propter fortitudinis 
 &blb;sue prudenciam <rs>brachiferreus</rs> est prenomine dictus erat enim 
 &blb;astutissimus et ferox fortisque uiribus. <hi>quintus</hi> extitit comes <rs>un&bd;fridus</rs>. 
 <hi>sextus</hi> quoque <rs>malgerius</rs> comes, probus atque famosus. 
@@ -5063,7 +5061,7 @@ pro parte nostra et heredum nostrorum paciscimur uo<pb n="282" ed="#b"/>biscum,
 &blb;domine <rs>w<supplied resp="#b">illelm</supplied>e</rs>, eadem gratia illustris rex <rs>sicilie</rs>, 
 &blb;quod amodo usque ad quindecim annos obseruabimus uobis et 
 &blb;heredibus uestris et uniuerso regno uestro et toti terre domina&bd;tionis 
-uestre ueram et <choice><sic>firman</sic><corr resp="#pm" type="typo">firman</corr></choice> pacem. <hi>et</hi> quod per nos uel per 
+uestre ueram et <choice><sic>firman</sic><corr resp="#pm" type="typo">firmam</corr></choice> pacem. <hi>et</hi> quod per nos uel per 
 &blb;quoslibet alios, mari uel terra, uos predictum illustrem regem et 
 &blb;heredes uestros aut regnum uestrum et terram dominationis 
 &blb;uestre, sicut prescriptum et determinatum est, usque ad quinde&bd;cim 
@@ -5172,7 +5170,7 @@ et iuratam esse cognoscens, letatus est ualde et per litteras
 gressu in <rs>siciliam</rs> properarent. <hi>sicque</hi> factum est, quod ar&bd;chiepiscopus 
 et comes sexto die intrante mensis <hi>nouembris</hi> <rs>pa&bd;normum</rs> 
 ingressi, a dominis et familiaribus curie et reliquis ma&bd;gnatibus 
-honorifice sunt suscepit. <hi>altera</hi> uero die coram magni&bd;ficentia 
+honorifice sunt <choice><sic>suscepit</sic><corr resp="#pm" type="typo">suscepti</corr></choice>. <hi>altera</hi> uero die coram magni&bd;ficentia 
 regia uenientes, ei a principio usque ad finem totius ne&bd;gotii 
 modum et seriem plenissime retulerunt, et priuilegium pa&bd;pe 
 <rs>alexandri</rs> et imperatoris de pace factum et roboratum eidem, 
@@ -5217,14 +5215,14 @@ episcopus apud <rs>auersam</rs> obiit, <rs>malfridus</rs> <rs>penestrinus</rs>
 
 
 <p xml:id="g294.15-194.17" decls="#ocr"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="1000">m</num>. <num value="100">c</num>. septuagesimo octa&uu;o, 
+&blb;<hi>anno</hi> dominice incarnationis <num value="1100">m.c.</num> septuagesimo octa&uu;o, 
 &blb;quinta die intrante mensis <hi>martii</hi>, luna passa est eclisin in signo 
 &blb;uirginis et incepit a fine prime hore et durauit usque ad princi&bd;pium 
 quarte et obscurata est tota minus quarta. 
 </p> 
 
 
-<p xml:id="g194.18-295.5" decls="#ocr"> 
+<p xml:id="g294.18-295.5" decls="#ocr"> 
 &blb;<hi>comes</hi> autem <rs>roggerius</rs> de <rs>andria</rs> iuxta mandatum regium 
 &blb;usque in carnis leuamen <rs>panormum</rs> imperatoris nuntios expec&bd;tauit. 
 <hi>quibus</hi> moram facientibus, accepta a rege licentia, in <rs>apu&bd;liam</rs> 
@@ -5354,7 +5352,7 @@ fecerunt, ut uniuersus mundus euidenter agnosceret, quod
 &blb;quibusdam monachis, qui ibidem erant, <rs>matheum</rs> abbatem <rs>sanc&bd;ti</rs> 
 <rs>benedicti</rs> de <rs>salerno</rs> cum gladiis et fustibus et lanceis inua&bd;serunt, 
 et eum percussum in uentre et gutture crudeliter occi&bd;derunt. 
-<hi>quo</hi> cognito, rex <rs>w<supplied resp="#b">illelmus</supplied></rs> <hi>luce</hi> <rs>guarne</rs> et <rs>florio</rs> de 
+<hi>quo</hi> cognito, rex <rs>w<supplied resp="#b">illelmus</supplied></rs> <rs>luce</rs> <rs>guarne</rs> et <rs>florio</rs> de 
 &blb;<rs>cammarota</rs> iustitiariis precipiendo mandauit, ut huius sceleris 
 &blb;auctores cum summo studio et cautela inquirerent et inuentos 
 &blb;carceri manciparent. <hi>qui</hi> adhibita diligentia competenti, quo&bd;sdam 
@@ -5363,7 +5361,10 @@ de rusticis, qui neci abbatis interfuerunt, et <rs>petrum</rs> prio&bd;rem
 &blb;de monachis comprehenderunt; asserebant enim rustici qui 
 &blb;capti fuerant, consilio et machinatione predictorum monacho&bd;rum, 
 abbatem fuisse occisum. 
-&blb;297.297.18 
+</p>
+
+
+<p xml:id="g297.3-297.18" decls="#ocr"> 
 &blb;<hi>anno</hi> dominice incarnationis <num value="1178">mclxx&uu;iii</num> mense <hi>augusti</hi>, un&bd;decima 
 indictione, quarto die stante eiusdem mensis, uidelicet 
 &blb;in festo decollationis beati <rs>iohannis</rs> <rs>baptiste</rs>; <rs>iohannes</rs> de <rs>stru&bd;ma</rs>, 
@@ -5396,12 +5397,12 @@ papa eum et in curia et in mensa sua honorifice habuit.
 &blb;<hi>secundo</hi> autem die stante eiusdem mensis, luna in signo uir&bd;ginis 
 post mediam noctem passa est eclypsim, et pene in tertia 
 &blb;parte sui obscurata est. <hi>tertio</hi> decimo uero die intrantis mensis 
-&blb;<hi>septembris</hi>, indictione <num value="12">xii</num>, sol in signo uirginis circa horam... 
+&blb;<hi>septembris</hi>, indictione <num value="12">xii</num>, sol in signo uirginis circa horam… 
 </p>
 
-<pb n="298" ed="#b"/> 
 
 <p xml:id="v-b298a" decls="#ocr"> 
+<pb n="298" ed="#b"/> 
 &blb;de pace &uu;eneta relatio 
 </p> 
 
