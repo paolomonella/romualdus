@@ -6,3 +6,4 @@
 echo $1 > page
 echo "Prendo i file da collazionare"
 cp -v A[1-4]*/g$1* .
+python3.6 sostituzioni.py
