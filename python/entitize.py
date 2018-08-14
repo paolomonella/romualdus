@@ -38,10 +38,13 @@ def entitize (filename):
 
     os.system('mv %s %s' % (output_filename, input_filename)) # Overwrite original file
 
+'''
 entitize('a_juxta')
 entitize('bonetti_juxta')
 entitize('b')
+'''
 
 for f in iglob('../xml/*.xml'):
     base = f.split('/')[-1].split('.')[0]
+    print(base)
     entitize(base)

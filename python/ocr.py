@@ -19,7 +19,7 @@ bom = False     # Set to True if you want to get rid of the initial BOM
     6. Check if <rs>'s and <hi>'s and all remaining uppercase chars are OK (vim /\v[A-Z][a-z]  and   /\v[.!?-]   etc.)
     7. Add <num>
     8. Un-capitalize everything
-    9. Substitute j → i in a.xml (and use &jj; in bonetti.xml and g.xml)
+    9. Substitute j → i in a.xml (and use &jj; and &uu; in bonetti.xml and g.xml)
     10. Eventually check empty <p>s appended (with the same xml:id's) to b.xml and c.xml
 
 The input.txt file must look like this
@@ -225,12 +225,12 @@ class ocr:
         ''' Edition can be 'g' (Garufi) or 'b' (Bonetti).
         
             1. Remove syllabation dashes at the end of lines.
-            2. Replace each dash with &lb; (corresponding to <lb break="no" rend="-" type="g"/>).
+            2. Replace each dash with an entity (corresponding to <lb break="no" rend="-" type="g"/> or type="b").
             3. Reunite words separated by those dashes in the first line. 
             4. Wrap everything inside a temporary <div> element.
             4bis. If edition=Bonetti, then add a <>
             5. Insert <p>s.
-            6. Transform Garufi's/Bonetti's pages and lines (e.g.: 3.7-3.16) to @xml:id="g3.7-3.16" (or b3.7-3.16)
+            6. Transform Garufi's/Bonetti's pages and lines (e.g.: 3.7-3.16) to @xml:id="g3.7-3.16"
             7. Append other attributes (@decs) to <p>.
             8. Put
                     &glb; (Garufi  Line Beginning, corresponding to <lb xmlns="http://www.tei-c.org/ns/1.0" type="g"/>)
@@ -240,7 +240,7 @@ class ocr:
                     except for
                 a) lines with Garufi's/Bonetti's pages and lines (like 3.7-3.16)
                 b) lines whose previous line already has a <lb break="no" rend="-" type="g"/> (or type="b") inside.
-            9. For lines in case 2, function manage_dashes() had inserted a comment <!--nolb--> at
+            9. For lines in case b, function manage_dashes() had inserted a comment <!--nolb--> at
                 the their beginning.
             '''
 
@@ -276,7 +276,8 @@ class ocr:
                     self.lines[i] = ''.join( [ l[:-2], dash, firstword, '\n' ] )
 
                     # The <!--nolb--> comment prevents the next 'if' block from inserting another <lb>
-                    # at the beginning of lines following the lines with '&lb;'
+                    # at the beginning of lines following the lines ending with witha dash
+
                     # (corresponding to <lb break="no" rend="-" type="g"/>)
                     self.lines[i+1] = ''.join(['<!--nolb-->', nextline])
                     
@@ -316,7 +317,7 @@ class ocr:
             for t in words:
                 wi = words.index(t)
                 if re.match('[A-Z][a-z]', t[0:2]):  # 1st char is uppercase, 2nd is lowercase
-                    # Note that the following 'if' case is not necessary if I use &lb; instead
+                    # Note that the following 'if' case is not necessary if I use an entity instead
                     # of <lb break="no" rend="-" type="g"/>, but it doesn't hurt either, so I'm leaving it
                     if '<lb' in t:  # If the proper name has <lb> inside, like: Ni<lb break="no" rend="-" type="g"/>nus
                         t = ''.join(['<rs>', t])    # Append <rs> before: <rs>Ni<lb break="no" rend="-" type="g"/>nus</rs>
@@ -452,12 +453,12 @@ class ocr:
 ''' ACTUAL OCR '''
 
 o = ocr('../xml/input.txt')
-o.markup('b')
+o.markup('g')
 o.lowercasize()
 o.wrap_proper_names()
 o.export_to_txt('../xml/temp.xml')
 
-spread_ids('g', ['a', 'b', 'c'])
+#spread_ids('g', ['a', 'b', 'c'])
     
 #proofread = ocr('../xml/temp_g.xml')
 #proofread.a_abbrev('a')

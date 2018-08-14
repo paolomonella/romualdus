@@ -211,7 +211,7 @@
     <body>
 
 
-<interp xml:id="#ab" resp="#pm">
+<interp xml:id="ab" resp="#pm">
 <hi>the</hi> word (generally person names <rs>william</rs> or <rs>romualdus</rs>) is abbreviated to its first letter, so we cannot desume its exact spelling from this passage. <hi>in</hi> some instances, an abbreviation sign (such as a smaller alphabetical grapheme written above the first letter) is added by the scribe to mark the case (nominative, genitive etc.). <hi>i</hi> am retaining the word spelling of the <rs>bonetti</rs> edition to facilitate collation. <hi>the</hi> @ana attribute is always attached to <gi>rs</gi> elements, but one case, in which it is attached to a <gi>w</gi> element. 
 </interp>
 
@@ -5151,7 +5151,7 @@ regionis illius et comite et popolo ciuitatis satis honorifi<pb n="224" ed="#b"/
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>altera</hi> autem die dux <rs>uenecie</rs> cum magna nauium et populi 
 &blb;multitudine et patriarcha <rs>uenecie</rs> simul cum patriarcha <rs>aquileie</rs> 
-&blb;et omnibus suis suffraganeis a<choice><del rend="overwrite">p</del><add place="overwrite" type="correction">d</add></choice> pedes <rs>alexandri</rs> pape humiliter 
+&blb;et omnibus suis suffraganeis a<subst><del rend="overwrite">p</del><add place="overwrite" type="correction">d</add></subst> pedes <rs>alexandri</rs> pape humiliter 
 &blb;accedentes, ipsum processionaliter cum summo honore et glo&bd;ria 
 usque ad <rs>sancti marci</rs> ecclesiam deduxerunt, in qua facta ora&bd;tione 
 populum benedixit. <hi>dehinc</hi> nauem ducis cum ipso simul 
