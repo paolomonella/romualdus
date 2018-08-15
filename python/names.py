@@ -42,8 +42,16 @@ class Names():
                 '../xml/bonetti.xml': ['domine', 'dominus'],
                 '../xml/a.xml': [],
                 '../xml/g.xml': ['domine', 'dominus'],
-                '../xml/foo.xml': ['domine', 'dominus', 'dominum', 'augusti', 'augustus', 'justo', 'quinto', 'pius',
-                    'augusto', ],
+                '../xml/foo.xml': ['domine', 'dominus', 'dominum', 'domini', 'augusti', 'augustus', 'augusta', 'justo',
+                    'quinto', 'pius', 'desiderio', 'aquila', 'victor', 'uictor', 'augusto', 'regium', 'bono',
+                    'galli', 'mediam', 'urbem', 'urbe', 'felici', 'magno', 'constantia', 'germanus', 
+                    'urbis', 'seuerus', 'seueri', 'ualens', 'justi', 'prouinciam', 'maximus', 'maximum', 'maximi',
+                    'probus', 'maria', 'paulo', 'clemens', 'sextus', 'commodo', 'magnus', 'asini',
+                    'paschalem', 'constans', 'fontis', 'magni', 'quintus', 'largus', 'antistes', 'domino', 'habitus',
+                    'iulii', 'lino', 'carus', 'grecorum', 'germanum', 'crescente', 'uirginis', 'bestia', 'urbi',
+                    'festo', 'prouincia', 'noua', 'prouincialibus', 'capitolium', 'maximo', 'paschali', 'pagano',
+                    'germani', 'regio', 'grecus', 'luce', 'medi', 'stoicus'
+                    ],
                 }
 
 
@@ -190,7 +198,7 @@ def updatenamesfile (updateProperNamesInputXmlFile):
         file updateProperNamesInputXmlFile (e.g. a.xml) and names
         in the original rs.txt file. Backup the original file.
         ISSUE: This fills the rs.txt file with 'names' that are not
-        necessarily such (like 'urbem' etc.).
+        necessarily such (like 'clemens' etc.).
         '''
 
     # Get updated set of names from XML file and rs.txt
@@ -209,98 +217,6 @@ def updatenamesfile (updateProperNamesInputXmlFile):
             if n.strip() not in nn:
                 print(n.strip(), file=f)
 
-
-##############################
-# FUNCTIONS NO LONGER IN USE #
-##############################
-
-def old_checkrsandhi (myInputXmlFile, outfile = None):
-    '''Create a set of words currently marked with <rs> and another list of words
-        currently marked with <hi>. Check that words marked <rs> are never marked as <hi>
-        in other points of the text.
-        If outfile = None, write output to screen in the verbose form:
-            «Word "apollinis" is marked with <rs>, but elsewhere also with <hi>"»
-        If outfile includes a filename (e.g. outfile='filename.txt'), write a non-verbse output to that file, as
-            a simple list of names.
-        '''
-    okwords = {
-            # Words that are OK to be marked both as <hi> and as <rs> in a specific file
-            '../xml/bonetti.xml': ['domine', 'dominus'],
-            '../xml/a.xml': [],
-            '../xml/g.xml': ['domine', 'dominus']
-            }
-    rsset = nameset(myInputXmlFile, mysettag='rs')
-    hiset = nameset(myInputXmlFile, mysettag='hi')
-    issues = []
-
-    # Check for words repeated in the two lists
-    for r in rsset:
-        if r in hiset and not r in okwords[myInputXmlFile]:
-            issues.append(r)
-    
-    # Output to file
-    if outfile != 'xml' and outfile is not None:  # If it's a filename
-        with  open(outfile, 'w') as OUT:
-            for i in sorted(issues):
-                print(i, file=OUT)
-    elif outfile is None:   # If there's no 'outfile' argument
-        for i in sorted(issues):
-            print('Word "' + r + '" is marked with <rs>, but elsewhere also with <hi>')
-
-
-def old_listnames (properNamesInputXmlFile, myNamespace):
-    ''' This script parses the ../xml/temp_g.xml file and lists
-        the textual content of all its <rs> elements.
-        All names in the list are in lowercase.
-        '''
-    self.nametree = etree.parse(properNamesInputXmlFile)
-    rss = self.nametree.findall('.//%srs' % myNamespace)
-    for rs in rss:
-        print(rs.text, end=',')
-    print('\n---\n')
-
-
-def old_nameset (properNamesInputXmlFile, mysettag='rs', addrstxt=False):
-    ''' Parse an xml file and return a set (not list) of names marked
-        with mysettag (typipcally <rs> or <hi>) in that file. All names in the set are in lowercase.
-        If addrstxt=True, add to that set the proper names in file rs.txt
-        '''
-    self.nametree = etree.parse(properNamesInputXmlFile)
-    #rss = self.nametree.findall('.//t:rs', constants.ns)  # Old version
-    mynames = self.nametree.findall('.//t:%s' % (mysettag), constants.ns)
-    namelist = [rs.text.lower() for rs in mynames if len(list(rs)) == 0 ]   # The 'if' excludes <rs>'s with element children
-    for m in mynames:   # This takes care of <rs>'s with element children
-        if len(list(m)) > 0:
-            if m.find('.//t:orig', constants.ns) is not None:   # Remove 'orig' (i.e. only leave 'reg': 'jovem' becomes 'iouem')
-                orig = m.find('.//t:orig', constants.ns)
-                orig.getparent().remove(orig)
-            namelist.append(''.join(m.itertext()).replace('\n', ''))
-    if addrstxt:
-        with open ('rs.txt', 'r') as rstxt: # Add the names stored in file 'rs.txt'
-            for l in rstxt:
-                namelist.append(l.strip().lower())
-    return set(namelist)
-
-
-def old_checkrs (myInputXmlFile, myProperNamesFile):
-    ''' Update file rs.txt based on the <rs>'s in the XML file 'myInputXmlFile'.
-        Then parse 'myInputXmlFile'
-        perform a textual search on the XML file for each proper name
-        listed in file myProperNamesFile, and check that each of the occurrences of each name
-        in the XML files is marked with a <rs> tag.
-        If this is not the case, then print out the XML file name,
-        the parent element that includes the name, and that element's text. '''
-    updatenamesfile(myInputXmlFile)
-    self.nametree = etree.parse(myInputXmlFile)
-    regexpNS = 'http://exslt.org/regular-expressions'
-    with open (myProperNamesFile, 'r') as rsfile:
-        for l in rsfile:
-            myname = l.strip().lower()
-            find = etree.XPath('//text()[re:match(., "\W%s\W", "i")]/parent::*' % (myname), namespaces={'re':regexpNS})
-            # Doc: http://exslt.org/regexp/ e http://exslt.org/regexp/functions/test/index.html
-            for r in find(self.nametree):
-                if r.tag != constants.tei_ns + 'rs':    # If the proper name is not marked with <rs>
-                    print('%10s %s %10s %s %10s %s' % ('File:', myInputXmlFile, 'Name:', myname, 'Tag:', r.tag))
 
 
 

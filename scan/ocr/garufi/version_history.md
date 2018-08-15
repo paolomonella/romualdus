@@ -48,8 +48,22 @@ Checked <rs> and <hi> with names.py, function chechrsandhi() again
 
 # 3.6
 
-Checked <rs> names.py, function checkrs(). Checked words that must always be marked with <rs> and words that never must be markedwith <rs>. Still to do: words that can be or not be marked with <rs>.
+Checked <rs> with names.py, function checkrs(). This function checks names marked that are with <rs> at some point of the text, but not marked in other points. I checked words that must always be marked with <rs> and words that never must be markedwith <rs>. Still to do: words that can be or not be marked with <rs>.
 
 # 3.7
 
-Checked <rs> names.py, function checkrs(). Checked words that can be or not be marked with <rs>.
+Checked <rs> with names.py, function checkrs(). Checked words that can be or not be marked with <rs>.
+
+# 3.8
+
+Checked <rs> with names.py, function checkrs(). Checked words that can be or not be marked with <rs> (again)
+
+# 4.0
+
+Pre-processed files to identify Roman numerals. I am trying to put all numerals with more than one letter in all uppercase (i.e. not xxx but XXX). I marked by hand the numerals with one letter only (I, V, X, L, C, D, M).
+
+# 4.1
+
+This is the output of function wrapNumerals() of numerals.py. Still to be checked for cases such as
+    cerca </num>&nbsp;
+(i.e. with an entity right before or right after <num>) or with a <num> inside another <num>.
