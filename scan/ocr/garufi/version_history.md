@@ -67,3 +67,7 @@ Pre-processed files to identify Roman numerals. I am trying to put all numerals 
 This is the output of function wrapNumerals() of numerals.py. Still to be checked for cases such as
     cerca </num>&nbsp;
 (i.e. with an entity right before or right after <num>) or with a <num> inside another <num>.
+
+# 4.2
+
+Corrected some marku-up errors about <num> elements.
