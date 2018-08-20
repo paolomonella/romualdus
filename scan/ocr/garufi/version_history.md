@@ -78,3 +78,4 @@ First version with 'v' transformed to &uu;
 
 # 5.1
 First version with 'j' transformed to &jj;.
+This is the final version of this file. I pasted/copied the content of <body> of this version of the file into g.xml, so from now on I'll do all further edits into g.xml directly.
