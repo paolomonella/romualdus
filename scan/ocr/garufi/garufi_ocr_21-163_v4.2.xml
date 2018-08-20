@@ -85,6 +85,18 @@
                     I am omitting those brackets in this file.
                 </tagUsage>
              </namespace>
+             <rendition xml:id="ghead1" scheme="css" selector="p[type='ghead1']">
+                 text-align: center;  text-transform: uppercase; letter-spacing: 3px;
+             </rendition>
+             <rendition xml:id="ghead2" scheme="css" selector="p[type='ghead2']">
+                 text-align: center;  font-variant: small-caps;
+             </rendition>
+             <rendition xml:id="ginscription" scheme="css" selector="p[type='ginscription']">
+                 font-variant: small-caps;
+             </rendition>
+             <rendition xml:id="gverse" scheme="css" selector="p[type='gverse']">
+                 font-style: italic; text-indent: 25%;
+             </rendition>
          </tagsDecl>
         <listPrefixDef>
             <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
@@ -104,8 +116,8 @@
 
 <milestone type="mass_ocr_21-163_starts_here" ed="#g"/> 
 
-
 <p xml:id="g21.1-21.2" decls="#ocr"> 
+<pb n="21" ed="#g"/>
 &glb;<rs>ammon</rs> filius <rs>manasse</rs> annis <num value="2">ii</num> in ebraica ueritate <num value="2">ii</num> annis, in septuaginta legitur re&gd;gnasse 
 <num value="12">xii</num>. <hi>hic</hi> a seruis interficitur. <rs>histius</rs> ciuitas in <rs>ponto</rs> condita. 
 </p> 
@@ -162,6 +174,7 @@ temperaret <num value="3352">iiiccclii</num>.
 &glb;<rs>joachim</rs> filius <rs>josie</rs> annis <num value="11">xi</num>. <hi>post</hi> <rs>josiam</rs> regnauit <rs>joachaz</rs> filius ejus tribus mensibus, 
 &glb;quem <rs>nechaon</rs> rex uictum ducens in <rs>egyptum</rs> <rs>joachim</rs> constituit regem. <hi>huius</hi> tertio anno 
 &glb;<rs>nabuchodonosor</rs> capta <rs>ierusalem</rs>, et plurimis captiuitatis, in quibus erant <rs>danielli</rs> <rs>ananias</rs>, 
+<pb n="22" ed="#g"/>
 &glb;<rs>azarias</rs> et <rs>misahel</rs>, partem uasorum templi in <rs>babiloniam</rs> transfert. <hi>a</hi> quarto<pb n="37v" facs="vat:§" ed="#a"/> <rs>joachim</rs> anno 
 &glb;scriptu regum <rs>nabuchodonosor</rs> computat: quia ex eo non solum <rs>judeis</rs>, et <rs>chaldeis</rs>, sed et 
 &glb;<rs>assyriis</rs>, <rs>egyptiis</rs>, <rs>moabitis</rs>, aliisque innumeris gentibus cepit regnare <rs>joachim</rs>, qui et <rs>jecho&gd;nias</rs> 
@@ -276,13 +289,13 @@ est prophetare: quinto uidelicet anno transmigrationis <rs>jechonie</rs>. <hi>so
 </p> 
 
 
-<p xml:id="g24.15-14.15" decls="#ocr"> 
-&glb;<hi>explicit</hi> QUARTA ETAS. 
+<p xml:id="g24.15-14.15" decls="#ocr" type="ghead2"> 
+&glb;<hi>explicit</hi> quarta etas. 
 </p> 
 
 
-<p xml:id="g24.16-24.16" decls="#ocr"> 
-&glb;<hi>incipit</hi> QUINTA ETAS. 
+<p xml:id="g24.16-24.16" decls="#ocr" type="ghead1"> 
+&glb;incipit quinta etas. 
 </p> 
 
 
@@ -296,10 +309,10 @@ annis permansit <num value="3376">iiiccclxxvi</num>.
 &glb;<hi>anno</hi> <num value="14">xiv</num> postquam percussa est ciuitas, qui est uicesimus quintus annus <rs>joachim</rs>, cum 
 &glb;quo et <rs>ezechiel</rs> captiuatus est: ipse <rs>ezechiel</rs> in uisionibus <rs>dei</rs> adductus est in terram <rs>israel</rs>, 
 &glb;et uidit renouationem ciuitatis, ac templi ceremoniarumque ejus. <rs>romanorum</rs> sextus <rs>ser&gd;uius</rs> 
-<rs>tullius</rs> regnauit annis xxxrv qui tres montes urbi addidit, <hi>quirinalem</hi>, <rs>esquilinum</rs>, 
+<rs>tullius</rs> regnauit annis <num value="34">xxxiv</num> qui tres montes urbi addidit, <hi>quirinalem</hi>, <rs>esquilinum</rs>, 
 &glb;<hi>viminalem</hi>. <hi>fossas</hi> circum muros duxit. <hi>census</hi> ciuium <rs>romanorum</rs> primus instituit, qui 
 &glb;adhuc per orbem terrarum incognitus erat; tunc inuenta sunt capita <rs>romanorum</rs> ciuium octo&gd;ginta 
-quattuor milia IIICCCLXXXIX. 
+quattuor milia <num value="3389">iiiccclxxxix</num>. 
 <pb n="41v" facs="vat:§" ed="#a"/> 
 </p> 
 
@@ -400,6 +413,7 @@ est. <hi>eo</hi> tempore <rs>cirus</rs> rex <rs>persarum</rs> uicit <rs>babiloni
 
 
 <p xml:id="g27.1-27.5" decls="#ocr"> 
+<pb n="27" ed="#g"/>
 &glb;<rs>cambises</rs> <rs>ciri</rs> filius annis <num value="8">viii</num>. <hi>ilic</hi> deuicta <rs>egypto</rs>, cunctam ejus religionem abomi&gd;natus 
 ceremonias ejus, et templa deposuit, <rs>babylonem</rs> in <rs>egypto</rs> edificauit. <hi>hunc</hi> ajunt 
 &glb;ab <rs>hebreis</rs> secundum <rs>nabuchodonosor</rs> uocari: sub quo et <rs>tarquinii</rs> temporibus castissima 
@@ -448,9 +462,9 @@ licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus 
 &glb;reges, et nomen regie dignitatis, primum consules a <rs>bruto</rs> esse ceperunt, deinde tribuni 
 &glb;plebis, quasi proprii judices defensoresque populi: inde tribuni militares; hinc quoque quorum 
 &glb;primus <rs>largus</rs> nomine fuit majoris honoris, quam <hi>consules</hi>: rursum quoque consules rem 
-&glb;publicam obtinuerunt per annos CCCCLXIV usque ad <rs>julium</rs> <rs>cesarem</rs>, qui primus singulare 
+&glb;publicam obtinuerunt per annos <num value="464">cccclxiv</num> usque ad <rs>julium</rs> <rs>cesarem</rs>, qui primus singulare 
 &glb;arripuit imperium <hi>olympiade</hi> <num value="184">clxxxiv</num> <rs>orosius</rs>. <hi>anno</hi> ab urbe condita <num value="275">cclxxv</num>. 
-&glb;<hi>olympiade</hi> <num value="74">lxxiiii</num>. <hi>xerses</hi> <rs>dario</rs> patri in regnum successit. IIICCCLXXXIX. 
+&glb;<hi>olympiade</hi> <num value="74">lxxiiii</num>. <hi>xerses</hi> <rs>dario</rs> patri in regnum successit. <num value="3389">iiiccclxxxix</num>. 
 </p> 
 
 
@@ -461,7 +475,7 @@ licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus 
 &glb;patriam refugit. <rs>demosthenes</rs> <rs>lacedemonis</rs> tunc apud <rs>xersen</rs> exultabat. <hi>tunc</hi> <rs>hero&gd;dotus</rs> 
 hystoriarum scriptor, et <rs>zeusis</rs> pictor agnoscitur. <hi>anno</hi> ab urbe condita <num value="301">ccci</num>. 
 &glb;<hi>olimpiade</hi> <num value="95">xcv</num> potestas consulum decem uiris <rs>rome</rs> tradita est. <hi>tunc</hi> etiam census<pb n="46v" facs="vat:§" ed="#a"/> habitus 
-&glb;est, et inuenta sunt ciuium <rs>romanorum</rs> centum decem et octo milia cccxxrx. <hi>iiiccccxc</hi>. 
+&glb;est, et inuenta sunt ciuium <rs>romanorum</rs> centum decem et octo milia <num value="329">cccxxix</num>. <hi>iiiccccxc</hi>. 
 </p> 
 
 
@@ -523,7 +537,7 @@ fuit. <hi>is</hi> egressus cum <rs>zorobabel</rs> ibat in <rs>hierusalem</rs>, q
 octogesimus et quintus annus erat. <hi>et</hi> tunc primum <rs>artaxerses</rs> jussit muros extrui 
 &glb;<rs>jerusalem</rs>; ex illo tempore, si numerare uelis, septuaginta annorum ebdomadas, usque ad <rs>chri&gd;stum</rs> 
 poteris invenire. <hi>xerses</hi> menses <num value="2">ii</num>. <hi>post</hi> quem <rs>sogdianus</rs> menses <num value="7">vii</num>. <hi>tunc</hi> temporis 
-&glb;<hi>plato</hi> nascitur, <hi>hippocrates</hi> medicus insignis habetur. IIIDXLVIII. 
+&glb;<hi>plato</hi> nascitur, <hi>hippocrates</hi> medicus insignis habetur. <num value="3548">iiidxlviii</num>. 
 </p> 
 
 
@@ -580,7 +594,7 @@ maximo bello in <rs>lucania</rs> uictus atque occisus est. <hi>anno</hi> ab <rs>
 &glb;<hi>arses</hi> <rs>ochi</rs> filius annis <num value="4">iv</num>. <rs>judeorum</rs> pontifex maximus <rs>jaddus</rs> clarus habetur, cujus 
 &glb;frater <rs>manasses</rs> templum in monte <rs>gariz</rs> construit. <rs>speusippus</rs> moritur, cui succedit <rs>ze&gd;nocrates</rs>. 
 <hi>quarto</hi> <rs>ochi</rs> anno <rs>alexander</rs> <rs>philippi</rs>, et <rs>olimpiadis</rs> filius uicesimus etatis annum 
-&glb;gerens regnare incipit IIIDCXXIV. 
+&glb;gerens regnare incipit <num value="3624">iiidcxxiv</num>. 
 </p> 
 
 
@@ -593,12 +607,12 @@ maximo bello in <rs>lucania</rs> uictus atque occisus est. <hi>anno</hi> ab <rs>
 &glb;<rs>egypto</rs> condidit. <hi>cum</hi> <rs>dario</rs> rege <rs>persarum</rs> ter dimicauit, et in his tribus preliis, toti&gd;demque 
 annis quinquies decies centena milium hominum cesa referuntur. <hi>nec</hi> mora <rs>baby&gd;loniam</rs> 
 optinuit, interfecto <rs>dario</rs>, in quo <rs>medorum</rs>, atque <rs>persarum</rs> regnum destructum est, 
-&glb;quod steterat annos <num value="231">ccxxxi</num>. <hi>quo</hi> etiam tempore <rs>latini</rs> a <rs>romanis</rs> perdomiti sunt IIIDCXXXIX. 
+&glb;quod steterat annos <num value="231">ccxxxi</num>. <hi>quo</hi> etiam tempore <rs>latini</rs> a <rs>romanis</rs> perdomiti sunt <num value="3639">iiidcxxxix</num>. 
 </p> 
 
 
 <p xml:id="g31.22-32.30" decls="#ocr"> 
-    &glb;<rs>alexander</rs> post mortem <rs>darii</rs> annos <num value="5">v</num> regnauit, nam antea <num value="7">vii</num>. <rs>orosius</rs>. <hi>his</hi> autem 
+&glb;<rs>alexander</rs> post mortem <rs>darii</rs> annos <num value="5">v</num> regnauit, nam antea <num value="7">vii</num>. <rs>orosius</rs>. <hi>his</hi> autem 
 &glb;post mortem <rs>darii</rs> regno <rs>persarum</rs> adepto <rs>scythis</rs> bellum intulit, atque contriuit. <rs>hyrcanos</rs> 
 &glb;quoque, et <rs>mardos</rs> subegit ubi etiam <rs>alexandris</rs> siue <rs>minothea</rs> <rs>amazonum</rs> regina excita, 
 &glb;suspiciende ab eo sobolis gratia uenit ad eum cum <num value="300">ccc</num> mulieribus. <hi>post</hi> hec <rs>parthos</rs> deleuit 
@@ -638,7 +652,7 @@ autem apud <rs>babyloniam</rs> ministri insidiis ueneni haustus interiit anno ui
 &glb;anno, hi quattuor duces regnum diuiserunt. <hi>et</hi> <rs>ptolomeus</rs> <rs>lagis</rs> filius tenuit <rs>egyptum</rs>; 
 &glb;<rs>philippus</rs>, qui et <rs>arideus</rs> frater <rs>alexandri</rs> <rs>macedoniam</rs>; <rs>seleucus</rs> <rs>nicanor</rs> <rs>syriam</rs>, et <rs>ba&gd;byloniam</rs>, 
 et omnia regna orientis; <rs>antigonus</rs> <rs>asie</rs> regnauit, sed non inquid in fortitu&gd;dine 
-ejus, qui nullus eorum magnitudini <rs>alexandri</rs> potuit equari IIIDCLXIX. 
+ejus, qui nullus eorum magnitudini <rs>alexandri</rs> potuit equari <num value="3669">iiidclxix</num>. 
 </p> 
 
 
@@ -651,7 +665,7 @@ et <rs>judea</rs> in ditionem suam dolo redactis, plurimos captiuorum in <rs>egy
 <rs>machabeorum</rs> hebrea hystorya grecorum supputat regnum, a quo et <rs>hedisseni</rs> sua 
 <pb n="33" ed="#g"/> 
 &glb;tempora computant. <rs>seleucus</rs> <rs>antiochiam</rs>, <rs>seleuciam</rs>, <rs>laodiciam</rs>, <rs>appiam</rs>, <rs>edessam</rs>, <rs>bo&gd;roeam</rs>, 
-et <rs>pellam</rs> urbes <pb n="52r" facs="vat:§" ed="#a"/> condidit. <hi>anno</hi> scilicet ab urbe condita CCCCLXIV. <hi>eo</hi> 
+et <rs>pellam</rs> urbes <pb n="52r" facs="vat:§" ed="#a"/> condidit. <hi>anno</hi> scilicet ab urbe condita <num value="464">cccclxiv</num>. <hi>eo</hi> 
 &glb;tempore a <rs>tarentinis</rs> bellum ingens <rs>romanis</rs> exortum est: qui cum injuriam legatis <rs>roma&gd;norum</rs> 
 fecissent, <rs>pirrum</rs> <rs>epiri</rs> regem contra <rs>romanos</rs> in auxilium poposcerunt. <hi>his</hi> ita&gd;que 
 cum totis uiribus <rs>epiri</rs>, <rs>thessalie</rs>, et <rs>macedonie</rs>, elefantis etiam uiginti <rs>italiam</rs> uenit, et 
@@ -801,7 +815,7 @@ deduceret, ab exercitu <rs>romano</rs>, ignorante <rs>annibale</rs>, preuentus c
 &glb;<rs>scipio</rs> denique jam tunc cognomento <rs>africanus</rs> <pb n="56v" facs="vat:§" ed="#a"/> post famosissimam <rs>annibalis</rs> uictoriam trium&gd;phans, 
 urbem ingressus est, quem <rs>terentius</rs>, qui postea comicus fuit, ex nobilibus <rs>cartaginen&gd;sium</rs> 
 captiuis pilleatus quod insigne indulte sibi libertatis fuit, triumphantem post currum se&gd;cutus 
-est IIIDCCLXXIV. 
+est <num value="3774">iiidcclxxiv</num>. 
 </p> 
 
 
@@ -918,7 +932,7 @@ anno, quo fuerat euersa, deductis ciuium <rs>romanorum</rs> familiis, qui eam in
 &glb;<rs>ptolomeus</rs> <rs>physicon</rs>, qui et <rs>sother</rs> annis <num value="17">xvii</num>. <hi>cicero</hi> <rs>arpini</rs> nascitur matre <rs>heluia</rs> pa&gd;tre 
 equestris ordinis ex <rs>regio</rs> <rs>vulscorum</rs> genere. <rs>hyrcano</rs> in pontificatu, quod ipse <num value="26">xxvi</num> 
 &glb;annis tenuit <rs>aristobolus</rs> succedit annum unum: qui rex pariter, et pontifex primus apud 
-&glb;<rs>judeos</rs> diadematis sumpsit insigne post CCCCLXXXIV annos captiuitatis <rs>babylonie</rs>. <hi>post</hi> 
+&glb;<rs>judeos</rs> diadematis sumpsit insigne post <num value="484">cccclxxxiv</num> annos captiuitatis <rs>babylonie</rs>. <hi>post</hi> 
 &glb;quem regnauit <rs>janneus</rs>, co<pb n="59r" facs="vat:§" ed="#a"/>gnomento <rs>alexander</rs> annis <num value="27">xxvii</num> qui <hi>pontificatum</hi> quoque admi&gd;nistrans, 
 crudelissime ciuibus prefuit. <num value="3865">iiidccclxv</num>. 
 </p> 
@@ -1140,15 +1154,15 @@ peremit. <hi>e</hi> quibus <rs>aristobolus</rs> <rs>herodem</rs> ex <rs>veronice
 </p> 
 
 
-<p xml:id="g43.17-43.17" decls="#ocr"> 
-&glb;<hi>sexta</hi> ETAS. 
+<p xml:id="g43.17-43.17" decls="#ocr" type="ghead1"> 
+&glb;sexta etas. 
 </p> 
 
 
 <p xml:id="g43.18-44.9" decls="#ocr"> 
 &glb;<hi>sexta</hi> <hi>etas</hi> ab aduentu <rs>domini</rs> inchoatur, cum <rs>dei</rs> uerbum caro factum est, transactis 
 &glb;ab exordio <pb n="65r" facs="vat:§" ed="#a"/> mundi juxta <rs>hebreos</rs>, annis <num value="3952">iiidcccclii</num>, secundum septuaginta uero interpretes 
-&glb;anni VDVIII. <hi>juxta</hi> <rs>eusebium</rs> annis VCXCIX. <hi>anno</hi> <rs>cesaris</rs> augusti <num value="42">xlii</num>. <hi>a</hi> morte uero 
+&glb;anni <num value="5508">vdviii</num>. <hi>juxta</hi> <rs>eusebium</rs> annis <num value="5199">vcxcix</num>. <hi>anno</hi> <rs>cesaris</rs> augusti <num value="42">xlii</num>. <hi>a</hi> morte uero 
 &glb;<rs>cleopatre</rs>, et <rs>antonii</rs>, quando et <rs>egyptus</rs> in prouinciam uersa est, anno <num value="27">xxvii</num> <rs>olimpiadis</rs> 
 &glb;quidem <num value="193">cxciii</num>. <hi>ab</hi> urbe autem condita anno <num value="752">dcclii</num> idest anno eo, quo, compressis per 
 &glb;orbem terre gentium motibus, firmissimam uerissimamque pacem ordinatione <rs>dei</rs> <rs>cesar</rs> com&gd;posuit, 
@@ -1327,7 +1341,7 @@ exitio: quos enecatos per proxima litora passim estus ejecit. <hi>quanta</hi> ue
 
 
 <p xml:id="g47.27-47.27" decls="#ocr"> 
-&glb;<hi>anno</hi> dominice incarnationis XXXXIX. 
+&glb;<hi>anno</hi> dominice incarnationis <num value="49">xxxxix</num>. 
 </p> 
 
 
@@ -1437,8 +1451,8 @@ plurimos senatorum, nulla existente causa, bonis priuavit: negotiatorum omnium s
 </p> 
 
 
-<p xml:id="g50.3-50.3" decls="#ocr"> 
-&glb;<hi>prima</hi> PERSECUTIO IN ECCLESIA. 
+<p xml:id="g50.3-50.3" decls="#ocr" type="ghead2"> 
+&glb;<hi>prima</hi> persecutio in <hi>ecclesia</hi>. 
 </p> 
 
 
@@ -1545,7 +1559,7 @@ per uiam sacram nudus duceretur, passim fimum in os ejus conjectantibus, in foru
 &glb;huic successit. <hi>hic</hi> apud <rs>judeam</rs> <rs>palestine</rs> imperator ab exercitu appellatus et bellum 
 &glb;<rs>tito</rs> filio commendans, ipse <rs>romam</rs> per <rs>alexandriam</rs> imperator proficiscitur, qui secundo 
 &glb;imperii ejus anno <rs>judee</rs> regnum subuertit templumque solo strauit, post annos prime hedi&gd;ficationis 
-MLXXXVIIII. <hi>consumatumque</hi> hoc bellum annis <num value="4">iv</num> duobus, aliis postea. <rs>ve&gd;spasianus</rs> 
+<num value="1089">mlxxxviiii</num>. <hi>consumatumque</hi> hoc bellum annis <num value="4">iv</num> duobus, aliis postea. <rs>ve&gd;spasianus</rs> 
 autem obscure quidem natus, sed optimis comparatus, priuata uita illustris, qui 
 &glb;inter alia magnorum opera, in priuata adhuc uita in <rs>germaniam</rs>, ac deinde in <rs>britanniam</rs> 
 &glb;a <rs>claudio</rs> missus, tricies et bis cum hoste conflixit: duas ualidissimas gentes, uiginti oppida, 
@@ -1642,9 +1656,9 @@ elatus jactantia, sub nomine superatorum hostium, de extinctis in preliis <rs>ro
 </p> 
 
 
-<p xml:id="g55.1-55.1" decls="#ocr"> 
+<p xml:id="g55.1-55.1" decls="#ocr" type="ghead2"> 
 <pb n="55" ed="#g"/> 
-&glb;<hi>secunda</hi> PERSECUTIO IN ECCLESIA. 
+&glb;<hi>secunda</hi> persecutio in <hi>ecclesia</hi>. 
 </p> 
 
 
@@ -1693,9 +1707,9 @@ formam redegit. <hi>in</hi> mari rubro classem constituit, ut <hi>in</hi>die fin
 </p> 
 
 
-<p xml:id="g56.1-56.1" decls="#ocr"> 
+<p xml:id="g56.1-56.1" decls="#ocr" type="ghead2"> 
 <pb n="56" ed="#g"/> 
-&glb;<hi>tertia</hi> PERSECUTIO IN ECCLESIA 
+&glb;<hi>tertia</hi> persecutio in <hi>ecclesia</hi> 
 </p> 
 
 
@@ -1868,8 +1882,8 @@ fuit, ut centum simul leones exibuisse tradatur. <hi>preteriti</hi> etiam tempor
 </p> 
 
 
-<p xml:id="g60.31-60.31" decls="#ocr"> 
-&glb;<hi>quarta</hi> PERSECUTIO IN ECCLESIA. 
+<p xml:id="g60.31-60.31" decls="#ocr" type="ghead2"> 
+&glb;<hi>quarta</hi> persecutio in <hi>ecclesia</hi>. 
 </p> 
 
 
@@ -1924,7 +1938,7 @@ et <rs>julianum</rs> annus unus assumptus est. <hi>theodocion</hi> interpres hab
 
 
 <p xml:id="g62.7-62.20" decls="#ocr"> 
-&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="164">clxiiii</num>, et anno ab urbe condita DCCCCXLIIII <rs>seuerus</rs> 
+&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="164">clxiiii</num>, et anno ab urbe condita <num value="944">dccccxliiii</num> <rs>seuerus</rs> 
 &glb;generus <rs>afer</rs> <rs>tripolitanus</rs> ab oppido <rs>lepti</rs>, qui se ex nomine imperatoris, quem occisum 
 &glb;ultus fuerat, <rs>pertinacem</rs> uoluit appellari, septimus decimus ab <rs>augusto</rs>, destitutum adeptus 
 &glb;imperium <num value="17">xvii</num> tenuit annis. <hi>hic</hi> autem prius fisci aduocatus, mox militaris tribunus per 
@@ -1941,8 +1955,8 @@ seuus, multis semper bellis lacessitus, fortissime quidem rempublicam, sed labor
 </p> 
 
 
-<p xml:id="g62.21-62.21" decls="#ocr"> 
-&glb;<hi>quinta</hi> PERSECUTIO IN ECCLESIA 
+<p xml:id="g62.21-62.21" decls="#ocr" type="ghead2"> 
+&glb;<hi>quinta</hi> persecutio in <hi>ecclesia</hi> 
 </p> 
 
 
@@ -2071,8 +2085,8 @@ gesserat.
 </p> 
 
 
-<p xml:id="g65.17-65.17" decls="#ocr"> 
-&glb;<hi>sexta</hi> PERSECUTIO IN ECCLESIA 
+<p xml:id="g65.17-65.17" decls="#ocr" type="ghead2"> 
+&glb;sexta persecutio in ecclesia 
 </p> 
 
 
@@ -2095,7 +2109,7 @@ uitam finiuit, et sepultus est ad catacumbas, <rs>decio</rs> <rs>cesare</rs> pre
 
 
 <p xml:id="g65.28-66.13" decls="#ocr"> 
-&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="239">ccxxxix</num> et anno ab urbe condita DCCCCXCI <rs>gor&gd;imus
+&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="239">ccxxxix</num> et anno ab urbe condita <num value="991">dccccxci</num> <rs>gor&gd;imus
 <pb n="66" ed="#g"/>dianus</rs>
 tertius ab <rs>augusto</rs> imperator creatus mansit in eo annis sex; quamuis 
 &glb;cum eo duo alii <rs>augusti</rs> essent creati obscurissimo genere, <rs>pupienus</rs> uidelicet, et <rs>albinus</rs>. 
@@ -2114,7 +2128,7 @@ philosophi auditor, <hi>theopompus</hi> philosophus apud <rs>cheroniam</rs>, et 
 
 
 <p xml:id="g66.14-67.8" decls="#ocr"> 
-&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="245">ccxxxxv</num> et anno ab urbe condita DCCCCXCVII <rs>phi&gd;lippus</rs> 
+&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="245">ccxxxxv</num> et anno ab urbe condita <num value="997">dccccxcvii</num> <rs>phi&gd;lippus</rs> 
 uicesimus quartus ab <rs>augusto</rs>, statim occiso <rs>gordiano</rs>, imperator circa <rs>euphraten</rs> 
 &glb;creatus, <rs>philippum</rs> filium suum consortem regni fecit, exercitumque ex <rs>syria</rs> incolumen ad 
 &glb;<rs>italiam</rs> reduxit, mansitque in ea annis septem. <hi>hic</hi> primus imperator omnium <hi>christianus</hi> 
@@ -2160,8 +2174,8 @@ post jussu <rs>decii</rs> imperatoris effecti exilio <rs>centumcellis</rs> damna
 </p> 
 
 
-<p xml:id="g67.13-67.13" decls="#ocr"> 
-&glb;<hi>septima</hi> PERSECUTIO IN ECCLESIA 
+<p xml:id="g67.13-67.13" decls="#ocr" type="ghead2"> 
+&glb;<hi>septima</hi> persecutio in <hi>ecclesia</hi>.
 </p> 
 
 
@@ -2241,8 +2255,8 @@ appellatus. <rs>rome</rs> autem a <hi>senatu</hi> <rs>gallienus</rs> <rs>cesar</
 </p> 
 
 
-<p xml:id="g68.32-68.32" decls="#ocr"> 
-&glb;<hi>octava</hi> PERSECUTIO IN ECCLESIA 
+<p xml:id="g68.32-68.32" decls="#ocr" type="ghead2"> 
+&glb;<hi>octava</hi> persecutio in <hi>ecclesia</hi>.
 </p> 
 
 
@@ -2351,8 +2365,8 @@ ac necessarius magis in quibusdam, quam in <pb n="96v" facs="vat:§" ed="#a"/>nu
 </p> 
 
 
-<p xml:id="g71.18-71.18" decls="#ocr"> 
-&glb;<hi>nona</hi> PERSECUTIO IN ECCLESIA 
+<p xml:id="g71.18-71.18" decls="#ocr" type="ghead2"> 
+&glb;<hi>nona</hi> persecutio in <hi>ecclesia</hi>.
 </p> 
 
 
@@ -2487,8 +2501,8 @@ penitus expers, asperitatem suam uultus horrore significans: hic nature sue indu
 </p> 
 
 
-<p xml:id="g74.21-74.21" decls="#ocr"> 
-&glb;<hi>decima</hi> PERSECUTIO IN ECCLESIA 
+<p xml:id="g74.21-74.21" decls="#ocr" type="ghead2"> 
+&glb;<hi>decima</hi> persecutio in <hi>ecclesia</hi>.
 </p> 
 
 
@@ -2736,13 +2750,13 @@ aquam, qui pensantes libras <num value="30">xxx</num>; ad dexteram agni <rs>salu
 &glb;pedes <num value="5">v</num>. <hi>sic</hi> inclusit corpus beati <rs>petri</rs> apostoli, et recondidit, et exornauit, supra columpnas 
 &glb;porfireticas, et aliquas columpnas uitineas, quas de <rs>grecia</rs> perduxit. <hi>fecit</hi> autem cameram 
 &glb;basilice ex auro fulgentem, et super corpus beati <rs>petri</rs>, quod ere conclusit fecit crucem au&gd;ream 
-purissimam, pensantem libras LC in mensura loci pensantem, ubi scriptum hoc: 
+purissimam, pensantem libras <num value="150">lc</num> in mensura loci pensantem, ubi scriptum hoc: 
 </p> 
 
 
-<p xml:id="g80.28-80.29" decls="#ocr"> 
-&glb;<rs>CONSTANTINUS</rs> AUGUSTUS ET <rs>HELENA</rs> AUGUSTA HOC DONUM REGALE SIMILI FULGORE COR&gd;RUSCANS 
-AULA CIRCUMDAT. 
+<p xml:id="g80.28-80.29" decls="#ocr" type="ginscription"> 
+&glb;<rs>constantinus</rs> <hi>augustus</hi> et <rs>helena</rs> <hi>augusta</hi> hoc donum regale simili fulgore cor&gd;ruscans 
+aula circumdat. 
 </p> 
 
 
@@ -3235,9 +3249,9 @@ lucrum, et uinci uincere fuit. <hi>ad</hi> cujus laudem ob insignem uictoriam, <
 </p> 
 
 
-<p xml:id="g92.6-92.7" decls="#ocr"> 
-&glb;<hi>o</hi> nimium dilecte <rs>deo</rs>! tibi militat ether 
-&glb;<hi>et</hi> conjurati veniunt ad classica venti. 
+<p xml:id="g92.6-92.7" decls="#ocr" type="gverse"> 
+<l>&glb;<hi>o</hi> nimium dilecte <rs>deo</rs>! tibi militat ether</l> 
+<l>&glb;<hi>et</hi> conjurati veniunt ad classica venti.</l> 
 </p> 
 
 
@@ -3365,7 +3379,7 @@ jumentorum apud <rs>pollentiam</rs> resedisset, <rs>stilico</rs> comes in pernic
 &glb;mora, uenientes <rs>urbem</rs> capiunt, deuastat, incedunt. <hi>data</hi> tamen prius precepto ab <rs>alarico</rs>, 
 &glb;ut si quis in loca sancta, precipueque sanctorum apostolorum <rs>petri</rs>, et <rs>pauli</rs> basilicas con&gd;fugisset, 
 hos in primis inuiolatos, securosque esse sinerent, deinde in quantum possent prede 
-&glb;inhiantes a sanguine temperarent. <hi>capta</hi> itaque <rs>roma</rs> est anno MCLXIIII conditionis sue. 
+&glb;inhiantes a sanguine temperarent. <hi>capta</hi> itaque <rs>roma</rs> est anno <num value="1164">mclxiiii</num> conditionis sue. 
 &glb;<hi>accidit</hi> quoque, quod magis illa <rs>urbis</rs> irruptio indignatione <rs>dei</rs> apta, quam hostis fortitu&gd;dine 
 probaretur, ut beatus <rs>innocentius</rs> <rs>romane</rs> ecclesie episcopus, occulta prouidentia <rs>dei</rs> 
 &glb;apud <rs>rauennam</rs> tunc positus,<pb n="117r" facs="vat:§" ed="#a"/> peccatoris populi excidium non uideret, ubi dum moraretur, 
@@ -3483,7 +3497,7 @@ et religione patri <rs>theodosio</rs> non ualde absimilis.
 
 
 <p xml:id="g98.19-99.20" decls="#ocr"> 
-&glb;<hi>anno</hi> dominice incarnationis CCCCXXIV, et anno ab <rs>urbe</rs> condita <num value="1177">mclx<surplus rend="anglebrackets" resp="#g">X</surplus>xvii</num> 
+&glb;<hi>anno</hi> dominice incarnationis <num value="424">ccccxxiv</num>, et anno ab <rs>urbe</rs> condita <num value="1177">mclx<surplus rend="anglebrackets" resp="#g">x</surplus>xvii</num> 
 &glb;<rs>theodosius</rs> minor <rs>archadii</rs> filius, quadragesimo tertio loco ab <rs>augusto</rs>, <hi>orientale</hi> regebat 
 &glb;imperium. <hi>qui</hi> comperto patrui <rs>honorii</rs> funere, <rs>valentinianum</rs> filium amite sue <rs>placidie</rs> 
 &glb;<rs>cesarem</rs> effectum, cum matre sua ad regendum <hi>occidentis</hi> dirigit imperium. <rs>valentinianus</rs> 
@@ -3804,7 +3818,7 @@ possit cognosci.
 
 
 <p xml:id="g105.36-106.2" decls="#ocr"> 
-&glb;<hi>anno</hi> dominice incarnationis CCCCXCII post <rs>zenonis</rs> excessum <rs>anastasius</rs> purpuram 
+&glb;<hi>anno</hi> dominice incarnationis <num value="492">ccccxcii</num> post <rs>zenonis</rs> excessum <rs>anastasius</rs> purpuram 
 <pb n="106" ed="#g"/> 
 &glb;induit, qui <num value="47">xlvii</num> in imperii numero extitit. <hi>hic</hi> <rs>romani</rs> decus imperii, <rs>euthychiana</rs> here&gd;seos 
 illuuione maculauit. 
@@ -4469,7 +4483,7 @@ direxit <rs>theodelinde</rs> regine <rs>langobardorum</rs> librum qui <title>dia
 &glb;ad extremum in capite percussus est. <hi>anno</hi> <num value="30">xxx</num> regis <rs>guthranni</rs>, tunica domini nostri 
 &glb;<rs>iesu</rs> <rs>christi</rs>, que uni militum forte euenit, inuenta est in ciuitate <rs>zaphat</rs>, in archa marmorea 
 &glb;facta posita, tempore <rs>thome</rs> <rs>hierosolymitani</rs> episcopi et <rs>iohannis</rs> <rs>constantinopolitani</rs> et 
-&glb;<rs>gregorii</rs> <rs>antiocheni</rs>. <hi>anno</hi> XXXL. <rs>guthranni</rs> regis <rs>authari</rs> rex <rs>langobardorum</rs> obiit anno 
+&glb;<rs>gregorii</rs> <rs>antiocheni</rs>. <hi>anno</hi> <num value="31">xxxi</num>. <rs>guthranni</rs> regis <rs>authari</rs> rex <rs>langobardorum</rs> obiit anno 
 &glb;dominice incarnationis <num value="590">dxc</num> cui successit <rs>agilulfus</rs> in regnum. <rs>guthrannus</rs> itaque <rs>francorum</rs> 
 &glb;rex moritur anno regni sui <num value="33">xxxiii</num>. <hi>fuit</hi> autem <rs>guthrannus</rs> in bonitate precipuus, in ero&gd;ganda 
 pauperibus elemosyna largifluus <rs>christi</rs> sacerdotibus se humilem prebens subditis 
@@ -4489,7 +4503,7 @@ et firmata est pax perpetua cum <rs>francis</rs>. <hi>eodem</hi> tempore <rs>fra
 &glb;igitur, uel uaria sorte obeuntibus tot <rs>francorum</rs> regibus,<pb n="149r" facs="vat:§" ed="#a"/> a quibus per <num value="40">xl</num> ferme et unum 
 &glb;regnatum est annos, solus legitime successionis heres <rs>clotharius</rs> <rs>chilperico</rs> patre genitus ex 
 &glb;regia stirpe uidebatur relictus, in quo regnandi ius potissimum transfundi oporteret. <hi>interea</hi> 
-&glb;<rs>mauricius</rs> <rs>augustus</rs>, postquam XXL. annis <rs>constantinopolitanum</rs> rexit imperium, cum filiis 
+&glb;<rs>mauricius</rs> <rs>augustus</rs>, postquam <num value="21">xxi</num>. annis <rs>constantinopolitanum</rs> rexit imperium, cum filiis 
 &glb;suis <rs>theodosio</rs>, <rs>tiberio</rs> et <rs>constantino</rs> occiditur a <rs>foca</rs> tunc tribuno, qui fuerat prisci 
 &glb;patricii strator. <hi>fuit</hi> autem <rs>mauricius</rs> utilis reipublice, denique contra hostes sepe dimicans 
 &glb;uictoriam obtinuit. <rs>hunni</rs> quoque, qui et <rs>auares</rs> appellantur, eius uirtute deuicti sunt. 
@@ -4509,7 +4523,7 @@ tradatur, ait, <rs>mauricius</rs> <rs>foce</rs> militi cum uxore et filiis, quod
 <pb n="123" ed="#g"/> 
 &glb;<hi>anno</hi> dominice incarnationis <num value="604">dciiij</num>. <hi>focas</hi>, ut premissum est, <rs>romanorum</rs> regnum in&gd;uadens 
 per octo annorum curricula tenuit. <hi>erat</hi> autem hic formidolosus et sanguina&gd;rius, 
-cuius secundo anno imperii, indictione vm. <rs>gregorius</rs> papa migrauit ad <rs>christum</rs>; 
+cuius secundo anno imperii, indictione <num value="8">viii</num>. <rs>gregorius</rs> papa migrauit ad <rs>christum</rs>; 
 &glb;sepultusque est in ecclesia beati <rs>petri</rs> ante <rs>secretarium</rs>. <hi>eo</hi> siquidem anno <rs>theude&gd;pertus</rs>, 
 et <rs>theudericus</rs> reges <rs>francorum</rs> aduersus <rs>chlotharium</rs> patruum suum dimicauerunt, 
 &glb;in quo certamine ex utraque parte multa milia hominum ceciderunt. 
@@ -5221,7 +5235,7 @@ uero<pb n="167r" facs="vat:§" ed="#a"/> contra eumdem <rs>anastasium</rs> uenie
 &glb;autem <rs>theodosius</rs> ut imperium accepit, cum esset catholicus, mox in regia urbe imagines 
 &glb;illas uenerandas, in qua sancte sex <hi>synodi</hi> erant depicte et a <rs>philippico</rs> fuerant deiecte, 
 &glb;pristino in loco erexit. <hi>regnauitque</hi> <rs>theodosius</rs> anno <num value="1">i</num>. <hi>interea</hi> <rs>constantinus</rs> papa diem 
-&glb;obiit anno dominice incarnationis DCXCVIIII indictione <num value="5">v</num> et successit ei <rs>gregorius</rs> na&gd;tione 
+&glb;obiit anno dominice incarnationis <num value="699">dcxcviiii</num> indictione <num value="5">v</num> et successit ei <rs>gregorius</rs> na&gd;tione 
 <rs>romanus</rs> ex patre <rs>marcello</rs>, seditque anno <num value="16">xvi</num> mensibus <num value="9">ix</num>. <hi>fuit</hi> autem temporibus 
 &glb;<rs>anastasii</rs> et <rs>theodosii</rs> <rs>leonis</rs> atque <rs>constantini</rs> <rs>augustorum</rs>. <hi>fuit</hi> quidem <rs>gregorius</rs> uir 
 &glb;castus, diuine scripture eruditus, loquela facundus, animo constans, ecclesiasticorum errorum 
@@ -5512,7 +5526,7 @@ pape reddidit. <hi>his</hi> ita peractis <rs>pipinus</rs> in <rs>galliam</rs> re
 
 
 <p xml:id="g144.30-145.23" decls="#ocr"> 
-    &glb;<hi>cui</hi> successit <rs>paulus</rs>, natione <rs>romanus</rs>, ex patre <rs>constantino</rs>, seditque annis<pb n="175r" facs="vat:§" ed="#a"/> <num value="10">x</num>, mens <num value="1">i</num>. 
+&glb;<hi>cui</hi> successit <rs>paulus</rs>, natione <rs>romanus</rs>, ex patre <rs>constantino</rs>, seditque annis<pb n="175r" facs="vat:§" ed="#a"/> <num value="10">x</num>, mens <num value="1">i</num>. 
 &glb;<hi>hic</hi> autem minor germanus <rs>stephani</rs> pontificis ab ineunte etate in <rs>lateranensi</rs> patriarchio 
 &glb;pro eruditione ecclesiastice discipline ab eodem fratre traditus est tempore <rs>gregorii</rs> <num value="2">ii</num> 
 &glb;iunioris pontificis, et postmodum a <rs>zacharia</rs> papa in diaconatus ordinem pariter cum pre&gd;fato 
