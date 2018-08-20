@@ -79,8 +79,12 @@
                     With @type="textcrit": note on textual critical matters.
                     With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
                 </tagUsage>
+                <tagUsage gi="supplied">
+                    In the print edition the text integrated by the editor was between [square brackets].
+                    I am omitting those brackets in this file.
+                </tagUsage>
                 <tagUsage gi="surplus">
-                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt;
+                    In the print edition the text considered redundant by the editor was between &lt;angle brackets&gt;
                     I am omitting those brackets in this file.
                 </tagUsage>
              </namespace>
