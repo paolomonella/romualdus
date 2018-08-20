@@ -57,21 +57,29 @@ class msTree:
         elset = set(els)
         print(set(els))
         for tag in elset:
-            A = []
-            print('\nAttributes of element <' + tag + '>: ', end='')
+            A = {}
+            print('\n\n<' + tag + '>: ')
             if onlybody:
                 E = mybody.findall('.//t:%s' % (tag), ns)
             else:
                 E = self.tree.findall('.//t:%s' % (tag), ns)
             for e in E:
                 for attr in e.attrib:
+                    val = e.get(attr)
                     if attr not in A:
-                        A.append(attr)
-            print(A, end='')
+                        A[attr] = [val]
+                    else:
+                        A[attr].append(val)
+            #print(A, end='')
+            for a in A:
+                if len(set(A[a])) > 5:
+                    print('\t' + a + '=', set(A[a][:3]), '(etc.)')
+                else:
+                    print('\t' + a + '=', set(A[a]))
 
 
     def list_entities (self):
-        for entity in doc.docinfo.internalDTD.iterentities():
+        for entity in self.tree.docinfo.internalDTD.iterentities():
             msg_fmt = "{entity.name!r}, {entity.content!r}, {entity.orig!r}"
             print(msg_fmt.format(entity=entity))
 
@@ -180,8 +188,9 @@ btree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num'], r
 btree.write()
 '''
 
-atree = msTree('foo')
-atree.list_elements()
+atree = msTree('g')
+#atree.list_elements()
+atree.list_entities()
 '''
 
 for edition in ['a', 'g', 'bonetti']:
