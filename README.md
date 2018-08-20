@@ -32,16 +32,3 @@ Temporary file in which the un-checked OCR from Garufi is put, so it can be proc
 
 temp.xml
 Temporary file in which the OCR from Garufi or Bonetti is put, so it can be exported into g.xml or bonetti.xml
-
-## JuxtaCommons links
-
-# Link JuxtaCommons
-
-G:
-http://juxtacommons.org/shares/L1MiI3
-
-A:
-http://juxtacommons.org/shares/Y07PP4
-
-Collazione:
-http://juxtacommons.org/shares/3BAYYx
