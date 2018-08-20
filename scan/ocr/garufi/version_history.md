@@ -70,4 +70,11 @@ This is the output of function wrapNumerals() of numerals.py. Still to be checke
 
 # 4.2
 
-Corrected some marku-up errors about <num> elements.
+Corrected some marku-up errors about <num> elements. Checked that the @value of each <num> is OK with function checkNumerals() of numerals.py. Corrected other errors. Added @type="ghead1" and @type="ghead2" to <p> representing Garufi headers.
+
+# 5.0
+
+First version with 'v' transformed to &uu;
+
+# 5.1
+First version with 'j' transformed to &jj;.
