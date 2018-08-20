@@ -10,18 +10,22 @@ import re
 
 siglum = 'foo' # XML filename to parse ('a' for 'a.xml'; 'bonetti' for 'bonetti.xml')
 
-def getRomanContent(num):
+def getRomanContent(num, checkallnumbers=True, debug=False):
+    ''' Return the roman content (e.g. XIII, CCXVI) of <num> elements.
+        Ignore <orig> and only include <reg>.
+        If checkallnumbers=False, only work on <num>s not having a @value attribute (legacy feature, but it's safer
+        not to modify it now, since I don't remember why I had put this option in the function).
+    '''
     r = ''
-    if num.get('value') is None:
+    n = constants.ns
+    if checkallnumbers or num.get('value') is None:
         if num.find('.//t:choice', n) is not None:  # If <num> has <choice>/<reg>+<orig> inside (e.g. IIJ/iii or VI/ui)
-            #if num.find('.//t:choice', n).find('.//t:reg[@type="numeral"]', n) is not None:
             if num.find('.//t:choice', n).find('.//t:reg', n) is not None:
                 if num.text is not None:
                     directtext = num.text
                     r = r + directtext
                 choices = num.findall('.//t:choice', n)
                 for c in choices:
-                    #reg = c.find('.//t:reg[@type="numeral"]', n)
                     reg = c.find('.//t:reg', n)
                     # for x in reg:
                         # print(x)  # debug
@@ -31,15 +35,16 @@ def getRomanContent(num):
                     except:
                         pass
         else:   # Not needing normalization
-            if len(num) > 0:
+            if len(num) > 0 and debug:
                 print('Occhio: l\'elemento', num, ' con contenuto', \
                         num.text, 'ha elementi figli che mi disturbano. I suoi figli sono:')
-                #for x in num:
-                    # print(x)  # debug
+                for x in num:
+                     print(x)  # debug
+                print('La sua coda è: ', num.tail, '\n\n')
             else:
-                r = num.text
-        if r == '':
-            print('L\'elemento non ha contenuto:', r)
+                r = num.text # Better way, but an overkill here: r = ''.join(num.itertext()).replace('\n', '')
+        if r == '' and debug:
+            print('L\'elemento <num> con coda ', num.tail, ' non ha contenuto:', r)
     return(r)
 
 def setValues(siglum):
@@ -50,11 +55,10 @@ def setValues(siglum):
         '''
     n = constants.ns
     tree = etree.parse('../xml/%s.xml' % siglum)
-    #numbers = tree.findall('.//t:seg[@type="num"]', constants.ns)
     numbers = tree.findall('.//t:num', n)
     for number in numbers:
         if number.get('value') is None:
-            content = getRomanContent(number)
+            content = getRomanContent(number, checkallnumbers=False)
             if content == '':
                 print('foo', number.text)
             # print(content.upper(), end='\t')  # debug
@@ -71,6 +75,36 @@ def setValues(siglum):
             pass
 
     tree.write('../xml/numerals-%s.xml' % (siglum), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
+
+def checkNumerals(siglum):
+    tree = etree.parse('../xml/%s.xml' % siglum)
+    numbers = tree.findall('.//t:num', constants.ns)
+    rd = {'VIIII': 'IX', 'IIII': 'IV', 'LXXXX': 'XC', 'XXXX': 'XL', 'DCCCC': 'CM', 'CCCC': 'CD'}
+    for n in numbers:
+        if n.get('value') is None:  # <num>s with no @value attribute
+            print(n, 'has no @value attribute')
+        else:
+            c = getRomanContent(n)
+            c = c.replace('j', 'i').upper()
+            if len(c) > 0:
+                xa = int(n.get('value'))
+                for r in rd: # Do the usual normalizations (IIII → IV etc.)
+                    c = c.replace(r, rd[r])
+                if c.startswith('IIID') or c.startswith('IIIC'):    # Normalization for initial thousands
+                    c = c.replace('IIID', 'MMMD').replace('IIIC', 'MMMC')
+
+                try:
+                    pa = roman.fromRoman(c)
+                    if pa != xa and len(n) == 0:    # If @value does *not* correspond with the Arabic value calculated
+                                                    # by the script and <num> has no 'desturbing' children elements
+                        print('%5s %3d %20s %3d' % ('XML:', xa, 'Python:', pa))
+                except roman.InvalidRomanNumeralError:
+                    if len(n) > 0:    
+                        print('Invalid numeral with children:', c)
+                    else:
+                        print('Invalid numeral:', c, 'with value:', xa, 'and tail: «' + n.tail + '»')
+
+
 
 def wrapNumerals(siglum, maxnum):
     ''' Identify Roman numerals in the text and wrap them with <num></num>, without setting their @value, based
