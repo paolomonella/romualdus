@@ -82,7 +82,9 @@ class msTree:
                 r.getparent().remove(r)
 
     def recapitalize (self):
-        ''' Re-capitalize words included in <rs> or in <hi> '''
+        ''' Re-capitalize words included in <rs> or in <hi>.
+            Then, transform text marked as <p type="ghead1"> or "ghead2" to all uppercase,
+            because it was in G(arufi) head(s) '''
         for mytagname in ['rs', 'hi']:
             for e in self.tree.findall('.//t:%s' % (mytagname), constants.ns):
                 if e.text:  # If the content of <rs>/<hi> starts with a text node, capitalize it
@@ -100,6 +102,16 @@ class msTree:
                         else:
                             # ... or capitalize the first child of the first child of <rs>/</hi>
                             echild[0].text = echild[0].text.capitalize()
+        for e in self.tree.findall('.//t:p[@type="ghead1"]', constants.ns):
+            for c in e.findall('.//t:*', constants.ns):
+                if c.text is not None: c.text = c.text.upper()
+                if c.tail is not None: c.tail = c.tail.upper() 
+        for e in self.tree.findall('.//t:p[@type="ghead2"]', constants.ns): # In fact, this should be small-caps, but still...
+            for c in e.findall('.//t:*', constants.ns):
+                if c.text is not None: c.text = c.text.upper()
+                if c.tail is not None: c.tail = c.tail.upper() 
+
+
 
     def simplify_to_scanlike_text (self, tagslist, removepar=False):
         ''' Strip all tags included in list tagslist within paragraphs.
@@ -179,7 +191,7 @@ mytree.recapitalize()
 mytree.write()
 '''
 
-for edition in ['a', 'bonetti']:
+for edition in ['a', 'g', 'bonetti']:
     mytree = msTree(edition)
     mytree.choose('choice', 'corr', 'typo', 'sic')
     mytree.choose('choice', 'reg', 'numeral', 'orig')
@@ -188,9 +200,11 @@ for edition in ['a', 'bonetti']:
     mytree.choose('subst', 'add', 'correction', 'del')
     mytree.my_strip_elements('del')
     mytree.recapitalize() 
+    mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
     mytree.write()
 
 
+'''
 for edition in ['afoo', 'bfoo']:
     mytree = msTree(edition)
     mytree.choose('choice', 'corr', 'typo', 'sic')
@@ -201,3 +215,4 @@ for edition in ['afoo', 'bfoo']:
     mytree.recapitalize() 
     mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
     mytree.write()
+    '''
