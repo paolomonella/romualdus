@@ -79,18 +79,16 @@
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
                 <tagUsage gi="note">
-                    With type="content": note on the text content.
-                    With type="graphic": note on glyphs or graphemes.
-                    With type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
-                    With type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
-                    With type="textcrit": note on textual critical matters.
-                    With type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
+                    With @type="content": note on the text content.
+                    With @type="graphic": note on glyphs or graphemes.
+                    With @type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
+                    With @type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
+                    With @type="textcrit": note on textual critical matters.
+                    With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
                 </tagUsage>
                 <tagUsage gi="soCalled">
                     Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
                     If present, quotation marks have been retained.
-                    I am still marking up those cases with <gi>soCalled</gi> also when there are
-                    no quotation marks around "ad litus".
                 </tagUsage>
                 <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source
                     print edition, are marked up with <gi>quote</gi> in this digital edition.
