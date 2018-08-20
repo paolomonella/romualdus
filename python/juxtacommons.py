@@ -40,7 +40,7 @@ class msTree:
             parent = element.getparent()
             parent.remove(element)
 
-    def list_elements (self, onlybody=True):
+    def list_elements (self, onlybody=True, attributes=False):
         ''' Print a set of element names in the XML file '''
         els = []
         if onlybody:
@@ -54,7 +54,21 @@ class msTree:
                 tag = element.tag
                 #print(element.tag.split('}')[1])
                 els.append( element.tag.split('}')[1] )
+        elset = set(els)
         print(set(els))
+        for tag in elset:
+            A = []
+            print('\nAttributes of element <' + tag + '>: ', end='')
+            if onlybody:
+                E = mybody.findall('.//t:%s' % (tag), ns)
+            else:
+                E = self.tree.findall('.//t:%s' % (tag), ns)
+            for e in E:
+                for attr in e.attrib:
+                    if attr not in A:
+                        A.append(attr)
+            print(A, end='')
+
 
     def list_entities (self):
         for entity in doc.docinfo.internalDTD.iterentities():
@@ -164,31 +178,10 @@ btree = msTree('bonetti')
 btree.recapitalize() 
 btree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num'], removepar=True)
 btree.write()
+'''
 
-atree = msTree('a')
+atree = msTree('foo')
 atree.list_elements()
-'''
-
-'''
-OLDER VERSION USING OLD FUNCTIONS
-
-mytree = msTree('bonetti')
-mytree.reg_orig('numeral', form='reg') 
-mytree.reg_orig('j', form='reg') 
-mytree.reg_orig('v', form='reg') 
-mytree.sic_corr('typo', form = 'corr')
-mytree.strip_elements(['del'])
-mytree.recapitalize() 
-mytree.write()
-
-mytree = msTree('a')
-mytree.reg_orig('numeral', form='reg') 
-mytree.reg_orig('j', form='reg') 
-mytree.reg_orig('v', form='reg') 
-mytree.sic_corr ('typo', form = 'corr')
-mytree.strip_elements(['del'])
-mytree.recapitalize() 
-mytree.write()
 '''
 
 for edition in ['a', 'g', 'bonetti']:
@@ -204,7 +197,6 @@ for edition in ['a', 'g', 'bonetti']:
     mytree.write()
 
 
-'''
 for edition in ['afoo', 'bfoo']:
     mytree = msTree(edition)
     mytree.choose('choice', 'corr', 'typo', 'sic')
@@ -215,4 +207,4 @@ for edition in ['afoo', 'bfoo']:
     mytree.recapitalize() 
     mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
     mytree.write()
-    '''
+'''
