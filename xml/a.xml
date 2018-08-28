@@ -212,7 +212,7 @@
 
 
 <interp xml:id="ab" resp="#pm">
-<hi>the</hi> word (generally person names <rs>william</rs> or <rs>romualdus</rs>) is abbreviated to its first letter, so we cannot desume its exact spelling from this passage. <hi>in</hi> some instances, an abbreviation sign (such as a smaller alphabetical grapheme written above the first letter) is added by the scribe to mark the case (nominative, genitive etc.). <hi>i</hi> am retaining the word spelling of the <rs>bonetti</rs> edition to facilitate collation. <hi>the</hi> @ana attribute is always attached to <gi>rs</gi> elements, but one case, in which it is attached to a <gi>w</gi> element. 
+<hi>the</hi> word (generally person names  <rs>iesus</rs>/<rs>ihesus</rs>, <rs>william</rs> or <rs>romualdus</rs>) is abbreviated, so we cannot desume its exact spelling from this passage. Names <rs>william</rs> and <rs>romualdus</rs> are abbreviated to their first letter; <hi>in</hi> some instances of those two names, an abbreviation sign (such as a smaller alphabetical grapheme written above the first letter) is added by the scribe to mark the case (nominative, genitive etc.). <hi>i</hi> am retaining the word spelling of the <rs>garufi</rs> or <rs>bonetti</rs> edition to facilitate collation. <hi>the</hi> @ana="ab" attribute is always attached to <gi>rs</gi> elements but in two cases (mihi/michi and sed/set), in which it is attached to a <gi>w</gi> element. 
 </interp>
 
 
@@ -1438,7 +1438,7 @@ annum <rs>darii</rs> filii <rs>istaspis</rs> supputantur anni <num value="40">xl
 &glb;<hi>sabath</hi> uicesima quarta die preposuisset, adiecit dicens: <quote type="biblia"><rs>domine</rs> exercituum, usquequo non 
 &glb;misereberis, et urbium <rs>iuda</rs>, quibus iratus es. <hi>iste</hi> septuagesimus annus est</quote>. 
 &glb;<hi>item</hi> quarto <rs>darii</rs> regis anno dicit idem propheta: <quote type="biblia"><hi>cum</hi> ieiunaretis, et plangeretis per hos 
-&glb;septuaginta annos numquid ieiunium ieiunastis mihi?<note resp="#pm" type="graphic"><hi>the</hi> word 'mihi' is abbreviated, so we cannot desume its exact spelling ('mihi' or 'michi').</note></quote>. <hi>sed</hi> et <rs>esdras</rs> extructo tantum 
+&glb;septuaginta annos numquid ieiunium ieiunastis <w ana="#ab">mihi</w>?</quote>. <hi>sed</hi> et <rs>esdras</rs> extructo tantum 
 &glb;altari, et iactis fundamentis templi ad litteras regis <rs>exersis</rs> prohibitum opus refert. <hi>tunc</hi> in&gd;termissum 
 est opus <rs>dei</rs> in <rs>hierusalem</rs>, et non fiebat usque ad secundum annum <rs>darii</rs> <rs>persarum</rs>. 
 &glb;<hi>prophetauerunt</hi> autem <rs>aggeus</rs> propheta,<pb n="45v" facs="vat:52" ed="#a"/> et <rs>zacharias</rs> filius <rs>addo</rs> prophetantes ad <rs>iudeos</rs>, 
@@ -1462,10 +1462,90 @@ licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus 
 &glb;primus <rs>largus</rs> nomine fuit maioris honoris, quam <hi>consules</hi>: rursum quoque consules rem 
 &glb;publicam optinuerunt per annos <num value="464"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> usque ad <rs>iulium</rs> <rs>cesarem</rs>, qui primus singulare 
 &glb;arripuit imperium <hi>olimpiade</hi> <num value="184">clxxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <rs>orosius</rs>. <hi>anno</hi> ab urbe condita <num value="275">cclxxu</num>. 
-&glb;<hi>olimpiade</hi> <num value="74">lxxiiii</num>. <rs>xerses</rs> <rs>dario</rs> patri in regnum successit. <num value="3389"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>ccclxxxix</num>. 
+&glb;<hi>olimpiade</hi> <num value="74">lxxiiii</num>. <rs>xerses</rs> <rs>dario</rs> patri in regnum successit. <num value="3389"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>ccclxxx<add place="nextline" type="integration"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></add></num>. 
+</p> 
+
+<!-- roughly from here i decided to record all additions (corrections/integrations) from other hands in the part collated on garufi. i didn't do it systematically in the part collated on bonetti. -->
+
+<p xml:id="g28.11-28.17" decls="#al"> 
+&glb;<rs>xerses</rs> <rs>darii</rs> filius annis <num value="20">xx</num>. <hi>hic</hi> <rs>egyptum</rs>, qu<seg type="ae">ae</seg> a <rs>dario</rs> discesserat, capit, et aduersus 
+&glb;<rs>greciam</rs> pugnaturus <num value="700">dcc</num> milia armatorum de regno, et <num value="300">ccc</num> milia de auxiliis, rostratas etiam 
+&glb;naues mille ducentas; onerarias autem tria milia ducentas habuisse narratur. <hi>attamen</hi> uictus 
+&glb;patriam refugiit. <rs>demonstenes</rs> <rs>lacedemonis</rs> tunc apud <rs>exersen</rs> exultabat. <hi>tunc</hi> <rs>hero&gd;dotus</rs> 
+hystoriarum scriptor, et <rs>reusis</rs><add hand="#unknown" place="margin" type="correction">zeusis</add> pictor agnoscitur. <hi>anno</hi> ab urbe condita <num value="301">ccci</num>,
+&glb;<hi>olimpiade</hi> <num value="25">xxu</num><add hand="#unknown" place="margin" type="correction"><num value="401"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>i</num>, <hi>olimpiade</hi> <num value="95">xcu</num></add>, potestas consulum decem uiris <rs>rome</rs> tradita est. <hi>tunc</hi> etiam cen<pb n="46v" facs="vat:53" ed="#a"/>sus habitus 
+&glb;est, et inuenta sunt ciuium <rs>romanorum</rs> centum decem et octo milia <num value="319">cccx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. <num value="3490"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice><choice><orig>lxxxx</orig><reg type="numeral">xc</reg></choice></num>. 
 </p> 
 
 
+<p xml:id="g28.18-28.18" decls="#al"> 
+&glb;<hi>artabanus</hi> mensibus <num value="8">uiii</num>. <hi>socrates</hi> nascitur. <num value="3511"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dxi</num>. 
+</p> 
+
+
+<p xml:id="g28.19-29.37" decls="#al"> 
+&glb;<rs>artarxerses</rs>, qui et <rs>macrochir</rs>, idem <rs>longimanus</rs>, annis <num value="40">xl</num>. <hi>huius</hi> anno septimo prima 
+&glb;die mensis primi <rs>esdra</rs> sacerdos et scriba legis <rs>domini</rs> descendit de <rs>babylonia</rs> cum epistolis 
+&glb;regis, et in prima mensis quinti uenit in <rs>hierusalem</rs> cum uiris mille <num value="700">dcc</num>. <hi>et</hi> inter alia 
+&glb;strenue gesta castigauit filios transmigrationis ab uxoribus alienigenis. <hi>eiusdem</hi> anno uice&gd;simo 
+<rs>neemias</rs> pincerna de <rs>susis</rs> castro adueniens, murum <rs>hierusalem</rs> quinquaginta duobus 
+&glb;diebus restituit, et ducatum genti <num value="12">xii</num> annis prebuit. <hi>item</hi> aliter. <rs>ioachim</rs>, qui et <rs>hie&gd;chonias</rs> 
+tempore captiuitatis genuit <rs>salathiel</rs>. <rs>salathiel</rs> genuit <rs>zorobabel</rs> <rs>iechonia</rs> quidem, 
+&glb;et <rs>salathiel</rs> in <rs>babilone</rs> defuncti sunt. <rs>zorobabel</rs> uero post obitum eorum, permittente <rs>dario</rs> 
+&glb;rege, egressus est de <rs>babylone</rs> cum omnibus, qui cum illo egredi uoluerunt cum magno 
+&glb;honore, et gratia, atque <rs>hierusalem</rs> sunt reuersi. <hi>non</hi> enim omnes simul, sed sicut per tem&gd;pora 
+captiuati sunt, sic per tempora de eadem sunt captiuitate reuersi. <hi>primo</hi> namque a 
+&glb;<rs>ciro</rs> rege <rs>persarum</rs> dimissi sunt, cum <pb n="47r" facs="vat:53" ed="#a"/>mandasset eis dicens: qui uoluerit egredi, et reuerti 
+&glb;in <rs>hierusalem</rs>, qu<seg type="ae">ae</seg> in <rs>iudea</rs> est, eat, et <rs>dominus</rs> eius sit cum eo. <hi>hec</hi> ergo prima egressio 
+&glb;eius captiuitatis. <hi>altera</hi> autem facta est sub <rs>dario</rs> rege <rs>medorum</rs>. <hi>tertia</hi> uero sub <rs>artarxersen</rs>. 
+&glb;<hi>sed</hi> illi, qui primi egressi sunt sub <rs>ciro</rs>, pauci erant, et nullus princip<del rend="overstrike">i</del>um cum eis est egressus 
+<pb n="29" ed="#g"/> 
+&glb;propterea uenientes in <rs>iudeam</rs>, et <rs>hierusalem</rs>, ibidem habtantes, ceperunt templum <rs>dei</rs> he&gd;dificare 
+in <rs>hierusalem</rs>. <hi>sed</hi> proxime in circuitu gentes, uidentes quod pauci essent, nec 
+&glb;principem quempiam habuissent, prohibuerunt eos, neque dimiserunt hedificare et sic remansit 
+&glb;opus ceptum templi inconsumatum. <hi>ex</hi> parte enim faciebant, iterum prohibiti cessabant per 
+&glb;aliquantos menses ita usque ad regnum <rs>darii</rs> regis. <hi>et</hi> hoc est, quod <rs>iudei</rs> in templo <rs>domini</rs> 
+&glb;dicebant: <quote type="biblia">quadraginta et sex annis hedificatum est templum hoc</quote>. <hi>ex</hi> quo enim ceperunt hedi&gd;ficare 
+templum <rs>domino</rs> hi, qui ex captiuitate primo dimissi sunt, usque dum consummatum 
+&glb;est, <num value="46">xlui</num> anni completi sunt. <hi>ergo</hi>, ut dictum est, prima dimissio captiuorum ex <rs>perfida</rs> 
+&glb;sub <rs>cyro</rs> facta est rege illorum paucorum, qui si non principe exinde facti sunt, qui nec 
+&glb;dum templum, quod ceperant, explicare potuerunt. <hi>et</hi> postea <rs>darius</rs> rex commonefactum est 
+&glb;a magnifico <rs>zoroba<pb n="47v" facs="vat:54" ed="#a"/>bel</rs>, dimisit omnes egredi uolentes, et reuerti in <rs>hierusalem</rs>. <hi>eundem</hi> 
+&glb;quippe <rs>zorobabel</rs> ad construendum templum <rs>domini</rs>, quod est in <rs>hierusalem</rs>, unde fuerat 
+&glb;depredata, et cum <rs>zorobabel</rs> illo in tempore pariter egressus est <rs ana="#ab">ihesus</rs> filius <rs>iosedech</rs> filii 
+&glb;<rs>saraie</rs> sacerdotis magni, sicut <hi>propheta</hi> de eo meminit; <rs>saraia</rs> enim summus sacerdos in 
+&glb;<rs>hierusalem</rs>, quando eadem ciuitas uastata est a <rs>nabuchodonosor</rs>, cum aliis principibus <rs>se&gd;decia</rs> 
+interfectus est: quo interfecto, filius eius <rs>iosedech</rs> captiuus ductus in <rs>babyloniam</rs>, ibique 
+&glb;hunc <rs ana="#ab">ihesum</rs> generans defunctus est. <rs ana="#ab">ihesus</rs> autem hic magnus et preclarus in diuino ti&gd;more 
+fuit. <hi>his</hi> egressus cum <rs>zorobabel</rs> ibat in <rs>hierusalem</rs>, qui dimissi a <rs>dario</rs> transeuntes 
+&glb;per <rs>babyloniam</rs>, inde secum educentes uniuersos, qui ibidem erant <rs>iudeos</rs>, habentes secum 
+&glb;equites, quos eis <rs>darius</rs> rex iniuncxerat ad conducendum eos usque <rs>hierusalem</rs>. <hi>hec</hi> fuit 
+&glb;secunda egressio captiuorum de <rs>babylonia</rs>, que per <rs>zorobabel</rs> filium <rs>salathiel</rs> facta est, una 
+&glb;cum <rs ana="#ab">ihesu</rs> filio <rs>iosedech</rs>. <hi>hi</hi> ergo sunt, qui et templum <rs>domini</rs> edificauerunt, atque consu&gd;mauerunt. 
+<hi>sub</hi> istis prophetauerunt post captiuitatem <rs>hierusalem</rs> alio anno sub <rs>dario</rs> rege 
+&glb;<rs>aggeus</rs>, et <rs>zacharias</rs>, et <rs>malachias</rs>. <hi>post</hi> hec tertio egressi sunt de captiuitate hii, qui ibidem 
+&glb;residebant in diebus <rs>artarxersis</rs> regis. <hi>et</hi> cum eis egressus est <pb n="48r" facs="vat:54" ed="#a"/>princeps et consiliator, et 
+&glb;dux <rs>esdra</rs>, qui cognominatus est scriba legis <rs>dei</rs>. quem etiam <rs>artarxersus</rs> rex trasmisit cum 
+&glb;magno honore, et eos, qui cum eo egressi sunt. <hi>exiit</hi> <add hand="#unknown" type="integration">cum</add> eis et <rs>neemias</rs>, qui in patrum 
+&glb;laudibus commemoratus est. <hi>hucusque</hi> diuina scriptura temporum seriem continet. <hi>qu<seg type="ae">ae</seg></hi> 
+&glb;uero post h<seg type="ae">ae</seg>c apud <rs>iudeos</rs> gesta sunt de libro <rs>machabeorum</rs> et <rs>iosepi</rs> atque <rs>africani</rs> scriptis 
+&glb;exhibentur, qui deinceps hystoryam uniuersam usque ad <rs>romana</rs> tempora prosecuti sunt. 
+&glb;<hi>et</hi> quidem <rs>africanus</rs> in quinto <title>temporum</title> uolumine, huius temporis ita meminit: <quote>mansit 
+&glb;atque imperfectum opus usque ad <rs>neemiam</rs> et <num value="20">xx</num> annum <rs>artarxersis</rs>. <hi>quo</hi> tempore re&gd;gni 
+<rs>persarum</rs> centum et quindecim anni fuerant euoluti: capiuitatis autem <rs>hierusalem</rs> cen&gd;tesimus 
+octogesimus et quintus annus erat. <hi>et</hi> tunc primum <rs>artarxerses</rs> iussit muros extrui 
+&glb;<rs>hierusalem</rs>; ex illo tempore, si numerare uelis, septuaginta annorum ebdomadas, usque ad <rs>chri&gd;stum</rs> 
+patris inuenire</quote>. <rs>xerses</rs> menses <num value="2">ii</num>. <hi>post</hi> quem <rs>sogdianus</rs> menses <num value="7">uii</num>. <hi>tunc</hi> temporis 
+&glb;<hi>plato</hi> nascitur, <hi>hippocrates</hi> medicus insignis habetur. <num value="3548"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dxluiii</num>. 
+</p> 
+
+
+<p xml:id="g29.38-30.2" decls="#ocr"> 
+&glb;<rs>darius</rs>, cognomento <rs>nothus</rs>, annis<pb n="48v" facs="vat:55" ed="#a"/> <num value="19">xix</num>. <rs>egyptus</rs> recessit a <rs>persis</rs>. <rs>reuersis</rs> de ca&gd;ptiuitate
+<pb n="30" ed="#g"/> 
+<rs>iudeis</rs> non reges, sed pontifices prefuerunt, usque ad <rs>aristobolum</rs>, qui cum digni&gd;tate 
+pontificis, etiam regale sibi cepit usurpare uocabulum. <num value="3556"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dlui</num>. 
+</p> 
 
 
 
