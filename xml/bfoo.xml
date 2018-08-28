@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
+<!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
+<!ENTITY blb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'>
+]>
+<!--gd  = Garufi Dash-->
+<!--glb = Garufi Line Beginning-->
+<!--bd  = Bonetti Dash-->
+<!--blb = Bonetti Line Beginning-->
+<!--TEI xmlns="http://www.tei-c.org/ns/1.0"-->
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, codex A</title>
+        <editor xml:id="pm">Paolo Monella</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+          <p>The digital reproductions of codex
+              <bibl xml:id="a">Vat. lat. 3973</bibl>
+          </p>
+        <p>The collation base until paragraph g163.6-163.7 was:</p>
+        <biblStruct xml:id="g">
+            <monogr>     
+                <author>Guarna, Romualdus</author>
+                <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+                <editor>Garufi, Carlo Alberto</editor>
+                <imprint>
+                    <publisher>S. Lapi</publisher>
+                    <date>1914</date>
+                    <pubPlace>Città di Castello</pubPlace>
+                </imprint>
+            </monogr>
+            <series>
+                <title level="s">Rerum italicarum scriptores: Nuova edizione</title>
+                <biblScope unit="volume">7</biblScope>
+                <biblScope unit="part">1</biblScope>
+            </series>
+        </biblStruct>
+        <p>The collation base for the collation from (and including) paragraph g163.6-163.7 was:</p>
+        <biblStruct xml:id="b">
+            <monogr>     
+                <author>Guarna, Romualdus</author>
+                <title>Romualdo II Guarna, Chronicon</title>
+                <editor>Bonetti, Cinzia</editor>
+                <imprint>
+                    <publisher>Avagliano</publisher>
+                    <date>2001</date>
+                    <pubPlace>Salerno</pubPlace>
+                </imprint>
+            </monogr>
+            <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+                <biblScope unit="volume">6</biblScope>
+            </series>
+            <idno type="ISBN">9788883090561</idno>
+            <note>Saggi introduttivi di G. Andenna, Hubert Houben, M. Oldoni.</note>
+        </biblStruct>
+    </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="algl">
+            <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="al">
+            <p>Paragraph encoded at the Alphabetic Layer only.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
+            <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p>
+        </editorialDecl>
+        <editorialDecl>
+            <quotation marks="none">
+                <p>The manuscript does not have quotation marks.
+                    Some passages (direct speech or epistle quotations) are marked up with
+                    <gi>said</gi>, without quotation marks.</p>
+                <p>Quotations from literary works are marked up with <gi>quote</gi>.
+                    In these cases, @type="biblia" means that it is a biblical quote, according
+                    to the "Manuale di codifica dei testi ALIM in TEI XML" in
+                    http://it.alim.unisi.it/documentazione/</p>
+            </quotation>
+        </editorialDecl>
+        <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+                <!-- mettili in ordine alfabetico (anche in bonetti.xml, ma lì dovrebbero esserlo già-->
+                <tagUsage gi="add">
+                    It is used either alone (with @place="nextline", "above", "footer", "addedfolios",
+                    "margin", "marginandfooter", "inline")
+                    or in combination with <gi>del</gi> in the following structure to mark a substitution:
+                    <gi>subst</gi>, parent /
+                    <gi>del</gi> (@rend="rasura" or @rend="overwrite"), child
+                    <gi>add</gi> (@place="overwrite" and @type="correction"), child.
+                </tagUsage>
+                <tagUsage gi="hi">
+                    Used to mark up words capitalized in the print edition, but not constituting
+                    a proper noun, such as "Sed" at the beginning of a sentence.
+                </tagUsage>
+                <tagUsage gi="seg">
+                    With @type="ae", it is used to mark the sequence of alphabemes 'ae' when it is represented
+                    by grapheme 'e caudatum' in the manuscript.
+                </tagUsage>
+                <tagUsage gi="note">
+                    With @resp="#pm" (Paolo Monella):
+                    <list>
+                        <item>With @type="content": note on the text content.</item>
+                        <item>With @type="graphic": note on glyphs or graphemes.</item>
+                        <item>With @type="mscorrhand2" and @resp="#pm": note on corrections made in the manuscript
+                            by hand2 (variant readings by hand2 in the manuscript).</item>
+                        <item>With @type="segmentation": note on the text segmentation (arrangement of paragraphs
+                            or missing paragraphs).</item>
+                        <item>With @type="textcrit": note on textual critical matters.</item>
+                        <item>With @type="year": note on the year in which a fact actually happened, according
+                            to a scholar (with @resp; it is normally @resp="#b" for Bonetti).</item>
+                    </list>
+                    With @resp="#hand2" (the hand from the XVII century):
+                    <list>
+                        <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript
+                            saying that a marg or footer note has been taken by manuscript
+                            B ("codex sancti Petri").</item>
+                        <item>With @type="etcetera": a note handwritten by hand2 on the manuscript
+                            reporting the first words of the portion of the text that is supposed to follow a
+                            marginal or footer addition by "hand2".
+                            The note normally ends with "et cetera…"</item>
+                    </list>
+                </tagUsage>
+                <tagUsage gi="soCalled">
+                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
+                </tagUsage>
+                <tagUsage gi="del">
+                    It is used either alone (with #rend="overstrike"), for a passage deleted and not substituted by
+                    the scribe, or in combination with <gi>add</gi> in the following structure to mark a substitution:
+                    <gi>subst</gi>, parent /
+                    <gi>del</gi> (@rend="rasura" or @rend="overwrite"), child
+                    <gi>add</gi> (@place="overwrite" and @type="correction"), child.
+                    If no @hand attribute is provided, it is implied that the deletion
+                    (and the correction, if any) are done by the main hand of the manuscript.
+                </tagUsage> 
+                <tagUsage gi="link">
+                    With @type="transposition", it links a paragraph (first teidata.pointer in the value)
+                    of the manuscript text to an <gi>anchor</gi> (second teidata.pointer in the value)
+                    marking the point of the text in which that paragraph is collocated
+                    <list>
+                        <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
+                        <item>by Garufi only (if @subtype="garuficollocation"), or</item>
+                        <item>by Bonetti only (if @subtype="bonetticollocation")</item>
+                    </list>
+                    The 
+                </tagUsage>
+                <tagUsage gi="anchor">
+                    See above the note on the usage of <gi>link</gi>.
+                    Like <gi>link</gi>, also <gi>anchor</gi> has @type="transposition".
+                    Element <gi>anchor</gi> has the same values of @subtype as the <gi>link</gi> that points to it:
+                    it marks the point of the text at which a paragraph is collocated
+                    <list>
+                        <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
+                        <item>by Garufi only (if @subtype="garuficollocation"), or</item>
+                        <item>by Bonetti only (if @subtype="bonetticollocation")</item>
+                    </list>
+                </tagUsage>
+                <tagUsage gi="milestone">
+                    <list>
+                        <item>With @type="bonetti_is_collation_exemplar_from_here_on" it marks the point of the text
+                            from which I used the file with the OCR of the Bonetti edition as a collation base.
+                            Before that point, I had used the OCR of the Garufi edition as base.</item>
+                        <item>With @type="no-par-break-in-bonetti" and @ed="#b" it is put at a point of the text
+                            in which Garufi has a paragraph break but Bonetti does not.</item>
+                        <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put at a point of the text
+                            in which Bonetti has a paragraph break but Garufi does not.</item>
+                    </list>
+                <tagUsage gi="title">
+                    Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus".
+                </tagUsage>
+    </tagUsage>
+
+
+             </namespace>
+         </tagsDecl>
+        <listPrefixDef>
+            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
+                <p> In the context of this edition, private URIs with 
+                    the prefix "vat" point to a specific page of external 
+                    PDF file vat.lat.3973.pdf, including the digital images 
+                    of the A manuscript. For example, <code>vat:29</code>
+                    dereferences to <code>img/vat.lat.3973.pdf#page=29</code>.
+                </p>
+            </prefixDef>
+        </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+        <handNotes>
+            <handNote xml:id="hand2">
+                <p>A part of the text was missing from manuscript A, so two additional folios were added at a much later time,
+                    probably in the XVII century, and then numbered as 204 and 205.</p>
+                <p>A marginal note at the top right corner of folio 204r says: "hae duo paginae, quae hic deerant,
+                    desumptae sunt de codices Petri de Urbe".</p>
+                <p>So pages 204r, 204v, 205r, 205v do not constitute a witness of the text of codex A. 
+                    Still, I am transcribing their text here for completeness.</p>
+                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic transcription, I am encoding it
+                    with its alphabetic correspondent 'ae', and marking those 'ae' alphabemes with seg type="ae".</p>
+            </handNote>
+            <handNote xml:id="unknownhand">
+                <p>Unknown hand.</p>
+            </handNote>
+        </handNotes>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>ciao a tutte</body>
+  </text>
+</TEI>
