@@ -14,7 +14,6 @@ from collatex import *
 from lxml import etree
 import re, json, string
 
-
 class Witness:
     """An instance of Witness is the etree representation of a witness"""
     def __init__(self,xml):

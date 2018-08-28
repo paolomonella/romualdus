@@ -13,8 +13,10 @@ from constants import ns, tei_ns, xml_ns, html_ns
 # Input files
 
 #firstfile = '../xml/a_juxta.xml'
+#firstfile = '../xml/a.xml'
 firstfile = '../xml/afoo.xml'
 #secondfile = '../xml/bonetti_juxta.xml'
+#secondfile = '../xml/g.xml'
 secondfile = '../xml/bfoo.xml'
 
 # XSLT
@@ -107,15 +109,20 @@ ATree = etree.parse(firstfile)
 #ATree = etree.parse('../xml/foo.xml')
 BTree = etree.parse(secondfile)
 
+# Se <TEI> *non* ha @xmlns: <TEI>
 ABody = ATree.find('.//body')
 BBody = BTree.find('.//body')
+
 '''
+# Se <TEI> ha @xmlns: <TEI xmlns="http://www.tei-c.org/ns/1.0">
 ABody = ATree.find('.//t:body', ns)
 BBody = BTree.find('.//t:body', ns)
 '''
 
 ATokenized = transformWrapW(transformAddW(ABody))
 BTokenized = transformWrapW(transformAddW(BBody))
+
+print('tokenizzato:', ATokenized, end='\n\n')
 
 '''
 ATokenized = transformWrapW(transformAddW(ATree))
