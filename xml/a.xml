@@ -102,8 +102,8 @@
                     <p>
                     In the latter case, these are typical correspondences:
                     <list>
-                        <item><gi>add</gi> @place="strikeover" with <gi>del</gi> @rend="rasura"</item>
-                        <item><gi>add</gi> @place="above" with <gi>del</gi> @rend="strikethrough"</item>
+                        <item><gi>del</gi> @rend="rasura" (or @rend="none") with <gi>add</gi> @place="strikeover"</item>
+                        <item><gi>del</gi> @rend="strikethrough" with <gi>add</gi> @place="above"</item>
                     </list>
                     </p>
 
@@ -151,14 +151,7 @@
                     <gi>subst</gi>, parent /
                     <gi>del</gi>, child + 
                     <gi>add</gi>, child
-                    </p>
-
-                    <p>
-                    In the latter case, these are typical correspondences:
-                    <list>
-                        <item><gi>add</gi> @place="strikeover" with <gi>del</gi> @rend="rasura"</item>
-                        <item><gi>add</gi> @place="above" with <gi>del</gi> @rend="strikethrough"</item>
-                    </list>
+                    (see above, tagUsage @gi="add", for details on the latter case).
                     </p>
 
                     <p>If no @hand attribute is provided, it is implied that the deletion
@@ -1639,7 +1632,7 @@ optinuit, interfecto <rs>dario</rs>, in quo <rs>medorum</rs>, atque <rs>persarum
 </p> 
 
 
-<p xml:id="g31.22-32.30" decls="#ocr"> 
+<p xml:id="g31.22-32.30" decls="#al"> 
 &glb;<rs>alexander</rs> post mortem <rs>darii</rs> annos regnauit, nam antea <num value="7">uii</num>. <rs>orosius</rs>. <hi>his</hi> autem 
 &glb;post mortem <rs>darii</rs> regno <rs>persarum</rs> adepto <rs>sithis</rs> bellum intulit, atque contriuit. <rs>hyrcanos</rs> 
 &glb;quoque et <rs>mardos</rs> subegit ubi etiam <rs>alexandris</rs> siue <rs>minothea</rs> <rs>amazonum</rs> regina excita, 
@@ -1648,69 +1641,69 @@ optinuit, interfecto <rs>dario</rs>, in quo <rs>medorum</rs>, atque <rs>persarum
 &glb;populos, qui in radice <rs>caucasi</rs> montis morabantur, subegit. <hi>urbem</hi> ibi <rs>alexandriam</rs> super 
 &glb;amnem <rs>tanaim</rs> constituit. <hi>nec</hi> minor eius in suos crudelitas, quam in hostes rabies fuit. 
 &glb;<hi>deinde</hi> <pb n="50v" facs="vat:57" ed="#a"/><rs>indiam</rs> petiit, ut <rs>oceano</rs> ultimoque oriente finiret imperium. <rs>nisan</rs> urbem adiit, 
-&glb;<rs>dedalos</rs> m<susbst><del rend="strikethrough">e</del><add place="above" type="correction" hand="#unknownhand">o</add></susbst>ntes, regnaque <rs>cleofilis</rs> regine expugnauit, que cum se dedisset, concubitu regnum 
-&glb;redimit. <hi>cum</hi> <rs>poro</rs> fortissimo rege <rs>indorum</rs> cruentissime dimicauit, quo occiso regnum eius 
+&glb;<rs>dedalos</rs> m<susbst><del rend="strikethrough">e</del><add place="above" type="correction" hand="#unknownhand">o</add></susbst>ntes, regnaque <rs>cleofilis</rs> regine expugnauit, qu<seg type="ae">ae</seg> cum se dedisset, concubitu regnum 
+&glb;redemit. <hi>cum</hi> <rs>poro</rs> fortissimo rege <subst hand="#unknownhand"><del hand="#unknownhand" rend="strikethrough"><rs>iudeorum</rs></del><add hand="#unknownhand" place="above" type="correction"><rs>indorum</rs></add></subst> cruentissime dimicauit, quo occiso regnum eius 
 <pb n="32" ed="#g"/> 
-&glb;substinuit. <hi>inde</hi> <rs>arestas</rs>, <rs>catenos</rs>, <rs>presidas</rs>, et <rs>gangaridas</rs>, nec non <rs>confides</rs> laboriosis bellis 
-&glb;subegit. <hi>peragrata</hi> perdomitaque <rs>alexander</rs> <rs>india</rs>; ad amnem <rs>egyssenem</rs> peruenit, per 
-&glb;hunc in <rs>oceanum</rs> diuehitur; ibi <rs>gesonas</rs>, <hi>sibosque</hi> oppressit. <hi>hinc</hi> <rs>mandros</rs>, <rs>subagras</rs> na&gd;uigat, 
-que gentes cum armatis octuaginta milibus peditum, et sexaginta milibus militum il&gd;lum 
-excipiunt: cruentissimo igitur commisso prelio et fusis hostius copiis, <rs>alexander</rs> exerci&gd;tum 
+&glb;obtinuit. <hi>inde</hi> <rs>arestas</rs>, <rs>catenos</rs>, <rs>presidas</rs>, et <rs>gangaridas</rs>, nec non <rs>confides</rs> laboriosis bellis 
+&glb;subegit. <hi>peragrata</hi> perdomitaque <rs>alexander</rs> <rs>india</rs>, ad amnem <rs>egyssenen</rs> peruenit; per 
+&glb;hunc in <rs>oceanum</rs> diuehitur; ibi <rs>gesonas</rs>, <rs>sibosque</rs> oppressit. <hi>hinc</hi> <rs>mandros</rs> et <rs>subagras</rs> na&gd;uigat, 
+que gentes cum armatis octoaginta milibus peditum, et sexaginta milibus militum il&gd;lum 
+excipiunt: cruentissimo igitur commisso prelio et fusis hostium copiis, <rs>alexander</rs> exerci&gd;tum 
 ad urbem deduxit, et cum murum primus ascendisset, solus introrsus desiliuit, quem cum 
-&glb;undique hostes circum dedissent, muri obice posteriora tutatum, contrarios eo usque sustinuit, 
-&glb;donec ad periculum eius, et clamorem hostium, perfractis muris, exercitus omnis irrumperet. 
-&glb;<hi>inde</hi> conscensis nauibus, cum <rs>oceani</rs> litora peragraret ad urbem, cui <rs>ambira</rs> rex preerat, 
-&glb;peruenit, ipsamque urbem expugnauit, et cepit. <hi>post</hi> quasi<pb n="51r" facs="vat:§" ed="#a"/> circum actus, et de <rs>oceano</rs> 
-&glb;<hi>indum</hi> flumen ingressus <rs>babyloniam</rs> rediit, ubi eam exterritarum totius orbis prouinciarum 
-&glb;legati expectabant. <hi>rumores</hi> eius quippe totum orbem peragrarant, quod <rs>dii</rs> concessissent 
-&glb;ei totius orbis uictoriam, quod ipse hac arte composuit. <hi>cum</hi> igitur quasi uoti causa, una 
-&glb;cum suis templum <rs>ammonis</rs>, quod apud <rs>alexandriam</rs> fuerat adisset secreto uocauit ad se illius 
-&glb;ora <rs>dei</rs> pontificem, promittens, ac tribuens ei dona plurima auri, atque argenti, ut occultatus 
-&glb;apud <rs>dii</rs> <rs>ammonis</rs> statuam, quasi ipse <rs>deus</rs> ore suo cunctis audientibus responsa daret <rs>ale&gd;xandro</rs>, 
-sicut ipse in eius ore uerba posuerat, et eum ubique, et in omnibus uictorem nun&gd;ciaret: 
-quod dum fecisset, fama hec terras ac mare perterruit. <hi>unde</hi> ex omni gente, ac 
-&glb;natione ad eum legati concurrentes ueniebant, expetentes, ut eis sine bello dominaretur; <hi>ale</hi>&gd;xander 
-autem apud <rs>babyloniam</rs> ministri insidiis ueneni haustus interiit anno uite sue <num value="32">xxxii</num>, 
-&glb;regni uero suo <num value="12">xii</num>. <rs>ieronimus</rs>. <rs>alexander</rs> ab <rs>illyrico</rs>, et mare <rs>adriatico</rs> usque ad <rs>indicum</rs> 
+&glb;undique hostes circumdedissent, muri obice posteriora tutatus, contrarios eo usque sustinuit, 
+&glb;donec ad periculum eius, clamorem hostium, perfractis muris, exercitus omnis inrumperet. 
+&glb;<hi>inde</hi> cons<add hand="#unknownhand" place="above" type="integration">c</add>ensis nauibus, cum <rs>oceani</rs> litora perageret ad urbem, cui <rs>ambira</rs> rex preerat, 
+&glb;peruenit, ipsamque urbem expugnauit, et cepit. <hi>post</hi> quasi<pb n="51r" facs="vat:57" ed="#a"/> circum actus, et de <rs>oceano</rs> 
+&glb;<rs>indum</rs> flumen ingressus <rs>babyloniam</rs> rediit, ubi eum exterritarum totius orbis prouinciarum 
+&glb;legati expectabant. <hi>rumores</hi> eius quippe totum orbem peragrarant, quod <hi>dii</hi> concessissent 
+&glb;ei totius orbis uictoriam, quod ipse ac arte composuit. <hi>cum</hi> igitur quasi uoti causa, una 
+&glb;cum suis templum <rs>ammonis</rs>, quod apud <rs>alexandriam</rs> fuerat, adiss<subst hand="#unknownhand"><del hand="#unknownhand" rend="strikethrough">us</del><add hand="#unknownhand" place="above" type="correction">et</add></subst>, secreto uocauit ad se illius 
+&glb;ora <hi>dei</hi> pontificem, promittens ac tribuens ei dona plurima auri, atque argenti, ut occultatus 
+&glb;apud <hi>dii</hi> <rs>ammonis</rs> statuam, quasi ipse <hi>deus</hi> ore suo cunctis audientibus responsa dare<add hand="#unknownhand" place="above" type="integration">t</add> <rs>ale&gd;xandro</rs>, 
+sicut ipse in eius ore uerba posuerat, et cum ubique et in omnibus uictorem nun&gd;tiaret: 
+quod dum fecisset, fama hec terras ac mare perterruit. <hi>unde</hi> ex omni gente, et 
+&glb;natione ad eum legati concurrentes ueniebant, expetentes, ut eis sine bello dominaretur; <rs>ale&gd;xander</rs> 
+autem apud <rs>babyloniam</rs> ministri insidiis ueneni austu interiit anno uit<seg type="ae">ae</seg> su<seg type="ae">ae</seg> <num value="32">xxxii</num>, 
+&glb;r<add place="above" type="integration">e</add>gni uero sui <num value="12">xii</num>. <rs>ieronimus</rs>. <rs>alexander</rs> ab <rs>illirico</rs> et mare <rs>adriatico</rs> usque ad <rs>indicum</rs> 
 &glb;<rs>oceanum</rs>, et <rs>gangen</rs> fluuium non tam preliis, quam uictoriis precurrit, et sex annis <rs>europe</rs> 
 &glb;partem, et omnem sibi <rs>asiam</rs> subiugauit, quod non fuit <rs>alexandri</rs> fortitudinis, sed <rs>domini</rs> 
-&glb;uoluntatis: cui postea quattuor duces eius regni successores <pb n="51v" facs="vat:§" ed="#a"/> extiterunt, uidelicet, <rs>ptolomeus</rs>, 
+&glb;uoluntatis: cui postea quattuor duces eius regni successores <pb n="51v" facs="vat:58" ed="#a"/> extiterunt, uidelicet <rs>ptolomeus</rs>, 
 &glb;<rs>philippus</rs>, <rs>seleucus</rs> <rs>nicanor</rs>, <rs>antigonus</rs>. <hi>qui</hi> apud <rs>danielem</rs> per quattuor hyrci cornua, 
-&glb;qui arietem contereret designantur. <hi>mortuo</hi> itaque <rs>alexandro</rs> tricesimo secundo etatis sue 
-&glb;anno, hi quattuor duces regnum diuiserunt. <hi>et</hi> <rs>ptolomeus</rs> <rs>lagis</rs> filius tenuit <rs>egyptum</rs>; 
-&glb;<rs>philippus</rs>, qui et <rs>arideus</rs> frater <rs>alexandri</rs> <rs>macedoniam</rs>; <rs>seleucus</rs> <rs>nicanor</rs> <rs>syriam</rs>, et <rs>ba&gd;byloniam</rs>, 
+&glb;qui arietem contereret, designantur. <hi>mortuo</hi> itaque <rs>alexandro</rs> tricesimo secundo etatis sue 
+&glb;anno, hi quattuor duces regnum diuiserunt. <hi>et</hi> <rs>ptolomeus</rs> <rs>lagi</rs> filius tenuit <rs>egyptum</rs>; 
+&glb;<rs>philippus</rs>, qui et <rs>arideus</rs>, frater <rs>alexandri</rs>, <rs>macedoniam</rs>; <rs>seleucus</rs> <rs>nicanor</rs> <rs>syriam</rs> et <rs>ba&gd;byloniam</rs>, 
 et omnia regna orientis; <rs>antigonus</rs> <rs>asie</rs> regnauit, sed non inquid in fortitu&gd;dine 
-eius, qui nullus eorum magnitudini <rs>alexandri</rs> potuit equari <num value="3669"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dclxix</num>. 
+eius, qui nullus eorum magnitudini <rs>alexandri</rs> potuit equari <num value="3669"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><add place="nextline" type="integration">dclx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></add></num>. 
 </p> 
 
 
-<p xml:id="g32.31-33.19" decls="#ocr"> 
-&glb;<rs>egypto</rs> regnauit primus <rs>ptolomeus</rs> <rs>lagi</rs> filius annis <num value="40">xl</num> <rs>appius</rs> <rs>claudius</rs> <rs>cecus</rs> <rs>rome</rs> 
-&glb;clarus habetur, qui aquam <rs>claudiam</rs> induxit, et uiam <rs>appiam</rs> strauit. <rs>ptolomeus</rs> <rs>hieroso&gd;lyma</rs>, 
-et <rs>iudea</rs> in ditionem suam dolo redactis, plurimos captiuorum in <rs>egyptum</rs> transtulit. 
-&glb;<rs>iudeorum</rs> pontifex maximus <rs>onias</rs> <rs>iaddi</rs> filius clarus habetur. <hi>et</hi> tertio decimo <rs>ptolomei</rs> 
-&glb;anno <rs>syrie</rs>, et <rs>babilon</rs>, et superioribus locis regnare incipit <rs>seleucus</rs> <rs>nicanor</rs>. <hi>a</hi> quo tem&gd;pore 
-<rs>machabeorum</rs> hebrea hystorya grecorum supputat regnum, a quo et <rs>hedisseni</rs> sua 
+<p xml:id="g32.31-33.19" decls="#al"> 
+&glb;<rs>egypto</rs> regnauit primus <rs>ptolomeus</rs> <rs>lagi</rs> filius annis <num value="40">xl</num>. <rs>appius</rs> <rs>claudius</rs> <rs>cetus</rs> <rs>rome</rs> 
+&glb;clarus habetur, qui aqua <rs>claudiam</rs> induxit, et uiam <rs>appiam</rs> strauit. <rs>ptolomeus</rs> <rs>hieruso&gd;lima</rs> 
+et <rs>iudea</rs> in dicionem suam dolo redactis, plurimos captiuorum in <rs>egyptum</rs> transtulit. 
+&glb;<rs>iudeorum</rs> pontifex maximus <rs>onias</rs> <rs>iaddi</rs> filius clarus habetur. <hi>et</hi> tertio decimo <rs>ptolonei</rs> 
+&glb;anno <rs>syrie</rs> et <rs>babilonis</rs> et superioribus locis regnare incipit <rs>seleucus</rs> <rs>nicanor</rs>. <hi>a</hi> quo tem&gd;pore 
+<rs>machabeorum</rs> hebrea hystoria grecorum supputat regnum, a quo et <rs>hedisseni</rs> sua 
 <pb n="33" ed="#g"/> 
-&glb;tempora computant. <rs>seleucus</rs> <rs>antiochiam</rs>, <rs>seleuciam</rs>, <rs>laodiciam</rs>, <rs>appiam</rs>, <rs>edessam</rs>, <rs>bo&gd;roeam</rs>, 
-et <rs>pellam</rs> urbes <pb n="52r" facs="vat:§" ed="#a"/> condidit. <hi>anno</hi> scilicet ab urbe condita <num value="464"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxiu</num>. <hi>eo</hi> 
+&glb;tempora computant. <rs>seleucus</rs> <rs>antiochiam</rs>, <rs>seleuciam</rs>, <rs>laodiciam</rs>, <rs>appiam</rs>, <rs>edessam</rs>, <rs>be&gd;roeam</rs>, 
+et <rs>bellam</rs> urbes <pb n="52r" facs="vat:58" ed="#a"/>condidit. <hi>anno</hi> scilicet ab urbe condita <num value="464"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>eo</hi> 
 &glb;tempore a <rs>tarentinis</rs> bellum ingens <rs>romanis</rs> exortum est: qui cum iniuriam legatis <rs>roma&gd;norum</rs> 
-fecissent, <rs>pirrum</rs> <rs>epiri</rs> regem contra <rs>romanos</rs> in auxilium poposcerunt. <hi>his</hi> ita&gd;que 
-cum totis uiribus <rs>epiri</rs>, <rs>thessalie</rs>, et <rs>macedonie</rs>, elefantis etiam uiginti <rs>italiam</rs> uenit, et 
+fecissent, <rs>pirum</rs> <rs>epiri</rs> regem contra <rs>romanos</rs> in auxilium poposcerunt. <hi>his</hi> ita&gd;que 
+cum totis uiribus <rs>epyri</rs>, <rs>thesalie</rs> et <rs>macedonie</rs>, elefantis etiam uiginti, <rs>italiam</rs> uenit, et 
 &glb;ter cum <rs>romanis</rs> cruentissime dimicauit. <hi>quinto</hi> demum anno, ex quo uenerat, ab <rs>italia</rs> 
 &glb;uictus aufugiit, et multo post apud <rs>argos</rs> <rs>achaie</rs> florentissimam urbem saxo ictus occubuit. 
 &glb;<rs>iudeorum</rs> pontifex maximus religiosissimus, ac piissimus <rs>symon</rs> <rs>onie</rs> clarus habetur. <hi>post</hi> 
-&glb;quem <rs>eleazarus</rs> frater eius suscepit templi ministerium: filio eius <rs>onia</rs> paruulo admodum 
+&glb;quem <rs>elezarus</rs> frater eius suscepit templi ministerium: filio eius <rs>onia</rs> paruulo admodum 
 &glb;derelicto. <rs>seleucus</rs> in eas urbes, quas extruxerat, <rs>iudeos</rs> transfert; <rs>iudeis</rs> ciuium et mu&gd;nicipalem 
 ordinem cum <rs>grecis</rs> equali honore concedens. <hi>eo</hi> tempore condite a <rs>romanis</rs> 
 &glb;ciuitates <rs>ariminus</rs> in <rs>gallia</rs>, et <rs>beneuentum</rs> in <rs>sampnio</rs>. <hi>tunc</hi> etiam a <rs>romanis</rs> <rs>chrotona</rs> 
-&glb;inuaditur. <hi>sallentinis</hi> in <rs>apulia</rs> bellum indictum est a <rs>romanis</rs>, et <rs>brundisini</rs> cum ciuitate 
-&glb;capti sunt. <rs>ieronimus</rs>. <hi>post</hi> <rs>alexandrum</rs> <rs>ptolomeus</rs> <rs>lagi</rs> filius primus regnauit in <rs>egypto</rs> uir 
-&glb;prudentissimus, et fortissimus, atque ditissimus, et <pb n="52v" facs="vat:§" ed="#a"/> tante potentie, ut <rs>pirrum</rs> regem <rs>epirota&gd;rum</rs> 
-expulsum restitueret in regnum, <hi>ciprum</hi> quoque optineret, ac <rs>fenicem</rs>: et deuicto <rs>de&gd;metrio</rs> 
-filio <rs>antignoni</rs> <rs>seleuco</rs> partem regni sui, que <rs>antigono</rs> fuerat ablata, restitueret, <hi>ca</hi>&gd;riam 
+&glb;inuaditur. <rs>sallentinis</rs> in <rs>apulia</rs> bellum inditum est a <rs>romanis</rs>, et <rs>brundisini</rs> cum ciuitate 
+&glb;capti sunt. <rs>ieronimus</rs>. <hi>post</hi> <rs>alexandrum</rs> <rs>ptolomeus</rs> <rs>lagi</rs> filius primus regnauit in <rs>egypto</rs>, uir 
+&glb;prudentissimus, et fortissimus, atque ditissimus, et <pb n="52v" facs="vat:59" ed="#a"/> tante potentie, ut <rs>pirrum</rs> regem <rs>epirota&gd;rum</rs> 
+expulsu<subst><del rend="none">s</del><add place="strikeover" type="correction">m</add></subst> restitueret in regnum, <rs>ciprum</rs> quoque optineret, ac <rs>fenicem</rs>: et, deuicto <rs>de&gd;metri</rs> 
+filio <rs>antigoni</rs>, <rs>seleuco</rs> partem regni sui, qu<seg type="ae">ae</seg> <rs>antigono</rs> fuerat ablata, restitueret, <rs>ca&gd;riam</rs> 
 quoque optineret, et multas insulas, urbesque, ac regiones, de quibus non est huius 
-&glb;temporibus scribere. 
+&glb;temporis scribere. 
 </p> 
 
 
