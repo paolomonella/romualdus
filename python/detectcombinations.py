@@ -1,8 +1,8 @@
 # facs="img/vat.lat.3973.pdf#page=29"!/usr/python3.6
 # -*- coding: utf-8 -*-
 
-import constants
-from constants import ns, tei_ns, xml_ns, html_ns 
+import myconst
+from myconst import ns, tei_ns, xml_ns, html_ns 
 
 import csv
 import re
@@ -14,9 +14,9 @@ def detectCommonAbbrCombinations (siglum, quiet=True):
         in the csv file.
         '''
     ot = []     # This will become a list of lists. Cols: 0=abbr 1=XMLexpan 2=CSVexpan 3=note
-    xmlfile = '%s%s.xml' % (constants.xmlpath, siglum)
+    xmlfile = '%s%s.xml' % (myconst.xmlpath, siglum)
     tree = etree.parse(xmlfile)
-    csvcombifile = '%s%s-combi.csv' % (constants.csvpath, siglum)   # The CSV file with the common abbreviation combinations
+    csvcombifile = '%s%s-combi.csv' % (myconst.csvpath, siglum)   # The CSV file with the common abbreviation combinations
     with open(csvcombifile) as combifile:
         combi = list(list(rec) for rec in csv.reader(combifile, delimiter='\t')) #reads csv into a list of lists
         # Columns: 0=Grapheme  1=Alphabeme(s)    2=Notes
