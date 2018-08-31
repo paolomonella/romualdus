@@ -3,7 +3,7 @@
 
 
 
-import constants
+import myconst
 from lxml import etree
 import roman
 import re
@@ -17,7 +17,7 @@ def getRomanContent(num, checkallnumbers=True, debug=False):
         not to modify it now, since I don't remember why I had put this option in the function).
     '''
     r = ''
-    n = constants.ns
+    n = myconst.ns
     if checkallnumbers or num.get('value') is None:
         if num.find('.//t:choice', n) is not None:  # If <num> has <choice>/<reg>+<orig> inside (e.g. IIJ/iii or VI/ui)
             if num.find('.//t:choice', n).find('.//t:reg', n) is not None:
@@ -53,7 +53,7 @@ def setValues(siglum):
         The 'siglum' is the XML filename to parse ('a' for 'a.xml'; 'bonetti' for 'bonetti.xml' etc.).
         Then write the modified tree to another XML file ('numerals-a.xml'; 'numerals-bonetti.xml' etc.).
         '''
-    n = constants.ns
+    n = myconst.ns
     tree = etree.parse('../xml/%s.xml' % siglum)
     numbers = tree.findall('.//t:num', n)
     for number in numbers:
@@ -78,7 +78,7 @@ def setValues(siglum):
 
 def checkNumerals(siglum):
     tree = etree.parse('../xml/%s.xml' % siglum)
-    numbers = tree.findall('.//t:num', constants.ns)
+    numbers = tree.findall('.//t:num', myconst.ns)
     rd = {'VIIII': 'IX', 'IIII': 'IV', 'LXXXX': 'XC', 'XXXX': 'XL', 'DCCCC': 'CM', 'CCCC': 'CD'}
     for n in numbers:
         if n.get('value') is None:  # <num>s with no @value attribute

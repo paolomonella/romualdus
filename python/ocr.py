@@ -50,7 +50,7 @@ requieuit Deus' ab omni opere prime ac noue conditionis; hoc autem secundum lict
 import os
 import re
 from string import punctuation
-import constants
+import myconst
 from lxml import etree
 import time
 
@@ -63,7 +63,7 @@ def properNames (properNamesInputXmlFile):
         Add to that set the proper names added 'by hand' to file rs.txt
         '''
     names_tree = etree.parse(properNamesInputXmlFile)
-    rss = names_tree.findall('.//t:rs', constants.ns)
+    rss = names_tree.findall('.//t:rs', myconst.ns)
     # namelist = [rs.text.lower() for rs in rss]
     namelist = [rs.text.lower() for rs in rss if len(list(rs)) == 0 ]   # The 'if' excludes <rs>'s with element children
     '''
@@ -131,7 +131,7 @@ def checkrs (myProperNamesInputFile):
             find = etree.XPath('//text()[re:match(., "\W%s\W", "i")]/parent::*' % (myname), namespaces={'re':regexpNS})
             # Doc: http://exslt.org/regexp/ e http://exslt.org/regexp/functions/test/index.html
             for r in find(names_tree):
-                if r.tag != constants.tei_ns + 'rs':
+                if r.tag != myconst.tei_ns + 'rs':
                     print('%10s %s %10s %s %10s %s' % ('File:', myProperNamesInputFile, 'Name:', myname, 'Tag:', r.tag))
                     #print(' '.join([t.strip() for t in r.itertext()]))
 
@@ -147,9 +147,9 @@ def spread_ids (get_p_ids_from, append_p_ids_to):
         original XML files.
         '''
     input_tree = etree.parse('../xml/%s.xml' % get_p_ids_from)
-    input_body = input_tree.find('.//t:body', constants.ns)
-    pp = input_body.findall('.//t:p', constants.ns)
-    ids = [p.get(constants.xml_ns + 'id') for p in pp]
+    input_body = input_tree.find('.//t:body', myconst.ns)
+    pp = input_body.findall('.//t:p', myconst.ns)
+    ids = [p.get(myconst.xml_ns + 'id') for p in pp]
     
     for ms in append_p_ids_to:
         datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
@@ -157,13 +157,13 @@ def spread_ids (get_p_ids_from, append_p_ids_to):
         backup_filename = '_'.join([datetime, ms, 'id-spreading-backup.xml'])
         os.system('cp ../xml/%s ../xml/%s' % (input_filename, backup_filename)) # Create backup of old file
         output_tree = etree.parse('../xml/%s.xml' % ms)
-        output_body = output_tree.find('.//t:body', constants.ns)
-        pp = output_body.findall('.//t:p', constants.ns)
-        outids = [p.get(constants.xml_ns + 'id') for p in pp]
+        output_body = output_tree.find('.//t:body', myconst.ns)
+        pp = output_body.findall('.//t:p', myconst.ns)
+        outids = [p.get(myconst.xml_ns + 'id') for p in pp]
         for ii in ids:
             if ii.strip() not in outids:
-                newp = etree.Element(constants.tei_ns + 'p')
-                newp.set(constants.xml_ns + 'id', ii)
+                newp = etree.Element(myconst.tei_ns + 'p')
+                newp.set(myconst.xml_ns + 'id', ii)
                 output_body.append(newp)
                 #print('Nel MS %s NON c\'era %s' % (ms, ii))
         output_tree.write('../xml/%s.xml' % (ms), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
@@ -346,9 +346,9 @@ class ocr:
         import csv
 
 	# Input CSV combi file
-        combifile = '%s%s-combi.csv' % (constants.csvpath, abbrev_siglum)    # csvpath might look like "../csv/"
+        combifile = '%s%s-combi.csv' % (myconst.csvpath, abbrev_siglum)    # csvpath might look like "../csv/"
 	# Input CSV tos file
-        tosfile = '%s%s-tos.csv' % (constants.csvpath, abbrev_siglum)    # csvpath might look like "../csv/"
+        tosfile = '%s%s-tos.csv' % (myconst.csvpath, abbrev_siglum)    # csvpath might look like "../csv/"
 
         with open(combifile) as mycombi:
             combi = list(list(rec) for rec in csv.reader(mycombi, delimiter='\t')) #reads csv into a list of lists
@@ -429,7 +429,7 @@ class ocr:
         input_text = ''.join(self.lines)    # Cat all input text (with XML tags) in one long string
         temp_body = etree.fromstring(input_text)  # This is the temporary element <div> to wrap the input text
         export_tree = etree.parse(outputXmlFile)
-        export_body = export_tree.find('.//t:body', constants.ns)
+        export_body = export_tree.find('.//t:body', myconst.ns)
         for d in temp_body:
             export_body.append(d)
         export_tree.write(outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
@@ -442,7 +442,7 @@ class ocr:
 
 ''' PROPER NAMES '''
 
-#listNames('../xml/g.xml', constants.tei_ns) 
+#listNames('../xml/g.xml', myconst.tei_ns) 
 #updateNamesFile('../xml/a.xml')
 #print('\n-----------------------\n\nNEW SEARCH: \n')
 #for myf in ['../xml/a.xml', '../xml/g.xml']:

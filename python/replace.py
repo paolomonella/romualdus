@@ -4,7 +4,7 @@
 import re
 from string import punctuation
 
-import constants
+import myconst
 from other import metatext 
 
 def myReplaceAll (myGraph, myAlpha, myElement, wholeWord=False):

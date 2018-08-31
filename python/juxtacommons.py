@@ -10,8 +10,8 @@ import re
 from copy import deepcopy
 from lxml import etree
 
-import constants
-from constants import ns, tei_ns, xml_ns, html_ns 
+import myconst
+from myconst import ns, tei_ns, xml_ns, html_ns 
 '''
 from other import metatext 
 from other import baretextize 
@@ -25,13 +25,13 @@ class msTree:
 
     def __init__ (self, siglum):
         self.siglum = siglum
-        self.xmlfile = '%s/%s.xml' % (constants.xmlpath, siglum)
+        self.xmlfile = '%s/%s.xml' % (myconst.xmlpath, siglum)
         # Source of next, commented, line: https://stackoverflow.com/questions/14731633/
         # how-to-resolve-external-entities-with-xml-etree-like-lxml-etree#19400397
         parser = etree.XMLParser(load_dtd=True, resolve_entities=True)
         #parser = etree.XMLParser(resolve_entities=True)
         self.tree = etree.parse(self.xmlfile, parser=parser)
-        self.outputXmlFile = '%s/juxtacommons/%s%s.xml' % (constants.xmlpath, siglum, '_juxta')
+        self.outputXmlFile = '%s/juxtacommons/%s%s.xml' % (myconst.xmlpath, siglum, '_juxta')
 
     def remove_comments (self):
         ''' Remove XML comments such as <!-- comment --> '''
@@ -90,15 +90,15 @@ class msTree:
             <choice><sic>dimicarum</sic><corr type="typo">dimicarunt</corr></choice>
             Note that the element to keep (<reg> or <corr>) always has a @type, that goes to argument "keeptype"
             '''
-        for k in self.tree.findall('.//t:%s[@type="%s"]' % (keeptag, keeptype), constants.ns):
+        for k in self.tree.findall('.//t:%s[@type="%s"]' % (keeptag, keeptype), myconst.ns):
             # If parenttag is the parent and keeptag is the sibling:
             parent = k.getparent()
-            if parent.tag == constants.tei_ns + parenttag and parent.find('.//t:%s' % (removetag), constants.ns) is not None:   
+            if parent.tag == myconst.tei_ns + parenttag and parent.find('.//t:%s' % (removetag), myconst.ns) is not None:   
                 # The following 'remove' functions should be safe b/c <orig>, <reg> and the other children of <choice>,
                 # as wella as <add> / <del> children of <subst>
                 # never have a tail b/c <orig> and <reg> are the only children of <choice>
                 # (otherwise, the tail would be removed too)
-                r = k.getparent().find('.//t:%s' % (removetag), constants.ns)   # The element to remove
+                r = k.getparent().find('.//t:%s' % (removetag), myconst.ns)   # The element to remove
                 if r.tail is not None:
                     print('Warning: element', r.tag, 'has tail text «' + r.tail + '» that is also being removed')
                 r.getparent().remove(r)
@@ -108,12 +108,12 @@ class msTree:
             Then, transform text marked as <p type="ghead1"> or "ghead2" to all uppercase,
             because it was in G(arufi) head(s) '''
         for mytagname in ['rs', 'hi']:
-            for e in self.tree.findall('.//t:%s' % (mytagname), constants.ns):
+            for e in self.tree.findall('.//t:%s' % (mytagname), myconst.ns):
                 if e.text:  # If the content of <rs>/<hi> starts with a text node, capitalize it
                     e.text = e.text.capitalize()
                 else:   # If the content of <rs>/<hi> starts with an element...
                     echild = e[0]
-                    if echild.tag == constants.tei_ns + 'choice': # In case <rs><choice>etc. or <hi><choice>etc.
+                    if echild.tag == myconst.tei_ns + 'choice': # In case <rs><choice>etc. or <hi><choice>etc.
                         # ...capitalize text of all children of <choice>
                         for alternative in echild:
                             alternative.text = alternative.text.capitalize()
@@ -124,12 +124,12 @@ class msTree:
                         else:
                             # ... or capitalize the first child of the first child of <rs>/</hi>
                             echild[0].text = echild[0].text.capitalize()
-        for e in self.tree.findall('.//t:p[@type="ghead1"]', constants.ns):
-            for c in e.findall('.//t:*', constants.ns):
+        for e in self.tree.findall('.//t:p[@type="ghead1"]', myconst.ns):
+            for c in e.findall('.//t:*', myconst.ns):
                 if c.text is not None: c.text = c.text.upper()
                 if c.tail is not None: c.tail = c.tail.upper() 
-        for e in self.tree.findall('.//t:p[@type="ghead2"]', constants.ns): # In fact, this should be small-caps, but still...
-            for c in e.findall('.//t:*', constants.ns):
+        for e in self.tree.findall('.//t:p[@type="ghead2"]', myconst.ns): # In fact, this should be small-caps, but still...
+            for c in e.findall('.//t:*', myconst.ns):
                 if c.text is not None: c.text = c.text.upper()
                 if c.tail is not None: c.tail = c.tail.upper() 
 
@@ -149,16 +149,16 @@ class msTree:
                 for reg in p.findall('.//t:reg', ns):   # Remove all regularizations, i.e. all <reg> elements
                     regparent = reg.getparent()
                     regparent.remove(reg)   # This is safe because <reg> never has a tail
-                etree.strip_tags(p, constants.tei_ns + t)
+                etree.strip_tags(p, myconst.tei_ns + t)
         if removepar:
             body = self.tree.find('.//t:body', ns)
             for p in body.findall('.//t:p', ns):   # Replace <p xml:id="g163.8-163.10" decls="#ocr"> with 163.8-163.10
-                xmlid = p.get(constants.xml_ns + 'id')
+                xmlid = p.get(myconst.xml_ns + 'id')
                 try:
                     p.text = ''.join([xmlid, p.text])
                 except:
                     print(p.text)
-            etree.strip_tags(body, constants.tei_ns + 'p')
+            etree.strip_tags(body, myconst.tei_ns + 'p')
 
     def  my_strip_tags (self, tagname):
         '''Remove start and end tag but keep text and tail'''
@@ -166,7 +166,7 @@ class msTree:
 
     def  my_strip_elements (self, tagname, my_with_tail=False):
         '''Remove start and end tag; remove text; keep tail if my_with_tail=False (default)'''
-        etree.strip_elements(self.tree, constants.tei_ns + tagname, with_tail=my_with_tail)
+        etree.strip_elements(self.tree, myconst.tei_ns + tagname, with_tail=my_with_tail)
 
     def write (self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)

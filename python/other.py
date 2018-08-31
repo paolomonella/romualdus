@@ -3,7 +3,7 @@
 
 import re
 
-import constants
+import myconst
 
 def metatext (mySuspectElement):
     
@@ -11,7 +11,7 @@ def metatext (mySuspectElement):
     in the metatextlist. Return True or False.
     '''
     metasearch = False
-    for mtxt in constants.metatextlist:
+    for mtxt in myconst.metatextlist:
         if mySuspectElement.get('class') and re.match('.*%s.*' % mtxt, mySuspectElement.get('class')):
             metasearch = True
     return metasearch

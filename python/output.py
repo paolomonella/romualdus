@@ -3,8 +3,8 @@
 
 from lxml import etree
 
-from constants import htmlpath
-from constants import ns, tei_ns, xml_ns, html_ns 
+from myconst import htmlpath
+from myconst import ns, tei_ns, xml_ns, html_ns 
 from layers import extractLayers
 
 def newHTMLTree ():

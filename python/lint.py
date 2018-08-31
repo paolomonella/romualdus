@@ -5,8 +5,8 @@ import csv
 from copy import deepcopy
 from lxml import etree
 
-import constants
-from constants import ns, tei_ns, xml_ns, html_ns 
+import myconst
+from myconst import ns, tei_ns, xml_ns, html_ns 
 
 def tosLint (lintSiglum):
     ''' This checks if the characters used for GL and AL in the manuscript XML are listed in the
@@ -20,14 +20,14 @@ def tosLint (lintSiglum):
 
 
     # Import table of signs
-    csvfile = '%s%s-tos.csv' % (constants.csvpath, lintSiglum)    # csvpath might look like "../csv/"
+    csvfile = '%s%s-tos.csv' % (myconst.csvpath, lintSiglum)    # csvpath might look like "../csv/"
     with open(csvfile) as mtf:  # My Tables of signs File
         myTos = list(list(rec) for rec in csv.reader(mtf, delimiter='\t')) #reads csv into a list of lists
 
 
     # Check
-    glegal = deepcopy(constants.legal)    # glegal: list of chars legal at GL
-    alegal = deepcopy(constants.legal)    # alegal: list of chars legal at AL
+    glegal = deepcopy(myconst.legal)    # glegal: list of chars legal at GL
+    alegal = deepcopy(myconst.legal)    # alegal: list of chars legal at AL
     for row in myTos:
         if myTos.index(row) > 0:
             glegal.append(row[0])
@@ -36,7 +36,7 @@ def tosLint (lintSiglum):
     alegalset = set(alegal) # It's possible that two graphemes (e.g. 'e' and 'æ') have the same alphabetical meaning (e.g.: 'e'),
                             # so the same char in column 'Alphabeme(s)' might be repeated. This is to avoid duplicates.
     gfz = [tei_ns + x for x in ['expan', 'note']]   # GL Free Zone (elements that won't be checked)
-    xmlfile = '%s%s.xml' % (constants.xmlpath, lintSiglum)    # xmlpath might look like "../xml/"
+    xmlfile = '%s%s.xml' % (myconst.xmlpath, lintSiglum)    # xmlpath might look like "../xml/"
     lintTree = etree.parse(xmlfile)
     lintBody = lintTree.find('.//t:text', ns)
     for e in lintBody.findall('.//t:*', ns):

@@ -10,8 +10,8 @@ import re
 from copy import deepcopy
 from lxml import etree
 
-import constants
-from constants import ns, tei_ns, xml_ns, html_ns 
+import myconst
+from myconst import ns, tei_ns, xml_ns, html_ns 
 from other import metatext 
 from other import baretextize 
 from replace import myReplaceAll
@@ -26,19 +26,19 @@ def extractLayers (siglum, baretext=False):
     '''
     
     # Read ToS
-    toscsvfile = '%s/%s-tos.csv' % (constants.csvpath, siglum)
+    toscsvfile = '%s/%s-tos.csv' % (myconst.csvpath, siglum)
     with open(toscsvfile) as atosfile:
         tos = list(list(rec) for rec in csv.reader(atosfile, delimiter='\t')) #reads csv into a list of lists
         # Columns: 0=Grapheme  1=Alphabeme(s)    2=Grapheme visualization  3=Type    4=Notes    5=Image(s)
     
     # Read Abbreviation Combinations file
-    combicsvfile = '%s/%s-combi.csv' % (constants.csvpath, siglum)
+    combicsvfile = '%s/%s-combi.csv' % (myconst.csvpath, siglum)
     with open(combicsvfile) as combifile:
         combi = list(list(rec) for rec in csv.reader(combifile, delimiter='\t')) #reads csv into a list of lists
         # Columns: 0=Grapheme  1=Alphabeme(s)    2=Notes
     
     # Parse the XML source tree
-    xmlfile = '%s/%s.xml' % (constants.xmlpath, siglum)
+    xmlfile = '%s/%s.xml' % (myconst.xmlpath, siglum)
     tree = etree.parse(xmlfile)
 
     for x in tree.findall('.//t:*', ns):
@@ -69,7 +69,7 @@ def extractLayers (siglum, baretext=False):
     for tag in ['rs', 'choice', 'abbr', 'expan', 'pb', 'cb', 'note', 'title', 'orig', 'reg', 'sic', 'corr', 'said', 'del']:
         for x in alltext.findall('.//h:' + tag, ns):
             l = etree.QName(x).localname
-            if tag in constants.metatextlist:     # Add class "metatext" to those tags that don't belong to the medieval text
+            if tag in myconst.metatextlist:     # Add class "metatext" to those tags that don't belong to the medieval text
                 x.set('class', 'metatext %s' % l)
             else:
                 x.set('class', l)
@@ -127,7 +127,7 @@ def extractLayers (siglum, baretext=False):
     g_alltext = deepcopy(alltext)    # This is the XML <body>, that will become <div xml:id="GLdiv"> in HTML
     
     # At GL, get rid of AL (modern) punctuation
-    alpString = ''.join(constants.alp)
+    alpString = ''.join(myconst.alp)
     translator = str.maketrans('', '', alpString)
     for e in g_alltext.findall('.//*'):
         if e.text and not metatext(e):

@@ -4,7 +4,7 @@
 
 ''' Examples on how to run the functions in this module: 
 
-    listnames('../xml/g.xml', constants.tei_ns) 
+    listnames('../xml/g.xml', myconst.tei_ns) 
     updatenamesfile('../xml/a.xml')
     print('\n-----------------------\n\nNEW SEARCH: \n')
     for myf in ['../xml/a.xml', '../xml/g.xml']:
@@ -14,7 +14,7 @@
 
 import os
 import re
-import constants
+import myconst
 from lxml import etree
 import time
 
@@ -63,7 +63,7 @@ class Names():
             All names are in lowercase.
             '''
         ond = {}    # (output names dictionary) 
-        mynames = self.nametree.findall('.//t:%s' % (mydicttag), constants.ns)
+        mynames = self.nametree.findall('.//t:%s' % (mydicttag), myconst.ns)
 
         # Case 1: <rs> without child elements
         ond = {rs:rs.text.lower() for rs in mynames if len(list(rs)) == 0 }   
@@ -73,8 +73,8 @@ class Names():
             if len(list(m)) > 0:
                 for outcast in ['abbr', 'orig', 'sic', 'del']:  # Remove 'orig' and company
                                                                 # (i.e. only leave 'reg' & co.: 'jovem' becomes 'iouem') 
-                    if m.find('.//t:%s' % (outcast), constants.ns) is not None:   
-                        outcastelem = m.find('.//t:%s' % (outcast), constants.ns)
+                    if m.find('.//t:%s' % (outcast), myconst.ns) is not None:   
+                        outcastelem = m.find('.//t:%s' % (outcast), myconst.ns)
                         outcastelem.getparent().remove(outcastelem)
                 ond[m] = ''.join(m.itertext()).replace('\n', '')
 
@@ -101,7 +101,7 @@ class Names():
                 each word only occurs once.
             '''
         rsset = self.nameset(mysettag='rs')
-        mybody = self.nametree.find('.//t:body', constants.ns)
+        mybody = self.nametree.find('.//t:body', myconst.ns)
         regexpNS = 'http://exslt.org/regular-expressions'
         print('\n---\n\nNames marked with <rs> at some point of the text, but not marked in other points:')
         unmarked = []
@@ -111,7 +111,7 @@ class Names():
                 # Doc: http://exslt.org/regexp/ e http://exslt.org/regexp/functions/test/index.html
                 #for r in find(self.nametree):
                 for r in find(mybody):
-                    if r.tag != constants.tei_ns + 'rs':    # If the proper name is not marked with <rs>
+                    if r.tag != myconst.tei_ns + 'rs':    # If the proper name is not marked with <rs>
                         if outputmethod == 'returnset':
                             unmarked.append(myname)
                         elif outputmethod == 'screen':
