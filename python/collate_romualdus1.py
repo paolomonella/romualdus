@@ -6,8 +6,8 @@
 
 from collatex import *
 from lxml import etree
-import json,re,constants
-from constants import ns, tei_ns, xml_ns, html_ns 
+import json,re,myconst
+from myconst import ns, tei_ns, xml_ns, html_ns 
 
 
 # Input files
