@@ -86,15 +86,16 @@
                     With @type="textcrit": note on textual critical matters.
                     With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
                 </tagUsage>
-                <tagUsage gi="soCalled">
-                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
-                    If present, quotation marks have been retained.
-                </tagUsage>
                 <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source
                     print edition, are marked up with <gi>quote</gi> in this digital edition.
                     Quotation marks, if present, have been retained, and @type="biblia" means that it
                     is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in
-                    http://it.alim.unisi.it/documentazione/</tagUsage>
+                    http://it.alim.unisi.it/documentazione/
+                </tagUsage>
+                <tagUsage gi="soCalled">
+                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
+                    If present, quotation marks have been retained.
+                </tagUsage>
                 <tagUsage gi="surplus">
                     In the print edition the text considered redundant by the editor was between &lt;square brackets&gt;
                     I am omitting those brackets in this file.
