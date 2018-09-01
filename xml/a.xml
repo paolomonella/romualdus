@@ -85,22 +85,61 @@
         </editorialDecl>
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
-                <!-- mettili in ordine alfabetico (anche in bonetti.xml, ma lì dovrebbero esserlo già-->
                 <tagUsage gi="add">
-                    <p>With @type="integration", it marks words that add to the rest of the text.
-                    With @type="correction", it marks words that meant to substitute a part of the text.</p>
-                    <p>It is used either alone, or in combination with <gi>subst</gi> and <gi>del</gi>.</p>
-                    <p>Possible values for @place: "nextline", "above", "footer", "addedfolios", "margin",
-                    "marginandfooter", "inline", "strikeover", "above".</p>
+                    <p>When it is child of <gi>subst</gi> and sibling of <gi>del</gi>, it is meant to
+                        substitute the textual portion marked with <gi>del</gi>. Otherwise, it represents
+                        an addition to the text.</p>
+                    <p>If no @hand attribute is provided, it is implied that the deletion
+                        (and the correction, if any) are made by the main hand of the manuscript.
+                        If they are made by another hand, a @hand attribute is provided.</p>
+                    <p>Possible values for @place: "marginandfooter", "footer", "strikeover", "margin",
+                        "inline", "above", None, "addedfolios", "nextline".</p>
                 </tagUsage>
+                <tagUsage gi="anchor">
+                    See above the note on the usage of <gi>link</gi>.
+                    Like <gi>link</gi>, also <gi>anchor</gi> has @type="transposition".
+                    Element <gi>anchor</gi> has the same values of @subtype as the <gi>link</gi> that points to it:
+                    it marks the point of the text at which a paragraph is collocated 
+                    <list>
+                        <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
+                        <item>by Garufi only (if @subtype="garuficollocation"), or</item>
+                        <item>by Bonetti only (if @subtype="bonetticollocation")</item>
+                    </list>
+                </tagUsage>
+                <tagUsage gi="del">
+                    <p>It is used either alone for a passage deleted and not substituted by the scribe,
+                        or in combination with <gi>subst</gi> and <gi>add</gi>.</p>
+                    <p>Possible values for @rend: "rasura", "nodeletion" (only with <gi>subst</gi> and <gi>add</gi>),
+                        "strikethrough".</p>
+                    <p>If no @hand attribute is provided, it is implied that the deletion 
+                        and the correction, if any) are made by the main hand of the manuscript.
+                        If they are made by another hand, a @hand attribute is provided.</p>
+                </tagUsage> 
                 <tagUsage gi="hi">
                     Used to mark up words capitalized in the print edition, but not constituting 
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
-                <tagUsage gi="seg">
-                    With @type="ae", it is used to mark the sequence of alphabemes 'ae' when it is represented 
-                    by grapheme 'e caudatum' in the manuscript.
+                <tagUsage gi="link">
+                    With @type="transposition", it links a paragraph (first teidata.pointer in the value)
+                    of the manuscript text to an <gi>anchor</gi> (second teidata.pointer in the value)
+                    marking the point of the text in which that paragraph is collocated 
+                    <list>
+                        <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
+                        <item>by Garufi only (if @subtype="garuficollocation"), or</item>
+                        <item>by Bonetti only (if @subtype="bonetticollocation")</item>
+                    </list>
+                    The 
                 </tagUsage>
+                <tagUsage gi="milestone">
+                    <list>
+                        <item>With @type="bonetti_is_collation_exemplar_from_here_on" it marks the point of the text 
+                            from which I used the file with the OCR of the Bonetti edition as a collation base.
+                            Before that point, I had used the OCR of the Garufi edition as base.</item>
+                        <item>With @type="no-par-break-in-bonetti" and @ed="#b" it is put at a point of the text 
+                            in which Garufi has a paragraph break but Bonetti does not.</item>
+                        <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put at a point of the text 
+                            in which Bonetti has a paragraph break but Garufi does not.</item>
+                    </list>
                 <tagUsage gi="note">
                     With @resp="#pm" (Paolo Monella):
                     <list>
@@ -125,51 +164,13 @@
                             The note normally ends with "et cetera…"</item>
                     </list>
                 </tagUsage>
+                <tagUsage gi="seg">
+                    With @type="ae", it is used to mark the sequence of alphabemes 'ae' when it is represented 
+                    by grapheme 'e caudatum' in the manuscript.
+                </tagUsage>
                 <tagUsage gi="soCalled">
                     Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
                 </tagUsage>
-                <tagUsage gi="del">
-                    <p>It is used either alone for a passage deleted and not substituted by the scribe,
-                    or in combination with <gi>subst</gi> and <gi>add</gi>.</p>
-                    <p>Possible values for @rend: "strikethrough", "rasura",
-                    "nodeletion" (the latter, only with <gi>subst</gi> and <gi>add</gi>).</p>
-                    <p>If no @hand attribute is provided, it is implied that the deletion 
-                    (and the correction, if any) are made by the main hand of the manuscript.
-                    If they are made by another hand, a @hand attribute is added to <gi>subst</gi>,
-                    <gi>del</gi> and <gi>add</gi>.</p>
-                </tagUsage> 
-                <tagUsage gi="link">
-                    With @type="transposition", it links a paragraph (first teidata.pointer in the value)
-                    of the manuscript text to an <gi>anchor</gi> (second teidata.pointer in the value)
-                    marking the point of the text in which that paragraph is collocated 
-                    <list>
-                        <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
-                        <item>by Garufi only (if @subtype="garuficollocation"), or</item>
-                        <item>by Bonetti only (if @subtype="bonetticollocation")</item>
-                    </list>
-                    The 
-                </tagUsage>
-                <tagUsage gi="anchor">
-                    See above the note on the usage of <gi>link</gi>.
-                    Like <gi>link</gi>, also <gi>anchor</gi> has @type="transposition".
-                    Element <gi>anchor</gi> has the same values of @subtype as the <gi>link</gi> that points to it:
-                    it marks the point of the text at which a paragraph is collocated 
-                    <list>
-                        <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
-                        <item>by Garufi only (if @subtype="garuficollocation"), or</item>
-                        <item>by Bonetti only (if @subtype="bonetticollocation")</item>
-                    </list>
-                </tagUsage>
-                <tagUsage gi="milestone">
-                    <list>
-                        <item>With @type="bonetti_is_collation_exemplar_from_here_on" it marks the point of the text 
-                            from which I used the file with the OCR of the Bonetti edition as a collation base.
-                            Before that point, I had used the OCR of the Garufi edition as base.</item>
-                        <item>With @type="no-par-break-in-bonetti" and @ed="#b" it is put at a point of the text 
-                            in which Garufi has a paragraph break but Bonetti does not.</item>
-                        <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put at a point of the text 
-                            in which Bonetti has a paragraph break but Garufi does not.</item>
-                    </list>
                 <tagUsage gi="title">
                     Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus".
                 </tagUsage>
@@ -338,7 +339,7 @@ annos <num value="330">cccxxx</num>, postea <num value="700">dcc</num>. <rs>seth
 <p xml:id="g6.1-6.6" decls="#algl"> 
 &glb;<rs>seth</rs> habens annos <num value="105">cv</num> genuit <rs>enos</rs>, cui suþuixit annos <num value="816">dcccxui</num> usq9 ad <num value="167">clxuii</num> 
 &glb;annu3 natiuitatis <rs>lamech</rs>, porro <rs>septuaginta</rs> int0pretes ante natu3 <rs>enos</rs> annos <num value="205">ccv</num> postea 
-&glb;posuere annos <num value="707">dccuii</num>. <rs>enos</rs> int0pretat2 homo, de quo <add place="above" type="integration"><rs>deus</rs></add> benedi<add place="above" type="integration">ci</add>t2, iste cepit 
+&glb;posuere annos <num value="707">dccuii</num>. <rs>enos</rs> int0pretat2 homo, de quo <add place="above"><rs>deus</rs></add> benedi<add place="above">ci</add>t2, iste cepit 
 &glb;inuocare nomen <rs>dni0</rs>, quia hominu3 e0 ŋprium, ut suæ fragilitatis memores, inuocent 
 &glb;<choice><abbr>co0</abbr><expan>con</expan></choice>ditoris auxilium, eo4 dumtaxat, qui in fide <rs>xpi0</rs>
 <pb n="18r" facs="vat:24" ed="#a"/>
@@ -356,7 +357,7 @@ uiuentes, filii resurrectionis sic
 <p xml:id="g6.11-6.13" decls="#algl"> 
 &glb;<rs>cainan</rs> habens annos <num value="70">lxx</num> genuit <rs>malalehel</rs>, post cuius ortu3 uixit annos <num value="840">dcccxl</num> id e0 
 &glb;usq9 ad <num value="179">clxxix</num> annu3 natiuitatis <rs>noe</rs>; <rs>septuaginta</rs> int0pretes ante natu3 <rs>malalehel</rs> 
-&glb;<num value="170">clxx</num> postea dixere <add place="margin" type="integration">dccxl</add>, secdm0 sept0 ann7 <num value="995"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xcv</num> iuxta <rs>hebreos</rs> <num value="460"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lx</num>. 
+&glb;<num value="170">clxx</num> postea dixere <add place="margin">dccxl</add>, secdm0 sept0 ann7 <num value="995"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xcv</num> iuxta <rs>hebreos</rs> <num value="460"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lx</num>. 
 </p> 
 
 <p xml:id="g6.14-1.16" decls="#algl"> 
@@ -388,7 +389,7 @@ ante natu3 <rs>mathusala3</rs> posuere <num value="165">clxu</num> annos, postea
 ŋ <rs>do0</rs> laborans etatib9, in septima sabbati futuri <choice><abbr>gl0</abbr><expan>glori</expan></choice>a3 dedi<pb break="no" n="19r" facs="vat:25" ed="#a"/>cationis expectat, 
 &glb;atq9 reŋbi sola presenti sunt felicitate c0tenti. <rs>cain</rs> uero ciuitate3, qua3 statuit 
 &glb;n0 in septima generati<choice><abbr>o0</abbr><expan>on</expan></choice>es, sed in primogenito <rs>enoch</rs> filio c0secrat. <rs>septuaginta</rs> 
-&glb;<num value="1354">mcccl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, <rs>he<choice><abbr>br0</abbr><expan>brei</expan></choice></rs> <num value="874">dccclxx<choice><orig>ii<add place="above" type="integration">i</add>i</orig><reg type="numeral">iu</reg></choice></num>. 
+&glb;<num value="1354">mcccl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, <rs>he<choice><abbr>br0</abbr><expan>brei</expan></choice></rs> <num value="874">dccclxx<choice><orig>ii<add place="above">i</add>i</orig><reg type="numeral">iu</reg></choice></num>. 
 </p> 
 
 <p xml:id="g7.1-7.7" decls="#al"> 
@@ -437,7 +438,7 @@ fuerit, posteaque in hoc mundo <num value="20">xx</num> annis uixerit. <hi>et</h
 </p> 
 
 <p xml:id="g7.30-8.6" decls="#al"> 
-&glb;<hi>secunda</hi> seculi etate, prima <add place="above" type="integration">hora</add> huius diei, qu<seg type="ae">ae</seg> est uicesima septima mensis secundi, egres&gd;sus 
+&glb;<hi>secunda</hi> seculi etate, prima <add place="above">hora</add> huius diei, qu<seg type="ae">ae</seg> est uicesima septima mensis secundi, egres&gd;sus 
 est <rs>noe</rs> de arca, in qua pauci, idest octo anime salue facte sunt per aquam, quod com&gd;memorans 
 in epistola beatus apostolus <rs>petrus</rs> mirifice statim exponere curauit, cum subiun&gd;xit: 
 quos, et uos nunc similis forme saluos fecit baptisma non carnis depositio sordium, 
@@ -457,7 +458,7 @@ idest usque ad quinquagesimum annum natiuitatis <rs>iacobus</rs>. <rs>septuagint
 
 <p xml:id="g8.12-8.23" decls="#al"> 
 &glb;<rs>arfaxat</rs> annos <num value="35">xxxu</num> genuit <rs>sale</rs>. <hi>hic</hi> <rs>septuaginta</rs> interpretes unam generationem plus 
-&glb;quam hebraica <subst><del rend="rasura">meritas</del><add place="strikeover" type="correction">ueritas</add></subst> posuere, dicentes, quod <rs>arfaxat</rs> tum esset <num value="335">cccxxxu</num> annorum ge&gd;nuerit 
+&glb;quam hebraica <subst><del rend="rasura">meritas</del><add place="strikeover">ueritas</add></subst> posuere, dicentes, quod <rs>arfaxat</rs> tum esset <num value="335">cccxxxu</num> annorum ge&gd;nuerit 
 <rs>cainam</rs>, qui cum <num value="130">cxxx</num> annorum fuerit, ipse genuerit <rs>sale</rs>, quorum translationem 
 &glb;euangelista <rs>lucas</rs> hoc loco uidetur esse secutus. <hi>uerum</hi> chronografi <rs>grecorum</rs> cum gene&gd;rationum 
 seriem ad auctoritatem hebraicam castigassent, ablata una generatione <rs>cainan</rs>, 
@@ -467,7 +468,7 @@ seriem ad auctoritatem hebraicam castigassent, ablata una generatione <rs>cainan
 ueritatem annis <num value="650">dcl</num> maiorem, idest annos <num value="842">dcccxlii</num>. <hi>uixit</hi> autem <rs>arfaxat</rs> post natum 
 &glb;<rs>salem</rs> <pb n="21r" facs="vat:27" ed="#a"/>annis <num value="303">ccciii</num> cui tamen <rs>septuaginta</rs> interpretes post natum <rs>cainan</rs> scribunt annos 
 &glb;<num value="430"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx</num> et <rs>cainan</rs> post natum <rs>salem</rs> <num value="438"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxxuiii</num>. <hi>a</hi> <rs>sale</rs> <rs>samaritani</rs> et <rs>indi</rs>. <hi>septua&gd;ginta</hi> 
-<num value="2639">mmdcxxxix</num>, <add place="above" type="integration"><rs>hebrei</rs></add> <num value="1723">mdccxxiii</num>. 
+<num value="2639">mmdcxxxix</num>, <add place="above"><rs>hebrei</rs></add> <num value="1723">mdccxxiii</num>. 
 </p> 
 
 <p xml:id="g8.24-8.27" decls="#al"> 
@@ -571,7 +572,7 @@ autem annis <num value="52">lii</num>, quo occiso, successit ei uxor sua <rs>sem
 
 <p xml:id="g10.19-10.20" decls="#al"> 
 &glb;<rs>abraham</rs> anno <num value="86">lxxxui</num> genuit <rs>ysmahel</rs>, a quo <rs>ysmahelitem</rs>. genuit autem <rs>ysmahel</rs> duo&gd;decim 
-duces, et uixit annos <num value="137">cxxxuii</num>. <num value="2048">mm<add place="nextline" type="integration">xluiii</add></num>. 
+duces, et uixit annos <num value="137">cxxxuii</num>. <num value="2048">mm<add place="nextline">xluiii</add></num>. 
 </p> 
 
 <p xml:id="g10.21-10.24" decls="#al"> 
@@ -588,7 +589,7 @@ est filio promissionis donatum, et postquam genuit <rs>ysahac</rs> uixit <rs>abr
 </p> 
 
 <p xml:id="g10.28-10.28" decls="#al"> 
-&glb;<hi>duo</hi> milia <num value="100">c</num> nona<add place="nextline" type="integration">ginta <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num></add>. 
+&glb;<hi>duo</hi> milia <num value="100">c</num> nona<add place="nextline">ginta <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num></add>. 
 </p> 
 
 <p xml:id="g10.29-11.4" decls="#al"> 
@@ -750,7 +751,7 @@ a quo usque ad primam <rs>olimpiadem</rs> supputantur anni <num value="430"><cho
 &glb;<rs>iepte</rs> <rs>galaadites</rs> annis <num value="6">ui</num> <rs>philistim</rs>, et <rs>ammanite</rs> deprimunt <rs>israhel</rs>, ex quibus <rs>am&gd;manite</rs> 
 debellantur a <rs>zepte</rs>, qui in libro <title>iudicum</title> ab ete <rs>moysi</rs> usque ad semetipsum 
 &glb;ait supputari annos <num value="300">ccc</num>. <rs>hercules</rs> in flammis se iniecit. <rs>amazonum</rs> tunc regnum uige&gd;bat, 
-quod usque ad <rs>alexandri</rs> <rs>magni</rs> tempora mansisse legimus <add place="nextline" type="integration"><num value="2780"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclxxx</num></add>. 
+quod usque ad <rs>alexandri</rs> <rs>magni</rs> tempora mansisse legimus <add place="nextline"><num value="2780"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclxxx</num></add>. 
 </p> 
 
 <p xml:id="g14.15-14.16" decls="#al"> 
@@ -761,7 +762,7 @@ quod usque ad <rs>alexandri</rs> <rs>magni</rs> tempora mansisse legimus <add pl
 <p xml:id="g14.17-14.21" decls="#al"> 
 &glb;<rs>achilon</rs> <rs>zabulonites</rs> annis <num value="10">x</num>. <hi>hic</hi> cum annis <num value="10">x</num> suis in <rs>septuaginta</rs> interpretibus non 
 &glb;habetur, pro quo annos supplendo <rs>eusebius</rs> <rs>iosue</rs> filio <rs>nun</rs>, <rs>samuheli</rs> et <rs>sauli</rs>, quorum annos 
-&glb;scriptura non dicit, plures annos, quam in <rs>iosep<add place="above" type="integration">h</add>o</rs> legebat, annotauit, quatenus ab egressu 
+&glb;scriptura non dicit, plures annos, quam in <rs>iosep<add place="above">h</add>o</rs> legebat, annotauit, quatenus ab egressu 
 &glb;filiorum <rs>israhel</rs> ex <rs>egypto</rs>, usque ad edificationem templi <num value="380">ccclxxx</num> annorum summam 
 &glb;scriptura predicat habere. <rs>orosius</rs>: 
 </p> 
@@ -793,11 +794,11 @@ commouit, bella excitauit cum <rs>turno</rs> <rs>dauni</rs> filio regis <rs>tusc
 </p> 
 
 <p xml:id="g15.5-15.5" decls="#al"> 
-&glb;<hi>mortuo</hi> autem <rs>labdon</rs>, seruiuit <rs>israhel</rs> <rs>philisteis</rs> annis <num value="40">xl</num>. <rs><add place="above" type="integration">s</add>anson</rs> de tribu <rs>dan</rs>. <num value="2899"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcccxc<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. 
+&glb;<hi>mortuo</hi> autem <rs>labdon</rs>, seruiuit <rs>israhel</rs> <rs>philisteis</rs> annis <num value="40">xl</num>. <rs><add place="above">s</add>anson</rs> de tribu <rs>dan</rs>. <num value="2899"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcccxc<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. 
 </p> 
 
 <p xml:id="g15.6-15.8" decls="#al"> 
-&glb;<rs>sanson</rs> de tribu <rs>dan</rs> annos <num value="20">xx</num>. <hi>hactenus</hi> iudicum tem<add place="above" type="integration">p</add>ora liber signat habens annos 
+&glb;<rs>sanson</rs> de tribu <rs>dan</rs> annos <num value="20">xx</num>. <hi>hactenus</hi> iudicum tem<add place="above">p</add>ora liber signat habens annos 
 &glb;<num value="499"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xc<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. <hi>quibus</hi> transactis ex libris regnorum, et prophetarum, et ex romanorum hy&gd;storiis 
 diu iam inchoatis acta prosecuntur. 
 </p> 
@@ -832,7 +833,7 @@ patet. <hi>ab</hi> hoc tempora prophetarum incipiunt.
 
 <p xml:id="g15.24-15.26" decls="#al"> 
 &glb;<rs>saul</rs> primus <rs>hebreorum</rs> rex annos <num value="20">xx</num> et huius quia in canonica scriptura non habetur, 
-&glb;de antiquitatis <rs>iosep<add place="above" type="integration">h</add>i</rs> libro, tempus regni notauimus. <hi>in</hi> <rs>lacedemone</rs> regnauit primus 
+&glb;de antiquitatis <rs>iosep<add place="above">h</add>i</rs> libro, tempus regni notauimus. <hi>in</hi> <rs>lacedemone</rs> regnauit primus 
 &glb;<rs>euristeus</rs> annos <num value="42">xlii</num>. <rs>corinthi</rs> primus <rs>arethis</rs> annis <num value="35">xxxu</num>. 
 </p> 
 
@@ -844,7 +845,7 @@ patet. <hi>ab</hi> hoc tempora prophetarum incipiunt.
 &glb;<hi>quarta</hi> mundi etas non solum cum inchoato <rs>iudee</rs> gentis imperio, sed et cum inno&gd;uata 
 promissione, que patribus olim data est, imperii christiani sumit exordium, iurante 
 &glb;domino <rs>dauid</rs> ueritatem: de fructu uentris eius sedere super sedem eius. <hi>ex</hi> hoc autem 
-&glb;reges <rs>iuda</rs> designantur <num value="2930"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice><add place="nextline" type="integration"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxx</add></num>. 
+&glb;reges <rs>iuda</rs> designantur <num value="2930"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice><add place="nextline"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxx</add></num>. 
 </p> 
 
 <p xml:id="g16.1-16.5" decls="#al"> 
@@ -898,7 +899,7 @@ omnem terram <rs>neptalim</rs>. <rs>asa</rs> ydola destruit, templum mundat, egr
 &glb;terra <rs>ruben</rs>, qui erat de <rs>abel</rs> <rs>meula</rs> pro se uncxit prophetam. <rs>israhel</rs> et <rs>iuda</rs> hoc inter 
 &glb;se differunt, quod omnis populus prius appellabatur <rs>israhel</rs>: et qui regna<pb break="no" n="31r" facs="vat:37" ed="#a"/>bant de genere <rs>dauid</rs> 
 &glb;in <rs>ierusalem</rs> appellabantur <rs>iuda</rs>. <hi>et</hi> quoniam ab <rs>israel</rs> uituli aurei colebantur in <rs>dan</rs> et 
-&glb;in <rs>bethel</rs>: propterea ab <rs>assiriis</rs> <add place="above" type="integration">primum</add> capta est <rs>samaria</rs>, non tamen omnino deleta. <hi>et</hi> multo post 
+&glb;in <rs>bethel</rs>: propterea ab <rs>assiriis</rs> <add place="above">primum</add> capta est <rs>samaria</rs>, non tamen omnino deleta. <hi>et</hi> multo post 
 &glb;tempore <rs>iudas</rs> a <rs>chaldeis</rs> ductus est in <rs>babilonem</rs>: quia minora peccauerunt. <rs>latinorum</rs> 
 &glb;nonus <rs>carpentus</rs> <rs>siluius</rs> superioris regis filius <rs>capis</rs> regnauit annis <num value="13">xiii</num> post quem filius eius 
 &glb;<rs>thyberinus</rs> <rs>siluius</rs> annis <num value="8">uiii</num> a quo, et fluuius appellatus est, <rs>tyberius</rs> qui prius <rs>albola</rs> 
@@ -1111,7 +1112,7 @@ ducitur: sed ob penitentiam, et preces restituitur in regno. <hi>cuius</hi> dieb
 &glb; <pb n="36r" facs="vat:42" ed="#a"/>tertius <rs>tullius</rs> <rs>hostilius</rs> regnauit annis <num value="31">xxxi</num> qui primus regum <rs>romanorum</rs> purpura, et fa&gd;scibus 
 usus est, et adiecto monte <rs>celio</rs> <rs>urbem</rs> ampliauit, qui fulminis ictu cum domo sua 
 &glb;arsit. <hi>his</hi> temporibus <rs>bitantium</rs> ciuitas a quodam <rs>pausania</rs> rege <rs>sparthanorum</rs> condita que 
-&glb;postea <rs>constantinopolis</rs> est appellata. <hi>tunc</hi> quoque <rs>sibilla</rs> claruit <add place="nextline" type="integration"><num value="3341"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>cccxli</num>.</add> 
+&glb;postea <rs>constantinopolis</rs> est appellata. <hi>tunc</hi> quoque <rs>sibilla</rs> claruit <add place="nextline"><num value="3341"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>cccxli</num>.</add> 
 </p> 
 
 
@@ -1141,7 +1142,7 @@ cepisset. <hi>nonodecimo</hi> autem imperii eius anno <rs>ierusalem</rs> fuisse 
 imperio eius annis <num value="19">x<choice><orig>viiii</orig><reg type="numeral">ix</reg></choice></num>. <hi>et</hi> postea sub <rs>ioachim</rs> filio eius annis <num value="11">xi</num> usque ad quin&gd;tum 
 mensem, quando a <rs>babylonis</rs> capta est <rs>hierusalem</rs>, <rs>ioachaz</rs> uero, et <rs>iechoniam</rs> ternos 
 &glb;menses, quorum alter in <rs>egyptum</rs>, alter cum matre ductus est in <rs>babylone</rs>, in supradictis annis 
-&glb;computantur, ac per hoc ab exordio prophet<add place="above" type="integration">i</add>e sue, usque ad captiuitatem <rs>hierusalem</rs>, in qua 
+&glb;computantur, ac per hoc ab exordio prophet<add place="above">i</add>e sue, usque ad captiuitatem <rs>hierusalem</rs>, in qua 
 &glb;et ipse captus est, prophetauit annis <num value="40">xl</num> preter illud tempus, quando ductus est in <rs>egyptum</rs> 
 &glb;ibique prophetauit in <rs>taphnis</rs>. <hi>fuit</hi> autem <rs>ieremias</rs> de genere <hi>sacerdotum</hi>, qui habitabant 
 &glb;contra septemtrionem in uico <rs>anathoth</rs>, qui tertio miliario distat ab <rs>hierusalem</rs>. 
@@ -1263,7 +1264,7 @@ scire uolentes uiam uel locum, non potuerunt: quia eis hoc noscere non permisera
 &glb;que illo tempore contigerunt hystorie illius commemorat per ordinem textus. <hi>sacerdotes</hi> 
 &glb;etiam, qui captiui sunt ducti ex <rs>hierusalem</rs>, abstulerunt ignem sanctum de altari, qu<seg type="ae">ae</seg> seruari 
 &glb;cupientes, absconderunt in spelunca: quem post septuaginta annis hi, qui reuersi sunt de ca&gd;ptiuitate, 
-requirentes, inuenerunt <pb n="40v" facs="vat:47" ed="#a"/>aquam <add hand="#uhand" place="margin" type="integration">crassam</add>, et accipientes, dum super holocaustum disperserunt, 
+requirentes, inuenerunt <pb n="40v" facs="vat:47" ed="#a"/>aquam <add hand="#uhand" place="margin">crassam</add>, et accipientes, dum super holocaustum disperserunt, 
 &glb;statim ignis accensus est et holocaustum <rs>domino</rs> liberauerunt. <hi>principes</hi> uero <rs>nabuchodo&gd;nosor</rs> 
 regis rogauerunt <rs>hieremiam</rs> plurimum, ut ueniret in <rs>babyloniam</rs>, quo nolente, quid uellet 
 &glb;agere permiserunt ei, et cum omni reuerentia cum donis, et muneribus dimiserunt eum. <hi>sedit</hi> 
@@ -1401,11 +1402,11 @@ aduersus <rs>iudeos</rs>, et remisit <rs>artarxerses</rs>, ne edificaretur <rs>h
 
 <p xml:id="g26.24-26.32" decls="#al"> 
 &glb;<rs>orosius</rs>: 
-&glb;<hi>anno</hi> post urbem conditam<subst hand="#uhand"><del hand="#uhand" rend="nodeletion"><num value="254">ccl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></del><add hand="#uhand" place="margin" type="correction"><num value="244">ccxl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add></subst>. <rs>brutus</rs>, expulso regis imperio, consul primum effe&gd;ctus 
+&glb;<hi>anno</hi> post urbem conditam<subst hand="#uhand"><del hand="#uhand" rend="nodeletion"><num value="254">ccl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></del><add hand="#uhand" place="margin"><num value="244">ccxl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add></subst>. <rs>brutus</rs>, expulso regis imperio, consul primum effe&gd;ctus 
 est. <hi>eo</hi> tempore <rs>cirus</rs> rex <rs>persarum</rs> uicit <rs>babiloniam</rs>; urbem tunc cunctis opulentiorem 
 &glb;cepit, subuertit atque destruxit, anno conditionis eius millesimo <num value="164">clx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
 &glb;<rs>cyrus</rs> autem rex <rs>persarum</rs> proximi temporis successu <rs>scithis</rs> bellum intulit, quem <rs>tamiris</rs> 
-&glb;ipsius prouincie regina ita cum suis obtruncauit, atque deleuit, quod de <num value="200">cc</num> <add hand="#uhand" place="margin" type="integration">millibus</add> militibus <rs>persis</rs>, 
+&glb;ipsius prouincie regina ita cum suis obtruncauit, atque deleuit, quod de <num value="200">cc</num> <add hand="#uhand" place="margin">millibus</add> militibus <rs>persis</rs>, 
 &glb;qui cum eo uenerant, nec nuntius quidem tante cladis in illo bello superfuit. <hi>anno</hi> ab 
 &glb;urbe condita <num value="245">ccxlu</num><note resp="#pm" type="graphic"><hi>in</hi> this folio, numerals seem to have been cancelled and overwritten by the same hand.</note> <rs>darius</rs> <rs>cyro</rs> apud <rs>scitas</rs> interfecto post aliquantum interuallum <pb n="44v" facs="vat:51" ed="#a"/>forte 
 &glb;regnum nepotis adeptus est: nam medius eorum regnauit <rs>cambises</rs> <rs>cyri</rs> filius. <num value="3431"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxxi</num>. 
@@ -1428,7 +1429,7 @@ cerimonias eius et templa deposuit, <rs>babylonem</rs> in <rs>egipto</rs> edific
 &glb;scribit, quod interfecto apud <rs>messegetas</rs> <rs>cyro</rs>, qui <num value="30">xxx</num> annis regnauit in <rs>persis</rs>, <rs>campises</rs> 
 &glb;successit in regnum: qui expletis octo annis duos <rs>magos</rs> fratres habuit successores, quorum 
 &glb;quidem unus <rs>sinerdes</rs> <rs>magus</rs> <rs>panthapten</rs> filiam <rs>cambisis</rs> duxit uxorem. <hi>occisis</hi> quippe a 
-&glb;populo magis, qui septem s<add hand="#uhand" place="above" type="integration">ol</add>ummodo regnarant mensibus, idem <rs>darius</rs> suscepit imperium: 
+&glb;populo magis, qui septem s<add hand="#uhand" place="above">ol</add>ummodo regnarant mensibus, idem <rs>darius</rs> suscepit imperium: 
 &glb;eadem uero <rs>panthapten</rs> nupsit <rs>dario</rs>, qui ex ea <rs>xersen</rs> filium genuit: <hi>anno</hi> autem secundo 
 &glb;<rs>darii</rs> regis filii <rs>istaspis</rs>, <pb n="45r" facs="vat:51" ed="#a"/>factus est sermo <rs>domini</rs> ad <rs>aggeum</rs> <hi>prophetam</hi> prius, et eodem 
 &glb;anno postea ad <rs>zachariam</rs> filium <rs>barachie</rs> filium <rs>addo</rs>. <hi>iste</hi> est <rs>addo</rs>, qui iuxta <title>paralip&gd;pomenon</title> 
@@ -1446,7 +1447,7 @@ est opus <rs>dei</rs> in <rs>hierusalem</rs>, et non fiebat usque ad secundum an
 &glb;<hi>prophetauerunt</hi> autem <rs>aggeus</rs> propheta, <pb n="45v" facs="vat:52" ed="#a"/>et <rs>zacharias</rs> filius <rs>addo</rs> prophetantes ad <rs>iudeos</rs>, 
 &glb;qui erant in <rs>iudea</rs>, et <rs>hierusalem</rs> in nomine <rs>domini</rs> <rs>dei</rs> <rs>israel</rs>. <hi>tunc</hi> surrexerunt <rs>zorobabel</rs> 
 &glb;filius <rs>salathiel</rs>, et <rs>iosue</rs> filius <rs>iosedech</rs>, et ceperunt edificare templum <rs>dei</rs> in <rs>hierusalem</rs>, et 
-&glb;cum eis prophete <rs>dei</rs> adiuuantes eos; <rs>aggeus</rs> autem propheta, et <rs>za<add hand="#uhand" place="above" type="integration">cha</add>rias</rs>, et <rs>malachias</rs>, 
+&glb;cum eis prophete <rs>dei</rs> adiuuantes eos; <rs>aggeus</rs> autem propheta, et <rs>za<add hand="#uhand" place="above">cha</add>rias</rs>, et <rs>malachias</rs>, 
 &glb;<hi>nahum</hi>, et <rs>abacuch</rs> claruerunt sub <rs>zorobabel</rs> principe gentis, et <rs>iesu</rs> magno sacerdote. 
 &glb;<rs>ieronimus</rs>. <hi>sexto</hi> <rs>darii</rs> anno templi edificatio completur die tertia mensis <hi>adar</hi>, qui est 
 &glb;quadragesimus sextus annus eius sub <rs>cyro</rs> fundamenta sunt iecta. <hi>unde</hi> in <title>euangelio</title> 
@@ -1464,7 +1465,7 @@ licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus 
 &glb;primus <rs>largus</rs> nomine fuit maioris honoris, quam <hi>consules</hi>: rursum quoque consules rem 
 &glb;publicam optinuerunt per annos <num value="464"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> usque ad <rs>iulium</rs> <rs>cesarem</rs>, qui primus singulare 
 &glb;arripuit imperium <hi>olimpiade</hi> <num value="184">clxxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <rs>orosius</rs>. <hi>anno</hi> ab urbe condita <num value="275">cclxxu</num>. 
-&glb;<hi>olimpiade</hi> <num value="74">lxxiiii</num>. <rs>xerses</rs> <rs>dario</rs> patri in regnum successit. <num value="3389"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>ccclxxx<add place="nextline" type="integration"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></add></num>. 
+&glb;<hi>olimpiade</hi> <num value="74">lxxiiii</num>. <rs>xerses</rs> <rs>dario</rs> patri in regnum successit. <num value="3389"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>ccclxxx<add place="nextline"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></add></num>. 
 </p> 
 
 <!-- roughly from here i decided to record all additions (corrections/integrations) from other hands in the part collated on garufi. i didn't do it systematically in the part collated on bonetti. -->
@@ -1474,8 +1475,8 @@ licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus 
 &glb;<rs>greciam</rs> pugnaturus <num value="700">dcc</num> milia armatorum de regno, et <num value="300">ccc</num> milia de auxiliis, rostratas etiam 
 &glb;naues mille ducentas; onerarias autem tria milia ducentas habuisse narratur. <hi>attamen</hi> uictus 
 &glb;patriam refugiit. <rs>demonstenes</rs> <rs>lacedemonis</rs> tunc apud <rs>exersen</rs> exultabat. <hi>tunc</hi> <rs>hero&gd;dotus</rs> 
-hystoriarum scriptor, et <subst hand="#uhand"><del hand="#uhand" rend="nodeletion"><rs>reusis</rs></del><add hand="#uhand" place="margin" type="correction"><rs>zeusis</rs></add></subst> pictor agnoscitur. <hi>anno</hi> ab urbe condita <subst hand="#uhand"><del hand="#uhand" rend="nodeletion"><num value="301">ccci</num>,
-&glb;<hi>olimpiade</hi> <num value="25">xxu</num></del><add hand="#uhand" place="margin" type="correction"><num value="401"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>i</num>, <hi>olimpiade</hi> <num value="95">xcu</num></add></subst>, potestas consulum decem uiris <rs>rome</rs> tradita est. <hi>tunc</hi> etiam cen<pb break="no" n="46v" facs="vat:53" ed="#a"/>sus habitus 
+hystoriarum scriptor, et <subst hand="#uhand"><del hand="#uhand" rend="nodeletion"><rs>reusis</rs></del><add hand="#uhand" place="margin"><rs>zeusis</rs></add></subst> pictor agnoscitur. <hi>anno</hi> ab urbe condita <subst hand="#uhand"><del hand="#uhand" rend="nodeletion"><num value="301">ccci</num>,
+&glb;<hi>olimpiade</hi> <num value="25">xxu</num></del><add hand="#uhand" place="margin"><num value="401"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>i</num>, <hi>olimpiade</hi> <num value="95">xcu</num></add></subst>, potestas consulum decem uiris <rs>rome</rs> tradita est. <hi>tunc</hi> etiam cen<pb break="no" n="46v" facs="vat:53" ed="#a"/>sus habitus 
 &glb;est, et inuenta sunt ciuium <rs>romanorum</rs> centum decem et octo milia <num value="319">cccx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. <num value="3490"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice><choice><orig>lxxxx</orig><reg type="numeral">xc</reg></choice></num>. 
 </p> 
 
@@ -1528,7 +1529,7 @@ fuit. <hi>his</hi> egressus cum <rs>zorobabel</rs> ibat in <rs>hierusalem</rs>, 
 &glb;<rs>aggeus</rs>, et <rs>zacharias</rs>, et <rs>malachias</rs>. <hi>post</hi> hec tertio egressi sunt de captiuitate hii, qui ibidem 
 &glb;residebant in diebus <rs>artarxersis</rs> regis. <hi>et</hi> cum eis egressus est <pb n="48r" facs="vat:54" ed="#a"/>princeps et consiliator, et 
 &glb;dux <rs>esdra</rs>, qui cognominatus est scriba legis <rs>dei</rs>. quem etiam <rs>artarxersus</rs> rex trasmisit cum 
-&glb;magno honore, et eos, qui cum eo egressi sunt. <hi>exiit</hi> <add hand="#uhand" type="integration">cum</add> eis et <rs>neemias</rs>, qui in patrum 
+&glb;magno honore, et eos, qui cum eo egressi sunt. <hi>exiit</hi> <add hand="#uhand" place="above">cum</add> eis et <rs>neemias</rs>, qui in patrum 
 &glb;laudibus commemoratus est. <hi>hucusque</hi> diuina scriptura temporum seriem continet. <hi>qu<seg type="ae">ae</seg></hi> 
 &glb;uero post h<seg type="ae">ae</seg>c apud <rs>iudeos</rs> gesta sunt de libro <rs>machabeorum</rs> et <rs>iosepi</rs> atque <rs>africani</rs> scriptis 
 &glb;exhibentur, qui deinceps hystoryam uniuersam usque ad <rs>romana</rs> tempora prosecuti sunt. 
@@ -1595,7 +1596,7 @@ maximo bello in <rs>lucania</rs> uictus atque occisus est. <hi>anno</hi> ab <rs>
 &glb;<rs>arses</rs> <rs>ochi</rs> filius annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <rs>iudeorum</rs> pontifex maximus <rs>iaddus</rs> clarus habetur, cuius 
 &glb;frater <rs>manasses</rs> templum in monte <rs>gariz</rs> construit. <rs>speusippus</rs> moritur, cui succedit <rs>ze&gd;nocrates</rs>. 
 <hi>quarto</hi> <rs>ochi</rs> anno <rs>alexander</rs> <rs>philippi</rs> et <rs>olimpiadis</rs> filius uicesimum etatis annum 
-&glb;gerens regnare incipit. <add place="nextline" type="integration"><num value="3624"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dcxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>.</add> 
+&glb;gerens regnare incipit. <add place="nextline"><num value="3624"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dcxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>.</add> 
 </p> 
 
 
@@ -1621,8 +1622,8 @@ optinuit, interfecto <rs>dario</rs>, in quo <rs>medorum</rs>, atque <rs>persarum
 &glb;populos, qui in radice <rs>caucasi</rs> montis morabantur, subegit. <hi>urbem</hi> ibi <rs>alexandriam</rs> super 
 &glb;amnem <rs>tanaim</rs> constituit. <hi>nec</hi> minor eius in suos crudelitas, quam in hostes rabies fuit. 
 &glb;<hi>deinde</hi> <pb n="50v" facs="vat:57" ed="#a"/><rs>indiam</rs> petiit, ut <rs>oceano</rs> ultimoque oriente finiret imperium. <rs>nisan</rs> urbem adiit, 
-&glb;<rs>dedalos</rs> m<subst hand="#uhand"><del hand="#uhand" rend="strikethrough">e</del><add place="above" type="correction" hand="#uhand">o</add></subst>ntes, regnaque <rs>cleofilis</rs> regine expugnauit, qu<seg type="ae">ae</seg> cum se dedisset, concubitu regnum 
-&glb;redemit. <hi>cum</hi> <rs>poro</rs> fortissimo rege <subst hand="#uhand"><del hand="#uhand" rend="strikethrough"><rs>iudeorum</rs></del><add hand="#uhand" place="above" type="correction"><rs>indorum</rs></add></subst> cruentissime dimicauit, quo occiso regnum eius 
+&glb;<rs>dedalos</rs> m<subst hand="#uhand"><del hand="#uhand" rend="strikethrough">e</del><add hand="#uhand" place="above">o</add></subst>ntes, regnaque <rs>cleofilis</rs> regine expugnauit, qu<seg type="ae">ae</seg> cum se dedisset, concubitu regnum 
+&glb;redemit. <hi>cum</hi> <rs>poro</rs> fortissimo rege <subst hand="#uhand"><del hand="#uhand" rend="strikethrough"><rs>iudeorum</rs></del><add hand="#uhand" place="above"><rs>indorum</rs></add></subst> cruentissime dimicauit, quo occiso regnum eius 
 <pb n="32" ed="#g"/> 
 &glb;obtinuit. <hi>inde</hi> <rs>arestas</rs>, <rs>catenos</rs>, <rs>presidas</rs>, et <rs>gangaridas</rs>, nec non <rs>confides</rs> laboriosis bellis 
 &glb;subegit. <hi>peragrata</hi> perdomitaque <rs>alexander</rs> <rs>india</rs>, ad amnem <rs>egyssenen</rs> peruenit; per 
@@ -1632,19 +1633,19 @@ excipiunt: cruentissimo igitur commisso prelio et fusis hostium copiis, <rs>alex
 ad urbem deduxit, et cum murum primus ascendisset, solus introrsus desiliuit, quem cum 
 &glb;undique hostes circumdedissent, muri obice posteriora tutatus, contrarios eo usque sustinuit, 
 &glb;donec ad periculum eius, clamorem hostium, perfractis muris, exercitus omnis inrumperet. 
-&glb;<hi>inde</hi> cons<add hand="#uhand" place="above" type="integration">c</add>ensis nauibus, cum <rs>oceani</rs> litora perageret ad urbem, cui <rs>ambira</rs> rex preerat, 
+&glb;<hi>inde</hi> cons<add hand="#uhand" place="above">c</add>ensis nauibus, cum <rs>oceani</rs> litora perageret ad urbem, cui <rs>ambira</rs> rex preerat, 
 &glb;peruenit, ipsamque urbem expugnauit, et cepit. <hi>post</hi> quasi <pb n="51r" facs="vat:57" ed="#a"/>circum actus, et de <rs>oceano</rs> 
 &glb;<rs>indum</rs> flumen ingressus <rs>babyloniam</rs> rediit, ubi eum exterritarum totius orbis prouinciarum 
 &glb;legati expectabant. <hi>rumores</hi> eius quippe totum orbem peragrarant, quod <hi>dii</hi> concessissent 
 &glb;ei totius orbis uictoriam, quod ipse ac arte composuit. <hi>cum</hi> igitur quasi uoti causa, una 
-&glb;cum suis templum <rs>ammonis</rs>, quod apud <rs>alexandriam</rs> fuerat, adiss<subst hand="#uhand"><del hand="#uhand" rend="strikethrough">us</del><add hand="#uhand" place="above" type="correction">et</add></subst>, secreto uocauit ad se illius 
+&glb;cum suis templum <rs>ammonis</rs>, quod apud <rs>alexandriam</rs> fuerat, adiss<subst hand="#uhand"><del hand="#uhand" rend="strikethrough">us</del><add hand="#uhand" place="above">et</add></subst>, secreto uocauit ad se illius 
 &glb;ora <hi>dei</hi> pontificem, promittens ac tribuens ei dona plurima auri, atque argenti, ut occultatus 
-&glb;apud <hi>dii</hi> <rs>ammonis</rs> statuam, quasi ipse <hi>deus</hi> ore suo cunctis audientibus responsa dare<add hand="#uhand" place="above" type="integration">t</add> <rs>ale&gd;xandro</rs>, 
+&glb;apud <hi>dii</hi> <rs>ammonis</rs> statuam, quasi ipse <hi>deus</hi> ore suo cunctis audientibus responsa dare<add hand="#uhand" place="above">t</add> <rs>ale&gd;xandro</rs>, 
 sicut ipse in eius ore uerba posuerat, et cum ubique et in omnibus uictorem nun&gd;tiaret: 
 quod dum fecisset, fama hec terras ac mare perterruit. <hi>unde</hi> ex omni gente, et 
 &glb;natione ad eum legati concurrentes ueniebant, expetentes, ut eis sine bello dominaretur; <rs>ale&gd;xander</rs> 
 autem apud <rs>babyloniam</rs> ministri insidiis ueneni austu interiit anno uit<seg type="ae">ae</seg> su<seg type="ae">ae</seg> <num value="32">xxxii</num>, 
-&glb;r<add place="above" type="integration">e</add>gni uero sui <num value="12">xii</num>. <rs>ieronimus</rs>. <rs>alexander</rs> ab <rs>illirico</rs> et mare <rs>adriatico</rs> usque ad <rs>indicum</rs> 
+&glb;r<add place="above">e</add>gni uero sui <num value="12">xii</num>. <rs>ieronimus</rs>. <rs>alexander</rs> ab <rs>illirico</rs> et mare <rs>adriatico</rs> usque ad <rs>indicum</rs> 
 &glb;<rs>oceanum</rs>, et <rs>gangen</rs> fluuium non tam preliis, quam uictoriis precurrit, et sex annis <rs>europe</rs> 
 &glb;partem, et omnem sibi <rs>asiam</rs> subiugauit, quod non fuit <rs>alexandri</rs> fortitudinis, sed <rs>domini</rs> 
 &glb;uoluntatis: cui postea quattuor duces eius regni successores <pb n="51v" facs="vat:58" ed="#a"/>extiterunt, uidelicet <rs>ptolomeus</rs>, 
@@ -1653,7 +1654,7 @@ autem apud <rs>babyloniam</rs> ministri insidiis ueneni austu interiit anno uit<
 &glb;anno, hi quattuor duces regnum diuiserunt. <hi>et</hi> <rs>ptolomeus</rs> <rs>lagi</rs> filius tenuit <rs>egyptum</rs>; 
 &glb;<rs>philippus</rs>, qui et <rs>arideus</rs>, frater <rs>alexandri</rs>, <rs>macedoniam</rs>; <rs>seleucus</rs> <rs>nicanor</rs> <rs>syriam</rs> et <rs>ba&gd;byloniam</rs>, 
 et omnia regna orientis; <rs>antigonus</rs> <rs>asie</rs> regnauit, sed non inquid in fortitu&gd;dine 
-eius, qui nullus eorum magnitudini <rs>alexandri</rs> potuit equari <num value="3669"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><add place="nextline" type="integration">dclx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></add></num>. 
+eius, qui nullus eorum magnitudini <rs>alexandri</rs> potuit equari <num value="3669"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><add place="nextline">dclx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></add></num>. 
 </p> 
 
 
@@ -1680,7 +1681,7 @@ ordinem cum <rs>grecis</rs> equali honore concedens. <hi>eo</hi> tempore condite
 &glb;inuaditur. <rs>sallentinis</rs> in <rs>apulia</rs> bellum inditum est a <rs>romanis</rs>, et <rs>brundisini</rs> cum ciuitate 
 &glb;capti sunt. <rs>ieronimus</rs>. <hi>post</hi> <rs>alexandrum</rs> <rs>ptolomeus</rs> <rs>lagi</rs> filius primus regnauit in <rs>egypto</rs>, uir 
 &glb;prudentissimus, et fortissimus, atque ditissimus, et <pb n="52v" facs="vat:59" ed="#a"/>tante potentie, ut <rs>pirrum</rs> regem <rs>epirota&gd;rum</rs> 
-expulsu<subst><del rend="nodeletion">s</del><add place="strikeover" type="correction">m</add></subst> restitueret in regnum, <rs>ciprum</rs> quoque optineret, ac <rs>fenicem</rs>: et, deuicto <rs>de&gd;metri</rs> 
+expulsu<subst><del rend="nodeletion">s</del><add place="strikeover">m</add></subst> restitueret in regnum, <rs>ciprum</rs> quoque optineret, ac <rs>fenicem</rs>: et, deuicto <rs>de&gd;metri</rs> 
 filio <rs>antigoni</rs>, <rs>seleuco</rs> partem regni sui, qu<seg type="ae">ae</seg> <rs>antigono</rs> fuerat ablata, restitueret, <rs>ca&gd;riam</rs> 
 quoque optineret, et multas insulas, urbesque, ac regiones, de quibus non est huius 
 &glb;temporis scribere. 
@@ -1688,7 +1689,7 @@ quoque optineret, et multas insulas, urbesque, ac regiones, de quibus non est hu
 
 <p xml:id="g33.20-33.26" decls="#al"> 
 &glb;<rs>orosius</rs>: 
-&glb;<hi>anno</hi> ab urbe condita <num value="477"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxuii</num>, cum clarum urbis <rs>rome</rs> nomen esset, census<del hand="#uhand">us</del> est 
+&glb;<hi>anno</hi> ab urbe condita <num value="477"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>lxxuii</num>, cum clarum urbis <rs>rome</rs> nomen esset, census<del hand="#uhand" rend="strikethrough">us</del> est 
 &glb;habitus. <hi>tunc</hi> inuenta sunt ciuium capita ducenta nonaginta duo milia <num value="334">cccxxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>eo</hi> tem&gd;pore 
 argenteus nummus primum in urbe figuratus est. <hi>tunc</hi> etiam <rs>atilius</rs> <rs>regulus</rs> consul 
 &glb;missus in <rs>africam</rs> post uictoriam trium ducum <rs>cartaginensium</rs> aput fluuium <rs>bagrada</rs> ser&gd;pentem 
@@ -1715,36 +1716,36 @@ grande pondus: ita ut de <rs>egypto</rs> per singulos annos quattuordecim milia 
 </p> 
 
 
-<p xml:id="g34.7-34.35" decls="#ocr"> 
-&glb;<rs>ptolomeus</rs> <rs>euergetes</rs> frater superioris regis anni <num value="27">xxuii</num> qui inde <rs>euergetes</rs> ab <rs>egyptiis</rs> 
+<p xml:id="g34.7-34.35" decls="#al"> 
+&glb;<rs>ptolomeus</rs> <rs>euergetes</rs> frater superioris regis annis <num value="27">xxuii</num> qui inde <rs>euergetes</rs> ab <rs>egyptiiis</rs> 
 &glb;est uocatus, quia capta <rs>syria</rs>, et <rs>cilicia</rs>, et prope modum uniuersa <rs>asia</rs>, inter innumera ar&gd;genti 
-pondera, ac uasa pretiosa, que cepit, etiam <rs>deos</rs> eorum, quos <rs>cambises</rs> capta <rs>egypto</rs> 
+pondera, ac uasa pretiosa, que cepit, etiam <hi>deos</hi> eorum, quos <rs>cambises</rs> capta <rs>egipto</rs> 
 &glb;in <rs>persas</rs> portauerat, retulit. <rs>iudeorum</rs> pontifex <rs>onias</rs> <rs>symonis</rs> <rs>iusti</rs> filius clarus habetur, 
-&glb;cuius item filius <rs>symon</rs> non minori gloria <pb n="53v" facs="vat:§" ed="#a"/>fulget. <hi>tunc</hi> etiam <rs>quintus</rs> <rs>ennius</rs> poeta 
-&glb;<rs>tarenti</rs> nascitur, qui post <rs>romae</rs> deguit contentus unius ancille ministerio. <rs>ieronimus</rs>. <hi>pri&gd;mum</hi> 
+&glb;cuius item filius <rs>symon</rs> non minori gloria <pb n="53v" facs="vat:60" ed="#a"/>fulget. <hi>tunc</hi> etiam <rs>quintus</rs> <rs>ennius</rs> poeta 
+&glb;<rs>tarenti</rs> nascitur, qui post <rs>romae</rs> deguit contentus unius ancille ministerio. <rs>ieonimus</rs>. <hi>pri&gd;mum</hi> 
 <rs>syrie</rs>, ut diximus, regnauit <rs>seleucus</rs>, cognomento <rs>nicanor</rs>; secundus <rs>antiochus</rs>, qui 
-&glb;appellatus est <rs>sother</rs>, tertius et ipse <rs>antiochus</rs>, qui uocabatur <rs>theos</rs>, idest <rs>deus</rs>. <hi>iste</hi> ad&gd;uersum 
-<rs>ptolomeum</rs> <rs>phyladelphum</rs>, qui secundus imperat <rs>egyptiis</rs>, gessit bella plurima et totis 
+&glb;appellatus est <rs>sother</rs>, tertius et ipse <rs>antiochus</rs>, qui uocabatur <rs>theos</rs>, idest <hi>deus</hi>. <hi>iste</hi> ad&gd;uersus 
+<rs>ptolomeum</rs> <rs>phyladelfum</rs>, qui secundus imperat <rs>egyptiiis</rs>, gessit bella plurima et totis 
 &glb;<rs>babylonis</rs> uiribus dimicauit. <hi>uolens</hi> itaque <rs>ptolomeus</rs> post multos annos molestum inire cer&gd;tamen, 
 filiam suam nomine <rs>beronicen</rs> <rs>antiocho</rs> uxorem dedit, qui de priore uxore, nomine 
-&glb;<hi>laodoce</hi> habebat duos filios, <rs>seleucum</rs>, qui cognominatus est <rs>callinicus</rs>, et alterum <rs>antiochum</rs>: 
+&glb;<rs>laodoce</rs> habebat duos filios, <rs>seleucum</rs>, qui cognominatus est <rs>callinicus</rs>, et alterum <rs>antiochum</rs>: 
 &glb;deduxitque eam usque <rs>pelusium</rs>, et infinita auri argentique milia dotis nomine dedit; unde 
-&glb;et <rs>phenophores</rs>, idest dotalis est appellatus. <rs>antiochus</rs> autem <rs>beronicen</rs>, que inter patrem, 
-&glb;ac uirum iunxit amicitias consortem regni habere dicens, et <rs>laodocen</rs> in concubine locum: 
-&glb;post multum temporis amore superatus, <rs>laodocen</rs> cum liberis suis regiam induxit, que me&gd;tuens 
+&glb;et <rs>phenophores</rs>, idest dotalis, est appellatus. <rs>antiochus</rs> autem <rs>beronicen</rs>, qu<seg type="ae">ae</seg> inter patrem 
+&glb;ac uirum iuncxit amicitias consortem regni habere dicens, et <rs>laodocens</rs> in concubine locum: 
+&glb;post multum temporis amore superatus, <rs>laodocen</rs> cum liberis suis regiam induxit, qu<seg type="ae">ae</seg> me&gd;tuens 
 ambiguum uiri animum, ne <rs>beronicen</rs> reduceret, uirum per ministros ueneno interfecit. 
-&glb;<hi>filium</hi> suum <rs>seleucum</rs> <pb n="54r" facs="vat:§" ed="#a"/><rs>gallinicum</rs> in loco patris regem constituit. <rs>beronice</rs> autem reuersa 
-&glb;est in terram suam. <hi>et</hi> mortuo <rs>ptolomeo</rs> <rs>philadelfo</rs> patre eius in <rs>egypto</rs>, frater illius, et 
+&glb;<hi>filium</hi> suum <rs>seleucum</rs> <rs>gallinicum</rs> in loco patris regem constituit. <pb n="54r" facs="vat:60" ed="#a"/><rs>beronice</rs> autem reuersa 
+&glb;est in terram suam, et mortuo <rs>ptolomeo</rs> <rs>philadelfo</rs> patre eius in <rs>egypto</rs>, frater illius, et 
 &glb;ipse <rs>ptolomeus</rs> cognomento <rs>euergens</rs> tertius successit in regnum. <hi>qui</hi> cum magno exercitu 
-&glb;ueniens, ingressus est prouinciam <rs>seleucii</rs>, cognomento <rs>gallicini</rs> qui cum matre <rs>laodocen</rs> 
-&glb;regnabat in <rs>syria</rs>, et abusus est eis, et optinuit in tantum, ut <rs>syriam</rs> caperet, et <rs>ciliciam</rs>, 
-&glb;superioresque partes trans <rs>euphratem</rs>, et prope modum uniuersam <rs>asiam</rs>. <hi>cumque</hi> audisset 
+&glb;ueniens, ingressus est prouinciam <rs>seleucii</rs>, cognomento <rs>gallicini</rs>, qui cum matre <rs>laodocen</rs> 
+&glb;regnabat in <rs>siria</rs>, et abusus est eis, et optinuit in tantum, ut <rs>siriam</rs> caperet, et <rs>ciliciam</rs>, 
+&glb;superioresque partes trans <rs>euphraten</rs>, et prope modum uniuersam <rs>asiam</rs>. <hi>cumque</hi> audisset 
 &glb;in <rs>egypto</rs> seditionem moueri, diripiens regnum <rs>seleucii</rs>, quadraginta milia talentorum argenti 
-&glb;tulit, et uasa pretiosa, simulacraque duo milia quingenta; in quibus erant et illa, que <rs>cam&gd;bises</rs> 
+&glb;tulit, et uasa pretiosa, simulacraque duo milia quingenta; in quibus erant et illa, qu<seg type="ae">ae</seg> <rs><add place="inline">c</add>am&gd;bises</rs> 
 capta <rs>egypto</rs> in <rs>persas</rs> portauerat. <hi>denique</hi> gens <rs>egyptiorum</rs> idolatrie dedita, quia 
-&glb;post multos annos <rs>deos</rs> eorum retulerat <rs>euergertineum</rs> appellauit. <hi>et</hi> <rs>syriam</rs> quidem ipse 
+&glb;post multos annos <hi>deos</hi> eorum retulerat, <rs>euergertineum</rs> appellauit. <hi>et</hi> <rs>syriam</rs> quidem ipse 
 &glb;optinuit. <rs>ciliciam</rs> autem amico suo <rs>antiocho</rs> gubernandam tradidit: et <rs>antippo</rs> alteri duci 
-&glb;prouincias trans <rs>euphratem</rs>. <num value="3750"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dccl</num>. 
+&glb;prouincias trans <rs>eufratem</rs>. <num value="3750"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dccl</num>. 
 </p> 
 
 
@@ -1968,7 +1969,7 @@ anno post hec ceperunt ciuitatem <rs>bibinum</rs> ignique combus&bd;serunt.
 
 
 <p xml:id="g168.5-168.7" decls="#al">
-<hi>anno</hi> incarnationis <rs>domini</rs> <add place="nextline" type="integration"><num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxui</num></add> <note resp="#b" type="year">sed 986</note>, <rs>lotha&bd;rius</rs> 
+<hi>anno</hi> incarnationis <rs>domini</rs> <add place="nextline"><num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxui</num></add> <note resp="#b" type="year">sed 986</note>, <rs>lotha&bd;rius</rs> 
 <rs>francorum</rs> rex senex plenus dierum obiit, postquam regnau&bd;it 
 annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, sepultusque in basilica <rs>sancti remigii</rs> <rs>remis</rs>. <hi>cui</hi> 
 &blb;successit <rs>ludouicus</rs> filius eius adhuc iuuenis. 
@@ -2265,7 +2266,7 @@ usque ad mare discurreret.
 
 
 <p xml:id="g178.13-179.2" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <add place="nextline" type="integration"><num value="1039">mxxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> indictione <num value="7">uii</num></add> apud 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1039">mxxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> indictione <num value="7">uii</num></add> apud 
 &blb;<rs>constantinopolim</rs> <rs>michael</rs> imperator cognomento <rs>catalactus</rs> 
 &blb;diem obiit anno <num value="7">uii</num> eius imperii. <hi>cui</hi> <rs>michael</rs> qui <rs>etheriarchis</rs> di&bd;cebatur 
 successit cum <rs>zoy</rs> imperatrice. <hi>eodem</hi> anno mense <hi>fe&bd;bruarii</hi> 
@@ -2327,7 +2328,7 @@ est — assensum prebente. <hi>qui</hi> consecratus sedit papalem
 <hi>defuncto</hi> itaque <rs>clemente</rs> <rs>damasus</rs> electus et con&bd;secratus 
 est, cuius electioni predictus imperator assensum pre&bd;buit, 
 seditque <rs>damasus</rs> dies <num value="20">xx</num>. <hi>imperator</hi> autem 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g179.15-180.12add100"><!-- § metti aggiunta in un p a sé, qui e altrove; ma forse è rimasto solo qui e l'altro pure segnato con §-->
+<add place="addedfolios" hand="#hand2" xml:id="g179.15-180.12add100"><!-- § metti aggiunta in un p a sé, qui e altrove; ma forse è rimasto solo qui e l'altro pure segnato con §-->
 <pb n="204r" facs="vat:230" ed="#a"/>
 ipse usque 
 &blb;<rs>capuam</rs> uenit terram pro tempore sibi componens, et sic reuer&bd;sus 
@@ -2337,7 +2338,7 @@ est <num value="1042">mxlii</num>, indictione <num value="15">xu</num>.
 
 
 <p xml:id="g180.13-180.15" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g180.13-180.15add100">
+<add place="addedfolios" hand="#hand2" xml:id="g180.13-180.15add100">
 &blb;<hi>hoc</hi> autem tempore comprehensum est oppidum <rs>stuni</rs> a <rs>ga&bd;rangis</rs> 
 in mense <hi>octubris</hi> et in mense <hi>decembris</hi> 
 <hi>et</hi> in mense <hi>iunii</hi> <rs>benedictus</rs> papa per poculum 
@@ -2347,7 +2348,7 @@ in mense <hi>octubris</hi> et in mense <hi>decembris</hi>
 
 
 <p xml:id="g181.1-181.1" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g181.1-181.1add100">
+<add place="addedfolios" hand="#hand2" xml:id="g181.1-181.1add100">
 <pb n="84" ed="#b"/> 
 &blb;<hi>anno</hi> dominic<seg type="ae">ae</seg> incarnationis <num value="1043">mxliii</num> indictione <num value="1">i</num>; <rs>zoy</rs> imperatrix obiit. 
 </add>
@@ -2355,7 +2356,7 @@ in mense <hi>octubris</hi> et in mense <hi>decembris</hi>
 
 
 <p xml:id="g181.2-181.5" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g181.2-181.5add100">
+<add place="addedfolios" hand="#hand2" xml:id="g181.2-181.5add100">
 &blb;<hi>anno</hi> dominic<seg type="ae">ae</seg> incarnationis <num value="1049">mxl<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> indictione <num value="2">ii</num>, <hi>damaso</hi> uita dece&bd;dente, 
 <rs>leo</rs> sanctissimus qui uocatur <rs>bruno</rs>, a populo <rs>romano</rs> 
 &blb;expetitus, a clero electus, ab imperatore quoque commendatus, 
@@ -2366,7 +2367,7 @@ in mense <hi>octubris</hi> et in mense <hi>decembris</hi>
 
 
 <p xml:id="g181.6-181.10" decls="#al">
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g181.6-181.10add100">
+<add place="addedfolios" hand="#hand2" xml:id="g181.6-181.10add100">
 <hi>anno</hi> dominic<seg type="ae">ae</seg> incarnationis <num value="1051">mli</num> indictione <num value="3">iii</num> mense <hi>augusti</hi> <rs>drogo</rs> <rs>nor&bd;mannorum</rs> 
 comes defunctus est. <hi>fuitque</hi> uir egregius, pius, stre&bd;nuus 
 atque famosus, qui propter animi mansuetudinem et iusti&bd;ti<seg type="ae">ae</seg> 
@@ -2378,7 +2379,7 @@ eius <rs>normannorum</rs> comes successit, tenuitque potestatem
 
 
 <p xml:id="g181.10-181.11" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g181.10-181.11add100">
+<add place="addedfolios" hand="#hand2" xml:id="g181.10-181.11add100">
 &blb;<hi>anno</hi> dominice incarnationis <num value="1052">mlii</num> indictione quinta <rs>guayma&bd;rius</rs> 
 princeps <rs>salerni</rs> a suis interfectus est anno principatus sui 
 &blb;<num value="23">xxiii</num>. <hi>cui</hi> successit <rs>gisolfus</rs> filius eius. 
@@ -2387,7 +2388,7 @@ princeps <rs>salerni</rs> a suis interfectus est anno principatus sui
 
 
 <p xml:id="g181.12-182.19" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g181.12-182.19add100">
+<add place="addedfolios" hand="#hand2" xml:id="g181.12-182.19add100">
 &blb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1053">mliii</num> indictione <num value="6">ui</num> mense 
 &blb;<hi>iulii</hi>. <rs>leo</rs> papa multis precibus ab <rs>enrico</rs> monitus imperatore 
 <pb n="204v" facs="vat:231" ed="#a"/>
@@ -2437,7 +2438,7 @@ est <rs>fridericus</rs>, sedit mensibus <num type="7">uii</num>. <hi>quo</hi> de
 
 
 <p xml:id="g183.1-184.6" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g183.1-184.6add100">
+<add place="addedfolios" hand="#hand2" xml:id="g183.1-184.6add100">
 &blb;<hi>anno</hi> dominic<seg type="ae">ae</seg> incarnationis <num value="1057">mluii</num> indictione <num value="7">uii</num>; <rs>gofridus</rs> 
 &blb;comes <rs>normannorum</rs> diem clausit extremum, reliquens sibi 
 &blb;successorem <rs>bagelardum</rs> filium eius militem strenuum. <hi>sed</hi> <rs>rob&bd;bertus</rs> 
@@ -2470,7 +2471,7 @@ namque disciplinam gloriosissime rexit. <hi>octauus</hi> autem
 
 
 <p xml:id="g184.7-184.9" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g184.7-184.9add100">
+<add place="addedfolios" hand="#hand2" xml:id="g184.7-184.9add100">
 &blb;<hi>anno</hi> dominic<seg type="ae">ae</seg> incarnationis <num value="1058">mluiii</num>, indictione <num value="11">xi</num>. <rs>benedic&bd;tus</rs> 
 papa defunctus est et successit ei <rs>nicolaus</rs> qui et <rs>gerardus</rs>. 
 &blb;<hi>eodem</hi> anno <rs>riccardus</rs> cum <rs>iordano</rs> filio eius effectus est <rs>ca&bd;pu<seg type="ae">ae</seg></rs> 
@@ -2480,7 +2481,7 @@ princeps.
 
 
 <p xml:id="g184.10-185.7" decls="#al"> 
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g184.10-185.7add100">
+<add place="addedfolios" hand="#hand2" xml:id="g184.10-185.7add100">
 &blb;<hi>anno</hi> dominic<seg type="ae">ae</seg> incarnationis <num value="1060">mlx</num>, indictione <num value="13">xiii</num>. <rs>henricus</rs> rex <rs>francorum</rs> 
 &blb;obiit, et <rs>philippus</rs> filius eius successit in regnum. <hi>ipso</hi> quoque 
 &blb;anno comes <rs>robbertus</rs> <rs>guiscardus</rs> uocatus a <rs>troianis</rs> ciui&bd;bus, 
@@ -2519,7 +2520,7 @@ accepit. <hi>seditque</hi> <rs>alexander</rs> papa annis <num value="11">xi</num
 
 
 <p xml:id="g186.6-186.7" decls="#al"> 
-<add place="margin" hand="#hand2" type="integration" xml:id="g186.6-186.7add100">
+<add place="margin" hand="#hand2" xml:id="g186.6-186.7add100">
 &blb;<hi>hoc</hi> anno <rs>riccardus</rs> princeps <rs>capu<seg type="ae">ae</seg></rs> intrauit terram <rs>cam&bd;pani<seg type="ae">ae</seg></rs> 
 obseditque <rs>cipparanum</rs> et usque <rs>romam</rs> 
 &blb;deuastando peruenit. 
@@ -2528,7 +2529,7 @@ obseditque <rs>cipparanum</rs> et usque <rs>romam</rs>
 
 
 <p xml:id="g186.8-186.8" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g186.8-186.8add100">
+<add place="footer" hand="#hand2" xml:id="g186.8-186.8add100">
 &blb;<hi>anno</hi> <rs>domini</rs> <num value="1063">mlxiii</num>. <hi>hoc</hi> anno comprehensa est <rs>tarentum</rs> a 
 &blb;<rs>normannis</rs>. 
 </add>
@@ -2536,7 +2537,7 @@ obseditque <rs>cipparanum</rs> et usque <rs>romam</rs>
 
 
 <p xml:id="g186.9-186.9" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g186.9-186.9add100">
+<add place="footer" hand="#hand2" xml:id="g186.9-186.9add100">
 &blb;<num value="1064">mlx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>hoc</hi> autem temporim comprehensa est <rs>matera</rs> a 
 &blb;<rs>normannis</rs> mense <hi>aprelis</hi>. 
 </add>
@@ -2569,7 +2570,7 @@ ibi catipanum nomine <rs>kuriacum</rs>. <hi>hinc</hi> etiam ipse
 
 
 <p xml:id="g187.5-187.8" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g187.5-187.8add100">
+<add place="footer" hand="#hand2" xml:id="g187.5-187.8add100">
 &blb;<num value="1068">mlxuiii</num>, indictione <num value="6">ui</num>. <hi>hoc</hi> anno in sexto die 
 &blb;mense <hi>februarii</hi> <rs>robbertus</rs> dux obsedit ciuitatem <rs>montem-pilo&bd;sum</rs> 
 et dimissa ibi obsidionem cum paucis uenit <rs>abianum</rs> et c<seg type="ae">ae</seg>pit 
@@ -2603,7 +2604,7 @@ imperii eius anno defunctus est. <hi>cui</hi> in imperio <rs>michael</rs> filius
 
 <p xml:id="g187.11-187.14" decls="#al"> 
 <link target="#g187.11-187.14 #g187.11-187.14garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
-<add place="footer" hand="#hand2" type="integration" xml:id="g187.11-187.14add100">
+<add place="footer" hand="#hand2" xml:id="g187.11-187.14add100">
 <num value="1070">mlxx</num> indictione <num value="8">viii</num> hoc anno mense <hi>ianuarii</hi> ma&bd;gnum 
 homicidium actum est in <rs>brundusii</rs> ciuitate. <hi>nam</hi> <rs>nor&bd;manni</rs> 
 uolentes eam comprehendere, tenti sunt ab eis quadra&bd;ginta 
@@ -2623,7 +2624,7 @@ ferreas et columpnas marmoreas quam plures cum capitibus
 </p> 
 
 <p xml:id="g188.5-188.7" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g188.5-188.7add100">
+<add place="footer" hand="#hand2" xml:id="g188.5-188.7add100">
 &blb;<hi>eodem</hi> anno <rs>robbertus</rs> dux fecit fieri pontem in mari qua&bd;tinus 
 concluderet portum prephat<seg type="ae">ae</seg> urbis <rs>bari</rs>, et in quintadeci&bd;ma 
 die mensis <hi>aprilis</hi> <rs>robertus</rs> dux predictam ciuitatem c<seg type="ae">ae</seg>pit, 
@@ -2643,7 +2644,7 @@ papa diem obiit, et archidiaconus eius nomine <rs>ildeprandus</rs>
 
 <p xml:id="g188.12-188.14" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from page 188 line 12 to page 190 line 8 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph because the text segmentation in manuscript <hi>a</hi> is different than in <rs>garufi</rs>.</note>
-&blb;<hi>anno</hi> dominice incarnationis <add place="nextline" type="integration"><num value="1075">mlxxu</num></add>, dux <rs>robbertus</rs> <rs>sanc&bd;tam</rs> 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1075">mlxxu</num></add>, dux <rs>robbertus</rs> <rs>sanc&bd;tam</rs> 
 <rs>seuerinam</rs> <rs>calabrie</rs> cubrie ciuitatem loco munitissimam tertio an&bd;no 
 postquam illam obsederat, cepit. <hi>hinc</hi> quoque cepit ciuitatem 
 &blb;<rs>comsanam</rs> obsesso castello <rs>sancte</rs> <rs>agathe</rs>, quod incessabili op&bd;pugnatione 
@@ -2666,7 +2667,7 @@ utique artis diu famosam atque precipuam. <rs>gisolfus</rs>
 
 <p xml:id="g189.1-189.1" decls="#al"> 
 <link target="#g189.1-189.1 #g189.1-189.1garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
-<add place="margin" hand="#hand2" type="integration" xml:id="g188.12-190.8add100">
+<add place="margin" hand="#hand2" xml:id="g188.12-190.8add100">
 <hi>hoc</hi> anno <rs>robertus</rs> dux dedit filiam suam 
 &blb;nurum ad imperatorem <rs>constantinopolitanum</rs>.
 <note resp="#hand2" type="sanctipetri"><hi>ex</hi> codice sancti <rs>petri</rs>.</note> 
@@ -2710,7 +2711,7 @@ filios <rs>riccardum</rs> et <rs>robbertum</rs> atque <rs>iordanum</rs>.
 
 
 <p xml:id="g191.3-191.5" decls="#al">
-<add place="footer" hand="#hand2" type="integration" xml:id="g191.3-191.5add100">
+<add place="footer" hand="#hand2" xml:id="g191.3-191.5add100">
 <hi>eodem</hi> anno corpus beati <rs>canionis</rs> a loco, in quo olim posi&bd;tus 
 fuerat, ab <rs>arnaldo</rs> leuatur archiepiscopo et in sancte <rs>dei</rs> ge&bd;nitricis 
 <rs>marie</rs> ecclesia nouiter inchoata honorifice collocatus". 
@@ -2719,7 +2720,7 @@ fuerat, ab <rs>arnaldo</rs> leuatur archiepiscopo et in sancte <rs>dei</rs> ge&b
 
 
 <p xml:id="g191.6-191.12" decls="#al"> 
-&blb;<hi>anno</hi> <rs>domini</rs> <num value="1080">mlxxx</num>, <add place="nextline" type="integration">indictione <num value="3">iii</num></add>, dux <rs>robbertus</rs> <rs>guiscar&bd;dus</rs> 
+&blb;<hi>anno</hi> <rs>domini</rs> <num value="1080">mlxxx</num>, <add place="nextline">indictione <num value="3">iii</num></add>, dux <rs>robbertus</rs> <rs>guiscar&bd;dus</rs> 
 cepit <rs>spinazolam</rs>. <hi>paucis</hi> etiam euolutis diebus ipse dux 
 &blb;cepit <rs>ydrontum</rs> cepitque <rs>tarentum</rs>. <hi>his</hi> autem diebus uenit ad 
 <pb n="96" ed="#b"/> 
@@ -2855,7 +2856,7 @@ combussitque eam igni.
 
 
 <p xml:id="g195.6-195.8" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g195.6-195.8add100">
+<add place="footer" hand="#hand2" xml:id="g195.6-195.8add100">
 &blb;<num value="1083">mlxxxiii</num> indictione sexta. <hi>hoc</hi> anno intrauerunt 
 &blb;<rs>langobardi</rs> <rs>italiam</rs> et dux in mense <hi>maio</hi> posuit ante <rs>cannas</rs> 
 &blb;ciuitatem <rs>apuli<seg type="ae">ae</seg></rs> obsidionem et mense <hi>iulio</hi> comprehendit eam.
@@ -2924,7 +2925,7 @@ quam potentie austeritate. <hi>eodem</hi> anno <num value="13">xiii</num> kalend
 
 
 <p xml:id="g197.13-198.3" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="1087">mlxxxuii</num> <add place="nextline" type="integration">indictione <num value="10">x</num> mense 
+&blb;<hi>anno</hi> dominice incarnationis <num value="1087">mlxxxuii</num> <add place="nextline">indictione <num value="10">x</num> mense 
 &blb;<hi>maio</hi></add> corpus beati <rs>nycolay</rs> confessoris de <rs>mirrea</rs> translatum in 
 &blb;<rs>barum</rs> <rs>apulie</rs> ciuitatem <pb n="212r" facs="vat:239" ed="#a"/>fuitque uirtus <rs>domini</rs> ad sanandum mul&bd;tos 
 infirmos. <hi>eodem</hi> mense <rs>uictor</rs> qui et <rs>desiderius</rs>, <rs>casinensis</rs> 
@@ -2938,7 +2939,7 @@ infirmos. <hi>eodem</hi> mense <rs>uictor</rs> qui et <rs>desiderius</rs>, <rs>c
 
 
 <p xml:id="g198.4-198.5" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g198.4-198.5add100">
+<add place="footer" hand="#hand2" xml:id="g198.4-198.5add100">
 &blb;<hi>hoc</hi> anno terr<seg type="ae">ae</seg> motus magnus factus est per totam <rs>apuliam</rs>, 
 &blb;ut in quibusdam locis turres ac domos subruisse ferunt. 
 </add>
@@ -2959,7 +2960,7 @@ uiriliter eum uicit. <hi>in</hi> quo siquidem bello, mirum dictu,
 
 
 <p xml:id="g198.12-198.13" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g198.12-198.13add100">
+<add place="footer" hand="#hand2" xml:id="g198.12-198.13add100">
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
 &blb;<hi>eodem</hi> anno comprehensa est <rs>siracu&bd;sa</rs>, 
 <rs>sicili<seg type="ae">ae</seg></rs> quondam caput, in qua fertur homi&bd;nes 
@@ -2976,7 +2977,7 @@ in ortu suo passa est eclipsim.
 
 
 <p xml:id="g198.16-198.17" decls="#al"> 
-<add place="margin" hand="#hand2" type="integration" xml:id="g198.16-198.17add100">
+<add place="margin" hand="#hand2" xml:id="g198.16-198.17add100">
 <note resp="#pm" type="segmentation"><hi>this</hi> note is written in the margin of the next page, 212v, but an asterisk links it to this point of the text.</note>
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
 &blb;<num value="1089">mlxxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, indictione <num value="12">xii</num>, papa <rs>urbanus</rs> 
@@ -2995,7 +2996,7 @@ et <rs>bandussianam</rs> ecclesiam.
 &blb;eiusque successoribus canonice intrantibus, accepit per uexil&bd;lum 
 ab eo terram cum ducatus ho<pb break="no" n="212v" facs="vat:240" ed="#a"/>nore. <hi>eodem</hi> anno <rs>sikelgayta</rs> 
 &blb;ducissa, mater <rs>roggeri</rs> ducis, defuncta est mense <hi>aprilis</hi>.
-<add place="margin" hand="#hand2" type="integration" xml:id="g199.1-199.8add100">
+<add place="margin" hand="#hand2" xml:id="g199.1-199.8add100">
 <hi>eodem</hi> 
 &blb;anno <rs>acherontia</rs> ciuitas cremata est mense <hi>augusti</hi>, in tantum 
 &blb;enim eodem uastata est igne, ut nulla domus, nullum inueniretur 
@@ -3007,7 +3008,7 @@ ab eo terram cum ducatus ho<pb break="no" n="212v" facs="vat:240" ed="#a"/>nore.
 
 <p xml:id="g199.9-199.12 " decls="#al"> 
 <pb n="108" ed="#b"/> 
-&blb;<hi>anni</hi> <rs>domini</rs> <num value="1091">mxci</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <add place="margin" type="integration">mense <hi>februario</hi></add> 
+&blb;<hi>anni</hi> <rs>domini</rs> <num value="1091">mxci</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <add place="margin">mense <hi>februario</hi></add> 
 &blb;<rs>iordanus</rs> <rs>capue</rs> defunctus est anno <num value="13">xiii</num> principatus eius. <hi>hic</hi> 
 &blb;autem fuit uir egregius, consilio sagax, uirtute in bello preuali&bd;dus. 
 <hi>cui</hi> successit <rs>riccardus</rs> filius eius princeps. 
@@ -3042,7 +3043,7 @@ qui postea eidem duci in honore ducatus successit.
 papa <rs>placencie</rs> sinodum celebrauit, et <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> nonas eiusdem 
 &blb;mensis <hi>aprilis</hi> fuit terribile signum in stellis, ita quod a medie noctis 
 &blb;tempore usque mane uise sunt innumere stelle mixtim ex omni 
-&blb;parte celi decu<add place="above" type="integration">r</add>risse et in terram decidisse. <hi>sequenti</hi> anno uero 
+&blb;parte celi decu<add place="above">r</add>risse et in terram decidisse. <hi>sequenti</hi> anno uero 
 &blb;indictione <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <rs>urbanus</rs> papa apud <rs>clarummontem</rs> <rs>aruornie</rs> sino&bd;dum 
 fecit, et tunc multitudo christianorum innumera exortatio&bd;ne 
 <rs>urbani</rs> pape commota est ex omni <rs>europa</rs> pro<pb break="no" n="213r" facs="vat:240" ed="#a"/>ficiscentium 
@@ -3053,7 +3054,7 @@ fecit, et tunc multitudo christianorum innumera exortatio&bd;ne
 
 
 <p xml:id="g200.17-200.21" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g200.17-200.21add100">
+<add place="footer" hand="#hand2" xml:id="g200.17-200.21add100">
 &blb;<hi>anno</hi> dominic<seg type="ae">ae</seg> incarnationis <num value="1096">mxcvi</num>, <rs>rogerius</rs> comes <rs>sicili<seg type="ae">ae</seg></rs> cum uigin&bd;ti 
 millibus <rs>agarenorum</rs> et cum innumera multitudine aliarum 
 &blb;gentium et uniuersis comitibus <rs>apuli<seg type="ae">ae</seg></rs> obsedit <rs>amalphim</rs>, ibique 
@@ -3112,7 +3113,7 @@ pontificali et <rs>paschalis</rs> est papa nuncupatus, seditque annis
 <p xml:id="g201.19-201.20" decls="#al"> 
 <link target="#g201.19-201.20 #g201.19-201.20garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g201.19-201.20add100">
+<add place="footer" hand="#hand2" xml:id="g201.19-201.20add100">
 &blb;<hi>hoc</hi> eodem anno 
 &blb;papa <rs>urbanus</rs> congregauit uniuersalem synodum in ciuitate <rs>baro</rs>, 
 &blb;in qua adfuerunt ex diuersis partibus episcopi <num value="130" type="wwords">centum triginta</num>. 
@@ -3124,7 +3125,7 @@ pontificali et <rs>paschalis</rs> est papa nuncupatus, seditque annis
 <rs>canusiam</rs> obsedit, cepitque illam ciuitatem retibus circum circa 
 &blb;extensis. <hi>eodem</hi> anno dux <rs>godifridus</rs> in <rs>hierusalem</rs> mortuus 
 &blb;est et <rs>balduinus</rs> frater eius rex est constituitus.
-<add place="footer" hand="#hand2" type="integration" xml:id="g202.5-202.10add100"><!-- metti add in par a sé §-->
+<add place="footer" hand="#hand2" xml:id="g202.5-202.10add100"><!-- metti add in par a sé §-->
 <hi>hoc</hi> anno in 
 &blb;mense <hi>iulio</hi> <rs>boamundus</rs> exiens ab <rs>antiochia</rs> cum <num value="300">ccc</num> equiti&bd;bus, 
 cum <rs>turcis</rs> bellum commisit ceciditque et comprehensus 
@@ -3135,7 +3136,7 @@ autem fuisse paganos <num value="123">cxxiii</num> millia.
 
 
 <p xml:id="g202.11-203.2" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="1101">mci</num> indictione <add place="nextline" type="integration"><num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> mense <hi>iunii</hi>,</add> 
+&blb;<hi>anno</hi> dominice incarnationis <num value="1101">mci</num> indictione <add place="nextline"><num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> mense <hi>iunii</hi>,</add> 
 &blb;<rs>roggerius</rs> <rs>sicilie</rs> comes defunctus est anno uite sue <num value="51">li</num>
 comitatus autem eius anno <num value="41"><choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice>i</num>, anno ab incarnatione <rs>domini</rs> <num value="1101">mc</num> primo, indictione <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. <hi>hic</hi> autem fuit 
 &blb;miles egregius, moribus insignis atque famosus, iustitie tenax, 
@@ -3144,7 +3145,7 @@ nutritor, pius, in elemosinis largus, ecclesiarum <rs>dei</rs> atque
 &blb;sacerdotum consulens. <hi>huic</hi> successit filius <pb n="214r" facs="vat:241" ed="#a"/>eius <rs>symon</rs>, 
 &blb;qui paucis transactis annis mortuus est. <hi>cui</hi> frater eius, predicti 
 &blb;<rs>roggerii</rs> comitis filius, <rs>roggerius</rs> comes successit.
-<add place="footer" hand="#hand2" type="integration" xml:id="g202.11-203.2add100"><!-- metti add in par a sé §-->
+<add place="footer" hand="#hand2" xml:id="g202.11-203.2add100"><!-- metti add in par a sé §-->
 <hi>hoc</hi> anno 
 &blb;a <rs>mulmachab<seg type="ae">ae</seg>o</rs> <rs>mons caueosus</rs> mutatur. 
 </add>
@@ -3155,14 +3156,14 @@ nutritor, pius, in elemosinis largus, ecclesiarum <rs>dei</rs> atque
 &blb;<hi>anno</hi> dominice incarnationis <num value="1102">mcii</num> indictione <num value="10">x</num> <rs>roggerius</rs> 
 &blb;dux simul cum papa <rs>paschali</rs> obsedit <rs>beneuentum</rs> maximo cum 
 &blb;exercitu, nec destitit donec eo qui tunc in eadem ciuitatem princi&bd;pabatur 
-expulso, cepit ipsam ciuitatem et ipsius <add place="above" type="integration">pape</add> iuri ac po&bd;testati 
+expulso, cepit ipsam ciuitatem et ipsius <add place="above">pape</add> iuri ac po&bd;testati 
 eam dimisit. 
 </p> 
 
 
 <p xml:id="g203.6-203.6" decls="#al"> 
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g203.6-203.6add100">
+<add place="footer" hand="#hand2" xml:id="g203.6-203.6add100">
 &blb;<hi>hoc</hi> tempore <rs>boamundus</rs> dimissus est et rediit 
 &blb;<rs>antiochiam</rs>. 
 </add>
@@ -3170,7 +3171,7 @@ eam dimisit.
 
 
 <p xml:id="g203.7-203.12" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="1105">mcu</num>, <add place="nextline" type="integration">indictione <num value="13">xiii</num>;</add> dux <rs>rog&bd;gerius</rs> 
+&blb;<hi>anno</hi> dominice incarnationis <num value="1105">mcu</num>, <add place="nextline">indictione <num value="13">xiii</num>;</add> dux <rs>rog&bd;gerius</rs> 
 obsedit montem <rs>sancti angeli</rs> cepitque ipsam ciuitatem et 
 &blb;castellum eius mense <rs>octobris</rs>. <hi>mense</hi> uero <hi>decembris</hi> <rs>boamun&bd;dus</rs> 
 a ciuitate <rs>antiocia</rs> in <rs>apuliam</rs> rediit profectusque in <rs>galliam</rs> 
@@ -3182,7 +3183,7 @@ a ciuitate <rs>antiocia</rs> in <rs>apuliam</rs> rediit profectusque in <rs>gall
 
 
 <p xml:id="g203.13-204.4" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <add place="nextline" type="integration"><num value="1106">mcui</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num><note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "cui" and ends with "xiiii". <hi>i</hi> could not encode this without incurring in <hi>xml</hi> overlap.</note></add> <rs>riccar&bd;dus</rs> 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1106">mcui</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num><note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "cui" and ends with "xiiii". <hi>i</hi> could not encode this without incurring in <hi>xml</hi> overlap.</note></add> <rs>riccar&bd;dus</rs> 
 princeps <rs>capuanus</rs> defunctus est mense <hi>ianuarii</hi> anno sui prin&bd;cipatus 
 <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>cui</hi> princeps successit frater eius <rs>robbertus</rs>. <hi>eo&bd;dem</hi> 
 anno apparuit stella cometis magna a parte occidentis sero 
@@ -3227,7 +3228,7 @@ circa polum uisa est tota nocte a sero usque mane
 
 
 <p xml:id="g205.3-206.12" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <add place="nextline" type="integration"><num value="1111">mcxi</num> indictione <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num><note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "tione" (last part of word "indictione") and ends with "iiii".</note></add> <rs>henricus</rs> filius <rs>hen&bd;rici</rs> 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1111">mcxi</num> indictione <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num><note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "tione" (last part of word "indictione") and ends with "iiii".</note></add> <rs>henricus</rs> filius <rs>hen&bd;rici</rs> 
 imperatoris <rs>alamannorum</rs>, ingenti cum exerci<pb break="no" n="215r" facs="vat:242" ed="#a"/>tu <rs>ala&bd;mannorum</rs> 
 et <rs>suauorum</rs> <rs>italiam</rs> uenit, plurisque rebus sibi com&bd;positis 
 <rs>nouariam</rs> ciuitatem sibi resistentem cepit eamque depo&bd;pulatus 
@@ -3285,7 +3286,7 @@ uirtute in bello preualidus. <hi>huic</hi> autem <rs>boamundus</rs> filius
 
 
 <p xml:id="g206.13-206.17" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g206.13-206.17add100">
+<add place="footer" hand="#hand2" xml:id="g206.13-206.17add100">
 &blb;<num value="1114">mcx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> indictione <num value="7">uii</num>. <hi>hoc</hi> anno mense <hi>ianuario</hi> 
 &blb;comprehensa a <rs>barensibus</rs> equitibus mater <rs>roberti</rs> comitis 
 &blb;et in custodia missa. <hi>unde</hi> iratus comes <rs>robertus</rs> fecit incidi 
@@ -3337,7 +3338,7 @@ ducis defuncta est.
 
 <p xml:id="g208.1-208.9" decls="#al"> 
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g208.1-208.9add100">
+<add place="footer" hand="#hand2" xml:id="g208.1-208.9add100">
 anno dominic<seg type="ae">ae</seg> incarnationis <num value="1116">mcxui</num>; 
 &blb;<hi>eodem</hi> anno regina et <rs>tancredus</rs> cum aliis multis, 
 &blb;idest <rs>goffredo</rs> <rs>britton</rs> et <rs>unfredo</rs> <rs>grauina</rs>, dominio et equitibus 
@@ -3359,7 +3360,7 @@ mense <hi>maio</hi> cum <num value="200">cc</num> equitibus et peditum turba ter
 
 
 <p xml:id="g208.10-208.14" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <add place="nextline" type="integration"><num value="1117">mcxuii</num>, indictione <num value="10">x</num>;<note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "carnationis" (last part of word "incarnationis").</note></add> mense 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1117">mcxuii</num>, indictione <num value="10">x</num>;<note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "carnationis" (last part of word "incarnationis").</note></add> mense 
 &blb;<hi>aprilis</hi> in <rs>uenecia</rs>, <rs>liguria</rs>, <rs>emilia</rs> atque <rs>flamminia</rs> <rs>italie</rs> prouin&bd;ciis, 
 in <rs>gallia</rs> quoque <rs>transalpinam</rs>, multorum domus contritis ho&bd;minibus 
 pluraque edificia simul et ecclesie ingenti terre motu 
@@ -3370,7 +3371,7 @@ pluraque edificia simul et ecclesie ingenti terre motu
 
 
 <p xml:id="g208.15-210.8" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <add place="nextline" type="integration"><num value="1118">mcxuiii</num>, indictione <num value="11">xi</num>;</add> tertio 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1118">mcxuiii</num>, indictione <num value="11">xi</num>;</add> tertio 
 &blb;idus <hi>decembris</hi>, feria <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, luna in signo geminorum passa est ecli&bd;psin 
 a quinta hora noctis usque in horam nonam noctis eiusdem. 
 &blb;<hi>eodem</hi> mense <hi>decembris</hi> post solis occasum usque in tertiam 
@@ -3449,7 +3450,7 @@ dimicans propter impatientiam suam uictus ac mortuus
 
 <p xml:id="g210.23-210.24" decls="#al"> 
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g210.23-210.24add100">
+<add place="footer" hand="#hand2" xml:id="g210.23-210.24add100">
 &blb;<hi>hoc</hi> tempore mense <hi>augusti</hi> regina <rs>constantia</rs> comprehensa 
 &blb;a comite <rs>alexandro</rs> et <rs>grimoaldo</rs> <rs>barense</rs> in <rs>menantia</rs> ciui&bd;tate 
 et cum ea equites <num value="50">l</num> traditione quorumdam ciuium. 
@@ -3486,7 +3487,7 @@ dux eiusdem pontificis aduentum obuius festinanter extra
 
 <p xml:id="g211.15-211.17" decls="#al"> 
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g211.15-211.17add100">
+<add place="footer" hand="#hand2" xml:id="g211.15-211.17add100">
 &blb;<hi>hoc</hi> tempore dux <rs>guillel&bd;mus</rs> 
 una cum <rs>constantia</rs> regnum <rs>tancredum</rs> obsederunt castel&bd;lum 
 <rs>sancte</rs> <rs>trinitatis</rs>, quod situm est super flumen <rs>basantum</rs>, et 
@@ -3496,7 +3497,7 @@ una cum <rs>constantia</rs> regnum <rs>tancredum</rs> obsederunt castel&bd;lum
 <!-- <rs>garufi</rs> has an apparatus note in page 212 on paragraph sorting -->
 
 <p xml:id="g212.1-212.4" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <add place="nextline" type="integration"><num value="1121">mcxxi</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add> men&bd;se 
+&blb;<hi>anno</hi> dominice incarnationis <add place="nextline"><num value="1121">mcxxi</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add> men&bd;se 
 <hi>iunii</hi> <rs>calixtus</rs> papa cum multitudine armatorum obsedit 
 &blb;<rs>gregorium</rs> papam, cognomento <rs>burdinum</rs>, qui secesserat in 
 &blb;ciuitate <rs>sutri</rs>; ab obsidione <rs>calixtus</rs> papa destitit, donec <rs>bur&bd;dinum</rs> 
@@ -3508,7 +3509,7 @@ cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs>
 <p xml:id="g212.12-212.16" decls="#al"> 
 <link target="#g212.12-212.16 #g212.12-212.16garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
 <milestone type="no-par-break-in-bonetti" ed="#b"/> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g212.12-212.16add100">
+<add place="footer" hand="#hand2" xml:id="g212.12-212.16add100">
 &blb;<hi>hoc</hi> tempore in mense <hi>iunio</hi> <rs>rogerius</rs> comes 
 &blb;<rs>sicili<seg type="ae">ae</seg></rs> cum turba non exigua equitum et peditum transfetauit in 
 &blb;<rs>calabriam</rs> et castellum <rs>sancti mauri</rs> nomine c<seg type="ae">ae</seg>pit et cremauit.
@@ -3521,7 +3522,7 @@ cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs>
 </p>
 
 <p xml:id="g212.5-212.9" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g212.5-212.9add100">
+<add place="footer" hand="#hand2" xml:id="g212.5-212.9add100">
 &blb;<num value="1122">mcxxii</num> indictione <num value="15">xu</num> mense <hi>septembris</hi>. <hi>hoc</hi> tempore <rs>callixtus</rs> 
 &blb;peruenit usque <rs>calabriam</rs> causa componend<seg type="ae">ae</seg> pacis inter 
 &blb;ducem <rs>guillelmum</rs> et comitem <rs>rogerium</rs> <rs>sicili<seg type="ae">ae</seg></rs>, quod minime 
@@ -3541,7 +3542,7 @@ equitibus exeredauit comitem <rs>iordanum</rs>.
 
 <p xml:id="g213.1-213.8" decls="#al">
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from page 213 line 1 to page 214 line 11 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph because the text segmentation in manuscript <hi>a</hi> is different than in <rs>garufi</rs>.</note>
-<add place="footer" hand="#hand2" type="integration" xml:id="g213.1-213.8add100">
+<add place="footer" hand="#hand2" xml:id="g213.1-213.8add100">
 <hi>anno</hi> dominice incarnationis <num value="1126">mcxxui</num> indictione <num value="3">iii</num>. <hi>huic</hi> suc&bd;cessit 
 <rs>honorius</rs> secundus natione <rs>lombardus</rs>, prius archidiaco&bd;nus 
 <rs>bononiensis</rs>, post cardinalis, deinde episcopus <rs>hostiensis</rs>, 
@@ -3562,7 +3563,7 @@ et <rs>roggerium</rs> comitem <rs>sicilie</rs> liggium hominem eius et
 
 <p xml:id="g212.10-212.11" decls="#al"> 
 <link target="#g212.10-212.11 #g212.10-212.11garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
-<add place="margin" hand="#hand2" type="integration" xml:id="g212.10-212.11add100">
+<add place="margin" hand="#hand2" xml:id="g212.10-212.11add100">
 <note resp="#hand2" type="sanctipetri">interponenda h<seg type="ae">ae</seg>c uerba et particul<seg type="ae">ae</seg> desumpt<seg type="ae">ae</seg> ex codice sancti <rs>petri</rs>:</note>
 &blb;<hi>anno</hi> <num value="1123">mcxxiii</num> in mense <hi>aprilis</hi> <rs>boamundus</rs><note resp="#pm" type="textcrit"><hi>note</hi> the important variant: ms <hi>a</hi> has "boamundus" while <rs>garufi</rs> and <rs>bonetti</rs> have "balduinus".</note> rex <rs>hiero&bd;solim<seg type="ae">ae</seg></rs> 
 capitur a paganis dum rediret de <rs>antiochia</rs>, sed breui tem&bd;pore 
@@ -3588,7 +3589,7 @@ habere poterat militibus erogabat, necessitate coactus
 confirmauit, et <rs>iudaycam</rs> pro magna parte adiunxit. <rs>ca&bd;strum</rs> 
 <rs>olibani</rs> reddidit, et totam <rs>pastinam</rs> ecclesie moriens dere&bd;liquit. 
 <hi>mortuus</hi> est autem apud <rs>salernum</rs> morte communi maior 
-&blb;triginta annis, anno ducatus sui <subst><del rend="rasura">octauo</del><add place="strikeover" type="correction">sexto</add></subst> decimo, anno dominice 
+&blb;triginta annis, anno ducatus sui <subst><del rend="rasura">octauo</del><add place="strikeover">sexto</add></subst> decimo, anno dominice 
 &blb;incarnationis <num value="1127">mcxxuii</num> mense <hi>iulio</hi>, in festo beati <rs>nazarii</rs>, indic&bd;tione 
 <num value="5">u</num>, sepultus est autem apud <rs>salernum</rs> in tumulo patris sui 
 &blb;in ecclesia beati <rs>mathei</rs> apostoli, quam <rs>robbertus</rs> dux auus eius 
@@ -3611,7 +3612,7 @@ ciuitate ab <rs>alfano</rs> <rs>capudaquensi</rs> episcopo est unctus in
 
 <p xml:id="g214.12-214.14" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from page 214 line 12 to page 215 line 3 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph because the text segmentation in manuscript <hi>a</hi> is different than in <rs>garufi</rs>.</note>
-<add place="margin" hand="#hand2" type="integration" xml:id="g214.12-215.3add100">
+<add place="margin" hand="#hand2" xml:id="g214.12-215.3add100">
 &blb;<hi>anno</hi> <num value="1127">mcxxuii</num> indictione <num value="6">ui</num> mense <hi>septembris</hi> 
 &blb;<rs>boamundus</rs> ueniens transfretauit in <rs>antiochiam</rs>, et factus est 
 &blb;princeps in loco patris sui, et omnes ciuitates suas <rs>apuli<seg type="ae">ae</seg></rs> comi&bd;ti 
@@ -3650,7 +3651,7 @@ ingressus cum <rs>robberto</rs> <rs>capuano</rs> principe,
 <p xml:id="g214.14-215.3" decls="#al"> 
 <link target="#g214.14-215.3 #g214.14-215.3garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g214.14-215.3 #g214.14-215.3bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-<add place="footer" hand="#hand2" type="integration" xml:id="g214.14-215.3add100">
+<add place="footer" hand="#hand2" xml:id="g214.14-215.3add100">
 <hi>hoc</hi> anno <rs>rogerius</rs> comes <rs>sicili<seg type="ae">ae</seg></rs> excommunicatur ab 
 <pb n="130" ed="#b"/> 
 &blb;<rs>honorio</rs> papa quia non permittebat ut episcopi <rs>sicili<seg type="ae">ae</seg></rs> ueni&bd;rent 
@@ -3731,7 +3732,7 @@ in sua potestate recepit.
 <p xml:id="g219.3-219.4" decls="#al"> 
 <link target="#g219.3-219.4 #g219.3-219.4garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g219.3-219.4 #g219.3-219.4bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-<add place="footer" hand="#hand2" type="integration" xml:id="g219.3-219.4add100">
+<add place="footer" hand="#hand2" xml:id="g219.3-219.4add100">
 &blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> 
 <pb n="132" ed="#b"/> 
 &blb;iuxta <rs>damascum</rs> occubuit, cuius corpus sine capite fertur esse 
@@ -3777,7 +3778,7 @@ in sua potestate recepit.
 <p xml:id="g214.n8-215.n14" decls="#al">
 <link target="#g214.n8-215.n14 #g214.n8-215.n14bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <link target="#g214.n8-215.n14 #g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/>
-<add place="footer" hand="#hand2" type="integration" xml:id="g214.n8-215.n14add100">
+<add place="footer" hand="#hand2" xml:id="g214.n8-215.n14add100">
 &blb;<num value="1127">mcxxuii</num>, indictione <num value="6">ui</num>. <hi>hoc</hi> an&bd;no 
 mense <hi>septembris</hi> <rs>boamundus</rs> filius <rs>boamundi</rs> principis 
 &blb;accersitus ab <rs>antiochenis</rs> ut in loco patris regnum obtineret 
@@ -3885,7 +3886,7 @@ uero <rs>pysanorum</rs> super <rs>amalfiam</rs> uenientes eam inmunitam
 
 
 <p xml:id="g216.n10-217.n1" decls="#al">
-<add place="footer" hand="#hand2" type="integration" xml:id="g216.n10-217.n1add100">
+<add place="footer" hand="#hand2" xml:id="g216.n10-217.n1add100">
 <link target="#g216.n10-217.n1 #g216.n10-217.n1garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g216.n10-217.n1 #g216.n10-217.n1bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 &blb;<num value="1129">mcxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, indictione <num value="9">ix</num>, mense <hi>iunii</hi>, dum ducis 
@@ -3927,7 +3928,7 @@ ad <rs>lotharii</rs> imperatoris <rs>teutonici</rs> auxilium confugerunt
 
 
 <p xml:id="g217.n4-217.n10" decls="#al">
-<add place="marginandfooter" hand="#hand2" type="integration" xml:id="g217.n4-217.n10add100">
+<add place="marginandfooter" hand="#hand2" xml:id="g217.n4-217.n10add100">
 <link target="#g217.n4-217.n10 #g217.n4-217.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g217.n4-217.n10 #g217.n4-217.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 &blb;<num value="1130">mcxxx</num>, indictione <num value="9">ix</num>, mense 
@@ -3959,7 +3960,7 @@ quem <rs>capue</rs> principem ordinauit, <rs ana="#ab">willelmum</rs> et <rs>hen
 <p xml:id="g218.n16-218.n23" decls="#al">
 <link target="#g218.n16-218.n23 #g218.n16-218.n23garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g218.n16-218.n23 #g218.n16-218.n23bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-<add place="footer" hand="#hand2" type="integration" xml:id="g218.n16-218.n23add100">
+<add place="footer" hand="#hand2" xml:id="g218.n16-218.n23add100">
 &blb;<num value="1131">mcxxxi</num>, indictione <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, 
 &blb;die <hi>natalis</hi> <rs>domini</rs> pr<seg type="ae">ae</seg>phatus dux <rs>rogerius</rs> pr<seg type="ae">ae</seg>cepit 
 &blb;congregari in <rs>sicili<seg type="ae">ae</seg></rs> prouincia omnes episcopos diuersa&bd;rum 
@@ -4001,10 +4002,10 @@ cum magno esercitu <rs>italiam</rs> intrauit et per partes <rs>ancone</rs>
 <p xml:id="g219.n1-219.n13" decls="#al">
 <link target="#g219.n1-219.n13 #g219.n1-219.n13garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g219.n1-219.n13 #g219.n1-219.n13bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-<add place="footer" hand="#hand2" type="integration" xml:id="g219.n1-219.n13add100">
+<add place="footer" hand="#hand2" xml:id="g219.n1-219.n13add100">
 &blb;<num value="1132">mcxxxii</num>, indictione <num value="8">uiii</num>, mense <hi>septembre</hi>, dum 
 &blb;<rs>rogerius</rs> dux <rs>brundusium</rs> ac turrem in eo constructam su<seg type="ae">ae</seg>
-&blb;subdidit potestati ips<subst><del rend="rasura">i</del><add place="strikeover" type="correction">o</add></subst>que reuersus <rs>sicili<seg type="ae">ae</seg></rs> fuisset, <rs>tan&bd;credus</rs>
+&blb;subdidit potestati ips<subst><del rend="rasura">i</del><add place="strikeover">o</add></subst>que reuersus <rs>sicili<seg type="ae">ae</seg></rs> fuisset, <rs>tan&bd;credus</rs>
 ad obsidendam turrem perrexit, ubi tota ingenii arte 
 &blb;decertauit ut caperet eam, set ut uidit inexpugnabilem eius 
 &blb;esse munitionem accensus ira fertur iurasse quod nulli qui in 
@@ -4067,7 +4068,7 @@ cum rebus suis illesos abire fecerunt. <hi>cancellarius</hi> autem
 <p xml:id="g217.n10-218.n16" decls="#al">
 <link target="#g217.n10-218.n16 #g217.n10-218.n16garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g217.n10-218.n16 #g217.n10-218.n16bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-<add place="marginandfooter" hand="#hand2" type="integration" xml:id="g217.n10-218.n16add100">
+<add place="marginandfooter" hand="#hand2" xml:id="g217.n10-218.n16add100">
 <note resp="#pm"><rs>garufi</rs> writes that this addition is from a hand more recent than hand2: "l'ultima interpolazione, cioè la settima, cf. p. 218 n. 2, dovuta ad uno interpolatore diverso da colui che scrisse le altre sei, come si può desumere dal differente sistema cronologico e dallo stile". <hi>however</hi>, <hi>i</hi> don't see a significant difference between the handwriting of this note and that of hand2.</note>
 &blb;<num value="1129">mcxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, indictione <num value="8">uiii</num>. <hi>hoc</hi> anno mense <hi>madii</hi> <rs>rogerius</rs> dux transfre&bd;tauit 
 a <rs>sicilia</rs>, uenitque in <rs>apuliam</rs> ac perrexit <rs>tarentum</rs>. <hi>deinde</hi> 
@@ -4233,7 +4234,7 @@ pugnauit, <rs>grecos</rs> deuicit, et <rs>angelum</rs> <rs>despoti</rs>, magistr
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>interea</hi> <rs>rome</rs><rs>innocentius</rs> papa mortuus est et sepultus apud 
 &blb;<rs>lateranum</rs> anno pontificatus sui <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, anno uero dominice in&bd;carnationis <!-- metti add in par a sé §-->
-<add place="nextline" type="integration"><num value="1143">mc<choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice>iii</num> indictione <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num></add><note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "xxxxiii".</note>. <hi>huic</hi> successit <rs>guido</rs>, natio&bd;ne 
+<add place="nextline"><num value="1143">mc<choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice>iii</num> indictione <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num></add><note resp="#pm" type="graphic"><hi>the</hi> addition in the next line actually starts with "xxxxiii".</note>. <hi>huic</hi> successit <rs>guido</rs>, natio&bd;ne 
 <rs>tuscus</rs>, prius presbiter cardinalis, qui et <rs>celestinus</rs> secundus 
 &blb;est uocatus. <hi>hic</hi> concordiam que inter <rs>innocentium</rs> papam et 
 &blb;regem <rs>roggerium</rs> facta est, ratam habere noluit, sed eam reuo&bd;cauit 
@@ -4320,7 +4321,7 @@ miseratione corripuit.
 &blb;habuerat, mortua est, et filia eius. <hi>post</hi> hec <rs>tarentinus</rs> princeps et 
 &blb;<rs>anfusus</rs> <rs>capuanorum</rs> princeps et <rs>henricus</rs> mortui sunt. <hi>nouis&bd;sime</hi> 
 autem <rs>roggerius</rs> dux <rs>apulie</rs>, primogenitus eius, mortuus 
-&blb;est anno dominice incarnationis <num value="1140">mcxl</num> nono indictione <num value="13">xii<add place="above" type="integration">i</add></num>, uir qui<pb break="no" n="156" ed="#b"/>dem 
+&blb;est anno dominice incarnationis <num value="1140">mcxl</num> nono indictione <num value="13">xii<add place="above">i</add></num>, uir qui<pb break="no" n="156" ed="#b"/>dem 
 &blb;speciosus et miles strenuus, pius, benignus, misericors et a 
 &blb;suo populo multum dilectus. <hi>rex</hi> autem <rs>roggerius</rs> tot flagellis 
 &blb;afflictus constanti animo pii patris flagella sustinuit, et sic se me&bd;dium 
@@ -4383,7 +4384,7 @@ satis et speciosum edificari palatium. <hi>quosdam</hi> autem
 <p xml:id="g234.n1-236.n10" decls="#al">
 <link target="#g234.n1-236.n10 #g234.n1-236.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g234.n1-236.n10 #g234.n1-236.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-<add place="addedfolios" hand="#hand2" type="integration" xml:id="g234.n1-236.n10add100">
+<add place="addedfolios" hand="#hand2" xml:id="g234.n1-236.n10add100">
 <note resp="#pm" type="segmentation"><rs>garufi</rs>, page 234 n. 2, discusses this addition. <hi>he</hi> writes that is written in the page margin ("nei margini di questa e della carta seguente"), but it is not the case. <hi>the</hi> long addition is written in added folios, whose pages are numbered as 228.b (recto and verso) and 228.c (recto and verso). <hi>folio</hi> 228.b is added right after folio 228.a (i.e. the original folio 228), but a mark [§richiamo] inserts the addition between the paragraph with id g232.11-232.21 ("...iussit adduci") and that with id g233.1-235.5 ("sic uir sapiens et discretus..."). <hi>this</hi> explains why the irregular sequence of manuscript folios at this point of this digital edition the sequence of manuscript folios: 228av, 229r until "iussit adduci"; then added folios 228br, 228bv, 228cr, 228cv; finally, 229r again from "sic ut uir sapiens et discretus".</note>
 <note resp="#pm" type="segmentation"><rs>garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
 <pb n="228br" facs="vat:258" ed="#a"/>
@@ -5044,7 +5045,7 @@ consuluit, dum et commissum sibi populum a periculo
 &blb;ergo quod factum fuerat secum recogitans et indignationem 
 &blb;apostolicam pertimescens, cum se moraturum circa <rs>salernum</rs> 
 &blb;aliquantulum disposuisset, mutato proposito, altera die galeas in&bd;trauit 
-et festinanter in <rs>siciliam</rs> <add place="nextline" type="integration">rediit.</add> 
+et festinanter in <rs>siciliam</rs> <add place="nextline">rediit.</add> 
 </p> 
 
 
@@ -5132,7 +5133,7 @@ plurimum ueneratus. <hi>cappellam</hi> <rs>sancti petri</rs>, que erat in
 &blb;argenteis et uestimentis pretiosis ditauit plurimum et ornauit. 
 &blb;<hi>clericos</hi> in ea multos et prebendas instituit, et diuinum in illa 
 &blb;officium decenter et tractatim et cum <rs>dei</rs> reuerentia et timore 
-&blb;celebrare di<add place="nextline" type="integration">sposuit</add>. 
+&blb;celebrare di<add place="nextline">sposuit</add>. 
 </p> 
 
 
@@ -5162,7 +5163,7 @@ militibus terras multas regia liberalitate concessit. <hi>his</hi>
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 &blb;<hi>eodem</hi> tempore gaytus <rs>petrus</rs> eunuchus et magister <pb n="243r" facs="vat:277" ed="#a"/>came&bd;rarius 
 palatii cum quibusdam aliis fugam petiit, et ad regem de 
-&blb;<rs>morrocho</rs> ueniens multam secum pecuniam transpor<add place="nextline" type="integration">tauit.</add> 
+&blb;<rs>morrocho</rs> ueniens multam secum pecuniam transpor<add place="nextline">tauit.</add> 
 </p> 
 
 
@@ -5188,7 +5189,7 @@ manente.
 ecclesia eligi fecerunt. <hi>qui</hi> in breui spatio temporis 
 <pb n="196" ed="#b"/> 
 &blb;tantam regis et regine gratiam et familiaritatem optinuit, quod 
-&blb;totum regnum pro suo arbitrio <add place="nextline" type="integration">disponebat.</add> 
+&blb;totum regnum pro suo arbitrio <add place="nextline">disponebat.</add> 
 </p> 
 
 
@@ -5295,13 +5296,13 @@ litteras et nuntios regi <rs ana="#ab">wilhelmo</rs> iuniori transmisit, humili&
 postulans ut ei amorem suum et gratiam restitueret. <hi>rex</hi> 
 &blb;autem et regina solita pietate eius miserti illum in suam gratiam 
 &blb;receperunt, cui etiam rex liberalitate sua comitatum <rs>loritelli</rs>, 
-&blb;sicut pater suus illi concesserat, reddidit, <pb n="245v" facs="vat:280" ed="#a"/>et de habun<add place="above" type="integration">dan</add>tia gra&bd;tie 
+&blb;sicut pater suus illi concesserat, reddidit, <pb n="245v" facs="vat:280" ed="#a"/>et de habun<add place="above">dan</add>tia gra&bd;tie 
 plenioris comitatum <rs>conuersani</rs> illi adiecit. 
 </p> 
 
 
 <p xml:id="g258.1-258.7surplus" decls="#al"> 
-<add place="footer" hand="#hand2" type="integration" xml:id="g258.1-258.7surplusadd100">
+<add place="footer" hand="#hand2" xml:id="g258.1-258.7surplusadd100">
 <note resp="#pm" type="segmentation">The usual hand2 wrote this addition without realizing that this portion of the text was already in the text body of the manuscript. I am transcribing it only as a possible source of other readings. Then someone deleted the addition and another hand wrote another note: "hec habentur in retro pagina lit. a".</note>
 <hi>recedente</hi> autem cancellario, clerus <rs>panormitan<seg type="ae">ae</seg></rs> eccle&bd;si<seg type="ae">ae</seg> 
 <rs>gualterium</rs> eiusdem ecclesi<seg type="ae">ae</seg> canonicum et <rs>agrigentinum</rs> de&bd;canum 
@@ -5471,7 +5472,7 @@ in <rs>domino</rs> consolationem accepit.
 
 
 <p xml:id="g262.8-262.16" decls="#al"> 
-&blb;<hi>anno</hi> <rs>domini</rs> <num value="1000">m</num> <add place="inline" hand="#uhand" type="integration"><num value="173">clxxiii</num></add> <rs>fredericus</rs> autem <rs>romano&bd;rum</rs> 
+&blb;<hi>anno</hi> <rs>domini</rs> <num value="1000">m</num> <add place="inline" hand="#uhand"><num value="173">clxxiii</num></add> <rs>fredericus</rs> autem <rs>romano&bd;rum</rs> 
 imperator recolens et alta mente reuoluens iniurias sibi a 
 &blb;<rs>lombardis</rs> frequenter illatas, et quod pene contra eum omnes 
 &blb;coniurassent, et quod <rs>mediolanenses</rs>, eo prohibente, <rs>mediola&bd;num</rs> 
@@ -5488,7 +5489,7 @@ intrauit.
 
 
 <p xml:id="g262.17-266.4" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="1000">m</num> <add hand="#hand2" place="inline" type="integration"><num value="174">clxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add>. <hi>primo</hi> au&bd;tem 
+&blb;<hi>anno</hi> dominice incarnationis <num value="1000">m</num> <add hand="#hand2" place="inline"><num value="174">clxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add>. <hi>primo</hi> au&bd;tem 
 ingressu suo <rs>astensem</rs> ciuitatem, <rs>taurinum</rs> et uicinas <pb n="249r" facs="vat:284" ed="#a"/>ciui&bd;tates, 
 ipsis se sponte reddentibus, occupauit. <hi>dehinc</hi> markionis 
 &blb;<rs>montisferrati</rs> et <rs>papiensium</rs> suggestione <rs>alexandriam</rs> ciuitatem 
@@ -5527,7 +5528,7 @@ nacta oportunitate, nescientibus <rs>alexandrinis</rs>, fossas et
 &blb;fecit, ut ex improuiso de cuniculis repente erumperent et citui&bd;tatem 
 huius fraudis nesciam occuparent. <hi>sed</hi> mox ut <rs>alexandrini</rs> 
 &blb;hoc perceperunt, arreptis armis, ceperunt 
-<add place="margin" hand="#hand2" type="integration" xml:id="g262.17-266.4add100">
+<add place="margin" hand="#hand2" xml:id="g262.17-266.4add100">
 ad fossati superiora concurrere, et terram dirumpere, propter quod terra desuper subito corruit.
 </add>
 ad fossata currere et 
@@ -5859,7 +5860,7 @@ dei tunicam, quantum in eo fuit, diuidere non ex&bd;pauit.
 <rs>romane</rs> ecclesie dignitas pene deperiit, et que domina gen&bd;tium 
 et princeps prouinciarum fuerat, facta est sub tributo. <hi>et</hi> 
 &blb;quia, imminente ualide persecutionis articulo, <rs>romane</rs> ecclesie 
-&blb;quodammodo est debilitata auctoritas, cum non esset <add hand="#uhand" place="above" type="integration">qui</add> de&bd;linquentium 
+&blb;quodammodo est debilitata auctoritas, cum non esset <add hand="#uhand" place="above">qui</add> de&bd;linquentium 
 errores <pb n="256r" facs="vat:293" ed="#a"/>et peccata corrigeret, sanctorum patrum 
 &blb;statuta et canones de suo ordine sunt et iure mutata. <hi>sicque</hi> fac&bd;tum 
 est, quod occasione huius scismatis et discordie multe ec&bd;clesie 
@@ -5916,7 +5917,7 @@ et idonea, suscipere debeamus</said>.
 &blb;<hi>postquam</hi> <rs>alexander</rs> papa suo sermoni finem imposuit, <rs>lom&bd;bardi</rs> 
 in utraque militia diligenter instructi — sunt enim in bello 
 &blb;strenui et ad concionandum populo mirabiliter eruditi — per sa&bd;pientes 
-suos taliter apostolico <add place="nextline" type="integration">responderunt:</add> <said><hi>uenerande</hi> pater 
+suos taliter apostolico <add place="nextline">responderunt:</add> <said><hi>uenerande</hi> pater 
 &blb;et domine, uniuersa <rs>ytalia</rs> pedibus se uestre dominationis incli&bd;nat 
 et sue deuotionis obsequia cum gratiarum actione multiplici 
 &blb;uestre beatitudini representat. <hi>letatur</hi> autem plurimum et exul&bd;tat, 
@@ -5938,7 +5939,7 @@ seruanda imperatorem cum suis scismaticis nec recipere
 subire <pb n="257v" facs="vat:295" ed="#a"/>non refutauimus. <hi>et</hi> ideo, reuerende pater, satis est 
 &blb;conueniens et rationi plurimum consentaneum, ut oblatam uo&bd;bis 
 imperatoris pacem non solum sine nobis non recipere, sed 
-&blb;<add hand="#uhand" place="above" type="integration">nec</add> etiam audire debeatis. <hi>ipse</hi> nanquam sepe nobis pacem sine 
+&blb;<add hand="#uhand" place="above">nec</add> etiam audire debeatis. <hi>ipse</hi> nanquam sepe nobis pacem sine 
 &blb;ecclesia optulit, nec recepimus; concordiam nobiscum sine uo&bd;bis 
 facere uoluit, nec admisimus; magis enim uolumus guerram 
 <pb n="232" ed="#b"/> 
@@ -6049,7 +6050,7 @@ prestita responsum ydoneum accepisset, nono die intrante
 
 <p xml:id="g275.12-275.18" decls="#al">
 <milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" ed="#b"/> 
-&blb;<hi>altera</hi> uero <add place="above" type="integration">die</add> per mare ad <rs>sanctum nicolaum</rs>, qui dici&bd;tur 
+&blb;<hi>altera</hi> uero <add place="above">die</add> per mare ad <rs>sanctum nicolaum</rs>, qui dici&bd;tur 
 <soCalled>ad litus</soCalled>, applicuit. <hi>tertia</hi> autem die a duce et populo <rs>uenecie</rs>, 
 &blb;a patriarcha et uniuerso clero, primo ad <rs>sanctum marcum</rs>, de&bd;hinc 
 ad patriarche palatium cum magna gloria est et honore 
@@ -6626,7 +6627,7 @@ missam domini pape deuote satis et humiliter audiebat.
 <pb n="264" ed="#b"/> 
 &blb;<hi>cumque</hi> dicto euangelio papa ascendisset pulpitum, ut allo&bd;queretur 
 populum, imperator accedens propius, cepit uerba 
-&blb;eius attentius a<add place="above" hand="#uhand" type="integration">u</add>scultare. <hi>cuius</hi> deuotionem papa diligenter at&bd;tendens, 
+&blb;eius attentius a<add place="above" hand="#uhand">u</add>scultare. <hi>cuius</hi> deuotionem papa diligenter at&bd;tendens, 
 uerba, que ipse litteratorie proferebat, fecit per patriar&bd;cham 
 <rs>aquileie</rs> in lingua <rs>teotonica</rs> euidenter exponi. <hi>finito</hi> 
 &blb;autem sermone, et <title><hi>credo</hi> in unum <rs>deum</rs></title> sollempniter decanta&bd;to, 
@@ -6979,7 +6980,7 @@ scriptura seruaret. <hi>ad</hi> petitionem igitur eorum pacis inter
 &blb;imperatorem et regem inite scriptum est priuilegium sigilli aurei 
 &blb;impressione <pb n="276v" facs="vat:315" ed="#a"/>munitum. <hi>ut</hi> autem prenominati priuilegii notitiam 
 &blb;semper habere possit secutura posteritas, eiusdem priuilegii 
-&blb;exemplar huic nostro operi dignum duximus annota<add place="nextline" type="integration">re:</add> 
+&blb;exemplar huic nostro operi dignum duximus annota<add place="nextline">re:</add> 
 </p> 
 
 
