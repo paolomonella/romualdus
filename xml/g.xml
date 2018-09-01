@@ -60,15 +60,15 @@
         <editorialDecl>
             <p>Italics was not encoded.</p>
             <quotation marks="none">
-                <p>Quotation marks were never retained. The reason is that they would have made OCR proofreading
-                    longer because quotation marks were ubiquitous, almost always used to highlight additions
+                <p>Quotation marks were never retained. The reason is that they would have made OCR proofreading 
+                    longer because quotation marks were ubiquitous, almost always used to highlight additions 
                     not present in all branches of the textual tradition.</p>
             </quotation>
         </editorialDecl>
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
                 <tagUsage gi="hi">
-                    Used to mark words capitalized in the print edition, but not constituting
+                    Used to mark words capitalized in the print edition, but not constituting 
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
                 <tagUsage gi="note">
@@ -118,7 +118,7 @@
 
 <p xml:id="g3.1-3.1" decls="#ocr" type="ghead1">
 <pb n="3" ed="#g"/>
-&glb;de etatibus
+&glb;de etatibus 
 </p>
 
 <p xml:id="g3.2-3.6" decls="#ocr"> 
@@ -184,7 +184,7 @@ in carne. <hi>generationibus</hi> et ipsa <num value="14">x<choice><orig>iiii</o
 &glb;exordio temporum usque ad incarnationem <rs>christi</rs> <rs>domini</rs> secundum <rs>hebreorum</rs> auctoritatem 
 &glb;prosequente beato <rs>hieronymo</rs> fiunt anni tria milia <num value="952"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lii</num>. <hi>&uu;erum</hi> &jj;uxta <rs>septuaginta</rs> in&gd;terpretes,
 quos omnino <rs>greci</rs> secuntur, numerantur anni <num value="5508">&uu;d&uu;iii</num>. <rs>eusebius</rs> autem, quem <rs>oro&gd;sius</rs>
-secutus est, inter utrosque numerat annos <num value="5199">&uu;cxc<choice><orig>&uu;iiii</orig><reg type="numeral">ix</reg></choice></num> quibus pene omnes
+secutus est, inter utrosque numerat annos <num value="5199">&uu;cxc<choice><orig>&uu;iiii</orig><reg type="numeral">ix</reg></choice></num> quibus pene omnes 
 <pb n="16v" facs="vat:23" ed="#a"/>
 latini utuntur.
 </p>
@@ -278,7 +278,7 @@ uiuentes, filii resurrectionis sic
 
 <p xml:id="g6.17-6.25" decls="#ocr"> 
 &glb;<rs>&jj;areth</rs> annorum <num value="162">clxii</num> genuit <rs>enoch</rs>, cui superuixit annis <num value="800">dccc</num> usque ad <num value="366">ccclx&uu;i</num> annum 
-&glb;natiuitatis <rs>noe</rs>. <hi>in</hi> hac generatione nusquam
+&glb;natiuitatis <rs>noe</rs>. <hi>in</hi> hac generatione nusquam 
 <pb n="18v" facs="vat:25" ed="#a"/>
 codices discrepant. <hi>hunc</hi> <rs>enoch</rs> nonnulla 
 &glb;diuina scripsisse <rs>&jj;uda</rs> apostolo attestante comperimus. <hi>sed</hi> ut beatus <rs>augustinus</rs> dicit: 
@@ -1384,7 +1384,7 @@ est opus <rs>dei</rs> in <rs>&jj;erusalem</rs>, et non fiebat usque ad secundum 
 &glb;dicunt <rs>&jj;udei</rs>; <quote type="biblia">quadraginta et sex annis edificatum est templum hoc</quote>. <hi>ceperunt</hi> autem edificare 
 &glb;anno secundo <rs>darii</rs> mense sexto die uicesima quarta, et anno sexto, ut dictum est, mense 
 &glb;duodecimo die tertio compleuerunt: ex quo apparet, opus templi et antea non parua ex 
-&glb;parte peractum; annos autem septuaginta a destructione illius, usque ad perfectam restau&gd;randi
+&glb;parte peractum; annos autem septuaginta a destructione illius, usque ad perfectam restau&gd;randi 
 <pb n="28" ed="#g"/> 
 licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus a <rs>romulo</rs> 
 &glb;<rs>tarquinius</rs> <rs>superbus</rs> regnabat, habens annum imperii uicesimum septimum, qui post anno <num value="8">&uu;iii</num> 
@@ -1473,7 +1473,7 @@ poteris in&uu;enire</quote>. <rs>xerses</rs> menses <num value="2">ii</num>. <hi
 
 
 <p xml:id="g29.38-30.2" decls="#ocr"> 
-&glb;<rs>darius</rs>, cognomento <rs>nothus</rs>, annis<pb n="48v" facs="vat:§" ed="#a"/> <num value="19">xix</num>. <rs>egyptus</rs> recessit a <rs>persis</rs>. <hi>reuersis</hi> de ca&gd;ptiuitate
+&glb;<rs>darius</rs>, cognomento <rs>nothus</rs>, annis<pb n="48v" facs="vat:§" ed="#a"/> <num value="19">xix</num>. <rs>egyptus</rs> recessit a <rs>persis</rs>. <hi>reuersis</hi> de ca&gd;ptiuitate 
 <pb n="30" ed="#g"/> 
 <rs>&jj;udeis</rs> non reges, sed pontifices prefuerunt, usque ad <rs>aristobolum</rs>, qui cum digni&gd;tate 
 pontificis, etiam regale sibi cepit usurpare uocabulum. <num value="3556"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dl&uu;i</num>. 
@@ -1720,7 +1720,7 @@ deinde, eodem consule, apud flumen <rs>trinium</rs>, et <rs>romani</rs> superati
 &glb;<hi>quinto</hi> bello apud <rs>trasimenum</rs> lacum. <hi>sexto</hi> apud <rs>cannas</rs> <rs>apulie</rs> uicum: in quo quadraginta 
 &glb;<num value="4"><choice><orig>iiii</orig><reg type="numeral">i&uu;</reg></choice></num> milia <rs>romanorum</rs> interfecta sunt, <hi>&uu;arro</hi> consul cum <num value="50">l</num> equitibus <rs>&uu;enusium</rs> fugiit. <hi>anno</hi> 
 &glb;ab <rs>urbe</rs> condita <num value="540">dxl</num> <rs>annibal</rs> in testimonium uictorie sue tres modios annulorum aureorum 
-&glb;<rs>cartaginem</rs> misit, quos ex manibus interfectorum equitum <rs>romanorum</rs>, senatorumque detraxe&gd;rat
+&glb;<rs>cartaginem</rs> misit, quos ex manibus interfectorum equitum <rs>romanorum</rs>, senatorumque detraxe&gd;rat 
 <pb n="36" ed="#g"/> 
 <hi>eo</hi> tempore bella quinque <rs>roma</rs> susceperat, unum in <rs>macedonia</rs> contra <rs>philippum</rs> poten&gd;tissimum 
 <rs>macedonie</rs> regem, alterum in <rs>hispania</rs> contra <rs>asdruualem</rs> <rs>annibalis</rs> fratrem, tertium 
@@ -2420,7 +2420,7 @@ residens, scripsit duas epistolas, que <rs>canonice</rs> nominantur, et euangeli
 ligandi, atque sol&uu;endi. <hi>ligabis</hi> quod oportet, sol&uu;es quod expedit, tamquam qui ad liqui&gd;dum 
 ecclesie regulas no&uu;eris: et tu in curis seculi deditus minime reperiaris. <hi>tibi</hi> autem cri&gd;men 
 impietatis est, studia, et sollicitudines suscipere secolares: ad hoc enim solum uocatus es, 
-&glb;ut opportune, et sine intermissione doceas uerbum <rs>dei</rs>. <hi>et</hi> hinc ante pascha <rs>domini</rs> quadra&gd;gesimale
+&glb;ut opportune, et sine intermissione doceas uerbum <rs>dei</rs>. <hi>et</hi> hinc ante pascha <rs>domini</rs> quadra&gd;gesimale 
 <pb n="51" ed="#g"/> 
 &jj;e&jj;unium ecclesiis tradidit. <hi>et</hi> ante natalem <rs>domini</rs> tres ebdomadas, et quartam 
 &glb;imperfectam ab omni christiano populo instituit uenerari in commemorationem primi, et se&gd;cundi 
@@ -2539,7 +2539,7 @@ causidicis, et philosophis in se dicta leuiter tulit, diligens coercitor fuit di
 &glb;militaris. <hi>non</hi> solum autem<pb n="77r" facs="vat:§" ed="#a"/> <rs>&jj;udeam</rs>, uerum etiam <rs>palestinam</rs>, <rs>acha&jj;am</rs>, <rs>liciam</rs>, <rs>rhodum</rs>, 
 &glb;<hi>bizantum</hi>, <hi>samum</hi>, <rs>thraciam</rs> quoque, <rs>ciliciam</rs>, <rs>commagene</rs> <rs>romano</rs> subegit imperio; filios 
 &glb;autem suos ita cognitos habuit, ut, cum multe contra eum con&jj;urationes fierent, quas patefa&gd;ctas 
-ingenti dissimulatione contempsit, in senatu dixerit, aut filios suos successores, aut ne&gd;minem
+ingenti dissimulatione contempsit, in senatu dixerit, aut filios suos successores, aut ne&gd;minem 
 <pb n="54" ed="#g"/> 
 <hi>post</hi> hec cum senatui populo, postremo cunctis amabilis ac &jj;ocundus esset, profluuio 
 &glb;uentris extinctus est in uilla propria, circa <rs>sabinos</rs>, annos agens etatis <num value="69">lxix</num> principatus sui 
@@ -3040,7 +3040,7 @@ uitam finiuit, et sepultus est ad catacumbas, <rs>decio</rs> <rs>cesare</rs> pre
 
 
 <p xml:id="g65.28-66.13" decls="#ocr"> 
-&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="239">ccxxxix</num> et anno ab urbe condita <num value="991"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xci</num> <rs>gor&gd;imus
+&glb;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="239">ccxxxix</num> et anno ab urbe condita <num value="991"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xci</num> <rs>gor&gd;imus 
 <pb n="66" ed="#g"/>dianus</rs>
 tertius ab <rs>augusto</rs> imperator creatus mansit in eo annis sex; quamuis 
 &glb;cum eo duo alii <rs>augusti</rs> essent creati obscurissimo genere, <rs>pupienus</rs> uidelicet, et <rs>albinus</rs>. 
@@ -3130,7 +3130,7 @@ propter testimonium ecclesiasticum. <hi>qui</hi> postquam de exilio reuersus est
 &glb;truncatus, positus est cum collegis suis episcopis. <rs>stephanus</rs> natione <rs>romanus</rs> ex patre 
 &glb;<rs>&jj;ulio</rs> post hunc curam suscepit episcopalem. <hi>hic</hi> constituit, ut sacerdotes, et leuite uasis 
 &glb;et uestibus sacris in usu cotidiano non utantur, nisi in ecclesia tantum. <hi>et</hi> hic decollatus 
-&glb;est ex precepto <rs>decii</rs> intra missarum solempnia, quando communicabat, cum duodecim pre&gd;sbyteris
+&glb;est ex precepto <rs>decii</rs> intra missarum solempnia, quando communicabat, cum duodecim pre&gd;sbyteris 
 <pb n="68" ed="#g"/> 
 et septem <hi>diaconibus</hi>, et decem et septem clericis, et in eodem<pb n="92v" facs="vat:§" ed="#a"/> loco ad <hi>catacumbas</hi> 
 &glb;sepultus est. 
@@ -3193,7 +3193,7 @@ appellatus. <rs>rome</rs> autem a <hi>senatu</hi> <rs>gallienus</rs> <rs>cesar</
 
 <p xml:id="g68.33-69.35" decls="#ocr"> 
 &glb;<hi>&uu;alerianus</hi> siquidem mox ut arripuit imperium<pb n="93v" facs="vat:§" ed="#a"/> octauus a <rs>nerone</rs> adigi per tormenta 
-&glb;<hi>christianos</hi> ad idolatriam, abnegantesque eam, interfici &jj;ussit, fuso per omnem <rs>romanam</rs> so&gd;litudinem
+&glb;<hi>christianos</hi> ad idolatriam, abnegantesque eam, interfici &jj;ussit, fuso per omnem <rs>romanam</rs> so&gd;litudinem 
 <pb n="69" ed="#g"/> 
 sanguine sanctorum. <hi>&uu;alerianus</hi> illico nefarii auctor edicti, a <rs>sapore</rs> <rs>persarum</rs> 
 &glb;rege captus, imperator populi <rs>romani</rs> ignominiosus, apud <rs>persas</rs> seruitute consenuit, ac in&gd;famis 
@@ -3569,7 +3569,7 @@ mirabiliter abhorret a uero. <hi>quis</hi> enim nisi mente captus crediderit, ta
 &glb;recitata est, et <rs>arrius</rs> cum suis complicibus dampnatus, errori se uellet mancipari dampnato, 
 &glb;maxime cum et <rs>arrium</rs> sciret sanctorum patrum, et sua auctoritate dampnatum, et <rs>constan&gd;tinopoli</rs>, 
 <rs>dei</rs> &jj;udicio turpissima morte multatum? <hi>beatus</hi> autem <rs>siluester</rs> <pb n="104v" facs="vat:§" ed="#a"/> priuilegium meruit 
-&glb;a <rs>constantino</rs> <rs>augusto</rs>, ut omnes episcopi sint subiecti <rs>romano</rs> pontifici, ut iudices impera&gd;tori
+&glb;a <rs>constantino</rs> <rs>augusto</rs>, ut omnes episcopi sint subiecti <rs>romano</rs> pontifici, ut iudices impera&gd;tori 
 <pb n="78" ed="#g"/> 
 <hi>huius</hi> temporibus factum est <hi>concilium</hi> cum e&jj;us precepto in <rs>nicea</rs> <rs>bythinie</rs>, et con&gd;gregati 
 sunt trecentum decem et octo episcopi catholici, qui exposuerunt fidem integram 
@@ -3649,7 +3649,7 @@ regione, deleuit. <hi>quemdam</hi> <rs>calocerum</rs> in <rs>cypro</rs> aspirant
 &glb;<hi>basilicam</hi> <rs>constantinianam</rs>, ubi posuit ista dona: fastigium argenteum battutile, quod habet 
 &glb;in fronte <rs>saluatorem</rs> sedentem in sella cum pedibus <num value="5">&uu;</num> ponderans libras <num value="120">cxx</num>, et duodecim 
 &glb;apostolos, qui pensant singuli in quinis pedibus libras <num value="90">xc</num> cum coronis argenti purissimi. <hi>item</hi> 
-&glb;a tergo respicientem in absida <rs>saluatorem</rs> sedentem in throno in pedibus <num value="5">&uu;</num> ex argento pu&gd;rissimo
+&glb;a tergo respicientem in absida <rs>saluatorem</rs> sedentem in throno in pedibus <num value="5">&uu;</num> ex argento pu&gd;rissimo 
 <pb n="80" ed="#g"/> 
 ponderans libras <num value="140">c<choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice></num>, et angelos <num value="4"><choice><orig>iiii</orig><reg type="numeral">i&uu;</reg></choice></num> ex argento in pedibus <num value="5">&uu;</num> ponderantes singuli 
 &glb;libras <num value="105">c&uu;</num> cum gemmis a<pb n="107r" facs="vat:§" ed="#a"/>labandenis in oculos tenentes hastas; fastigium ipsum, ponderantes 
@@ -4170,7 +4170,7 @@ est, continuo magnus ille et ineffabilis turbo uentorum in hora hostium ruit; fe
 nunc inpressis pertinaciter obstructa claudebat, nunc auulsis uiolenter destituta nuda&gd;bas, 
 nunc oppositis &jj;ugiter in terga trudebat. <hi>tela</hi> etiam, que ipsi uehementer intorserant, 
 &glb;excepta uenti impetu, ac retrorsum coacta, ipsos, infeliciter configebant. <hi>prospexit</hi> sibi 
-&glb;humane conscientie pauor; nam continuo parua suorum manu fusa uictori <rs>theodosio</rs> ho&gd;stilis
+&glb;humane conscientie pauor; nam continuo parua suorum manu fusa uictori <rs>theodosio</rs> ho&gd;stilis 
 <pb n="92" ed="#g"/> 
 se prostrauit exercitus. <rs>eugenius</rs> captus atque interfectus est. <rs>arbogastes</rs> sua se manu 
 &glb;perculit, ita et hic duorum sanguine bellum ciuile restinctum est, absque illis decem milibus 
@@ -4520,7 +4520,7 @@ aggressus est; quam continuo triennio obsedit, nec preualuit, resistentibus ei s
 &glb;ciuibus. <hi>cum</hi> autem die quadam aspiceret <rs>ciconias</rs> uno impetu ex urbe migrare, fetusque 
 &glb;suos sublatos rostris per rura forinsecus deportare: aspicite (inquit ad suos), aues futurorum 
 &glb;prescias perituram relinquere ciuitatem; statim adhibitis machinis, ciuitatem acriter expugna&gd;uit, 
-ac sine mora cepit. <hi>diripiuntur</hi> opes, captiuantur, trucidanturque ciues, residuum di&gd;reptionis
+ac sine mora cepit. <hi>diripiuntur</hi> opes, captiuantur, trucidanturque ciues, residuum di&gd;reptionis 
 <pb n="101" ed="#g"/> 
 igni supposito, flamma consumit. <hi>exinde</hi> per uniuersam <rs>uenetiarum</rs> urbes, hoc 
 &glb;est, <hi>uicentiam</hi>, <rs>ueronam</rs>, <rs>brixiam</rs>, <rs>pergamum</rs>, seu reliquas ciuitates, nullo resistente <rs>hunni</rs> 
@@ -4639,7 +4639,7 @@ et septem annos, rexisset diem clausit extremum. <hi>hic</hi> pro tomo <rs>calce
 &glb;<rs>christi</rs> incarnatione suscepit omnium rescripta, ac si uno tempore, unoque dictante fuissent 
 &glb;uniuersa conscripta: <hi>theodoratus</hi> episcopus ciuitatis, que a <rs>cyro</rs> rege <rs>persarum</rs> condita, 
 &glb;<hi>cyrie</hi> nomen habet, scri<pb n="127r" facs="vat:§" ed="#a"/>bit de uera incarnatione domini <hi>saluatoris</hi> aduersus <rs>eutychen</rs>, et 
-&glb;<hi>dioscorum</hi> <rs>alexandrie</rs> episcopum, qui humanam in <rs>christo</rs> carnem negant, scripsit et histo&gd;riam
+&glb;<hi>dioscorum</hi> <rs>alexandrie</rs> episcopum, qui humanam in <rs>christo</rs> carnem negant, scripsit et histo&gd;riam 
 <pb n="104" ed="#g"/> 
 ecclesiasticam a fine librorum <rs>eusebii</rs>, usque ad suum tempus, id est usque ad impe&gd;rium 
 <rs>leonis</rs> hu&jj;us, sub quo et mortuus est. <hi>&uu;ictorius</hi>, &jj;ubente papa <rs>hilario</rs>, scripsit <rs>paschalem</rs> 
@@ -4877,7 +4877,7 @@ bello premebant. <rs>guinili</rs> igitur, qui et <rs>longobardi</rs>, commisso p
 &glb;acriterque dimicantes, uictoriam capiunt. <hi>de</hi> qua regione <rs>longobardi</rs>, transacto non modico 
 &glb;tempore, propter famis penuriam exientes, transierunt in <rs>mauringam</rs>, unde progressi habita&gd;uerunt 
 in <rs>golandam</rs>. <hi>mortuis</hi> autem ducibus, regem sibi <rs>agelmundum</rs>, filium <rs>a&jj;onis</rs> ducis 
-&glb;statuerunt, qui per triginta tribus annorum curricula illis prefuit, qui quodam flumine trans&gd;meato
+&glb;statuerunt, qui per triginta tribus annorum curricula illis prefuit, qui quodam flumine trans&gd;meato 
 <pb n="109" ed="#g"/> 
 in finibus <rs>&uu;ulgarorum</rs>, ter cum eis dimicauit. <rs>longobardi</rs> eorum igitur duobus 
 &glb;preliis terga dantes, tertio prelio uictoriam capientes, contritis <rs>uulgaribus</rs>, magna de illis sunt 
@@ -4923,7 +4923,7 @@ imperium <rs>romanorum</rs>, et <rs>leone</rs> <rs>constantinopolitanum</rs>, ap
 
 <p xml:id="g109.31-110.33" decls="#ocr"> 
 &glb;<hi>eo</hi> tempore defuncto <rs>anastasio</rs> papa, <rs>symmachus</rs> ordinatur, sed cum magna dissentione. 
-&glb;<rs>childericus</rs> autem <rs>francorum</rs> rex regnauit annis <num value="24">xxi&uu;</num>. <hi>post</hi> cu&jj;us mortem regnauit <rs>clo&gd;s e&jj;us
+&glb;<rs>childericus</rs> autem <rs>francorum</rs> rex regnauit annis <num value="24">xxi&uu;</num>. <hi>post</hi> cu&jj;us mortem regnauit <rs>clo&gd;s e&jj;us 
 <pb n="110" ed="#g"/>doueus</rs>
 qui fuit uir in rebus bellicis strenuus, et uirtute egregius. <hi>his</hi> autem 
 &glb;diebus beatus <rs>remigius</rs> <rs>remensem</rs> <pb n="134r" facs="vat:§" ed="#a"/>episcopatum regebat <rs>clodoueus</rs> autem duxit uxorem 
@@ -5140,7 +5140,7 @@ cum ualida manu dirigit. <hi>hic</hi> autem <rs>narsis</rs> prius quidem <rs>car
 &glb;uictoriam obtineret. <hi>hac</hi> tempestate <rs>langobardorum</rs> gens apud <rs>pannoniam</rs> degebat, quibus 
 &glb;preerat rex <rs>alboyn</rs>. <rs>narsis</rs> igitur ad <rs>italiam</rs> ueniens, cum iam <rs>langobardos</rs> amicitia fede&gd;ratos 
 haberet, legatos ad <rs>alboyn</rs> dirigit, quatenus ei cum <rs>gothis</rs> pugnaturo ipse cum suis 
-&glb;auxilium ministraret. <hi>tunc</hi> <rs>alboyn</rs> electam e suis manum direxit, qui suffragium <rs>narsi</rs> ad&gd;uersus
+&glb;auxilium ministraret. <hi>tunc</hi> <rs>alboyn</rs> electam e suis manum direxit, qui suffragium <rs>narsi</rs> ad&gd;uersus 
 <pb n="115" ed="#g"/> 
 <rs>gothos</rs> conferrent. <hi>qui</hi> maris <rs>adriatici</rs> sinum transuecti, sociati <rs>romanis</rs> magno cum 
 &glb;<rs>gothis</rs> certamine conflixere. <hi>quibus</hi> deuictis et usque ad internecionem pariter cum <rs>totila</rs> 
@@ -6194,7 +6194,7 @@ rari equandi sunt. <hi>cernentes</hi> <rs>langobardi</rs> huius interitum <rs>li
 &glb;plurima castra cepit, <rs>rauennam</rs> quoque obsedit cepitque. <hi>tunc</hi> <rs>tyberis</rs> fluuius alueo suo 
 &glb;egressus multa <rs>romane</rs> fecit exitia ciuitati; ita ut in uia <rs>lata</rs> ad unam et semis staturam 
 &glb;hominis excederet aqua, et a porta sancti <rs>petri</rs> usque ad pontem <rs>moluium</rs> aque se co&gd;niungerent. 
-<hi>mansit</hi> autem septem diebus. <hi>interea</hi> <rs>theodosio</rs> apud <rs>constantinopolim</rs> im&gd;peratore
+<hi>mansit</hi> autem septem diebus. <hi>interea</hi> <rs>theodosio</rs> apud <rs>constantinopolim</rs> im&gd;peratore 
 <pb n="139" ed="#g"/> 
 defuncto, <rs>leo</rs>, cognomento <rs>surus</rs>, cum <rs>constan<pb n="168r" facs="vat:§" ed="#a"/>tino</rs> persecutore dum imperiali di&gd;gnitate 
 sublimatus esset, sanctorum imagines apud <rs>constantinopolim</rs> deponi atque incendi 
@@ -6243,7 +6243,7 @@ est, regnauitque annis <num value="5">&uu;</num>, <rs>franci</rs> autem inuident
 contra quos <rs>carolus</rs> occurrit intrepidus <rs>parisius</rs> ciuitate, <hi>sequane</hi> fluuio transito 
 &glb;usque <rs>aurelianis</rs> peruenit, debellans eosque deuincens. <hi>post</hi> hec ipse quidem <rs>chilpericus</rs> 
 &glb;mortuus est anno quinto et dimidio regni eius. <rs>franci</rs> uero <rs>theodericum</rs> filium <rs>dagoberti</rs> 
-&glb;iunioris regem super se statuunt. <hi>per</hi> idem tempus rebellantibus <rs>saxonibus</rs>, <rs>carolus</rs> prin&gd;ceps
+&glb;iunioris regem super se statuunt. <hi>per</hi> idem tempus rebellantibus <rs>saxonibus</rs>, <rs>carolus</rs> prin&gd;ceps 
 <pb n="140" ed="#g"/> 
 ueniens preoccupauit illos debellansque illos reuertitur. <hi>sub</hi> hisdem diebus, euoluto 
 &glb;anni circulo, collecto agmine <rs>renum</rs> fluuium transiit <rs>alamannosque</rs> et <rs>sueuos</rs> lustratur et 
@@ -6332,7 +6332,7 @@ properauit. <hi>commisso</hi> itaque prelio tanta eos cede prostrauerunt, quod p
 &glb;<rs>rome</rs> uero <rs>gregorio</rs> papa defuncto et in ecclesia beati <rs>petri</rs> sepulto, successit ei <rs>za&gd;charias</rs>, 
 natione <rs>grecus</rs>, ex patre <rs>policronio</rs>, seditque annis <num value="10">x</num> mensibus <num value="7">&uu;ii</num>. <hi>uir</hi> mitissimus 
 &glb;atque suauissimus omnique bonitate ornatus, amator cleri et totius populi, tardus ad ira&gd;scendum 
-et uelox ad miserendum, nulli malum pro malo reddens, suis etiam persecuto&gd;ribus
+et uelox ad miserendum, nulli malum pro malo reddens, suis etiam persecuto&gd;ribus 
 <pb n="142" ed="#g"/> 
 bona pro malis reddidit. <hi>hic</hi> inuenit totam <rs>italiam</rs> ualde turbatam simul et du&gd;catum 
 <rs>romanum</rs>, persequente <rs>liutprando</rs> <rs>langobardorum</rs> rege, ac <rs>romane</rs> ecclesie 
@@ -6549,7 +6549,7 @@ subdiaconus factus, populum sibi sacramentum prebere fecit. <hi>et</hi> aduenien
 est, ita quod nec ad os suum conferre ualuit, sicque languens uitam finiuit. <hi>constan</hi>&gd;tinus 
 autem transacto anno, seditione commota in populo, de sede pontificatus expulsus est. 
 &glb;<hi>alia</hi> uero die <rs>philippum</rs> presbyterum de monasterio sancti <rs>uiti</rs> trahentes elegerunt, eumque 
-&glb;in basilicam <rs>saluatoris</rs> more solito deduxerunt; illic ab episcopo oratione data iuxta anti&gd;quitatis
+&glb;in basilicam <rs>saluatoris</rs> more solito deduxerunt; illic ab episcopo oratione data iuxta anti&gd;quitatis 
 <pb n="147" ed="#g"/> 
 morem omnibus pacem tribuit, et sic statim in <rs>lateranense</rs> introduxerunt patriar&gd;chium. 
 <hi>ibique</hi> similiter in sella pontificali sedens, tribuens eis denuo, ut mos est, pacem 
@@ -6930,7 +6930,7 @@ post multas et insignes uictorias in <rs>mesia</rs> prouincia, commisso cum <rs>
 
 
 <p xml:id="g155.35-156.8" decls="#ocr"> 
-&glb;<hi>et</hi> <rs>stephanus</rs> diaconus ei papa successit, qui sedit annis <num value="7">&uu;ii</num>, mensibus <num value="3">iii</num>. <rs>carolus</rs> im&gd;perator
+&glb;<hi>et</hi> <rs>stephanus</rs> diaconus ei papa successit, qui sedit annis <num value="7">&uu;ii</num>, mensibus <num value="3">iii</num>. <rs>carolus</rs> im&gd;perator 
 <pb n="156" ed="#g"/> 
 habito generali conuentu cum <rs>aquisgrani</rs> hyemaret, <hi>amalarium</hi> <rs>treuerensem</rs> episco&gd;pum 
 et <rs>petrum</rs> abbatem <rs>nonantulas</rs> <rs>constantinopolim</rs> misit propter pacem cum <rs>michele</rs> 
@@ -7210,7 +7210,7 @@ est. <hi>hic</hi> hoste collecta <rs>capuam</rs> uenit, et per <rs>beneuentum</r
 
 <p xml:id="g161.25-162.5" decls="#ocr"> 
 &glb;<hi>anno</hi> dominice incarnationis <num value="875">dccclxx&uu;</num>, indictione <num value="8">&uu;iii</num>. <rs>carolus</rs> imperator a <rs>iohanne</rs> 
-&glb;papa inuitatus <rs>romam</rs> uenit, a quo coronatus et <rs>romanorum</rs> imperator appellatus est; qui&gd;que
+&glb;papa inuitatus <rs>romam</rs> uenit, a quo coronatus et <rs>romanorum</rs> imperator appellatus est; qui&gd;que 
 <pb n="162" ed="#g"/> 
 episcopis et ceteris quibusque clericis assistentibus, et uestibus ecclesiasticis indutis, ipse 
 &glb;in gremio <hi>synodi</hi> in uestitu deaurato, <rs>romano</rs> more paratus et coronatus, cantans antipho&gd;nam: 

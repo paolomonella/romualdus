@@ -20,7 +20,7 @@
         <p>Encoding experiments</p>
       </publicationStmt>
       <sourceDesc>
-          <p>The digital reproductions of codex
+          <p>The digital reproductions of codex 
               <bibl xml:id="a">Vat. lat. 3973</bibl>
           </p>
         <p>The collation base until paragraph g163.6-163.7 was:</p>
@@ -75,11 +75,11 @@
         <editorialDecl>
             <quotation marks="none">
                 <p>The manuscript does not have quotation marks.
-                    Some passages (direct speech or epistle quotations) are marked up with
+                    Some passages (direct speech or epistle quotations) are marked up with 
                     <gi>said</gi>, without quotation marks.</p>
                 <p>Quotations from literary works are marked up with <gi>quote</gi>.
-                    In these cases, @type="biblia" means that it is a biblical quote, according
-                    to the "Manuale di codifica dei testi ALIM in TEI XML" in
+                    In these cases, @type="biblia" means that it is a biblical quote, according 
+                    to the "Manuale di codifica dei testi ALIM in TEI XML" in 
                     http://it.alim.unisi.it/documentazione/</p>
             </quotation>
         </editorialDecl>
@@ -94,11 +94,11 @@
                     "marginandfooter", "inline", "strikeover", "above".</p>
                 </tagUsage>
                 <tagUsage gi="hi">
-                    Used to mark up words capitalized in the print edition, but not constituting
+                    Used to mark up words capitalized in the print edition, but not constituting 
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
                 <tagUsage gi="seg">
-                    With @type="ae", it is used to mark the sequence of alphabemes 'ae' when it is represented
+                    With @type="ae", it is used to mark the sequence of alphabemes 'ae' when it is represented 
                     by grapheme 'e caudatum' in the manuscript.
                 </tagUsage>
                 <tagUsage gi="note">
@@ -106,21 +106,21 @@
                     <list>
                         <item>With @type="content": note on the text content.</item>
                         <item>With @type="graphic": note on glyphs or graphemes.</item>
-                        <item>With @type="mscorrhand2" and @resp="#pm": note on corrections made in the manuscript
+                        <item>With @type="mscorrhand2" and @resp="#pm": note on corrections made in the manuscript 
                             by hand2 (variant readings by hand2 in the manuscript).</item>
-                        <item>With @type="segmentation": note on the text segmentation (arrangement of paragraphs
+                        <item>With @type="segmentation": note on the text segmentation (arrangement of paragraphs 
                             or missing paragraphs).</item>
                         <item>With @type="textcrit": note on textual critical matters.</item>
-                        <item>With @type="year": note on the year in which a fact actually happened, according
+                        <item>With @type="year": note on the year in which a fact actually happened, according 
                             to a scholar (with @resp; it is normally @resp="#b" for Bonetti).</item>
                     </list>
                     With @resp="#hand2" (the hand from the XVII century):
                     <list>
-                        <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript
-                            saying that a marg or footer note has been taken by manuscript
+                        <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript 
+                            saying that a marg or footer note has been taken by manuscript 
                             B ("codex sancti Petri").</item>
-                        <item>With @type="etcetera": a note handwritten by hand2 on the manuscript
-                            reporting the first words of the portion of the text that is supposed to follow a
+                        <item>With @type="etcetera": a note handwritten by hand2 on the manuscript 
+                            reporting the first words of the portion of the text that is supposed to follow a 
                             marginal or footer addition by "hand2".
                             The note normally ends with "et cetera…"</item>
                     </list>
@@ -133,7 +133,7 @@
                     or in combination with <gi>subst</gi> and <gi>add</gi>.</p>
                     <p>Possible values for @rend: "strikethrough", "rasura",
                     "nodeletion" (the latter, only with <gi>subst</gi> and <gi>add</gi>).</p>
-                    <p>If no @hand attribute is provided, it is implied that the deletion
+                    <p>If no @hand attribute is provided, it is implied that the deletion 
                     (and the correction, if any) are made by the main hand of the manuscript.
                     If they are made by another hand, a @hand attribute is added to <gi>subst</gi>,
                     <gi>del</gi> and <gi>add</gi>.</p>
@@ -141,7 +141,7 @@
                 <tagUsage gi="link">
                     With @type="transposition", it links a paragraph (first teidata.pointer in the value)
                     of the manuscript text to an <gi>anchor</gi> (second teidata.pointer in the value)
-                    marking the point of the text in which that paragraph is collocated
+                    marking the point of the text in which that paragraph is collocated 
                     <list>
                         <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
                         <item>by Garufi only (if @subtype="garuficollocation"), or</item>
@@ -153,7 +153,7 @@
                     See above the note on the usage of <gi>link</gi>.
                     Like <gi>link</gi>, also <gi>anchor</gi> has @type="transposition".
                     Element <gi>anchor</gi> has the same values of @subtype as the <gi>link</gi> that points to it:
-                    it marks the point of the text at which a paragraph is collocated
+                    it marks the point of the text at which a paragraph is collocated 
                     <list>
                         <item>by both the editions of Garufi and Bonetti (if @subtype="garufiandbonetticollocation"),</item>
                         <item>by Garufi only (if @subtype="garuficollocation"), or</item>
@@ -162,12 +162,12 @@
                 </tagUsage>
                 <tagUsage gi="milestone">
                     <list>
-                        <item>With @type="bonetti_is_collation_exemplar_from_here_on" it marks the point of the text
+                        <item>With @type="bonetti_is_collation_exemplar_from_here_on" it marks the point of the text 
                             from which I used the file with the OCR of the Bonetti edition as a collation base.
                             Before that point, I had used the OCR of the Garufi edition as base.</item>
-                        <item>With @type="no-par-break-in-bonetti" and @ed="#b" it is put at a point of the text
+                        <item>With @type="no-par-break-in-bonetti" and @ed="#b" it is put at a point of the text 
                             in which Garufi has a paragraph break but Bonetti does not.</item>
-                        <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put at a point of the text
+                        <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put at a point of the text 
                             in which Bonetti has a paragraph break but Garufi does not.</item>
                     </list>
                 <tagUsage gi="title">
@@ -198,7 +198,7 @@
                     desumptae sunt de codices Petri de Urbe".</p>
                 <p>So pages 204r, 204v, 205r, 205v do not constitute a witness of the text of codex A. 
                     Still, I am transcribing their text here for completeness.</p>
-                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic transcription, I am encoding it
+                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic transcription, I am encoding it 
                     with its alphabetic correspondent 'ae', and marking those 'ae' alphabemes with seg type="ae".</p>
             </handNote>
             <handNote xml:id="uhand">
@@ -1373,7 +1373,7 @@ eo quod ipse dixerat <rs>balthasari</rs>: <said>pater tuus <rs>nabuchodonosor</r
 &glb;<rs>balthasar</rs> autem <rs>chaldeus</rs> rex eadem nocte, qua <rs>danihel</rs> ar<pb n="43v" facs="vat:50" ed="#a"/>guit  eum, interfectus est a <rs>dario</rs> 
 &glb;rege <rs>medorum</rs>, et qui <rs>ciri</rs> regis <rs>persarum</rs> auunculus fuit, et a <rs>cyro</rs> <rs>perse</rs>, qu<seg type="ae">ae</seg> duo regna 
 &glb;<rs>ysayas</rs> ascensorem bige, cameli, et asini uocat. <rs>darius</rs> igitur, quem <rs>artarxersen</rs> dicunt <rs>medis</rs>, 
-&glb;successit in regnum annos natus <num value="62">lxii</num> qui <rs>danihelem</rs> in <rs>mediam</rs> transduxit. <hi>hunc</hi> <rs>darium</rs> quidem
+&glb;successit in regnum annos natus <num value="62">lxii</num> qui <rs>danihelem</rs> in <rs>mediam</rs> transduxit. <hi>hunc</hi> <rs>darium</rs> quidem 
 &glb;quidam <rs>astiagen</rs> alii <rs>astiagis</rs> filium putatur. <hi>fuit</hi> autem <rs>danihel</rs> in <rs>fusis</rs> castro, que me&gd;tropolis 
 est regionis <rs>elamitarum</rs>, in qua turrem extruxit excelsam quadrato marmore edifi&gd;catam 
 tante pulchritudinis, ut usque in presens noua esse uideatur: in ea regum <rs>persarum</rs>, 
@@ -1451,7 +1451,7 @@ est opus <rs>dei</rs> in <rs>hierusalem</rs>, et non fiebat usque ad secundum an
 &glb;dicunt <rs>iudei</rs>: <quote type="biblia">quadraginta et sex annis edificatum est templum hoc</quote>. <hi>ceperunt</hi> autem edificare 
 &glb;anno secundo <rs>darii</rs> mense sexto die uicesima quarta, et anno sexto, ut dictum est, mense 
 &glb;undecimo die tertia compleuerunt: ex quo apparet, opus templi et antea non parua ex 
-&glb;parte peractum; annos autem septuaginta a destructione illius, usque ad perfectam restau&gd;randi
+&glb;parte peractum; annos autem septuaginta a destructione illius, usque ad perfectam restau&gd;randi 
 <pb n="28" ed="#g"/> 
 licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus a <rs>romulo</rs> 
 &glb;<rs>tarquinius</rs> <rs>superbus</rs> regnabat, habens annum imperii uicesimum septimum, qui post anno <num value="8">uiii</num> 
@@ -1541,7 +1541,7 @@ patris inuenire</quote>. <rs>xerses</rs> menses <num value="2">ii</num>. <hi>pos
 
 
 <p xml:id="g29.38-30.2" decls="#al"> 
-&glb;<rs>darius</rs>, cognomento <rs>nothus</rs>, annis<pb n="48v" facs="vat:55" ed="#a"/>. <rs>egyptus</rs> recessit a <rs>persis</rs>. <hi>reuersis</hi> de ca&gd;ptiuitate
+&glb;<rs>darius</rs>, cognomento <rs>nothus</rs>, annis<pb n="48v" facs="vat:55" ed="#a"/>. <rs>egyptus</rs> recessit a <rs>persis</rs>. <hi>reuersis</hi> de ca&gd;ptiuitate 
 <pb n="30" ed="#g"/> 
 <rs>iudeis</rs> non reges, sed pontifices prefuerunt, usque ad <rs>aristobolum</rs>, qui cum digni&gd;tate 
 pontificis, etiam regale sibi cepit usurpare uocabulum. <num value="3566"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dlxui</num>. 
@@ -2265,7 +2265,7 @@ est — assensum prebente. <hi>qui</hi> consecratus sedit papalem
 &blb;cathedram mensibus <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>: iste quoque <rs>henricum</rs> coronauit im&bd;peratorem. 
 <hi>defuncto</hi> itaque <rs>clemente</rs> <rs>damasus</rs> electus et con&bd;secratus 
 est, cuius electioni predictus imperator assensum pre&bd;buit, 
-seditque <rs>damasus</rs> dies <num value="20">xx</num>. <hi>imperator</hi> autem
+seditque <rs>damasus</rs> dies <num value="20">xx</num>. <hi>imperator</hi> autem 
 <add place="addedfolios" hand="#hand2" type="integration" xml:id="g179.15-180.12add100"><!-- § metti aggiunta in un p a sé, qui e altrove; ma forse è rimasto solo qui e l'altro pure segnato con §-->
 <pb n="204r" facs="vat:230" ed="#a"/>
 ipse usque 
@@ -2424,7 +2424,7 @@ princeps.
 &blb;obiit, et <rs>philippus</rs> filius eius successit in regnum. <hi>ipso</hi> quoque 
 &blb;anno comes <rs>robbertus</rs> <rs>guiscardus</rs> uocatus a <rs>troianis</rs> ciui&bd;bus, 
 ipsam eorum ciuitatem in sua potestate ab eis accepit, qui 
-&blb;non post multos dies
+&blb;non post multos dies 
 </add>
 <pb n="206r" facs="vat:233" ed="#a"/>
 <note resp="#pm" type="segmentation"><hi>from</hi> this point, the text is due to the first hand of manuscript <hi>a</hi> again.</note>
@@ -3910,10 +3910,10 @@ regiam posuerunt et ab omnibus uocari regem iusse&bd;runt.
 
 <milestone type="bonetti-paragraph-break" ed="#b"/>
 
-&blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bel&bd;lo
-iuxta <rs>damascum</rs> occubuit cuius corpus sine capite inuen&bd;tum
-est, et sepultum in monasterio sancte <rs>marie</rs> quod est
-&blb;iuxta sepulcrum nostri redemptoris, in dextera parte eiusdem
+&blb;<hi>hoc</hi> tempore <rs>boamundus</rs> filius principis <rs>boamundi</rs> in bel&bd;lo 
+iuxta <rs>damascum</rs> occubuit cuius corpus sine capite inuen&bd;tum 
+est, et sepultum in monasterio sancte <rs>marie</rs> quod est 
+&blb;iuxta sepulcrum nostri redemptoris, in dextera parte eiusdem 
 &blb;sepulcri, mense <hi>februarii</hi>.
 <note resp="#hand2" type="etcetera"><hi>interea</hi> et cetera…</note>
 <note resp="#hand2" type="sanctipetri"><hi>hae</hi> suprascript<seg type="ae">ae</seg> du<seg type="ae">ae</seg> particul<seg type="ae">ae</seg>, qu<seg type="ae">ae</seg> hic desunt, desumpt<seg type="ae">ae</seg> sunt ex codice sancti <rs>petri</rs> et cetera…</note>
@@ -3942,7 +3942,7 @@ cum magno esercitu <rs>italiam</rs> intrauit et per partes <rs>ancone</rs>
 <link target="#g219.n1-219.n13 #g219.n1-219.n13garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g219.n1-219.n13 #g219.n1-219.n13bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <add place="footer" hand="#hand2" type="integration" xml:id="g219.n1-219.n13add100">
-&blb;<num value="1132">mcxxxii</num>, indictione <num value="8">uiii</num>, mense <hi>septembre</hi>, dum
+&blb;<num value="1132">mcxxxii</num>, indictione <num value="8">uiii</num>, mense <hi>septembre</hi>, dum 
 &blb;<rs>rogerius</rs> dux <rs>brundusium</rs> ac turrem in eo constructam su<seg type="ae">ae</seg>
 &blb;subdidit potestati ips<subst><del rend="rasura">i</del><add place="strikeover" type="correction">o</add></subst>que reuersus <rs>sicili<seg type="ae">ae</seg></rs> fuisset, <rs>tan&bd;credus</rs>
 ad obsidendam turrem perrexit, ubi tota ingenii arte 
@@ -4795,29 +4795,29 @@ interficerent. <hi>illi</hi> uero timore attoniti, quia nullum poterant
 &blb;<hi>qua</hi> impetrata, simul cum rege ad fenestram turris <rs>pisane</rs> ue&bd;nerunt.
 <hi>tunc</hi> rex uniuerso populo de sua liberatione gratias egit,
 &blb;mandans eis ut singuli reuerterentur ad propria et in pace quie&bd;scerent.
-<hi>archiepiscopi</hi> uero et episcopi cum aliis fidelibus pala&bd;tium
-ascenderunt, et regem de infortunio, quod acciderat, pro
-&blb;posse sunt consolati. <hi>huic</hi> autem dolori regio dolor alius non
-&blb;mediocris superuenit; dum enim pro liberando rege insultus in
-&blb;palatio fieret, <rs>roggerius</rs> dux <rs>apulie</rs>, filius eius, sagitta iuxta ocu&bd;lum
-est percussus, qui non post multos dies huius uulneris occa&bd;sione
+<hi>archiepiscopi</hi> uero et episcopi cum aliis fidelibus pala&bd;tium 
+ascenderunt, et regem de infortunio, quod acciderat, pro 
+&blb;posse sunt consolati. <hi>huic</hi> autem dolori regio dolor alius non 
+&blb;mediocris superuenit; dum enim pro liberando rege insultus in 
+&blb;palatio fieret, <rs>roggerius</rs> dux <rs>apulie</rs>, filius eius, sagitta iuxta ocu&bd;lum 
+est percussus, qui non post multos dies huius uulneris occa&bd;sione 
 interiit.
 <milestone type="bonetti-paragraph-break" ed="#b"/>
-<rs>matheus</rs> uero <rs>bonella</rs>, audiens regis liberationem, plurimum
-&blb;doluit, sed dissimilauit, et per nuntios suos regi mandauit se de
-&blb;eius captione plurimum doluisse et quod pro eo liberando cum
-&blb;sua militia ueniebat. <hi>rex</hi> autem malitiam eius agnoscens et con&bd;scientiam
-suam, conditione temporis exigente, abscondens, lega&bd;tis
+<rs>matheus</rs> uero <rs>bonella</rs>, audiens regis liberationem, plurimum 
+&blb;doluit, sed dissimilauit, et per nuntios suos regi mandauit se de 
+&blb;eius captione plurimum doluisse et quod pro eo liberando cum 
+&blb;sua militia ueniebat. <hi>rex</hi> autem malitiam eius agnoscens et con&bd;scientiam 
+suam, conditione temporis exigente, abscondens, lega&bd;tis 
 illius benigne respondit et eos cum gratiarum actione remisit.
-<hi>illi</hi> autem, qui regem ceperant et palatium expoli<pb n="237v" facs="vat:272" ed="#a"/>auerant, timo&bd;re
+<hi>illi</hi> autem, qui regem ceperant et palatium expoli<pb n="237v" facs="vat:272" ed="#a"/>auerant, timo&bd;re 
 regis ad <rs>matheum</rs> <rs>bonellam</rs> pariter confugerunt. <rs>matheus</rs>
-&blb;autem cum <rs ana="#ab">willelmo</rs> et <rs>symone</rs> et <rs>tancredo</rs> comitibus et mul&bd;tis
-aliis usque <rs>fabaram</rs> uenit, et frequentibus nuntiis inter eos et
+&blb;autem cum <rs ana="#ab">willelmo</rs> et <rs>symone</rs> et <rs>tancredo</rs> comitibus et mul&bd;tis 
+aliis usque <rs>fabaram</rs> uenit, et frequentibus nuntiis inter eos et 
 &blb;regem discurrentibus, ad hunc modum concordie deuenerunt.
-<hi>rex</hi> liberalitate sua et gratia omnibus eis offensam, quam in eum
-&blb;fecerant, remisit; <rs>matheo</rs> <rs>bonelle</rs> et aliis baronibus <rs>sicilie</rs> gra&bd;tiam
+<hi>rex</hi> liberalitate sua et gratia omnibus eis offensam, quam in eum 
+&blb;fecerant, remisit; <rs>matheo</rs> <rs>bonelle</rs> et aliis baronibus <rs>sicilie</rs> gra&bd;tiam 
 et terras suas restituit; <rs ana="#ab">willelmum</rs> <rs>symonem</rs> et <rs>tancredum</rs>
-&blb;comites cum multis aliis, qui in terra remanere nolebant, saluos
+&blb;comites cum multis aliis, qui in terra remanere nolebant, saluos 
 <pb n="182" ed="#b"/>
 &blb;et illesos cum rebus suis usque <rs>terracenam</rs> cum galea fecit con&bd;duci, 
 alios uero <rs>ierosolimam</rs> ire permisit. <hi>metuens</hi> autem rex, ne 
@@ -5466,7 +5466,7 @@ nacta oportunitate, nescientibus <rs>alexandrinis</rs>, fossas et
 &blb;cuniculos sub terra fieri iussit, et per eos armatos milites intrare 
 &blb;fecit, ut ex improuiso de cuniculis repente erumperent et citui&bd;tatem 
 huius fraudis nesciam occuparent. <hi>sed</hi> mox ut <rs>alexandrini</rs> 
-&blb;hoc perceperunt, arreptis armis, ceperunt
+&blb;hoc perceperunt, arreptis armis, ceperunt 
 <add place="margin" hand="#hand2" type="integration" xml:id="g262.17-266.4add100">
 ad fossati superiora concurrere, et terram dirumpere, propter quod terra desuper subito corruit.
 </add>
@@ -5546,22 +5546,22 @@ sed recepta ad <rs>anconitanis</rs> magna pecunia, ab obsidione re&bd;cessit.
 
 <milestone type="bonetti-paragraph-break" ed="#b"/> 
 
-&blb;<hi>interea</hi> predictus cancellarius ex mandato imperatoris nun&bd;tios
+&blb;<hi>interea</hi> predictus cancellarius ex mandato imperatoris nun&bd;tios 
 ad <rs ana="#ab">willelmum</rs> <rs>sicilie</rs> regem transmisit, suadens et postu&bd;lans,
-ut ipse, imperatoris filia in uxorem accepta, cum eo pacem
-&blb;perpetuam faceret et ipsi se amicabiliter couniret. <hi>sed</hi> rex
+ut ipse, imperatoris filia in uxorem accepta, cum eo pacem 
+&blb;perpetuam faceret et ipsi se amicabiliter couniret. <hi>sed</hi> rex 
 &blb;<rs ana="#ab">wilhelmus</rs>, utpote christianissimus et religiosus princeps,
-&blb;sciens hoc matrimonium <rs>alexandro</rs> pape plurimum displicere
+&blb;sciens hoc matrimonium <rs>alexandro</rs> pape plurimum displicere 
 &blb;et <rs>romane</rs> ecclesie non modicam iacturam inferre, <rs>deum</rs> et <rs>ale&bd;xandrum</rs>
-papam in hac parte reueritus, imperatoris filiam in
-&blb;uxorem et eius pacem recipere noluit. <hi>quod</hi> factum imperator
-&blb;egre <pb n="251v" facs="vat:287" ed="#a"/>tulit et multum ad animum reuocauit. <hi>sed</hi> non multo post
+papam in hac parte reueritus, imperatoris filiam in 
+&blb;uxorem et eius pacem recipere noluit. <hi>quod</hi> factum imperator 
+&blb;egre <pb n="251v" facs="vat:287" ed="#a"/>tulit et multum ad animum reuocauit. <hi>sed</hi> non multo post 
 &blb;imperatoris filia est defuncta.
 </p>
 
 
 <p xml:id="g266.5-267.12" decls="#al">
-&blb;<hi>adueniente</hi> autem estate, <rs>philippus</rs> <rs>coloniensis</rs> archiepisco&bd;pus
+&blb;<hi>adueniente</hi> autem estate, <rs>philippus</rs> <rs>coloniensis</rs> archiepisco&bd;pus 
 cum quibusdam principibus <rs>alamannie</rs> et magna multitudi&bd;ne 
 strenuorum militum per montana <rs>cumarum</rs> <rs>italiam</rs> intran<pb n="216" ed="#b"/>tes, 
 &blb;imperatori succurrere festinabant. <hi>quo</hi> cognito, imperator 
