@@ -108,6 +108,9 @@
                     </p>
 
                 </tagUsage>
+                <tagUsage gi="corr">
+                    §§§
+                </tagUsage>
                 <tagUsage gi="hi">
                     Used to mark up words capitalized in the print edition, but not constituting
                     a proper noun, such as "Sed" at the beginning of a sentence.
@@ -1421,7 +1424,7 @@ aduersus <rs>iudeos</rs>, et remisit <rs>artarxerses</rs>, ne edificaretur <rs>h
 
 <p xml:id="g26.24-26.32" decls="#al"> 
 &glb;<rs>orosius</rs>: 
-&glb;<hi>anno</hi> post urbem conditam <num value="254">ccl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num><add hand="#unknownhand" place="margin" type="correction"><num value="244">ccxl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add>. <rs>brutus</rs>, expulso regis imperio, consul primum effe&gd;ctus 
+&glb;<hi>anno</hi> post urbem conditam <num value="254">ccl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num><add hand="#unknownhand" place="margin" type="correction" subtype="nodeletion"><num value="244">ccxl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></add>. <rs>brutus</rs>, expulso regis imperio, consul primum effe&gd;ctus 
 est. <hi>eo</hi> tempore <rs>cirus</rs> rex <rs>persarum</rs> uicit <rs>babiloniam</rs>; urbem tunc cunctis opulentiorem 
 &glb;cepit, subuertit atque destruxit, anno conditionis eius millesimo <num value="164">clx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
 &glb;<rs>cyrus</rs> autem rex <rs>persarum</rs> proximi temporis successu <rs>scithis</rs> bellum intulit, quem <rs>tamiris</rs> 
@@ -1494,8 +1497,8 @@ licentiam esse computandos. <hi>quo</hi> tempore apud <rs>romanos</rs> septimus 
 &glb;<rs>greciam</rs> pugnaturus <num value="700">dcc</num> milia armatorum de regno, et <num value="300">ccc</num> milia de auxiliis, rostratas etiam 
 &glb;naues mille ducentas; onerarias autem tria milia ducentas habuisse narratur. <hi>attamen</hi> uictus 
 &glb;patriam refugiit. <rs>demonstenes</rs> <rs>lacedemonis</rs> tunc apud <rs>exersen</rs> exultabat. <hi>tunc</hi> <rs>hero&gd;dotus</rs> 
-hystoriarum scriptor, et <rs>reusis</rs><add hand="#unknownhand" place="margin" type="correction">zeusis</add> pictor agnoscitur. <hi>anno</hi> ab urbe condita <num value="301">ccci</num>,
-&glb;<hi>olimpiade</hi> <num value="25">xxu</num><add hand="#unknownhand" place="margin" type="correction"><num value="401"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>i</num>, <hi>olimpiade</hi> <num value="95">xcu</num></add>, potestas consulum decem uiris <rs>rome</rs> tradita est. <hi>tunc</hi> etiam cen<pb n="46v" facs="vat:53" ed="#a"/>sus habitus 
+hystoriarum scriptor, et <rs>reusis</rs><add hand="#unknownhand" place="margin" type="correction" subtype="nodeletion"><rs>zeusis</rs></add> pictor agnoscitur. <hi>anno</hi> ab urbe condita <num value="301">ccci</num>,
+&glb;<hi>olimpiade</hi> <num value="25">xxu</num><add hand="#unknownhand" place="margin" type="correction" subtype="nodeletion"><num value="401"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>i</num>, <hi>olimpiade</hi> <num value="95">xcu</num></add>, potestas consulum decem uiris <rs>rome</rs> tradita est. <hi>tunc</hi> etiam cen<pb n="46v" facs="vat:53" ed="#a"/>sus habitus 
 &glb;est, et inuenta sunt ciuium <rs>romanorum</rs> centum decem et octo milia <num value="319">cccx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. <num value="3490"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice><choice><orig>lxxxx</orig><reg type="numeral">xc</reg></choice></num>. 
 </p> 
 
@@ -1641,7 +1644,7 @@ optinuit, interfecto <rs>dario</rs>, in quo <rs>medorum</rs>, atque <rs>persarum
 &glb;populos, qui in radice <rs>caucasi</rs> montis morabantur, subegit. <hi>urbem</hi> ibi <rs>alexandriam</rs> super 
 &glb;amnem <rs>tanaim</rs> constituit. <hi>nec</hi> minor eius in suos crudelitas, quam in hostes rabies fuit. 
 &glb;<hi>deinde</hi> <pb n="50v" facs="vat:57" ed="#a"/><rs>indiam</rs> petiit, ut <rs>oceano</rs> ultimoque oriente finiret imperium. <rs>nisan</rs> urbem adiit, 
-&glb;<rs>dedalos</rs> m<susbst><del rend="strikethrough">e</del><add place="above" type="correction" hand="#unknownhand">o</add></susbst>ntes, regnaque <rs>cleofilis</rs> regine expugnauit, qu<seg type="ae">ae</seg> cum se dedisset, concubitu regnum 
+&glb;<rs>dedalos</rs> m<subst><del rend="strikethrough">e</del><add place="above" type="correction" hand="#unknownhand">o</add></subst>ntes, regnaque <rs>cleofilis</rs> regine expugnauit, qu<seg type="ae">ae</seg> cum se dedisset, concubitu regnum 
 &glb;redemit. <hi>cum</hi> <rs>poro</rs> fortissimo rege <subst hand="#unknownhand"><del hand="#unknownhand" rend="strikethrough"><rs>iudeorum</rs></del><add hand="#unknownhand" place="above" type="correction"><rs>indorum</rs></add></subst> cruentissime dimicauit, quo occiso regnum eius 
 <pb n="32" ed="#g"/> 
 &glb;obtinuit. <hi>inde</hi> <rs>arestas</rs>, <rs>catenos</rs>, <rs>presidas</rs>, et <rs>gangaridas</rs>, nec non <rs>confides</rs> laboriosis bellis 
