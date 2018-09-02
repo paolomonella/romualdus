@@ -145,7 +145,7 @@
                     <list>
                         <item>With @type="content": note on the text content.</item>
                         <item>With @type="graphic": note on glyphs or graphemes.</item>
-                        <item>With @type="mscorrhand2" and @resp="#pm": note on corrections made in the manuscript 
+                        <item>With @type="hand2" and @resp="#pm": note on corrections made in the manuscript 
                             by hand2 (variant readings by hand2 in the manuscript).</item>
                         <item>With @type="segmentation": note on the text segmentation (arrangement of paragraphs 
                             or missing paragraphs).</item>
@@ -996,7 +996,7 @@ atque <rs>anchialem</rs> condidit, et in prelio uictus ab <rs>arbato</rs> <rs>me
 &glb;muliere corruptior, qui inter scortum gregis femine habitu purpuram collo gestans a 
 &glb;prefecto suo <rs>arbato</rs>, qui tunc <rs>medis</rs> preerat inuisus atque execrationi habitus, excitis 
 &glb;<rs>medorum</rs> populis ad bellum prouocatus, et uictus, ardenti pire se iniecit: exin <rs>arbates</rs> 
-&glb;<rs>medus</rs>, <rs>assyriorum</rs> imperio destructo, regnum in <rs>medos</rs> transtulit, tibi<note resp="#pm" type="mscorrhand2"><hi>first</hi> hand: tibi; second hand (hand2) above the line: ubi</note> primum ipse re&gd;gnauit 
+&glb;<rs>medus</rs>, <rs>assyriorum</rs> imperio destructo, regnum in <rs>medos</rs> transtulit, tibi<note resp="#pm" type="hand2"><hi>first</hi> hand: tibi; second hand (hand2) above the line: ubi</note> primum ipse re&gd;gnauit 
 annis <num value="28">xxuiii</num>. <rs>macedonum</rs> regnum inchoat primum habens caranum annis <num value="28">xxuiii</num>. 
 &glb;<rs>lacedemoniorum</rs> reges deficiunt, <rs>lidorum</rs> incipiunt. <rs>latinorum</rs> quartus decimus <rs>procax</rs> 
 &glb;<rs>sil<pb break="no" n="33v" facs="vat:40" ed="#a"/>uius</rs> <rs>auentini</rs> superioris regis filius regnauit annis <num value="23">xxiii</num>. <hi>post</hi> quem quintus decimus 
@@ -1005,7 +1005,7 @@ annis <num value="28">xxuiii</num>. <rs>macedonum</rs> regnum inchoat primum hab
 
 
 <p xml:id="g19.1-19.6" decls="#al"> 
-&glb;<rs>ioatham</rs> filius <rs>ozie</rs> rex iustus annos <num value="16">xui</num>. <hi>hic</hi> inter cetera uirtutum bonorum<note resp="#pm" type="mscorrhand2"><hi>first</hi> hand: bonorum; second hand (hand2) bonarum</note> opera, 
+&glb;<rs>ioatham</rs> filius <rs>ozie</rs> rex iustus annos <num value="16">xui</num>. <hi>hic</hi> inter cetera uirtutum bonorum<note resp="#pm" type="hand2"><hi>first</hi> hand: bonorum; second hand (hand2) bonarum</note> opera, 
 &glb;portam <hi>domus</hi> <rs>domini</rs> sublimissimam edificauit, qu<seg type="ae">ae</seg> in actibus <hi>apostolorum</hi> speciosa uo&gd;catur. 
 <hi>omnes</hi> siquidem porte templi in terra fuerunt, excepta speciosa, qu<seg type="ae">ae</seg> pendebat, que 
 &glb;ab <rs>hebreis</rs> uocabatur <rs>iohatham</rs> <rs>olimpias</rs> prima ab <rs>elliensibus</rs> constituitur post annos <hi>troiane</hi> 
@@ -1056,7 +1056,7 @@ ab hoc conductus <rs>thegath</rs> <rs>falasar</rs> rex <rs>assyriorum</rs>, et <
 <rs>remo</rs> fratre arriput imperium, urbemque constituit; regnum aui, muros fratris, templum 
 &glb;soceri sanguine dedicauit. <hi>sceleratorum</hi> manum promissa inpunitate collegit. <hi>primus</hi> illi cam&gd;pus 
 ad bellum forus fuit, mixta sibi bella ciuilia, et externa numquam defutura significans. <rs>titum</rs> 
-&glb;<rs>tacium</rs> <hi>sabinorum</hi> ducem honestum, postquam in societatem regni assumpsit, occidit <num value="3253"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>ccliii</num>. 
+&glb;<rs>tacium</rs> <rs>sabinorum</rs> ducem honestum, postquam in societatem regni assumpsit, occidit <num value="3253"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>ccliii</num>. 
 </p> 
 
 <p xml:id="g20.1-20.3" decls="#al"> 
@@ -1749,6 +1749,75 @@ capta <rs>egypto</rs> in <rs>persas</rs> portauerat. <hi>denique</hi> gens <rs>e
 </p> 
 
 
+<p xml:id="g34.36-35.14" decls="#al"> 
+&glb;<rs>ptolomeus</rs> <rs>phylopator</rs> filius <rs>euergetis</rs> annis <num value="17">xuii</num>. <rs>antiochus</rs> rex <rs>syrie</rs> uicto <rs>philopatore</rs> 
+&glb;<rs>iudeam</rs> sibi sociat. <rs>iudeorum</rs> pontifex maximus <rs>onias</rs> filius <rs>symonis</rs> insignis habetur: atque 
+&glb;<rs>lace<pb n="54v" break="no" facs="vat:61" ed="#a"/>demoniorum</rs> rex <rs>darius</rs> legatos mittit. <hi>huius</hi> tempore pontificis <rs>iesus</rs> filius <rs>sy&gd;radach</rs> 
+<title>sapientie</title> librum componens, quem uocant <title>parameton</title>, etiam <rs>symeonis</rs> in eo fecit 
+<pb n="35" ed="#g"/> 
+&glb;mentionem. <rs>ieronimus</rs>. <hi>post</hi> fugam et mortem <rs>seleucii</rs> <rs>gallicini</rs>, duo filii eius <rs>seleuchus</rs> 
+&glb;cognomento <rs>ceraunos</rs>, et <rs>antiochus</rs>, qui appellatus est <rs>magnus</rs>, prouocati spe uictorie, et in 
+&glb;ultione parentis, exercitu congregato, aduersus <rs>ptolomeum</rs> <rs>phylopatorem</rs> arma corripiunt. 
+&glb;<hi>cumque</hi> <rs>seleuchus</rs> maior frater tertio anno imperii occisus esset in <rs>frigia</rs>, per dolum <rs>ni&gd;canoris</rs> 
+et <rs>eupatoris</rs> exercitus, qui erat in <rs>syria</rs>, <rs>antiochum</rs> frater eius magnus uenit de 
+&glb;<rs>babylone</rs> in <rs>syriam</rs>, qu<seg type="ae">ae</seg> eo tempore tenebatur a <rs>ptolomeo</rs> <rs>philopatore</rs> filio <rs>euergetis</rs>, qui 
+&glb;quartus regnabat in <rs>egypto</rs>. <hi>cumque</hi> pugnasset aduersus ducem eius, immo proditione <rs>theo&gd;doti</rs> 
+optinuisset <rs>syriam</rs>, qu<seg type="ae">ae</seg> per successione iam a regibus <rs>egipti</rs> tenebatur, in tantam 
+&glb;audaciam contempta luxuria <rs>phylopatoris</rs>, et magicis <add place="inline">a</add>rtibus, quibus inseruire dicebatur; ut 
+&glb;ultro <rs>egiptiiis</rs> bellum conaretur inferre. <rs>ptolomeus</rs> cognomento <rs>phylopator</rs>, ammissa <rs>syria</rs>, pro&gd;ditione 
+<rs>theodoti</rs>, congregauit multitudinem plurimam multo maiorem, quam prius, properans 
+&glb;cum exercitu magno et opibus <pb n="55r" facs="vat:61" ed="#a"/>nimiis contra <rs>ptolomeum</rs> <rs>philopatorem</rs>. <hi>quo</hi> mortuo <rs>antio&gd;chus</rs> 
+mouit exercitum aduersus filium eiusdem <rs>ptolomei</rs>, qui tunc <num value="4">quattuor</num> annorum erat, et uoca&gd;batur 
+<rs>ptolomeus</rs> <rs>epyphanis</rs>. 
+</p> 
+
+
+<p xml:id="g35.15-36.25" decls="#ocr"> 
+&glb;<rs>orosius</rs>: 
+&glb;<hi>anno</hi> ab <rs>urbe</rs> condita <num value="534">dxxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <rs>annibal</rs> <rs>penorum</rs> imperator, uicesimum annum agens 
+&glb;etatis, <rs>saguntum</rs> florentissimum <rs>ispanie</rs> ciuitatem amica tunc populi <rs>romani</rs>, ob odi<subst hand="#uhand"><del hand="#uhand" rend="strikethrough">o</del><add hand="#uhand" place="above">um</add></subst> 
+&glb;<rs>romanorum</rs> bello inpetitam obsidione cunctam ac fame excruciatam, octauo demum mense 
+&glb;deleuit. <hi>hic</hi> iam dudum <rs>anulcari</rs> patri iurauerat, cum adhuc nouem esset annorum, se ut 
+&glb;primum posset aduersus <rs>romanos</rs> pugnaturum, et cum eis numquam pacem acturum. <hi>inde</hi> 
+&glb;<rs>pirineos</rs> montes transgressus, inter ferocissimas <rs>gallorum</rs> gentes, ferro uiam aperuit et nono 
+&glb;die a <rs>pirineo</rs> ad <rs>aloes</rs> peruenit, ubi dum montanos <rs>gallos</rs> repellere obnitentes superat, atque 
+&glb;inuias rupes igni ferroque rescindit; quinto demum die cum maximo labore ad plana <rs>italie</rs> 
+&glb;uenit. <hi>fuisse</hi> in exercitu eius centum milia peditum, equitum uero uiginti milia, elefantos 
+&glb;<num value="37">xxxuii</num> definiunt. <rs>scipio</rs> tunc consul magni <rs>scipionis</rs> pater, <rs>annibali</rs> cum <rs>romanis</rs> prunus 
+&glb;occurrit, et conmisso prelio apud <rs>ticinum</rs>, omnis pene <rs>romanus</rs> exercitus cesus est. <hi>pu&gd;gnatum</hi> 
+deinde, eodem consule, apud flumen <subst hand="#uhand"><del hand="#uhand" rend="nodeletion"><rs>trinium</rs></del><add hand="#uhand" place="margin"><rs>trebiam</rs></add></subst>, <pb n="55v" facs="vat:62" ed="#a"/>et <rs>romani</rs> superati sunt. <hi>alio</hi> quoque bello 
+&glb;apud eundem fluuium uicti sunt. <hi>quarto</hi> bello ad flumen <rs>sarnum</rs>, in quo oculum amisit. 
+&glb;<hi>quinto</hi> bello apud <rs>transumennum</rs> locum. <hi>sexto</hi> apud <rs>cannas</rs> <rs>apulie</rs> uicum: in quo quadraginta 
+&glb;<num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> milia <rs>romanorum</rs> interfecta sunt, <rs>uarro</rs> consul cum <num value="50">l</num> equitibus <rs>uenusium</rs> fugiit. <hi>anno</hi> 
+&glb;ab <rs>urbe</rs> condita <num value="540">dxl</num> <rs>annibal</rs> in testimonium uictorie su<seg type="ae">ae</seg> tres modios annulorum aureorum 
+&glb;<rs>cartaginem</rs> misit, quos ex manibus interfectorum equitum <rs>romanorum</rs>, senatorumque detraxe&gd;rat. 
+<pb n="36" ed="#g"/> 
+<hi>eo</hi> tempore bella quinque <rs>roma</rs> susceperat, unum in <rs>macedonia</rs> contra <rs>philippum</rs> poten&gd;tissimum 
+<rs>macedonie</rs> regem, alterum in <rs>hisponia</rs> contra <rs>asdruualum</rs> <rs>annibalis</rs> fratrem, tetium 
+&glb;in <rs>sardinia</rs> contra <rs>sardos</rs>, quartum <rs>annibalis</rs> quo <rs>italia</rs> premebatur, quintum <rs>sicilie</rs>, ubi 
+&glb;<rs>claudius</rs> <rs>marcellus</rs> <rs>syracusam</rs> oppulentissimam urbem <rs>sicilie</rs> secunda oppugnatione uix cepit. 
+&glb;<hi>anno</hi> ab <rs>urbe</rs> condita <num value="543">dxliii</num> in <rs>campania</rs> <rs>capua</rs> capta est a <rs>quinto</rs> <rs>fuluio</rs> proconsule: principes 
+&glb;<rs>capuanorum</rs> ueneno sibi, ante quam subderentur, mortem consciuerunt; senatum omnem <rs>ca&gd;pue</rs>, 
+etiam prohibente senatu <rs>romano</rs>, <rs>fluuius</rs> <rs>sulplicius</rs> necauit. <subst hand="#hand2"><del hand="#hand2" rend="nodeletion"><hi>in</hi> <rs>ispania</rs> ab <rs>asdrubale</rs>,</del><add hand="#hand2" place="footer"><hi>in</hi> <rs>hispania</rs> ab <rs>asdrubale</rs>, 
+&glb;<subst hand="#hand2"><del hand="#hand2" rend="nodeletion"><rs>scipionis</rs></del><add hand="#hand2" place="margin"><rs>scipionibus</rs></add></subst> fratribus interfectis, <rs>roma</rs> ab <rs>annibale</rs> admodum pressa</add></subst> iam pene ciuibus despe&gd;ratis 
+<rs>scipio</rs> adolescens an<pb break="no" n="56r" facs="vat:62" ed="#a"/>nos natus <num value="24">xxiu</num> ultro se optulit ac ultionem patris, et patrui animo 
+&glb;intendens in <rs>hispaniam</rs> uenit, et <rs>cartaginem</rs> nouam cepit; dehinc cum <rs>asdrubale</rs> pugnauit, 
+&glb;et uicit; et <num value="80">lxxx</num> ciuitates aut deditione, aut bello in potestatem redegit. <hi>uniuersa</hi> quippe 
+&glb;<rs>yspania</rs> usque in <rs>oceanum</rs> in prouinciam redacta, <rs>romam</rs> uenit consulque creatus in <rs>afri&gd;cam</rs> 
+transiit et acerrimo prelio <rs>hannonem</rs> <rs>penorum</rs> ducem interfecit; exercitum omnem 
+&glb;<rs>africe</rs> partim cede, partim captiuitate disperdidit. <hi>asdrubal</hi> autem frater <rs>annibalis</rs> a <rs>car&gd;taginensibus</rs> 
+consultus, ut fratris copiis iungeretur, cum magna secum auxilia <rs>ispanorum</rs>, <hi>gal</hi>&gd;lorumque 
+deduceret, ab exercitu <rs>romano</rs>, ignorante <rs>annibale</rs>, preuentus cum exercitu suo 
+&glb;interfectus est. <rs>annibali</rs> capud fratris sui ante castra proiectum est. <hi>quo</hi> uiso et clade 
+&glb;<rs>penorum</rs> cognita, redire in <rs>africam</rs> iussus, ut fesse <rs>cartagini</rs> et iam pene contrite <rs>africe</rs> 
+&glb;subueniret, coactus, flens reliquit <rs>italiam</rs> annis, quibus eam optinuit <num value="17">xuii</num>. <hi>commissoque</hi> prelio 
+&glb;cum <rs>scipione</rs> apud <rs>cartaginem</rs>, suis omnibus cesis, inter tumultus <rs>annibal</rs> elapsus uix euasit 
+&glb;in <rs>bithiniam</rs> fugiens, ibique postea cum a <rs>romanis</rs> reposceretur, ueneno sese necauit. 
+&glb;<rs>scipio</rs> denique iam tunc cognomento <rs>africanus</rs> <pb n="56v" facs="vat:§" ed="#a"/>post famosissimam <rs>annibalis</rs> uictoriam trium&gd;phans, 
+urbem ingressus est, quem <rs>terentius</rs>, qui postea comicus fuit, ex nobilibus <rs>cartaginen&gd;sium</rs> 
+captiuis pilleatus quod insigne indulte sibi libertatis fuit, triumphantem post currum se&gd;cutus 
+est <num value="3774"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dcclxxiu</num>. 
+</p> 
 
 
 
@@ -2081,7 +2150,7 @@ sibi tirannidem uendicauere.
 
 
 <p xml:id="g171.9-171.14" decls="#al"> 
-&blb;<hi>anno</hi> dominice incarnationis <num value="947"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice><choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice>uii</num><note resp="#pm" type="mscorrhand2"><hi>a</hi> second hand (hand2) added an 'l' before 'xxxx' above the line, thus correcting the date to 997</note>. <rs>ugo</rs> dux <rs>franco&bd;rum</rs> 
+&blb;<hi>anno</hi> dominice incarnationis <num value="947"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice><choice><orig>xxxx</orig><reg type="numeral">xl</reg></choice>uii</num><note resp="#pm" type="hand2"><hi>a</hi> second hand (hand2) added an 'l' before 'xxxx' above the line, thus correcting the date to 997</note>. <rs>ugo</rs> dux <rs>franco&bd;rum</rs> 
 obiit sepultusque est in basilica beati <rs>dionisii</rs> martiris <rs>pa&bd;risius</rs>. 
 <hi>cui</hi> successit filius eius <rs>robbertus</rs> rex qui pius fuit et mo&bd;destus. 
 <hi>hic</hi> autem post mortem patris regnauit annis <num value="33">xxxiii</num>. <hi>per</hi> 
@@ -2189,7 +2258,7 @@ episcopus, qui confessor et sanctus multas sanctorum
 &blb;<hi>ipse</hi> etiam prenominatus catipanus in finibus <rs>samnii</rs> et <rs>apu&bd;lie</rs> 
 edificauit ac constituit plures urbes et oppida; ipsaque regio 
 &blb;usque hodie <rs>catipania</rs> dicitur. <hi>quarto</hi> autem an&bd;no 
-post predicte ciuitatis<note resp="#pm" type="mscorrhand2"><hi>a</hi> second hand added <rs>troie</rs> above 'ciuitatis'</note> rehedificationem, in anno uideli&bd;cet 
+post predicte ciuitatis<note resp="#pm" type="hand2"><hi>a</hi> second hand added <rs>troie</rs> above 'ciuitatis'</note> rehedificationem, in anno uideli&bd;cet 
 incarnationis <rs>domini</rs> millesimo uicesimo secundo indictio&bd;ne 
 <num value="5">v</num> <rs>henricus</rs> <rs>alamannorum</rs> imperator ingenti cum exercitu, 
 &blb;simul et cum <rs>benedicto</rs> papa uenit super ipsam ciuitatem obse&bd;ditque 
@@ -4561,7 +4630,7 @@ ammiratum constituit, cuius consilio et prouidentia regni
 &blb;quadragesimam rex <rs>salernum</rs> uenit et ibi usque est demoratus ad <hi>pascha</hi>. 
 &blb;<hi>quo</hi> cognito, <rs>adrianus</rs> papa <rs>henricum</rs> cardinalem 
 <pb n="231r" facs="vat:263" ed="#a"/>
-&blb;<hi>sanctorum</hi> <rs>nerei</rs> et <rs>achillei</rs> ad eum misit, quem rex recipere 
+&blb;<rs>sanctorum</rs> <rs>nerei</rs> et <rs>achillei</rs> ad eum misit, quem rex recipere 
 &blb;noluit, sed <rs>romam</rs> redire precepit, eo quod in litteris apostolicis, 
 &blb;quas regi portabat, papa ipsum non regem, sed <rs ana="#ab">wilhelmum</rs> 
 &blb;dominum <rs>sicilie</rs> nominabat. <hi>pro</hi> quo facto <rs>adrianus</rs> papa et tota 
