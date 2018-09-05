@@ -9,6 +9,10 @@ from lxml import etree
 import json,re,myconst
 from myconst import ns, tei_ns, xml_ns, html_ns 
 
+# Mode
+
+# mymode = 'wholebody'
+mymode = 'paragraphs'
 
 # Input files
 
@@ -19,7 +23,11 @@ firstfile = '../xml/afoo.xml'
 #secondfile = '../xml/g.xml'
 secondfile = '../xml/bfoo.xml'
 
-# XSLT
+
+
+########
+# XSLT #
+########
 
 addWMilestones = etree.XML("""
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -102,37 +110,9 @@ xsltWrapW = etree.XML('''
 transformWrapW = etree.XSLT(xsltWrapW)
 
 
-# Apply transformations 
-
-ATree = etree.parse(firstfile)
-#ATree = etree.XML('<l><abbrev>Et</abbrev>cil i partent seulement</l>')
-#ATree = etree.parse('../xml/foo.xml')
-BTree = etree.parse(secondfile)
-
-'''
-# If <TEI> does *not* have @xmlns: <TEI>
-ABody = ATree.find('.//body')
-BBody = BTree.find('.//body')
-
-'''
-# If <TEI> *has* @xmlns: <TEI xmlns="http://www.tei-c.org/ns/1.0">
-ABody = ATree.find('.//t:body', ns)
-BBody = BTree.find('.//t:body', ns)
-
-print(ABody)    # debug
-print(BBody)    # debug
-
-
-ATokenized = transformWrapW(transformAddW(ABody))
-BTokenized = transformWrapW(transformAddW(BBody))
-
-print('tokenizzato:', ATokenized, end='\n\n')
-
-'''
-ATokenized = transformWrapW(transformAddW(ATree))
-BTokenized = transformWrapW(transformAddW(BTree))
-'''
-
+####################
+# Define functions #
+####################
 
 def XMLtoJSON(id,XMLInput):
     ''' Function to convert the word-tokenized witness line into JSON '''
@@ -150,20 +130,94 @@ def XMLtoJSON(id,XMLInput):
         witness['tokens'].append(token)
     return witness
 
-# Use the function to create JSON input for CollateX, and examine it
+def collateElements(xmlElementA, xmlElementB):
+    ''' Apply transformations to the content of two XML elements'''
 
-json_input = {}
-json_input['witnesses'] = []
-json_input['witnesses'].append(XMLtoJSON('A',ATokenized))
-json_input['witnesses'].append(XMLtoJSON('B',BTokenized))
+    ATokenized = transformWrapW(transformAddW(xmlElementA))
+    BTokenized = transformWrapW(transformAddW(xmlElementB))
 
-# Collate the witnesses and view the output as JSON, in a table, and as colored HTML
+    print('Tokenized element of witness A:', ATokenized, end='\n\n')  # debug
+    print('Tokenized element of witness B:', BTokenized, end='\n\n')  # debug
 
-#collationText = collate_pretokenized_json(json_input,output='table',layout='vertical')
-collationText = collate(json_input,output='table',layout='vertical')
-print(collationText)
-#collationJSON = collate_pretokenized_json(json_input,output='json')
-collationJSON = collate(json_input,output='json')
-print(collationJSON)
-#collationHTML2 = collate_pretokenized_json(json_input,output='html2')
-collationHTML2 = collate(json_input,output='html2')
+
+    # Use the function to create JSON input for CollateX, and examine it
+
+    json_input = {}
+    json_input['witnesses'] = []
+    json_input['witnesses'].append(XMLtoJSON('A',ATokenized))
+    json_input['witnesses'].append(XMLtoJSON('B',BTokenized))
+
+    # Collate the witnesses and view the output as JSON, in a table, and as colored HTML
+
+    #collationText = collate_pretokenized_json(json_input,output='table',layout='vertical')
+    collationText = collate(json_input,output='table',layout='vertical')
+    print(collationText)
+    #collationJSON = collate_pretokenized_json(json_input,output='json')
+    collationJSON = collate(json_input,output='json')
+    #print(collationJSON)
+    #collationHTML2 = collate_pretokenized_json(json_input,output='html2')
+    #collationHTML2 = collate(json_input,output='html2')
+
+    return collationJSON
+
+
+################################
+# Parse file and identify body #
+################################
+
+ATree = etree.parse(firstfile)
+#ATree = etree.XML('<l><abbrev>Et</abbrev>cil i partent seulement</l>')
+#ATree = etree.parse('../xml/foo.xml')
+BTree = etree.parse(secondfile)
+
+# If <TEI> does *not* have @xmlns: <TEI>
+ABody = ATree.find('.//body')
+BBody = BTree.find('.//body')
+
+'''
+# If <TEI> *has* @xmlns: <TEI xmlns="http://www.tei-c.org/ns/1.0">
+ABody = ATree.find('.//t:body', ns)
+BBody = BTree.find('.//t:body', ns)
+'''
+
+print(ABody)    # debug
+print(BBody)    # debug
+
+
+#jout = collateElements(ABody, BBody)
+
+APars = ABody.findall('p')
+BPars = BBody.findall('p')
+
+JL = []
+for par in APars:
+    pi = APars.index(par)
+    JL.append(collateElements(APars[pi], BPars[pi]))
+
+
+###########################################
+# Do something with JSON collation output #
+###########################################
+
+for jout in JL:
+    j = json.loads(jout)
+    #print(json.dumps(j, sort_keys=True, indent=4, separators=(',', ': '))  )
+
+    cola = j['table'][0]    # Column of witness A
+    colb = j['table'][1]    # Column of witness B
+
+    for row in cola:
+        ci = cola.index(row)
+
+        #print('\n\nWitness A, row %d:' % (ci), end=' ')
+        LA = [word['t'] for word in cola[ci]]
+        #ja = ' '.join(LA)
+
+        #print('\nWitness B, row %d:' % (ci), end=' ')
+        LB = [word['t'] for word in colb[ci]]
+        #jb = ' '.join(LB)
+
+        if LA != LB:
+            print('\n')
+            print(LA)
+            print(LB)
