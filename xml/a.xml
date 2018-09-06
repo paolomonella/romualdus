@@ -113,7 +113,7 @@
                         and <gi>add</gi>, also "metamark" (when a scribe wrote a metamark such as an asterisk
                         above the original text as a pointer towards a correction added in margin),
                         "nomark" (when the correction is simply rewritten on the original glyphs
-                        or the correction is made by deleting a part of a glyph), and "partialrasura"
+                        or the correction is made by deleting a part of a glyph), and "glyphmodification"
                         (when a scribe transforms a glyph to another glyph by erasing a part of it).</p>
                     <p>If no @hand attribute is provided, it is implied that the deletion 
                         and the correction, if any) are made by the main hand of the manuscript.
@@ -1897,7 +1897,7 @@ precessit <rs>audariscus</rs>, qui et <rs>pseudo-philippus</rs>; <rs>mummii</rs>
 
 
 <p xml:id="g38.7-38.9" decls="#al"> 
-&glb;<hi>quo</hi> tempore potentissimus rex <rs>sicilie</rs> <rs><subst hand="#uhand"><del hand="#uhand" rend="partialrasura">u</del><add hand="#uhand" place="inline">i</add><note resp="#pm" type="graphic"><hi>someone</hi> erased the first part of the 'u', thus transforming it to an 'i'.</note></subst>ero</rs> <rs>romam</rs> uenit ad ludos, et ducenta milia mo&gd;diorum 
+&glb;<hi>quo</hi> tempore potentissimus rex <rs>sicilie</rs> <rs><subst hand="#uhand"><del hand="#uhand" rend="glyphmodification">u</del><add hand="#uhand" place="inline">i</add><note resp="#pm" type="graphic"><hi>someone</hi> erased the first part of the 'u', thus transforming it to an 'i'.</note></subst>ero</rs> <rs>romam</rs> uenit ad ludos, et ducenta milia mo&gd;diorum 
 tritici populo dono dedit. <hi>tunc</hi> etiam apud <rs>brundisium</rs> <rs>pacuuius</rs> claruit tragoedia&gd;rum 
 scriptor. <num value="3838"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice>dcccxxxuiii</num>. 
 </p>
@@ -2004,16 +2004,83 @@ per eodem dies in urbe habita, ac prodita, in <rs>etruria</rs> uero extincta est
 </p>
 
 
-<p xml:id="g40.3-40.11" decls="#ocr"> 
-&glb;<hi>anno</hi> ab <rs>urbe</rs> condita <num value="693">dcxciii</num> <rs>gaio</rs> <rs>iulio</rs> <rs>cesari</rs>, qui postea solus imperauit, <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> sunt 
-&glb;prouincie cum legionibus <num value="12">xii</num> consuli in quinquennium date: <rs>gallia</rs> <rs>transalpina</rs> et <rs>cisalpina</rs> 
-&glb;et <rs>illiricus</rs>, nec non et <rs>gallia</rs> <rs>comata</rs>, cuius hystoriam <rs>suetonius</rs> <rs>tranquillus</rs> plenissime ex&gd;plicauit. 
-<rs>orosius</rs> quoque hystoriarum egregius scriptor sagacissimo ordine composuit <pb n="60v" facs="vat:§" ed="#a"/>qua&gd;liter 
-<rs>cesar</rs> multis, et grauissimis preliis <rs>germanos</rs>, et <rs>gallos</rs> cepit, <hi>britannus</hi> quoque, quibus 
-&glb;ante eum nec nomen quidem <rs>romanorum</rs> cognitum fuerat obsidibus acceptis, stipendiarios 
-&glb;fecit, et qualiter postea apud <rs>duracium</rs> cum <rs>pompeo</rs> dimicauit, a quo uictus <rs>cesar</rs> in <rs>thes&gd;salia</rs> 
+<p xml:id="g40.3-40.11" decls="#al"> 
+&glb;<hi>anno</hi> ab <rs>urbe</rs> condita <num value="693">dcxciii</num> <rs>gaio</rs> <rs>iulio</rs> <rs>cesari</rs>, qui postea solus imperauit, <num value="4" type="words">quattuor</num> sunt 
+&glb;prouincie cum legionibus <num value="8">vii</num> consuli in quinquennium date: <rs>gallia</rs> <rs>transalbina</rs> et <rs>cisalpina</rs> 
+&glb;et <rs>illiricus</rs>, nec non et <rs>gallia</rs> <rs>comata</rs>, cuius hystoriam <rs>sitonius</rs> <rs>tranquillus</rs> plenissime ex&gd;plicauit. 
+<rs>orosius</rs> quoque hystoriarum egregius scriptor sagacissimo ordine composuit <pb n="60v" facs="vat:67" ed="#a"/>qua&gd;liter 
+<rs>cesar</rs> multis et grauissimis preliis <rs>germanos</rs> et <rs>gallos</rs> cepit, <rs>britannos</rs> quoque, quibus 
+&glb;ante eum nec nomen quidem <rs>romanorum</rs> cognitum fuerat, obsidibus acceptis, stipendarios 
+&glb;fecit, et qualiter postea apud <rs>dirratium</rs> cum <rs>pompeio</rs> dimicauit, a quo uictus <rs>cesar</rs> in <rs>thes&gd;salia</rs> 
 iterum grauissimo et cruentissimo bello cum eo dimicauit, in quo <rs>pompeius</rs> uictus in 
 &glb;<rs>alexandriam</rs> fugiit. 
+</p>
+
+
+<p xml:id="g40.12-40.37" decls="#al"> 
+&glb;<hi>anno</hi> ab <rs>urbe</rs> condita <num value="697">dcxcuii</num> <rs>crassus</rs> consul effectus est, homo inexplicabilis cupi&gd;ditatis, 
+qui propter pecunie auaritiam, quam undecumque poterat, maxime a suis, exigebat, 
+&glb;apud <rs>charras</rs> in <rs>parthia</rs> insidiis circumuentus est, et occisus. <hi>iste</hi> quoque audita <rs>hieruso&gd;limis</rs> 
+templi opulentia, quam <rs>pompeius</rs> olim intactam reliquerat, <rs>hierusolimam</rs> adiit, templum 
+&glb;peruadit, opibus spoliat; illud uidelicet templum, quod <rs>zorobabel</rs> filius <rs>salathiel</rs> de tribu 
+&glb;<rs>iuda</rs>, postquam de captiuitate <rs>babilonis</rs> reuersus est, hedificauit. <hi>porro</hi> <rs>zorobabel</rs> genuit 
+&glb;<rs>abiu<subst><del rend="glyphmodification">d</del><add place="inline">t</add><note resp="#pm" type="graphic"><hi>the</hi> scribe modified the original glyph by adding a horizontal trait.</note></subst>h</rs>, <rs>abiuth</rs> genuit <rs>eliachim</rs>, <rs>eliachim</rs> genuit <rs>azor</rs>, et sic deorsum perducit  
+&glb;flexibiles easdem generationes, usque quo ueniat ad <rs>iacob</rs> et <rs>ioseph</rs> sancte ac beate <rs>uirginis</rs> 
+&glb;<rs>marie</rs> uirum, que de <rs>spiritu sancto</rs> concepit, ac genuit <rs>dominum</rs> in corpore uenientem. <hi>in</hi> 
+&glb;quarum generationum ordine post <rs>zorobabel</rs> usque <pb n="61r" facs="vat:67" ed="#a"/>ad <hi>dominice</hi> <hi>incarnationis</hi> aduentum 
+&glb;nullum tam preclarum tamque eminentem legimus, sicut <rs>mathathiam</rs>, et filios eius: sed po&gd;pulus 
+sub cura, et ordine sacerdotum fuit. <hi>ipse</hi> autem <rs>mathathias</rs> et regali, et sacerdotali 
+&glb;genere ueniebat, qui multas tribulationes et contumelias pro lege <rs>dei</rs> sustinuit et multas 
+&glb;pugnas et certamina habuit ipse ac filiis eius pro legitimis uel sanctis <rs>domini</rs> mandatis et 
+&glb;institutionibus diuinis; et iterum filii ex ipsis sacerdotes post parentes suos pro timore <rs>dei</rs> et 
+&glb;legitimis eius principes populi effecti, et summi sacerdotis honore perfuncti sunt: nullus ta&gd;men 
+eorum regiam optinuit dignitatem usque ad aduentum ueri regis et <rs>saluatoris</rs> nostri 
+&glb;<rs>iesu</rs> <rs>christi</rs>, de quo prophete omnes dudum iam prophetauerant. <rs>erodes</rs> autem rex impius 
+&glb;ex alienigenis originem ducens indigne et dolose sibi regnum usurpauit. <hi>hec</hi> itaque ideo di&gd;ximus, 
+quia omni rei tempus, et tempora sub celo. <hi>tempus</hi> circumcisionis patrum sub <rs>abra&gd;ham</rs>, 
+tempus legis ordinationis sub <rs>moysen</rs>, tempus pugne sub <rs>iesu</rs> <rs>naue</rs>, tempus <rs>iudicum</rs> 
+&glb;usque ad <rs>samuhelem</rs> hominem <rs>dei</rs>, tempus re<add hand="#uhand" place="above">g</add>um a <rs>dauid</rs> usque ad captiuitatem <rs>babylonis</rs>; 
+&glb;completo tempore regali regem certissimum amplius <rs>iudei</rs> non habuerunt, sed sub sacerdo&gd;tum 
+cura, ut dictum est, <pb n="61v" facs="vat:68" ed="#a"/>consilio et ordinatione uixerunt, usque dum celestis rex unigenitus 
+&glb;<rs>dei</rs> <rs>deus</rs> aduenit, qui nouam regenerationem et potentiam uerbo et exemplo docuit et osten&gd;dit, 
+quod est nouitatis uite tempus, et patientie. <num value="3905"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>u</num>. 
+</p>
+
+
+<p xml:id="g40.38-41.27" decls="#ocr"> 
+&glb;<rs>cleopatre</rs> soror <rs>ptolomei</rs> annis <num value="2">ii</num>. <hi>orto</hi> siquidem bello ciuili inter <rs>cesarem</rs> et <rs>pom&gd;peium</rs>, 
+postquam nouem annis <rs>cesar</rs> omnem <rs>galliam</rs> domuit atque <rs>brittanniam</rs>, <rs>pompeius</rs> a 
+&glb;<rs>cesare</rs> in <rs>thessalia</rs> uictus <rs>alexandriam</rs> petiit, ibique ab ipso, a quo sperabat auxilia, <rs>ptolo&gd;meo</rs> 
+percussus interiit. <hi>mox</hi> <rs>cesar</rs> <rs>alexandriam</rs> uenit. <hi>ipse</hi> quoque <rs>ptolomeus</rs> insidias ei 
+<pb n="41" ed="#g"/> 
+&glb;parare uoluit, unde bello ei illato uictos in illo periit. <hi>sed</hi> ne <rs>cesar</rs> de his triumpharet, 
+&glb;<rs>cato</rs> sese apud <rs>uticam</rs> occidit. <rs>iuba</rs> rex pretio dato, percussori iugulum prebuit. <rs>petreius</rs> 
+&glb;eodem se gladio perfodit. <rs>scipio</rs> ipse semet iugulauit. <hi>similiter</hi> et <rs>totius</rs> <rs>torquatus</rs>. <rs>ma&gd;gni</rs> 
+<rs>pompeii</rs> nepotes, filiamque <rs>pompeiam</rs>, et cum his <rs>faustum</rs>, et <rs>sillam</rs>, et <rs>afranium</rs>, et 
+&glb;<rs>petreium</rs> <rs>cesar</rs> iussit occidi: <rs>cesar</rs> <rs>alexandriam</rs> petitus, regnum <rs>cleopatre</rs> dedit, cum qua 
+&glb;stupri consuetudinem habuerat. <hi>cuius</hi> tertio anno regni ipse primus <rs>romanorum</rs> singulare 
+&glb;optinuit imperium, a quo <hi>cesares</hi> <rs>romanorum</rs> principes sunt appellati: <hi>inde</hi> <num value="4" type="words">quattuor</num> triumphis
+<pb n="62r" facs="vat:68" ed="#a"/> 
+&glb;urbem ingressus, cum quo et <rs>cleopatra</rs> regio comitatum est urbem ingressa. <hi>ibique</hi> <rs>cesar</rs> 
+&glb;disposito <hi>reipublice</hi> statu, continuo in <rs>ispanias</rs> contra <rs>pompeios</rs> filios <rs>pompei</rs> profectus, <num value="17">xuii</num> 
+&glb;die qua egressus ab urbe fuerat, <rs>saguntum</rs> peruenit: statimque aduersus <rs>pompeius</rs> duos, et 
+&glb;<rs>labienum</rs>, atque <rs>atilium</rs> <rs>uarum</rs> multa bella, et uaria forte gessit: ultimum bellum apud 
+&glb;<rs>mundam</rs> flumen gestum est, ubi tantis uiribus dimicatum, tantaque cedes acta, ut <rs>cesar</rs> quo&gd;que 
+ueteranis etiam suis cedere non erubescentibus preuenire mortem congitaret, cum subito 
+&glb;in fugiam <rs>pompeiorum</rs> cessit exercitus. <rs>titus</rs> <rs>labienus</rs> et <rs>actius</rs> <rs>uarus</rs> in atie cesi sunt, 
+&glb;<rs>gneus</rs> <rs>pompeius</rs> cum centesimo equite aufugit; frater eius <rs>sextus</rs> <rs>pompeius</rs> uictus fu&gd;giensque 
+interfectus est. <rs>munda</rs> ciuitas cum immensa hominum cede <rs>cesare</rs> oppugnante uix 
+&glb;capta est. <hi>quattuor</hi> annis ex quo ab urbe bellum gesturus aufugerat, hoc bellum ciuile 
+&glb;indesinenter toto orbe intonuit. <rs>cesar</rs> igitur bellis ciuilibus per <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> annos toto orbe compo&gd;sitis 
+<rs>romam</rs> reddiit, <!--primo rigo del PDF-->et insolentius agere cepit: honores enim, qui ante a populo dabantur, 
+&glb;ipse ex sua uoluntate prestabat, et nec ad se uenienti assurgebat, <pb n="62v" facs="vat:§" ed="#a"/>aliaque non regia, sed 
+&glb;prope tyrannica faciebat. <hi>tunc</hi> itaque in eum coniuratum est a sexaginta, uel amplius sena&gd;toribus 
+equitibusque <rs>romanis</rs>; et cum die quadam inter ceteros senatus ad <hi>curiam</hi> uenisset, 
+&glb;uiginti tribus plagis occisus est. <hi>uir</hi>, quo nullus unquam in bello magis enituit. <hi>eius</hi> siqui&gd;dem 
+ducatu undecies centum nonaginta duo milia hostium cesa sunt. <hi>nam</hi> quantum bellis 
+&glb;ciuilibus fuderit noluit annotare. <hi>collatis</hi> signis quinquagies dimicauit. <hi>nullus</hi> eo quippe 
+&glb;celerius scripsit, nemo uelocius legit. <hi>quaternas</hi> epistolas simul dictabat: tante fuit bonitatis, 
+&glb;ut quos armis uicerat, clementia magis uicerit. 
 </p>
 
 
@@ -3391,7 +3458,7 @@ pontificali et <rs>paschalis</rs> est papa nuncupatus, seditque annis
 <add place="footer" hand="#hand2" xml:id="g201.19-201.20add100">
 &blb;<hi>hoc</hi> eodem anno 
 &blb;papa <rs>urbanus</rs> congregauit uniuersalem synodum in ciuitate <rs>baro</rs>, 
-&blb;in qua adfuerunt ex diuersis partibus episcopi <num value="130" type="wwords">centum triginta</num>. 
+&blb;in qua adfuerunt ex diuersis partibus episcopi <num value="130" type="words">centum triginta</num>. 
 </add>
 </p> 
 
