@@ -747,7 +747,7 @@ sicut a <rs>deo</rs> petiit, confortatus ipse cum <num value="300">ccc</num> sol
 
 <p xml:id="g14.8-14.10" decls="#al"> 
 &glb;<rs>iahyr</rs> annis <num value="22">xxii</num> ex tribu <rs>manasse</rs>. <hi>his</hi> diebus <rs>hercules</rs> agonem <rs>olimpiacum</rs> con&gd;stituit, 
-a quo usque ad primam <rs>olimpiadem</rs> supputantur anni <num value="430"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx</num>. <rs>carmentes</rs> litteras 
+a quo usque ad primam <hi>olimpiadem</hi> supputantur anni <num value="430"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice>xxx</num>. <rs>carmentes</rs> litteras 
 &glb;latinas inuenit. <num value="2773"><choice><orig>ii</orig><reg type="numeral">mm</reg></choice>dcclxxiii</num>. 
 </p> 
 
@@ -1537,7 +1537,7 @@ fuit. <hi>his</hi> egressus cum <rs>zorobabel</rs> ibat in <rs>hierusalem</rs>, 
 &glb;laudibus commemoratus est. <hi>hucusque</hi> diuina scriptura temporum seriem continet. <hi>qu<seg type="ae">ae</seg></hi> 
 &glb;uero post h<seg type="ae">ae</seg>c apud <rs>iudeos</rs> gesta sunt de libro <rs>machabeorum</rs> et <rs>iosepi</rs> atque <rs>africani</rs> scriptis 
 &glb;exhibentur, qui deinceps hystoryam uniuersam usque ad <rs>romana</rs> tempora prosecuti sunt. 
-&glb;<hi>et</hi> quidem <rs>africanus</rs> in quinto <title>temporum</title> uolumine, huius temporis ita meminit: <quote>mansit 
+&glb;<hi>et</hi> quidem <rs>africanus</rs> in quinto <title>temporum</title> uolumine, huius temporis ita meminit: <quote type="classic">mansit 
 &glb;atque imperfectum opus usque ad <rs>neemiam</rs> et <num value="20">xx</num> annum <rs>artarxersis</rs>. <hi>quo</hi> tempore re&gd;gni 
 <rs>persarum</rs> centum et quindecim anni fuerant euoluti: capiuitatis autem <rs>hierusalem</rs> cen&gd;tesimus 
 octogesimus et quintus annus erat. <hi>et</hi> tunc primum <rs>artarxerses</rs> iussit muros extrui 
@@ -2138,7 +2138,7 @@ superati ab eo uel pressi sunt. <rs>susipetes</rs>, <rs>thecteros</rs>, <rs>chat
 </p>
 
 
-<p xml:id="g43.1-43.16" decls="#ocr"> 
+<p xml:id="g43.1-43.16" decls="#al"> 
 <pb n="43" ed="#g"/> 
 &glb;<rs>beda</rs>: 
 &glb;<rs>octauianus</rs> <rs>cesar</rs> <rs>augustus</rs> regnauit annis <subst hand="#uhand"><del hand="#uhand" rend="metamark"><num value="44">xl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num></del><add hand="#uhand" place="margin"><num value="56">lui</num></add></subst> et mensibus sex, a quo <hi>augusti</hi> appel&gd;lati 
@@ -2148,14 +2148,70 @@ reges <rs>romanorum</rs>. <hi>quorum</hi> <num value="15">xu</num> uiuente <rs>c
 quem tenuit annos <num value="26">xxui</num>, qui ne ignobilis forte, et a <rs>iudeorum</rs> semine argueretur 
 &glb;extraneus, combussit libros omnes, quibus nobilitas gentis <rs>iudee</rs> in templo seruabatur ascri&gd;pta, 
 ut, deficientibus probamentis, et ipse ad hanc pertinere putaretur. <hi>insuper</hi> etiam ut 
-&glb;suam sobolem regio illorum generi commisceret, proiecta <rs>doside</rs> femina hierosolymitana, 
-&glb;quam priuatus acceperat uxorem, et nato ex ea filio <rs>antipatro</rs>, sociat sibi <rs>mariamnem</rs> filiam 
+&glb;suam sobolem regio illorum generi commisceret, proiecta <rs>doside</rs> femina hierosolimitana, 
+&glb;quam priuatus acceperat uxorem, et nato ex ea filio <rs>antipatro</rs>, sociat sibi <rs>mariamem</rs> filiam 
 &glb;<rs>alexandri</rs>, neptem <rs>aristoboli</rs> fratris <rs>hyrcani</rs>, qui ante eum rex et summus sacerdos erat 
-&glb;<rs>iudeorum</rs>. <hi>hec</hi> quinque ei filios genuit, quorum duos <rs>alexandrum</rs> et <rs>aristobolum</rs> ipse ne&gd;cauit 
+&glb;<rs>iudeorum</rs>. <hi>hec</hi> quinque ei filios genuit, quorum duos, <rs>alexandrum</rs> et <rs>aristobolum</rs>, ipse ne&gd;cauit 
 in <rs>samaria</rs>. <hi>nec</hi> mora, post etiam matrem illorum, qua nil carius nouerat, simili sce&gd;lere 
 peremit. <hi>e</hi> quibus <rs>aristobolus</rs> <rs>herodem</rs> ex <rs>ueronice</rs> susceperat filium, quem in <title>acti&gd;bus 
-<hi>apostolorum</hi></title> ab angelo percussum legimus. <hi>hactenus</hi> qui uocabantur <rs>lagide</rs> in <rs>egypto</rs> 
-&glb;regnauerunt annos ducentos nonaginta quinque. 
+apostolorum</title> ab angelo percussum legimus. <hi>actenus</hi> qui uocabantur <rs>lagidem</rs> in <rs>egypto</rs> 
+&glb;regnauerunt annis ducentos nonaginta quinque. 
+</p>
+
+<p xml:id="g43.18-44.9" decls="#al"> 
+&glb;<hi>sexta</hi> <hi>etas</hi> ab aduentu <rs>domini</rs> inchoatur, cum <rs>dei</rs> <quote type="biblia">uerbum caro factum est</quote>, transactis 
+&glb;ab exordio <pb n="65r" facs="vat:71" ed="#a"/>mundi iuxta <rs>hebreos</rs>, annis <num value="3952"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lii</num>, secundum septuaginta uero interpretes 
+&glb;annis <num value="5508">uduiii</num>. <hi>iuxta</hi> <rs>eusebium</rs> annis <num value="5199">ucxcix</num>. <hi>anno</hi> <rs>cesaris</rs> <rs>augusti</rs>. <hi>a</hi> morte uero 
+&glb;<rs>cleopatre</rs>, et <rs>antonii</rs>, quando et <rs>egiptus</rs> in prouinciam uersa est, anno <num value="27">xxuii</num>. <hi>olimpiadis</hi> 
+&glb;quidem <num value="193">cxciii</num>. <hi>ab</hi> urbe autem condita anno <num value="752">dcclii</num> idest anno eo, quo, compressis per 
+&glb;orbem terre gentium motibus, firmissimam uerissimamque pacem ordinatione <rs>dei</rs> <rs>cesar</rs> com&gd;posuit, 
+nasci dignatus est in terris <rs ana="#ab">ihesus</rs> <rs>christus</rs> <rs>dominus</rs> filius <rs>dei</rs>, suoque sextam mundi etatem 
+&glb;consecrauit aduentu. <hi>in</hi> cuius ortu audientibus hominibus exultantes <hi>angeli</hi> cecinerunt: 
+&glb;<quote type="biblia"><hi>gloriam</hi> in excelsis <rs>deo</rs>, et in terra pax hominibus bone uoluntatis</quote>. <hi>eodem</hi> quoque anno tunc 
+&glb;primum idem <rs>cesar</rs> census singularum ubique prouinciarum et censeri omnes homines iussit. 
+<pb n="44" ed="#g"/> 
+&glb;<hi>tunc</hi> igitur natus est <rs>christus</rs> <rs>romano</rs> censui statim ascriptus, ut natus est. <hi>anno</hi> imperii 
+&glb;<rs>augusti</rs> <num value="47">xluii</num> <rs>herodes</rs> morbo intercutaneis eque et scatentibus toto corpore uulneribus, 
+&glb;miserabiliter et digne moritur; pro quo substitutus ab <rs>augusto</rs> filius eius <rs>archelaus</rs> regnauit 
+&glb;annis nouem, idest usque ad ipsius <rs>augusti</rs> finem. <hi>tunc</hi> enim non ferentibus ultra, sed ac&gd;cusantibus 
+apud <rs>augustum</rs> ferocitatem eius <rs>iudeis</rs>, in <rs>biennam</rs> <rs>gallie</rs> urbem <pb n="65v" facs="vat:72" ed="#a"/>relegatur et 
+&glb;ad comminuendam <rs>iudaici</rs> regni potentiam, insolentiamque domandam, quattuor fratres eius 
+&glb;pro eo sunt <hi>tetrarche</hi> creati, <rs>herodes</rs> <rs>antipater</rs> <rs>lisias</rs> et <rs>philippus</rs>. <hi>quorum</hi> <rs>philippus</rs> et 
+&glb;<rs>herodes</rs>, qui <rs>antipas</rs> prius nuncupabatur, etiam iuuente <rs>archelao</rs>, <hi>tetrarche</hi> fuerant or&gd;dinati. 
+</p>
+
+
+<p xml:id="g44.10-44.38" decls="#ocr"> 
+<rs>cesar</rs> 
+autem tanto amore etiam apud <hi>barbaros</hi> fuit, ut reges nonnulli in honorem eius 
+&glb;conderent ciuitates, quas <rs>cesareas</rs> uocarent: sicuti in <rs>mauritania</rs> a rege <rs>iuua</rs> et in <rs>palestina</rs>, 
+&glb;que nunc urbes clarissime sunt. <hi>et</hi> multi reges ex regnis suis uenerunt, ut ei obsequerentur. 
+&glb;<hi>hic</hi> denique turbas, bella, simulationes execratus est: et nisi iustis de causis numquam genti 
+&glb;cuiquam bellum induxit. <hi>dicebat</hi> enim: imperatori bono quicquam minus quam temeritatem 
+&glb;congruere; satisque celeriter fieri, quicquid comode geritur. <hi>diligebat</hi> preterea <rs>uirgilium</rs>, 
+&glb;<rs>flaccumque</rs> poetas. <hi>erga</hi> ciues clementissime uersabatur. <hi>in</hi> amicis liberalissimus extitit, 
+&glb;quorum precipui ob taciturnitatem et modestiam erant <rs>agrippe</rs>. <hi>rarus</hi> quidem ad perci&gd;piendas 
+inimicitias, ad retinendas amicitias constantissimus, liberalibus studiis, presertim elo&gd;quientie 
+in tantum incumbens, ut nullus <pb n="66r" facs="vat:72" ed="#a"/>pene laberetur dies, quo non legeret, scriberet, uel 
+&glb;declamaret. <hi>auxit</hi>, ornauitque <rs>romam</rs> edificiis multis, isto glorians dicto: <rs>urbem</rs> lateritiam 
+&glb;reperi, marmoream relinquo. <hi>fuit</hi> mitis, gratus, ciuilis animi, sed lepidi, toto corpore pul&gd;cher 
+sed oculis magis, quam acies clarissimorum syderum modo, et tamquam solis radiorum 
+&glb;uibrabat: nec tamen tantus uir uitiis caruit; fuit enim paululum impaciens leuiter iracun&gd;dus, 
+occulte inuidens, palam factiosus. <hi>porro</hi> dominandi supra quam estimari potest cupi&gd;dissimus, 
+studiosus alee lusor. <hi>cumque</hi> esset cibi, ac uini multum aliquotiens alacer sompni 
+&glb;abstinens, seruiebat tamen libidini usque ad probrum uulgaris fame. <hi>cumque</hi> esset luxurie 
+&glb;seruiens, erat tamen eiusdem uitii seuerissimus ultor. <hi>anno</hi> <num value="87">lxx<supplied rend="squarebrackets" resp="#g">x</supplied>uii</num> uite sue ingressus <rs>no&gd;lam</rs> 
+morbo interiit, cunctis uulgo clamantibus: <hi>utinam</hi> aut non mesceretur aut non moreretur. 
+&glb;<hi>neque</hi> enim facile ullus eo, aut in bellis felicior fuit, aut in pace moderacior. <hi>quadraginta</hi> 
+&glb;quattuor annis, quibus solus gessit imperium, ciuilissime uixit. <hi>in</hi> cunctis liberalissimus, in 
+&glb;amicos fidelissimus, quos tantis euexit honoribus, ut suo pene equaret fastigio, sub hoc polle&gd;bant 
+sapientes insignes, <rs>uirgilius</rs>, <rs>salustius</rs>, <rs>libius</rs>, <rs>ortensius</rs>, <rs>oratius</rs>, <rs>athe<pb break="no" n="66v" facs="vat:§" ed="#a"/>nodorus</rs>, <rs>thar&gd;seus</rs>, 
+et <rs>sicius</rs> <rs>alexandrinus</rs>. <hi>imperauit</hi> autem <rs>cesar</rs> <rs>augustus</rs> annis <num value="56">lui</num> duodecim cum <rs>an&gd;tonio</rs>, 
+quadraginta <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> solus. <hi>qui</hi> certe numquam <hi>reipublice</hi> ad se potentiam traxisset, aut 
+&glb;tamdiu ea potiretur, nisi magnis nature et studiorum bonis abundasset <hi>rempublicam</hi> beatis&gd;simam 
+<rs>tyberio</rs> successori reliquid, qui priuignus ei, mox gener, postremo adoptione filius 
+&glb;fuerat; satisque prudens in armis, satisque; fortunatus ante sumptum imperium sub <rs>augusto</rs> fuit, 
+&glb;ut non immerito <hi>reipublice</hi> dominatus ei committeretur <num value="3967"><choice><orig>iii</orig><reg type="numeral">mmm</reg></choice><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxuii</num>. 
 </p>
 
 
