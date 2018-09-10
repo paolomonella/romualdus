@@ -31,6 +31,7 @@ class msTree:
         parser = etree.XMLParser(load_dtd=True, resolve_entities=True)
         #parser = etree.XMLParser(resolve_entities=True)
         self.tree = etree.parse(self.xmlfile, parser=parser)
+        self.root = self.tree.getroot()
         self.outputXmlFile = '%s/juxtacommons/%s%s.xml' % (myconst.xmlpath, siglum, '_juxta')
 
     def remove_comments (self):
@@ -124,14 +125,27 @@ class msTree:
                         else:
                             # ... or capitalize the first child of the first child of <rs>/</hi>
                             echild[0].text = echild[0].text.capitalize()
+        ER =  []    # Elements to transform in all uppercase
+        ER = ER + self.tree.findall('.//t:p[@type="ghead1"]', myconst.ns)
+        ER = ER + self.tree.findall('.//t:p[@type="ghead2"]', myconst.ns)
+        ER = ER + self.tree.findall('.//t:num', myconst.ns)
+        for e in ER:
+            if e.text is not None: e.text = e.text.upper()
+            for c in e.findall('.//t:*', myconst.ns):
+                if c.text is not None: c.text = c.text.upper()
+                if c.tail is not None: c.tail = c.tail.upper() 
+
+        '''
+        # Old version of the code:
         for e in self.tree.findall('.//t:p[@type="ghead1"]', myconst.ns):
             for c in e.findall('.//t:*', myconst.ns):
                 if c.text is not None: c.text = c.text.upper()
                 if c.tail is not None: c.tail = c.tail.upper() 
-        for e in self.tree.findall('.//t:p[@type="ghead2"]', myconst.ns): # In fact, this should be small-caps, but still...
+        for e in self.tree.findall('.//t:p[@type="ghead2"]', myconst.ns): #In fact, this should be small-caps, but well...
             for c in e.findall('.//t:*', myconst.ns):
                 if c.text is not None: c.text = c.text.upper()
                 if c.tail is not None: c.tail = c.tail.upper() 
+                '''
 
 
 
@@ -146,9 +160,12 @@ class msTree:
             '''
         for p in self.tree.findall('.//t:p', ns):   # Strip markup inside <p>s
             for t in tagslist:
+                '''
+                # No longer necessary b/c there's a 'choose' method now for this:
                 for reg in p.findall('.//t:reg', ns):   # Remove all regularizations, i.e. all <reg> elements
                     regparent = reg.getparent()
                     regparent.remove(reg)   # This is safe because <reg> never has a tail
+                    '''
                 etree.strip_tags(p, myconst.tei_ns + t)
         if removepar:
             body = self.tree.find('.//t:body', ns)
@@ -160,11 +177,11 @@ class msTree:
                     print(p.text)
             etree.strip_tags(body, myconst.tei_ns + 'p')
 
-    def  my_strip_tags (self, tagname):
+    def my_strip_tags (self, tagname):
         '''Remove start and end tag but keep text and tail'''
         etree.strip_tags(self.tree, tagname)
 
-    def  my_strip_elements (self, tagname, my_with_tail=False):
+    def my_strip_elements (self, tagname, my_with_tail=False):
         '''Remove start and end tag; remove text; keep tail if my_with_tail=False (default)'''
         etree.strip_elements(self.tree, myconst.tei_ns + tagname, with_tail=my_with_tail)
 
@@ -186,12 +203,10 @@ btree = msTree('bonetti')
 btree.recapitalize() 
 btree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num'], removepar=True)
 btree.write()
-'''
 
 atree = msTree('g')
 #atree.list_elements()
 atree.list_entities()
-'''
 
 for edition in ['a', 'g', 'bonetti']:
     mytree = msTree(edition)
@@ -205,8 +220,10 @@ for edition in ['a', 'g', 'bonetti']:
     mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
     mytree.write()
 
+'''
 
-for edition in ['afoo', 'bfoo']:
+EDL = ['afoo', 'bfoo']
+for edition in EDL:
     mytree = msTree(edition)
     mytree.choose('choice', 'corr', 'typo', 'sic')
     mytree.choose('choice', 'reg', 'numeral', 'orig')
@@ -214,6 +231,13 @@ for edition in ['afoo', 'bfoo']:
     mytree.choose('choice', 'reg', 'v', 'orig')
     mytree.choose('subst', 'add', 'correction', 'del')
     mytree.recapitalize() 
-    mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
+    mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'reg', 'num', 'add', 'seg', 'lb', 'pb'], \
+            removepar=False)
     mytree.write()
-'''
+
+    # Temporary needed for CollateX (remove @xmlns)
+    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'r') as infile:
+        data = infile.read()
+    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'w') as outfile:
+        data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
+        outfile.write(data)

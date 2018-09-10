@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
+<!ENTITY gd '<lb break="no" rend="-" ed="#g"/>'>
+<!ENTITY glb '<lb ed="#g"/>'>
+<!ENTITY bd '<lb break="no" rend="-" ed="#b"/>'>
+<!ENTITY blb '<lb ed="#b"/>'>
+]>
+<!--gd  = Garufi Dash-->
+<!--glb = Garufi Line Beginning-->
+<!--bd  = Bonetti Dash-->
+<!--blb = Bonetti Line Beginning-->
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Test A</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>For CollateX testing</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>My imagination</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+
+<p xml:id="g48.17-48.17" decls="#al"> 
+    Anno dominice incarnationis XLIU.</p>
+
+
+<p xml:id="g48.18-48.33" decls="#al"> 
+Nero Callicula Gagii nepos annis XIII mensibus UII diebus XXUIII. Hic autem auunculo 
+suo simillimus, Romanum imperium et deformauit, et minuit. Inusitate luxurie sumptuumque, 
+ut qui exemplo Gagii Callicule frigidis et calidis lauaretur unguentis, hamis aureis aureisque 
+retibus piscaretur, que a blattinis funibus extrahebantur. Infinitam senatus partem interfecit. 
+Bonis omnibus hostis fuit. Tantoque se dedecori prostituit, ut cantaret et saltaret 
+in cena cytharetico habitu, uel tragico. Parricidia multa commisit, fratre, uxore, matre, ac 
+Seneca magistro interfectis, urbem Romam incendit. In re militari nichil omnino ausus. 
+Britanniam pene amisit et duo nobilissima sub eo oppida illic atque euersa sunt. Armeniam 
+Parthi substulerunt legionesque Romanas sub iugo miserunt. Due tamen prouincie sub 
+eo facte, Pontus Polemoniacus, concedente rege Polimene, et Alpes Coctie rege defuncto. 
+Post hec Romane urbis execrabilis, ab omnibus destitutus, simul et a senatu hostis iudicatus; 
+cumque quereretur ad penam, quae pena talis erat, ut nudus per publicum ductus, furca capiti 
+eius inserta, uirgis usque ad mortem cederetur, et ita precipitaretur saxo ligatus in flumine, 
+e palatio fugiit, et in suburbano liberti sui, quod est inter Salariam, et Numentanam 
+uiam, ad quartum urbis miliarium, sese interfecit; anno etatis sue XXXI, imperii XIU atque in 
+eo omnis Augusti familia comsumpta est.</p>
+      </body>
+  </text>
+</TEI>

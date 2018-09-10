@@ -1,11 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
-<!--TEI xmlns="http://www.tei-c.org/ns/1.0"-->]>
-<TEI>
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
+<!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
+
+<!ENTITY uu '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">v</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>'>
+<!ENTITY jj '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">j</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>'>
+]>
+<!--gd  = Garufi Dash-->
+<!--glb = Garufi Line Beginning-->
+
+
+<!--jj  = Annotation on alphabeme 'i', saying that it is represented by allograph j in Bonetti or Garufi-->
+<!--uu  = Annotation on alphabeme 'v', saying that it is represented by allograph v in Bonetti or Garufi-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Test A</title>
+        <title>Test B</title>
       </titleStmt>
       <publicationStmt>
         <p>For CollateX testing</p>
@@ -17,10 +28,27 @@
   </teiHeader>
   <text>
       <body>
-          <p>
-              Hello dudes, how are you doing?</p>
-          <p>
-              You love me.</p>
+<p xml:id="g48.17-48.17" decls="#ocr"> 
+&glb;<hi>anno</hi> dominice incarnationis <num value="44">xli&uu;</num>.</p> 
+
+
+<p xml:id="g48.18-48.33" decls="#ocr"> 
+&glb;<rs>nero</rs> <rs>callicula</rs> <rs>ga&jj;i</rs> nepos annis <num value="13">xiii</num> mensibus <num value="7">&uu;ii</num> diebus <num value="28">xx&uu;iii</num>. <hi>hic</hi> autem auun&gd;culo 
+suo simillimus, <rs>romanum</rs> imperium et deformauit, et minuit. <hi>inusitate</hi> luxurie sumptuum&gd;que, 
+ut qui exemplo <rs>ga&jj;i</rs> <rs>callicule</rs> frigidis et calidis lauaretur unguentis, hamis aureis aureis&gd;que 
+retibus piscaretur, que a blattinis funibus extrahebantur. <hi>infinitam</hi> senatus partem in&gd;terfecit. 
+<hi>bonis</hi> omnibus hostis fuit. <hi>tantoque</hi> se dedecori prostituit, ut cantaret et saltaret 
+&glb;in cena citharetico habitu, uel tragico. <hi>parricidia</hi> multa commisit, fratre, uxore, matre, ac 
+&glb;<rs>seneca</rs> magistro interfectis, urbem <rs>romam</rs> incendit. <hi>in</hi> re militari nichil omnino ausus. 
+&glb;<rs>britanniam</rs> pene amisit et <pb n="71r" facs="vat:§" ed="#a"/>duo nobilissima sub eo oppida illic atque euersa sunt. <rs>arme&gd;niam</rs> 
+<rs>parthi</rs> substulerunt legionesque <rs>romanas</rs> sub &jj;ugo miserunt. <hi>due</hi> tamen prouincie sub 
+&glb;eo facte, <rs>pontus</rs> <rs>polemoniacus</rs>, concedente rege <rs>polimene</rs>, et <rs>alpes</rs> <rs>coctie</rs> rege defuncto. 
+&glb;<hi>post</hi> hec <rs>romane</rs> urbi execrabilis, ab omnibus destitutus, simul et a senatu hostis &jj;udicatus; 
+&glb;cumque quereretur ad penam, que pena talis erat, ut nudus per publicum ductus, furca ca&gd;piti 
+e&jj;us inserta, uirgis usque ad mortem cederetur, et ita precipitaretur saxo ligatus in flu&gd;mine, 
+e palatio fugiit, et in suburbano liberti sui, quod est inter <rs>salariam</rs>, et <rs>numentanam</rs> 
+&glb;uiam, ad quartum urbis miliarium, sese interfecit; anno etatis sue <num value="31">xxxi</num> imperii <num value="14">xi&uu;</num> atque in 
+&glb;eo omnis <rs>augusti</rs> familia comsumpta est.</p> 
       </body>
   </text>
 </TEI>

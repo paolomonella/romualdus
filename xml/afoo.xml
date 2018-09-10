@@ -1,7 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
-<!--TEI xmlns="http://www.tei-c.org/ns/1.0"-->]>
-<TEI>
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
+<!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
+<!ENTITY blb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'>
+]>
+<!--gd  = Garufi Dash-->
+<!--glb = Garufi Line Beginning-->
+<!--bd  = Bonetti Dash-->
+<!--blb = Bonetti Line Beginning-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -17,8 +25,28 @@
   </teiHeader>
   <text>
       <body>
-          <p>Hello my fair lady, how are you?</p>
-          <p>I love you.</p>
+
+<p xml:id="g48.17-48.17" decls="#al"> 
+&glb;<hi>anno</hi> dominice incarnationis <num value="44">xl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>.</p>
+
+
+<p xml:id="g48.18-48.33" decls="#al"> 
+&glb;<rs>nero</rs> <rs>callicula</rs> <rs>gagii</rs> nepos annis <num value="13">xiii</num> mensibus <num value="7">uii</num> diebus <num value="28">xxuiii</num>. <hi>hic</hi> autem auun&gd;culo 
+suo simillimus, <rs>romanum</rs> imperium et deformauit, et minuit. <hi>inusitate</hi> luxurie sumptuum&gd;que, 
+ut qui exemplo <rs>gagii</rs> <rs>callicule</rs> frigidis et calidis lauaretur unguentis, hamis aureis aureis&gd;que 
+retibus piscaretur, que a blattinis funibus extrahebantur. <hi>infinitam</hi> senatus partem in&gd;terfecit. 
+<hi>bonis</hi> omnibus hostis fuit. <hi>tantoque</hi> se dedecori prostituit, ut cantaret et saltaret 
+&glb;in cena cytharetico habitu, uel tragico. <hi>parricidia</hi> multa commisit, fratre, uxore, matre, ac 
+&glb;<rs>seneca</rs> magistro interfectis, urbem <rs>romam</rs> incendit. <hi>in</hi> re militari nichil omnino ausus. 
+&glb;<rs>britanniam</rs> pene amisit et <pb n="71r" facs="vat:77" ed="#a"/>duo nobilissima sub eo oppida illic atque euersa sunt. <rs>arme&gd;niam</rs> 
+<rs>parthi</rs> substulerunt legionesque <rs>romanas</rs> sub iugo miserunt. <hi>due</hi> tamen prouincie sub 
+&glb;eo facte, <rs>pontus</rs> <rs>polemoniacus</rs>, concedente rege <rs>polimene</rs>, et <rs>alpes</rs> <rs>coctie</rs> rege defuncto. 
+&glb;<hi>post</hi> hec <rs>romane</rs> urbis execrabilis, ab omnibus destitutus, simul et a senatu hostis iudicatus; 
+&glb;cumque quereretur ad penam, qu<seg type="ae">ae</seg> pena talis erat, ut nudus per publicum ductus, furca ca&gd;piti 
+eius inserta, uirgis usque ad mortem cederetur, et ita precipitaretur saxo ligatus in flu&gd;mine, 
+e palatio fugiit, et in suburbano liberti sui, quod est inter <rs>salariam</rs>, et <rs>numentanam</rs> 
+&glb;uiam, ad quartum urbis miliarium, sese interfecit; anno etatis sue <num value="31">xxxi</num>, imperii <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> atque in 
+&glb;eo omnis <rs>augusti</rs> familia comsumpta est.</p>
       </body>
   </text>
 </TEI>
