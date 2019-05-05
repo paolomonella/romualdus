@@ -130,8 +130,10 @@ def XMLtoJSON(id,XMLInput):
         witness['tokens'].append(token)
     return witness
 
-def collateElements(xmlElementA, xmlElementB):
-    ''' Apply transformations to the content of two XML elements'''
+def collateElements(xmlElementA, xmlElementB, myOutputType='json'):
+    ''' Apply transformations to the content of two XML elements.
+        Choose myOutputType='json' (default) or 'table'.
+        '''
 
     ATokenized = transformWrapW(transformAddW(xmlElementA))
     BTokenized = transformWrapW(transformAddW(xmlElementB))
@@ -149,16 +151,76 @@ def collateElements(xmlElementA, xmlElementB):
 
     # Collate the witnesses and view the output as JSON, in a table, and as colored HTML
 
-    #collationText = collate_pretokenized_json(json_input,output='table',layout='vertical')
-    collationText = collate(json_input,output='table',layout='vertical')
-    print(collationText)
-    #collationJSON = collate_pretokenized_json(json_input,output='json')
+    # As JSON:
+    #collationJSON = collate_pretokenized_json(json_input,output='json') # Probably this function no longer exists
     collationJSON = collate(json_input,output='json')
-    #print(collationJSON)
-    #collationHTML2 = collate_pretokenized_json(json_input,output='html2')
-    #collationHTML2 = collate(json_input,output='html2')
+    #print(collationJSON)   # debug
 
-    return collationJSON
+    # In a table:
+    # collationText = collate_pretokenized_json(json_input,output='table',layout='vertical')
+    collationText = collate(json_input,output='table',layout='vertical')
+    #print(collationText)   # debug
+
+    # As colored HTML:
+    # collationHtml = collate(json_input,output='html') # I'm not sure about this line
+    #print(collationHtml)  # debug. Strange output
+
+    # Probably outdated code:
+    #collationHTML2 = collate_pretokenized_json(json_input,output='html2') # Probably this function no longer exists
+    #collationHTML2 = collate(json_input,output='html2') # Probably this function no longer exists
+
+    if myOutputType == 'json':
+        myCollationOutput = collationJSON
+    elif myOutputType == 'table':
+        myCollationOutput = collationText
+
+    #return collationJSON
+    return myCollationOutput
+
+def getVariantType(myDiff1, myDiff2):
+    ''' Input two strings constituting the differences b/w two strings
+        and evaluate the type of type of variant. '''
+    if sorted([myDiff1, myDiff2]) == sorted(['ae', 'e']): # sorted() makes the order of diffs in the MSS irrelevant
+        myType = 'aeType'
+    elif sorted([myDiff1, myDiff2]) == sorted(['i', 'y']): # sorted() makes the order of diffs in the MSS irrelevant
+        myType = 'yType'
+    else:
+        myType = 'unknown'
+    return(myType)
+
+
+def compareStrings(myString1, myString2):
+    ''' Compare two strings and return the differences.
+    Source:
+    https://stackoverflow.com/questions/30683463/comparing-two-strings-and-returning-the-difference-python-3#30683513
+    '''
+    #then creating a new variable to store the result after
+    #comparing the strings. You note that I added result2 because
+    #if string 2 is longer than string 1 then you have extra characters
+    #in result 2, if string 1 is  longer then the result you want to take
+    #a look at is result 2
+
+    result1 = ''
+    result2 = ''
+
+    #handle the case where one string is longer than the other
+    maxlen=len(myString2) if len(myString1)<len(myString2) else len(myString1)
+
+    #loop through the characters
+    for i in range(maxlen):
+      #use a slice rather than index in case one string longer than other
+      letter1=myString1[i:i+1]
+      letter2=myString2[i:i+1]
+      #create string with differences
+      if letter1 != letter2:
+        result1+=letter1
+        result2+=letter2
+
+    #print out result
+    #print ('Letters different in string 1: "' + result1 + '"')
+    #print ('Letters different in string 2: "' + result2 + '"')
+
+    return({'type': getVariantType(result1, result2), 'r1': result1, 'r2': result2})  # Return a dictionary
 
 
 ################################
@@ -170,34 +232,48 @@ ATree = etree.parse(firstfile)
 #ATree = etree.parse('../xml/foo.xml')
 BTree = etree.parse(secondfile)
 
-# If <TEI> does *not* have @xmlns: <TEI>
-ABody = ATree.find('.//body')
-BBody = BTree.find('.//body')
+teiHasXmlsn = False
 
-'''
-# If <TEI> *has* @xmlns: <TEI xmlns="http://www.tei-c.org/ns/1.0">
-ABody = ATree.find('.//t:body', ns)
-BBody = BTree.find('.//t:body', ns)
-'''
+if teiHasXmlsn == False:
+    # If <TEI> does *not* have @xmlns: <TEI>
+    ABody = ATree.find('.//body')
+    BBody = BTree.find('.//body')
+else:
+    # If <TEI> *has* @xmlns: <TEI xmlns="http://www.tei-c.org/ns/1.0">
+    ABody = ATree.find('.//t:body', ns)
+    BBody = BTree.find('.//t:body', ns)
 
 #print(ABody)    # debug
 #print(BBody)    # debug
 
 
-#jout = collateElements(ABody, BBody)
+#jout = collateElements(ABody, BBody) # Collate whole <body> of each file
+
+
+
+#############################################
+# Create lists of <p> elements of each file #
+#############################################
 
 APars = ABody.findall('p')
 BPars = BBody.findall('p')
 
+
+##################################################
+# Create list of collations b/w those paragraphs #
+##################################################
+
 JL = []
 for par in APars:
-    pi = APars.index(par)
-    JL.append(collateElements(APars[pi], BPars[pi]))
+    pi = APars.index(par)   # Get the index, so it can use the same index for A and B in next line
+    JL.append(collateElements(APars[pi], BPars[pi]))    # Collate paragraph in A w/ corresp. par. in B
+    # Each element of list JL has the (JSON-formatted) output of the collation of two
+    # corresponding paragraphs (one from file A, the other from file B)
 
 
-###########################################
-# Do something with JSON collation output #
-###########################################
+#############################
+# Output text with variants # 
+#############################
 
 for jout in JL:
     j = json.loads(jout)
@@ -209,15 +285,58 @@ for jout in JL:
     for row in cola:
         ci = cola.index(row)
 
+        # NEW CODE
+        rowMsA = cola[ci]   # = row
+        rowMsB = colb[ci]
+
+
+        for word in row:
+            wi = row.index(word)
+            wordMsA = rowMsA[wi] # = word
+            wordMsB = rowMsB[wi]
+            if wordMsA['n'] == wordMsB['n']:
+                '''Previous line: if normalized ('n') forms of
+                    corresponding words in MS A and MS B are the same'''
+                print(wordMsA['t'], end = ' ')  # Print the non-normalized ('t') form only once
+            else:
+                myDiff = compareStrings(wordMsA['t'], wordMsB['t'])
+
+                if myDiff['type'] is 'unknown':
+                    typeDeclaration = ''
+                else:
+                    typeDeclaration = '; Type: ' + myDiff['type']
+
+                print('[A: ' + wordMsA['t'] +
+                        '; B: ' + wordMsB['t'] +
+                        '; Diff: ⸤' + myDiff['r1'] + '/' + myDiff['r2'] + '⸥' +
+                        typeDeclaration +
+                        #'; Type: ' + myDiff['type'] +
+                        '] ', end = '')
+        
+        
+        
+        
+        '''
+        # OLD CODE
+
         #print('\n\nWitness A, row %d:' % (ci), end=' ')
-        LA = [word['t'] for word in cola[ci]]
-        #ja = ' '.join(LA)
+        LA = [word['n'] for word in cola[ci]]   # This is a list
+        ja = ' '.join(LA)  # The textual portion is transformed to a string (with spaces b/w words)
 
         #print('\nWitness B, row %d:' % (ci), end=' ')
-        LB = [word['t'] for word in colb[ci]]
-        #jb = ' '.join(LB)
+        LB = [word['n'] for word in colb[ci]]   # This is a list
+        jb = ' '.join(LB)  # The textual portion is transformed to a string (with spaces b/w words)
+
 
         if LA != LB:
-            print('\n')
-            print(LA)
-            print(LB)
+            # I'm comparing the two lists of tokens (LA/LB) based on their normalized ('n')
+            # form ('n', i.e. lowercase and w/o XML tags), but I'm then printing them out
+            # based on their non-normalized ('t') form.
+            LAt = [word['t'] for word in cola[ci]]   # 't': Not normalized-'n' tokens
+            jat = ' '.join(LAt)  # The textual portion is transformed to a string (with spaces b/w words)
+            LBt = [word['t'] for word in colb[ci]]   # 't': Not normalized-'n' tokens
+            jbt = ' '.join(LBt)  # The textual portion is transformed to a string (with spaces b/w words)
+            print(' [A: ' + jat + '; B: ' + jbt + '] ', end = '')
+        else:
+            print(ja, end = '') # ja = jb, so I'm printing it only once. No need to ask: print(ja); print(jb)
+        '''
