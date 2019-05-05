@@ -1,8 +1,11 @@
 #!/usr/bin/python3.6
 # -*- coding: utf-8 -*-
-''' This module includes one big function, extracting/dividing
-    the layers from the TEI XML source file. See the documentation
-    of the function below for details.
+''' This module extracts/divides the layers from the TEI XML source file,
+    thus generating files with simplified (or no) markup that can be fed
+    to collation software such as Juxta or CollateX.
+    It also includes other methods that help you to inspect what entities
+    and elements are in the original XML file.
+    See the documentation of the methods below for details.
     '''
 
 import csv
@@ -85,11 +88,12 @@ class msTree:
             print(msg_fmt.format(entity=entity))
 
     def choose (self, parenttag, keeptag, keeptype, removetag):
-        ''' Remove all elements with tag name 'keeptag' and remove those with name 'removetag' in structures such as
+        ''' Keep all elements with tag name 'keeptag' and remove those with name 'removetag' in structures such as
             '<choice><orig>j</orig><reg type="j">i</reg></choice>'
             or
             <choice><sic>dimicarum</sic><corr type="typo">dimicarunt</corr></choice>
-            Note that the element to keep (<reg> or <corr>) always has a @type, that goes to argument "keeptype"
+            In the examples above, "parenttag" is "choice" (it may be something else, such as "app" or "subst").
+            Note that the element to keep (<reg> or <corr>) always has a @type, whose value goes to argument "keeptype".
             '''
         for k in self.tree.findall('.//t:%s[@type="%s"]' % (keeptag, keeptype), myconst.ns):
             # If parenttag is the parent and keeptag is the sibling:
@@ -235,7 +239,7 @@ for edition in EDL:
             removepar=False)
     mytree.write()
 
-    # Temporary needed for CollateX (remove @xmlns)
+    # Temporarily needed for CollateX (remove @xmlns)
     with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'r') as infile:
         data = infile.read()
     with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'w') as outfile:
