@@ -9,11 +9,6 @@ from lxml import etree
 import json,re,myconst
 from myconst import ns, tei_ns, xml_ns, html_ns 
 
-# Mode
-
-# mymode = 'wholebody'
-mymode = 'paragraphs'
-
 # Input files
 
 #firstfile = '../xml/a_juxta.xml'
@@ -21,8 +16,11 @@ mymode = 'paragraphs'
 firstfile = '../xml/juxtacommons/afoo_juxta.xml'
 #secondfile = '../xml/bonetti_juxta.xml'
 #secondfile = '../xml/g.xml'
-secondfile = '../xml/juxtacommons/bfoo_juxta.xml'
+#secondfile = '../xml/juxtacommons/bfoo_juxta.xml'
+secondfile = '../xml/juxtacommons/gfoo_juxta.xml'
 
+firstsiglum  = 'A'
+secondsiglum = 'G'
 
 
 ########
@@ -182,8 +180,14 @@ def getVariantType(myDiff1, myDiff2):
         and evaluate the type of type of variant. '''
     if sorted([myDiff1, myDiff2]) == sorted(['ae', 'e']): # sorted() makes the order of diffs in the MSS irrelevant
         myType = 'aeType'
-    elif sorted([myDiff1, myDiff2]) == sorted(['i', 'y']): # sorted() makes the order of diffs in the MSS irrelevant
+    elif sorted([myDiff1, myDiff2]) == sorted(['i', 'y']):
         myType = 'yType'
+    elif sorted([myDiff1, myDiff2]) == sorted(['u', 'v']):
+        myType = 'uvType'
+    elif sorted([myDiff1, myDiff2]) == sorted(['U', 'V']):
+        myType = 'uvType'
+    elif sorted([myDiff1, myDiff2]) == sorted(['i', 'j']):
+        myType = 'jType'
     else:
         myType = 'unknown'
     return(myType)
@@ -243,10 +247,6 @@ else:
     ABody = ATree.find('.//t:body', ns)
     BBody = BTree.find('.//t:body', ns)
 
-#print(ABody)    # debug
-#print(BBody)    # debug
-
-
 #jout = collateElements(ABody, BBody) # Collate whole <body> of each file
 
 
@@ -257,6 +257,9 @@ else:
 
 APars = ABody.findall('p')
 BPars = BBody.findall('p')
+
+#print(APars)    # debug
+#print(BPars)    # debug
 
 
 ##################################################
@@ -270,10 +273,11 @@ for par in APars:
     # Each element of list JL has the (JSON-formatted) output of the collation of two
     # corresponding paragraphs (one from file A, the other from file B)
 
-
 #############################
 # Output text with variants # 
 #############################
+
+onlyOutputVariants = False
 
 for jout in JL:
     j = json.loads(jout)
@@ -297,7 +301,8 @@ for jout in JL:
             if wordMsA['n'] == wordMsB['n']:
                 '''Previous line: if normalized ('n') forms of
                     corresponding words in MS A and MS B are the same'''
-                print(wordMsA['t'], end = ' ')  # Print the non-normalized ('t') form only once
+                if not onlyOutputVariants:
+                    print(wordMsA['t'], end = ' ')  # Print the non-normalized ('t') form only once
             else:
                 myDiff = compareStrings(wordMsA['t'], wordMsB['t'])
 
@@ -306,8 +311,8 @@ for jout in JL:
                 else:
                     typeDeclaration = '; Type: ' + myDiff['type']
 
-                print('[A: ' + wordMsA['t'] +
-                        '; B: ' + wordMsB['t'] +
+                print('[' + firstsiglum + ': ' + wordMsA['t'] +
+                        '; ' + secondsiglum + ': ' + wordMsB['t'] +
                         '; Diff: ⸤' + myDiff['r1'] + '/' + myDiff['r2'] + '⸥' +
                         typeDeclaration +
                         #'; Type: ' + myDiff['type'] +
