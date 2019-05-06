@@ -22,12 +22,12 @@
         <p>For CollateX testing</p>
       </publicationStmt>
       <sourceDesc>
-        <p>My imagination</p>
+        <p>Garufi edition</p>
       </sourceDesc>
     </fileDesc>
   </teiHeader>
   <text>
-      <body>
+    <body>
 <p xml:id="g48.17-48.17" decls="#ocr"> 
 &glb;<hi>anno</hi> dominice incarnationis <num value="44">xli&uu;</num>.</p> 
 
@@ -49,6 +49,6 @@ e&jj;us inserta, uirgis usque ad mortem cederetur, et ita precipitaretur saxo li
 e palatio fugiit, et in suburbano liberti sui, quod est inter <rs>salariam</rs>, et <rs>numentanam</rs> 
 &glb;uiam, ad quartum urbis miliarium, sese interfecit; anno etatis sue <num value="31">xxxi</num> imperii <num value="14">xi&uu;</num> atque in 
 &glb;eo omnis <rs>augusti</rs> familia comsumpta est.</p> 
-      </body>
+    </body>
   </text>
 </TEI>
