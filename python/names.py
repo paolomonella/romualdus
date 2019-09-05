@@ -192,7 +192,6 @@ class Names():
 
 
 
-
 def updatenamesfile (updateProperNamesInputXmlFile):
     ''' Update the rs.txt file, merging names in <rs> elements in
         file updateProperNamesInputXmlFile (e.g. a.xml) and names
@@ -217,6 +216,24 @@ def updatenamesfile (updateProperNamesInputXmlFile):
             if n.strip() not in nn:
                 print(n.strip(), file=f)
 
+def updatenamesfile (myFirstFile, mySecondFile):
+    ''' Compare the <rs> elements in myFirstFile with those of mySecondFile '''
+    N1 = Names(myFirstFile)
+    N2 = Names(mySecondFile)
+    N1D = N1.namedict(mydicttag='rs')
+    N2D = N2.namedict(mydicttag='rs')
+    N1L = [N1D[n] for n in N1D]
+    N2L = [N2D[n] for n in N2D]
+    if len(N1D) > len(N2D): majorLength, minorLength = len(N1D), len(N2D)
+    else: minorLength, majorLength = len(N1D), len(N2D)
+    for i in range(minorLength):
+        n1, n2 = N1L[i], N2L[i]
+        print('%s%30s' % ( N1L[i], N2L[i]) )
+        if n1 != n2:
+            print('!!%s%30s' % ( N1L[i], N2L[i]) )
+            break
+    # OK, I didn't really find a way to compare the two lists
+
 
 
 
@@ -228,19 +245,4 @@ def updatenamesfile (updateProperNamesInputXmlFile):
 #N = Names('../xml/foo.xml')
 #N.checkrs()
 
-'''
-for x in N.checkrs():
-    print(
-            x
-            )
-
-
-
-checkrsandhi ('../xml/foo.xml', outmethod='xml')
-
-
-N = nameset ('../xml/g.xml')
-for n in N:
-    #print(n, '\t', N[n])
-    print(n)
-    '''
+#updatenamesfile('../xml/g.xml','../xml/a.xml')
