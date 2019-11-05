@@ -69,6 +69,9 @@
       <editorialDecl xml:id="al">
         <p>Paragraph encoded at the Alphabetic Layer only.</p>
       </editorialDecl>
+      <editorialDecl xml:id="al2">
+        <p>Paragraph encoded at the Alphabetic Layer, main variants only.</p>
+      </editorialDecl>
       <editorialDecl xml:id="ocr">
         <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p>
       </editorialDecl>
@@ -261,6 +264,8 @@
         </interp>
 
 
+<milestone type="garufi_two_layers_from_here_on" unit="collation"/>
+
 
 <p xml:id="g3.2-3.6" decls="#algl">
 <pb n="15r" facs="vat:21" ed="#a"/>
@@ -449,6 +454,9 @@ ante natu3 <rs>mathusala3</rs> posuere <num value="165">clxu</num> annos, postea
 &gl;n0 in septima generati<choice><abbr>o0</abbr><expan>on</expan></choice>es, sed in primogenito <rs>enoch</rs> filio c0secrat. <rs>septuaginta</rs> 
 &gl;<num value="1354">mcccl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, <rs>he<choice><abbr>br0</abbr><expan>brei</expan></choice></rs> <num value="874">dccclxx<choice><orig>ii<add place="above">i</add>i</orig><reg type="numeral">iu</reg></choice></num>. 
 </p>
+
+
+<milestone type="garufi_one_layer_from_here_on" unit="collation"/>
 
 
 <p xml:id="g7.1-7.7" decls="#al"> 
@@ -5171,9 +5179,368 @@ apud urbem <rs>romam</rs> tam seculari, quam diuina scientia claruit. <hi>hic</h
 </p>
 
 
-<p xml:id="g116.4-116.5" decls="#ocr"> 
+<p xml:id="g116.4-116.5" decls="#al"> 
 &gl;<hi>interea</hi> <rs>rome</rs> defuncto <rs>pelagio</rs>, <rs>iohannes</rs> natione <rs>romanus</rs> de patre <rs>anastasio</rs> illustri 
-&gl;uiro, pontificali cathedra sublimatus est, seditque annis <num value="12">xii</num> mensibus <num value="9">ix</num>. 
+&gl;uiro, pontificali cathedra sublimatus est, seditque annis <num value="12">xii</num> mensibus <num value="11">xi</num>. 
+</p>
+
+
+<milestone type="garufi_only_major_variants_collation_from_here_on" unit="collation"/>
+
+
+<p xml:id="g116.6-118.8" decls="#al2"> 
+&gl;<hi>anno</hi> <rs>domini</rs> <num value="564">dlxiu</num>. <rs>iustinus</rs> apud <rs>constantinopolim</rs> suscepit imperium, uir in omni 
+&gl;auaritia deditus, improbus moribus, exemptor pauperum, senatorum expoliator, opumque te&gd;nacissimus, 
+cui tanta fuit cupiditatis rabies ut arcas ferreas fieri iuberet in quibus ea que 
+&gl;rapiebat auri argentique talenta congereret. <hi>is</hi> cum a diuinis mandatis aurem cordis 
+&gl;auerteret, iusto <rs>dei</rs> iudicio amens effectus est. <hi>hic</hi> <rs>tiberium</rs> <rs>cesarem</rs> asciuit, qui eius im&gd;perium 
+gubernaret, hominem iustum, utilem, strenuum, sapientem, elemosinarium, largum, 
+&gl;in iudiciis equum, in uictoriis clarum, et quod his supereminet, uerissimum <pb n="141v" facs="vat:163" ed="#a"/>christianum. 
+&gl;<hi>interea</hi> <rs>narses</rs>, cuius ad omnia studium uigilabat, a quibusdam <rs>romanis</rs> emulis apud impe&gd;ratorem 
+<rs>iustinum</rs> et eius coniugem <rs>sophiam</rs> accusatur, quorum uerbis in tantum aures acco&gd;modarunt 
+ut <rs>cesar</rs> ira exardescens successorem <rs>narseti</rs> <rs>longinum</rs> direxerit prefectum. 
+&gl;<rs>augusta</rs> uero inter alias minas atque iniuriosa uerba que de <rs>narsete</rs> dixerat, quia eunu&gd;chus 
+erat, dixit eum non consulatum debere <rs>romanum</rs> sed in gyneceo seminarum pensa 
+&gl;diuidere lanarum. <hi>ad</hi> hec <rs>narses</rs>: talem se, inquit, ordi<surplus rend="anglebrackets" resp="#g">na</surplus>turum telam <surplus rend="anglebrackets" resp="#g">ei</surplus>, qualem ipsa 
+&gl;<surplus rend="anglebrackets" resp="#g">cum</surplus> dum uiueret, deponere non posset. <hi>nec</hi> promissa moratus, ad <rs>alboyn</rs> regem 
+&gl;<rs>langobardorum</rs> legatos mittit, qui <rs>pannonie</rs> pauperima rura deserere et ad <rs>italiam</rs> solo 
+&gl;uberem hortarentur transire. <rs>narses</rs> autem urbe <rs>roma</rs> relicta apud <rs>neapolim</rs> post ali&gd;quarum 
+temporis defunctus est. <hi>continuo</hi> apud <rs>italiam</rs> ignee acies in celo apparuerunt. <rs>lan&gd;gobardi</rs> 
+igitur cum uxoribus et filiis, de <rs>pannonia</rs> egressi, postquam habitauerunt ibi <num value="42">xlii</num>. 
+&gl;annis, et commodantes terram, quasi propriam hereditatem, uicinis suis ingressi sunt <rs>italiam</rs>, 
+&gl;cum iam ab incarnatione domini <num value="568">dlxuiii</num>. anni essent euoluti, et preerat <rs>langobardis</rs> rex 
+&gl;<rs>alboyn</rs>. <rs>alboyn</rs> itaque <rs>italiam</rs> ingrediens pro indictione tertia <pb n="142r" facs="vat:163" ed="#a"/>cepit <rs>aquileiam</rs>, <rs>uenetiam</rs>, 
+&gl;<rs>forum</rs> <rs>iulii</rs>, <rs>ueronam</rs> et <rs>mantuam</rs> ac <rs>mediolanum</rs> omnesque <rs>ligurie</rs> ciuitates, <rs>ticinum</rs> 
+&gl;quoque, ubi sedem regni statuerat, et alias usque <rs>tusciam</rs> ciuitates; <rs>roma</rs> quoque tantis 
+&gl;malis a <rs>langobardis</rs> adacta est, sicut beatus testatur <rs>gregorius</rs>, ut eis postea tributaria fue&gd;rit, 
+ita ut ciues quintam partem frugum suarum pactione tributi <rs>langobardis</rs> persoluerent. 
+<pb n="117" ed="#g"/> <!-- occhio: qui nel ms a c'è una grossa aggiunta in margine -->
+&gl;<hi>interea</hi> rex <rs>alboyn</rs> postquam in <rs>italia</rs> annis tribus et mensibus <num value="6">ui</num> regnauerat, insidiis co&gd;niugiis 
+sue interfectus est. <hi>fuit</hi> autem <rs>alboyn</rs> bellicosissimus, summeque audacie uir, bello 
+&gl;famosissimus, statura procerus, strenuus et ad bella peragenda toto corpore coaptarus. 
+&gl;<hi>tandem</hi> <rs>langobardi</rs> preficiunt in regnum <rs>cleph</rs> nobilissimum uirum; quo uita decedente 
+&gl;postquam uno anno et mensibus sex tenuit principatum; duces in <rs>langobardorum</rs> gente de&gd;cennio 
+sunt creati, et unusquisque ducum suam regebat ciuitatem. <hi>per</hi> hos duces <rs>italia</rs> 
+&gl;ex magna parte capta et <rs>langobardis</rs> subiugata est, nonnullis ciuitatibus subrutis, expoliatis 
+&gl;ecclesiis populisque interfectis. <hi>e</hi> quibus ducibus aliquanti <rs>gallias</rs> predandi cupiditate 
+&gl;petentes irruerunt, preda et incendiis cuncta uastantes. <hi>quibus</hi> ad dimicandum cum exercitu 
+&gl;<rs>gunthrannus</rs> apud <rs>prouinciam</rs> cum <rs>amato</rs> patricio occurrit, et bello conflicto <pb n="142v" facs="vat:164" ed="#a"/>patricium 
+&gl;ipsum interemerunt, regem uero <rs>gunthrannum</rs> fugauerunt, tantamque tunc stragem <rs>lango&gd;bardi</rs> 
+uictores de <rs>burgundionibus</rs> fecerunt, ut uix possit colligi numerus occisorum, et di&gd;uites 
+facti de ingenti captiuorum grege ac de inestimabili preda ad <rs>italiam</rs> sunt reuersi. 
+&gl;<hi>non</hi> multo post tempore tres <rs>langobardorum</rs> duces <rs>gallias</rs> irruperunt: quorum unus quidem 
+&gl;nomine <rs>amo</rs> <rs>ebredunensem</rs> carpens uiam; usque <rs>machouillam</rs> accessit ibique tentoria fixit. 
+&gl;<hi>alius</hi> autem dux, nomine <rs>zaban</rs>, per <rs>deinsem</rs> descendens usque ad <rs>ualentiam</rs> uenit. <hi>tertius</hi> 
+&gl;uero dux, nomine <rs>rodanus</rs>, <hi>gratianopolim</hi> ciuitatem aggressus est. <hi>et</hi> <rs>amo</rs> quidem <rs>are&gd;latensem</rs> 
+debellauit prouinciam cum urbibus, que circum site sunt, et usque ad ipsum 
+&gl;lapideum campum qui adiacet urbi <rs>massiliensi</rs> accedens, uniuersa que inuenire poterat de&gd;populatus 
+est. <rs>rodanus</rs> quoque et <rs>zaban</rs> pari modo incendiis et rapinis loca ad que 
+&gl;accesserunt demoliti sunt. <hi>que</hi> cum <rs>mummulo</rs> patricio perlata fuisset; cum ualida manu 
+&gl;ueniens, primum cum <rs>rodano</rs> conflixit, et multos de eius exercitu peremit, ipsumque 
+&gl;<rs>rodanum</rs> lancea uulneratum ad montium excelsa fugere compulit. <hi>qui</hi> exinde cum quin&gd;gentis 
+uiris qui ei remanserant per deuia siluarum prorumpens, ad <pb n="143r" facs="vat:164" ed="#a"/><rs>zaban</rs>, qui tunc urbem 
+&gl;<rs>ualentiam</rs> obsidebat, peruenit eique omnia que acta fuerant nuntiauit. <hi>qui</hi> pariter dum 
+&gl;ad <rs>ebredunensem</rs> omnia depredantes uenissent, ibi eis <rs>mummulus</rs> cum innumero exercitu 
+&gl;<surplus rend="anglebrackets" resp="#g"><rs>francorum</rs></surplus> occurrit, et commisso prelio eosdem deuicit. <hi>tunc</hi> <rs>zaban</rs> et <rs>rodanus</rs> sine 
+&gl;ullius lucri conquisitione <rs>italiam</rs> remearunt. <hi>his</hi> auditis <rs>amo</rs>, ut erat animo fortis, 
+<pb n="118" ed="#g"/> 
+&gl;intrepidus <rs>mummulo</rs> occurrit et acriter cum eo preliando ipsum fugauit, et eius exercitum 
+&gl;strauit. <hi>quo</hi> superato cum omni preda collecta <rs>italiam</rs> profectus est. <hi>eo</hi> siquidem tem&gd;pore 
+<rs>langobardi</rs> comam capitis tondebant, nam ceruicem usque ad occipitium radentes 
+&gl;nudabant, capillos a facie usque ad hos dimissos habentes, uestimenta uero erant laxa et 
+&gl;maxime linea qualia <rs>saxones</rs> habere solent, ornata institis latioribus uario colore contextis. 
+&gl;<hi>tibialiis</hi> cum fasciolis eorum crura stringebantur: calige uero eis erant usque ad summum 
+&gl;policem pene aperte, et alternatim laqueis corrigiarum retente. <hi>postea</hi> uero ceperunt sibi 
+&gl;osis uti more <rs>romanorum</rs> super quas equitantes birreos imitabantur. 
+</p>
+
+
+<p xml:id="g118.9-118.25" decls="#al2"> 
+&gl;<hi>anni</hi> <rs>domini</rs> <num value="575">dlxxu</num> mortuo <rs>iustino</rs> cum duodecim annis regnasset, <hi>tiberius</hi> 
+&gl;<rs>constantinus</rs> <rs>romanorum</rs> regum quinqua<pb break="no" n="143v" facs="vat:165" ed="#a"/>gesimus sumpsit imperium. <hi>hic</hi> sub <rs>iustino</rs> adhuc 
+&gl;<rs>cesar</rs> cum rem publicam regeret, et multas egenis elemosynas erogaret, magnam ei domi&gd;nus 
+auri copiam subministrauit. <hi>nam</hi> deambulans per palatium uidit in pauimento domus 
+&gl;tabulam marmoream dominice crucis uexillo insignitam, et ait: <hi>crucem</hi> domini qua pectus 
+&gl;frontemque munire debumus indignis quid pedibus calcamus? <hi>et</hi> simul cum uerbo iussit 
+&gl;eandem tabulam auferri a pauimento, qua amota, reperiunt et aliam simili signaculo ex&gd;pressam; 
+post hanc quoque reperiunt et tertiam, quibus ablatis, inuenit magnum thesaurum 
+&gl;habentem supra mille auri centenaria, sublatumque aurum pauperibus abundantius quam 
+&gl;consueuerat largitur. <rs>narsetis</rs> quoque thesaurum in quadam <rs>italie</rs> urbe, terra defossum, 
+&gl;quodam decrepito sene indicante, inuenit, et in simile opus distribuit. <hi>ad</hi> hunc <rs>chil&gd;pertus</rs> 
+rex <rs>francorum</rs> suos dirigens legatos, multa ab eo ornamenta, aureos etiam quin&gd;quaginta 
+singularum accepit librarum, abentes ex una parte efficiem imperatoris et in circulo 
+&gl;scriptum: <hi>tiberii</hi> <rs>constantini</rs> perpetui <rs>augusti</rs>, ab alia uero, quadrigam et ascensorem con&gd;tinentesque 
+scriptum: gloria <rs>romanorum</rs>. <hi>huius</hi> exercitus ab eo missus <rs>persas</rs> potentis&gd;sime <pb n="144r" facs="vat:165" ed="#a"/>debellauit uictorque regrediens, tantam prede molem cum uiginti pariter elephantis 
+&gl;abduxit ut humane crederetur posse sufficere cupiditati. 
+</p> 
+
+
+<p xml:id="g118.26-118.29" decls="#al2"> 
+&gl;<hi>preterea</hi> <rs>rome</rs> <rs>iohanne</rs> defuncto, <rs>benedictus</rs> natione <rs>romanus</rs>, de patre <rs>bonifacio</rs>, ei 
+&gl;in pontificatu successit, seditque annis quatuor, mense uno. <hi>quo</hi> tempore gens <rs>langobardorum</rs> 
+&gl;omnem inuasit <rs>italiam</rs>, comitante fame et mortalitate. <hi>his</hi> autem laboribus et afflictionibus 
+&gl;idem <rs>benedictus</rs> papa mortuus est et sepultus in basilica beati <rs>petri</rs>. 
+</p>
+
+
+<p xml:id="g118.30-119.9" decls="#al2"> 
+&gl;<hi>huic</hi> itaque successit <rs>pelagius</rs>, natione <rs>romanus</rs> ex patre <rs>unigildo</rs>, seditque annis de&gd;cem 
+mensibus <num value="2">ii</num>. <hi>hic</hi> absque iussione principis est ordinatus, eo quod <rs>langobardi</rs> obside&gd;rent 
+<rs>romam</rs> nec posset quisquam a <rs>roma</rs> progredi. <hi>hic</hi> autem nouem prefationes tradidit 
+&gl;ecclesie ante canonem decantandas, et hic sepultus est ad sanctum <rs>petrum</rs>. <hi>his</hi> autem 
+&gl;diebus beatus <rs>gregorius</rs> diaconus, cum esset apocrisarius in eadem urbe regia, morales li&gd;bros 
+in <rs>iob</rs> composuit, et <rs>euthychium</rs> eiusdem urbis episcopum in conspectu <rs>augusti</rs> su&gd;perauit, 
+ita ut ipse <rs>augustus</rs> librum illius, quem de resurrectione scripsit, suis catholicis 
+<pb n="119" ed="#g"/> 
+&gl;assertionibus destruens deliberaret flammis cremari. <hi>docebat</hi> enim idem <rs>euthychius</rs> corpus 
+&gl;nostrum in illa resurrectionis gloria, et uenti aerisque subtilius esse futurum, 
+&gl;contra illud <pb n="144v" facs="vat:166" ed="#a"/>dominicum: palpate, et uidete quia spiritus carnem et ossa non habet, sicut me 
+&gl;uidetis habere. <hi>tiberius</hi> uero <rs>constantinus</rs> postquam imperium septem rexerat annis, sen&gd;tiens 
+sibi diem mortis imminere, <rs>mauricium</rs>, genere <rs>cappadocem</rs>, uirum strenuum, tradita 
+&gl;sibi in matrimonio filia sua, ad imperium elegit. <hi>sic</hi> ad eternam patriam migrauit, ma&gd;ximum 
+luctum populis de sua morte relinquens. <hi>fuit</hi> autem summe bonitatis, eleemosynis 
+&gl;promptus, in iudiciis iustus, in iudicando cautissimus, nullum despiciens, sed omnes in sua 
+&gl;bona uoluntate complectens, omnes diligens, ipse quoque a cunctis est dilectus. 
+</p>
+
+
+<p xml:id="g119.10-120.29" decls="#al2"> 
+&gl;<hi>anni</hi> <rs>domini</rs> <num value="582">dlxxxii</num>. <rs>mauricius</rs> indutus purpura, redimitus diademate ad circum 
+&gl;processit, ecclamatisque sibi laudibus, largitis per populos muneribus primus ex <rs>grecorum</rs> 
+&gl;genere in imperio confirmatus est. <hi>at</hi> uero <rs>langobardi</rs> cum per annos decem sub pote&gd;state 
+ducum fuissent, tandem communi consilio <rs>authari</rs> filium <rs>clephonis</rs> supra memorati 
+&gl;principis regem sibi statuerunt. <hi>quem</hi> etiam propter dignitatem <rs>flauium</rs> appellauerunt, 
+&gl;quo prenomine omnes, qui postea fuerunt <rs>langobardorum</rs> reges usi sunt, ut <rs>flauii</rs> dicerentur : 
+&gl;<hi>cui</hi> <pb n="145r" facs="vat:166" ed="#a"/>ob restaurationem regni duces, qui tunc erant, mediam totius substantie tribuerunt. 
+&gl;<rs>guthrannus</rs> autem rex <rs>francorum</rs> propriis orbatus filiis, anno regni <rs>chliperici</rs> quinto decimo 
+&gl;<rs>chilbertum</rs> nepotem suum adoptauit in filium, eumque regem constituit. <hi>eo</hi> tempore <rs>mau&gd;ricius</rs> 
+imperator; <rs>childeberto</rs> regi <rs>francorum</rs> quinquaginta millia solidos per legatos suos 
+&gl;direxit, ut cum exercitu super <rs>langobardos</rs> irrueret eosque <rs>italia</rs> propelleret. <hi>qui</hi> col&gd;lecta 
+multitudine hoc agere temptauit, sed minime potuit. <hi>interea</hi> <rs>childebertus</rs> rex 
+&gl;<rs>francorum</rs> bellum aduersus <rs>gothos</rs> agens, eos acie superauit. <hi>rursus</hi> uero <rs>mauricius</rs> im&gd;perator 
+legatos ad <rs>childebertum</rs> <rs>francorum</rs> regem misit, orans ut exercitum contra <rs>lan&gd;gobardos</rs> 
+mitteret; <rs>childebertus</rs> itaque legatis <rs>mauricii</rs> acquiescens, iterum <rs>francorum</rs> exer&gd;citum 
+atque <surplus rend="anglebrackets" resp="#g"><rs>alamannorum</rs></surplus> ad <rs>italiam</rs> <surplus rend="anglebrackets" resp="#g">contra <rs>longobardos</rs></surplus> direxit. <hi>uerum</hi> <rs>langobardis</rs> 
+&gl;aciem producere atque aduersariis ire obuiam meditantibus, <rs>franci</rs> ac <rs>alamanni</rs> dissen&gd;sionem 
+inter se habentes, sine ullius lucri conquisitione ad patriam remearunt. <hi>sed</hi> non 
+&gl;multo post <rs>childebertus</rs> legationem ad <rs>mauricium</rs> imperatorem direxit, mandans ei ut 
+&gl;quod prius non <pb n="145v" facs="vat:167" ed="#a"/>fecerat, nunc contra <rs>langobardorum</rs> gentem susciperet bellum, eos ab 
+&gl;<rs>italia</rs> remoueret. <hi>qui</hi> nihil moratus exercitum suum ad <rs>langobardorum</rs> debellationem 
+&gl;direxit in <rs>italiam</rs>. <hi>cum</hi> quo <rs>authari</rs> rex et <rs>langobardorum</rs> acies non signiter confligunt. 
+&gl;<hi>in</hi> ea pugna <rs>langobardi</rs> uictoriam capiunt, <rs>franci</rs> uehementer cesi, nonnulli <surplus rend="anglebrackets" resp="#g">uero</surplus> capti, 
+<pb n="120" ed="#g"/> 
+&gl;plurimi etiam per fugam elapsi, uix ad patriam reuertuntur. <hi>interea</hi> <rs>autari</rs> rex accepit 
+&gl;uxorem <rs>theodolindam</rs> filiam regis <rs>baioariorum</rs>. <rs>autari</rs> uero per <rs>spoletum</rs> <rs>beneuentum</rs> 
+&gl;peruenit et easdem regiones accepit. <hi>dehinc</hi> usque <rs>regium</rs> ambulauit, cuncta sibi compo&gd;nens, 
+et quia apud <rs>regium</rs> intra undas maris columna quedam posita esse dicitur, usque 
+&gl;ad eam equo sedens accessit, et eandem haste sue cuspide tetigit dicens: huc usque erunt 
+&gl;fines <rs>langobardorum</rs>. <hi>anno</hi> <num value="19">x<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> <rs>guthranni</rs> atque <rs>chilperici</rs>, <rs>burdigalensis</rs> ciuitas terre 
+&gl;motu concussa est et de <rs>pireneis</rs> montibus immensi lapides sunt euulsi, quibus immensa 
+&gl;hominum pecorumque multitudo interiit, ipsaque ciuitas in proximo incendio concremata est. 
+&gl;<rs>aurelianensis</rs> urbs incendio simili uastata est. <hi>apud</hi> <rs>carnotinum</rs> pagum de exfacto pane 
+&gl;sanguis effluxit. <hi>celum</hi> quoque ardere uisum est. <hi>anno</hi> septimo <rs>childeberti</rs> regis, qui 
+&gl;fuit <num value="21">xxi</num>. <rs>chilperici</rs> regis <pb n="146r" facs="vat:167" ed="#a"/>atque <rs>guthranni</rs>, stella cometes uisa est in die sancto pasche. 
+&gl;<hi>apud</hi> <rs>suessonam</rs> ciuitatem celum ardere uisum est. <hi>in</hi> <rs>parisiaco</rs> pago sanguis de nube fluens 
+&gl;uestimenta multorum hominum cruentauit. <hi>inualitudines</hi> uarie ac mortalitas magna eo anno 
+&gl;<rs>francorum</rs> attriuere gentem. <hi>per</hi> idem tempus <rs>chilpericus</rs> <rs>francorum</rs> rex in <rs>sabellianam</rs> 
+&gl;heresim lapsus est; qui non multo post tempore reuertens de uenatione ut ei mos erat fraude 
+&gl;<hi>fedegundis</hi> coniugis sue interfectus est a <rs>landrico</rs>, qui cum ea stupri consuetudinem ha&gd;bere 
+consueuerat. <hi>iste</hi> quidem inuisus suis fuit, nec amabilis extrancis. <hi>regnauit</hi> autem 
+&gl;annis <num value="23">xxiii</num>. <hi>eo</hi> tempore fuit aque diluuium in finibus <rs>uenetiarum</rs> et <rs>ligurie</rs>, seu ce&gd;teris 
+regionibus <rs>italie</rs>, quale non fuisse post <rs>noe</rs> tempora creditur. <hi>in</hi> hac ualida aquarum 
+&gl;procella tantum <rs>athesis</rs> fluuius excreuit ut circa basilicam beati <rs>zenonis</rs> martyris, que extra 
+&gl;<hi>ueronensis</hi> ciuitatis muros sita est, usque ad fenestras superiores aqua pertingeret, licet in 
+&gl;eadem ecclesia aquam minime introierit, muris eiusdem ciuitatis maxima ex parte su&gd;brutis. 
+<hi>apud</hi> urbem uero <rs>romam</rs> in tantum <rs>tyberis</rs> fluuius excreuit, ut aque super muros 
+&gl;<rs>urbis</rs> influerent et maximas in ea regiones occuparent. <hi>tunc</hi> per alueum fluminis eiusde<pb break="no" n="146v" facs="vat:168" ed="#a"/>m 
+&gl;cum multitudine serpentium draco etiam mire magnitudinis per <rs>urbem</rs> transiens usque ad 
+&gl;mare descendit; subsecuta statim est hanc inundationem grauissima pestilentia, quam ingui&gd;nariam 
+uocant, que tanta strage populum deuastauit, ut de inestimabili multitudinem uix 
+&gl;pauci remanerent, primumque <rs>pelagium</rs> papam perculit et sine mora extinxit. <hi>dehinc</hi> in 
+&gl;populo se extendit. 
+</p>
+
+
+<p xml:id="g120.30-122.38" decls="#al2"> 
+&gl;<hi>dum</hi> igitur tanta tribulatio miseram quateret <rs>romam</rs>, beatus <rs>gregorius</rs>, qui tunc mona&gd;chos 
+et leuita erat a cunctis generaliter papa electus est, anno regni <rs>guthranni</rs> <rs>francorum</rs> 
+&gl;regis uicesimo quarto, indictione <num value="7">uii</num>. <hi>in</hi> cuius ordinatione cum nihil aliud, quam iussio 
+<pb n="121" ed="#g"/> 
+&gl;principis deesset, non enim decebat tunc quemlibet ad pontificatum <rs>romanum</rs> promoueri absque 
+&gl;iussione principis <rs>constantinopolitani</rs>, uir domini <rs>gregorius</rs> legatum eum literis ad <rs>mauri&gd;cium</rs> 
+direxit imperatorem, obsecrans ne populo in sui electione preberet assensum. <hi>cuius</hi> 
+&gl;literas prefectus <rs>urbis</rs> interceptas disrupit et consensum populi imperatori transmisit. <hi>qui</hi> 
+&gl;ualde gauisus est, quod locum aptum largiendi honoris diacono olim sibi amicitie familiaritate 
+&gl;karissimo reperisset, nam filium eius de sacro fonte suscepit, eum sine <pb n="147r" facs="vat:168" ed="#a"/>dilatione ordinari 
+&gl;precepit. <hi>ordinatus</hi> autem tam cautum tamque humilem se in omni sua prebuit actione, ut 
+&gl;sicut ex gestis siue scriptis eius dignosci potest, uix nullus in successoribus eius illi similis 
+&gl;possit inueniri in flore eloquentie ac puritate doctrine, uel etiam in sanctitate uite. <hi>liber</hi> 
+&gl;quippe sacramentorum ab eo editus est et antiphonarius tam diurnus quam nocturnus, et 
+&gl;tractatus in <rs>ezechielem</rs>, et quadraginta euangelia, et in <rs>iob</rs> moraliter et allegorice, et ad 
+&gl;historiam compendiose digestus, et dialogorum liber; et pastoralis cura <rs>iohanni</rs> <rs>rauennati</rs> 
+&gl;directa, et registrum ad regendam ecclesiam satis utiliter. <hi>hic</hi> instituit ut antiphona canta&gd;retur 
+que uocatur introitus ad mulcendum audientium animos, deinde <rs>kirie</rs> eleison nouies 
+&gl;decantari et post epistolam graduale et alleluia, excepto a septuagesima usque in pascha, 
+&gl;in quibus diebus tractus instituit decantandos; post euangelium uero dum oblationes offeruntur, 
+&gl;offertorium decantari, et post fractionem eucharistie, postquam communicatum fuerit, post 
+&gl;communionem. <hi>hic</hi> idem addidit in canone: diesque nostros in tua pace dispone, et ut alta 
+&gl;uoce oratio dominica super eucharistiam decantaretur. <hi>hic</hi> letaniam maiorem instituit, 
+&gl;<pb n="147v" facs="vat:169" ed="#a"/>instituitque stationes fieri ad sanctum <rs>petrum</rs> in natale <rs>domini</rs>, in epiphania, in dominica 
+&gl;de passione, in maiori scrutiniorum, in pascha, et in albis pasche, in ascensione, in pente&gd;costen, 
+in natale apostolorum, in tertia dominica de aduentu, et in dedicatione ecclesie eiusdem 
+&gl;que est in octaua sancti <rs>martini</rs>, in sancti <rs>andree</rs>, in cathedra sancti <rs>petri</rs>, in letania maiore, 
+&gl;et in omni sabbato quatuor temporum; similiter instituit omnibus diebus quadragesime stationes 
+&gl;fieri per diuersas ecclesias, et in albis paschalibus; et ut a septuagesima usque in pascha 
+&gl;non caneretur alleluia; et ut in matutinali synaxi, in festiua octo tantum canerentur respon&gd;soria, 
+et quotidiana tantum duo, et ut a presbytero diceretur: <rs>deus</rs> in adiutorium meum 
+&gl;intende. <hi>hic</hi> doctor eximius anno <rs>mauricii</rs> imperii <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, indictione <num value="13">xiii</num>, synodum episco&gd;porum 
+<num value="24">xx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> ad corpus beati <rs>petri</rs> <num value="24">xx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> apostoli congregans, de necessariis ecclesie 
+&gl;decernit. <hi>idem</hi> missis in <rs>britanniam</rs> <rs>augustino</rs>, <rs>melito</rs> et <rs>iohanne</rs>, et aliis pluribus 
+&gl;cum eis monachis timentibus <rs>deum</rs>, <hi>anglos</hi> ad <rs>christum</rs> conuertit. <hi>beatus</hi> autem <rs>gre&gd;gorius</rs> 
+direxit <rs>theodelinde</rs> regine <rs>langobardorum</rs> librum qui <title>dialogus</title> nominatur, eo quod 
+&gl;religiosa erat, et ferocem uiri sui animum sepissime piis suggestionibus aduersus ecclesiam 
+&gl;mitigabat. <hi>siquidem</hi> <pb n="148r" facs="vat:170" ed="#a"/>regina hec basilicam beati <rs>iohannis</rs> <rs>baptiste</rs> in <rs>modicina</rs> construxit, 
+&gl;qui locus supra <rs>mediolanum</rs> duodecim millibus abest, multisque ornamentis auri argentique 
+&gl;decorauit. <hi>hac</hi> tempestate <rs>autharis</rs> <rs>langobardorum</rs> rex exercitum ad <rs>istriam</rs> misit, qui 
+&gl;post predas et incendia facta pace uim magnam pecunie regi <rs>autari</rs> detulerunt, <hi>comacinam</hi> 
+<pb n="122" ed="#g"/> 
+&gl;quoque insulam obtinuerunt. <hi>quo</hi> tempore <rs>herminigildus</rs> <rs>leuigildi</rs> <rs>gothorum</rs> filius regis ob 
+&gl;fidei catholice confessionem a patre <rs>arriano</rs> priuatus regno et in carceris uincula proiectus, 
+&gl;ad extremum in capite percussus est. <hi>anno</hi> <num value="30">xxx</num> regis <rs>guthranni</rs>, tunica domini nostri 
+&gl;<rs>iesu</rs> <rs>christi</rs>, que uni militum forte euenit, inuenta est in ciuitate <rs>zaphat</rs>, in arca marmorea 
+&gl;facta posita, tempore <rs>thome</rs> <rs>hierosolymitani</rs> episcopi et <rs>iohannis</rs> <rs>constantinopolitani</rs> et 
+&gl;<rs>gregorii</rs> <rs>antiocheni</rs>. <hi>anno</hi> <num value="31">xxxi</num>. <rs>guthranni</rs> regis <rs>authari</rs> rex <rs>langobardorum</rs> obiit anno 
+&gl;dominice incarnationis <num value="590">dxc</num> cui successit <rs>agilulfus</rs> in regnum. <rs>guthrannus</rs> itaque <rs>francorum</rs> 
+&gl;rex moritur anno regni sui <num value="33">xxxiii</num>. <hi>fuit</hi> autem <rs>guthrannus</rs> in bonitate precipuus, in ero&gd;ganda 
+pauperibus elemosyna largifluus <rs>christi</rs> sacerdotibus se humilem prebens subditis 
+&gl;suis benignus, gentibus <pb n="148v" facs="vat:171" ed="#a"/>externis placatus, atque pacificus, et in omni bonitate cospicuus. 
+&gl;<hi>cui</hi> successit <rs>childebertus</rs> eius nepos, filius <rs>sigelberti</rs>; huic autem successerunt duo filii sui 
+&gl;adhuc pueryli sub tutela regine <rs>brunichildis</rs> constituti, et <rs>theodeberto</rs> quidem regnum <rs>austra&gd;siorum</rs>, 
+siue <rs>burgundionum</rs>, quod pater <rs>childebertus</rs> a genitore suo <rs>sigeberto</rs> sibi relictum 
+&gl;acceperat. <rs>theoderico</rs> autem regnum <rs>guthranni</rs>, quod <rs>childebertus</rs> iure adoptionis te&gd;nuerat, 
+sorte obuenit. <hi>qui</hi> etiam sibi in his locis quibus et priores constituere sedes. <hi>his</hi> 
+&gl;diebus <rs>audoaldus</rs> super <rs>langobardos</rs> leuatus est rex ab <rs>agilulfo</rs> rege patre suo, astantibus 
+&gl;legatis <rs>theodeberti</rs> regis <rs>francorum</rs> et desponsata est eidem regi puero filia regis <rs>theo&gd;deberti</rs>, 
+et firmata est pax perpetua cum <rs>francis</rs>. <hi>eodem</hi> tempore <rs>francis</rs> cum <rs>saxonibus</rs> 
+&gl;pugnantibus, magna strages ab utrisque partibus facta est. <hi>interea</hi> <rs>childebertus</rs> rex 
+&gl;<rs>francorum</rs> ui ueneni extinguitur; rex autem <rs>theodericus</rs> sanctum <rs>desiderium</rs> <rs>uiennensem</rs> 
+&gl;episcopum prius exilio relegari, nouissime uero lapidari precepit. <hi>obiit</hi> itaque <rs>theodericus</rs> 
+&gl;anno regni sui septimodecimo cui successit in regnum <rs>clotharius</rs> <rs>chilperici</rs> filius. <hi>extinctis</hi> 
+&gl;igitur, uel uaria sorte obeuntibus tot <rs>francorum</rs> regibus, <pb n="149r" facs="vat:171" ed="#a"/>a quibus per <num value="40" type="words">quadraginta</num> ferme et unum 
+&gl;regnatum est annos, solus legitime successionis heres <rs>clotharius</rs> <rs>chilperico</rs> patre genitus ex 
+&gl;regia stirpe uidebatur relictus, in quo regnandi ius potissimum transfundi oporteret. <hi>interea</hi> 
+&gl;<rs>mauricius</rs> <rs>augustus</rs>, postquam <num value="21">xxi</num>. annis <rs>constantinopolitanum</rs> rex imperium, cum filiis 
+&gl;suis <rs>theodosio</rs>, <rs>tiberio</rs> et <rs>constantino</rs> occiditur a <rs>foca</rs> tunc tribuno, qui fuerat prisci 
+&gl;patricii strator. <hi>fuit</hi> autem <rs>mauricius</rs> utilis reipublice, denique contra hostes sepe dimicans 
+&gl;uictoriam obtinuit. <rs>hunni</rs> quoque, qui et <rs>auares</rs> appellantur, eius uirtute deuicti sunt. 
+&gl;<hi>hic</hi> in medio sui tempore dum diuine legi contrarius esset et a beato <rs>gregorio</rs> frequenter 
+&gl;admonitus corrigi nollet, immo eidem uiro <rs>dei</rs>, quia factis non poterat, uerbis iniurias irro&gd;gare 
+non desisteret, tali meruit a domino redargui iudicio. <hi>denique</hi> nocte quadam uidit in 
+&gl;somnis assistere se imagini <rs>saluatoris</rs>, et uox ex ipsa imagine audita est, dicens: date <rs>mau&gd;ricium</rs>, 
+qui cum presentatus ab ignotis ministris fuisset, uox iterum sonuit, interrogans illum: 
+&gl;quid magis eligeret, utrum in isto seculo que nequiter egerat recipere, an futuro examini 
+&gl;reseruari, cui <rs>mauricius</rs>: <hi>o</hi> <rs>iesu</rs> bone, iube me potius in isto seculo male com<pb break="no" n="149v" facs="vat:172" ed="#a"/>missa luere, et 
+&gl;uenturi iudicii diem non formidare, et <rs>electorum</rs> tuorum participem fac esse. <hi>tunc</hi> qui lo&gd;quebatur: 
+tradatur, ait, <rs>mauricius</rs> <rs>foce</rs> militi cum uxore et filiis, quod postea euenit. 
+</p>
+
+
+<p xml:id="g123.1-123.6" decls="#al2"> 
+<pb n="123" ed="#g"/> 
+&gl;<hi>anno</hi> dominice incarnationis <num value="604">dc<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <rs>focas</rs>, ut premissum est, <rs>romanorum</rs> regnum in&gd;uadens 
+per octo annorum curricula tenuit. <hi>erat</hi> autem hic formidolosus et sanguina&gd;rius, 
+cuius secundo anno imperii, indictione <num value="8">uiii</num>. <rs>gregorius</rs> papa migrauit ad <rs>christum</rs>; 
+&gl;sepultusque est in ecclesia beati <rs>petri</rs> ante <rs>secretarium</rs>. <hi>eo</hi> siquidem tempore <rs>teude&gd;pertus</rs>, 
+et <rs>theudericus</rs> reges <rs>francorum</rs> aduersus <rs>chlotharium</rs> patruum suum dimicauerunt, 
+&gl;in quo certamine ex utraque parte multa milia hominum ceciderunt. 
+</p>
+
+
+<p xml:id="g123.7-123.10" decls="#al2"> 
+&gl;<hi>interea</hi> <rs>sabinianus</rs>, natione <rs>tuscus</rs> de patre <rs>bono</rs>, successit <rs>gregorio</rs> in pontificatus 
+&gl;honorem. seditque anno uno, mensibus <num value="5">u</num>. <hi>hic</hi> autem tempore famis iussit aperiri or&gd;rea 
+ecclesie, et uenundari frumenta per unum solidum tritici modios <num value="30">xxx</num>. <hi>hic</hi> in ecclesia 
+&gl;beati <rs>petri</rs> luminaria addidit, et sepultus est in ecclesia eiusdem beati <rs>petri</rs> apostoli. 
+</p>
+
+
+<p xml:id="g123.11-123.20" decls="#al2"> 
+&gl;<rs>bonifacius</rs> natione <rs>romanus</rs> ex parte <rs>catadioce</rs> huic successit in pontificatu, seditque 
+&gl;mensibus nouem. <hi>hic</hi> obtinuit a <rs>foca</rs> <rs>cesare</rs> priuilegium ut <rs>romane</rs> ecclesie <rs>constantino&gd;politana</rs> 
+subiceretur, et ut ro<pb break="no" n="150r" facs="vat:172" ed="#a"/>mana ecclesia caput esset omnium ecclesiarum. <hi>hic</hi> in sinodo 
+&gl;constituit ut nullus in episcopatu eligatur, nisi post tertium diem obitus episcopi predeces&gd;soris; 
+et ut ipsa electio a clero communiter et populo fiat, et sic subsequatur assensus prin&gd;cipis 
+eiusdem ciuitatis. <hi>quo</hi> uita decedente alter <rs>bonifacius</rs> natione <rs>marsorum</rs>, ex patre 
+&gl;<rs>iohanne</rs>, ei successit in pontificatu, seditque anno <num value="1" type="words">uno</num> mensibus <num value="8" type="words">octo</num>. <hi>hic</hi> a <rs>foca</rs> <rs>cesare</rs> 
+&gl;obtinuit dari sibi templum, quod ab antiquis uocabatur <rs>pantheon</rs>, quod ipse ablatis ido&gd;latrie 
+sordibus consecrauit in honorem sancte <rs>dei</rs> genitricis <rs>marie</rs> et omnium sanctorum. 
+&gl;<hi>et</hi> hic sepultus est ad beatum <rs>petrum</rs> apostolum. 
+</p>
+
+
+<p xml:id="g123.21-124.15" decls="#al2"> 
+&gl;<hi>quo</hi> tempore <rs>perse</rs> aduersus rempublicam grauissima bella gerentes multas <rs>romanorum</rs> 
+&gl;prouincias et ipsam <rs>hierosolymam</rs> auferunt, et destruentes ecclesias, sancta quoque propha&gd;nantes 
+inter ornamenta locurum <supplied rend="squarebrackets" resp="#g">uel</supplied> sanctorum, <supplied rend="squarebrackets" resp="#g">que diripuerunt</supplied>, etiam dominice crucis 
+&gl;lignum <supplied rend="squarebrackets" resp="#g">de <rs>hierosolyma</rs></supplied> abducunt. <hi>interea</hi> <rs>foca</rs> imperator ab uniuerso senatu deseritur, 
+&gl;qui peruersa insaniens mente, opes imperii in mare proiciebat; contra hunc <rs>heraclius</rs> prefectus, 
+&gl;qui tunc <rs>africam</rs> regebat cum exercitu ueniens eum regno uitaque priuauit. <hi>eo</hi> quoque 
+&gl;tempore <rs>agilulfus</rs> <rs>langobardorum</rs> rex qui et <rs>aio</rs> est appellatus, postquam <num value="25">xxu</num> regna<pb break="no" n="150v" facs="vat:173" ed="#a"/>uerat 
+&gl;annos diem clausit extremum, cui <rs>adoaldus</rs> filius eius una cum matre in regnum successit. 
+&gl;<hi>sub</hi> his autem ecclesie restaurate sunt et multe donationes per loca uenerabilia largite. 
+&gl;<hi>sed</hi> dum <rs>adoaldus</rs> <supplied rend="squarebrackets" resp="#g">accepta potione a quodam imperatoris <hi>legato</hi></supplied> aduersa mente insaniret, 
+<pb n="124" ed="#g"/> 
+&gl;postquam cum matre decem regnauerat annis, de regno eiectus est et a <rs>langobardis</rs> in 
+&gl;loco eius <rs>arioaldus</rs> est substitutus. <hi>circa</hi> hec tempora beatus <rs>columbanus</rs>, genere <rs>scothus</rs>, 
+&gl;postquam in <rs>gallia</rs> in loco qui <rs>luxouium</rs> dicitur monasterium construxerat, in <rs>italiam</rs> ue&gd;niens, 
+monasterium quod <rs>bobium</rs> dicitur in <rs>alpibus</rs> <rs>cottiis</rs> edificauit. <rs>clotharius</rs> uero <rs>fran&gd;corum</rs> 
+rex anno regni sui <num value="49">xl<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> <rs>dagobertum</rs> filium suum regni fecit consortem. <hi>anno</hi> 
+&gl;autem <num value="16">xui</num>. suscepte monarchie, paterni autem regni <num value="44">xl<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, <rs>clotharius</rs> rex moritur, qui 
+&gl;aui sui simile nomen iunior appellatus est: fuit autem uir patiens, litteris eruditus, timoris, 
+&gl;<rs>dei</rs> plenus, pauperibus uictus necessaria tribuens, ecclesiarum <rs>dei</rs>, atque sacerdotum con&gd;sulens; 
+cui <rs>dagobertus</rs> filius successit, ex cuius aduentu fiducia bonis maximeque pauperibus 
+&gl;orta, seditiosos uero atque rapine intentos formido grauis inuaserat, ac quedam mentiu<pb break="no" n="151r" facs="vat:173" ed="#a"/>m 
+&gl;consternatio. <hi>hic</hi> beato <rs>arnulfo</rs> <rs>metensium</rs> ciuitatis episcopo ad erudiendam litteram tra&gd;ditus 
+fuerat, consilio cuius postea bene ac preclare plura faciebat. <rs>dagobertus</rs> quippe cun&gd;ctam 
+<rs>austriam</rs> cum <rs>burgundia</rs>, cunctamque <rs>neustriam</rs> cum <rs>guasconum</rs> terra dominio suo 
+&gl;subegit; post discessum uero beati <rs>arnulfi</rs> idem <rs>dagobertus</rs> rex consilio <rs>pipini</rs> qui erat <rs>maior&gd;domus</rs> 
+utebatur. 
+</p>
+
+
+<p xml:id="g124.16-125.3" decls="#al2"> 
+&gl;<hi>anno</hi> dominice incarnationis <num value="612">dcxii</num> <rs>heraclius</rs> <rs>heracliani</rs> filius, occiso <rs>foca</rs>, ei in imperium 
+&gl;substituitur; hic <rs>heraclius</rs> multas prouincias a <rs>persis</rs> peruasas reipublice restituit, mona&gd;machiam 
+pugnam cum ductore exercitus <rs>persarum</rs>, proposita lege, ipse <rs>heraclius</rs> elegit 
+&gl;eumque percussum equo deiecit mortuum, <rs>chosroe</rs> quoque regem <rs>persarum</rs> gladio suo inter&gd;fecit: 
+filium uero eius baptizatum de sacro fonte leuauit eumque regem in regno constituit, 
+&gl;peruagatusque uniuersam <rs>persidem</rs>, argentum turris in qua <rs>chosroe</rs> sedem constituerat, exer&gd;citui 
+suo tribuit. <hi>aurum</hi> uero restauratione deputans ecclesiarum, quas <rs>chosroe</rs> destruxerat, 
+&gl;ipse <rs>heraclius</rs> cum multimoda preda ac septem elephantis multis opibus oneratis, assumpta 
+&gl;etiam <rs>saluatoris</rs> cruce, <rs>hierosolymam</rs> remeauit ipsamque crucem in loco suo reposuit, 
+&gl;captiuos in propria restituit ac <pb n="151v" facs="vat:174" ed="#a"/>deinde <rs>constantinopolim</rs> rediit. <hi>fuit</hi> autem <rs>heraclius</rs> uultu 
+&gl;decorus, uisu hilaris, statura mediocris, egregi eque fortitudinis, qui sepe leones in arena 
+&gl;plures interfecerit: cumque literis abunde esset instructus, ad ultimum astrologus eflicitur. <hi>hic</hi> 
+&gl;sociata sibi iure connubii sororis sue filia in <rs>euthychis</rs> delapsus est sectam. <hi>quo</hi> tempore 
+&gl;<rs>anastasius</rs> <rs>persa</rs> monachus nobile pro <rs>christo</rs> martirium patitur. <hi>qui</hi> natus in <rs>perside</rs> 
+&gl;magicas a patre puer artes discebat: sed ubi a captiuis christianis <rs>christi</rs> nomen accepe&gd;rat, 
+in eum mox animo toto conuersus, relicta <rs>perside</rs>, <rs>hierosolymam</rs> petiit; ubi accepta 
+&gl;baptismatis gratia monasterium intrauit ibique <num value="7">uii</num> annis regulariter uixit. <hi>tandem</hi> captus 
+&gl;a <rs>persis</rs>, et multa diu uerbera inter carceres et uincula perpessus, mittitur ad <rs>chosroe</rs> 
+&gl;regem <rs>persarum</rs>, a quo tertio per interualla temporis uerberatus ad extremum una manu 
+&gl;per tres horas diei suspensus, sic decollatus cum aliis <num value="70">lxx</num> martyrium compleuit. <hi>mox</hi> 
+&gl;tunicam eius indutus quidam demoniacus curatus est. <hi>interea</hi> superueniens cum exercitu <rs>he<pb break="no" n="125" ed="#g"/>&gd;raclius</rs> 
+princeps, superatis <rs>persis</rs>, christianos, qui erant captiui, reduxit gaudentes. <hi>reli</hi>&gd;quie 
+beati martyris <rs>anastasii</rs> primo in monasterium suum, deinde <rs>romam</rs> aduecte <pb n="152r" facs="vat:174" ed="#a"/>uene&gd;rantur 
+in monasterio beati <rs>pauli</rs> apostoli ad aquas <rs>saluias</rs>. 
+</p>
+
+
+<p xml:id="g125.4-125.7" decls="#ocr"> 
+&gl;<hi>preterea</hi> <rs>rome</rs> defuncto <rs>bonifacio</rs>, <hi>deusdedit</hi>, natione <rs>romanus</rs>, ex patre <rs>stephano</rs> 
+&gl;subdiacono, ei in pontificatu substituitur, seditque annos <num value="3">iii</num> mense <num value="1">i</num>. <hi>hic</hi> constituit sub in&gd;terminatione 
+separationis ut nulla mulier filium suum de fonte susciperet similiter et in con&gd;firmationibus; 
+et hic sepultus est ad sanctum <rs>petrum</rs>. 
 </p>
 
 
@@ -5186,11 +5553,7 @@ apud urbem <rs>romam</rs> tam seculari, quam diuina scientia claruit. <hi>hic</h
 
 
 
-
-
-
-
-<milestone type="bonetti_is_collation_exemplar_from_here_on" unit="collation_base_text"/>
+<milestone type="bonetti_is_collation_exemplar_from_here_on" unit="collation"/>
 
 
 <p xml:id="g163.6-163.7" decls="#al">
