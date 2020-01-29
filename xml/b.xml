@@ -16,10 +16,13 @@
         <p>Encoding experiments</p>
       </publicationStmt>
       <sourceDesc>
-          <p>The digital reproductions of codex
-              <bibl xml:id="msb">Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22</bibl>
-          </p> 
-        <p>To facilitate collation, I am also recording the points in which line breaks of the Garufi edition occur:
+          <msDesc xml:id="msb">
+              <msIdentifier>
+                  <settlement>Biblioteca Apostolica Vaticana</settlement>
+                  <repository>Archivio di San Pietro</repository>
+                  <idno>E 22</idno>
+                </msIdentifier>
+            </msDesc>
         <biblStruct xml:id="g">
             <monogr>     
                 <author>Guarna, Romualdus</author>
@@ -37,10 +40,11 @@
                 <biblScope unit="part">1</biblScope>
             </series>
         </biblStruct>
-        </p>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
+            <p>To facilitate collation, I am also recording the points in which page breaks occur in manuscript A,
+                <bibl xml:id="a">Vat. lat. 3973</bibl></p>
         <editorialDecl xml:id="algl">
             <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
         </editorialDecl>
@@ -54,6 +58,8 @@
   </teiHeader>
   <text>
     <body>
+
+<p xml:id="g3.1-3.1"/>
 
 <p xml:id="g3.2-3.6" decls="#algl">
 <pb n="1r" ed="#msb"/><cb n="1r.b" ed="#msb"/>

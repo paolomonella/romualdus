@@ -11,9 +11,12 @@
         <p>Encoding experiments</p>
       </publicationStmt>
       <sourceDesc>
-          <p>The digital reproductions of codex
-              <bibl xml:id="c">Paris, Bibliothèque Nationale, Latinus 4933</bibl>
-          </p> 
+          <msDesc xml:id="c">
+              <msIdentifier>
+                  <settlement>Paris, Bibliothèque Nationale</settlement>
+                  <idno>Latinus 4933</idno>
+                </msIdentifier>
+            </msDesc>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>

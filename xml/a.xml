@@ -21,7 +21,12 @@
       </publicationStmt>
       <sourceDesc>
       <listBibl>
-      <bibl xml:id="a">The digital reproductions of codex Vat. lat. 3973</bibl>
+          <msDesc xml:id="a">
+              <msIdentifier>
+                  <settlement>Biblioteca Apostolica Vaticana</settlement>
+                  <idno>Vat. lat. 3973</idno>
+                </msIdentifier>
+            </msDesc>
                  <biblStruct xml:id="g">
                 <monogr>
                     <author>Guarna, Romualdus</author>
@@ -266,6 +271,7 @@
 
 <milestone type="garufi_two_layers_from_here_on" unit="collation"/>
 
+<p xml:id="g3.1-3.1"/>
 
 <p xml:id="g3.2-3.6" decls="#algl">
 <pb n="15r" facs="vat:21" ed="#a"/>
@@ -6510,7 +6516,8 @@ accipiens ab eo uexillum sancti <rs>petri</rs> mense <hi>iunio</hi>.
 
 
 <p xml:id="g191.13-194.5" decls="#al"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> <lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>anno</hi> dominice incarnationis <num value="1081">mlxxxi</num> indictione <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> dux <rs>rob&bd;bertus</rs> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/>
+<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/><hi>anno</hi> dominice incarnationis <num value="1081">mlxxxi</num> indictione <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> dux <rs>rob&bd;bertus</rs> 
 magnum apud <rs>ydrontum</rs> assumpsit exercitum, super 
 &bl;<rs>constantinopolim</rs> ire cupiens. <hi>qui</hi> mare transiens cum <rs>boamun&bd;do</rs> 
 filio suo applicuit <rs>auelone</rs> et eduxit exercitum suum necnon 
