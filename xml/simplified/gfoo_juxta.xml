@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
+<!ENTITY gd '<lb break="no" rend="-" ed="#g"/>'>
+<!ENTITY glb '<lb ed="#g"/>'>
+<!ENTITY uu '<choice><orig>v</orig><reg type="v">u</reg></choice>'>
+<!ENTITY jj '<choice><orig>j</orig><reg type="j">i</reg></choice>'>
+]>
+<!--gd  = Garufi Dash-->
+<!--glb = Garufi Line Beginning-->
+<!--jj  = Annotation on alphabeme 'i', saying that it is represented by allograph j in Bonetti or Garufi-->
+<!--uu  = Annotation on alphabeme 'v', saying that it is represented by allograph v in Bonetti or Garufi-->
+<TEI>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Part of Garufi</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>For CollateX testing</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Garufi edition</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+<p xml:id="g48.17-48.17" decls="#ocr"> 
+Anno dominice incarnationis XLIV.</p> 
+
+
+<p xml:id="g48.18-48.33" decls="#ocr"> 
+Nero Callicula Gaji nepos annis XIII mensibus VII diebus XXVIII. Hic autem auunculo 
+suo simillimus, Romanum imperium et deformauit, et minuit. Inusitate luxurie sumptuumque, 
+ut qui exemplo Gaji Callicule frigidis et calidis lauaretur unguentis, hamis aureis aureisque 
+retibus piscaretur, que a blattinis funibus extrahebantur. Infinitam senatus partem interfecit. 
+Bonis omnibus hostis fuit. Tantoque se dedecori prostituit, ut cantaret et saltaret 
+in cena citharetico habitu, uel tragico. Parricidia multa commisit, fratre, uxore, matre, ac 
+Seneca magistro interfectis, urbem Romam incendit. In re militari nichil omnino ausus. 
+Britanniam pene amisit et duo nobilissima sub eo oppida illic atque euersa sunt. Armeniam 
+Parthi substulerunt legionesque Romanas sub jugo miserunt. Due tamen prouincie sub 
+eo facte, Pontus Polemoniacus, concedente rege Polimene, et Alpes Coctie rege defuncto. 
+Post hec Romane urbi execrabilis, ab omnibus destitutus, simul et a senatu hostis judicatus; 
+cumque quereretur ad penam, que pena talis erat, ut nudus per publicum ductus, furca capiti 
+ejus inserta, uirgis usque ad mortem cederetur, et ita precipitaretur saxo ligatus in flumine, 
+e palatio fugiit, et in suburbano liberti sui, quod est inter Salariam, et Numentanam 
+uiam, ad quartum urbis miliarium, sese interfecit; anno etatis sue XXXI imperii XIV atque in 
+eo omnis Augusti familia comsumpta est.</p> 
+
+    </body>
+  </text>
+</TEI>
