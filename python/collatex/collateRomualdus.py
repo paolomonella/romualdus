@@ -14,19 +14,19 @@ from simplifyRomualdus import myWitness
 # INPUT FILES AND VARIABLES #
 #############################
 
-debug = False
+debug = True
 
 #afile = '../../xml/a_juxta.xml'
 #afile = '../../xml/a.xml'
 ##afile = '../../xml/simplified/afoo_juxta.xml'
 #afile = '../../xml/chronicon.xml'
-afile = '../../xml/ripostiglio/g-collation.xml'
+afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml is just a shorter version of g.xml (otherwise it is identical)
 #bfile = '../../xml/bonetti_juxta.xml'
 #bfile = '../../xml/g.xml'
 #bfile = '../../xml/simplified/bfoo_juxta.xml'
 ##bfile = '../../xml/simplified/gfoo_juxta.xml'
 #bfile = '../../xml/a.xml'
-bfile = '../../xml/ripostiglio/a-collation.xml'
+bfile = '../../xml/ripostiglio/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
 
 aSiglum = afile.split('/')[-1].split('.')[0].upper()
 bSiglum = bfile.split('/')[-1].split('.')[0].upper()
@@ -150,7 +150,7 @@ def XMLtoJSON(id,XMLInput):
         wordToString = wordToString.replace('xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"', '')
         wordToString = wordToString.replace(' ', '')
         if debug:
-            print('My word: ', '«' + wordToString + '»')    # debug
+            print('\nMy word: ', '«' + wordToString + '»')    # debug
             print('My word\'s text: ', word.text)   # debug
             print('Regex: ', unwrapRegex)   # debug
             print('Il match è:',  unwrapRegex.match(etree.tostring(word,encoding='unicode'))  )
@@ -261,7 +261,6 @@ def collateElements(xmlElementA, xmlElementB, myOutputType='json'):
     elif myOutputType == 'table':
         myCollationOutput = collationText
 
-    #return collationJSON
     return myCollationOutput
 
 
@@ -279,15 +278,16 @@ def jsonCollationsList(aParagraphList, bParagraphList):
         print('Collating pagragraph ' + par.get('{%s}id' % ('http://www.w3.org/XML/1998/namespace')))  # debug
         pi = aParagraphList.index(par)   # Get the index, so it can use the same index for A and B in next line
         jasonOutputList.append(collateElements(aParagraphList[pi], bParagraphList[pi]))
+    #print(jasonOutputList) #debug
     return jasonOutputList
 
-def visualizeVariantsInBrackets(jasonOutputList, onlyOutputVariants = False):
+def visualizeVariantsInBrackets(jasonOutputList, includeVariantType = True):
     ''' Print to screen each word of the original text if there is no variant.
         If a word has two variants, show this in brackets:
-        - the two variants with the siclum of their witness
+        - the two variants with the siglum of their witness
         - the variant characters
         - the variant type.
-        If onlyOutputVariants = False, omit the variant type.
+        If includeVariantType = True, include the variant type; otherwise, omit it
         '''
     
     for jout in jasonOutputList:
@@ -324,7 +324,7 @@ def visualizeVariantsInBrackets(jasonOutputList, onlyOutputVariants = False):
                     if wordMsA['n'] == wordMsB['n']:
                         '''Previous line: if normalized ('n') forms of
                             corresponding words in MS A and MS B are the same'''
-                        if not onlyOutputVariants:
+                        if includeVariantType:
                             print(wordMsA['t'], end = ' ')  # Print the non-normalized ('t') form only once
                     else:
                         myDiff = compareStrings(wordMsA['t'], wordMsB['t'])
@@ -386,4 +386,4 @@ b = myWitness(bfile, teiHasXmlns = True)
 
 visualizeVariantsInBrackets(
     jsonCollationsList( a.paragraphs(), b.paragraphs() ),
-    onlyOutputVariants = False)
+    includeVariantType = True)
