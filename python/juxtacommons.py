@@ -11,6 +11,8 @@
 import csv
 import re
 from copy import deepcopy
+from collections import Counter
+import operator
 from lxml import etree
 
 import myconst
@@ -52,7 +54,6 @@ class msTree:
             allelements = mybody.iter()
         else:
             allelements = self.tree.iter()
-        #for element in self.tree.iter():
         for element in allelements:
             if etree.iselement:
                 tag = element.tag
@@ -81,6 +82,49 @@ class msTree:
                 else:
                     print('\t' + a + '=', set(A[a]))
 
+    def list_and_count_elements (self, onlybody=True, attributes=False):
+        ''' Print a set of element names in the XML file and count them'''
+        els = []
+        if onlybody:
+            mybody = self.tree.find('.//t:body', ns)
+            allelements = mybody.iter()
+        else:
+            allelements = self.tree.iter()
+        for element in allelements:
+            if etree.iselement(element):
+                tag = element.tag
+                try:
+                    els.append( element.tag.split('}')[1] )
+                except:
+                    els.append( element.tag )
+        elcount = Counter(els)
+        sorted_elcount = sorted(elcount.items(), key=operator.itemgetter(1))
+        print('\n', 'Witness:', self.siglum)
+        for e in sorted_elcount:
+            print(e)
+            #print(sorted_elcount[0], sorted_elcount[1])
+        '''
+        for tag in elset:
+            A = {}
+            print('\n\n<' + tag + '>: ')
+            if onlybody:
+                E = mybody.findall('.//t:%s' % (tag), ns)
+            else:
+                E = self.tree.findall('.//t:%s' % (tag), ns)
+            for e in E:
+                for attr in e.attrib:
+                    val = e.get(attr)
+                    if attr not in A:
+                        A[attr] = [val]
+                    else:
+                        A[attr].append(val)
+            #print(A, end='')
+            for a in A:
+                if len(set(A[a])) > 5:
+                    print('\t' + a + '=', set(A[a][:3]), '(etc.)')
+                else:
+                    print('\t' + a + '=', set(A[a]))
+                    '''
 
     def list_entities (self):
         for entity in self.tree.docinfo.internalDTD.iterentities():
@@ -224,9 +268,8 @@ for edition in ['a', 'g', 'bonetti']:
     mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
     mytree.write()
 
-'''
 
-EDL = ['afoo', 'bfoo']
+EDL = ['g', 'a']
 for edition in EDL:
     mytree = msTree(edition)
     mytree.choose('choice', 'corr', 'typo', 'sic')
@@ -238,10 +281,15 @@ for edition in EDL:
     mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'reg', 'num', 'add', 'seg', 'lb', 'pb'], \
             removepar=False)
     mytree.write()
-
     # Temporarily needed for CollateX (remove @xmlns)
     with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'r') as infile:
         data = infile.read()
     with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'w') as outfile:
         data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
         outfile.write(data)
+
+    '''
+
+for edition in ['a', 'g', 'bonetti']:
+    mytree = msTree(edition)
+    mytree.list_and_count_elements()
