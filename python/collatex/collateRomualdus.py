@@ -14,19 +14,21 @@ from simplifyRomualdus import myWitness
 # INPUT FILES AND VARIABLES #
 #############################
 
-debug = True
+debug = False
 
 #afile = '../../xml/a_juxta.xml'
 #afile = '../../xml/a.xml'
 ##afile = '../../xml/simplified/afoo_juxta.xml'
 #afile = '../../xml/chronicon.xml'
-afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml is just a shorter version of g.xml (otherwise it is identical)
+#afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml is just a shorter version of g.xml (otherwise it is identical)
+afile = '../../xml/ripostiglio/g-collation5.xml' # see file xml/ripostiglio/version_history.txt
 #bfile = '../../xml/bonetti_juxta.xml'
 #bfile = '../../xml/g.xml'
 #bfile = '../../xml/simplified/bfoo_juxta.xml'
 ##bfile = '../../xml/simplified/gfoo_juxta.xml'
 #bfile = '../../xml/a.xml'
-bfile = '../../xml/ripostiglio/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
+#bfile = '../../xml/ripostiglio/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
+bfile = '../../xml/ripostiglio/a-collation5.xml' # see file xml/ripostiglio/version_history.txt
 
 aSiglum = afile.split('/')[-1].split('.')[0].upper()
 bSiglum = bfile.split('/')[-1].split('.')[0].upper()
@@ -281,13 +283,14 @@ def jsonCollationsList(aParagraphList, bParagraphList):
     #print(jasonOutputList) #debug
     return jasonOutputList
 
-def visualizeVariantsInBrackets(jasonOutputList, includeVariantType = True):
+def visualizeVariantsInBrackets(jasonOutputList, onlyOutputVariants = False):
     ''' Print to screen each word of the original text if there is no variant.
         If a word has two variants, show this in brackets:
         - the two variants with the siglum of their witness
         - the variant characters
         - the variant type.
-        If includeVariantType = True, include the variant type; otherwise, omit it
+        If onlyOutputVariants = True, only output places in which there are differences
+
         '''
     
     for jout in jasonOutputList:
@@ -307,14 +310,17 @@ def visualizeVariantsInBrackets(jasonOutputList, includeVariantType = True):
                 print("rowMsA:", rowMsA)
                 print("rowMsB:", rowMsB)
 
-
             missingA, missingB = False, False
-            if rowMsA is None:
-                print('%s doesn\'t have this paragraph' % (aSiglum))
+            if rowMsA is None       and rowMsB is not None:
+                #print('\n«%s» only present in %s, missing in %s\n' % (rowMsB, bSiglum, aSiglum) )
                 missingA = True
-            if rowMsB is None:
-                print('%s doesn\'t have this paragraph' % (bSiglum))
+            elif rowMsA is not None   and rowMsB is None:
+                #print('\n«%s» only present in %s, missing in %s\n' % (rowMsA, aSiglum, bSiglum) )
                 missingB = True
+            elif rowMsA is None     and rowMsB is None:
+                print('\nStrange case\n')
+
+            missingStr = '[[[[MISSING]]]]'
 
             if not (missingA or missingB):
                 for word in row:
@@ -324,7 +330,7 @@ def visualizeVariantsInBrackets(jasonOutputList, includeVariantType = True):
                     if wordMsA['n'] == wordMsB['n']:
                         '''Previous line: if normalized ('n') forms of
                             corresponding words in MS A and MS B are the same'''
-                        if includeVariantType:
+                        if not onlyOutputVariants:
                             print(wordMsA['t'], end = ' ')  # Print the non-normalized ('t') form only once
                     else:
                         myDiff = compareStrings(wordMsA['t'], wordMsB['t'])
@@ -332,14 +338,34 @@ def visualizeVariantsInBrackets(jasonOutputList, includeVariantType = True):
                         if myDiff['type'] is 'unknown':
                             typeDeclaration = ''
                         else:
-                            typeDeclaration = '; Type: ' + myDiff['type']
+                            typeDeclaration = ' type="' + myDiff['type'] + '"'
 
-                        print('[' + aSiglum + ': ' + wordMsA['t'] +
-                                '; ' + bSiglum + ': ' + wordMsB['t'] +
-                                '; Diff: ⸤' + myDiff['r1'] + '/' + myDiff['r2'] + '⸥' +
-                                typeDeclaration +
-                                #'; Type: ' + myDiff['type'] +
-                                '] ', end = '')
+                        print('\n\n <app' + 
+                                ' ana="' + myDiff['r1'] + '/' + myDiff['r2'] + '"' +
+                                typeDeclaration + '>' +
+                                '<rdg wit="' + aSiglum + '>' + wordMsA['t'] + '</rdg>' + 
+                                '<rdg wit="' + bSiglum + '">' + wordMsB['t'] + '</rdg>' +
+                                '</app> \n\n',
+                                end = '')
+
+            elif missingA:
+                for word in colb[ci]:   # colb[ci] corresponds to cola[ci] (which is row)
+                    wi = colb[ci].index(word)
+                    wordMsA = missingStr # = word
+                    wordMsB = rowMsB[wi]
+                    print('\n\n <app type="missing">' +
+                            '<rdg wit="' + aSiglum + '"/>' +
+                            '<rdg wit="' + bSiglum + '">' + wordMsB['t'] + '</rdg>' +
+                            '</app> \n\n', end = '')
+            elif missingB:
+                for word in row:
+                    wi = row.index(word)
+                    wordMsA = rowMsA[wi] # = word
+                    wordMsB = missingStr
+                    print('\n\n <app type="missing">' +
+                            '<rdg wit="' + aSiglum + '">' + wordMsA['t'] + '</rdg>' +
+                            '<rdg wit="' + bSiglum + '"/>' +
+                            '</app> \n\n', end = '')
             
             
 ##################
@@ -386,4 +412,4 @@ b = myWitness(bfile, teiHasXmlns = True)
 
 visualizeVariantsInBrackets(
     jsonCollationsList( a.paragraphs(), b.paragraphs() ),
-    includeVariantType = True)
+    onlyOutputVariants = False)
