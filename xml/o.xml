@@ -1,0 +1,1117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
+
+
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
+<!ENTITY bl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'>
+<!ENTITY jj '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">j</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>'>
+<!ENTITY uu '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">v</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>'>
+]>
+
+
+<!--bd  = Bonetti Dash-->
+<!--bl = Bonetti Line Beginning-->
+<!--jj  = Annotation on alphabeme 'i', saying that it is represented by allograph j in Bonetti or Garufi-->
+<!--uu  = Annotation on alphabeme 'v', saying that it is represented by allograph v in Bonetti or Garufi-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, Bonetti edition</title>
+        <editor xml:id="pm">Paolo Monella</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listBibl>
+          <msDesc xml:id="o">
+              <msIdentifier>
+                  <settlement>Ottobonianus</settlement>
+                  <idno>Latinus 2940, 1st fragment</idno>
+                </msIdentifier>
+            </msDesc>
+        <biblStruct xml:id="b">
+            <monogr>     
+                <author>Guarna, Romualdus</author>
+                <title>Romualdo II Guarna, Chronicon</title>
+                <idno type="ISBN">9788883090561</idno>
+                <editor>Bonetti, Cinzia</editor>
+                <imprint>
+                    <publisher>Avagliano</publisher>
+                    <date>2001</date>
+                    <pubPlace>Salerno</pubPlace>
+                </imprint>
+            </monogr>
+            <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+                <biblScope unit="volume">6</biblScope>
+            </series>
+            <note>Saggi introduttivi di G. Andenna, Hubert Houben, M. Oldoni.</note>
+        </biblStruct>
+        </listBibl>
+    </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="norev">
+            <p>OCR not reviewed.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
+            <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
+                in the print edition).
+                All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
+                punctuation, a script will be needed).
+                The text is now ready to be collated upon individual manuscripts.
+            </p>
+        </editorialDecl>
+        <editorialDecl>
+            <quotation marks="all">
+                <p>Quotation marks were almost always represented in the source print edition
+                    by “double quotation marks”, open and closed. In fewer cases, by «Swiss quotation marks».
+                    In all those cases, marks were retained and the quotation was marked up with 'said'
+                    (direct speech) or 'quote' (quotations from literary works).</p>
+                <p>In some cases, no quotation marks were present in the print edition around direct speeches
+                    or quotations, but I still marked them with 'said' or 'quote', adding
+                    @rend="none".</p>
+                <p>In other cases, in the print edition “double quotation marks” were used to highlight additions
+                    not present in all branches of the textual tradition. In these cases, quotation marks
+                    have been retained and no specific markup was added in the digital edition.</p>
+                <p>“Double quotation marks” were also retained, if present in the print edition,
+                    in connection with 'soCalled''title'.</p>
+            </quotation>
+        </editorialDecl>
+        <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+                <tagUsage gi="hi">
+                    Used to mark words capitalized in the print edition, but not constituting
+                    a proper noun, such as "Sed" at the beginning of a sentence.
+                </tagUsage>
+                <tagUsage gi="note">
+                    With @type="content": note on the text content.
+                    With @type="graphic": note on glyphs or graphemes.
+                    With @type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
+                    With @type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
+                    With @type="textcrit": note on textual critical matters.
+                    With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
+                </tagUsage>
+                <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source
+                    print edition, are marked up with 'quote' in this digital edition.
+                    Quotation marks, if present, have been retained, and @type="biblia" means that it
+                    is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in
+                    http://it.alim.unisi.it/documentazione/
+                </tagUsage>
+                <tagUsage gi="soCalled">
+                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
+                    If present, quotation marks have been retained.
+                </tagUsage>
+                <tagUsage gi="surplus">
+                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt;
+                    I am omitting those brackets in this file.
+                </tagUsage>
+                <tagUsage gi="title">
+                    Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus".
+                    If present, quotation marks have been retained.
+                </tagUsage>
+             </namespace>
+         </tagsDecl>
+        <listPrefixDef>
+            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
+                <p> In the context of this edition, private URIs with 
+                    the prefix "vat" point to a specific page of external 
+                    PDF file vat.lat.3973.pdf, including the digital images 
+                    of the A manuscript. For example, 'vat:29'
+                    dereferences to 'img/vat.lat.3973.pdf#page=29'.
+                </p>
+            </prefixDef>
+        </listPrefixDef>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+
+<p xml:id="b062heading" decls="#ocr"/> 
+
+<p xml:id="g163.6-163.7" decls="#ocr"/> 
+
+<p xml:id="g163.8-163.10" decls="#ocr"/> 
+
+<p xml:id="g163.11-164.9" decls="#ocr"/> 
+
+<p xml:id="g164.10-164.11" decls="#ocr"/> 
+
+<p xml:id="g164.12-164.19" decls="#ocr"/> 
+
+<p xml:id="g164.19-164.25" decls="#ocr"/> 
+
+<p xml:id="g165.1-165.3" decls="#ocr"/> 
+
+<p xml:id="g165.4-165.7" decls="#ocr"/> 
+
+<p xml:id="g165.8-165.9" decls="#ocr"/> 
+
+<p xml:id="g165.10-166.2" decls="#ocr"/> 
+
+<p xml:id="g166.3-166.8" decls="#ocr"/> 
+
+<p xml:id="g166.9-166.25" decls="#ocr"/> 
+
+<p xml:id="g167.1-167.3" decls="#ocr"/> 
+
+<p xml:id="g167.4-168.4" decls="#ocr"/> 
+
+<p xml:id="g168.5-168.7" decls="#al">
+<!-- Witness Aa start -->
+<pb break="no" n="16r" ed="#o"/>
+<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="976">dcccclxxui</num><note resp="#b" type="year">sed 986</note>, <rs>lotha&bd;rius</rs> 
+<rs>francorum</rs> rex senex plenus dierum obiit, postquam regnau&bd;it 
+annum <num value="54">l<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, sepultusque est in basilica <rs>sancti remigii</rs> regnus. <hi>cui</hi> 
+&bl;successit <rs>ludouicus</rs> filius eius aduch iuuenis. 
+</p>
+
+
+<p xml:id="g168.8-189.4" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxi</num> de&bd;functo 
+<rs>iohanne</rs> papa <rs>benedictus</rs> ei in pontificatus honorem suc<pb break="no" n="70" ed="#b"/>&bd;cessit. 
+&bl;<hi>eodem</hi> anno <note resp="#b" type="year">sed 973</note> <rs>otto</rs> maior imperator obiit anno 
+&bl;<num value="18">xuiii</num> ex quo imperator appellatus est. <hi>successit</hi> annis ei <rs>otto</rs> 
+&bl;imperator, qui dictus est minor, qui postquam imperii coronam 
+&bl;accepit, uera ens cunctam <rs>salernum</rs> obsedit cepitque illam expugnans. 
+&bl;<hi>dehinc</hi> per <rs>briciam</rs> et <rs>lucaniam</rs> in <rs>calabriam</rs> perrexit et apud 
+&bl;<rs>stilum</rs> <rs>calobrie</rs> oppidum cum <rs>sarracenis</rs> pugnauit eosque diui&bd;cit, 
+regnum quoque cepit. <hi>regnauit</hi> autem annis <num value="2">ii</num>. <hi>eo</hi> itaque de&bd;functo 
+succesit illi tercius <rs>otto</rs>. <hi>quo</hi> tempore <rs>iohannes</rs> factus 
+&bl;est princeps <rs>salerni</rs>. <hi>interea</hi> papa <rs>benedictus</rs> postquam annum 
+&bl;sedit, diem obiit, et successit ei <rs>bonus</rs> qui sedit annum <num value="1">i</num> et
+&bl;menses <num value="6">ui</num>. <hi>quo</hi> uita decedente <rs>bonifacius</rs> sedit mensem <num value="1">i</num>. 
+&bl;<hi>cui</hi> expulso <rs>benedictus</rs> succesit in pontificatus honore qui se&bd;dit 
+annum <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. 
+</p> 
+
+
+<p xml:id="g189.5-170.14" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxu</num>, <note resp="#b" type="year">sed 987</note> obiit 
+&bl;<rs>lodouicus</rs> <rs>francorum</rs> rex iuuenis, postquam regnauit annis 
+&bl;<num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, sepultusque est in basilica beati <rs>cornelii</rs> <rs>compendio</rs>. 
+&bl;<hi>cui</hi> succesit <rs>carolus</rs> frater eius filius <rs>lotharii</rs> regis. <hi>eodem</hi> anno 
+&bl;quo <rs>carolus</rs> hic cepit regnare, <rs>ugo</rs> dux eius cognomento <rs>cha&bd;pet</rs> 
+rellauit contra <rs>carolum</rs> regem consilioque habito cum 
+&bl;<rs>ascellino</rs> qui erat episcopus <rs>lauduni</rs> et consiliarius <rs>caroli</rs> 
+&bl;quatenus eum sibi traderat. <hi>qui</hi> dolis acquiescens tradidit eum 
+&bl;<rs>ugoni</rs> duci quadam nocte cunctis quiescentibus. <hi>uinctus</hi> est 
+&bl;itaque <rs>carolus</rs> rex cum uxore sua et positus in custodia <rs>aurelia&bd;nis</rs> 
+ciuitate in turri, in qua uitam finiuit. <hi>habuit</hi> autem ex eadem 
+&bl;uxorem filios duos <rs>lodouicum</rs> et <rs>carolum</rs>. <rs>ugo</rs> itaque dux re&bd;gnum 
+sibi <rs>francorum</rs> arripuit, constituitque regem filium suum 
+&bl;nomine <rs>robbertum</rs> qui defecit impium in <rs>francis</rs>. <hi>sicque</hi> defecit pro<pb break="no" n="16v" ed="#o"/>sapia regum a <rs>carolo</rs> im&bd;peratore 
+descencium et <rs>francorum</rs> reges regali tan&bd;tum 
+honore crescenti imperii dignitatem amiserunt. <hi>in</hi> illis die&bd;bus 
+in <rs>remensium</rs> ciuitate erat archiepiscopus, uir bonus et mo&bd;destus, 
+iam senex, frater <rs>locharii</rs> regis ex concubina nomine <rs>ar&bd;nulfus</rs>. 
+<rs>ugo</rs> autem dux inuidebat ei uolens exterminare proge&bd;niem 
+<rs>loharii</rs> regis. <hi>congregansque</hi> in eadem ciuitate sinodum, 
+&bl;fecit degradare domnum <rs>arnulfum</rs>, in loco uero eius consecrare 
+&bl;fecit domnum <rs>girbertum</rs> monachum philosophum. <rs>seguinus</rs> 
+&bl;autem archiepiscopus <rs>senonum</rs> non contensit in degradatione 
+<pb n="72" ed="#b"/> 
+&bl;<rs>arnulfi</rs> neque in ordinatione <rs>girberti</rs>, sed plus timens <rs>deum</rs> 
+&bl;quam terrenum regem, ipsum in quantum potuit redar&bd;guit. 
+<hi>rex</hi> itaque cum magno dedecore expelli iusit <rs>arnulfum</rs> de 
+&bl;ecclesia et sic aligatum retrudi in carcere, ubi nepos eius <rs>ca&bd;rolus</rs> 
+detinebatur, mansitque ibi annis <num value="3">iii</num>. <hi>nunciantur</hi> hec presu&bd;li 
+<rs>romano</rs> qui ualde indignans super hoc facto interdixit omnes 
+&bl;episcopos qui iam dicto facinori consenserant, misitque <rs>leonem</rs> 
+&bl;abbatem a sede apostolica ad domnum <rs>seguinum</rs> archiepisco&bd;pum 
+<rs>senonum</rs> qui uice sua in urbe <rs>remansi</rs> sinodum congre&bd;gare, 
+mandans illi ut sine dilatione in pristino gradu reuocare 
+&bl;domnum <rs>arnulfum</rs> et degradare <rs>gibbertum</rs>. <hi>quod</hi> efecit. <rs>gib&bd;bertus</rs> 
+itaque intelligens quod iniuste pontificalem suscepise 
+&bl;dignitatem penituit. <hi>post</hi> hec domnus <rs>gibbertus</rs> electus est pon&bd;tifex 
+in urbe <rs>romana</rs> a populo eiusdem urbis et ab <rs>otone</rs> im&bd;peratore, 
+reseditque in eadem urbe pontifex quam plurimos an&bd;nos. 
+<hi>defuncto</hi> uero papa urbis <rs>rome</rs> statim omnis populus <rs>ro&bd;manus</rs> 
+sibi dari acclamabat domnum <rs>gibbertum</rs>. <hi>assumptus</hi> est 
+&bl;autem de urbe <rs>rauenna</rs> ordinatus est pontifex in urbe <rs>roma</rs>. 
+</p> 
+
+
+<p xml:id="g170.15-170.16" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="987"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxxuii</num>. <rs>sarraceni</rs> de&bd;populati 
+sunt <rs>calabriam</rs>, a quibus postea sequenti anno <rs>cosen&bd;tia</rs> 
+obsesa est atque destructa. 
+</p> 
+
+
+<p xml:id="g170.17-171.1" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="990"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xc</num> stella a parte sep&bd;tentrionis 
+apparuit habens splendorem qui tendebat contra meri&bd;diem 
+quasi unum passum. <hi>et</hi> post paucos dies iterum aparuit 
+&bl;eadem stella a parte occidentis et splendor eius ten&bd;debat ad orientem. 
+<hi>et</hi> non multo postea fuit terre motus magnus qui plures 
+&bl;euertit domus in <rs>beneuento</rs> et in <rs>capua</rs> multosque homines oc&bd;cidit 
+et in ciuitate <rs>arriano</rs> plures eclesias subuertit. <note resp="#pm" type="graphic"><hi>the</hi> next lines are hardly readable.</note><hi>ciuitas</hi> quo&bd;que 
+<rs>frequentus</rs> pene media cecidit, ciuitatem uero <rs>comsanam</rs> 
+&bl;prope mediam cum episcopo supuertit, multosque homines op&bd;presit. 
+<rs>ronsem</rs> totam cum eius hominibus supmersit. 
+</p> 
+
+
+<p xml:id="g171.2-171.6" decls="#al"> 
+<note resp="#pm" type="graphic"><hi>the</hi> text of this paragraph is hardly readable.</note>
+&bl;<hi>preterea</hi> <rs>rome</rs> defuncto papa <rs>benedicto</rs>, <rs>iohannes</rs> papa se&bd;dit 
+menses <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. <hi>hic</hi> autem in castello <rs>sancti angeli</rs> reclusus et 
+&bl;per menses <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> fame aflictus mortus est. <hi>et</hi> iterum superior 
+&bl;<rs>bonifacius</rs> qui expulsus fuerat sedit menses <num value="11">xi</num>. <hi>quo</hi> uita dece<pb break="no" n="74" ed="#b"/>&bd;dente 
+&bl;<rs>iohannes</rs> sedit mensibus <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>post</hi> quem alius <rs>iohannes</rs> se&bd;dit 
+annis <num value="10">x</num> menses <num value="6">ui</num>. <hi>cuius</hi> temporibus <rs>romani</rs> capitanei pa&bd;triciatus 
+sibi tirannidem uendicauere. 
+</p> 
+
+
+<p xml:id="g171.7-171.8" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="994"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xc<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> in <rs>apulia</rs> ciuitas <gap quantity="1" reason="illegible" unit="words"/> 
+&bl;<rs>matere</rs> a <rs>sarracenis</rs> destructa est. 
+</p> 
+
+
+<p xml:id="g171.9-171.14" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="998"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xcuiii</num>. <rs>ugo</rs> dux <rs>franco&bd;rum</rs> 
+obiit sepultusque est in basilica beati <rs>dionisi</rs> martiris <rs>pa&bd;risius</rs>. 
+<hi>cui</hi> secesit filius eius <rs>robbertus</rs> rex qui pius fuit et mo&bd;destus. 
+<hi>hic</hi> <gap quantity="4" reason="illegible" unit="words"/> regnauit annis <num value="33">xxxiii</num>. <hi>per</hi> 
+&bl;idem tempus <rs>mel</rs> catipanus primum in <rs>apuliam</rs> <gap quantity="9" reason="illegible" unit="words"/>
+<rs>apulia</rs> apud 
+&bl;<rs>basentellum</rs> comisit, et non <gap quantity="7" reason="illegible" unit="words"/> cepit. 
+</p> 
+
+
+<p xml:id="g172.1-172.9" decls="#al"> 
+&bl;<hi>non</hi> post multum uero temporis <rs>hanricus</rs> <rs>burgundis</rs> dux 
+<gap quantity="11" reason="illegible" unit="words"/>
+&bl;rebellauerunt <rs>burgundiones</rs> in regem <gap quantity="12" reason="illegible" unit="words"/>
+cum duce suo <rs>ricardo</rs> et exer&bd;citu 
+uastauit <rs>burgundia</rs>. <gap quantity="6" reason="illegible" unit="words"/>
+&bl;defunctus est, cui sucessit <rs>fromundus</rs> filius <gap quantity="3" reason="illegible" unit="words"/>
+&bl;<rs>fromundo</rs>  <gap quantity="5" reason="illegible" unit="words"/>filius 
+&bl;eius nequissimus; <gap quantity="8" reason="illegible" unit="words"/>
+non est audita a tempore paganorum usque 
+&bl;in hodiernum diem. <hi>post</hi> <gap quantity="7" reason="illegible" unit="words"/>
+ab archiepiscopo <gap quantity="9" reason="illegible" unit="words"/>
+</p> 
+
+
+<p xml:id="g172.10-173.11" decls="#al"> 
+&bl;<gap quantity="2" reason="illegible" unit="words"/> autem <rs>rome</rs> defuncto <rs>iohanne</rs> papa successit ei 
+&bl;<rs>gregorius</rs> seditque anno <gap quantity="6" reason="illegible" unit="words"/> suc&bd;cesit 
+seditque menses <num value="10">x</num>. <hi>hic</hi> turpiter uitam suam finiuit. <hi>suc&bd;cesit</hi> 
+autem huic <rs>siluester</rs>, uir omnium artium liberalium peri&bd;tissimus, 
+qui primitus abbas <rs>bobiensis</rs>, postea archiepiscopus 
+&bl;<rs>rauennas</rs>, post uero <rs>romanus</rs> papa effectus est, seditque annis 
+&bl;<num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> mensis <num value="1">i</num>. <hi>cuius</hi> temporibus ingens in <rs>campania</rs> per <num value="15">xu</num> dies 
+&bl;terre motus factus est multa diruens edificia. <rs>siluestro</rs> autem 
+&bl;obeunte, <rs>iohannes</rs> qui uocatur <rs>sego</rs> papalem sedit cathedra 
+&bl;menses <num value="5">u</num>. <hi>quo</hi> defuncto <rs>iohannes</rs> papa qui uocatur <rs>fanasus</rs> 
+<pb n="76" ed="#b"/> 
+&bl;sedit anno <num value="1">i</num>. <hi>hic</hi> <rs>ottonem</rs> regem <rs>saxonum</rs> coronauit impera&bd;torem. 
+<hi>post</hi> <rs>iohannem</rs> uero <rs>siluester</rs> <rs>tiburtinus</rs>, qui uocatur 
+&bl;<hi>osporco</hi>, <rs>romanum</rs> suscepit pontificatum qui sedit annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
+&bl;<hi>suo</hi> quidem tempore fuit pessima fames. <hi>hic</hi> autem mortuo 
+&bl;<rs>alberico</rs> qui patriciatus sibi nomen uendicauerat a <rs>crescentio</rs> 
+&bl;<rs>numentano</rs>, qui patricius dicebatur, papa ordinatus est quique 
+&bl;etiam <rs>ottonem</rs> coronauit imperatorem, postea uero cum magno 
+&bl;de<pb break="no" n="17r" ed="#o"/>decore ab eodem <rs>crescentio</rs> a papatu expulsus est. <hi>et</hi> quidam 
+&bl;<rs>iohannes</rs>, <rs>placentinus</rs> episcopus, <rs>grecus</rs> genere, legatione func&bd;tus 
+<rs>ottonis</rs> imperatoris a <rs>constantinopoli</rs> rediens dum <rs>ro&bd;mam</rs> 
+causam orationis uenire, a prefato <rs>crescentio</rs> et a <rs>roma&bd;nis</rs> 
+capitur, tenetur et ligatus inuictus, papa tamen infelix ordinatur 
+&bl;<rs>romanus</rs>. <hi>quod</hi> audiens rex mete eferus <rs>romam</rs> ueniens, 
+&bl;ipsum <rs>crescentium</rs> diu obsesum cepit et capite truncauit, 
+&bl;ipsum pontificem cecauit ceterisque membris debelitauit et ad 
+&bl;dedecus et ignominiam sacerdotalis ordinis per plateas <rs>leonine</rs> 
+&bl;ciuitatis circumduci iussit. <hi>sed</hi> antequam <num value="30">xxx</num> dies implerentur 
+&bl;omnia de corpore rex impius mortus est, anno dominice ab incar&bd;natione <rs>domini</rs> 
+<num value="1001">mi</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <hi>hic</hi> autem tertius <rs>occ&bd;to</rs> 
+imperator anno superiori obsederat <rs>beneuentum</rs> in anno sci&bd;lice 
+incarnatione <rs>domini</rs> <num value="1000">m</num> per indictionem <num value="13">xiii</num> et acriter ipsam ciuitatis 
+&bl;expugnans ui cepit. <hi>eo</hi> itaque mortuo frater eius <rs>henricus</rs> 
+&bl;maioris <rs>octonis</rs> imperatoris nepos fit rex, quique regnauit anni 
+&bl;<num value="25">xxu</num>. <hi>cuius</hi> imperii anno secundo <rs>sarraceni</rs> <rs>campaniam</rs> ingresi sunt 
+&bl;<rs>capuam</rs> obsederunt. 
+</p> 
+
+
+<p xml:id="g173.12-173.13" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <gap quantity="3" reason="missing" unit="words"/> fames ualida 
+&bl;<rs>italiam</rs> obtinuit. <hi>quo</hi> tempore <rs>mel</rs> catipanus cum <rs>normannis</rs> 
+&bl;<rs>apuliam</rs> expugnabat. 
+</p> 
+
+
+<p xml:id="g173.14-174.7" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <gap quantity="2" reason="missing" unit="words"/> indictione <rs>siluester</rs> pa&bd;pa 
+defunctus est et <rs>benedictus</rs> frater <rs>alberici</rs> papalem suscepit 
+&bl;chatedram. <hi>eodem</hi> anno <rs>henricus</rs> <rs>alamanorum</rs> rex <rs>romam</rs> 
+&bl;uenit et ab eodem <rs>benedictus</rs> papa coronam accepit imperii et 
+&bl;imperator appellatus est. <hi>sedit</hi> autem ipse <rs>benedictus</rs> annis <num value="11">xi</num> 
+&bl;menses <num value="1">i</num>. <hi>per</hi> idem tempus <rs>basilius</rs> et <rs>constantinus</rs> frater eius 
+<pb n="78" ed="#b"/> 
+&bl;<rs>constantinopolitani</rs> catholici imperatores catipanum suum no&bd;mine 
+<rs>buiano</rs> magna cum thesauri pecunia direxerunt ut <rs>apu&bd;liam</rs> 
+cum circumquaque regionibus sibi uendicare ac imperiali iuri 
+&bl;componere. <hi>qui</hi> ueniens cepit omnia tranquille agere atque 
+&bl;strenue ordinare hic in <rs>apulie</rs> finibus. 
+</p> 
+
+
+<p xml:id="g174.8-175.15" decls="#al"> 
+&bl;<hi>anno</hi> domini <gap quantity="1" reason="missing" unit="words"/>. indictione <num value="1">i</num>. <hi>redi&bd;ficauit</hi> 
+ciuitatem diu dirutam nuncupauitque eam <rs>troiam</rs>, que 
+&bl;antiquitus <rs>ecana</rs> uocabatur et iussu imperatorum fines 
+&bl;per statutum priuilegium eidem stabiliuit ciuitati. <hi>in</hi> hanc ciuita&bd;tem 
+olim tempore <rs>adriani</rs> imperatoris, qui <rs>traiano</rs> successerat, 
+&bl;fuit ab apostolica sede misus <rs>euletherius</rs> episcopus qui post 
+&bl;duos annos iusu ipsius <rs>adriani</rs> <rs>rome</rs> ductus ach pasus est. <hi>tem&bd;pore</hi> 
+quoque <rs>diocletiani</rs> et <rs>maximiniani</rs> imperatorum exercuit in 
+&bl;hac <rs>ecana</rs> urbe <rs>marcus</rs> episcopus, quique martirio uitam finiuit. 
+&bl;<hi>et</hi> post aliquanta annorum curricula fuit in eadem urbe <rs>se&bd;cundinus</rs> 
+episcopus, qui confesor et sanctus multas sanctorum 
+&bl;ecclesias renouauit. <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+&bl;<hi>ipse</hi> etiam prenominatus catipanus in finibus <rs>samnii</rs> et <rs>apu&bd;lie</rs> 
+edificauit ach constituit plures urbes et opida; ipsaque regio 
+&bl;usque odie <rs>catipania</rs> ex suo nomine dicitur. <hi>quarto</hi> autem an&bd;no 
+post predicte ciuitatis <rs>troye</rs> rehedificacionem, in anno uideli&bd;cet 
+incarnationis <rs>domini</rs> <gap quantity="1" reason="missing" unit="words"/> <note resp="#pm" type="graphic"><hi>a</hi> much later hand wrote the year in <hi>arabic</hi> numerals.</note>indictio&bd;ne 
+<gap quantity="1" reason="missing" unit="words"/><note resp="#pm" type="graphic"><hi>a</hi> much later hand wrote number five in <hi>arabic</hi> numerals.</note> <rs>henricus</rs> <rs>alamanorum</rs> imperatorii ingenti cum exercitu, 
+&bl;simul et cum <rs>benedictus</rs> papa uenit super ipsam ciuitatem obse&bd;ditque 
+per <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> menses machinis illam fortiter expu&bd;gnans. 
+<hi>imperator</hi> itaque uidens quod ea sine mora capere  
+&bl;posset – dixerat enim iratus quod si eam non sine mora incepise statim de&bd;strueret 
+– sibi suisque estiuum <rs>apulie</rs> calorem, et sic com&bd;posita 
+pace cum ciuibus, obsidibusque ab eis acceptis ad propria 
+&bl;est reuersus. <rs>pandulfum</rs> autem <rs>capuanum</rs> principem secum in 
+&bl;<rs>alamanniam</rs> deduxit. 
+</p> 
+
+
+<p xml:id="g176.1-176.2" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> indictione <gap quantity="1" reason="missing" unit="words"/> <rs>basilius</rs> 
+&bl;imperator <rs>constantinopolitanus</rs> diem obiit. 
+</p> 
+
+
+<p xml:id="g177.1-177.4" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> indictione <gap quantity="1" reason="missing" unit="words"/>, <rs>henricus</rs> 
+&bl;<rs>alamannorum</rs> imperator defunctus est, cui succesit <rs>chunradus</rs> 
+&bl;qui dux eius fuerat. <hi>eodem</hi> anno papa <rs>benedictus</rs> obiit et suc<pb break="no" n="80" ed="#b"/>&bd;cesit 
+&bl;ei <rs>iohannes</rs> frater eius, qui uno eodemque die et laicus 
+&bl;fuit et pontifex, seditque annos <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> dies <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. 
+</p> 
+
+
+<p xml:id="g177.5-177.6" decls="#al"> 
+&bl;<hi>anno</hi> <rs>domini</rs> <gap quantity="1" reason="missing" unit="words"/> indictione <gap quantity="1" reason="missing" unit="words"/>; apud <rs>constantinopoli</rs> 
+&bl;<rs>constantinus</rs> imperator obiit et succesit ei <rs>romano</rs> gener eius 
+&bl;una cum eius uxore <rs>zoy</rs> imperatrice, regnauitque annos <num value="5">u</num>. 
+</p> 
+
+
+<p xml:id="g177.7-177.8" decls="#al"> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+<hi>anno</hi> 
+&bl;dominice incarnationis <num value="1030">mxxx</num>, indictione <num value="13">xiii</num>; <rs>iohannes</rs> prince&bd;ps 
+<rs>salerni</rs> defunctus est anno principatus sui <num value="57">luii</num>, et succesit ei 
+&bl;<rs>guaimarius</rs> fillius eius. 
+</p> 
+
+
+<p xml:id="g177.9-178.3" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1031">mxxxi</num>, indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <rs>roma&bd;no</rs> 
+imperatore <rs>constantinopolitanus</rs> mortus est, et succesit ei 
+&bl;imperium <rs>miquel</rs> qui dicitur <rs>catalactus</rs> cum <rs>zoi</rs> imperatri&bd;ce. 
+<hi>ipso</hi> quoque anno defunctus est <rs>robertus</rs> <rs>francorum</rs> rex 
+&bl;cui succesit filius eius <rs>henricus</rs>. <hi>cuius</hi> in tertio anno urbis <rs>perisius</rs> 
+&bl;flagrauit incendio; regnauit autem hic <rs>henricus</rs> annis <num value="29">xxix</num>. 
+</p> 
+
+
+<p xml:id="g178.4-178.10" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1034">mxxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, indictione <num value="2">ii</num>; fuit <pb break="no" n="17r" ed="#o"/>ecli&bd;psis 
+solis in festiuitate sancti <rs>petri</rs>. <hi>quo</hi> anno <rs>iohannes</rs> papa de&bd;functus 
+est et succesit <rs>benedictus</rs> qui uocabatur <rs>theofilactus</rs>, 
+&bl;seditque annis <num value="13">xiii</num>. <hi>iste</hi> quidem de pontificatu eiectus est et su&bd;scepit 
+papatum <rs>iohannes</rs> <rs>sabiniensis</rs> episcopus cui nomen <rs>si&bd;luester</rs>. 
+<hi>et</hi> isto quidem eiectus post dies <num value="56">lui</num> recuperatus 
+&bl;papa <rs>benedictus</rs> qui post mensem <num value="1">i</num> et dies <num value="20">xx</num> uendidit 
+&bl;papatum <rs>iohanni</rs> <rs>rauennati</rs> archiepiscopo sancti <rs>iohannis</rs> ante 
+&bl;portam <rs>latinam</rs>, cui nomen positum est <rs>gregorius</rs>, qui sedit an&bd;no 
+<num value="1">i</num> menses <num value="6">ui</num>. 
+</p> 
+
+
+<p xml:id="g178.11-178.12" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1037">mxxxuii</num> indictione <num value="5">u</num> mesem 
+&bl;<hi>ianuari</hi>; mons <rs>uesubius</rs> eructauit incendium ita ut quasi flu&bd;men 
+usque ad mare discurere. 
+</p> 
+
+
+<p xml:id="g178.13-179.2" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <rs>domini</rs> <num value="1039">mxxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num> indictione <num value="7">uii</num> apud 
+&bl;<rs>constantinopolim</rs> <rs>michael</rs> imperator cognominato <rs>cathactus</rs> 
+&bl;diem obiit anno <num value="7">uii</num> eius imperii. <hi>cui</hi> <rs>michael</rs> qui <rs>etheriarchis</rs> di&bd;cebatur 
+successit cum <rs>zoi</rs> imperatrice. <hi>eodem</hi> anno in mense <hi>fe&bd;broari</hi> 
+<rs>nordinanni</rs> ingresi iam in <rs>apuliam</rs>, ter <num value="1">i</num> diem cum <rs>gre&bd;cis</rs> 
+graui prelio dimicare inter <rs>aufidum</rs> aminem et <rs>oliuentem</rs>, 
+&bl;et <rs>normani</rs> uictores extiterunt. <hi>in</hi> ipso quidem prelio fuit <rs>dro&bd;go</rs> 
+<rs>normanorum</rs> comes et quatuor ex fratribus eius. <hi>in</hi> ipso 
+&bl;quoque anno <rs>chunradus</rs> imperator defunctus est anno eius im&bd;perii 
+<num value="15">xu</num>, et succesit ei <rs>henricus</rs> filius eius. 
+</p> 
+
+
+<p xml:id="g179.3-179.7" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <rs>domini</rs> <num value="1040">mxl</num> indictione <num value="8">uiii</num>; defunctus est <rs>michael</rs> 
+<pb n="82" ed="#b"/> 
+&bl;<rs>etheriarchis</rs> imperator <rs>constantinopolitanus</rs> anno secundo 
+&bl;postquam imperare ceperat. <hi>et</hi> succesit ei imperator <rs>michael</rs> 
+&bl;<rs>arcontopanthiu</rs> cum <rs>zoi</rs> imperatrice. <hi>quo</hi> uita ipso 
+&bl;eodem anno decedente succesit eius <rs>constantinus</rs> <rs>monomachus</rs> in impe&bd;rium 
+cum <rs>zoi</rs> imperatrice, qui regnauit annis <num value="12">xii</num>. <hi>quo</hi> tempore 
+&bl;fames ualida fuit in <rs>italia</rs> ad quem in <rs>gallia</rs> per septem continuos 
+&bl;annos. 
+</p> 
+
+
+<p xml:id="g179.8-179.9" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="1042">mxlii</num> indictione <num value="10">x</num>; luna pasa 
+&bl;est eclipsi <num value="5">u</num> <hi>idem</hi> <hi>ianuarii</hi> per <num value="5">u</num> hore noctis. 
+</p> 
+
+
+<p xml:id="g179.10-179.11" decls="#ocr"/> 
+
+
+<p xml:id="g179.12-179.14" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1043">mxliii</num> indictione <num value="13">xiii</num>; <rs>drogo</rs> 
+&bl;<rs>normanorum</rs> comes cepit ciuitatem <rs>bibinum</rs> eamque depopu&bd;latus 
+est; sequenti uero anno, postquam eadem ciuitas reedifica&bd;ta 
+est, flagrauit incendio. 
+</p> 
+
+
+<p xml:id="g179.15-180.12" decls="#al"> 
+&bl;<hi>anno</hi> <rs>domini</rs> <gap quantity="1" reason="missing" unit="words"/> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <rs>henricus</rs> imperator 
+&bl;<rs>romam</rs> uenit inuenitque sedem apostolicam ualde turbatam, 
+&bl;nam uno edemque tempore supradicti <rs>teophilus</rs> qui et <rs>be&bd;nedictus</rs>, 
+et <rs>siluester</rs> qui et <rs>iohannes</rs> <rs>sabinianus</rs>, et <rs>gregorius</rs> 
+&bl;qui et <rs>iohannes</rs> <rs>rauennas</rs>, <rs>romanum</rs> non regebant set uasta&bd;bant 
+pontificatum. <hi>tunc</hi> imperator ipse conuocatis episcopis at&bd;que 
+ordinis utriusque uiris religiosis ac catholicis, sinodum con&bd;gregari 
+fecit, in qua statim, canonibus exquisitis, hi tres dab&bd;nati 
+et exilio religati sunt, nullus enim eorum amplius iure po&bd;terat 
+episcopari. <hi>et</hi> tunc a clero et populo canonice <rs>clemens</rs> 
+&bl;electus est, ipso imperatore — quemadmodum in canonibus sta&bd;tutum 
+est — asensum prebente. <hi>qui</hi> consecratus sedit papalem 
+&bl;cathedram menses <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>: iste quoque <rs>henricum</rs> coronauit im&bd;peratorem. 
+<hi>defuncto</hi> itaque <rs>clemente</rs> <rs>damasus</rs> electus et con&bd;secratus 
+est, cuius electioni predictus imperator assensum pre&bd;buit, 
+seditque <rs>damasus</rs> dies <num value="20">xx</num>. <hi>imperator</hi> autem ipse usque 
+&bl;<rs>capuam</rs> uenit a terram pro tempore sibi componens, et sic reuer&bd;sus 
+est. 
+</p> 
+
+
+<p xml:id="g180.13-180.15" decls="#ocr"/> 
+
+
+<p xml:id="g181.1-181.1" decls="#al"> 
+<pb n="84" ed="#b"/> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <gap quantity="1" reason="missing" unit="words"/> in die <num value="1">i</num> <rs>zoi</rs> imperatrix obiit. 
+</p> 
+
+
+<p xml:id="g181.2-181.5" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione domini <gap quantity="1" reason="missing" unit="words"/> indictione <num value="2">ii</num>, <rs>damaso</rs> papa uita dece&bd;dente, 
+<rs>leo</rs> sanctisimus qui uocatur <rs>brunus</rs>, a populo <rs>romano</rs> 
+&bl;expetitus, a clero electus, ab imperatore quoque comendatus, 
+&bl;et ab episcopis, quibus oficii huius auctoritas est atributa, consecratus est 
+&bl;in pontificatus honorem, seditque annos quinque, menses duo&bd;s. 
+</p>
+
+
+<p xml:id="g181.6-181.10" decls="#al">
+<hi>anno</hi> dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> in diem <num value="3">iii</num> mensis <hi>augusti</hi> <rs>drogo</rs> <rs>nord&bd;mannorum</rs> 
+comes defunctus est. <hi>fuitque</hi> uir egregius, pius, stre&bd;nus 
+atque famosus, qui propter animi mansuetudinem et iusti&bd;cie 
+seruatam equitatem a cunctis dilectus est. <hi>cui</hi> <rs>umfridus</rs> fra&bd;ter 
+eius <rs>nordmannorum</rs> comes succesit, tenuitque potestatis 
+&bl;ipsius honorem per annos <num value="7">uii</num>. 
+</p> 
+
+
+<p xml:id="g181.10-181.11" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> indictione <num value="5">u</num> <rs>gayma&bd;rius</rs> 
+princeps <rs>salerni</rs> a suis interfectus est anno principatus sui 
+&bl;<num value="23">xxiii</num>. <hi>cui</hi> succesit <rs>gisolfus</rs> filius eius. 
+</p> 
+
+
+<p xml:id="g181.12-182.19" decls="#al"> 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <gap quantity="1" reason="missing" unit="words"/> indictione <num value="6">ui</num> mensis 
+&bl;<hi>iunii</hi>. <rs>leo</rs> papa multis precibus ab <rs>henrico</rs> monitus imperatore 
+&bl;per corundam <rs>sannitum</rs> sucgestionem uenit in <rs>beneuentum</rs> 
+&bl;ut <rs>normanos</rs> <rs>apulia</rs> expelleret. <hi>inde</hi> mouens gresum simul 
+&bl;cum <rs>alamannis</rs> quos imperato cum eo direxerat, apud urbem 
+&bl;nomine <rs>ciuitatem</rs>, que in confinibus <rs>samnii</rs> est et <rs>apulie</rs>, cum 
+&bl;<rs>normannis</rs> acriter pugnauit. <hi>comiso</hi> itaque bello <rs>normani</rs> 
+&bl;totum <rs>alamanorum</rs> exercitum in ore gladii percuserunt. <hi>in</hi> 
+&bl;ipso quidem belli apparatu defecerunt <rs>alamannis</rs> hi quorum 
+&bl;uenerant suggestione, quique in auxilium eorum uenerunt. <rs>leo</rs> 
+&bl;autem papa minime propter quod uenerat perficere ualens 
+&bl;reuersus est. <hi>iste</hi> primus <rs>romanorum</rs> pontificium a beato <rs>petro</rs> 
+&bl;ad se usque cum manu armatorum in bellum procesit, qui 
+&bl;quamuis sanctus fuerit et pio hoc animo egerit, tamen quia 
+&bl;non eius id erat oficii neque hoc illi permisum fuerat a <rs>domino</rs> 
+&bl;qui pati uenerat, suosque ut ab aliis magis paterentur quam ut 
+&bl;alios persequerentur premouerat, ideo exercitus sui multitu&bd;do 
+cesa est, ipso perspiciente. <hi>non</hi> enim <rs>dominus</rs> discipulis 
+&bl;suis neque idem apostoli suis succesoribus preceperunt ut 
+&bl;curis secularibus, ueluti principes seculi, materiali gladio <rs>dei</rs> populum 
+<pb n="86" ed="#b"/> 
+&bl;tuerentur sed uerbo doctrine monerent et pie conuersationis 
+&bl;exemplo instruerent. 
+<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+&bl;<hi>eodem</hi> anno <rs>constantinus</rs> <rs>monomachus</rs> imperator <rs>constan&bd;tinopolitanus</rs> 
+obiit, post quem <rs>theodora</rs>, soror <rs>zoi</rs> imperatricis 
+&bl;uirgo persistens, imperium <rs>constantinopolitanum</rs> uiriliter biennio 
+&bl;tenuit. <hi>qua</hi> defuncta <rs>michael</rs> <rs>nouicius</rs> imperii honorem adep&bd;tus 
+est, qui eodem anno fuit inuitus monachus factus. <hi>cui</hi> <rs>mi&bd;chael</rs> 
+<rs>inscomiano</rs> imperatore succesit, qui post annos <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> 
+&bl;ex quo imperauit imperio eiectus ach monachus factus est. <hi>cui</hi> 
+&bl;<rs>constantinus</rs> cognomianatus <rs>dioclizi</rs> in imperium succesit. 
+<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+&bl;<hi>at</hi> uero <rs>leo</rs> papa sequenti anno postquam cum <rs>normandis</rs> 
+&bl;preliatus est diem obiit menses <hi>aprilis</hi> in anno ab incarnatione <rs>domini</rs> <num value="1055">mlu</num>, indictionem <num value="8">uiii</num>. <hi>et</hi> succesit ei <rs>uictor</rs> 
+&bl;<rs>gebeardus</rs> uocabatur seditque annis <num value="2">ii</num>, menses <num value="2">ii</num>. 
+&bl;<hi>post</hi> cuius obitum <rs>stephanus</rs> <rs>godifridii</rs> ducis germanus qui dic&bd;tus 
+est <rs>ferdiricus</rs>, sedit menses septem. <hi>quo</hi> defuncto <rs>bene&bd;dictus</rs> 
+<rs>belniternensis</rs> <rs>romanum</rs> inuasit pontificatum, 
+&bl;qui sedit mensis <num value="8">uiii</num>. 
+<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+&bl;<hi>quibus</hi> temporibus <rs>patarie</rs> apud 
+&bl;<rs>mediolanum</rs> exorta est. 
+</p> 
+
+
+<p xml:id="g183.1-184.6" decls="#ocr"> 
+<!--§-->
+&bl;<hi>anno</hi> dominice incarnationis <num value="1057">mluii</num> indictione <num value="10">x</num>; <rs>unfridus</rs> 
+&bl;comes <rs>normannorum</rs> diem clausit extremum, reliquens sibi 
+&bl;successorem <rs>bagelardum</rs> filium eius militem strenuum. <hi>set</hi> <rs>rob&bd;bertus</rs> 
+cognomento <rs>uiscardus</rs>, eiusdem <rs>unfridi</rs> comitis frater, 
+&bl;natus ex patre <rs>tancredo</rs>, <rs>normannorum</rs> comitatus honorem sibi 
+&bl;arripuit, ipsum <rs>baielardum</rs> suum nepotem expellens. <rs>tancredus</rs> 
+&bl;autem fuit timoris <rs>dei</rs> non immemor, qui bissenos habuit filios. 
+&bl;<hi>quorum</hi> primus quidem fuit <rs>sarnus</rs>, qui miles insignis extitit. 
+&bl;<hi>secundus</hi> autem comes <rs>goffridus</rs> pater <rs>robberti</rs> comitis de <rs>lau&bd;ritello</rs>. 
+<hi>tercius</hi> uero <rs>drogo</rs> comes, de quo superius scriptum est. 
+&bl;<hi>quartus</hi> autem <choice><sic><rs>willemus</rs></sic><corr resp="#pm" type="typo"><rs>willelmus</rs></corr></choice>, et ipse comes, qui propter fortitudinis 
+&bl;sue prudenciam <rs>brachiferreus</rs> est prenomine dictus erat enim 
+&bl;astutissimus et ferox fortisque uiribus. <hi>quintus</hi> extitit comes <rs>un&bd;fridus</rs>. 
+<hi>sextus</hi> quoque <rs>malgerius</rs> comes, probus atque famosus. 
+&bl;<hi>septimus</hi> itaque fuit <rs>robbertus</rs> <rs>guiscardus</rs>. <hi>hic</hi> autem propter 
+&bl;animi astuciam ingeniique prudenciam primus ex <rs>gallorum</rs> ge&bd;nere 
+in <rs>apulia</rs> ducatus honorem adeptus est. <hi>qui</hi> non multo post 
+&bl;sibi subegit <rs>apuliam</rs> et <rs>calabriam</rs>, <rs>lucaniam</rs> atque <rs>siciliam</rs>, mili&bd;tarem 
+namque disciplinam gloriosissime rexit. <hi>octauus</hi> autem 
+<pb n="88" ed="#b"/> 
+&bl;<rs>alberedus</rs> armis strenuus. <hi>nonus</hi> <rs>tancredus</rs>. <hi>decimus</hi> <rs>willelmus</rs> 
+&bl;de <rs>sancto nicandro</rs>, pater <rs>robberti</rs> comitis de <rs>principatu</rs>. <hi>fuit</hi> 
+&bl;ipse <rs>willelmus</rs> acer ingenio, inconstans animo, seuusque natura. 
+&bl;<hi>undecimus</hi> <rs>frumentinus</rs>. <hi>duodecimus</hi> <rs>roggerius</rs> <rs>sicilie</rs> comes, 
+&bl;qui miles insignis extitit, iusticie tenax, suis suorumque opibus 
+&bl;studens, ecclesiarum <rs>dei</rs> atque sacerdotum consulens. <hi>habuit</hi> 
+&bl;quoque <rs>tancredus</rs> horum pater et filias tres. 
+</p> 
+
+
+<p xml:id="g184.7-184.9" decls="#ocr"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="1058">mluiii</num>, indictione <num value="11">xi</num>. <rs>benedic&bd;tus</rs> 
+papa defunctus est et successit ei <rs>nicolaus</rs> qui et <rs>ierardus</rs>. 
+&bl;<hi>eodem</hi> anno <rs>riccardus</rs> cum <rs>iordano</rs> filio eius effectus est <rs>ca&bd;pue</rs> 
+princeps. 
+</p> 
+
+
+<p xml:id="g184.10-185.7" decls="#ocr"> 
+&bl;<hi>anno</hi> domini <num value="1060">mlx</num>, indictione <num value="13">xiii</num>. <rs>henricus</rs> rex <rs>francorum</rs> 
+&bl;obiit, cui <rs>philippus</rs> filius eius successit in regnum. <hi>ipso</hi> quoque 
+&bl;anno comes <rs>robbertus</rs> <rs>guiscardus</rs> uocatus est a <rs>troianis</rs> ciui&bd;bus, 
+ipsam eorum ciuitatem in sua potestate ab eis accepit, qui 
+&bl;non post multos dies cum exercitu in <rs>calabriam</rs> profectus, <rs>re&bd;gium</rs> 
+ciuitatem cepit atque omnium <rs>normannorum</rs> dux effec&bd;tus 
+est. <hi>hic</hi> accepit uxorem nomine <rs>sikelgaitam</rs> <rs>guaimarii</rs> prin&bd;cipis 
+filiam que sexu quidem mulier pudica fuit atque honesta 
+&bl;animum uero uirilem et consilium prouidum gerebat. <hi>ex</hi> qua 
+&bl;habuit filios <rs>roggerium</rs> et <rs>robbertum</rs> atque <rs>guidonem</rs> et filias 
+&bl;quinque. <hi>ex</hi> alia quoque uxore nomine <rs>alberada</rs> prius habuit 
+&bl;filium nomine <rs>boamundum</rs>. <hi>set</hi> <rs>robbertus</rs> <rs>guiscardus</rs> instituit 
+&bl;sibi heredem suum filium <rs>roggerium</rs>. <hi>interea</hi> <rs>robbertus</rs> dux ad 
+&bl;<rs>nicolaum</rs> papam perrexit eiusque liggius homo effectus est, 
+&bl;promittens se iureiurando fidem seruaturum <rs>romane</rs> ecclesie et 
+&bl;eidem pape eiusque successoribus canonice intrantibus. <hi>ipse</hi> 
+&bl;autem papa <rs>nicolaus</rs> statim inuestiuit eundem <rs>robbertum</rs> <rs>gui&bd;scardum</rs> 
+per uexillum de honore ducatus sui cum tota terra. 
+</p> 
+
+
+<p xml:id="g185.8-186.5" decls="#ocr"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="1062">mlxii</num> indictione <num value="15">xu</num> <rs>nicolaus</rs> 
+&bl;papa defungitur anno ordinationis sue secundo, mense octauo. 
+&bl;<hi>et</hi> <rs>alexander</rs> qui uocatus est <rs>anselmus</rs> papa an&bd;no 
+princeps <rs>riccardus</rs> <rs>capuam</rs> cepit sibique ordinauit. <hi>his</hi> au<pb break="no" n="90" ed="#b"/>&bd;tem 
+&bl;diebus <rs>robbertus</rs> dux ad <rs>alexandrum</rs> papam proficiscens 
+&bl;liggius eius homo deuenit et sicut <rs>nicolao</rs> pape ita et huic 
+&bl;iusiurandum fecit et per uexillum ab eo terram cum honore du&bd;catus 
+accepit. <hi>sedique</hi> <rs>alexander</rs> papa annis <num value="11">xi</num>, mensibus <num value="6">ui</num>. 
+&bl; 
+</p> 
+
+
+<p xml:id="g186.6-186.7" decls="#ocr"> 
+&bl;"<hi>hoc</hi> anno <rs>riccardus</rs> princeps <rs>capue</rs> intrauit terram <rs>cam&bd;panie</rs> 
+obseditque <rs>cipparanum</rs> et cepit eam et usque <rs>romam</rs> 
+&bl;deuastando peruenit. 
+</p> 
+
+
+<p xml:id="g186.8-186.8" decls="#ocr"> 
+&bl;<hi>anno</hi> <rs>domini</rs> <num value="1063">mlxiii</num>. <hi>hoc</hi> anno comprehensa est <rs>tarentum</rs> a 
+&bl;<rs>normannis</rs>. 
+</p> 
+
+
+<p xml:id="g186.9-186.9" decls="#ocr"> 
+&bl;<hi>anno</hi> <rs>domini</rs> <num value="1064">mlx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>hoc</hi> anno comprehensa est <rs>matera</rs> a 
+&bl;<rs>normannis</rs> mense <hi>aprilis</hi>. 
+</p> 
+
+
+<p xml:id="g186.10-186.11" decls="#ocr"> 
+&bl;<hi>anno</hi> <rs>domini</rs> <num value="1065">mlxu</num> indictione <num value="3">iii</num>. <hi>hoc</hi> anno <rs>robbertus</rs> dux 
+&bl;intrauit <rs>siciliam</rs> et interfecit <rs>agarenorum</rs> multitudinem et tulit 
+&bl;obsides de ciuitate <rs>panormo</rs>". 
+</p> 
+
+
+<p xml:id="g186.12-187.2" decls="#ocr"><!--Nono rigo a partire dalla fine della parte romualdiana nella pagina del MS-->
+&bl;<hi>anno</hi> dominice incarnationis <num value="1066">mlxui</num> indictione <num value="3">iii</num> mense 
+&bl;aprilis stella cometis apparuit a parte orientis, cuius fumus per 
+&bl;aliquot dies tendebat ad meridiem. <hi>ipso</hi> quoque mense hec 
+&bl;eadem stella apparuit a parte occidentis, cuius fumus ad meri&bd;diem 
+similiter per aliquot dies tendebat. <hi>quo</hi> anno apud <rs>con&bd;stantinopolim</rs> 
+<rs>constantinus</rs> <rs>dioclizi</rs> imperator, anno eius impe&bd;rii 
+sexto, defunctus est, cui <rs>romano</rs> <rs>diogenes</rs> in imperium suc&bd;cessit. 
+"<hi>eodem</hi> anno dux <rs>robbertus</rs> cepit ciuitatem <rs>uestis</rs> ap&bd;prehenditque 
+ibi catipanum nomine <rs>kuriacum</rs>. <hi>hinc</hi> etiam ipse 
+&bl;dux <rs>barum</rs> obsedit <rs>apulie</rs> ciuitatem et triennio eam incessanter 
+&bl;oppugnauit terra marique pontem quoque ibi in mari fecit. 
+</p> 
+
+
+<p xml:id="g187.3-187.4" decls="#ocr"/> 
+
+
+<p xml:id="g187.5-187.8" decls="#ocr"/> 
+
+
+<p xml:id="g187.9-187.11" decls="#al"> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from page 187 line 9 to page 188 line 4 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph because the text segmentation in manuscript <hi>a</hi> is different than in <rs>garufi</rs>.</note>
+&bl;<hi>anno</hi> dominice incarnationis <num value="1070">mlxx</num> indictione <num value="8">uiii</num>, apud 
+&bl;<rs>constantinopolim</rs> <rs>romano</rs> <rs>diogenes</rs> imperatore transacto quar&bd;to 
+imperii eius anno defunctus est. <hi>cui</hi> imperio <rs>miquel</rs> filius 
+<pb n="92" ed="#b"/> 
+&bl;<rs>constantini</rs> <rs>dioclizi</rs> succesit. 
+</p>
+
+
+<p xml:id="g187.11-187.14" decls="#al"/>
+
+
+<p xml:id="g187.14-188.1" decls="#al"> 
+<hi>eodem</hi> anno <rs>robbertus</rs> dux 
+&bl;cepit <rs>barum</rs> ciuitatem longa obsidione fatigatam, indeque 
+&bl;monens exercitum, <rs>siciliam</rs> properauit obseditque <rs>panormum</rs>, 
+&bl;ditissi&bd;mam 
+<!-- Witness Aa end -->
+</p>
+
+<p xml:id="g188.1-188.4" decls="#ocr"/> 
+
+<p xml:id="g188.5-188.7" decls="#ocr"/> 
+
+
+<p xml:id="g188.8-188.11" decls="#ocr"/> 
+
+<p xml:id="g188.12-190.8" decls="#ocr"/> 
+
+<p xml:id="g190.9-191.2" decls="#ocr"/> 
+
+<p xml:id="g191.3-191.5" decls="#ocr"/>
+
+<p xml:id="g191.6-191.12" decls="#ocr"/> 
+
+<p xml:id="g191.13-194.5" decls="#ocr"/> 
+
+<p xml:id="g194.6-195.5" decls="#ocr"/> 
+
+<p xml:id="g195.6-195.8" decls="#ocr"/> 
+
+<p xml:id="g195.9-196.2" decls="#ocr"/> 
+
+<p xml:id="g196.3-197.7" decls="#ocr"/> 
+
+<p xml:id="g197.8-197.12" decls="#ocr"/> 
+
+<p xml:id="g197.13-198.3" decls="#ocr"/> 
+
+<p xml:id="g198.4-198.5" decls="#ocr"/> 
+
+<p xml:id="g198.6-198.11" decls="#ocr"/> 
+
+<p xml:id="g198.12-198.13" decls="#ocr"/> 
+
+<p xml:id="g198.14-198.15" decls="#ocr"/> 
+
+<p xml:id="g198.16-198.17" decls="#ocr"/> 
+
+<p xml:id="g199.1-199.8" decls="#ocr"/> 
+
+<p xml:id="g199.9-199.12" decls="#ocr"/> 
+
+<p xml:id="g199.13-199.15" decls="#ocr"/> 
+
+<p xml:id="g200.1-200.5" decls="#ocr"/> 
+
+<p xml:id="g200.6-200.8" decls="#ocr"/> 
+
+<p xml:id="g200.9-200.16" decls="#ocr"/> 
+
+<p xml:id="g200.17-200.21" decls="#ocr"/> 
+
+<p xml:id="g201.1-201.18" decls="#ocr"/> 
+
+<p xml:id="g201.19-201.20" decls="#ocr"/> 
+
+<p xml:id="g202.1-202.4" decls="#ocr"/> 
+
+<p xml:id="g202.5-202.10" decls="#ocr"/> 
+
+<p xml:id="g202.11-203.2" decls="#ocr"/> 
+
+<p xml:id="g203.3-203.5" decls="#ocr"/> 
+
+<p xml:id="g203.6-203.6" decls="#ocr"/> 
+
+<p xml:id="g203.7-203.12" decls="#ocr"/> 
+
+<p xml:id="g203.13-204.4" decls="#ocr"/> 
+
+<p xml:id="g204.5-204.6" decls="#ocr"/> 
+
+<p xml:id="g204.7-204.15" decls="#ocr"/> 
+
+<p xml:id="g204.16-205.2" decls="#ocr"/> 
+
+<p xml:id="g205.3-206.12" decls="#ocr"/> 
+
+<p xml:id="g206.n4-206.n5" decls="#ocr"/>
+
+<p xml:id="g206.13-206.17" decls="#ocr"/> 
+
+<p xml:id="g206.18-207.2" decls="#ocr"/> 
+
+<p xml:id="g207.3-207.15" decls="#ocr"/> 
+
+<p xml:id="g207.16-207.17" decls="#ocr"/> 
+
+<p xml:id="g208.1-208.9" decls="#ocr"/> 
+
+<p xml:id="g208.10-208.14" decls="#ocr"/> 
+
+<p xml:id="g208.15-210.8" decls="#ocr"/> 
+
+<p xml:id="g210.9-210.22" decls="#ocr"/> 
+
+<p xml:id="g210.23-210.24" decls="#ocr"/> 
+
+<p xml:id="g211.1-211.14" decls="#ocr"/> 
+
+<p xml:id="g211.15-211.17" decls="#ocr"/> 
+
+<p xml:id="g212.1-212.4" decls="#ocr"/> 
+
+<p xml:id="g212.5-212.9" decls="#ocr"/> 
+
+<p xml:id="g212.10-212.11" decls="#ocr"/> 
+
+<p xml:id="g212.12-212.16" decls="#ocr"/> 
+
+<p xml:id="g213.1-213.8" decls="#ocr"/>
+
+<p xml:id="g213.8-214.11" decls="#ocr"/>
+
+<p xml:id="g214.12-214.14" decls="#ocr"/> 
+
+<p xml:id="g214.14-215.3" decls="#ocr"/> 
+
+<p xml:id="g216.1-217.1" decls="#ocr"/>
+
+<p xml:id="g217.1-217.12" decls="#ocr"/>
+
+<p xml:id="g218.1-218.2" decls="#al"/> 
+
+<p xml:id="g218.2-219.2" decls="#al"/> 
+
+<p xml:id="g219.5-219.8" decls="#ocr"/> 
+
+<p xml:id="g219.3-219.4" decls="#ocr"/> 
+
+<p xml:id="g214.n8-215.n14" decls="#ocr"/>
+
+<p xml:id="g215.n14-216.n10" decls="#ocr"/>
+
+<p xml:id="g216.n10-217.n1" decls="#ocr"/>
+
+<p xml:id="g217.n4-217.n10" decls="#ocr"/>
+
+<p xml:id="g218.n16-218.n23" decls="#ocr"/>
+
+<p xml:id="g219.n1-219.n13" decls="#ocr"/>
+
+<p xml:id="g217.n10-218.n16" decls="#ocr"/>
+
+<p xml:id="g219.8-221.14" decls="#ocr"/> 
+
+<p xml:id="g221.14-222.1" decls="#ocr"/> 
+
+<p xml:id="g222.1-222.4" decls="#ocr"/> 
+
+<p xml:id="g222.5-222.12" decls="#ocr"/> 
+
+<p xml:id="g222.12-223.12" decls="#ocr"/> 
+
+<p xml:id="g223.12-224.19" decls="#ocr"/> 
+
+<p xml:id="g225.1-232.10" decls="#ocr"/> 
+
+<p xml:id="g232.11-232.21" decls="#ocr"/> 
+
+<p xml:id="g233.1-g234.3" decls="#ocr"/> 
+
+<p xml:id="g234.3-235.5" decls="#ocr"/> 
+
+<p xml:id="g234.n1-236.n10" decls="#ocr"/>
+
+<p xml:id="g236.1-237.5" decls="#ocr"/> 
+
+<p xml:id="g237.6-237.12" decls="#ocr"/> 
+
+<p xml:id="g237.13-242.17" decls="#ocr"/> 
+
+<p xml:id="g242.18-243.4" decls="#ocr"/> 
+
+<p xml:id="g243.5-244.5" decls="#ocr"/> 
+
+<p xml:id="g244.6-249.10" decls="#ocr"/> 
+
+<p xml:id="g249.11-250.13" decls="#ocr"/> 
+
+<p xml:id="g250.14-251.4" decls="#ocr"/> 
+
+<p xml:id="g251.5-252.2" decls="#ocr"/> 
+
+<p xml:id="g252.3-253.2" decls="#ocr"/> 
+
+<p xml:id="g253.3-254.5" decls="#ocr"/> 
+
+<p xml:id="g254.6-254.22" decls="#ocr"/> 
+
+<p xml:id="g254.23-255.9" decls="#ocr"/> 
+
+<p xml:id="g255.10-256.11" decls="#ocr"/> 
+
+<p xml:id="g256.12-258.13" decls="#ocr"/> 
+
+<p xml:id="g258.14-258.19" decls="#ocr"/> 
+
+<p xml:id="g259.1-259.20" decls="#ocr"/> 
+
+<p xml:id="g259.21-261.15" decls="#ocr"/>
+
+<p xml:id="g261.16-262.7" decls="#ocr"/> 
+
+<p xml:id="g262.8-262.16" decls="#ocr"/> 
+
+<p xml:id="g262.17-266.4" decls="#ocr"/> 
+
+<p xml:id="g266.5-267.12" decls="#ocr"/>
+
+<p xml:id="g267.13-268.6" decls="#ocr"/> 
+
+<p xml:id="g268.7-269.6" decls="#ocr"/> 
+
+<p xml:id="g269.7-270.4" decls="#ocr"/> 
+
+<p xml:id="g270.5-271.9" decls="#ocr"/> 
+
+<p xml:id="g271.10-272.4" decls="#ocr"/> 
+
+<p xml:id="g272.5-273.10" decls="#ocr"/> 
+
+<p xml:id="g273.11-274.4" decls="#ocr"/> 
+
+<p xml:id="g274.5-274.14" decls="#ocr"/> 
+
+<p xml:id="g274.15-275.3" decls="#ocr"/> 
+
+<p xml:id="g275.4-275.11" decls="#ocr"/>
+
+<p xml:id="g275.12-275.18" decls="#ocr"/>
+
+<p xml:id="g275.19-276.2" decls="#ocr"/> 
+
+<p xml:id="g276.3-277.7" decls="#ocr"/> 
+
+<p xml:id="g277.8-277.29" decls="#ocr"/> 
+
+<p xml:id="g277.30-278.16" decls="#ocr"/> 
+
+<p xml:id="g278.17-278.28" decls="#ocr"/> 
+
+<p xml:id="g278.29-279.2" decls="#ocr"/>
+
+<p xml:id="g279.3-279.15" decls="#ocr"/> 
+
+<p xml:id="g279.16-279.24" decls="#ocr"/>
+
+<p xml:id="g279.25-279.39" decls="#ocr"/> 
+
+<p xml:id="g279.40-280.21" decls="#ocr"/>
+
+<p xml:id="g280.22-281.7" decls="#ocr"/>
+
+<p xml:id="g281.8-281.18" decls="#ocr"/>
+
+<p xml:id="g281.19-281.39" decls="#ocr"/> 
+
+<p xml:id="g281.40-282.7" decls="#ocr"/> 
+
+<p xml:id="g282.8-282.25" decls="#ocr"/> 
+
+<p xml:id="g282.26-283.5" decls="#ocr"/>
+
+<p xml:id="g283.6-283.16" decls="#ocr"/>
+
+<p xml:id="g283.17-283.20" decls="#ocr"/> 
+
+<p xml:id="g283.21-284.4" decls="#ocr"/> 
+
+<p xml:id="g284.5-284.14" decls="#ocr"/>
+
+<p xml:id="g284.15-284.22" decls="#ocr"/> 
+
+<p xml:id="g284.23-285.15" decls="#ocr"/> 
+
+<p xml:id="g285.16-285.27" decls="#ocr"/> 
+
+<p xml:id="g286.1-286.28" decls="#ocr"/> 
+
+<p xml:id="g286.29-287.12" decls="#ocr"/> 
+
+<p xml:id="g287.13-288.3" decls="#ocr"/> 
+
+<p xml:id="g288.4-288.22" decls="#ocr"/> 
+
+<p xml:id="g288.23-288.36" decls="#ocr"/> 
+
+<p xml:id="g288.37-289.7" decls="#ocr"/> 
+
+<p xml:id="g289.8-289.18" decls="#ocr"/> 
+
+<p xml:id="g289.19-289.31" decls="#ocr"/> 
+
+<p xml:id="g290.1-290.32" decls="#ocr"/> 
+
+<p xml:id="g290.33-291.12" decls="#ocr"/> 
+
+<p xml:id="g291.13-291.22" decls="#ocr"/> 
+
+<p xml:id="g291.23-292.15" decls="#ocr"/> 
+
+<p xml:id="g292.16-293.4" decls="#ocr"/> 
+
+<p xml:id="g293.5-293.20" decls="#ocr"/> 
+
+<p xml:id="g293.21-293.38" decls="#ocr"/> 
+
+<p xml:id="g293.39-294.2" decls="#ocr"/> 
+
+<p xml:id="g294.3-294.14" decls="#ocr"/> 
+
+<p xml:id="g294.15-194.17" decls="#ocr"/> 
+
+<p xml:id="g294.18-295.5" decls="#ocr"/> 
+
+<p xml:id="g295.6-295.19" decls="#ocr"/> 
+
+<p xml:id="g295.20-295.26" decls="#ocr"/>
+
+<p xml:id="g295.27-295.34" decls="#ocr"/> 
+
+<p xml:id="g295.35-296.26" decls="#ocr"/>
+
+<p xml:id="g296.27-297.2" decls="#ocr"/> 
+
+<p xml:id="g297.3-297.18" decls="#ocr"/> 
+
+<p xml:id="g297.19-297.21" decls="#ocr"/> 
+
+<p xml:id="v-b298a" decls="#ocr"/> 
+
+<p xml:id="v-b298b" decls="#ocr"/> 
+
+<p xml:id="v-b298c" decls="#ocr"/> 
+
+<p xml:id="v-b298d" decls="#ocr"/> 
+
+<p xml:id="v-b300a" decls="#ocr"/> 
+
+<p xml:id="v-b300b" decls="#ocr"/> 
+
+<p xml:id="v-b300c" decls="#ocr"/> 
+
+<p xml:id="v-b302a" decls="#ocr"/> 
+
+<p xml:id="v-b302b" decls="#ocr"/> 
+
+<p xml:id="v-b302c" decls="#ocr"/> 
+
+<p xml:id="v-b302d" decls="#ocr"/> 
+
+<p xml:id="v-b304a" decls="#ocr"/> 
+
+<p xml:id="v-b304b" decls="#ocr"/> 
+
+<p xml:id="v-b304c" decls="#ocr"/> 
+
+<p xml:id="v-b304d" decls="#ocr"/> 
+
+<p xml:id="v-b306a" decls="#ocr"/> 
+
+<p xml:id="v-b306b" decls="#ocr"/> 
+
+
+    </body>
+  </text>
+</TEI>
