@@ -61,7 +61,12 @@
             <quotation marks="none">
                 <p>Quotation marks were never retained. The reason is that they would have made OCR proofreading 
                     longer because quotation marks were ubiquitous, almost always used to highlight additions 
-                    not present in all branches of the textual tradition.</p>
+                    not present in all branches of the textual tradition.
+                    When present, @type="biblia" means that it is a biblical quote, according 
+                        to the "Manuale di codifica dei testi ALIM in TEI XML" in 
+                        http://it.alim.unisi.it/documentazione/.
+                        @type="liturgia" means that the quote comes from the Catholic liturgy.
+                </p>
             </quotation>
         </editorialDecl>
         <tagsDecl>
@@ -2668,8 +2673,8 @@ presbyterum. <hi>post</hi> hunc <rs>euaristus</rs> natione <rs>&jj;udeus</rs> ex
 &gl;parati essent ad obsequium prebendum, et in missarum solemniis, et in predicatione. <hi>et</hi> 
 &gl;hic martyrio coronatus, et in <rs>&uu;aticano</rs> sepultus est. <rs>alexander</rs> natione <rs>romanus</rs> ex patre 
 &gl;<rs>alexandro</rs> post hunc suscepit <hi>ecclesiam</hi>, &jj;uuenis quidem etate, sed senior moribus, seditque 
-&gl;annos <num value="10">x</num> mensibus <num value="7">&uu;ii</num>. <hi>hic</hi> in canone memoriam passionis <rs>christi</rs> addidit, ubi dicit: <quote type="missa">qui 
-&gl;pridie quam pateretur</quote>, usque <quote type="missa">mei memoriam facistis</quote>. <hi>hic</hi> precepit, ut aqua uino misceretur 
+&gl;annos <num value="10">x</num> mensibus <num value="7">&uu;ii</num>. <hi>hic</hi> in canone memoriam passionis <rs>christi</rs> addidit, ubi dicit: <quote type="liturgia">qui 
+&gl;pridie quam pateretur</quote>, usque <quote type="liturgia">mei memoriam facistis</quote>. <hi>hic</hi> precepit, ut aqua uino misceretur 
 &gl;in sacrificio, propter <rs>christi</rs> unitatem et ecclesie, et oblatio ex azymo fieret, non ex fermento, 
 &gl;propter <rs>christi</rs> corporis ueritatem, et ut modica esset, dicens: <hi>hec</hi> oblatio quanto potior, tanto 
 &gl;pautior. <hi>precepit</hi> etiam omnibus <hi>dominicis</hi> diebus aquam cum sale exorcizari, et mixtam 
@@ -5269,8 +5274,8 @@ uiris qui ei remanserant per deuia siluarum prorumpens, ad <pb n="143r" facs="va
 &gl;<rs>constantinus</rs> <rs>romanorum</rs> regum quinqua<pb break="no" n="143v" facs="vat:165" ed="#a"/>gesimus sumpsit imperium. <hi>hic</hi> sub <rs>iustino</rs> adhuc 
 &gl;<rs>cesar</rs> cum rem publicam regeret, et multas egenis elemosynas erogaret, magnam ei domi&gd;nus 
 auri copiam subministrauit. <hi>nam</hi> deambulans per palatium uidit in pauimento domus 
-&gl;tabulam marmoream dominice crucis uexillo insignitam, et ait: <hi>crucem</hi> domini qua pectus 
-&gl;frontemque munire debumus indignis quid pedibus conculcamus? <hi>et</hi> simul cum uerbo iussit 
+&gl;tabulam marmoream dominice crucis uexillo insignitam, et ait: <said><hi>crucem</hi> domini qua pectus 
+&gl;frontemque munire debumus indignis quid pedibus conculcamus?</said> <hi>et</hi> simul cum uerbo iussit 
 &gl;eandem tabulam auferri a pauimento, qua amota, reperiunt et aliam simili signaculo ex&gd;pressam; 
 post hanc quoque reperiunt et tertiam, quibus ablatis, inuenit magnum thesaurum 
 &gl;habentem supra mille auri centenaria, sublatumque aurum pauperibus abundantius quam 
@@ -5342,8 +5347,8 @@ inter se habentes, sine ullius lucri conquisitione ad patriam remearunt. <hi>sed
 &gl;uxorem <rs>theodelindam</rs> filiam regis <rs>ba&jj;oariorum</rs>. <rs>authari</rs> uero per <rs>spoletum</rs> <rs>beneuentum</rs> 
 &gl;peruenit et easdem regiones accepit. <hi>dehinc</hi> usque <rs>regium</rs> ambulauit, cuncta sibi compo&gd;nens, 
 et quia apud <rs>regium</rs> intra undas maris columna quedam posita esse dicitur, usque 
-&gl;ad eam equo sedens accessit, et eandem haste sue cuspide tetigit dicens: huc usque erunt 
-&gl;fines <rs>langobardorum</rs>. <hi>anno</hi> <num value="19">x<choice><orig>&uu;iiii</orig><reg type="numeral">ix</reg></choice></num> <rs>guthranni</rs> atque <rs>chilperici</rs>, <rs>burdigalensis</rs> ciuitas terre 
+&gl;ad eam equo sedens accessit, et eandem haste sue cuspide tetigit dicens: <said>huc usque erunt 
+&gl;fines <rs>langobardorum</rs></said>. <hi>anno</hi> <num value="19">x<choice><orig>&uu;iiii</orig><reg type="numeral">ix</reg></choice></num> <rs>guthranni</rs> atque <rs>chilperici</rs>, <rs>burdigalensis</rs> ciuitas terre 
 &gl;motu concussa est et de <rs>pyrineis</rs> montibus immensi lapides sunt euulsi, quibus immensa 
 &gl;hominum pecorumque multitudo interiit, ipsaque ciuitas in proximo incendio concremata est. 
 &gl;<rs>aurelianensis</rs> urbs incendio simili uastata est. <hi>apud</hi> <rs>carnotinum</rs> pagum de effracto pane 
@@ -5392,7 +5397,7 @@ que uocatur introitus ad mulcendum audientium animos, deinde <rs>kirie</rs> elei
 &gl;decantari et post epistolam graduale et alleluia, excepto a septuagesima usque in pascha, 
 &gl;in quibus diebus tractus instituit decantandos; post euangelium uero dum oblationes offeruntur, 
 &gl;offertorium decantari, et post fractionem eucharistie, postquam communicatum fuerit, post 
-&gl;communionem. <hi>hic</hi> idem addidit in canone: diesque nostros in tua pace dispone, et ut alta 
+&gl;communionem. <hi>hic</hi> idem addidit in canone: <quote type="liturgia">diesque nostros in tua pace dispone</quote>, et ut alta 
 &gl;uoce oratio dominica super eucharistiam decantaretur. <hi>hic</hi> letaniam maiorem instituit, 
 &gl;<pb n="147v" facs="vat:169" ed="#a"/>instituitque stationes fieri ad sanctum <rs>petrum</rs> in natale <rs>domini</rs>, in epiphania, in dominica 
 &gl;de passione, in maiori scrutiniorum, in pascha, et in albis pasche, in ascensione, in pente&gd;costen, 
@@ -5401,8 +5406,8 @@ in natale apostolorum, in tertia dominica de aduentu, et in dedicatione ecclesie
 &gl;et in omni sabbato quatuor temporum; similiter instituit omnibus diebus quadragesime stationes 
 &gl;fieri per diuersas ecclesias, et in albis paschalibus; et ut a septuagesima usque in pascha 
 &gl;non caneretur alleluia; et ut in matutinali synaxi, in festiua octo tantum canerentur respon&gd;soria, 
-et quotidiana tantum duo, et ut a presbytero diceretur: <rs>deus</rs> in ad&jj;utorium meum 
-&gl;intende. <hi>hic</hi> doctor eximius anno <rs>mauricii</rs> imperii <num value="14">x<choice><orig>iiii</orig><reg type="numeral">i&uu;</reg></choice></num>, indictione <num value="13">xiii</num>, synodum episco&gd;porum 
+et quotidiana tantum duo, et ut a presbytero diceretur: <quote type="liturgia"><rs>deus</rs> in ad&jj;utorium meum 
+&gl;intende</quote>. <hi>hic</hi> doctor eximius anno <rs>mauricii</rs> imperii <num value="14">x<choice><orig>iiii</orig><reg type="numeral">i&uu;</reg></choice></num>, indictione <num value="13">xiii</num>, synodum episco&gd;porum 
 <num value="24">xx<choice><orig>iii&jj;</orig><reg type="numeral">i&uu;</reg></choice></num> ad corpus beati <rs>petri</rs> <num value="24">xx<choice><orig>iii&jj;</orig><reg type="numeral">i&uu;</reg></choice></num> apostoli congregans, de necessariis ecclesie 
 &gl;decernit. <hi>idem</hi> missis in <rs>britanniam</rs> <rs>augustino</rs>, <rs>melito</rs> et <rs>iohanne</rs>, et aliis pluribus 
 &gl;cum eis monachis timentibus <rs>deum</rs>, <hi>anglos</hi> ad <rs>christum</rs> conuertit. <hi>beatus</hi> autem <rs>gre&gd;gorius</rs> 
@@ -5448,9 +5453,9 @@ non desisteret, tali meruit a domino redargui iudicio. <hi>denique</hi> nocte qu
 &gl;somnis assistere se imagini <rs>saluatoris</rs>, et uox ex ipsa imagine audita est, dicens: date <rs>mau&gd;ricium</rs>, 
 qui cum presentatus ab ignotis ministris fuisset, uox iterum sonuit, interrogans illum: 
 &gl;quid magis eligeret, utrum in isto seculo que nequiter egerat recipere, an futuro examini 
-&gl;reseruari, cui <rs>mauricius</rs>: <hi>o</hi> <rs>iesu</rs> bone, iube me potius in isto seculo male com<pb break="no" n="149v" facs="vat:172" ed="#a"/>missa luere, et 
-&gl;uenturi iudicii diem non formidare, et <rs>electorum</rs> tuorum participem fac esse. <hi>tunc</hi> qui lo&gd;quebatur: 
-tradatur, ait, <rs>mauricius</rs> <rs>foce</rs> militi cum uxore et filiis, quod postea euenit. 
+&gl;reseruari, cui <rs>mauricius</rs>: <said><hi>o</hi> <rs>iesu</rs> bone, iube me potius in isto seculo male com<pb break="no" n="149v" facs="vat:172" ed="#a"/>missa luere, et 
+&gl;uenturi iudicii diem non formidare, et <rs>electorum</rs> tuorum participem fac esse</said>. <hi>tunc</hi> qui lo&gd;quebatur: 
+<said>tradatur</said>, ait, <said><rs>mauricius</rs> <rs>foce</rs> militi cum uxore et filiis</said>, quod postea euenit. 
 </p> 
 
 
@@ -5588,16 +5593,16 @@ est. <rs>langobardorum</rs> regnum <rs>rothari</rs> suscepit. <hi>fuit</hi> aute
 regni eius duo episcopi erant, unus catholicus et alter <rs>arrianus</rs>. <hi>hic</hi> autem <rs>rothari</rs> 
 &gl;rex <rs>langobardorum</rs> leges, que sola memoria et usu retinebantur, scriptorum serie composuit, 
 <pb n="126" ed="#g"/> 
-&gl;codicemque ipsum edicium appellari precepit. <hi>erat</hi> autem, ex quo <rs>langobardi</rs> in <rs>italiam</rs> 
+&gl;codicemque ipsum <title>edictum</title> appellari precepit. <hi>erat</hi> autem, ex quo <rs>langobardi</rs> in <rs>italiam</rs> 
 &gl;uenerant, annus <num value="77">lxx&uu;ii</num>. <rs>rothari</rs> uero <rs>romanorum</rs> ciuitates ab urbe <rs>tuscia</rs>, et uniuersas 
 &gl;que in litore maris site sunt usque ad <rs>francorum</rs> fines sibi parere coegit; qui postquam 
 &gl;annis sex mensibus <num value="3">iii</num> regnum tenuerat, <pb n="153r" facs="vat:175" ed="#a"/>uita decedens, <rs>langobardorum</rs> regnum <rs>radoaldo</rs> 
 &gl;filio suo reliquit. <hi>hic</hi> cum iuxta basilicam beati <rs>iohannis</rs> <rs>baptiste</rs> fuisset humatus, 
 &gl;quidam iniqua cupiditate succensus, eius sepulchrum noctu aperuit, et quidquid in orna&gd;mentis 
 eius corporis repperit, abstulit: cui beatus <rs>&jj;ohannes</rs> per uisionem apparens, cum 
-&gl;uehementer conterruit, eique dixit: cur ausus es corpus istius contingere? fuerit licet 
+&gl;uehementer conterruit, eique dixit: <said>cur ausus es corpus istius contingere? fuerit licet 
 &gl;non recte credens, tamen mihi se commendauit. <hi>quia</hi> igitur hoc facere presumpsisti nun&gd;quam 
-in meam basilicam deinceps ingressum habebis. <hi>quod</hi> ita factum est. <hi>quotiescumque</hi> 
+in meam basilicam deinceps ingressum habebis</said>. <hi>quod</hi> ita factum est. <hi>quotiescumque</hi> 
 &gl;enim uoluisset oraculum beati <rs>&jj;ohannis</rs> ingredi, statim a ualidissimo uelut pugillo guttura eius 
 &gl;feriretur, sic subito retro ruebat inpulsus. <hi>rodoaldus</hi> igitur post mortem patris <rs>langobar&gd;dorum</rs> 
 suscipiens regnum, <rs>gundibergam</rs> filiam <rs>theodelinde</rs> regine in matrimonio sibi so&gd;ciauit. 
@@ -5689,12 +5694,12 @@ ibidem uitam finiuit. <hi>facta</hi> est autem hec synodus anno nono <rs>constan
 honorifice suscepta, post aliquot dies baptismum ut desiderabat accepit <pb n="155r" facs="vat:177" ed="#a"/>et ab 
 &gl;augusta de sacro fonte leuata est. <hi>quod</hi> uir eius rex <rs>persarum</rs> audiens legatos <rs>con<pb break="no" n="128" ed="#g"/>&gd;stantinopolim</rs>
 ad imperatorem direxit, quatenus ei suam redderet uxorem. <hi>imperator</hi> 
-&gl;hoc audiens respondit eis dicens: rem, quam queritis, omnino ignoro; est tamen hic quedam 
-&gl;mulier christianissima, quam nescio uestram esse reginam. <hi>legati</hi> responderunt, dicentes: 
+&gl;hoc audiens respondit eis dicens: <said>rem, quam queritis, omnino ignoro; est tamen hic quedam 
+&gl;mulier christianissima, quam nescio uestram esse reginam</said>. <hi>legati</hi> responderunt, dicentes: 
 &gl;<hi>si</hi> placet, cupimus hanc uidere mulierem. <hi>que</hi> cum iussu imperatoris uenisset, mox legati 
 &gl;ut eam conspiciunt, ad eius uestigia prouoluuntur eique uenerabiliter, quia eam uir suus 
-&gl;requireret suggerunt quibus illa: <hi>ite</hi>, inquit, et renunciate <rs>domino</rs> uestro, quia sicut ego iam 
-&gl;credidi, ita et ipse nisi in <rs>deum</rs> crediderit, me iam ultra consortem thori habere non poterit. 
+&gl;requireret suggerunt quibus illa: <said><hi>ite</hi></said>, inquit, <said>et renunciate <rs>domino</rs> uestro, quia sicut ego iam 
+&gl;credidi, ita et ipse nisi in <rs>deum</rs> crediderit, me iam ultra consortem thori habere non poterit</said>. 
 &gl;<hi>quid</hi> multa? <hi>legati</hi> reuersi ad patriam, uniuersa que audierant regi suo nunciante. <hi>rex</hi> 
 &gl;itaque nihil moratus cum <num value="60">lx</num> milibus uiris, <hi>costantinopolim</hi> pacifice ad imperatorem uenit, 
 &gl;a quo gratanter et satis digne susceptus est. <hi>qui</hi> cum suis uniuersis in <rs>christum</rs> domi&gd;num 
@@ -5832,10 +5837,10 @@ brachii, accepto arcu columbam sagittare nisus, eius brachii uena dirupta est. <
 &gl;quam dudum ipse intra <rs>ticinensem</rs> ciuitatem construxit. <hi>hic</hi> post mortem <rs>ariperti</rs> regis 
 &gl;expleto iam uno anno et mensibus tribus, <rs>langobardorum</rs> regnum inuasit, regnauitque 
 &gl;annis nouem. <hi>igitur</hi> <rs>pertari</rs> filius <rs>ariperti</rs> regis, de quo supra diximus, qui prius in 
-&gl;<hi>scythia</hi> exulauerat, postea uero in <rs>gallia</rs> cum de <rs>gallia</rs> nauem ascenderet ut in insulam 
-&gl;<rs>britannie</rs> et ad regem <rs>saxonum</rs> transmearet, haud longe a litore uox au<pb break="no" n="159r" facs="vat:181" ed="#a"/>dita est. <hi>&uu;os</hi>, qui 
+&gl;<rs>scythia</rs> exulauerat, postea uero in <rs>gallia</rs> cum de <rs>gallia</rs> nauem ascenderet ut in insulam 
+&gl;<rs>britannie</rs> et ad regem <rs>saxonum</rs> transmearet, haud longe a litore uox au<pb break="no" n="159r" facs="vat:181" ed="#a"/>dita est. <said><hi>&uu;os</hi>, qui 
 &gl;in naui estis, dicite <rs>perthari</rs>, ut reuertatur in patriam suam, quia tertia dies est hodie qua 
-&gl;<rs>grimoaldus</rs> ab hac luce subtractus est. <hi>quo</hi> audito <rs>perthari</rs>, quamuis neminem uideret, sta&gd;tim 
+&gl;<rs>grimoaldus</rs> ab hac luce subtractus est</said>. <hi>quo</hi> audito <rs>perthari</rs>, quamuis neminem uideret, sta&gd;tim 
 tamen reuersus est et exinde ad patriam tendens, mense tertio post mortem <rs>grimoaldi</rs> 
 &gl;in regnum leuatus est. <hi>erat</hi> autem <rs>perthari</rs> rex uir pius, fide catholicus, iustitie tenax pau&gd;perumque 
 largissimus nutritor. <hi>qui</hi> statim <rs>beneuentum</rs> misit et <rs>rodelandam</rs> suam coniu&gd;gem 
@@ -5862,8 +5867,8 @@ audiebatur postulare suffragia. <hi>cum</hi> repente aperto celo, inter fulmina 
 &gl;fragore ruentia, uisi sunt descendisse uiri decore nitentes mirabili. <hi>requirere</hi> solitarius cepit 
 &gl;ab eis qui essent. <hi>qui</hi> dixerunt se esse illos quos <rs>dagobertus</rs> ad suum uocauerat solatium; 
 &gl;<rs>dionysium</rs> uidelicet ac <rs>mauricium</rs> martyres nec non et <rs>martinum</rs> confessorem. <hi>hi</hi> ereptam 
-&gl;demonibus animam, secum ad aethera leuauerunt canentes hunc <rs>psalmum</rs>: <hi>beatus</hi> quem ele&gd;gisti 
-et assumpsisti, <rs>domine</rs>, habitauit in atrinis tuis. <hi>hec</hi> uir ille uenerabilis <rs>iohannes</rs> <rs>an&gd;soardo</rs> 
+&gl;demonibus animam, secum ad aethera leuauerunt canentes hunc <rs>psalmum</rs>: <quote type="biblia"><hi>beatus</hi> quem ele&gd;gisti 
+et assumpsisti, <rs>domine</rs>, habitauit in <choice><sic>atrinis</sic><corr type="typo">atriis</corr></choice> tuis</quote>. <hi>hec</hi> uir ille uenerabilis <rs>iohannes</rs> <rs>an&gd;soardo</rs> 
 defensori <rs>pictauensis</rs> ecclesie, qui tunc euectu nauali partes peragrabat <rs>sicilie</rs> retuli 
 &gl;se uidisse. <hi>qui</hi> sine mora in <rs>gallias</rs> reuersus, hec sancto <rs>audoeno</rs> narrauit. 
 </p> 
