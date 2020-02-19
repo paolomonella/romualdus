@@ -43,8 +43,11 @@ class msTree:
         ''' Remove XML comments such as <!-- comment --> '''
         commentElements = self.tree.xpath('//comment()')
         for element in commentElements:
-            parent = element.getparent()
-            parent.remove(element)
+            if element.getparent() is not None:
+                parent = element.getparent()
+                parent.remove(element)
+            else:
+                print('The following comment is not in the root element so I can\'t delete it:\n\t', element, end='\n\n')
 
     def list_elements (self, onlybody=True, attributes=False):
         ''' Print a set of element names in the XML file '''
@@ -103,33 +106,13 @@ class msTree:
         for e in sorted_elcount:
             print(e)
             #print(sorted_elcount[0], sorted_elcount[1])
-        '''
-        for tag in elset:
-            A = {}
-            print('\n\n<' + tag + '>: ')
-            if onlybody:
-                E = mybody.findall('.//t:%s' % (tag), ns)
-            else:
-                E = self.tree.findall('.//t:%s' % (tag), ns)
-            for e in E:
-                for attr in e.attrib:
-                    val = e.get(attr)
-                    if attr not in A:
-                        A[attr] = [val]
-                    else:
-                        A[attr].append(val)
-            #print(A, end='')
-            for a in A:
-                if len(set(A[a])) > 5:
-                    print('\t' + a + '=', set(A[a][:3]), '(etc.)')
-                else:
-                    print('\t' + a + '=', set(A[a]))
-                    '''
+
 
     def list_entities (self):
         for entity in self.tree.docinfo.internalDTD.iterentities():
             msg_fmt = "{entity.name!r}, {entity.content!r}, {entity.orig!r}"
             print(msg_fmt.format(entity=entity))
+
 
     def choose (self, parenttag, keeptag, keeptype, removetag):
         ''' Keep all elements with tag name 'keeptag' and remove those with name 'removetag' in structures such as
@@ -151,6 +134,50 @@ class msTree:
                 if r.tail is not None:
                     print('Warning: element', r.tag, 'has tail text «' + r.tail + '» that is also being removed')
                 r.getparent().remove(r)
+
+    def handleAddDel (self):
+        ''' Management of <add> and <del>: 
+                - if <add> and <del> have no @hand,
+                    this means that the addition/deletion has been made by the main hand of the MS, so I'll respect it:
+                    - delete <del>
+                    - keep the content of <add>
+                - else (if @hand is provided), this means that the addition/deletion has been made by a later hand, so ignore them:
+                    - keep the content of <del> (the later scribe's deletion is ignored)
+                    - delete <add> (don't keep the later addition)
+            '''
+        for e in self.tree.findall('.//t:%s' % ('add'), myconst.ns): 
+            if e.get('hand') is not None:   # If @hand is provided, then the addition is my a later hand: ignore it (remove <add>)
+                e.getparent().remove(e)
+        for e in self.tree.findall('.//t:%s' % ('del'), myconst.ns): 
+            if e.get('hand') is None:       # If no @hand is provided, then the addition is by the MS's main hand: delete <del>
+                e.getparent().remove(e)
+
+    def handleAbbrExpan (self):
+        ''' Management of <choice>/<abbr> and <expan>: always keep <expan> for collation '''
+        for e in self.tree.findall('.//t:%s' % ('abbr'), myconst.ns): 
+            myabbr = e
+            myparent = e.getparent()
+            if myparent.tag == myconst.tei_ns + 'choice':
+                myexpan = myparent.find('.//t:expan', ns)
+                if myexpan is not None:
+                    myparent.remove(myabbr)
+                else:
+                    print('There\'s something wrong: this <abbr> doesn\'t have an associated <expan>')
+            else:
+                print('There\'s something wrong: this <abbr> doesn\'t have <choice> for parent')
+
+
+    def ecaudatum (self, monophthongize=True):
+        ''' If monophthongize is True, transform <seg ana="#ae">ae</seg> to <seg ana="#ae">e</seg>.
+            If it is False, it remains <seg ana="#ae">ae</seg>
+            '''
+        if monophthongize:
+            for e in self.tree.findall('.//t:%s' % ('seg[@ana="#ae"]'), myconst.ns):
+                e.text = 'e'
+            for e in self.tree.findall('.//t:%s' % ('seg[@ana="#doubleae"]'), myconst.ns):
+                e.text = 'ee'
+                
+
 
     def recapitalize (self):
         ''' Re-capitalize words included in <rs> or in <hi>.
@@ -182,18 +209,6 @@ class msTree:
             for c in e.findall('.//t:*', myconst.ns):
                 if c.text is not None: c.text = c.text.upper()
                 if c.tail is not None: c.tail = c.tail.upper() 
-
-        '''
-        # Old version of the code:
-        for e in self.tree.findall('.//t:p[@type="ghead1"]', myconst.ns):
-            for c in e.findall('.//t:*', myconst.ns):
-                if c.text is not None: c.text = c.text.upper()
-                if c.tail is not None: c.tail = c.tail.upper() 
-        for e in self.tree.findall('.//t:p[@type="ghead2"]', myconst.ns): #In fact, this should be small-caps, but well...
-            for c in e.findall('.//t:*', myconst.ns):
-                if c.text is not None: c.text = c.text.upper()
-                if c.tail is not None: c.tail = c.tail.upper() 
-                '''
 
 
 
@@ -236,7 +251,45 @@ class msTree:
     def write (self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
+
+
+
+EDL = ['a', 'o']
+for edition in EDL:
+    mytree = msTree(edition)
+    mytree.handleAddDel() # only needed for MS A
+    mytree.handleAbbrExpan()
+    mytree.choose('choice', 'corr', 'typo', 'sic')
+    mytree.choose('choice', 'reg', 'numeral', 'orig')
+    mytree.choose('choice', 'reg', 'j', 'orig')
+    mytree.choose('choice', 'reg', 'v', 'orig')
+    mytree.ecaudatum (monophthongize=True)  # only needed for MS A; with False, it stays 'ae'; with True, it becomes 'e'
+    #mytree.remove_comments()
+    mytree.recapitalize() 
+    mytree.simplify_to_scanlike_text(
+            ['rs', 'hi', 'note', 'choice', 'orig', 'reg', 'num', 'subst', 'add', 'del', 'expan',
+                'seg', 'lb', 'pb', 'quote', 'title', 'said'], \
+            removepar=False)
+    mytree.write()
+    # Temporarily needed for CollateX (remove @xmlns)
+    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'r') as infile:
+        data = infile.read()
+    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'w') as outfile:
+        data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
+        outfile.write(data)
+
+
+
+
+
+
 '''
+for edition in ['a', 'o', 'g', 'bonetti']:
+    print('Working on witness: %s' % (edition))
+    mytree = msTree(edition)
+    mytree.list_and_count_elements()
+
+
 atree = msTree('a')
 atree.reg_orig('numeral', form='reg') 
 atree.write()
@@ -267,29 +320,4 @@ for edition in ['a', 'g', 'bonetti']:
     mytree.recapitalize() 
     mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
     mytree.write()
-
-
-EDL = ['g', 'a']
-for edition in EDL:
-    mytree = msTree(edition)
-    mytree.choose('choice', 'corr', 'typo', 'sic')
-    mytree.choose('choice', 'reg', 'numeral', 'orig')
-    mytree.choose('choice', 'reg', 'j', 'orig')
-    mytree.choose('choice', 'reg', 'v', 'orig')
-    mytree.choose('subst', 'add', 'correction', 'del')
-    mytree.recapitalize() 
-    mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'reg', 'num', 'add', 'seg', 'lb', 'pb'], \
-            removepar=False)
-    mytree.write()
-    # Temporarily needed for CollateX (remove @xmlns)
-    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'r') as infile:
-        data = infile.read()
-    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'w') as outfile:
-        data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
-        outfile.write(data)
-
-    '''
-
-for edition in ['a', 'g', 'bonetti']:
-    mytree = msTree(edition)
-    mytree.list_and_count_elements()
+'''
