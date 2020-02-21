@@ -17,11 +17,11 @@ from lxml import etree
 
 import myconst
 from myconst import ns, tei_ns, xml_ns, html_ns 
+from replace import myReplaceAll
+from replace import genericBaseReplaceAll
 '''
 from other import metatext 
 from other import baretextize 
-from replace import myReplaceAll
-from replace import genericBaseReplaceAll
 '''
 
 
@@ -140,7 +140,7 @@ class msTree:
                     print('Warning: element', r.tag, 'has tail text «' + r.tail + '» that is also being removed')
                 r.getparent().remove(r)
 
-    def handleAddDel (self):
+    def handle_add_del (self):
         ''' Management of <add> and <del>: 
                 - if <add> and <del> have no @hand,
                     this means that the addition/deletion has been made by the main hand of the MS, so I'll respect it:
@@ -157,7 +157,7 @@ class msTree:
             if e.get('hand') is None:       # If no @hand is provided, then the addition is by the MS's main hand: delete <del>
                 e.getparent().remove(e)
 
-    def handleGaps (self):
+    def handle_gaps (self):
         ''' Replace <gap> with text in brackets '''
         for e in self.tree.findall('.//t:%s' % ('gap'), myconst.ns): 
             gapReason = e.get('reason')
@@ -241,8 +241,77 @@ class msTree:
         etree.strip_tags(self.tree, tagname)
 
     def my_strip_elements (self, tagname, my_with_tail=False):
-        '''Remove start and end tag; remove text; keep tail if my_with_tail=False (default)'''
+        '''Remove start and end tag; remove textual content; keep tail if my_with_tail=False (default)'''
         etree.strip_elements(self.tree, myconst.tei_ns + tagname, with_tail=my_with_tail)
+
+    def v_in_numerals (self):
+        '''Replace 'u' with 'v' in the textual content of <num> elements'''
+        for num in self.tree.findall('.//t:num', ns):
+            if num.text:
+                num.text = num.text.replace('u', 'v')   # Direct textual content of <num>
+            for x in num.findall('.//t:*', ns):     # Children elements of <num>
+                if x.text:
+                    x.text = x.text.replace('u', 'v')
+                if x.tail:
+                    x.tail = x.tail.replace('u', 'v')
+
+
+    def reduce_layers_to_alph_only (self):
+        ''' This big function inputs a TEI XML paragraph encoded at two layers (GL and AL)
+            and returns the same XML paragraph, but with one layer only (AL).
+            Argument 'self' is a LMXL XML Element object <p>
+        '''
+
+        # Read ToS
+        if self.siglum == 'a1':
+            mySiglum = 'a'
+        else:
+            mySiglum = self.siglum
+        toscsvfile = '%s/%s-tos.csv' % (myconst.csvpath, mySiglum)
+        with open(toscsvfile) as atosfile:
+            tos = list(list(rec) for rec in csv.reader(atosfile, delimiter='\t')) #reads csv into a list of lists
+            # Columns: 0=Grapheme  1=Alphabeme(s)    2=Grapheme visualization  3=Type    4=Notes    5=Image(s)
+        
+        # Read Abbreviation Combinations file
+        combicsvfile = '%s/%s-combi.csv' % (myconst.csvpath, mySiglum)
+        with open(combicsvfile) as combifile:
+            combi = list(list(rec) for rec in csv.reader(combifile, delimiter='\t')) #reads csv into a list of lists
+            # Columns: 0=Grapheme  1=Alphabeme(s)    2=Notes
+        
+        for par in self.tree.findall('.//t:p[@decls="#algl"]', ns):
+
+            #print(par.tag, par.get('decls'), par.get(myconst.xml_ns + 'id') ) # debug
+            for x in par.findall('.//t:*', ns):
+                # Remove line breaks that seem to interfere with string substitutions (in particular, 'tail' stopped at line break)
+                if x.text:
+                    x.text = x.text.replace('\n', ' ')
+                if x.tail:
+                    x.tail = x.tail.replace('\n', ' ')
+            
+            # Remove  <abbr> tags entirely (including their textual content, but not their tail)
+            etree.strip_elements(par, myconst.tei_ns + 'abbr', with_tail=False)
+
+            # First, expand common abbreviation combinations applying only to independent/whole words
+            for row in combi:
+                if re.match('<.*>', row[0]):
+                    wwgraph = row[0][1:-1]  # This changes "<qd->" to "qd-"
+                    myReplaceAll(wwgraph, row[1], par, wholeWord=True) # I replaced alltext with par
+            
+            # ... then expand specific combinations such as 'q3' (this allows me to create abbr. strings such as 'gnaw'='genera':
+            #       the 'aw' part also matches [aeiouy]w and could be expanded as 'am', but this does not happen b/c the specific
+            #       abbreviation combination 'gnaw' is expanded before the more generic combination '[aeiouy]w'
+            for row in combi:
+                if not re.match('<.*>', row[0]) and not re.match('\[.*', row[0]):
+                    myReplaceAll(row[0], row[1], par)   # I replaced alltext with par
+
+            # ...  then expand more generic common abbreviation combinations such as '[aeiouy]0'
+                if re.match('\[.*', row[0]):
+                    genericBaseReplaceAll(row, par) # I replaced alltext with par
+            
+            # ... eventually, translate every grapheme into their standard alphabetic meaning
+            for row in tos:
+                if row[3] in ['Alphabetic', 'Brevigraph']:
+                    myReplaceAll(row[0], row[1], par)   # I replaced alltext with par
 
     def write (self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
@@ -251,15 +320,16 @@ class msTree:
 
 
 
-EDL = ['a', 'o', 'g', 'bonetti']
+EDL = ['a1', 'a2', 'o', 'g', 'bonetti']
 for edition in EDL:
     mytree = msTree(edition)
-    mytree.my_strip_elements('interp') 
-    mytree.my_strip_elements('abbr') 
-    mytree.my_strip_elements('surplus') 
-    mytree.my_strip_elements('note') 
-    mytree.handleGaps()
-    mytree.handleAddDel() # only needed for MS A
+    if edition == 'a1':
+        mytree.reduce_layers_to_alph_only()
+    for tag_to_strip in ['interp', 'abbr', 'surplus', 'note']:
+        mytree.my_strip_elements(tag_to_strip) 
+    mytree.v_in_numerals()
+    mytree.handle_gaps()
+    mytree.handle_add_del() # only needed for MS A
     mytree.choose('choice', 'sic', '', 'corr')  # check if this works §
     mytree.choose('choice', 'reg', 'numeral', 'orig')
     mytree.choose('choice', 'reg', 'j', 'orig')
@@ -280,8 +350,7 @@ for edition in EDL:
         outfile.write(data)
 
 
-for edition in ['a_juxta', 'o_juxta', 'g_juxta', 'bonetti_juxta']:
-#for edition in ['a_juxta']:
+for edition in ['a1_juxta', 'a2_juxta', 'o_juxta', 'g_juxta', 'bonetti_juxta']:
     mytree = msTree(edition)
     mytree.list_and_count_elements()
 
