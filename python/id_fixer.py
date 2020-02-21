@@ -6,6 +6,28 @@ from lxml import etree
 import time
 import os
 
+def compare_ids (wit1, wit2):
+    ''' This function takes xml:id's from XML file "wit1" and
+        compares them those of file "wit2"
+        '''
+    D = {}
+    for wit in [wit1, wit2]:
+        tree = etree.parse('../xml/%s.xml' % wit)
+        body = tree.find('.//t:body', myconst.ns)
+        pp = body.findall('.//t:p', myconst.ns)
+        D[wit] = [p.get(myconst.xml_ns + 'id') for p in pp]
+    for xmlid1 in D[wit1]:
+        index = D[wit1].index(xmlid1)
+        try:
+            xmlid2 = D[wit2][index]
+            if xmlid1 != xmlid2:
+                print('%s: %15s %10s: %15s' % (wit1, xmlid1, wit2, xmlid2) )
+                break
+        except IndexError:
+            print('List index %d out of range. Witness "%s.xml" has xml:id %s' % (index, wit1, xmlid1)  )
+            break
+    
+
 def spread_ids (get_p_ids_from, append_p_ids_to):
     ''' This function takes xml:id's from XML file "get_p_ids_from"
         checks which <p>'s are present in XML file "get_p_ids_from" but
@@ -40,5 +62,7 @@ def spread_ids (get_p_ids_from, append_p_ids_to):
         output_tree.write('../xml/%s.xml' % (ms), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
 
-spread_ids ('a', 'b')
-spread_ids ('a', 'c')
+#spread_ids ('a', 'b')
+#spread_ids ('a', 'c')
+#compare_ids ('a-tagliato', 'g')    # tutto OK
+compare_ids ('a-bonetti', 'bonetti')
