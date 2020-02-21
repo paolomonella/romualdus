@@ -9,7 +9,7 @@
 <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Romualdi Salernitani Chronicon, Bonetti edition</title>
+        <title>Romualdi Salernitani Chronicon, MS Ottobonianus, 1st fragment</title>
         <editor xml:id="pm">Paolo Monella</editor>
       </titleStmt>
       <publicationStmt>
@@ -58,15 +58,15 @@
         </editorialDecl>
         <editorialDecl>
             <quotation marks="all">
-                <p>Quotation marks were almost always represented in the source print edition
+                <p>Quotation marks were almost always represented in the source print edition 
                     by “double quotation marks”, open and closed. In fewer cases, by «Swiss quotation marks».
                     In all those cases, marks were retained and the quotation was marked up with 'said'
                     (direct speech) or 'quote' (quotations from literary works).</p>
-                <p>In some cases, no quotation marks were present in the print edition around direct speeches
-                    or quotations, but I still marked them with 'said' or 'quote', adding
+                <p>In some cases, no quotation marks were present in the print edition around direct speeches 
+                    or quotations, but I still marked them with 'said' or 'quote', adding 
                     @rend="none".</p>
-                <p>In other cases, in the print edition “double quotation marks” were used to highlight additions
-                    not present in all branches of the textual tradition. In these cases, quotation marks
+                <p>In other cases, in the print edition “double quotation marks” were used to highlight additions 
+                    not present in all branches of the textual tradition. In these cases, quotation marks 
                     have been retained and no specific markup was added in the digital edition.</p>
                 <p>“Double quotation marks” were also retained, if present in the print edition,
                     in connection with 'soCalled''title'.</p>
@@ -75,7 +75,7 @@
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
                 <tagUsage gi="hi">
-                    Used to mark words capitalized in the print edition, but not constituting
+                    Used to mark words capitalized in the print edition, but not constituting 
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
                 <tagUsage gi="note">
@@ -86,10 +86,10 @@
                     With @type="textcrit": note on textual critical matters.
                     With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
                 </tagUsage>
-                <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source
+                <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source 
                     print edition, are marked up with 'quote' in this digital edition.
-                    Quotation marks, if present, have been retained, and @type="biblia" means that it
-                    is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in
+                    Quotation marks, if present, have been retained, and @type="biblia" means that it 
+                    is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in 
                     http://it.alim.unisi.it/documentazione/
                 </tagUsage>
                 <tagUsage gi="soCalled">
@@ -188,7 +188,7 @@ Stilum Calobrie oppidum cum Sarracenis pugnauit eosque diuicit,
 regnum quoque cepit. Regnauit autem annis II. Eo itaque defuncto 
 succesit illi tercius Otto. Quo tempore Iohannes factus 
 est princeps Salerni. Interea papa Benedictus postquam annum 
-sedit, diem obiit, et successit ei Bonus qui sedit annum I et
+sedit, diem obiit, et successit ei Bonus qui sedit annum I et 
 menses VI. Quo uita decedente Bonifacius sedit mensem I. 
 Cui expulso Benedictus succesit in pontificatus honore qui sedit 
 annum IX. 

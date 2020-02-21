@@ -96,10 +96,10 @@
         <namespace name="http://www.tei-c.org/ns/1.0">
           <tagUsage gi="add">
               <list>
-                  <item>When it has @type="subst" (and it is child of 'subst' and sibling of 'del') it is meant to
-                            substitute the textual portion marked with 'del'. Otherwise, it represents
+                  <item>When it has @type="subst" (and it is child of 'subst' and sibling of 'del') it is meant to 
+                            substitute the textual portion marked with 'del'. Otherwise, it represents 
                             an addition to the text.</item>
-                  <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript
+                  <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
                             is responsible for the textual modification.
                             If another hand is responsible, a @hand attribute is provided.</item>
                   <item>Possible values for @hand: "hand2", "#uhand" (unknown hand).</item>
@@ -110,11 +110,11 @@
           <tagUsage gi="anchor">
                             See above the note on the usage of 'link'.
                             Like 'link', also 'anchor' has @type="transposition".
-                            Element 'anchor' has the same values of @subtype as the
+                            Element 'anchor' has the same values of @subtype as the 
                             'link' that points to it:
-                            it marks the point of the text at which a paragraph is collocated
+                            it marks the point of the text at which a paragraph is collocated 
                             <list>
-                                <item>by both the editions of Garufi and Bonetti
+                                <item>by both the editions of Garufi and Bonetti 
                                     (if @subtype="garufiandbonetticollocation"),</item>
                                 <item>by Garufi only (if @subtype="garuficollocation"), or</item>
                                 <item>by Bonetti only (if @subtype="bonetticollocation")</item>
@@ -122,34 +122,34 @@
                     </tagUsage>
           <tagUsage gi="del">
               <list>
-                        <item>It is used either alone for a passage deleted and
-                            not substituted by the scribe,or in combination
+                        <item>It is used either alone for a passage deleted and 
+                            not substituted by the scribe,or in combination 
                             with 'subst' and 'add'.</item>
                         <item>Possible values for @rend: "rasura", "strikeout";
                             when used with 'subst' and 'add',
-                            also "metamark" (when a scribe wrote a metamark such as an asterisk
+                            also "metamark" (when a scribe wrote a metamark such as an asterisk 
                             above the original text as a pointer towards a correction added in margin),
-                            "nomark" (when the correction is simply rewritten on the original glyphs
+                            "nomark" (when the correction is simply rewritten on the original glyphs 
                             or the correction is made by deleting a part of a glyph), and "glyphmodification"
                             (when a scribe transforms a glyph to another glyph by erasing a part of it).</item>
-                        <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript
+                        <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
                             is responsible for the textual modification.
                             If another hand is responsible, a @hand attribute is provided.</item>
                     </list>
           </tagUsage>
           <tagUsage gi="hi">
-              Used to mark up words capitalized in the print edition, but not constituting
+              Used to mark up words capitalized in the print edition, but not constituting 
               proper noun, such as "Sed" at the beginning of a sentence.
           </tagUsage>
           <tagUsage gi="link">
-                            With @type="transposition", it links a paragraph (first teidata.pointer
-                            in the value) of the manuscript text to an 'ancho'r
+                            With @type="transposition", it links a paragraph (first teidata.pointer 
+                            in the value) of the manuscript text to an 'ancho'r 
                             (second teidata.pointer in the value)
                             marking the point of the text in which that paragraph is collocated 
                             <list>
-                                <item>by both the editions of Garufi and Bonetti
+                                <item>by both the editions of Garufi and Bonetti 
                                     (if @subtype="garufiandbonetticollocation"),</item>
-                                <item>by Garufi only
+                                <item>by Garufi only 
                                     (if @subtype="garuficollocation"), or</item>
                                 <item>by Bonetti only (if @subtype="bonetticollocation")</item>
                             </list>
@@ -157,15 +157,15 @@
           <tagUsage gi="milestone">
                             <list>
                                 <item>With @type="bonetti_is_collation_exemplar_from_here_on"
-                                    it marks the point of the text rom which I used the file with
+                                    it marks the point of the text rom which I used the file with 
                                     the OCR of the Bonetti edition as a collation base.
-                                    Before that point, I had used the OCR
+                                    Before that point, I had used the OCR 
                                     of the Garufi edition as base.</item>
                                 <item>With @type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" and @ed="#b"
                                     it is put at a point of the text 
                                     in which Garufi has a paragraph break but Bonetti does not.</item>
-                                <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put
-                                    at a point of the text in which Bonetti has a paragraph break but
+                                <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put 
+                                    at a point of the text in which Bonetti has a paragraph break but 
                                     Garufi does not.</item>
                             </list>
                     </tagUsage>
@@ -173,20 +173,20 @@
                             With @resp="#pm" (Paolo Monella) or @resp="#b" (Bonetti edition):
                             <list>
                                 <item>With @type="graphic": note on glyphs or graphemes.</item>
-                                <item>With @type="segmentation": note on the text segmentation
+                                <item>With @type="segmentation": note on the text segmentation 
                                     (arrangement of paragraphs or missing paragraphs).</item>
                                 <item>With @type="textcrit": note on textual critical matters.</item>
                             </list>
                             With @resp="#b" (Bonetti edition):
                             <list>
                                 <item>With @type="content": note on the text content.</item>
-                                <item>With @type="year": note on the year in which a fact actually
+                                <item>With @type="year": note on the year in which a fact actually 
                                     happened, according to C. Bonetti.</item>
                             </list>
                             With @resp="#hand2" (the hand from the XVII century):
                             <list>
                                 <item>With @type="etcetera": a note handwritten by hand2 on the manuscript 
-                                    reporting the first words of the portion of the text that is supposed
+                                    reporting the first words of the portion of the text that is supposed 
                                     to follow a marginal or footer addition by hand2.
                                     The note normally ends with "et cetera…"</item>
                                 <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript 
@@ -216,14 +216,14 @@
     <profileDesc>
       <handNotes>
         <handNote xml:id="hand2">
-                <p>A part of the text was missing from manuscript A, so two additional folios were added
+                <p>A part of the text was missing from manuscript A, so two additional folios were added 
                     at a much later time, probably in the XVII century, and then numbered as 204 and 205.</p>
                 <p>A marginal note at the top right corner of folio 204r says: "hae duo paginae, quae hic deerant,
                     desumptae sunt de codices Petri de Urbe".</p>
                 <p>So pages 204r, 204v, 205r, 205v do not constitute a witness of the text of codex A. 
                     Still, I am transcribing their text here for completeness.</p>
                 <p>This hand is also responsible for corrections and additions passim in the manuscript.</p>
-                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic (not
+                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic (not 
                     graphematic )transcription, I am encoding it with its alphabetic correspondent 'ae'
                     and marking those 'ae' alphabemes with seg ana="#ae".</p>
         </handNote>
@@ -238,7 +238,7 @@
 
       <interp xml:id="ab" resp="#pm">
           <desc>
-            <hi>the</hi> word (often person names <rs>iesus</rs>/<rs>ihesus</rs>, <rs>william</rs> or
+            <hi>the</hi> word (often person names <rs>iesus</rs>/<rs>ihesus</rs>, <rs>william</rs> or 
             <rs>romualdus</rs>) is abbreviated, so we cannot desume its exact spelling from this passage.
             A frequent case is that of names <rs>william</rs> and <rs>romualdus</rs>,
             that are often abbreviated to their first letter; <hi>in</hi> some instances of those two names,
@@ -246,23 +246,23 @@
             is added by the scribe to mark the case (nominative, genitive etc.).
             Another frequent case is that of 'presbyter/presbiter', abbreviated in such a way,
             that one cannot determine if the manuscript's spelling is with 'i' or with 'y'.
-            <hi>i</hi> am retaining the word spelling of the <rs>garufi</rs> or <rs>bonetti</rs> edition to facilitate
+            <hi>i</hi> am retaining the word spelling of the <rs>garufi</rs> or <rs>bonetti</rs> edition to facilitate 
             collation. <hi>the</hi> @ana="#ab" attribute is attached to an 'rs' elements (mostly) or to a 'w' element.
           </desc>
         </interp>
 
       <interp xml:id="ae" resp="#pm">
         <desc>
-            <hi>attribute</hi> @ana="#ae" is attached to element 'seg' to mark the sequence of alphabemes
+            <hi>attribute</hi> @ana="#ae" is attached to element 'seg' to mark the sequence of alphabemes 
             'ae' when it is represented by grapheme 'e caudatum' in the manuscript. E.g.:
-            h[seg ana="#ae"]ae[/seg]c
+            h[seg ana="#ae"]ae[/seg]c 
           </desc>
         </interp>
 
       <interp xml:id="doubleae" resp="#pm">
         <desc>
-            <hi>however</hi>, it seems that when a word finishes in 'ee', but the last 'e' comes from
-            diphthong 'ae' (e.g.: neocesaree), the scribe writes two 'e caudata', not one, at the end
+            <hi>however</hi>, it seems that when a word finishes in 'ee', but the last 'e' comes from 
+            diphthong 'ae' (e.g.: neocesaree), the scribe writes two 'e caudata', not one, at the end 
             of that word. In those cases, I encode is as follows: 
             neocesar[seg ana="#doubleae"]eae[/seg]
           </desc>

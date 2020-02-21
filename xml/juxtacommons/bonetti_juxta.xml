@@ -50,15 +50,15 @@
         </editorialDecl>
         <editorialDecl>
             <quotation marks="all">
-                <p>Quotation marks were almost always represented in the source print edition
+                <p>Quotation marks were almost always represented in the source print edition 
                     by “double quotation marks”, open and closed. In fewer cases, by «Swiss quotation marks».
                     In all those cases, marks were retained and the quotation was marked up with 'said'
                     (direct speech) or 'quote' (quotations from literary works).</p>
-                <p>In some cases, no quotation marks were present in the print edition around direct speeches
-                    or quotations, but I still marked them with 'said' or 'quote', adding
+                <p>In some cases, no quotation marks were present in the print edition around direct speeches 
+                    or quotations, but I still marked them with 'said' or 'quote', adding 
                     @rend="none".</p>
-                <p>In other cases, in the print edition “double quotation marks” were used to highlight additions
-                    not present in all branches of the textual tradition. In these cases, quotation marks
+                <p>In other cases, in the print edition “double quotation marks” were used to highlight additions 
+                    not present in all branches of the textual tradition. In these cases, quotation marks 
                     have been retained and no specific markup was added in the digital edition.</p>
                 <p>“Double quotation marks” were also retained, if present in the print edition,
                     in connection with 'soCalled''title'.</p>
@@ -67,7 +67,7 @@
         <tagsDecl>
             <namespace name="http://www.tei-c.org/ns/1.0">
                 <tagUsage gi="hi">
-                    Used to mark words capitalized in the print edition, but not constituting
+                    Used to mark words capitalized in the print edition, but not constituting 
                     a proper noun, such as "Sed" at the beginning of a sentence.
                 </tagUsage>
                 <tagUsage gi="note">
@@ -78,10 +78,10 @@
                     With @type="textcrit": note on textual critical matters.
                     With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
                 </tagUsage>
-                <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source
+                <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source 
                     print edition, are marked up with 'quote' in this digital edition.
-                    Quotation marks, if present, have been retained, and @type="biblia" means that it
-                    is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in
+                    Quotation marks, if present, have been retained, and @type="biblia" means that it 
+                    is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in 
                     http://it.alim.unisi.it/documentazione/
                 </tagUsage>
                 <tagUsage gi="soCalled">
@@ -2029,17 +2029,17 @@ regiam posuerunt et ab omnibus uocari regem iusserunt.
 <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/>
 
  
-Hoc tempore Boamundus filius principis Boamundi in bello
-iuxta Damascum occubuit cuius corpus sine capite inuentum
-est, et sepultum in monasterio sancte Marie quod est
-iuxta sepulcrum nostri redemptoris, in dextera parte eiusdem
+Hoc tempore Boamundus filius principis Boamundi in bello 
+iuxta Damascum occubuit cuius corpus sine capite inuentum 
+est, et sepultum in monasterio sancte Marie quod est 
+iuxta sepulcrum nostri redemptoris, in dextera parte eiusdem 
 sepulcri, mense Februarii.
 </p>
 
 
 <p xml:id="g219.n1-219.n13" decls="#ocr">
-Anno Domini MCXXXII, indictione VIII, mense Septembris, dum
-Rogerius dux Brundusium ac turrem in eo constructam sue
+Anno Domini MCXXXII, indictione VIII, mense Septembris, dum 
+Rogerius dux Brundusium ac turrem in eo constructam sue 
 subdidit potestati ipseque reuersus Sicilie fuisset, comes Tancredus
 ad obsidendam turrem perrexit, ubi tota ingenii arte 
 decertauit ut caperet eam, set ut uidit inexpugnabilem eius 
@@ -2962,29 +2962,29 @@ regis humiliter cucurrerunt eius gratiam et misericordiam postulantes.
 Qua impetrata, simul cum rege ad fenestram turris Pisane uenerunt.
 Tunc rex uniuerso populo de sua liberatione gratias egit,
 mandans eis ut singuli reuerterentur ad propria et in pace quiescerent.
-Archiepiscopi uero et episcopi cum aliis fidelibus palatium
-ascenderunt, et regem de infortunio, quod acciderat, pro
-posse sunt consolati. Huic autem dolori regio dolor alius non
-mediocris superuenit; dum enim pro liberando rege insultus in
-palatio fieret, Rogerius dux Apulie, filius eius, sagitta iusta oculum
-est percussus, qui non post multos dies huius uulneris occasione
+Archiepiscopi uero et episcopi cum aliis fidelibus palatium 
+ascenderunt, et regem de infortunio, quod acciderat, pro 
+posse sunt consolati. Huic autem dolori regio dolor alius non 
+mediocris superuenit; dum enim pro liberando rege insultus in 
+palatio fieret, Rogerius dux Apulie, filius eius, sagitta iusta oculum 
+est percussus, qui non post multos dies huius uulneris occasione 
 interiit.
 <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/>
-Matheus uero Bonella, audiens regis liberationem, plurimum
-doluit, sed dissimilauit, et per nuncios suos regi mandauit, sed de
-eius captione plurimum doluisse et quod pro eo liberando cum
-sua militia ueniebat. Rex autem malitiam eius agnoscens et conscientiam
-suam, conditione temporis exigente, abscondens, legatis
+Matheus uero Bonella, audiens regis liberationem, plurimum 
+doluit, sed dissimilauit, et per nuncios suos regi mandauit, sed de 
+eius captione plurimum doluisse et quod pro eo liberando cum 
+sua militia ueniebat. Rex autem malitiam eius agnoscens et conscientiam 
+suam, conditione temporis exigente, abscondens, legatis 
 illius benigne respondit et eos cum gratiarum actione remisit.
-Illi autem, qui regem ceperant et palatium expoliauerunt, timore
+Illi autem, qui regem ceperant et palatium expoliauerunt, timore 
 regis ad Matheum Bonellam pariter confugerunt. Matheus
-autem cum Guillelmo de Symone et Tancredo comitibus et multis
-aliis usque Fabaram uenit, et frequentibus nuntiis inter eos et
+autem cum Guillelmo de Symone et Tancredo comitibus et multis 
+aliis usque Fabaram uenit, et frequentibus nuntiis inter eos et 
 regem discurrentibus, ad hunc modum concordie deuenerunt.
-Rex liberalitate sua et gratia omnibus eis offensam, quam in eum
-fecerant, remisit; Matheo Bonelle et aliis baronibus Sicilie gratiam
+Rex liberalitate sua et gratia omnibus eis offensam, quam in eum 
+fecerant, remisit; Matheo Bonelle et aliis baronibus Sicilie gratiam 
 et terras suas restituit; Willelmum Symonem et Tancredum
-comites cum multis aliis, qui in terra remanere nolebant, saluos
+comites cum multis aliis, qui in terra remanere nolebant, saluos 
 
 et illesos cum rebus suis usque Terracenam cum galea fecit conduci, 
 alios uero Ierosolimam ire permisit. Metuens autem rex, ne 
@@ -3692,21 +3692,21 @@ sed recepta ad Anconitanis magna pecunia, ab obsidione recessit.
 
 <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
 
-Interea predictus cancellarius ex mandato imperatoris nuntios
+Interea predictus cancellarius ex mandato imperatoris nuntios 
 ad Willelmum Sicilie regem transmisit, suadens et postulans,
-ut ipse, imperatoris filia in uxorem accepta, cum eo pacem
-perpetuam faceret et ipsi se amicabiliter couniret. Sed rex
+ut ipse, imperatoris filia in uxorem accepta, cum eo pacem 
+perpetuam faceret et ipsi se amicabiliter couniret. Sed rex 
 Wilhelmus, utpote christianissimus et religiosus princeps,
-sciens hoc matrimonium Alexandro pape plurimum displicere
+sciens hoc matrimonium Alexandro pape plurimum displicere 
 et Romane ecclesie non modicam iacturam inferre, Deum et Alexandrum
-papam in hac parte reueritus, imperatoris filiam in
-uxorem et eius pacem recipere noluit. Quod factum imperator
-egre tulit et multum ad animum reuocauit. Sed non multo post
+papam in hac parte reueritus, imperatoris filiam in 
+uxorem et eius pacem recipere noluit. Quod factum imperator 
+egre tulit et multum ad animum reuocauit. Sed non multo post 
 imperatoris filia est defuncta.
 </p>
 
 <p xml:id="g266.5-267.12" decls="#ocr">
-Adueniente autem estate, Philippus Coloniensis archiepiscopus
+Adueniente autem estate, Philippus Coloniensis archiepiscopus 
 cum quibusdam principibus Alamannie et magna multitudine 
 strenuorum militum per montana Cumarum Italiam intrantes, 
 imperatori succurrere festinabant. Quo cognito, imperator 
