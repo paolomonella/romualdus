@@ -87,7 +87,7 @@ def extractLayers (siglum, baretext=False):
         garufiSpan = etree.Element('span')
         garufiSpan.set('class', 'metatext garufi')
         if len(e) == 0 and not e.text:    # If the paragraph was completely empty (no text, no child elements)
-            garufiString = garufiString.replace(']', ' not transcribed]')
+            garufiString = garufiString.replace(']', ' missing]')
         garufiSpan.text = garufiString
         e.insert(0, garufiSpan)
         if e.text:  # If the paragraph is not empty and starts with e.text, move e.text to the end of garufiSpan
