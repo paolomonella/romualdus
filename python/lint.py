@@ -35,7 +35,7 @@ def tosLint (lintSiglum):
                 alegal.append(row[1])
     alegalset = set(alegal) # It's possible that two graphemes (e.g. 'e' and 'æ') have the same alphabetical meaning (e.g.: 'e'),
                             # so the same char in column 'Alphabeme(s)' might be repeated. This is to avoid duplicates.
-    gfz = [tei_ns + x for x in ['expan', 'note']]   # GL Free Zone (elements that won't be checked)
+    gfz = [tei_ns + x for x in ['interp', 'expan', 'note']]   # GL Free Zone (elements that won't be checked)
     xmlfile = '%s%s.xml' % (myconst.xmlpath, lintSiglum)    # xmlpath might look like "../xml/"
     lintTree = etree.parse(xmlfile)
     lintBody = lintTree.find('.//t:text', ns)
