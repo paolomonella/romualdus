@@ -122,7 +122,12 @@ class msTree:
             In the examples above, "parenttag" is "choice" (it may be something else, such as "app" or "subst").
             Note that the element to keep (<reg> or <corr>) always has a @type, whose value goes to argument "keeptype".
             '''
-        for k in self.tree.findall('.//t:%s[@type="%s"]' % (keeptag, keeptype), myconst.ns):
+        if keeptype == '':    # If no @type value is provided when calling the method
+            myElements = self.tree.findall('.//t:%s' % (keeptag), myconst.ns)
+        else:               # If a @type value is provided when calling the method
+            myElements = self.tree.findall('.//t:%s[@type="%s"]' % (keeptag, keeptype), myconst.ns)
+        #for k in self.tree.findall('.//t:%s[@type="%s"]' % (keeptag, keeptype), myconst.ns):
+        for k in myElements:
             # If parenttag is the parent and keeptag is the sibling:
             parent = k.getparent()
             if parent.tag == myconst.tei_ns + parenttag and parent.find('.//t:%s' % (removetag), myconst.ns) is not None:   
@@ -152,19 +157,16 @@ class msTree:
             if e.get('hand') is None:       # If no @hand is provided, then the addition is by the MS's main hand: delete <del>
                 e.getparent().remove(e)
 
-    def handleAbbrExpan (self):
-        ''' Management of <choice>/<abbr> and <expan>: always keep <expan> for collation '''
-        for e in self.tree.findall('.//t:%s' % ('abbr'), myconst.ns): 
-            myabbr = e
-            myparent = e.getparent()
-            if myparent.tag == myconst.tei_ns + 'choice':
-                myexpan = myparent.find('.//t:expan', ns)
-                if myexpan is not None:
-                    myparent.remove(myabbr)
-                else:
-                    print('There\'s something wrong: this <abbr> doesn\'t have an associated <expan>')
-            else:
-                print('There\'s something wrong: this <abbr> doesn\'t have <choice> for parent')
+    def handleGaps (self):
+        ''' Replace <gap> with text in brackets '''
+        for e in self.tree.findall('.//t:%s' % ('gap'), myconst.ns): 
+            gapReason = e.get('reason')
+            gapQuantity = e.get('quantity')
+            gapQuantityNum = int(gapQuantity)
+            gapUnit = e.get('unit')
+            if gapUnit == 'words' and gapQuantityNum == 1:
+                gapUnit = 'word'
+            e.text = '[%s_%s_%s]' % (gapQuantity, gapReason, gapUnit)
 
 
     def ecaudatum (self, monophthongize=True):
@@ -219,16 +221,10 @@ class msTree:
                 remove also <p>s;
                 if 'False', leave them.
             Finally, re-insert the "-" dashes at the end of line and remove all <lb>s?? (not implemented so far)
-            All tags are assuming to belong to the TEI XML namespace.
+            All tags are assumed to belong to the TEI XML namespace.
             '''
         for p in self.tree.findall('.//t:p', ns):   # Strip markup inside <p>s
             for t in tagslist:
-                '''
-                # No longer necessary b/c there's a 'choose' method now for this:
-                for reg in p.findall('.//t:reg', ns):   # Remove all regularizations, i.e. all <reg> elements
-                    regparent = reg.getparent()
-                    regparent.remove(reg)   # This is safe because <reg> never has a tail
-                    '''
                 etree.strip_tags(p, myconst.tei_ns + t)
         if removepar:
             body = self.tree.find('.//t:body', ns)
@@ -254,21 +250,26 @@ class msTree:
 
 
 
-EDL = ['a', 'o']
+
+EDL = ['a', 'o', 'g', 'bonetti']
 for edition in EDL:
     mytree = msTree(edition)
+    mytree.my_strip_elements('interp') 
+    mytree.my_strip_elements('abbr') 
+    mytree.my_strip_elements('surplus') 
+    mytree.my_strip_elements('note') 
+    mytree.handleGaps()
     mytree.handleAddDel() # only needed for MS A
-    mytree.handleAbbrExpan()
-    mytree.choose('choice', 'corr', 'typo', 'sic')
+    mytree.choose('choice', 'sic', '', 'corr')  # check if this works §
     mytree.choose('choice', 'reg', 'numeral', 'orig')
     mytree.choose('choice', 'reg', 'j', 'orig')
     mytree.choose('choice', 'reg', 'v', 'orig')
     mytree.ecaudatum (monophthongize=True)  # only needed for MS A; with False, it stays 'ae'; with True, it becomes 'e'
-    #mytree.remove_comments()
+    mytree.remove_comments()
     mytree.recapitalize() 
     mytree.simplify_to_scanlike_text(
-            ['rs', 'hi', 'note', 'choice', 'orig', 'reg', 'num', 'subst', 'add', 'del', 'expan',
-                'seg', 'lb', 'pb', 'quote', 'title', 'said'], \
+            ['rs', 'hi', 'w', 'choice', 'orig', 'reg', 'num', 'subst', 'add', 'del', 'expan', 'sic',
+                'seg', 'lb', 'pb', 'quote', 'title', 'said', 'soCalled', 'surplus', 'supplied', 'gap'], \
             removepar=False)
     mytree.write()
     # Temporarily needed for CollateX (remove @xmlns)
@@ -279,16 +280,18 @@ for edition in EDL:
         outfile.write(data)
 
 
+for edition in ['a_juxta', 'o_juxta', 'g_juxta', 'bonetti_juxta']:
+#for edition in ['a_juxta']:
+    mytree = msTree(edition)
+    mytree.list_and_count_elements()
+
+
+
 
 
 
 
 '''
-for edition in ['a', 'o', 'g', 'bonetti']:
-    print('Working on witness: %s' % (edition))
-    mytree = msTree(edition)
-    mytree.list_and_count_elements()
-
 
 atree = msTree('a')
 atree.reg_orig('numeral', form='reg') 
