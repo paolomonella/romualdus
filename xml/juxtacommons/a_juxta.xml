@@ -5,12 +5,8 @@
 <!ENTITY bd '<lb break="no" rend="-" ed="#b"/>'>
 <!ENTITY bl '<lb ed="#b"/>'>
 ]>
-<!--gd  = Garufi line beninning, with Dash-->
-<!--gl = Garufi Line beginning-->
-<!--bd  = Bonetti line beninning, with Dash-->
-<!--bl = Bonetti Line beginning-->
 <TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <teiHeader>
+<teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Romualdi Salernitani Chronicon, codex A</title>
@@ -43,7 +39,7 @@
                         <biblScope unit="volume">7</biblScope>
                                         <biblScope unit="part">1</biblScope>
                 </series>
-                <note>Garufi's edition was the collation base until paragraph g163.6-163.7.</note>
+                
             </biblStruct>
             <biblStruct xml:id="b">
                 <monogr>
@@ -61,8 +57,7 @@
                         <title level="s">Schola Salernitana. Studi e testi</title>
                         <biblScope unit="volume">6</biblScope>
                     </series>
-                    <note>Bonetti's edition was the collation base for the collation from (and including)
-                        paragraph g163.6-163.7.</note>
+                    
             </biblStruct>
             </listBibl>
       </sourceDesc>
@@ -236,37 +231,11 @@
   <text>
     <body>
 
-      <interp xml:id="ab" resp="#pm">
-          <desc>
-            <hi>The</hi> word (often person names <rs>Iesus</rs>/<rs>Ihesus</rs>, <rs>William</rs> or
-            <rs>Romualdus</rs>) is abbreviated, so we cannot desume its exact spelling from this passage.
-            A frequent case is that of names <rs>William</rs> and <rs>Romualdus</rs>,
-            that are often abbreviated to their first letter; <hi>In</hi> some instances of those two names,
-            an abbreviation sign (such as a smaller alphabetical grapheme written above the first letter)
-            is added by the scribe to mark the case (nominative, genitive etc.).
-            Another frequent case is that of 'presbyter/presbiter', abbreviated in such a way,
-            that one cannot determine if the manuscript's spelling is with 'i' or with 'y'.
-            <hi>I</hi> am retaining the word spelling of the <rs>Garufi</rs> or <rs>Bonetti</rs> edition to facilitate
-            collation. <hi>The</hi> @ana="#ab" attribute is attached to an 'rs' elements (mostly) or to a 'w' element.
-          </desc>
-        </interp>
+      
 
-      <interp xml:id="ae" resp="#pm">
-        <desc>
-            <hi>Attribute</hi> @ana="#ae" is attached to element 'seg' to mark the sequence of alphabemes
-            'ae' when it is represented by grapheme 'e caudatum' in the manuscript. E.g.:
-            h[seg ana="#ae"]ae[/seg]c
-          </desc>
-        </interp>
+      
 
-      <interp xml:id="doubleae" resp="#pm">
-        <desc>
-            <hi>However</hi>, it seems that when a word finishes in 'ee', but the last 'e' comes from
-            diphthong 'ae' (e.g.: neocesaree), the scribe writes two 'e caudata', not one, at the end
-            of that word. In those cases, I encode is as follows: 
-            neocesar[seg ana="#doubleae"]eae[/seg]
-          </desc>
-        </interp>
+      
 
 
 <milestone type="garufi-two-layers-from-here-on" unit="collation"/>
@@ -944,7 +913,7 @@ annis circiter CL Ascanius Enee filius Albam urbem condidit MMDCCC.
 Heli sacerdos annis XL. In Ebreorum libro XL anni inueniuntur. In Septuaginta autem 
 interpretatione XX. Hectoris filii Ilium receperunt, expulsis Antenoris posteris, Heleno sibi 
 subsidium ferente. Latinorum tertius Siluius Enee filius frater Ascanii regnat annis XXIX, 
-quique post mortem patris editus ruri fuerat educatus et Siluii post uiniiGarufi has 'posthumii'; other manuscripts have 'post iunii'; both readings 'post iunii' and 'postumii' are equivalent in terms of vertical lines: all depends on how these lines are connected to create different graphemes. nomen accepit, 
+quique post mortem patris editus ruri fuerat educatus et Siluii post uinii nomen accepit, 
 a quo omnes Albanorum reges Siluii uocati sunt. Reges Sicioniis defecerunt, qui ab Egealeo 
 usque ad Zeuxippum, regnauerunt annis nongentis LXII. Post quos sacerdotes carnii constituti 
 sunt. MMDCCC. 
@@ -1423,7 +1392,7 @@ agere permiserunt ei, et cum omni reuerentia cum donis, et muneribus dimiserunt 
 itaque sanctus Hieremias in medio eorum, qui remanserant in Masphat: quique iterum non 
 desinentes a prauis et illicitis rebus, abhominationes prohibitas ceperunt comittere Idolis 
 seruientes, et Dominum impie contempnendo. Adiecerunt etiam, ut ipsum Hieremiam pertraherent 
-secum sicut captiuum in Egypto, Et quod non fecerunt barbari Babylonis, hoc isti qui proximi uidebantur circa eum crudeliter perpetrauerunt, inuitumque eum in EgyptoGarufi does not report A's longer version of this sentence, in his apparatus. secum deduxerunt, et ibi dicitur esse defunctus lapidibus 
+secum sicut captiuum in Egypto, Et quod non fecerunt barbari Babylonis, hoc isti qui proximi uidebantur circa eum crudeliter perpetrauerunt, inuitumque eum in Egypto secum deduxerunt, et ibi dicitur esse defunctus lapidibus 
 obrutus. 
 </p>
 
@@ -1496,7 +1465,7 @@ Hierusalem, et omnem Iudeam LXX annis permansisse desolatam: qui rursus enumeran
 Babylonis (si tamen ille sic scripsit, et non codex fallit mendosus) centum fere annos ab 
 euersa Hierusalem usque ad euersionem regni Chaldeorum facit colligi. Scribi enim post 
 Nabuchodonosor, qui, teste Scriptura Sacra, XXU post euersam Hierusalem uixit annos, Euuilmerodach 
-filium eius regnasse annos XIX. Post quem Eglesar filium eius annis XL, cui successisseGarufi does not record these words in his apparatus. filium eius Laborsordach mensibus 
+filium eius regnasse annos XIX. Post quem Eglesar filium eius annis XL, cui successisse filium eius Laborsordach mensibus 
 nouem. Hoc defuncto ad Balthasar, qui Naboan nuncupatur, transille imperium, qui 
 cum iam decem et septem regnauerit annis, captam a Ciro Persarum, et Dario Medorum 
 rege Assueri filio Babylonia. Item Darius autem Astiagis filius qui Babyloniorum dextruxit 
@@ -1559,7 +1528,7 @@ cepit, subuertit atque destruxit, anno conditionis eius millesimo CLXIU.
 Cyrus autem rex Persarum proximi temporis successu Scithis bellum intulit, quem Tamiris 
 ipsius prouincie regina ita cum suis obtruncauit, atque deleuit, quod de CC Persis, 
 qui cum eo uenerant, nec nuntius quidem tante cladis in illo bello superfuit. Anno ab 
-urbe condita CCXLUIn this folio, numerals seem to have been cancelled and overwritten by the same hand. Darius Cyro apud Scitas interfecto post aliquantum interuallum forte 
+urbe condita CCXLU Darius Cyro apud Scitas interfecto post aliquantum interuallum forte 
 regnum nepotis adeptus est: nam medius eorum regnauit Cambises Cyri filius. MMMCDXXXI. 
 </p>
 
@@ -1592,7 +1561,7 @@ quoque propheta, cum uisionis sue titulum in secundo anno eiusdem regis undecimo
 Sabath uicesima quarta die preposuisset, adiecit dicens: Domine exercituum, usquequo non 
 misereberis, et urbium Iuda, quibus iratus es. Iste septuagesimus annus est. 
 Item quarto Darii regis anno dicit idem propheta: Cum ieiunaretis, et plangeretis per hos 
-septuaginta annos numquid ieiunium ieiunastis <w ana="#ab">mihi</w>?. Sed et Esdras extructo tantum 
+septuaginta annos numquid ieiunium ieiunastis mihi?. Sed et Esdras extructo tantum 
 altari, et iactis fundamentis templi ad litteras regis Exersis prohibitum opus refert. Tunc intermissum 
 est opus Dei in Hierusalem, et non fiebat usque ad secundum annum Darii Persarum. 
 Prophetauerunt autem Aggeus propheta, et Zacharias filius Addo prophetantes ad Iudeos, 
@@ -1618,10 +1587,7 @@ publicam optinuerunt per annos CDLXIU usque ad Iulium Cesarem, qui primus singul
 arripuit imperium Olimpiade CLXXXIU. Orosius. Anno ab urbe condita CCLXXU. 
 Olimpiade LXXIIII. Xerses Dario patri in regnum successit. MMMCCCLXXXIX. 
 </p>
-      <!-- roughly from this point of the text, i decided to record all additions (corrections/integrations) from hand2 in the part collated on garufi. i didn't do it systematically in the part collated on bonetti. -->
-
-
-<p xml:id="g28.11-28.17" decls="#al"> 
+      <p xml:id="g28.11-28.17" decls="#al"> 
 Xerses Darii filius annis XX. Hic Egyptum, que a Dario discesserat, capit, et aduersus 
 Greciam pugnaturus DCC milia armatorum de regno, et CCC milia de auxiliis, rostratas etiam 
 naues mille ducentas; onerarias autem tria milia ducentas habuisse narratur. Attamen uictus 
@@ -2169,7 +2135,7 @@ apud Charras in Parthia insidiis circumuentus est, et occisus. Iste quoque audit
 templi opulentia, quam Pompeius olim intactam reliquerat, Hierusolimam adiit, templum 
 peruadit, opibus spoliat; illud uidelicet templum, quod Zorobabel filius Salathiel de tribu 
 Iuda, postquam de captiuitate Babilonis reuersus est, hedificauit. Porro Zorobabel genuit 
-AbiutThe scribe modified the original glyph by adding a horizontal trait.h, Abiuth genuit Eliachim, Eliachim genuit Azor, et sic deorsum perducit  
+Abiuth, Abiuth genuit Eliachim, Eliachim genuit Azor, et sic deorsum perducit  
 flexibiles easdem generationes, usque quo ueniat ad Iacob et Ioseph sancte ac beate Uirginis 
 Marie uirum, que de Spiritu sancto concepit, ac genuit Dominum in corpore uenientem. In 
 quarum generationum ordine post Zorobabel usque ad Dominice Incarnationis aduentum 
@@ -2303,6 +2269,7 @@ apostolorum ab angelo percussum legimus. Actenus qui uocabantur Lagidem in Egypt
 regnauerunt annis ducentos nonaginta quinque. 
 </p>
 
+<p xml:id="g43.17-43.17" decls="#al"/> 
 
 <p xml:id="g43.18-44.9" decls="#al"> 
 Sexta Etas ab aduentu Domini inchoatur, cum Dei uerbum caro factum est, transactis 
@@ -2936,7 +2903,7 @@ Adrianus autem obiit in Campania maior sexagenario. Hierusolime uero ex Gentibus
 constituitur episcopus Marcus, cessantibus his, qui fuerant ex Iudeis, qui sunt numero XU et 
 fuerunt a passione Domini per annos ferme CUII. Per idem tempus rechotes insignes erant, 
 Faborinus et Palemon, necnon et Herodes Atheniensis, et Marchus Bizantius. Tertio quoque 
-anno imperii Adriani, decedente Alexandro urbis Rome episcopo, ChristusThe scribe wrote graphemes 'xps' with a macron above the central 'p', natione RomanuThe scribe wrote 'i' (one short descending trait) in line, and added another short descending trait above the line, meaning that the 'i' should be understood as a 'u's, 
+anno imperii Adriani, decedente Alexandro urbis Rome episcopo, Christus, natione Romanus, 
 ex patre pastore, sedit annos IX menses III. Hic constituit ut ministeria sacrata non tangerentur, 
 nisi ab altaris ministris, et ut corporale non fieret ex serico, nec tincto panno, 
 sed de purissimo lino contexto: et ut nulla mulier uasa sancta et sacrata, uel pallam altaris 
@@ -3086,7 +3053,7 @@ et Iulianum annus unus assumptus est. Theodotion interpres habetur.
 
 
 <p xml:id="g62.7-62.20" decls="#al"> 
-Anno ab incarnatione Domini CLXCIUTHE SCRIBE WROTE CLXCIII, WHICH IS CLEARLY WRONG AND COULD BE INTERPRETED AS BOTH 164 (IGNORING THE SECOND 'C') OR 194 (IGNORING THE 'L')., et anno ab urbe condita CMXLIU, Seuerus 
+Anno ab incarnatione Domini CLXCIU, et anno ab urbe condita CMXLIU, Seuerus 
 genere Afer Tripolitanus ab oppido Lepti, qui se ex nomine imperatoris, quem occisum 
 ultus fuerat, Pertinacem uoluit appellari, septimus decimus ab Augusto, destitutum adeptus 
 imperium XUII tenuit annis. Hic autem prius fisci aduocatus, mox militaris tribunus, 
@@ -3104,7 +3071,7 @@ Asiane prouincie episcopi insignes habentur.
 
 
 <p xml:id="g62.21-62.21" decls="#al"> 
-Quinta persecutio in EcclesiaAfter the initial two letters 'ec', the rest of the word is written in the next line, but I can't easily mark it because of Xml overlapping issue). 
+Quinta persecutio in Ecclesia 
 </p>
 
 
@@ -3160,7 +3127,7 @@ tempora, quattuor indixit omni Ecclesie ieiunia, primum uernale, secundum estiua
 autumpnale, quartum hyemale; in quibus precepit etiam ordinationes fieri, quamquam nec 
 ipse nec alius quislibet Romanorum pontificum a beati Petri usque ad Sancti Siluestri tempora 
 legitur celebrasse ordinationes, nisi in mense decembris. Hic idem prohibuit, ut in 
-accusatione <w ana="#ab">presbyterorum</w> infames et suspecti et inimici non suscipiantur: eos uero hereticos nominauit 
+accusatione presbyterorum infames et suspecti et inimici non suscipiantur: eos uero hereticos nominauit 
  
 qui dicunt sacerdotes post lapsum, si dignam egerint penitentiam, non posse ad pristinos redire 
 honores. Sed et hic martyrio coronatus est et sepultus in cimiterio, quod suo nomine 
@@ -3241,7 +3208,7 @@ sexta persecutio in ecclesia
 <p xml:id="g65.18-65.21" decls="#al"> 
 Mox imperator creatus persecutiones in Christianos sextus a Nerone exercuit; maxime 
 propter Christianam Alexandriam, que successerat Mammee, matris eius familie, uel precipue 
-propter Origenem <w ana="#ab">presbyterum</w>. Hic autem tertio postquam regnauerat anno, a Pupieno 
+propter Origenem presbyterum. Hic autem tertio postquam regnauerat anno, a Pupieno 
 interfectus, et persecutionis et uite finem fecit. 
 </p>
 
@@ -3277,7 +3244,7 @@ penes Athenam pollebat.
 <p xml:id="g66.14-67.8" decls="#al"> 
 Anno ab incarnatione Domini CCXLU et anno ab urbe condita CMXCUII Philippus 
 uicesimus quartus ab Augusto, statim occiso Gordiano, imperator circa Eufraten 
-creatus, Philippum filium suum consortem regni fecit, exercitumque ex Syria <w ana="#ab">incolumemThe final consonant could be 'm' or 'n', since it is represented by a '3'-shaped abbreviation mark, that normally means 'm' but could theoretically mean a generic nasal consonant</w> ad 
+creatus, Philippum filium suum consortem regni fecit, exercitumque ex Syria incolumem ad 
 Italiam reduxit, mansitque in eo annis septem. Hic primus imperator omnium Christianus 
 fuit, ac post tertium imperii eius annum, millesimus a conditione Rome annus expletus est. 
 Ita magnificis ludis augustissimus omnium preteritorum hic natalis annus a Christiano 
@@ -3468,7 +3435,7 @@ mensibus tribus. Hic constituit super reliquias Martyrum missas celebrari. Et hi
 coronatus est et sepultus in Cimiterio Pretextari. Marcus natione Romanus post hunc suscepit 
 episcopatum. Hic constituit ut nullus episcopus uel sacerdos, etiam si maioris scientie 
 et probitatis sit, anteponat se prius quam ipse, ordinato. Et hic solus de tantorum numero 
-pontificum martyrium euasit, et requiescit in ecclesia, in qua prius <w ana="#ab">presbyter</w> ordinatus fuerat, 
+pontificum martyrium euasit, et requiescit in ecclesia, in qua prius presbyter ordinatus fuerat, 
 que usque hodie ecclesia sancti Marci dicitur in media Roma, in regione, que dicitur Pinus. 
 </p>
 
@@ -3481,7 +3448,7 @@ Illiricum Macedoniamque uastantes, bello adhortus, incredibili eos strage deleui
 Alamannis aut procul a laco Uenaco in silua, que Linguona dicitur, dimicans, tantam multitudinem 
 fudit, ut egre pars dimidia superfuerit; ob que clippeus ei aureus et in Capitolio 
 statua ei aurea collocata est. Sed priusquam biennium imperii expleret, apud Sirmium morbo 
-correptus interiit. Tunc Marcion dissertissimus Antiocene ecclesie <w ana="#ab">presbyter</w>, qui in eadem 
+correptus interiit. Tunc Marcion dissertissimus Antiocene ecclesie presbyter, qui in eadem 
 urbe retholicam docuerat, aduersus Paulum de Samusathe, qui Antiochie episcopus dogmatizabat 
 Christum communis nature hominem tantum fuisse, accipientibus notariis disputauit, 
 qui dialogus usque hodie extat. Claudio mortuo, Quintillinus frater eius ab exercitu cum 
@@ -3583,12 +3550,12 @@ omnibus honoribus inuisus, non post multum a Dioclitiano difficili bello et maxi
 apud Margum superatus; ac propter flagitia sua penam dedit uite. Gaius, natione Dalmata, 
 ex genere Dioclitiani, ex patre Gaio post Euthichianum urbis Rome episcopum suscepit 
 cathedram, seditque annis undecim mensibus quattuor. Hic constituit, ut ordines in ecclesia 
-sic ascenderent, ut essent hostiarius, lector, exorcista, accolitus, subdiaconus, diaconus, <w ana="#ab">presbyter</w> 
+sic ascenderent, ut essent hostiarius, lector, exorcista, accolitus, subdiaconus, diaconus, presbyter 
 et exinde episcopus ordinaretur. Hic fugiens persecutionem Dioclitiani in criptis 
  
 habitando per annos nouem, ab eodem Dioclitiano martyrio coronatur. Marcellinus, natione 
 Romanus, ex patre Piecto post hunc in Romanum eligitur episcopum seditque annis 
-octo, mensibus quattuor. Pierius <w ana="#ab">presbyter</w> Alexandrie sub Theodone episcopo tunc florentissime 
+octo, mensibus quattuor. Pierius presbyter Alexandrie sub Theodone episcopo tunc florentissime 
 populos docuit et tantam sermonis diuersorumque tractatuum, qui usque hodie 
 extant, inuenit elegantiam, ut Origenes iunior uocaretur; uir mire sparsimonie, paupertatis 
 appetitor, qui post persecutionem omni tempore uite sue Rome uersatus est. 
@@ -3649,7 +3616,7 @@ Dioclitiano in omnibus seuioribus consiliis obsecutus.
 
 
 <p xml:id="g74.21-74.21" decls="#al"> 
-The paragraph is missing in codex A.
+
 </p>
 
 <p xml:id="g74.22-75.19" decls="#al"> 
@@ -3713,7 +3680,7 @@ institui, quam istud temptandum iudicaretis. Galerius itaque, Maximianus et Cons
 Augusti, primi Romanum imperium in duas partes determinauerunt, ita ut Galerius Illiricum, 
 Asiam et Orientem; Constantius uero Italiam, Africam, Ispaniam et Gallias optineret. Sed 
 Constantius, uir tranquillissimus, tantum Ispaniaque contentus, Galerio ceteras partes 
-concessit. Constantius quidem uir egregius et summe mansuetudinis ac prestantissime ciuilitatisGrapheme 't' in final sylable '-tis' has an 'l'-like vertical long stroke before it, so Garufi wrote 'ciuilitabis' in his critical apparatus note. I think that the scribe started to write 'ciuital...', then realized that 'li' was missing, added it above and continued to write the final '-tis', without erasing the 'l' before '-tis'., 
+concessit. Constantius quidem uir egregius et summe mansuetudinis ac prestantissime ciuilitatis, 
 diuitiis prouincialium ac priuatorum studens, fisci commoda non admodum affectans, 
 dicensque melius esse publicas opes ac priuatis seruari, quam intra unum claustrum teneri. 
 Qui adeo modici cultus sibi curam reseruabat, ut priuatorum aliquando indumentum gereret, 
@@ -3790,9 +3757,9 @@ sunt CCCX ET UIII episcopi catholici, qui exposuerunt fidem integram
 catholicam immaculatam, et dampnauerunt Arrium et Fotinum et Sabellium hereticos uel 
 eorum sequaces. In Urbe uero Roma congregauit ipse cum consilio Augusti CC OCTOGINTA 
 episcopos, et dampnauit iterum Calixtum, Arrium et Fotinum ac Sabellium hereticos, 
-constituit crisma ab episcopo confici, et ut episcopus baptizatum consignet propter hereticam suasionem. constituit etiam ut baptizatum statim et a fonte leuatum liniat <w ana="#ab">presbyter</w> 
+constituit crisma ab episcopo confici, et ut episcopus baptizatum consignet propter hereticam suasionem. constituit etiam ut baptizatum statim et a fonte leuatum liniat presbyter 
 crismate in uertice, propter occasionem transitus mortis. Hic constituit, ut Romanus 
-presul a nullo iudicetur, et ut <w ana="#ab">presbyter</w> non condempnaretur, nisi sub quadraginta testium 
+presul a nullo iudicetur, et ut presbyter non condempnaretur, nisi sub quadraginta testium 
 certa comprobatione. Et ut minoris ordinis aliquis maiorem se non posset accusare. Et ut 
 nullus laicus clerico crimen audeat inferre, et ut clericus ante laicos non iudicetur; et ut 
 nullus clericus propter causam suam quamlibet in curiam introiret, nec ante iudicem duceretur, 
@@ -3800,7 +3767,7 @@ nisi in ecclesia tantum. Hic constituit ut diacones dalmaticis in ecclesia utere
 et ut sacrificium altaris non in serico neque in panno tincto celebretur, nisi tantum in lineo 
 terreno procreato, sicut corpus domini nostri Ihesu Christi in sindone munda sepultum est. 
 Constituit etiam ut si quis desideraret in ecclesia militare aut proficere, ut esset lector dies 
-XXX, exorcista dies XXX, acolitus annos U, subdiaconus annos U, diaconus annos UII, <w ana="#ab">presbyter</w> 
+XXX, exorcista dies XXX, acolitus annos U, subdiaconus annos U, diaconus annos UII, presbyter 
 annos III, probatus ex omni parte, etiam et ab his, qui foris sunt, testimonium habere 
 bonum, unius uxoris uirum, uxorem a sacerdote benedictam, et sic ad ordinem episcopatus 
 accederet. Et ut nullus maioris uel prioris ordinis locum inuaderet, sed ordinem temporum 
@@ -3811,7 +3778,7 @@ confugerit, iudiciu mortis euadat.
 
 <p xml:id="g78.22-79.21" decls="#al"> 
 Beatus autem Siluester catholicus et confessor quieuit in pace, et sepultus est Rome 
-iuxta palatium Octauiani, ad locum, qui dicitur <soCalled>Caput</soCalled>. Constantinus igitur post decem annos, 
+iuxta palatium Octauiani, ad locum, qui dicitur Caput. Constantinus igitur post decem annos, 
 quam a persecutoribus ecclesia uexabatur, de persecutore christianus effectus pacem 
 ecclesie indulsit. Iste uir ingens et omnia perficere nitens que in animo preparasset, simul 
 principatum totius orbis affectans Licinio bellum intulit; Licinius autem auaritie cupidine 
@@ -3824,7 +3791,7 @@ Constantinus Licinium in Pannonia primum uicit, deinde apud Kiala oppressit, uni
  
 Grecia potitus Licinium crebris bellis terra marique astrinctum et repressum, tandem ad 
 dedicionem coegit: priuatum iussit occidi anno dominationis sue fere quintodecimo. Quamuis 
-omnibus iam ministris nefariis persecutionis extinctis, his diebus Arrius Alexandrie urbis <w ana="#ab">presbyter</w> a ueritate 
+omnibus iam ministris nefariis persecutionis extinctis, his diebus Arrius Alexandrie urbis presbyter a ueritate 
 fidei catholice deuians, exitiabile plurimis dogma constituit. Qui simul ut primum Alexandrie 
 uel notus, uel notatus inter confusos uulgo sectatores insectatoresque factus est, ab 
 Alexandro eiusdem tunc urbis episcopo pulsus ecclesia est. Cumque homines, quos merore 
@@ -3890,7 +3857,7 @@ Pontificum.
 <p xml:id="g80.21-80.27" decls="#al"> 
 Eodem tempore Constantinus Augustus fecit basilicam beato Petro apostolo in templo 
 Apollinis, cuius locum corpus sancti Petri ita recondidit. Ipsum locum undique ex ere Cipro 
-conclusit, quod est immobile; ad caput pedes U; ad pedes pedes U, subter pedesAn unknown hand underlined the first 'pedes' with a dotted line. pedes U, supra 
+conclusit, quod est immobile; ad caput pedes U; ad pedes pedes U, subter pedes pedes U, supra 
 pedes U. Sic inclusit eum corpus beati Petri apostoli et recondidit et exornauit, supra columpnas 
 porfireticas et aliquas columpnas uiteneas, quas de Grecia perduxit. Fecit autem cameram 
 basilice ex auro fulgentem, et super corpus beati Petri, quod ere conclusit, fecit crucem auream 
@@ -3927,7 +3894,7 @@ libras LXXX.
 
 
 <p xml:id="g81.10-81.11" decls="#al"> 
-Eodem tempore fecit basilicam sancte Agnetis <w ana="#ab">martyris</w>, ex rogatu filie sue: et baptisterium 
+Eodem tempore fecit basilicam sancte Agnetis martyris, ex rogatu filie sue: et baptisterium 
 in eodem loco, ubi et baptizata est soror eius Constantia, cum filia Augusti. 
 </p>
 
@@ -3997,7 +3964,7 @@ lubrica hominum corda perturbat, postquam Christianis imperatoribus summam regie
 potestatis in meliora uertentibus, ecclesiam Christi zelo Idolatrie persequi destitit, aliud 
 machinamentum, quo per eosdem christianos imperatores Christi ecclesiam uexaret, inuenit. 
 Fit igitur Arrio noui erroris auctori ceterisque discipulis ipsius ad familiaritatem Constantii 
-imperatoris promptus aditus et facilis uia. <w ana="#ab">SuasereThe desinence is abbreviated ('r' with macron), so it is impossible to say whether it is '-ere' or '-erunt'.</w> quippe Constantio ut quosdam in Deo 
+imperatoris promptus aditus et facilis uia. Suasere quippe Constantio ut quosdam in Deo 
 gradus credat. 
 </p>
 
@@ -4025,8 +3992,8 @@ Interea Rome, defuncto Iulio papa, Liberius natione Romanus, ex patre Augusto, p
 
 hunc suscepit episcopatum, seditque annis X mensibus UII. Hic in initio sui episcopatus 
 exilio reportatur a Constantio, eo quod noluisset heresi Arriane consentire, et fecit in exilio 
-annos tres. Tunc congregati sacerdotes cum eiusdem Liberii consilio, et ordinauerunt Felicem <w ana="#ab">presbyterum</w> episcopum uenerabilem uirum. Et fecit Concilium Felix, et 
-inuenit duos <w ana="#ab">presbyteros</w> consentientes Constantio Augusto, nomine Ursacium et Ualentem, 
+annos tres. Tunc congregati sacerdotes cum eiusdem Liberii consilio, et ordinauerunt Felicem presbyterum episcopum uenerabilem uirum. Et fecit Concilium Felix, et 
+inuenit duos presbyteros consentientes Constantio Augusto, nomine Ursacium et Ualentem, 
 et eiecit eos Concilio quadraginta et octo episcoporum, post paucos dies, zelo ducti 
  
 Ursacius et Ualens rogauerunt Constantium Augustum ut reuocaret Liberium de exilio, ut una 
@@ -4046,7 +4013,7 @@ in balnea haberent introitum, sed gladio necarentur, et martyrio coronarentur.
 Felix autem episcopus natione Romanus, ex patre Anastasio, sedit anno uno, mensibus sex. 
 Hic declarauit Constantium filium Constantini hereticum, et secundo baptizatum ab Eusebio 
 Nicomediense iuxta Nicomediam, et per hoc declaratum. Ab eodem Constantio depositus 
-de episcopatu, martyrio coronatur et capite truncatur IU <w ana="#ab">kalendas</w> <w ana="#ab">augusti</w>: dies itaque Felicis 
+de episcopatu, martyrio coronatur et capite truncatur IU kalendas augusti: dies itaque Felicis 
 omnes sub Liberii papatu dinumerantur. Sequitur terremotus orribilis per plurimas 
 Orientis urbes solo sternens. Constantius predictus imperator, dum Constantem fratrem 
 bello infectatur, incauta petulantia se offerens, a ducibus eius occisus est. Constans aduersus 
@@ -4138,47 +4105,47 @@ precepit edicto, ne quis christianus liberalium studiorum professor esset.
 Sed tamen, sicut a maioribus nostris compertum habemus, omnes ubique propemodum precepta 
 condiciones amplexati, officium magis quam fidem deserere maluerunt. Iulianus autem 
 bellum aduersus Parthos parans, cum Romanas uires… 
-At this point in manuscript A some pages are missing (from Garufi p. 85 line 20 to Garufi p. 92 line 9). they Were later substituted by other pages, written by hand2. I am not transcribing the text of those pages here.
+
 </p>
 
 
 <p xml:id="g85.31-86.12" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g86.13-86.25" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g86.26-87.29" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g87.30-88.28" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g88.29-90.15" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g90.16-90.20" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g90.21-92.5" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g92.6-92.7" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
@@ -4188,7 +4155,7 @@ communis omnibus, solo habitu differri se a ceteris putans; in omnes homines hon
 uerum effusus in bonis, simplicia ingenia diligere, erudita mirari, sed innoxia, largiri magno 
 ac diligenti animo magna, amare ciues, uel priuatos contubernio, eosque honoribus, 
 pecunia beneficiisque ceteris munerari, presertim quorum erga se uel patrem aspero casu 
-officia comprobasset. UiolentiamSee note in Garufi's critical apparatus on 'uinolentiam' (Paulus' conjecture) as lectio difficilior et cupiditatem detestatus est. Bella non mouit, sed 
+officia comprobasset. Uiolentiam critical apparatus on 'uinolentiam' (Paulus' conjecture) as lectio difficilior et cupiditatem detestatus est. Bella non mouit, sed 
 inuenit. Ministeria lasciuia saltariasque comesationes lege prohibuit, Consobrinarum nuptias 
 tanquam sororum interdixit. Litteris mediocriter doctus, sagax, multum diligens ad noscenda 
 gesta maiorum. Execrabatur, cum legisset gesta dominantium, superba precipue, perfidos 
@@ -4270,7 +4237,7 @@ antea Deo militans uicerat, postea etiam ecclesiam temerare ausus est, atque ex 
 non dubitauit extrahere: secunda est pena sacrilegum, nam post aliquantum temporis et ipse 
 punitus est. Interea et ipse Rufinus, cui Orientalis aule a Theodosio cura commissa est, malo perfidie deprauatus, cum barbarorum 
 solaciis regnum temptaret inuadere, morte iustissima penas luit. Quo tempore omnium antiquorum 
-presentiumque hostium longe <w ana="#ab">inmanissimusThe first syllable ('in'/'im') is abbreviated with 'i' plus macron.</w> Radagaisus rex Gothorum inuasit Italiam. 
+presentiumque hostium longe inmanissimus Radagaisus rex Gothorum inuasit Italiam. 
 Hic supra incredibilem multitudinem, quam secum duxerat, indomitamque uirtutem, 
 paganus erat, et Sitha, qui ut mox est barbaris huiusmodi gentibus, omnem Romani generis 
 sanguinem Diis suis propinare deuouerat, qui non tantum gloriam aut predam, quantum 
@@ -4347,7 +4314,7 @@ beati Laurentii martyris.
 
 
 <p xml:id="g96.17-98.14" decls="#al"> 
-Huic autem successit in episcopatu Bonifacius, natione Romanus, ex patre Iocundo <w ana="#ab">presbytero</w>, 
+Huic autem successit in episcopatu Bonifacius, natione Romanus, ex patre Iocundo presbytero, 
 seditque annis tribus, mensibus septem. Hic sub intentione cum Eulalio ordinatur 
 uno die; Eulalius quippe ordinatur in basilica Constantiniana, Bonifacius autem in basilica 
 Iulii, et fuit magna discessio in clero. Audiens hoc Placidia Augusta cum filio suo Ualentiniano, 
@@ -4380,11 +4347,11 @@ naui solus Cartaginem rediit, ibique peremptus est. Hos omnes Honorius optima re
 superauit, merito sane in his diebus precipiente Honorio, fauente 
 Constantio, sopitis apud Africam hereticis, pax catholicis reddita est, in qua fulgentissimus 
 apud Yponii regium, totiusque magister ecclesie florebat Augustinus. Tunc 
-quoque Lucianus <w ana="#ab">presbyter</w>, cui reuelauit Deus, septimo Honorii principis anno, locum sepulchri 
+quoque Lucianus presbyter, cui reuelauit Deus, septimo Honorii principis anno, locum sepulchri 
 et reliquiarum beati protomartyris Stephani, ac Gamalielis et Nichodemi, qui in euangelio 
 et in actibus apostolorum leguntur scripsit ipsam reuelationem greco sermone ad omnium 
-ecclesiarum personas; quam reuelationem Habitus <w ana="#ab">presbyter</w>, homo Hispanus genere in latinum 
-uertit eloquium, et adiecta epistola sua per Orosium <w ana="#ab">presbyterum</w> occidentalibus dedit. 
+ecclesiarum personas; quam reuelationem Habitus presbyter, homo Hispanus genere in latinum 
+uertit eloquium, et adiecta epistola sua per Orosium presbyterum occidentalibus dedit. 
 Qui etiam Orosius ad loca sancta perueniens, quo eum Augustinus ad Ieronimum pro discenda 
 ab eo ratione anime miserat, reliquias beati Stephani accepit, et reuersus est. Interea 
 Uuallia Gothorum rex, Dei iudicio territus, Placidam apud se honeste habitam, exigente 
@@ -4455,7 +4422,7 @@ XXU transegit, apud Constantinopolim morbo consumptus obiit. Cuius imperii
 tempore tertia sinodus in Epheso congregata est CC patrum contra Nestorium Auguste 
 urbis episcopum, presidente Rome papa Celestino. Eudoxia Theodosii principis uxor ab 
 Ierosolimis remeauit, beatissimi Stephani primi martyris reliquias, que ostense sunt Luciano 
-<w ana="#ab">presbitero</w>, secum deferens, que in basilica sancti Laurentii posite uenerantur. Bleda et 
+presbitero, secum deferens, que in basilica sancti Laurentii posite uenerantur. Bleda et 
 Attilla fratres multarumque gentium reges tunc Illiricum Thraciamque depopulati sunt. 
 </p>
 
@@ -4467,7 +4434,7 @@ coram QUADRAGINTA ET SEPTEM episcopis canonice purgatur, et condempnatur Blassus
 crimen intulerat, ita tamen, ut ultimo die uiaticum ei non negaretur, propter humanitatem 
 pietatis ecclesie. Qui Bassus cum defunctus esset, corpus eius Xixtus episcopus cum aromatibus 
 manibus suis tractans sepeliuit. Hic edificauit ecclesiam beate Dei genitricis Marie, 
-que dicitur <soCalled>ad Presepe</soCalled>, et hodie ecclesia maior uocatur, in monte iuxta macellum Libie. 
+que dicitur ad Presepe, et hodie ecclesia maior uocatur, in monte iuxta macellum Libie. 
 Hic et in distribuendas pauperibus elemosinas studuit, et multas auro argentoque basilicas 
 decorauit. Qui etiam  sepultus est in uia Tiburtina in cripta, iuxta corpus beati Laurentii. 
 </p>
@@ -4505,7 +4472,7 @@ hostiumque preparationes, Etius Rome consularis sollerti preuidentia agnoscens, 
 ad Theodericum, qui eo tempore Gothis apud Tolosam regnabat, dirigit, ut cum eo pacis 
 federa sociarent. Qui promittit se cum eo pariter contra Attilam pugnaturum. Fuerunt 
 preterea Romanis auxilio Alani, Burgundiones, Franci, Saxones, Riparioli, Briones, Sarmate, 
-ArinoritianiThe 'arim-' → 'arini-' palaeographical error may be useful to define the relationship between manuscripts., Liticiani, et pene totus populus Occidentis. Conueniunt itaque hinc 
+Arinoritiani, Liticiani, et pene totus populus Occidentis. Conueniunt itaque hinc 
 et hinc fortissime nationes in campis Catalaunicis, conseruntur acies, fit bellum acre nimis; 
 accensi denique utriusque ardore prelii, nec quieuere, donec nox superueniens pugnandi 
 finem daret. Eo siquidem prelio CLXXX milia hominum ex utraque parte cesa referuntur, 
@@ -4674,7 +4641,7 @@ Octauiano creata est, cum hoc Augustulo periit.
 
 
 <p xml:id="g104.23-104.32" decls="#al"> 
-Interea Rome Simplicio papa decedente, Felix natione Romanus ex patre Felice <w ana="#ab">presbytero</w>, 
+Interea Rome Simplicio papa decedente, Felix natione Romanus ex patre Felice presbytero, 
 pontificalem suscepit cathedram. Sub huius episcopatu iterum relatio de Grecia 
 uenit, Petrum Alexandrinum reuocatum ab Acatio episcopo Constantinopolitano. Tunc Felix 
 uenerabilis archiepiscopus apostolice sedis Romane misit duos episcopos, Mesenum et Uitalem, 
@@ -4727,8 +4694,8 @@ ipso reuelante, reperitur.
 <p xml:id="g105.25-105.32" decls="#al"> 
 His autem diebus, Gelasio papa defuncto, Anastasius natione Romanus, ex patre Petro, 
 post hunc suscepit episcopatum, seditque anno I, mensibus XI. Hic Anastasium Constantinopolitanum 
-excommunicauit imperatorem. Eo tempore multi clerici et <w ana="#ab">presbyteri</w> se a 
-communione ipsius eduxerunt, eo quod sine consilio episcoporum <w ana="#ab">presbyterorumque</w> communicasset 
+excommunicauit imperatorem. Eo tempore multi clerici et presbyteri se a 
+communione ipsius eduxerunt, eo quod sine consilio episcoporum presbyterorumque communicasset 
 U. Fotino Diacono Thesalonicensi, qui communis erat Acatio, et quia Acatium occulte reuocare 
 uoluit, et non potuit, diuino nutu percussus est. Qui etiam sepultus est in ecclesia 
 beati Petri. Zeno itaque Augustus cum per annos XUII rei publice prefuisset, apud urbem 
@@ -4890,7 +4857,7 @@ eius septimus ascendit in regnum. Egressi Longobardi de Rugilant, uenerunt in ca
 patentibus, qui sermone barbarico felt appellatur. Quo in loco dum tribus annis commorarentur, 
 Radulfus rex Herulorum fedus, quod cum Tatone pepigerat, inrumpens, eo quod 
 compererat, fratrem suum a filia Tatonis peremptum, bellum ei intulit. Sed cum ipse et suos a 
-Longobardis superatus atque occisus est, et eius exercitus consternatus,In MS A the previous is a secundary clause, so this must be a comma. In Garufi's text instead it is a principal clause, so this is a full stop. In my text I second Garufi's text. Tatone a filio 
+Longobardis superatus atque occisus est, et eius exercitus consternatus, Tatone a filio 
 fratris sui interfecto, scilicet Guaccone, regnum ipse octauus super Longobardos optinuit. 
 Qui super Sueuos irruens suo dominio subiugauit. Mortuo uero Guaccone, Gualtari filius 
 eius, cum per septem annos regnasset, mortuus est. Post quem nonus rex Audoin adeptus 
@@ -5033,7 +5000,7 @@ restituit imperio post annos nonaginta sex excissionis sue.
 
 <p xml:id="g112.26-112.28" decls="#al"> 
 At uero Rome Iohanne papa defuncto, Agapitus natione Romanus ex patre Gordiano 
-<w ana="#ab">presbytero</w> ecclesie sancti Iohannis et Pauli, cathedram pontificalem suscepit, seditque 
+presbytero ecclesie sancti Iohannis et Pauli, cathedram pontificalem suscepit, seditque 
 mensibus XI. 
 </p>
 
@@ -5216,8 +5183,7 @@ Forum Iulii, Ueronam et Mantuam ac Mediolanum omnesque Ligurie ciuitates, Ticinu
 quoque, ubi sedem regni statuerat, et alias usque Tusciam ciuitates; Roma quoque tantis 
 malis a Langobardis adacta est, sicut beatus testatur Gregorius, ut eis postea tributaria fuerit, 
 ita ut ciues quintam partem frugum suarum pactione tributi Langobardis persoluerent. 
- <!-- occhio: qui nel ms a c'è una grossa aggiunta in margine -->
-Interea rex Alboyn postquam in Italia annis tribus et mensibus UI regnauerat, insidiis coniugiis 
+ Interea rex Alboyn postquam in Italia annis tribus et mensibus UI regnauerat, insidiis coniugiis 
 sue interfectus est. Fuit autem Alboyn bellicosissimus, summeque audacie uir, bello 
 famosissimus, statura procerus, strenuus et ad bella peragenda toto corpore coaptarus. 
 Tandem Langobardi preficiunt in regnum Cleph nobilissimum uirum; quo uita decedente 
@@ -5644,7 +5610,7 @@ sicut predecessores illius, ab Apostolica sede iusta depositionis ultione damnat
 <p xml:id="g127.12-127.15" decls="#al2"> 
 Interea Rome defuncto Theodoro papa, Martinus natione Tuscus in loco eius constituitur, 
 seditque annis UI, mense I. Hic dum missarum solemnia ad altare Dei genitricis 
-Marie, quod dicitur <soCalled>ad Presepe</soCalled>, celebraret, spatarius Olympii ducis missus ut eum interficeret, 
+Marie, quod dicitur ad Presepe, celebraret, spatarius Olympii ducis missus ut eum interficeret, 
 diuina benignitate percussus cecitate, eum uidere non potuit. 
 </p>
 
@@ -6034,7 +6000,7 @@ ancillarum Dei monasterium statuit. Ipse autem Romualdus postquam XUI annis
 ducatum gessisset obiit. Post eum uero Grimoaldus filius eius tribus annis populos Samnitum 
 rexit. Defuncto quoque Grimoaldo Gisulphus germanus eius ductor effectus est, prefuitque 
 Beneuento annis XUII. Circa hec tempora cum in castro Cassino, uenientes de 
-CenomannicorumGarufi has an important apparatus note: "Cenomannicorum Ab. Scrivendo la forma del gruppo D di Paulus, Vi, 2: Celinanicorum C, derivando dal gruppo A l del medesimo testo Paolino". Does this imply that the scribe of C had direct access to the sources of Romualdus (Paulus)? If so, would A and C be independent versions, re-checked on the original sources? uel Aurelianensium regione Franci, atque uenerabilis patris Benedicti, 
+Cenomannicorum uel Aurelianensium regione Franci, atque uenerabilis patris Benedicti, 
 pariterque eius germane uenerande Scholastice ossa auferentes, in suam patriam deportarunt, 
 ubi sigillatim duo monasteria in honorem eorum constructa sunt. 
 </p>
@@ -6181,7 +6147,7 @@ Eo tempore postquam IU annis apud Baioariam exulasset Ansprandus, de quo supra
 diximus, tandem cum exercitu Baioariorum regis, Italiam uenit, pugnauitque cum Ariperto 
 Langobardorum rege, et facta est ex utraque parte magna populorum strages; et quamuis 
 extremum nox prelium dirimisset et uictori Ariperto Baioarii terga prebuissent, eadem nocte 
-Aripertus extinctus est. Regnauit autem cum patre DagimbertoSee important Garufi apparatus note: "Daginberto B e Sasso. R. copia male Paulus, loc. cit. che ha: Ragimperto". The locus citatus is Paulus, Vi xxxv. siue solus usque ad annum 
+Aripertus extinctus est. Regnauit autem cum patre Dagimberto siue solus usque ad annum 
 duodecimum, fuitque uir pius et elemosynis deditus, iustitie amator, in cuius tempore 
 ubertas nimia extitit. Denique post Ariperti funus, Ansprandus Langobardorum regnum 
 potitus est, qui tres solummodo mentes regnauit, uir per omnia egregius et cuius sapientie 
@@ -7423,7 +7389,7 @@ incarnationis CMLXIII.
 
 
 <p xml:id="g167.1-167.3" decls="#al"> 
-Sequente uero anno sed 962 idem Otto Saxonum rex Romam 
+Sequente uero anno  idem Otto Saxonum rex Romam 
 uenit nobiliter cum exercitu et a Iohanne papa coronatus 
 est, accipiens ab eo totius Italie uexillum cum imperii dignitate, 
 professus iureiurando seruare fidem Romane ecclesie. Ex tunc 
@@ -7438,7 +7404,7 @@ ciuitatem Bibinum atque Asculum, Grecos expellens. Interea
 apud Constantinopolim defuncto imperatore Niceforo, Iohannes 
 cognomento Simiski tenuit imperium annis UI. Quo defuncto 
 Basilius et Constantinus filii eius ceperunt imperare ab anno 
-incarnationis domini CMLXX sed 976, regnaueruntque 
+incarnationis domini CMLXX , regnaueruntque 
 annis LV. At uero Rome defuncto Iohanne papa Benedictus papa 
 sedit annis II, et post eum Leo sedit annis UI mensibus XI. Hic a Petro prefecto 
 
@@ -7459,7 +7425,7 @@ anno post hec ceperunt ciuitatem Bibinum ignique combusserunt.
 
 
 <p xml:id="g168.5-168.7" decls="#al">
-Anno incarnationis Domini CMLXXUI sed 986, Lotharius 
+Anno incarnationis Domini CMLXXUI , Lotharius 
 Francorum rex senex plenus dierum obiit, postquam regnauit 
 annis LIU, sepultusque in basilica Sancti remigii Remis. Cui 
 successit Ludouicus filius eius adhuc iuuenis. 
@@ -7467,9 +7433,9 @@ successit Ludouicus filius eius adhuc iuuenis.
 
 
 <p xml:id="g168.8-169.4" decls="#al"> 
-Anno dominice incarnationis CMLXXXI sed 972 defuncto 
+Anno dominice incarnationis CMLXXXI  defuncto 
 Iohanne papa Benedictus ei in pontificatus honorem successit. 
-Eodem anno sed 973 Otto maior imperator obiit anno 
+Eodem anno  Otto maior imperator obiit anno 
 XUIII ex quo imperator appellatus est. Successit autem ei Otto 
 imperator, qui dictus est minor, qui postquam imperii coronam 
 accepit, ueniens Salernum obsedit cepitque illam expugnans. 
@@ -7487,7 +7453,7 @@ annis IX.
 
 
 <p xml:id="g169.5-170.14" decls="#al"> 
-Anno dominice incarnationis CMLXXXU, sed 987 obiit 
+Anno dominice incarnationis CMLXXXU,  obiit 
 Ludouicus Francorum rex iuuenis, postquam regnauit annis 
 nouem, sepultusque est in basilica beati Cornelii Compendio. 
 Cui successit Carolus frater eius filius Lotharii regis. Eodem anno 
@@ -7630,7 +7596,7 @@ ipsum pontificem cecauit ceterisque membris debilitauit et ad
 dedecus et ignominiam sacerdotalis ordinis per plateas Leonine 
 ciuitatis circumduci iussit. Sed antequam XXX dies implerentur 
 anima et corpore rex impius mortuus est, anno dominice incarnationis 
-MInteresting paleographic case: this might be considered an abbreviation for adjective 'millesimo' or a numeral for 'one thousand', since it is a numeral 'm' with an 'o' above. This case will be repeated often in the next pages. I will treat them as numerals for analogy with so many other (ordinal) numerals that also mean dates ans should be read as 'anno millesimo etc.', but do not have 'o' sign above. I am encoding 'millesimo' at the alphabetic layer only when the whole adjective is spelled out with its graphemes ('m', 'i', 'l' etc.). perAbbreviation 'p' with a horizontal stroke, systematically used for 'per'. indictionem XIII. Hic autem tertius Otto 
+M per indictionem XIII. Hic autem tertius Otto 
 imperator anno superiori obsederat Beneuentum in anno scilicet 
 anno uidelicet incarnationis MI indictione XIU et acriter ipsam ciuitatem 
 expugnans ui ceperat. Eo itaque mortuo frater eius Henricus 
@@ -7666,7 +7632,7 @@ strenue ordinare.
 <p xml:id="g174.8-175.15" decls="#al"> 
 Anni domini MXIII. indictione I. Hic in Apulie finibus rehedificauit 
 ciuitatem diu dirutam nuncupauitque eam Troiam, que 
-antiquitus Ecana uocabatur 1024 et iussu imperatorum fines 
+antiquitus Ecana uocabatur  et iussu imperatorum fines 
 per statutum priuilegium eidem stabiliuit ciuitati. In hanc ciuitatem 
 olim tempore Adriani imperatoris, qui Traiano successerat, 
 fuit ab apostolica sede missus Eleutherius episcopus qui post 
@@ -7790,7 +7756,7 @@ est eclipsim V Idus Ianuarii per quinque horas noctis.
 
 
 <p xml:id="g179.10-179.11" decls="#al"> 
-The paragraph is missing in codex A.
+
 </p>
 
 
@@ -7856,7 +7822,7 @@ seditque Damasus dies XX. Imperator autem
 
 <p xml:id="g184.10-185.7" decls="#al"> 
 
-From this point, the text is due to the first hand of manuscript A again.
+
 cum exercitu in Calabriam profectus, Regium 
 ciuitatem cepit atque omnium Normannorum dux effectus 
 est. Hic accepit uxorem nomine Sigelgaytam Guaimarii principis 
@@ -7899,7 +7865,7 @@ accepit. Seditque Alexander papa annis XI, mensibus UI.
 
 
 <p xml:id="g186.10-186.11" decls="#al"> 
-The paragraph is missing in codex A.
+
 </p>
 
 
@@ -7919,7 +7885,7 @@ oppugnauit; terra marique pontem quoque ibi in mari fecit.
 
 
 <p xml:id="g187.3-187.4" decls="#al"> 
-The paragraph is missing in codex A.
+
 </p>
 
 
@@ -7928,7 +7894,7 @@ The paragraph is missing in codex A.
 
 
 <p xml:id="g187.9-187.11" decls="#al"> 
-Garufi's paragraph runs from page 187 line 9 to page 188 line 4 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
+
 Anno dominice incarnationis MLXX indictione UIII, apud 
 Constantinopolim Romano Diogenes imperator transacto quarto 
 imperii eius anno defunctus est. Cui in imperio Michael filius 
@@ -7976,7 +7942,7 @@ amministrationem regni sibi primus ut rex assumpsit.
 
 
 <p xml:id="g188.12-188.14" decls="#al"> 
-Garufi's paragraph runs from page 188 line 12 to page 190 line 8 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
+
 Anno dominice incarnationis MLXXU, dux Robbertus Sanctam 
 Seuerinam Calabrie cubrie ciuitatem loco munitissimam tertio anno 
 postquam illam obsederat, cepit. Hinc quoque cepit ciuitatem 
@@ -8285,8 +8251,7 @@ in ortu suo passa est eclipsim.
 </p>
 
 
-<p xml:id="g199.1-199.8" decls="#al"><!-- metti l'add in un 'p' a sé § --> 
-Anno dominice incarnationis MXC indictione XIII mense 
+<p xml:id="g199.1-199.8" decls="#al">Anno dominice incarnationis MXC indictione XIII mense 
 Septembris Urbanus papa sinodum in ciuitate Melfia celebrauit, 
 in qua Roggerius dux liggius eius homo effectus, promittens se 
 iureiurando fidem seruaturum Romane ecclesie et eidem pape 
@@ -8306,7 +8271,7 @@ Cui successit Riccardus filius eius princeps.
 
 
 <p xml:id="g199.13-199.15" decls="#al"> 
-The paragraph is missing in codex A. Garufi page 199, apparatus note to line 12, writes that the paragraph is added in margin in code A, but in fact there is no marginal note in A with the text of this paragraph.
+
 </p>
 
 
@@ -8442,7 +8407,7 @@ est, alter uero dictus est Boamundus, qui patri suo successit.
 
 
 <p xml:id="g203.13-204.4" decls="#al"> 
-Anno dominice incarnationis MCUI indictione XIUThe addition in the next line actually starts with "cui" and ends with "xiiii". I could not encode this without incurring in Xml overlap. Riccardus 
+Anno dominice incarnationis MCUI indictione XIU Riccardus 
 princeps Capuanus defunctus est mense Ianuarii anno sui principatus 
 XIU. Cui princeps successit frater eius Robbertus. Eodem 
 anno apparuit stella cometis magna a parte Occidentis sero 
@@ -8487,7 +8452,7 @@ per totum mensem Iunii.
 
 
 <p xml:id="g205.3-206.12" decls="#al"> 
-Anno dominice incarnationis MCXI indictione IUThe addition in the next line actually starts with "tione" (last part of word "indictione") and ends with "iiii". Henricus filius Henrici 
+Anno dominice incarnationis MCXI indictione IU Henricus filius Henrici 
 imperatoris Alamannorum, ingenti cum exercitu Alamannorum 
 et Suauorum Italiam uenit, plurisque rebus sibi compositis 
 Nouariam ciuitatem sibi resistentem cepit eamque depopulatus 
@@ -8540,7 +8505,7 @@ eius una cum matre sua Constantia successit.
 
 
 <p xml:id="g206.n4-206.n5" decls="#al">
-The paragraph is missing in codex A.
+
 </p>
 
 
@@ -8591,7 +8556,7 @@ de Airola.
 
 
 <p xml:id="g208.10-208.14" decls="#al"> 
-Anno dominice incarnationis MCXUII, indictione X;The addition in the next line actually starts with "carnationis" (last part of word "incarnationis"). mense 
+Anno dominice incarnationis MCXUII, indictione X; mense 
 Aprilis in Uenecia, Liguria, Emilia atque Flamminia Italie prouinciis, 
 in Gallia quoque Transalpinam, multorum domus contritis hominibus 
 pluraque edificia simul et ecclesie ingenti terre motu 
@@ -8713,10 +8678,7 @@ ciuitatis ingenti cum honore deduxit.
 <p xml:id="g211.15-211.17" decls="#al"> 
 <milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
 </p>
-      <!-- <rs>garufi</rs> has an apparatus note in page 212 on paragraph sorting -->
-
-
-<p xml:id="g212.1-212.4" decls="#al"> 
+      <p xml:id="g212.1-212.4" decls="#al"> 
 Anno dominice incarnationis MCXXI indictione XIU mense 
 Iunii Calixtus papa cum multitudine armatorum obsedit 
 Gregorium papam, cognomento Burdinum, qui secesserat in 
@@ -8743,7 +8705,7 @@ Romano anni UII. Rome defunctus est et honorifice sepultus.
 
 
 <p xml:id="g213.1-213.8" decls="#al">
-Garufi's paragraph runs from page 213 line 1 to page 214 line 11 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
+
 </p>
 
 
@@ -8790,23 +8752,15 @@ promotus et sic in Siciliam rediit.
 
 
 <p xml:id="g214.12-214.14" decls="#al"> 
-Garufi's paragraph runs from page 214 line 12 to page 215 line 3 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
+
 </p>
       <anchor xml:id="g214.14-215.3bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--hoc anno rogerius comes excommunicatur... pontifice arripuit-->
-      <!-- ma garufi dice che alcuni codici lo mettono qui, non che va messo qui-->
       <anchor xml:id="g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!-- anno ab incarnatione...1127... boamundus... accersitus ab anteochenis... prede data sunt-->
       <anchor xml:id="g214.14-215.3garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!--hoc anno rogerius comes excommunicatur... pontifice arripuit-->
       <anchor xml:id="g215.n14-216.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!--anno dominice incarnationis 1128, indictione 7. hoc anno... congregata militum... fautores cum eo-->
       <anchor xml:id="g216.n10-217.n1garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!-- anno... sexaginta ut fertur... sancti guillelmi-->
+      <p xml:id="g216.1-217.1" decls="#al">
 
-
-<p xml:id="g216.1-217.1" decls="#al">
-Garufi's paragraph runs from page 216 line 1 to page 217 line 12 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
 Altero uero anno cum magno exercitu Apuliam intrauit. Papa 
 autem Honorius, cognito quod prephatus dux auctoritate sua 
 uellet sibi ducatum Apulie usurpare, cuius inuestitura et dominium 
@@ -8840,37 +8794,20 @@ in Apuliam uenit, et cum predictis baronibus et Robberto Capuano
 principe concordatus est, et Turrim maiorem que est Salerni 
 in sua potestate recepit. 
 </p>
-      <!--bonetti paragraph sequence-->
       <anchor xml:id="g218.1-218.2bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--postmodum baronum...coronari fecit-->
       <anchor xml:id="g218.2-219.2bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--qui regni solio potitus... subdidit-->
       <anchor xml:id="g219.5-219.8bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--post hec apuliam... indictione uiii-->
       <anchor xml:id="g219.3-219.4bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--hoc tempore boamundus...damascum occubuit... sepultum-->
       <anchor xml:id="g214.n8-215.n14bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!-- anno ab incarnatione...1127... boamundus... accersitus ab anteochenis... prede data sunt-->
       <anchor xml:id="g215.n14-216.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--anno dominice incarnationis 1128, indictione 7. hoc anno... congregata militum... fautores cum eo-->
       <anchor xml:id="g216.n10-217.n1bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!-- anno... sexaginta ut fertur... sancti guillelmi-->
       <anchor xml:id="g217.n4-217.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--anno... dux itaque rogerius postquam omnes... reuersus est in siciliam-->
       <anchor xml:id="g218.n16-218.n23bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!-- [anno]... die natali domini... sepulcri, mense februarii-->
       <anchor xml:id="g219.n1-219.n13bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!-- [anno]... dum rogerius dux brundisium ac turrem... abire permisit-->
       <anchor xml:id="g217.n10-218.n16bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!-- [anno]... dux transfretauit a sicilia, uenit in apuliam... reuertitur" (oppure finisce in "facta autem pacem") -->
-      <!--garufi paragraph sequence-->
       <anchor xml:id="g217.n4-217.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!--anno... dux itaque rogerius postquam omnes... reuersus est in siciliam-->
       <anchor xml:id="g217.n10-218.n16garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!-- [anno]... dux transfretauit a sicilia, uenit in apuliam... reuertitur" (oppure finisce in "facta autem pacem") -->
-
-
-<p xml:id="g219.3-219.4" decls="#al"> 
+      <p xml:id="g219.3-219.4" decls="#al"> 
 <link target="#g219.3-219.4 #g219.3-219.4garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g219.3-219.4 #g219.3-219.4bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 </p>
@@ -8878,15 +8815,12 @@ in sua potestate recepit.
 
 <p xml:id="g218.1-218.2" decls="#al"> 
 <link target="#g218.1-218.2 #g218.1-218.2bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-Garufi's paragraph runs from page 218 line 1 to page 219 line 2 without interruptions. I split Garufi's paragraph because Garufi inserts one of the additions (the paragraph with id g218.n16-218.n23) after "coronari fecit".
+
 Postmodum baronum et populi consilio apud Panormum se 
 in regem Sicilie inungi et coronari fecit.
 </p>
       <anchor xml:id="g218.n16-218.n23garuficollocation" type="transposition" subtype="garufiandbonetticollocation"/>
-      <!-- [anno]... die natali domini... sepulcri, mense februarii-->
-
-
-<p xml:id="g218.2-219.2" decls="#al"> 
+      <p xml:id="g218.2-219.2" decls="#al"> 
 <link target="#g218.2-219.2 #g218.2-219.2bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 Qui regni solio potitus 
 cum nauali exercitu et magna militia Salernum uenit, et Amalfiam, 
@@ -8894,16 +8828,10 @@ Rauellum et Scalam potenter obsedit et longa obsidione
 cepit, et tam castra eorum quam ciuitates suo dominio subdidit. 
 </p>
       <anchor xml:id="g219.n1-219.n13garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!-- [anno]... dum rogerius dux brundisium ac turrem... abire permisit-->
       <anchor xml:id="g219.3-219.4garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!--hoc tempore boamundus...damascum occubuit... sepultum-->
       <anchor xml:id="g219.5-219.8garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!--post hec apuliam... indictione uiii-->
       <anchor xml:id="g219.8-221.14garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!--quo defuncto scisma in romana... civitatem liberauit-->
-
-
-<p xml:id="g214.n8-215.n14" decls="#al">
+      <p xml:id="g214.n8-215.n14" decls="#al">
 <link target="#g214.n8-215.n14 #g214.n8-215.n14bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 <link target="#g214.n8-215.n14 #g214.n8-215.n14garuficollocation" type="transposition" subtype="garuficollocation"/>
 </p>
@@ -8925,13 +8853,13 @@ UIII.
 <p xml:id="g215.n14-216.n10" decls="#al">
 <link target="#g215.n14-216.n10 #g215.n14-216.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g215.n14-216.n10 #g215.n14-216.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-The paragraph is missing in codex A.
+
 </p>
 
 
 <p xml:id="g219.8-221.14" decls="#al"> 
 <link target="#g219.8-221.14 #g219.8-221.14garuficollocation" type="transposition" subtype="garuficollocation"/>
-Garufi's paragraph runs from page 219 line 8 to page 222 line 4 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
+
 Quo defuncto scisma in Romana exortum est ecclesia, nam 
 maior et sanior pars cardinalium Gregorium natione Romanum 
 diaconum cardinalem Sancti angeli in pontificem elegerunt qui 
@@ -8983,7 +8911,6 @@ et huius rei insciam ceperunt et expoliauerunt. Quod audiens
 rex Roggerius qui tunc temporis in Terra laboris erat, misso 
 exercitu suo Pysanos qui adhuc in Amalfie partibus morabantur 
 fugauit et multos eorum in ore gladii perdidit et sic ciuitatem liberauit. 
-<!--quintultimo rigo pag. 140 bonetti-->
 </p>
 
 
@@ -8991,8 +8918,7 @@ fugauit et multos eorum in ore gladii perdidit et sic ciuitatem liberauit.
 </p>
 
 
-<p xml:id="g221.14-222.1" decls="#al"> <!--quintultimo rigo pag. 140 bonetti-->
-Pisani uero deuicti et confusi primo Neapolim postea 
+<p xml:id="g221.14-222.1" decls="#al"> Pisani uero deuicti et confusi primo Neapolim postea 
 Pysas redierunt. Rex autem Roggerius uir discretus et prouidus 
 qui in agendis suis negotiis magis consilio quam uiribus utebatur, 
 nunc in Terra laboris nunc in Apulia inimicos suos uiriliter 
@@ -9005,8 +8931,7 @@ ipsum humiliter postulantes ut eis ammissas terras restitueret
 asserentes Apuliam et Siciliam ad ius sui imperii pertinere. Rex 
 autem Roggerius postquam inimicos et rebelles suos a regno 
 expulit et fugauit, totam terram in pace et tranquillitate possedit 
-preter Neapolim quam expugnare non potuit.<!--nono rigo pag. 142 bonetti-->
-</p>
+preter Neapolim quam expugnare non potuit.</p>
 
 
 <p xml:id="g217.n4-217.n10" decls="#al">
@@ -9030,7 +8955,7 @@ Habuit etiam de predicta uxore filiam unam.
 
 
 <p xml:id="g222.5-222.12" decls="#al">
-Garufi's paragraph runs from page 222 line 5 to page 224 line 19 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
+
 Interea Innocentius papa in Francia aliquantulum demoratus 
 Alamanniam uenit et ab imperatore Lothario et uniuersis 
 principibus eius cum summa est gloria et deuotione susceptus. 
@@ -9042,8 +8967,7 @@ simul cum papa Innocentio in Apuliam uenit, Robbertum uero
 Capuanum principem cum comite Raydulfo et aliis exulibus cum 
 quadam parte sui exercitus Terram laboris intrare iussit, galeas 
 etiam Pisanorum in eorum auxilio uenire precepit. Imperator 
-autem totam Apuliam, resistente sibi nemine, occupauit.<!--metà paragrafo 'interea' p. 142 bonetti-->
-</p>
+autem totam Apuliam, resistente sibi nemine, occupauit.</p>
 
 
 <p xml:id="g219.n1-219.n13" decls="#al">
@@ -9085,18 +9009,14 @@ cum imperatore fecerunt et data de suis imperatori magna pecunia,
 quadringentos milites qui in ciuitate fuerant, ad regem Roggerium 
 cum rebus suis illesos abire fecerunt. Cancellarius autem 
 cum baronibus et quibusdam militibus se in Turrim maiorem 
-recepit.<!-- quasi metà pag. 144 bonetti-->
-</p>
+recepit.</p>
 
 
 <p xml:id="g217.n10-218.n16" decls="#al">
 <link target="#g217.n10-218.n16 #g217.n10-218.n16garuficollocation" type="transposition" subtype="garuficollocation"/>
 <link target="#g217.n10-218.n16 #g217.n10-218.n16bonetticollocation" type="transposition" subtype="bonetticollocation"/>
 </p>
-      <!-- vedi tutti i finali in -e che mi sembravano finali in -i nei vari 'add', collazionando con vim -d bonetti e a-->
-
-
-<p xml:id="g223.12-224.19" decls="#al"> 
+      <p xml:id="g223.12-224.19" decls="#al"> 
 Facta autem pace, Pisani utpote superbi et elati ceperunt 
 iniurias et molestias ciuibus Salernitanis inferre. Qui eorum superbiam 
 non ferentes, accipientes arma in eos irruerunt, et maximum 
@@ -9226,8 +9146,7 @@ stolii et consanguineum imperatoris, cum multis aliis captiuos in
 Siciliam duxit. 
 <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
 Interea RomeInnocentius papa mortuus est et sepultus apud 
-Lateranum anno pontificatus sui XIU, anno uero dominice incarnationis <!-- metti add in par a sé §-->
-MCXLIII indictione IXThe addition in the next line actually starts with "xxxxiii".. Huic successit Guido, natione 
+Lateranum anno pontificatus sui XIU, anno uero dominice incarnationis MCXLIII indictione IX. Huic successit Guido, natione 
 Tuscus, prius presbiter cardinalis, qui et Celestinus secundus 
 est uocatus. Hic concordiam que inter Innocentium papam et 
 regem Roggerium facta est, ratam habere noluit, sed eam reuocauit 
@@ -9348,7 +9267,7 @@ et apud Sanctum petrum est sepultus, anno pontificatus sui…
 anno dominice incarnationis M.
 . Huic successit Corradus natione Romanus, 
 senex et plenus dierum, prius presbiter cardinalis deinde episcopus 
-Sauinensis et uicarius Romane ecclesie, qui et This is the actual beginning of folio 229r in ms 'a'. There is another 'pb' in this xml file with n=229r: see note with id g234.n1-236.n10segmentationnote for a full explanationAnastasius est 
+Sauinensis et uicarius Romane ecclesie, qui et Anastasius est 
 appellatus, anno dominice incarnationis M. 
 </p>
 
@@ -9381,8 +9300,8 @@ subterraneos iussit adduci.
 
 
 <p xml:id="g233.1-g234.3" decls="#al"> 
-Garufi's paragraph runs from page 233 line 1 to page 235 line 5 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
-This is the forth line from the end of folio 229r in ms 'a'. There is another 'pb' in this xml file with n=229r: see note with id g234.n1-236.n10segmentationnote for a full explanation
+
+
 Sic uir sapiens et discretus predictis deliciis, prout temporis 
 expetebat qualitas, utebatur; nam in yeme et quadragesimali 
 tempore pro copia piscium in Fabare palatio morabatur; in estate 
@@ -9402,10 +9321,7 @@ inuenire poterat, sibi adherere iubebat, et prout cuiusque exigebat
 conditio, eos diuersis honoribus et diuitiis exaltabat.
 </p>
       <anchor xml:id="g234.n1-236.n10garuficollocation" type="transposition" subtype="garuficollocation"/>
-      <!--ut autem uniuersus mundus euidenter agnoscat... gloria incendio tradidit illum-->
-
-
-<p xml:id="g234.3-235.5" decls="#al"> 
+      <p xml:id="g234.3-235.5" decls="#al"> 
 Nouissime 
 Maionem iuuenem de Baro oriundum, uirum utique facundum, 
 satis prouidum et discretum, primo scriniarium, dehinc 
@@ -9416,10 +9332,7 @@ speciosam suis sumptibus fecit construi, cui ciuitatem optulit et
 eius seruitio deputauit. 
 </p>
       <anchor xml:id="g234.n1-236.n10bonetticollocation" type="transposition" subtype="bonetticollocation"/>
-      <!--ut autem uniuersus mundus euidenter agnoscat... gloria incendio tradidit illum-->
-
-
-<p xml:id="g236.1-237.5" decls="#al"> 
+      <p xml:id="g236.1-237.5" decls="#al"> 
 Circa finem autem uite sue secularibus negotiis aliquantulum 
  
 postpositis et ommissis, Iudeos et Sarracenos ad fidem Christi 
@@ -9868,7 +9781,7 @@ apud Diionem pariter conuenirent, et quicquid de papa Alexandro
 et Uictore eis esset faciendum, ecclesiasticarum personarum 
 iudicio difinirent. Quod uerbum Lodouico regi Francorum admodum 
 placuit, qui in prefixo die et termino cum paucis militibus 
-ad locum constitutum uenit, <w ana="#ab">set</w> imperatorem ibidem minime inuenit. 
+ad locum constitutum uenit, set imperatorem ibidem minime inuenit. 
 Altera autem die imperator cum magna magna militum et 
 peditum et cum Octauiano ad eumdem locum uenire curauit. 
 Quod rex Francie cognoscens, eius uersutias metuens, uenire ad 
@@ -10125,7 +10038,7 @@ tum quia multi ex eis ab imperatore capti detinebantur, ei
 resistere non potuerunt. 
 <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
 Unde imperator, hac occasione inuenta, armata manu ecclesiam 
-beati Petri uiolenter inuasit. Porticum, <w ana="#ab">quod</w> erat ante ecclesiam, 
+beati Petri uiolenter inuasit. Porticum, quod erat ante ecclesiam, 
 comburi fecit, Guidonem Cremensem in ecclesiam induxit 
 et eum ibidem missam canere fecit. Quo cognito, Alexander papa, 
 qui tunc in turri Cartularie morabatur, in habitu peregrini 
@@ -10453,7 +10366,7 @@ et Lombardi ad propria sunt reuersi.
 Imperator interim nuntios ad Alexandrum papam apud Anagniam 
 direxit, rogans ut aliquos de fratribus suis ad eum in 
 Lombardiam mitteret, qui simul cum Lombardis tractande pacis 
-colloquio interessent. Papa uero, consilio habito, HubaldumThe 'u' of 'hubaldum' is written with the 'v'-like allograph. This confirms that 'v' in the graphic system of the manuscript is an allograph. Hostiensem 
+colloquio interessent. Papa uero, consilio habito, Hubaldum Hostiensem 
 et Bernardum Portuensem episcopos, et Willelmum 
 Papiensem cardinalem Sancti petri ad uincula in Lombardiam 
 misit, ut simul cum Lombardis pacem ecclesie et Italie pertractarent. 
@@ -10652,7 +10565,7 @@ pacis colloquio interessent; papa enim firmiter in suo habebat
 proposito, nequaquam cum imperatore sine rege Wilhelmo 
 pacem facere, ut qui adiutor ecclesie et defensor in tribulatione 
 fuerat, in compositione pacis ecclesiastice socius et particeps 
-fieret. Rex autem Wilhelmus RomoaldoThe only two alphabetical graphemes are "rom", so it's impossible o ascertain whether it is "romualdus" or "romoaldus". secundo Salernitano 
+fieret. Rex autem Wilhelmus Romoaldo secundo Salernitano 
 archiepiscopo et Roggerio comiti Andrie et magistro comestabulo 
 et magistro iusticiario totius Apulie et Terre laboris per litteras 
 suas dedit in mandatis, ut honorifice preparati simul cum 
@@ -10684,7 +10597,7 @@ regionis illius et comite et popolo ciuitatis satis honorifice
 est receptus. Dehinc per insulas Dalmacie nauigans, nono die 
 stante mensis Martii ad portum Uenetie aura flante secunda peruenit. 
 Et ibidem cum omnibus suis de galea descendens, in monasterio 
-Sancti nycolay, quod dicitur <soCalled>ad litus</soCalled>, ipso die quieuit. 
+Sancti nycolay, quod dicitur ad litus, ipso die quieuit. 
 <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
 Altera autem die dux Uenecie cum magna nauium et populi 
 multitudine et patriarcha Uenecie simul cum patriarcha Aquileie 
@@ -10792,7 +10705,7 @@ licet imperator nos de pace ecclesie et dilecti in Christo filii et
 illustris regis Sicilie aput Anagniam per suos nuntios requisierit, 
 et eam uobis absentibus perpetrare uoluerit: nos tamen ardorem 
 uestre fidei et deuotionis firmiter recolentes, considerantes 
-etiam, qualiter uos murum pro domo IsrahelThe abbreviation 'ihl' with a horizontal strike crossing the 'h' and the 'l' means "israhel" in the graphic system of the manuscript. opponere studuistis, 
+etiam, qualiter uos murum pro domo Israhel opponere studuistis, 
 et qualiter pro statu ecclesie et libertate Ytalie uiriliter 
 decertastis, oblatam nobis imperatoris pacem recipere sine uobis 
 nolumus, ut sicut fuistis socii tribulationis, participes sitis et 
@@ -10944,7 +10857,7 @@ eum cardinalibus et Lombardis, eo die per Padum Lauretum descendit.
 <p xml:id="g275.12-275.18" decls="#al">
 <milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
 Altera uero die per mare ad Sanctum nicolaum, qui dicitur 
-<soCalled>ad litus</soCalled>, applicuit. Tertia autem die a duce et populo Uenecie, 
+ad litus, applicuit. Tertia autem die a duce et populo Uenecie, 
 a patriarcha et uniuerso clero, primo ad Sanctum marcum, dehinc 
 ad patriarche palatium cum magna gloria est et honore 
 deductus. Postquam autem cardinales et Lombardi, qui papam 
@@ -11448,7 +11361,7 @@ etiam Coloniensis archiepiscopi in anima principum,
 qui ibi aderant, simile iuramentum prestitit. Hoc autem facto, ex 
 mandato pape Ueneti cum sex galeis Cloiam iuerunt, et imperatorem 
 cum suis in galeis recipientes, eum usque ad Sanctum 
-nicolaum, qui dicitur <soCalled>ad litus</soCalled>, sabbato in sero honorifice deduxerunt. 
+nicolaum, qui dicitur ad litus, sabbato in sero honorifice deduxerunt. 
 </p>
 
 
@@ -11769,7 +11682,7 @@ silentio pretereundum non est, quod scismatici, qui in diuersis
 ecclesiis Tuscie et Lombardie auctoritate imperiali intrusi fuerant, 
 et quidam dicti cardinales, qui Iohanni de Struma adheserant, 
 audito, quod imperator cum ecclesia et papa Alexandro pacem 
-fecisset, penitentia ducti, UeneciasThe initial 'u' is written with allograph 'v' though not in a larger font. festino gressu uenientes, 
+fecisset, penitentia ducti, Uenecias festino gressu uenientes, 
 primo scisma, quod defenderant, abiurabant, dehinc per sancta 
 Dei euangelia promittebant, quod de excessu, quem fecerant, 
 domini pape Alexandri mandato starent, et eum et successores 
@@ -11984,7 +11897,7 @@ concilium celebratum est et solutum.
 <p xml:id="g293.21-293.38" decls="#al"> 
 Eo autem die nuntii regis Sicilie, accepta a papa et imperatore 
 licentia, cum galeis suis ad monasterium Sancti nicolay qui 
-<soCalled>ad litus</soCalled> dicitur, peruenerunt. Celebrato ibidem festo Uirginis, 
+ad litus dicitur, peruenerunt. Celebrato ibidem festo Uirginis, 
 altero die Adriaticum mare intrantes, aura flante secunda, nono 
 die stante mensis Augusti, sani et incolumes cum omnibus suis 
 Barolum descenderunt. Archiepiscopus itaque et comes Roggerius, 
@@ -12175,7 +12088,7 @@ usque transmisit.
 
 <p xml:id="g296.27-297.2" decls="#al"> 
 
-Eodem tempore mense Madii, undecimaThe initial 'u' is written with the 'v' allograph, probably because it is somehow part of a numeral. indictione, rustici de 
+Eodem tempore mense Madii, undecima indictione, rustici de 
 Faiano, sicut proditores et periuri, consentientibus, ut dicitur, 
 quibusdam monachis, qui ibidem erant, Matheum abbatem Sancti 
 Benedicti de Salerno cum gladiis et fustibus et lanceis inuaserunt, 

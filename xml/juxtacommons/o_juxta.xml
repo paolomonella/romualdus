@@ -5,12 +5,8 @@
 <!ENTITY jj '<choice><orig>j</orig><reg type="j">i</reg></choice>'>
 <!ENTITY uu '<choice><orig>v</orig><reg type="v">u</reg></choice>'>
 ]>
-<!--bd  = Bonetti Dash-->
-<!--bl = Bonetti Line Beginning-->
-<!--jj  = Annotation on alphabeme 'i', saying that it is represented by allograph j in Bonetti or Garufi-->
-<!--uu  = Annotation on alphabeme 'v', saying that it is represented by allograph v in Bonetti or Garufi-->
 <TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <teiHeader>
+<teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Romualdi Salernitani Chronicon, Bonetti edition</title>
@@ -43,7 +39,7 @@
                 <title level="s">Schola Salernitana. Studi e testi</title>
                 <biblScope unit="volume">6</biblScope>
             </series>
-            <note>Saggi introduttivi di G. Andenna, Hubert Houben, M. Oldoni.</note>
+            
         </biblStruct>
         </listBibl>
     </sourceDesc>
@@ -172,9 +168,8 @@
 
 
 <p xml:id="g168.5-168.7" decls="#al">
-<!-- Witness Aa start -->
 
-Anno ab incarnatione Domini DCCCCLXXUIsed 986, Lotharius 
+Anno ab incarnatione Domini DCCCCLXXUI, Lotharius 
 Francorum rex senex plenus dierum obiit, postquam regnauit 
 annum LIU, sepultusque est in basilica Sancti remigii regnus. Cui 
 successit Ludouicus filius eius aduch iuuenis. 
@@ -184,7 +179,7 @@ successit Ludouicus filius eius aduch iuuenis.
 <p xml:id="g168.8-189.4" decls="#al"> 
 Anno dominice incarnationis CMLXXXI defuncto 
 Iohanne papa Benedictus ei in pontificatus honorem successit. 
-Eodem anno sed 973 Otto maior imperator obiit anno 
+Eodem anno  Otto maior imperator obiit anno 
 XUIII ex quo imperator appellatus est. Successit annis ei Otto 
 imperator, qui dictus est minor, qui postquam imperii coronam 
 accepit, uera ens cunctam Salernum obsedit cepitque illam expugnans. 
@@ -201,7 +196,7 @@ annum IX.
 
 
 <p xml:id="g189.5-170.14" decls="#al"> 
-Anno dominice incarnationis CMLXXXU, sed 987 obiit 
+Anno dominice incarnationis CMLXXXU,  obiit 
 Lodouicus Francorum rex iuuenis, postquam regnauit annis 
 IX, sepultusque est in basilica beati Cornelii Compendio. 
 Cui succesit Carolus frater eius filius Lotharii regis. Eodem anno 
@@ -260,7 +255,7 @@ quasi unum passum. Et post paucos dies iterum aparuit
 eadem stella a parte occidentis et splendor eius tendebat ad orientem. 
 Et non multo postea fuit terre motus magnus qui plures 
 euertit domus in Beneuento et in Capua multosque homines occidit 
-et in ciuitate Arriano plures eclesias subuertit. The next lines are hardly readable.Ciuitas quoque 
+et in ciuitate Arriano plures eclesias subuertit. Ciuitas quoque 
 Frequentus pene media cecidit, ciuitatem uero Comsanam 
 prope mediam cum episcopo supuertit, multosque homines oppresit. 
 Ronsem totam cum eius hominibus supmersit. 
@@ -268,7 +263,7 @@ Ronsem totam cum eius hominibus supmersit.
 
 
 <p xml:id="g171.2-171.6" decls="#al"> 
-The text of this paragraph is hardly readable.
+
 Preterea Rome defuncto papa Benedicto, Iohannes papa sedit 
 menses IX. Hic autem in castello Sancti angeli reclusus et 
 per menses IU fame aflictus mortus est. Et iterum superior 
@@ -280,7 +275,7 @@ sibi tirannidem uendicauere.
 
 
 <p xml:id="g171.7-171.8" decls="#al"> 
-Anno ab incarnatione Domini CMXCIU in Apulia ciuitas <gap quantity="1" reason="illegible" unit="words"/> 
+Anno ab incarnatione Domini CMXCIU in Apulia ciuitas [1_illegible_word] 
 Matere a Sarracenis destructa est. 
 </p> 
 
@@ -289,31 +284,31 @@ Matere a Sarracenis destructa est.
 Anno dominice incarnationis CMXCUIII. Ugo dux Francorum 
 obiit sepultusque est in basilica beati Dionisi martiris Parisius. 
 Cui secesit filius eius Robbertus rex qui pius fuit et modestus. 
-Hic <gap quantity="4" reason="illegible" unit="words"/> regnauit annis XXXIII. Per 
-idem tempus Mel catipanus primum in Apuliam <gap quantity="9" reason="illegible" unit="words"/>
+Hic [4_illegible_words] regnauit annis XXXIII. Per 
+idem tempus Mel catipanus primum in Apuliam [9_illegible_words]
 Apulia apud 
-Basentellum comisit, et non <gap quantity="7" reason="illegible" unit="words"/> cepit. 
+Basentellum comisit, et non [7_illegible_words] cepit. 
 </p> 
 
 
 <p xml:id="g172.1-172.9" decls="#al"> 
 Non post multum uero temporis Hanricus Burgundis dux 
-<gap quantity="11" reason="illegible" unit="words"/>
-rebellauerunt Burgundiones in regem <gap quantity="12" reason="illegible" unit="words"/>
+[11_illegible_words]
+rebellauerunt Burgundiones in regem [12_illegible_words]
 cum duce suo Ricardo et exercitu 
-uastauit Burgundia. <gap quantity="6" reason="illegible" unit="words"/>
-defunctus est, cui sucessit Fromundus filius <gap quantity="3" reason="illegible" unit="words"/>
-Fromundo  <gap quantity="5" reason="illegible" unit="words"/>filius 
-eius nequissimus; <gap quantity="8" reason="illegible" unit="words"/>
+uastauit Burgundia. [6_illegible_words]
+defunctus est, cui sucessit Fromundus filius [3_illegible_words]
+Fromundo  [5_illegible_words]filius 
+eius nequissimus; [8_illegible_words]
 non est audita a tempore paganorum usque 
-in hodiernum diem. Post <gap quantity="7" reason="illegible" unit="words"/>
-ab archiepiscopo <gap quantity="9" reason="illegible" unit="words"/>
+in hodiernum diem. Post [7_illegible_words]
+ab archiepiscopo [9_illegible_words]
 </p> 
 
 
 <p xml:id="g172.10-173.11" decls="#al"> 
-<gap quantity="2" reason="illegible" unit="words"/> autem Rome defuncto Iohanne papa successit ei 
-Gregorius seditque anno <gap quantity="6" reason="illegible" unit="words"/> succesit 
+[2_illegible_words] autem Rome defuncto Iohanne papa successit ei 
+Gregorius seditque anno [6_illegible_words] succesit 
 seditque menses X. Hic turpiter uitam suam finiuit. Succesit 
 autem huic Siluester, uir omnium artium liberalium peritissimus, 
 qui primitus abbas Bobiensis, postea archiepiscopus 
@@ -352,14 +347,14 @@ Capuam obsederunt.
 
 
 <p xml:id="g173.12-173.13" decls="#al"> 
-Anno dominice incarnationis <gap quantity="3" reason="missing" unit="words"/> fames ualida 
+Anno dominice incarnationis [3_missing_words] fames ualida 
 Italiam obtinuit. Quo tempore Mel catipanus cum Normannis 
 Apuliam expugnabat. 
 </p> 
 
 
 <p xml:id="g173.14-174.7" decls="#al"> 
-Anno ab incarnatione Domini <gap quantity="2" reason="missing" unit="words"/> indictione Siluester papa 
+Anno ab incarnatione Domini [2_missing_words] indictione Siluester papa 
 defunctus est et Benedictus frater Alberici papalem suscepit 
 chatedram. Eodem anno Henricus Alamanorum rex Romam 
 uenit et ab eodem Benedictus papa coronam accepit imperii et 
@@ -375,7 +370,7 @@ strenue ordinare hic in Apulie finibus.
 
 
 <p xml:id="g174.8-175.15" decls="#al"> 
-Anno domini <gap quantity="1" reason="missing" unit="words"/>. indictione I. Redificauit 
+Anno domini [1_missing_word]. indictione I. Redificauit 
 ciuitatem diu dirutam nuncupauitque eam Troiam, que 
 antiquitus Ecana uocabatur et iussu imperatorum fines 
 per statutum priuilegium eidem stabiliuit ciuitati. In hanc ciuitatem 
@@ -391,8 +386,8 @@ Ipse etiam prenominatus catipanus in finibus Samnii et Apulie
 edificauit ach constituit plures urbes et opida; ipsaque regio 
 usque odie Catipania ex suo nomine dicitur. Quarto autem anno 
 post predicte ciuitatis Troye rehedificacionem, in anno uidelicet 
-incarnationis Domini <gap quantity="1" reason="missing" unit="words"/> A much later hand wrote the year in Arabic numerals.indictione 
-<gap quantity="1" reason="missing" unit="words"/>A much later hand wrote number five in Arabic numerals. Henricus Alamanorum imperatorii ingenti cum exercitu, 
+incarnationis Domini [1_missing_word] indictione 
+[1_missing_word] Henricus Alamanorum imperatorii ingenti cum exercitu, 
 simul et cum Benedictus papa uenit super ipsam ciuitatem obseditque 
 per IU menses machinis illam fortiter expugnans. 
 Imperator itaque uidens quod ea sine mora capere  
@@ -405,13 +400,13 @@ Alamanniam deduxit.
 
 
 <p xml:id="g176.1-176.2" decls="#al"> 
-Anno dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> indictione <gap quantity="1" reason="missing" unit="words"/> Basilius 
+Anno dominice incarnationis [1_missing_word] indictione [1_missing_word] Basilius 
 imperator Constantinopolitanus diem obiit. 
 </p> 
 
 
 <p xml:id="g177.1-177.4" decls="#al"> 
-Anno dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> indictione <gap quantity="1" reason="missing" unit="words"/>, Henricus 
+Anno dominice incarnationis [1_missing_word] indictione [1_missing_word], Henricus 
 Alamannorum imperator defunctus est, cui succesit Chunradus 
 qui dux eius fuerat. Eodem anno papa Benedictus obiit et succesit 
 ei Iohannes frater eius, qui uno eodemque die et laicus 
@@ -420,7 +415,7 @@ fuit et pontifex, seditque annos IX dies IX.
 
 
 <p xml:id="g177.5-177.6" decls="#al"> 
-Anno Domini <gap quantity="1" reason="missing" unit="words"/> indictione <gap quantity="1" reason="missing" unit="words"/>; apud Constantinopoli 
+Anno Domini [1_missing_word] indictione [1_missing_word]; apud Constantinopoli 
 Constantinus imperator obiit et succesit ei Romano gener eius 
 una cum eius uxore Zoy imperatrice, regnauitque annos U. 
 </p> 
@@ -511,7 +506,7 @@ est, flagrauit incendio.
 
 
 <p xml:id="g179.15-180.12" decls="#al"> 
-Anno Domini <gap quantity="1" reason="missing" unit="words"/> indictione XIU Henricus imperator 
+Anno Domini [1_missing_word] indictione XIU Henricus imperator 
 Romam uenit inuenitque sedem apostolicam ualde turbatam, 
 nam uno edemque tempore supradicti Teophilus qui et Benedictus, 
 et Siluester qui et Iohannes Sabinianus, et Gregorius 
@@ -537,12 +532,12 @@ est.
 
 <p xml:id="g181.1-181.1" decls="#al"> 
  
-Anno ab incarnatione Domini <gap quantity="1" reason="missing" unit="words"/> indictione I Zoi imperatrix obiit. 
+Anno ab incarnatione Domini [1_missing_word] indictione I Zoi imperatrix obiit. 
 </p> 
 
 
 <p xml:id="g181.2-181.5" decls="#al"> 
-Anno ab incarnatione domini <gap quantity="1" reason="missing" unit="words"/> indictione II, Damaso papa uita decedente, 
+Anno ab incarnatione domini [1_missing_word] indictione II, Damaso papa uita decedente, 
 Leo sanctisimus qui uocatur Brunus, a populo Romano 
 expetitus, a clero electus, ab imperatore quoque comendatus, 
 et ab episcopis, quibus oficii huius auctoritas est atributa, consecratus est 
@@ -551,7 +546,7 @@ in pontificatus honorem, seditque annos quinque, menses duos.
 
 
 <p xml:id="g181.6-181.10" decls="#al">
-Anno dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> indictionem III mensis Augusti Drogo Nordmannorum 
+Anno dominice incarnationis [1_missing_word] indictionem III mensis Augusti Drogo Nordmannorum 
 comes defunctus est. Fuitque uir egregius, pius, strenus 
 atque famosus, qui propter animi mansuetudinem et iusticie 
 seruatam equitatem a cunctis dilectus est. Cui Umfridus frater 
@@ -561,14 +556,14 @@ ipsius honorem per annos UII.
 
 
 <p xml:id="g181.10-181.11" decls="#al"> 
-Anno dominice incarnationis <gap quantity="1" reason="missing" unit="words"/> indictione U Gaymarius 
+Anno dominice incarnationis [1_missing_word] indictione U Gaymarius 
 princeps Salerni a suis interfectus est anno principatus sui 
 XXIII. Cui succesit Gisolfus filius eius. 
 </p> 
 
 
 <p xml:id="g181.12-182.19" decls="#al"> 
-Anno ab incarnatione Domini <gap quantity="1" reason="missing" unit="words"/> indictione UI mensis 
+Anno ab incarnatione Domini [1_missing_word] indictione UI mensis 
 Iunii. Leo papa multis precibus ab Henrico monitus imperatore 
 per corundam Sannitum sucgestionem uenit in Beneuentum 
 ut Normanos Apulia expelleret. Inde mouens gresum simul 
@@ -623,7 +618,7 @@ natus ex patre Tancredo, Nordmannorum comitatus honorem sibi
 arripuit, ipsum Bayelardum suum nepotem expellens. Tancredus 
 autem fuit timoris Dei non immemor, qui bissenos habuit filios. 
 Quorum primus quidem fuit Sarnus, qui miles insignis extitit. 
-Secundus autem comes Gofridus pater Robberti comis <gap quantity="2" reason="missing" unit="words"/>. 
+Secundus autem comes Gofridus pater Robberti comis [2_missing_words]. 
 Tercius uero Drogo comes, de quo superius scriptum est. 
 Quartus autem Arlelmus, et ipse comes, qui propter fortitudinis 
 sue prudenciam Brachiferuens est prenomina dictus erat enim 
@@ -720,7 +715,7 @@ obpugnauit terra marique pontem quoque ibi in mari fecit.
 
 
 <p xml:id="g187.9-187.11" decls="#al"> 
-Garufi's paragraph runs from page 187 line 9 to page 188 line 4 without interruptions. I split Garufi's paragraph because the text segmentation in manuscript A is different than in Garufi.
+
 Anno dominice incarnationis MLXX indictione UIII, apud 
 Constantinopolim Romano Diogenes imperatore transacto quarto 
 imperii eius anno defunctus est. Cui imperio Miquel filius 
@@ -737,7 +732,6 @@ Eodem anno Robbertus dux
 cepit Barum ciuitatem longa obsidione fatigatam, indeque 
 monens exercitum, Siciliam properauit obseditque Panormum, 
 ditissimam 
-<!-- Witness Aa end -->
 </p>
 
 
