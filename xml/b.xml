@@ -3,9 +3,9 @@
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
 <!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
 ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <!--gd  = Garufi Dash-->
 <!--glb = Garufi Line Beginning-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -84,7 +84,7 @@ duo milia ducentos lx duos; gnawtiones uø iuxta utramq9 editione0 numero decem,
 
 <p xml:id="g3.17-4.2" decls="#algl">
 &glb;secunda etas a <rs>noe</rs> usque ad <rs>habraam</rs> gnawtiones oms0 iuxta hebraycam ueritatem conplexa 
-&glb;de<cb n="1r.b" ed="#msb"/>cem <gap reason="blank" quantity="2" unit="words"/> nonaginta duos. porro lxx <gap reason="blank" quantity="2" unit="words"/> septua<choice><abbr>g0</abbr><expan>ginta</expan></choice> duos. gnawtiones uø undecim. hec uø quasi <gap reason="blank" quantity="2" unit="words"/> gnawtionis ppli5 <rs>dei</rs>. et 
+&glb;de<cb n="1r.b" ed="#msb"/>cem <gap reason="missing" quantity="2" unit="words"/> nonaginta duos. porro lxx <gap reason="missing" quantity="2" unit="words"/> septua<choice><abbr>g0</abbr><expan>ginta</expan></choice> duos. gnawtiones uø undecim. hec uø quasi <gap reason="missing" quantity="2" unit="words"/> gnawtionis ppli5 <rs>dei</rs>. et 
 &glb;ideo in lingua inuenta est <rs>he<choice><abbr>b2</abbr><expan>bra</expan></choice>ica</rs>. a pu<choice><abbr>ewi</abbr><expan>eri</expan></choice>tia namq9 h0 inci<choice><abbr>p0</abbr><expan>pit</expan></choice> nosse loqui, que idcirco 
 &glb;appellata est, q2 fari non po<choice><abbr>t5</abbr><expan>test</expan></choice>. ab <rs>adam</rs> itaq9 usq9 ad <rs>abraham</rs> iuxta hebraicam
 &glb;ueritatem computantw anni mille <choice><abbr>n0</abbr><expan>nun</expan></choice>genti xl uiii, se<choice><abbr>cd5</abbr><expan>cundum</expan></choice> interp5tes lxx fi<choice><abbr>uw</abbr><expan>un</expan></choice>t <choice><abbr>a0</abbr><expan>an</expan></choice>ni tria milia <choice><abbr>ccc2</abbr><expan>ccc</expan></choice> xiiii.

@@ -9,11 +9,11 @@
 ]>
 
 
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <!--bd  = Bonetti Dash-->
 <!--bl = Bonetti Line Beginning-->
 <!--jj  = Annotation on alphabeme 'i', saying that it is represented by allograph j in Bonetti or Garufi-->
 <!--uu  = Annotation on alphabeme 'v', saying that it is represented by allograph v in Bonetti or Garufi-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -325,7 +325,7 @@ annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">i&uu;</reg><
 </p> 
 
 
-<p xml:id="g168.8-189.4" decls="#ocr"> 
+<p xml:id="g168.8-169.4" decls="#ocr"> 
 &bl;<hi>anno</hi> dominice incarnationis <num value="981"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&jj;</num> <note resp="#b" type="year">sed 972</note> de&bd;functo 
 <rs>iohanne</rs> papa <rs>benedictus</rs> ei in pontificatus honorem suc<pb break="no" n="70" ed="#b"/>&bd;cessit. 
 &bl;<hi>eodem</hi> anno <note resp="#b" type="year">sed 973</note> <rs>otto</rs> maior imperator obiit anno 
@@ -344,7 +344,7 @@ annis <num value="9"><choice><orig>&uu;iiii</orig><reg type="numeral">ix</reg></
 </p> 
 
 
-<p xml:id="g189.5-170.14" decls="#ocr"> 
+<p xml:id="g169.5-170.14" decls="#ocr"> 
 &bl;<hi>anno</hi> dominice incarnationis <num value="985"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxxx&uu;</num>, <note resp="#b" type="year">sed 987</note> obiit 
 &bl;<rs>ludouicus</rs> <rs>francorum</rs> rex iuuenis, postquam regnauit annis 
 &bl;nouem, sepultusque est in basilica beati <rs>cornelii</rs> <rs>compendio</rs>. 
@@ -1546,9 +1546,9 @@ uirtute in bello preualidus. <hi>huic</hi> autem <rs>boamundus</rs> filius
 &bl;eius una cum matre sua domna <rs>constantia</rs> successit. 
 </p>
 
-<pb n="118" ed="#b"/> 
 
 <p xml:id="g206.n4-206.n5" decls="#ocr">
+<pb n="118" ed="#b"/> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs> prints this paragraph, as well as all those having an id with "n1" or the like, in an apparatus note.</note> 
 &bl;<hi>anno</hi> <rs>domini</rs> <num value="1112"><choice><orig>1112</orig><reg type="numeral">mcxii</reg></choice></num>. <hi>hoc</hi> anno mense <hi>augusti</hi> <rs>agerenum</rs> 
 &bl;iterum ignis combustione uastatur. 
@@ -3025,9 +3025,9 @@ et quia rex <rs>w<supplied resp="#b">ilhelmus</supplied></rs> guerram in <rs>ter
 &bl;et <rs>panormum</rs> est cum triumpho reuersus. 
 </p> 
 
-<pb n="184" ed="#b"/> 
 
 <p xml:id="g249.11-250.13" decls="#ocr"> 
+<pb n="184" ed="#b"/> 
 &bl;<hi>interea</hi> <rs>alexander</rs> papa, cum apud <rs>anagniam</rs> et <rs>terracenam</rs> 
 &bl;fuisset aliquando tempore demoratus, suggestione <rs>&uu;illani</rs> <rs>pisani</rs> 
 &bl;archiepiscopi, qui ad eum cum una galea uenerat, acceptis etiam 

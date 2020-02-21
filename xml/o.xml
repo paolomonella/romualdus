@@ -9,11 +9,11 @@
 ]>
 
 
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <!--bd  = Bonetti Dash-->
 <!--bl = Bonetti Line Beginning-->
 <!--jj  = Annotation on alphabeme 'i', saying that it is represented by allograph j in Bonetti or Garufi-->
 <!--uu  = Annotation on alphabeme 'v', saying that it is represented by allograph v in Bonetti or Garufi-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>

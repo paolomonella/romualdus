@@ -5,11 +5,11 @@
 <!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
 <!ENTITY bl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'>
 ]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
 <!--gd  = Garufi line beninning, with Dash-->
 <!--gl = Garufi Line beginning-->
 <!--bd  = Bonetti line beninning, with Dash-->
 <!--bl = Bonetti Line beginning-->
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -2307,6 +2307,7 @@ apostolorum</title> ab angelo percussum legimus. <hi>actenus</hi> qui uocabantur
 &gl;regnauerunt annis ducentos nonaginta quinque. 
 </p>
 
+<p xml:id="g43.17-43.17" decls="#al"/> 
 
 <p xml:id="g43.18-44.9" decls="#al"> 
 &gl;<hi>sexta</hi> <hi>etas</hi> ab aduentu <rs>domini</rs> inchoatur, cum <rs>dei</rs> <quote type="biblia">uerbum caro factum est</quote>, transactis 
@@ -7272,6 +7273,8 @@ regis filius suggestione quorundam suorum amicorum uenit in <rs>galliam</rs> ad 
 
 <milestone type="bonetti-is-collation-exemplar-from-here-on" unit="collation"/>
 
+
+<p xml:id="b062heading" decls="#al"/> 
 
 <p xml:id="g163.6-163.7" decls="#al">
 <pb n="62" ed="#b"/> 
