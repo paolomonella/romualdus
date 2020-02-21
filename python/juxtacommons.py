@@ -205,7 +205,7 @@ class msTree:
         ER =  []    # Elements to transform in all uppercase
         ER = ER + self.tree.findall('.//t:p[@type="ghead1"]', myconst.ns)
         ER = ER + self.tree.findall('.//t:p[@type="ghead2"]', myconst.ns)
-        ER = ER + self.tree.findall('.//t:num', myconst.ns)
+        #ER = ER + self.tree.findall('.//t:num', myconst.ns)    # Numerals are now handles in a specific function (handle_numerals)
         for e in ER:
             if e.text is not None: e.text = e.text.upper()
             for c in e.findall('.//t:*', myconst.ns):
@@ -244,9 +244,11 @@ class msTree:
         '''Remove start and end tag; remove textual content; keep tail if my_with_tail=False (default)'''
         etree.strip_elements(self.tree, myconst.tei_ns + tagname, with_tail=my_with_tail)
 
-    def v_in_numerals (self):
-        '''Replace 'u' with 'v' in the textual content of <num> elements'''
+    def handle_numerals (self):
+        '''Replace 'u' with 'v' in the textual content of <num> elements, and make them all uppercase'''
         for num in self.tree.findall('.//t:num', ns):
+
+            # Replace 'u' with 'v'
             if num.text:
                 num.text = num.text.replace('u', 'v')   # Direct textual content of <num>
             for x in num.findall('.//t:*', ns):     # Children elements of <num>
@@ -254,6 +256,13 @@ class msTree:
                     x.text = x.text.replace('u', 'v')
                 if x.tail:
                     x.tail = x.tail.replace('u', 'v')
+
+            # Make uppercase if @type is not 'words'
+            if num.get('type') != 'words':
+                if num.text is not None: num.text = num.text.upper()
+                for c in num.findall('.//t:*', myconst.ns):
+                    if c.text is not None: c.text = c.text.upper()
+                    if c.tail is not None: c.tail = c.tail.upper() 
 
 
     def reduce_layers_to_alph_only (self):
@@ -327,7 +336,7 @@ for edition in EDL:
         mytree.reduce_layers_to_alph_only()
     for tag_to_strip in ['interp', 'abbr', 'surplus', 'note']:
         mytree.my_strip_elements(tag_to_strip) 
-    mytree.v_in_numerals()
+    mytree.handle_numerals()
     mytree.handle_gaps()
     mytree.handle_add_del() # only needed for MS A
     mytree.choose('choice', 'sic', '', 'corr')  # check if this works §
