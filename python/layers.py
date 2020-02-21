@@ -87,7 +87,7 @@ def extractLayers (siglum, baretext=False):
         garufiSpan = etree.Element('span')
         garufiSpan.set('class', 'metatext garufi')
         if len(e) == 0 and not e.text:    # If the paragraph was completely empty (no text, no child elements)
-            garufiString = garufiString.replace(']', ' missing in the manuscript]')
+            garufiString = garufiString.replace(']', ' not transcribed]')
         garufiSpan.text = garufiString
         e.insert(0, garufiSpan)
         if e.text:  # If the paragraph is not empty and starts with e.text, move e.text to the end of garufiSpan
@@ -137,7 +137,7 @@ def extractLayers (siglum, baretext=False):
         # Alternative: change "," to "<span class="punct">,</span>" (but how to do it with lxml? google it)
 
     if not baretext:
-        # When the user hovers an abbreviation, a black recttangle will show up with its expansion
+        # When the user hovers an abbreviation, a black rectangle will show up with its expansion
         for e in g_alltext.findall('.//h:span[@class="abbr"]', ns):
             he = e.getparent().find('h:span[@class="expan"]', ns) # Hover Expansion
             e.set('title', he.text)
@@ -189,7 +189,7 @@ def extractLayers (siglum, baretext=False):
             genericBaseReplaceAll(row, a_alltext)
     
 
-    # ... finally, translate every grapheme (except those into 'metatext' elements) into their standard alphabetic meaning
+    # ... eventually, translate every grapheme (except those into 'metatext' elements) into their standard alphabetic meaning
     for row in tos:
         if row[3] in ['Alphabetic', 'Brevigraph']:
             myReplaceAll(row[0], row[1], a_alltext)
@@ -200,7 +200,14 @@ def extractLayers (siglum, baretext=False):
             e.text = e.text.capitalize()
         else:   # If not, get the text of <rs>'s first child and capitalize it
             rschild = e[0]
-            rschild.text = rschild.text.capitalize()
+            if rschild.text:  # If the content of the first child starts with a text node, capitalize it
+                rschild.text = rschild.text.capitalize()
+            else:
+                rsgrandchild = rschild[0]
+                if rsgrandchild.text:  # If the content of the first child starts with a text node, capitalize it
+                    rsgrandchild.text = rsgrandchild.text.capitalize()
+                else:
+                    print('The <rs> with text', e.itertext(), 'seems not to have textual content!')
 
     if baretext:
         baretextize(a_alltext)
