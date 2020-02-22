@@ -37,7 +37,8 @@ class msTree:
         #parser = etree.XMLParser(resolve_entities=True)
         self.tree = etree.parse(self.xmlfile, parser=parser)
         self.root = self.tree.getroot()
-        self.outputXmlFile = '%s/juxtacommons/%s%s.xml' % (myconst.xmlpath, siglum, '_juxta')
+        self.outputXmlFile = '%s%s%s.xml' % (myconst.simplifiedpath, siglum, myconst.simplifiedsuffix)
+        print(self.outputXmlFile)
 
     def remove_comments (self):
         ''' Remove XML comments such as <!-- comment --> '''
@@ -352,14 +353,17 @@ for edition in EDL:
             removepar=False)
     mytree.write()
     # Temporarily needed for CollateX (remove @xmlns)
-    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'r') as infile:
+    with open('%s%s%s.xml' % (myconst.simplifiedpath, edition, myconst.simplifiedsuffix), 'r') as infile:
         data = infile.read()
-    with open('../xml/juxtacommons/%s_juxta.xml' % (edition), 'w') as outfile:
+    with open('%s%s%s.xml' % (myconst.simplifiedpath, edition, myconst.simplifiedsuffix), 'w') as outfile:
         data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
         outfile.write(data)
 
 
-for edition in ['a1_juxta', 'a2_juxta', 'o_juxta', 'g_juxta', 'bonetti_juxta']:
+#for mySiglum in ['a1_juxta', 'a2_juxta', 'o_juxta', 'g_juxta', 'bonetti_juxta']:
+for mySiglum in ['a1', 'a2', 'o', 'g', 'bonetti']:
+    edition = mySiglum + myconst.simplifiedsuffix
+    print(edition)
     mytree = msTree(edition)
     mytree.list_and_count_elements()
 
