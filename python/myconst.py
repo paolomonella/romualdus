@@ -6,7 +6,7 @@ csvpath = '../csv/'
 xmlpath = '../xml/'
 simplifiedpath = '../xml/'     #simplifiedpath = '../xml/juxtacommons/'
 htmlpath = '../html/'
-simplifiedsuffix = '_simplified'
+simplifiedsuffix = 's'
 
 # Metatext markers
 metatextlist = ['pb', 'cb', 'garufi', 'note']   # The e.text of HTML elements having @class="pb">, @class="garufi" etc.
