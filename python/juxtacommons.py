@@ -38,7 +38,6 @@ class msTree:
         self.tree = etree.parse(self.xmlfile, parser=parser)
         self.root = self.tree.getroot()
         self.outputXmlFile = '%s%s%s.xml' % (myconst.simplifiedpath, siglum, myconst.simplifiedsuffix)
-        print(self.outputXmlFile)
 
     def remove_comments (self):
         ''' Remove XML comments such as <!-- comment --> '''
@@ -332,6 +331,7 @@ class msTree:
 
 EDL = ['a1', 'a2', 'o', 'g', 'bonetti']
 for edition in EDL:
+    print('juxtacommons.py: I\'m working on %s' % (EDL) )
     mytree = msTree(edition)
     if edition == 'a1':
         mytree.reduce_layers_to_alph_only()
@@ -363,7 +363,6 @@ for edition in EDL:
 #for mySiglum in ['a1_juxta', 'a2_juxta', 'o_juxta', 'g_juxta', 'bonetti_juxta']:
 for mySiglum in ['a1', 'a2', 'o', 'g', 'bonetti']:
     edition = mySiglum + myconst.simplifiedsuffix
-    print(edition)
     mytree = msTree(edition)
     mytree.list_and_count_elements()
 

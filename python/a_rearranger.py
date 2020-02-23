@@ -26,4 +26,5 @@ for child in body2:
 
 xmlfileUnified = '%s/a.xml' % (myconst.xmlpath)
 
+print('a_rearranger.py: I\'m re-arranging a1.xml and a2.xml into a.xml (for the old GL/AL HTML visualization)')  # debug
 tree1.write(xmlfileUnified, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
