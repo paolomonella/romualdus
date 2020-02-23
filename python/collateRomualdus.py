@@ -21,14 +21,14 @@ debug = False
 ##afile = '../../xml/simplified/afoo_juxta.xml'
 #afile = '../../xml/chronicon.xml'
 #afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml is just a shorter version of g.xml (otherwise it is identical)
-afile = '../xml/juxtacommons/g_juxta.xml'
+afile = '../xml/g_simplified.xml'
 #bfile = '../../xml/bonetti_juxta.xml'
 #bfile = '../../xml/g.xml'
 #bfile = '../../xml/simplified/bfoo_juxta.xml'
 ##bfile = '../../xml/simplified/gfoo_juxta.xml'
 #bfile = '../../xml/a.xml'
 #bfile = '../../xml/ripostiglio/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
-bfile = '../xml/juxtacommons/a1_juxta.xml'
+bfile = '../xml/a1_simplified.xml'
 
 aSiglum = afile.split('/')[-1].split('.')[0].upper()
 bSiglum = bfile.split('/')[-1].split('.')[0].upper()
@@ -428,7 +428,6 @@ class myWitness:
         # how-to-resolve-external-entities-with-xml-etree-like-lxml-etree#19400397
         parser = etree.XMLParser(load_dtd=True, resolve_entities=True)
         self.tree = etree.parse(xmlfile, parser=parser)
-        print(self.tree.find('.//body'))
         #strip_ns_prefix(self.tree)
     
     def body(self):
