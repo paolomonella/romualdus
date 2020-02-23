@@ -21,14 +21,14 @@ debug = False
 ##afile = '../../xml/simplified/afoo_juxta.xml'
 #afile = '../../xml/chronicon.xml'
 #afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml is just a shorter version of g.xml (otherwise it is identical)
-afile = '../xml/g_simplified.xml'
+afile = '../xml/gs.xml'
 #bfile = '../../xml/bonetti_juxta.xml'
 #bfile = '../../xml/g.xml'
 #bfile = '../../xml/simplified/bfoo_juxta.xml'
 ##bfile = '../../xml/simplified/gfoo_juxta.xml'
 #bfile = '../../xml/a.xml'
 #bfile = '../../xml/ripostiglio/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
-bfile = '../xml/a1_simplified.xml'
+bfile = '../xml/a1s.xml'
 
 aSiglum = afile.split('/')[-1].split('.')[0].upper()
 bSiglum = bfile.split('/')[-1].split('.')[0].upper()
@@ -438,7 +438,6 @@ class myWitness:
         else:
             # If <TEI> does *not* have @xmlns: <TEI>
             myBody = self.tree.find('.//body')
-        print(myBody)
         return myBody
 
     def paragraphs(self):
