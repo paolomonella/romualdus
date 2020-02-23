@@ -331,7 +331,7 @@ class msTree:
 
 EDL = ['a1', 'a2', 'o', 'g', 'bonetti']
 for edition in EDL:
-    print('juxtacommons.py: I\'m working on %s' % (EDL) )
+    print('juxtacommons.py: I\'m working on %s' % (edition) )
     mytree = msTree(edition)
     if edition == 'a1':
         mytree.reduce_layers_to_alph_only()
