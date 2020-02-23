@@ -275,6 +275,7 @@ def jsonCollationsList(aParagraphList, bParagraphList):
         Each element of list jsonOutputList has the (JSON-formatted) output of the collation of two
         corresponding paragraphs (one from file A, the other from file B).
         '''
+        # § To-do: If paragraph does not exist (= is empty, no text and no children) in one witness, don't collate but return a message
     jsonOutputList = []
     for par in aParagraphList:
         print('Collating pagragraph ' + par.get('{%s}id' % ('http://www.w3.org/XML/1998/namespace')))  # debug
@@ -292,6 +293,7 @@ def visualizeVariantsInBrackets(jsonOutputList, onlyOutputVariants = False):
         If onlyOutputVariants = True, only output places in which there are differences
 
         '''
+        # § To-do: rimuovi file name suffix (_simplified o simili; è in una variabile in myconst) dalla vers. in maiuscolo
     
     for jout in jsonOutputList:
         j = json.loads(jout)
