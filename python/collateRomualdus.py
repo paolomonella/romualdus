@@ -22,14 +22,14 @@ debug = False
 ##afile = '../../xml/simplified/afoo_juxta.xml'
 #afile = '../../xml/chronicon.xml'
 #afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml is just a shorter version of g.xml (otherwise it is identical)
-afile = '../xml/gs.xml'
+afile = '../xml/gs-short.xml'
 #bfile = '../../xml/bonetti_juxta.xml'
 #bfile = '../../xml/g.xml'
 #bfile = '../../xml/simplified/bfoo_juxta.xml'
 ##bfile = '../../xml/simplified/gfoo_juxta.xml'
 #bfile = '../../xml/a.xml'
 #bfile = '../../xml/ripostiglio/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
-bfile = '../xml/a1s.xml'
+bfile = '../xml/a1s-short.xml'
 
 aSiglum = afile.split('/')[-1].split('.')[0].upper()
 bSiglum = bfile.split('/')[-1].split('.')[0].upper()
@@ -175,10 +175,20 @@ def numeralCheck(myStringOrig):
         The list can be incomplete'''
     numeralWordDict = {
             1: ['unus', 'unum'], 2: ['duo', 'due', 'duobus'],
-            4: ['quattuor'],
-            8: ['octo', 'octauo'], 10: ['decem'],
+            4: ['quattuor', 'quatuor'], 6: ['sex'], # I am not including quinta (ordinal)
+            8: ['octo'], 10: ['decem'], # not including octauo (ordinal)
+            17: ['decem et septem'],
             40: ['quadraginta'],
             47: ['quadraginta et septem'],
+            30: ['triginta'],
+            100: ['centum'],
+            # not including 164: ['centesimo sexagesimo quarto'] (ordinal)
+            200: ['ducentos'],
+            # not including 302: ['tricesimus secundus'] (ordinal)
+            310: ['trecentum decem'],
+            342: ['trecentum quadraginta duos'],
+            532: ['quingentorum triginta duorum'],
+            1000: ['mille'],
             }
     myString = myStringOrig.upper()
     numeralCheckDict = { 'words': [] }
@@ -314,6 +324,8 @@ def compareStrings(myString1, myString2):
             if myWord == myString2.strip().lower(): # If the other variant corresponds to one of those words
                 if debug: print('Eureka! This is a word/non-word numeral variant!')
                 myVariantType = 'num-WordType'
+            else:
+                myVariantType = getVariantType(result1, result2)
     elif numeralCheck(myString2.strip())['isNumeral']:
         # If the second variant is a numeral (e.g. VIII)
         print('«%s»     «%s»      «%s»' % (myString1, myString2, numeralCheck(myString1.strip())['words']))
@@ -321,6 +333,8 @@ def compareStrings(myString1, myString2):
             if myWord == myString1.strip().lower(): # If the other variant corresponds to one of those words
                 if debug: print('Eureka! This is a word/non-word numeral variant!')
                 myVariantType = 'num-WordType'
+            else:
+                myVariantType = getVariantType(result1, result2)
     else:
         myVariantType = getVariantType(result1, result2)
 
