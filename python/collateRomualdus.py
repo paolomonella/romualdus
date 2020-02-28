@@ -4,7 +4,7 @@
     http://collatex.obdurodon.org/
     '''
 
-import json,re,myconst
+import json,re,myconst,roman
 from lxml import etree
 from collatex import *
 from myconst import ns, tei_ns, xml_ns, html_ns 
@@ -167,6 +167,39 @@ def XMLtoJSON(id,XMLInput):
         witness['tokens'].append(token)
     return witness
 
+
+def numeralCheck(myStringOrig):
+    '''Check if a string is a numeral. If it is, return a dict including
+        a list of possible Latin words representing the numeral. E.g.: 'III' (and 'iii', case insensitive) should return:
+        {'isNumeral': True, 'words': ['tres', 'tribus', 'tria', 'trium']}
+        The list can be incomplete'''
+    numeralWordDict = {
+            1: ['unus', 'unum'], 2: ['duo', 'due', 'duobus'],
+            4: ['quattuor'],
+            8: ['octo', 'octauo'], 10: ['decem'],
+            40: ['quadraginta'],
+            47: ['quadraginta et septem'],
+            }
+    myString = myStringOrig.upper()
+    numeralCheckDict = { 'words': [] }
+    try:
+        if debug: print('String %s is a Roman numeral, corresponding to %d' % (myStringOrig, myArabic))
+        myArabic = roman.fromRoman(myString)
+        numeralCheckDict['isNumeral'] = True
+        try:
+            numeralCheckDict['words'] = numeralWordDict[myArabic]
+        except KeyError:
+            if debug:
+                print('String %s is a Roman numeral, corresponding to %d, but I have no Latin words for it' % (myStringOrig, myArabic))
+            numeralCheckDict['words'] = ['noWord']
+    except roman.InvalidRomanNumeralError:
+        if debug: print('Ho beccato un errore roman.InvalidRomanNumeralError per la stringa «%s»' % (myString))
+        numeralCheckDict['isNumeral'] = False
+        numeralCheckDict['words'] = []
+    return numeralCheckDict
+
+
+
 def getVariantType(myDiff1, myDiff2):
     ''' Input two strings constituting the differences b/w two strings
         and evaluate the type of type of variant. '''
@@ -226,6 +259,10 @@ def getVariantType(myDiff1, myDiff2):
         myType = 'caseType'
 
 
+    #elif numeralCheck(myDiff2.strip())['isNumeral']:
+        #print('«%s»     «%s»' % (myDiff1, myDiff2))
+
+
     for t in typeList:
         if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]): # sorted() makes the order of diffs in the MSS irrelevant
             if myType == 'unknown':
@@ -270,7 +307,25 @@ def compareStrings(myString1, myString2):
         result1+=letter1
         result2+=letter2
 
-    return({'r1': result1, 'r2': result2, 'type': getVariantType(result1, result2)})
+    if numeralCheck(myString1.strip())['isNumeral']:
+        # If the first variant is a numeral (e.g. VIII)
+        print('«%s»     «%s»      «%s»' % (myString1, myString2, numeralCheck(myString1.strip())['words']))
+        for myWord in numeralCheck(myString1.strip())['words']: # Check the corresponding words, e.g.: ['octo', 'octauo']
+            if myWord == myString2.strip().lower(): # If the other variant corresponds to one of those words
+                if debug: print('Eureka! This is a word/non-word numeral variant!')
+                myVariantType = 'num-WordType'
+    elif numeralCheck(myString2.strip())['isNumeral']:
+        # If the second variant is a numeral (e.g. VIII)
+        print('«%s»     «%s»      «%s»' % (myString1, myString2, numeralCheck(myString1.strip())['words']))
+        for myWord in numeralCheck(myString2.strip())['words']: # Check the corresponding words, e.g.: ['octo', 'octauo']
+            if myWord == myString1.strip().lower(): # If the other variant corresponds to one of those words
+                if debug: print('Eureka! This is a word/non-word numeral variant!')
+                myVariantType = 'num-WordType'
+    else:
+        myVariantType = getVariantType(result1, result2)
+
+
+    return({'r1': result1, 'r2': result2, 'type': myVariantType})
 
 
 def collateElements(xmlElementA, xmlElementB, myOutputType='json'):

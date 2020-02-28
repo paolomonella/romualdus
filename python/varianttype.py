@@ -7,14 +7,16 @@ from lxml import etree
 from myconst import ns
 #from collateRomualdus import getVariantType, compareStrings
 from collateRomualdus import compareStrings
+from collateRomualdus import numeralCheck
 
-verbose = True
+verbose = False
 
 xmlfile="../xml/m.xml";
 tree = etree.parse(xmlfile);
 apps = tree.findall('.//t:app', ns)
 
-comparisons = []
+# Create and populate 'comparisons', a list of dictionaries (one dict for each <app> in the TEI XML file)
+comparisons = []    
 for app in apps:
     greading = app.find('.//t:*[@wit="#g"]', ns)
     areading = app.find('.//t:*[@wit="#a"]', ns)
@@ -30,7 +32,7 @@ for app in apps:
         print('\n\ngtext: «%s»' % (gtext))
         print('atext: «%s»' % (atext))
 
-    myComp = compareStrings(gtext, atext)   # The first one is the Garufi text; the second is MS A text
+    myComp = compareStrings(gtext, atext)   # A dictionary. Note that the first one is the Garufi text; the second is MS A text
     myComp['app'] = app
     myComp['greading'] = greading
     myComp['areading'] = areading
@@ -38,6 +40,7 @@ for app in apps:
     myComp['atext'] = atext
     comparisons.append(myComp)
 
+# Count types of variants
 typed = []
 untyped = []
 countedType = []
@@ -58,4 +61,3 @@ for c in comparisons:
 print('typed:', len(typed))
 print('untyped:', len(untyped))
 print('countedType:', len(countedType))
-        
