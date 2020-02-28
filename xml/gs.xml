@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
+<!ENTITY gd '<lb break="no" rend="-" ed="#g"/>'>
+<!ENTITY gl '<lb ed="#g"/>'>
+<!ENTITY uu '<choice><orig>v</orig><reg type="v">u</reg></choice>'>
+<!ENTITY jj '<choice><orig>j</orig><reg type="j">i</reg></choice>'>
+]>
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, Garufi edition</title>
+        <editor xml:id="pm">Paolo Monella</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct xml:id="g">
+            <monogr>     
+                <author>Guarna, Romualdus</author>
+                <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+                <editor>Garufi, Carlo Alberto</editor>
+                <imprint>
+                    <publisher>S. Lapi</publisher>
+                    <date>1914</date>
+                    <pubPlace>Città di Castello</pubPlace>
+                </imprint>
+            </monogr>
+            <series>
+                <title level="s">Rerum italicarum scriptores: Nuova edizione</title>
+                <biblScope unit="volume">7</biblScope>
+                <biblScope unit="part">1</biblScope>
+            </series>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="norev">
+            <p>OCR not reviewed.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
+            <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
+                in the print edition).
+                All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
+                punctuation, a script will be needed).
+                The text is now ready to be collated upon individual manuscripts.
+            </p>
+        </editorialDecl>
+        <editorialDecl>
+            <p>Italics was not encoded.</p>
+            <p>To facilitate collation, I am also recording the points in which page breaks occur in manuscript A,
+                <bibl xml:id="a">Vat. lat. 3973</bibl></p>
+            <quotation marks="none">
+                <p>Quotation marks were never retained. The reason is that they would have made OCR proofreading 
+                    longer because quotation marks were ubiquitous, almost always used to highlight additions 
+                    not present in all branches of the textual tradition.
+                    When present, @type="biblia" means that it is a biblical quote, according 
+                        to the "Manuale di codifica dei testi ALIM in TEI XML" in 
+                        http://it.alim.unisi.it/documentazione/.
+                        @type="liturgia" means that the quote comes from the Catholic liturgy.
+                </p>
+            </quotation>
+        </editorialDecl>
+        <tagsDecl>
+             <rendition xml:id="ghead1" scheme="css" selector="p[rend*='ghead1']">
+                 text-align: center;  text-transform: uppercase; letter-spacing: 3px;
+             </rendition>
+             <rendition xml:id="ghead2" scheme="css" selector="p[rend*='ghead2']">
+                 text-align: center;  font-variant: small-caps;
+             </rendition>
+             <rendition xml:id="ginscription" scheme="css" selector="p[rend*='ginscription']">
+                 font-variant: small-caps;
+             </rendition>
+             <rendition xml:id="gverse" scheme="css" selector="p[rend*='gverse']">
+                 font-style: italic; text-indent: 25%;
+             </rendition>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+                <tagUsage gi="hi">
+                    Used to mark words capitalized in the print edition, but not constituting 
+                    a proper noun, such as "Sed" at the beginning of a sentence.
+                </tagUsage>
+                <tagUsage gi="note">
+                    With @type="content": note on the text content.
+                    With @type="graphic": note on glyphs or graphemes.
+                    With @type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
+                    With @type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
+                    With @type="textcrit": note on textual critical matters.
+                    With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
+                </tagUsage>
+                <tagUsage gi="supplied">
+                    In the print edition the text integrated by the editor was between [square brackets].
+                    I am omitting those brackets in this file.
+                </tagUsage>
+                <tagUsage gi="surplus">
+                    In the print edition the text considered redundant by the editor was between &lt;angle brackets&gt;
+                    I am omitting those brackets in this file.
+                </tagUsage>
+             </namespace>
+         </tagsDecl>
+        <listPrefixDef>
+            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
+                <p> In the context of this edition, private URIs with 
+                    the prefix "vat" point to a specific page of external 
+                    PDF file vat.lat.3973.pdf, including the digital images 
+                    of the A manuscript. For example, 'vat:29'
+                    dereferences to 'img/vat.lat.3973.pdf#page=29'.
+                </p>
+            </prefixDef>
+        </listPrefixDef>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+<p xml:id="g3.1-3.1" decls="#ocr" rend="ghead1"> de etatibus </p>
+
+<p xml:id="g3.2-3.6" decls="#ocr"> 
+Prima mundi etas est ab Adam usque ad diluuium, continens annos, iuxta hebraicam ueritatem mille sexcentos quinquaginta sex, iuxta Septuaginta uero interpretes duo milia ducentos quadraginta duos; generationes uero iuxta utramque editionem numero decem, que uniuersali est deleta diluuio, sicut primam cuiusque hominis obliuio demergere consueuit etatem. 
+</p>
+
+<p xml:id="g3.7-3.16" decls="#ocr"> 
+Fuerunt Noe filii tres ex quibus ita sunt orte gentes. De Iaphet quindecim, de Chan triginta, de Sem XXVII. Sem annos duos post diluuium genuit Arfaxad a quo sunt Chaldei.  Arfaxad genuit Salem a quo Samarite et Indi. Salem genuit Heber, a quo Hebrei. Heber genuit Falech, cuius tempore turris edificatur et linguarum diuisio sit. In solo Heber prisca remansit lingua, quia in ea conspiratione non fuit. Turris uero altitudo duo milia CLXXIV dicitur passuum. Hanc Nebroth gigas construxit. Hac etate Scytarum regnum oritur ubi primus regnauit Thannus. Tunc et regnum Egiptiorum ubi primus regnauit Thoes. Dehinc regnum Assyriorum, ubi primus regnauit Belus, quem dicunt Saturnum quidam; deinde Ninus qui condidit' Niniuem. Hoc tempore Abraham nascitur, et post mortem Nini a Semiramide regina rehedificata est Babilonia, ubi regnauit annos quadraginta.  </p> 
+
+<p xml:id="g3.17-4.2" decls="#ocr"> 
+Secunda etas a Noe usque ad Abraam generationes iuxta hebraicam ueritatem complexa, decem, annos autem ducentos nonaginta duos; porro iuxta Septuaginta interpretes anni MLXXII. Generationes uero XI haec uero quasi pueritia fuit generationis populi Dei, et ideo in lingua inuenta est hebrea, a pueritia namque homo incipit nosse loqui, que idcirco appellata est, quod fari non potest. Ab Adam itaque usque ad Abraham iuxta hebraicam ueritatem computantur anni mille nungenti quadraginta octo, secundum Septuaginta interpretes fiunt anni tria milia trecenti XIV.  </p> 
+
+<p xml:id="g4.3-4.10" decls="#ocr">
+Tertia ab Abraam usque ad Dauid generationes iuxta utramque auctoritatem XIV annos uero, secundum Hebreorum auctoritatem nungentos quadraginta duos complectens; iuxta Septuaginta uero interpretes anni tria milia CXXXVII. Hec uelud quedam adolescentia fuit populi Dei, a qua etate incipit homo posse generare, propterea Matheus euangelista generationum ab Abraham sumpsit exordium, qui etiam pater multarum gentium constitutus est, quando mutatum nomen accepit. Ab Adam uero iuxta Hebreorum auctoritatem usque ad Dauid fiunt anni duo millia octingenti nonaginta, secundum Septuaginta interpretes tria milia CV. Cur autem annorum hec diuersitas sit, in sequentibus ostendetur.  </p>
+
+<p xml:id="g4.11-4.17" decls="#ocr">
+Quarta a Dauid usque ad transmigrationem Babilonis annos habens, iuxta hebraicam ueritatem, CDLXXIII, iuxta uero Septuaginta translationem XII amplius generationes iuxta utrosque codices XVII, quas tamen euangelista Matheus certii misterii gratia XIV ponit a qua uelud  iuuenili etate populo Dei regum tempora ceperunt; hec namque in hominibus etas apta gubernando solet existere regno. Ab exordio autem prime etatis, usque ad trasmigrationem Babilonis computantur anni tria milia CCCLXXIII secundum Hebreorum auctoritatem, iuxta LXX uero interpretes anni tria milia quingenti nonaginta.  </p>
+
+<p xml:id="g4.18-4.25" decls="#ocr">
+Quinta quasi senilis etas a transmigratione Babilonis usque ad aduentum Domini Saluatoris in carne. Generationibus et ipsa XIV. Porro annis, secundum Hebreorum auctoritatem, quingentis octoginta IX extenta; iuxta Septuaginta autem annis quingentis Septuaginta VIII, in qua graue senectute fessa malis crebrioribus plebs hebrea quassatur. Taliter itaque ab exordio temporum usque ad incarnationem Christi Domini secundum Hebreorum auctoritatem prosequente beato Hieronymo fiunt anni tria milia CMLII. Uerum iuxta Septuaginta interpretes, quos omnino Greci secuntur, numerantur anni VDVIII. Eusebius autem, quem Orosius secutus est, inter utrosque numerat annos VCXCIX quibus pene omnes latini utuntur.  </p>
+
+<p xml:id="g4.26-5.2" decls="#ocr">
+Sexta etas, que nunc agitur, nulla generationum, uel temporum serie certa, sed ut etas decrepita, ipsa totius seculi morte consumenda: has erumpnosas, plenasque laboribus mundi etates, quique beati felici morte uicerunt septimam iam sabbati perhennis etatem suscepti, octauam beate resurrectionis etatem, in qua semper cum Domino regnent, expectant.  </p>
+
+    </body>
+  </text>
+</TEI>
