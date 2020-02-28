@@ -248,14 +248,16 @@ class msTree:
         '''Replace 'u' with 'v' in the textual content of <num> elements, and make them all uppercase'''
         for num in self.tree.findall('.//t:num', ns):
 
-            # Replace 'u' with 'v'
-            if num.text:
-                num.text = num.text.replace('u', 'v')   # Direct textual content of <num>
-            for x in num.findall('.//t:*', ns):     # Children elements of <num>
-                if x.text:
-                    x.text = x.text.replace('u', 'v')
-                if x.tail:
-                    x.tail = x.tail.replace('u', 'v')
+            # Replace 'u' with 'v' is @type is not 'words'
+
+            if num.get('type') != 'words':
+                if num.text:
+                    num.text = num.text.replace('u', 'v')   # Direct textual content of <num>
+                for x in num.findall('.//t:*', ns):     # Children elements of <num>
+                    if x.text:
+                        x.text = x.text.replace('u', 'v')
+                    if x.tail:
+                        x.tail = x.tail.replace('u', 'v')
 
             # Make uppercase if @type is not 'words'
             if num.get('type') != 'words':
