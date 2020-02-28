@@ -8,6 +8,7 @@ import json,re,myconst
 from lxml import etree
 from collatex import *
 from myconst import ns, tei_ns, xml_ns, html_ns 
+#from itertools import combinations
 #from simplifyRomualdusForCollateX import myWitness
 
 #############################
@@ -169,18 +170,71 @@ def XMLtoJSON(id,XMLInput):
 def getVariantType(myDiff1, myDiff2):
     ''' Input two strings constituting the differences b/w two strings
         and evaluate the type of type of variant. '''
-    if sorted([myDiff1, myDiff2]) == sorted(['ae', 'e']): # sorted() makes the order of diffs in the MSS irrelevant
-        myType = 'aeType'
-    elif sorted([myDiff1, myDiff2]) == sorted(['i', 'y']):
-        myType = 'yType'
-    elif sorted([myDiff1, myDiff2]) == sorted(['u', 'v']):
-        myType = 'uvType'
-    elif sorted([myDiff1, myDiff2]) == sorted(['U', 'V']):
-        myType = 'uvType'
-    elif sorted([myDiff1, myDiff2]) == sorted(['i', 'j']):
-        myType = 'jType'
-    else:
-        myType = 'unknown'
+
+    typeList = [
+            ['i', 'y', 'y'],
+            ['u', 'v', 'v'],
+            ['U', 'V', 'v'],
+            ['i', 'j', 'j'],
+            ['ae', 'e', 'ae'],
+            ['hegium', 'egium', 'h'],
+            ['Hostiensi', 'Ostiensi', 'h'],
+            ['hlodoueus', 'lodoueus', 'h'],
+            ['habentes', 'abentes', 'h'],
+            ['hari', 'ari', 'h'],
+            ['ha', 'a', 'h'],
+            ['lia', 'ia', 'll'],
+            ['lisario', 'isario', 'll'],
+            ['lisarius', 'isarius', 'll'],
+            ['np', 'mb', 'orth'],
+            ['nati', 'pnati', 'orth'],
+            ['historia', 'ystoria', 'hi-y-'],
+            ['historiis', 'ystoriis', 'hi-y-'],
+            ['hil', 'chil', 'nichil'],
+            ]
+
+    myPunctString = '!"()*+,-.:;=?^_`{|}~' + "'"     # long version: it generates 210 combinations
+    #myPunctString = ',.:;?!"()-' + "'"     # it generates 55 combinations
+    myPunctList = [p for p in myPunctString]  # transform the string to a list
+    #punctCombList = [   [c[0], c[1], 'punct']   for c in combinations(myPunctList, 2)]  # it is a list of lists
+
+    myType = 'unknown'
+
+    if myDiff1.strip() == '' and myDiff2.strip() in myPunctList:
+        #print('«%s» | «%s» | «%s»'  % (myDiff1.strip(), myDiff2.strip(), myPunctString)  )
+        myType = 'missingInG-PunctInA-Type'
+
+    elif myDiff2.strip() == '' and myDiff1.strip() in myPunctList:
+        myType = 'missingInA-PunctInG-Type'
+
+    elif myDiff1.strip() == '' and myDiff2.strip() not in myPunctList and myDiff2.strip() != '':
+        myType = 'missingInGType'
+
+    elif myDiff2.strip() == '' and myDiff1.strip() not in myPunctList and myDiff1.strip() != '':
+        myType = 'missingInAType'
+
+    elif myDiff1.strip()in myPunctList and myDiff2.strip() in myPunctList:
+        myType = 'differentPunctType'
+
+    elif myDiff1.strip() in myPunctList and myDiff2.strip() not in myPunctList and myDiff2.strip() != '':
+        myType = 'punctInG-lettersInA-Type'
+
+    elif myDiff2.strip() in myPunctList and myDiff1.strip() not in myPunctList and myDiff1.strip() != '':
+        myType = 'lettersInG-punctInA-Type'
+
+    elif myDiff1.strip().lower() == myDiff2.strip().lower():
+        myType = 'caseType'
+
+
+    for t in typeList:
+        if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]): # sorted() makes the order of diffs in the MSS irrelevant
+            if myType == 'unknown':
+                myType = '%sType' % (t[2])
+            else:
+                print('Error! Diff «%s»/«%s» matched two different types: %s and %sType' % (myDiff1, myDiff2, myType, t[2]))
+
+    
+
     return(myType)
 
 
