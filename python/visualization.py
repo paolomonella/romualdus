@@ -5,7 +5,7 @@ import os
 
 from lint import tosLint 
 from output import writeToMultiMSTableFile
-from detectcombinations import detectCommonAbbrCombinations
+from detect_combinations import detectCommonAbbrCombinations
 
 os.system('clear')
 
