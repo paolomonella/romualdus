@@ -41,6 +41,8 @@ class treeWithAppElements:
         for app in self.apps:
             printReading = app.find('.//t:*[@wit="#%s"]' % (self.printSiglum), ns)
             msReading = app.find('.//t:*[@wit="#%s"]' % (self.msSiglum), ns)
+            if printReading is None:
+                print(msReading.text)
             if msReading is None:
                 print(printReading.text)
             if printReading.text is not None:
@@ -66,10 +68,25 @@ class treeWithAppElements:
 
 
     def variantTypesList (self):
-        '''List all variant types in <app> '''
+        '''Return a list all variant types in <app> '''
         myList = [c['type'] for c in self.appComparisonList()]
-        mySet = [t for t in set(myList)]
-        return mySet
+        return myList
+
+    def variantTypesCountSetList (self):
+        '''Same as variantTypesList, but it returns a list in which each element only occurs once'''
+        mySet = set(self.variantTypesList())
+        mySetList  = [t for t in mySet] # This is still a list, but in which each element of myList occurs only once
+        return mySetList
+
+    def variantTypesCountDict (self):
+        '''Return a dict like {'missingInMSType': 124, 'missingInPrint-PunctInMS-Type': 252 etc.}
+            counting in how many <app> elements in the tree each variant type recurs '''
+        myList = self.variantTypesList()
+        myDict = {}
+        for x in myList:
+            myDict[x] = myList.count(x)
+        return myDict
+
 
 
     def setTypeAttributesForApps (self):
@@ -87,22 +104,36 @@ class treeWithAppElements:
 
 
         decisionTable = {
-                'num-WordType': 'printReading',
-                'differentPunctType': 'msReading',   #confirmed
-                'unknown': 'printReading',
-                'missingInPrintType': 'printReading',
-                'num-numType': 'printReading',
-                'punctInPrint-punctAndLettersInMS-Type': 'printReading',
-                'caseType': 'printReading',
-                'missingInMSType': 'printReading',
-                'missingInPrint-PunctInMS-Type': 'printReading',
-                'punctInPrint-missingInMS-Type': 'printReading',
-                'nichilType': 'printReading',
+                'num-WordType':
+                    {'preferredRdg': 'printReading'},
+                'differentPunctType':
+                    {'preferredRdg': 'msReading',
+                        'confirmed': True},
+                'unknown':
+                    {'preferredRdg': 'printReading'},
+                'missingInPrintType':
+                    {'preferredRdg': 'printReading'},
+                'num-numType':
+                    {'preferredRdg': 'printReading'},
+                'punctInPrint-punctAndLettersInMS-Type':
+                    {'preferredRdg': 'printReading'},
+                'caseType':
+                    {'preferredRdg': 'printReading'},
+                'missingInMSType':
+                    {'preferredRdg': 'printReading'},
+                'missingInPrint-PunctInMS-Type':
+                    {'preferredRdg': 'printReading'},
+                'punctInPrint-missingInMS-Type':
+                    {'preferredRdg': 'printReading'},
+                'nichilType':
+                    {'preferredRdg': 'printReading'},
                 }
         for c in self.appComparisonList():
-            for t in decisionTable:
-                if c['type'] == t:
-                    c[decisionTable[t]].tag = 'lem'
+            for myType in decisionTable:
+                if c['type'] == myType:
+                    myPreferredRdg = decisionTable[myType]['preferredRdg']    # It can be 'printReading' or 'msReading'
+                    c[myPreferredRdg].tag = 'lem' # c[myPreferredRdg] is a TEI element, either <rdg wit="#a"> or <rdg wit="#g">
+
 
     def countVariantTypes (self, countedType):
         '''Count types of variants in a comparisonList. The 1st two arguments are two sigla (put print witness first).
@@ -131,7 +162,7 @@ class treeWithAppElements:
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
 myTree = treeWithAppElements('../xml/m.xml', 'g', 'a')
-myTree.countVariantTypes('unknown')
+print(myTree.variantTypesCountDict())
 myTree.setTypeAttributesForApps()
 myTree.setLems()
 myTree.write()
