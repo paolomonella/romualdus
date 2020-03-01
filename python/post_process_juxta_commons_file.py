@@ -37,7 +37,7 @@ def postProcessJuxtaCommonsFile (siglum, printEdition = 'garufi', printSiglum = 
 
 
     # Check if the print <witness> has been found or not
-    if juxtaPrintSiglum == 'uknown':
+    if juxtaPrintSiglum == 'unknown':
         print('I haven\'t found what witness in %s corresponds to %s. Please include string «%s» in the text of one <witness> in %s' %
                 (siglum, printEdition.capitalize(), printEdition, siglum  ))
     else:
@@ -65,4 +65,4 @@ def postProcessJuxtaCommonsFile (siglum, printEdition = 'garufi', printSiglum = 
     # Replace file
     mytree.tree.write(xmlfile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
-postProcessJuxtaCommonsFile ('m-short', 'garufi', 'g', 'a')
+postProcessJuxtaCommonsFile ('m', 'garufi', 'g', 'a')
