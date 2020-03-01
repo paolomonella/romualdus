@@ -196,43 +196,6 @@ def getVariantTypeBasedOnDiff (myDiffList, myString1, myString2):
             ['hil', 'chil', 'nichil'],
             ]
 
-    '''
-    # start
-    myPunctString = '!"()*+,-.:;=?^_`{|}~' + "'"     # long version: it generates 210 combinations
-    #myPunctString = ',.:;?!"()-' + "'"     # it generates 55 combinations
-    myPunctList = [p for p in myPunctString]  # transform the string to a list
-    #punctCombList = [   [c[0], c[1], 'punct']   for c in combinations(myPunctList, 2)]  # it is a list of lists
-
-    if myDiff1.strip() == '' and myDiff2.strip() in myPunctList:    # bring to wholeVariant
-        myType = 'missingInG-PunctInA-Type'
-
-    elif myDiff2.strip() == '' and myDiff1.strip() in myPunctList:  # bring to wholeVariant
-        myType = 'missingInA-PunctInG-Type'
-
-    elif myDiff1.strip() == '' and myDiff2.strip() not in myPunctList and myDiff2.strip() != '':  # bring to wholeVariant
-        myType = 'missingInGType'
-
-    elif myDiff2.strip() == '' and myDiff1.strip() not in myPunctList and myDiff1.strip() != '':  # bring to wholeVariant
-        myType = 'missingInAType'
-
-    elif myDiff1.strip()in myPunctList and myDiff2.strip() in myPunctList:  # bring to wholeVariant
-        myType = 'differentPunctType'
-
-    elif myDiff1.strip() in myPunctList and myDiff2.strip() not in myPunctList and myDiff2.strip() != '': #bring to wholeVariant & edit
-        print('Diffs: «%s» / «%s» -- Strings: «%s» / «%s»'   % (myDiff1.strip(), myDiff2.strip(), myString1, myString2)  )
-        myType = 'punctInG-lettersInA-Type'
-
-    elif myDiff2.strip() in myPunctList and myDiff1.strip() not in myPunctList and myDiff1.strip() != '': #bring to wholeVariant & edit
-        myType = 'lettersInG-punctInA-Type'
-    # end
-
-    if myDiff1 != myDiff2 and myDiff1.lower() == myDiff2.lower():
-        if debug: print(myDiff1.strip(), myDiff2.strip())
-        myType = 'caseType'
-    else:
-        myType = 'unknown'
-    '''
-
     myType = 'unknown'
     for t in typeList:
         if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]): # sorted() makes the order of diffs in the MSS irrelevant
