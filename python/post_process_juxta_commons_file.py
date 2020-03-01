@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 ''' Post-process the output of JuxtaCommons before inspecting variant types: see documentations of module(s) below '''
 
+import myconst
+from simplify_markup_for_collation import msTree
+
 def postProcessJuxtaCommonsFile (siglum, printEdition = 'garufi', printSiglum = 'g', msSiglum='a'):
     ''' Change
             - [tag attr="value"] to \n<tag attr="value">
@@ -22,8 +25,8 @@ def postProcessJuxtaCommonsFile (siglum, printEdition = 'garufi', printSiglum = 
 
     # Parse XML tree and find <witness> elements
     mytree = msTree(siglum)
-    witnesses = mytree.tree.findall('.//t:%s' % ('witness'), ns)
-    juxtaSigla = [{'juxtaSiglum': witness.get(xml_ns + 'id'), 'element': witness} for witness in witnesses]
+    witnesses = mytree.tree.findall('.//t:%s' % ('witness'), myconst.ns)
+    juxtaSigla = [{'juxtaSiglum': witness.get(myconst.xml_ns + 'id'), 'element': witness} for witness in witnesses]
 
     # Search which <witness> represents the print edition ('bonetti' or 'garufi')
     juxtaPrintSiglum = 'unknown' 
@@ -47,13 +50,13 @@ def postProcessJuxtaCommonsFile (siglum, printEdition = 'garufi', printSiglum = 
 
     # Replace value in <witness xml:id...>
     for witness in witnesses:
-        witXmlId = witness.get(xml_ns + 'id')
+        witXmlId = witness.get(myconst.xml_ns + 'id')
         for s in juxtaSigla:
             witXmlId = witXmlId.replace(s['juxtaSiglum'], s['mySiglum'])
-        witness.set(xml_ns + 'id', witXmlId)
+        witness.set(myconst.xml_ns + 'id', witXmlId)
 
     # Replace value in <rdg wit=...>
-    for rdg in mytree.tree.findall('.//t:%s' % ('rdg'), ns):
+    for rdg in mytree.tree.findall('.//t:%s' % ('rdg'), myconst.ns):
         rdgSiglum = rdg.get('wit')
         for s in juxtaSigla:
             rdgSiglum = rdgSiglum.replace(s['juxtaSiglum'], s['mySiglum'])
