@@ -4,7 +4,7 @@
 ''' This module manages <app> elements from a TEI XML file '''
 
 
-import roman
+import roman, operator
 from lxml import etree
 from myconst import ns
 from variant_type import variantComparison
@@ -78,16 +78,23 @@ class treeWithAppElements:
         mySetList  = [t for t in mySet] # This is still a list, but in which each element of myList occurs only once
         return mySetList
 
-    def variantTypesCountDict (self):
+    def variantTypesCount (self):
         '''Return a dict like {'missingInMSType': 124, 'missingInPrint-PunctInMS-Type': 252 etc.}
             counting in how many <app> elements in the tree each variant type recurs '''
         myList = self.variantTypesList()
-        myDict = {}
-        for x in myList:
-            myDict[x] = myList.count(x)
-        return myDict
+        myListCount = []    # A list (of tuples)
+        for x in self.variantTypesCountSetList():
+            myListCount.append((x, myList.count(x)))  # Add a new tuple to the list
+        myListCount =  sorted(myListCount, key=operator.itemgetter(1), reverse=True)    # Ordered from highest number to lowest
+        return myListCount
 
-
+    def variantTypesCountPrint (self):
+        '''Print variantTypesCountDict'''
+        #sorted_d = sorted(d.items(), key=operator.itemgetter(1), reverse=True)  # A list of tuples
+        #sorted_d = sorted(d.items(), key=operator.itemgetter(1), reverse=True)  # A list of tuples
+        #print(len(self.variantTypesCount()))
+        for x in self.variantTypesCount():
+            print('{:5} {:12}'.format(x[1], x[0]))
 
     def setTypeAttributesForApps (self):
         '''Set @type attributes in <app> elements in the input TEI XML file '''
@@ -102,37 +109,38 @@ class treeWithAppElements:
     def setLems (self):
         '''For some @type(s) of <app>, decide the <lem> automatically '''
 
-
         decisionTable = {
                 'num-WordType':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'printReading', 'cert': 'high'},
                 'differentPunctType':
-                    {'preferredRdg': 'msReading',
-                        'confirmed': True},
+                    {'preferredRdg': 'msReading', 'cert': 'high'},
                 'unknown':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'printReading', 'cert': 'medium'},
                 'missingInPrintType':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'printReading', 'cert': 'medium'},
                 'num-numType':
-                    {'preferredRdg': 'printReading'},
-                'punctInPrint-punctAndLettersInMS-Type':
+                    {'preferredRdg': 'printReading', 'cert': 'medium'},
+                'punctInPrint-punctAndLettersInMS-Type':    # Only 4 occurrences in a1/Garufi
                     {'preferredRdg': 'printReading'},
                 'caseType':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'msReading', 'cert': 'high'},
                 'missingInMSType':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'printReading', 'cert': 'medium'},
                 'missingInPrint-PunctInMS-Type':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'msReading', 'cert': 'high'},
                 'punctInPrint-missingInMS-Type':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'msReading', 'cert': 'high'},
                 'nichilType':
-                    {'preferredRdg': 'printReading'},
+                    {'preferredRdg': 'printReading', 'cert': 'medium'},
                 }
-        for c in self.appComparisonList():
+
+        for c in self.appComparisonList():  # Decide <lem> and set @cert based on decisionTable
             for myType in decisionTable:
                 if c['type'] == myType:
                     myPreferredRdg = decisionTable[myType]['preferredRdg']    # It can be 'printReading' or 'msReading'
                     c[myPreferredRdg].tag = 'lem' # c[myPreferredRdg] is a TEI element, either <rdg wit="#a"> or <rdg wit="#g">
+                    myCert = decisionTable[myType]['cert']    # It can be 'low', 'middle' or 'high'
+                    c['app'].set('cert', myCert)
 
 
     def countVariantTypes (self, countedType):
@@ -162,7 +170,6 @@ class treeWithAppElements:
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
 myTree = treeWithAppElements('../xml/m.xml', 'g', 'a')
-print(myTree.variantTypesCountDict())
-myTree.setTypeAttributesForApps()
+myTree.variantTypesCountPrint()
 myTree.setLems()
 myTree.write()
