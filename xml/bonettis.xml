@@ -1,141 +1,131 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
-<!ENTITY bd '<lb break="no" rend="-" ed="#b"/>'>
-<!ENTITY bl '<lb ed="#b"/>'>
-<!ENTITY jj '<choice><orig>j</orig><reg type="j">i</reg></choice>'>
-<!ENTITY uu '<choice><orig>v</orig><reg type="v">u</reg></choice>'>
-]>
-<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>Romualdi Salernitani Chronicon, Bonetti edition</title>
-        <editor xml:id="pm">Paolo Monella</editor>
-      </titleStmt>
-      <publicationStmt>
-        <p>Encoding experiments</p>
-      </publicationStmt>
-      <sourceDesc>
-        <biblStruct xml:id="b">
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [ 
+<!ENTITY bd '<lb break="no" rend="-" ed="#b"/>'> 
+<!ENTITY bl '<lb ed="#b"/>'> 
+<!ENTITY jj '<choice><orig>j</orig><reg type="j">i</reg></choice>'> 
+<!ENTITY uu '<choice><orig>v</orig><reg type="v">u</reg></choice>'> 
+]> 
+<TEI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+<teiHeader> 
+    <fileDesc> 
+      <titleStmt> 
+        <title>Romualdi Salernitani Chronicon, Bonetti edition</title> 
+        <editor xml:id="pm">Paolo Monella</editor> 
+      </titleStmt> 
+      <publicationStmt> 
+        <p>Encoding experiments</p> 
+      </publicationStmt> 
+      <sourceDesc> 
+        <biblStruct xml:id="b"> 
             <monogr>     
-                <author>Guarna, Romualdus</author>
-                <title>Romualdo II Guarna, Chronicon</title>
-                <idno type="ISBN">9788883090561</idno>
-                <editor>Bonetti, Cinzia</editor>
-                <imprint>
-                    <publisher>Avagliano</publisher>
-                    <date>2001</date>
-                    <pubPlace>Salerno</pubPlace>
-                </imprint>
-            </monogr>
-            <series>
-                <title level="s">Schola Salernitana. Studi e testi</title>
-                <biblScope unit="volume">6</biblScope>
-            </series>
-            
-        </biblStruct>
-    </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-        <editorialDecl xml:id="norev">
-            <p>OCR not reviewed.</p>
-        </editorialDecl>
-        <editorialDecl xml:id="ocr">
+                <author>Guarna, Romualdus</author> 
+                <title>Romualdo II Guarna, Chronicon</title> 
+                <idno type="ISBN">9788883090561</idno> 
+                <editor>Bonetti, Cinzia</editor> 
+                <imprint> 
+                    <publisher>Avagliano</publisher> 
+                    <date>2001</date> 
+                    <pubPlace>Salerno</pubPlace> 
+                </imprint> 
+            </monogr> 
+            <series> 
+                <title level="s">Schola Salernitana. Studi e testi</title> 
+                <biblScope unit="volume">6</biblScope> 
+            </series> 
+        </biblStruct> 
+    </sourceDesc> 
+    </fileDesc> 
+    <encodingDesc> 
+        <editorialDecl xml:id="norev"> 
+            <p>OCR not reviewed.</p> 
+        </editorialDecl> 
+        <editorialDecl xml:id="ocr"> 
             <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
-                in the print edition).
+                in the print edition). 
                 All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
-                punctuation, a script will be needed).
-                The text is now ready to be collated upon individual manuscripts.
-            </p>
-        </editorialDecl>
-        <editorialDecl>
-            <quotation marks="all">
+                punctuation, a script will be needed). 
+                The text is now ready to be collated upon individual manuscripts. 
+            </p> 
+        </editorialDecl> 
+        <editorialDecl> 
+            <quotation marks="all"> 
                 <p>Quotation marks were almost always represented in the source print edition 
-                    by “double quotation marks”, open and closed. In fewer cases, by «Swiss quotation marks».
-                    In all those cases, marks were retained and the quotation was marked up with 'said'
-                    (direct speech) or 'quote' (quotations from literary works).</p>
+                    by “double quotation marks”, open and closed. In fewer cases, by «Swiss quotation marks». 
+                    In all those cases, marks were retained and the quotation was marked up with 'said' 
+                    (direct speech) or 'quote' (quotations from literary works).</p> 
                 <p>In some cases, no quotation marks were present in the print edition around direct speeches 
                     or quotations, but I still marked them with 'said' or 'quote', adding 
-                    @rend="none".</p>
+                    @rend="none".</p> 
                 <p>In other cases, in the print edition “double quotation marks” were used to highlight additions 
                     not present in all branches of the textual tradition. In these cases, quotation marks 
-                    have been retained and no specific markup was added in the digital edition.</p>
-                <p>“Double quotation marks” were also retained, if present in the print edition,
-                    in connection with 'soCalled''title'.</p>
-            </quotation>
-        </editorialDecl>
-        <tagsDecl>
-            <namespace name="http://www.tei-c.org/ns/1.0">
-                <tagUsage gi="hi">
+                    have been retained and no specific markup was added in the digital edition.</p> 
+                <p>“Double quotation marks” were also retained, if present in the print edition, 
+                    in connection with 'soCalled''title'.</p> 
+            </quotation> 
+        </editorialDecl> 
+        <tagsDecl> 
+            <namespace name="http://www.tei-c.org/ns/1.0"> 
+                <tagUsage gi="hi"> 
                     Used to mark words capitalized in the print edition, but not constituting 
-                    a proper noun, such as "Sed" at the beginning of a sentence.
-                </tagUsage>
-                <tagUsage gi="note">
-                    With @type="content": note on the text content.
-                    With @type="graphic": note on glyphs or graphemes.
-                    With @type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
-                    With @type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
-                    With @type="textcrit": note on textual critical matters.
-                    With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
-                </tagUsage>
+                    a proper noun, such as "Sed" at the beginning of a sentence. 
+                </tagUsage> 
+                <tagUsage gi="note"> 
+                    With @type="content": note on the text content. 
+                    With @type="graphic": note on glyphs or graphemes. 
+                    With @type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand. 
+                    With @type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs). 
+                    With @type="textcrit": note on textual critical matters. 
+                    With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp). 
+                </tagUsage> 
                 <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source 
-                    print edition, are marked up with 'quote' in this digital edition.
+                    print edition, are marked up with 'quote' in this digital edition. 
                     Quotation marks, if present, have been retained, and @type="biblia" means that it 
                     is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in 
-                    http://it.alim.unisi.it/documentazione/
-                </tagUsage>
-                <tagUsage gi="soCalled">
-                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
-                    If present, quotation marks have been retained.
-                </tagUsage>
-                <tagUsage gi="surplus">
-                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt;
-                    I am omitting those brackets in this file.
-                </tagUsage>
-                <tagUsage gi="title">
-                    Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus".
-                    If present, quotation marks have been retained.
-                </tagUsage>
-             </namespace>
-         </tagsDecl>
-        <listPrefixDef>
-            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
+                    http://it.alim.unisi.it/documentazione/ 
+                </tagUsage> 
+                <tagUsage gi="soCalled"> 
+                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus". 
+                    If present, quotation marks have been retained. 
+                </tagUsage> 
+                <tagUsage gi="surplus"> 
+                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt; 
+                    I am omitting those brackets in this file. 
+                </tagUsage> 
+                <tagUsage gi="title"> 
+                    Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus". 
+                    If present, quotation marks have been retained. 
+                </tagUsage> 
+             </namespace> 
+         </tagsDecl> 
+        <listPrefixDef> 
+            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1"> 
                 <p> In the context of this edition, private URIs with 
                     the prefix "vat" point to a specific page of external 
                     PDF file vat.lat.3973.pdf, including the digital images 
-                    of the A manuscript. For example, 'vat:29'
-                    dereferences to 'img/vat.lat.3973.pdf#page=29'.
-                </p>
-            </prefixDef>
-        </listPrefixDef>
-    </encodingDesc>
-  </teiHeader>
-  <text>
-    <body>
-
-
-<p xml:id="b062heading" decls="#ocr"> 
- 
+                    of the A manuscript. For example, 'vat:29' 
+                    dereferences to 'img/vat.lat.3973.pdf#page=29'. 
+                </p> 
+            </prefixDef> 
+        </listPrefixDef> 
+    </encodingDesc> 
+  </teiHeader> 
+  <text> 
+    <body> 
+[p xml:id="b062heading"]  
 Romoaldi II archiepiscopi salernitani annales 
-</p>
-
-
-<p xml:id="g163.6-163.7" decls="#ocr"> 
+[/p] 
+[p xml:id="g163.6-163.7"]  
 Anno dominice incarnationis DCCCXCIII. Primus Guaimarius 
 suscepit principatum in Salerno, et regnauit annis XXXIX. 
-</p> 
-
-
-<p xml:id="g163.8-163.10" decls="#ocr"> 
+[/p]  
+[p xml:id="g163.8-163.10"]  
 Anno dominice incarnationis CMII, indictione V. Urbs 
 Tauromenis a Sarracenis capta est. Eodem anno in nocte uisi 
 sunt igniculi in modum stellarum per aera discurrentes: qua 
 nocte rex Africe residens super Consenciam Calabrie ciuitatem, 
 Dei iudicio, mortuus est. 
-</p> 
-
-
-<p xml:id="g163.11-164.9" decls="#ocr"> 
+[/p]  
+[p xml:id="g163.11-164.9"]  
 Anno dominice incarnationis CMVI. Carolus Francorum 
 rex qui Simplex est dictus, obiit anno regni eius XXVII, post 
 cuius mortem quidam Rodulfus, annuente Robberto principe, 
@@ -153,18 +143,13 @@ Francorum, maxime quidem Ugonis Abbatis, unctus est in regem
 Saxonie. Interea apud Constantinopolim mortuis Leone et Alexandro 
 imperatoribus Constantinus eiusdem Leonis filius suscepit 
 imperium, regnauitque annis sex. 
-</p> 
-
-
-<p xml:id="g164.10-164.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g164.10-164.11"]  
 Anno domini CMXIII, defuncto Constantino imperatore 
 Romano, Heliopolitanus Constantinopolitanum suscepit imperium 
 tenuitque annis XXV. 
- 
-</p> 
-
-
-<p xml:id="g164.12-164.19" decls="#ocr"> 
+[/p]  
+[p xml:id="g164.12-164.19"]  
 Inter hec Formosus Romane sedis episcopus moritur et successit 
 ei Bonifacius, sedit annis XII. Quo defuncto Stephanus ei 
 successit in sede pontificali; qui post anno uno et mensibus II 
@@ -176,11 +161,9 @@ quem Chistoforus mensibus VI sedit. Hic eiectus de papato monachus
 factus est, et Sergius in sede pontificali constitutus qui 
 sedit annis VII mensibus tribus. Post cuius obitum Anastasius 
 sedit annis II mensibus II. 
-</p> 
-
-
-<p xml:id="g164.19-164.25" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g164.19-164.25"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Eodem anno Landulfus princeps Beneuenti preliatus est cum 
 Ursileone patricio Grecorum in Apulia eumque uicit. "At uero in 
 Gallia Ludouicus Francorum rex captus est a Normannis dolo 
@@ -192,34 +175,25 @@ autem duos liberos superstites reliquit, Lotharium atque Carolum,
 quos ex Giberga Ottonis Saxonum regis sorore genuerat. 
 Defuncto igitur Ludouico Lotharius filius eius adhuc iuuenis 
 unctus est in regem Remis et Ugo Magnus dux eius factus est". 
-</p> 
-
-
-<p xml:id="g165.1-165.3" decls="#ocr"> 
+[p xml:id="g165.1-165.3"]  
 Anno domini CMXXIII Anastasio papa defuncto, Lando 
 Romanum suscepit pontificatum seditque mensibus VI. Quo defuncto 
 Iohannes sedem papalem sedit annis XIV mensibus II. 
-</p> 
-
-
-<p xml:id="g165.4-165.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g165.4-165.7"]  
 Anno dominice incarnationis CMXXVI, uenerunt Sclaui 
 in Apuliam et ciuitatem Sipontum hostili direptione et gladio 
 uastauerunt. Non post multum uero temporis Ungri uenerunt in 
 Apuliam et capta Auria ciuitate ceperunt Tarentum. Dehinc Campaniam 
 ingressi non modicam ipsius prouincie partem igni ac 
 direptioni dederunt. 
-</p> 
-
-
-<p xml:id="g165.8-165.9" decls="#ocr"> 
+[/p]  
+[p xml:id="g165.8-165.9"]  
 Anno ab incarnatione Domini CMXXXIII, alius Gisolfus 
 factus est princeps in Salerno uixitque in principatu annis 
 XLVIII. 
-</p> 
-
-
-<p xml:id="g165.10-166.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g165.10-166.2"]  
 Anno dominice incarnationis CMXXXIX, Constantinus 
 cum filio Constantino apud Constantinopolim post Romano Heliopolitanum 
 cepit imperare, regnaueruntque annis XVI. Post 
@@ -227,10 +201,8 @@ quos filius eiusdem Constantini Romano cum filio suo Basilio annis
 tribus imperauit, et post eos Niceforus imperauit annis VI. His 
 autem temporibus Ungri secundo ingressi sunt in Apuliam eamque 
 optinuerunt annis IX. 
-</p> 
-
-
-<p xml:id="g166.3-166.8" decls="#ocr"> 
+[/p]  
+[p xml:id="g166.3-166.8"]  
 Inter hec Iohanne papa defuncto, Leo papa sedit mensibus 
 VI. Cui successit Stephanus qui sedit annis II mense I. Huic uero 
 Iohannes successit et sedit annis IV mensibus X. Hic autem fuit 
@@ -240,10 +212,8 @@ Cui Marinus successit seditque in pontificatu Romano annis III
 mensibus VI. Quo uita decedente Agapitus sedit annis X mensibus 
 VII. Huic itaque Iohannes successit, sedit annis nouem mensibus 
 tribus. 
-</p> 
-
-
-<p xml:id="g166.9-166.25" decls="#ocr"> 
+[/p]  
+[p xml:id="g166.9-166.25"]  
 Anno dominice incarnationis CMLIV, corpus beati Mathei 
 apostoli et euangeliste de Pestana ciuitate Bricie in Salernum 
 translatum est, principante tunc in eadem ciuitate Gisulfo. 
@@ -264,24 +234,19 @@ rex tribus diebus et tribus noctibus constanter persequens illos
 usque ad fluuium qui fluit iuxta Ardennam, interfecta hostium 
 multitudine cum uictoria in Franciam reuersus est. Post hec non 
 apposuit ultra Otto rex ut ueniret in Franciam. 
- 
 In ipso autem anno Lotharius rex consilio Ugonis ducis sui 
 pacificatus est cum Ottone rege Remis ciuitate, deditque Lotharius 
 rex Ottoni regi in beneficio Lotharium regnum in anno dominice 
 incarnationis CMLXIII, indictione VI. 
-</p> 
-
-
-<p xml:id="g167.1-167.3" decls="#ocr"> 
+[/p]  
+[p xml:id="g167.1-167.3"]  
 Sequente uero anno  idem Otto Saxonum rex Romam 
 uenit nobiliter cum exercitu et a Iohanne papa coronatus 
 est, accipiens ab eo totius Italie uexillum cum imperii dignitate, 
 professus iureiurando seruare fidem Romane ecclesie. Et tunc 
 itaque Otto rex appellatus est imperator. 
-</p> 
-
-
-<p xml:id="g167.4-168.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g167.4-168.4"]  
 Anno dominice incarnationis CMLXVIII, hic in Apuliam 
 uenit cum exercitu et oppidum Barum expugnando cepit, cepitque 
 ciuitatem Bibinum atque Asculum, Grecos expellens. Interea 
@@ -297,26 +262,21 @@ deinde in Campaniam in exilium missus et post menses decem
 Romam reuersus est, et de persecutoribus eius ab Ottone 
 imperatore in urbe Roma supplicium sumptum est. Iste quoque 
 papa Iohannes coronam posuit imperii Ottoni imperatori, quique 
-accepta corona Aquisgranum reuersus est.
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+accepta corona Aquisgranum reuersus est. 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Hic etiam papa Iohannes nobilitauit Capuam archiepiscopatu, 
 in qua ciuitate tunc principabatur Pandulfus cognomento Capudferreus. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eodem tempore Saraceni uenerunt in Apuliam et expugnauerunt 
 ciuitatem Grauinam eamque ceperunt. Hinc quoque secundo 
 anno post hec ceperunt ciuitatem Bibinum ignique combusserunt. 
-</p>
-
-
-<p xml:id="g168.5-168.7" decls="#ocr">
+[p xml:id="g168.5-168.7"] 
 Anno incarnationis Domini CMLXXVI, Lotharius 
 Francorum rex senex plenus dierum obiit, postquam regnauit 
 annis LIV, sepultusque in basilica Sancti remigii Remis. Cui 
 successit Ludouicus filius eius adhuc iuuenis. 
-</p> 
-
-
-<p xml:id="g168.8-169.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g168.8-169.4"]  
 Anno dominice incarnationis CMLXXXI  defuncto 
 Iohanne papa Benedictus ei in pontificatus honorem successit. 
 Eodem anno  Otto maior imperator obiit anno 
@@ -332,10 +292,8 @@ unum sedit, diem obiit, et successit ei Bonus qui sedit anno uno
 mensibus VI. Quo uita decedente Bonifacius sedit mense uno. 
 Cui expulso Benedictus successit in pontificatus honore qui sedit 
 annis IX. 
-</p> 
-
-
-<p xml:id="g169.5-170.14" decls="#ocr"> 
+[/p]  
+[p xml:id="g169.5-170.14"]  
 Anno dominice incarnationis CMLXXXV,  obiit 
 Ludouicus Francorum rex iuuenis, postquam regnauit annis 
 nouem, sepultusque est in basilica beati Cornelii Compendio. 
@@ -359,7 +317,6 @@ Lotharii regis. Congregansque in eadem ciuitate sinodum,
 fecit degradare domnum Arnulfum in loco uero eius consecrare 
 fecit domnum Gibbertum monachum philosophum". Seguinus 
 autem archiepiscopus Senonum non consensit in degradatione 
- 
 Arnulfi neque in ordinatione Gibberti, sed plus timens Deum 
 quam terrenum regem, ipsum regem in quantum potuit redarguit. 
 Rex itaque cum magno dedecore expelli iussit Arnulfum de 
@@ -378,17 +335,13 @@ reseditque in eadem urbe pontifex quam plurimos annos.
 Defuncto uero papa urbis Rome statim omnis populus Romanus 
 sibi dari acclamabat domnum Gibbertum. Assumptus 
 autem de urbe Rauenna ordinatus est pontifex in urbe Roma. 
-</p> 
-
-
-<p xml:id="g170.15-170.16" decls="#ocr"> 
+[/p]  
+[p xml:id="g170.15-170.16"]  
 Anno dominice incarnationis CMLXXXVII. Sarraceni depopulati 
 sunt Calabriam, a quibus postea sequenti anno Cosentia 
 obsessa est atque destructa. 
-</p> 
-
-
-<p xml:id="g170.17-171.1" decls="#ocr"> 
+[/p]  
+[p xml:id="g170.17-171.1"]  
 Anno dominice incarnationis CMXC stella a parte septentrionis 
 apparuit habens splendorem qui tenebat contra meridiem 
 quasi passum unum. Et post paucos dies iterum apparuit 
@@ -399,10 +352,8 @@ et in ciuitate Apriano plures ecclesias subuertit. Ciuitas quoque
 Frequentus pene media cecidit, ciuitatem uero Consanam 
 prope mediam cum episcopo subuertit, multosque homines oppressit. 
 Ronsem totam cum eius hominibus submersit. 
-</p> 
-
-
-<p xml:id="g171.2-171.6" decls="#ocr"> 
+[/p]  
+[p xml:id="g171.2-171.6"]  
 Preterea Rome defuncto papa Benedicto, Iohannes papa sedit 
 mensibus IX. Hic autem in castello Sancti angeli retrusus et 
 per menses IV fame afflictus mortuus est. Et iterum superior 
@@ -410,16 +361,12 @@ Bonifacius qui expulsus fuerat sedit mensibus XI. Quo uita decedente
 Iohannes sedit mensibus IV. Post quem alius Iohannes sedit 
 annis X mensibus VI. Cuius temporibus Romani capitanei patriciatus 
 sibi tirannidem uendicauere. 
-</p> 
-
-
-<p xml:id="g171.7-171.8" decls="#ocr"> 
+[/p]  
+[p xml:id="g171.7-171.8"]  
 Anno dominice incarnationis CMXCIV in Apulia ciuitas 
 Matere a Sarracenis destructa est. 
-</p> 
-
-
-<p xml:id="g171.9-171.14" decls="#ocr"> 
+[/p]  
+[p xml:id="g171.9-171.14"]  
 Anno dominice incarnationis CMXCVII. Ugo dux Francorum 
 obiit sepultusque est in basilica beati Dionisii martiris Parisius. 
 Cui successit filius eius Robbertus rex qui pius fuit et modestus. 
@@ -428,10 +375,8 @@ idem tempus Mel catipanus primum in Apuliam conduxit Normannos
 quos secum habens bellum cum Grecis in Apulia apud 
 Basentellum commisit, et non multo post temporis ipse Mel ciuitatem 
 Ascolum cepit. 
-</p> 
-
-
-<p xml:id="g172.1-172.9" decls="#ocr"> 
+[/p]  
+[p xml:id="g172.1-172.9"]  
 Non post multum uero temporis Henricus Burgundie dux 
 qui Burgundionum quoque regnum sibi uendicauerat, mortuus 
 est sine filiis, et rebellauerunt Burgundiones in regem Robbertum 
@@ -445,10 +390,8 @@ fidelibus quanta non est audita tempore paganorum usque
 in hodiernum diem. Post aliquot uero annos capta est ciuitas Senonum 
 ab archiepiscopo Leotherico, qui successit uenerabili 
 Seguino, et regi tradita Robberto. 
-</p> 
-
-
-<p xml:id="g172.10-173.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g172.10-173.11"]  
 Preter hec autem Rome defuncto Iohanne papa successit ei 
 Gregorius seditque anno I mensibus V. Cui Iohannes papa successit 
 seditque mensibus X. Hic turpiter uitam suam finiuit. Successit 
@@ -459,7 +402,6 @@ IV mense I. Cuius temporibus ingens in Campania per XV dies
 terre motus factus est multa diruens edificia. Siluestro autem 
 obeunte, Iohannes qui uocatur Sigo papalem sedit cathedram 
 mensibus V. Quo defuncto Iohannes papa qui uocatur Fassanus 
- 
 sedit anno I. Hic Ottonem regem Saxonum coronauit imperatorem. 
 Post Iohannem uero Siluester Tiburtinus, qui uocatur 
 Osporco, Romanum suscepit pontificatum qui sedit annis II. 
@@ -485,33 +427,26 @@ expugnans ui ceperat. Eo itaque mortuo frater eius Henricus
 maioris imperatoris Ottonis nepos fit rex, quique regnauit anni 
 XXV. Cuius imperii anno secundo Sarraceni Campaniam ingressi 
 Capuam obsederunt. 
-</p> 
-
-
-<p xml:id="g173.12-173.13" decls="#ocr"> 
+[/p]  
+[p xml:id="g173.12-173.13"]  
 Anno dominice incarnationis MI indictione XIV fames ualida 
 Italiam optinuit. Quo tempore Mel catipanus cum Normanis 
 Apuliam expugnabat. 
-</p> 
-
-
-<p xml:id="g173.14-174.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g173.14-174.7"]  
 Anno dominice incarnationis MII indictione XV Siluester papa 
 defunctus est et Benedictus frater Alberici papalem suscepit 
 cathedram. Eodem anno Henricus Alamannorum rex Romam 
 uenit et ab eodem Benedicto papa coronam accepit imperii et 
 imperator appellatus est. Sedit autem ipse Benedictus annis XI 
 mense I. Per idem tempus Basilius et Constantinus frater eius 
- 
 Constantinopolitani catholici imperatores catipanum suum nomine 
 Bugano magna cum thesauri pecunia direxerunt ut Apuliam 
 circumquaque regionibus sibi uendicaret ac imperiali iuri 
 componeret. Qui ueniens cepit omnia tranquille agere atque 
 strenue ordinare. 
-</p> 
-
-
-<p xml:id="g174.8-175.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g174.8-175.15"]  
 Anno domini MXIII. indictione I. Hic in Apulie finibus rehedificauit 
 ciuitatem diu dirutam nuncupauitque eam Troiam, que 
 antiquitus Ecana uocabatur (1024) et iussu imperatorum fines 
@@ -523,7 +458,7 @@ quoque Dioclitiani et Maximiniani imperatorum extitit in
 hac Ecana ciuitate Marcus episcopus, qui martyrio uitam finiuit. 
 Et post aliquantorum annorum curricula fuit in eadem urbe Secundinus 
 episcopus, qui confessor et sanctus multas sanctorum 
-ecclesias renouauit. <milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+ecclesias renouauit. [/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Ipse etiam prenominatus catipanus in finibus Samnii et Apulie 
 edificauit ac constituit plures urbes et oppida; ipsaque regio 
 usque hodie Catipania ex suo nomine dicitur. Quarto autem anno 
@@ -538,51 +473,37 @@ posset – dixerat enim iratus quod si eam ui cepisset statim destrueret
 pace cum ciuibus, obsidibusque ab eis receptis ad propria 
 est reuersus. Pandulfum autem Capuanum principem secum in 
 Alamanniam deduxit. 
-</p> 
-
-
-<p xml:id="g176.1-176.2" decls="#ocr"> 
+[p xml:id="g176.1-176.2"]  
 Anno dominice incarnationis MXXIV indictione VII. Basilius 
 imperator Constantinopolitanus diem obiit. 
-</p> 
-
-
-<p xml:id="g177.1-177.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g177.1-177.4"]  
 Anno dominice incarnationis MXXV indictione VIII, Henricus 
 Alamannorum imperator defunctus est, cui successit Churradus 
 qui dux eius fuerat. Eodem anno papa Benedictus obiit et successit 
 ei Iohannes frater eius, "qui uno eodemque die et laicus 
 fuit et pontifex", seditque annos IX et dies IX. 
-</p> 
-
-
-<p xml:id="g177.5-177.6" decls="#ocr"> 
+[/p]  
+[p xml:id="g177.5-177.6"]  
 Anno Domini MXXVII indictione X; apud Constantinopolim 
 Constantinus imperator obiit et successit ei Romano gener eius 
 una cum eius uxore Zoy imperatrice, regnauitque annos V. 
-</p> 
-
-
-<p xml:id="g177.7-177.8" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g177.7-177.8"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Anno 
 dominice incarnationis MXXX, indictione XIII; Iohannes princeps 
 Salerni defunctus est anno principatus sui LVII, et successit ei 
 Guaymarius filius eius. 
-</p> 
-
-
-<p xml:id="g177.9-178.3" decls="#ocr"> 
+[p xml:id="g177.9-178.3"]  
 Anno dominice incarnationis MXXXI, indictione XIV Romano 
 imperator Constantinopolitanus mortuus est, et successit ei 
 in imperium Michael qui dicitur Catalactus cum Zoy imperatrice. 
 Ipso quoque anno defunctus est Robbertus Francorum rex 
 cui successit filius eius Henricus. Cuius in tertio anno urbs Parisii 
 flagrauit incendio; regnauit autem hic Henricus annis XXIX. 
-</p> 
-
-
-<p xml:id="g178.4-178.10" decls="#ocr"> 
+[/p]  
+[p xml:id="g178.4-178.10"]  
 Anno dominice incarnationis MXXXIV, indictione II; fuit eclipsis 
 solis in festiuitate sancti Petri. Quo anno Iohannes papa defunctus 
 est et successit ei Benedictus qui uocabatur Theofilatus, 
@@ -593,17 +514,13 @@ papa Benedictus qui post mensem unum et dies XX uendidit
 papatum Iohanni Rauennati archipresbitero sancti Iohannis ante 
 portam Latinam, cui nomen positum est Gregorius, qui sedit anno 
 I et mensibus VI. 
-</p> 
-
-
-<p xml:id="g178.11-178.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g178.11-178.12"]  
 Anno dominice incarnationis MXXXVII indictione V mense 
 Ianuarii; "mons Uesubius eructauit incendium ita" ut quasi flumen 
 "usque ad mare discurreret". 
-</p> 
-
-
-<p xml:id="g178.13-179.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g178.13-179.2"]  
 Anno dominice incarnationis MXXXIX indictione VII apud 
 Constantinopolim Michael imperator cognomento Catalactus 
 diem obiit anno VII eius imperii. Cui Michael qui Etheriarchis dicebatur 
@@ -614,12 +531,9 @@ et Normanni uictores extiterunt. In ipso quidem prelio fuit Drogo
 Normannorum comes et quattuor ex fratribus eius. In ipso 
 quoque anno Chunradus imperator defunctus est anno eius imperii 
 XV, et successit ei Henricus filius eius. 
-</p> 
-
-
-<p xml:id="g179.3-179.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g179.3-179.7"]  
 Anno Domini MXL indictione VIII; defunctus est Michael 
- 
 Etheriarchis imperator Constantinopolitanus anno secundo 
 postquam imperare ceperat. Et successit ei imperator Michael 
 Archontopanthiu cum Zoy imperatrice. Quo uita decedente ipso 
@@ -627,31 +541,23 @@ eodem anno X successit ei Constantinus Monomachus in imperium
 cum Zoy imperatrice, qui regnauit annis XII. Quo tempore 
 fames ualida fuit in Italia atque in Gallia per septem continuos 
 annos. 
-</p> 
-
-
-<p xml:id="g179.8-179.9" decls="#ocr"> 
+[/p]  
+[p xml:id="g179.8-179.9"]  
 Anno dominice incarnationis MXLII indictione X; luna passa 
 est eclipsim V Idus Ianuarii per quinque horas noctis. 
-</p> 
-
-
-<p xml:id="g179.10-179.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g179.10-179.11"]  
 "Anno ab incarnatione Domini MXLIV indictione XII; hoc 
 autem tempore Guilelmus" filius Tancredi descendit cum Guaimario 
 principe feceruntque ipsam Stridulam castellum. 
-</p> 
-
-
-<p xml:id="g179.12-179.14" decls="#ocr"> 
+[/p]  
+[p xml:id="g179.12-179.14"]  
 Anno dominice incarnationis MXLV indictione XIII; Drogo 
 Normannorum comes cepit ciuitatem Bibinum eamque depopulatus 
 est; sequenti uero anno, postquam eadem ciuitas reedificata 
 est, flagrauit incendio. 
-</p> 
-
-
-<p xml:id="g179.15-180.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g179.15-180.12"]  
 Anno Domini MXLVI indictione XIV Henricus imperator 
 uenit Romam inuenitque sedem apostolicam ualde turbatam, 
 nam "uno eodemque tempore supradicti Theophilus qui et Benedictus, 
@@ -670,50 +576,37 @@ est, cuius electioni predictus imperator assensum prebuit,
 seditque Damasus dies XX. Imperator autem ipse usque 
 Capuam uenit terram pro tempore sibi componens, et sic reuersus 
 est anno Domini MXLVII, indictione XV. 
-</p> 
-
-
-<p xml:id="g180.13-180.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g180.13-180.15"]  
 Hoc autem tempore comprehensum est oppidum Stuni a Garangis 
 in mense Octobris et in mense Decembris depopulauerunt 
 Liccie. Et in mense Iunii Benedictus papa per poculum 
 ueneni occidit papam Clementem. 
-</p> 
-
-
-<p xml:id="g181.1-181.1" decls="#ocr"> 
- 
+[/p]  
+[p xml:id="g181.1-181.1"]  
 Anno Domini MXLVIII indictione I; Zoy imperatrix obiit. 
-</p> 
-
-
-<p xml:id="g181.2-181.5" decls="#ocr"> 
+[/p]  
+[p xml:id="g181.2-181.5"]  
 Anno domini MXLIX indictione II, Damaso papa uita decedente, 
 Leo sanctissimus qui uocatur Brunus, a populo Romano 
 expetitus, a clero electus, ab imperatore quoque commendatus, 
 et ab episcopis, quibus auctoritas est attributa, consecratus est 
 in pontificatus honore, seditque annis quinque, mensibus duobus. 
-</p>
-
-
-<p xml:id="g181.6-181.10" decls="#ocr">
+[/p] 
+[p xml:id="g181.6-181.10"] 
 Anno Domini MLI indictione III mense Augusti Drogo Normannorum 
 comes defunctus est. "Fuitque uir egregius, pius, strenuus 
 atque famosus, qui propter animi mansuetudinem et iusticie 
 sertatam equitatem a cunctis est dilectus". Cui Unfridus frater 
 eius Normannorum comes successit, tenuitque potestatem 
 ipsius honoris per annos septem. 
-</p> 
-
-
-<p xml:id="g181.10-181.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g181.10-181.11"]  
 Anno dominice incarnationis MLII indictione quinta Guaymarius 
 princeps Salerni a suis interfectus est anno principatus sui 
 uicesimo tercio. Cui successit Gisolfus filius eius. 
-</p> 
-
-
-<p xml:id="g181.12-182.19" decls="#ocr"> 
+[/p]  
+[p xml:id="g181.12-182.19"]  
 Anno ab incarnatione Domini MLIII indictione VI mense 
 Iulio. Leo papa multis precibus ab Enrico monitus imperatore 
 per quorundam Sampnitum suggestionem uenit in Beneuentum 
@@ -734,10 +627,9 @@ alios persequerentur premonuerat", ideo "exercitus sui multitudo
 cesa est, ipso perspiciente. Non enim Dominus discipulis 
 suis" neque idem apostoli "suis successoribus" preceperunt ut 
 curis secularibus, ueluti principes, materiali gladio Dei populum 
- 
 tuerentur "sed uerbo doctrine monerent et pie conuersationis 
 exemplo instruerent". 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eodem anno Constantinus Monomachus imperator Constantinopolitanus 
 obiit, post quem Theodora, soror Zoy imperatricis 
 uirgo existens, imperium Constantinopolitanum uiriliter biennio 
@@ -746,7 +638,7 @@ est, qui eodem anno fuit inuitus monachus factus. Cui Isachius
 Commiano imperator successit, qui post annos quattuor 
 ex quo imperauit imperio eiectus ac monachus factus est. Cui 
 Constantinus cognomento Dioclici in imperium successit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 At uero Leo papa sequenti anno postquam cum Normannis 
 preliatus est diem obiit mense Aprilis. Et successit ei Uictor qui 
 Gebeardus uocabatur seditque annis duobus, mensibus duobus. 
@@ -754,13 +646,10 @@ Post cuius obitum Stephanus Gondifridi ducis germanus qui dictus
 est Fredericus, sedit mensibus septem. Quo defuncto Benedictus 
 Belliternensis episcopus Romanum inuasit pontificatum, 
 qui sedit mensibus nouem. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Quibus temporibus Patarea idest Patareanorum secta apud 
 Mediolanum exorta est. 
-</p> 
-
-
-<p xml:id="g183.1-184.6" decls="#ocr"> 
+[p xml:id="g183.1-184.6"]  
 Anno dominice incarnationis MLVII indictione X; Unfridus 
 comes Normannorum diem clausit extremum, reliquens sibi 
 successorem Bagelardum filium eius militem strenuum. Set Robbertus 
@@ -780,7 +669,6 @@ animi astuciam ingeniique prudenciam primus ex Gallorum genere
 in Apulia ducatus honorem adeptus est. Qui non multo post 
 sibi subegit Apuliam et Calabriam, Lucaniam atque Siciliam, militarem 
 namque disciplinam gloriosissime rexit. Octauus autem 
- 
 Alberedus armis strenuus. Nonus Tancredus. Decimus Willelmus 
 de Sancto nicandro, pater Robberti comitis de Principatu. Fuit 
 ipse Willelmus acer ingenio, inconstans animo, seuusque natura. 
@@ -788,18 +676,14 @@ Undecimus Frumentinus. Duodecimus Roggerius Sicilie comes,
 qui miles insignis extitit, iusticie tenax, suis suorumque opibus 
 studens, ecclesiarum Dei atque sacerdotum consulens. Habuit 
 quoque Tancredus horum pater et filias tres. 
-</p> 
-
-
-<p xml:id="g184.7-184.9" decls="#ocr"> 
+[/p]  
+[p xml:id="g184.7-184.9"]  
 Anno dominice incarnationis MLVIII, indictione XI. Benedictus 
 papa defunctus est et successit ei Nicolaus qui et Ierardus. 
 "Eodem anno Riccardus cum Iordano filio eius effectus est Capue 
 princeps". 
-</p> 
-
-
-<p xml:id="g184.10-185.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g184.10-185.7"]  
 Anno Domini MLX, indictione XIII. Henricus rex Francorum 
 obiit, cui Philippus filius eius successit in regnum. Ipso quoque 
 anno comes Robbertus Guiscardus uocatus est a Troianis ciuibus, 
@@ -818,10 +702,8 @@ promittens se iureiurando fidem seruaturum Romane ecclesie et
 eidem pape eiusque successoribus canonice intrantibus. Ipse 
 autem papa Nicolaus statim inuestiuit eundem Robbertum Guiscardum 
 per uexillum de honore ducatus sui cum tota terra. 
-</p> 
-
-
-<p xml:id="g185.8-186.5" decls="#ocr"> 
+[/p]  
+[p xml:id="g185.8-186.5"]  
 Anno dominice incarnationis MLXII indictione XV Nicolaus 
 papa defungitur anno ordinationis sue secundo, mense octauo. 
 Et Alexander qui uocatus est Anselmus papa anno 
@@ -830,37 +712,26 @@ diebus Robbertus dux ad Alexandrum papam proficiscens"
 liggius eius homo "deuenit" et sicut Nicolao pape ita et huic 
 iusiurandum fecit et per uexillum ab eo terram cum honore ducatus 
 accepit. Sedique Alexander papa annis XI, mensibus VI. 
- 
-</p> 
-
-
-<p xml:id="g186.6-186.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g186.6-186.7"]  
 "Hoc anno Riccardus princeps Capue intrauit terram Campanie 
 obseditque Cipparanum et cepit eam et usque Romam 
 deuastando peruenit. 
-</p> 
-
-
-<p xml:id="g186.8-186.8" decls="#ocr"> 
+[/p]  
+[p xml:id="g186.8-186.8"]  
 Anno Domini MLXIII. Hoc anno comprehensa est Tarentum a 
 Normannis. 
-</p> 
-
-
-<p xml:id="g186.9-186.9" decls="#ocr"> 
+[/p]  
+[p xml:id="g186.9-186.9"]  
 Anno Domini MLXIV. Hoc anno comprehensa est Matera a 
 Normannis mense Aprilis. 
-</p> 
-
-
-<p xml:id="g186.10-186.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g186.10-186.11"]  
 Anno Domini MLXV indictione III. Hoc anno Robbertus dux 
 intrauit Siciliam et interfecit Agarenorum multitudinem et tulit 
 obsides de ciuitate Panormo". 
-</p> 
-
-
-<p xml:id="g186.12-187.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g186.12-187.2"]  
 Anno dominice incarnationis MLXVI indictione III mense 
 aprilis stella cometis apparuit a parte orientis, cuius fumus per 
 aliquot dies tendebat ad meridiem. Ipso quoque mense hec 
@@ -872,106 +743,81 @@ sexto, defunctus est, cui Romano Diogenes in imperium successit.
 ibi catipanum nomine Kuriacum. Hinc etiam ipse 
 dux Barum obsedit Apulie ciuitatem et triennio eam incessanter 
 oppugnauit terra marique pontem quoque ibi in mari fecit". 
-</p> 
-
-
-<p xml:id="g187.3-187.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g187.3-187.4"]  
 "Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit 
 cum Araldo rege Anglorum et uicit eum, qui et factus est 
 rex super gentem Anglorum". 
-</p> 
-
-
-<p xml:id="g187.5-187.8" decls="#ocr"> 
+[/p]  
+[p xml:id="g187.5-187.8"]  
 "Anno domini MLXVIII, indictione V. Hoc anno in sexto die 
 mense Februarii Robbertus dux obsedit ciuitatem Montem-pilosum 
 et dimissa ibi obsidione cum paucis abiit Abianum et cepit 
 eam, et tradicione cuiusdam Gothifrede intrauit ipse dux in prephatam 
 Montem-pilosum ciuitatem". 
-</p> 
-
-
-<p xml:id="g187.9-187.11" decls="#ocr"> 
-
+[/p]  
+[p xml:id="g187.9-187.11"]  
 Anno dominice incarnationis MLXX indictione VIII, apud 
 Constantinopolim Romano Diogenes imperator transacto quarto 
 imperii eius anno defunctus est. Cui in imperio Michael filius 
- 
 Constantini Dioclizi successit. 
-</p>
-
-
-<p xml:id="g187.11-187.14" decls="#al"> 
+[/p] 
+[p xml:id="g187.11-187.14"]  
 "Hoc anno mense Ianuarii magnum 
 homicidium actum est in Brundusii ciuitate. Nam Normanni 
 uolentes eam comprehendere, tenti sunt ab eis quadraginta 
 cum aliis eorum ministris et capita omnium predictorum 
-ad imperatorem deportata sunt".
-</p>
-
-<p xml:id="g187.14-188.1" decls="#al"> 
+ad imperatorem deportata sunt". 
+[/p] 
+[p xml:id="g187.14-188.1"]  
 Eodem anno Robbertus dux 
 "cepit Barum ciuitatem longa obsidione fatigatam, indeque 
 mouens exercitum, Siciliam properauit obseditque" "Panormum, 
 per terram et per mare, duxitque ante eam naues LVIII ditissimam 
-Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam.
-</p>
-
-<p xml:id="g188.1-188.4" decls="#al"> 
+Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam. 
+[/p] 
+[p xml:id="g188.1-188.4"]  
 anno 
 dominice incarnationis MLXXI, indictione X. Et exinde portas 
 ferreas et columpnas marmoreas quam plures cum capitibus 
 fecit afferri Troiam causa uictorie sue. Anno autem subsequente 
 ordinatis ibi in Panormo municipiis, ipse dux in Apuliam ueniens 
 cepit Tranum Apulie ciuitatem". 
-</p> 
-
-
-<p xml:id="g188.5-188.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g188.5-188.7"]  
 "Eodem anno Robbertus dux fecit fieri pontem in mari quatinus 
 concluderet portum prephate urbis Bari, et in quintadecima 
 die mensis Aprilis cepit Robbertus dux predictam ciuitatem, 
 et in sequenti predictus dux cepit ciuitatem Panormum in mense 
 Ianuarii". 
-</p> 
-
-
-<p xml:id="g188.8-188.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g188.8-188.11"]  
 Anno dominice incarnationis MLXXV, indictione XIII, Alexander 
 papa diem obiit, et archidiaconus eius nomine Ildebrandus 
 ipsa eadem die in ordine pontificali electus et papa Gregorius 
 est nuncupatus, seditque annis XII, mense I. Hic autem pontifex 
 amministrationem regni sibi primus ut rex assumpsit. 
-</p> 
-
-
-<p xml:id="g188.12-188.14" decls="#ocr"> 
-
+[/p]  
+[p xml:id="g188.12-188.14"]  
 Anno dominice incarnationis MLXXVI, dux Robbertus Sanctam 
 Seuerinam Calabrie ciuitatem loco munitissimam tertio anno 
 postquam illam obsederat, cepit. Hic quoque cepit ciuitatem 
 Comsanam obsesso castello Sancte Agathe, quod incessabili oppugnatione 
-cepit.
-</p>
-
-
-<p xml:id="g189.1-189.1" decls="#ocr"> 
+cepit. 
+[/p] 
+[p xml:id="g189.1-189.1"]  
 "Hoc anno Robbertus dux dedit filiam suam 
-nurum ad imperatorem Constantinopolitanum.
-</p>
-
-
-<p xml:id="g189.2-189.5" decls="#al"> 
+nurum ad imperatorem Constantinopolitanum. 
+[/p] 
+[p xml:id="g189.2-189.5"]  
 His etiam diebus 
 cum exercitu dux proficiscens obsedit Salernum, ciuitatem medicine 
 utique artis diu famosam atque precipuam. Gisolfum 
 autem frater uxoris eiusdem ducis tunc in eadem ciuitate morabatur. 
 Hanc incessanter terra marique expugnauit, nec destitit 
 donec post VII menses obsidionis sue cepit illam mense Decembris. 
-</p>
-
-
-<p xml:id="g189.5-190.8" decls="#ocr"> 
+[/p] 
+[p xml:id="g189.5-190.8"]  
 Anno dominice incarnationis MLXXVI, indictione XV; cepitque 
 Gisulfum principem qui fame coactus se eidem duci traddit, 
 atque Turrim maiorem in qua se tutabatur. In eadem uero ciuitate 
@@ -993,10 +839,8 @@ accepit filiam Guaymarii principis Salernitani, ex qua habuit
 filios Riccardum et Robbertum atque Iordanum". Hoc anno 
 obsessa est Salernum a Robberto duce et comprehensa est 
 ab eo. 
-</p> 
-
-
-<p xml:id="g190.9-191.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g190.9-191.2"]  
 Anno dominice incarnationis MLXXIX, indictione II, apud 
 Constantinopolim Michael filius Constantini imperatoris anno 
 eius imperii octauo ipse cum filiis suis Michael, Andronico et 
@@ -1005,21 +849,16 @@ arripuit. "Ipso anno dux Robbertus obsidens Uicum cepit ipsam
 ciuitatem, ibique Gradelonem nepotem suum capiens utroque 
 statim priuari lumine fecit, eo quod ipse et alii plerique baronum 
 rebelles ei extiterant. Ceteri uero metu perculsi ei se subdiderunt. 
-</p>
-
-
-<p xml:id="g191.3-191.5" decls="#ocr">
+[/p] 
+[p xml:id="g191.3-191.5"] 
 "Eodem anno corpus beati Canionis a loco, in quo olim positus 
 fuerat, ab Arnaldo leuatur archiepiscopo et in sancte Dei genitricis 
 Marie ecclesia nouiter inchoata honorifice collocatus". 
-</p> 
-
-
-<p xml:id="g191.6-191.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g191.6-191.12"]  
 Anno Domini MLXXX, indictione III, dux Robbertus Guiscardus 
 cepit Spinazolam. Paucis etiam euolutis diebus ipse dux 
 cepit Ydrontum cepitque Tarentum. His autem diebus uenit ad 
- 
 eum uir quidam dicens se Michaelem imperatorem fuisse, conquerens 
 se male tractatum a suis et expulsum poposcitque auxilium 
 sibi dari. Dux itaque, ut ei mos erat, diligenter illum excipiens 
@@ -1027,11 +866,9 @@ hac honorabiliter circa se habens secum duxit eum usque
 Salernum. Inde mouens gressum dux ipse perrexit ad Gregorium 
 papam eiusque liggius homo iureiurando effectus apud Ciperanum, 
 accipiens ab eo uexillum sancti Petri mense Iunio. 
-</p> 
-
-
-<p xml:id="g191.13-194.5" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g191.13-194.5"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Anno dominice incarnationis MLXXX indictione IV dux Robbertus 
 magnum apud Ydrontum "assumpsit exercitum, super 
 Constantinopolim ire cupiens. Qui mare transiens cum Boamundo 
@@ -1060,7 +897,6 @@ et uestes quibus utebatur quibusdam largiebatur dicens: "Si
 esset mihi posse, tam prudentes uiros uelut estis, de meis uobis 
 ego largiendo ditissimos facerem". Et hec incessanter machinabatur 
 ut omnium ad se militum uoluntates subtraheret. Quibus 
- 
 etiam locutus est: "Ibo ad imperatorem ego pro uobis loquens, ut 
 uestra uobis omnibus donatiua transmittat". Qui dum Constantinopolim 
 perrexisset, quoscumque potuit simili modo donis ac 
@@ -1094,7 +930,6 @@ statim e palatio fugiit et in ecclesia sancte Sophie monachum se
 fieri iussit. Alexius itaque palatium ingressus, Constantinopolitanum 
 imperium arripuit. Ut autem Dominice resurrectionis die 
 coronatus est, exercitum a preda et rapinis reuocari iussit. Qui ut 
- 
 se non quasi cupidum imperii magnatibus ostenderet, constituit 
 secum in imperio Michaelem filium predicti Michaeli imperatoris, 
 dicens omnibus: Non propter me sed propter hunc qui iure 
@@ -1117,11 +952,8 @@ solus imperaret, quoscumque ex imperatorum genere potuit
 inuenire aut eos lumine priuari fecit, aut ipsi tirannidem eius 
 euadere cupientes exilium ceperunt. Interea Robbertus dux cepit 
 Dirrachium ciuitatem et maximam partem regionis illius. 
-</p> 
-
-
-<p xml:id="g194.6-195.5" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[p xml:id="g194.6-195.5"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Eodem anno Henricus Alamannorum imperator uenit Romam 
 cum exercitu, obseditque Gregorium papam, qui excommunicauerat 
 eum, eo quod imperator ipse inuestituram episcopatus 
@@ -1134,7 +966,6 @@ mandauit, ut quicumque eidem imperatori iusiurandum fecerat,
 nullus ei fidem nisi Romane ecclesie sibique obseruaret ut pariter 
 rex et pontifex ipse et regni dominaretur et ecclesiam procuraret. 
 Quamobrem ipse imperator una cum clero et populo 
- 
 Romano Gibertum archiepiscopum Rauenne fecit eligi atque 
 constituit in ordine summi pontificis, nuncupans eum Clementem. 
 Quo audito dux Robbertus in ultramarinis partibus sibi rebus 
@@ -1151,17 +982,12 @@ ciues ipsius rebelles ei extiterant, cepitque eam igne incendens.
 Superiori quoque anno priusquam dux Robbertus de ultramarinis 
 esset reuersus, Roggerius eiusdem ducis filius destruxit Asculum 
 combussitque eam igni. 
-</p> 
-
-
-<p xml:id="g195.6-195.8" decls="#ocr"> 
+[p xml:id="g195.6-195.8"]  
 Anno domini MLXXXII indictione VI "hoc anno intrauerunt 
 Langobardi Italiam et dux in mense Maio posuit ante Cannas 
 ciuitatem Apulie obsidionem et mense Iulio comprehendit eam". 
-</p> 
-
-
-<p xml:id="g195.9-196.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g195.9-196.2"]  
 Anno dominice incarnationis MLXXXIII indictione VII dux 
 Robbertus una cum filio suo Roggerio iterum ingenti cum exercitu 
 Romam profectus est super Henricum imperatorem, qui obsederat 
@@ -1175,10 +1001,8 @@ ipso castello, duxtique eum secum usque Salernum. Inter hec
 Boamundus filius ducis absente patre duo cum Alexio imperatore 
 prelia gessit, quorum unum Boamundus ipse uiriliter uicit, alterum 
 uero imperator uicit, non tamen ui sed insidiose agens. 
-</p> 
-
-
-<p xml:id="g196.3-197.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g196.3-197.7"]  
 Anno dominice incarnationis MLXXXV, indictione VIII dux 
 Robbertus collecto agmine iterato in ultramarinas partes statuit 
 proficisci. Quod cum imperatori Alexio compertum esset, suum 
@@ -1206,40 +1030,31 @@ turribusque muniuit, cuius opinio insignis ubique preferebatur.
 Fuitque non minus consilio quam uiribus decoratus, quo nullus 
 in bellis felicior aut in pace moderatior. Priuatos autem contubernio, 
 pecunia, beneficiis atque honoribus ditauit. 
-</p> 
-
-
-<p xml:id="g197.8-197.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g197.8-197.12"]  
 Huic itaque successit Roggerius filius eius dux anno incarnationis 
 dominice MLXXXVI, indictione IX. Hic autem post mortem 
 patris ducatum nobiliter tenuit et ampliauit; adauxit enim sibi 
 Capuanum principatum et usque Romam, magis beneficii munificencia 
 quam potentie austeritate. Eodem anno XIII kalendas Martii 
 stella clarissima ingressa est in circuitu prime lune. 
-</p> 
-
-
-<p xml:id="g197.13-198.3" decls="#ocr"> 
+[/p]  
+[p xml:id="g197.13-198.3"]  
 Anno dominice incarnationis MLXXXVII indictione X mense 
 Maio corpus beati Nycolay confessoris de Mirrea translatum in 
 Barum Apulie ciuitatem fuitque uirtus Domini ad sanandum multos 
 infirmos. Eodem mense Uictor qui et Desiderius, Casinensis 
 abbas, genere Samnis, post duos annos ex quo Gregorius papa 
- 
 obiit, papa est ipse ordinatus, qui post menses quattuor et dies 
 VI ordinationis sue diem obiit. Cui successit in Romanum pontificatum 
 Hostiensis episcopus nomine Otto ex genere Francorum 
 et Urbanus est papa dictus seditque annis XII mensibus VIII. 
-</p> 
-
-
-<p xml:id="g198.4-198.5" decls="#ocr"> 
+[/p]  
+[p xml:id="g198.4-198.5"]  
 "Hoc anno terre motus magnus factus est per totam Apuliam, 
 ut in quibusdam locis turres ac domos subruisse feratur". 
-</p> 
-
-
-<p xml:id="g198.6-198.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g198.6-198.11"]  
 Anno dominice incarnationis MLXXXVIII indictione XI. Boamundus 
 frater ducis Roggerii ex improuiso intulit bellum aput 
 Farnitum in Beneuenti territorio, et commisso bello dux Roggerius 
@@ -1249,32 +1064,22 @@ tamen hominum ex utraque parte ibi fuit interfectus preter
 unum. Postea uero ipse dux amore fraterno ductus dedit, eidem 
 Boamundo quandam partem terre sue in Apulie regionibus, cum 
 pater eius nil sibi reliquit. 
-</p> 
-
-
-<p xml:id="g198.12-198.13" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g198.12-198.13"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Eodem anno comprehensa est Siracusa, 
 Sicilie quondam caput, a Rogerio comite, in qua fertur homines 
 comesos ac infantes ob diuturnitatem obsidionis. 
-</p> 
-
-
-<p xml:id="g198.14-198.15" decls="#ocr"> 
+[p xml:id="g198.14-198.15"]  
 Anno dominice incarnationis MLXXXIX, indictione XII, luna 
 in ortu suo passa est eclipsim. 
-</p> 
-
-
-<p xml:id="g198.16-198.17" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g198.16-198.17"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Eodem anno papa Urbanus 
 uenit in ciuitatem Barum et sacrauit illic confessionem sancti Nicholai 
 et Canusinam ecclesiam. 
-</p> 
-
-
-<p xml:id="g199.1-199.8" decls="#ocr"> 
+[p xml:id="g199.1-199.8"]  
 Anno dominice incarnationis MXC indictione XIII mense 
 Septembris Urbanus papa sinodum in ciuitate Melfia celebrauit, 
 in qua Roggerius dux liggius homo eius effectus, promittens se 
@@ -1286,45 +1091,34 @@ anno Acherontia ciuitas cremata est mense augusti, in tantum
 enim eodem uastata est igne, ut nulla domus, nullum inueniretur 
 edificium quod non ab igne consumptum deperierit. Homines 
 etiam XXV eodem incendio mortui sunt. 
- 
-</p> 
-
-
-<p xml:id="g199.9-199.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g199.9-199.12"]  
 Anno Domini MXCI indictione XIII mense Februario 
 Iordanus Capue defunctus est anno XIII principatus eius. Hic 
 autem fuit uir egregius, consilio sagax, uirtute in bello preualidus. 
 Cui successit Riccardus filius eius princeps. 
-</p> 
-
-
-<p xml:id="g199.13-199.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g199.13-199.15"]  
 "Eodem anno 
 dum obsideretur Oria ciuitas a Boamundo, auxilio Roberti de Anse, 
 Oritani dissipauerunt obsidionem eius, et ipso Boamundo fugam 
 petente cuntum eius apparatum et signa ceperunt". 
-</p> 
-
-
-<p xml:id="g200.1-200.5" decls="#ocr"> 
+[/p]  
+[p xml:id="g200.1-200.5"]  
 Anno dominice incarnationis MXCII indictione XV Roggerius 
 dux duxit uxorem reginam Danorum nomine Alam, filiam 
 Robberti Frisonis comitis Flandrensium et ex ea dux habuit filios 
 Ludouicum et Guiscardum, qui in puerilibus annis mundo mortui 
 Deo uixerunt. Habuitque ex ea alium filium nomine Wilielmum, 
 qui postea eidem duci in honore ducatus successit. 
-</p> 
-
-
-<p xml:id="g200.6-200.8" decls="#ocr"> 
+[/p]  
+[p xml:id="g200.6-200.8"]  
 Anno dominice incarnationis MXCIII indictione I mense 
 Martio Urbanus papa Troie sinodum celebrauit. Eodem anno IX 
 kalendas Octobris fuit solis eclipsis circa horam tertiam diei, feria VI 
 indictione II. 
-</p> 
-
-
-<p xml:id="g200.9-200.16" decls="#ocr"> 
+[/p]  
+[p xml:id="g200.9-200.16"]  
 Anno Domini MXCIV indictione II mense Aprilis Urbanus 
 papa Placencie sinodum celebrauit, et IV nonas eiusdem 
 mensis fuit terribile signum in stellis, ita quod a medie noctis 
@@ -1336,10 +1130,8 @@ Urbani pape commota est ex omni Europa proficiscentium
 ad sanctum sepulchrum Domini in Ierusalem. Eodem anno VII 
 idus augusti indictione IV, luna passa est eclipsim a prima hora 
 noctis usque in tertiam horam eiusdem noctis. 
-</p> 
-
-
-<p xml:id="g200.17-200.21" decls="#ocr"> 
+[/p]  
+[p xml:id="g200.17-200.21"]  
 "Anno Domini MXCVI, Rogerius comes Sicilie cum uiginti 
 milibus Agarenorum et cum innumera multitudine aliarum 
 gencium et uniuersis comitibus Apulie obsedit Amalfim, ibique 
@@ -1347,10 +1139,8 @@ subito inspiratione Dei Boamundus cum aliis comitibus et militibus
 Rogerii comitis sumpserunt signum sancte crucis in umeribus 
 suis et in frontibus et sic reliquerunt obsidionem. Uidens 
 hec comes Rogerius cum dedecore reuersus est in Siciliam". 
-</p> 
-
-
-<p xml:id="g201.1-201.18" decls="#ocr"> 
+[/p]  
+[p xml:id="g201.1-201.18"]  
 Anno incarnati uerbi MXCVII indictione V mense Aprilis 
 Boamundus frater Roggerii ducis et Robbertus Normannorum 
 comes et Robbertus Flandrensium comes et comes Sancti egidii 
@@ -1377,29 +1167,21 @@ quoque anno eadem indictione Roggerius dux una cum Roggerio
 Sicilie comite urbem Capuam obsedit, et quadragesimo die 
 eius obsidionis acquisitam eam Riccardo principi reddidit. Eodem 
 anno kalendas Augusti flagrauit incendio. 
-</p> 
-
-
-<p xml:id="g201.19-201.20" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g201.19-201.20"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 "Hoc eodem anno 
 papa Urbanus congregauit uniuersalem sinodum in ciuitate Baro, 
 in qua affuerunt ex diuersis partibus episcopi CXXX". 
-</p> 
-
-
-<p xml:id="g202.1-202.4" decls="#ocr"> 
+[p xml:id="g202.1-202.4"]  
 Anno dominice incarnationis MXCIX, indictione VII, kalendas 
 Decembris fuit eclipsis lune sero. Eodem anno IV kalendas 
 Augusti Urbanus papa Rome defunctus est. Cui Rainerius presbyter 
 cardinalis natione Tuscus succedens, sublimatus est honore 
 pontificali et Paschalis est papa nuncupatus, seditque annis 
 XIX mensibus sex. 
- 
-</p> 
-
-
-<p xml:id="g202.5-202.10" decls="#ocr"> 
+[/p]  
+[p xml:id="g202.5-202.10"]  
 Anno dominice incarnationis MC, indictione VIII; dux Roggerius 
 Canusiam obsedit, cepitque illam ciuitatem retibus circum 
 extensis. Eodem anno dux Gothifredus in Hierusalem mortuus 
@@ -1408,10 +1190,8 @@ mense iulio Boamundus exiens ab Antiochia cum CCC equitibus,
 cum Turcis bellum commisit ceciditque et comprehensus 
 est et uinctus catenis. Equites uero omnes illic mortui sunt. Fertur 
 autem fuisse paganos CXXIII milia". 
-</p> 
-
-
-<p xml:id="g202.11-203.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g202.11-203.2"]  
 Anno dominice incarnationis MCI indictione IX mense Iunii, 
 Roggerius Sicilie comes defunctus est anno uite sue quinquagesimo 
 primo comitatus autem eius anno XLI. Hic autem fuit 
@@ -1422,26 +1202,19 @@ sacerdotum consulens. Huic autem successit filius eius Symon,
 qui paucis transactis annis mortuus est. Cui frater eius, predicti 
 Roggerii comitis filius, Roggerius comes successit. Hoc anno 
 Raul Machabeo Mons caueosus mutatur. 
-</p> 
-
-
-<p xml:id="g203.3-203.5" decls="#ocr"> 
+[/p]  
+[p xml:id="g203.3-203.5"]  
 Anno dominice incarnationis MCII indictione X Roggerius 
 dux simul cum papa Paschali obsedit Beneuentum maximo cum 
 exercitu, nec destitit donec eo qui tunc eadem ciuitate principabatur 
 expulso, cepit ipsam ciuitatem et ipsius pape iuri ac potestati 
 eam dimisit. 
-</p> 
-
-
-<p xml:id="g203.6-203.6" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g203.6-203.6"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Hoc tempore Boamundus dimissus et rediit 
 in Antiochiam. 
-</p> 
-
-
-<p xml:id="g203.7-203.12" decls="#ocr"> 
+[p xml:id="g203.7-203.12"]  
 Anno dominice incarnationis MCV, indictione XIV; dux Roggerius 
 obsedit montem Sancti angeli cepitque ipsam ciuitatem et 
 castellum eius mense Octubris. Mense uero Decembris Boamundus 
@@ -1450,31 +1223,24 @@ anno sequenti duxit uxorem filiam Philippi Francorum regis nomine
 Constantiam, ex qua Boamundus ipse duos filios habuit; 
 quorum quidem unus nominatus est Iohannes, qui puer mortuus 
 est, alter uero dictus est Boamundus, qui patri suo successit. 
-</p> 
-
-
-<p xml:id="g203.13-204.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g203.13-204.4"]  
 Anno dominice incarnationis MCVI indictione XIV Riccardus 
 princeps Capuanus defunctus est mense Iunii anno sui principatus 
 XIV. Cui princeps successit frater eius Robbertus. Eodem 
 anno apparuit stella cometis magna a parte occidentis sero 
 per totum mensem februarii. Ipso quoque anno mense Iulii corpora 
 sanctorum Pontiani pape et martyris et Eleutherii episcopi 
- 
 et martyris et Anastasii confessoris de Roma in Troiam Apulie 
 ciuitatem translata sunt, quorum meritis uirtus Domini fuit ad sanandum 
 multos infirmos. 
-</p> 
-
-
-<p xml:id="g204.5-204.6" decls="#ocr"> 
+[/p]  
+[p xml:id="g204.5-204.6"]  
 Anno dominice incarnationis MCVII indictione XV dux Roggerius 
 obsedit Luceriam Apulie ciuitatem cepitque eam mense 
 Augusto. 
-</p> 
-
-
-<p xml:id="g204.7-204.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g204.7-204.15"]  
 Anno dominice incarnationis MCVIII indicione I Philippus 
 Francorum rex obiit anno ex quo cepit regnare XLIX; cui 
 Ludouicus filius eius successit in regnum. Eodem anno obiit Guido 
@@ -1488,18 +1254,14 @@ potestatem. Quem postquam expulit obsedit. Non post
 multum uero temporis idem Henricus imperator mortuus est et 
 obsessus anno imperii sui LXVII, et ipse filius eius regnum sibi 
 suscepit. 
-</p> 
-
-
-<p xml:id="g204.16-205.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g204.16-205.2"]  
 Anno domini MCX indictione III stella cometis a parte septemtrionali 
 circa polum uisa est tota nocte a sero usque mane 
 per totum mensem Iunii. Eodem anno mense Septembris domnus 
 Alexander comes fecit Miliolongum hedificare castellum. 
-</p> 
-
-
-<p xml:id="g205.3-206.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g205.3-206.12"]  
 Anno incarnati uerbi MCXI indictione IV Henricus filius Henrici 
 imperatoris, Alamannorum rex, ingenti cum exercitu Alamannorum 
 et Suauorum Italiam uenit, plurisque rebus sibi compositis 
@@ -1514,7 +1276,6 @@ papam cum omnnibus qui cum eo illic erant, atque per duos
 menses in custodia habere fecit, propter inuestituram episcopatus 
 per anulum et uirgam quam rex petebat. Et papa predecessoris 
 sui Gregorii cognomento Ildeprandi, qui hoc inchoauerat 
- 
 negotium, statuta tenens, concedere sibi nullo modo uolebat. 
 Tandem uero Paschalis, non tam terrore sui coactus, quam etiam 
 suorum, eorum maxime qui sibi fideliores quidem esse uidebantur, 
@@ -1548,35 +1309,25 @@ honorabili animo constans, cautus eloquio, ingenio astutus,
 bellicosus, inquietus, semper impossibilia appetens, peritia atque 
 uirtute in bello preualidus. Huic autem Boamundus filius 
 eius una cum matre sua domna Constantia successit. 
-</p>
-
-
-<p xml:id="g206.n4-206.n5" decls="#ocr">
- 
- 
+[/p] 
+[p xml:id="g206.n4-206.n5"] 
 Anno Domini MCXII. Hoc anno mense Augusti Agerenum 
 iterum ignis combustione uastatur. 
-</p> 
-
-
-<p xml:id="g206.13-206.17" decls="#ocr"> 
+[/p]  
+[p xml:id="g206.13-206.17"]  
 "Anno Domini MCXIII indictione VI. Hoc anno mense Ianuarii 
 comprehensa est a Barensibus equitibus mater Robberti comitis 
 et in custodiam missa. Unde iratus comes Robertus fecit incidi 
 oliuas et arbores et uineas Barenorum. Tunc Barenses fecerunt 
 sibi caput et dominum Risonum archiepiscopum, et ceperunt 
 habere guerram cum predicto Roberto comite". 
-</p> 
-
-
-<p xml:id="g206.18-207.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g206.18-207.2"]  
 Anno Domini MCXIV indictione VII Tancredus Marcisi filius 
 cui Boamundus commendauerat Antiochiam mortuus est, et 
 Roggerius filius Riccardi accepit Antiochie procurationem. 
-</p> 
-
-
-<p xml:id="g207.3-207.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g207.3-207.15"]  
 Anno ab incarnatione Domini MCXV indictione VIII apud Ciperanum 
 in ecclesia sancti Paterni Wilielmus dux deuenit liggius 
 homo pape Paschalis qui tunc sinodum celebrabat, et ipse papa 
@@ -1596,21 +1347,16 @@ usque et alie quam plures ciuitates et castella attritis hominibus,
 sed et pars ciuitatis Antiochie ac usque Hierusalem prostrate 
 ceciderunt. Eodem anno mense Aprilis Ala ducissa mater Willelmi 
 ducis defuncta est. 
-</p> 
-
-
-<p xml:id="g207.16-207.17" decls="#ocr"> 
+[/p]  
+[p xml:id="g207.16-207.17"]  
 Anno incarnati uerbi MCXVI, indictione IV; Willelmus dux 
 accepit uxorem nomine Gaitelgrimam filiam comitis Robberti 
 de Ariola. 
-</p> 
-
-
-<p xml:id="g208.1-208.9" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g208.1-208.9"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 "Eodem anno regina et Tancredus cum aliis multis, 
 idest Goffrido Britton et Unfredo Grauina, dominio et equitibus 
- 
 ut fertur usus ad CXX peditumque non exigua manu, audacter 
 pergebant iuxta flumen Bradanum. Quibus comes occurrens 
 Alexander cum suis ita detriuit ac debellauit eos, ut Tancredus 
@@ -1622,10 +1368,7 @@ retenta, dimissa est sub iureiurando ut reuerteretur in Materam
 et in Alexandri comitis custodia; set minime hoc impleuit. Insuper 
 mense Maio cum CC equitibus et peditum turba terram 
 uastauit Alexandri comitis Barensis". 
-</p> 
-
-
-<p xml:id="g208.10-208.14" decls="#ocr"> 
+[p xml:id="g208.10-208.14"]  
 Anno dominice incarnationis MCXVII, indictione X; mense 
 Aprilis in Uenecia, Liguria, Emilia atque Flamminia Italie prouinciis, 
 in Gallia quoque Transalpina, multorum domus contritis hominibus 
@@ -1633,10 +1376,8 @@ pluraque hedificia simul et ecclesie ingenti terre motu
 concusse ceciderunt. Eodem anno mense Iulio, XVII kalendas 
 Augusti, feria IIa, luna in signo aquarii passa est eclipsim ab hora 
 octaua noctis usque in matutinum. 
-</p> 
-
-
-<p xml:id="g208.15-210.8" decls="#ocr"> 
+[/p]  
+[p xml:id="g208.15-210.8"]  
 Anno ab incarnatione Domini MCXVIII, indictione XI; tercio 
 idus Decembris, feria IV, luna in signo geminorum passa est eclipsim 
 a quinta hora usque in nonam horam noctis eiusdem. 
@@ -1686,10 +1427,8 @@ Balduinus rex Hierusalem obiit, cui successit in regnum Balduinus
 cognomento de Rubaia. Ipso quoque anno mense Augusti 
 mortuus est Alexius imperator Constantinopolitanus, successitque 
 ei in imperium Calo iohannes filius eius. 
-</p> 
-
-
-<p xml:id="g210.9-210.22" decls="#ocr"> 
+[/p]  
+[p xml:id="g210.9-210.22"]  
 Anno dominice incarnationis MCXIX indictione XII pridie 
 kalendas Decembris luna passa est eclipsin a media nocte usque 
 in matutinum. Eodem anno mense Ianuarii Gelasius papa postquam 
@@ -1698,7 +1437,6 @@ esset in Gallie partibus defunctus est. Tunc cardinales qui cum eo
 ibi fuerant, elegerunt in ordine Romani pontificis archiepiscopum 
 Uiennensem nomine Guidonem, uirum utique nobilem, 
 quem Calixtum papam nuncupauerunt. Qui Romano pontificio 
- 
 sublimatus, post annum unum Romam uenit et papalem in Lateranensi 
 palatio cathedram sedit. Anno quo Gelasius papa defunctus 
 est mense Augusto Sarraceni inuaserunt Antiochiam. Contra 
@@ -1711,18 +1449,13 @@ militum manu ueniebat in auxilium christianorum. Non post
 multos uero dies ipse rex cum suis uenit in Antiochiam et cum 
 predictis Sarracenis qui terram ipsam occupauerant, bellum 
 commisit eosque deuicit et Antiochiam in sua manu accepit. 
-</p> 
-
-
-<p xml:id="g210.23-210.24" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g210.23-210.24"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 "Hoc tempore mense Augusti regina Constantia comprehensa 
 est a comite Alexandro et Grimoaldo Barense in Iuuenatia ciuitate 
 et cum ea equites L traditione quorumdam ciuium". 
-</p> 
-
-
-<p xml:id="g211.1-211.14" decls="#ocr"> 
+[p xml:id="g211.1-211.14"]  
 Anno dominice incarnationis MCXX indictione XIII mense 
 Iunio Robbertus Capuanorum princeps defunctus est cui Iordanus 
 frater eius successit in honore principatus ipsius. Mense 
@@ -1743,48 +1476,36 @@ idem papa Calixtus Troiam uenit. Audiensque itaque Willelmus
 dux eiusdem pontificis aduentum obuius festinanter extra 
 ciuitatem aduenit cum primatibus suis. Cui uice stratoris ipse 
 pedes iuxta sellam usque ad ecclesiam episcopatus eiusdem 
- 
 ciuitatis ingenti cum honore deduxit. 
-</p> 
-
-
-<p xml:id="g211.15-211.17" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g211.15-211.17"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 "Hoc tempore dux Guillelmus 
 una cum Constancia regina et Tancredo obsederunt castellum 
 Sancte Trinitatis, quod situm est super flumen Basantum, et 
 ceperunt illud in die dominica in palmis mense Aprilis". 
-</p> 
-
-
-<p xml:id="g212.1-212.4" decls="#ocr"> 
+[p xml:id="g212.1-212.4"]  
 Anno dominice incarnationis MCXXI indictione XIV  Calixtus papa cum multitudine armatorum obsedit 
 Gregorium papam, cognomento Burdinum, qui secesserat in 
 ciuitate Sutri; ab obsidione Callixtus papa destitit, donec Burdinum 
 cepit, captumque direxit in monasterium Sancte Trinitatis 
 de Caua. 
-</p> 
-
-
-<p xml:id="g212.5-212.9" decls="#ocr"> 
+[/p]  
+[p xml:id="g212.5-212.9"]  
 "Anno Domini MCXXII indictione XV. Hoc tempore Calixtus 
 papa peruenit usque Calabriam causa componende pacis inter 
 ducem Wilhelmum et comitem Rogerium Sicilie, quod minime 
 facere potuit. Set mense Februarii dux et predictus Roggerius 
 comes inter se paciscuntur, et acceptis a comite Roggerio septingentis 
 equitibus exeredauit comitem Iordanum. 
-</p> 
-
-
-<p xml:id="g212.10-212.11" decls="#ocr"> 
+[/p]  
+[p xml:id="g212.10-212.11"]  
 Anno Domini MCXXIII in mense Aprilis Balduinus rex Hierosolime 
 capitur a paganis dum rediret de Antiochia, set breui tempore 
 dimittitur. 
-</p> 
-
-
-<p xml:id="g212.12-212.16" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g212.12-212.16"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Hoc tempore in mense Iunio Roggerius comes 
 Sicilie cum turba non exigua equitum et peditum transfetauit in 
 Calabriam et castellum Sancti mauri nomine cepit et cremauit". 
@@ -1792,28 +1513,20 @@ Hic autem Calixtus papatum Romanum in pace et tranquillitate
 possedit et urbem Romanam in pace et tranquillitate possedit et 
 urbem Romam pro sua uoluntate disposuit. Sedit autem in episcopatu 
 Romano anni VII. Rome mortuus est et honorifice sepultus. 
-</p>
-
-
-<p xml:id="g213.1-213.8" decls="#ocr">
-
+[p xml:id="g213.1-213.8"] 
 Anno dominice incarnationis MCXXV indictione IV. Huic successit 
 Honorius secundus natione Lombardus, prius archidiaconus 
 Bononiensis, post cardinalis, deinde episcopus Hostiensis, 
 qui et Lambertus dictus est. Hic ducem Wilhelmum, secundum 
 statuta predecessorum suorum, per uexillum de ducatu Apulie 
 inuestiuit, et ab eo liggium hominium et iuramentum accepit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
- 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Dux autem Wilhelmus, licet a baronibus et hominibus suis 
 multum diligeretur, tamen propter benignitatem et patientiam 
 suam ab eis quodammodo habebatur contemptui, qui inter ipsum 
 et Roggerium comitem Sicilie liggium hominem eius et 
- 
-patruum consobrinum, discordie materiam ministrabant.
-</p>
-
-<p xml:id="g213.8-214.11" decls="#ocr">
+patruum consobrinum, discordie materiam ministrabant. 
+[p xml:id="g213.8-214.11"] 
 Cumque 
 inter predictum ducem et comitem sepe esset pax et concordia 
 reformata, ipsi inter eos guerram et discordiam innouabant. 
@@ -1846,39 +1559,28 @@ Turrim autem maiorem in eorum potestate reliquit. Qui in eadem
 ciuitate ab Alfano Caputaquensi episcopo est unctus in 
 principem. Dehinc Regium ueniens ibidem in ducem Apulie est 
 promotus et sic in Siciliam rediit. 
-</p> 
-
-
-<p xml:id="g214.12-214.14" decls="#ocr"> 
-
+[/p]  
+[p xml:id="g214.12-214.14"]  
 "Anno Domini MCXXVII indictione VI mense Septembris 
 Boamundus iuuenis transfretauit in Antiochiam, et factus est 
 princeps in loco patris sui, et omnes ciuitates suas Apulie comiti 
 domno Alexandro consanguineo sui reliquid, ut uice sua eis 
-uteretur.
-</p>
-
-
-<p xml:id="g214.14-215.3" decls="#ocr"> 
+uteretur. 
+[/p] 
+[p xml:id="g214.14-215.3"]  
 Hoc anno Rogerius comes Sicilie excommunicatur ab 
- 
 Honorio papa quia non permittebat ut episcopi Sicilie uenirent 
 Romam. Denuo excommunicatur ab eodem papa eo quod 
 indebitum sibi nomen ducis inconsulto Romano pontifice arripuit". 
-</p>
-
-
-<p xml:id="g216.1-217.1" decls="#ocr">
-
+[/p] 
+[p xml:id="g216.1-217.1"] 
 Altero uero anno cum magno exercitu Apuliam intrauit. Papa 
 autem Honorius, cognito quod prephatus dux auctoritate sua 
 uellet sibi ducatum Apulie usurpare, cuius inuestitura et dominium 
 sibi predecessorum suorum iure legitimo pertinebat, Apuliam 
-ingressus cum Robberto Capuano principe,
-</p>
-
-
-<p xml:id="g217.1-217.12" decls="#ocr">
+ingressus cum Robberto Capuano principe, 
+[/p] 
+[p xml:id="g217.1-217.12"] 
 Raydulfo comite 
 Ayrole cognato predicti ducis, cum Conuersanensibus, Grimoaldo 
 principe Barensi, et aliis baronibus Apulie, contra eum 
@@ -1896,46 +1598,31 @@ rediit, et dux Roggerius in Siciliam reuersus est. Alio iterum anno
 in Apuliam uenit, et cum predictis baronibus et Robberto Capuano 
 principe concordatus est, et Turrim maiorem que est Salerni 
 in sua potestate recepit. 
-</p> 
-
-
-<p xml:id="g218.1-218.2" decls="#al"> 
-
+[/p]  
+[p xml:id="g218.1-218.2"]  
 Postmodum baronum et populi consilio apud Panormum se 
-in regem Sicilie inungi et coronari fecit.
-</p>
-
-
-<p xml:id="g218.2-219.2" decls="#al"> 
+in regem Sicilie inungi et coronari fecit. 
+[/p] 
+[p xml:id="g218.2-219.2"]  
 Qui regni solio potitus 
 cum nauali exercitu et magna militia Salernum uenit, et Amalfiam, 
 Rauellum et Scalam potenter obsedit et longa obsidione 
 cepit, et tam castra eorum quam ciuitates suo dominio subdidit. 
-</p> 
-
-
-<p xml:id="g219.5-219.8" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
- 
+[/p]  
+[p xml:id="g219.5-219.8"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Post hec Apuliam rediens obsedit Barum, que se ei reddit, et tunc 
 Grimoaldum principem eiusdem ciuitatis principem et nobiles 
 ciues et potentes qui ei repugnauerunt secum in Siciliam transportauit. 
 Interea Honorius papa mortuus est anno pontificatus 
 sui sexto, anno uero dominice incarnationis MCXXX indictione 
 VIII. 
-</p> 
-
-
-<p xml:id="g219.3-219.4" decls="#ocr"> 
- 
+[p xml:id="g219.3-219.4"]  
 "Hoc tempore Boamundus filius principis Boamundi in bello 
- 
 iusta Damascum occubuit, cuius corpus sine capite fertur esse 
 sepultum". 
-</p>
-
-
-<p xml:id="g214.n8-215.n14" decls="#ocr">
+[/p] 
+[p xml:id="g214.n8-215.n14"] 
 Anno ab incarnatione Domini MCXXVII , indictione VI. Hoc anno 
 mense Septembris Boamundus filius Boamundi principis 
 accersitus ab Anteochenis ut in loco patris optineret regnum 
@@ -1958,10 +1645,8 @@ Sarracenorum uero, aliorumque peditum nec referendus est
 numerus occisorum, qui, ut fertur, tota castra sanguine ut 
 aqua maduerunt. Eorum uero omnia direptioni et prede data 
 sunt. 
-</p>
-
-
-<p xml:id="g215.n14-216.n10" decls="#ocr">
+[/p] 
+[p xml:id="g215.n14-216.n10"] 
 Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno 
 mense Maii comes Rogerius congregata militum peditumque 
 multitudine Siculum transmeans fretum uenit in partes 
@@ -1971,7 +1656,6 @@ boum autem, ouium, porcorum aliorumque animalium multitudo
 nullo clauditur numero. Qui ueniens cepit omnes terras 
 quas Iudith cum uiro suo tenebat Rogerio, id est Tursium, 
 Obmanum, Pistiquinum, Cracum, omniaque oppida ac uillas 
- 
 circumquaque positas, posuitque obsidionem circa castellum 
 Sancti archangeli, quod uidens Goffridus, filius domni Alexandri 
 comitis, exiit ad eum ueniam querens, cui et gratanter 
@@ -1980,10 +1664,8 @@ uenit papa Honorius in ciuitatem Troiam et sinodalem
 agens conuentum una cum episcopis et abbatibus atque comitibus 
 Apulie, iterum excommunicatur comes Rogerius omnesque 
 sue arrogancie fautores cum eo. 
-</p>
-
-
-<p xml:id="g216.n10-217.n1" decls="#ocr">
+[/p] 
+[p xml:id="g216.n10-217.n1"] 
 Anno Domini MCXXIX, indictione VIII, mense Iunii, dum ducis 
 Rogerii, a quadraginta usque ad sexaginta ut fertur ueloces galee 
 erant, uelocissime circumdederunt ciuitatem Barum ita 
@@ -1998,10 +1680,8 @@ principi, medio estatis, id est decima die Augusti, facta est pax
 cum dicto duce Rogerio, reddentes etiam terras ab eisdem 
 comprehensas, id est Grauinum Roberto, Aquamuiuam 
 Cornulo(...) prioribus domus sancti Guillelmi. 
-</p>
-
-
-<p xml:id="g217.n4-217.n10" decls="#ocr">
+[/p] 
+[p xml:id="g217.n4-217.n10"] 
 Anno ab incarnatione Domini MCXXX, indictione IX, mense 
 Septembris, dux itaque Rogerius postquam omnes Apulie ciuitates 
 suo subiungauit dominio, id est Troiam, Sipontum et 
@@ -2014,33 +1694,24 @@ omni tempore fideles essent et obedirent suis preceptis, nec in
 terris eorum furta et latrocinia sinerent esse nec consentirent. 
 Et his omnibus prescriptis sacramento firmatis mense Octubris 
 reuersus est in Siciliam. 
-</p>
-
-
-<p xml:id="g218.n16-218.n23" decls="#ocr">
+[/p] 
+[p xml:id="g218.n16-218.n23"] 
 Anno ab incarnatione Domini MCXXXI, indictione XI, mense 
 Decembris die natali Domini prephatus dux Rogerius precepit 
 congregare in Sicilie prouinciam omnes episcopos diuersarum 
 prouinciarum Calabrie, Apulie, Campanie qui iussione 
- 
 Calixti pape unxerunt eum in regem ac super caput eius coronam 
 regiam posuerunt et ab omnibus uocari regem iusserunt. 
-
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/>
-
- 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/] 
 Hoc tempore Boamundus filius principis Boamundi in bello 
 iuxta Damascum occubuit cuius corpus sine capite inuentum 
 est, et sepultum in monasterio sancte Marie quod est 
 iuxta sepulcrum nostri redemptoris, in dextera parte eiusdem 
-sepulcri, mense Februarii.
-</p>
-
-
-<p xml:id="g219.n1-219.n13" decls="#ocr">
+sepulcri, mense Februarii. 
+[p xml:id="g219.n1-219.n13"] 
 Anno Domini MCXXXII, indictione VIII, mense Septembris, dum 
 Rogerius dux Brundusium ac turrem in eo constructam sue 
-subdidit potestati ipseque reuersus Sicilie fuisset, comes Tancredus
+subdidit potestati ipseque reuersus Sicilie fuisset, comes Tancredus 
 ad obsidendam turrem perrexit, ubi tota ingenii arte 
 decertauit ut caperet eam, set ut uidit inexpugnabilem eius 
 esse municionem accensus ira fertur iurasse quod nulli qui in 
@@ -2057,10 +1728,8 @@ cum suis Gallipolim ad obsidendum pergeret. Quod et
 factum est. Mense autem Decembris predictus princeps plus 
 mansuetudine quam ferocitate cepit prephatam turrem, nulli 
 malum faciens cum suis rebus abire permisit. 
-</p>
-
-
-<p xml:id="g217.n10-218.n16" decls="#ocr">
+[/p] 
+[p xml:id="g217.n10-218.n16"] 
 Anno Domini MCXXIX, indictione VIII. Rogerius dux transfretauit 
 a Sicilia, uenit in Apuliam ac perrexit Tarentum. Deinde 
 habiit Nerito cum grandi exercitu, fertur enim tria milia 
@@ -2069,7 +1738,6 @@ usque ad sex milia, quam uacue factam inueniens cepit, prede
 ac direptione cuncta permiscendo, quin etiam et christianorum 
 sanguinem a Sarracenis crudeliter fundi precipiendo, 
 nam senes interficiebant, pueros de sinu auferentes matrum 
- 
 allidebant gladiisque findebant, sacerdotes iuxta crucem et 
 altare stantes interimebant, sacramenta ecclesie id est sanctum 
 crisma in suius peronibus deridendo seu culponibus fundebant, 
@@ -2087,12 +1755,8 @@ machinas que totam subito destruxerunt turrem. Dux uero
 nullo modo suum preualere ingenium uidens, omnem exercitum 
 fame afflictum, ignem in turrem missum suam Tarenti 
 reuertitur. 
- 
-</p> 
-
-
-<p xml:id="g219.8-221.14" decls="#ocr"> 
-
+[/p]  
+[p xml:id="g219.8-221.14"]  
 Quo defuncto scisma in Romama ecclesia exortum est, nam 
 maior et sanior pars cardinalium Gregorium natione Romanum 
 diaconum cardinalem Sancti angeli in pontificem elegerunt qui 
@@ -2116,7 +1780,7 @@ more hominium faceret, ipse utpote uir astutus et sapiens et precauens
 in futurum ab eius se colloquio et aspectu subtraxit. Anacletus 
 autem aliquandiu in Apulia commoratus Romam rediit et 
 ibi usque ad uite sue terminum mansit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Interea Robbertus Capuanus princeps et Raydulfus comes 
 Ayrole cum aliis comitibus et baronibus Apulie regi Roggerio 
 sunt rebelles effecti. Quo cognito rex Roggerius congregato nauali 
@@ -2144,10 +1808,7 @@ et huius rei insciam ceperunt et expoliauerunt. Quod audiens
 rex Roggerius qui tunc temporis in Terra laboris erat, misso 
 exercitu suo Pisanos qui adhuc in Amalfie partibus morabantur 
 fugauit et multos eorum in ore gladii perdidit et sic ciuitatem liberauit. 
-</p>
-
-
-<p xml:id="g221.14-222.1" decls="#ocr"> 
+[p xml:id="g221.14-222.1"]  
 Pisani uero deuicti et confusi primo Neapolim postea 
 Pisas redierunt. Rex autem Roggerius uir discretus et prouidus 
 qui in agendis suis negotiis magis consilio quam uiribus utebatur, 
@@ -2161,22 +1822,17 @@ ipsum humiliter postulantes ut eis ammissas terras restitueret
 asserentes Apuliam et Siciliam ad ius sui imperii pertinere. Rex 
 autem Roggerius postquam inimicos et rebelles suos a regno 
 repulit et fugauit, totam terram in pace et tranquillitate possedit 
-preter Neapolim quam expugnare non potuit.
-</p>
-
-
-<p xml:id="g222.1-222.4" decls="#ocr"> 
+preter Neapolim quam expugnare non potuit. 
+[/p] 
+[p xml:id="g222.1-222.4"]  
 Hic autem cum 
 esset comes et iuuenis Albyriam filiam regis Hispanie duxit uxorem 
 ex qua plures liberos habuit, Roggerium quem Apulie ducem 
 instituit, Tancredum quem Tarenti principem fecit, Anfusium 
 quem Capue principem ordinauit, Willelmum et Henricum. 
 Habuit etiam de predicta uxore filiam unam. 
-</p> 
-
-
-<p xml:id="g222.5-222.12" decls="#ocr"> 
-
+[/p]  
+[p xml:id="g222.5-222.12"]  
 Interea Innocentius papa in Francia aliquantulum demoratus 
 Alamanniam uenit et ab imperatore Lothario et ab uniuersis 
 principibus eius cum summa est gloria et deuotione susceptus. 
@@ -2187,11 +1843,9 @@ simul cum papa Innocentio in Apuliam uenit, Robbertum uero
 Capuanum principem cum comite Raydulfo et aliis exulibus et 
 quadam parte sui exercitus Terram laboris intrare iussit, galeas 
 etiam Pisanorum in eorum auxilio uenire precepit. Imperator 
-autem totam Apuliam, resistente sibi nemine, occupauit.
-</p>
-
-
-<p xml:id="g222.12-223.12" decls="#ocr"> 
+autem totam Apuliam, resistente sibi nemine, occupauit. 
+[/p] 
+[p xml:id="g222.12-223.12"]  
 Rex uero 
 Roggerius cognoscens quod imperatori resistere non ualeret, 
 eo quod barones eius et ciuitates pro maiori parte recesserant 
@@ -2201,7 +1855,7 @@ ueniens ciuitates et castella que imperator ceperat expugnabat
 et frequentes nuntios in exercitum imperatoris mittens, principes 
 eius promissionibus et muneribus ad suum amorem et gratiam 
 attrahebat. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Capuanus uero princeps cum comite Raydulfo Terram laboris 
 ingressus, eam et ducatum Amalfie potenter obtinuit et cum 
 magno exercitu militum et galeis Pisanorum Salernum ueniens 
@@ -2224,11 +1878,8 @@ cum imperatore fecerunt et data de suis imperatori magna pecunia,
 quadrigentos milites qui in ciuitate fuerant, ad regem Roggerium 
 cum rebus suis illesos abire fecerunt. Cancellarius autem 
 cum baronibus et quibusdam militibus se in Turrim maiorem 
-recepit.
-</p>
-
-
-<p xml:id="g223.12-224.19" decls="#ocr"> 
+recepit. 
+[p xml:id="g223.12-224.19"]  
 Facta autem pace, Pisani utpote superbi et elati ceperunt 
 iniurias et molestias ciuibus Salernitanis inferre. Qui eorum superbiam 
 non ferentes, accipientes arma in eos irruerunt, et maximum 
@@ -2271,10 +1922,8 @@ terram Beneuentanam et Capitanatam recuperauit. Quo audito,
 comes Raydulfus, qui se ducem uocari faciebat, congregato exercitu 
 militum et infinita multitudine maritimarum ciuitatum apud 
 Ranianum ei potenter occurrit. 
-</p> 
-
-
-<p xml:id="g225.1-232.10" decls="#ocr"> 
+[/p]  
+[p xml:id="g225.1-232.10"]  
 Cumque de pace inter eos componenda, mediante Bernardo 
 Claraeuallensi abbate, diutius esse tractatum nec potuisset, peccatis 
 exigentibus, consumari, bellum inter eos ualidum est exortum. 
@@ -2288,7 +1937,6 @@ uero tota nocte equitans Salernum uenit et ab eiusdem urbis
 ciuibus more solito est reuerenter exceptus. Qui in ea ciuitate 
 aliquantulum moratus, ciuitates suas et castella militibus et peditibus 
 premuniuit. Tunc Willelmus natione Rauennas et electus 
- 
 Capue, in Salernitana ecclesia est electus. Deinde recepta Neapolim 
 et dispositis et ordinatis partibus regionis illius, cum Roggerio 
 duce et Tancredo principe filiis suis in Siciliam est reuersus. 
@@ -2309,7 +1957,7 @@ papa habito consilio cardinalium propter multos ciues Romanos,
 qui cum eo capti fuerant, regem in gratia sua recepit, et recepto 
 ab eo sacramento et hominio, ipsum per uexillum de regno 
 Sicilie et ducatu Apulie inuestiuit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eo tempore comes Raydulfus, qui dux dicebatur, occasione 
 flebothomie, Troie mortuus est. Tunc etiam Ueseuus mons emisit 
 puluerem ferruginei coloris et subrubei in tanta copia, quod 
@@ -2328,7 +1976,6 @@ in pace et tranquillitate tenuit. Non multo post tempore Lotharius
 Teotonicorum imperator obiit et ei Corradus in imperio successit. 
 Similiter et Lodouicus rex Francorum mortuus est et ei 
 Lodouicus filius eius in regno successit. 
- 
 Rex autem Roggerius in regno suo perfecte pacis tranquillitate 
 potitus, pro conseruanda pace camerarios et iustitiarios per 
 totam terram instituit, leges a se nouiter conditas promulgauit, 
@@ -2356,7 +2003,7 @@ maximum stolium imperatoris apud Capud Malee, et ibi uiriliter
 pugnauit, Grecos deuicit, et Angelum Despoti, magistrum 
 stolii et consanguineum imperatoris, cum multis aliis captiuos in 
 Siciliam duxit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Interea Innocentius papa Roma mortuus est et sepultus apud 
 Lateranum anno pontificatus sui XIV, anno uero Dominice incarnationis 
 MCXLIII indictione VII. Huic successit Guido, natione 
@@ -2388,7 +2035,7 @@ monasterium sollempniter est consecratus. Dehinc in Galliam
 proficiscens a Lodouico iuniore rege Francorum et tota Gallicana 
 ecclesia honorifice est receptus. Hic Remis generale concilium 
 celebrauit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eo autem tempore Corradus rex Teutonicorum cum magna 
 multitudine militum et peditum Ierosolimam proficiscens Constantinopolim 
 uenit et ab Emanuele imperatore tum timore, tum 
@@ -2421,7 +2068,7 @@ in Alamanniam rediit, rex autem Francie per Apuliam ad propria
 remeauit. Quem rex Roggerius satis officiose suscepit, equitaturas 
 multas et munera plurima contulit, et eum per terram 
 suam honorifice conduci precepit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Papa uero Eugenius postquam in Francia aliquantulum est demoratus, 
 Ytaliam repetens apud Tusculanum se recepit, et congregata 
 militia, Romanos sibi inobedientes iussit constringere et 
@@ -2441,7 +2088,7 @@ Roggerium multis prosperis successibus extulit et exaltauit, ne
 succedentia prospera animum eius plus iusto extollerent et in 
 superbiam eleuarent, eum quarumdam aduersitatum flagellis paterna 
 miseratione corripuit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Nam primo Albidia illustris regina uxor eius, ex qua tot filios 
 habuerat, mortua est, et filia eius. Post hec Tarentinus princeps et 
 Anfusus Capuanorum princeps et Henricus mortui sunt. Nouissime 
@@ -2464,7 +2111,7 @@ filiam comitis de Reteste in uxorem accepit, de qua filiam habuit,
 quam Constantiam appellauit. Biennio autem antequam 
 moreretur, Willelmum filium suum Capuanorum principem in 
 regem Sicilie fecit inungi et secum iussit pariter conregnare. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Interea Eugenius papa apud Tusculanum aliquanto tempore 
 demoratus, pacem cum Romanis fecit et a senatoribus et ab uniuerso 
 populo Romano cum summo est honore susceptus. Hic 
@@ -2480,14 +2127,10 @@ VIII, m. IV die XII. Huic successit Corradus natione Romanus,
 senex et plenus dierum, prius presbiter cardinalis deinde episcopus 
 Sauinensis et uicarius Romane ecclesie, qui et Anastasius est 
 appellatus, anno dominice incarnationis MCLIII. 
-</p> 
-
-
-<p xml:id="g232.11-232.21" decls="#ocr"> 
+[p xml:id="g232.11-232.21"]  
 Interea rex Roggerius, qui tempore pacis et belli otiosus esse 
 nesciuit, regni sui pace et tranquillitate potitus, Panormi palatium 
 satis pulcrum iussit edificari, in quo fecit capellam miro 
- 
 lapide tabulatam, quam etiam deaurata testitudine cooperuit, et 
 ornamentis uariis ditauit pariter et ornauit. Et ne tanto uiro aquarum 
 et terre delicie tempore ullo deessent, in loco, qui Fabara 
@@ -2501,11 +2144,8 @@ arboribus insitum et plantatum construi iussit, et in eo damas,
 capreeolos, porcos siluestres iussit includi. Fecit et in hoc parco 
 palatium ad quod aquam de fonte lucidissimo per conductus 
 subterraneos iussit adduci. 
-</p> 
-
-
-<p xml:id="g233.1-g234.3" decls="#ocr"> 
-
+[/p]  
+[p xml:id="g233.1-g234.3"]  
 Sic uir sapiens et discretus predictis deliciis, prout temporis 
 expetebat qualitas, utebatur; nam in hyeme et quadragesimali 
 tempore pro copia piscium in Fabare palatio morabatur; in estate 
@@ -2522,11 +2162,9 @@ Robbertum clericos litteratos et prouidos per successionem
 temporum cancellarios ordinauit. Et si quos probos et sapientes 
 uiros, siue de terra sua siue aliunde genitos, laicos seu clericos 
 inuenire poterat, sibi adherere iubebat, et prout cuiusque exigebat 
-conditio, eos diuersis honoribus et diuitiis exaltabat.
-</p>
-
-
-<p xml:id="g234.3-235.5" decls="#ocr"> 
+conditio, eos diuersis honoribus et diuitiis exaltabat. 
+[/p] 
+[p xml:id="g234.3-235.5"]  
 Nouissime 
 Maionem iuuenem de Baro oriundum, uirum utique facundum 
 satis prouidum et discretum, primo scriniarium, dehinc 
@@ -2535,13 +2173,9 @@ in regno suo comites ordinauit, ciuitatem Cephaludium ipse fecit
 edificari, in qua ecclesiam Sancti saluatoris pulcram satis et 
 speciosam suis sumptibus fecit construi, cui ciuitatem optulit et 
 eius seruicio deputauit. 
-</p>
-
-
-<p xml:id="g234.n1-236.n10" decls="#ocr">
- 
+[/p] 
+[p xml:id="g234.n1-236.n10"] 
 Ut autem uniuersus mundus euidenter agnoscat, qualiter 
- 
 rex Rogerius tota fuerit intencione catholicus, qualiter christiane 
 fidei zelo et feruore succensus, subsequentis operis testimonium 
 declarabit. Rex Rogerius quendam eunuchum habuit 
@@ -2577,11 +2211,10 @@ hominum testimonio comprobarunt. Philippus autem
 conuictum se esse considerans, regis iusticiam metuens, cepit 
 ueniam petere et regis misericordiam postulare, et de cetero 
 futurum se esse christianum catholicum repromittere. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Tunc rex fidei flamma succensus, prorumpens in lacrimas, 
 ait: Noscat uestra fidelitas, dilectissimi, quod animus meus 
 maximo dolore compungitur, et magnis iracundie stimulis 
- 
 agitatur, quia hic minister meus, quem a puero enutrieram 
 ut catholicum, peccatis suis exigentibus, inuentus est sarracenus, 
 et sarracenus et sub nomine fidei opera infidelitatis exercuit. 
@@ -2615,12 +2248,8 @@ manifestius elucessit, quod rex Rogerius fuit princeps christianissimus
 et catholicus, qui pro iniuria fidei uindicanda camerario 
 et nutrito proprio non pepercit, set pro eius honore et 
 gloria incendio tradidit illum. 
-</p> 
-
-
-<p xml:id="g236.1-237.5" decls="#ocr"> 
+[p xml:id="g236.1-237.5"]  
 Circa finem autem uite sue secularibus negotiis aliquantulum 
- 
 postpositis et ommissis, Iudeos et Sarracenos ad fidem Christi 
 conuertere modis omnibus laborabat, et conuersis dona plurima 
 et necessaria conferebat. Ecclesiam etiam Sancti nicolai de 
@@ -2644,10 +2273,8 @@ publico ferus, in priuato benignus, fidelibus suis honores et premia
 largiens, infidelibus contumelias et supplicia inferens. Erat 
 suis subditis plus terribilis quam dilectus, Grecis et Sarracenis 
 formidini et timori. 
-</p> 
-
-
-<p xml:id="g237.6-237.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g237.6-237.12"]  
 Defuncto autem rege Rogerio, Wilhelmus filius eius, qui 
 cum patre duobus annis et mensibus decem regnauerat, illi in regni 
 amministratione successit. Hic autem post mortem patris, 
@@ -2658,10 +2285,8 @@ Wilhelmus comitatum de Lauritello concessit et eum in Apuliam
 cum honore emisit. Postmodum Maionem cancellarium magnum 
 ammiratum constituit, cuius consilio et prouidencia regni 
 sui negocia precipue pertractabat. 
-</p> 
-
-
-<p xml:id="g237.13-242.17" decls="#ocr"> 
+[/p]  
+[p xml:id="g237.13-242.17"]  
 Interea circa natiuitatem Domini Anastasius papa mortuus est 
 anno V, dominice incarnationis MCLIV. Cui successit Nicolaus 
 natione Anglicus, prius canonicus regularis et abbas Sancti rufi, 
@@ -2694,7 +2319,7 @@ Rex autem congregato exercitu contra eos uenit, qui
 eum expectare timentes, in Buteria se receperunt, et cum aliquanto 
 tempore eos obsedisset, mediante Maione ammirato, eis 
 condonauit et in suam gratiam illos recepit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Interea estate proxima Fredericus rex Theotonicorum Romam 
 uenit, et ab Adriano papa facto illi sacramento, ut moris est, 
 in ecclesia beati Petri sollempniter est coronatus. Qui cum ante 
@@ -2733,7 +2358,7 @@ Barum uenit et eam cepit, et quia Barenses castrum regis destruxerant,
 rex ira commotus ciuitatem a fundamentis subuertit. 
 Dehinc per maritimam Apulie rediens omnes ciuitates maritime 
 cepit, et totam terram quam perdiderat, sine bello recuperauit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Ipse autem recto tramite Beneuentum uenit, quo inimici et 
 rebelles eius ad auxilium domni pape confugerant. Robbertus 
 uero Capuanorum princeps, dum pre timore regis uellet aufugere 
@@ -2743,7 +2368,7 @@ ipsum cepit et regis baiulis assignauit, sicque sub hoc tempore,
 proditionis genere, gratiam regis, quam perdiderat, recuperauit. 
 Rex autem predictum principem incarcerandum in Siciliam 
 transmisit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Comitem Robbertum, Andream de Rupecanina et reliquos inimicos 
 suos, qui Beneuentum ad domnum papam confugerant, 
 eiusdem pape precibus liberos et illesos cum rebus suis de 
@@ -2762,7 +2387,7 @@ ecclesie specialiter pertinebant, ecclesie Panormitane subiecit,
 et earumdem ecclesiarum episcopos eiusdem ecclesie 
 suffraganeos in perpetuum esse concessit. Quo facto Adrianus 
 papa in Campaniam rediit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Rex autem plures de inimicis suis de regno expulit, quosdam 
 in carcere posuit, quosdam in sua gratia et amore recepit. Dehinc 
 Symonem senescalcum, cognatum Maionis ammirati, magistrum 
@@ -2777,7 +2402,7 @@ uictor in Siciliam rediit. Imperator autem cognoscens multos de
 suis a rege Sicilie captos, nec posse cum eo de pari contendere, 
 missis frequentibus nuntiis, cum rege concordatus est, et pacis 
 federa sunt hinc inde iurata. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eodem tempore Mesemuti a Marrocho uenientes, totam terram 
 usque in Africam in ore gladii ceperunt. Africana uero ciuitas 
 adhuc sub potestate regis Wilhelmi erat, et multos in ea milites 
@@ -2794,21 +2419,18 @@ multas de galeis suis amisit. Christiani autem, qui in Africa remanserant,
 cum nullum possent habere subsidium et uictualia 
 eis penitus defecissent, facta pace cum Mesemutis, relicta eis 
 Africe ciuitate, ipsi cum rebus suis in Siciliam sunt reuersi. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Rex autem Willelmus, adhuc uiuente patre cum esset princeps 
 Capuanorum, Margaritam filiam Garsie regis Nauarre duxit 
 uxorem, de qua plures liberos habuit; Rogerium quem ducem 
 Apulie constituit, Robbertum quem Capuanorum principem ordinauit, 
 Willelmum et Henricum. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Audiens autem Fredericus imperator Adrianum papam cum 
 rege Willelmo concordatum et quod eum de regno Sicilie et 
 ducatu Apulie inuestisset, molestissime tulit. Anni Domini 
 MCLVII. 
-</p> 
-
-
-<p xml:id="g242.18-243.4" decls="#ocr"> 
+[p xml:id="g242.18-243.4"]  
 Eodem tempore Mediolanenses super Lombardos equitantes, 
 pene totam Lombardiam suo dominio subdiderunt, unde Lombardi 
 ira et dolore commoti, nuntios ad imperatorem miserunt, 
@@ -2826,7 +2448,6 @@ concordiam deuenit. Non multo post cum imperator uellet in ciuitate
 baiulum constituere, et eam pro suo arbitrio ordinare, Mediolanenses 
 Theutonicorum superbiam pati nequeuntes, ceperunt 
 resistere et pacis federa uiolare. Qui super castrum, in quo 
- 
 eorum obsides tenebantur uenientes, ipsum ceperunt, et recuperatis 
 obsidibus sunt in suam ciuitatem reuersi. Quo cognito, 
 imperator plurimum indignatus, cum non posset eos in campo 
@@ -2837,10 +2458,8 @@ reuocare. Suasione autem Cremonensium, castrum Creme, quod
 Mediolanenses pro posse iuuabat, et Cremonensibus uiriliter resistebat, 
 potenter obsedit, nec prius ab obsidione cessauit, quousque 
 ipsum caperet et a fundamentis euerteret. 
-</p> 
-
-
-<p xml:id="g243.5-244.5" decls="#ocr"> 
+[/p]  
+[p xml:id="g243.5-244.5"]  
 Interea Adrianus papa apud Anagniam mortuus est, anno pontificatus 
 sui quinto, mense octauo, diebus sex, anno uero dominice 
 incarnationis, MCLIX, indictione VIII, prima die Septembris. 
@@ -2870,10 +2489,8 @@ posset proficere, Campaniam uenit, et apud Segniam mansit.
 Rex autem Wilhelmus, auditus promocione pape Alexandri, 
 nuncios ad eum misit, et eum in patrem et dominum cum suo 
 regno recepit. 
-</p> 
-
-
-<p xml:id="g244.6-249.10" decls="#ocr"> 
+[/p]  
+[p xml:id="g244.6-249.10"]  
 Eo tempore Ionathas comes Consie, et Gilbertus comes Grauine, 
 et Boamundus comes Monopelli, et Rogerius comes Acerre, 
 et Philippus comes de Sangro, et Rogerius comes Tricarici, et 
@@ -2888,7 +2505,7 @@ pro fideli et legali uiro habebat. Quod ipsi facere neglexerunt
 dicentes, se ammirati dominium et amministrationem nolle 
 ulterius sustinere. Qua de causa in tota Apulia guerra maxima et 
 diuisio est exorta. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Matheus autem Bonella, qui filiam ammirati in uxorem iurauerat 
 se ducturum, cum quibusdam aliis baronibus Sicilie huic coniurationi, 
 licet occulte, fauebat. Promissum enim illi erat a comitibus, 
@@ -2899,7 +2516,7 @@ cepit esse sollicitus. Cumque ammiratus ab amicis suis super
 hoc esset sepe premonitus, tum pro parentela que inter eos contracta 
 erat, tum pro multis beneficiis que illi contulerat, hoc credere 
 recusauit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Dum autem in uigilia beati Martini ammiratus a uisitando 
 Panormitano archiepiscopo inchoata iam nocte reuerteretur, 
 Matheus Bonella positis insidiis in uia, que est iusta portam beate 
@@ -2909,7 +2526,6 @@ cognito, rex Wilhelmus multum turbatus est, et condoluit, sed
 quia tumultus propter hoc erat in ciuitate, et Matheus Bonella 
 habebat sociam multitudinem, dissimulauit dolorem et uisus 
 est mortem ammirati equanimiter tolerasse. Unde uxorem eius 
- 
 et filios, sorores et fratrem, et omnes res eorum capi precepit. 
 Post hec rogatus a multis, Matheum Bonellam quodammodo 
 in suo amore recepit. Barones autem et multi de populo, qui in 
@@ -2947,7 +2563,6 @@ apud Mestrectam, uelociter iuerunt, et ipsum cum sua militia Panormum
 festinanter adducerunt; timebant enim, quod euenit, ne 
 si diu moram facerent, rex, qui iniuste captus fuerat, auxilio populi 
 de eorum manibus tolleretur. 
- 
 Die uero sabbati Romoaldus Salernitanus et Robbertus Massanensis 
 archiepiscopi, et Riccardus Siracusanus electus, et Tustinus 
 Mazariensis episcopus, uidentes regem iniuste captum et palatium 
@@ -2959,33 +2574,32 @@ qui erant in palatio, quod nisi regem liberarent, omnes in ore gladii
 interficerentur. Illi uero timore attoniti, quia nullum poterant 
 habere succursum, et populo resistere non ualebant, ad pedes 
 regis humiliter cucurrerunt eius gratiam et misericordiam postulantes. 
-Qua impetrata, simul cum rege ad fenestram turris Pisane uenerunt.
-Tunc rex uniuerso populo de sua liberatione gratias egit,
-mandans eis ut singuli reuerterentur ad propria et in pace quiescerent.
+Qua impetrata, simul cum rege ad fenestram turris Pisane uenerunt. 
+Tunc rex uniuerso populo de sua liberatione gratias egit, 
+mandans eis ut singuli reuerterentur ad propria et in pace quiescerent. 
 Archiepiscopi uero et episcopi cum aliis fidelibus palatium 
 ascenderunt, et regem de infortunio, quod acciderat, pro 
 posse sunt consolati. Huic autem dolori regio dolor alius non 
 mediocris superuenit; dum enim pro liberando rege insultus in 
 palatio fieret, Rogerius dux Apulie, filius eius, sagitta iusta oculum 
 est percussus, qui non post multos dies huius uulneris occasione 
-interiit.
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/>
+interiit. 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/] 
 Matheus uero Bonella, audiens regis liberationem, plurimum 
 doluit, sed dissimilauit, et per nuncios suos regi mandauit, sed de 
 eius captione plurimum doluisse et quod pro eo liberando cum 
 sua militia ueniebat. Rex autem malitiam eius agnoscens et conscientiam 
 suam, conditione temporis exigente, abscondens, legatis 
-illius benigne respondit et eos cum gratiarum actione remisit.
+illius benigne respondit et eos cum gratiarum actione remisit. 
 Illi autem, qui regem ceperant et palatium expoliauerunt, timore 
-regis ad Matheum Bonellam pariter confugerunt. Matheus
+regis ad Matheum Bonellam pariter confugerunt. Matheus 
 autem cum Guillelmo de Symone et Tancredo comitibus et multis 
 aliis usque Fabaram uenit, et frequentibus nuntiis inter eos et 
-regem discurrentibus, ad hunc modum concordie deuenerunt.
+regem discurrentibus, ad hunc modum concordie deuenerunt. 
 Rex liberalitate sua et gratia omnibus eis offensam, quam in eum 
 fecerant, remisit; Matheo Bonelle et aliis baronibus Sicilie gratiam 
-et terras suas restituit; Willelmum Symonem et Tancredum
+et terras suas restituit; Willelmum Symonem et Tancredum 
 comites cum multis aliis, qui in terra remanere nolebant, saluos 
-
 et illesos cum rebus suis usque Terracenam cum galea fecit conduci, 
 alios uero Ierosolimam ire permisit. Metuens autem rex, ne 
 comites Apulie, qui cum eo occasione ammirati fuerunt discordati, 
@@ -2995,7 +2609,7 @@ gratiam suam et amorem restituit. Qui ueniens tam ciuium quam
 baronum et comitum turbatos animos mitigauit et eos ad amorem 
 et fidelitatem regiam uehementer adtraxit, adeo quod unanimiter 
 uolebant in Siciliam pergere et regis iniuriam uindicare. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Adueniente autem pascha rex per litteras suas predictis comitibus 
 mandauit, ut sacramenta, que fecerant, abiurarent, quod ipsi 
 nullatenus facere uoluenrunt. Sed de regis recuperanda gratia 
@@ -3015,7 +2629,7 @@ exortam audiuit, Aquinum de Mohec in Terram laboris misit, ut
 milites retineret et inimicis suis resisteret — iam enim Andreas de 
 Rupecanina eandem terram ex parte inuaserat — comes etiam 
 Robbertus terram Apulie, resistente nemine, occupabat. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Qui Salernum ueniens, eam habere credidit. Sed Salernitani 
 regi de more fideles existentes, ipsum recipere noluerunt. Dehinc 
 Beneuentum ueniens a Beneuentanis est cum honore receptus. 
@@ -3026,11 +2640,7 @@ numerositate munitam expugnare non posset, facta concordia,
 Roggerium Sclauonem cum Lombardis ultra mare illesos ire permisit. 
 Ipse autem Buteriam dextruens, totam Siciliam pacificauit 
 et Panormum est cum triumpho reuersus. 
-</p> 
-
-
-<p xml:id="g249.11-250.13" decls="#ocr"> 
- 
+[p xml:id="g249.11-250.13"]  
 Interea Alexander papa, cum apud Anagniam et Terracenam 
 fuisset aliquando tempore demoratus, suggestione Uillani Pisani 
 archiepiscopi, qui ad eum cum una galea uenerat, acceptis etiam 
@@ -3044,7 +2654,7 @@ congregato, Octauianum, qui Uictor dicebatur, in catholicum
 papam recepit, promittens publice et legaliter, quod nec ipse 
 nec successores eius Alexandro uel successoribus eius ulterius 
 obedirent. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Imperator uero, cum per quinquennium Mediolanum inpugnasset, 
 et ciuitatem resistentibus bellicosis ciuibus expugnare 
 non potuisset, tandem cum eis ad concordiam deuenit, promittens 
@@ -3069,15 +2679,11 @@ Altera autem die imperator cum magna manu militum et
 peditum et cum Octauiano ad eumdem locum uenire curauit. 
 Quod rex Francie cognoscens, eius uersutias metuens, uenire ad 
 illius colloquium recusauit. Quare imperator indignatus, cum 
- 
 Octauiano in Alamanniam rediit. Octauianus autem aliquantulum 
 in Alamanniam demoratus, nec ab Alamannis reuerenter 
 exceptus, intrauit Italiam, et post hec Luccam ueniens, ibidem 
 usque ad uite sue terminum mansit. 
-</p> 
-
-
-<p xml:id="g250.14-251.4" decls="#ocr"> 
+[p xml:id="g250.14-251.4"]  
 Interea dum Alexander papa apud Saluiniacum moraretur, primo 
 rex Anglie ad eum ueniens, ipsum cum uniuerso regno suo 
 in dominum et patrem recepit. Post hec rex Francie cum tota 
@@ -3087,7 +2693,7 @@ Anglie conueniens, pacem inter eos et concordiam reformauit.
 Qui non multo post Turonis uniuersale concilium celebrauit, in 
 quo archiepiscopi episcopi abbates Anglie, Scozzie, Hybernie, 
 Hyspaniarum et totius Gallie conuenerunt. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eo tempore Corradus quidam nobilis clericus Alammannie et 
 imperatoris consanguineus, qui in Maguntina ecclesia erat electus, 
 nolens Octauiani et imperatoris scismati consentire, ecclesiam 
@@ -3102,10 +2708,7 @@ papa demoraretur in Francia et in ecclesiis Dei ecclesiastica iura
 disponeret, Octauianus Lucce mortuus est. Cui Guido Cremensis 
 auctoritate Rainaldi cancellarii imperatoris successit, et a suis Paschalis 
 est appellatus. 
-</p> 
-
-
-<p xml:id="g251.5-252.2" decls="#ocr"> 
+[p xml:id="g251.5-252.2"]  
 Interea rex Wilhelmus, sedata Sicilia, congregato per mare 
 et per terram exercitu, in Apuliam uenit, et primo Tabernas in 
 ore gladii cepit atque detruxit. Dehinc Tarentum ueniens ipsum 
@@ -3116,7 +2719,6 @@ cum suo exercitu morabatur, metuens ne barones Apulie ipsum
 solito more relinquerent, in Abrutium est reuersus. Quo cognito, 
 rex Wilhelmus Riccardum de Saya cum magno exercitu post 
 eum misit. Sed comes Robbertus, utpote uir astutus et sapiens, 
- 
 ante aduentum illius regnum exire curauit. Rex autem Wilhelmus 
 usque Sanctum germanum cum suo exercitu uenit, comitem 
 Riccardum de Aquila a regno expulit, et Montem archanum, 
@@ -3128,7 +2730,7 @@ Cepit autem a ciuibus magnam pecuniam petere, quam cum illi
 statim soluere non possent, inuenta occasione plurimum indignatus, 
 quosdam ex eis suspendi fecit, cominatus aliis, quod nisi 
 pecuniam cito soluerent, urbem dextrueret. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Beatus autem apostolus Matheus, qui Salernitane ciuitati a 
 Deo patronus datus est et defensor, ciuitatem suam in tanto discrimine 
 non reliquit. Nam cum rex in eo esset proposito, quod 
@@ -3150,14 +2752,10 @@ ergo quod factum fuerat secum recogitans et indignationem
 apostolicam pertimescens, cum se moraturum circa Salernum 
 aliquantulum disposuisset, mutato proposito, altera die galeas intrauit 
 et festinanter in Siciliam rediit. 
-</p> 
-
-
-<p xml:id="g252.3-253.2" decls="#ocr"> 
+[p xml:id="g252.3-253.2"]  
 Interea Romani, morte Octauiani cognita, nuntios suos ad Alexandrum 
 in Franciam transmiserunt, affectuose rogantes ut ad 
 Urbem rediret et commissum sibi populum uisitaret, quia ipsi 
- 
 eum cum honore et deuotione reciperent. Alexander autem credens 
 hoc sibi et ecclesie profuturum, Magalonem uenit, et preparata 
 quadam magna naui, que erat Hospitalis, cum eam pene 
@@ -3182,17 +2780,14 @@ usque Tyberim, et per Tyberim usque ad Sanctum paulum cum
 omnibus cardinalibus uenit. Cui clerus et Romanus populus 
 obuiantes, ipsum cum magno honore et gloria usque Lateranum 
 unanimiter conduxerunt. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eo tempore rex Wilhelmus palatium quoddam altum satis et 
 miro artificio laboratum prope Panormum beneficari fecit, quod 
 Sisam appellauit, et ipsum pulchris pomiferis et amenis uiridariis 
 circumdedit, et diuersis aquarum conductibus et piscariis satis 
 delectabile reddidit. 
-</p> 
-
-
-<p xml:id="g253.3-254.5" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[p xml:id="g253.3-254.5"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Rex autem Wilhelmus circa quadragesimam 
 fluxu uentris et molestia cepit affligi, quam passionem 
 cum aliquanto tempore occultasset, circa mediam quadragesimam 
@@ -3208,7 +2803,7 @@ gubernatricem pariter ordinauit, Riccardum uero Siracusanum
 electum et Matheum suorum notariorum magistrum, uiros utique 
 legales, prouidos et discretos, illius et filiorum suorum consiliarios 
 et familiares esse disposuit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Sed cum predicta passio ingrauesceret, rex Wilhelmus 
 Romualdum secundum Salernitanum archiepiscopum, qui in 
 arte erat medicine ualde peritus, ad se uocari precepit. Qui ad 
@@ -3223,7 +2818,7 @@ sexto, anno autem regni sui, quo cum patre suo et per se regnauerat
 XV, mense X, anno ab incarnatione Domini MCLXVI, 
 indictione XIV mense madii, septimo die intrantis eiusdem mensis 
 circa horam nonam. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Fuit autem rex Wilhelmus pulchra facie et decorus aspectu, 
 corpore pinguis, statura sublimis, honoris cupidus et elatus, in 
 preliis per mare et terram uictoriosus, regno suo odibilis et plus 
@@ -3238,10 +2833,7 @@ argenteis et uestimentis pretiosis ditauit plurimum et ornauit.
 Clericos in ea multos et prebendas instituit, et diuinum in illa 
 officium decenter et tractatim et cum Dei reuerentia et timore 
 celebrari disposuit. 
-</p> 
-
-
-<p xml:id="g254.6-254.22" decls="#ocr"> 
+[p xml:id="g254.6-254.22"]  
 Quo defuncto, Wilhelmus filius eius maior natus, annos duodecim, 
 illi in regno successit. Hic autem secundo die post mortem 
 patris, ex mandato regine, consilio archiepiscoporum et episcoporum 
@@ -3263,14 +2855,11 @@ militibus terras multas regia liberalitate concessit. His
 autem et plurimis aliis beneficiis, totius populi sui animos in 
 fidelitatem et dilectionem filii sui uehementer accendit, ita quod 
 de fidelibus fideliores et de deuotis deuotiores effecit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Eodem tempore gaytus Petrus eunuchus et magister camerarius 
 palatii cum quibusdam aliis fugam petiit, et ad regem de 
 Morrocho ueniens multam secum pecuniam transportauit. 
-</p> 
-
-
-<p xml:id="g254.23-255.9" decls="#ocr"> 
+[p xml:id="g254.23-255.9"]  
 Emmanuel autem imperator Constantinopolitanus, cognita 
 morte regis Wilhelmi, nuntios suos ad regem Wilhelmum 
 iuniorem in Siciliam misit, mandans quod libenter pacem cum 
@@ -3280,7 +2869,7 @@ habito consilio, frequentes pro hoc negotio legatos ad imperatorem
 misit et recepit, pacem cum eo pristinam innouauit, negotio 
 parentele propter multa capitula, que interueniebant, indiscusso 
 manente. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Rex autem Wilhelmus propter multa beneficia, que ipse et 
 regina suo populo contulerunt, multum cepit a suis hominibus 
 diligi et regnum suum in pace et tranquillitate tenere. Eo tempore 
@@ -3290,13 +2879,9 @@ in uxorem concessit. His etiam diebus Stephanus filius comitis
 de Percia, clericus et consanguineus regine, in Sicilia ad regem 
 uenit, quem rex et regina primo cancellarium, post hec in Panormitana 
 ecclesia eligi fecerunt. Qui in breui spatio temporis 
- 
 tantam regis et regine gratiam et familiaritatem optinuit, quod 
 totum regnum pro suo arbitrio disponebat. 
-</p> 
-
-
-<p xml:id="g255.10-256.11" decls="#ocr"> 
+[p xml:id="g255.10-256.11"]  
 Hoc autem tempore Fredericus imperator Teutonicorum iterum 
 Italiam intrauit, et per partes Marchie usque Anconam uenit 
 et eam obsedit. Misit etiam Raynaldum cancellarium et Andream 
@@ -3316,7 +2901,7 @@ tamen in Augusto ad Urbem rediit, et iusta ecclesiam beati Petri
 sua castra locauit. Romani uero tum pro morte parentum suorum, 
 tum quia multi ex eis ab imperatore capti detinebantur, ei 
 resistere non potuerunt. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Unde imperator, hac occasione inuenta, armata manu ecclesiam 
 beati Petri uiolenter inuasit. Porticum, que erat ante ecclesiam, 
 comburi fecit, Guidonem Cremensem in ecclesiam induxit 
@@ -3332,11 +2917,7 @@ multi nobiles, et maxima pars exercitus sui in breui spatio temporis
 interiit. Quod imperator uidens et Dei uindictam manifeste 
 cognoscens, relicto apud Urbem prefecto, uix cum paucis tristis 
 et merens in Alamanniam rediit. 
-</p> 
-
-
-<p xml:id="g256.12-258.13" decls="#ocr"> 
- 
+[p xml:id="g256.12-258.13"]  
 Rex autem Wilhelmus, ut prediximus, propter multa beneficia, 
 que ipse cum matre sua regno contulit, ab hominibus suis 
 cepit multum diligi, et regnum suum uiriliter in pace tenere. 
@@ -3353,7 +2934,7 @@ custodiri, imponens ei, quod ipse cum multis mortem cancellarii
 et comitis Gilberti iurasset. Pro qua occasione Riccardus comes 
 de Mulisio, Bartholomeus de Parisio, Iohannes de Sinopoli 
 et multi alii capti sunt et in custodia positi. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Quod factum animos hominum regni non modicum perturbauit. 
 Post hec consilio et auxilio cancellarii Gilbertus comes 
 Grauine comitatum Loritelli cum omnibus suis pertinentiis a rege 
@@ -3375,9 +2956,8 @@ unum obsedit, altera autem die ex mandato regis et regine cum
 quibusdam de suis galeam intrauit. Sed cum uenisset apud Lecatam, 
 galea fracta est. Qui postmodum nauim ingressus in Ierusolimam 
 uenit, et ibi non multo tempore demoratus interiit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Gilbertus etiam comes Loritelli cum Berteraimo filio suo 
- 
 comite Andrie cum omnibus suis terram abiurauit, et Ierosolimam 
 perrexit. Comes uero Henricus et comes Ryccardus, postquam 
 de carcere exierunt, simul cum Messanensibus cum uiginti 
@@ -3401,14 +2981,8 @@ autem et regina solita pietate eius miserti illum in suam gratiam
 receperunt, cui etiam rex liberalitate solita comitatum Loritelli, 
 sicut pater suus illi concesserat, reddidit, et de habundancia gratie 
 plenioris comitatum Conuersani illi adiecit. 
-</p> 
-
-
-<p xml:id="g258.1-258.7surplus" decls="#ocr"/> 
-
-
-
-<p xml:id="g258.14-258.19" decls="#ocr"> 
+[p xml:id="g258.1-258.7surplus"] [/p]  
+[p xml:id="g258.14-258.19"]  
 Eo tempore in Sicilia terremotus factus est maximus, ita quod 
 castrum Siracusanum pro maxima parte cecidit. Ciuitas etiam 
 Catheniensium a fundamentis euersa ruit. Ecclesia etiam sancte 
@@ -3417,17 +2991,14 @@ etiam Mohec, et multa alia castra Sicilie pro terre motu
 corruerunt. Apud Messanam etiam maximus et manifestus terre 
 motus fuit. Hoc autem factum est anno Domini MCLXVIII, indictione 
 II, mense februarii, in uigilia beate Agathe. 
-</p> 
-
-
-<p xml:id="g259.1-259.20" decls="#ocr"> 
+[/p]  
+[p xml:id="g259.1-259.20"]  
 Interea Guido Cremensis, qui et Paschalis dictus est, mortuus 
 est. Cui successit intrusus quidam Tusculanensis episcopus, 
 Iohannes de Struma nomine, qui et Calixtus a suis appellatus est. 
 Papa autem Alexander, uir catholicus et honestus, cum suis cardinalibus 
 apud Beneuentum morabatur, et ibi ab imperatore Grecorum, 
 a rege Francie et Anglie, et a prelatis ecclesiarum nuntios 
- 
 recipiens, negotia ecclesiastica sapienter et prouide disponebat. 
 Post hec Campaniam rediit, et rogante Ionatha domino Tusculani 
 et eiusdem loci ciuibus, eadem ciuitatem in sua protectione 
@@ -3450,10 +3021,8 @@ adimplere noluerunt. Papa uero a Romanis se circumuentum
 plurimum condolens, turrim Tusculanorum fossis et 
 muris circumuallari fecit, et relicta ibi militum et peditum competenti 
 custodia, Anagniam rediit, et ibi multo est tempore demoratus. 
-</p>
-
-
-<p xml:id="g259.21-261.15" decls="#ocr">
+[/p] 
+[p xml:id="g259.21-261.15"] 
 Illis autem diebus Thomas Cantuariensis archiepiscopus, uir 
 religiosus et Deum metuens, dum pro libertate et ecclesiarum 
 iustitiis Henrico regi Anglie uiriliter repugnaret, de Anglia exire 
@@ -3466,7 +3035,6 @@ Cantuariensis archiepiscopus rediit, et ad ecclesiam suam
 eo est permittente reuersus. Transacto autem aliquanto tempore, 
 rex Anglie suggestione prauorum hominum cepit personas ecclesiasticas 
 molestare et ecclesiis sua iura subtrahere. Quod ubi 
- 
 archiepiscopus comperit, ab equitatis tramite non declinans, 
 omni timore postposito, cepit se ei pro iusticia recta fronte opponere, 
 et tamquam bonus pastor pro liberando grege regi uerbo 
@@ -3493,7 +3061,7 @@ qui pro testimonio ueritatis occisus fuerat, et quem pena
 simul et causa martirem fecerat, multis signorum indiciis et 
 nouis miraculorum argumentis toti mundo celebrem reddidit et 
 famosum. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Cumque ad aures pape Alexandri miraculorum eius certa fama 
 et ueridica peruenisset, communicato fratrum suorum consilio, 
 prenominatum archiepiscopum auctoritate apostolica canonizauit 
@@ -3504,7 +3072,6 @@ audiens, quod sceleris in archiepiscopum perpetrati, tamquam
 illius rei fuisset conscius, opinio eum quodammodo uulgaris 
 attingeret, et mendax illum sine culpa fama morderet, de sue innocentie 
 puritate confisus, quosdam de episcopis suis et clericis 
- 
 Anagniam ad Alexandrum papam direxit. Qui coram eo et suis 
 cardinalibus, tactis sacrosantis euangeliis, publice iurauerunt, 
 quod prenominatus rex ab efusione iusti sanguinis erat innoxius 
@@ -3522,10 +3089,7 @@ qui Antiocene ciuitati adiacet, festinanter accederent,
 ibique solitarii in ieiuniis, uigiliis, orationibus et lamentis 
 omni uite sue tempore perdurantes, de tam immani scelere penitentiam 
 agerent et Dei misericordiam iugiter postularent. 
-</p> 
-
-
-<p xml:id="g261.16-262.7" decls="#ocr"> 
+[p xml:id="g261.16-262.7"]  
 Eo tempore cum Emmanuel imperator Constantinopolitanus 
 frequentibus nuntiis delegatis filiam suam Zura Mariam Wilhelmo 
 regi Sicilie in uxorem tradere promisisset, tandem ex conuentione 
@@ -3558,10 +3122,8 @@ rediit, ubi principis fratris sui morte cognita, primo, sicut
 debuit, carni et nature compassus multum doluit, dehinc, sicut 
 decuit, rationi et suorum fidelium consiliis acquiescens, sui meroris 
 in Domino consolationem accepit. 
-</p> 
-
-
-<p xml:id="g262.8-262.16" decls="#ocr"> 
+[/p]  
+[p xml:id="g262.8-262.16"]  
 Anno Domini millesimo CLXXIII Fredericus autem Romanorum 
 imperator recolens et alta mente reuoluens iniurias sibi a 
 Lombardis frequenter illatas, et quod pene contra eum omnes 
@@ -3575,10 +3137,8 @@ marchione Montisferrati et Papiensibus et quibusdam aliis Lombardis
 ipsum affectuose rogantibus, collecta magna multitudine 
 Brebitionum et aliorum conductitiorum militum, Italiam potenter 
 intrauit. 
-</p> 
-
-
-<p xml:id="g262.17-266.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g262.17-266.4"]  
 Anno dominice incarnationis millesimo CLXXIII. Primo autem 
 ingressu suo Astensem ciuitatem, Taurinum et uicinas ciuitates, 
 ipsis se sponte reddentibus, occupauit. Dehinc marchionis 
@@ -3589,14 +3149,13 @@ illius insolentiam perpeti non ualentes, relictis habitationibus
 suis in quadam planicie pariter conuenerunt, et adiuuantibus 
 eos Mediolanensibus et aliis Lombardis, in eadem planicie ciuitatem 
 de nouo edificare ceperunt, et eam ob reuerentiam pape 
- 
 Alexandri Alexandriam uocauerunt. Cum autem hec ciuitas ab 
 imperatore fuisset obsessa, propter sui nouitatem necdum tota 
 erat fossatis circumdata et domus eius erant palea cooperte, unde 
 et a Teuthonicis in contemptum et ironiam, Palearum ciuitas 
 est appellata, que postmodum in conflictu bellico ferrea est 
 inuenta. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Imperator autem, animantibus eum Papiensibus et marchione, 
 cepit ciuitatem uiriliter impugnare, machinas circumquaque 
 instruere, fossata diruere et replere, et eam frequentibus insultibus 
@@ -3627,7 +3186,6 @@ igne simul cum militibus combusserunt. Imperator autem sua
 spe et intentione frustratus, et de morte suorum uehementer afflictus, 
 non ualens ultra progredi, se intra castra recepit. 
 Lombardi autem et alii, qui cum Alexandrinis coniurauerant, 
- 
 oppressione ciuitatis cognita, magna militum et peditum multitudine 
 congregata, ad eius liberationem festinare ceperunt, et secundo 
 die post Pascha circa Alexandriam castra metati sunt. Quo 
@@ -3642,7 +3200,7 @@ eligerentur, quorum dispositione et arbitrio eorum deberet
 pax et concordia terminari. Cumque hoc pactum et imperatori 
 et Lombardi non modicum placuisset, imperator Papiam rediit, 
 et Lombardi ad propria sunt reuersi. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Imperator interim nuntios ad Alexandrum papam apud Anagniam 
 direxit, rogans ut aliquos de fratribus suis ad eum in 
 Lombardiam mitteret, qui simul cum Lombardis tractande pacis 
@@ -3655,7 +3213,7 @@ pacis colloquium habuerunt. Sed cum neque cardinales
 neque Lombardi aliquem fructum pacis ab imperatore consequi 
 potuissent, cardinales et Lombardi infectis negotiis ad propria 
 redierunt. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Imperator autem spe pacis consequende frustratus, de nouo 
 guerram Lombardis facere cepit et Alexandriam modis quibus 
 poterat infestare. Lombardi autem e conuerso ceperunt illi pro 
@@ -3666,7 +3224,6 @@ non poterat, se cum suis intra Papiam recepit, et nacta opportunitate
 temporis, frequenter circa Alexandriam discurrebat, eius 
 labores et uineas deuastabat, capiebat ciues, et dampna eis quantacumque 
 poterat inferebat. Alexandrini autem tum per se tum 
- 
 Lombardorum auxilio ei uiriliter resistebant, et uicina loca, que 
 imperatori fauebant, inpugnare et destruere non cessabant. Imperator 
 uero uires suas debilitatas et militiam suam pro maiori 
@@ -3674,7 +3231,7 @@ parte defecisse considerans, frequentes nuntios principibus suis
 in Alamanniam direxit, rogans atque precipiens, ut ei, misso militari 
 auxilio, proxima estate succurrerent, quo se posset ab iniuria 
 illi a Lombardis illata uiriliter uindicare. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Christianus autem prenominati imperatoris cancellarius, 
 quem ipse in Tuscia premiserat, sicut uir prouidus et discretus, 
 partim uiribus, partim precibus Tusciam pacificauit, et imperatoris 
@@ -3689,23 +3246,19 @@ Berthenora cum Willelmo de Markysella nobili Ferrariensi catanio,
 cum magna multitudine militum et peditum ad succursum 
 eiusdem ciuitatis ueniebat, non potuit quod intendebat perficere, 
 sed recepta ad Anconitanis magna pecunia, ab obsidione recessit. 
-
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
-
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Interea predictus cancellarius ex mandato imperatoris nuntios 
-ad Willelmum Sicilie regem transmisit, suadens et postulans,
+ad Willelmum Sicilie regem transmisit, suadens et postulans, 
 ut ipse, imperatoris filia in uxorem accepta, cum eo pacem 
 perpetuam faceret et ipsi se amicabiliter couniret. Sed rex 
-Wilhelmus, utpote christianissimus et religiosus princeps,
+Wilhelmus, utpote christianissimus et religiosus princeps, 
 sciens hoc matrimonium Alexandro pape plurimum displicere 
-et Romane ecclesie non modicam iacturam inferre, Deum et Alexandrum
+et Romane ecclesie non modicam iacturam inferre, Deum et Alexandrum 
 papam in hac parte reueritus, imperatoris filiam in 
 uxorem et eius pacem recipere noluit. Quod factum imperator 
 egre tulit et multum ad animum reuocauit. Sed non multo post 
-imperatoris filia est defuncta.
-</p>
-
-<p xml:id="g266.5-267.12" decls="#ocr">
+imperatoris filia est defuncta. 
+[p xml:id="g266.5-267.12"] 
 Adueniente autem estate, Philippus Coloniensis archiepiscopus 
 cum quibusdam principibus Alamannie et magna multitudine 
 strenuorum militum per montana Cumarum Italiam intrantes, 
@@ -3737,7 +3290,7 @@ occupauerunt, et sic tanta potiti uictoria, circa Papiam castra metati
 sunt. Sed quia uictoria solet elationis spiritum uictoribus ministrare, 
 in eodem loco moram facere negligentes, ad propria 
 sunt reuersi. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Imperator autem cum in prenominata pugna uiriliter dimicasset, 
 et fugientium pene ultimus extitisset, superueniente nocte 
 delituit, et cum aliquantis diebus fuisset absconditus et quo diuertisset 
@@ -3758,10 +3311,7 @@ officii et laborem sui corporis pro bono pacis et commodo non
 attendens, promisit per mare usque Rauennam uel Ueneciam 
 pergere, et habito Lombardorum consilio, colloquium cum imperatore 
 de bono pacis habere. 
-</p> 
-
-
-<p xml:id="g267.13-268.6" decls="#ocr"> 
+[p xml:id="g267.13-268.6"]  
 Eo tempore Emanuel imperator Constantinopolitanus, congregato 
 christianorum et paganorum militum et peditum, sagittariorum 
 et balistarum infinito exercitu, brachium Sancti georgii 
@@ -3789,10 +3339,8 @@ principe debere seruari, passus est eam in ultionem imperatoris
 et iniuriam ab infidelibus occupari. Qui tamen eam cum 
 magna reuerentia detinentes, facta treugua, imperatori honorifice 
 remiserunt. 
-</p> 
-
-
-<p xml:id="g268.7-269.6" decls="#ocr"> 
+[/p]  
+[p xml:id="g268.7-269.6"]  
 Interea rex Wilhelmus consilio pape Alexandri Heliam Troianum 
 electum et Arnulfum Caputaquensem epicopum et Florium 
 de Camerota regium iustitiarium ad regem Henricum in Angliam 
@@ -3814,10 +3362,8 @@ Sicilie et magna populi multitudine, prenominatam filiam
 regis Anglie in cappella sua desponsauit, et se et eam gloriose coronari 
 fecit, et sollempnes de illa nuptias celebrauit anno dominice 
 incarnationis MCLXXVI, mense Februarii, indictione X. 
-</p> 
-
-
-<p xml:id="g269.7-270.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g269.7-270.4"]  
 Papa autem Alexander in Lombardiam iturus, ante festum natiuitatis 
 Hubaldum Hostiensem episcopum et Raynerium cardinalem 
 in Lombardiam premisit, ut Lombardorum consilio securitatem 
@@ -3828,7 +3374,7 @@ sunt recepti, et presentibus eis et Lombardis, treugue et securitates
 hinc inde sunt prestite, et ut colloquium tractande pacis 
 apud Bononiam fieret, utriusque partis assensu ordinatum est 
 et dispositum. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Cremonenses autem et Terdonenses, audito quod papa uenturus 
 esset in Lombardiam, ut inter imperatorem et Lombardos 
 pacem componeret, credentes anticipare alios et ob hoc maiorem 
@@ -3849,10 +3395,7 @@ et magistro iustitiario totius Apulie et Terre laboris per litteras
 suas dedit in mandatis, ut honorifice preparati simul cum 
 papa in Lombardiam pergerent, et pro parte regis componende 
 pacis cum imperatore tractatui interessent. 
-</p> 
-
-
-<p xml:id="g270.5-271.9" decls="#ocr"> 
+[p xml:id="g270.5-271.9"]  
 Alexander igitur papa ab Anagnia se mouens et per Terram 
 laboris Beneuentum ueniens, a festo natiuitatis usque in epiphaniam 
 ibidem est demoratus. Dehinc per Troiam et Sipontum Uestam 
@@ -3876,7 +3419,7 @@ est receptus. Dehinc per insulas Dalmatie nauigans, nono die
 stante mensis Martii ad portum Uenetie aura flante secunda peruenit. 
 Et ibidem cum omnibus suis de galea descendens, in monasterio 
 Sancti nicolay, quod dicitur ad litus, ipso die quieuit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Altera autem die dux Uenetie cum magna nauium et populi 
 multitudine et patriarcha Uenetie simul cum patriarcha Aquileie 
 et omnibus suis suffraganeis ad pedes Alexandri pape humiliter 
@@ -3890,10 +3433,7 @@ et humiliter accesserunt. In festo autem Annuntiationis Uirginis
 papa a duce Uenetie et magnatibus eius affectuose rogatus 
 ad ecclesiam Sancti marci cum cardinalibus suis accessit, et in ea 
 missam publice decantauit. 
-</p> 
-
-
-<p xml:id="g271.10-272.4" decls="#ocr"> 
+[p xml:id="g271.10-272.4"]  
 Fridericus autem imperator, qui apud Cesenas morabatur, 
 cum aduentum pape in Uenetiis cognouisset, Madeburgensem 
 archiepiscopum et electum Guarmaciensem et protonotarium 
@@ -3924,10 +3464,8 @@ consules et multi prudentes de ciuitatibus Lombardie Ferrariam
 ad Alexandrum papam festino gressu letabundi uenerunt, 
 quos papa paterno affectu, prout decuit, benigne satis et iocunde 
 suscepit. 
-</p> 
-
-
-<p xml:id="g272.5-273.10" decls="#ocr"> 
+[/p]  
+[p xml:id="g272.5-273.10"]  
 Altera uero die cum eis in maiori ecclesia Sancti georgii, congregata 
 populi multitudine magna, conuenit, quos facto silentio 
 tamquam filios taliter est allocutus: «Nouit uestra discretio, filii 
@@ -3954,7 +3492,6 @@ sine uindice perpetrata, castella et urbes sunt dirute et incendio
 concremate, res uiduarum et pauperum prede sunt et direptioni 
 exposite. Sed licet iustus iudex et patiens retributor, culpa 
 humani generis exigente, iam per decem et octo annos uirgam 
- 
 peccatorum super sortem iustorum iusto iudicio, sed occulto, 
 reliquerit, et ecclesiam suam persecutione ualida passus sit uehementer 
 affligi; tandem motus ad ueniam pio compassionis 
@@ -3994,10 +3531,8 @@ non timuimus, sed ad uos per ignem et aquam indubitanter accessimus,
 ut uestro communicato consilio, oblatam imperatoris 
 pacem, si ecclesie et illustri regi Sicilie et uobis conueniens fuerit 
 et idonea, suscipere debeamus». 
-</p> 
-
-
-<p xml:id="g273.11-274.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g273.11-274.4"]  
 Postquam Alexander papa suo sermoni finem imposuit, Lombardi 
 in utraque militia diligenter instructi — sunt enim in bello 
 strenui et ad concionandum populo mirabiliter eruditi — per sapientes 
@@ -4015,7 +3550,7 @@ experimento sentimus. Primo enim nos eius impetum sustinuimus,
 primo nos illius furori obiecimus, et ne ad destruendam 
 Ytaliam et libertatem ecclesie opprimendam propius posset accedere, 
 nostrorum corporum et armorum obice prohibuimus. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Nos pro honore et libertate Ytalie et Romane ecclesie dignitate 
 seruanda imperatorem cum suis scismaticis nec recipere 
 nec audire uoluimus. Et ob hoc expensas non modicas, labores 
@@ -4026,7 +3561,6 @@ imperatoris pacem non solum sine nobis non recipere, sed
 etiam audire debeatis. Ipse namquam sepe nobis pacem sine 
 ecclesia optulit, nec recepimus; concordiam nobiscum sine uobis 
 facere uoluit, nec admisimus; magis enim uolumus guerram 
- 
 illius cum ecclesie unitate incurrere, quam pacem eius cum ecclesie 
 diuisione seruare. Quod autem personam uestram et fratrum 
 uestrorum exposuistis periculo et labori, paternitati uestre 
@@ -4055,10 +3589,7 @@ concludamus, in summa maior pax et securitas in regni eius nemoribus,
 quam in aliorum regnorum urbibus inuenitur. Et ideo 
 talem ac tantum principem et nostre pacis socium et nostre societatis 
 esse uolumus dominum et amicum". 
-</p> 
-
-
-<p xml:id="g274.5-274.14" decls="#ocr"> 
+[p xml:id="g274.5-274.14"]  
 Postquam Lombardi finem fecere dicendi, papa eos de more 
 benedixit et ad hospitia singulos abire permisit. Post diem autem 
 tertium Christianus cancellarius, Coloniensis, Madeburgensis et 
@@ -4067,17 +3598,14 @@ alius cancellarius et protonotarius ex parte imperatoris Ferrariam
 ad papam uenientes, residentibus cum eo regis nuntiis et 
 Lombardis, in consistorio publice protestati sunt, et dixerunt: 
 "Uenerande pater et domine, sicut imperator Romanus uobis per 
- 
 suos nuntios apud Anagniam repromisit, paratus est uobiscum et 
 cum ecclesia, cum illustri rege Sicilie et cum Lombardis per nos 
 pacem facere et seruare. Et ideo nobis septem faciende pacis 
 auctoritatem contulit. Et quidquid de bono pacis coram uestra 
 presentia statuerimus, hoc totum imperialis dignitas ratiabitione 
 firmabit". 
-</p> 
-
-
-<p xml:id="g274.15-275.3" decls="#ocr"> 
+[/p]  
+[p xml:id="g274.15-275.3"]  
 Hoc autem uerbum pape admodum placuit, et habito consilio, 
 alios septem, Hubaldum uidelicet Hostiensem, Guillelmum 
 Portuensem et Malfridum Penestrinum episcopos, Iohannem 
@@ -4110,13 +3638,10 @@ Bononiensem et Raynerium cardinales cum quibusdam Lombardis
 Uenetias misit, ut a duce et populo Uenetie securitatem reciperent, 
 quod ipse cum iis, qui essent ad colloquium profecturi, 
 secure possent intrare Uenetias et exire, et in eis cum rebus 
- 
 suis salui et sine timore persistere, et quod imperatorem sine 
 mandato pape intrare fines Uenetiarum ullatenus non permitterent. 
-</p>
-
-
-<p xml:id="g275.4-275.11" decls="#ocr">
+[/p] 
+[p xml:id="g275.4-275.11"] 
 His autem abeuntibus, Christianus cancellarius, qui Ferrarienses, 
 quos in bello offenderat, plurimum metuebat, quinta feria 
 maioris hebdomade a Ferraria mouens, Uenetias festinus aduenit. 
@@ -4128,11 +3653,9 @@ cardinalibus, quos Uenetias miserat, de securitate a duce et populo
 prestita responsum ydoneum accepisset, nono die intrante 
 mensis Madii cum regis nuntiis galeas ingressus, sequentibus 
 eum cardinalibus et Lombardis, eo die per Padum Lauretum descendit. 
-</p>
-
-
-<p xml:id="g275.12-275.18" decls="#ocr">
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p] 
+[p xml:id="g275.12-275.18"] 
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Altera uero die per mare ad Sanctum nicolaum, qui dicitur 
 ad litus, applicuit. Tertia autem die a duce et populo Uenetie, 
 a patriarcha et uniuerso clero, primo ad Sanctum marcum, dehinc 
@@ -4143,10 +3666,7 @@ iniunxit, ut in cappella, que erat in palatio patriarche conuenientes,
 primo de pace Lombardorum, que prolixiori indigebat 
 tractatu, haberent colloquium, de pace regis et ecclesie, que quasi 
 una est, postmodum tractaturi. 
-</p> 
-
-
-<p xml:id="g275.19-276.2" decls="#ocr"> 
+[p xml:id="g275.19-276.2"]  
 Cum autem hoc factum esset, et rationes multiplices fuissent 
 hinc inde prolate, tamdem Christianus cancellarius pro parte 
 imperatoris disiunctam triplicem proposuit dicens: "Petit a uobis 
@@ -4155,14 +3675,11 @@ que uos detinetis illi iustitiam faciatis, aut sententiam a
 iudicibus Bononie apud Roncaliam contra uos pronunciatam 
 executioni mandetis, uel ea, que antecessores uestri seniori Henrico 
 reddere consueuerunt, illi faciatis". 
-</p> 
-
-
-<p xml:id="g276.3-277.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g276.3-277.7"]  
 Quo audito, Girardus Pesta Mediolanensis iudex pro parte 
 Lombardorum respondit: "Nos quidem imperatori, undecumque 
 nos appellauerit, parati sumus sicut domino iustitiam facere, sed 
- 
 quia hec iustitia non est unius hominis sed multorum, non unius 
 ciuitatis sed plurium, secundum causarum merita inducias postulamus, 
 ut deliberantes plenius super his, que nobis obiecta 
@@ -4195,10 +3712,8 @@ nisi quia imperator uolebat nos ab ecclesie unitate recedere et
 Alexandri pape pontificium denegare. Prouideat ergo super hoc 
 uestra discretio, si, quia scismati consentire noluimus, debeamus 
 nostre pacis conditionem deteriorem efficere". 
-</p> 
-
-
-<p xml:id="g277.8-277.29" decls="#ocr"> 
+[/p]  
+[p xml:id="g277.8-277.29"]  
 Cum autem scriptura de tractatu pacis habita et per Cremonenses 
 Lombardis aliis delegata producta fuisset in medium, 
 ceperunt Teotonici quibusdam scripture capitulis diligenter opponere 
@@ -4230,10 +3745,8 @@ uerbum nobis de treuguis faciendis proponitis, non possumus
 sanctitati uestre super hoc certum dare responsum, quoadusque 
 uerbum istud, quod de nouo audiuimus, ad imperatoris audientiam 
 referamus". 
-</p> 
-
-
-<p xml:id="g277.30-278.16" decls="#ocr"> 
+[/p]  
+[p xml:id="g277.30-278.16"]  
 Accepta itaque a papa licentia, ad imperatorem, qui apud 
 Pomposam uenerat, gradu concito perrexerunt. Est autem Pomposa 
 locus quidam delactabilis et nemorosus inter Rauennam et 
@@ -4242,7 +3755,6 @@ componenda pace cum rege Sicilie usque ad annos quindecim,
 et de faciendis treuguis cum Lombardis usque ad annos sex per 
 ordinem exposuissent, aduersus eos uehementer indignatus infremuit, 
 asserens illos in hoc tractatu pacis magis Alexandri pape 
- 
 honori et commodo, quam dignitati imperii prouidisse. Quare 
 precepit eis, ut ad papam redeuntes firmiter ei ex sua parte proponerent, 
 quod ipse cum eo et ecclesia pacem libenter faceret, 
@@ -4260,11 +3772,9 @@ penitus esse incognitam, sed duobus cardinalibus, quos ipse
 elegisset, uolebat illam diligenter exponi, ea tamen conditione, 
 quod si cardinales electi petitione cognita de ea complenda 
 consilium pape tribuerent, ipse eam sine dilatione perficeret. 
-</p> 
-
-
-<p xml:id="g278.17-278.28" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g278.17-278.28"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Ex mandato itaque pape Hubaldus Hostiensis episcopus et 
 Theodinus cardinalis ad hoc negotium sunt electi, quibus imperatoris 
 petitio ab eius nuntiis priuatim est et studiose exposita. 
@@ -4281,12 +3791,8 @@ non spectaret, libenter eam effectui manciparet. Quo audito,
 Gottifridus minor cancellarius indignatus ad imperatorem 
 rediit. Episcopus autem Clarimontis cum abbate de Bonaualle, 
 qui remanserant, uidentes quod nullum a papa possent habere 
- 
 responsum, licet inuiti, petitionem imperatoris pape exposuerunt. 
-</p>
-
-
-<p xml:id="g278.29-279.2" decls="#ocr">
+[p xml:id="g278.29-279.2"] 
 Erat autem hec petitio. Imperator pape per nuntios suos promiserat, 
 quod si pacem cum eo faceret, terram comitisse Mathildis, 
 quam ipse tenebat, in manu eius et ecclesie potestate remitteret. 
@@ -4302,10 +3808,8 @@ quindecim annis ad potestatem et possessionem Romane
 ecclesie terra illa rediret, et tunc ecclesia in possessione posita, 
 si imperator uellet de proprietate terre illius agere, libenter ei ecclesia 
 iustitiam faceret. 
-</p> 
-
-
-<p xml:id="g279.3-279.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g279.3-279.15"]  
 Postqum autem hic modus petitionis implende per episcopum 
 Clarimontis et abbatem de Bonaualle fuit imperatori propositus, 
 plurimum illi displicuit, et sic concordia per illos tractata 
@@ -4322,13 +3826,10 @@ et redeundo sine fructu tempora longa consumunt, imperator
 prolixitate temporis affectus tedio desideratam pacem 
 abhorreat et suggestione prauorum hominum infecta pace recedat. 
 Consulimus ergo discretioni uestre, ut si uobis placuerit, 
- 
 propius imperator accedat, ut uestris et suis nuntiis cito ire et redire 
 ualentibus inchoata pax, uolente Domino, cito ualeat comsummari". 
-</p>
-
-
-<p xml:id="g279.16-279.24" decls="#ocr">
+[/p] 
+[p xml:id="g279.16-279.24"] 
 Papa autem habito cum nuntiis regis Sicilie et Lombardis consilio, 
 respondit: "Nobis quidem placet admodum, ut imperator 
 Cloiam, que a Uenetiis quindecim distat milibus, cum paucis 
@@ -4342,10 +3843,8 @@ ad eum accedentes ceperunt illi studiose suggerere ut
 absque mandato pape et licentia Uenetias securus intraret, firmiter 
 promittentes, quod eorum consilio et auxilio pacem posset 
 cum ecclesia et Lombardis pro sua uoluntate componere. 
-</p> 
-
-
-<p xml:id="g279.25-279.39" decls="#ocr"> 
+[/p]  
+[p xml:id="g279.25-279.39"]  
 Quorum uerbis imperator aliquantulum acquiescens, precepit 
 eis, ut dicta operibus consummarent, dantes operam, ut totum 
 populum ad perfectionem huius negotii caute et sapienter 
@@ -4366,12 +3865,9 @@ quodammodo inclinauerat et eorum responsa diebus singulis
 expectabat, cepit cardinalibus de uerbo pacis, quasi nouum esset 
 et sibi incognitum, respondere et longis consultationibus de die 
 in diem sua responsa differre. Quo cognito cardinales turbati 
- 
 sunt plurimum et mirati, et quidnam deberent facere, nesciebant. 
-</p>
-
-
-<p xml:id="g279.40-280.21" decls="#ocr">
+[/p] 
+[p xml:id="g279.40-280.21"] 
 Interea populares Ueneti a Cloia Uenetias redeuntes, in sancti 
 Marci ecclesia congregati, totius pene populi seditionem et tumultum 
 contra ducem suum excitauerunt, dicentes: "Domine 
@@ -4393,7 +3889,7 @@ si contra tenorem iuramenti nostri, papa inconsulto, imperatorem
 debeamus huc aduocare". Cui illi protinus responderunt: 
 "Postquam ex mandato pape Cloiam, que intra fines est Uenetie, 
 imperator intrauit, plane a nostri iuramenti sumus uinculis absoluti". 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Cumque super hoc a duce et populo esset diutius disceptatum, 
 tandem de communi consensu quidam Ueneti sunt ad papam 
 directi. Qui uenientes, sicut uiri improbi et superbi, dormientem 
@@ -4408,10 +3904,7 @@ diem crastinum expectetis. Et eis uenientibus, quid nobis faciendum
 sit, uobis respondere curabimus". Quod uerbum licet Uenetis 
 displicuisset, plurimum tamen precibus pape deuicti, petitioni 
 eius, quamuis inuiti, prebentes assensum, ad propria redierunt. 
-</p>
-
-
-<p xml:id="g280.22-281.7" decls="#ocr">
+[p xml:id="g280.22-281.7"] 
 Interea per totam regionem rumor insonuit, quod Ueneti contra 
 uoluntatem pape uellent imperatorem Uenetias intromittere. 
 Quo audito Lombardi, qui cum papa pro facienda pace Uenetias 
@@ -4453,10 +3946,8 @@ sciatis, quod nos in ciuitate ista non prestolabimur imperatoris
 aduentum, sed die crastina ad propria redeuntes, domino regi significare 
 curabimus, qualiter pro tot et tantis beneficiis uobis a 
 regia liberalitate collatis, mala et dampna plurima rependere studeatis". 
-</p>
-
-
-<p xml:id="g281.8-281.18" decls="#ocr">
+[/p] 
+[p xml:id="g281.8-281.18"] 
 Quibus auditis, dux satis placide et benigne respondit: "Quod 
 uos indignatos aspicimus et contra nos commotos esse cognoscimus, 
 egre multum patimur et molestissime sustinemus. Nos 
@@ -4470,14 +3961,11 @@ amicissimi nostri fieret consummatio. Et ideo recedendi uobis
 licentiam non tribuimus, sed prudentiam uestram affectuose rogamus, 
 ut tamquam in domibus uestris securi et sine timore aliquo 
 imperatoris expectetis aduentum". 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Non autem idcirco taliter dux respondit, quin ei et aliis sapientibus 
 talis imperatoris displiceret aduentus, sed quia timebat 
 plebem et popularem tumultum plurimum formidabat. 
-</p> 
-
-
-<p xml:id="g281.19-281.39" decls="#ocr"> 
+[p xml:id="g281.19-281.39"]  
 Nuntii autem regis hoc audientes, surgentes cum indignatione 
 dixerunt: "Nos hic cum licentia uestra non uenimus nec cum 
 uestra licentia recedemus, sed crastina die iter arripientes, domini 
@@ -4488,7 +3976,6 @@ Quod factum postquam fuit per Uenetias diuulgatum, timor
 maximus Uenetos occupauit. Timebant enim, ne si regis nuntii indignati 
 recederent, hac occasione rex Uenetos, qui in terra sua 
 erant, capti faceret et in custodia detineri. Qua de causa magna 
- 
 multitudo uirorum ac mulierum, quorum parentes in Apuliam 
 uenerant, ad ducem properans, proclamauit: "Uestram et totius 
 Uenetie prudentiam, illustris dux, latere non credimus, quanta 
@@ -4509,10 +3996,8 @@ sinatis. Si qui enim sunt, qui contra hoc aliquid dicere uel attemptare
 presumserint, parati sumus cum nostris parentibus et 
 amicis eos morti tradere, et proximos nostros, qui in regno regis 
 sunt, a futuro periculo liberare". 
-</p> 
-
-
-<p xml:id="g281.40-282.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g281.40-282.7"]  
 Dux autem eorum querimonia diligenter et gratanter audita, 
 respondit: "Quod nuntii regis Sicilie uolunt indignati recedere, 
 non mee imprudentie, sed quorumdam popolarium seditioni est 
@@ -4526,15 +4011,12 @@ illi iterum proclamassent, ut eorum, qui auctores erant seditionis,
 nomina dux euidenter exprimeret; metuens, si noti fierent, 
 ob hoc pugna in ciuitate maxima et seditio inualesceret, saniori 
 usus consilio, nobiliores et prudentiores, quos habere potuit, ad 
- 
 papam direxit, pro parte totius populi ueniam humiliter postulans 
 et affectuose deposcens, ut quod illi in eum stulte et superbe 
 peccauerant, ipse eis ex innata humilitate et gratia relaxaret 
 et nuntios regis Sicilie a proposito sui itineris reuocaret. 
-</p> 
-
-
-<p xml:id="g282.8-282.25" decls="#ocr"> 
+[/p]  
+[p xml:id="g282.8-282.25"]  
 Quibus Alexander papa more solito satis benigne respondit: 
 "Ego quidem, cui sanctitas et officium ignoscendi gloriam dereliquit, 
 iniuriam meam ad mentem non reuoco, offensam meam 
@@ -4560,18 +4042,15 @@ quos contra amicitiam suam faciunt, illis sicut decet respondere
 curabit. Sed quia nos preces domini pape pro mandato accipimus, 
 iter nostrum usque in diem crastinum differemus. Et dehinc 
 communicato cum eo consilio, quid nobis faciendum sit, disponemus". 
-</p>
-
-
-<p xml:id="g282.26-283.5" decls="#ocr">
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p] 
+[p xml:id="g282.26-283.5"] 
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Quibus auditis, Ueneti ad ducem suum redeuntes, ea, 
 que a papa et nuntiis regis audierant, illi per ordinem retulerunt. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Altera autem die dux sano usus consilio, apud Riuumaltum 
 sub uoce preconis fecit publice declamare, ut nullus de aduentu 
 imperatoris auderet uerbum facere, nisi cum Alexander papa 
- 
 precepisset. Cum autem ea, que apud Uenetias dicta et facta fuerant, 
 ad imperatoris adhuc Cloiam demorantis audientiam peruenissent, 
 sua spe et intentione frustratus, cepit de suo rigore mollescere 
@@ -4595,10 +4074,7 @@ nostras perdere et terrena celestibus anteferre. Quare noscat
 imperialis discretio, quod nos de cetero Alexandrum in catholicum 
 papam recipimus, et ei ut patri in spiritualibus obedimus. 
 Idolum uero, quod erexistis in Tuscia, nullatenus adoramus". 
-</p>
-
-
-<p xml:id="g283.6-283.16" decls="#ocr">
+[p xml:id="g283.6-283.16"] 
 Quibus auditis, imperator, operante eo, qui corda principum, 
 sicut uult et quando uult, humiliat et inclinat, leonina feritate deposita 
 ouinam mansuetudinem induit, et eis humiliter et benigne 
@@ -4609,25 +4085,20 @@ uestro sunt ordinata consilio, firmiter obseruare. Ut autem a uestris
 cordibus omnis super hoc dubitationis scrupulus excludatur, 
 comiti Henrico de Diessa, qui est in presentiarum, precipimus, 
 ut uobiscum et cum cardinalibus Uenetias ueniens, coram 
- 
 papa in anima mea iuret, quod ex quo Uenetias intrauero, in anima 
 mea iurare faciam, quod pacem ecclesie et imperii, regis Sicilie 
 et Lombardorum, sicut disposita est et tractata, firmiter 
 obseruabo, et de ea obseruanda precepto nostro duodecim principes 
 nostri simile iuramentum prestabunt". 
-</p> 
-
-
-<p xml:id="g283.17-283.20" decls="#ocr"> 
+[/p]  
+[p xml:id="g283.17-283.20"]  
 Cancellarius autem et reliqui mediatores pacis cum cardinalibus 
 hec audientes multum leti effecti, festino gressu Uenetias 
 redeuntes, ea que ab imperatore dicta et ordinata fuerant, pape 
 per ordinem retulerunt. Qui protinus per nuntios suos rectores 
 Lombardie, qui in partes Triuisie secesserant, Uenetias reuocauit. 
-</p> 
-
-
-<p xml:id="g283.21-284.4" decls="#ocr"> 
+[/p]  
+[p xml:id="g283.21-284.4"]  
 Altera autem die coram papa et cardinalibus nuntiis quoque 
 regis et Lombardis et magna populi multitudine, comes Henricus 
 de Diessa, sicut ei ab imperatore mandatum fuerat, in anima 
@@ -4637,10 +4108,8 @@ qui ibi aderant, simile iuramentum prestitit. Hoc autem facto, ex
 mandato pape Ueneti cum sex galeis Cloiam iuerunt, et imperatorem 
 cum suis in galeis recipientes, eum usque ad Sanctum 
 nicolaum, qui dicitur "ad litus", sabbato in sero honorifice deduxerunt. 
-</p>
-
-
-<p xml:id="g284.5-284.14" decls="#ocr">
+[/p] 
+[p xml:id="g284.5-284.14"] 
 Sequenti uero die dominica, octaua scilicet die stante mensis 
 Iulii, in uigiliis beati Iacobi, papa cognito imperatoris aduentu, 
 galeas ingressus cum nuntiis regis et magna Lombardorum ac 
@@ -4655,13 +4124,10 @@ opere christianum, Octauianum Cremensem et Iohannem de
 Struma cum suis complicibus prorsus abiuro, et Alexandrum et 
 successores eius in catholicum papam recipio". Et alii prelati 
 ecclesiarum similiter iurauerunt. 
-</p> 
-
-
-<p xml:id="g284.15-284.22" decls="#ocr"> 
+[/p]  
+[p xml:id="g284.15-284.22"]  
 Dux autem Uenetie, cognito quod imperator ab excommunicationis 
 esset nexibus absolutus, cum patriarcha et magna cleri 
- 
 ac populi et nauium multitudine usque ad ecclesiam Sancti nicolai 
 illi obuiam uenit, quem in naui sua recipiens, usque ad litus 
 Sancti marci satis honorifice et pompose deduxit. Imperator 
@@ -4672,10 +4138,8 @@ marci, ante cuius atrium Alexander papa cum episcopis suis et
 cardinalibus, cum patriarcha Aquileie, archiepiscopis et episcopis 
 Lombardie, ecclesiastico more ornatis, honorifice residebat, 
 pedes accessit. 
-</p> 
-
-
-<p xml:id="g284.23-285.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g284.23-285.15"]  
 Cumque ad papam appropiasset, tactus diuino spiritu, Deum 
 in Alexandro uenerans, imperali dignitate postposita, reiecto pallio, 
 ad pedes pape totum se extenso corpore inclinauit. Quem 
@@ -4701,11 +4165,8 @@ et processionaliter uenienti uiam tamquam ostiarius preparauit.
 Dehinc in choro cum archiepiscopis, episcopis et clericis 
 Alamannie remanens, quibus eo die cantandi iniunctum erat officium, 
 missam domini pape deuote satis et humiliter audiebat. 
-</p> 
-
-
-<p xml:id="g285.16-285.27" decls="#ocr"> 
- 
+[/p]  
+[p xml:id="g285.16-285.27"]  
 Cumque dicto euangelio papa ascendisset pulpitum, ut alloqueretur 
 populum, imperator accedens propius, cepit uerba 
 eius attentius auscultare. Cuius deuotionem papa diligenter attendens, 
@@ -4722,10 +4183,8 @@ stratoris more per freni lora deduxit, quem papa benedicens,
 ad hospitium redire permisit. Ipse uero, clero et populo 
 illum precedente, usque ad mare descendit. Dehinc galeas 
 ingressus, ad palatium suum cum gloria est et honore reuersus. 
-</p> 
-
-
-<p xml:id="g286.1-286.28" decls="#ocr"> 
+[/p]  
+[p xml:id="g286.1-286.28"]  
 Uenientibus autem proximis Kalendis Augusti, imperator cum 
 archiespicopis et episcopis et reliquis principibus suis et magna 
 populi multitudine ad patriarche palatium, in quo papa erat hospitatus, 
@@ -4745,7 +4204,6 @@ de scismate ad unitatem accessit et ad caulas matris ecclesie
 tamquam ouis erratica repedauit. Exultet igitur fidelium uotiua 
 religio, quia hodie pater iuniorem recepit filium, catholicum 
 principem Romanum recuperauit imperium, mater ecclesia 
- 
 suum euaginatum in uagina conuertit gladium, nauis piscatoris 
 egregii, que culpis exigentibus, aduersitatum turbine pene demersa 
 iam fuerat, nunc procellis cessantibus, ad litus solidum et 
@@ -4767,10 +4225,8 @@ recipimus et ipsis honorem debitum impendere procuramus;
 Deum et apostolos nostros affectuose rogantes, ut ipsos ecclesie 
 sue seruent incolumes et per longa tempora custodiant 
 defensores". 
-</p> 
-
-
-<p xml:id="g286.29-287.12" decls="#ocr"> 
+[/p]  
+[p xml:id="g286.29-287.12"]  
 Postquam papa loqui desiit, imperator, deposito pallio, de suo 
 faldestolio surgens, cepit in lingua teotonica concionari, Christiano 
 cancellario uerba sua uulgariter exponente. Ait ergo: 
@@ -4785,7 +4241,6 @@ ecclesiam gerimus, publice predicarent. Totus igitur mundus euidenter
 agnoscat, quod licet nos Romani imperii dignitate et gloria 
 fulgeamus, tamen a nobis humane conditionis proprium dignitas 
 Romana non abstulit, nec ignorantie uitium maiestas 
- 
 imperialis exclusit. Nam suggestione prauorum hominum ignorantie 
 fuimus tenebris inuoluti et per uiam ueritatis credentes 
 incedere, extra iustitie semitas nos inuenimus. Ecce enim Dei 
@@ -4811,20 +4266,17 @@ catholicum papam recipimus et ipsi tamquam patri debitam
 reuerentiam exhibere proponimus. Pacem nostram ecclesie, illustri 
 regi Sicilie et Lombardis, sicut inter nos ordinatum est et dispositum, 
 reddimus". 
-</p> 
-
-
-<p xml:id="g287.13-288.3" decls="#ocr"> 
+[/p]  
+[p xml:id="g287.13-288.3"]  
 Imperator uerba finierat. Cumque in laudem eius qui aderant 
 acclamassent, iterum facto silentio, sancta Dei euangelia cum 
 sanctorum reliquiis et cruce de ligno Domini sunt producta in 
 medium. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Mandante itaque imperatore, comes Henricus de Diessa in 
 anima imperatoris iurauit, quod ipse pacem ecclesie et imperii, 
 pacem regis Sicilie usque ad annos quindecim et treuguas Lombardorum 
 usque ad annos sex, sicut per mediatores hinc inde 
- 
 tractatum et scriptum fuerat, bona fide, sine fraude et malo ingenio 
 firmiter obseruaret, et Henricum regem filium suum id 
 ipsum iurare faceret et seruare. Dehinc duodecim principes imperii, 
@@ -4836,7 +4288,7 @@ miserit, rex infra duorum mensium spatium per aliquem principum
 suorum de obseruanda imperatori pace usque ad annos 
 quindecim in anima sua iurare faciet, et decem principes suos 
 iuramentum ueri simile faciet exhibere. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Comes etiam Roggerius, sicut archiepiscopus fecerat, id 
 ipsum manu sua iurauit. Dehinc rectores Lombardie, qui ibi aderant, 
 iurauerunt, quod usque ad sex annos bona fide et sine fraude 
@@ -4845,10 +4297,7 @@ dispositum erat, et quod per singulas ciuitates consules et nobiles
 ciuitatum id ipsum iurare facerent. Quo facto, illius diei curia 
 est soluta, et tam imperator quam reliqui cum gaudio et letitia ad 
 sua hospitia sunt reuersi. 
-</p> 
-
-
-<p xml:id="g288.4-288.22" decls="#ocr"> 
+[p xml:id="g288.4-288.22"]  
 Interea Christianus cancellarius, qui pro consumatione pacis 
 plurimum laborauerat, nacta opportunitate temporis, cepit per 
 imperatorem et principes suos dare studium et operam diligentem, 
@@ -4864,7 +4313,6 @@ patrie preposui et in labores et angustias quietem meam et
 otium commutaui. Bene potestis recolere, quantum catholice ecclesie 
 meus aduentus contulerit et qualiter partem uestram 
 adhuc nutantem et debilem plurimum roborauerit. Uos autem 
- 
 uestri gratia mihi uicem congruam pro tempore rependistis, 
 nam primo me in presbyterum cardinalem, dehinc in Sabinensem 
 episcopum, postremo in Maguntinum archiepiscopum consecrastis. 
@@ -4876,10 +4324,8 @@ canonice electo debeat anteponi. Rogo igitur et humiliter
 postulo, ut postquam Deus pacem ecclesie sue reddidit, mihi 
 quoque de iure mea reddatur ecclesia, ut sicut fui socius tribulationis, 
 ita sim particeps consolationis et gaudii". 
-</p> 
-
-
-<p xml:id="g288.23-288.36" decls="#ocr"> 
+[/p]  
+[p xml:id="g288.23-288.36"]  
 Cui papa satis benigne respondit: "Deuotionem tuam, fili carissime, 
 quam erga Romanam ecclesiam et personam nostram 
 habuisse dinosceris, manifeste recolimus et ardorem fidei tue 
@@ -4900,13 +4346,10 @@ in pace ecclesie remanebit, si Christianus cancellarius a Maguntine
 sedis fuerit prelatione deiectus. Nos autem absque uestra 
 notitia nullum sue petitioni adhuc uoluimus dare consensum, 
 nec, uobis ignorantibus, aliquod prebere responsum". 
-</p> 
-
-
-<p xml:id="g288.37-289.7" decls="#ocr"> 
+[/p]  
+[p xml:id="g288.37-289.7"]  
 Tunc Corradus benignam apostolici responsionem considerans, 
 et uoluntatem eius rationi consentaneam esse cognoscens, 
- 
 consultandi super hoc cum amicis suis a papa inducias petiit et 
 accepit. Habito itaque consilio, ad papam rediit et humili uoce 
 respondit: "Licet, reuerende pater, mihi iniuriosum sit pariter et 
@@ -4921,10 +4364,8 @@ ecclesie prouidere. Et idcirco ut omnis materia discensionis et
 scandali auferatur e medio, Maguntinum archiepiscopatum in 
 potestate uestra sponte relinquo, et me liberalitati uestre et patrocinio 
 recommendo". 
-</p> 
-
-
-<p xml:id="g289.8-289.18" decls="#ocr"> 
+[/p]  
+[p xml:id="g289.8-289.18"]  
 Quo audito, papa letus effectus, habito cum imperatore consilio, 
 prenominatum Corradum, cardinalatus illi et Sabinensis 
 episcopatus dignitate seruata, in Salseburgensem ecclesiam honorifice 
@@ -4940,16 +4381,13 @@ Maguntinam ecclesiam auctoritate apostolica confirmauit,
 et tam ei quam Philippo Coloniensi archiepiscopo, qui a 
 suis suffraganeis et catholicis fuerant consecrati, recepto ab 
 utroque iuramento obedientie, pallia de more concessit. 
-</p> 
-
-
-<p xml:id="g289.19-289.31" decls="#ocr"> 
+[/p]  
+[p xml:id="g289.19-289.31"]  
 Alexander autem papa prudentiam et literaturam Romoaldi 
 Salernitani archiepiscopi diligenter attendens, et deuotionem 
 quam erga Romanam ecclesiam semper habuerat recolens, ad 
 petitionem ipsius archiepiscopi, communicato fratrum suorum 
 consilio, ipsi et successoribus eius usum et dignitatem portande 
- 
 crucis per ciuitatem et totam suam parrochiam apostolica auctoritate 
 concessit, et donum, quod exinde Salernitane ecclesie in 
 perpetuum fecerat, sui priuilegii munimine roborauit. Hoc etiam 
@@ -4963,10 +4401,8 @@ Dei euangelia promittebant, quod de excessu, quem fecerant,
 domini pape Alexandri mandato starent, et eum et successores 
 eius in catholicum papam reciperent. Et sic ab excommunicationis 
 uinculis absoluti ad eius pedes accedebant. 
-</p> 
-
-
-<p xml:id="g290.1-290.32" decls="#ocr"> 
+[/p]  
+[p xml:id="g290.1-290.32"]  
 Pace igitur, ut prediximus, inter imperatorem et regem Sicilie 
 facta pariter et iurata, nuntii regis ad imperatoris palatium, 
 ipsum ex parte regia salutaturi iuerunt. Quo cognito, imperator 
@@ -4991,7 +4427,6 @@ Ipse enim sicut catholicus princeps et pacis filius, omnes
 christianos principes diligit, et quantum in eo est, cum illis pacem 
 et concordiam habere credit. Solos inimicos crucis Christi 
 crudeli odio mari et terra persequitur. Inde est, quod non parcit 
- 
 pecunie, non indulget expensis, sed singulis annis biremes suas 
 preparat, et cum eis armatam militiam destinat, ut hostes christiane 
 fidei deuincat pariter et confundat et euntibus ad sepulchrum 
@@ -5013,11 +4448,9 @@ meminit, uel uos in aliquo offendisse cognoscit, sed certum
 apud eum et firmum existit, quod si imperialis maiestas cum regia 
 magnificentia perfecte pacis uinculo fuerit counita, ecclesie 
 Dei et toto orbi magnum poterit commodum prouenire". 
-</p> 
-
-
-<p xml:id="g290.33-291.12" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g290.33-291.12"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Archiepiscopus uerba finierat. Protinus imperator per Gottifridum 
 cancellarium suum ad eius uerba respondit, dicens: 
 "Salutes ex parte illustris regis Sicilie per uos magnificentie nostre 
@@ -5044,10 +4477,7 @@ cognoscimus quod ex hoc mutue dilectionis affectu ecclesiis
 Dei proueniet non parua utilitas, christianis omnibus et precipue 
 ad Domini sepulchrum euntibus magna securitas, infidelibus 
 autem terror, confusio pariter et egestas". 
-</p> 
-
-
-<p xml:id="g291.13-291.22" decls="#ocr"> 
+[p xml:id="g291.13-291.22"]  
 Quo audito, regis nuntii imperatori de bona uoluntate, quam 
 erga regem se habere dicebat, gratias referentes, accepta ab eo 
 licentia, ad sua hospitia alacres sunt reuersi. Ipsi autem, sicut uiri 
@@ -5061,10 +4491,8 @@ imperatorem et regem inite scriptum est priuilegium sigilli aurei
 impressione munitum. Ut autem prenominati priuilegi notitiam 
 semper habere possit secutura posteritas, eiusdem priuilegii 
 exemplar huic nostro operi dignum duximus annotare: 
-</p> 
-
-
-<p xml:id="g291.23-292.15" decls="#ocr"> 
+[/p]  
+[p xml:id="g291.23-292.15"]  
 "In nomine Patris et Filii et Spiritus sancti. Amen. Nos Fredericus 
 Dei gratia Romanorum imperator et semper augustus, et 
 Heinricus rex filius noster, interuentu uenerabilis patris nostri 
@@ -5108,11 +4536,8 @@ et predictorum principum iuramento communitum uobis suprascripto
 illustri regi Willelmo fecimus assignari. Anno dominice 
 incarnationis millesimo centesimo septuagesimo septimo, 
 mense Augusti, decima indictione". 
-</p> 
-
-
-<p xml:id="g292.16-293.4" decls="#ocr"> 
- 
+[/p]  
+[p xml:id="g292.16-293.4"]  
 Postquam uero imperator prescriptum priuilegium nuntiis 
 regis tradidit, et quod missurus esset Christianum cancellarium 
 in Siciliam pro recipiendis iuramentis ueri similibus repromisit, 
@@ -5134,10 +4559,8 @@ ipse rex Heinricus pacem ecclesie et imperii, sicut a patre suo
 iurata fuerat, et pacem regis Sicilie usque ad annos quindecim, 
 et treuguas Lombardorum usque ad sex annos, bona fide, sine 
 fraude et malo ingenio firmiter obseruaret. 
-</p> 
-
-
-<p xml:id="g293.5-293.20" decls="#ocr"> 
+[/p]  
+[p xml:id="g293.5-293.20"]  
 Aduenientibus autem uigiliis Assumptionis beate Uirginis, que 
 eo tempore in die dominico aduenerunt, Alexander papa cum 
 episcopis suis et cardinalibus, cum patriarchis, archiepiscopis, 
@@ -5149,7 +4572,7 @@ et aliis, que de more in concilio sunt dicenda, et longo sermone
 de pace habito, Alexander papa candelas accensas imperatori et 
 clericis et laycis, qui ibi aderant, dari precepit. Et ipse excommunicationis 
 formam hoc modo proposuit: 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 "Nos ex parte Dei omnipotentis et beate Marie semper uirginis 
 et beatorum apostolorum Petri et Pauli et omnium sanctorum 
 excommunicamus et a gremio matris ecclesie separamus 
@@ -5159,14 +4582,11 @@ regis Sicilie usque ad annos quindecim, et treuguas Lombardorum
 usque ad annos sex, aliquo modo disturbare uel impedire 
 presumpserint. Et sicut he candele extinguuntur, sic eorum 
 anime eterne uisionis lumine et claritate priuentur". 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Cumque candele proiecte essent de manibus et extincte, imperator 
 alta uoce cum aliis: "Fiat, fiat" pariter acclamauit. Sicque 
 concilium celebratum est et solutum. 
-</p> 
-
-
-<p xml:id="g293.21-293.38" decls="#ocr"> 
+[p xml:id="g293.21-293.38"]  
 Eo autem die nuntii regis Sicilie, accepta a papa et imperatore 
 licentia, cum galeis suis ad monasterium Sancti nicolay qui 
 "ad litus" dicitur, peruenerunt. Celebrato ibidem festo Uirginis, 
@@ -5193,19 +4613,15 @@ et comitis super hoc fidem et prudentiam plurimum commendauit,
 dans illis in mandatis, ut imperatoris nuntios, qui in Siciliam 
 erant uenturi pro recipiendis iuramentis, equanimiter 
 expectarent. 
-</p> 
-
-
-<p xml:id="g293.39-294.2" decls="#ocr"> 
+[/p]  
+[p xml:id="g293.39-294.2"]  
 Hec autem omnia, que prediximus, ita gesta fuisse, nulli 
 dubitationis uel incredulitatis scrupulum moueant, quia Romoaldus 
 secundus Salernitanus archiepiscopus, qui uidit et 
 interfuit, scripsit hec; et sciatis, quia uerum est testimonium 
 eius. 
-</p> 
-
-
-<p xml:id="g294.3-294.14" decls="#ocr"> 
+[/p]  
+[p xml:id="g294.3-294.14"]  
 Interea dum imperator per totum mensem Augusti et aliquam 
 partem Septembris esset Uenetiis demoratus, accepta a papa licentia, 
 tertio decimo die eiusdem mensis a Uenetiis recedens Rauennam 
@@ -5223,18 +4639,14 @@ Anagniam ueniret, ecclesie peccatis exigentibus, Hugo de Bononia
 cardinalis Beneuenti est mortuus, Willelmus de Papia Portuensis 
 episcopus apud Auersam obiit, Malfridus Penestrinus 
 episcopus apud Anagniam diem clausit extremum. 
-</p> 
-
-
-<p xml:id="g294.15-194.17" decls="#ocr"> 
+[/p]  
+[p xml:id="g294.15-194.17"]  
 Anno dominice incarnationis M.C. septuagesimo octauo, 
 quinta die intrante mensis Martii, luna passa est eclisin in signo 
 uirginis et incepit a fine prime hore et durauit usque ad principium 
 quarte et obscurata est tota minus quarta. 
-</p> 
-
-
-<p xml:id="g294.18-295.5" decls="#ocr"> 
+[/p]  
+[p xml:id="g294.18-295.5"]  
 Comes autem Roggerius de Andria iuxta mandatum regium 
 usque in carnis leuamen Panormum imperatoris nuntios expectauit. 
 Quibus moram facientibus, accepta a rege licentia, in Apuliam 
@@ -5242,15 +4654,14 @@ rediit. Salernitanus archiepiscopus, precipiente rege, usque
 in mediam quadragesimam Panormi est demoratus. Cumque imperatoris 
 nuntii iter suum differrent, simili modo impetrata licentia 
 ad ecclesiam suam feliciter est reuersus. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Papa uero Alexander aliquantis diebus apud Anagniam demoratus, 
 inuitantibus eum Romanis, cum summo honore et gloria in 
 festo beati Gregorii Urbem feliciter est ingressus, in qua iuxta 
- 
 morem Romanorum pontificum in diuersis ecclesiis, secundum 
 stadia ab antiquo disposita, processionaliter et pompose procedens, 
 missarum officia solempniter celebrauit. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Imperator uero a Rauenna usque in uallem Spolitinam descendens, 
 per Tusciam et Ianuam usque in Lombardiam rediit, 
 Maguntino archiepiscopo circa partes Urbis ad pape Alexandri 
@@ -5258,10 +4669,7 @@ obsequium derelicto. Cum autem prenominatus imperator in
 partibus Taurini in estate aliquanto fuisset tempore demoratus et 
 cum Lombardis pacem pro uelle suo componere non potuisset, 
 cum suis in Alamanniam rediit. 
-</p> 
-
-
-<p xml:id="g295.6-295.19" decls="#ocr"> 
+[p xml:id="g295.6-295.19"]  
 Iohannes uero de Struma, qui a suis Callistus appellatus est, 
 Alexandrum papam cum imperatore audiens concordatum, timore 
 correptus, Biteruum deserens, prefecti consilio et auxilio 
@@ -5281,10 +4689,8 @@ apostolicis non seruantes, Alexandro papa dissuadente pariter et
 uetante, congregata militum et peditum multitudine Biteruum 
 perrexerunt, ut eiusdem ciuitatis nobiles uiriliter adiuuarent, 
 Maguntinum archiepiscopum et Biteruenses pro uiribus impugnarent. 
-</p>
-
-
-<p xml:id="g295.20-295.26" decls="#ocr">
+[/p] 
+[p xml:id="g295.20-295.26"] 
 Alexander autem papa, hoc cognito, sicut uir religiosus et 
 sanctus, metuens ne si Romani cum cancellario et Biteruensibus 
 confligerent, multa inde homicidia prouenirent, missis cardinalibus 
@@ -5295,10 +4701,8 @@ segetes uastauerunt, oliuas et uineas inciderunt, et sic infectis
 negotiis Romam reuersi sunt. Prefectus uero ad pedes Alexandri 
 pape accedens, confirmata sibi prefectura, eius homo 
 deuenit. 
-</p> 
-
-
-<p xml:id="g295.27-295.34" decls="#ocr"> 
+[/p]  
+[p xml:id="g295.27-295.34"]  
 Cum autem papa Alexander Rome pene usque ad medietatem 
 Augusti demoratus fuisset, calorem aeris et distemperantiam 
 metuens, Urbem cum suis cardinalibus egressus, Tusculanum 
@@ -5310,10 +4714,8 @@ totius Italie episcopos conuocauit, mandans eis per nuntios et
 litteras et apostolica auctoritate precipiens, ut in prima dominica 
 quadragesime, in qua cantatur "Ecce nunc tempus acceptabile" 
 omnes ad eum pro celebrando uniuersali concilio conuenirent. 
-</p>
-
-
-<p xml:id="g295.35-296.26" decls="#ocr">
+[/p] 
+[p xml:id="g295.35-296.26"] 
 Imperator uero Fredericus, sicut cum Romoaldo Salernitano 
 archiepiscopo et Roggerio comite Andrie apud Uenetias condixerat, 
 nuntios suos, Hugolinum scilicet Boni comitis et Rodegarium 
@@ -5328,7 +4730,7 @@ iurare fecit, et priuilegium de confirmatione pacis iussit conscribi
 et bulla aurea insignitum eisdem fecit nuntiis assignari. Qui, 
 accepta a rege licentia, reuersi sunt, quodam regis armigero eos, 
 ut moris est, usque ad fines regni deducente. 
-<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+[/p] [milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/]  
 Cumque ad castrum quoddam, quod Lacusniger dicitur, 
 peruenissent, inter rusticos eiusdem castri et regis armigerum 
 rixa exorta est. Cumque regis armiger rusticos metuens, ad nuntiorum 
@@ -5337,7 +4739,6 @@ domum in qua erant nuntii, cum lapidibus sunt aggressi, et
 eos male et inhoneste tractantes, scrinium Hugolini Boni comitis 
 fregerunt, et ex eo coppam unam argenteam et priuilegium, 
 quod rex imperatori fecerat, asportarunt. Nuntii uero, recepta 
- 
 hac iniuria, indignati Salernum uenerunt, et Gualterio ammirato 
 et archiepiscopo totius geste rei seriem exposuerunt. Quod cum 
 ad regis Willelmi notitiam peruenisset, indignatus plurimum et 
@@ -5355,10 +4756,7 @@ regno suo fiunt, non uult silentio et impunita transire. Precepit
 etiam rex aliud priuilegium de confirmanda pace scribi, et bulla 
 sua aurea insignitum per Tancredum notarium ad imperatorem 
 usque transmisit. 
-</p> 
-
-
-<p xml:id="g296.27-297.2" decls="#ocr"> 
+[p xml:id="g296.27-297.2"]  
 Eodem tempore mense Madii, undecima indictione, rustici de 
 Faiano, sicut proditores et periuri, consentientibus, ut dicitur, 
 quibusdam monachis, qui ibidem erant, Matheum abbatem Sancti 
@@ -5373,10 +4771,8 @@ Sancti benedicti et Amatum priorem Faiani et quosdam alios
 de monachis comprehenderunt; asserebant enim rustici qui 
 capti fuerant, consilio et machinatione predictorum monachorum, 
 abbatem fuisse occisum. 
-</p>
-
-
-<p xml:id="g297.3-297.18" decls="#ocr"> 
+[/p] 
+[p xml:id="g297.3-297.18"]  
 Anno dominice incarnationis MCLXXVIII mense Augusti, undecima 
 indictione, quarto die stante eiusdem mensis, uidelicet 
 in festo decollationis beati Iohannis Baptiste; Iohannes de Struma, 
@@ -5384,7 +4780,6 @@ qui et a suis Callixtus appellatus est, reatum suum agnoscens,
 Montem albanum deseruit et apud Tusculanum ad pedes 
 pape Alexandri cum quibusdam de suis clericis humilis et deuotus 
 accessit. In conspectu cardinalium et multorum se peccasse 
- 
 publice confessus est dicens: "Domine uenerande pater, peccatum 
 meum manifeste confiteor, et me auctoritate imperiali contra 
 Deum et sanctam ecclesiam et uos egisse cognosco. Sed 
@@ -5401,30 +4796,21 @@ Romana ecclesia, que iuxta Iesu Christi magisterium
 inimicos diligere consueuit, te hodie penitentem in filium recipit 
 et pro malis bona tibi retribuere procurabit". De cetero Alexander 
 papa eum et in curia et in mensa sua honorifice habuit. 
-</p> 
-
-
-<p xml:id="g297.19-297.21" decls="#ocr"> 
-<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+[/p]  
+[p xml:id="g297.19-297.21"]  
+[/p] [milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/]  
 Secundo autem die stante eiusdem mensis, luna in signo uirginis 
 post mediam noctem passa est eclypsim, et pene in tertia 
 parte sui obscurata est. Tertio decimo uero die intrantis mensis 
 Septembris, indictione XII, sol in signo uirginis circa horam… 
-</p>
-
-
-<p xml:id="v-b298a" decls="#ocr"> 
- 
+[p xml:id="v-b298a"]  
 de pace ueneta relatio 
-</p> 
-
-<p xml:id="v-b298b" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b298b"]  
 Edente Wilhelmo Arndt 
 (ex codice Musei britannici, Kings 6. c II) 
- 
-</p> 
-
-<p xml:id="v-b298c" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b298c"]  
 Rollandus sancte Romane ecclesie olim cancellarius a summo 
 pontifice ad Alamaniam in legationem missus ibique odium Frederici 
 tunc comitis nobilissimi per increpationem quandam ab 
@@ -5441,9 +4827,8 @@ enarrari non poterunt, existentibus, papam, cardinales ac
 inferioris ordinis ministros sibi instituit ac deinceps a papa 
 Alexandro penitus discessit. Sicque octodecim annis unitas ecclesie 
 per partes discussa fluctuabat. 
-</p> 
-
-<p xml:id="v-b298d" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b298d"]  
 Sed pius Dominus ecclesiam suam misericorditer respiciens 
 imperatorem multis tribulationibus flagellauit. Nam pene tota 
 Italia propter quasdam importunas et antea inauditas quas exigebat 
@@ -5457,12 +4842,10 @@ quandam nouam, confusus atque cum suis cum maximo dedecore
 deuictus est. Cancellarius autem in armis strenuus, domnus 
 scilicet Christianus Mogontensis archiepiscopus, alium exercitum 
 per Italiam conducens, infirmiora terrae funditus deuastans, 
- 
 ciuitates multas obsedit ac debellauit, seque in omnibus prudenter 
 ac uiriliter agebat. 
-</p> 
-
-<p xml:id="v-b300a" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b300a"]  
 Cum ergo uideret imperator imperium suum contra se pene 
 ex omni parte commotum, multaque aduersa sibi crebrius contigisse, 
 tandem in se reuersus, diuinam intellexit adesse ultionem. 
@@ -5481,16 +4864,14 @@ est, ut in aliquem locum uel ciuitatem sibi inuicem occurrant,
 ubi fortitudo et potestas ciuitatis concordiam inter se suosque 
 illibatam conseruet et ne discordia uel seditio inter eos 
 oriatur uelint nolint prouideat. 
-</p> 
-
-<p xml:id="v-b300b" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b300b"]  
 Hac igitur de causa papa Uenetiam, quae soli Deo subiacet, 
 cum suis ueniens, in secretario suo bis in die tractauit, ibique 
 cum principibus imperatoris contrahitur pax decentius firmius 
 quam reformari posset. 
-</p> 
-
-<p xml:id="v-b300c" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b300c"]  
 Hii erant summi in negotio imperatoris et principes dicebantur. 
 Domnus Christianus Mogontensis archiepiscopus, etate iuuenis, 
 statura mediocris, facie decorus. Secundus post illum erat 
@@ -5499,9 +4880,8 @@ eleganti forma spetiosus. Tertius fuit archiepiscopus Macdeburgensis,
 uir bonus mitis et modestus, sed prioribus etate 
 prouectior. Aderant et nuntii regis Siculi, archiepiscopus scilicet 
 Salernie et comes quidam nobilissimus nomine Rogerius. 
-</p> 
-
-<p xml:id="v-b302a" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b302a"]  
 Imperator uero nondum Uenetias uenerat, sed erat in ciuitate 
 proxima nomine Clogia, ibique omnia que in die tractata sero 
 sunt ei nuntiata. Tandem capitulis formatis atque compositis et 
@@ -5510,18 +4890,16 @@ festiuitatem sancti Iacobi apostoli, pax est publice denuntiata.
 Nunc mox papa de secretario suo in consistorium processit, ibique 
 iuramenta tactis sacrosanctis euangeliis a primoribus imperatoris 
 audiente omni populo suscepit. 
-</p> 
-
-<p xml:id="v-b302b" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b302b"]  
 Modus sacramenti hic erat: Ego N. qui sum princeps imperii 
 Romani, iuro in anima ipsius imperatoris quod, quando Uenetias 
 uenerit, faciet iurare in anima propria pacem perpetuam 
 sancte ecclesie, treuiam regis Siculi in 15 annos et treuiam 
 Lumbardorum in 6 annos, atque omnia capitula que in 
 hac scedula continentur. 
-</p> 
-
-<p xml:id="v-b302c" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b302c"]  
 His ita se habentibus, in crastinum, scilicet sabbato, misit papa 
 quatuor cardinales cum duce et primoribus ciuitatis ad imperatorem; 
 statimque eodem die cum illo redeuntes applicuerunt 
@@ -5537,28 +4915,24 @@ mire altitudinis ex utraque parte litoris, in quibus uexilla sancti
 Marci mirabili opere contexta et longitudine sua terram tangentia 
 dependebant; litus autem maris, quod dicitur Marmoreum, 
 prope ecclesiam erat, scilicet ad iactum lapidis. 
-</p> 
-
-<p xml:id="v-b302d" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b302d"]  
 Ubi ante horam diei primam adueniens papa, auditaque ibi 
 missa, mox gradum throni celsiorem ascendit, illicque aduentum 
- 
 imperatoris expectaturus cum patriarchis, cardinalibus, archiepiscopis, 
 episcopis aliisque innumerabilibus resedit, a dextris 
 autem eius sedit patriarcha Uenetie, a sinistris uero patriarcha 
 Aquileie. 
-</p> 
-
-<p xml:id="v-b304a" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b304a"]  
 Facta est ibi contentio inter archiepiscopum Mediolanensem 
 et Rauenensem, quis eorum uideretur esse maior, uterque se tertius 
 a papa atque ad dextram sedere nitebatur. Papa uero liti finem 
 imponere uolens, a superiori gradu in quo sedebat subito 
 surrexit, gradatim descendit et sese in inferiori recepit. Sicque 
 factum est, ut neuter tertius, neuter uero ad dextram sedere potuisset. 
-</p> 
-
-<p xml:id="v-b304b" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b304b"]  
 Tandem circa horam diei tertiam adest galea ducis, in qua erat 
 imperator cum duce et cardinalibus qui ad eum pridie missi 
 erant. Ordinata autem processione mox a septem archiepiscopis 
@@ -5574,42 +4948,35 @@ signorum. His ita peractis simul per porticum ambo exierunt.
 Deinde papa equum ascendit, imperator uero streuiam illius 
 tenuit ac deinde in palatium ducis sese recepit. Hec omnia 
 die dominica, scilicet in uigilia sancti Iacobi, ita peracta sunt. 
-</p> 
-
-<p xml:id="v-b304c" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b304c"]  
 Eadem itaque die misit domnus papa imperatori uasa plurima 
 aurea et argentea diuersis ciborum generibus referta. Misit etiam 
 uitulum saginatum, hec ei uerba mandando: "Epulari et gaudere 
 oportet, quia filius meus mortuus est et resurrexit, perierat et 
 inuentus est". 
-</p> 
-
-<p xml:id="v-b304d" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b304d"]  
 In crastinum autem, scilicet in die sancti Iacobi, circa horam 
 diei primam, domnus papa iterum ad ecclesiam Sancti marci 
 properauit; imperator uero de palatio ducis, quod iuxta atrium 
 ecclesie erat, aduenit. Post cuius aduentum inchoata est missa 
- 
 quam et papa celebrauit. Lecto autem euangelio, mox pulpitum 
 ascendit, ibique sermonem ad populum facit, quo facto ascendit 
 ad eum imperator cum patriarca Aquileie, a quo etiam pax est ibi 
 publice denuntiata. Missa autem celebrata, unusquisque cum 
 gaudio ad hospitia remeauit. 
-</p> 
-
-<p xml:id="v-b306a" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b306a"]  
 His ergo ita peractis, remansit imperator in ciuitate per duos 
 menses cum maxima letitia, intrans et exiens ac cum domno 
 papa publice et priuatim per interpretes familiariter loquens. 
-</p> 
-
-<p xml:id="v-b306b" decls="#ocr"> 
+[/p]  
+[p xml:id="v-b306b"]  
 Tactis igitur sacrosanctis euangeliis, facta sunt sacramenta eo 
 modo quo superius descripsimus, sicque omnibus pacifice confirmatis, 
 cum magna exultatione a ciuitate recesserunt. 
-</p> 
-
-
-    </body>
-  </text>
-</TEI>
+[/p]  
+    </body> 
+  </text> 
+</TEI> 
