@@ -158,7 +158,7 @@ class msTree:
                 e.getparent().remove(e)
 
     def handle_gaps (self):
-        ''' Replace <gap> with text in brackets '''
+        ''' Replace <gap> with text in {curly brackets} '''
         for e in self.tree.findall('.//t:%s' % ('gap'), myconst.ns): 
             gapReason = e.get('reason')
             gapQuantity = e.get('quantity')
@@ -166,7 +166,7 @@ class msTree:
             gapUnit = e.get('unit')
             if gapUnit == 'words' and gapQuantityNum == 1:
                 gapUnit = 'word'
-            e.text = '[%s_%s_%s]' % (gapQuantity, gapReason, gapUnit)
+            e.text = '{%s_%s_%s}' % (gapQuantity, gapReason, gapUnit)
 
 
     def ecaudatum (self, monophthongize=True):
@@ -214,27 +214,97 @@ class msTree:
 
 
 
-    def simplify_to_scanlike_text (self, tagslist, removepar=False):
-        ''' Strip all tags included in list tagslist within paragraphs.
-            If removepar='True':
-                Replace <p xml:id="g163.8-163.10" decls="#ocr"> with 163.8-163.10 and
-                remove also <p>s;
-                if 'False', leave them.
-            Finally, re-insert the "-" dashes at the end of line and remove all <lb>s?? (not implemented so far)
+    def simplify_to_scanlike_text (self, tagslist):
+        ''' Strip all tags included in list tagslist within paragraphs (while keeping their text and tail).
+            So "bla <rs>foo</rs> bar" becomes "bla foo bar".
             All tags are assumed to belong to the TEI XML namespace.
             '''
         for p in self.tree.findall('.//t:p', ns):   # Strip markup inside <p>s
             for t in tagslist:
                 etree.strip_tags(p, myconst.tei_ns + t)
-        if removepar:
-            body = self.tree.find('.//t:body', ns)
-            for p in body.findall('.//t:p', ns):   # Replace <p xml:id="g163.8-163.10" decls="#ocr"> with 163.8-163.10
-                xmlid = p.get(myconst.xml_ns + 'id')
-                try:
-                    p.text = ''.join([xmlid, p.text])
-                except:
-                    print(p.text)
+
+
+    def handle_paragraph_tags (self, action='keep'):
+        ''' If action == 'keep':
+                Leave them as TEI XML tags (in this case, it's useless to call this method)
+            if action == 'text':
+                Replace <p xml:id="g163.8-163.10" decls="#ocr"> with 163.8-163.10 and remove <p> XML tags;
+            If action == 'bracketsOnly',
+                Replace <p xml:id="g163.8-163.10" decls="#ocr">  with [p xml:id="g163.8-163.10"] (good for collation)
+            If action == 'bracketsToo',
+                Keep <p xml:id="g163.8-163.10" decls="#ocr"> and add with [p xml:id="g163.8-163.10"]...[/p] (also good for collation)
+                Example: transform
+                    <p xml:id="g163.8-163.10">
+                    bla bla
+                    </p>
+                to
+                    <p xml:id="g163.8-163.10">
+                    [p xml:id="g163.8-163.10"]
+                    bla bla
+                    [/p]
+                    </p>
+            '''
+        body = self.tree.find('.//t:body', ns)
+        for p in body.findall('.//t:p', ns):
+            try:
+                xmlid = p.get(myconst.xml_ns + 'id') # Replace <p xml:id="g163.8-163.10" decls="#ocr"> with 163.8-163.10
+            except:
+                print('I am trying handling <par> tags, but the I can\'t get the xml:id of this <par>')
+            try:
+                if p.text is None:
+                    p.text = ''
+            except:
+                print('I am handling <par> tags, but the I can\'t get the text of this <par>. All I get is «%s»' % (p.text))
+            if action == 'text':
+                p.text = ''.join([xmlid, ' ', p.text])
+            elif action == 'bracketsOnly' or action == 'bracketsToo':
+                bracketOpenTag = '[p xml:id="%s"] ' % xmlid
+                bracketCloseTag = '[/p] '
+                p.text = ''.join([bracketOpenTag, p.text, bracketCloseTag])
+        if action == 'text' or action == 'bracketsOnly':
             etree.strip_tags(body, myconst.tei_ns + 'p')
+
+
+
+    def tags_to_brackets (self, tagslist):
+        ''' For each tag in list tagslist, transform <> to []. E.g.: with list ['anchor', 'l'],
+            <anchor xml:id="g187.11-187.14garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
+            becomes
+            [anchor xml:id="g187.11-187.14garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/]
+            '''
+
+        emptyElements = ['milestone', 'link', 'anchor']
+        body = self.tree.find('.//t:body', ns)
+        for tag in tagslist:
+            bracketCloseTag = '[/%s] ' % (tag)   # e.g.: [/anchor]
+            for e in body.findall('.//t:%s' % (tag), ns):
+                tagName = e.tag.split('}')[1]   # Remove initial namespace {http://www.w3.org/XML/1998/namespace}
+                tagAttributesDict = e.attrib    # This is a dict
+                #for attr in tagAttributesDict: # This transforms the dict to a list
+                tagAttributesList = ['%s="%s"' % (attr, tagAttributesDict[attr]) for attr in tagAttributesDict]
+                    # This transforms the dict to a string like ['type="bonetti-paragraph-break"', 'unit="paragraph"', 'ed="#b"'] 
+                tagAttributesString = ' '.join(tagAttributesList)   # This is the same, but in a string
+                tagAttributesString = tagAttributesString.replace('{http://www.w3.org/XML/1998/namespace}', 'xml:')
+                if len(tagAttributesString) > 0:
+                    bracketOpenTag = ' '.join([tagName, tagAttributesString])
+                else:
+                    bracketOpenTag = tagName
+                bracketOpenTag = '[%s] ' % bracketOpenTag
+                try:
+                    if e.text is None:
+                        e.text = ''
+                except:
+                    print('I am handling <%s> tags, but the I can\'t get the text of this <%s>. All I get is «%s»' %
+                            (tagName, tagName, e.text))
+                if tagName in emptyElements:    # If it is an empty element, e.g. <anchor/>
+                    bracketOpenTag = bracketOpenTag.replace(']', '/]')
+                    e.text = ''.join([bracketOpenTag, e.text])
+                    #print('Tag <%s> is empty. Its open tag is «%s» and its text is now «%s»' % (tagName, bracketOpenTag, e.text))
+                else:   # If it is no empty element, e.g. <l>
+                    e.text = ''.join([bracketOpenTag, e.text, bracketCloseTag])
+                    #print('Tag <%s> is ***NOT*** empty. Its open tag is «%s» and its text is now «%s»' %
+                            #(tagName, bracketOpenTag, e.text))
+            etree.strip_tags(body, myconst.tei_ns + tag)
 
     def my_strip_tags (self, tagname):
         '''Remove start and end tag but keep text and tail'''
@@ -324,16 +394,123 @@ class msTree:
                 if row[3] in ['Alphabetic', 'Brevigraph']:
                     myReplaceAll(row[0], row[1], par)   # I replaced alltext with par
 
+            # Create a temporary <lb/> (that will later be stripped) with tail '\n' and append it to <p>
+            # in order to add a line break at the very end of <p>
+            # because in other TEI XML files </p> is in its own line (so: "bla bla\n</p>", not "bla bla</p>"
+            tempLb = etree.SubElement(par, tei_ns + 'lb')
+            tempLb.tail = '\n'
+            '''
+            if len(par) == 0 and par.text is None:
+                print(par.get(xml_ns + 'id'))
+            elif len(par) == 0 and par.text is not None:
+                par.text = par.text + '\n'  
+            elif len(par) > 0 and par.text is not None:
+            else:
+                print(len(par))
+                #print('foo')
+                if par.text is not None:
+                    par.text = par.text + '\n\n'  # Add a line break because in other TEI XML files </p> is in its own line
+                    '''
+
     def write (self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
 
 
+def postProcessSimplifiedBeforeJuxtaCommons (siglaList, siglaToShortenList):
+    '''In simplified TEI XML files,
+        - change [p xml:id="g3.1-3.1"][/p] to [p xml:id="g3.1-3.1"]\n[/p]
+        - remove empty lines    
+        - create «a1s-short.xml» versions '''
+    for mySiglum in siglaList:
+        edition = mySiglum + myconst.simplifiedsuffix
+        xmlfile = '%s/%s.xml' % (myconst.xmlpath, edition)
+        shortxmlfile = xmlfile.replace('.xml', '-short.xml')
+        myLines = []
+        with open(xmlfile, 'r') as IN:
+            for line in IN: # Change [p xml:id="g3.1-3.1"][/p] to [p xml:id="g3.1-3.1"]\n[/p]'''
+                if line.startswith('[p xml:id="') and line.strip().endswith('"][/p]'):
+                    line = line.replace('"][/p]', '"]\n[/p]')
+                if line.strip(): # Remove empty lines 
+                    if line[-2:-1] != ' ': # If line doesn't end with a space, add the space
+                        line = line.replace('\n', ' \n')
+                    myLines.append(line)
+        with open(xmlfile, 'w') as OUT:
+            # Write back long files (e.g. a1s.xml)
+            for line in myLines:
+                print(line, file=OUT, end='')
+        if mySiglum in siglaToShortenList:       # create «a1s-short.xml» versions
+            with open(xmlfile, 'r') as IN:
+                with open(shortxmlfile, 'w') as OUT:
+                    for line in IN:
+                        print(line, file=OUT, end='')
+                        if line[1:].startswith('milestone type="garufi-one-layer-from-here-on" unit="collation"'):
+                            # [1:] removes the first char, which might be '<' or '['
+                            print('</body>\n</text>\n</TEI>', file=OUT, end='')
+                            break
+
+def postProcessJuxtaCommonsFile (siglum, printEdition = 'garufi', printSiglum = 'g', msSiglum='a'):
+    ''' Change [tag attr="value"] to \n<tag attr="value">
+        and [/tag] to \n</tag>
+        '''
+    xmlfile = '%s/%s.xml' % (myconst.xmlpath, siglum)
+    with open(xmlfile, 'r') as IN:
+        myLines = []
+        for line in IN:
+            line = line.replace(']\n', ']')
+            line = line.replace('[', '\n<').replace(']', '>\n').replace('&quot;', '"')
+            myLines.append(line)
+    with open(xmlfile, 'w') as OUT:
+        for line in myLines:
+            print(line, file=OUT, end='')
+
+    # Parse XML tree and find <witness> elements
+    mytree = msTree(siglum)
+    witnesses = mytree.tree.findall('.//t:%s' % ('witness'), ns)
+    juxtaSigla = [{'juxtaSiglum': witness.get(xml_ns + 'id'), 'element': witness} for witness in witnesses]
+
+    # Search which <witness> represents the print edition ('bonetti' or 'garufi')
+    juxtaPrintSiglum = 'unknown' 
+    for myWitness in juxtaSigla:
+        if printEdition in myWitness['element'].text.lower(): # e.g.: if 'garufi' in... or if 'bonetti' in...
+            juxtaPrintSiglum = myWitness['juxtaSiglum']
+            myWitness['mySiglum'] = printSiglum # Associate my print siglum (e.g. 'g') to the JuxtaCommons siglum (e.g. 'wit-41657')
+
+
+    # Check if the print <witness> has been found or not
+    if juxtaPrintSiglum == 'uknown':
+        print('I haven\'t found what witness in %s corresponds to %s. Please include string «%s» in the text of one <witness> in %s' %
+                (siglum, printEdition.capitalize(), printEdition, siglum  ))
+    else:
+        print('The JuxtaCommons-generated witness for %s is %s' % (printEdition.capitalize(), juxtaPrintSiglum) )
+
+    for myWitness in juxtaSigla:
+        #if myWitness['mySiglum'] is None:
+        if 'mySiglum' not in myWitness:
+           myWitness['mySiglum'] = msSiglum # Associate my MS siglum (e.g. 'a') to the JuxtaCommons siglum (e.g. 'wit-41658')
+
+    # Replace value in <witness xml:id...>
+    for witness in witnesses:
+        witXmlId = witness.get(xml_ns + 'id')
+        for s in juxtaSigla:
+            witXmlId = witXmlId.replace(s['juxtaSiglum'], s['mySiglum'])
+        witness.set(xml_ns + 'id', witXmlId)
+
+    # Replace value in <rdg wit=...>
+    for rdg in mytree.tree.findall('.//t:%s' % ('rdg'), ns):
+        rdgSiglum = rdg.get('wit')
+        for s in juxtaSigla:
+            rdgSiglum = rdgSiglum.replace(s['juxtaSiglum'], s['mySiglum'])
+        rdg.set('wit', rdgSiglum)
+
+    # Replace file
+    mytree.tree.write(xmlfile, encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
+
 
 
 EDL = ['a1', 'a2', 'o', 'g', 'bonetti']
 for edition in EDL:
-    print('simplify_markup_for_collation.py: I\'m working on %s' % (edition) )
+    print('[simplify_markup_for_collation.py]: I\'m working on witness «%s»' % (edition) )
     mytree = msTree(edition)
     if edition == 'a1':
         mytree.reduce_layers_to_alph_only()
@@ -342,7 +519,7 @@ for edition in EDL:
     mytree.handle_numerals()
     mytree.handle_gaps()
     mytree.handle_add_del() # only needed for MS A
-    mytree.choose('choice', 'sic', '', 'corr')  # check if this works §
+    mytree.choose('choice', 'sic', '', 'corr')
     mytree.choose('choice', 'reg', 'numeral', 'orig')
     mytree.choose('choice', 'reg', 'j', 'orig')
     mytree.choose('choice', 'reg', 'v', 'orig')
@@ -351,8 +528,10 @@ for edition in EDL:
     mytree.recapitalize() 
     mytree.simplify_to_scanlike_text(
             ['rs', 'hi', 'w', 'choice', 'orig', 'reg', 'num', 'subst', 'add', 'del', 'expan', 'sic',
-                'seg', 'lb', 'pb', 'quote', 'title', 'said', 'soCalled', 'surplus', 'supplied', 'gap'], \
-            removepar=False)
+                'seg', 'lb', 'pb', 'quote', 'title', 'said', 'soCalled', 'surplus', 'supplied', 'gap']
+            )
+    mytree.handle_paragraph_tags('bracketsOnly')
+    mytree.tags_to_brackets ([ 'milestone', 'link', 'anchor', 'l'])
     mytree.write()
     # Temporarily needed for CollateX (remove @xmlns)
     with open('%s%s%s.xml' % (myconst.simplifiedpath, edition, myconst.simplifiedsuffix), 'r') as infile:
@@ -362,48 +541,11 @@ for edition in EDL:
         outfile.write(data)
 
 
-#for mySiglum in ['a1_juxta', 'a2_juxta', 'o_juxta', 'g_juxta', 'bonetti_juxta']:
 for mySiglum in ['a1', 'a2', 'o', 'g', 'bonetti']:
     edition = mySiglum + myconst.simplifiedsuffix
     mytree = msTree(edition)
     mytree.list_and_count_elements()
 
 
-
-
-
-
-
-'''
-
-atree = msTree('a')
-atree.reg_orig('numeral', form='reg') 
-atree.write()
-
-gtree = msTree('g')
-gtree.reg_orig('numeral', form='reg') 
-gtree.reg_orig('j', form='reg') 
-gtree.recapitalize() 
-gtree.write()
-
-btree = msTree('bonetti')
-btree.recapitalize() 
-btree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num'], removepar=True)
-btree.write()
-
-atree = msTree('g')
-#atree.list_elements()
-atree.list_entities()
-
-for edition in ['a', 'g', 'bonetti']:
-    mytree = msTree(edition)
-    mytree.choose('choice', 'corr', 'typo', 'sic')
-    mytree.choose('choice', 'reg', 'numeral', 'orig')
-    mytree.choose('choice', 'reg', 'j', 'orig')
-    mytree.choose('choice', 'reg', 'v', 'orig')
-    mytree.choose('subst', 'add', 'correction', 'del')
-    mytree.my_strip_elements('del')
-    mytree.recapitalize() 
-    mytree.simplify_to_scanlike_text(['rs', 'hi', 'note', 'choice', 'orig', 'num', 'add', 'seg', 'lb'], removepar=False)
-    mytree.write()
-'''
+postProcessSimplifiedBeforeJuxtaCommons( ['a1', 'a2', 'o', 'g', 'bonetti'], ['a1', 'g'])
+postProcessJuxtaCommonsFile ('m-short', 'garufi', 'g', 'a')
