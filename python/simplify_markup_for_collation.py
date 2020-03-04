@@ -452,7 +452,7 @@ def finalTextFileProcessingBeforeJuxtaCommons (siglaList, siglaToShortenList):
 
 
 
-EDL = ['a1', 'a2', 'o', 'g', 'bonetti']
+EDL = ['a1', 'a2', 'a2-sorted', 'o', 'g', 'bonetti']
 for edition in EDL:
     print('[simplify_markup_for_collation.py]: I\'m working on witness «%s»' % (edition) )
     mytree = msTree(edition)
@@ -486,11 +486,11 @@ for edition in EDL:
 
 
 '''
-for mySiglum in ['a1', 'a2', 'o', 'g', 'bonetti']:
+for mySiglum in ['a1', 'a2', 'a2-sorted', 'o', 'g', 'bonetti']:
     edition = mySiglum + myconst.simplifiedsuffix
     mytree = msTree(edition)
     mytree.list_and_count_elements()
     '''
 
 
-finalTextFileProcessingBeforeJuxtaCommons( ['a1', 'a2', 'o', 'g', 'bonetti'], ['a1', 'g'])
+finalTextFileProcessingBeforeJuxtaCommons( ['a1', 'a2', 'a2-sorted', 'o', 'g', 'bonetti'], ['a1', 'g'])
