@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
-''' Examples on how to run the functions in this module: 
+''' Examples on how to run the functions in this module:
 
-    listnames('../xml/g.xml', myconst.tei_ns) 
+    listnames('../xml/g.xml', myconst.tei_ns)
     updatenamesfile('../xml/a.xml')
     print('\n-----------------------\n\nNEW SEARCH: \n')
     for myf in ['../xml/a.xml', '../xml/g.xml']:
@@ -19,32 +19,34 @@ from lxml import etree
 import time
 
 
-def sorted_nicely(l): 
-    ''' Sort the given iterable in the way that humans expect.''' 
-    convert = lambda text: int(text) if text.isdigit() else text 
-    alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
-    return sorted(l, key = alphanum_key)
+def sorted_nicely(l):
+    ''' Sort the given iterable in the way that humans expect.'''
+    convert = lambda text: int(text) if text.isdigit() else text
+    alphanum_key = lambda key: [convert(c) for c in re.split('([0-9]+)', key)]
+    return sorted(l, key=alphanum_key)
 
 
-def write_to_output_file (myiterable):
+def write_to_output_file(myiterable):
     datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
-    with open ('%s_output.txt' % (datetime), 'w') as outfile:
+    with open('%s_output.txt' % (datetime), 'w') as outfile:
         for x in myiterable:
             print(x, file=outfile)
 
 class Names():
 
+
     def __init__(self, namefile):
         self.namefile = namefile
         self.nametree = etree.parse(namefile)
         self.okwords = {
-                # Words that are OK to be marked both as <hi> and as <rs> in a specific file
+                # Words that are OK to be marked both as <hi> and as <rs> in a
+                # specific file
                 '../xml/bonetti.xml': ['domine', 'dominus'],
                 '../xml/a.xml': [],
                 '../xml/g.xml': ['domine', 'dominus'],
                 '../xml/foo.xml': ['domine', 'dominus', 'dominum', 'domini', 'augusti', 'augustus', 'augusta', 'justo',
                     'quinto', 'pius', 'desiderio', 'aquila', 'victor', 'uictor', 'augusto', 'regium', 'bono',
-                    'galli', 'mediam', 'urbem', 'urbe', 'felici', 'magno', 'constantia', 'germanus', 
+                    'galli', 'mediam', 'urbem', 'urbe', 'felici', 'magno', 'constantia', 'germanus',
                     'urbis', 'seuerus', 'seueri', 'ualens', 'justi', 'prouinciam', 'maximus', 'maximum', 'maximi',
                     'probus', 'maria', 'paulo', 'clemens', 'sextus', 'commodo', 'magnus', 'asini',
                     'paschalem', 'constans', 'fontis', 'magni', 'quintus', 'largus', 'antistes', 'domino', 'habitus',
@@ -55,30 +57,30 @@ class Names():
                 }
 
 
-    def namedict (self, mydicttag='rs'):
+    def namedict(self, mydicttag='rs'):
         ''' Return a dictionary in which:
             * each key is an lxml Element object with tag name = mydicttag (typipcally <rs> or <hi>);
             * each value is the itertext() of that element in normalized form, i.e. the name included in it and
                 in its child elements.
             All names are in lowercase.
             '''
-        ond = {}    # (output names dictionary) 
+        ond = {}    # (output names dictionary)
         mynames = self.nametree.findall('.//t:%s' % (mydicttag), myconst.ns)
 
         # Case 1: <rs> without child elements
-        ond = {rs:rs.text.lower() for rs in mynames if len(list(rs)) == 0 }   
+        ond = {rs: rs.text.lower() for rs in mynames if len(list(rs)) == 0}
 
         # Case 2: <rs> with child elements
-        for m in mynames:   # 
+        for m in mynames:   #
             if len(list(m)) > 0:
                 for outcast in ['abbr', 'orig', 'sic', 'del']:  # Remove 'orig' and company
-                                                                # (i.e. only leave 'reg' & co.: 'jovem' becomes 'iouem') 
-                    if m.find('.//t:%s' % (outcast), myconst.ns) is not None:   
+                                                                # (i.e. only leave 'reg' & co.: 'jovem' becomes 'iouem')
+                    if m.find('.//t:%s' % (outcast), myconst.ns) is not None:
                         outcastelem = m.find('.//t:%s' % (outcast), myconst.ns)
                         outcastelem.getparent().remove(outcastelem)
                 ond[m] = ''.join(m.itertext()).replace('\n', '')
 
-        return ond 
+        return ond
 
     def nameset (self, mysettag='rs'):
         ''' Return a set (not list) of names marked
@@ -143,10 +145,8 @@ class Names():
         issues_list = []
 
         if outmethod == 'xml':
-            
             #for r in rsdict:   # debug
                 #r.set('n', 'foo')
-            
             # Check for words in <rs> that are also marked with <hi>
             for r in rsdict:
                 if rsdict[r] in hiset and not rsdict[r] in self.okwords[self.namefile]:
@@ -165,7 +165,7 @@ class Names():
             datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
             backup_filename = '_'.join([self.namefile, 'backup', datetime])
             os.system('cp %s %s' % (self.namefile, backup_filename))
-            # Write to output XML file 
+            # Write to output XML file
             self.nametree.write(self.namefile.replace('.xml', '_with_wrong_rs.xml'), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
 
