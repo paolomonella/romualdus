@@ -15,10 +15,11 @@ debug = False
 class treeWithAppElements:
 
     def __init__(self, myXmlFile, printSiglum, msSiglum):
+        self.myXmlFile = myXmlFile
+        self.outputXmlFile = myXmlFile.replace('.xml', '-out.xml')
         self.printSiglum, self.msSiglum = printSiglum, msSiglum
         self.tree = etree.parse(myXmlFile)
         self.apps = self.tree.findall('.//t:app', ns)
-        self.outputXmlFile = myXmlFile.replace('.xml', '-out.xml')
 
     def appComparisonList(self):
         ''' Arguments:
@@ -55,6 +56,8 @@ class treeWithAppElements:
             printReading = app.find('.//t:*[@wit="#%s"]' %
                                     (self.printSiglum), ns)
             msReading = app.find('.//t:*[@wit="#%s"]' % (self.msSiglum), ns)
+            if debug:
+                print(msReading)
             if printReading is None:
                 print(msReading.text)
             if msReading is None:
@@ -113,6 +116,7 @@ class treeWithAppElements:
 
     def variantTypesCountPrint(self):
         '''Print variantTypesCountDict'''
+        print('In file {} there are:'.format(self.myXmlFile))
         for x in self.variantTypesCount():
             print('{:5} {:12}'.format(x[1], x[0]))
 
@@ -127,7 +131,7 @@ class treeWithAppElements:
                 for k in c:
                     print('%s: «%s»' % (k, c[k]))
 
-    def setLems(self):
+    def setLems(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically '''
 
         decisionTable = {
@@ -143,7 +147,7 @@ class treeWithAppElements:
                         {'preferredRdg': 'printReading', 'cert': 'medium'},
                 # Only 4 occurrences in a1/Garufi:
                 'punctInPrint-punctAndLettersInMS-Type':
-                        {'preferredRdg': 'printReading'},
+                        {'preferredRdg': 'printReading', 'cert': 'medium'},
                 'caseType':
                         {'preferredRdg': 'msReading', 'cert': 'high'},
                 'missingInMSType':
@@ -157,6 +161,8 @@ class treeWithAppElements:
                 }
 
         # Decide <lem> and set @cert based on decisionTable:
+        if debug:
+            print(self.appComparisonList())
         for c in self.appComparisonList():
             for myType in decisionTable:
                 if c['type'] == myType:
@@ -165,41 +171,28 @@ class treeWithAppElements:
                     # c[myPreferredRdg] is a TEI element, either <rdg wit="#a">
                     # or <rdg wit="#g">:
                     c[myPreferredRdg].tag = 'lem'
-                    # It can be 'low', 'middle' or 'high':
-                    myCert = decisionTable[myType]['cert']
-                    c['app'].set('cert', myCert)
-
-    def countVariantTypes(self, countedType):
-        '''Count types of variants in a comparisonList.
-            The 1st two arguments are two sigla (put print witness first).
-            The 3rd arguments is the type of variant (e.g. "yType")
-            one particularly wants to count '''
-        typedList = []
-        untypedList = []
-        countedTypeList = []
-        for c in self.appComparisonList():
-            if c['type'] != 'unknown':
-                typedList.append(c)
-            else:
-                untypedList.append(c)
-                if debug:
-                    print('\n')
-                    for k in c:
-                        print('%s: «%s»' % (k, c[k]))
-
-            if c['type'] == countedType:
-                countedTypeList.append(c)
-
-        print('\nTyped:', len(typedList))
-        print('Untyped:', len(untypedList))
-        print('Type "%s":' % (countedType), len(countedTypeList))
+                    if setCert is True:
+                        # myCert can be 'low', 'middle' or 'high':
+                        myCert = decisionTable[myType]['cert']
+                        c['app'].set('cert', myCert)
 
     def write(self):
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml',
                         pretty_print=True, xml_declaration=True)
 
 
+# Apply to m1.cmx (Juxta collation of g.xml and a1.xml, i.e. Garufi/A, 1st
+# part)
 myTree = treeWithAppElements('../xml/m1.xml', 'g', 'a')
 myTree.variantTypesCountPrint()
+myTree.setTypeAttributesForApps()
+myTree.setLems()
+myTree.write()
+
+# Apply to m2cmx (Juxta collation of bonetti.xml and a2.xml, i.e. Garufi/A, 2st
+# part)
+myTree = treeWithAppElements('../xml/m2.xml', 'b', 'a')
+myTree.variantTypesCountPrint()
+myTree.setTypeAttributesForApps()
 myTree.setLems()
 myTree.write()
