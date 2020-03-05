@@ -4,13 +4,14 @@
     http://collatex.obdurodon.org/
     '''
 
-import json,re,myconst,roman
+import json
+import re
 from lxml import etree
 from collatex import *
-from myconst import ns, tei_ns, xml_ns, html_ns 
+from myconst import ns, tei_ns, xml_ns, html_ns
 from variant_type import variantComparison
-#from itertools import combinations
-#from simplify_romualdus_for_collatex import myWitness
+# from itertools import combinations
+# from simplify_romualdus_for_collatex import myWitness
 
 #############################
 # INPUT FILES AND VARIABLES #
@@ -21,8 +22,8 @@ debug = False
 #afile = '../../xml/a_juxta.xml'
 #afile = '../../xml/a.xml'
 ##afile = '../../xml/simplified/afoo_juxta.xml'
-#afile = '../../xml/chronicon.xml'
-#afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml is just a shorter version of g.xml (otherwise it is identical)
+#afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml
+# is just a shorter version of g.xml (otherwise it is identical)
 afile = '../xml/gs-short.xml'
 #bfile = '../../xml/bonetti_juxta.xml'
 #bfile = '../../xml/g.xml'
@@ -244,7 +245,7 @@ def visualizeVariantsInBrackets(jsonOutputList, onlyOutputVariants = False):
 
         '''
         # § To-do: rimuovi file name suffix (_simplified o simili; è in una variabile in myconst) dalla vers. in maiuscolo
-    
+
     for jout in jsonOutputList:
         j = json.loads(jout)
         #print(json.dumps(j, sort_keys=True, indent=4, separators=(',', ': '))  )    # debug
