@@ -492,10 +492,8 @@ def finalTextFileProcessingBeforeJuxtaCommons(siglaList, siglaToShortenList):
     '''In simplified TEI XML files,
         - change [p xml:id="g3.1-3.1"][/p] to [p xml:id="g3.1-3.1"]\n[/p]
         - remove empty lines
-        - create «a1s-short.xml» versions '''
+        - create «a1s-short.xml», «gs-short.xml» etc. versions '''
 
-    myMilestone = \
-        'milestone type="garufi-one-layer-from-here-on" unit="collation"'
     for mySiglum in siglaList:
         edition = mySiglum + myconst.simplifiedsuffix
         xmlfile = '%s/%s.xml' % (myconst.xmlpath, edition)
@@ -508,9 +506,12 @@ def finalTextFileProcessingBeforeJuxtaCommons(siglaList, siglaToShortenList):
                    and line.strip().endswith('"][/p]'):
                     line = line.replace('"][/p]', '"]\n[/p]')
                 if line.strip():  # Remove empty lines
-                    if line[-2:-1] != ' ':  # If line doesn't end with a space,
-                        # add the space
+                    # If line doesn't end with a trailing space, add the space:
+                    if line[-2:-1] != ' ':
                         line = line.replace('\n', ' \n')
+                    # If line doesn't end with two spaces, remove one:
+                    if line[-3:-1] == '  ':
+                        line = line.replace('  \n', ' \n')
                     myLines.append(line)
         with open(xmlfile, 'w') as OUT:
             # Write back long files (e.g. a1s.xml)
@@ -518,25 +519,33 @@ def finalTextFileProcessingBeforeJuxtaCommons(siglaList, siglaToShortenList):
                 print(line, file=OUT, end='')
         # create «a1s-short.xml» versions:
         if mySiglum in siglaToShortenList:
+            if mySiglum in ['g', 'a1']:
+                # It was 'milestone type="garufi-one-layer-from-here-on"
+                # unit="collation"':
+                stopLine = 'p xml:id="g6.26-6.34"'
+            elif mySiglum in ['bonetti', 'a2-sorted']:
+                stopLine = 'p xml:id="g169.5-170.14"'
+            else:
+                print('I don\'t know where to cut file {}'.format(mySiglum))
             with open(xmlfile, 'r') as IN:
                 with open(shortxmlfile, 'w') as OUT:
                     for line in IN:
-                        print(line, file=OUT, end='')
-                        if line[1:].startswith(myMilestone):
-                            # [1:] removes the first char,
-                            # which might be '<' or '['
+                        if re.search(stopLine, line):
                             print('</body>\n</text>\n</TEI>', file=OUT, end='')
                             break
+                        else:
+                            print(line, file=OUT, end='')
 
 
-EDL = ['a1', 'a2', 'a2-sorted', 'o', 'g', 'bonetti']
+EDL = ['a1', 'a2-sorted', 'o', 'g', 'bonetti']
 for edition in EDL:
     print('[simplify_markup_for_collation.py]: I\'m working on witness «%s»' %
           (edition))
     mytree = msTree(edition)
     if edition == 'a1':
         mytree.reduce_layers_to_alph_only()
-    for tag_to_strip in ['interp', 'abbr', 'surplus', 'note']:
+    for tag_to_strip in ['interp', 'abbr', 'surplus', 'note', 'milestone',
+                         'link', 'anchor']:
         mytree.my_strip_elements(tag_to_strip)
     mytree.handle_numerals()
     mytree.handle_gaps()
@@ -556,8 +565,9 @@ for edition in EDL:
              'surplus', 'supplied', 'gap']
             )
     mytree.handle_paragraph_tags('bracketsOnly')
-    mytree.tags_to_brackets(['milestone', 'link', 'anchor', 'l'])
+    mytree.tags_to_brackets(['l'])
     mytree.write()
+    '''
     # Temporarily needed for CollateX (remove @xmlns)
     with open('%s%s%s.xml' % (myconst.simplifiedpath,
                               edition, myconst.simplifiedsuffix), 'r')\
@@ -568,15 +578,17 @@ for edition in EDL:
             as outfile:
         data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
         outfile.write(data)
+        '''
 
 
 '''
-for mySiglum in ['a1', 'a2', 'a2-sorted', 'o', 'g', 'bonetti']:
+for mySiglum in ['a1', 'a2-sorted', 'o', 'g', 'bonetti']:
     edition = mySiglum + myconst.simplifiedsuffix
     mytree = msTree(edition)
     mytree.list_and_count_elements()
     '''
 
 
-finalTextFileProcessingBeforeJuxtaCommons(['a1', 'a2', 'a2-sorted', 'o', 'g',
-                                           'bonetti'], ['a1', 'g'])
+finalTextFileProcessingBeforeJuxtaCommons(
+    ['a1', 'a2-sorted', 'o', 'g', 'bonetti'],
+    ['a1', 'a2-sorted', 'g', 'bonetti'])
