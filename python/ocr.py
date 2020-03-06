@@ -20,7 +20,8 @@ bom = False     # Set to True if you want to get rid of the initial BOM
     7. Add <num>
     8. Un-capitalize everything
     9. Substitute j → i in a-1and2unified.xml (and use &jj; and &uu; in bonetti.xml and g.xml)
-    10. Eventually check empty <p>s appended (with the same xml:id's) to b.xml and c.xml
+    10. Eventually check empty <p>s appended (with the same xml:id's) to xml
+    files of MSS B and C
 
 The input.txt file must look like this
 
