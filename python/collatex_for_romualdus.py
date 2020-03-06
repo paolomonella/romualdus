@@ -22,7 +22,7 @@ debug = False
 #afile = '../../xml/a_juxta.xml'
 #afile = '../../xml/a.xml'
 ##afile = '../../xml/simplified/afoo_juxta.xml'
-#afile = '../../xml/ripostiglio/g-collation.xml' # g-collation.xml
+#afile = '../../xml/other/g-collation.xml' # g-collation.xml
 # is just a shorter version of g.xml (otherwise it is identical)
 afile = '../xml/gs-short.xml'
 #bfile = '../../xml/bonetti_juxta.xml'
@@ -30,7 +30,7 @@ afile = '../xml/gs-short.xml'
 #bfile = '../../xml/simplified/bfoo_juxta.xml'
 ##bfile = '../../xml/simplified/gfoo_juxta.xml'
 #bfile = '../../xml/a.xml'
-#bfile = '../../xml/ripostiglio/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
+#bfile = '../../xml/other/a-collation.xml' # a-collation.xml is just a shorter version of a.xml (otherwise it is identical)
 bfile = '../xml/a1s-short.xml'
 
 aSiglum = afile.split('/')[-1].split('.')[0].upper()

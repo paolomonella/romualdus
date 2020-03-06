@@ -21,6 +21,9 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
     ###########################
 
     xmlfile = '%s%s.xml' % (myconst.xmlpath, siglum)
+    outSiglum = siglum + myconst.juxta_par_and_sigla_suffix
+    xmlOutFile = '%s%s.xml' % (myconst.xmlpath, outSiglum)
+    print('xmlfile, outSiglum, xmlOutFile', xmlfile, outSiglum, xmlOutFile)
     with open(xmlfile, 'r') as IN:
         myLines = []
         for line in IN:
@@ -28,7 +31,7 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
             line = line.replace('[', '\n<').replace(']', '>\n')
             line = line.replace('&quot;', '"')
             myLines.append(line)
-    with open(xmlfile, 'w') as OUT:
+    with open(xmlOutFile, 'w') as OUT:
         for line in myLines:
             print(line, file=OUT, end='')
 
@@ -37,7 +40,7 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
     #############
 
     # Parse XML tree and find <witness> elements
-    mytree = msTree(siglum)
+    mytree = msTree(outSiglum)
     witnesses = mytree.tree.findall('.//t:%s' % ('witness'), myconst.ns)
     juxtaSigla = [
         {'juxtaSiglum': witness.get(myconst.xml_ns + 'id'),
@@ -98,7 +101,7 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
     print(mytree.siglum, len(par))
 
     # Replace file
-    mytree.tree.write(xmlfile, encoding='UTF-8', method='xml',
+    mytree.tree.write(xmlOutFile, encoding='UTF-8', method='xml',
                       pretty_print=True, xml_declaration=True)
 
 
@@ -106,12 +109,11 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
 # EXECUTE FUNCTIONS  #
 ######################
 
-
-'''
 postProcessJuxtaCommonsFile(siglum='m1', printEdition='garufi',
                             printSiglum='g', msSiglum='a')
-postProcessJuxtaCommonsFile(siglum='m1-short', printEdition='garufi',
+postProcessJuxtaCommonsFile(siglum='m2', printEdition='bonetti',
                             printSiglum='g', msSiglum='a')
 '''
-postProcessJuxtaCommonsFile(siglum='m2', printEdition='bonetti',
+postProcessJuxtaCommonsFile(siglum='m1-short', printEdition='garufi',
                             printSiglum='b', msSiglum='a')
+'''

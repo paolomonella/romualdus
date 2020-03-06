@@ -32,7 +32,7 @@ def entitize(filename):
     datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
     input_filename = ''.join(['../xml/', filename, '.xml'])
     backup_filename = ''.join([
-        '../xml/ripostiglio/backup/backup_entitization/',
+        '../xml/other/backup/backup_entitization/',
         datetime,
         '_backup_before_entitization_of_',
         filename,

@@ -8,6 +8,8 @@ xmlpath = '../xml/'
 simplifiedpath = '../xml/'
 htmlpath = '../html/'
 simplifiedsuffix = '-simple'
+juxta_par_and_sigla_suffix = '-par'
+
 
 # Metatext markers
 # The e.text of HTML elements having @class="pb">, @class="garufi" etc.
