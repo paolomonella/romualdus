@@ -396,13 +396,13 @@ class msTree:
         '''
 
         # Read ToS
-        if self.siglum == 'a1':
+        if self.siglum in ['a1', 'a2', 'a-1and2unified']:
             mySiglum = 'a'
         else:
             mySiglum = self.siglum
         toscsvfile = '%s/%s-tos.csv' % (myconst.csvpath, mySiglum)
         with open(toscsvfile) as atosfile:
-            # reads csv into a list of lists:
+            # Read csv into a list of lists:
             tos = list(list(rec) for rec in csv.reader(
                 atosfile, delimiter='\t'))
             # Columns: 0=Grapheme  1=Alphabeme(s)    2=Grapheme visualization

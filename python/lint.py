@@ -21,7 +21,14 @@ def tosLint(lintSiglum):
 
     # Import table of signs
     # csvpath might look like "../csv/":
-    csvfile = '%s%s-tos.csv' % (myconst.csvpath, lintSiglum)
+
+
+    if lintSiglum in ['a1', 'a2', 'a-1and2unified']:
+        mySiglum = 'a'
+    else:
+        mySiglum = lintSiglum
+    csvfile = '%s%s-tos.csv' % (myconst.csvpath, mySiglum)
+
     with open(csvfile) as mtf:  # My Tables of signs File
         # Reads csv into a list of lists:
         myTos = list(list(rec) for rec in csv.reader(mtf, delimiter='\t'))

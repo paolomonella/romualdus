@@ -346,10 +346,15 @@ class ocr:
 
         import csv
 
-	# Input CSV combi file
-        combifile = '%s%s-combi.csv' % (myconst.csvpath, abbrev_siglum)    # csvpath might look like "../csv/"
-	# Input CSV tos file
-        tosfile = '%s%s-tos.csv' % (myconst.csvpath, abbrev_siglum)    # csvpath might look like "../csv/"
+        if abbrev_siglum in ['a1', 'a2', 'a-1and2unified']:
+            mySiglum = 'a'
+        else:
+            mySiglum = abbrev_siglum
+
+        # Input CSV combi file
+        combifile = '%s%s-combi.csv' % (myconst.csvpath, mySiglum)    # csvpath might look like "../csv/"
+        # Input CSV tos file
+        tosfile = '%s%s-tos.csv' % (myconst.csvpath, mySiglum)
 
         with open(combifile) as mycombi:
             combi = list(list(rec) for rec in csv.reader(mycombi, delimiter='\t')) #reads csv into a list of lists

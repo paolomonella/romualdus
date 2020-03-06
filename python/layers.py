@@ -31,7 +31,13 @@ def extractLayers(siglum, baretext=False):
     '''
 
     # Read ToS
-    toscsvfile = '%s/%s-tos.csv' % (myconst.csvpath, siglum)
+
+    if siglum in ['a1', 'a2', 'a-1and2unified']:
+        mySiglum = 'a'
+    else:
+        mySiglum = siglum
+    toscsvfile = '%s%s-tos.csv' % (myconst.csvpath, mySiglum)
+
     with open(toscsvfile) as atosfile:
         # read csv into a list of lists
         tos = list(list(rec) for rec in csv.reader(atosfile, delimiter='\t'))
@@ -39,7 +45,7 @@ def extractLayers(siglum, baretext=False):
         # 3=Type    4=Notes    5=Image(s)
 
     # Read Abbreviation Combinations file
-    combicsvfile = '%s/%s-combi.csv' % (myconst.csvpath, siglum)
+    combicsvfile = '%s/%s-combi.csv' % (myconst.csvpath, mySiglum)
     with open(combicsvfile) as combifile:
         # reads csv into a list of lists
         combi = list(list(rec) for rec in csv.reader(combifile,

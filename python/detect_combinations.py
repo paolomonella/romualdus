@@ -20,8 +20,13 @@ def detectCommonAbbrCombinations(siglum, quiet=True):
     ot = []
     xmlfile = '%s%s.xml' % (myconst.xmlpath, siglum)
     tree = etree.parse(xmlfile)
+
     # The CSV file with the common abbreviation combinations
-    csvcombifile = '%s%s-combi.csv' % (myconst.csvpath, siglum)
+    if siglum in ['a1', 'a2', 'a-1and2unified']:
+        mySiglum = 'a'
+    else:
+        mySiglum = siglum
+    csvcombifile = '%s%s-combi.csv' % (myconst.csvpath, mySiglum)
     with open(csvcombifile) as combifile:
         # read csv into a list of lists:
         combi = list(list(rec) for rec in csv.reader(combifile,
