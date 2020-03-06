@@ -52,7 +52,7 @@ def spread_ids (get_p_ids_from, append_p_ids_to):
         original XML files.
         '''
     #get_p_ids_from = 'g'
-    #append_p_ids_to = ['a', 'b', 'c']
+    #append_p_ids_to = ['a-1and2unified', 'b', 'c']
     
     input_tree = etree.parse('../xml/%s.xml' % get_p_ids_from)
     input_body = input_tree.find('.//t:body', myconst.ns)
@@ -77,9 +77,9 @@ def spread_ids (get_p_ids_from, append_p_ids_to):
         output_tree.write('../xml/%s.xml' % (ms), encoding='UTF-8', method='xml', pretty_print=True, xml_declaration=True)
 
 
-spread_ids ('a', 'b')
-spread_ids ('a', 'c')
-#compare_ids ('a', 'geb', orderMatters = False) # Quindi g + bonetti corrisponde ad a
+spread_ids ('a-1and2unified', 'b')
+spread_ids ('a-1and2unified', 'c')
+#compare_ids ('a-1and2unified', 'geb', orderMatters = False) # Quindi g + bonetti corrisponde ad a
 #compare_ids ('a1', 'g', orderMatters = True)   # OK prima-parte-a / g (non ci sono trasposizioni)
 #compare_ids ('a2', 'bonetti', orderMatters = False) # OK seconda-parte-a / bonetti (ci sono trasposizioni, però)
 #compare_ids ('o', 'bonetti', orderMatters = True) # OK seconda-parte-a / bonetti (ci sono trasposizioni, però)

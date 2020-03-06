@@ -8,7 +8,7 @@ from lxml import etree
 import roman
 import re
 
-siglum = 'foo' # XML filename to parse ('a' for 'a.xml'; 'bonetti' for 'bonetti.xml')
+siglum = 'foo' # XML filename to parse ('g' for 'g.xml'; 'bonetti' for 'bonetti.xml')
 
 def getRomanContent(num, checkallnumbers=True, debug=False):
     ''' Return the roman content (e.g. XIII, CCXVI) of <num> elements.
@@ -50,8 +50,8 @@ def getRomanContent(num, checkallnumbers=True, debug=False):
 def setValues(siglum):
     ''' Take Roman numerals in the text (already marked up with <num>)
         and insert a @value attribute with its arabic value.
-        The 'siglum' is the XML filename to parse ('a' for 'a.xml'; 'bonetti' for 'bonetti.xml' etc.).
-        Then write the modified tree to another XML file ('numerals-a.xml'; 'numerals-bonetti.xml' etc.).
+        The 'siglum' is the XML filename to parse ('g' for 'g.xml'; 'bonetti' for 'bonetti.xml' etc.).
+        Then write the modified tree to another XML file ('numerals-g.xml'; 'numerals-bonetti.xml' etc.).
         '''
     n = myconst.ns
     tree = etree.parse('../xml/%s.xml' % siglum)

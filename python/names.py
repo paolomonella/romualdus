@@ -5,10 +5,10 @@
 ''' Examples on how to run the functions in this module:
 
     listnames('../xml/g.xml', myconst.tei_ns)
-    updatenamesfile('../xml/a.xml')
+    updatenamesfile('../xml/a-1and2unified.xml')
     print('\n-----------------------\n\nNEW SEARCH: \n')
-    for myf in ['../xml/a.xml', '../xml/g.xml']:
-    for myf in ['../xml/a.xml']:
+    for myf in ['../xml/a-1and2unified.xml', '../xml/g.xml']:
+    for myf in ['../xml/a-1and2unified.xml']:
         checkrs(myf)
         '''
 
@@ -42,7 +42,7 @@ class Names():
                 # Words that are OK to be marked both as <hi> and as <rs> in a
                 # specific file
                 '../xml/bonetti.xml': ['domine', 'dominus'],
-                '../xml/a.xml': [],
+                '../xml/a-1and2unified.xml': [],
                 '../xml/g.xml': ['domine', 'dominus'],
                 '../xml/foo.xml': ['domine', 'dominus', 'dominum', 'domini', 'augusti', 'augustus', 'augusta', 'justo',
                     'quinto', 'pius', 'desiderio', 'aquila', 'victor', 'uictor', 'augusto', 'regium', 'bono',
@@ -194,7 +194,7 @@ class Names():
 
 def updatenamesfile (updateProperNamesInputXmlFile):
     ''' Update the rs.txt file, merging names in <rs> elements in
-        file updateProperNamesInputXmlFile (e.g. a.xml) and names
+        file updateProperNamesInputXmlFile (e.g. a-1and2unified.xml) and names
         in the original rs.txt file. Backup the original file.
         ISSUE: This fills the rs.txt file with 'names' that are not
         necessarily such (like 'clemens' etc.).
@@ -245,4 +245,4 @@ def updatenamesfile (myFirstFile, mySecondFile):
 #N = Names('../xml/foo.xml')
 #N.checkrs()
 
-#updatenamesfile('../xml/g.xml','../xml/a.xml')
+#updatenamesfile('../xml/g.xml','../xml/a-1and2unified.xml')
