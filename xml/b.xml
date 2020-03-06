@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
-<!ENTITY glb '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
+<!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
 ]>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <!--gd  = Garufi Dash-->
