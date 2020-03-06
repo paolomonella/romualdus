@@ -124,6 +124,7 @@ class treeWithAppElements:
         '''Set @type attributes in <app> elements in the input TEI XML file '''
         for c in self.appComparisonList():
             c['app'].set('type', c['type'])
+            # if c['type'] == 'yType':
             if debug:
                 print('\n')
                 print('«%s» | «%s» %15s @type="%s"' %
@@ -181,7 +182,20 @@ class treeWithAppElements:
                         pretty_print=True, xml_declaration=True)
 
 
-# Apply to m1.cmx (Juxta collation of g.xml and a1.xml, i.e. Garufi/A, 1st
+collation_and_parameters = [
+    ('../xml/m1-par.xml', 'g', 'a'),
+    ('../xml/m2-par.xml', 'b', 'a'),
+]
+
+for cap in collation_and_parameters:
+    myTree = treeWithAppElements(cap[0], cap[1], cap[2])
+    myTree.variantTypesCountPrint()
+    myTree.setTypeAttributesForApps()
+    myTree.setLems()
+    myTree.write()
+
+'''
+# Apply to m1.xml (Juxta collation of g.xml and a1.xml, i.e. Garufi/A, 1st
 # part)
 myTree = treeWithAppElements('../xml/m1.xml', 'g', 'a')
 myTree.variantTypesCountPrint()
@@ -189,10 +203,12 @@ myTree.setTypeAttributesForApps()
 myTree.setLems()
 myTree.write()
 
-# Apply to m2cmx (Juxta collation of bonetti.xml and a2.xml, i.e. Garufi/A, 2st
+# Apply to m2.xml
+# (Juxta collation of bonetti.xml and a2.xml, i.e. Garufi/A, 2st
 # part)
 myTree = treeWithAppElements('../xml/m2.xml', 'b', 'a')
 myTree.variantTypesCountPrint()
 myTree.setTypeAttributesForApps()
 myTree.setLems()
 myTree.write()
+'''

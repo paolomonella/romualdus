@@ -562,10 +562,10 @@ for edition in EDL:
             ['rs', 'hi', 'w', 'choice', 'orig', 'reg', 'num', 'subst', 'add',
              'del', 'expan', 'sic',
              'seg', 'lb', 'pb', 'quote', 'title', 'said', 'soCalled',
-             'surplus', 'supplied', 'gap']
+             'surplus', 'supplied', 'gap', 'l']
             )
     mytree.handle_paragraph_tags('bracketsOnly')
-    mytree.tags_to_brackets(['l'])
+    # mytree.tags_to_brackets(['l'])
     mytree.write()
     '''
     # Temporarily needed for CollateX (remove @xmlns)

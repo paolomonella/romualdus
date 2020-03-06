@@ -211,6 +211,7 @@ def getVariantTypeBasedOnDiff(myDiffList, myString1, myString2):
             ['u', 'v', 'v'],
             ['U', 'V', 'v'],
             ['i', 'j', 'j'],
+            ['c', 't', 'tc'],
             ['ae', 'e', 'ae'],
             ['hegium', 'egium', 'h'],
             ['Hostiensi', 'Ostiensi', 'h'],
@@ -234,6 +235,10 @@ def getVariantTypeBasedOnDiff(myDiffList, myString1, myString2):
         if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]):
             if myType == 'unknown':
                 myType = '%sType' % (t[2])
+                if debug:
+                    # debug1
+                    print('%s/%s=%s' %
+                          (myString1, myString2, myType), end=', ')
             else:
                 print('Error! Diff «%s»/«%s» matched two different types: \
                       %s and %sType' % (myDiff1, myDiff2, myType, t[2]))
