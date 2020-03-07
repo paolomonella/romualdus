@@ -21,7 +21,7 @@ class treeWithAppElements:
         self.tree = etree.parse(myXmlFile)
         self.apps = self.tree.findall('.//t:app', ns)
 
-    def appComparisonList(self):
+    def appDict(self):
         ''' Arguments:
             - printSiglum is the siglum (e.g. 'g' or 'bonetti')
             of the first witness (that's normally the print edition)
@@ -56,10 +56,18 @@ class treeWithAppElements:
             printReading = app.find('.//t:*[@wit="#%s"]' %
                                     (self.printSiglum), ns)
             msReading = app.find('.//t:*[@wit="#%s"]' % (self.msSiglum), ns)
+
+            # Debug tests: check if something went wrong
             if debug:
                 print(msReading)
-            if printReading is None:
-                print(msReading.text)
+            if debug and printReading is None:
+                print('[Debug 07.03.2020 10.29] In MS %s printReading \
+                      is None in app with parent \
+                      paragraph %s with attributes %s and grandparent %s' %
+                      (self.myXmlFile,
+                       app.getparent().tag,
+                       app.getparent().attrib,
+                       app.getparent().getparent().tag))
             if msReading is None:
                 print(printReading.text)
             if printReading.text is not None:
@@ -74,8 +82,7 @@ class treeWithAppElements:
                 print('\n\nprintText: «%s»' % (printText))
                 print('msText: «%s»' % (msText))
 
-            # MyComp is a dict.
-            # Note that the 1st one is the Garufi text; the 2nd is MS A text
+            # MyComp is a dictionary:
             myComp = variantComparison(printText, msText)
             myComp['app'] = app
             myComp['printReading'] = printReading
@@ -87,7 +94,7 @@ class treeWithAppElements:
 
     def variantTypesList(self):
         '''Return a list all variant types in <app> '''
-        myList = [c['type'] for c in self.appComparisonList()]
+        myList = [c['type'] for c in self.appDict()]
         return myList
 
     def variantTypesCountSetList(self):
@@ -122,7 +129,10 @@ class treeWithAppElements:
 
     def setTypeAttributesForApps(self):
         '''Set @type attributes in <app> elements in the input TEI XML file '''
-        for c in self.appComparisonList():
+        if debug:
+            myTypesDebug = [c['type'] for c in self.appDict()]
+            print('[Debug 07.03.2020] %s' % (set(myTypesDebug)))
+        for c in self.appDict():
             c['app'].set('type', c['type'])
             # if c['type'] == 'yType':
             if debug:
@@ -163,8 +173,8 @@ class treeWithAppElements:
 
         # Decide <lem> and set @cert based on decisionTable:
         if debug:
-            print(self.appComparisonList())
-        for c in self.appComparisonList():
+            print(self.appDict())
+        for c in self.appDict():
             for myType in decisionTable:
                 if c['type'] == myType:
                     # It can be 'printReading' or 'msReading':
