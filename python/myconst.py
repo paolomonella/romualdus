@@ -2,11 +2,12 @@
 # -*- coding: utf-8 -*-
 
 # File paths
-csvpath = '../csv/'
 xmlpath = '../xml/'
 # simplifiedpath = '../xml/juxtacommons/'
 simplifiedpath = '../xml/'
+csvpath = '../csv/'
 htmlpath = '../html/'
+jsonpath = '../json/'
 simplifiedsuffix = '-simple'
 juxta_par_and_sigla_suffix = '-par'
 

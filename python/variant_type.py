@@ -5,6 +5,8 @@
     other TEI XML elements'''
 
 import roman
+import json
+from myconst import jsonpath
 
 debug = False
 
@@ -206,35 +208,18 @@ def getVariantTypeBasedOnDiff(myDiffList, myString1, myString2):
 
     myDiff1, myDiff2 = myDiffList[0], myDiffList[1]
 
-    typeList = [
-            ['i', 'y', 'y'],
-            ['u', 'v', 'v'],
-            ['U', 'V', 'v'],
-            ['i', 'j', 'j'],
-            ['c', 't', 'tc'],
-            ['ae', 'e', 'ae'],
-            ['hegium', 'egium', 'h'],
-            ['Hostiensi', 'Ostiensi', 'h'],
-            ['hlodoueus', 'lodoueus', 'h'],
-            ['habentes', 'abentes', 'h'],
-            ['hari', 'ari', 'h'],
-            ['ha', 'a', 'h'],
-            ['lia', 'ia', 'll'],
-            ['lisario', 'isario', 'll'],
-            ['lisarius', 'isarius', 'll'],
-            ['np', 'mb', 'orth'],
-            ['nati', 'pnati', 'orth'],
-            ['historia', 'ystoria', 'hi-y-'],
-            ['historiis', 'ystoriis', 'hi-y-'],
-            ['hil', 'chil', 'nichil'],
-            ]
+    jfile = ('%sdiff_types.json' % (jsonpath))
+    with open(jfile) as f:
+        json_data = json.load(f)
+    diffTypes = json_data['diffTypes']
 
     myType = 'unknown'
-    for t in typeList:
+    for t in diffTypes:
         # sorted() makes the order of diffs in the MSS irrelevant:
-        if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]):
+        # if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]):
+        if sorted([myDiff1, myDiff2]) == sorted([t['diff1'], t['diff2']]):
             if myType == 'unknown':
-                myType = '%sType' % (t[2])
+                myType = '%sType' % (t['type'])
                 if debug:
                     print('[Debug 07.03.2020 10.54] The diff\
                           between strings %s/%s is %s/%s,\

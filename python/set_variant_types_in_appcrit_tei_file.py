@@ -5,8 +5,10 @@
 
 
 import operator
+import json
 from lxml import etree
 from myconst import ns
+from myconst import jsonpath
 from variant_type import variantComparison
 
 debug = False
@@ -145,31 +147,9 @@ class treeWithAppElements:
     def setLems(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically '''
 
-        decisionTable = {
-                'num-WordType':
-                        {'preferredRdg': 'printReading', 'cert': 'high'},
-                'differentPunctType':
-                        {'preferredRdg': 'msReading', 'cert': 'high'},
-                'unknown':
-                        {'preferredRdg': 'printReading', 'cert': 'medium'},
-                'missingInPrintType':
-                        {'preferredRdg': 'printReading', 'cert': 'medium'},
-                'num-numType':
-                        {'preferredRdg': 'printReading', 'cert': 'medium'},
-                # Only 4 occurrences in a1/Garufi:
-                'punctInPrint-punctAndLettersInMS-Type':
-                        {'preferredRdg': 'printReading', 'cert': 'medium'},
-                'caseType':
-                        {'preferredRdg': 'msReading', 'cert': 'high'},
-                'missingInMSType':
-                        {'preferredRdg': 'printReading', 'cert': 'medium'},
-                'missingInPrint-PunctInMS-Type':
-                        {'preferredRdg': 'msReading', 'cert': 'high'},
-                'punctInPrint-missingInMS-Type':
-                        {'preferredRdg': 'msReading', 'cert': 'high'},
-                'nichilType':
-                        {'preferredRdg': 'printReading', 'cert': 'medium'},
-                }
+        jfile = ('%sdecision_table.json' % (jsonpath))
+        with open(jfile) as f:
+            decisionTable = json.load(f)
 
         # Decide <lem> and set @cert based on decisionTable:
         if debug:
@@ -188,6 +168,7 @@ class treeWithAppElements:
                         c['app'].set('cert', myCert)
 
     def write(self):
+        ''' Write my XML tree to an external file '''
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml',
                         pretty_print=True, xml_declaration=True)
 
@@ -204,7 +185,7 @@ for cap in collation_and_parameters:
     myTree.setLems()
     myTree.write()
 
-'''
+
 # Apply to m1.xml (Juxta collation of g.xml and a1.xml, i.e. Garufi/A, 1st
 # part)
 myTree = treeWithAppElements('../xml/m1.xml', 'g', 'a')
@@ -221,4 +202,3 @@ myTree.variantTypesCountPrint()
 myTree.setTypeAttributesForApps()
 myTree.setLems()
 myTree.write()
-'''
