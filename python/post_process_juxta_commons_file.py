@@ -6,6 +6,8 @@
 import myconst
 from simplify_markup_for_collation import msTree
 
+debug = False
+
 
 def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
                                 printSiglum='g', msSiglum='a'):
@@ -98,7 +100,9 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
         body.append(child)
     body.remove(par)
 
-    print(mytree.siglum, len(par))
+    if debug:
+        print('[Debug 07.03.2020 10.41] siglum %s, including %s paragraphs' %
+              (mytree.siglum, len(par)))
 
     # Replace file
     mytree.tree.write(xmlOutFile, encoding='UTF-8', method='xml',
@@ -112,7 +116,7 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
 postProcessJuxtaCommonsFile(siglum='m1', printEdition='garufi',
                             printSiglum='g', msSiglum='a')
 postProcessJuxtaCommonsFile(siglum='m2', printEdition='bonetti',
-                            printSiglum='g', msSiglum='a')
+                            printSiglum='b', msSiglum='a')
 '''
 postProcessJuxtaCommonsFile(siglum='m1-short', printEdition='garufi',
                             printSiglum='b', msSiglum='a')
