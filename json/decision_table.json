@@ -1,0 +1,25 @@
+{
+    "num-WordType":
+    {"preferredRdg": "printReading", "cert": "high"},
+    "differentPunctType":
+    {"preferredRdg": "msReading", "cert": "high"},
+    "unknown":
+    {"preferredRdg": "printReading", "cert": "medium"},
+    "missingInPrintType":
+    {"preferredRdg": "printReading", "cert": "medium"},
+    "num-numType":
+    {"preferredRdg": "printReading", "cert": "medium"},
+    "punctInPrint-punctAndLettersInMS-Type": 
+    {"preferredRdg": "printReading", "cert": "medium", "note": "Only 4 occurrences in a1/Garufi"},
+    "caseType":
+    {"preferredRdg": "msReading", "cert": "high"},
+    "missingInMSType":
+    {"preferredRdg": "printReading", "cert": "medium"},
+    "missingInPrint-PunctInMS-Type":
+    {"preferredRdg": "msReading", "cert": "high"},
+    "punctInPrint-missingInMS-Type":
+    {"preferredRdg": "msReading", "cert": "high"},
+    "nichilType":
+    {"preferredRdg": "printReading", "cert": "medium"}
+}
+

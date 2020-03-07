@@ -1,0 +1,25 @@
+{
+	"diffTypes":
+	[
+		{"diff1": "i", "diff2": "y", "type": "y"},
+		{"diff1": "u", "diff2": "v", "type": "v"},
+		{"diff1": "U", "diff2": "V", "type": "v"},
+		{"diff1": "i", "diff2": "j", "type": "j"},
+		{"diff1": "c", "diff2": "t", "type": "tc"},
+		{"diff1": "ae", "diff2": "e", "type": "ae"},
+		{"diff1": "hegium", "diff2": "egium", "type": "h"},
+		{"diff1": "Hostiensi", "diff2": "Ostiensi", "type": "h"},
+		{"diff1": "hlodoueus", "diff2": "lodoueus", "type": "h"},
+		{"diff1": "habentes", "diff2": "abentes", "type": "h"},
+		{"diff1": "hari", "diff2": "ari", "type": "h"},
+		{"diff1": "ha", "diff2": "a", "type": "h"},
+		{"diff1": "lia", "diff2": "ia", "type": "ll"},
+		{"diff1": "lisario", "diff2": "isario", "type": "ll"},
+		{"diff1": "lisarius", "diff2": "isarius", "type": "ll"},
+		{"diff1": "np", "diff2": "mb", "type": "orth"},
+		{"diff1": "nati", "diff2": "pnati", "type": "orth"},
+		{"diff1": "historia", "diff2": "ystoria", "type": "hi-y-"},
+		{"diff1": "historiis", "diff2": "ystoriis", "type": "hi-y-"},
+		{"diff1": "hil", "diff2": "chil", "type": "nichil"}
+	]
+}
