@@ -9,23 +9,17 @@ from simplify_markup_for_collation import msTree
 debug = False
 
 
-def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
-                                printSiglum='g', msSiglum='a'):
-    ''' Change
+def replacePointyBrackets(siglum):
+    ''' Replace <> with [], i.e. change
             - [tag attr="value"] to \n<tag attr="value">
             - [/tag] to \n</tag>
-        Substitute
-            - JuxtaComons sigla with my sigla ('g', 'a', 'b' etc.)
         '''
-
-    ###########################
-    # REPLACE POINTY BRACKETS #
-    ###########################
 
     xmlfile = '%s%s.xml' % (myconst.xmlpath, siglum)
     outSiglum = siglum + myconst.juxta_par_and_sigla_suffix
     xmlOutFile = '%s%s.xml' % (myconst.xmlpath, outSiglum)
-    print('xmlfile, outSiglum, xmlOutFile', xmlfile, outSiglum, xmlOutFile)
+    if debug:
+        print('xmlfile, outSiglum, xmlOutFile', xmlfile, outSiglum, xmlOutFile)
     with open(xmlfile, 'r') as IN:
         myLines = []
         for line in IN:
@@ -37,9 +31,14 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
         for line in myLines:
             print(line, file=OUT, end='')
 
-    #############
-    # FIX SIGLA #
-    #############
+
+def replaceSigla(siglum, printEdition='garufi',
+                 printSiglum='g', msSiglum='a'):
+
+    ''' Substitute JuxtaCommons sigla with my sigla ('g', 'a', 'b' etc.) '''
+
+    outSiglum = siglum + myconst.juxta_par_and_sigla_suffix
+    xmlOutFile = '%s%s.xml' % (myconst.xmlpath, outSiglum)
 
     # Parse XML tree and find <witness> elements
     mytree = msTree(outSiglum)
@@ -63,12 +62,17 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
 
     # Check if the print <witness> has been found or not
     if juxtaPrintSiglum == 'unknown':
-        print('I haven\'t found what witness in %s corresponds to %s. \
-              Please include string «%s» in the text of one <witness> in %s' %
-              (siglum, printEdition.capitalize(), printEdition, siglum))
+        print(('I haven\'t found what witness in {} corresponds to {}.'
+               'Please include string «{}» in the text'
+               'of one <witness> in {}').format(siglum,
+                                                printEdition.capitalize(),
+                                                printEdition,
+                                                siglum))
     else:
-        print('The JuxtaCommons-generated witness for %s is %s' %
-              (printEdition.capitalize(), juxtaPrintSiglum))
+        print(('\n[post_process_juxta_commons_file.py / replaceSigla] '
+               'The JuxtaCommons-generated witness'
+               'for {} in {} is {}').format(printEdition.capitalize(),
+                                            siglum, juxtaPrintSiglum))
 
     for myWitness in juxtaSigla:
         # if myWitness['mySiglum'] is None:
@@ -91,9 +95,20 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
             rdgSiglum = rdgSiglum.replace(s['juxtaSiglum'], s['mySiglum'])
         rdg.set('wit', rdgSiglum)
 
-    ######################################
-    # Remove empty <p> wrapping all text #
-    ######################################
+    # Replace file
+    mytree.tree.write(xmlOutFile, encoding='UTF-8', method='xml',
+                      pretty_print=True, xml_declaration=True)
+
+
+def removeEmptyParWrappingAllText(siglum):
+    ''' Remove empty <p> wrapping all text in JuxtaCommons-generated
+        TEI XML file '''
+
+    outSiglum = siglum + myconst.juxta_par_and_sigla_suffix
+    xmlOutFile = '%s%s.xml' % (myconst.xmlpath, outSiglum)
+
+    # Parse XML tree and find <witness> elements
+    mytree = msTree(outSiglum)
     body = mytree.tree.find('.//{http://www.tei-c.org/ns/1.0}body')
     par = body.find('.//{http://www.tei-c.org/ns/1.0}p')
     for child in par:
@@ -107,17 +122,3 @@ def postProcessJuxtaCommonsFile(siglum, printEdition='garufi',
     # Replace file
     mytree.tree.write(xmlOutFile, encoding='UTF-8', method='xml',
                       pretty_print=True, xml_declaration=True)
-
-
-######################
-# EXECUTE FUNCTIONS  #
-######################
-
-postProcessJuxtaCommonsFile(siglum='m1', printEdition='garufi',
-                            printSiglum='g', msSiglum='a')
-postProcessJuxtaCommonsFile(siglum='m2', printEdition='bonetti',
-                            printSiglum='b', msSiglum='a')
-'''
-postProcessJuxtaCommonsFile(siglum='m1-short', printEdition='garufi',
-                            printSiglum='b', msSiglum='a')
-'''

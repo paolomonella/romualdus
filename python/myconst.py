@@ -8,6 +8,7 @@ simplifiedpath = '../xml/'
 csvpath = '../csv/'
 htmlpath = '../html/'
 jsonpath = '../json/'
+entitize_backup_path = '../xml/ripostiglio/backup/backup_entitization/'
 simplifiedsuffix = '-simple'
 juxta_par_and_sigla_suffix = '-par'
 

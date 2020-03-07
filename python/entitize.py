@@ -3,9 +3,13 @@
 
 import time
 import os
-from glob import iglob
+from myconst import entitize_backup_path
 
-ent = [
+
+def entitize(filename):
+    ''' Replace long tags with their corresponding entities '''
+
+    ent = [
         ['<lb xmlns="http://www.tei-c.org/ns/1.0" \
          break="no" rend="-" ed="#g"/>', 'gd'],
         ['<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>', 'gl'],
@@ -22,17 +26,13 @@ ent = [
          <orig xmlns="http://www.tei-c.org/ns/1.0">v</orig>\
          <reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg>\
          </choice>', 'uu'],
-        ]
-
-
-def entitize(filename):
-    ''' Replace long tags with their corresponding entities '''
+    ]
 
     # Backup original file
     datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
     input_filename = ''.join(['../xml/', filename, '.xml'])
     backup_filename = ''.join([
-        '../xml/other/backup/backup_entitization/',
+        entitize_backup_path,
         datetime,
         '_backup_before_entitization_of_',
         filename,
@@ -54,15 +54,3 @@ def entitize(filename):
 
     # Overwrite original file:
     os.system('mv %s %s' % (output_filename, input_filename))
-
-
-'''
-entitize('a_juxta')
-entitize('bonetti_juxta')
-entitize('b')
-'''
-
-for f in iglob('../xml/*.xml'):
-    base = f.split('/')[-1].split('.')[0]
-    print(base)
-    entitize(base)

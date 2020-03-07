@@ -488,7 +488,7 @@ class msTree:
                         pretty_print=True, xml_declaration=True)
 
 
-def finalTextFileProcessingBeforeJuxtaCommons(siglaList, siglaToShortenList):
+def finalProcessingBeforeJuxta(siglaList, siglaToShortenList):
     '''In simplified TEI XML files,
         - change [p xml:id="g3.1-3.1"][/p] to [p xml:id="g3.1-3.1"]\n[/p]
         - remove empty lines
@@ -535,60 +535,3 @@ def finalTextFileProcessingBeforeJuxtaCommons(siglaList, siglaToShortenList):
                             break
                         else:
                             print(line, file=OUT, end='')
-
-
-EDL = ['a1', 'a2-sorted', 'o', 'g', 'bonetti']
-for edition in EDL:
-    print('[simplify_markup_for_collation.py]: I\'m working on witness «%s»' %
-          (edition))
-    mytree = msTree(edition)
-    if edition == 'a1':
-        mytree.reduce_layers_to_alph_only()
-    for tag_to_strip in ['interp', 'abbr', 'surplus', 'note', 'milestone',
-                         'link', 'anchor']:
-        mytree.my_strip_elements(tag_to_strip)
-    mytree.handle_numerals()
-    mytree.handle_gaps()
-    mytree.handle_add_del()  # only needed for MS A
-    mytree.choose('choice', 'sic', '', 'corr')
-    mytree.choose('choice', 'reg', 'numeral', 'orig')
-    mytree.choose('choice', 'reg', 'j', 'orig')
-    mytree.choose('choice', 'reg', 'v', 'orig')
-    mytree.ecaudatum(monophthongize=True)  # only needed for MS A; with False,
-    # it stays 'ae'; with True, it becomes 'e'
-    mytree.remove_comments()
-    mytree.recapitalize()
-    mytree.simplify_to_scanlike_text(
-            ['rs', 'hi', 'w', 'choice', 'orig', 'reg', 'num', 'subst', 'add',
-             'del', 'expan', 'sic',
-             'seg', 'lb', 'pb', 'quote', 'title', 'said', 'soCalled',
-             'surplus', 'supplied', 'gap', 'l']
-            )
-    mytree.handle_paragraph_tags('bracketsOnly')
-    # mytree.tags_to_brackets(['l'])
-    mytree.write()
-    '''
-    # Temporarily needed for CollateX (remove @xmlns)
-    with open('%s%s%s.xml' % (myconst.simplifiedpath,
-                              edition, myconst.simplifiedsuffix), 'r')\
-            as infile:
-        data = infile.read()
-    with open('%s%s%s.xml' % (myconst.simplifiedpath,
-                              edition, myconst.simplifiedsuffix), 'w')\
-            as outfile:
-        data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
-        outfile.write(data)
-        '''
-
-
-'''
-for mySiglum in ['a1', 'a2-sorted', 'o', 'g', 'bonetti']:
-    edition = mySiglum + myconst.simplifiedsuffix
-    mytree = msTree(edition)
-    mytree.list_and_count_elements()
-    '''
-
-
-finalTextFileProcessingBeforeJuxtaCommons(
-    ['a1', 'a2-sorted', 'o', 'g', 'bonetti'],
-    ['a1', 'a2-sorted', 'g', 'bonetti'])

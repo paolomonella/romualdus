@@ -7,8 +7,7 @@
 import operator
 import json
 from lxml import etree
-from myconst import ns
-from myconst import jsonpath
+from myconst import ns, jsonpath, xmlpath
 from variant_type import variantComparison
 
 debug = False
@@ -16,11 +15,12 @@ debug = False
 
 class treeWithAppElements:
 
-    def __init__(self, myXmlFile, printSiglum, msSiglum):
-        self.myXmlFile = myXmlFile
-        self.outputXmlFile = myXmlFile.replace('.xml', '-out.xml')
+    def __init__(self, siglum, printSiglum, msSiglum):
+        self.siglum = siglum
+        self.myXmlFile = '%s%s.xml' % (xmlpath, siglum)
+        self.outputXmlFile = self.myXmlFile.replace('.xml', '-out.xml')
         self.printSiglum, self.msSiglum = printSiglum, msSiglum
-        self.tree = etree.parse(myXmlFile)
+        self.tree = etree.parse(self.myXmlFile)
         self.apps = self.tree.findall('.//t:app', ns)
 
     def appDict(self):
@@ -125,7 +125,9 @@ class treeWithAppElements:
 
     def variantTypesCountPrint(self):
         '''Print variantTypesCountDict'''
-        print('In file {} there are:'.format(self.myXmlFile))
+        print(('\n[set_variant_types_in_appcrit_tei_file / '
+               'variantTypesCountPrint]: '
+               'In file {} there are:').format(self.siglum))
         for x in self.variantTypesCount():
             print('{:5} {:12}'.format(x[1], x[0]))
 
@@ -171,34 +173,3 @@ class treeWithAppElements:
         ''' Write my XML tree to an external file '''
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml',
                         pretty_print=True, xml_declaration=True)
-
-
-collation_and_parameters = [
-    ('../xml/m1-par.xml', 'g', 'a'),
-    ('../xml/m2-par.xml', 'b', 'a'),
-]
-
-for cap in collation_and_parameters:
-    myTree = treeWithAppElements(cap[0], cap[1], cap[2])
-    myTree.variantTypesCountPrint()
-    myTree.setTypeAttributesForApps()
-    myTree.setLems()
-    myTree.write()
-
-
-# Apply to m1.xml (Juxta collation of g.xml and a1.xml, i.e. Garufi/A, 1st
-# part)
-myTree = treeWithAppElements('../xml/m1.xml', 'g', 'a')
-myTree.variantTypesCountPrint()
-myTree.setTypeAttributesForApps()
-myTree.setLems()
-myTree.write()
-
-# Apply to m2.xml
-# (Juxta collation of bonetti.xml and a2.xml, i.e. Garufi/A, 2st
-# part)
-myTree = treeWithAppElements('../xml/m2.xml', 'b', 'a')
-myTree.variantTypesCountPrint()
-myTree.setTypeAttributesForApps()
-myTree.setLems()
-myTree.write()
