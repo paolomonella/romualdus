@@ -235,7 +235,7 @@ def getVariantTypeBasedOnDiff(myDiffList, myString1, myString2):
         if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]):
             if myType == 'unknown':
                 myType = '%sType' % (t[2])
-                if True:
+                if debug:
                     print('[Debug 07.03.2020 10.54] The diff\
                           between strings %s/%s is %s/%s,\
                           so the variant type is %s' %
@@ -244,7 +244,8 @@ def getVariantTypeBasedOnDiff(myDiffList, myString1, myString2):
                 print('Error! Diff «%s»/«%s» matched two different types: \
                       %s and %sType' % (myDiff1, myDiff2, myType, t[2]))
 
-    print('Trovato %s\n' % myType)
+    if debug:
+            print('Trovato %s\n' % myType)
     return(myType)
 
 
