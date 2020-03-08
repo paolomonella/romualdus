@@ -18,7 +18,7 @@ from simplify_markup_for_collation import finalProcessingBeforeJuxta
 from post_process_juxta_commons_file import replacePointyBrackets
 from post_process_juxta_commons_file import replaceSigla
 from post_process_juxta_commons_file import removeEmptyParWrappingAllText
-from set_variant_types_in_appcrit_tei_file import treeWithAppElements
+from philologist import treeWithAppElements
 
 #################
 # PRE-COLLATION #
