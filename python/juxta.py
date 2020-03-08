@@ -51,10 +51,14 @@ for edition in edition_list:
     mytree.handle_numerals()
     mytree.handle_gaps()
     mytree.handle_add_del()  # only needed for MS A
-    mytree.choose('choice', 'sic', '', 'corr')
-    mytree.choose('choice', 'reg', 'numeral', 'orig')
-    mytree.choose('choice', 'reg', 'j', 'orig')
-    mytree.choose('choice', 'reg', 'v', 'orig')
+    mytree.choose(parenttag='choice', keeptag='sic', keeptype='',
+                  removetag='corr')
+    mytree.choose(parenttag='choice', keeptag='reg', keeptype='numeral',
+                  removetag='orig')
+    mytree.choose(parenttag='choice', keeptag='reg', keeptype='j',
+                  removetag='orig')
+    mytree.choose(parenttag='choice', keeptag='reg', keeptype='v',
+                  removetag='orig')
     # Only needed for MS A; with False,
     # it stays 'ae'; with True, it becomes 'e':
     mytree.ecaudatum(monophthongize=True)
@@ -121,5 +125,6 @@ for mp in parameters:
                                  mp['msSiglum'])
     myTree.variantTypesCountPrint()
     myTree.setTypeAttributesForApps()
-    myTree.setLems()
+    myTree.setLemsBasedOnSicCorr()
+    myTree.setLemsBasedOnType()
     myTree.write()

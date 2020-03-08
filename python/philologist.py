@@ -15,21 +15,24 @@ debug = False
 
 class treeWithAppElements:
 
-    def __init__(self, siglum, printSiglum, msSiglum):
-        self.siglum = siglum
-        self.myXmlFile = '%s%s.xml' % (xmlpath, siglum)
-        self.outputXmlFile = self.myXmlFile.replace('.xml', '-out.xml')
+    def __init__(self, juxtaSiglum, printSiglum, msSiglum):
+        ''' - juxtaSiglum is the siglum (e.g. 'm1' or 'm2')
+                of the file with the <app> elements;
+            - printSiglum is the siglum (e.g. 'g' or 'bonetti')
+                of the first witness (that's normally the print edition)
+                of the first witness (that's normally the print edition)
+            - msSiglum is the siglum (e.g. 'a' or 'o') of the 2nd witness
+                (normally a MS).'''
+        self.juxtaSiglum = juxtaSiglum
+        self.myJuxtaXmlFile = '%s%s.xml' % (xmlpath, juxtaSiglum)
+        self.outputXmlFile = self.myJuxtaXmlFile.replace('.xml', '-out.xml')
         self.printSiglum, self.msSiglum = printSiglum, msSiglum
-        self.tree = etree.parse(self.myXmlFile)
-        self.apps = self.tree.findall('.//t:app', ns)
+        self.juxtaTree = etree.parse(self.myJuxtaXmlFile)
+        self.apps = self.juxtaTree.findall('.//t:app', ns)
 
     def appDict(self):
         ''' Arguments:
-            - printSiglum is the siglum (e.g. 'g' or 'bonetti')
-            of the first witness (that's normally the print edition)
-            - msSiglum is the siglum (e.g. 'a' or 'o') of the 2nd witness
-            (normally a MS).
-            The function parses file myXmlFile, finds all <app> elements,
+            The function parses file myJuxtaXmlFile, finds all <app> elements,
             then creates and populates 'comparisons', a list of dictionaries
             (one dict for each <app> in the TEI XML file).
             Each dict in the list is the result of the comparison of two
@@ -66,7 +69,7 @@ class treeWithAppElements:
                 print('[Debug 07.03.2020 10.29] In MS %s printReading \
                       is None in app with parent \
                       paragraph %s with attributes %s and grandparent %s' %
-                      (self.myXmlFile,
+                      (self.myJuxtaXmlFile,
                        app.getparent().tag,
                        app.getparent().attrib,
                        app.getparent().getparent().tag))
@@ -111,7 +114,7 @@ class treeWithAppElements:
     def variantTypesCount(self):
         '''Return a dict like
             {'missingInMSType': 124, 'missingInPrint-PunctInMS-Type': 252 etc.}
-            counting in how many <app> elements in the tree each
+            counting in how many <app> elements in the juxtaTree each
             variant type recurs '''
         myList = self.variantTypesList()
         myListCount = []    # A list (of tuples)
@@ -127,7 +130,7 @@ class treeWithAppElements:
         '''Print variantTypesCountDict'''
         print(('\n[set_variant_types_in_appcrit_tei_file / '
                'variantTypesCountPrint]: '
-               'In file {} there are:').format(self.siglum))
+               'In file {} there are:').format(self.juxtaSiglum))
         for x in self.variantTypesCount():
             print('{:5} {:12}'.format(x[1], x[0]))
 
@@ -146,7 +149,68 @@ class treeWithAppElements:
                 for k in c:
                     print('%s: «%s»' % (k, c[k]))
 
-    def setLems(self, setCert=True):
+    def setLemsBasedOnSicCorr(self):
+        # self.juxtaSiglum, self.printSiglum, self.msSiglum
+        if self.printSiglum == 'g':
+            myPrintXmlFile = '%s%s.xml' % (xmlpath, self.printSiglum)
+        elif self.printSiglum == 'b':
+            # Cope with the fact that the xml file for Bonetti currently
+            # is not b.xml but bonetti.xml:
+            myPrintXmlFile = '%s%s.xml' % (xmlpath, 'bonetti')
+        printTree = etree.parse(myPrintXmlFile)
+        corrs = printTree.findall('.//t:corr', ns)
+        # choices = [corr.getparent() for corr in corrs]
+        # sics = [choice.find('.//t:sic', ns) for choice in choices]
+
+        # Create a list of dictionaries, like:
+        # {'choice' = <choice> element, 'corr' = <corr>, 'sic' = <sic>
+        corrections = []
+        for c in corrs:
+            myDict = {'corr': c}    # A dictionary
+            myDict['choice'] = c.getparent()
+            myDict['sic'] = myDict['choice'].find('.//t:sic', ns)
+            corrections.append(myDict)
+
+        # Manage case in which <choice><orig>+<reg> is in <corr>:
+        for c in corrections:
+            for e in [c['corr'], c['sic']]:
+                # If <sic> or <corr> has a <choice> child:
+                innerchoice = e.find('.//t:choice', ns)
+                if innerchoice is not None:
+                    # If <choice> has <reg> and <orig> as children:
+                    innerreg = innerchoice.find('.//t:reg', ns)
+                    innerorig = innerchoice.find('.//t:orig', ns)
+                    if innerreg is not None and innerorig is not None:
+                        # Remove <orig> and keep <reg>:
+                        innerchoice.remove(innerorig)
+
+        # Get (iter)text of <corr> and of <sic>
+        for c in corrections:
+            c['corrText'] = ''.join(c['corr'].itertext())
+            c['sicText'] = ''.join(c['sic'].itertext())
+
+        # Locate the corrections in m1 or m2
+        count = 0
+        for c in corrections:
+            for a in self.appDict():
+                if c['corrText'] == a['printText'] or \
+                   c['sicText'] == a['printText']:
+                    count += 1
+                    print(('[set lems based on sic/corr], file {}: '
+                           'Matching correction «{}» for «{}» '
+                           'with app print «{}»/ms «{}».').format(
+                               self.juxtaSiglum,
+                               c['corrText'],
+                               c['sicText'],
+                               a['printText'],
+                               a['msText'],
+                         ))
+        print(('[set lems based on sic/corr], file {}: '
+               'I located {} corrections').format(
+                   self.juxtaSiglum,
+                   count))
+
+    def setLemsBasedOnType(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically '''
 
         jfile = ('%sdecision_table.json' % (jsonpath))
@@ -170,6 +234,7 @@ class treeWithAppElements:
                         c['app'].set('cert', myCert)
 
     def write(self):
-        ''' Write my XML tree to an external file '''
-        self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml',
-                        pretty_print=True, xml_declaration=True)
+        ''' Write my XML juxtaTree to an external file '''
+        self.juxtaTree.write(self.outputXmlFile,
+                             encoding='UTF-8', method='xml',
+                             pretty_print=True, xml_declaration=True)
