@@ -163,7 +163,7 @@ class treeWithAppElements:
         # sics = [choice.find('.//t:sic', ns) for choice in choices]
 
         # Create a list of dictionaries, like:
-        # {'choice' = <choice> element, 'corr' = <corr>, 'sic' = <sic>
+        # {'choice' = <choice> element, 'corr' = <corr>, 'sic' = <sic>}
         corrections = []
         for c in corrs:
             myDict = {'corr': c}    # A dictionary
@@ -193,8 +193,11 @@ class treeWithAppElements:
         count = 0
         for c in corrections:
             for a in self.appDict():
-                if c['corrText'] == a['printText'] or \
-                   c['sicText'] == a['printText']:
+                # ...but I guess that it should only be
+                # if a[sicText] == a[printText] (not also corrText)
+                '''if c['corrText'].lower() == a['printText'].lower() or \
+                   c['sicText'].lower() == a['printText'].lower():'''
+                if c['sicText'].lower() == a['printText'].lower():
                     count += 1
                     print(('[set lems based on sic/corr], file {}: '
                            'Matching correction «{}» for «{}» '
