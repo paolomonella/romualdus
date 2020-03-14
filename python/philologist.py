@@ -38,7 +38,7 @@ class treeWithAppElements:
             'decision_variant_types')
         self.decisions = my_database_import.import_table(
             dbpath,
-            'priscianus.sqlite3',
+            'romualdus.sqlite3',
             'decisions')
 
     def appDict(self):
@@ -76,14 +76,20 @@ class treeWithAppElements:
             # Debug tests: check if something went wrong
             if debug:
                 print(msReading)
-            if debug and printReading is None:
-                print('[Debug 07.03.2020 10.29] In MS %s printReading \
-                      is None in app with parent \
-                      paragraph %s with attributes %s and grandparent %s' %
-                      (self.myJuxtaXmlFile,
-                       app.getparent().tag,
-                       app.getparent().attrib,
-                       app.getparent().getparent().tag))
+            if True:
+                for myReading in [(printReading, 'printReading'),
+                                  (msReading, 'msReading')]:
+                    if myReading[0] is None:
+                        print(('[Debug 07.03.2020 10.29] In MS {} '
+                               '{} is None in an <app> '
+                               'with parent paragraph {} with '
+                               'attributes {} and grandparent'
+                               '{}').format(
+                                   self.myJuxtaXmlFile,
+                                   myReading[1],
+                                   app.getparent().tag,
+                                   app.getparent().attrib,
+                                   app.getparent().getparent().tag))
             if msReading is None:
                 print(printReading.text)
             if printReading.text is not None:
@@ -161,7 +167,7 @@ class treeWithAppElements:
                 for k in c:
                     print('%s: «%s»' % (k, c[k]))
 
-    def setLemsBasedOnSicCorr(self):
+    def findAndLocateSicCorr(self):
         # self.juxtaSiglum, self.printSiglum, self.msSiglum
         if self.printSiglum == 'g':
             myPrintXmlFile = '%s%s.xml' % (xmlpath, self.printSiglum)
@@ -212,7 +218,7 @@ class treeWithAppElements:
                 if c['sicText'].lower() == a['printText'].lower():
                     count += 1
                     if not self.quiet:
-                        print(('[set lems based on sic/corr], '
+                        print(('[findAndLocateSicCorr] '
                                'file {}: '
                                'Matching correction «{}» for «{}» '
                                'with app print «{}»/ms «{}»'
@@ -231,6 +237,16 @@ class treeWithAppElements:
                        self.juxtaSiglum,
                        count))
 
+    def make_lem(self, myElement):
+        ''' Promote myElement to chosen text,
+            i.e. set its tag name to <lem> '''
+        myElement.tag = '{%s}lem' % ns['t']
+
+    def make_rdg(self, myElement):
+        ''' Demote myElement to not chosen text,
+            i.e. set its tag name to <rdg> '''
+        self.rdg_tag = '{%s}rdg' % ns['t']
+
     def setLemsBasedOnType(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically '''
 
@@ -245,7 +261,7 @@ class treeWithAppElements:
                     myPreferredRdg = myRow['preferredRdg']
                     # c[myPreferredRdg] is a TEI element, either <rdg wit="#a">
                     # or <rdg wit="#g">:
-                    c[myPreferredRdg].tag = 'lem'
+                    self.make_lem(c[myPreferredRdg])
                     if setCert is True:
                         # myCert can be 'low', 'middle' or 'high':
                         myCert = myRow['cert']
@@ -253,8 +269,43 @@ class treeWithAppElements:
 
     def setLemsBasedOnDB(self):
         '''Read DB table and decide <lem> for some <app>s '''
-        for record in self.decisions:
-            pass
+        for a in self.appDict():
+            '''for r in self.decisions:  # For each record in the 'decisions' DB table
+            if r['handle'] == 1:  # If col. 'handle' is 0, ignore the record
+                for a in self.appDict():
+            '''
+            # For each record in the 'decisions' DB table:
+            for r in self.decisions:
+                # If col. 'handle' is 0, ignore the record:
+                if r['handle'] == 1:
+                    # If you found the <app> with the print/ms readings
+                    # corresponding to those of the DB row:
+                    if r['print'] == a['printText'] and \
+                       r['ms'] == a['msText']:
+                        if not self.quiet:
+                            print(('[setLemsBasedOnDB], part m{}\n'
+                                   'DB «{}»/«{}» \n'
+                                   '<app> «{}»/«{}»\n'
+                                   'Paragraph {}\n').format(
+                                       r['part'],
+                                       r['print'],
+                                       r['ms'],
+                                       a['printText'],
+                                       a['msText'],
+                                       a['app'].getparent().get('{%s}id' %
+                                                                ns['xml'])
+                                 ))
+                        if r['decision'] == 'print':
+                            self.make_lem(a['printReading'])
+                            self.make_rdg(a['msReading'])
+                        elif r['decision'] == 'ms':
+                            self.make_rdg(a['printReading'])
+                            self.make_lem(a['msReading'])
+                        elif r['decision'] == 'conj':
+                            self.make_rdg(a['printReading'])
+                            self.make_rdg(a['msReading'])
+                            # Ricominciare-da §: set 'tertium'
+                            # as <lem>
 
     def write(self):
         ''' Write my XML juxtaTree to an external file '''

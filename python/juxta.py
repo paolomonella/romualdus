@@ -88,8 +88,9 @@ simplify_markup_for_collation.finalProcessingBeforeJuxta(
     siglaToShortenList=['a1', 'a2-sorted', 'g', 'bonetti'],
     quiet=quiet)
 
+
 ##################
-# POST-COLLATION #
+# POST-COLLATION # 1
 ##################
 
 parameters = [
@@ -124,6 +125,6 @@ for mp in parameters:
                                              quiet=quiet)
     myTree.variantTypesCountPrint()
     myTree.setTypeAttributesForApps()
-    myTree.setLemsBasedOnSicCorr()
+    myTree.setLemsBasedOnDB()
     myTree.setLemsBasedOnType()
     myTree.write()
