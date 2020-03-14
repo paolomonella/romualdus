@@ -33,7 +33,8 @@ def replacePointyBrackets(siglum):
 
 
 def replaceSigla(siglum, printEdition='garufi',
-                 printSiglum='g', msSiglum='a'):
+                 printSiglum='g', msSiglum='a',
+                 quiet=False):
 
     ''' Substitute JuxtaCommons sigla with my sigla ('g', 'a', 'b' etc.) '''
 
@@ -51,7 +52,7 @@ def replaceSigla(siglum, printEdition='garufi',
 
     # Search which <witness> represents the print edition
     # ('bonetti' or 'garufi'):
-    juxtaPrintSiglum = 'unknown'
+    juxtaPrintSiglum = 'unknown_siglum'
     for myWitness in juxtaSigla:
         # If 'garufi' in... or if 'bonetti' in...
         if printEdition in myWitness['element'].text.lower():
@@ -61,7 +62,7 @@ def replaceSigla(siglum, printEdition='garufi',
             myWitness['mySiglum'] = printSiglum
 
     # Check if the print <witness> has been found or not
-    if juxtaPrintSiglum == 'unknown':
+    if juxtaPrintSiglum == 'unknown_siglum':
         print(('I haven\'t found what witness in {} corresponds to {}.'
                'Please include string «{}» in the text'
                'of one <witness> in {}').format(siglum,
@@ -69,10 +70,11 @@ def replaceSigla(siglum, printEdition='garufi',
                                                 printEdition,
                                                 siglum))
     else:
-        print(('\n[post_process_juxta_commons_file.py / replaceSigla] '
-               'The JuxtaCommons-generated witness'
-               'for {} in {} is {}').format(printEdition.capitalize(),
-                                            siglum, juxtaPrintSiglum))
+        if not quiet:
+            print(('\n[post_process_juxta_commons_file.py / replaceSigla] '
+                   'The JuxtaCommons-generated witness '
+                   'for {} in {} is {}').format(printEdition.capitalize(),
+                                                siglum, juxtaPrintSiglum))
 
     for myWitness in juxtaSigla:
         # if myWitness['mySiglum'] is None:

@@ -6,8 +6,12 @@ import os
 from myconst import entitize_backup_path
 
 
-def entitize(filename):
+def entitize(filename, quiet=False):
     ''' Replace long tags with their corresponding entities '''
+
+    if not quiet:
+        print(('[entitize.py / entitize]: '
+               'I am restoring entities for file {}').format(filename))
 
     ent = [
         ['<lb xmlns="http://www.tei-c.org/ns/1.0" \

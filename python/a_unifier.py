@@ -10,7 +10,8 @@ from lxml import etree
 from myconst import xmlpath, ns, tei_ns
 
 
-def a_unifier(siglum1='a1', siglum2='a2', uniSiglum='a-1and2unified'):
+def a_unifier(siglum1='a1', siglum2='a2', uniSiglum='a-1and2unified',
+              quiet=False):
     xmlfile1 = '%s%s.xml' % (xmlpath, siglum1)
     tree1 = etree.parse(xmlfile1)
     body1 = tree1.find('.//t:body', ns)
@@ -24,10 +25,11 @@ def a_unifier(siglum1='a1', siglum2='a2', uniSiglum='a-1and2unified'):
            child.get('type') != 'bonetti-is-collation-exemplar-from-here-on':
             body1.append(child)
 
-    print(('\n[a_rearranger.py]: I\'m re-unifying '
-           '{}.xml and {}.xml into {}.xml '
-           '(for the old GL/AL HTML'
-           'visualization) ').format(siglum1, siglum2, uniSiglum))
+    if not quiet:
+        print(('\n[a_unifier.py]: I\'m re-unifying '
+               '{}.xml and {}.xml into {}.xml '
+               '(for the old GL/AL HTML'
+               'visualization) ').format(siglum1, siglum2, uniSiglum))
 
     xmlfileUnified = '%s%s.xml' % (xmlpath, uniSiglum)
 

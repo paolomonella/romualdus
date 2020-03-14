@@ -10,15 +10,15 @@
 
 from glob import iglob  # Needed for function entitize
 from myconst import xmlpath, juxta_par_and_sigla_suffix
-from entitize import entitize
-from a_unifier import a_unifier
-from sort_a2 import sort_a2
-from simplify_markup_for_collation import msTree
-from simplify_markup_for_collation import finalProcessingBeforeJuxta
-from post_process_juxta_commons_file import replacePointyBrackets
-from post_process_juxta_commons_file import replaceSigla
-from post_process_juxta_commons_file import removeEmptyParWrappingAllText
-from philologist import treeWithAppElements
+import entitize
+import a_unifier
+import sort_a2
+import simplify_markup_for_collation
+import post_process_juxta_commons_file
+import philologist
+
+# If true: suppress standard output messages to console
+quiet = False
 
 #################
 # PRE-COLLATION #
@@ -27,22 +27,18 @@ from philologist import treeWithAppElements
 # entitize.py
 for f in iglob('%s*.xml' % (xmlpath)):
     base = f.split('/')[-1].split('.')[0]
-    print(('[entitize.py / entitize]: '
-           'I am restoring entities for file {}').format(base))
-    entitize(base)
+    entitize.entitize(base, quiet=quiet)
 
 # a_unifier.py
-a_unifier()
+a_unifier.a_unifier(quiet=quiet)
 
 # sort_a2.py
-sort_a2()
+sort_a2.sort_a2(quiet=quiet)
 
 # simplify_markup_for_collation.py / class msTree
 edition_list = ['a1', 'a2-sorted', 'o', 'g', 'bonetti']
 for edition in edition_list:
-    print(('[simplify_markup_for_collation.py]: I\'m simplifying'
-          'witness «{}»').format(edition))
-    mytree = msTree(edition)
+    mytree = simplify_markup_for_collation.msTree(edition, quiet=quiet)
     if edition == 'a1':
         mytree.reduce_layers_to_alph_only()
     for tag_to_strip in ['interp', 'abbr', 'surplus', 'note', 'milestone',
@@ -87,9 +83,10 @@ for edition in edition_list:
         '''
 
 # simplify_markup_for_collation.py / function finalProcessingBeforeJuxta
-finalProcessingBeforeJuxta(
+simplify_markup_for_collation.finalProcessingBeforeJuxta(
     siglaList=['a1', 'a2-sorted', 'o', 'g', 'bonetti'],
-    siglaToShortenList=['a1', 'a2-sorted', 'g', 'bonetti'])
+    siglaToShortenList=['a1', 'a2-sorted', 'g', 'bonetti'],
+    quiet=quiet)
 
 ##################
 # POST-COLLATION #
@@ -110,19 +107,21 @@ for mp in parameters:
 
     ''' Post-processing of JuxtaCommons-generated files
         (from module post_process_juxta_commons_file.py)'''
-    replacePointyBrackets(mp['siglum'])
-    replaceSigla(mp['siglum'],
-                 mp['ed'],
-                 mp['printSiglum'],
-                 mp['msSiglum'])
-    removeEmptyParWrappingAllText(mp['siglum'])
+    post_process_juxta_commons_file.replacePointyBrackets(mp['siglum'])
+    post_process_juxta_commons_file.replaceSigla(mp['siglum'],
+                                                 mp['ed'],
+                                                 mp['printSiglum'],
+                                                 mp['msSiglum'],
+                                                 quiet=quiet)
+    post_process_juxta_commons_file.removeEmptyParWrappingAllText(mp['siglum'])
 
     ''' Set <lem>/<rdg> and set @type attributes for <app>s
         (from module set_variant_types_in_appcrit_tei_file.py) '''
     newSiglum = mp['siglum'] + juxta_par_and_sigla_suffix
-    myTree = treeWithAppElements(newSiglum,
-                                 mp['printSiglum'],
-                                 mp['msSiglum'])
+    myTree = philologist.treeWithAppElements(newSiglum,
+                                             mp['printSiglum'],
+                                             mp['msSiglum'],
+                                             quiet=quiet)
     myTree.variantTypesCountPrint()
     myTree.setTypeAttributesForApps()
     myTree.setLemsBasedOnSicCorr()

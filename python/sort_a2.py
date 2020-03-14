@@ -2,16 +2,17 @@
 # -*- coding: utf-8 -*-
 
 
-def sort_a2(pSiglum='bonetti', mSiglum='a2'):
+def sort_a2(pSiglum='bonetti', mSiglum='a2', quiet=False):
     ''' This module re-orders paragraphs in a2.xml
         to match those in Bonetti.
             prefix 'p' = 'print'
             prefix 'm' = 'MS' '''
 
-    print('\n[sort_a2.py]: '
-          'I am re-arranging the <p>s of a2.xml '
-          'according to the order of <p>s '
-          'in Bonetti\n')
+    if not quiet:
+        print('\n[sort_a2.py]: '
+              'I am re-arranging the <p>s of a2.xml '
+              'according to the order of <p>s '
+              'in Bonetti\n')
     from lxml import etree
     from myconst import xmlpath, ns, xml_ns
 

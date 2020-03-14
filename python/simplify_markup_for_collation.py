@@ -26,7 +26,7 @@ from other import baretextize
 
 class msTree:
 
-    def __init__(self, siglum):
+    def __init__(self, siglum, quiet=False):
         self.siglum = siglum
         self.xmlfile = '%s/%s.xml' % (myconst.xmlpath, siglum)
         # Source of next, commented, line:
@@ -38,6 +38,7 @@ class msTree:
         self.root = self.tree.getroot()
         self.outputXmlFile = '%s%s%s.xml' % (myconst.simplifiedpath, siglum,
                                              myconst.simplifiedsuffix)
+        self.quiet = quiet
 
     def remove_comments(self):
         ''' Remove XML comments such as <!-- comment --> '''
@@ -484,17 +485,24 @@ class msTree:
                     '''
 
     def write(self):
+        if not self.quiet:
+            print(('[simplify_markup_for_collation.py]: I\m simplifying '
+                  'witness «{}»').format(self.siglum))
         self.tree.write(self.outputXmlFile, encoding='UTF-8', method='xml',
                         pretty_print=True, xml_declaration=True)
 
 
-def finalProcessingBeforeJuxta(siglaList, siglaToShortenList):
+def finalProcessingBeforeJuxta(siglaList, siglaToShortenList, quiet=False):
     '''In simplified TEI XML files,
         - change [p xml:id="g3.1-3.1"][/p] to [p xml:id="g3.1-3.1"]\n[/p]
         - remove empty lines
         - create «a1s-short.xml», «gs-short.xml» etc. versions '''
 
     for mySiglum in siglaList:
+        if not quiet:
+            print(('[simplify_markup_for_collation.py/'
+                   'finalProcessingBeforeJuxta]: I\m working on '
+                  'witness «{}»').format(mySiglum))
         edition = mySiglum + myconst.simplifiedsuffix
         xmlfile = '%s/%s.xml' % (myconst.xmlpath, edition)
         shortxmlfile = xmlfile.replace('.xml', '-short.xml')

@@ -4,31 +4,42 @@
 ''' This module manages <app> elements from a TEI XML file '''
 
 
+import my_database_import
+import variant_type
 import operator
-import json
 from lxml import etree
-from myconst import ns, jsonpath, xmlpath
-from variant_type import variantComparison
+from myconst import ns, xmlpath, dbpath
 
 debug = False
 
 
 class treeWithAppElements:
 
-    def __init__(self, juxtaSiglum, printSiglum, msSiglum):
+    def __init__(self, juxtaSiglum, printSiglum, msSiglum, quiet=False):
         ''' - juxtaSiglum is the siglum (e.g. 'm1' or 'm2')
                 of the file with the <app> elements;
             - printSiglum is the siglum (e.g. 'g' or 'bonetti')
                 of the first witness (that's normally the print edition)
                 of the first witness (that's normally the print edition)
             - msSiglum is the siglum (e.g. 'a' or 'o') of the 2nd witness
-                (normally a MS).'''
+                (normally a MS).
+            - if quiet is True: suppress basic messages '''
         self.juxtaSiglum = juxtaSiglum
         self.myJuxtaXmlFile = '%s%s.xml' % (xmlpath, juxtaSiglum)
         self.outputXmlFile = self.myJuxtaXmlFile.replace('.xml', '-out.xml')
         self.printSiglum, self.msSiglum = printSiglum, msSiglum
         self.juxtaTree = etree.parse(self.myJuxtaXmlFile)
         self.apps = self.juxtaTree.findall('.//t:app', ns)
+        self.quiet = quiet
+        # Import tables from DB
+        self.decision_table = my_database_import.import_table(
+            dbpath,
+            'romualdus.sqlite3',
+            'decision_variant_types')
+        self.decisions = my_database_import.import_table(
+            dbpath,
+            'priscianus.sqlite3',
+            'decisions')
 
     def appDict(self):
         ''' Arguments:
@@ -42,7 +53,7 @@ class treeWithAppElements:
                     inherited from function variantComparison
                 'r2' = the variant characters in myString2 ('i'),
                     inherited from function variantComparison
-                'type' = the variant type ('yType'),
+                'type' = the variant type ('y-type'),
                     inherited from function variantComparison
                 plus new additional keys:
                 'app' = the <app> XML element
@@ -88,7 +99,7 @@ class treeWithAppElements:
                 print('msText: «%s»' % (msText))
 
             # MyComp is a dictionary:
-            myComp = variantComparison(printText, msText)
+            myComp = variant_type.variantComparison(printText, msText)
             myComp['app'] = app
             myComp['printReading'] = printReading
             myComp['msReading'] = msReading
@@ -113,7 +124,8 @@ class treeWithAppElements:
 
     def variantTypesCount(self):
         '''Return a dict like
-            {'missingInMSType': 124, 'missingInPrint-PunctInMS-Type': 252 etc.}
+            {'missing-in-ms-type': 124,
+            'missing-in-print-vs-punct-in-ms-type': 252 etc.}
             counting in how many <app> elements in the juxtaTree each
             variant type recurs '''
         myList = self.variantTypesList()
@@ -128,11 +140,12 @@ class treeWithAppElements:
 
     def variantTypesCountPrint(self):
         '''Print variantTypesCountDict'''
-        print(('\n[set_variant_types_in_appcrit_tei_file / '
-               'variantTypesCountPrint]: '
-               'In file {} there are:').format(self.juxtaSiglum))
-        for x in self.variantTypesCount():
-            print('{:5} {:12}'.format(x[1], x[0]))
+        if not self.quiet:
+            print(('\n[set_variant_types_in_appcrit_tei_file / '
+                   'variantTypesCountPrint]: '
+                   'In file {} there are:').format(self.juxtaSiglum))
+            for x in self.variantTypesCount():
+                print('{:5} {:12}'.format(x[1], x[0]))
 
     def setTypeAttributesForApps(self):
         '''Set @type attributes in <app> elements in the input TEI XML file '''
@@ -141,7 +154,6 @@ class treeWithAppElements:
             print('[Debug 07.03.2020] %s' % (set(myTypesDebug)))
         for c in self.appDict():
             c['app'].set('type', c['type'])
-            # if c['type'] == 'yType':
             if debug:
                 print('\n')
                 print('«%s» | «%s» %15s @type="%s"' %
@@ -199,44 +211,50 @@ class treeWithAppElements:
                    c['sicText'].lower() == a['printText'].lower():'''
                 if c['sicText'].lower() == a['printText'].lower():
                     count += 1
-                    print(('[set lems based on sic/corr], file {}: '
-                           'Matching correction «{}» for «{}» '
-                           'with app print «{}»/ms «{}»'
-                           'in par. {}.').format(
-                               self.juxtaSiglum,
-                               c['corrText'],
-                               c['sicText'],
-                               a['printText'],
-                               a['msText'],
-                               a['app'].getparent().get('{%s}id' % ns['xml'])
-                         ))
-        print(('[set lems based on sic/corr], file {}: '
-               'I located {} corrections').format(
-                   self.juxtaSiglum,
-                   count))
+                    if not self.quiet:
+                        print(('[set lems based on sic/corr], '
+                               'file {}: '
+                               'Matching correction «{}» for «{}» '
+                               'with app print «{}»/ms «{}»'
+                               'in par. {}.').format(
+                                   self.juxtaSiglum,
+                                   c['corrText'],
+                                   c['sicText'],
+                                   a['printText'],
+                                   a['msText'],
+                                   a['app'].getparent().get('{%s}id' %
+                                                            ns['xml'])
+                             ))
+        if not self.quiet:
+            print(('[set lems based on sic/corr], file {}: '
+                   'I located {} corrections').format(
+                       self.juxtaSiglum,
+                       count))
 
     def setLemsBasedOnType(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically '''
 
-        jfile = ('%sdecision_table.json' % (jsonpath))
-        with open(jfile) as f:
-            decisionTable = json.load(f)
-
-        # Decide <lem> and set @cert based on decisionTable:
+        # Decide <lem> and set @cert based on decision_table:
         if debug:
             print(self.appDict())
         for c in self.appDict():
-            for myType in decisionTable:
+            for myRow in self.decision_table:
+                myType = myRow['type']
                 if c['type'] == myType:
                     # It can be 'printReading' or 'msReading':
-                    myPreferredRdg = decisionTable[myType]['preferredRdg']
+                    myPreferredRdg = myRow['preferredRdg']
                     # c[myPreferredRdg] is a TEI element, either <rdg wit="#a">
                     # or <rdg wit="#g">:
                     c[myPreferredRdg].tag = 'lem'
                     if setCert is True:
                         # myCert can be 'low', 'middle' or 'high':
-                        myCert = decisionTable[myType]['cert']
+                        myCert = myRow['cert']
                         c['app'].set('cert', myCert)
+
+    def setLemsBasedOnDB(self):
+        '''Read DB table and decide <lem> for some <app>s '''
+        for record in self.decisions:
+            pass
 
     def write(self):
         ''' Write my XML juxtaTree to an external file '''

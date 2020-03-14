@@ -277,7 +277,7 @@ def visualizeVariantsInBrackets(jsonOutputList, onlyOutputVariants = False):
                     else:
                         myComparison = variantComparison(wordMsA['t'], wordMsB['t'])
 
-                        if myComparison['type'] is 'unknown':
+                        if myComparison['type'] is 'unknown-type':
                             typeDeclaration = ''
                         else:
                             typeDeclaration = ' type="' + myComparison['type'] + '"'
