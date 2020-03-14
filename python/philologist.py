@@ -201,12 +201,14 @@ class treeWithAppElements:
                     count += 1
                     print(('[set lems based on sic/corr], file {}: '
                            'Matching correction «{}» for «{}» '
-                           'with app print «{}»/ms «{}».').format(
+                           'with app print «{}»/ms «{}»'
+                           'in par. {}.').format(
                                self.juxtaSiglum,
                                c['corrText'],
                                c['sicText'],
                                a['printText'],
                                a['msText'],
+                               a['app'].getparent().get('{%s}id' % ns['xml'])
                          ))
         print(('[set lems based on sic/corr], file {}: '
                'I located {} corrections').format(
