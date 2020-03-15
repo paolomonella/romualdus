@@ -18,7 +18,7 @@ import post_process_juxta_commons_file
 import philologist
 
 # If true: suppress standard output messages to console
-quiet = False
+quiet = True
 
 #################
 # PRE-COLLATION #
@@ -123,8 +123,10 @@ for mp in parameters:
                                              mp['printSiglum'],
                                              mp['msSiglum'],
                                              quiet=quiet)
+    myTree.findAndLocateSicCorr()
     myTree.variantTypesCountPrint()
     myTree.setTypeAttributesForApps()
-    myTree.setLemsBasedOnDB()
     myTree.setLemsBasedOnType()
+    myTree.setLemsBasedOnDB()
+    myTree.editTeiHeader()
     myTree.write()
