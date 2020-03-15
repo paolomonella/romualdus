@@ -978,7 +978,7 @@ princeps.
 </p>
 
 
-<p xml:id="g184.10-185.7" decls="#al"> 
+<p xml:id="g184.10-184.13" decls="#al"> 
 <add place="addedfolios" hand="#hand2" xml:id="g184.10-185.7add100">
 &bl;<hi>anno</hi> dominic<seg ana="#ae">ae</seg> incarnationis <num value="1060">mlx</num>, indictione <num value="13">xiii</num>. <rs>henricus</rs> rex <rs>francorum</rs> 
 &bl;obiit, et <rs>philippus</rs> filius eius successit in regnum. <hi>ipso</hi> quoque 
@@ -986,8 +986,13 @@ princeps.
 ipsam eorum ciuitatem in sua potestate ab eis accepit, qui 
 &bl;non post multos dies 
 </add>
-<pb n="206r" facs="vat:233" ed="#a"/>
+</p> 
+
+
+<p xml:id="g184.13-185.7" decls="#al"> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs>'s and <rs>bonetti</rs>'s paragraphs run from page 184 line 10 to page 185 line 7 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 10 to line 13 of page 184 is an addition in manuscript <hi>a</hi>.</note>
 <note resp="#pm" type="segmentation"><hi>from</hi> this point, the text is due to the first hand of manuscript <hi>a</hi> again.</note>
+<pb n="206r" facs="vat:233" ed="#a"/>
 cum exercitu in <rs>calabriam</rs> profectus, <rs>re&bd;gium</rs> 
 ciuitatem cepit atque omnium <rs>normannorum</rs> dux effec&bd;tus 
 est. <hi>hic</hi> accepit uxorem nomine <rs>sigelgaytam</rs> <rs>guaimarii</rs> prin&bd;cipis 
@@ -2017,7 +2022,7 @@ cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs>
 </p>
 
 
-<p xml:id="g212.12-212.16" decls="#al"> 
+<p xml:id="g212.12-212.13" decls="#al"> 
 <link target="#g212.12-212.16 #g212.12-212.16garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
 <milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
 <add place="footer" hand="#hand2" xml:id="g212.12-212.16add100">
@@ -2026,6 +2031,10 @@ cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs>
 &bl;<rs>calabriam</rs> et castellum <rs>sancti mauri</rs> nomine c<seg ana="#ae">ae</seg>pit et cremauit.
 <note resp="#hand2" type="etcetera"><hi>hic</hi> autem <rs>callixtus</rs> et cetera…</note>
 </add>
+</p> 
+
+
+<p xml:id="g212.14-212.16" decls="#al"> 
 &bl;<hi>hic</hi> autem <rs>calixtus</rs> papatum <rs>romanum</rs> in pace et tranquillitate 
 &bl;possedit et urbem 
 &bl;<rs>romam</rs> pro sua uoluntate disposuit. <hi>sedit</hi> autem in epi&bd;scopatu 
