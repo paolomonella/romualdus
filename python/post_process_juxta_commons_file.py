@@ -32,11 +32,12 @@ def replacePointyBrackets(siglum):
             print(line, file=OUT, end='')
 
 
-def replaceSigla(siglum, printEdition='garufi',
-                 printSiglum='g', msSiglum='a',
+def replaceSigla(siglum, printEdition, printSiglum,
+                 msaSiglum='a', msoSiglum='o',
                  quiet=False):
-
-    ''' Substitute JuxtaCommons sigla with my sigla ('g', 'a', 'b' etc.) '''
+    ''' Substitute JuxtaCommons sigla with my sigla ('g', 'a', 'b' etc.)
+        printEdition may be 'garufi' or 'bonetti';
+        printSiglum may be 'g' or 'b' accordingly '''
 
     outSiglum = siglum + myconst.juxta_par_and_sigla_suffix
     xmlOutFile = '%s%s.xml' % (myconst.xmlpath, outSiglum)
@@ -44,44 +45,55 @@ def replaceSigla(siglum, printEdition='garufi',
     # Parse XML tree and find <witness> elements
     mytree = msTree(outSiglum)
     witnesses = mytree.tree.findall('.//t:%s' % ('witness'), myconst.ns)
+
+    # A list of dictionaries (from the <witList> list in the teiHeader
+    # of m1.xml or m2.xml. Later, the value of 'mySiglum' will be
+    # set to 'g', 'b', 'a' or 'o'.
     juxtaSigla = [
         {'juxtaSiglum': witness.get(myconst.xml_ns + 'id'),
+         'mySiglum': '',
          'element': witness}
         for witness in witnesses
     ]
 
     # Search which <witness> represents the print edition
     # ('bonetti' or 'garufi'):
-    juxtaPrintSiglum = 'unknown_siglum'
+    # juxtaPrintSiglum = 'unknown_siglum'  # §
     for myWitness in juxtaSigla:
+        # Identify the print (garufi/bonetti) siglum
         # If 'garufi' in... or if 'bonetti' in...
+        # (When I 'prepare' the witness in JuxtaCommons, the
+        #  description for this must include the whole word
+        #  'garufi' or 'bonetti', case-insensitive)
         if printEdition in myWitness['element'].text.lower():
-            juxtaPrintSiglum = myWitness['juxtaSiglum']
+            # juxtaPrintSiglum = myWitness['juxtaSiglum']  # §
             # Associate my print siglum (e.g. 'g') to the JuxtaCommons siglum
             # (e.g. 'wit-41657'):
             myWitness['mySiglum'] = printSiglum
-
-    # Check if the print <witness> has been found or not
-    if juxtaPrintSiglum == 'unknown_siglum':
-        print(('I haven\'t found what witness in {} corresponds to {}.'
-               'Please include string «{}» in the text'
-               'of one <witness> in {}').format(siglum,
-                                                printEdition.capitalize(),
-                                                printEdition,
-                                                siglum))
-    else:
-        if not quiet:
-            print(('\n[post_process_juxta_commons_file.py / replaceSigla] '
-                   'The JuxtaCommons-generated witness '
-                   'for {} in {} is {}').format(printEdition.capitalize(),
-                                                siglum, juxtaPrintSiglum))
-
-    for myWitness in juxtaSigla:
-        # if myWitness['mySiglum'] is None:
-        if 'mySiglum' not in myWitness:
-            # Associate my MS siglum (e.g. 'a') to the JuxtaCommons siglum
+        # Identify the MS A siglum
+        # (When I 'prepare' the witness in JuxtaCommons, the
+        #  description must be exactly 'a')
+        elif myWitness['element'].text.lower() == 'a':
+            # Associate 'a' to the JuxtaCommons siglum
             # (e.g. 'wit-41658'):
-            myWitness['mySiglum'] = msSiglum
+            myWitness['mySiglum'] = msaSiglum
+        # Identify the MS O siglum
+        # (When I 'prepare' the witness in JuxtaCommons, the
+        #  description must be exactly 'o')
+        elif myWitness['element'].text.lower() == 'o':
+            # Associate 'o' to the JuxtaCommons siglum
+            # (e.g. 'wit-41659'):
+            myWitness['mySiglum'] = msoSiglum
+        else:
+            print(('[replaceSigla] I didn\'t understand '
+                   'to which actual witness '
+                   'siglum {} corresponds to. '
+                   'In the witness description in JuxtaCommons website, '
+                   'the print edition description must include '
+                   '"garufi" or "bonetti", and the MS descriptions must '
+                   'be exactly "a" or "o"').format(
+                       myWitness['juxtaSiglum']
+                   ))
 
     # Replace value in <witness xml:id...>
     for witness in witnesses:

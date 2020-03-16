@@ -15,24 +15,26 @@ debug = False
 
 class treeWithAppElements:
 
-    def __init__(self, juxtaSiglum, printSiglum, msSiglum, quiet=False):
+    def __init__(self, juxtaSiglum, printSiglum, msaSiglum, msoSiglum,
+                 quiet=False):
         ''' - juxtaSiglum is the siglum (e.g. 'm1' or 'm2')
                 of the file with the <app> elements;
             - printSiglum is the siglum (e.g. 'g' or 'bonetti')
                 of the first witness (that's normally the print edition)
                 of the first witness (that's normally the print edition)
-            - msSiglum is the siglum (e.g. 'a' or 'o') of the 2nd witness
-                (normally a MS).
+            - msaSiglum is the siglum of MS A
+            - msoSiglum is the siglum of MS O
             - if quiet is True: suppress basic messages '''
         self.juxtaSiglum = juxtaSiglum
         self.myJuxtaXmlFile = '%s%s.xml' % (xmlpath, juxtaSiglum)
         self.outputXmlFile = self.myJuxtaXmlFile.replace('.xml', '-out.xml')
-        self.printSiglum, self.msSiglum = printSiglum, msSiglum
+        self.printSiglum = printSiglum
+        self.msaSiglum, self.msoSiglum = msaSiglum, msoSiglum
         self.juxtaTree = etree.parse(self.myJuxtaXmlFile)
         self.apps = self.juxtaTree.findall('.//t:app', ns)
         self.quiet = quiet
         # Import tables from DB
-        self.decision_table = my_database_import.import_table(
+        self.decision_variant_types = my_database_import.import_table(
             dbpath,
             'romualdus.sqlite3',
             'decision_variant_types')
@@ -78,21 +80,25 @@ class treeWithAppElements:
             <app> TEI XML elements, and has those keys (examples are for
             variants "sillaba" vs "syllaba"):
                 'r1' = the variant characters in myString1 ('y'),
-                    inherited from function variantComparison
+                    inherited from function variantComparison()
                 'r2' = the variant characters in myString2 ('i'),
-                    inherited from function variantComparison
+                    inherited from function variantComparison()
                 'type' = the variant type ('y-type'),
-                    inherited from function variantComparison
+                    inherited from function variantComparison()
                 plus new additional keys:
                 'app' = the <app> XML element
                 'printReading' = the <rdg> or <lem> XML element of the
                     1st witness (corresp. to printSiglum)
-                'msReading' = the <rdg> or <lem> XML element of the
-                    2nd witness (corresp. to msSiglum)
-                'printText' = the text (string) of the variant
-                    of the 1st witness (corresp. to printSiglum)
-                'msText' = the text (string) of the variant
-                    of the 2nd witness (corresp. to printSiglum)
+                'msaReading' = the <rdg> or <lem> XML element of MS A
+                    (corresp. to msaSiglum)
+                'msoReading' = the <rdg> or <lem> XML element of MS O
+                    (if present; corresp. to msaSiglum)
+                'printText' = the text (string) of the variant of the print
+                    edition (corresp. to printSiglum)
+                'msaText' = the text (string) of the variant of MS A
+                    (corresp. to msaSiglum)
+                'msoText' = the text (string) of the variant of MS O
+                    (corresp. to msoSiglum)
                 'where' = the xml:id of the parent <p>
         '''
 
@@ -101,12 +107,15 @@ class treeWithAppElements:
         for app in self.apps:
             printReading = app.find('.//t:*[@wit="#%s"]' %
                                     (self.printSiglum), ns)
-            msReading = app.find('.//t:*[@wit="#%s"]' % (self.msSiglum), ns)
+            msaReading = app.find('.//t:*[@wit="#%s"]' % (self.msaSiglum), ns)
+            # If any:
+            msoReading = app.find('.//t:*[@wit="#%s"]' % (self.msoSiglum), ns)
 
-            # Debug tests: check if something went wrong
+            # Debug tests: check if something went wrong.
+            # I'm not testing for MS O, which will mostly be empty
             for myReading in [(printReading, 'printReading'),
-                              (msReading, 'msReading')]:
-                if myReading[0] is None:
+                              (msaReading, 'msaReading')]:
+                if myReading[0] is None:  # If there is no <rdg>
                     print(('[Debug 07.03.2020 10.29] In MS {} '
                            '{} is None in an <app> '
                            'with parent paragraph {} with '
@@ -118,27 +127,73 @@ class treeWithAppElements:
                                app.getparent().attrib,
                                app.getparent().getparent().tag))
 
-            if printReading.text is not None:
+            # Set variables printText, msaText, msoText...
+            # ...for print edition
+            if printReading is not None and printReading.text is not None:
                 printText = printReading.text
             else:
                 printText = ''
-            if msReading.text is not None:
-                msText = msReading.text
+            # ... for MS A
+            if msaReading is not None and msaReading.text is not None:
+                msaText = msaReading.text
             else:
-                msText = ''
+                msaText = ''
+            # ... and for MS O (if any)
+            if msoReading is not None and msoReading.text is not None:
+                msoText = msoReading.text
+            else:
+                msoText = ''
+
+            # Debug
             if debug:
                 print('\n\nprintText: «%s»' % (printText))
-                print('msText: «%s»' % (msText))
+                print('msaText: «%s»' % (msaText))
+                print('msoText: «%s»' % (msoText))
 
             # MyComp is a dictionary (and 'comparisons' a list of dictionaries)
-            myComp = variant_type.variantComparison(printText, msText)
+            myComp = variant_type.variantComparison(printText, msaText)
             myComp['app'] = app
             myComp['printReading'] = printReading
-            myComp['msReading'] = msReading
+            myComp['msaReading'] = msaReading
+            myComp['msoReading'] = msoReading
             myComp['printText'] = printText
-            myComp['msText'] = msText
+            myComp['msaText'] = msaText
+            myComp['msoText'] = msoText
             myComp['where'] = app.getparent().get(
                 '{%s}id' % ns['xml'])
+
+            # Determine @type of <app>
+            #
+            # 1) when there are two variants, i.e. [print vs MS A]:
+            #   myComp['app'] is automatically inherited from
+            #   variantComparison(),
+            #   based on a comparison between print edition and MS A.
+            #   If unkown, myComp['app'] = 'unknown-type'; otherwise,
+            #   it is set by variantComparison()
+            #   (I am ignoring the variant of MS O, or it would all become
+            #    too complex).
+            if msoReading is None:
+                pass
+
+            # 2) when there are 2 variants, i.e. [print vs MS O]:
+            #   myComp['app] = 'unknown-print-vs-o-type'
+            #   (assumption: there is always a print <rdg>)
+            elif (msoReading is not None and
+                  msaReading is None):
+                myComp['app'] = 'unknown-print-vs-o-type'
+
+            # 3) when there are 3 variants, i.e. [print vs MS A vs MS O]:
+            #   myComp['app] = 'unknown-print-vs-a-vs-o-type'
+            elif (msoReading is not None and
+                  msaReading is not None):
+                myComp['app'] = 'unknown-print-vs-a-vs-o-type'
+
+            # 4) Catch errors
+            else:
+                print(('[philologist.py]: I could not manage '
+                       'the presence/absence of readings in MS A '
+                       'and in MS O'))
+
             comparisons.append(myComp)
         return comparisons
 
@@ -191,12 +246,12 @@ class treeWithAppElements:
             if debug:
                 print('\n')
                 print('«%s» | «%s» %15s @type="%s"' %
-                      (c['printText'], c['msText'], '·', c['type']))
+                      (c['printText'], c['msaText'], '·', c['type']))
                 for k in c:
                     print('%s: «%s»' % (k, c[k]))
 
     def findAndLocateSicCorr(self):
-        # self.juxtaSiglum, self.printSiglum, self.msSiglum
+        # self.juxtaSiglum, self.printSiglum, self.msaSiglum
         if self.printSiglum == 'g':
             myPrintXmlFile = '%s%s.xml' % (xmlpath, self.printSiglum)
         elif self.printSiglum == 'b':
@@ -255,7 +310,7 @@ class treeWithAppElements:
                                    c['corrText'],
                                    c['sicText'],
                                    a['printText'],
-                                   a['msText'],
+                                   a['msaText'],
                                    a['app'].getparent().get('{%s}id' %
                                                             ns['xml'])
                              ))
@@ -285,16 +340,18 @@ class treeWithAppElements:
         substantial_app.set('cert', 'high')
 
     def setLemsBasedOnType(self, setCert=True):
-        '''For some @type(s) of <app>, decide the <lem> automatically '''
+        '''For some @type(s) of <app>, decide the <lem> automatically
+            based on that @type. '''
 
-        # Decide <lem> and set @cert based on decision_table:
+        # Decide <lem> and set @cert based on decision_variant_types:
         if debug:
             print(self.appDict())
         for c in self.appDict():
-            for myRow in self.decision_table:
+            for myRow in self.decision_variant_types:
                 myType = myRow['type']
                 if c['type'] == myType:
-                    # It can be 'printReading' or 'msReading':
+                    # It can be 'printReading' or 'msaReading',
+                    # (not 'msoReading')
                     myPreferredRdg = myRow['preferredRdg']
                     # c[myPreferredRdg] is a TEI element, either <rdg wit="#a">
                     # or <rdg wit="#g">:
@@ -322,22 +379,23 @@ class treeWithAppElements:
                         # ... and the print/ms readings pair
                         # corresponds to that of the DB record
                         r['print'] == a['printText'] and
-                        r['ms'] == a['msText']):
+                        r['msa'] == a['msaText']):
 
                     # If the script has to choose between existing <rdg>s,
                     # i.e. if the record is one of these types:
                     if r['type'] in ['always', 'one-case', 'conj']:
 
                         # Set <lem> and <rdg> tags to the appropriate reading
+                        # § improve this: decision's value = column head
                         if r['decision'] == 'print':
                             self.make_lem(a['printReading'])
-                            self.make_rdg(a['msReading'])
-                        elif r['decision'] == 'ms':
+                            self.make_rdg(a['msaReading'])
+                        elif r['decision'] == 'msa':
                             self.make_rdg(a['printReading'])
-                            self.make_lem(a['msReading'])
+                            self.make_lem(a['msaReading'])
                         elif r['decision'] == 'conj':
                             self.make_rdg(a['printReading'])
-                            self.make_rdg(a['msReading'])
+                            self.make_rdg(a['msaReading'])
                             conj_lem = etree.SubElement(a['app'], 'lem')
                             # Better not using the following commented line
                             # when creating new elements or subelements:
@@ -360,9 +418,9 @@ class treeWithAppElements:
                                        r['part'],
                                        r['origin'],
                                        r['print'],
-                                       r['ms'],
+                                       r['msa'],
                                        a['printText'],
-                                       a['msText'],
+                                       a['msaText'],
                                        a['app'].getparent().get('{%s}id' %
                                                                 ns['xml'])))
 

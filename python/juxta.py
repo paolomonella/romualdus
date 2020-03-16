@@ -97,11 +97,13 @@ parameters = [
     {'siglum': 'm1',
      'ed': 'garufi',
      'printSiglum': 'g',
-     'msSiglum': 'a'},
+     'msaSiglum': 'a',
+     'msoSiglum': 'o'},
     {'siglum': 'm2',
      'ed': 'bonetti',
      'printSiglum': 'b',
-     'msSiglum': 'a'}
+     'msaSiglum': 'a',
+     'msoSiglum': 'o'}
 ]
 
 for mp in parameters:
@@ -112,7 +114,7 @@ for mp in parameters:
     post_process_juxta_commons_file.replaceSigla(mp['siglum'],
                                                  mp['ed'],
                                                  mp['printSiglum'],
-                                                 mp['msSiglum'],
+                                                 mp['msaSiglum'],
                                                  quiet=quiet)
     post_process_juxta_commons_file.removeEmptyParWrappingAllText(mp['siglum'])
 
@@ -121,7 +123,8 @@ for mp in parameters:
     newSiglum = mp['siglum'] + juxta_par_and_sigla_suffix
     myTree = philologist.treeWithAppElements(newSiglum,
                                              mp['printSiglum'],
-                                             mp['msSiglum'],
+                                             mp['msaSiglum'],
+                                             mp['msoSiglum'],
                                              quiet=quiet)
     myTree.findAndLocateSicCorr()
     myTree.variantTypesCountPrint()
