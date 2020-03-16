@@ -826,7 +826,7 @@ seditque <rs>damasus</rs> dies <num value="20">xx</num>. <hi>imperator</hi> aute
 
 <p xml:id="g180.10-180.12" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s and <rs>bonetti</rs>'s paragraphs run from page 179 line 15 to page 180 line 12 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 10 to line 12 is an addition in manuscript <hi>a</hi>.</note>
-<add place="addedfolios" hand="#hand2" xml:id="g179.15-180.12add100">
+<add place="addedfolios" hand="#hand2" xml:id="g180.10-180.12add100">
 <pb n="204r" facs="vat:230" ed="#a"/>
 ipse usque 
 &bl;<rs>capuam</rs> uenit terram pro tempore sibi componens, et sic reuer&bd;sus 
@@ -979,7 +979,7 @@ princeps.
 
 
 <p xml:id="g184.10-184.13" decls="#al"> 
-<add place="addedfolios" hand="#hand2" xml:id="g184.10-185.7add100">
+<add place="addedfolios" hand="#hand2" xml:id="g184.10-184.13add100">
 &bl;<hi>anno</hi> dominic<seg ana="#ae">ae</seg> incarnationis <num value="1060">mlx</num>, indictione <num value="13">xiii</num>. <rs>henricus</rs> rex <rs>francorum</rs> 
 &bl;obiit, et <rs>philippus</rs> filius eius successit in regnum. <hi>ipso</hi> quoque 
 &bl;anno comes <rs>robbertus</rs> <rs>guiscardus</rs> uocatus a <rs>troianis</rs> ciui&bd;bus, 
@@ -1167,7 +1167,7 @@ utique artis diu famosam atque precipuam. <rs>gisolfus</rs>
 
 <p xml:id="g189.1-189.1" decls="#al"> 
 <link target="#g189.1-189.1 #g189.1-189.1garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
-<add place="margin" hand="#hand2" xml:id="g188.12-190.8add100">
+<add place="margin" hand="#hand2" xml:id="g189.1-189.1add100">
 <hi>hoc</hi> anno <rs>robertus</rs> dux dedit filiam suam 
 &bl;nurum ad imperatorem <rs>constantinopolitanum</rs>.
 <note resp="#hand2" type="sanctipetri"><hi>ex</hi> codice sancti <rs>petri</rs>.</note> 
@@ -1502,7 +1502,7 @@ ab eo terram cum ducatus ho<pb break="no" n="212v" facs="vat:240" ed="#a"/>nore.
 
 <p xml:id="g199.5-199.8" decls="#al">
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s and <rs>bonetti</rs>'s paragraphs run from page 199 line 1 to line 8 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 5 to line 8 is an addition in manuscript <hi>a</hi>.</note>
-<add place="margin" hand="#hand2" xml:id="g199.1-199.8add100">
+<add place="margin" hand="#hand2" xml:id="g199.5-199.8add100">
 <hi>eodem</hi> 
 &bl;anno <rs>acherontia</rs> ciuitas cremata est mense <hi>augusti</hi>, in tantum 
 &bl;enim eodem uastata est igne, ut nulla domus, nullum inueniretur 
@@ -1635,7 +1635,7 @@ pontificali et <rs>paschalis</rs> est papa nuncupatus, seditque annis
 
 <p xml:id="g202.7-202.10" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s and <rs>bonetti</rs>'s paragraphs run from page 202 line 5 to line 10 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 7 to line 10 is an addition in manuscript <hi>a</hi>.</note>
-<add place="footer" hand="#hand2" xml:id="g202.5-202.10add100">
+<add place="footer" hand="#hand2" xml:id="g202.7-202.10add100">
 <hi>hoc</hi> anno in 
 &bl;mense <hi>iulio</hi> <rs>boamundus</rs> exiens ab <rs>antiochia</rs> cum <num value="300">ccc</num> equiti&bd;bus, 
 cum <rs>turcis</rs> bellum commisit ceciditque et comprehensus 
@@ -1660,7 +1660,7 @@ nutritor, pius, in elemosinis largus, ecclesiarum <rs>dei</rs> atque
 
 <p xml:id="g203.1-203.2" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s and <rs>bonetti</rs>'s paragraphs run from page 202 line 11 to page 203 line 2 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 1 to line 2 of page 203 is an addition in manuscript <hi>a</hi>.</note>
-<add place="footer" hand="#hand2" xml:id="g202.11-203.2add100">
+<add place="footer" hand="#hand2" xml:id="g203.1-203.2add100">
 <hi>hoc</hi> anno 
 &bl;a <rs>mulmachab<seg ana="#ae">ae</seg>o</rs> <rs>mons caueosus</rs> mutatur. 
 </add>
@@ -2025,7 +2025,7 @@ cepit, captumque direxit in monasterium <rs>sancte</rs> <rs>trinitatis</rs>
 <p xml:id="g212.12-212.13" decls="#al"> 
 <link target="#g212.12-212.16 #g212.12-212.16garufiandbonetticollocation" type="transposition" subtype="garufiandbonetticollocation"/>
 <milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
-<add place="footer" hand="#hand2" xml:id="g212.12-212.16add100">
+<add place="footer" hand="#hand2" xml:id="g212.12-212.13add100">
 &bl;<hi>hoc</hi> tempore in mense <hi>iunio</hi> <rs>rogerius</rs> comes 
 &bl;<rs>sicili<seg ana="#ae">ae</seg></rs> cum turba non exigua equitum et peditum transfetauit in 
 &bl;<rs>calabriam</rs> et castellum <rs>sancti mauri</rs> nomine c<seg ana="#ae">ae</seg>pit et cremauit.
@@ -2129,7 +2129,7 @@ ciuitate ab <rs>alfano</rs> <rs>capudaquensi</rs> episcopo est unctus in
 
 <p xml:id="g214.12-214.14" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from page 214 line 12 to page 215 line 3 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph because the text segmentation in manuscript <hi>a</hi> is different than in <rs>garufi</rs>.</note>
-<add place="margin" hand="#hand2" xml:id="g214.12-215.3add100">
+<add place="margin" hand="#hand2" xml:id="g214.12-214.14add100">
 &bl;<hi>anno</hi> <num value="1127">mcxxuii</num> indictione <num value="6">ui</num> mense <hi>septembris</hi> 
 &bl;<rs>boamundus</rs> ueniens transfretauit in <rs>antiochiam</rs>, et factus est 
 &bl;princeps in loco patris sui, et omnes ciuitates suas <rs>apuli<seg ana="#ae">ae</seg></rs> comi&bd;ti 
@@ -4017,7 +4017,7 @@ nacta oportunitate, nescientibus <rs>alexandrinis</rs>, fossas et
 &bl;fecit, ut ex improuiso de cuniculis repente erumperent et citui&bd;tatem 
 huius fraudis nesciam occuparent. <hi>sed</hi> mox ut <rs>alexandrini</rs> 
 &bl;hoc perceperunt, arreptis armis, ceperunt 
-<add place="margin" hand="#hand2" xml:id="g262.17-266.4add100">
+<add place="margin" hand="#hand2">
 ad fossati superiora concurrere, et terram dirumpere, propter quod terra desuper subito corruit.
 </add>
 ad fossata currere et 
