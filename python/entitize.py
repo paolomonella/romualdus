@@ -6,7 +6,7 @@ import os
 from myconst import entitize_backup_path
 
 
-def entitize(filename, quiet=False):
+def entitize(filename, backup=False, quiet=False):
     ''' Replace long tags with their corresponding entities '''
 
     if not quiet:
@@ -32,21 +32,23 @@ def entitize(filename, quiet=False):
          </choice>', 'uu'],
     ]
 
-    # Backup original file
-    datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
     input_filename = ''.join(['../xml/', filename, '.xml'])
-    backup_filename = ''.join([
-        entitize_backup_path,
-        datetime,
-        '_backup_before_entitization_of_',
-        filename,
-        '.xml'
-    ])
-    # Create backup of old file:
-    os.system('cp %s %s' % (input_filename, backup_filename))
+    if backup:
+        # Backup original file
+        datetime = time.strftime('%Y-%m-%d_%H.%M.%S')
+        backup_filename = ''.join([
+            entitize_backup_path,
+            datetime,
+            '_backup_before_entitization_of_',
+            filename,
+            '.xml'
+        ])
+        # Create backup of old file:
+        os.system('cp %s %s' % (input_filename, backup_filename))
 
     with open(input_filename, 'r') as IN:
-        output_filename = input_filename.replace('.xml', '_with_entities.xml')
+        output_filename = input_filename.replace('.xml',
+                                                 '_with_entities.xml')
         with open(output_filename, 'w') as OUT:
             for line in IN:
                 if line.startswith('<?') or line.startswith('<!ENTITY'):

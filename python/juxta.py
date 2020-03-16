@@ -90,7 +90,7 @@ simplify_markup_for_collation.finalProcessingBeforeJuxta(
 
 
 ##################
-# POST-COLLATION # 1
+# POST-COLLATION #
 ##################
 
 parameters = [
@@ -98,11 +98,13 @@ parameters = [
      'ed': 'garufi',
      'printSiglum': 'g',
      'msaSiglum': 'a',
+     'msa2Siglum': 'a2',
      'msoSiglum': 'o'},
     {'siglum': 'm2',
      'ed': 'bonetti',
      'printSiglum': 'b',
      'msaSiglum': 'a',
+     'msa2Siglum': 'a2',
      'msoSiglum': 'o'}
 ]
 
@@ -111,12 +113,14 @@ for mp in parameters:
     ''' Post-processing of JuxtaCommons-generated files
         (from module post_process_juxta_commons_file.py)'''
     post_process_juxta_commons_file.replacePointyBrackets(mp['siglum'])
-    post_process_juxta_commons_file.replaceSigla(mp['siglum'],
-                                                 mp['ed'],
-                                                 mp['printSiglum'],
-                                                 mp['msaSiglum'],
-                                                 quiet=quiet)
-    post_process_juxta_commons_file.removeEmptyParWrappingAllText(mp['siglum'])
+    myTree = post_process_juxta_commons_file.msTree(mp['siglum'],
+                                                    mp['ed'],
+                                                    mp['printSiglum'],
+                                                    mp['msaSiglum'],
+                                                    mp['msa2Siglum'],
+                                                    mp['msoSiglum'])
+    myTree.replaceSigla()
+    myTree.removeEmptyParWrappingAllText()
 
     ''' Set <lem>/<rdg> and set @type attributes for <app>s
         (from module set_variant_types_in_appcrit_tei_file.py) '''
@@ -126,6 +130,7 @@ for mp in parameters:
                                              mp['msaSiglum'],
                                              mp['msoSiglum'],
                                              quiet=quiet)
+    myTree.setA2ForAdditions()
     myTree.findAndLocateSicCorr()
     myTree.variantTypesCountPrint()
     myTree.setTypeAttributesForApps()

@@ -8,7 +8,7 @@ import my_database_import
 import variant_type
 import operator
 from lxml import etree
-from myconst import ns, xmlpath, dbpath
+from myconst import ns, xmlpath, dbpath, dbname
 
 debug = False
 
@@ -31,6 +31,7 @@ class treeWithAppElements:
         self.printSiglum = printSiglum
         self.msaSiglum, self.msoSiglum = msaSiglum, msoSiglum
         self.juxtaTree = etree.parse(self.myJuxtaXmlFile)
+        self.justaBody = self.juxtaTree.find('.//t:%s' % ('body'), ns)
         self.apps = self.juxtaTree.findall('.//t:app', ns)
         self.quiet = quiet
         # Import tables from DB
@@ -42,6 +43,28 @@ class treeWithAppElements:
             dbpath,
             'romualdus.sqlite3',
             'decisions')
+
+    def setA2ForAdditions(self):
+        ''' In sections that are additions by hand2, replace wit="a" with
+            wit="a2" '''
+        table = my_database_import.import_table(
+            dbpath,
+            dbname,
+            'hand2_additions')
+        pars = self.justaBody.findall('.//t:%s' % ('app'), ns)
+        print('{}.xml length of pars: {}'.format(
+            self.juxtaSiglum,
+            len(pars)))
+        count = 0
+        for par in pars:
+            par_xmlid = par.get('{%s}id' % ns['xml'])
+            for x in table:
+                db_xmlid = x[0]
+                # If we are in the right paragraph
+                if par_xmlid == db_xmlid:
+                    count += 1
+        print('Found {} addition paragraphs'.format(
+            count))
 
     def editTeiHeader(self):
         ''' Set some basic elements in the teiHeader of m1.xml and m2.xml '''
@@ -370,6 +393,7 @@ class treeWithAppElements:
             '''
             # For each record in the 'decisions' DB table:
             for r in self.decisions:
+
                 # If col. 'handle' is 1 (with 0, ignore the record)...
                 if (r['handle'] == 1 and
                         # ...we are in the right <p>
@@ -387,6 +411,11 @@ class treeWithAppElements:
 
                         # Set <lem> and <rdg> tags to the appropriate reading
                         # § improve this: decision's value = column head
+                        # r['decision'] (i.e. the value of column 'decision'
+                        # in table 'decisions' in the DB can be
+                        # 'print', 'msa' or 'mso' Those three values
+                        # are also the headers of tables in the same
+                        # 'decisions' table
                         if r['decision'] == 'print':
                             self.make_lem(a['printReading'])
                             self.make_rdg(a['msaReading'])
