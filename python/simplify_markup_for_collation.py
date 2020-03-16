@@ -166,10 +166,18 @@ class msTree:
                     - delete <add> (don't keep the later addition)
             '''
         for e in self.tree.findall('.//t:%s' % ('add'), myconst.ns):
-            # If @hand is provided, then the
-            # addition is my a later hand: ignore it (remove <add>)
+            # If @hand is provided, then the addition is by a later hand
             if e.get('hand') is not None:
-                e.getparent().remove(e)
+                my_xmlid = e.get('{%s}id' % ns['xml'])
+                # Special case: this is one of the major additions.
+                # In this case, don't delete the <add>.
+                # The text of all surviving <add>s will then be
+                # managed by function simplify_to_scanlike_text()
+                if my_xmlid is not None and 'add100' in my_xmlid:
+                    pass
+                # In all other cases, delete the <add>
+                else:
+                    e.getparent().remove(e)
         for e in self.tree.findall('.//t:%s' % ('del'), myconst.ns):
             # If no @hand is provided, then
             # the addition is by the MS's main hand: delete <del>

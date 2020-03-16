@@ -368,8 +368,9 @@ class treeWithAppElements:
 
                     # If the record is of type 'missing' (par. missing in A):
                 if r['type'] == 'missing':
-                    print('Found missing with handle={}'.format(
-                        r['handle']))
+                    if not self.quiet:
+                        print('Found missing with handle={}'.format(
+                            r['handle']))
 
     def write(self):
         ''' Write my XML juxtaTree to an external file '''
