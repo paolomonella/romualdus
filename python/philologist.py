@@ -106,7 +106,8 @@ class treeWithAppElements:
                 for child in rdg_and_lem_in_app:
                     child_wit = child.get('wit')
                     if child_wit == '#a':
-                        # Never use namespaces when setting TEI attributes!
+                        # Better not use namespaces when
+                        # setting TEI attributes!
                         child.set('wit', '#a2')
 
     def editTeiHeader(self):
@@ -143,6 +144,10 @@ class treeWithAppElements:
                          % ns['t']).text = 'Biblioteca Apostolica Vaticana'
         etree.SubElement(a2_msIdentifier,
                          '{%s}idno' % ns['t']).text = 'Vat. lat. 3973'
+        a2_ab = etree.SubElement(
+            a2_msDesc, '{%s}ab' % ns['t'])
+        a2_ab.text = ('This siglum represent a later hand, probably of the'
+                      ' XVII century, in this manuscript')
 
         # a2_idno.text = 'Vat. lat. 3973'
         #  etree.SubElement(a2_msDesc, '{%s}msIdentifier' % ns['t'])
@@ -351,7 +356,7 @@ class treeWithAppElements:
             myTypesDebug = [c['type'] for c in self.appDict()]
             print('[Debug 07.03.2020] %s' % (set(myTypesDebug)))
         for c in self.appDict():
-            # Never use namespaces when setting TEI attributes!
+            # Better not use namespaces when setting TEI attributes!
             # c['app'].set('{%s}type' % ns['t'], c['type'])
             c['app'].set('type', c['type'])
 
@@ -447,10 +452,10 @@ class treeWithAppElements:
     def make_substantial(self, substantial_app):
         ''' Demote myElement to not chosen text,
             i.e. set its tag name to <rdg> '''
-        # Never use namespaces when setting TEI attributes!
+        # Better not use namespaces when setting TEI attributes!
         # substantial_app.set('{%s}type' % ns['t'], 'substantial-type')
         substantial_app.set('type', 'substantial-type')
-        # Never use namespaces when setting TEI attributes!
+        # Better not use namespaces when setting TEI attributes!
         # substantial_app.set('{%s}cert' % ns['t'], 'high')
         substantial_app.set('cert', 'high')
 
@@ -507,7 +512,8 @@ class treeWithAppElements:
                     if setCert is True:
                         # myCert can be 'low', 'middle' or 'high':
                         myCert = myRow['cert']
-                        # Never use namespaces when setting TEI attributes!
+                        # Better not use namespaces when setting
+                        # TEI attributes!
                         # c['app'].set('{%s}cert' % ns['t'], myCert)
                         c['app'].set('cert', myCert)
 
@@ -559,7 +565,8 @@ class treeWithAppElements:
                                 # 'lem')
                                 '{%s}lem' % ns['t'])
                             conj_lem.text = r['conj']
-                            # Never use namespaces when setting TEI attributes!
+                            # Better not use namespaces when setting
+                            # TEI attributes!
                             # conj_lem.set('{%s}resp' % ns['t'], '#pm')
                             conj_lem.set('resp', '#pm')
                         else:
