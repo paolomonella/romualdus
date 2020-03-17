@@ -15,7 +15,8 @@ debug = False
 
 class treeWithAppElements:
 
-    def __init__(self, juxtaSiglum, printSiglum, msaSiglum, msoSiglum,
+    def __init__(self, juxtaSiglum, printSiglum,
+                 msaSiglum, msa2Siglum, msoSiglum,
                  quiet=False):
         ''' - juxtaSiglum is the siglum (e.g. 'm1' or 'm2')
                 of the file with the <app> elements;
@@ -23,18 +24,31 @@ class treeWithAppElements:
                 of the first witness (that's normally the print edition)
                 of the first witness (that's normally the print edition)
             - msaSiglum is the siglum of MS A
+            - msa2Siglum is the siglum of MS A, hand 2
             - msoSiglum is the siglum of MS O
             - if quiet is True: suppress basic messages '''
+
+        # Input and output filenames definition:
         self.juxtaSiglum = juxtaSiglum
         self.myJuxtaXmlFile = '%s%s.xml' % (xmlpath, juxtaSiglum)
         self.outputXmlFile = self.myJuxtaXmlFile.replace('.xml', '-out.xml')
+
+        # Sigla for editions and MSS:
         self.printSiglum = printSiglum
+        self.msaSiglum, = msaSiglum,
+        self.msa2Siglum = msa2Siglum
+        self.msoSiglum = msoSiglum
         self.msaSiglum, self.msoSiglum = msaSiglum, msoSiglum
+
+        # Parse the juxtacommons file XML tree:
         self.juxtaTree = etree.parse(self.myJuxtaXmlFile)
         self.justaBody = self.juxtaTree.find('.//t:%s' % ('body'), ns)
         self.apps = self.juxtaTree.findall('.//t:app', ns)
+
+        # Quieter output:
         self.quiet = quiet
-        # Import tables from DB
+
+        # Import (some) tables from DB
         self.decision_variant_types = my_database_import.import_table(
             dbpath,
             'romualdus.sqlite3',
@@ -47,24 +61,53 @@ class treeWithAppElements:
     def setA2ForAdditions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
             wit="a2" '''
-        table = my_database_import.import_table(
+
+        # Import table hand2_additions from DB
+        hand2_additions_table = my_database_import.import_table(
             dbpath,
             dbname,
             'hand2_additions')
-        pars = self.justaBody.findall('.//t:%s' % ('app'), ns)
-        print('{}.xml length of pars: {}'.format(
-            self.juxtaSiglum,
-            len(pars)))
-        count = 0
+
+        # Create a list with the xml:id's of those <p>s
+        additions_xmlids = [x[0] for x in hand2_additions_table]
+
+        # All <p>s in the XML document
+        pars = self.justaBody.findall('.//t:%s' % ('p'), ns)
+
+        # Find the <p>s that include additions and include
+        # them in list pars_with_addition and put them
+        # in list pars_with_additions
+        pars_with_additions = []
+        additions_count = 0
         for par in pars:
             par_xmlid = par.get('{%s}id' % ns['xml'])
-            for x in table:
-                db_xmlid = x[0]
-                # If we are in the right paragraph
-                if par_xmlid == db_xmlid:
-                    count += 1
-        print('Found {} addition paragraphs'.format(
-            count))
+            if par_xmlid in additions_xmlids:
+                additions_count += 1
+                pars_with_additions.append(par)
+
+        if debug:
+            print('found {} pars with adds in {}'.format(
+                self.juxtaSiglum, len(pars_with_additions)))
+
+        # Set wit="#a2" if it was "#a"
+        #
+        # For each <p> with additions in the XML file:
+        for par_with_addition in pars_with_additions:
+            # All <app> children of that <p>:
+            apps_in_par = par_with_addition.findall('.//t:app', ns)
+            for app in apps_in_par:
+                # Get all <rdg> children of <app>
+                rdg_in_app = app.findall('.//t:rdg', ns)
+                # Get all <lem> children of <app>
+                lem_in_app = app.findall('.//t:lem', ns)
+                # All <lem> and <rdg> children of <app>
+                # (they should all be <rdg> in fact)
+                rdg_and_lem_in_app = rdg_in_app + lem_in_app
+                for child in rdg_and_lem_in_app:
+                    child_wit = child.get('wit')
+                    if child_wit == '#a':
+                        # Never use namespaces when setting TEI attributes!
+                        child.set('wit', '#a2')
 
     def editTeiHeader(self):
         ''' Set some basic elements in the teiHeader of m1.xml and m2.xml '''
@@ -89,6 +132,21 @@ class treeWithAppElements:
         for child in a_source_desc:
             m_source_desc.append(child)
 
+        # Append a new <msDesc xml:id="a2"> to <sourceDesc> for MS A, hand 2
+        list_bibl = m_source_desc.find('.//t:listBibl', ns)
+        a2_msDesc = etree.SubElement(list_bibl, '{%s}msDesc' % ns['t'])
+        a2_msDesc.set('{%s}id' % ns['xml'], 'a2')
+        a2_msIdentifier = etree.SubElement(
+            a2_msDesc, '{%s}msIdentifier' % ns['t'])
+        etree.SubElement(a2_msIdentifier,
+                         '{%s}settlement'
+                         % ns['t']).text = 'Biblioteca Apostolica Vaticana'
+        etree.SubElement(a2_msIdentifier,
+                         '{%s}idno' % ns['t']).text = 'Vat. lat. 3973'
+
+        # a2_idno.text = 'Vat. lat. 3973'
+        #  etree.SubElement(a2_msDesc, '{%s}msIdentifier' % ns['t'])
+
         # Remove old <front>/<div>/<listWit> (generated by JuxtaCommons),
         # now redundant
         text_front = self.juxtaTree.find('.//t:front', ns)
@@ -111,8 +169,11 @@ class treeWithAppElements:
                 plus new additional keys:
                 'app' = the <app> XML element
                 'printReading' = the <rdg> or <lem> XML element of the
-                    1st witness (corresp. to printSiglum)
+                    print edition (corresp. to printSiglum)
                 'msaReading' = the <rdg> or <lem> XML element of MS A
+                    (corresp. to msaSiglum)
+                'msa2Reading' = the <rdg> or <lem> XML element of MS A,
+                    hand 2, i.e. wit="#a2"
                     (corresp. to msaSiglum)
                 'msoReading' = the <rdg> or <lem> XML element of MS O
                     (if present; corresp. to msaSiglum)
@@ -132,23 +193,35 @@ class treeWithAppElements:
                                     (self.printSiglum), ns)
             msaReading = app.find('.//t:*[@wit="#%s"]' % (self.msaSiglum), ns)
             # If any:
+            msa2Reading = app.find('.//t:*[@wit="#%s"]' % (self.msa2Siglum),
+                                   ns)
+            # If any:
             msoReading = app.find('.//t:*[@wit="#%s"]' % (self.msoSiglum), ns)
 
             # Debug tests: check if something went wrong.
-            # I'm not testing for MS O, which will mostly be empty
-            for myReading in [(printReading, 'printReading'),
-                              (msaReading, 'msaReading')]:
-                if myReading[0] is None:  # If there is no <rdg>
-                    print(('[Debug 07.03.2020 10.29] In MS {} '
-                           '{} is None in an <app> '
-                           'with parent paragraph {} with '
-                           'attributes {} and grandparent'
-                           '{}').format(
-                               self.myJuxtaXmlFile,
-                               myReading[1],
-                               app.getparent().tag,
-                               app.getparent().attrib,
-                               app.getparent().getparent().tag))
+            #
+            # Everything is OK if there is one reading
+            # and one manuscript reading. The latter can belong
+            # to MS A, to the second hand of MS A or to MS O.
+            # If the print reading or one of the MSS readings are missing,
+            # something is wrong:
+            if (printReading is None or
+                (msaReading is None
+                 and msa2Reading is None
+                 and msoReading is None)):
+                print(('\n[Debug 07.03.2020 10.29] In file {},'
+                       ' paragraph {} {}, I found those readings:\n'
+                       '\t- print reading: {}\n'
+                       '\t- MS A reading: {}\n'
+                       '\t- MS A hand 2 reading: {}\n'
+                       '\t- MS O print reading: {}').format(
+                           self.myJuxtaXmlFile,
+                           app.getparent().tag,
+                           app.getparent().attrib,
+                           printReading,
+                           msaReading,
+                           msa2Reading,
+                           msoReading,))
 
             # Set variables printText, msaText, msoText...
             # ...for print edition
@@ -161,6 +234,11 @@ class treeWithAppElements:
                 msaText = msaReading.text
             else:
                 msaText = ''
+            # ... for MS A, hand 2
+            if msa2Reading is not None and msa2Reading.text is not None:
+                msa2Text = msa2Reading.text
+            else:
+                msa2Text = ''
             # ... and for MS O (if any)
             if msoReading is not None and msoReading.text is not None:
                 msoText = msoReading.text
@@ -173,14 +251,22 @@ class treeWithAppElements:
                 print('msaText: «%s»' % (msaText))
                 print('msoText: «%s»' % (msoText))
 
-            # MyComp is a dictionary (and 'comparisons' a list of dictionaries)
+            # MyComp is a dictionary (and 'comparisons' a list of
+            # dictionaries).
+            # This is the line that imports the dictionary from function
+            # variantComparision (from module variant_type.py):
             myComp = variant_type.variantComparison(printText, msaText)
+
+            # Set additional keys in dictionary myComp. See the documentation
+            # of this method above for details.
             myComp['app'] = app
             myComp['printReading'] = printReading
             myComp['msaReading'] = msaReading
+            myComp['msa2Reading'] = msa2Reading
             myComp['msoReading'] = msoReading
             myComp['printText'] = printText
             myComp['msaText'] = msaText
+            myComp['msa2Text'] = msa2Text
             myComp['msoText'] = msoText
             myComp['where'] = app.getparent().get(
                 '{%s}id' % ns['xml'])
@@ -265,7 +351,10 @@ class treeWithAppElements:
             myTypesDebug = [c['type'] for c in self.appDict()]
             print('[Debug 07.03.2020] %s' % (set(myTypesDebug)))
         for c in self.appDict():
+            # Never use namespaces when setting TEI attributes!
+            # c['app'].set('{%s}type' % ns['t'], c['type'])
             c['app'].set('type', c['type'])
+
             if debug:
                 print('\n')
                 print('«%s» | «%s» %15s @type="%s"' %
@@ -346,20 +435,23 @@ class treeWithAppElements:
     def make_lem(self, myElement):
         ''' Promote myElement to chosen text,
             i.e. set its tag name to <lem> '''
-        # It's important, when setting the tag, that one adds the namespace,
-        # or this script won't work
+        # Always add the namespace when setting new tag
         myElement.tag = '{%s}lem' % ns['t']
 
     def make_rdg(self, myElement):
         ''' Demote myElement to not chosen text,
             i.e. set its tag name to <rdg> '''
+        # Always add the namespace when setting new tag
         myElement.tag = '{%s}rdg' % ns['t']
 
     def make_substantial(self, substantial_app):
         ''' Demote myElement to not chosen text,
             i.e. set its tag name to <rdg> '''
+        # Never use namespaces when setting TEI attributes!
+        # substantial_app.set('{%s}type' % ns['t'], 'substantial-type')
         substantial_app.set('type', 'substantial-type')
-        # substantial_app.set('subtype', 'db')
+        # Never use namespaces when setting TEI attributes!
+        # substantial_app.set('{%s}cert' % ns['t'], 'high')
         substantial_app.set('cert', 'high')
 
     def setLemsBasedOnType(self, setCert=True):
@@ -371,17 +463,52 @@ class treeWithAppElements:
             print(self.appDict())
         for c in self.appDict():
             for myRow in self.decision_variant_types:
-                myType = myRow['type']
-                if c['type'] == myType:
-                    # It can be 'printReading' or 'msaReading',
-                    # (not 'msoReading')
-                    myPreferredRdg = myRow['preferredRdg']
-                    # c[myPreferredRdg] is a TEI element, either <rdg wit="#a">
-                    # or <rdg wit="#g">:
-                    self.make_lem(c[myPreferredRdg])
+
+                # E.g.: 'different-punct-type':
+                if c['type'] == myRow['type']:
+                    # db_preferredRdg can be 'reading_of_the_print_edition'
+                    # or a generic 'reading_of_one_of_the_mss':
+                    db_preferredRdg = myRow['preferredRdg']
+
+                    if db_preferredRdg == 'reading_of_the_print_edition':
+                        self.make_lem(c['printReading'])
+
+                    elif db_preferredRdg == 'reading_of_one_of_the_mss':
+                        # Choose the reading of MS A, if any:
+                        if c['msaReading'] is not None:
+                            self.make_lem(c['msaReading'])
+                        # If there is a MS A reading, the script will
+                        # skip the other lines. Otherwise (if there
+                        # is no MS A reading),
+                        # choose the reading of MS A2, if any:
+                        elif c['msa2Reading'] is not None:
+                            self.make_lem(c['msa2Reading'])
+                        # If there is no MS A reading and
+                        # no MS A2 reading,
+                        # choose the reading of MS O, if any:
+                        elif c['msoReading'] is not None:
+                            self.make_lem(c['msoReading'])
+                        else:
+                            print(('\n[setLemsBasedOnType] I should'
+                                   ' choose a reading from a MS, but'
+                                   ' I can\'t find any MS reading in'
+                                   ' the <app> element. This <app>'
+                                   ' has printText «{}» and these'
+                                   ' features: «{}»/').format(
+                                       ' '.join(c['printReading'].itertext()),
+                                       c))
+
+                    else:
+                        print(('\n[setLemsBasedOnType] I couln\'t'
+                               ' read table decision_variant_types'
+                               ' from the DB properly. My db_preferredRdg'
+                               ' is {}').format(db_preferredRdg))
+
                     if setCert is True:
                         # myCert can be 'low', 'middle' or 'high':
                         myCert = myRow['cert']
+                        # Never use namespaces when setting TEI attributes!
+                        # c['app'].set('{%s}cert' % ns['t'], myCert)
                         c['app'].set('cert', myCert)
 
     def setLemsBasedOnDB(self):
@@ -425,12 +552,16 @@ class treeWithAppElements:
                         elif r['decision'] == 'conj':
                             self.make_rdg(a['printReading'])
                             self.make_rdg(a['msaReading'])
-                            conj_lem = etree.SubElement(a['app'], 'lem')
-                            # Better not using the following commented line
-                            # when creating new elements or subelements:
-                            # '{%s}lem' % ns['t'])
-                            conj_lem.set('resp', '#pm')
+                            # I am not sure if I should add
+                            # the namespace or not
+                            conj_lem = etree.SubElement(
+                                a['app'],
+                                # 'lem')
+                                '{%s}lem' % ns['t'])
                             conj_lem.text = r['conj']
+                            # Never use namespaces when setting TEI attributes!
+                            # conj_lem.set('{%s}resp' % ns['t'], '#pm')
+                            conj_lem.set('resp', '#pm')
                         else:
                             print(('[philologist.py/setLemsBasedOnDB] '
                                    'I can\'t find a "decision" field '
@@ -458,6 +589,17 @@ class treeWithAppElements:
                     if not self.quiet:
                         print('Found missing with handle={}'.format(
                             r['handle']))
+
+    def putLemAsFirstInApp(self):
+        ''' In the TEI DTD, <lem> must be the first child of <app>.
+            This method puts <lem> first '''
+        for a in self.appDict():
+            app = a['app']
+            for child in app:
+                # If the child is a <lem>:
+                if child.tag == '{%s}lem' % ns['t']:
+                    if app.index(child) > 0:
+                        app.insert(0, child)
 
     def write(self):
         ''' Write my XML juxtaTree to an external file '''

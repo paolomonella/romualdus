@@ -128,6 +128,7 @@ for mp in parameters:
     myTree = philologist.treeWithAppElements(newSiglum,
                                              mp['printSiglum'],
                                              mp['msaSiglum'],
+                                             mp['msa2Siglum'],
                                              mp['msoSiglum'],
                                              quiet=quiet)
     myTree.setA2ForAdditions()
@@ -137,4 +138,5 @@ for mp in parameters:
     myTree.setLemsBasedOnType()
     myTree.setLemsBasedOnDB()
     myTree.editTeiHeader()
+    myTree.putLemAsFirstInApp()
     myTree.write()

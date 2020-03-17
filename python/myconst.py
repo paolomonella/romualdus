@@ -26,6 +26,8 @@ metatextlist = ['pb', 'cb', 'garufi', 'note']
 # XML/HTML namespaces
 
 ns = {
+    # For elements without prefix:
+    None: 'http://www.tei-c.org/ns/1.0',
     # for TEI XML:
     't': 'http://www.tei-c.org/ns/1.0',
     # for attributes like xml:id:
