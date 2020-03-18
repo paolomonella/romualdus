@@ -70,6 +70,3 @@ def a_splitter(siglum_a1='a1', siglum_a2='a2',
     # Write a2.xml
     tree_a2.write(xmlfile_a2, encoding='UTF-8', method='xml',
                   pretty_print=True, xml_declaration=True)
-
-
-a_splitter()

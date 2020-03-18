@@ -5,6 +5,8 @@ import time
 import os
 from myconst import entitize_backup_path
 
+# <lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>
+
 
 def entitize(filename, backup=False, quiet=False):
     ''' Replace long tags with their corresponding entities '''
@@ -14,25 +16,24 @@ def entitize(filename, backup=False, quiet=False):
                'I am restoring entities for file {}').format(filename))
 
     ent = [
-        ['<lb xmlns="http://www.tei-c.org/ns/1.0" \
-         break="no" rend="-" ed="#g"/>', 'gd'],
+        [('<lb xmlns="http://www.tei-c.org/ns/1.0" '
+          'break="no" rend="-" ed="#g"/>'), 'gd'],
         ['<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>', 'gl'],
-        ['<lb xmlns="http://www.tei-c.org/ns/1.0" \
-         break="no" rend="-" ed="#b"/>', 'bd'],
+        [('<lb xmlns="http://www.tei-c.org/ns/1.0" '
+         'break="no" rend="-" ed="#b"/>'), 'bd'],
         ['<lb break="no" rend="-" ed="#b"/>', 'bd'],
         ['<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>', 'bl'],
         ['<lb ed="#b"/>', 'bl'],
-        ['<choice xmlns="http://www.tei-c.org/ns/1.0">\
-         <orig xmlns="http://www.tei-c.org/ns/1.0">j</orig>\
-         <reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg>\
-         </choice>', 'jj'],
-        ['<choice xmlns="http://www.tei-c.org/ns/1.0">\
-         <orig xmlns="http://www.tei-c.org/ns/1.0">v</orig>\
-         <reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg>\
-         </choice>', 'uu'],
+        [('<choice xmlns="http://www.tei-c.org/ns/1.0">'
+          '<orig xmlns="http://www.tei-c.org/ns/1.0">j</orig>'
+          '<reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg>'
+          '</choice>'), 'jj'],
+        [('<choice xmlns="http://www.tei-c.org/ns/1.0">'
+          '<orig xmlns="http://www.tei-c.org/ns/1.0">v</orig>'
+          '<reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg>'
+          '</choice>'), 'uu'],
     ]
 
-    # input_filename = ''.join(['../xml/', filename, '.xml'])
     input_filename = filename
     if backup:
         # Backup original file
