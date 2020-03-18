@@ -660,7 +660,7 @@ class treeWithAppElements:
                 # The print reading will always be set to <rdg>
                 self.make_rdg(a['printReading'])
 
-                # Identify the MS reading 
+                # Identify the MS reading
                 my_ms_reading = self.findMsReading(a)
 
                 if r['type'] == 'choose':

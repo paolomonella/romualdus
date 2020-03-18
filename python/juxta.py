@@ -16,6 +16,7 @@ import sort_a2
 import simplify_markup_for_collation
 import post_process_juxta_commons_file
 import philologist
+import m_unifier
 
 # If true: suppress standard output messages to console
 quiet = True
@@ -140,3 +141,5 @@ for mp in parameters:
     myTree.editTeiHeader()
     myTree.putLemAsFirstInApp()
     myTree.write()
+
+m_unifier.unify()
