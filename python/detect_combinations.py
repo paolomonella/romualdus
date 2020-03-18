@@ -22,7 +22,7 @@ def detectCommonAbbrCombinations(siglum, quiet=True):
     tree = etree.parse(xmlfile)
 
     # The CSV file with the common abbreviation combinations
-    if siglum in ['a1', 'a2', 'a-1and2unified']:
+    if siglum in ['a', 'a1', 'a2', 'a-1and2unified']:
         mySiglum = 'a'
     else:
         mySiglum = siglum

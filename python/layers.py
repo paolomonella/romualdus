@@ -32,7 +32,7 @@ def extractLayers(siglum, baretext=False):
 
     # Read ToS
 
-    if siglum in ['a1', 'a2', 'a-1and2unified']:
+    if siglum in ['a', 'a1', 'a2', 'a-1and2unified']:
         mySiglum = 'a'
     else:
         mySiglum = siglum

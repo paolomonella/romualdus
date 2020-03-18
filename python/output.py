@@ -59,11 +59,11 @@ def writeToMultiMSTableFile(mymss, myl, wbaretext=False):
             aall[ms] = extractLayers(ms, baretext=wbaretext)[1]
             # <div id="aALdiv"> (bALdiv, cALdiv)
             aall[ms].set('id', ms + aall[ms].get('id'))
-            ''' Result: gall = {'a-1and2unified': element_<div id="aGLdiv">,
+            ''' Result: gall = {'a': element_<div id="aGLdiv">,
                                 'b': element_<div id="bGLdiv"> etc.}
-                        aall = {'a-1and2unified': element_<div id="aALdiv">,
+                        aall = {'a': element_<div id="aALdiv">,
                                 'b': element_<div id="bALdiv"> etc.}
-                        aall['a-1and2unified']
+                        aall['a']
                             will be element_<div id="aALdiv"> etc.
             '''
 
@@ -98,8 +98,8 @@ def writeToMultiMSTableFile(mymss, myl, wbaretext=False):
         if 'gl' in myl:
             ''' I'm creating a new variable (ManuScript IDs) just to avoid
             confusion due to the variable name.
-            msids['a-1and2unified'] (or msids['b'], etc.)
-            will be a list with all IDs of manuscript 'a-1and2unified' (or 'b',
+            msids['a'] (or msids['b'], etc.)
+            will be a list with all IDs of manuscript 'a' (or 'b',
             etc.)'''
             msids[ms] = gids
         else:
@@ -135,7 +135,7 @@ def writeToMultiMSTableFile(mymss, myl, wbaretext=False):
             # Result of next line:: first <td class="msb gcell">,
             # then <td class="msb acell">:
             tabhcell.set('class', 'ms%s %s' % (ms, thl[0]))
-            if ms.lower() == 'a-1and2unified'.lower():
+            if ms.lower() == 'a'.lower():
                 msNameForTableHeader = 'a'
             else:
                 msNameForTableHeader = ms

@@ -11,7 +11,8 @@
 from glob import iglob  # Needed for function entitize
 from myconst import xmlpath, juxta_par_and_sigla_suffix
 import entitize
-import a_unifier
+# import a_unifier
+import splitter
 import sort_a2
 import simplify_markup_for_collation
 import post_process_juxta_commons_file
@@ -31,7 +32,10 @@ for f in iglob('%s*.xml' % (xmlpath)):
     entitize.entitize(base, quiet=quiet)
 
 # a_unifier.py
-a_unifier.a_unifier(quiet=quiet)
+# a_unifier.a_unifier(quiet=quiet)
+
+# splitter.py
+splitter.a_splitter()
 
 # sort_a2.py
 sort_a2.sort_a2(quiet=quiet)

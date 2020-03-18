@@ -22,8 +22,7 @@ def tosLint(lintSiglum):
     # Import table of signs
     # csvpath might look like "../csv/":
 
-
-    if lintSiglum in ['a1', 'a2', 'a-1and2unified']:
+    if lintSiglum in ['a', 'a1', 'a2', 'a-1and2unified']:
         mySiglum = 'a'
     else:
         mySiglum = lintSiglum

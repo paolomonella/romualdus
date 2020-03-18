@@ -15,11 +15,11 @@ bom = False     # Set to True if you want to get rid of the initial BOM
 	(where the MSS transcriptions already are);
     3. Comment/uncomment the last lines of this script;
     4. Run this script in the 'python' folder, where it is;
-    5. The output will be appended to files temp.xml, a-1and2unified.xml or g.xml in the 'xml' folder.
+    5. The output will be appended to files temp.xml, a.xml or g.xml in the 'xml' folder.
     6. Check if <rs>'s and <hi>'s and all remaining uppercase chars are OK (vim /\v[A-Z][a-z]  and   /\v[.!?-]   etc.)
     7. Add <num>
     8. Un-capitalize everything
-    9. Substitute j → i in a-1and2unified.xml (and use &jj; and &uu; in bonetti.xml and g.xml)
+    9. Substitute j → i in a.xml (and use &jj; and &uu; in bonetti.xml and g.xml)
     10. Eventually check empty <p>s appended (with the same xml:id's) to xml
     files of MSS B and C
 
@@ -100,7 +100,7 @@ def sorted_nicely( l ):
 
 def updateNamesFile (updateProperNamesInputXmlFile):
     ''' Update the rs.txt file, merging names in <rs> elements in
-        file updateProperNamesInputXmlFile (e.g. a-1and2unified.xml) and names
+        file updateProperNamesInputXmlFile (e.g. a.xml) and names
         in the original rs.txt file. Backup the original file.
         '''
 
@@ -338,7 +338,7 @@ class ocr:
     def a_abbrev (self, abbrev_siglum):
         ''' Substitute parts of words with abbreviations.
             E.g.: "eorum" becomes "eo4" and "lupum" becomes "lupu3".
-            Argument abbrev_siglum is 'a-1and2unified' for manuscript a, 'b' for MS b, etc.
+            Argument abbrev_siglum is 'a' for manuscript a, 'b' for MS b, etc.
 
             An improved version might read the a-combo.csv file and populate the <wholeWorld>
             part of the subdict dictionary automatically.
@@ -346,7 +346,7 @@ class ocr:
 
         import csv
 
-        if abbrev_siglum in ['a1', 'a2', 'a-1and2unified']:
+        if abbrev_siglum in ['a', 'a1', 'a2', 'a-1and2unified']:
             mySiglum = 'a'
         else:
             mySiglum = abbrev_siglum
@@ -449,10 +449,10 @@ class ocr:
 ''' PROPER NAMES '''
 
 #listNames('../xml/g.xml', myconst.tei_ns) 
-#updateNamesFile('../xml/a-1and2unified.xml')
+#updateNamesFile('../xml/a.xml')
 #print('\n-----------------------\n\nNEW SEARCH: \n')
-#for myf in ['../xml/a-1and2unified.xml', '../xml/g.xml']:
-#for myf in ['../xml/a-1and2unified.xml']:
+#for myf in ['../xml/a.xml', '../xml/g.xml']:
+#for myf in ['../xml/a.xml']:
     #checkrs(myf)
 
 
@@ -464,12 +464,12 @@ o.lowercasize()
 o.wrap_proper_names()
 o.export_to_txt('../xml/temp.xml')
 
-#spread_ids('g', ['a-1and2unified', 'b', 'c'])
+#spread_ids('g', ['a', 'b', 'c'])
 
 #proofread = ocr('../xml/temp_g.xml')
-#proofread.a_abbrev('a-1and2unified')
-#proofread.append_to_xml('../xml/a-1and2unified.xml')
+#proofread.a_abbrev('a')
+#proofread.append_to_xml('../xml/a.xml')
 
 ''' No longer in use:
 o.append_to_xml('../xml/g.xml')
-o.a_abbrev('a-1and2unified')        '''
+o.a_abbrev('a')        '''

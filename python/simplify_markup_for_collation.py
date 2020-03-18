@@ -47,9 +47,6 @@ class msTree:
             if element.getparent() is not None:
                 parent = element.getparent()
                 parent.remove(element)
-            else:
-                print('The following comment is not in the root element so I \
-                      can\'t delete it:\n\t' % (element), end='\n\n')
 
     def list_elements(self, onlybody=True, attributes=False):
         ''' Print a set of element names in the XML file '''
@@ -405,7 +402,7 @@ class msTree:
         '''
 
         # Read ToS
-        if self.siglum in ['a1', 'a2', 'a-1and2unified']:
+        if self.siglum in ['a', 'a1', 'a2', 'a-1and2unified']:
             mySiglum = 'a'
         else:
             mySiglum = self.siglum

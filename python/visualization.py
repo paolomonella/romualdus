@@ -9,16 +9,16 @@ from detect_combinations import detectCommonAbbrCombinations
 
 os.system('clear')
 
-mss = ['a-1and2unified', 'b', 'c']     # The sigla of the three manuscripts
+mss = ['a', 'b', 'c']     # The sigla of the three manuscripts
 
 for x in mss:
     tosLint(x)
 
-for mscombi in [['a-1and2unified', 'b', 'c'],
-                ['a-1and2unified', 'b'],
-                ['a-1and2unified', 'c'],
+for mscombi in [['a', 'b', 'c'],
+                ['a', 'b'],
+                ['a', 'c'],
                 ['b', 'c'],
-                ['a-1and2unified'],
+                ['a'],
                 ['b'],
                 ['c']]:
     for layercombi in [['gl'],     ['al'],     ['gl', 'al']]:

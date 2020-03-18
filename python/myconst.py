@@ -1,13 +1,12 @@
 #!/usr/bin/python3.6
 # -*- coding: utf-8 -*-
 
-# File paths
+# File paths and folders
 xmlpath = '../xml/'
-# simplifiedpath = '../xml/juxtacommons/'
 simplifiedpath = '../xml/'
 csvpath = '../csv/'
 htmlpath = '../html/'
-jsonpath = '../json/'
+splitpath = '../xml/split_files_for_collation/'
 dbpath = '../db/'
 dbname = 'romualdus.sqlite3'
 entitize_backup_path = '../xml/ripostiglio/backup/backup_entitization/'
