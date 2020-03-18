@@ -32,7 +32,8 @@ def entitize(filename, backup=False, quiet=False):
          </choice>', 'uu'],
     ]
 
-    input_filename = ''.join(['../xml/', filename, '.xml'])
+    # input_filename = ''.join(['../xml/', filename, '.xml'])
+    input_filename = filename
     if backup:
         # Backup original file
         datetime = time.strftime('%Y-%m-%d_%H.%M.%S')

@@ -57,7 +57,6 @@ def a_splitter(siglum_a1='a1', siglum_a2='a2',
     for interp in reversed(interps):
         new_interp = deepcopy(interp)
         body_a2.insert(0, new_interp)
-        print(''.join(new_interp.itertext()))
 
     if not quiet:
         print(('\n[a_splitter.py]: I\'m splitting'

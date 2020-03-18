@@ -20,16 +20,11 @@ import philologist
 import m_unifier
 
 # If true: suppress standard output messages to console
-quiet = True
+quiet = False
 
 #################
 # PRE-COLLATION #
 #################
-
-# entitize.py
-for f in iglob('%s*.xml' % (xmlpath)):
-    base = f.split('/')[-1].split('.')[0]
-    entitize.entitize(base, quiet=quiet)
 
 # a_unifier.py
 # a_unifier.a_unifier(quiet=quiet)
@@ -37,11 +32,17 @@ for f in iglob('%s*.xml' % (xmlpath)):
 # splitter.py
 splitter.a_splitter()
 
+# entitize.py
+for f in iglob('%s*.xml' % (xmlpath)):
+    # base = f.split('/')[-1].split('.')[0]
+    entitize.entitize(f, quiet=quiet)
+
 # sort_a2.py
 sort_a2.sort_a2(quiet=quiet)
 
 # simplify_markup_for_collation.py / class msTree
-edition_list = ['a1', 'a2-sorted', 'o', 'o-short', 'g', 'bonetti',
+# edition_list = ['a1', 'a2-sorted', 'o', 'o-short', 'g', 'bonetti',
+edition_list = ['a1', 'a2-sorted', 'o', 'g', 'bonetti',
                 'bonetti-short']
 for edition in edition_list:
     mytree = simplify_markup_for_collation.msTree(edition, quiet=quiet)
@@ -144,7 +145,7 @@ for mp in parameters:
                                              mp['msoSiglum'],
                                              quiet=quiet)
     myTree.setA2ForAdditions()
-    myTree.findAndLocateSicCorr()
+    # myTree.findAndLocateSicCorr()
     myTree.variantTypesCountPrint()
     myTree.setTypeAttributesForApps()
     myTree.setLemsBasedOnType()

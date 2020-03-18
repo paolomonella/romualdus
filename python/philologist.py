@@ -619,7 +619,7 @@ class treeWithAppElements:
                            r['part'],
                            r['origin'],
                            r['print'],
-                           r['msa'],
+                           r['ms'],
                            a['printText'],
                            a['msaText'],
                            a['app'].getparent().get('{%s}id' %
