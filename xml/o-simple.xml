@@ -1,146 +1,137 @@
-<?xml version='1.0' encoding='UTF-8'?> 
-<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [ 
-<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'> 
-<!ENTITY bl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'> 
-<!ENTITY jj '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">j</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>'> 
-<!ENTITY uu '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">v</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>'> 
-]> 
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
-<teiHeader> 
-    <fileDesc> 
-      <titleStmt> 
-        <title>Romualdi Salernitani Chronicon, MS Ottobonianus, 1st fragment</title> 
-        <editor xml:id="pm">Paolo Monella</editor> 
-      </titleStmt> 
-      <publicationStmt> 
-        <p>Encoding experiments</p> 
-      </publicationStmt> 
-      <sourceDesc> 
-        <listBibl> 
-          <msDesc xml:id="o"> 
-              <msIdentifier> 
-                  <settlement>Ottobonianus</settlement> 
-                  <idno>Latinus 2940, 1st fragment</idno> 
-                </msIdentifier> 
-            </msDesc> 
-        <biblStruct xml:id="b"> 
-            <monogr>    
-                <author>Guarna, Romualdus</author> 
-                <title>Romualdo II Guarna, Chronicon</title> 
-                <idno type="ISBN">9788883090561</idno> 
-                <editor>Bonetti, Cinzia</editor> 
-                <imprint> 
-                    <publisher>Avagliano</publisher> 
-                    <date>2001</date> 
-                    <pubPlace>Salerno</pubPlace> 
-                </imprint> 
-            </monogr> 
-            <series> 
-                <title level="s">Schola Salernitana. Studi e testi</title> 
-                <biblScope unit="volume">6</biblScope> 
-            </series> 
-        </biblStruct> 
-        </listBibl> 
-    </sourceDesc> 
-    </fileDesc> 
-    <encodingDesc> 
-        <editorialDecl xml:id="norev"> 
-            <p>OCR not reviewed.</p> 
-        </editorialDecl> 
-        <editorialDecl xml:id="ocr"> 
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI PUBLIC "-//TEI P5//DTD Main Document Type//EN" "tei_all.dtd" [
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
+<!ENTITY bl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'>
+<!ENTITY jj '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">j</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="j">i</reg></choice>'>
+<!ENTITY uu '<choice xmlns="http://www.tei-c.org/ns/1.0"><orig xmlns="http://www.tei-c.org/ns/1.0">v</orig><reg xmlns="http://www.tei-c.org/ns/1.0" type="v">u</reg></choice>'>
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, MS Ottobonianus, 1st fragment</title>
+        <editor xml:id="pm">Paolo Monella</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listBibl>
+          <msDesc xml:id="o">
+              <msIdentifier>
+                  <settlement>Ottobonianus</settlement>
+                  <idno>Latinus 2940, 1st fragment</idno>
+                </msIdentifier>
+            </msDesc>
+        <biblStruct xml:id="b">
+            <monogr>     
+                <author>Guarna, Romualdus</author>
+                <title>Romualdo II Guarna, Chronicon</title>
+                <idno type="ISBN">9788883090561</idno>
+                <editor>Bonetti, Cinzia</editor>
+                <imprint>
+                    <publisher>Avagliano</publisher>
+                    <date>2001</date>
+                    <pubPlace>Salerno</pubPlace>
+                </imprint>
+            </monogr>
+            <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+                <biblScope unit="volume">6</biblScope>
+            </series>
+            
+        </biblStruct>
+        </listBibl>
+    </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <editorialDecl xml:id="norev">
+            <p>OCR not reviewed.</p>
+        </editorialDecl>
+        <editorialDecl xml:id="ocr">
             <p>OCR was reviewed, and 'rs' tags were added for proper nouns (those nouns that were capitalized 
-                in the print edition). 
+                in the print edition).
                 All text is now in lowercase (to capitalize words at the beginning of a paragraph or after 
-                punctuation, a script will be needed). 
-                The text is now ready to be collated upon individual manuscripts. 
-            </p> 
-        </editorialDecl> 
-        <editorialDecl> 
-            <quotation marks="all"> 
+                punctuation, a script will be needed).
+                The text is now ready to be collated upon individual manuscripts.
+            </p>
+        </editorialDecl>
+        <editorialDecl>
+            <quotation marks="all">
                 <p>Quotation marks were almost always represented in the source print edition 
-                    by “double quotation marks”, open and closed. In fewer cases, by «Swiss quotation marks». 
-                    In all those cases, marks were retained and the quotation was marked up with 'said' 
-                    (direct speech) or 'quote' (quotations from literary works).</p> 
+                    by “double quotation marks”, open and closed. In fewer cases, by «Swiss quotation marks».
+                    In all those cases, marks were retained and the quotation was marked up with 'said'
+                    (direct speech) or 'quote' (quotations from literary works).</p>
                 <p>In some cases, no quotation marks were present in the print edition around direct speeches 
                     or quotations, but I still marked them with 'said' or 'quote', adding 
-                    @rend="none".</p> 
+                    @rend="none".</p>
                 <p>In other cases, in the print edition “double quotation marks” were used to highlight additions 
                     not present in all branches of the textual tradition. In these cases, quotation marks 
-                    have been retained and no specific markup was added in the digital edition.</p> 
-                <p>“Double quotation marks” were also retained, if present in the print edition, 
-                    in connection with 'soCalled''title'.</p> 
-            </quotation> 
-        </editorialDecl> 
-        <tagsDecl> 
-            <namespace name="http://www.tei-c.org/ns/1.0"> 
-                <tagUsage gi="hi"> 
+                    have been retained and no specific markup was added in the digital edition.</p>
+                <p>“Double quotation marks” were also retained, if present in the print edition,
+                    in connection with 'soCalled''title'.</p>
+            </quotation>
+        </editorialDecl>
+        <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+                <tagUsage gi="hi">
                     Used to mark words capitalized in the print edition, but not constituting 
-                    a proper noun, such as "Sed" at the beginning of a sentence. 
-                </tagUsage> 
-                <tagUsage gi="note"> 
-                    With @type="content": note on the text content. 
-                    With @type="graphic": note on glyphs or graphemes. 
-                    With @type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand. 
-                    With @type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs). 
-                    With @type="textcrit": note on textual critical matters. 
-                    With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp). 
-                </tagUsage> 
+                    a proper noun, such as "Sed" at the beginning of a sentence.
+                </tagUsage>
+                <tagUsage gi="note">
+                    With @type="content": note on the text content.
+                    With @type="graphic": note on glyphs or graphemes.
+                    With @type="mscorr": note on corrections made in the manuscript by the same hand or by a second hand.
+                    With @type="segmentation": note on the text segmentation (arrangement of paragraphs or missing paragraphs).
+                    With @type="textcrit": note on textual critical matters.
+                    With @type="year": note on the year in which a fact actually happened according to a scholar (with @resp).
+                </tagUsage>
                 <tagUsage gi="quote">Some quotes from literary texts, either surrounded by quotation marks or not in the source 
-                    print edition, are marked up with 'quote' in this digital edition. 
+                    print edition, are marked up with 'quote' in this digital edition.
                     Quotation marks, if present, have been retained, and @type="biblia" means that it 
                     is a biblical quote, according to the "Manuale di codifica dei testi ALIM in TEI XML" in 
-                    http://it.alim.unisi.it/documentazione/ 
-                </tagUsage> 
-                <tagUsage gi="soCalled"> 
-                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus". 
-                    If present, quotation marks have been retained. 
-                </tagUsage> 
-                <tagUsage gi="surplus"> 
-                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt; 
-                    I am omitting those brackets in this file. 
-                </tagUsage> 
-                <tagUsage gi="title"> 
-                    Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus". 
-                    If present, quotation marks have been retained. 
-                </tagUsage> 
-             </namespace> 
-         </tagsDecl> 
-        <listPrefixDef> 
-            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1"> 
+                    http://it.alim.unisi.it/documentazione/
+                </tagUsage>
+                <tagUsage gi="soCalled">
+                    Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
+                    If present, quotation marks have been retained.
+                </tagUsage>
+                <tagUsage gi="surplus">
+                    In the print edition the text considered redundant by the editor was between &lt;square brackets&gt;
+                    I am omitting those brackets in this file.
+                </tagUsage>
+                <tagUsage gi="title">
+                    Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus".
+                    If present, quotation marks have been retained.
+                </tagUsage>
+             </namespace>
+         </tagsDecl>
+        <listPrefixDef>
+            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
                 <p> In the context of this edition, private URIs with 
                     the prefix "vat" point to a specific page of external 
                     PDF file vat.lat.3973.pdf, including the digital images 
-                    of the A manuscript. For example, 'vat:29' 
-                    dereferences to 'img/vat.lat.3973.pdf#page=29'. 
-                </p> 
-            </prefixDef> 
-        </listPrefixDef> 
-    </encodingDesc> 
-  </teiHeader> 
-  <text> 
-    <body> 
-[p xml:id="b062heading"] [/p] 
-[p xml:id="g163.6-163.7"] [/p] 
-[p xml:id="g163.8-163.10"] [/p] 
-[p xml:id="g163.11-164.9"] [/p] 
-[p xml:id="g164.10-164.11"] [/p] 
-[p xml:id="g164.12-164.19"] [/p] 
-[p xml:id="g164.19-164.25"] [/p] 
-[p xml:id="g165.1-165.3"] [/p] 
-[p xml:id="g165.4-165.7"] [/p] 
-[p xml:id="g165.8-165.9"] [/p] 
-[p xml:id="g165.10-166.2"] [/p] 
-[p xml:id="g166.3-166.8"] [/p] 
-[p xml:id="g166.9-166.25"] [/p] 
-[p xml:id="g167.1-167.3"] [/p] 
-[p xml:id="g167.4-168.4"] [/p] 
+                    of the A manuscript. For example, 'vat:29'
+                    dereferences to 'img/vat.lat.3973.pdf#page=29'.
+                </p>
+            </prefixDef>
+        </listPrefixDef>
+    </encodingDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+
 [p xml:id="g168.5-168.7"] 
+
 Anno ab incarnatione Domini DCCCCLXXVI, Lotharius 
 Francorum rex senex plenus dierum obiit, postquam regnauit 
 annum LIV, sepultusque est in basilica Sancti remigii regnus. Cui 
 successit Ludouicus filius eius aduch iuuenis. 
 [/p] 
-[p xml:id="g168.8-169.4"] 
+
+
+[p xml:id="g168.8-169.4"]  
 Anno dominice incarnationis CMLXXXI defuncto 
 Iohanne papa Benedictus ei in pontificatus honorem successit. 
 Eodem anno  Otto maior imperator obiit anno 
@@ -156,8 +147,10 @@ sedit, diem obiit, et successit ei Bonus qui sedit annum I et
 menses VI. Quo uita decedente Bonifacius sedit mensem I. 
 Cui expulso Benedictus succesit in pontificatus honore qui sedit 
 annum IX. 
-[/p] 
-[p xml:id="g169.5-170.14"] 
+[/p]  
+
+
+[p xml:id="g169.5-170.14"]  
 Anno dominice incarnationis CMLXXXV,  obiit 
 Lodouicus Francorum rex iuuenis, postquam regnauit annis 
 IX, sepultusque est in basilica beati Cornelii Compendio. 
@@ -181,6 +174,7 @@ Loharii regis. Congregansque in eadem ciuitate sinodum,
 fecit degradare domnum Arnulfum, in loco uero eius consecrare 
 fecit domnum Girbertum monachum philosophum. Seguinus 
 autem archiepiscopus Senonum non contensit in degradatione 
+ 
 Arnulfi neque in ordinatione Girberti, sed plus timens Deum 
 quam terrenum regem, ipsum in quantum potuit redarguit. 
 Rex itaque cum magno dedecore expelli iusit Arnulfum de 
@@ -199,13 +193,17 @@ reseditque in eadem urbe pontifex quam plurimos annos.
 Defuncto uero papa urbis Rome statim omnis populus Romanus 
 sibi dari acclamabat domnum Gibbertum. Assumptus est 
 autem de urbe Rauenna ordinatus est pontifex in urbe Roma. 
-[/p] 
-[p xml:id="g170.15-170.16"] 
+[/p]  
+
+
+[p xml:id="g170.15-170.16"]  
 Anno dominice incarnationis CMLXXXVII. Sarraceni depopulati 
 sunt Calabriam, a quibus postea sequenti anno Cosentia 
 obsesa est atque destructa. 
-[/p] 
-[p xml:id="g170.17-171.1"] 
+[/p]  
+
+
+[p xml:id="g170.17-171.1"]  
 Anno dominice incarnationis CMXC stella a parte septentrionis 
 apparuit habens splendorem qui tendebat contra meridiem 
 quasi unum passum. Et post paucos dies iterum aparuit 
@@ -216,8 +214,11 @@ et in ciuitate Arriano plures eclesias subuertit. Ciuitas quoque
 Frequentus pene media cecidit, ciuitatem uero Comsanam 
 prope mediam cum episcopo supuertit, multosque homines oppresit. 
 Ronsem totam cum eius hominibus supmersit. 
-[/p] 
-[p xml:id="g171.2-171.6"] 
+[/p]  
+
+
+[p xml:id="g171.2-171.6"]  
+
 Preterea Rome defuncto papa Benedicto, Iohannes papa sedit 
 menses IX. Hic autem in castello Sancti angeli reclusus et 
 per menses IV fame aflictus mortus est. Et iterum superior 
@@ -225,34 +226,42 @@ Bonifacius qui expulsus fuerat sedit menses XI. Quo uita decedente
 Iohannes sedit mensibus IV. Post quem alius Iohannes sedit 
 annis X menses VI. Cuius temporibus Romani capitanei patriciatus 
 sibi tirannidem uendicauere. 
-[/p] 
-[p xml:id="g171.7-171.8"] 
+[/p]  
+
+
+[p xml:id="g171.7-171.8"]  
 Anno ab incarnatione Domini CMXCIV in Apulia ciuitas {1_illegible_word} 
 Matere a Sarracenis destructa est. 
-[/p] 
-[p xml:id="g171.9-171.14"] 
+[/p]  
+
+
+[p xml:id="g171.9-171.14"]  
 Anno dominice incarnationis CMXCVIII. Ugo dux Francorum 
 obiit sepultusque est in basilica beati Dionisi martiris Parisius. 
 Cui secesit filius eius Robbertus rex qui pius fuit et modestus. 
 Hic {4_illegible_words} regnauit annis XXXIII. Per 
-idem tempus Mel catipanus primum in Apuliam {9_illegible_words} 
+idem tempus Mel catipanus primum in Apuliam {9_illegible_words}
 Apulia apud 
 Basentellum comisit, et non {7_illegible_words} cepit. 
-[/p] 
-[p xml:id="g172.1-172.9"] 
+[/p]  
+
+
+[p xml:id="g172.1-172.9"]  
 Non post multum uero temporis Hanricus Burgundis dux 
-{11_illegible_words} 
-rebellauerunt Burgundiones in regem {12_illegible_words} 
+{11_illegible_words}
+rebellauerunt Burgundiones in regem {12_illegible_words}
 cum duce suo Ricardo et exercitu 
-uastauit Burgundia. {6_illegible_words} 
-defunctus est, cui sucessit Fromundus filius {3_illegible_words} 
+uastauit Burgundia. {6_illegible_words}
+defunctus est, cui sucessit Fromundus filius {3_illegible_words}
 Fromundo  {5_illegible_words}filius 
-eius nequissimus; {8_illegible_words} 
+eius nequissimus; {8_illegible_words}
 non est audita a tempore paganorum usque 
-in hodiernum diem. Post {7_illegible_words} 
-ab archiepiscopo {9_illegible_words} 
-[/p] 
-[p xml:id="g172.10-173.11"] 
+in hodiernum diem. Post {7_illegible_words}
+ab archiepiscopo {9_illegible_words}
+[/p]  
+
+
+[p xml:id="g172.10-173.11"]  
 {2_illegible_words} autem Rome defuncto Iohanne papa successit ei 
 Gregorius seditque anno {6_illegible_words} succesit 
 seditque menses X. Hic turpiter uitam suam finiuit. Succesit 
@@ -263,6 +272,7 @@ IV mensis I. Cuius temporibus ingens in Campania per XV dies
 terre motus factus est multa diruens edificia. Siluestro autem 
 obeunte, Iohannes qui uocatur Sego papalem sedit cathedra 
 menses V. Quo defuncto Iohannes papa qui uocatur Fanasus 
+ 
 sedit anno I. Hic Ottonem regem Saxonum coronauit imperatorem. 
 Post Iohannem uero Siluester Tiburtinus, qui uocatur 
 Osporco, Romanum suscepit pontificatum qui sedit annis IV. 
@@ -288,26 +298,33 @@ expugnans ui cepit. Eo itaque mortuo frater eius Henricus
 maioris Octonis imperatoris nepos fit rex, quique regnauit anni 
 XXV. Cuius imperii anno secundo Sarraceni Campaniam ingresi sunt 
 Capuam obsederunt. 
-[/p] 
-[p xml:id="g173.12-173.13"] 
+[/p]  
+
+
+[p xml:id="g173.12-173.13"]  
 Anno dominice incarnationis {3_missing_words} fames ualida 
 Italiam obtinuit. Quo tempore Mel catipanus cum Normannis 
 Apuliam expugnabat. 
-[/p] 
-[p xml:id="g173.14-174.7"] 
+[/p]  
+
+
+[p xml:id="g173.14-174.7"]  
 Anno ab incarnatione Domini {2_missing_words} indictione Siluester papa 
 defunctus est et Benedictus frater Alberici papalem suscepit 
 chatedram. Eodem anno Henricus Alamanorum rex Romam 
 uenit et ab eodem Benedictus papa coronam accepit imperii et 
 imperator appellatus est. Sedit autem ipse Benedictus annis XI 
 menses I. Per idem tempus Basilius et Constantinus frater eius 
+ 
 Constantinopolitani catholici imperatores catipanum suum nomine 
 Buiano magna cum thesauri pecunia direxerunt ut Apuliam 
 cum circumquaque regionibus sibi uendicare ac imperiali iuri 
 componere. Qui ueniens cepit omnia tranquille agere atque 
 strenue ordinare hic in Apulie finibus. 
-[/p] 
-[p xml:id="g174.8-175.15"] 
+[/p]  
+
+
+[p xml:id="g174.8-175.15"]  
 Anno domini {1_missing_word}. indictione I. Redificauit 
 ciuitatem diu dirutam nuncupauitque eam Troiam, que 
 antiquitus Ecana uocabatur et iussu imperatorum fines 
@@ -319,7 +336,7 @@ quoque Diocletiani et Maximiniani imperatorum exercuit in
 hac Ecana urbe Marcus episcopus, quique martirio uitam finiuit. 
 Et post aliquanta annorum curricula fuit in eadem urbe Secundinus 
 episcopus, qui confesor et sanctus multas sanctorum 
-ecclesias renouauit. 
+ecclesias renouauit.  
 Ipse etiam prenominatus catipanus in finibus Samnii et Apulie 
 edificauit ach constituit plures urbes et opida; ipsaque regio 
 usque odie Catipania ex suo nomine dicitur. Quarto autem anno 
@@ -328,44 +345,57 @@ incarnationis Domini {1_missing_word} indictione
 {1_missing_word} Henricus Alamanorum imperatorii ingenti cum exercitu, 
 simul et cum Benedictus papa uenit super ipsam ciuitatem obseditque 
 per IV menses machinis illam fortiter expugnans. 
-Imperator itaque uidens quod ea sine mora capere 
+Imperator itaque uidens quod ea sine mora capere  
 posset – dixerat enim iratus quod si eam non sine mora incepise statim destrueret 
 – sibi suisque estiuum Apulie calorem, et sic composita 
 pace cum ciuibus, obsidibusque ab eis acceptis ad propria 
 est reuersus. Pandulfum autem Capuanum principem secum in 
 Alamanniam deduxit. 
-[/p] 
-[p xml:id="g176.1-176.2"] 
+[/p]  
+
+
+[p xml:id="g176.1-176.2"]  
 Anno dominice incarnationis {1_missing_word} indictione {1_missing_word} Basilius 
 imperator Constantinopolitanus diem obiit. 
-[/p] 
-[p xml:id="g177.1-177.4"] 
+[/p]  
+
+
+[p xml:id="g177.1-177.4"]  
 Anno dominice incarnationis {1_missing_word} indictione {1_missing_word}, Henricus 
 Alamannorum imperator defunctus est, cui succesit Chunradus 
 qui dux eius fuerat. Eodem anno papa Benedictus obiit et succesit 
 ei Iohannes frater eius, qui uno eodemque die et laicus 
 fuit et pontifex, seditque annos IX dies IX. 
-[/p] 
-[p xml:id="g177.5-177.6"] 
+[/p]  
+
+
+[p xml:id="g177.5-177.6"]  
 Anno Domini {1_missing_word} indictione {1_missing_word}; apud Constantinopoli 
 Constantinus imperator obiit et succesit ei Romano gener eius 
 una cum eius uxore Zoy imperatrice, regnauitque annos V. 
-[/p] 
-[p xml:id="g177.7-177.8"] 
+[/p]  
+
+
+[p xml:id="g177.7-177.8"]  
+ 
 Anno 
 dominice incarnationis MXXX, indictione XIII; Iohannes princeps 
 Salerni defunctus est anno principatus sui LVII, et succesit ei 
 Guaimarius fillius eius. 
-[/p] 
-[p xml:id="g177.9-178.3"] 
+[/p]  
+
+
+[p xml:id="g177.9-178.3"]  
 Anno ab incarnatione Domini MXXXI, indictione XIV Romano 
 imperatore Constantinopolitanus mortus est, et succesit ei 
 imperium Miquel qui dicitur Catalactus cum Zoi imperatrice. 
 Ipso quoque anno defunctus est Robertus Francorum rex 
 cui succesit filius eius Henricus. Cuius in tertio anno urbis Perisius 
 flagrauit incendio; regnauit autem hic Henricus annis XXIX. 
-[/p] 
-[p xml:id="g178.4-178.10"] 
+[/p]  
+
+
+[p xml:id="g178.4-178.10"]  
 Anno ab incarnatione Domini MXXXIV, indictione II; fuit eclipsis 
 solis in festiuitate sancti Petri. Quo anno Iohannes papa defunctus 
 est et succesit Benedictus qui uocabatur Theofilactus, 
@@ -376,13 +406,17 @@ papa Benedictus qui post mensem I et dies XX uendidit
 papatum Iohanni Rauennati archiepiscopo sancti Iohannis ante 
 portam Latinam, cui nomen positum est Gregorius, qui sedit anno 
 I menses VI. 
-[/p] 
-[p xml:id="g178.11-178.12"] 
+[/p]  
+
+
+[p xml:id="g178.11-178.12"]  
 Anno ab incarnatione Domini MXXXVII indictione V mesem 
 Ianuari; mons Uesubius eructauit incendium ita ut quasi flumen 
 usque ad mare discurere. 
-[/p] 
-[p xml:id="g178.13-179.2"] 
+[/p]  
+
+
+[p xml:id="g178.13-179.2"]  
 Anno dominice incarnationis Domini MXXXIX indictione VII apud 
 Constantinopolim Michael imperator cognominato Cathactus 
 diem obiit anno VII eius imperii. Cui Michael qui Etheriarchis dicebatur 
@@ -393,9 +427,12 @@ et Normani uictores extiterunt. In ipso quidem prelio fuit Drogo
 Normanorum comes et quatuor ex fratribus eius. In ipso 
 quoque anno Chunradus imperator defunctus est anno eius imperii 
 XV, et succesit ei Henricus filius eius. 
-[/p] 
-[p xml:id="g179.3-179.7"] 
+[/p]  
+
+
+[p xml:id="g179.3-179.7"]  
 Anno dominice incarnationis Domini MXL indictione VIII; defunctus est Michael 
+ 
 Etheriarchis imperator Constantinopolitanus anno secundo 
 postquam imperare ceperat. Et succesit ei imperator Michael 
 Arcontopanthiu cum Zoi imperatrice. Quo uita ipso 
@@ -403,19 +440,27 @@ eodem anno decedente succesit eius Constantinus Monomachus in imperium
 cum Zoi imperatrice, qui regnauit annis XII. Quo tempore 
 fames ualida fuit in Italia ad quem in Gallia per septem continuos 
 annos. 
-[/p] 
-[p xml:id="g179.8-179.9"] 
+[/p]  
+
+
+[p xml:id="g179.8-179.9"]  
 Anno dominice incarnationis MXLII indictione X; luna pasa 
 est eclipsi V Idem Ianuarii per V hore noctis. 
-[/p] 
-[p xml:id="g179.10-179.11"] [/p] 
-[p xml:id="g179.12-179.14"] 
+[/p]  
+
+
+[p xml:id="g179.10-179.11"] [/p]  
+
+
+[p xml:id="g179.12-179.14"]  
 Anno ab incarnatione Domini MXLIII indictione XIII; Drogo 
 Normanorum comes cepit ciuitatem Bibinum eamque depopulatus 
 est; sequenti uero anno, postquam eadem ciuitas reedificata 
 est, flagrauit incendio. 
-[/p] 
-[p xml:id="g179.15-180.12"] 
+[/p]  
+
+
+[p xml:id="g179.15-180.12"]  
 Anno Domini {1_missing_word} indictione XIV Henricus imperator 
 Romam uenit inuenitque sedem apostolicam ualde turbatam, 
 nam uno edemque tempore supradicti Teophilus qui et Benedictus, 
@@ -434,18 +479,27 @@ est, cuius electioni predictus imperator assensum prebuit,
 seditque Damasus dies XX. Imperator autem ipse usque 
 Capuam uenit a terram pro tempore sibi componens, et sic reuersus 
 est. 
-[/p] 
-[p xml:id="g180.13-180.15"] [/p] 
-[p xml:id="g181.1-181.1"] 
+[/p]  
+
+
+[p xml:id="g180.13-180.15"] [/p]  
+
+
+[p xml:id="g181.1-181.1"]  
+ 
 Anno ab incarnatione Domini {1_missing_word} indictione I Zoi imperatrix obiit. 
-[/p] 
-[p xml:id="g181.2-181.5"] 
+[/p]  
+
+
+[p xml:id="g181.2-181.5"]  
 Anno ab incarnatione domini {1_missing_word} indictione II, Damaso papa uita decedente, 
 Leo sanctisimus qui uocatur Brunus, a populo Romano 
 expetitus, a clero electus, ab imperatore quoque comendatus, 
 et ab episcopis, quibus oficii huius auctoritas est atributa, consecratus est 
 in pontificatus honorem, seditque annos quinque, menses duos. 
 [/p] 
+
+
 [p xml:id="g181.6-181.10"] 
 Anno dominice incarnationis {1_missing_word} indictionem III mensis Augusti Drogo Nordmannorum 
 comes defunctus est. Fuitque uir egregius, pius, strenus 
@@ -453,13 +507,17 @@ atque famosus, qui propter animi mansuetudinem et iusticie
 seruatam equitatem a cunctis dilectus est. Cui Umfridus frater 
 eius Nordmannorum comes succesit, tenuitque potestatis 
 ipsius honorem per annos VII. 
-[/p] 
-[p xml:id="g181.10-181.11"] 
+[/p]  
+
+
+[p xml:id="g181.10-181.11"]  
 Anno dominice incarnationis {1_missing_word} indictione V Gaymarius 
 princeps Salerni a suis interfectus est anno principatus sui 
 XXIII. Cui succesit Gisolfus filius eius. 
-[/p] 
-[p xml:id="g181.12-182.19"] 
+[/p]  
+
+
+[p xml:id="g181.12-182.19"]  
 Anno ab incarnatione Domini {1_missing_word} indictione VI mensis 
 Iunii. Leo papa multis precibus ab Henrico monitus imperatore 
 per corundam Sannitum sucgestionem uenit in Beneuentum 
@@ -480,8 +538,10 @@ alios persequerentur premouerat, ideo exercitus sui multitudo
 cesa est, ipso perspiciente. Non enim Dominus discipulis 
 suis neque idem apostoli suis succesoribus preceperunt ut 
 curis secularibus, ueluti principes seculi, materiali gladio Dei populum 
+ 
 tuerentur sed uerbo doctrine monerent et pie conuersationis 
 exemplo instruerent. 
+ 
 Eodem anno Constantinus Monomachus imperator Constantinopolitanus 
 obiit, post quem Theodora, soror Zoi imperatricis 
 uirgo persistens, imperium Constantinopolitanum uiriliter biennio 
@@ -490,6 +550,7 @@ est, qui eodem anno fuit inuitus monachus factus. Cui Michael
 Inscomiano imperatore succesit, qui post annos IV 
 ex quo imperauit imperio eiectus ach monachus factus est. Cui 
 Constantinus cognomianatus Dioclizi in imperium succesit. 
+ 
 At uero Leo papa sequenti anno postquam cum Normandis 
 preliatus est diem obiit menses Aprilis in anno ab incarnatione Domini MLV, indictionem VIII. Et succesit ei Uictor 
 Gebeardus uocabatur seditque annis II, menses II. 
@@ -497,10 +558,13 @@ Post cuius obitum Stephanus Godifridii ducis germanus qui dictus
 est Ferdiricus, sedit menses septem. Quo defuncto Benedictus 
 Belniternensis Romanum inuasit pontificatum, 
 qui sedit mensis VIII. 
+ 
 Quibus temporibus Patarie apud 
 Mediolanum exorta est. 
-[/p] 
-[p xml:id="g183.1-184.6"] 
+[/p]  
+
+
+[p xml:id="g183.1-184.6"]  
 Anno dominice incarnationis MLVII indictione X; Umfridus 
 Normanorum comes diem clausit extremum, reliquens sibi 
 succesorem Bagelardum filium eius militem strenum. Set Robbertus 
@@ -520,6 +584,7 @@ animi astuciam ingenumque prudenciam primus ex Gallorum genere
 in Apulia ducatus honorem adeptus est. Qui non multo post 
 sibi subegit Apuliam et Calabriam, Lucaniam atque Siciliam, millitarem 
 namque disciplinam gloriosisime rex. Octauus autem fuit 
+ 
 Alberedus armis strenus. Nonus Tancredus. Decimus Willelmus comes 
 de Sancto nicandro, pater Robberti comitis de Principatu. Fuit autem 
 ipse Willelmus acer ingenio, in Constantino, seuusque natura. 
@@ -527,14 +592,18 @@ Undecimus Frumentinus. Duodecimus Rogerius Sicilie comes,
 qui miles insignis extitit, iusticie tenax, suis suorumque opibus 
 studens, ecclesie Dei adque sacerdotum consulens. Habuit 
 quoque Tancredus horum pater et filias tres. 
-[/p] 
-[p xml:id="g184.7-184.9"] 
+[/p]  
+
+
+[p xml:id="g184.7-184.9"]  
 Anno dominice incarnationis MLVIII, indictione XI. Benedictus 
 papa defunctus est et successit ei Nicolaus qui et Gerardus. 
 Eodem anni Ricardus cum Iordano filio eius effectus est Capue 
 princeps. 
-[/p] 
-[p xml:id="g184.10-185.7"] 
+[/p]  
+
+
+[p xml:id="g184.10-185.7"]  
 Anno ab incarnatione Domini MLX, indictione XIII. Henricus rex Francorum 
 obiit, cui Philipus filius eius succesit in regnum. Ipso quoque 
 anno comes Robbertus Guiscardus uocatus a Troyanis ciuibus, 
@@ -553,8 +622,10 @@ promitens se iureiurando fidem seruaturum Romane ecclesie et
 eidem pape eiusque succesoribus canonice intrantibus. Ipse 
 autem papa Nicolaus statim per uexillum inuestiuit eundem Robbertum Guiscare 
 de honore ducatus sui cum tota terra. 
-[/p] 
-[p xml:id="g185.8-186.5"] 
+[/p]  
+
+
+[p xml:id="g185.8-186.5"]  
 Anno ab incarnatione Domini MLXII indictione XV Nicolaus 
 papa defungitur anno ordinationis sue II, mense VIII. 
 Et Alexander qui uocatus est Anselmus papa ordinatur. 
@@ -563,223 +634,11 @@ diebus Robbertus dux ad Alexandrum papam proficiscens
 ligius eius homo deuenit et sicut Nicolaus pape ita et huic 
 iusiurandum fecit et per uexillum ab eo terram cum honore ducatus 
 accepit. Set autem Alexander papa annis XI, menses VI. 
-[/p] 
-[p xml:id="g186.6-186.7"] [/p] 
-[p xml:id="g186.8-186.8"] [/p] 
-[p xml:id="g186.9-186.9"] [/p] 
-[p xml:id="g186.10-186.11"] [/p] 
-[p xml:id="g186.12-187.2"] 
-Anno dominice incarnationis MLXVI indictione IV menses 
-aprilis stella cometis apparuit in oriente, cuius fumus per 
-aliquot dies tendebat ad meridiem. Similiter per aliquos dies tendebat. Quo anno apud Constantinopolim 
-Constantinus Dioclizi imperatore, anno eius imperii 
-VI, defunctus est, cui Romano Diogenes in imperium succesit. 
-Eodem anno dux Robbertus cepit ciuitatem Uestis apprenditque 
-ibi catipanum nomine Kuriacum. Hinc etiam ipse 
-dux Barum obsedit Apulie ciuitatem et triennio eam incesanter 
-obpugnauit terra marique pontem quoque ibi in mari fecit. 
-[/p] 
-[p xml:id="g187.3-187.4"] [/p] 
-[p xml:id="g187.5-187.8"] [/p] 
-[p xml:id="g187.9-187.11"] 
-Anno dominice incarnationis MLXX indictione VIII, apud 
-Constantinopolim Romano Diogenes imperatore transacto quarto 
-imperii eius anno defunctus est. Cui imperio Miquel filius 
-Constantini Dioclizi succesit. 
-[/p] 
-[p xml:id="g187.11-187.14"] [/p] 
-[p xml:id="g187.14-188.1"] 
-Eodem anno Robbertus dux 
-cepit Barum ciuitatem longa obsidione fatigatam, indeque 
-monens exercitum, Siciliam properauit obseditque Panormum, 
-ditissimam 
-[/p] 
-[p xml:id="g188.1-188.4"] [/p] 
-[p xml:id="g188.5-188.7"] [/p] 
-[p xml:id="g188.8-188.11"] [/p] 
-[p xml:id="g188.12-188.14"] [/p] 
-[p xml:id="g189.1-189.1"] [/p] 
-[p xml:id="g189.2-189.5"] [/p] 
-[p xml:id="g189.5-190.8"] [/p] 
-[p xml:id="g190.9-191.2"] [/p] 
-[p xml:id="g191.3-191.5"] [/p] 
-[p xml:id="g191.6-191.12"] [/p] 
-[p xml:id="g191.13-194.5"] [/p] 
-[p xml:id="g194.6-195.5"] [/p] 
-[p xml:id="g195.6-195.8"] [/p] 
-[p xml:id="g195.9-196.2"] [/p] 
-[p xml:id="g196.3-197.7"] [/p] 
-[p xml:id="g197.8-197.12"] [/p] 
-[p xml:id="g197.13-198.3"] [/p] 
-[p xml:id="g198.4-198.5"] [/p] 
-[p xml:id="g198.6-198.11"] [/p] 
-[p xml:id="g198.12-198.13"] [/p] 
-[p xml:id="g198.14-198.15"] [/p] 
-[p xml:id="g198.16-198.17"] [/p] 
-[p xml:id="g199.1-199.8"] [/p] 
-[p xml:id="g199.9-199.12"] [/p] 
-[p xml:id="g199.13-199.15"] [/p] 
-[p xml:id="g200.1-200.5"] [/p] 
-[p xml:id="g200.6-200.8"] [/p] 
-[p xml:id="g200.9-200.16"] [/p] 
-[p xml:id="g200.17-200.21"] [/p] 
-[p xml:id="g201.1-201.18"] [/p] 
-[p xml:id="g201.19-201.20"] [/p] 
-[p xml:id="g202.1-202.4"] [/p] 
-[p xml:id="g202.5-202.10"] [/p] 
-[p xml:id="g202.11-203.2"] [/p] 
-[p xml:id="g203.3-203.5"] [/p] 
-[p xml:id="g203.6-203.6"] [/p] 
-[p xml:id="g203.7-203.12"] [/p] 
-[p xml:id="g203.13-204.4"] [/p] 
-[p xml:id="g204.5-204.6"] [/p] 
-[p xml:id="g204.7-204.15"] [/p] 
-[p xml:id="g204.16-205.2"] [/p] 
-[p xml:id="g205.3-206.12"] [/p] 
-[p xml:id="g206.n4-206.n5"] [/p] 
-[p xml:id="g206.13-206.17"] [/p] 
-[p xml:id="g206.18-207.2"] [/p] 
-[p xml:id="g207.3-207.15"] [/p] 
-[p xml:id="g207.16-207.17"] [/p] 
-[p xml:id="g208.1-208.9"] [/p] 
-[p xml:id="g208.10-208.14"] [/p] 
-[p xml:id="g208.15-210.8"] [/p] 
-[p xml:id="g210.9-210.22"] [/p] 
-[p xml:id="g210.23-210.24"] [/p] 
-[p xml:id="g211.1-211.14"] [/p] 
-[p xml:id="g211.15-211.17"] [/p] 
-[p xml:id="g212.1-212.4"] [/p] 
-[p xml:id="g212.5-212.9"] [/p] 
-[p xml:id="g212.10-212.11"] [/p] 
-[p xml:id="g212.12-212.16"] [/p] 
-[p xml:id="g213.1-213.8"] [/p] 
-[p xml:id="g213.8-214.11"] [/p] 
-[p xml:id="g214.12-214.14"] [/p] 
-[p xml:id="g214.14-215.3"] [/p] 
-[p xml:id="g216.1-217.1"] [/p] 
-[p xml:id="g217.1-217.12"] [/p] 
-[p xml:id="g218.1-218.2"] [/p] 
-[p xml:id="g218.2-219.2"] [/p] 
-[p xml:id="g219.5-219.8"] [/p] 
-[p xml:id="g219.3-219.4"] [/p] 
-[p xml:id="g214.n8-215.n14"] [/p] 
-[p xml:id="g215.n14-216.n10"] [/p] 
-[p xml:id="g216.n10-217.n1"] [/p] 
-[p xml:id="g217.n4-217.n10"] [/p] 
-[p xml:id="g218.n16-218.n23"] [/p] 
-[p xml:id="g219.n1-219.n13"] [/p] 
-[p xml:id="g217.n10-218.n16"] [/p] 
-[p xml:id="g219.8-221.14"] [/p] 
-[p xml:id="g221.14-222.1"] [/p] 
-[p xml:id="g222.1-222.4"] [/p] 
-[p xml:id="g222.5-222.12"] [/p] 
-[p xml:id="g222.12-223.12"] [/p] 
-[p xml:id="g223.12-224.19"] [/p] 
-[p xml:id="g225.1-232.10"] [/p] 
-[p xml:id="g232.11-232.21"] [/p] 
-[p xml:id="g233.1-g234.3"] [/p] 
-[p xml:id="g234.3-235.5"] [/p] 
-[p xml:id="g234.n1-236.n10"] [/p] 
-[p xml:id="g236.1-237.5"] [/p] 
-[p xml:id="g237.6-237.12"] [/p] 
-[p xml:id="g237.13-242.17"] [/p] 
-[p xml:id="g242.18-243.4"] [/p] 
-[p xml:id="g243.5-244.5"] [/p] 
-[p xml:id="g244.6-249.10"] [/p] 
-[p xml:id="g249.11-250.13"] [/p] 
-[p xml:id="g250.14-251.4"] [/p] 
-[p xml:id="g251.5-252.2"] [/p] 
-[p xml:id="g252.3-253.2"] [/p] 
-[p xml:id="g253.3-254.5"] [/p] 
-[p xml:id="g254.6-254.22"] [/p] 
-[p xml:id="g254.23-255.9"] [/p] 
-[p xml:id="g255.10-256.11"] [/p] 
-[p xml:id="g256.12-258.13"] [/p] 
-[p xml:id="g258.1-258.7surplus"] [/p] 
-[p xml:id="g258.14-258.19"] [/p] 
-[p xml:id="g259.1-259.20"] [/p] 
-[p xml:id="g259.21-261.15"] [/p] 
-[p xml:id="g261.16-262.7"] [/p] 
-[p xml:id="g262.8-262.16"] [/p] 
-[p xml:id="g262.17-266.4"] [/p] 
-[p xml:id="g266.5-267.12"] [/p] 
-[p xml:id="g267.13-268.6"] [/p] 
-[p xml:id="g268.7-269.6"] [/p] 
-[p xml:id="g269.7-270.4"] [/p] 
-[p xml:id="g270.5-271.9"] [/p] 
-[p xml:id="g271.10-272.4"] [/p] 
-[p xml:id="g272.5-273.10"] [/p] 
-[p xml:id="g273.11-274.4"] [/p] 
-[p xml:id="g274.5-274.14"] [/p] 
-[p xml:id="g274.15-275.3"] [/p] 
-[p xml:id="g275.4-275.11"] [/p] 
-[p xml:id="g275.12-275.18"] [/p] 
-[p xml:id="g275.19-276.2"] [/p] 
-[p xml:id="g276.3-277.7"] [/p] 
-[p xml:id="g277.8-277.29"] [/p] 
-[p xml:id="g277.30-278.16"] [/p] 
-[p xml:id="g278.17-278.28"] [/p] 
-[p xml:id="g278.29-279.2"] [/p] 
-[p xml:id="g279.3-279.15"] [/p] 
-[p xml:id="g279.16-279.24"] [/p] 
-[p xml:id="g279.25-279.39"] [/p] 
-[p xml:id="g279.40-280.21"] [/p] 
-[p xml:id="g280.22-281.7"] [/p] 
-[p xml:id="g281.8-281.18"] [/p] 
-[p xml:id="g281.19-281.39"] [/p] 
-[p xml:id="g281.40-282.7"] [/p] 
-[p xml:id="g282.8-282.25"] [/p] 
-[p xml:id="g282.26-283.5"] [/p] 
-[p xml:id="g283.6-283.16"] [/p] 
-[p xml:id="g283.17-283.20"] [/p] 
-[p xml:id="g283.21-284.4"] [/p] 
-[p xml:id="g284.5-284.14"] [/p] 
-[p xml:id="g284.15-284.22"] [/p] 
-[p xml:id="g284.23-285.15"] [/p] 
-[p xml:id="g285.16-285.27"] [/p] 
-[p xml:id="g286.1-286.28"] [/p] 
-[p xml:id="g286.29-287.12"] [/p] 
-[p xml:id="g287.13-288.3"] [/p] 
-[p xml:id="g288.4-288.22"] [/p] 
-[p xml:id="g288.23-288.36"] [/p] 
-[p xml:id="g288.37-289.7"] [/p] 
-[p xml:id="g289.8-289.18"] [/p] 
-[p xml:id="g289.19-289.31"] [/p] 
-[p xml:id="g290.1-290.32"] [/p] 
-[p xml:id="g290.33-291.12"] [/p] 
-[p xml:id="g291.13-291.22"] [/p] 
-[p xml:id="g291.23-292.15"] [/p] 
-[p xml:id="g292.16-293.4"] [/p] 
-[p xml:id="g293.5-293.20"] [/p] 
-[p xml:id="g293.21-293.38"] [/p] 
-[p xml:id="g293.39-294.2"] [/p] 
-[p xml:id="g294.3-294.14"] [/p] 
-[p xml:id="g294.15-194.17"] [/p] 
-[p xml:id="g294.18-295.5"] [/p] 
-[p xml:id="g295.6-295.19"] [/p] 
-[p xml:id="g295.20-295.26"] [/p] 
-[p xml:id="g295.27-295.34"] [/p] 
-[p xml:id="g295.35-296.26"] [/p] 
-[p xml:id="g296.27-297.2"] [/p] 
-[p xml:id="g297.3-297.18"] [/p] 
-[p xml:id="g297.19-297.21"] [/p] 
-[p xml:id="v-b298a"] [/p] 
-[p xml:id="v-b298b"] [/p] 
-[p xml:id="v-b298c"] [/p] 
-[p xml:id="v-b298d"] [/p] 
-[p xml:id="v-b300a"] [/p] 
-[p xml:id="v-b300b"] [/p] 
-[p xml:id="v-b300c"] [/p] 
-[p xml:id="v-b302a"] [/p] 
-[p xml:id="v-b302b"] [/p] 
-[p xml:id="v-b302c"] [/p] 
-[p xml:id="v-b302d"] [/p] 
-[p xml:id="v-b304a"] [/p] 
-[p xml:id="v-b304b"] [/p] 
-[p xml:id="v-b304c"] [/p] 
-[p xml:id="v-b304d"] [/p] 
-[p xml:id="v-b306a"] [/p] 
-[p xml:id="v-b306b"] [/p] 
-    </body> 
-  </text> 
-</TEI> 
+ 
+[/p]  
+
+
+
+    </body>
+  </text>
+</TEI>

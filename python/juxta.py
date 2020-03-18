@@ -37,7 +37,8 @@ a_unifier.a_unifier(quiet=quiet)
 sort_a2.sort_a2(quiet=quiet)
 
 # simplify_markup_for_collation.py / class msTree
-edition_list = ['a1', 'a2-sorted', 'o', 'g', 'bonetti']
+edition_list = ['a1', 'a2-sorted', 'o', 'o-short', 'g', 'bonetti',
+                'bonetti-short']
 for edition in edition_list:
     mytree = simplify_markup_for_collation.msTree(edition, quiet=quiet)
     if edition == 'a1':
@@ -102,6 +103,12 @@ parameters = [
      'msa2Siglum': 'a2',
      'msoSiglum': 'o'},
     {'siglum': 'm2',
+     'ed': 'bonetti',
+     'printSiglum': 'b',
+     'msaSiglum': 'a',
+     'msa2Siglum': 'a2',
+     'msoSiglum': 'o'},
+    {'siglum': 'm3',
      'ed': 'bonetti',
      'printSiglum': 'b',
      'msaSiglum': 'a',
