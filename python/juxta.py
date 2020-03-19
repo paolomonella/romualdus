@@ -117,6 +117,9 @@ if post:
         {'siglum': 'm2-bravo',
          'ed': 'bonetti',
          'printSiglum': 'b'},
+        {'siglum': 'm2-charlie',
+         'ed': 'bonetti',
+         'printSiglum': 'b'},
     ]
 
     for mp in parameters:

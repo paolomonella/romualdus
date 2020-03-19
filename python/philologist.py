@@ -48,15 +48,12 @@ class treeWithAppElements:
         # Quieter output:
         self.quiet = quiet
 
-        # Import (some) tables from DB
-        self.decision_variant_types = my_database_import.import_table(
+        # Import table from DB (I import it here because will will
+        # be used by more than one function)
+        self.decisions2 = my_database_import.import_table(
             dbpath,
             'romualdus.sqlite3',
-            'decision_variant_types')
-        self.decisions = my_database_import.import_table(
-            dbpath,
-            'romualdus.sqlite3',
-            'decisions')
+            'decisions2')
 
     def set_a2_for_additions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
@@ -566,8 +563,15 @@ class treeWithAppElements:
         # Decide <lem> and set @cert based on decision_variant_types:
         if debug:
             print(self.appdict())
+
+        # Import table from the DB
+        decision_variant_types = my_database_import.import_table(
+            dbpath,
+            'romualdus.sqlite3',
+            'decision_variant_types')
+
         for c in self.appdict():
-            for myRow in self.decision_variant_types:
+            for myRow in decision_variant_types:
 
                 # E.g.: 'different-punct-type':
                 if c['type'] == myRow['type']:
@@ -678,7 +682,7 @@ class treeWithAppElements:
         ####################################################
 
         # For each record in the 'decisions' DB table:
-        for r in self.decisions:
+        for r in self.decisions2:
 
             # If the print reading in <app> is the same
             # of the print reading in the DB record...
@@ -691,8 +695,8 @@ class treeWithAppElements:
 
                # and we are in the right <p>...
                and (r['where'] == a['where']
-                    # ...or the DB decision is to be applied everywhere
-                    or r['where'] == 'everywhere')):
+                    # ...or the DB decision is to be applied in all cases
+                    or r['where'] == 'all')):
 
                 ############################
                 # Set <lem> and <rdg> tags #
@@ -701,7 +705,7 @@ class treeWithAppElements:
                 # The print reading will always be set to <rdg>
                 self.make_rdg(my_print_rdg)
 
-                if r['type'] == 'choose':
+                if r['type'] == 'ms':
                     # Make the non-print reading <lem>
                     self.make_lem(my_non_print_rdg)
 
@@ -748,6 +752,7 @@ class treeWithAppElements:
     def set_all_lems_based_on_db(self):
         '''Read DB table and decide <lem> for the <app>s
             that match a DB record '''
+
         for app_dict in self.appdict():
 
             if (app_dict['appStruct'] == '2elements2variants'
