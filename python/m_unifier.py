@@ -11,17 +11,22 @@ debug = False
 
 
 def unify():
-    ''' Unify the two files '''
+    ''' Unify the files '''
 
-    # Parse m1.xml:
+    # Parse input XML files:
     m1_file = '%s%s.xml' % (xmlpath, 'm1-par-out')
     m1_tree = etree.parse(m1_file)
 
-    # Parse m2.xml:
-    m2_file = '%s%s.xml' % (xmlpath, 'm2-par-out')
-    m2_tree = etree.parse(m2_file)
+    m2_alfa_file = '%s%s.xml' % (xmlpath, 'm2-alfa-par-out')
+    m2_alfa_tree = etree.parse(m2_alfa_file)
 
-    # Copy m1.xml to template.xml
+    m2_bravo_file = '%s%s.xml' % (xmlpath, 'm2-bravo-par-out')
+    m2_bravo_tree = etree.parse(m2_bravo_file)
+
+    m2_charlie_file = '%s%s.xml' % (xmlpath, 'm2-charlie-par-out')
+    m2_charlie_tree = etree.parse(m2_charlie_file)
+
+    # Copy m1-par-out.xml to template.xml
     template_file = '%s%s.xml' % (xmlpath, 'template')
     copyfile(m1_file, template_file)
 
@@ -33,7 +38,9 @@ def unify():
 
     # Find <body> elements
     m1_body = m1_tree.find('.//t:body', ns)
-    m2_body = m2_tree.find('.//t:body', ns)
+    m2_alfa_body = m2_alfa_tree.find('.//t:body', ns)
+    m2_bravo_body = m2_bravo_tree.find('.//t:body', ns)
+    m2_charlie_body = m2_charlie_tree.find('.//t:body', ns)
     template_body = template_tree.find('.//t:body', ns)
 
     # Empty <body> of template.xml
@@ -41,12 +48,9 @@ def unify():
         template_body.remove(x)
 
     # Pour content of m1.xml's <body> into template.xml:
-    for x in m1_body:
-        template_body.append(x)
-
-    # Pour content of m2.xml's <body> into chronicon.xml:
-    for x in m2_body:
-        template_body.append(x)
+    for input_body in [m1_body, m2_alfa_body, m2_bravo_body, m2_charlie_body]:
+        for x in input_body:
+            template_body.append(x)
 
     # Write tree to output file template.xml:
     template_tree.write(chronicon_file,
