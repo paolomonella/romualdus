@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE TEI SYSTEM "romualdus.dtd" [ 
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'> 
+<!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'> 
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'> 
+<!ENTITY bl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'> 
+]> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+  <teiHeader> 
+    <fileDesc> 
+      <titleStmt> 
+        <title>Romualdi Salernitani Chronicon, codex A</title> 
+        <editor xml:id="pm">Paolo Monella</editor> 
+      </titleStmt> 
+      <publicationStmt> 
+        <p>Encoding experiments</p> 
+      </publicationStmt> 
+      <sourceDesc> 
+      <listBibl> 
+          <msDesc xml:id="a"> 
+              <msIdentifier> 
+                  <settlement>Biblioteca Apostolica Vaticana</settlement> 
+                  <idno>Vat. lat. 3973</idno> 
+                </msIdentifier> 
+            </msDesc> 
+                 <biblStruct xml:id="g"> 
+                <monogr> 
+                    <author>Guarna, Romualdus</author> 
+                    <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title> 
+                    <editor>Garufi, Carlo Alberto</editor> 
+                    <imprint> 
+                        <publisher>S. Lapi</publisher> 
+                        <date>1914</date> 
+                        <pubPlace>Città di Castello</pubPlace> 
+                    </imprint> 
+                    </monogr> 
+                    <series> 
+                        <title level="s">Rerum italicarum scriptores: Nuova edizione</title> 
+                        <biblScope unit="volume">7</biblScope> 
+                                        <biblScope unit="part">1</biblScope> 
+                </series> 
+            </biblStruct> 
+            <biblStruct xml:id="b"> 
+                <monogr> 
+                    <author>Guarna, Romualdus</author> 
+                    <title>Romualdo II Guarna, Chronicon</title> 
+                    <idno type="ISBN">9788883090561</idno> 
+                    <editor>Bonetti, Cinzia</editor> 
+                    <imprint> 
+                        <publisher>Avagliano</publisher> 
+                        <date>2001</date> 
+                        <pubPlace>Salerno</pubPlace> 
+                    </imprint> 
+                    </monogr> 
+                    <series> 
+                        <title level="s">Schola Salernitana. Studi e testi</title> 
+                        <biblScope unit="volume">6</biblScope> 
+                    </series> 
+            </biblStruct> 
+            </listBibl> 
+      </sourceDesc> 
+    </fileDesc> 
+    <encodingDesc> 
+      <editorialDecl xml:id="algl"> 
+        <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p> 
+      </editorialDecl> 
+      <editorialDecl xml:id="al"> 
+        <p>Paragraph encoded at the Alphabetic Layer only.</p> 
+      </editorialDecl> 
+      <editorialDecl xml:id="al2"> 
+        <p>Paragraph encoded at the Alphabetic Layer, main variants only.</p> 
+      </editorialDecl> 
+      <editorialDecl xml:id="ocr"> 
+        <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p> 
+      </editorialDecl> 
+      <editorialDecl> 
+        <quotation marks="none"> 
+          <p>The manuscript does not have quotation marks. 
+                        Some passages (direct speech or epistle quotations) are marked up with 
+                        'said', without quotation marks.</p> 
+          <p>Quotations from literary works are marked up with 'quote'. 
+                        When present, @type="biblia" means that it is a biblical quote, according 
+                        to the "Manuale di codifica dei testi ALIM in TEI XML" in 
+                        http://it.alim.unisi.it/documentazione/. 
+                        @type="liturgia" means that the quote comes from the Catholic liturgy.</p> 
+        </quotation> 
+      </editorialDecl> 
+      <tagsDecl> 
+        <namespace name="http://www.tei-c.org/ns/1.0"> 
+          <tagUsage gi="add"> 
+              <list> 
+                  <item>When it has @type="subst" (and it is child of 'subst' and sibling of 'del') it is meant to 
+                            substitute the textual portion marked with 'del'. Otherwise, it represents 
+                            an addition to the text.</item> 
+                  <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
+                            is responsible for the textual modification. 
+                            If another hand is responsible, a @hand attribute is provided.</item> 
+                  <item>Possible values for @hand: "hand2", "#uhand" (unknown hand).</item> 
+                  <item>Possible values for @place: "marginandfooter", "footer", "strikeover", "margin", 
+                      "inline", "above", "addedfolios", "nextline".</item> 
+              </list> 
+          </tagUsage> 
+          <tagUsage gi="anchor"> 
+                            See above the note on the usage of 'link'. 
+                            Like 'link', also 'anchor' has @type="transposition". 
+                            Element 'anchor' has the same values of @subtype as the 
+                            'link' that points to it: 
+                            it marks the point of the text at which a paragraph is collocated 
+                            <list> 
+                                <item>by both the editions of Garufi and Bonetti 
+                                    (if @subtype="garufiandbonetticollocation"),</item> 
+                                <item>by Garufi only (if @subtype="garuficollocation"), or</item> 
+                                <item>by Bonetti only (if @subtype="bonetticollocation")</item> 
+                            </list> 
+                    </tagUsage> 
+          <tagUsage gi="del"> 
+              <list> 
+                        <item>It is used either alone for a passage deleted and 
+                            not substituted by the scribe,or in combination 
+                            with 'subst' and 'add'.</item> 
+                        <item>Possible values for @rend: "rasura", "strikeout"; 
+                            when used with 'subst' and 'add', 
+                            also "metamark" (when a scribe wrote a metamark such as an asterisk 
+                            above the original text as a pointer towards a correction added in margin), 
+                            "nomark" (when the correction is simply rewritten on the original glyphs 
+                            or the correction is made by deleting a part of a glyph), and "glyphmodification" 
+                            (when a scribe transforms a glyph to another glyph by erasing a part of it).</item> 
+                        <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
+                            is responsible for the textual modification. 
+                            If another hand is responsible, a @hand attribute is provided.</item> 
+                    </list> 
+          </tagUsage> 
+          <tagUsage gi="hi"> 
+              Used to mark up words capitalized in the print edition, but not constituting 
+              proper noun, such as "Sed" at the beginning of a sentence. 
+          </tagUsage> 
+          <tagUsage gi="link"> 
+                            With @type="transposition", it links a paragraph (first teidata.pointer 
+                            in the value) of the manuscript text to an 'ancho'r 
+                            (second teidata.pointer in the value) 
+                            marking the point of the text in which that paragraph is collocated 
+                            <list> 
+                                <item>by both the editions of Garufi and Bonetti 
+                                    (if @subtype="garufiandbonetticollocation"),</item> 
+                                <item>by Garufi only 
+                                    (if @subtype="garuficollocation"), or</item> 
+                                <item>by Bonetti only (if @subtype="bonetticollocation")</item> 
+                            </list> 
+                    </tagUsage> 
+          <tagUsage gi="milestone"> 
+                            <list> 
+                                <item>With @type="bonetti_is_collation_exemplar_from_here_on" 
+                                    it marks the point of the text rom which I used the file with 
+                                    the OCR of the Bonetti edition as a collation base. 
+                                    Before that point, I had used the OCR 
+                                    of the Garufi edition as base.</item> 
+                                <item>With @type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" and @ed="#b" 
+                                    it is put at a point of the text 
+                                    in which Garufi has a paragraph break but Bonetti does not.</item> 
+                                <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put 
+                                    at a point of the text in which Bonetti has a paragraph break but 
+                                    Garufi does not.</item> 
+                            </list> 
+                    </tagUsage> 
+          <tagUsage gi="note"> 
+                            With @resp="#pm" (Paolo Monella) or @resp="#b" (Bonetti edition): 
+                            <list> 
+                                <item>With @type="graphic": note on glyphs or graphemes.</item> 
+                                <item>With @type="segmentation": note on the text segmentation 
+                                    (arrangement of paragraphs or missing paragraphs).</item> 
+                                <item>With @type="textcrit": note on textual critical matters.</item> 
+                            </list> 
+                            With @resp="#b" (Bonetti edition): 
+                            <list> 
+                                <item>With @type="content": note on the text content.</item> 
+                                <item>With @type="year": note on the year in which a fact actually 
+                                    happened, according to C. Bonetti.</item> 
+                            </list> 
+                            With @resp="#hand2" (the hand from the XVII century): 
+                            <list> 
+                                <item>With @type="etcetera": a note handwritten by hand2 on the manuscript 
+                                    reporting the first words of the portion of the text that is supposed 
+                                    to follow a marginal or footer addition by hand2. 
+                                    The note normally ends with "et cetera…"</item> 
+                                <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript 
+                                    saying that a marg or footer note has been taken by manuscript 
+                                    ("codex sancti Petri").</item> 
+                                <item>With @type="textcrit": note on textual critical matters.</item> 
+                            </list> 
+            </tagUsage> 
+            <tagUsage gi="soCalled"> 
+                        Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus". 
+                    </tagUsage> 
+            <tagUsage gi="title"> 
+                        Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus". 
+                    </tagUsage> 
+        </namespace> 
+      </tagsDecl> 
+      <listPrefixDef> 
+        <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1"> 
+          <p>In the context of this edition, private URIs with 
+                        the prefix "vat" point to a specific page of external 
+                        PDF file vat.lat.3973.pdf, including the digital images 
+                        of the A manuscript. For example, "vat:29" 
+                        dereferences to "img/vat.lat.3973.pdf#page=29".</p> 
+        </prefixDef> 
+      </listPrefixDef> 
+    </encodingDesc> 
+    <profileDesc> 
+      <handNotes> 
+        <handNote xml:id="hand2"> 
+                <p>A part of the text was missing from manuscript A, so two additional folios were added 
+                    at a much later time, probably in the XVII century, and then numbered as 204 and 205.</p> 
+                <p>A marginal note at the top right corner of folio 204r says: "hae duo paginae, quae hic deerant, 
+                    desumptae sunt de codices Petri de Urbe".</p> 
+                <p>So pages 204r, 204v, 205r, 205v do not constitute a witness of the text of codex A. 
+                    Still, I am transcribing their text here for completeness.</p> 
+                <p>This hand is also responsible for corrections and additions passim in the manuscript.</p> 
+                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic (not 
+                    graphematic )transcription, I am encoding it with its alphabetic correspondent 'ae' 
+                    and marking those 'ae' alphabemes with seg ana="#ae".</p> 
+        </handNote> 
+        <handNote xml:id="uhand"> 
+                <p>Unknown hand.</p> 
+        </handNote> 
+      </handNotes> 
+    </profileDesc> 
+  </teiHeader> 
+  <text> 
+    <body> 
+      [p xml:id="b062heading"] [/p] 
+[p xml:id="g163.6-163.7"] 
+Anni domini DCCCLXXXXIV. Primus Guaymarius 
+suscepit principatum in Salerno, et regnauit annis XXXIX. 
+[/p] 
+[p xml:id="g163.8-163.10"] 
+Anno dominice incarnationis CMII. Urbs 
+Tauromenis a Sarracenis capta est. Eodem anno in nocte uisi 
+sunt igniculi in modum stellarum per aera discurrentes: qua 
+nocte rex Africe residens super Consentiam Calabrie ciuitatem, 
+Dei iudicio, mortuus est. 
+[/p] 
+[p xml:id="g163.11-164.9"] 
+Anno dominice incarnationis CMVI. Carolus Francorum 
+rex qui Simplex est dictus, obiit anno regni eius XXVII, post 
+cuius mortem quidam Rodulfus, annitente Robberto principe, 
+regnum Francorum arripuit iniuste tenuitque annis XIII. Sub hoc 
+itaque Rodulfo Ugo Robberti filius post patris obitum nomen 
+Abbatis sumpsit. Mortuo autem rege Rodulfo Ludouicus Caroli 
+Simplicis filius transactis puerilibus annis est iure unctus in 
+regem. Post hec Francorum proceres instinctu Ugonis Abbatis 
+rebellauerunt contra regem Ludouicum. Et ipso anno facta est 
+fames ualida per totum regnum Francorum ita ut modius frumenti 
+uenumdaretur solidos XXIV. Eodem quoque anno mense 
+Maio sanguis pluit super operarios. Hac itaque tempestate Otto 
+non tam suggestione Saxonum quam et quorumdam faccione 
+Francorum, maxime quidem Ugonis Abbatis, unctus est in regem 
+Saxonie. Interea apud Constantinopolim mortuis Leone et Alexandro 
+imperatoribus Constantinus eiusdem Leonis filius suscepit 
+imperium, regnauitque annis sex. 
+[/p] 
+[p xml:id="g164.10-164.11"] 
+Anni domini CMXIII, defuncto Constantino imperatore 
+Romano, Heliopolitanus Constantinopolitanum suscepit imperium 
+tenuitque annis XXV. 
+[/p] 
+[p xml:id="g164.12-164.19"] 
+Inter hec Formosus Romane sedis episcopus moritur et successit 
+ei Bonifacius, sedit annis XII. Quo defuncto Stephanus ei 
+successit in sede pontificali; qui post anno I et mensibus II 
+uita decedens sedem dereliquit Romano episcopo qui sedit mensibus 
+III. Defuncto autem Romano Theodorus sedit dies XX. Post 
+hec uero Iohannes sedit annis II. Cui successit Benedictus papa 
+qui sedit annis III. Huic successit Leo et sedit mense I. Post 
+quem Chistoforus mensibus VI sedit. Hic eiectus de papatu monachus 
+factus est, et Sergius in sede pontificali constitutus qui 
+sedit annis VII mensibus III. Post cuius obitum Anastasius 
+sedit annis II mensibus II. 
+[/p] 
+[p xml:id="g164.19-164.25"] 
+Eodem anno Landulfus princeps Beneuenti preliatus est cum 
+Ursileone patricio Grecorum in Apulia eumque uicit. At uero in 
+Gallia Ludouicus Francorum rex captus est a Nordmannis dolo 
+Ugonis Abbatis, qui postea dictus est Magnus, multis Francorum 
+interfectis, qui rex totum tempus uite sue plenum ducens angustiarum 
+et tribulationum diem clausit extremum anni domini 
+CMXXII, sepultusque Remis in basilica Sancti remigii. Hic 
+autem duos liberos superstites reliquit, Lotharium atque Carolum, 
+quos ex Giberga Ottonis Saxonum regis sorore genuerat. 
+Defuncto igitur Ludouico Lotharius filius eius adhuc iuuenis 
+unctus est in regem Remis et Ugo Magnus dux eius factus est. 
+[/p] 
+[p xml:id="g165.1-165.3"] 
+Anni domini CMXXIII Anastasio papa defuncto, dando 
+Romanum suscepit pontificatum seditque mensibus VI. Quo defuncto 
+Iohannes sedem papalem sedit annis XIV mensibus II. 
+[/p] 
+[p xml:id="g165.4-165.7"] 
+Anno dominice incarnationis CMXXVI, uenerunt Sclaui 
+in Apuliam et ciuitatem Sipontum hostili direptione et gladio 
+uastauerunt. Non post multum uero temporis Ungri uenerunt in 
+Apuliam et capta Aerea ciuitate ceperunt Tarentum. Dehinc Campaniam 
+ingressi non modicam ipsius prouincie partem igni ac 
+direptioni dederunt. 
+[/p] 
+[p xml:id="g165.8-165.9"] 
+Anni Domini CMXXXIII, alius Gisolfus 
+factus est princeps in Salerno uixitque in principatu annis 
+XLVIII. 
+[/p] 
+[p xml:id="g165.10-166.2"] 
+Anni Domini CMXXXIX, Constantinus 
+cum filio Constantino apud Constantinopolim post Romano Heliopolitanum 
+cepit imperare, regnaueruntque annis XVI. Post 
+quos filius eiusdem Constantini Romano cum filio suo Basilio annis 
+III imperauit, et post eos Niceforus imperauit annis VI. His 
+autem temporibus Ungri secundo ingressi sunt in Apuliam eamque 
+optinuerunt annis IX. 
+[/p] 
+[p xml:id="g166.3-166.8"] 
+Inter hec quoque Iohanne papa defuncto, Leo papa sedit mensibus 
+VI. Cui successit Stephanus qui sedit annis II mense I. Huic uero 
+Iohannes successit et sedit annis IV mensibus X. Hic autem fuit 
+filius Sergii pape. Igitur Iohanni successit Leo qui sedit annis IV 
+mensibus VI. Post quem Stephanus sedit annis III mensibus IV. 
+Cui Marinus successit seditque in pontificatu Romano annis III 
+mensibus VI. Quo uita decedente Agapitus sedit annis X mensibus 
+VII. Huic itaque Iohannes successit, sedit annis nouem mensibus 
+tribus. 
+[/p] 
+[p xml:id="g166.9-166.25"] 
+Anno dominice incarnationis CMLIV, corpus beati Mathei 
+apostoli et euangeliste de Pestana ciuitate Bricie in Salernum 
+translatum est, principante tunc in eadem ciuitate Gisulfo. 
+At uero in Gallia Carolus frater Lotharii Francorum regis euo 
+iunior priuatis in rebus senuit. Fuerant autem Ugoni Magno filii 
+Otto et Ugo atque Enricus, nati ex filia Ottonis regis Saxonum. 
+Defuncto itaque Ugone Magno, successit ei Otto filius eius qui 
+non post multum temporis mortuus est, et Ugo frater eius effectus 
+est dux Francorum regis, Enricus quoque effectus est dux regis 
+Burgundionum. Non post multos uero dies Lotharius rex Francorum 
+congregans exercitum ualde copiosum renouauit in dicione 
+sua Lotharium regnum. Quod audiens Otto Saxonum rex 
+qui Aquisgrani tunc commanebat, relicto palatio quod sibi uendicauerat, 
+fugiit. Post hec Otto rex congregans exercitum suum 
+uenit Parisius, ubi interfectus est nepos illius cum aliis quam pluribus 
+ad portam ciuitatis, incenso suburbio illius. Lotharius igitur 
+rex tribus diebus et tribus noctibus constanter persequens illos 
+usque ad fluuium qui fluit iuxta Ardennam, interfecta hostium 
+multitudine cum uictoria in Franciam reuersus est. Post hec non 
+apposuit ultra Otto rex ut ueniret in Franciam. 
+In ipso autem anno Lotharius rex consilio Ugonis ducis sui 
+pacificatus est cum Ottone rege Remis ciuitate, deditque Lotharius 
+rex Ottoni regi in beneficio Lotharium regnum in anno. anno dominice 
+incarnationis CMLXIII. 
+[/p] 
+[p xml:id="g167.1-167.3"] 
+Sequente uero anno  idem Otto Saxonum rex Romam 
+uenit nobiliter cum exercitu et a Iohanne papa coronatus 
+est, accipiens ab eo totius Italie uexillum cum imperii dignitate, 
+professus iureiurando seruare fidem Romane ecclesie. Ex tunc 
+itaque Otto rex appellatus est imperator. 
+[/p] 
+[p xml:id="g167.4-168.4"] 
+Anno dominice incarnationis CMLXVII, hic in Apuliam 
+uenit cum exercitu et oppidum Barum expugnando cepit, cepitque 
+ciuitatem Bibinum atque Asculum, Grecos expellens. Interea 
+apud Constantinopolim defuncto imperatore Niceforo, Iohannes 
+cognomento Simiski tenuit imperium annis VI. Quo defuncto 
+Basilius et Constantinus filii eius ceperunt imperare ab anno 
+incarnationis domini CMLXX , regnaueruntque 
+annis LV. At uero Rome defuncto Iohanne papa Benedictus papa 
+sedit annis II, et post eum Leo sedit annis VI mensibus XI. Hic a Petro prefecto 
+Romane urbis comprehensus et in castello sancti Angeli retrusus, 
+deinde in Campaniam in exilium missus et post menses decem 
+Romam reuersus est, et de persecutoribus eius ab Ottone 
+imperatore in urbe Roma supplicium sumptum est. Iste quoque 
+papa Iohannes coronam posuit imperii Ottoni imperatori, quique 
+accepta corona Aquisgranum reuersus est. 
+Hic etiam papa Iohannes nobilitauit Capuam archiepiscopatu, 
+in qua ciuitate tunc principabatur Pandulfus cognomento Capudferreus. 
+Eodem tempore Sarraceni uenerunt in Apuliam et expugnauerunt 
+ciuitatem Grauinam eamque ceperunt. Hinc quoque secundo 
+anno post hec ceperunt ciuitatem Bibinum ignique combusserunt. 
+[/p] 
+</body> 
+  </text> 
+</TEI> 

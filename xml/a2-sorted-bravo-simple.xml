@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<!DOCTYPE TEI SYSTEM "romualdus.dtd" [ 
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'> 
+<!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'> 
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'> 
+<!ENTITY bl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'> 
+]> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+  <teiHeader> 
+    <fileDesc> 
+      <titleStmt> 
+        <title>Romualdi Salernitani Chronicon, codex A</title> 
+        <editor xml:id="pm">Paolo Monella</editor> 
+      </titleStmt> 
+      <publicationStmt> 
+        <p>Encoding experiments</p> 
+      </publicationStmt> 
+      <sourceDesc> 
+      <listBibl> 
+          <msDesc xml:id="a"> 
+              <msIdentifier> 
+                  <settlement>Biblioteca Apostolica Vaticana</settlement> 
+                  <idno>Vat. lat. 3973</idno> 
+                </msIdentifier> 
+            </msDesc> 
+                 <biblStruct xml:id="g"> 
+                <monogr> 
+                    <author>Guarna, Romualdus</author> 
+                    <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title> 
+                    <editor>Garufi, Carlo Alberto</editor> 
+                    <imprint> 
+                        <publisher>S. Lapi</publisher> 
+                        <date>1914</date> 
+                        <pubPlace>Città di Castello</pubPlace> 
+                    </imprint> 
+                    </monogr> 
+                    <series> 
+                        <title level="s">Rerum italicarum scriptores: Nuova edizione</title> 
+                        <biblScope unit="volume">7</biblScope> 
+                                        <biblScope unit="part">1</biblScope> 
+                </series> 
+            </biblStruct> 
+            <biblStruct xml:id="b"> 
+                <monogr> 
+                    <author>Guarna, Romualdus</author> 
+                    <title>Romualdo II Guarna, Chronicon</title> 
+                    <idno type="ISBN">9788883090561</idno> 
+                    <editor>Bonetti, Cinzia</editor> 
+                    <imprint> 
+                        <publisher>Avagliano</publisher> 
+                        <date>2001</date> 
+                        <pubPlace>Salerno</pubPlace> 
+                    </imprint> 
+                    </monogr> 
+                    <series> 
+                        <title level="s">Schola Salernitana. Studi e testi</title> 
+                        <biblScope unit="volume">6</biblScope> 
+                    </series> 
+            </biblStruct> 
+            </listBibl> 
+      </sourceDesc> 
+    </fileDesc> 
+    <encodingDesc> 
+      <editorialDecl xml:id="algl"> 
+        <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p> 
+      </editorialDecl> 
+      <editorialDecl xml:id="al"> 
+        <p>Paragraph encoded at the Alphabetic Layer only.</p> 
+      </editorialDecl> 
+      <editorialDecl xml:id="al2"> 
+        <p>Paragraph encoded at the Alphabetic Layer, main variants only.</p> 
+      </editorialDecl> 
+      <editorialDecl xml:id="ocr"> 
+        <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p> 
+      </editorialDecl> 
+      <editorialDecl> 
+        <quotation marks="none"> 
+          <p>The manuscript does not have quotation marks. 
+                        Some passages (direct speech or epistle quotations) are marked up with 
+                        'said', without quotation marks.</p> 
+          <p>Quotations from literary works are marked up with 'quote'. 
+                        When present, @type="biblia" means that it is a biblical quote, according 
+                        to the "Manuale di codifica dei testi ALIM in TEI XML" in 
+                        http://it.alim.unisi.it/documentazione/. 
+                        @type="liturgia" means that the quote comes from the Catholic liturgy.</p> 
+        </quotation> 
+      </editorialDecl> 
+      <tagsDecl> 
+        <namespace name="http://www.tei-c.org/ns/1.0"> 
+          <tagUsage gi="add"> 
+              <list> 
+                  <item>When it has @type="subst" (and it is child of 'subst' and sibling of 'del') it is meant to 
+                            substitute the textual portion marked with 'del'. Otherwise, it represents 
+                            an addition to the text.</item> 
+                  <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
+                            is responsible for the textual modification. 
+                            If another hand is responsible, a @hand attribute is provided.</item> 
+                  <item>Possible values for @hand: "hand2", "#uhand" (unknown hand).</item> 
+                  <item>Possible values for @place: "marginandfooter", "footer", "strikeover", "margin", 
+                      "inline", "above", "addedfolios", "nextline".</item> 
+              </list> 
+          </tagUsage> 
+          <tagUsage gi="anchor"> 
+                            See above the note on the usage of 'link'. 
+                            Like 'link', also 'anchor' has @type="transposition". 
+                            Element 'anchor' has the same values of @subtype as the 
+                            'link' that points to it: 
+                            it marks the point of the text at which a paragraph is collocated 
+                            <list> 
+                                <item>by both the editions of Garufi and Bonetti 
+                                    (if @subtype="garufiandbonetticollocation"),</item> 
+                                <item>by Garufi only (if @subtype="garuficollocation"), or</item> 
+                                <item>by Bonetti only (if @subtype="bonetticollocation")</item> 
+                            </list> 
+                    </tagUsage> 
+          <tagUsage gi="del"> 
+              <list> 
+                        <item>It is used either alone for a passage deleted and 
+                            not substituted by the scribe,or in combination 
+                            with 'subst' and 'add'.</item> 
+                        <item>Possible values for @rend: "rasura", "strikeout"; 
+                            when used with 'subst' and 'add', 
+                            also "metamark" (when a scribe wrote a metamark such as an asterisk 
+                            above the original text as a pointer towards a correction added in margin), 
+                            "nomark" (when the correction is simply rewritten on the original glyphs 
+                            or the correction is made by deleting a part of a glyph), and "glyphmodification" 
+                            (when a scribe transforms a glyph to another glyph by erasing a part of it).</item> 
+                        <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
+                            is responsible for the textual modification. 
+                            If another hand is responsible, a @hand attribute is provided.</item> 
+                    </list> 
+          </tagUsage> 
+          <tagUsage gi="hi"> 
+              Used to mark up words capitalized in the print edition, but not constituting 
+              proper noun, such as "Sed" at the beginning of a sentence. 
+          </tagUsage> 
+          <tagUsage gi="link"> 
+                            With @type="transposition", it links a paragraph (first teidata.pointer 
+                            in the value) of the manuscript text to an 'ancho'r 
+                            (second teidata.pointer in the value) 
+                            marking the point of the text in which that paragraph is collocated 
+                            <list> 
+                                <item>by both the editions of Garufi and Bonetti 
+                                    (if @subtype="garufiandbonetticollocation"),</item> 
+                                <item>by Garufi only 
+                                    (if @subtype="garuficollocation"), or</item> 
+                                <item>by Bonetti only (if @subtype="bonetticollocation")</item> 
+                            </list> 
+                    </tagUsage> 
+          <tagUsage gi="milestone"> 
+                            <list> 
+                                <item>With @type="bonetti_is_collation_exemplar_from_here_on" 
+                                    it marks the point of the text rom which I used the file with 
+                                    the OCR of the Bonetti edition as a collation base. 
+                                    Before that point, I had used the OCR 
+                                    of the Garufi edition as base.</item> 
+                                <item>With @type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" and @ed="#b" 
+                                    it is put at a point of the text 
+                                    in which Garufi has a paragraph break but Bonetti does not.</item> 
+                                <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put 
+                                    at a point of the text in which Bonetti has a paragraph break but 
+                                    Garufi does not.</item> 
+                            </list> 
+                    </tagUsage> 
+          <tagUsage gi="note"> 
+                            With @resp="#pm" (Paolo Monella) or @resp="#b" (Bonetti edition): 
+                            <list> 
+                                <item>With @type="graphic": note on glyphs or graphemes.</item> 
+                                <item>With @type="segmentation": note on the text segmentation 
+                                    (arrangement of paragraphs or missing paragraphs).</item> 
+                                <item>With @type="textcrit": note on textual critical matters.</item> 
+                            </list> 
+                            With @resp="#b" (Bonetti edition): 
+                            <list> 
+                                <item>With @type="content": note on the text content.</item> 
+                                <item>With @type="year": note on the year in which a fact actually 
+                                    happened, according to C. Bonetti.</item> 
+                            </list> 
+                            With @resp="#hand2" (the hand from the XVII century): 
+                            <list> 
+                                <item>With @type="etcetera": a note handwritten by hand2 on the manuscript 
+                                    reporting the first words of the portion of the text that is supposed 
+                                    to follow a marginal or footer addition by hand2. 
+                                    The note normally ends with "et cetera…"</item> 
+                                <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript 
+                                    saying that a marg or footer note has been taken by manuscript 
+                                    ("codex sancti Petri").</item> 
+                                <item>With @type="textcrit": note on textual critical matters.</item> 
+                            </list> 
+            </tagUsage> 
+            <tagUsage gi="soCalled"> 
+                        Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus". 
+                    </tagUsage> 
+            <tagUsage gi="title"> 
+                        Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus". 
+                    </tagUsage> 
+        </namespace> 
+      </tagsDecl> 
+      <listPrefixDef> 
+        <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1"> 
+          <p>In the context of this edition, private URIs with 
+                        the prefix "vat" point to a specific page of external 
+                        PDF file vat.lat.3973.pdf, including the digital images 
+                        of the A manuscript. For example, "vat:29" 
+                        dereferences to "img/vat.lat.3973.pdf#page=29".</p> 
+        </prefixDef> 
+      </listPrefixDef> 
+    </encodingDesc> 
+    <profileDesc> 
+      <handNotes> 
+        <handNote xml:id="hand2"> 
+                <p>A part of the text was missing from manuscript A, so two additional folios were added 
+                    at a much later time, probably in the XVII century, and then numbered as 204 and 205.</p> 
+                <p>A marginal note at the top right corner of folio 204r says: "hae duo paginae, quae hic deerant, 
+                    desumptae sunt de codices Petri de Urbe".</p> 
+                <p>So pages 204r, 204v, 205r, 205v do not constitute a witness of the text of codex A. 
+                    Still, I am transcribing their text here for completeness.</p> 
+                <p>This hand is also responsible for corrections and additions passim in the manuscript.</p> 
+                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic (not 
+                    graphematic )transcription, I am encoding it with its alphabetic correspondent 'ae' 
+                    and marking those 'ae' alphabemes with seg ana="#ae".</p> 
+        </handNote> 
+        <handNote xml:id="uhand"> 
+                <p>Unknown hand.</p> 
+        </handNote> 
+      </handNotes> 
+    </profileDesc> 
+  </teiHeader> 
+  <text> 
+    <body> 
+      [p xml:id="g168.5-168.7"] 
+Anno incarnationis Domini CMLXXVI , Lotharius 
+Francorum rex senex plenus dierum obiit, postquam regnauit 
+annis LIV, sepultusque in basilica Sancti remigii Remis. Cui 
+successit Ludouicus filius eius adhuc iuuenis. 
+[/p] 
+[p xml:id="g168.8-169.4"] 
+Anno dominice incarnationis CMLXXXI  defuncto 
+Iohanne papa Benedictus ei in pontificatus honorem successit. 
+Eodem anno  Otto maior imperator obiit anno 
+XVIII ex quo imperator appellatus est. Successit autem ei Otto 
+imperator, qui dictus est minor, qui postquam imperii coronam 
+accepit, ueniens Salernum obsedit cepitque illam expugnans. 
+Dehinc per Briciam et Lucaniam in Calabriam perrexit et apud 
+Stilum Calabrie oppidum cum Sarracenis pugnauit eosque deuicit, 
+Regium quoque cepit. Regnauit autem annis II. Eo itaque defuncto 
+successit illi tercius Otto. Quo tempore Iohannes factus 
+est princeps Salerni. Interea papa Benedictus postquam annum 
+unum sedit, diem obiit, et successit ei Bonus qui sedit anno I 
+mensibus VI. Quo uita decedente Bonifacius sedit mense I. 
+Cui expulso Benedictus successit in pontificatus honore qui sedit 
+annis IX. 
+[/p] 
+[p xml:id="g169.5-170.14"] 
+Anno dominice incarnationis CMLXXXV,  obiit 
+Ludouicus Francorum rex iuuenis, postquam regnauit annis 
+nouem, sepultusque est in basilica beati Cornelii Compendio. 
+Cui successit Carolus frater eius filius Lotharii regis. Eodem anno 
+quo Carolus hic cepit regnare, Ugo dux eius cognomento Chafet 
+rebellauit contra Carolum regem consilioque habito cum 
+Ascelino qui erat episcopus Laudum et consiliarius Caroli 
+quatenus eum sibi traderet. Qui dolis acquiescens tradidit eum 
+Ugoni duci quadam nocte cunctis quiescentibus. Uinctus est 
+itaque Carolus rex cum uxore sua et positus in custodia Aurelianis 
+ciuitate in turri, in qua uitam finiuit. Habuit tamen ex eadem 
+uxore duos filios Ludouicum et Carolum. Ugo itaque dux regnum 
+sibi Francorum arripuit, constituitque  regem filium suum 
+nomine Robbertum. Sicque defecit prosapia regum a Carolo imperatore 
+descendentium et ex tunc Francorum reges regali tantum 
+honore contenti imperii dignitatem ammiserunt. In illis diebus 
+in Remensium ciuitate erat archiepiscopus, uir bonus et modestus, 
+iam senex, frater Lotharii regis ex concubina nomine Arnulfus. 
+Ugo autem dux inuidebat ei uolens exterminare progeniem 
+Lotharii regis. Congregansque in eadem ciuitate sinodum, 
+fecit degradare domnum Arnulfum. in loco uero eius consecrare 
+fecit domnum Gibbertum monachum philosophum. Seguinus 
+autem archiepiscopus Senonum non consensit in degradatione 
+Arnulfi neque in ordinatione Gibberti, sed plus timens Deum 
+quam terrenum regem, ipsum regem in quantum potuit redarguit. 
+Rex itaque cum magno dedecore expelli iussit Arnulfum de 
+ecclesia et sic alligatum retrudi in carcere, ubi nepos eius Carolus 
+detinebatur, mansitque ibi annis III. Nunciantur hec presuli 
+Romano qui ualde indignans super hoc facto interdixit omnes 
+episcopos qui iam dicto facinori consenserant, misitque Leonem 
+abbatem a sede apostolica ad domnum Seguinum archiepiscopum 
+Senonum qui uice sua in urbe Remensi sinodum congregaret, 
+mandans illi ut sine dilatione in pristino gradu reuocaret 
+domnum Arnulfum et degradaret Gibbertum. Quod et fecit. Gibbertus 
+itaque intelligens quod iniuste pontificalem suscepisset 
+dignitatem penituit. Post hec domnus Gibbertus electus est pontifex 
+in urbe Rauenna a populo eiusdem urbis et ab Ottone imperatore, 
+reseditque in eadem urbe pontifex quam plurimos annos. 
+Defuncto uero papa urbis Rome statim omnis populus Romanus 
+sibi dari acclamat domnum Gibbertum. Assumptus 
+autem de urbe Rauenna ordinatus est pontifex in urbe Roma. 
+[/p] 
+[p xml:id="g170.15-170.16"] 
+Anno dominice incarnationis CMLXXXVII. Sarraceni depopulati 
+sunt Calabriam, a quibus postea sequenti anno Cosentia 
+obsessa est atque destructa. 
+[/p] 
+[p xml:id="g170.17-171.1"] 
+Anno dominice incarnationis CMXC stella a parte septemtrionis 
+apparuit habens splendorem qui tenebat contra meridiem 
+quasi passum unum. Et post paucos dies iterum apparuit 
+eadem stella a parte Occidentis et splendor eius ad orientem tendebat. 
+Et non post multos fuit terre motus magnus qui plures 
+euertit domos in Beneuento et in Capua multosque homines occidit 
+et in ciuitate Apriano plures ecclesias subuertit. Ciuitas quoque 
+Frequentus pene media cecidit, ciuitatem uero Consanam 
+prope mediam cum episcopo subuertit, multosque homines oppressit. 
+Ronsem totam cum eius hominibus submersit. 
+[/p] 
+[p xml:id="g171.2-171.6"] 
+Preterea Rome defuncto papa Benedicto, Iohannes papa sedit 
+mensibus IX. Hic autem in castello Sancti angeli retrusus et 
+per menses IV fame afflictus mortuus est. Et iterum superior 
+Bonifacius qui expulsus fuerat sedit mensibus XI. Quo uita decedente 
+Iohannes sedit mensibus IV. Post quem alius Iohannes sedit 
+annis X mensibus VI. Cuius temporibus Romani capitanei patriciatus 
+sibi tirannidem uendicauere. 
+[/p] 
+[p xml:id="g171.7-171.8"] 
+Anno dominice incarnationis CMXCIV in Apulia ciuitas 
+Matere a Sarracenis destructa est. 
+[/p] 
+[p xml:id="g171.9-171.14"] 
+Anno dominice incarnationis CMXLVII. Ugo dux Francorum 
+obiit sepultusque est in basilica beati Dionisii martiris Parisius. 
+Cui successit filius eius Robbertus rex qui pius fuit et modestus. 
+Hic autem post mortem patris regnauit annis XXXIII. Per 
+idem tempus Mel catipanus primum in Apuliam conduxit Normannos 
+quos secum habens bellum cum Grecis in Apulia apud 
+Basentellum commisit, et non multo post temporis ipse Mel ciuitatem 
+Ascolum cepit. 
+[/p] 
+[p xml:id="g172.1-172.9"] 
+Non post multum uero temporis Henricus Burgundie dux 
+qui Burgundionum quoque regnum sibi uendicauerat, mortuus 
+est sine filiis, et rebellauerunt Burgundiones in regem Robbertum 
+nolentes eum recipere. Post tercium itaque annum Robbertus 
+rex assumptis Normannis cum duce suo Riccardo et exercitu 
+uastauit Burgundiam. Raynaldus comes Senonum post multa 
+mala defunctus est, cui successit Fromundus filius eius. Mortuo 
+itaque Fromundo comite Senonum successit ei Raynaldus filius 
+eius nequissimus; hic persecutionem intulit ecclesiis Christi eiusque 
+fidelibus quanta non est audita tempore paganorum usque 
+in hodiernum diem. Post aliquot uero annos capta est ciuitas Senonum 
+ab archiepiscopo Leotherico, qui successit uenerabili 
+Saguino, et regi tradita Robberto. 
+[/p] 
+[p xml:id="g172.10-173.11"] 
+Preter hec autem Rome defuncto Iohanne papa successit ei 
+Gregorius seditque anno I mensibus V. Cui Iohannes papa successit 
+seditque mensibus X. Hic turpiter uitam suam finiuit. Successit 
+autem huic Siluester, uir omnium artium liberalium peritissimus, 
+qui primitus abbas Bobiensis, postea archiepiscopus 
+Rauennas, post uero Romanus papa effectus est, seditque annis 
+IV mense I. Cuius temporibus ingens in Campania per XV dies 
+terre motus factus est multa diruens edificia. Siluestro autem 
+obeunte, Iohannes qui uocatur Sigo papalem sedit cathedram 
+mensibus V. Quo defuncto Iohannes papa qui uocatur Fanassus 
+sedit anno I. Hic Ottonem regem Saxonum coronauit imperatorem. 
+Post Iohannem uero Siluester Tiburtinus, qui uocatur 
+Osporco, Romanum suscepit pontificatum qui sedit annis IIII. 
+Suo quidem tempore fuit pessima fames. Hic autem mortuo 
+Alberico qui patriciatus sibi nomen uendicauerat a Crescentio 
+Numentano, qui patricius dicebatur, papa ordinatus est quique 
+etiam Ottonem coronauit imperatorem, postea uero cum magno 
+dedecore ab eodem Crescentio a papatu expulsus est. Et quidam 
+Iohannes, Placentinus episcopus, Grecus genere, legatione functus 
+Ottonis imperatoris a Constantinopolim rediens dum Romam 
+causa orationis ueniret, a prephato Crescentio et a Romanis 
+capitur, tenetur et, licet inuitus, papa tamen infelix ordinatur 
+Romanus. Quod audiens rex mente efferus Romam ueniens, 
+ipsum Crescentium diu obsessum cepit et capite truncauit, 
+ipsum pontificem cecauit ceterisque membris debilitauit et ad 
+dedecus et ignominiam sacerdotalis ordinis per plateas Leonine 
+ciuitatis circumduci iussit. Sed antequam XXX dies implerentur 
+anima et corpore rex impius mortuus est, anno dominice incarnationis 
+M per indictionem XIII. Hic autem tertius Otto 
+imperator anno superiori obsederat Beneuentum in anno scilicet 
+anno uidelicet incarnationis MI indictione XIV et acriter ipsam ciuitatem 
+expugnans ui ceperat. Eo itaque mortuo frater eius Henricus 
+maioris imperatoris Ottonis nepos fit rex, quique regnauit annis 
+XXV. Cuius imperii anno secundo Sarraceni Campaniam ingressi 
+Capuam obsederunt. 
+[/p] 
+[p xml:id="g173.12-173.13"] 
+Anno dominice incarnationis MXI indictione XIV fames ualida 
+Italiam optinuit. Quo tempore Mel catipanus cum Normannis 
+Apuliam expugnabat. 
+[/p] 
+[p xml:id="g173.14-174.7"] 
+Anno dominice incarnationis MXII indictione XV Siluester papa 
+defunctus est et Benedictus frater Alberici papalem suscepit 
+cathedram. Eodem anno Henricus Alamannorum rex Romam 
+uenit et ab eodem Benedicto papa coronam accepit imperii et 
+imperator appellatus est. Sedit autem ipse Benedictus annis XI 
+mense I. Per idem tempus Basilius et Constantinus frater eius 
+Constantinopolitani catholici imperatores catipanum suum nomine 
+Bugano magna cum thesauri pecunia direxerunt ut Apuliam 
+cum circumquaque regionibus sibi uendicaret ac imperiali iuri 
+componeret. Qui ueniens cepit omnia tranquille agere atque 
+strenue ordinare. 
+[/p] 
+[p xml:id="g174.8-175.15"] 
+Anni domini MXIII. indictione I. Hic in Apulie finibus rehedificauit 
+ciuitatem diu dirutam nuncupauitque eam Troiam, que 
+antiquitus Ecana uocabatur  et iussu imperatorum fines 
+per statutum priuilegium eidem stabiliuit ciuitati. In hanc ciuitatem 
+olim tempore Adriani imperatoris, qui Traiano successerat, 
+fuit ab apostolica sede missus Eleutherius episcopus qui post 
+duos annos iussu ipsius Adriani Rome ductus ac passus est. Tempore 
+quoque Dioclitiani et Maximiniani imperatorum extitit in 
+hac Ecana ciuitate Marcus episcopus, quique martyrio uitam finiuit. 
+Et post aliquanta annorum curricula fuit in eadem urbe Secundinus 
+episcopus, qui confessor et sanctus multas sanctorum 
+ecclesias renouauit. 
+Ipse etiam prenominatus catipanus in finibus Samnii et Apulie 
+edificauit ac constituit plures urbes et oppida; ipsaque regio 
+usque hodie Catipania dicitur. Quarto autem anno 
+post predicte ciuitatis cet 
+incarnationis Domini millesimo uicesimo secundo indictione 
+V Henricus Alamannorum imperator ingenti cum exercitu, 
+simul et cum Benedicto papa uenit super ipsam ciuitatem obseditque 
+eam per IIII menses machinis illam fortiter expugnans. 
+Imperator itaque uidens quod eam sine mora capere non 
+posset – dixerat enim iratus quod si eam ui cepisset statim destrueret 
+– timuit sibi suisque estiuum Apulie calorem, et sic composita 
+pace cum ciuibus, obsidibusque ab eis receptis ad propria 
+est reuersus. Pandulfum Capuanum principem secum in 
+Alamanniam deduxit. 
+[/p] 
+[p xml:id="g176.1-176.2"] 
+Anno dominice incarnationis MXXIV indictione VII. Basilius 
+imperator Constantinopolitanus diem obiit. 
+[/p] 
+[p xml:id="g177.1-177.4"] 
+Anno dominice incarnationis MXXV indictione VIII, Henricus 
+Alamannorum imperator defunctus est, cui successit Churradus 
+qui dux eius fuerat. Eodem anno papa Benedictus obiit et successit 
+ei Iohannes frater eius, qui uno eodemque die et laicus 
+fuit et pontifex, seditque annos IX et dies IX. 
+[/p] 
+[p xml:id="g177.5-177.6"] 
+Anni domini MXXVIII indictione X; apud Constantinopolim 
+Constantinus imperator obiit et successit ei Romano gener eius 
+una cum eius uxore Zoy imperatrice, regnauitque annis V. 
+[/p] 
+[p xml:id="g177.7-177.8"] 
+Anno 
+dominice incarnationis MXXX, indictione XIII; Iohannes princeps 
+Salerni defunctus est anno principatus sui LVII, et successit ei 
+Guaymarius filius eius. 
+[/p] 
+[p xml:id="g177.9-178.3"] 
+Anno dominice incarnationis MXXXI, indictione XIV Romano 
+imperator Constantinopolitanus mortuus est, et successit ei 
+in imperium Michael qui dicitur Catalactus cum Zoy imperatrice. 
+Ipso quoque anno defunctus est Robbertus Francorum rex 
+cui successit filius eius Henricus. Cuius in tertio anno urbs Parisii 
+flagrauit incendio; regnauitque hic Henricus annis XXIX. 
+[/p] 
+[p xml:id="g178.4-178.10"] 
+Anno dominice incarnationis MXXXIV, indictione II; fuit eclipsis 
+solis in festiuitate sancti Petri. Quo anno Iohannes papa defunctus 
+est et successit ei Benedictus qui uocatur Theofilatus, 
+seditque annis XIII. Iste quidem de pontificatu eiectus est et suscepit 
+papatum Iohannes Sabinensis episcopus cui nomen Siluester. 
+Et iste quidem eiectus est. Post dies LVI recuperatus est 
+papa Benedictus qui post mensem unum et dies XX uendidit 
+papatum Iohanni Rauennanti archipresbitero sancti Iohannis ante 
+portam Latinam, cui nomen positum est Gregorius, qui sedit anno 
+I et mensibus VI. 
+[/p] 
+[p xml:id="g178.11-178.12"] 
+Anno dominice incarnationis MXXXVII indictione V mense 
+Ianuarii; mons Uesubius eructauit incendium ita ut quasi flumen 
+usque ad mare discurreret. 
+[/p] 
+[p xml:id="g178.13-179.2"] 
+Anno dominice incarnationis MXXXIX indictione VII apud 
+Constantinopolim Michael imperator cognomento Catalactus 
+diem obiit anno VII eius imperii. Cui Michael qui Etheriarchis dicebatur 
+successit cum Zoy imperatrice. Eodem anno mense Februarii 
+Normanni ingressi iam in Apuliam, ter uno die cum Grecis 
+graui prelio dimicarunt inter Aufidum amnem et Oliuentem, 
+et Normanni uictores extiterunt. In ipso quidem prelio fuit Drogo 
+Normannorum comes et quattuor ex fratribus eius. In ipso 
+quoque anno Chunradus imperator defunctus est anno eius imperii 
+XV, et successit ei Henricus filius eius. 
+[/p] 
+[p xml:id="g179.3-179.7"] 
+Anno domini MXL indictione VIII; defunctus est Michael 
+Etheriarchis imperator Constantinopolitanus anno II 
+postquam imperare ceperat. Et successit ei imperator Michael 
+Archontopanthiu cum Zoy imperatrice. Quo uita decedente 
+eodem anno successit ei Constantinus Monomachus in imperium 
+cum Zoy imperatrice, qui regnauit annis XII. Quo tempore 
+fames ualida fuit in Italia atque in Gallia per septem continuos 
+annos. 
+[/p] 
+[p xml:id="g179.8-179.9"] 
+Anno dominice incarnationis MXLII indictione X; luna passa 
+est eclipsim V Idus Ianuarii per quinque horas noctis. 
+[/p] 
+[p xml:id="g179.10-179.11"] 
+[/p] 
+[p xml:id="g179.12-179.14"] 
+Anno dominice incarnationis MXLV indictione XIII; Drogo 
+Normannorum comes cepit Bibinum eamque depopulatus 
+est; sequenti uero anno, postquam eadem ciuitas reedificata 
+est, flagrauit incendio. 
+[/p] 
+[p xml:id="g179.15-180.10"] 
+Anno Domini MXLVII indictione XV Henricus imperator 
+uenit Romam inuenitque sedem apostolicam ualde turbatam, 
+nam uno eodemque tempore supradicti Theophilus qui et Benedictus, 
+et Siluester qui et Iohannes Sabinianus, et Gregorius 
+qui et Iohannes Rauennas, Romanum non regebant sed uastabant 
+pontificatum. Tunc imperator ipse conuocatis episcopis atque 
+ordinis utriusque uiris religiosis ac catholicis, sinodum congregari 
+iussit, in qua statim, canonibus exquisitis, hii tres dampnati 
+et exilio religati sunt, nullus enim eorum amplius iure poterat 
+episcopari. Et tunc a clero et populo canonice Clemens 
+electus est, ipso imperatore — quemadmodum in canonibus statutum 
+est — assensum prebente. Qui consecratus sedit papalem 
+cathedram mensibus IX: iste quoque Henricum coronauit imperatorem. 
+Defuncto itaque Clemente Damasus electus et consecratus 
+est, cuius electioni predictus imperator assensum prebuit, 
+seditque Damasus dies XX. Imperator autem 
+[/p] 
+[p xml:id="g180.10-180.12"] 
+ipse usque 
+Capuam uenit terram pro tempore sibi componens, et sic reuersus 
+est MXLII, indictione XV. 
+[/p] 
+[p xml:id="g180.13-180.15"] 
+Hoc autem tempore comprehensum est oppidum Stuni a Garangis 
+in mense Octubris et in mense Decembris 
+Et in mense Iunii Benedictus papa per poculum 
+ueneni occidit papam Clementem. 
+[/p] 
+[p xml:id="g181.1-181.1"] 
+Anno dominice incarnationis MXLIII indictione I; Zoy imperatrix obiit. 
+[/p] 
+[p xml:id="g181.2-181.5"] 
+Anno dominice incarnationis MXLIX indictione II, Damaso uita decedente, 
+Leo sanctissimus qui uocatur Bruno, a populo Romano 
+expetitus, a clero electus, ab imperatore quoque commendatus, 
+et ab episcopis, quibus officii huius auctoritas est attributa, consecratus est 
+in pontificatus honorem, seditque annis V, mensibus II. 
+[/p] 
+[p xml:id="g181.6-181.10"] 
+Anno dominice incarnationis MLI indictione III mense Augusti Drogo Normannorum 
+comes defunctus est. Fuitque uir egregius, pius, strenuus 
+atque famosus, qui propter animi mansuetudinem et iustitie 
+seruatam equitatem a cunctis est dilectus. Cui Gofridus frater 
+eius Normannorum comes successit, tenuitque potestatem 
+ipsius honoris per annos VII. 
+[/p] 
+[p xml:id="g181.10-181.11"] 
+Anno dominice incarnationis MLII indictione quinta Guaymarius 
+princeps Salerni a suis interfectus est anno principatus sui 
+XXIII. Cui successit Gisolfus filius eius. 
+[/p] 
+[p xml:id="g181.12-182.19"] 
+Anno ab incarnatione Domini MLIII indictione VI mense 
+Iulii. Leo papa multis precibus ab Enrico monitus imperatore 
+per quorundam Sampnitum suggestionem uenit in Beneuentum 
+ut Normannos Apulia expelleret. Inde mouens gressum simul 
+cum Alamannis quos imperator cum eo duxerat, apud urbem 
+nomine Ciuitatem, que in confinibus Sampnii est et Apulie, cum 
+Normannis acriter pugnauit. Commisso itaque prelio Normanni 
+totum Alamannorum exercitum in ore gladii percusserunt. In 
+ipso quidem belli apparatu defecerunt Alamanni ii quorum 
+uenerant suggestione, quique in auxilium eorum uenerunt. Leo 
+autem papa minime propter quod uenerat perficere ualens 
+reuersus est. Iste primus Romanorum pontificum a beato Petro 
+ad se usque cum manu armatorum in bellum processit, qui 
+quamuis sanctus fuerit et pio hoc animo egerit, tamen quia id 
+eius non erat officii neque hoc illi permissum fuerat a Domino 
+qui pati uenerat, suosque ut ab aliis magis paterentur quam ut 
+alios persequerentur premonuerat, ideo exercitus sui multitudo 
+cesa est, ipso perspicientem. Non enim Dominus discipulis 
+suis neque idem apostoli suis successoribus preceperunt ut 
+curis secularibus, ueluti principes, materiali gladio Dei populum 
+tuerentur si uerbo doctrine monerent et pie conuersationis 
+exemplo instruerent. 
+Eodem anno Constantinus Monomachus imperator Constantinopolitanus 
+obiit, post quem Theodora, soror Zoy imperatricis 
+uirgo existens, imperium Constantinopolitanum uiriliter biennio 
+tenuit. Qua defuncta Michael Nouicius imperii honorem adeptus 
+est, qui eodem anno fuit inuitus monachus factus. Cui Isachius 
+Commiano imperator successit, qui post annos IV 
+ex quo imperauit imperio eiectus ac monachus factus est. Cui 
+Constantinus cognomento Dioclizi in imperium successit. 
+At uero Leo papa sequenti anno postquam cum Normannis 
+preliatus est diem obiit mense Aprilis. Et successit ei Uictor qui 
+Gebeardus uocabatur sedit annis II, mensibus II. 
+Post cuius obitum Stephanus Gondifridi ducis germanus qui dictus 
+est Fridericus, sedit mensibus VII. Quo defuncto Benedictus 
+Beliternensis episcopus Romanum inuasit pontificatum, 
+qui sedit mensibus IX. 
+Quibus temporibus Patarea idest Patareanorum secta apud 
+Mediolanum exorta est. 
+[/p] 
+[p xml:id="g183.1-184.6"] 
+Anno dominice incarnationis MLVII indictione VII; Gofridus 
+comes Normannorum diem clausit extremum, reliquens sibi 
+successorem Bagelardum filium eius militem strenuum. Sed Robbertus 
+cognomento Uiscardus, eiusdem Gofridi comitis frater, 
+natus ex patre Tancredo, Normannorum comitatus honorem sibi 
+arripuit, ipsum Bagelardum nepotem suum expellens. Tancredus 
+autem fuit timoris Dei non immemor, qui bissenos habuit filios. 
+Quorum primus quidem fuit Sarnus, qui miles insignis extitit. 
+Secundus autem comes Gofridus pater Robberti comitis de Lauritello. 
+Tertius uero Drogo comes, de quo superius scriptum est. 
+Quartus autem Willelmus, et ipse comes, qui propter fortitudinis 
+sue prudentiam Brachiferreus est prenomine dictus: erat enim 
+astutissimus et ferox fortisque uiribus. Quintus extitit comes Gonfridus. 
+Sextus quoque Malgerius comes, probus atque famosus. 
+Septimus itaque fuit Robbertus Guiscardus. Hic autem propter 
+animi astutiam ingeniique prudentiam primus ex Gallorum genere 
+in Apuliam ducatus honorem adeptus est. Qui non multo post 
+sibi subegit Apuliam et Calabriam, Lucaniam atque Siciliam, militarem 
+namque disciplinam gloriosissime rexit. Octauus autem 
+Alberedus armis strenuus. Nonus Tancredus. Decimus Willelmus 
+de Sancto nicandro, pater Robberti comitis de Principatu. Fuit 
+ipse Willelmus acer ingenio, et constans animo, serenusque natura. 
+Undecimus Frumentinus. Duodecimus Rogerius Sicilie comes, 
+qui miles insignis extitit, iustitie tenax, suis suorumque opibus 
+studens, ecclesiarum Dei atque sacerdotum honori consulens. Habuit 
+quoque Tancredus horum pater et filias tres. 
+[/p] 
+[p xml:id="g184.7-184.9"] 
+Anno dominice incarnationis MLVIII, indictione XI. Benedictus 
+papa defunctus est et successit ei Nicolaus qui et Gerardus. 
+Eodem anno Riccardus cum Iordano filio eius effectus est Capue 
+princeps. 
+[/p] 
+[p xml:id="g184.10-184.13"] 
+Anno dominice incarnationis MLX, indictione XIII. Henricus rex Francorum 
+obiit, et Philippus filius eius successit in regnum. Ipso quoque 
+anno comes Robbertus Guiscardus uocatus a Troianis ciuibus, 
+ipsam eorum ciuitatem in sua potestate ab eis accepit, qui 
+non post multos dies 
+[/p] 
+[p xml:id="g184.13-185.7"] 
+cum exercitu in Calabriam profectus, Regium 
+ciuitatem cepit atque omnium Normannorum dux effectus 
+est. Hic accepit uxorem nomine Sigelgaytam Guaimarii principis 
+filiam que sexu quidem mulier pudica fuit atque honesta 
+animum uero uirilem et consilium prouidum gerebat. Ex qua 
+habuit filios Roggerium Robbertum atque Guidonem et filias 
+V. Ex alia quoque nomine Alberada prius habuit 
+filium nomine Boamundum. Set Robbertus Guiscardus instituit 
+sibi heredem suum filium Roggerium. Interea Robbertus dux ad 
+Nicolaum papam perrexit eiusque liggius homo effectus est, 
+promittens se iureiurando fidem seruaturum Romane ecclesie et 
+eidem pape eiusque successoribus canonice intrantibus. Ipse 
+autem papa Nicolaus statim inuestiuit eundem Robbertum Guiscardum 
+per uexillum de honore ducatus sui cum tota terra. 
+[/p] 
+[p xml:id="g185.8-186.5"] 
+Anno dominice incarnationis MLXII indictione XV Nicolaus 
+papa defungitur anno ordinationis sue II, mense VIII. 
+Et Alexander qui uocatus est Anselmus papa ordinatur, quo tempore 
+princeps Riccardus Capuam cepit sibique ordinauit. His autem 
+diebus Robbertus dux ad Alexandrum papam proficiscens 
+liggius homo eius deuenit et sicut Nicolao pape ita et huic 
+iusiurandum fecit et per uexillum ab eo terram cum honore ducatus 
+accepit. Seditque Alexander papa annis XI, mensibus VI. 
+[/p] 
+</body> 
+  </text> 
+</TEI> 
