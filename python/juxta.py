@@ -23,7 +23,7 @@ import m_unifier
 quiet = True
 
 # If True, perform pre-collation operations
-pre = False
+pre = True
 # If True, perform post-collation operations
 post = True
 

@@ -180,6 +180,7 @@ class treeWithAppElements:
                 'msa2Reading' = the <rdg> or <lem> XML element of MS A,
                     hand 2, i.e. wit="#a2"
                     (corresp. to msaSiglum)
+                'conjReading' = the <lem> XML element with my conjecture
                 'msoReading' = the <rdg> or <lem> XML element of MS O
                     (if present; corresp. to msaSiglum)
                 'printText' = the text (string) of the variant of the print
@@ -188,6 +189,7 @@ class treeWithAppElements:
                     (corresp. to msaSiglum)
                 'msoText' = the text (string) of the variant of MS O
                     (corresp. to msoSiglum)
+                'conjText' = the text (string) of my conjecture
                 'where' = the xml:id of the parent <p>
         '''
 
@@ -219,7 +221,8 @@ class treeWithAppElements:
                     print('[philologist / appdict] Attention:'
                           ' <app> {} has child {} {} with'
                           ' @wit «{}» and @resp {}\n'.format(
-                              app.attrib, rdg, rdg.attrib, wit_value, resp_value))
+                              app.attrib, rdg, rdg.attrib,
+                              wit_value, resp_value))
 
                 # Regular reading from a witness
                 else:
@@ -248,7 +251,6 @@ class treeWithAppElements:
                            msaReading,
                            msa2Reading,
                            msoReading,))
-
 
             ################################################
             # Set variables printText, msaText, msoText... #
@@ -308,7 +310,8 @@ class treeWithAppElements:
             app_struct = ''
 
             # Find out in which <p> we are
-            where = app.getparent().get('{%s}id' % ns['xml'])
+            # where = app.getparent().get('{%s}id' % ns['xml'])
+            where = self.parent_xmlid(app)
 
             # Import DB table
             collation_chunks = my_database_import.import_table(
@@ -349,28 +352,13 @@ class treeWithAppElements:
             if debug:
                 print(where, app_struct, end=' | ')
 
-            #########################################################
-            # Import the dictionary from function variantComparison #
-            #########################################################
-
+            ################################
+            # Create the output dictionary #
+            ################################
             ''' MyComp is a dictionary, including the type of the variant,
-            and 'comparisons' is a list of dictionaries)
-            This is the line that imports the dictionary from function
-            function variantComparison()  only tries to guess the <app> @type
-            by comparing printReading and msa- or msa2Reading (not O)'''
+            and 'comparisons' is a list of dictionaries)'''
 
-            ''' Old code:
-            if app_struct == '2elements2variants':
-                # The 1st child of <app> is printReading;
-                # the 2nd can only be A or A2
-                if msaReading is not None and msa2Reading is None:
-                    myComp = variant_type.variantComparison(
-                        printText, msaText)
-                elif msaReading is None and msa2Reading is not None:
-                    myComp = variant_type.variantComparison(
-                        printText, msa2Text)
-            '''
-
+            # In these 2 cases, import dict from variantComparison()
             if (app_struct == '2elements2variants'
                     or app_struct == '2elements3variants'):
                 # I need to identify ther other child of <app>,
@@ -391,11 +379,10 @@ class treeWithAppElements:
                 myComp = variant_type.variantComparison(
                     printText,
                     non_print_child.text)
+
+            # In this 3rd case, I'll do without function
+            # variantComparison() and create the dict anew
             elif app_struct == '3elements3variants':
-                # If that's the case, I'll do without function
-                # variantComparison() and create the dict anew
-                # with the same keys that variantComparison() had,
-                # i.e. 'r1', 'r2' and most importantly 'type'
                 myComp = {'r1': '',
                           'r2': '',
                           'type': '3elements3variants-type'}
@@ -414,7 +401,7 @@ class treeWithAppElements:
             myComp['msaText'] = msaText
             myComp['msa2Text'] = msa2Text
             myComp['msoText'] = msoText
-            myComp['conjText'] = msoText
+            myComp['conjText'] = conjText
 
             comparisons.append(myComp)
 
@@ -567,6 +554,11 @@ class treeWithAppElements:
         # substantial_app.set('{%s}cert' % ns['t'], 'high')
         substantial_app.set('cert', 'high')
 
+    def parent_xmlid(self, app_element):
+        ''' Each <app> is child of a <p>. Get @xml:id of that <p>
+            (useful for debug messages) '''
+        return app_element.getparent().get('{%s}id' % ns['xml'])
+
     def set_all_lems_based_on_type(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically
             based on that @type. '''
@@ -626,14 +618,28 @@ class treeWithAppElements:
                         c['app'].set('cert', myCert)
 
     def find_non_print_child_in_two(self,
-                                    method_app_element,
-                                    method_print_reading):
+                                    app_element,
+                                    print_child):
         '''Input an <app> element and its print child.
             Return the other child, that does not include '''
-        for child in method_app_element:
-            if child != method_print_reading:
-                method_non_print_element = child
-        return method_non_print_element
+        non_print_child = None
+        for child in app_element:
+            if child != print_child:
+                non_print_child = child
+        if non_print_child is None:
+            # Good debug message
+            print(('\n[find_non_print_child_in_two] I can\'t find'
+                   ' the non-print element in {},\nparagraph {},'
+                   ' \n<{}> {}.'
+                   ' \nThe print reading is <{}> {}\nwith text «{}»\n').format(
+                       self.juxtaSiglum,
+                       self.parent_xmlid(app_element),
+                       etree.QName(app_element).localname,
+                       app_element.attrib,
+                       etree.QName(print_child).localname,
+                       print_child.attrib,
+                       print_child.text))
+        return non_print_child
 
     def find_ms_reading(self, fn_app_dict):  # Obsolete
         ''' Input an appdict (a dict generated by appdict).
@@ -697,7 +703,7 @@ class treeWithAppElements:
         # my_non_print_rdg is the other one (its witnesses can
         # be one or two, but they are only MSS, not print edition)
         my_non_print_rdg = self.find_non_print_child_in_two(
-            a['printReading'], a['app'])
+            a['app'], a['printReading'])
         my_non_print_text = my_non_print_rdg.text
 
         ####################################################
@@ -714,7 +720,7 @@ class treeWithAppElements:
                # and the MS reading in the DB record is
                # the MS A reading or MS A2 reading
                # or MS O reading in <app>
-               and r['ms'] == my_non_print_rdg
+               and r['ms'] == my_non_print_text
 
                # and we are in the right <p>...
                and (r['where'] == a['where']
@@ -727,9 +733,6 @@ class treeWithAppElements:
 
                 # The print reading will always be set to <rdg>
                 self.make_rdg(my_print_rdg)
-
-                # Identify the MS reading
-                my_ms_reading = self.find_ms_reading(a)
 
                 if r['type'] == 'choose':
                     # Make the non-print reading <lem>
@@ -772,8 +775,10 @@ class treeWithAppElements:
                        r['ms'],
                        a['printText'],
                        a['msaText'],
-                       a['app'].getparent().get('{%s}id' %
-                                                ns['xml'])))
+                       a['where']))
+
+    def set_lem_based_on_db_3elements(self, a):
+        pass
 
     def set_lem_based_on_db_2elements_2readings(self, a):
 
@@ -852,12 +857,6 @@ class treeWithAppElements:
                        a['app'].getparent().get('{%s}id' %
                                                 ns['xml'])))
 
-    def set_lem_based_on_db_3elements_3readings(self):
-        ''' I'll code this if/when I actually collate MS O.
-            Probably the best thing to do is to manage those cases
-            (very few, if any; I think they are 40 or 50) by hand '''
-        pass
-
     def set_all_lems_based_on_db_old(self):  # obsolete
         '''Read DB table and decide <lem> for some <app>s '''
         for app_dict in self.appdict():
@@ -893,35 +892,12 @@ class treeWithAppElements:
             that match a DB record '''
         for app_dict in self.appdict():
 
-            if app_dict['appStruct'] == '2elements2variants':
-                pass
-            elif app_dict['appStruct'] == '2elements3variants':
-                pass
+            if (app_dict['appStruct'] == '2elements2variants'
+                    or app_dict['appStruct'] == '2elements3variants'):
+                self.set_lem_based_on_db_2elements(app_dict)
             elif app_dict['appStruct'] == '3elements3variants':
-                pass
-
-            if len(app_dict['app']) == 2:
-                self.set_lem_based_on_db_2elements_2readings(app_dict)
-
-            # Case B: 3 variants, 1 <lem> + 2 <rdg>
-            # The 1st will be from print,
-            # The 2nd from A or A2,
-            # The 3rd from O
-            elif len(app_dict['app']) == 3:
-                pass
-                # self.set_lem_based_on_db_3elements_3readings(app_dict)
-
-            # Case C: more than 3 variants
-            elif len(app_dict['app']) > 3:
-                    print(('[set_all_lems_based_on_db]'
-                           ' file {}: <app> {} has more than'
-                           ' three children').format(
-                               self.juxtaSiglum, app_dict))
-            else:
-                    print(('[set_all_lems_based_on_db]'
-                           ' file {}: <app> {} has a strange'
-                           ' number of children').format(
-                               self.juxtaSiglum, app_dict))
+                # 42 cases
+                self.set_lem_based_on_db_3elements(app_dict)
 
     def put_lem_as_1st_in_app(self):
         ''' In the TEI DTD, <lem> must be the first child of <app>.
