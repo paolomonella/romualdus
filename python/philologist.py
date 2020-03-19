@@ -203,18 +203,35 @@ class treeWithAppElements:
             msaReading = None
             msa2Reading = None
             msoReading = None
+            conjReading = None
 
             for rdg in app:
+
+                # Conjecture
                 wit_value = rdg.get('wit')
-                wit = wit_value.split()  # A list
-                if ('#%s' % self.printSiglum) in wit:
-                    printReading = rdg
-                if ('#%s' % self.msaSiglum) in wit:  # Not elif
-                    msaReading = rdg
-                if ('#%s' % self.msa2Siglum) in wit:  # Not elif
-                    msa2Reading = rdg
-                if ('#%s' % self.msoSiglum) in wit:  # Not elif
-                    msoReading = rdg
+                resp_value = rdg.get('resp')
+                if wit_value is None and resp_value is not None:
+                    # This should be a conjecture, so <lem resp="#pm">
+                    # (no @wit attribute)
+                    conjReading = rdg
+
+                elif wit_value is None and resp_value is None:
+                    print('[philologist / appdict] Attention:'
+                          ' <app> {} has child {} {} with'
+                          ' @wit «{}» and @resp {}\n'.format(
+                              app.attrib, rdg, rdg.attrib, wit_value, resp_value))
+
+                # Regular reading from a witness
+                else:
+                    wit = wit_value.split()  # A list
+                    if ('#%s' % self.printSiglum) in wit:
+                        printReading = rdg
+                    if ('#%s' % self.msaSiglum) in wit:  # Not elif
+                        msaReading = rdg
+                    if ('#%s' % self.msa2Siglum) in wit:  # Not elif
+                        msa2Reading = rdg
+                    if ('#%s' % self.msoSiglum) in wit:  # Not elif
+                        msoReading = rdg
 
             # Debug
             if debug:
@@ -232,33 +249,13 @@ class treeWithAppElements:
                            msa2Reading,
                            msoReading,))
 
-            ''' Old versions:
-            # Find out in which <p> we are
-            printReading = app.find('.//t:*[@wit="#%s"]' %
-                                    (self.printSiglum), ns)
-
-            msaReading = app.find('.//t:*[@wit="#%s"]' % (self.msaSiglum), ns)
-            # If any:
-            msa2Reading = app.find('.//t:*[@wit="#%s"]' % (self.msa2Siglum),
-                                   ns)
-            # If any:
-            msoReading = app.find('.//t:*[@wit="#%s"]' % (self.msoSiglum), ns)
-            '''
-
-            # Debug1234
-            if debug:
-                if printReading is not None and printReading.text == 'octauo':
-                    print('Eureka!! in {}'.format(
-                        app.getparent().get('{%s}id' % ns['xml'])))
-                    if msoReading is not None:
-                        print(msoReading.text)
-                    else:
-                        print('But there is no msoText')
-                    # End of Debug1234
 
             ################################################
             # Set variables printText, msaText, msoText... #
             ################################################
+            ''' Eventually, none of those elements will have
+            text = None. If it was None, it is set to '' (this
+            will come handy later '''
 
             # ...for print edition
             if printReading is not None:
@@ -292,11 +289,13 @@ class treeWithAppElements:
             else:
                 msoText = ''
 
-            # Debug
-            if debug:
-                print('\n\nprintText: «%s»' % (printText))
-                print('msaText: «%s»' % (msaText))
-                print('msoText: «%s»' % (msoText))
+            # ... and for the conjecture (if any)
+            if conjReading is not None:
+                if conjReading.text is None:
+                    conjReading.text = ''
+                conjText = conjReading.text
+            else:
+                conjText = ''
 
             ##############################
             # Find out the app structure #
@@ -410,10 +409,12 @@ class treeWithAppElements:
             myComp['msaReading'] = msaReading
             myComp['msa2Reading'] = msa2Reading
             myComp['msoReading'] = msoReading
+            myComp['conjReading'] = printReading
             myComp['printText'] = printText
             myComp['msaText'] = msaText
             myComp['msa2Text'] = msa2Text
             myComp['msoText'] = msoText
+            myComp['conjText'] = msoText
 
             comparisons.append(myComp)
 
@@ -566,7 +567,7 @@ class treeWithAppElements:
         # substantial_app.set('{%s}cert' % ns['t'], 'high')
         substantial_app.set('cert', 'high')
 
-    def set_lems_based_on_type(self, setCert=True):
+    def set_all_lems_based_on_type(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically
             based on that @type. '''
 
@@ -601,7 +602,7 @@ class treeWithAppElements:
                         elif c['msoReading'] is not None:
                             self.make_lem(c['msoReading'])
                         else:
-                            print(('\n[set_lems_based_on_type] I should'
+                            print(('\n[set_all_lems_based_on_type] I should'
                                    ' choose a reading from a MS, but'
                                    ' I can\'t find any MS reading in'
                                    ' the <app> element. This <app>'
@@ -611,7 +612,7 @@ class treeWithAppElements:
                                        c))
 
                     else:
-                        print(('\n[set_lems_based_on_type] I couln\'t'
+                        print(('\n[set_all_lems_based_on_type] I couln\'t'
                                ' read table decision_variant_types'
                                ' from the DB properly. My db_preferredRdg'
                                ' is {}').format(db_preferredRdg))
@@ -634,7 +635,7 @@ class treeWithAppElements:
                 method_non_print_element = child
         return method_non_print_element
 
-    def find_ms_reading(self, fn_app_dict):
+    def find_ms_reading(self, fn_app_dict):  # Obsolete
         ''' Input an appdict (a dict generated by appdict).
             Return the XML element representing the only
             MS reading in the appdict '''
@@ -652,7 +653,7 @@ class treeWithAppElements:
             # (it should never happen, because <app> only has 2
             # children)
             elif x is not None and fn_ms_reading is not None:
-                print(('[find_ms_reading]'
+                print(('\n[find_ms_reading]'
                        ' file {}: <app> {} has more than one'
                        ' MS reading, but I am handling it'
                        ' as though it only had one').format(
@@ -667,7 +668,115 @@ class treeWithAppElements:
 
         return fn_ms_reading
 
+    def set_lem_based_on_db_2elements(self, a):
+        ''' This manages two cases:
+
+            1) a['appStruct'] = 2elements_2readings
+                <rdg wit="#a">
+                <rdg wit="#b">
+            and
+            2) a['appStruct'] = 2elements_3readings, e.g.
+                <rdg wit="#b #a">
+                <rdg wit="#o"> (or   #b+#o   vs   #a)
+                or
+                <rdg wit="#b">
+                <rdg wit="#a #o">
+                ... or the same with #a2 instead of #a
+            '''
+
+        #################################################
+        # Identify print and non-print element and text #
+        #################################################
+
+        # my_print_rdg is the <rdg> that _includes_ #g or #b
+        # among its witnesses (e.g. it can be #b alone, or "#b #a",
+        # or "#b #o" etc.)'''
+        my_print_rdg = a['printReading']
+        my_print_text = a['printReading'].text
+
+        # my_non_print_rdg is the other one (its witnesses can
+        # be one or two, but they are only MSS, not print edition)
+        my_non_print_rdg = self.find_non_print_child_in_two(
+            a['printReading'], a['app'])
+        my_non_print_text = my_non_print_rdg.text
+
+        ####################################################
+        # Decide if the <app> corresponds to the DB record #
+        ####################################################
+
+        # For each record in the 'decisions' DB table:
+        for r in self.decisions:
+
+            # If the print reading in <app> is the same
+            # of the print reading in the DB record...
+            if(r['print'] == my_print_text
+
+               # and the MS reading in the DB record is
+               # the MS A reading or MS A2 reading
+               # or MS O reading in <app>
+               and r['ms'] == my_non_print_rdg
+
+               # and we are in the right <p>...
+               and (r['where'] == a['where']
+                    # ...or the DB decision is to be applied everywhere
+                    or r['where'] == 'everywhere')):
+
+                ############################
+                # Set <lem> and <rdg> tags #
+                ############################
+
+                # The print reading will always be set to <rdg>
+                self.make_rdg(my_print_rdg)
+
+                # Identify the MS reading
+                my_ms_reading = self.find_ms_reading(a)
+
+                if r['type'] == 'choose':
+                    # Make the non-print reading <lem>
+                    self.make_lem(my_non_print_rdg)
+
+                elif r['type'] == 'conj':
+
+                    # Make also the MS reading <rdg>
+                    self.make_rdg(my_non_print_rdg)
+
+                    # Manifacture a new <lem> element
+                    # I am not sure if I should add
+                    # the namespace or not
+                    conj_lem = etree.SubElement(
+                        a['app'],  # 'lem')
+                        '{%s}lem' % ns['t'])
+                    conj_lem.text = r['conj']
+                    # Better not use namespaces when setting
+                    # TEI attributes!
+                    # conj_lem.set('{%s}resp' % ns['t'], '#pm')
+                    conj_lem.set('resp', '#pm')
+
+                else:
+                    print(('[philologist.py/'
+                           'set_lem_based_on_db_2elements_2readings] '
+                           'I can\'t find a "type" field '
+                           'in the DB record for app {}').format(
+                               a['app']))
+
+        # Debug
+        if not self.quiet:
+            print(('[set_all_lems_based_on_db], part m{}, '
+                   'origin {}. Print/MS:\n'
+                   'DB «{}»/«{}» \n'
+                   '<app> «{}»/«{}»\n'
+                   'Paragraph {}\n').format(
+                       r['part'],
+                       r['origin'],
+                       r['print'],
+                       r['ms'],
+                       a['printText'],
+                       a['msaText'],
+                       a['app'].getparent().get('{%s}id' %
+                                                ns['xml'])))
+
     def set_lem_based_on_db_2elements_2readings(self, a):
+
         # For each record in the 'decisions' DB table:
         for r in self.decisions:
 
@@ -688,8 +797,6 @@ class treeWithAppElements:
                and (a['where'] == r['where']
                     # ...or the DB decision is to be applied everywhere
                     or r['where'] == 'everywhere')):
-
-                # self.make_substantial(a['app'])  #?? Better not...
 
                 ############################
                 # Set <lem> and <rdg> tags #
@@ -731,7 +838,7 @@ class treeWithAppElements:
 
         # Debug
         if not self.quiet:
-            print(('[set_lems_based_on_db], part m{}, '
+            print(('[set_all_lems_based_on_db], part m{}, '
                    'origin {}. Print/MS:\n'
                    'DB «{}»/«{}» \n'
                    '<app> «{}»/«{}»\n'
@@ -751,7 +858,7 @@ class treeWithAppElements:
             (very few, if any; I think they are 40 or 50) by hand '''
         pass
 
-    def set_lems_based_on_db(self):
+    def set_all_lems_based_on_db_old(self):  # obsolete
         '''Read DB table and decide <lem> for some <app>s '''
         for app_dict in self.appdict():
 
@@ -771,12 +878,47 @@ class treeWithAppElements:
 
             # Case C: more than 3 variants
             elif len(app_dict['app']) > 3:
-                    print(('[set_lems_based_on_db]'
+                    print(('[set_all_lems_based_on_db]'
                            ' file {}: <app> {} has more than'
                            ' three children').format(
                                self.juxtaSiglum, app_dict))
             else:
-                    print(('[set_lems_based_on_db]'
+                    print(('[set_all_lems_based_on_db]'
+                           ' file {}: <app> {} has a strange'
+                           ' number of children').format(
+                               self.juxtaSiglum, app_dict))
+
+    def set_all_lems_based_on_db(self):
+        '''Read DB table and decide <lem> for the <app>s
+            that match a DB record '''
+        for app_dict in self.appdict():
+
+            if app_dict['appStruct'] == '2elements2variants':
+                pass
+            elif app_dict['appStruct'] == '2elements3variants':
+                pass
+            elif app_dict['appStruct'] == '3elements3variants':
+                pass
+
+            if len(app_dict['app']) == 2:
+                self.set_lem_based_on_db_2elements_2readings(app_dict)
+
+            # Case B: 3 variants, 1 <lem> + 2 <rdg>
+            # The 1st will be from print,
+            # The 2nd from A or A2,
+            # The 3rd from O
+            elif len(app_dict['app']) == 3:
+                pass
+                # self.set_lem_based_on_db_3elements_3readings(app_dict)
+
+            # Case C: more than 3 variants
+            elif len(app_dict['app']) > 3:
+                    print(('[set_all_lems_based_on_db]'
+                           ' file {}: <app> {} has more than'
+                           ' three children').format(
+                               self.juxtaSiglum, app_dict))
+            else:
+                    print(('[set_all_lems_based_on_db]'
                            ' file {}: <app> {} has a strange'
                            ' number of children').format(
                                self.juxtaSiglum, app_dict))

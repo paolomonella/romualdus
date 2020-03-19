@@ -188,8 +188,8 @@
    <rdg wit="#o">traderat</rdg>
 </app> . Qui dolis acquiescens tradidit eum Ugoni duci quadam nocte cunctis quiescentibus. 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> Uinctus est itaque Carolus rex cum uxore sua et positus in custodia Aurelianis ciuitate in turri 
 <app type="unknown-type" cert="medium">
    <lem wit="#b">",</lem>
@@ -216,8 +216,8 @@
    <rdg wit="#o">Lodouicum</rdg>
 </app> et Carolum. Ugo itaque dux regnum sibi Francorum arripuit, 
 <app type="unknown-type" cert="medium">
-   <rdg wit="#b">contituitque</rdg>
    <lem wit="#a #o">constituitque</lem>
+   <rdg wit="#b">contituitque</rdg>
    </app> regem filium suum nomine Robbertum 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">.</lem>
@@ -240,8 +240,8 @@
    <rdg wit="#a">ammiserunt</rdg>
 </app> . 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> In illis diebus in Remensium ciuitate erat archiepiscopus, uir bonus et modestus, iam senex, frater 
 <app type="tc-type" cert="medium">
    <lem wit="#b #a">Lotharii</lem>
@@ -261,8 +261,8 @@
    <rdg wit="#o">Girbertum</rdg>
 </app> monachum philosophum 
 <app type="unknown-type" cert="medium">
-   <rdg wit="#b">".</rdg>
    <lem wit="#a #o">.</lem>
+   <rdg wit="#b">".</rdg>
    </app> Seguinus autem archiepiscopus Senonum non 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">consensit</lem>
@@ -357,9 +357,9 @@
    <rdg wit="#o">aparuit</rdg>
 </app> eadem stella a parte 
 <app type="case-type" cert="high">
-   <rdg wit="#b #o">occidentis</rdg>
    <lem wit="#a">Occidentis</lem>
-</app> et splendor eius 
+<rdg wit="#b #o">occidentis</rdg>
+   </app> et splendor eius 
 <app type="missing-in-print-type" cert="medium">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">tendebat</rdg>
@@ -617,8 +617,8 @@
    <rdg wit="#o">IV</rdg>
 </app> . Suo quidem tempore fuit pessima fames. Hic autem 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> mortuo Alberico qui patriciatus sibi nomen uendicauerat a Crescentio Numentano, qui patricius dicebatur, papa ordinatus est quique etiam Ottonem coronauit imperatorem, postea uero cum magno dedecore ab eodem Crescentio a papatu expulsus est. Et quidam Iohannes, Placentinus episcopus, Grecus genere, legatione functus Ottonis imperatoris a 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">Constantinopolim</lem>
@@ -974,8 +974,8 @@
    <rdg wit="#o">succesit</rdg>
 </app> ei Iohannes frater eius, 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> qui uno eodemque die et laicus fuit et pontifex 
 <app type="unknown-type" cert="medium">
    <lem wit="#b">",</lem>
@@ -1147,24 +1147,24 @@
    <rdg wit="#o">mesem Ianuari</rdg>
 </app> ; 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> mons Uesubius eructauit incendium ita 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> ut quasi flumen 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> usque ad mare 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">discurreret</lem>
    <rdg wit="#o">discurere</rdg>
 </app> 
 <app type="unknown-type" cert="medium">
-   <rdg wit="#b">".</rdg>
    <lem wit="#a #o">.</lem>
+   <rdg wit="#b">".</rdg>
    </app> 
 </p>
  
@@ -1228,9 +1228,9 @@
    <rdg wit="#o">dominice incarnationis</rdg>
 </app> 
 <app type="case-type" cert="high">
-   <rdg wit="#b #o">Domini</rdg>
    <lem wit="#a">domini</lem>
-</app> MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
+<rdg wit="#b #o">Domini</rdg>
+   </app> MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #o">secundo</lem>
    <rdg wit="#a">II</rdg>
@@ -1342,8 +1342,8 @@
    <rdg wit="#o">uenit</rdg>
 </app> inuenitque sedem apostolicam ualde turbatam, nam 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> uno 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">eodemque</lem>
@@ -1527,8 +1527,8 @@
    <rdg wit="#o">Nordmannorum</rdg>
 </app> comes defunctus est. 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> Fuitque uir egregius, pius, 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">strenuus</lem>
@@ -1674,8 +1674,8 @@
    <rdg wit="#o">pontificium</rdg>
 </app> a beato Petro ad se usque 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> cum manu armatorum in bellum 
 <app type="3elements3variants-type" cert="medium">
    <lem wit="#b">"</lem>
@@ -1699,8 +1699,8 @@
    <rdg wit="#o">oficii</rdg>
 </app> 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> neque hoc illi 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">permissum</lem>
@@ -1715,28 +1715,28 @@
    <rdg wit="#a #o">,</rdg>
    </app> ideo 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> exercitus sui multitudo cesa est, ipso 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #o">perspiciente</lem>
    <rdg wit="#a2">perspicientem</rdg>
 </app> . Non enim Dominus discipulis suis 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> neque idem apostoli 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> suis 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">successoribus</lem>
    <rdg wit="#o">succesoribus</rdg>
 </app> 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> preceperunt ut curis secularibus, ueluti principes 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">,</lem>
@@ -1752,8 +1752,8 @@
    <rdg wit="#a2"></rdg>
 </app> uerbo doctrine monerent et pie conuersationis exemplo instruerent 
 <app type="unknown-type" cert="medium">
-   <rdg wit="#b">".</rdg>
    <lem wit="#a #o">.</lem>
+   <rdg wit="#b">".</rdg>
    </app> Eodem anno Constantinus Monomachus imperator Constantinopolitanus obiit, post quem Theodora, soror 
 <app type="y-type">
    <rdg wit="#b #a">Zoy</rdg>
@@ -1951,9 +1951,9 @@
    <rdg wit="#o">prenomina</rdg>
 </app> dictus 
 <app type="missing-in-print-vs-punct-in-ms-type" cert="high">
-   <rdg wit="#b #o"> </rdg>
    <lem wit="#a2">:</lem>
-</app> erat enim astutissimus 
+<rdg wit="#b #o"> </rdg>
+   </app> erat enim astutissimus 
 <app type="missing-in-ms-type" cert="medium">
    <lem wit="#b #a">et</lem>
    <rdg wit="#o"></rdg>
@@ -2053,16 +2053,16 @@
    <rdg wit="#a #o">Gerardus</rdg>
    </app> . 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> Eodem 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">anno Riccardus</lem>
    <rdg wit="#o">anni Ricardus</rdg>
 </app> cum Iordano filio eius effectus est Capue princeps 
 <app type="unknown-type" cert="medium">
-   <rdg wit="#b">".</rdg>
    <lem wit="#a #o">.</lem>
+   <rdg wit="#b">".</rdg>
    </app> 
 </p>
  
@@ -2232,8 +2232,8 @@
    <rdg wit="#o"></rdg>
 </app> deuenit 
 <app type="punct-in-print-vs-missing-in-ms-type" cert="high">
-   <rdg wit="#b">"</rdg>
    <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
    </app> et sicut 
 <app type="unknown-type" cert="medium">
    <lem wit="#b #a">Nicolao</lem>
