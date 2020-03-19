@@ -124,7 +124,7 @@
 
 <p xml:id="b062heading" decls="#ocr"> 
 <pb n="62" ed="#b"/> 
-&bl;<rs>romoaldi</rs> <num value="2">ii</num> archiepiscopi salernitani annales 
+&bl;<rs>romoaldi</rs> <num value="2">ii</num> archiepiscopi salernitani <title>annales</title> 
 </p>
 
 
@@ -317,7 +317,6 @@ anno post hec ceperunt ciuitatem <rs>bibinum</rs> ignique combus&bd;serunt.
 
 
 <p xml:id="g168.5-168.7" decls="#ocr">
-<!-- Witness Aa start -->
 <hi>anno</hi> incarnationis <rs>domini</rs> <num value="976"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx&uu;&jj;</num><note resp="#b" type="year">sed 986</note>, <rs>lotha&bd;rius</rs> 
 <rs>francorum</rs> rex senex plenus dierum obiit, postquam regnau&bd;it 
 annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">i&uu;</reg></choice></num>, sepultusque in basilica <rs>sancti remigii</rs> <rs>remis</rs>. <hi>cui</hi> 
@@ -847,10 +846,9 @@ per uexillum de honore ducatus sui cum tota terra.
 &bl;<hi>et</hi> <rs>alexander</rs> qui uocatus est <rs>anselmus</rs> papa an&bd;no 
 princeps <rs>riccardus</rs> <rs>capuam</rs> cepit sibique ordinauit. <hi>his</hi> au<pb break="no" n="90" ed="#b"/>&bd;tem 
 &bl;diebus <rs>robbertus</rs> dux ad <rs>alexandrum</rs> papam proficiscens" 
-&bl;liggius eius homo "deuenit" et sicut <rs>nicolao</rs> pape ita et huic 
+&bl;liggius eius homo deuenit<!--bonetti had quotes around deuenit--> et sicut <rs>nicolao</rs> pape ita et huic 
 &bl;iusiurandum fecit et per uexillum ab eo terram cum honore du&bd;catus 
 accepit. <hi>sedique</hi> <rs>alexander</rs> papa annis <num value="11">xi</num>, mensibus <num value="6">&uu;i</num>. 
-&bl; 
 </p> 
 
 
@@ -934,7 +932,6 @@ cum aliis eorum ministris et capita omnium predictorum
 &bl;"cepit <rs>barum</rs> ciuitatem longa obsidione fatigatam, indeque 
 &bl;mouens exercitum, <rs>siciliam</rs> properauit obseditque" "<rs>panormum</rs>, 
 &bl;<supplied resp="#b">per terram et per mare, duxitque ante eam naues <num value="58"><choice><orig>58</orig><reg type="numeral">luiii</reg></choice></num></supplied> ditissi&bd;mam 
-<!-- Witness Aa end -->
 <rs>sicilie</rs> ciuitatem, uiriliter eam expugnans, cepitque eam.
 </p>
 
@@ -3445,9 +3442,9 @@ plenioris comitatum <rs>conuersani</rs> illi adiecit.
 </p> 
 
 
-<p xml:id="g258.1-258.7surplus" decls="#ocr"/> 
+<p xml:id="g258.1-258.7surplus" decls="#ocr"> 
 <note resp="#pm" type="segmentation"><hi>this</hi> paragraph g258.1-258.7surplus is only a placeholder for an additional paragraph added by hand2 in <hi>ms</hi> <hi>a</hi>.</note>
-
+</p>
 
 <p xml:id="g258.14-258.19" decls="#ocr"> 
 &bl;<hi>eo</hi> tempore in <rs>sicilia</rs> terremotus factus est maximus, ita quod 
@@ -5456,7 +5453,7 @@ post mediam noctem passa est eclypsim, et pene in tertia
 
 <p xml:id="v-b298a" decls="#ocr"> 
 <pb n="298" ed="#b"/> 
-&bl;de pace &uu;eneta relatio 
+&bl;<hi>de</hi> pace &uu;eneta relatio 
 </p> 
 
 <p xml:id="v-b298b" decls="#ocr"> 

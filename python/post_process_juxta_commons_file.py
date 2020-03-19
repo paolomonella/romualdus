@@ -13,6 +13,8 @@ from lxml import etree
 
 debug = False
 
+xid = '{%s}id' % myconst.ns['xml']
+
 
 def replacePointyBrackets(siglum):
     ''' Replace <> with [], i.e. change
@@ -136,6 +138,93 @@ class msTree:
         # Replace file
         self.tree.write(self.xmlOutFile, encoding='UTF-8', method='xml',
                         pretty_print=True, xml_declaration=True)
+
+    def join2Readings(self, rdg1, rdg2):
+        ''' rdg1 and rd2 are <rdg> elements, but it should work also
+            if one of the two is a <lem>. Transform
+                <rdg wit="#a">II</rdg>
+                <rdg wit="#o">II</rdg>
+            to
+                <rdg wit="#a #o">II</rdg>
+            into rdg1, and remove rdg2
+            '''
+        # Get the two @wit attributes
+        wit1 = rdg1.get('wit')
+        wit2 = rdg2.get('wit')
+
+        # Set them in the 1st <rdg>
+        rdg1.set('wit', '{} {}'.format(wit1, wit2))
+
+        # Remove the 2nd <rdg>
+        rdg2.getparent().remove(rdg2)
+
+    def findAndJoinIdenticalReadings(self):
+        ''' In the output file of JuxtaCommons, there are cases such as
+            <app>
+                <rdg wit="#b">uno</rdg>
+                <rdg wit="#a">I</rdg>
+                <rdg wit="#o">I</rdg>
+            </app>
+            This script produces
+            <app>
+                <rdg wit="#b">uno</rdg>
+                <rdg wit="#a #o">I</rdg>
+            </app>
+            '''
+        apps = self.tree.findall('.//t:%s' % ('app'), myconst.ns)
+
+        # At this stage, all children of <app> are <rdg>s
+        for app in apps:
+            if len(app) > 3:
+                print(('[post_process_juxta_commons_file.py /'
+                       ' joinIdenticalReadings] An <app> in {}'
+                       ' has more than three (namely {})'
+                       '<rdg> children').format(
+                           self.siglum,
+                           len(app)))
+            elif len(app) == 3:
+                if app[0].text == app[1].text:
+                    # It seems that this never is the case
+                    self.join2Readings(app[0], app[1])
+                    if debug:
+                        print('\n1st rdg = 2nd')
+                        print(app, app.text, app.getparent().get(xid))
+
+                elif app[0].text == app[2].text:
+                    # It seems that this never is the case
+                    self.join2Readings(app[0], app[2])
+                    if debug:
+                        print('\n1st rdg = 3rd')
+                        print(app, app.text, app.getparent().get(xid))
+
+                elif app[1].text == app[2].text:
+                    # This seems to be the only actual case
+                    self.join2Readings(app[1], app[2])
+                    if debug:
+                        print('\n2nd rdg = 3rd')
+                        print('Print: {}'.format(
+                            app[0].text))
+                        print(app, app.text, app.getparent().get(xid))
+                        print('{} = {}'.format(app[1].text,
+                                               app[2].text))
+
+        if debug:
+            for app in apps:
+                if len(app) == 3:
+                    print('\n<app>:')
+                    for rdg in app:
+                        print(rdg.attrib, rdg.text)
+
+        if debug:
+            for app in apps:
+                print(app.get('type'), end=', ')
+            two = [app for app in apps if len(app) == 2]
+            three = [app for app in apps if len(app) == 3]
+            print('\nIn {} there are \n\t{} <app>s with 2 readings'
+                  ' and \n\t{} <app>s with 3 readings'.format(
+                      self.siglum,
+                      len(two),
+                      len(three)))
 
     def removeEmptyParWrappingAllText(self):
         ''' Remove empty <p> wrapping all text in JuxtaCommons-generated

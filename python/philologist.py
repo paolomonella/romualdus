@@ -194,27 +194,31 @@ class treeWithAppElements:
         # This will become a list of dictionaries:
         comparisons = []
         for app in self.apps:
-            printReading = app.find('.//t:*[@wit="#%s"]' %
-                                    (self.printSiglum), ns)
-            msaReading = app.find('.//t:*[@wit="#%s"]' % (self.msaSiglum), ns)
-            # If any:
-            msa2Reading = app.find('.//t:*[@wit="#%s"]' % (self.msa2Siglum),
-                                   ns)
-            # If any:
-            msoReading = app.find('.//t:*[@wit="#%s"]' % (self.msoSiglum), ns)
 
-            # Debug tests: check if something went wrong.
-            #
-            # Everything is OK if there is one reading
-            # and one manuscript reading. The latter can belong
-            # to MS A, to the second hand of MS A or to MS O.
-            # If the print reading or one of the MSS readings are missing,
-            # something is wrong:
-            if (printReading is None or
-                (msaReading is None
-                 and msa2Reading is None
-                 and msoReading is None)):
-                print(('\n[Debug 07.03.2020 10.29] In file {},'
+            #####################################################
+            # Find <rdg> elements corresponding to each witness #
+            #####################################################
+
+            printReading = None
+            msaReading = None
+            msa2Reading = None
+            msoReading = None
+
+            for rdg in app:
+                wit_value = rdg.get('wit')
+                wit = wit_value.split()  # A list
+                if ('#%s' % self.printSiglum) in wit:
+                    printReading = rdg
+                if ('#%s' % self.msaSiglum) in wit:  # Not elif
+                    msaReading = rdg
+                if ('#%s' % self.msa2Siglum) in wit:  # Not elif
+                    msa2Reading = rdg
+                if ('#%s' % self.msoSiglum) in wit:  # Not elif
+                    msoReading = rdg
+
+            # Debug
+            if debug:
+                print(('\n[philologist.py / AppDict()] In file {},'
                        ' paragraph {} {}, I found those readings:\n'
                        '\t- print reading: {}\n'
                        '\t- MS A reading: {}\n'
@@ -228,24 +232,62 @@ class treeWithAppElements:
                            msa2Reading,
                            msoReading,))
 
-            # Set variables printText, msaText, msoText...
+            ''' Old versions:
+            # Find out in which <p> we are
+            printReading = app.find('.//t:*[@wit="#%s"]' %
+                                    (self.printSiglum), ns)
+
+            msaReading = app.find('.//t:*[@wit="#%s"]' % (self.msaSiglum), ns)
+            # If any:
+            msa2Reading = app.find('.//t:*[@wit="#%s"]' % (self.msa2Siglum),
+                                   ns)
+            # If any:
+            msoReading = app.find('.//t:*[@wit="#%s"]' % (self.msoSiglum), ns)
+            '''
+
+            # Debug1234
+            if debug:
+                if printReading is not None and printReading.text == 'octauo':
+                    print('Eureka!! in {}'.format(
+                        app.getparent().get('{%s}id' % ns['xml'])))
+                    if msoReading is not None:
+                        print(msoReading.text)
+                    else:
+                        print('But there is no msoText')
+                    # End of Debug1234
+
+            ################################################
+            # Set variables printText, msaText, msoText... #
+            ################################################
+
             # ...for print edition
-            if printReading is not None and printReading.text is not None:
+            if printReading is not None:
+                if printReading.text is None:
+                    printReading.text = ''
                 printText = printReading.text
             else:
                 printText = ''
-            # ... for MS A
-            if msaReading is not None and msaReading.text is not None:
+
+            # ... for MS A (if any)
+            if msaReading is not None:
+                if msaReading.text is None:
+                    msaReading.text = ''
                 msaText = msaReading.text
             else:
                 msaText = ''
-            # ... for MS A, hand 2
-            if msa2Reading is not None and msa2Reading.text is not None:
+
+            # ... for MS A, hand 2 (if any)
+            if msa2Reading is not None:
+                if msa2Reading.text is None:
+                    msa2Reading.text = ''
                 msa2Text = msa2Reading.text
             else:
                 msa2Text = ''
+
             # ... and for MS O (if any)
-            if msoReading is not None and msoReading.text is not None:
+            if msoReading is not None:
+                if msoReading.text is None:
+                    msoReading.text = ''
                 msoText = msoReading.text
             else:
                 msoText = ''
@@ -256,15 +298,114 @@ class treeWithAppElements:
                 print('msaText: «%s»' % (msaText))
                 print('msoText: «%s»' % (msoText))
 
-            # MyComp is a dictionary (and 'comparisons' a list of
-            # dictionaries).
-            # This is the line that imports the dictionary from function
-            # variantComparision (from module variant_type.py):
-            myComp = variant_type.variantComparison(printText, msaText)
+            ##############################
+            # Find out the app structure #
+            ##############################
+            ''' I.e.: find out how many <rdg> elements <app> has
+            and how many different variant texts, based
+            on the chunk we are in (collation b/w 2 MSS
+            or b/w 3 MSS) and on how many children it has'''
+
+            app_struct = ''
+
+            # Find out in which <p> we are
+            where = app.getparent().get('{%s}id' % ns['xml'])
+
+            # Import DB table
+            collation_chunks = my_database_import.import_table(
+                dbpath,
+                'romualdus.sqlite3',
+                'collation_chunks')
+
+            # These are the xmlids of the paragraphs for
+            # which I collated 3 sources (print, A/A2 and O)
+            pars_with_triple_collation = [
+                r['xmlid'] for r in collation_chunks
+                if r['chunk'] == 'bravo']
+
+            # If we are not in the chunk in which I collated 3 sources:
+            if where not in pars_with_triple_collation:
+                app_struct = '2elements2variants'
+            # If we are in that chunk, there must be 3 variants
+            # (1. print, 2. A or A2, 3. O)
+            else:
+                if len(app) > 3:
+                    print(('[philologist.py / setappStruct] An <app>'
+                           ' in {} has more than 3 children').format(
+                               app.getparent().get(
+                                   '{%s}id' % ns['xml'])))
+                elif len(app) == 3:
+                    app_struct = '3elements3variants'
+                elif len(app) == 2:
+                    app_struct = '2elements3variants'
+
+            # debug:
+            if app_struct == '':
+                print(('[philologist.py / setappStruct] I could'
+                       ' not set the app_struct for an <app>'
+                       ' in {}').format(
+                           app.getparent().get(
+                               '{%s}id' % ns['xml'])))
+
+            if debug:
+                print(where, app_struct, end=' | ')
+
+            #########################################################
+            # Import the dictionary from function variantComparison #
+            #########################################################
+
+            ''' MyComp is a dictionary, including the type of the variant,
+            and 'comparisons' is a list of dictionaries)
+            This is the line that imports the dictionary from function
+            function variantComparison()  only tries to guess the <app> @type
+            by comparing printReading and msa- or msa2Reading (not O)'''
+
+            ''' Old code:
+            if app_struct == '2elements2variants':
+                # The 1st child of <app> is printReading;
+                # the 2nd can only be A or A2
+                if msaReading is not None and msa2Reading is None:
+                    myComp = variant_type.variantComparison(
+                        printText, msaText)
+                elif msaReading is None and msa2Reading is not None:
+                    myComp = variant_type.variantComparison(
+                        printText, msa2Text)
+            '''
+
+            if (app_struct == '2elements2variants'
+                    or app_struct == '2elements3variants'):
+                # I need to identify ther other child of <app>,
+                # different from printReading
+
+                non_print_child = self.find_non_print_child_in_two(
+                    app, printReading)
+                # I am assuming that that 'text' is never None
+                # (if it was None, it was set to '' earlier)
+                if non_print_child.text is None:
+                    print(('[philologist.py / setappStruct] The'
+                           ' text of a child of <app> is None'
+                           ' in {}. The print text is {}').format(
+                               app.getparent().get(
+                                   '{%s}id' % ns['xml']),
+                               printText
+                           ))
+                myComp = variant_type.variantComparison(
+                    printText,
+                    non_print_child.text)
+            elif app_struct == '3elements3variants':
+                # If that's the case, I'll do without function
+                # variantComparison() and create the dict anew
+                # with the same keys that variantComparison() had,
+                # i.e. 'r1', 'r2' and most importantly 'type'
+                myComp = {'r1': '',
+                          'r2': '',
+                          'type': '3elements3variants-type'}
 
             # Set additional keys in dictionary myComp. See the documentation
             # of this method above for details.
             myComp['app'] = app
+            myComp['where'] = where
+            myComp['appStruct'] = app_struct
             myComp['printReading'] = printReading
             myComp['msaReading'] = msaReading
             myComp['msa2Reading'] = msa2Reading
@@ -273,43 +414,9 @@ class treeWithAppElements:
             myComp['msaText'] = msaText
             myComp['msa2Text'] = msa2Text
             myComp['msoText'] = msoText
-            myComp['where'] = app.getparent().get(
-                '{%s}id' % ns['xml'])
-
-            # Determine @type of <app>
-            #
-            # 1) when there are two variants,
-            #   i.e. [print vs MS A] or [print vs MS A2]:
-            #   myComp['app'] is automatically inherited from
-            #   variantComparison(),
-            #   based on a comparison between print edition and MS A.
-            #   If unkown, myComp['app'] = 'unknown-type'; otherwise,
-            #   it is set by variantComparison()
-            #   (I am ignoring the variant of MS O, or it would all become
-            #    too complex).
-            if msoReading is None:
-                pass
-
-            # 2) when there are 2 variants, i.e. [print vs MS O]:
-            #   myComp['app] = 'unknown-print-vs-o-type'
-            #   (assumption: there is always a print <rdg>)
-            elif (msoReading is not None and
-                  (msaReading is None and msa2Reading is None)):
-                myComp['type'] = 'unknown-print-vs-o-type'
-
-            # 3) when there are 3 variants, i.e. [print vs MS A vs MS O]:
-            #   myComp['app] = 'unknown-print-vs-a-vs-o-type'
-            elif (msoReading is not None and
-                  (msaReading is not None or msa2Reading is not None)):
-                myComp['type'] = 'unknown-print-vs-a-vs-o-type'
-
-            # 4) Catch errors
-            else:
-                print(('[philologist.py]: I could not manage '
-                       'the presence/absence of readings in MS A '
-                       'and in MS O'))
 
             comparisons.append(myComp)
+
         return comparisons
 
     def variantTypesList(self):
@@ -451,8 +558,7 @@ class treeWithAppElements:
         myElement.tag = '{%s}rdg' % ns['t']
 
     def make_substantial(self, substantial_app):
-        ''' Demote myElement to not chosen text,
-            i.e. set its tag name to <rdg> '''
+        ''' Set @type to "substantial-type" '''
         # Better not use namespaces when setting TEI attributes!
         # substantial_app.set('{%s}type' % ns['t'], 'substantial-type')
         substantial_app.set('type', 'substantial-type')
@@ -518,6 +624,16 @@ class treeWithAppElements:
                         # c['app'].set('{%s}cert' % ns['t'], myCert)
                         c['app'].set('cert', myCert)
 
+    def find_non_print_child_in_two(self,
+                                    method_app_element,
+                                    method_print_reading):
+        '''Input an <app> element and its print child.
+            Return the other child, that does not include '''
+        for child in method_app_element:
+            if child != method_print_reading:
+                method_non_print_element = child
+        return method_non_print_element
+
     def findMsReading(self, fn_app_dict):
         ''' Input an appDict (a dict generated by appDict).
             Return the XML element representing the only
@@ -573,6 +689,8 @@ class treeWithAppElements:
                     # ...or the DB decision is to be applied everywhere
                     or r['where'] == 'everywhere')):
 
+                # self.make_substantial(a['app'])  #?? Better not...
+
                 ############################
                 # Set <lem> and <rdg> tags #
                 ############################
@@ -603,32 +721,33 @@ class treeWithAppElements:
                     # TEI attributes!
                     # conj_lem.set('{%s}resp' % ns['t'], '#pm')
                     conj_lem.set('resp', '#pm')
+
                 else:
                     print(('[philologist.py/setLemBasedOnDBFor2Readings] '
-                           'I can\'t find a "decision" field '
-                           'in the DB record'))
-                self.make_substantial(a['app'])
+                           'I can\'t find a "type" field '
+                           'in the DB record for app {}').format(
+                               a['app']))
 
-            # Debug
-            if not self.quiet:
-                print(('[setLemsBasedOnDB], part m{}, '
-                       'origin {}. Print/MS:\n'
-                       'DB «{}»/«{}» \n'
-                       '<app> «{}»/«{}»\n'
-                       'Paragraph {}\n').format(
-                           r['part'],
-                           r['origin'],
-                           r['print'],
-                           r['ms'],
-                           a['printText'],
-                           a['msaText'],
-                           a['app'].getparent().get('{%s}id' %
-                                                    ns['xml'])))
+        # Debug
+        if not self.quiet:
+            print(('[setLemsBasedOnDB], part m{}, '
+                   'origin {}. Print/MS:\n'
+                   'DB «{}»/«{}» \n'
+                   '<app> «{}»/«{}»\n'
+                   'Paragraph {}\n').format(
+                       r['part'],
+                       r['origin'],
+                       r['print'],
+                       r['ms'],
+                       a['printText'],
+                       a['msaText'],
+                       a['app'].getparent().get('{%s}id' %
+                                                ns['xml'])))
 
     def setLemBasedOnDBFor3Readings(self):
         ''' I'll code this if/when I actually collate MS O.
             Probably the best thing to do is to manage those cases
-            (very few, if any) by hand '''
+            (very few, if any; I think they are 40 or 50) by hand '''
         pass
 
     def setLemsBasedOnDB(self):
@@ -646,7 +765,8 @@ class treeWithAppElements:
             # The 2nd from A or A2,
             # The 3rd from O
             elif len(app_dict['app']) == 3:
-                self.setLemBasedOnDBFor3Readings(app_dict)
+                pass
+                # self.setLemBasedOnDBFor3Readings(app_dict)
 
             # Case C: more than 3 variants
             elif len(app_dict['app']) > 3:

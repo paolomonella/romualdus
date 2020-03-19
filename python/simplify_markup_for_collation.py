@@ -28,7 +28,7 @@ class msTree:
 
     def __init__(self, siglum, quiet=False):
         self.siglum = siglum
-        self.xmlfile = '%s/%s.xml' % (myconst.xmlpath, siglum)
+        self.xmlfile = '%s%s.xml' % (myconst.xmlpath, siglum)
         # Source of next, commented, line:
         # https://stackoverflow.com/questions/14731633/
         # how-to-resolve-external-entities-with-xml-etree-like-lxml-etree#19400397
@@ -190,7 +190,10 @@ class msTree:
             gapUnit = e.get('unit')
             if gapUnit == 'words' and gapQuantityNum == 1:
                 gapUnit = 'word'
-            e.text = '{%s_%s_%s}' % (gapQuantity, gapReason, gapUnit)
+            e.text = 'Gap%s%s%s' % (
+                gapQuantity.capitalize(),
+                gapReason.capitalize(),
+                gapUnit.capitalize())
 
     def ecaudatum(self, monophthongize=True):
         ''' If monophthongize is True, transform <seg ana="#ae">ae</seg>
@@ -497,11 +500,12 @@ class msTree:
                         pretty_print=True, xml_declaration=True)
 
 
-def finalProcessingBeforeJuxta(siglaList, siglaToShortenList, quiet=False):
+def finalProcessingBeforeJuxta(siglaList, quiet=False):
     '''In simplified TEI XML files,
         - change [p xml:id="g3.1-3.1"][/p] to [p xml:id="g3.1-3.1"]\n[/p]
         - remove empty lines
-        - create «a1s-short.xml», «gs-short.xml» etc. versions '''
+        - fix trailing spaces in lines
+        '''
 
     for mySiglum in siglaList:
         if not quiet:
@@ -510,11 +514,11 @@ def finalProcessingBeforeJuxta(siglaList, siglaToShortenList, quiet=False):
                   'witness «{}»').format(mySiglum))
         edition = mySiglum + myconst.simplifiedsuffix
         xmlfile = '%s/%s.xml' % (myconst.xmlpath, edition)
-        shortxmlfile = xmlfile.replace('.xml', '-short.xml')
         myLines = []
         with open(xmlfile, 'r') as IN:
-            for line in IN:  # Change [p xml:id="g3.1-3.1"][/p] to
-                # [p xml:id="g3.1-3.1"]\n[/p]'''
+            for line in IN:
+                # Change [p xml:id="g3.1-3.1"][/p] to
+                # [p xml:id="g3.1-3.1"]\n[/p]
                 if line.startswith('[p xml:id="') \
                    and line.strip().endswith('"][/p]'):
                     line = line.replace('"][/p]', '"]\n[/p]')
@@ -522,29 +526,11 @@ def finalProcessingBeforeJuxta(siglaList, siglaToShortenList, quiet=False):
                     # If line doesn't end with a trailing space, add the space:
                     if line[-2:-1] != ' ':
                         line = line.replace('\n', ' \n')
-                    # If line doesn't end with two spaces, remove one:
+                    # If line end with two spaces, remove one:
                     if line[-3:-1] == '  ':
                         line = line.replace('  \n', ' \n')
                     myLines.append(line)
         with open(xmlfile, 'w') as OUT:
-            # Write back long files (e.g. a1s.xml)
+            # Overwrite files
             for line in myLines:
                 print(line, file=OUT, end='')
-        # create «a1s-short.xml» versions:
-        if mySiglum in siglaToShortenList:
-            if mySiglum in ['g', 'a1']:
-                # It was 'milestone type="garufi-one-layer-from-here-on"
-                # unit="collation"':
-                stopLine = 'p xml:id="g6.26-6.34"'
-            elif mySiglum in ['bonetti', 'a2-sorted']:
-                stopLine = 'p xml:id="g169.5-170.14"'
-            else:
-                print('I don\'t know where to cut file {}'.format(mySiglum))
-            with open(xmlfile, 'r') as IN:
-                with open(shortxmlfile, 'w') as OUT:
-                    for line in IN:
-                        if re.search(stopLine, line):
-                            print('</body>\n</text>\n</TEI>', file=OUT, end='')
-                            break
-                        else:
-                            print(line, file=OUT, end='')

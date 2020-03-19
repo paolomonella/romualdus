@@ -20,30 +20,38 @@ import philologist
 import m_unifier
 
 # If true: suppress standard output messages to console
-quiet = False
+quiet = True
 
 #################
 # PRE-COLLATION #
 #################
 
-# a_unifier.py
-# a_unifier.a_unifier(quiet=quiet)
+# Split a.xml into a1.xml and a2.xml
+splitter.a_splitter(quiet=quiet)
 
-# splitter.py
-splitter.a_splitter()
+# Sort <p>s in a2.xml to make them match Bonetti's sorting.
+# Produce file a2-sorted.xml
+sort_a2.sort_a2(quiet=quiet)
+
+# Split bonetti.xml and a2-sorted.xml for JuxtaCommons collation
+splitter.second_half_splitter('bonetti', 'alfa', 'bravo', 'charlie')
+splitter.second_half_splitter('a2-sorted', 'alfa', 'bravo', 'charlie')
 
 # entitize.py
 for f in iglob('%s*.xml' % (xmlpath)):
     # base = f.split('/')[-1].split('.')[0]
     entitize.entitize(f, quiet=quiet)
 
-# sort_a2.py
-sort_a2.sort_a2(quiet=quiet)
-
 # simplify_markup_for_collation.py / class msTree
-# edition_list = ['a1', 'a2-sorted', 'o', 'o-short', 'g', 'bonetti',
-edition_list = ['a1', 'a2-sorted', 'o', 'g', 'bonetti',
-                'bonetti-short']
+edition_list = ['g',
+                'a1',
+                'bonetti-alfa',
+                'bonetti-bravo',
+                'bonetti-charlie',
+                'a2-sorted-alfa',
+                'a2-sorted-bravo',
+                'a2-sorted-charlie',
+                'o']
 for edition in edition_list:
     mytree = simplify_markup_for_collation.msTree(edition, quiet=quiet)
     if edition == 'a1':
@@ -76,23 +84,10 @@ for edition in edition_list:
     mytree.handle_paragraph_tags('bracketsOnly')
     # mytree.tags_to_brackets(['l'])
     mytree.write()
-    '''
-    # Temporarily needed for CollateX (remove @xmlns)
-    with open('%s%s%s.xml' % (myconst.simplifiedpath,
-                              edition, myconst.simplifiedsuffix), 'r')\
-            as infile:
-        data = infile.read()
-    with open('%s%s%s.xml' % (myconst.simplifiedpath,
-                              edition, myconst.simplifiedsuffix), 'w')\
-            as outfile:
-        data = data.replace(' xmlns="http://www.tei-c.org/ns/1.0"', '')
-        outfile.write(data)
-        '''
 
 # simplify_markup_for_collation.py / function finalProcessingBeforeJuxta
 simplify_markup_for_collation.finalProcessingBeforeJuxta(
-    siglaList=['a1', 'a2-sorted', 'o', 'g', 'bonetti'],
-    siglaToShortenList=['a1', 'a2-sorted', 'g', 'bonetti'],
+    siglaList=edition_list,
     quiet=quiet)
 
 
@@ -100,25 +95,20 @@ simplify_markup_for_collation.finalProcessingBeforeJuxta(
 # POST-COLLATION #
 ##################
 
+my_msa_siglum = 'a'
+my_msa2_siglum = 'a2'
+my_mso_siglum = 'o'
+
 parameters = [
     {'siglum': 'm1',
      'ed': 'garufi',
-     'printSiglum': 'g',
-     'msaSiglum': 'a',
-     'msa2Siglum': 'a2',
-     'msoSiglum': 'o'},
-    {'siglum': 'm2',
+     'printSiglum': 'g'},
+    {'siglum': 'm2-alfa',
      'ed': 'bonetti',
-     'printSiglum': 'b',
-     'msaSiglum': 'a',
-     'msa2Siglum': 'a2',
-     'msoSiglum': 'o'},
-    {'siglum': 'm3',
+     'printSiglum': 'b'},
+    {'siglum': 'm2-bravo',
      'ed': 'bonetti',
-     'printSiglum': 'b',
-     'msaSiglum': 'a',
-     'msa2Siglum': 'a2',
-     'msoSiglum': 'o'}
+     'printSiglum': 'b'},
 ]
 
 for mp in parameters:
@@ -129,10 +119,12 @@ for mp in parameters:
     myTree = post_process_juxta_commons_file.msTree(mp['siglum'],
                                                     mp['ed'],
                                                     mp['printSiglum'],
-                                                    mp['msaSiglum'],
-                                                    mp['msa2Siglum'],
-                                                    mp['msoSiglum'])
+                                                    my_msa_siglum,
+                                                    my_msa2_siglum,
+                                                    my_mso_siglum)
     myTree.replaceSigla()
+
+    myTree.findAndJoinIdenticalReadings()
     myTree.removeEmptyParWrappingAllText()
 
     ''' Set <lem>/<rdg> and set @type attributes for <app>s
@@ -140,9 +132,9 @@ for mp in parameters:
     newSiglum = mp['siglum'] + juxta_par_and_sigla_suffix
     myTree = philologist.treeWithAppElements(newSiglum,
                                              mp['printSiglum'],
-                                             mp['msaSiglum'],
-                                             mp['msa2Siglum'],
-                                             mp['msoSiglum'],
+                                             my_msa_siglum,
+                                             my_msa2_siglum,
+                                             my_mso_siglum,
                                              quiet=quiet)
     myTree.setA2ForAdditions()
     # myTree.findAndLocateSicCorr()
@@ -151,7 +143,9 @@ for mp in parameters:
     myTree.setLemsBasedOnType()
     myTree.setLemsBasedOnDB()
     myTree.editTeiHeader()
+    '''
     myTree.putLemAsFirstInApp()
+    '''
     myTree.write()
 
 m_unifier.unify()
