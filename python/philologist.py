@@ -58,7 +58,7 @@ class treeWithAppElements:
             'romualdus.sqlite3',
             'decisions')
 
-    def setA2ForAdditions(self):
+    def set_a2_for_additions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
             wit="a2" '''
 
@@ -110,7 +110,7 @@ class treeWithAppElements:
                         # setting TEI attributes!
                         child.set('wit', '#a2')
 
-    def editTeiHeader(self):
+    def edit_tei_header(self):
         ''' Set some basic elements in the teiHeader of m1.xml and m2.xml '''
 
         # Title and editor in <titleStmt>
@@ -157,7 +157,7 @@ class treeWithAppElements:
         text_front = self.juxtaTree.find('.//t:front', ns)
         text_front.getparent().remove(text_front)
 
-    def appDict(self):
+    def appdict(self):
         ''' Arguments:
             The function parses file myJuxtaXmlFile, finds all <app> elements,
             then creates and populates 'comparisons', a list of dictionaries
@@ -218,7 +218,7 @@ class treeWithAppElements:
 
             # Debug
             if debug:
-                print(('\n[philologist.py / AppDict()] In file {},'
+                print(('\n[philologist.py / appdict()] In file {},'
                        ' paragraph {} {}, I found those readings:\n'
                        '\t- print reading: {}\n'
                        '\t- MS A reading: {}\n'
@@ -419,29 +419,29 @@ class treeWithAppElements:
 
         return comparisons
 
-    def variantTypesList(self):
+    def variant_types_list(self):
         '''Return a list all variant types in <app> '''
-        myList = [c['type'] for c in self.appDict()]
+        myList = [c['type'] for c in self.appdict()]
         return myList
 
-    def variantTypesCountSetList(self):
-        '''Same as variantTypesList, but it returns a list
+    def variant_types_count_set_list(self):
+        '''Same as variant_types_list, but it returns a list
             in which each element only occurs once'''
-        mySet = set(self.variantTypesList())
+        mySet = set(self.variant_types_list())
         # mySetList is still a list, but in which each element
         # of myList occurs only once
         mySetList = [t for t in mySet]
         return mySetList
 
-    def variantTypesCount(self):
+    def variant_types_count(self):
         '''Return a dict like
             {'missing-in-ms-type': 124,
             'missing-in-print-vs-punct-in-ms-type': 252 etc.}
             counting in how many <app> elements in the juxtaTree each
             variant type recurs '''
-        myList = self.variantTypesList()
+        myList = self.variant_types_list()
         myListCount = []    # A list (of tuples)
-        for x in self.variantTypesCountSetList():
+        for x in self.variant_types_count_set_list():
             # Add a new tuple to the list
             myListCount.append((x, myList.count(x)))
         # Ordered from highest number to lowest:
@@ -449,21 +449,21 @@ class treeWithAppElements:
                              reverse=True)
         return myListCount
 
-    def variantTypesCountPrint(self):
+    def variant_types_count_print(self):
         '''Print variantTypesCountDict'''
         if not self.quiet:
             print(('\n[set_variant_types_in_appcrit_tei_file / '
                    'variantTypesCountPrint]: '
                    'In file {} there are:').format(self.juxtaSiglum))
-            for x in self.variantTypesCount():
+            for x in self.variant_types_count():
                 print('{:5} {:12}'.format(x[1], x[0]))
 
-    def setTypeAttributesForApps(self):
+    def set_type_attributes_in_all_apps(self):
         '''Set @type attributes in <app> elements in the input TEI XML file '''
         if debug:
-            myTypesDebug = [c['type'] for c in self.appDict()]
+            myTypesDebug = [c['type'] for c in self.appdict()]
             print('[Debug 07.03.2020] %s' % (set(myTypesDebug)))
-        for c in self.appDict():
+        for c in self.appdict():
             # Better not use namespaces when setting TEI attributes!
             # c['app'].set('{%s}type' % ns['t'], c['type'])
             c['app'].set('type', c['type'])
@@ -475,7 +475,7 @@ class treeWithAppElements:
                 for k in c:
                     print('%s: «%s»' % (k, c[k]))
 
-    def findAndLocateSicCorr(self):
+    def find_and_locate_sic_corr(self):
         # self.juxtaSiglum, self.printSiglum, self.msaSiglum
         if self.printSiglum == 'g':
             myPrintXmlFile = '%s%s.xml' % (xmlpath, self.printSiglum)
@@ -518,7 +518,7 @@ class treeWithAppElements:
         # Locate the corrections in m1 or m2
         count = 0
         for c in corrections:
-            for a in self.appDict():
+            for a in self.appdict():
                 # ...but I guess that it should only be
                 # if a[sicText] == a[printText] (not also corrText)
                 '''if c['corrText'].lower() == a['printText'].lower() or \
@@ -526,7 +526,7 @@ class treeWithAppElements:
                 if c['sicText'].lower() == a['printText'].lower():
                     count += 1
                     if not self.quiet:
-                        print(('[findAndLocateSicCorr] '
+                        print(('[find_and_locate_sic_corr] '
                                'file {}: '
                                'Matching correction «{}» for «{}» '
                                'with app print «{}»/ms «{}»'
@@ -566,14 +566,14 @@ class treeWithAppElements:
         # substantial_app.set('{%s}cert' % ns['t'], 'high')
         substantial_app.set('cert', 'high')
 
-    def setLemsBasedOnType(self, setCert=True):
+    def set_lems_based_on_type(self, setCert=True):
         '''For some @type(s) of <app>, decide the <lem> automatically
             based on that @type. '''
 
         # Decide <lem> and set @cert based on decision_variant_types:
         if debug:
-            print(self.appDict())
-        for c in self.appDict():
+            print(self.appdict())
+        for c in self.appdict():
             for myRow in self.decision_variant_types:
 
                 # E.g.: 'different-punct-type':
@@ -601,7 +601,7 @@ class treeWithAppElements:
                         elif c['msoReading'] is not None:
                             self.make_lem(c['msoReading'])
                         else:
-                            print(('\n[setLemsBasedOnType] I should'
+                            print(('\n[set_lems_based_on_type] I should'
                                    ' choose a reading from a MS, but'
                                    ' I can\'t find any MS reading in'
                                    ' the <app> element. This <app>'
@@ -611,7 +611,7 @@ class treeWithAppElements:
                                        c))
 
                     else:
-                        print(('\n[setLemsBasedOnType] I couln\'t'
+                        print(('\n[set_lems_based_on_type] I couln\'t'
                                ' read table decision_variant_types'
                                ' from the DB properly. My db_preferredRdg'
                                ' is {}').format(db_preferredRdg))
@@ -634,10 +634,10 @@ class treeWithAppElements:
                 method_non_print_element = child
         return method_non_print_element
 
-    def findMsReading(self, fn_app_dict):
-        ''' Input an appDict (a dict generated by appDict).
+    def find_ms_reading(self, fn_app_dict):
+        ''' Input an appdict (a dict generated by appdict).
             Return the XML element representing the only
-            MS reading in the appDict '''
+            MS reading in the appdict '''
 
         # Identify the MS reading. There is only one,
         # i.e. MS A, MS A2 or MS O)
@@ -652,7 +652,7 @@ class treeWithAppElements:
             # (it should never happen, because <app> only has 2
             # children)
             elif x is not None and fn_ms_reading is not None:
-                print(('[setLemBasedOnDBFor2Readings]'
+                print(('[find_ms_reading]'
                        ' file {}: <app> {} has more than one'
                        ' MS reading, but I am handling it'
                        ' as though it only had one').format(
@@ -660,14 +660,14 @@ class treeWithAppElements:
 
         # Check if the script found no MS reading at all
         if fn_ms_reading is None:
-            print(('[setLemBasedOnDBFor2Readings]'
+            print(('[set_lem_based_on_db_2elements_2readings]'
                    ' file {}: <app> {} has no'
                    ' MS reading').format(
                        self.juxtaSiglum, fn_app_dict))
 
         return fn_ms_reading
 
-    def setLemBasedOnDBFor2Readings(self, a):
+    def set_lem_based_on_db_2elements_2readings(self, a):
         # For each record in the 'decisions' DB table:
         for r in self.decisions:
 
@@ -699,7 +699,7 @@ class treeWithAppElements:
                 self.make_rdg(a['printReading'])
 
                 # Identify the MS reading
-                my_ms_reading = self.findMsReading(a)
+                my_ms_reading = self.find_ms_reading(a)
 
                 if r['type'] == 'choose':
                     # Make the MS reading <lem>
@@ -723,14 +723,15 @@ class treeWithAppElements:
                     conj_lem.set('resp', '#pm')
 
                 else:
-                    print(('[philologist.py/setLemBasedOnDBFor2Readings] '
+                    print(('[philologist.py/'
+                           'set_lem_based_on_db_2elements_2readings] '
                            'I can\'t find a "type" field '
                            'in the DB record for app {}').format(
                                a['app']))
 
         # Debug
         if not self.quiet:
-            print(('[setLemsBasedOnDB], part m{}, '
+            print(('[set_lems_based_on_db], part m{}, '
                    'origin {}. Print/MS:\n'
                    'DB «{}»/«{}» \n'
                    '<app> «{}»/«{}»\n'
@@ -744,21 +745,21 @@ class treeWithAppElements:
                        a['app'].getparent().get('{%s}id' %
                                                 ns['xml'])))
 
-    def setLemBasedOnDBFor3Readings(self):
+    def set_lem_based_on_db_3elements_3readings(self):
         ''' I'll code this if/when I actually collate MS O.
             Probably the best thing to do is to manage those cases
             (very few, if any; I think they are 40 or 50) by hand '''
         pass
 
-    def setLemsBasedOnDB(self):
+    def set_lems_based_on_db(self):
         '''Read DB table and decide <lem> for some <app>s '''
-        for app_dict in self.appDict():
+        for app_dict in self.appdict():
 
             # Case A: 2 variants, 1 <lem> + 1 <rdg>
             # The 1st will be from print,
             # the 2nd will be from A or A2 or O
             if len(app_dict['app']) == 2:
-                self.setLemBasedOnDBFor2Readings(app_dict)
+                self.set_lem_based_on_db_2elements_2readings(app_dict)
 
             # Case B: 3 variants, 1 <lem> + 2 <rdg>
             # The 1st will be from print,
@@ -766,24 +767,24 @@ class treeWithAppElements:
             # The 3rd from O
             elif len(app_dict['app']) == 3:
                 pass
-                # self.setLemBasedOnDBFor3Readings(app_dict)
+                # self.set_lem_based_on_db_3elements_3readings(app_dict)
 
             # Case C: more than 3 variants
             elif len(app_dict['app']) > 3:
-                    print(('[setLemsBasedOnDB]'
+                    print(('[set_lems_based_on_db]'
                            ' file {}: <app> {} has more than'
                            ' three children').format(
                                self.juxtaSiglum, app_dict))
             else:
-                    print(('[setLemsBasedOnDB]'
+                    print(('[set_lems_based_on_db]'
                            ' file {}: <app> {} has a strange'
                            ' number of children').format(
                                self.juxtaSiglum, app_dict))
 
-    def putLemAsFirstInApp(self):
+    def put_lem_as_1st_in_app(self):
         ''' In the TEI DTD, <lem> must be the first child of <app>.
             This method puts <lem> first '''
-        for a in self.appDict():
+        for a in self.appdict():
             app = a['app']
             for child in app:
                 # If the child is a <lem>:

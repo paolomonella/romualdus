@@ -136,16 +136,14 @@ for mp in parameters:
                                              my_msa2_siglum,
                                              my_mso_siglum,
                                              quiet=quiet)
-    myTree.setA2ForAdditions()
-    # myTree.findAndLocateSicCorr()
-    myTree.variantTypesCountPrint()
-    myTree.setTypeAttributesForApps()
-    myTree.setLemsBasedOnType()
-    myTree.setLemsBasedOnDB()
-    myTree.editTeiHeader()
-    '''
-    myTree.putLemAsFirstInApp()
-    '''
+    myTree.set_a2_for_additions()
+    # myTree.find_and_locate_sic_corr()
+    myTree.variant_types_count_print()
+    myTree.set_type_attributes_in_all_apps()
+    myTree.set_lems_based_on_type()
+    myTree.set_lems_based_on_db()
+    myTree.edit_tei_header()
+    myTree.put_lem_as_1st_in_app()
     myTree.write()
 
 m_unifier.unify()
