@@ -48,12 +48,16 @@ class treeWithAppElements:
         # Quieter output:
         self.quiet = quiet
 
-        # Import table from DB (I import it here because will will
+        # Import tables from DB (I import them here because will will
         # be used by more than one function)
         self.decisions2 = my_database_import.import_table(
             dbpath,
             'romualdus.sqlite3',
             'decisions2')
+        self.decisions3 = my_database_import.import_table(
+            dbpath,
+            'romualdus.sqlite3',
+            'decisions3')
 
     def set_a2_for_additions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
@@ -632,9 +636,9 @@ class treeWithAppElements:
                 non_print_child = child
         if non_print_child is None:
             # Good debug message
-            print(('\n[find_non_print_child_in_two] I can\'t find'
-                   ' the non-print element in {},\nparagraph {},'
-                   ' \n<{}> {}.'
+            print(('\n[philologist.py/find_non_print_child_in_two]'
+                   ' I can\'t find the non-print element in {},'
+                   ' \nparagraph {}, \n<{}> {}.'
                    ' \nThe print reading is <{}> {}\nwith text «{}»\n').format(
                        self.juxtaSiglum,
                        self.parent_xmlid(app_element),
@@ -684,13 +688,13 @@ class treeWithAppElements:
         # For each record in the 'decisions' DB table:
         for r in self.decisions2:
 
-            # If the print reading in <app> is the same
-            # of the print reading in the DB record...
+            # If the print reading text in <app> is the same
+            # of the print reading text in the DB record...
             if(r['print'] == my_print_text
 
-               # and the MS reading in the DB record is
-               # the MS A reading or MS A2 reading
-               # or MS O reading in <app>
+               # and the MS reading text in the DB record is
+               # the MS A reading text or MS A2 reading text
+               # or MS O reading text in <app>
                and r['ms'] == my_non_print_text
 
                # and we are in the right <p>...
@@ -702,14 +706,14 @@ class treeWithAppElements:
                 # Set <lem> and <rdg> tags #
                 ############################
 
-                # The print reading will always be set to <rdg>
+                # The print reading text will always be set to <rdg>
                 self.make_rdg(my_print_rdg)
 
-                if r['type'] == 'ms':
+                if r['type'] == 'm':  # 'correct' rdg is in one of the mss
                     # Make the non-print reading <lem>
                     self.make_lem(my_non_print_rdg)
 
-                elif r['type'] == 'conj':
+                elif r['type'] == 'conj':  # 'correct' rdg is my conjecture
 
                     # Make also the MS reading <rdg>
                     self.make_rdg(my_non_print_rdg)
@@ -728,9 +732,9 @@ class treeWithAppElements:
 
                 else:
                     print(('[philologist.py/set_lem_based_on_db_2elements] '
-                           'I can\'t find a "type" field '
-                           'in the DB record for app {}').format(
-                               a['app']))
+                           'I don\'t understand the «{}» field '
+                           'in the DB record for app {} {}. ').format(
+                               r['type'], a['app'], a['app'].attrib))
 
         # Debug
         if not self.quiet:
@@ -738,7 +742,6 @@ class treeWithAppElements:
                    '\npart m{},\norigin {}.\nPrint/MS: DB «{}»/«{}»'
                    '\n<app> «{}»/«{}»'
                    '\nParagraph {}\n').format(
-                       r['part'],
                        r['origin'],
                        r['print'],
                        r['ms'],
@@ -747,7 +750,92 @@ class treeWithAppElements:
                        a['where']))
 
     def set_lem_based_on_db_3elements(self, a):
-        pass
+
+        # Identify print element and text
+        my_print_rdg = a['printReading']
+        my_print_text = a['printReading'].text
+
+        ####################################################
+        # Decide if the <app> corresponds to the DB record #
+        ####################################################
+
+        for r in self.decisions3:
+
+            # If the print reading text in <app> is the same
+            # of the print reading text in the DB record...
+            if(r['print'] == my_print_text
+
+               # and the MS A or MS A2 text reading
+               # matches that of the DB record
+               and (r['msa'] == a['msaText']
+                    or r['msa2'] == a['msa2Text'])
+
+               # and the MS O text reading
+               # matches that of the DB record
+               and r['mso'] == a['msoText']
+
+               # and we are in the right <p>...
+               and (r['where'] == a['where']
+                    # ...or the DB decision is to be applied in all cases
+                    or r['where'] == 'all')):
+
+                ############################
+                # Set <lem> and <rdg> tags #
+                ############################
+
+                # The print reading will always be set to <rdg>
+                self.make_rdg(my_print_rdg)
+
+                if r['type'] == 'm':  # 'correct' rdg is in one of the mss
+
+                    # Identify "correct" MS element and text
+                    # based on on the 'lem' column in the decisions3 table
+                    db_lem = r['lem']
+                    my_correct_ms_rdg = None
+                    if db_lem == 'msa':
+                        my_correct_ms_rdg = a['msaReading']
+                    elif db_lem == 'msa2':
+                        my_correct_ms_rdg = a['msa2Reading']
+                    elif db_lem == 'mso':
+                        my_correct_ms_rdg = a['msoReading']
+                    if my_correct_ms_rdg is None:
+                        # Good debug message:
+                        print(('\n[philologist.py/'
+                               'set_lem_based_on_db_3elements]'
+                               ' I can\'t find the "correct" MS reading'
+                               ' in {},\nparagraph {}, \n<{}> {}.'
+                               ' \nThe print reading is <{}> {}'
+                               ' \nwith text «{}»\n').format(
+                                   self.juxtaSiglum, self.parent_xmlid(a),
+                                   etree.QName(a).localname, a.attrib,
+                                   etree.QName(a['printReading']).localname,
+                                   a['printReading'].attrib,
+                                   a['printReading'].text))
+
+                    my_correct_ms_text = my_correct_ms_rdg.text
+                    if debug:
+                        print(('\n[philologist.py/'
+                               'set_lem_based_on_db_3elements]'
+                               ' The "correct" text in triple <app>'
+                               ' in {},\nparagraph {}, \n<{}> {},'
+                               ' is {}.'
+                               ' \nThe print reading is <{}> {}'
+                               ' \nwith text «{}»\n').format(
+                                   self.juxtaSiglum,
+                                   a['where'],
+                                   etree.QName(a['app']).localname,
+                                   a['app'].attrib,
+                                   my_correct_ms_text,
+                                   etree.QName(a['printReading']).localname,
+                                   a['printReading'].attrib,
+                                   a['printReading'].text))
+
+                    # Make the "correct" MS element <lem>
+                    self.make_lem(my_correct_ms_rdg)
+
+                elif r['type'] == 'conj':  # 'correct' rdg is my conjecture
+                    # If there will be such a case, I'll write the code for it
+                    pass
 
     def set_all_lems_based_on_db(self):
         '''Read DB table and decide <lem> for the <app>s
