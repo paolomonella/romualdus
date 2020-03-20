@@ -187,11 +187,11 @@ def second_half_splitter(siglum_second_half,
                     # This paragraph will is handled via the
                     # manual collation files
                     pass
-                elif chunk == 'alfa':
+                elif chunk == '2-alfa':
                     body_pre_o.append(p)
-                elif chunk == 'bravo':
+                elif chunk == '2-bravo':
                     body_with_o.append(p)
-                elif chunk == 'charlie':
+                elif chunk == '2-charlie':
                     body_post_o.append(p)
                 else:
                     print(('\n[splitter.py / second_half_splitter]'
