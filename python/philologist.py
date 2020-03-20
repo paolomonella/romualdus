@@ -48,8 +48,8 @@ class treeWithAppElements:
         # Quieter output:
         self.quiet = quiet
 
-        # Import tables from DB (I import them here because will will
-        # be used by more than one function)
+        # Import tables from DB (I import them here because they will
+        # be used by a method that will be repeated many times
         self.decisions2 = my_database_import.import_table(
             dbpath,
             'romualdus.sqlite3',
@@ -58,8 +58,20 @@ class treeWithAppElements:
             dbpath,
             'romualdus.sqlite3',
             'decisions3')
+        self.paragraphs = my_database_import.import_table(
+            dbpath,
+            'romualdus.sqlite3',
+            'paragraphs')
 
-    def set_a2_for_additions(self):
+        # This dictionary will be used by a method that will be
+        # repeated many times. It includes abbreviations of @type's
+        # for <app> as found in DB tables decisions2 and decisions3
+        self.app_types_abbr = {
+            's': 'substantial-type',
+            'p': 'punctuation-type',
+        }
+
+    def set_a2_for_additions_old(self):  # Old code §
         ''' In sections that are additions by hand2, replace wit="a" with
             wit="a2" '''
 
@@ -71,6 +83,53 @@ class treeWithAppElements:
 
         # Create a list with the xml:id's of those <p>s
         additions_xmlids = [x[0] for x in hand2_additions_table]
+
+        # All <p>s in the XML document
+        pars = self.justaBody.findall('.//t:%s' % ('p'), ns)
+
+        # Find the <p>s that include additions and include
+        # them in list pars_with_addition and put them
+        # in list pars_with_additions
+        pars_with_additions = []
+        additions_count = 0
+        for par in pars:
+            par_xmlid = par.get('{%s}id' % ns['xml'])
+            if par_xmlid in additions_xmlids:
+                additions_count += 1
+                pars_with_additions.append(par)
+
+        if debug:
+            print('found {} pars with adds in {}'.format(
+                self.juxtaSiglum, len(pars_with_additions)))
+
+        # Set wit="#a2" if it was "#a"
+        #
+        # For each <p> with additions in the XML file:
+        for par_with_addition in pars_with_additions:
+            # All <app> children of that <p>:
+            apps_in_par = par_with_addition.findall('.//t:app', ns)
+            for app in apps_in_par:
+                # Get all <rdg> children of <app>
+                rdg_in_app = app.findall('.//t:rdg', ns)
+                # Get all <lem> children of <app>
+                lem_in_app = app.findall('.//t:lem', ns)
+                # All <lem> and <rdg> children of <app>
+                # (they should all be <rdg> in fact)
+                rdg_and_lem_in_app = rdg_in_app + lem_in_app
+                for child in rdg_and_lem_in_app:
+                    child_wit = child.get('wit')
+                    if child_wit == '#a':
+                        # Better not use namespaces when
+                        # setting TEI attributes!
+                        child.set('wit', '#a2')
+
+    def set_a2_for_additions(self):
+        ''' In sections that are additions by hand2, replace wit="a" with
+            wit="a2" '''
+
+        # Create a list with the xml:id's of those <p>s
+        additions_xmlids = [x['xmlid'] for x in self.paragraphs
+                            if x['xmlid'] == 1]
 
         # All <p>s in the XML document
         pars = self.justaBody.findall('.//t:%s' % ('p'), ns)
@@ -560,71 +619,6 @@ class treeWithAppElements:
             (useful for debug messages) '''
         return app_element.getparent().get('{%s}id' % ns['xml'])
 
-    def set_all_lems_based_on_type(self, setCert=True):
-        '''For some @type(s) of <app>, decide the <lem> automatically
-            based on that @type. '''
-
-        # Decide <lem> and set @cert based on decision_variant_types:
-        if debug:
-            print(self.appdict())
-
-        # Import table from the DB
-        decision_variant_types = my_database_import.import_table(
-            dbpath,
-            'romualdus.sqlite3',
-            'decision_variant_types')
-
-        for c in self.appdict():
-            for myRow in decision_variant_types:
-
-                # E.g.: 'different-punct-type':
-                if c['type'] == myRow['type']:
-                    # db_preferredRdg can be 'reading_of_the_print_edition'
-                    # or a generic 'reading_of_one_of_the_mss':
-                    db_preferredRdg = myRow['preferredRdg']
-
-                    if db_preferredRdg == 'reading_of_the_print_edition':
-                        self.make_lem(c['printReading'])
-
-                    elif db_preferredRdg == 'reading_of_one_of_the_mss':
-                        # Choose the reading of MS A, if any:
-                        if c['msaReading'] is not None:
-                            self.make_lem(c['msaReading'])
-                        # If there is a MS A reading, the script will
-                        # skip the other lines. Otherwise (if there
-                        # is no MS A reading),
-                        # choose the reading of MS A2, if any:
-                        elif c['msa2Reading'] is not None:
-                            self.make_lem(c['msa2Reading'])
-                        # If there is no MS A reading and
-                        # no MS A2 reading,
-                        # choose the reading of MS O, if any:
-                        elif c['msoReading'] is not None:
-                            self.make_lem(c['msoReading'])
-                        else:
-                            print(('\n[set_all_lems_based_on_type] I should'
-                                   ' choose a reading from a MS, but'
-                                   ' I can\'t find any MS reading in'
-                                   ' the <app> element. This <app>'
-                                   ' has printText «{}» and these'
-                                   ' features: «{}»/').format(
-                                       ' '.join(c['printReading'].itertext()),
-                                       c))
-
-                    else:
-                        print(('\n[set_all_lems_based_on_type] I couln\'t'
-                               ' read table decision_variant_types'
-                               ' from the DB properly. My db_preferredRdg'
-                               ' is {}').format(db_preferredRdg))
-
-                    if setCert is True:
-                        # myCert can be 'low', 'middle' or 'high':
-                        myCert = myRow['cert']
-                        # Better not use namespaces when setting
-                        # TEI attributes!
-                        # c['app'].set('{%s}cert' % ns['t'], myCert)
-                        c['app'].set('cert', myCert)
-
     def find_non_print_child_in_two(self,
                                     app_element,
                                     print_child):
@@ -648,6 +642,84 @@ class treeWithAppElements:
                        print_child.attrib,
                        print_child.text))
         return non_print_child
+
+    def set_all_lems_based_on_type(self, setCert=True):
+        '''For some type(s) of <app>, decide the <lem> automatically
+            based on that @type. If the <app> has 3 children,
+            type is 3elements3variants-type, which has preferred reading 'p'
+            (i.e. print), which is handled very simply and effectively,
+            so this method also works in that case'''
+
+        # Decide <lem> and set @cert based on decision_variant_types:
+        if debug:
+            print(self.appdict())
+
+        # Import table from the DB
+        decision_variant_types = my_database_import.import_table(
+            dbpath,
+            'romualdus.sqlite3',
+            'decision_variant_types')
+
+        for a in self.appdict():
+            for myRow in decision_variant_types:
+
+                # E.g.: 'different-punct-type':
+                if a['type'] == myRow['type']:
+                    # db_preferredRdg can be
+                    # 'p (reading of the print edition) or
+                    # 'm' (reading of one of the MSS)
+                    db_preferredRdg = myRow['preferredRdg']
+
+                    if db_preferredRdg == 'p':
+                        self.make_lem(a['printReading'])
+
+                    elif db_preferredRdg == 'm':
+                        # We can assume that <app> only has 2 children:
+                        # see the initial comment of this method
+                        my_non_print_rdg = self.find_non_print_child_in_two(
+                            a['app'], a['printReading'])
+                        self.make_lem(my_non_print_rdg)
+
+                        ''' Old code
+                    elif db_preferredRdg == 'm':
+                        # Choose the reading of MS A, if any:
+                        if a['msaReading'] is not None:
+                            self.make_lem(a['msaReading'])
+                        # If there is a MS A reading, the script will
+                        # skip the other lines. Otherwise (if there
+                        # is no MS A reading),
+                        # choose the reading of MS A2, if any:
+                        elif a['msa2Reading'] is not None:
+                            self.make_lem(a['msa2Reading'])
+                        # If there is no MS A reading and
+                        # no MS A2 reading,
+                        # choose the reading of MS O, if any:
+                        elif a['msoReading'] is not None:
+                            self.make_lem(a['msoReading'])
+                        else:
+                            print(('\n[set_all_lems_based_on_type] I should'
+                                   ' choose a reading from a MS, but'
+                                   ' I can\'t find any MS reading in'
+                                   ' the <app> element. This <app>'
+                                   ' has printText «{}» and these'
+                                   ' features: «{}»/').format(
+                                       ' '.join(a['printReading'].itertext()),
+                                       a))
+                        '''
+
+                    else:
+                        print(('\n[set_all_lems_based_on_type] I couln\'t'
+                               ' read table decision_variant_types'
+                               ' from the DB properly. My db_preferredRdg'
+                               ' is {}').format(db_preferredRdg))
+
+                    if setCert is True:
+                        # myCert can be 'low', 'middle' or 'high':
+                        myCert = myRow['cert']
+                        # Better not use namespaces when setting
+                        # TEI attributes!
+                        # a['app'].set('{%s}cert' % ns['t'], myCert)
+                        a['app'].set('cert', myCert)
 
     def set_lem_based_on_db_2elements(self, a):
         ''' This manages two cases:
@@ -701,6 +773,16 @@ class treeWithAppElements:
                and (r['where'] == a['where']
                     # ...or the DB decision is to be applied in all cases
                     or r['where'] == 'all')):
+
+                ################################
+                # Set @type and @cert of <app> #
+                ################################
+
+                my_app_type = self.app_types_abbr[r['app_type']]
+                # Better not use namespaces when setting TEI attributes!
+                # substantial_app.set('{%s}cert' % ns['t'], 'high')
+                a['app'].set('type', my_app_type)
+                a['app'].set('cert', 'high')
 
                 ############################
                 # Set <lem> and <rdg> tags #
@@ -778,6 +860,16 @@ class treeWithAppElements:
                and (r['where'] == a['where']
                     # ...or the DB decision is to be applied in all cases
                     or r['where'] == 'all')):
+
+                ################################
+                # Set @type and @cert of <app> #
+                ################################
+
+                my_app_type = self.app_types_abbr[r['app_type']]
+                # Better not use namespaces when setting TEI attributes!
+                # substantial_app.set('{%s}cert' % ns['t'], 'high')
+                a['app'].set('type', my_app_type)
+                a['app'].set('cert', 'high')
 
                 ############################
                 # Set <lem> and <rdg> tags #
