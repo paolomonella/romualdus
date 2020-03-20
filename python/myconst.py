@@ -15,6 +15,7 @@ simplifiedsuffix = '-simple'
 juxta_par_and_sigla_suffix = '-par'  # outdated?
 juxta_par_suffix = '-par'
 juxta_sigla_suffix = '-sigla'
+update_db_tempfile = 'record.txt'
 
 
 # Metatext markers

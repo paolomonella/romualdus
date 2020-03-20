@@ -41,8 +41,9 @@ if pre:
     sort_a2.sort_a2(quiet=quiet)
 
     # Split bonetti.xml and a2-sorted.xml for JuxtaCommons collation
-    splitter.second_half_splitter('bonetti', 'alfa', 'bravo', 'charlie')
-    splitter.second_half_splitter('a2-sorted', 'alfa', 'bravo', 'charlie')
+    splitter.second_half_splitter('bonetti', '2-alfa', '2-bravo', '2-charlie')
+    splitter.second_half_splitter('a2-sorted', '2-alfa', '2-bravo',
+                                  '2-charlie')
 
     # entitize.py
     for f in iglob('%s*.xml' % (xmlpath)):

@@ -198,7 +198,7 @@ class treeWithAppElements:
                 'msoText' = the text (string) of the variant of MS O
                     (corresp. to msoSiglum)
                 'conjText' = the text (string) of my conjecture
-                'where' = the xml:id of the parent <p>
+                'xmlid' = the xml:id of the parent <p>
         '''
 
         # This will become a list of dictionaries:
@@ -318,8 +318,8 @@ class treeWithAppElements:
             app_struct = ''
 
             # Find out in which <p> we are
-            # where = app.getparent().get('{%s}id' % ns['xml'])
-            where = self.parent_xmlid(app)
+            # xmlid = app.getparent().get('{%s}id' % ns['xml'])
+            xmlid = self.parent_xmlid(app)
 
             # These are the xmlids of the paragraphs for
             # which I collated 3 sources (print, A/A2 and O)
@@ -328,7 +328,7 @@ class treeWithAppElements:
                 if r['chunk'] == '2-bravo']
 
             # If we are not in the chunk in which I collated 3 sources:
-            if where not in pars_with_triple_collation:
+            if xmlid not in pars_with_triple_collation:
                 app_struct = '2elements2variants'
             # If we are in that chunk, there must be 3 variants
             # (1. print, 2. A or A2, 3. O)
@@ -352,7 +352,7 @@ class treeWithAppElements:
                                '{%s}id' % ns['xml'])))
 
             if debug:
-                print(where, app_struct, end=' | ')
+                print(xmlid, app_struct, end=' | ')
 
             ################################
             # Create the output dictionary #
@@ -392,7 +392,7 @@ class treeWithAppElements:
             # Set additional keys in dictionary myComp. See the documentation
             # of this method above for details.
             myComp['app'] = app
-            myComp['where'] = where
+            myComp['xmlid'] = xmlid
             myComp['appStruct'] = app_struct
             myComp['printReading'] = printReading
             myComp['msaReading'] = msaReading
@@ -712,9 +712,9 @@ class treeWithAppElements:
                and r['ms'] == my_non_print_text
 
                # and we are in the right <p>...
-               and (r['where'] == a['where']
+               and (r['xmlid'] == a['xmlid']
                     # ...or the DB decision is to be applied in all cases
-                    or r['where'] == 'all')):
+                    or r['xmlid'] == 'all')):
 
                 ################################
                 # Set @type and @cert of <app> #
@@ -771,7 +771,7 @@ class treeWithAppElements:
                        r['ms'],
                        a['printText'],
                        a['msaText'],
-                       a['where']))
+                       a['xmlid']))
 
     def set_lem_based_on_db_3elements(self, a):
 
@@ -799,9 +799,9 @@ class treeWithAppElements:
                and r['mso'] == a['msoText']
 
                # and we are in the right <p>...
-               and (r['where'] == a['where']
+               and (r['xmlid'] == a['xmlid']
                     # ...or the DB decision is to be applied in all cases
-                    or r['where'] == 'all')):
+                    or r['xmlid'] == 'all')):
 
                 ################################
                 # Set @type and @cert of <app> #
@@ -856,7 +856,7 @@ class treeWithAppElements:
                                ' \nThe print reading is <{}> {}'
                                ' \nwith text «{}»\n').format(
                                    self.juxtaSiglum,
-                                   a['where'],
+                                   a['xmlid'],
                                    etree.QName(a['app']).localname,
                                    a['app'].attrib,
                                    my_correct_ms_text,
