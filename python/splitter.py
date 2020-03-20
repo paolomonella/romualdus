@@ -91,31 +91,6 @@ def populate_db_table_with_mso_paragraphs():
         connection.close()
 
 
-def checker():
-
-    table = import_table(dbpath, dbname, 'collation_chunks_new')
-    for t in table:
-        if ((t['xmlid'] != t['in_a'])):
-            print(t['xmlid'])
-
-
-def populate_db_table_with_paragraphs(siglum):
-
-    in_file = '%s%s.xml' % (xmlpath, siglum)
-    tree = etree.parse(in_file)
-    pars = tree.findall('.//t:%s' % ('p'), ns)
-    connection = sqlite3.connect('%s%s' % (dbpath, dbname))
-    cur = connection.cursor()
-    sqlite_query = 'INSERT INTO collation_chunks_new(xmlid) VALUES(?);'
-    for p in pars:
-        xmlid = p.get('{%s}id' % ns['xml'])
-        cur.execute(sqlite_query, (xmlid,))
-    connection.commit()
-    cur.close()
-    if (connection):
-        connection.close()
-
-
 def second_half_splitter(siglum_second_half,
                          suffix_pre_o,
                          suffix_with_o,
@@ -128,11 +103,11 @@ def second_half_splitter(siglum_second_half,
         name will be "bonetti-alfa.xml" (with an extra dash) '''
 
     # Import DB table
-    table = import_table(dbpath, dbname, 'collation_chunks')
+    table = import_table(dbpath, dbname, 'paragraphs')
 
     # Check that the three suffixes correspond to the 'chunks'
     # column of the DH table
-    db_chunk_list = [x['chunk'] for x in table if x['chunk'] is not None]
+    db_chunk_list = [x['chunk'] for x in table if x['chunk'] is not '1']
     db_chunk_set = set(db_chunk_list)
     # chunk_list2 = [set(db_chunk_set)]  # Not needed
     if (sorted([suffix_pre_o, suffix_with_o, suffix_post_o]) !=
