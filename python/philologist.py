@@ -42,7 +42,7 @@ class treeWithAppElements:
 
         # Parse the juxtacommons file XML tree:
         self.juxtaTree = etree.parse(self.myJuxtaXmlFile)
-        self.justaBody = self.juxtaTree.find('.//t:%s' % ('body'), ns)
+        self.juxtaBody = self.juxtaTree.find('.//t:%s' % ('body'), ns)
         self.apps = self.juxtaTree.findall('.//t:app', ns)
 
         # Quieter output:
@@ -52,15 +52,15 @@ class treeWithAppElements:
         # be used by a method that will be repeated many times
         self.decisions2 = my_database_import.import_table(
             dbpath,
-            'romualdus.sqlite3',
+            dbname,
             'decisions2')
         self.decisions3 = my_database_import.import_table(
             dbpath,
-            'romualdus.sqlite3',
+            dbname,
             'decisions3')
         self.paragraphs = my_database_import.import_table(
             dbpath,
-            'romualdus.sqlite3',
+            dbname,
             'paragraphs')
 
         # This dictionary will be used by a method that will be
@@ -71,58 +71,6 @@ class treeWithAppElements:
             'p': 'punctuation-type',
         }
 
-    def set_a2_for_additions_old(self):  # Old code §
-        ''' In sections that are additions by hand2, replace wit="a" with
-            wit="a2" '''
-
-        # Import table hand2_additions from DB
-        hand2_additions_table = my_database_import.import_table(
-            dbpath,
-            dbname,
-            'hand2_additions')
-
-        # Create a list with the xml:id's of those <p>s
-        additions_xmlids = [x[0] for x in hand2_additions_table]
-
-        # All <p>s in the XML document
-        pars = self.justaBody.findall('.//t:%s' % ('p'), ns)
-
-        # Find the <p>s that include additions and include
-        # them in list pars_with_addition and put them
-        # in list pars_with_additions
-        pars_with_additions = []
-        additions_count = 0
-        for par in pars:
-            par_xmlid = par.get('{%s}id' % ns['xml'])
-            if par_xmlid in additions_xmlids:
-                additions_count += 1
-                pars_with_additions.append(par)
-
-        if debug:
-            print('found {} pars with adds in {}'.format(
-                self.juxtaSiglum, len(pars_with_additions)))
-
-        # Set wit="#a2" if it was "#a"
-        #
-        # For each <p> with additions in the XML file:
-        for par_with_addition in pars_with_additions:
-            # All <app> children of that <p>:
-            apps_in_par = par_with_addition.findall('.//t:app', ns)
-            for app in apps_in_par:
-                # Get all <rdg> children of <app>
-                rdg_in_app = app.findall('.//t:rdg', ns)
-                # Get all <lem> children of <app>
-                lem_in_app = app.findall('.//t:lem', ns)
-                # All <lem> and <rdg> children of <app>
-                # (they should all be <rdg> in fact)
-                rdg_and_lem_in_app = rdg_in_app + lem_in_app
-                for child in rdg_and_lem_in_app:
-                    child_wit = child.get('wit')
-                    if child_wit == '#a':
-                        # Better not use namespaces when
-                        # setting TEI attributes!
-                        child.set('wit', '#a2')
-
     def set_a2_for_additions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
             wit="a2" '''
@@ -132,7 +80,7 @@ class treeWithAppElements:
                             if x['xmlid'] == 1]
 
         # All <p>s in the XML document
-        pars = self.justaBody.findall('.//t:%s' % ('p'), ns)
+        pars = self.juxtaBody.findall('.//t:%s' % ('p'), ns)
 
         # Find the <p>s that include additions and include
         # them in list pars_with_addition and put them
@@ -651,7 +599,7 @@ class treeWithAppElements:
         # Import table from the DB
         decision_variant_types = my_database_import.import_table(
             dbpath,
-            'romualdus.sqlite3',
+            dbname,
             'decision_variant_types')
 
         for a in self.appdict():
