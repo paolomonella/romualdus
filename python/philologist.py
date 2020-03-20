@@ -373,17 +373,11 @@ class treeWithAppElements:
             # where = app.getparent().get('{%s}id' % ns['xml'])
             where = self.parent_xmlid(app)
 
-            # Import DB table
-            collation_chunks = my_database_import.import_table(
-                dbpath,
-                'romualdus.sqlite3',
-                'collation_chunks')
-
             # These are the xmlids of the paragraphs for
             # which I collated 3 sources (print, A/A2 and O)
             pars_with_triple_collation = [
-                r['xmlid'] for r in collation_chunks
-                if r['chunk'] == 'bravo']
+                r['xmlid'] for r in self.paragraphs
+                if r['chunk'] == '2-bravo']
 
             # If we are not in the chunk in which I collated 3 sources:
             if where not in pars_with_triple_collation:
