@@ -149,12 +149,11 @@ if post:
                                                  my_mso_siglum,
                                                  quiet=quiet)
         myTree.set_a2_for_additions()
-        # myTree.find_and_locate_sic_corr()
         myTree.variant_subtypes_count_print()
-        myTree.set_type_and_subtype_in_all_apps()
         myTree.set_all_lems_based_on_subtype()
         myTree.set_all_lems_based_on_db()
         myTree.edit_tei_header()
+        myTree.set_type_and_subtype_xml_attrib_in_all_apps()
         myTree.checkout_checked_paragraphs()
         myTree.put_lem_as_1st_in_app()
         myTree.write()

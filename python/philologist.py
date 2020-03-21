@@ -48,8 +48,7 @@ class treeWithAppElements:
         # Quieter output:
         self.quiet = quiet
 
-        # Import tables from DB (I import them here because they will
-        # be used by a method that will be repeated many times
+        # Import tables from DB:
         self.decisions2 = my_database_import.import_table(
             dbpath,
             dbname,
@@ -62,20 +61,24 @@ class treeWithAppElements:
             dbpath,
             dbname,
             'paragraphs')
+        self.variant_types_and_subtypes = my_database_import.import_table(
+            dbpath,
+            dbname,
+            'variant_types_and_subtypes')
 
-        # These two dictionaries will be used by a method that will be
-        # repeated many times. they expand abbreviations of 'type' and
-        # 'subtype' fields in DB tables
-        self.app_types_abbr = {
-            's': 'substantial-type',
-            'o': 'orthography-type',
-            'p': 'punctuation-type',
-            'u': 'unknown-type'
+        # This dictionary will be used by a method that will be
+        # repeated many times. It expands abbreviations of 'type'
+        # field in DB tables decisions2 and decisions3
+        self.type_expansion = {
+            's': 'substantial',
+            'o': 'orthography',
+            'p': 'punctuation',
+            'u': 'unknown'
         }
-        self.app_subtypes_abbr = {  # To be improved §§§
-            's': 'substantial-subtype',
-            'o': 'orthography-subtype',
-            'p': 'punctuation-subtype',
+        self.subtype_expansion = {
+            's': 'generic-substantial-subtype',
+            'o': 'generic-orthography-subtype',
+            'p': 'generic-punctuation-subtype',
             'u': 'unknown-subtype'
         }
 
@@ -187,8 +190,9 @@ class treeWithAppElements:
                     inherited from function variantComparison()
                 'subtype' = this will become the value of @subtype in <app>
                     (e.g. 'y-subtype'), inherited from method
-                    variantComparison(). The value of @type will be set
-                    later by method set_type_and_subtype_in_all_apps()
+                    variantComparison().
+                    The value of @type will be set only at the end, by method
+                    set_type_and_subtype_xml_attrib_in_all_apps()
                 ...plus new additional keys:
                 'app' = the <app> XML element
                 'printReading' = the <rdg> or <lem> XML element of the
@@ -458,23 +462,6 @@ class treeWithAppElements:
             for x in self.variant_subtypes_count():
                 print('{:5} {:12}'.format(x[1], x[0]))
 
-    def set_type_and_subtype_in_all_apps(self):
-        '''Set @type and @subtype attributes in <app> elements '''
-        if debug:
-            my_subtypes_debug = [c['subtype'] for c in self.appdict()]
-            print('[Debug 07.03.2020] %s' % (set(my_subtypes_debug)))
-        for a in self.appdict():
-            # Better not use namespaces when setting TEI attributes!
-            # a['app'].set('{%s}subtype' % ns['t'], a['subtype'])
-            a['app'].set('subtype', a['subtype'])
-
-            if debug:
-                print('\n')
-                print('«%s» | «%s» %15s @subtype="%s"' %
-                      (a['printText'], a['msaText'], '·', a['subtype']))
-                for k in a:
-                    print('%s: «%s»' % (k, a[k]))
-
     def find_and_locate_sic_corr(self):
         # self.juxtaSiglum, self.printSiglum, self.msaSiglum
         if self.printSiglum == 'g':
@@ -596,14 +583,8 @@ class treeWithAppElements:
         # Decide <lem> and set @cert based on DB
         # table variant_types_and_subtypes:
 
-        # Import table from the DB
-        variant_types_and_subtypes = my_database_import.import_table(
-            dbpath,
-            dbname,
-            'variant_types_and_subtypes')
-
         for a in self.appdict():
-            for myRow in variant_types_and_subtypes:
+            for myRow in self.variant_types_and_subtypes:
 
                 # E.g.: 'different-punct-subtype':
                 if a['subtype'] == myRow['subtype']:
@@ -621,33 +602,6 @@ class treeWithAppElements:
                         my_non_print_rdg = self.find_non_print_child_in_two(
                             a['app'], a['printReading'])
                         self.make_lem(my_non_print_rdg)
-
-                        ''' Old code
-                    elif db_preferredRdg == 'm':
-                        # Choose the reading of MS A, if any:
-                        if a['msaReading'] is not None:
-                            self.make_lem(a['msaReading'])
-                        # If there is a MS A reading, the script will
-                        # skip the other lines. Otherwise (if there
-                        # is no MS A reading),
-                        # choose the reading of MS A2, if any:
-                        elif a['msa2Reading'] is not None:
-                            self.make_lem(a['msa2Reading'])
-                        # If there is no MS A reading and
-                        # no MS A2 reading,
-                        # choose the reading of MS O, if any:
-                        elif a['msoReading'] is not None:
-                            self.make_lem(a['msoReading'])
-                        else:
-                            print(('\n[set_all_lems_based_on_subtype] I should'
-                                   ' choose a reading from a MS, but'
-                                   ' I can\'t find any MS reading in'
-                                   ' the <app> element. This <app>'
-                                   ' has printText «{}» and these'
-                                   ' features: «{}»/').format(
-                                       ' '.join(a['printReading'].itertext()),
-                                       a))
-                        '''
 
                     else:
                         print(('\n[set_all_lems_based_on_subtype] I couln\'t'
@@ -716,35 +670,48 @@ class treeWithAppElements:
                     # ...or the DB decision is to be applied in all cases
                     or r['xmlid'] == 'all')):
 
-                #########################################
-                # Set @type, @subtype and @cert of <app> #
-                #########################################
+                ###################################
+                # Set @subtype and @cert of <app> #
+                ###################################
 
-                my_app_subtype = self.app_subtypes_abbr[r['app_subtype']]
-                # Better not use namespaces when setting TEI attributes!
-                # substantial_app.set('{%s}cert' % ns['t'], 'high')
-                a['app'].set('subtype', my_app_subtype)
+                # Set @type
+                # (DB table decisions2 and decisions3 always have a 'type')
+                expanded_type = self.type_expansion[r['type']]
+                a['app'].set('type', expanded_type)
+
+                # Remove previous @subtype from <app>, if any
+                if 'subtype' in a['app'].attrib:
+                    a['app'].attrib.pop('subtype')
+
+                # Set @subtype
+                # (in most cases DB table decisions2 and decisions3
+                #  won't have a 'subtype')
+                # If there is a subtype in the DB, set it in <app>
+                if r['subtype'] is not None and r['subtype'] is not '':
+                    a['app'].set('subtype', r['subtype'])
+
+                # Set @cert="high"
                 a['app'].set('cert', 'high')
 
                 ############################
                 # Set <lem> and <rdg> tags #
                 ############################
 
-                # 'correct' rdg is in one of the mss
+                # Choose MS reading as 'correct'
                 if r['action'] == 'm':
                     # Make print reading <rdg>
                     self.make_rdg(my_print_rdg)
                     # Make the non-print reading <lem>
                     self.make_lem(my_non_print_rdg)
 
-                # 't' = only change subtype. Print is 'correct', so
+                # Only change subtype. Print is 'correct', so
                 # don't change <lem>/<rdg> (i.e. print reading stays <lem>),
                 # only set @subtype (based on the DB) and set @cert=high
                 # (both things were already done above)
                 elif r['action'] == 't':
                     pass
 
-                # 'correct' rdg is my conjecture
+                # Choose my conjecture as 'correct' reading
                 elif r['action'] == 'conj':
 
                     # Make print reading <rdg>
@@ -768,7 +735,7 @@ class treeWithAppElements:
                     print(('[philologist.py/set_lem_based_on_db_2elements] '
                            'I don\'t understand the «{}» field '
                            'in the DB record for app {} {}. ').format(
-                               r['subtype'], a['app'], a['app'].attrib))
+                               r['action'], a['app'], a['app'].attrib))
 
         # Debug
         if not self.quiet:
@@ -813,14 +780,27 @@ class treeWithAppElements:
                     # ...or the DB decision is to be applied in all cases
                     or r['xmlid'] == 'all')):
 
-                ################################
+                ###################################
                 # Set @subtype and @cert of <app> #
-                ################################
+                ###################################
 
-                my_app_subtype = self.app_subtypes_abbr[r['app_subtype']]
-                # Better not use namespaces when setting TEI attributes!
-                # substantial_app.set('{%s}cert' % ns['t'], 'high')
-                a['app'].set('subtype', my_app_subtype)
+                # Set @type
+                # (DB table decisions2 and decisions3 always have a 'type')
+                expanded_type = self.type_expansion[r['type']]
+                a['app'].set('type', expanded_type)
+
+                # Remove previous @subtype from <app>, if any
+                if 'subtype' in a['app'].attrib:
+                    a['app'].attrib.pop('subtype')
+
+                # Set @subtype
+                # (in most cases DB table decisions2 and decisions3
+                #  won't have a 'subtype')
+                # If there is a subtype in the DB, set it in <app>
+                if r['subtype'] is not None and r['subtype'] is not '':
+                    a['app'].set('subtype', r['subtype'])
+
+                # Set @cert="high"
                 a['app'].set('cert', 'high')
 
                 ############################
@@ -896,11 +876,57 @@ class treeWithAppElements:
                 # 42 cases
                 self.set_lem_based_on_db_3elements(a)
 
+    def set_type_and_subtype_xml_attrib_in_all_apps(self):
+        ''' Set XML TEI @type and @subtype attributes in
+            <app> elements of the XML file.
+            @subtype will be based on the 'subtype' key in appdict(),
+            @type will be derive from subtype, based on DB table
+            variant_types_and_subtypes.
+            This method applies only if <app> (i.e. a['app']) does
+            not have a @type (and possibly also @subtype) already set by
+            methods such as set_lem_based_on_db_2elements.
+            '''
+        # Read DB table variant_types_and_subtypes and create
+        # a dict corresponding_type looking like:
+        # {'y-subtype': 'ortographic,
+        # 'different-punct-subtype': 'punctuation'} etc.
+        corresponding_type = {}
+        for r in self.variant_types_and_subtypes:
+            my_subtype = r['subtype']
+            my_type = r['type']
+            corresponding_type[my_subtype] = my_type
+        if debug:
+            print('\n---\n')
+            for x in corresponding_type:
+                print('«{}»\t→\t«{}»'.format(x, corresponding_type[x]))
+
+        for a in self.appdict():
+            # <app> has @type only if it has been set by a method
+            # such as set_lem_based_on_db_2elements. It that's the
+            # case, @type (and possibly also @subtype, if present in
+            # the decisions2 or decisions3 DB table) has/have been set
+            # by that method, so don't set them here.
+            # If, instead, there is no @type...
+            if 'type' not in a['app'].attrib:
+                # Set @subtype
+                a['app'].set('subtype', a['subtype'])
+                # ...and the corresponding @type derived from DB table
+                # variant_types_and_subtypes
+                my_type = corresponding_type[a['subtype']]
+                a['app'].set('type', my_type)
+
+            if debug:
+                print('\n')
+                print('«%s» | «%s» %15s @subtype="%s"' %
+                      (a['printText'], a['msaText'], '·', a['subtype']))
+                for k in a:
+                    print('%s: «%s»' % (k, a[k]))
+
     def checkout_checked_paragraphs(self):
         ''' For all paragraphs that in table 'paragraphs' of the DB
             have 'checked'=1, in <app>s
             - set cert to high for all
-            - set type (and subtype)??? to unknown # §§§
+            - set unknown(e 3elem3variants) subtype??? to ??? # §§§
             '''
         # @subtypes of <app> that have to change
         # temp_subtypes = ['unknown-subtype']
@@ -908,7 +934,8 @@ class treeWithAppElements:
         pars = [x['xmlid'] for x in self.paragraphs if x['checked'] == 1]
         for a in self.appdict():
             if a['xmlid'] in pars:
-                print(a['app'].attrib, a['printText'])
+                if debug:
+                    print(a['app'].attrib, a['printText'])
                 a['app'].set('cert', 'high')
 
     def put_lem_as_1st_in_app(self):

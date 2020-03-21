@@ -11,10 +11,14 @@ from myconst import dbpath
 
 debug = False
 
-# Import table of diff subtypes and subtypes from DB #
-diff_subtypes = my_database_import.import_table(dbpath,
-                                                'romualdus.sqlite3',
-                                                'diff_subtypes')
+# Import table of diff subtypes and subtypes from DB # §
+variant_types_and_subtypes = my_database_import.import_table(
+    dbpath,
+    'romualdus.sqlite3',
+    'variant_types_and_subtypes')
+diff_subtypes = [v for v in variant_types_and_subtypes
+                 if (v['diff1'] is not None and
+                     v['diff2'] is not None)]
 
 #######################
 # All other functions #
