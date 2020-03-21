@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE TEI SYSTEM "romualdus.dtd" [
+<!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
+<!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
+<!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
+<!ENTITY bl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#b"/>'>
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+
+
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Romualdi Salernitani Chronicon, codex A</title>
+        <editor xml:id="pm">Paolo Monella</editor>
+      </titleStmt>
+      <publicationStmt>
+        <p>Encoding experiments</p>
+      </publicationStmt>
+      <sourceDesc>
+      <listBibl>
+          <msDesc xml:id="a">
+              <msIdentifier>
+                  <settlement>Biblioteca Apostolica Vaticana</settlement>
+                  <idno>Vat. lat. 3973</idno>
+                </msIdentifier>
+            </msDesc>
+                 <biblStruct xml:id="g">
+                <monogr>
+                    <author>Guarna, Romualdus</author>
+                    <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+                    <editor>Garufi, Carlo Alberto</editor>
+                    <imprint>
+                        <publisher>S. Lapi</publisher>
+                        <date>1914</date>
+                        <pubPlace>Città di Castello</pubPlace>
+                    </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Rerum italicarum scriptores: Nuova edizione</title>
+                        <biblScope unit="volume">7</biblScope>
+                                        <biblScope unit="part">1</biblScope>
+                </series>
+                <note>Garufi's edition was the collation base until paragraph g163.6-163.7.</note>
+            </biblStruct>
+            <biblStruct xml:id="b">
+                <monogr>
+                    <author>Guarna, Romualdus</author>
+                    <title>Romualdo II Guarna, Chronicon</title>
+                    <idno type="ISBN">9788883090561</idno>
+                    <editor>Bonetti, Cinzia</editor>
+                    <imprint>
+                        <publisher>Avagliano</publisher>
+                        <date>2001</date>
+                        <pubPlace>Salerno</pubPlace>
+                    </imprint>
+                    </monogr>
+                    <series>
+                        <title level="s">Schola Salernitana. Studi e testi</title>
+                        <biblScope unit="volume">6</biblScope>
+                    </series>
+                    <note>Bonetti's edition was the collation base for the collation from (and including)
+                        paragraph g163.6-163.7.</note>
+            </biblStruct>
+            </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl xml:id="algl">
+        <p>Paragraph encoded at the Graphematic and Alphabetic layers.</p>
+      </editorialDecl>
+      <editorialDecl xml:id="al">
+        <p>Paragraph encoded at the Alphabetic Layer only.</p>
+      </editorialDecl>
+      <editorialDecl xml:id="al2">
+        <p>Paragraph encoded at the Alphabetic Layer, main variants only.</p>
+      </editorialDecl>
+      <editorialDecl xml:id="ocr">
+        <p>This is the OCR-ed text from Garufi: the collation on the manuscript has not yet been done.</p>
+      </editorialDecl>
+      <editorialDecl>
+        <quotation marks="none">
+          <p>The manuscript does not have quotation marks.
+                        Some passages (direct speech or epistle quotations) are marked up with 
+                        'said', without quotation marks.</p>
+          <p>Quotations from literary works are marked up with 'quote'.
+                        When present, @type="biblia" means that it is a biblical quote, according 
+                        to the "Manuale di codifica dei testi ALIM in TEI XML" in 
+                        http://it.alim.unisi.it/documentazione/.
+                        @type="liturgia" means that the quote comes from the Catholic liturgy.</p>
+        </quotation>
+      </editorialDecl>
+      <tagsDecl>
+        <namespace name="http://www.tei-c.org/ns/1.0">
+          <tagUsage gi="add">
+              <list>
+                  <item>When it has @type="subst" (and it is child of 'subst' and sibling of 'del') it is meant to 
+                            substitute the textual portion marked with 'del'. Otherwise, it represents 
+                            an addition to the text.</item>
+                  <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
+                            is responsible for the textual modification.
+                            If another hand is responsible, a @hand attribute is provided.</item>
+                  <item>Possible values for @hand: "hand2", "#uhand" (unknown hand).</item>
+                  <item>Possible values for @place: "marginandfooter", "footer", "strikeover", "margin",
+                      "inline", "above", "addedfolios", "nextline".</item>
+              </list>
+          </tagUsage>
+          <tagUsage gi="anchor">
+                            See above the note on the usage of 'link'.
+                            Like 'link', also 'anchor' has @type="transposition".
+                            Element 'anchor' has the same values of @subtype as the 
+                            'link' that points to it:
+                            it marks the point of the text at which a paragraph is collocated 
+                            <list>
+                                <item>by both the editions of Garufi and Bonetti 
+                                    (if @subtype="garufiandbonetticollocation"),</item>
+                                <item>by Garufi only (if @subtype="garuficollocation"), or</item>
+                                <item>by Bonetti only (if @subtype="bonetticollocation")</item>
+                            </list>
+                    </tagUsage>
+          <tagUsage gi="del">
+              <list>
+                        <item>It is used either alone for a passage deleted and 
+                            not substituted by the scribe,or in combination 
+                            with 'subst' and 'add'.</item>
+                        <item>Possible values for @rend: "rasura", "strikeout";
+                            when used with 'subst' and 'add',
+                            also "metamark" (when a scribe wrote a metamark such as an asterisk 
+                            above the original text as a pointer towards a correction added in margin),
+                            "nomark" (when the correction is simply rewritten on the original glyphs 
+                            or the correction is made by deleting a part of a glyph), and "glyphmodification"
+                            (when a scribe transforms a glyph to another glyph by erasing a part of it).</item>
+                        <item>If no @hand attribute is provided, it is implied that the the main hand of the manuscript 
+                            is responsible for the textual modification.
+                            If another hand is responsible, a @hand attribute is provided.</item>
+                    </list>
+          </tagUsage>
+          <tagUsage gi="hi">
+              Used to mark up words capitalized in the print edition, but not constituting 
+              proper noun, such as "Sed" at the beginning of a sentence.
+          </tagUsage>
+          <tagUsage gi="link">
+                            With @type="transposition", it links a paragraph (first teidata.pointer 
+                            in the value) of the manuscript text to an 'ancho'r 
+                            (second teidata.pointer in the value)
+                            marking the point of the text in which that paragraph is collocated 
+                            <list>
+                                <item>by both the editions of Garufi and Bonetti 
+                                    (if @subtype="garufiandbonetticollocation"),</item>
+                                <item>by Garufi only 
+                                    (if @subtype="garuficollocation"), or</item>
+                                <item>by Bonetti only (if @subtype="bonetticollocation")</item>
+                            </list>
+                    </tagUsage>
+          <tagUsage gi="milestone">
+                            <list>
+                                <item>With @type="bonetti_is_collation_exemplar_from_here_on"
+                                    it marks the point of the text rom which I used the file with 
+                                    the OCR of the Bonetti edition as a collation base.
+                                    Before that point, I had used the OCR 
+                                    of the Garufi edition as base.</item>
+                                <item>With @type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" and @ed="#b"
+                                    it is put at a point of the text 
+                                    in which Garufi has a paragraph break but Bonetti does not.</item>
+                                <item>With @type="bonetti-paragraph-break" and @ed="#b" it is put 
+                                    at a point of the text in which Bonetti has a paragraph break but 
+                                    Garufi does not.</item>
+                            </list>
+                    </tagUsage>
+          <tagUsage gi="note">
+                            With @resp="#pm" (Paolo Monella) or @resp="#b" (Bonetti edition):
+                            <list>
+                                <item>With @type="graphic": note on glyphs or graphemes.</item>
+                                <item>With @type="segmentation": note on the text segmentation 
+                                    (arrangement of paragraphs or missing paragraphs).</item>
+                                <item>With @type="textcrit": note on textual critical matters.</item>
+                            </list>
+                            With @resp="#b" (Bonetti edition):
+                            <list>
+                                <item>With @type="content": note on the text content.</item>
+                                <item>With @type="year": note on the year in which a fact actually 
+                                    happened, according to C. Bonetti.</item>
+                            </list>
+                            With @resp="#hand2" (the hand from the XVII century):
+                            <list>
+                                <item>With @type="etcetera": a note handwritten by hand2 on the manuscript 
+                                    reporting the first words of the portion of the text that is supposed 
+                                    to follow a marginal or footer addition by hand2.
+                                    The note normally ends with "et cetera…"</item>
+                                <item>With @type="sanctipetri": a note handwritten by hand2 on the manuscript 
+                                    saying that a marg or footer note has been taken by manuscript 
+                                    ("codex sancti Petri").</item>
+                                <item>With @type="textcrit": note on textual critical matters.</item>
+                            </list>
+            </tagUsage>
+            <tagUsage gi="soCalled">
+                        Exclusively used in cases such as: Sanctum Nicolaum, qui dicitur "ad litus".
+                    </tagUsage>
+            <tagUsage gi="title">
+                        Sometimes a  title consists in the first words of a hymn, such as "te deum laudamus".
+                    </tagUsage>
+        </namespace>
+      </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
+          <p>In the context of this edition, private URIs with 
+                        the prefix "vat" point to a specific page of external 
+                        PDF file vat.lat.3973.pdf, including the digital images 
+                        of the A manuscript. For example, "vat:29"
+                        dereferences to "img/vat.lat.3973.pdf#page=29".</p>
+        </prefixDef>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <handNotes>
+        <handNote xml:id="hand2">
+                <p>A part of the text was missing from manuscript A, so two additional folios were added 
+                    at a much later time, probably in the XVII century, and then numbered as 204 and 205.</p>
+                <p>A marginal note at the top right corner of folio 204r says: "hae duo paginae, quae hic deerant,
+                    desumptae sunt de codices Petri de Urbe".</p>
+                <p>So pages 204r, 204v, 205r, 205v do not constitute a witness of the text of codex A. 
+                    Still, I am transcribing their text here for completeness.</p>
+                <p>This hand is also responsible for corrections and additions passim in the manuscript.</p>
+                <p>Also this hand has a glyph for the 'e caudatum'. Since this is an alphabetic (not 
+                    graphematic )transcription, I am encoding it with its alphabetic correspondent 'ae'
+                    and marking those 'ae' alphabemes with seg ana="#ae".</p>
+        </handNote>
+        <handNote xml:id="uhand">
+                <p>Unknown hand.</p>
+        </handNote>
+      </handNotes>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <p xml:id="b062heading" decls="#al"/> 
+
+<p xml:id="g163.6-163.7" decls="#al">
+<pb n="62" ed="#b"/> 
+&bl;<hi>anni</hi> domini <num value="894">dccc<choice><orig>xc</orig><reg type="numeral">lxxxx</reg></choice><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>primus</hi> <rs>guaymarius</rs> 
+&bl;suscepit principatum in <rs>salerno</rs>, et regnauit annis <num value="39">xxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. 
+</p>
+
+
+<p xml:id="g163.8-163.10" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="902"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>ii</num>. <hi>urbs</hi> 
+&bl;<rs>tauromenis</rs> a <rs>sarracenis</rs> capta est. <hi>eodem</hi> anno in nocte uisi 
+&bl;sunt igniculi in modum stellarum per aera discurrentes: qua 
+&bl;nocte rex <rs>africe</rs> residens <pb n="195v" facs="vat:221" ed="#a"/>super <rs>consentiam</rs> <rs>calabrie</rs> ciuitatem, 
+&bl;<rs>dei</rs> iudicio, mortuus est. 
+</p>
+
+
+<p xml:id="g163.11-164.9" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="906"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>ui</num>. <rs>carolus</rs> <rs>francorum</rs> 
+&bl;rex qui <rs>simplex</rs> est dictus, obiit anno regni eius <num value="27">xxuii</num>, post 
+&bl;cuius mortem quidam <rs>rodulfus</rs>, annitente <rs>robberto</rs> principe, 
+&bl;regnum <rs>francorum</rs> arripuit iniuste tenuitque annis <num value="13">xiii</num>. <hi>sub</hi> hoc 
+&bl;itaque <rs>rodulfo</rs> <rs>ugo</rs> <rs>robberti</rs> filius post patris obitum nomen 
+&bl;<rs>abbatis</rs> sumpsit. <hi>mortuo</hi> autem rege <rs>rodulfo</rs> <rs>ludouicus</rs> <rs>caroli</rs> 
+&bl;<rs>simplicis</rs> filius transactis puerilibus annis est iure unctus in 
+&bl;regem. <hi>post</hi> hec <rs>francorum</rs> proceres instinctu <rs>ugonis</rs> <rs>abbatis</rs> 
+&bl;rebellauerunt contra regem <rs>ludouicum</rs>. <hi>et</hi> ipso anno facta est 
+&bl;fames ualida per totum regnum <rs>francorum</rs> ita ut modius fru&bd;menti 
+uenumdaretur solidos <num value="24">xx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. <hi>eodem</hi> quoque anno mense 
+&bl;<hi>maio</hi> sanguis pluit super operarios. <hi>hac</hi> itaque tempestate <rs>otto</rs> 
+&bl;non tam suggestione <rs>saxonum</rs> quam et quorumdam faccione 
+&bl;<rs>francorum</rs>, maxime quidem <rs>ugonis</rs> <rs>abbatis</rs>, unctus est in regem 
+&bl;<rs>saxonie</rs>. <hi>interea</hi> apud <rs>constantinopolim</rs> mortuis <rs>leone</rs> et <rs>ale&bd;xandro</rs> 
+imperatoribus <rs>constantinus</rs> eiusdem <rs>leonis</rs> filius susce&bd;pit 
+imperium, regnauitque annis sex. 
+</p>
+
+
+<p xml:id="g164.10-164.11" decls="#al"> 
+&bl;<hi>anni</hi> domini <num value="913"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xiii</num>, defuncto <rs>constantino</rs> imperatore 
+&bl;<rs>romano</rs>, <rs>heliopolitanus</rs> <rs>constantinopolitanum</rs> suscepit impe&bd;rium 
+tenuitque annis <num value="25">xxu</num>. 
+</p>
+
+
+<p xml:id="g164.12-164.19" decls="#al"> 
+<pb n="64" ed="#b"/> 
+&bl;<hi>inter</hi> hec <rs>formosus</rs> <pb n="169r" facs="vat:221" ed="#a"/><rs>romane</rs> sedis episcopus moritur et suc&bd;cessit 
+ei <rs>bonifacius</rs>, sedit annis <num value="12">xii</num>. <hi>quo</hi> defuncto <rs>stephanus</rs> ei 
+&bl;successit in sede pontificali; qui post anno <num value="1">i</num> et mensibus <num value="2">ii</num> 
+&bl;uita decedens sedem dereliquit <rs>romano</rs> episcopo qui sedit men&bd;sibus 
+<num value="3">iii</num>. <hi>defuncto</hi> autem <rs>romano</rs> <rs>theodorus</rs> sedit dies <num value="20">xx</num>. <hi>post</hi> 
+&bl;hec uero <rs>iohannes</rs> sedit annis <num value="2">ii</num>. <hi>cui</hi> successit <rs>benedictus</rs> papa 
+&bl;qui sedit annis <num value="3">iii</num>. <hi>huic</hi> successit <rs>leo</rs> et sedit mense <num value="1">i</num>. <hi>post</hi> 
+&bl;quem <rs>chistoforus</rs> mensibus <num value="6">ui</num> sedit. <hi>hic</hi> eiectus de papatu mo&bd;nachus 
+factus est, et <rs>sergius</rs> in sede pontificali constitutus qui 
+&bl;sedit annis <num value="7">uii</num> mensibus <num value="3">iii</num>. <hi>post</hi> cuius obitum <rs>anastasius</rs> 
+&bl;sedit annis <num value="2">ii</num> mensibus <num value="2">ii</num>. 
+</p>
+
+
+<p xml:id="g164.19-164.25" decls="#al"> 
+<milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
+&bl;<hi>eodem</hi> anno <rs>landulfus</rs> princeps <rs>beneuenti</rs> preliatus est cum 
+&bl;<rs>ursileone</rs> patricio <rs>grecorum</rs> in <rs>apulia</rs> eumque uicit. <hi>at</hi> uero in 
+&bl;<rs>gallia</rs> <rs>ludouicus</rs> <rs>francorum</rs> rex captus est a <rs>nordmannis</rs> dolo 
+&bl;<rs>ugonis</rs> <rs>abbatis</rs>, qui postea dictus est <rs>magnus</rs>, multis <rs>francorum</rs> 
+&bl;interfectis, qui rex totum tempus uite sue plenum ducens angu&bd;stiarum 
+et tribulationum diem clausit extremum anni domini 
+&bl;<num value="922"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxii</num>, sepultusque <rs>remis</rs> in basilica <rs>sancti remigii</rs>. <hi>hic</hi> 
+&bl;autem duos liberos superstites reliquit, <rs>lotharium</rs> atque <rs>caro&bd;lum</rs>, 
+quos ex <rs>giberga</rs> <rs>ottonis</rs> <rs>saxonum</rs> regis sorore genuerat. 
+&bl;<hi>defuncto</hi> igitur <rs>ludouico</rs> <rs>lotharius</rs> filius eius adhuc iuuenis 
+&bl;unctus est in regem <rs>remis</rs> et <rs>ugo</rs> <rs>magnus</rs> dux eius factus est. 
+</p>
+
+
+<p xml:id="g165.1-165.3" decls="#al"> 
+&bl;<hi>anni</hi> domini <num value="923"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxiii</num> <pb n="196v" facs="vat:222" ed="#a"/><rs>anastasio</rs> papa defuncto, dando 
+&bl;<rs>romanum</rs> suscepit pontificatum seditque mensibus <num value="6">ui</num>. <hi>quo</hi> de&bd;functo 
+<rs>iohannes</rs> sedem papalem sedit annis <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> mensibus <num value="2">ii</num>. 
+</p>
+
+
+<p xml:id="g165.4-165.7" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="926"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxui</num>, uenerunt <rs>sclaui</rs> 
+&bl;in <rs>apuliam</rs> et ciuitatem <rs>sipontum</rs> hostili direptione et gladio 
+&bl;uastauerunt. <hi>non</hi> post multum uero temporis <rs>ungri</rs> uenerunt in 
+&bl;<rs>apuliam</rs> et capta <rs>aerea</rs> ciuitate ceperunt <rs>tarentum</rs>. <hi>dehinc</hi> <rs>cam&bd;paniam</rs> 
+ingressi non modicam ipsius prouincie partem igni ac 
+&bl;direptioni dederunt. 
+</p>
+
+
+<p xml:id="g165.8-165.9" decls="#al"> 
+&bl;<hi>anni</hi> <rs>domini</rs> <num value="933"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxxiii</num>, alius <rs>gisolfus</rs> 
+&bl;factus est princeps in <rs>salerno</rs> uixitque in principatu annis 
+&bl;<num value="48">xluiii</num>. 
+</p>
+
+
+<p xml:id="g165.10-166.2" decls="#al"> 
+&bl;<hi>anni</hi> <rs>domini</rs> <num value="939"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxx<choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>, <rs>constantinus</rs> 
+&bl;cum filio <rs>constantino</rs> apud <rs>constantinopolim</rs> post <rs>romano</rs> <rs>he<pb break="no" n="66" ed="#b"/>&bd;liopolitanum</rs> 
+&bl;cepit imperare, regnaueruntque annis <num value="16">xui</num>. <hi>post</hi> 
+&bl;quos filius eiusdem <rs>constantini</rs> <rs>romano</rs> cum filio suo <rs>basilio</rs> an&bd;nis 
+<num value="3">iii</num> imperauit, et post eos <rs>niceforus</rs> imperauit annis <num value="6">ui</num>. <hi>his</hi> 
+&bl;autem temporibus <rs>ungri</rs> secundo ingressi sunt in <rs>apuliam</rs> eam&bd;que 
+optinuerunt annis <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. 
+</p>
+
+
+<p xml:id="g166.3-166.8" decls="#al"> 
+&bl;<hi>inter</hi> hec quoque <rs>iohanne</rs> papa defuncto, <rs>leo</rs> papa sedit mensibus 
+&bl;<num value="6">ui</num>. <hi>cui</hi> successit <rs>stephanus</rs> qui sedit annis <num value="2">ii</num> mense <num value="1">i</num>. <hi>huic</hi> uero 
+&bl;<rs>iohannes</rs> successit et sedit annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> mensibus <num value="10">x</num>. <hi>hic</hi> autem fuit 
+&bl;filius <rs>sergii</rs> pape. <hi>igitur</hi> <rs>iohanni</rs> successit <rs>leo</rs> qui sedit annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> 
+&bl;mensibus <num value="6">ui</num>. <hi>post</hi> quem <rs>stephanus</rs> sedit <pb n="197r" facs="vat:222" ed="#a"/>annis <num value="3">iii</num> mensibus <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
+&bl;<hi>cui</hi> <rs>marinus</rs> successit seditque in pontificatu <rs>romano</rs> annis <num value="3">iii</num> 
+&bl;mensibus <num value="6">ui</num>. <hi>quo</hi> uita decedente <rs>agapitus</rs> sedit annis <num value="10">x</num> mensi&bd;bus 
+<num value="7">uii</num>. <hi>huic</hi> itaque <rs>iohannes</rs> successit, sedit annis nouem men&bd;sibus 
+tribus. 
+</p>
+
+
+<p xml:id="g166.9-166.25" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="954"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>l<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, corpus beati <rs>ma&bd;thei</rs> 
+apostoli et euangeliste de <rs>pestana</rs> ciuitate <rs>bricie</rs> in <rs>saler&bd;num</rs> 
+translatum est, principante tunc in eadem ciuitate <rs>gisulfo</rs>. 
+&bl;<hi>at</hi> uero in <rs>gallia</rs> <rs>carolus</rs> frater <rs>lotharii</rs> <rs>francorum</rs> regis euo 
+&bl;iunior priuatis in rebus senuit. <hi>fuerant</hi> autem <rs>ugoni</rs> <rs>magno</rs> filii 
+&bl;<rs>otto</rs> et <rs>ugo</rs> atque <rs>enricus</rs>, nati ex filia <rs>ottonis</rs> regis <rs>saxonum</rs>. 
+&bl;<hi>defuncto</hi> itaque <rs>ugone</rs> <rs>magno</rs>, successit ei <rs>otto</rs> filius eius qui 
+&bl;non post multum temporis mortuus est, et <rs>ugo</rs> frater eius effec&bd;tus 
+est dux <rs>francorum</rs> regis, <rs>enricus</rs> quoque effectus est dux regis 
+&bl;<rs>burgundionum</rs>. <hi>non</hi> post multos uero dies <rs>lotharius</rs> rex <rs>fran&bd;corum</rs> 
+congregans exercitum ualde copiosum renouauit in di&bd;cione 
+sua <rs>lotharium</rs> regnum. <hi>quod</hi> audiens <rs>otto</rs> <rs>saxonum</rs> rex 
+&bl;qui <rs>aquisgrani</rs> tunc commanebat, relicto palatio quod sibi uen&bd;dicauerat, 
+fugiit. <hi>post</hi> hec <rs>otto</rs> rex congregans exercitum suum 
+&bl;uenit <rs>parisius</rs>, ubi interfectus est nepos illius cum aliis quam plu&bd;ribus 
+ad portam ciuitatis, incenso suburbio illius. <rs>lotharius</rs> igitur 
+&bl;rex tribus diebus et tribus noctibus constanter <pb n="197v" facs="vat:223" ed="#a"/>persequens illos 
+&bl;usque ad fluuium qui fluit iuxta <rs>ardennam</rs>, interfecta hostium 
+&bl;multitudine cum uictoria in <rs>franciam</rs> reuersus est. <hi>post</hi> hec non 
+&bl;apposuit ultra <rs>otto</rs> rex ut ueniret in <rs>franciam</rs>. 
+<pb n="68" ed="#b"/> 
+&bl;<hi>in</hi> ipso autem anno <rs>lotharius</rs> rex consilio <rs>ugonis</rs> ducis sui 
+&bl;pacificatus est cum <rs>ottone</rs> rege <rs>remis</rs> ciuitate, deditque <rs>lotha&bd;rius</rs> 
+rex <rs>ottoni</rs> regi in beneficio <rs>lotharium</rs> regnum in anno. anno do&bd;minice 
+incarnationis <num value="963"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxiii</num>.
+</p>
+
+
+<p xml:id="g167.1-167.3" decls="#al"> 
+&bl;<hi>sequente</hi> uero anno <note resp="#b" type="year">sed 962</note> idem <rs>otto</rs> <rs>saxonum</rs> rex <rs>ro&bd;mam</rs> 
+uenit nobiliter cum exercitu et a <rs>iohanne</rs> papa coronatus 
+&bl;est, accipiens ab eo totius <rs>italie</rs> uexillum cum imperii dignitate, 
+&bl;professus iureiurando seruare fidem <rs>romane</rs> ecclesie. <hi>ex</hi> tunc 
+&bl;itaque <rs>otto</rs> rex appellatus est imperator. 
+</p>
+
+
+<p xml:id="g167.4-168.4" decls="#al"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="967"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxuii</num>, hic in <rs>apuliam</rs> 
+&bl;uenit cum exercitu et oppidum <rs>barum</rs> expugnando cepit, cepit&bd;que 
+ciuitatem <rs>bibinum</rs> atque <rs>asculum</rs>, <rs>grecos</rs> expellens. <hi>interea</hi> 
+&bl;apud <rs>constantinopolim</rs> defuncto imperatore <rs>niceforo</rs>, <rs>iohan&bd;nes</rs> 
+cognomento <rs>simiski</rs> tenuit imperium annis <num value="6">ui</num>. <hi>quo</hi> defunc&bd;to 
+<rs>basilius</rs> et <rs>constantinus</rs> filii eius ceperunt imperare ab an&bd;no 
+incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> <note resp="#b" type="year">sed 976</note>, regnaueruntque 
+&bl;annis <num value="55">lu</num>. <hi>at</hi> uero <rs>rome</rs> defuncto <rs>iohanne</rs> papa <rs>benedictus</rs> papa 
+&bl;sedit annis <num value="2">ii</num>, et post eum <rs>leo</rs> sedit annis <num value="6">ui</num> mensibus <num value="11">xi</num>. <hi>hic</hi> a <rs>petro</rs> prefec&bd;to 
+<pb n="198r" facs="vat:223" ed="#a"/>
+<rs>romane</rs> urbis comprehensus et in castello sancti <rs>angeli</rs> retru&bd;sus, 
+deinde in <rs>campaniam</rs> in exilium missus et post menses de&bd;cem 
+<rs>romam</rs> reuersus est, et de persecutoribus eius ab <rs>ottone</rs> 
+&bl;imperatore in urbe <rs>roma</rs> supplicium sumptum est. <hi>iste</hi> quoque 
+&bl;papa <rs>iohannes</rs> coronam posuit imperii <rs>ottoni</rs> imperatori, qui&bd;que 
+accepta corona <rs>aquisgranum</rs> reuersus est.
+<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+&bl;<hi>hic</hi> etiam papa <rs>iohannes</rs> nobilitauit <rs>capuam</rs> archiepiscopa&bd;tu, 
+in qua ciuitate tunc principabatur <rs>pandulfus</rs> cognomento <rs>ca&bd;pudferreus</rs>. 
+<milestone type="bonetti-paragraph-break" unit="paragraph" ed="#b"/> 
+&bl;<hi>eodem</hi> tempore <rs>sarraceni</rs> uenerunt in <rs>apuliam</rs> et expugnaue&bd;runt 
+ciuitatem <rs>grauinam</rs> eamque ceperunt. <hi>hinc</hi> quoque secun&bd;do 
+anno post hec ceperunt ciuitatem <rs>bibinum</rs> ignique combus&bd;serunt. 
+</p>
+
+
+</body>
+  </text>
+</TEI>
