@@ -594,8 +594,6 @@ class treeWithAppElements:
             so this method also works in that case'''
 
         # Decide <lem> and set @cert based on decision_variant_types:
-        if debug:
-            print(self.appdict())
 
         # Import table from the DB
         decision_variant_types = my_database_import.import_table(
@@ -896,6 +894,19 @@ class treeWithAppElements:
             elif app_dict['appStruct'] == '3elements3variants':
                 # 42 cases
                 self.set_lem_based_on_db_3elements(app_dict)
+
+    def checkout_checked_paragraphs(self):
+        ''' For all paragraphs that in table 'paragraphs' of the DB
+            have 'checked'=1, in <app>s
+            - set cert to high for all
+            - set type=unknown-type to type=substantial-type
+            '''
+        # @types of <app> that have to change
+        # temp_types = ['unknown-type']
+        # Get a list with xmlids of checked paragraphes
+        pars = [x['xmlid'] for x in self.paragraphs if x['checked'] == 1]
+        for p in pars:
+            p.set('cert', 'high')
 
     def put_lem_as_1st_in_app(self):
         ''' In the TEI DTD, <lem> must be the first child of <app>.
