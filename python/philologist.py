@@ -69,6 +69,7 @@ class treeWithAppElements:
         self.app_types_abbr = {
             's': 'substantial-type',
             'p': 'punctuation-type',
+            'o': 'orthography-type'
         }
 
     def set_a2_for_additions(self):
@@ -730,16 +731,26 @@ class treeWithAppElements:
                 # Set <lem> and <rdg> tags #
                 ############################
 
-                # The print reading text will always be set to <rdg>
-                self.make_rdg(my_print_rdg)
-
-                if r['type'] == 'm':  # 'correct' rdg is in one of the mss
+                # 'correct' rdg is in one of the mss
+                if r['action'] == 'm':
+                    # Make print reading <rdg>
+                    self.make_rdg(my_print_rdg)
                     # Make the non-print reading <lem>
                     self.make_lem(my_non_print_rdg)
 
-                elif r['type'] == 'conj':  # 'correct' rdg is my conjecture
+                # 't' = only change type. Print is 'correct', so
+                # don't change <lem>/<rdg> (i.e. print reading stays <lem>),
+                # only set @type (based on the DB) and set @cert=high
+                # (both things were already done above)
+                elif r['action'] == 't':
+                    pass
 
-                    # Make also the MS reading <rdg>
+                # 'correct' rdg is my conjecture
+                elif r['action'] == 'conj':
+
+                    # Make print reading <rdg>
+                    self.make_rdg(my_print_rdg)
+                    # Make the MS reading <rdg> too
                     self.make_rdg(my_non_print_rdg)
 
                     # Manifacture a new <lem> element
@@ -820,7 +831,8 @@ class treeWithAppElements:
                 # The print reading will always be set to <rdg>
                 self.make_rdg(my_print_rdg)
 
-                if r['type'] == 'm':  # 'correct' rdg is in one of the mss
+                # 'correct' rdg is in one of the mss
+                if r['action'] == 'm':
 
                     # Identify "correct" MS element and text
                     # based on on the 'lem' column in the decisions3 table
@@ -867,7 +879,8 @@ class treeWithAppElements:
                     # Make the "correct" MS element <lem>
                     self.make_lem(my_correct_ms_rdg)
 
-                elif r['type'] == 'conj':  # 'correct' rdg is my conjecture
+                # 'correct' rdg is my conjecture
+                elif r['action'] == 'conj':
                     # If there will be such a case, I'll write the code for it
                     pass
 
