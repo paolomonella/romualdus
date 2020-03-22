@@ -950,12 +950,19 @@ class treeWithAppElements:
                 if a['app'].get('subtype') == 'unknown-subtype':
                     a['app'].attrib.pop('subtype')
 
-    def put_lem_as_1st_in_app_and_pretty_print(self):
+    def put_lem_as_1st_in_app_and_beautify_app(self):
         ''' 1. part: In the TEI DTD, <lem> must be the first child of <app>.
                 This method puts <lem> first
-            2. part: In the output, if opening tag <p> has no actual text
-                afterwards, but only an empty line '\n' and an opening tag
-                <app>, remove the '\n' (i.e. remove the empty line) '''
+            2. part: Beautify markup around app:
+                - </app> is always followed by a space.
+                  If </app> is followed by space and punctuation "</app> .",
+                  remove the space
+            '''
+
+        # This tuple includes punctuation chars before which
+        # there should be no space
+        punct = ('!', ')', ',', '.', ':', ';', '?', ']', '}')
+
         for a in self.appdict():
             app = a['app']
             # 1. part
@@ -969,11 +976,26 @@ class treeWithAppElements:
                         child.tail = '\n   '
                         app[-1].tail = '\n'
             # 2. part
-            # p = father paragraph; vedi se app è il suo 1. figlio
-            # poi vedi se il p.text è '\n\n' (correggi doc. iniziale
-            # di questo metodo)
-            if child:
-                pass
+            char1 = app.tail[0]  # 1st character after </app>
+            char2 = app.tail[1]  # 2st character after </app>
+            if char1 == ' ' and char2 in punct:
+                app.tail = app.tail[1:]  # Remove 1st char (space)
+
+    def beautify_paragraphs(self):
+        ''' Pretty print the beginning of each <p> (see below
+            for details) '''
+        pars = self.juxtaBody.findall('.//t:%s' % ('p'), ns)
+        for p in pars:
+            if p.text.strip() == '':
+                '''In the output, if opening tag <p> has no actual text
+                afterwards, but only two "\n\n" (i.e. an empty line) and
+                an opening tag <app>, change "\n\n"  to "\n" '''
+                p.text = '\n'
+            elif p.text.startswith('\n '):
+                # 2. part/B
+                '''If the first line of text in <p> starts with a space,
+                remove the space '''
+                p.text = p.text.replace('\n ', '\n')
 
     def write(self):
         ''' Write my XML juxtaTree to an external file '''

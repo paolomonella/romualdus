@@ -20,10 +20,10 @@ with open(input_text_file, 'r') as f:
 
 
 # Choose MS reading instead of print reading.
-# Change subtype to generic-substantial-subtype (app has 2 children)
+# Change type to substantial (app has 2 children)
 if arg == 'm2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
-                    'print, ms, subtype, xmlid) '
+                    'print, ms, type, xmlid) '
                     'VALUES (?, ?, ?, ?, ?, ?);')
 
     # Interpret text file lines
@@ -38,15 +38,15 @@ if arg == 'm2':
             'm',   # field 'action' (choose MS reading)
             printrdg,  # field 'print' (print reading)
             msrdg,  # field 'ms' (MS reading)
-            's',   # field 'subtype' (generic-substantial-subtype)
+            's',   # field 'type' (substantial)
             xmlid))  # field 'xmlid' (<p @xml:id> value)
 
 
 # Print reading is OK.
-# Only set subtype to generic-orthography-subtype (app has 2 children)
+# Only set type to orthography (app has 2 children)
 elif arg == 'o2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
-                    'print, ms, subtype, xmlid) '
+                    'print, ms, type, xmlid) '
                     'VALUES (?, ?, ?, ?, ?, ?);')
 
     # Interpret text file lines
@@ -61,14 +61,14 @@ elif arg == 'o2':
             't',     # field 'action' (only change type)
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
-            'o',     # field 'subtype' (generic-orthography-subtype)
+            'o',     # field 'type' (orthography)
             'all'))  # field 'xmlid' (in all paragraphs)
 
 # Choose MS reading instead of print reading.
-# Set subtype to generic-orthography-subtype (app has 2 children)
+# Set type to orthograph (app has 2 children)
 elif arg == 'mo2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
-                    'print, ms, subtype, xmlid) '
+                    'print, ms, type, xmlid) '
                     'VALUES (?, ?, ?, ?, ?, ?);')
 
     # Interpret text file lines
@@ -83,7 +83,7 @@ elif arg == 'mo2':
             'm',   # field 'action' (choose MS reading)
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
-            'o',     # field 'subtype' (generic-orthography-subtype)
+            'o',     # field 'type' (orthography)
             'all'))  # field 'xmlid' (in all paragraphs)
 
 connection.commit()

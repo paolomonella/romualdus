@@ -53,12 +53,12 @@ if pre:
     # simplify_markup_for_collation.py / class msTree
     edition_list = ['g',
                     'a1',
-                    'bonetti-alfa',
-                    'bonetti-bravo',
-                    'bonetti-charlie',
-                    'a2-sorted-alfa',
-                    'a2-sorted-bravo',
-                    'a2-sorted-charlie',
+                    'bonetti-2-alfa',
+                    'bonetti-2-bravo',
+                    'bonetti-2-charlie',
+                    'a2-sorted-2-alfa',
+                    'a2-sorted-2-bravo',
+                    'a2-sorted-2-charlie',
                     'o']
     for edition in edition_list:
         mytree = simplify_markup_for_collation.msTree(edition, quiet=quiet)
@@ -155,7 +155,8 @@ if post:
         myTree.edit_tei_header()
         myTree.set_type_and_subtype_xml_attrib_in_all_apps()
         myTree.checkout_checked_paragraphs()
-        myTree.put_lem_as_1st_in_app()
+        myTree.put_lem_as_1st_in_app_and_beautify_app()
+        myTree.beautify_paragraphs()
         myTree.write()
 
     m_unifier.unify()
