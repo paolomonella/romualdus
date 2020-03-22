@@ -997,6 +997,18 @@ class treeWithAppElements:
                 remove the space '''
                 p.text = p.text.replace('\n ', '\n')
 
+    def remove_lb_between_paragraphs(self):
+        ''' Sometimes JuxtaCommons inserts some useless <lb/> at the end
+            of its output files (such as m2-alfa1.xml). Remove them'''
+        lbs = self.juxtaBody.findall('.//t:lb', ns)
+        for lb in lbs:
+            # Restore empty line between two <p>s
+            previous = lb.getprevious()
+            if previous.tag == '{%s}p' % ns['t']:
+                previous.tail = '\n\n'
+            # Remove <lb/>
+            lb.getparent().remove(lb)
+
     def write(self):
         ''' Write my XML juxtaTree to an external file '''
         self.juxtaTree.write(self.outputXmlFile,
