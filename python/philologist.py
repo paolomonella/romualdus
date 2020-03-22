@@ -870,6 +870,9 @@ class treeWithAppElements:
                 # 42 cases
                 self.set_lem_based_on_db_3elements(a)
 
+    def handle_case_variants(self):
+        pass
+
     def set_type_and_subtype_xml_attrib_in_all_apps(self):
         ''' Set XML TEI @type and @subtype attributes in
             <app> elements of the XML file.
@@ -923,11 +926,7 @@ class treeWithAppElements:
             - set @type and @subtype for those 'unknown' that I left unchanged
             '''
         # @types of <app> that have to change:
-        type_subst = {'unknown': 'substantial',
-                      '3elements3variants-subtype': 'substantial'}
-        # @subtypes of <app> that have to change
-        # (this is empty so far. I might populate it at some point):
-        subtype_subst = {}
+        type_subst = {'unknown': 'substantial'}
 
         # Get a list with xmlids of checked paragraphes
         pars = [x['xmlid'] for x in self.paragraphs if x['checked'] == 1]
@@ -942,12 +941,11 @@ class treeWithAppElements:
                 for x in type_subst:
                     if x == a['app'].get('type'):
                         a['app'].set('type', type_subst[x])
-                for y in type_subst:
-                    if y == a['app'].get('subtype'):
-                        a['app'].set('subtype', subtype_subst[y])
 
                 # If @subtype remained 'unknown-subtype' after the
-                # substitutions, remove it
+                # substitutions, remove it (note that currently subtype
+                # '3elements3variants' remains with type 'substantial'
+                # also after the checkout
                 if a['app'].get('subtype') == 'unknown-subtype':
                     a['app'].attrib.pop('subtype')
 
