@@ -67,8 +67,9 @@ elif arg == '-o2':
 
 # Print reading is OK.
 # Only set type to substantial (app has 2 children)
-#   (This case is meant to insert the app in the DB,
-#    so it will be confirmed with @cert=high)
+#   (This case can be used to insert the app in the DB,
+#    so it will be confirmed with @cert=high, or to change
+#    subtype e.g. from tc-subtype to substantial)
 elif arg == '-s2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
                     'print, ms, type, xmlid) '
