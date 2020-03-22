@@ -923,7 +923,8 @@ class treeWithAppElements:
             - set @type and @subtype for those 'unknown' that I left unchanged
             '''
         # @types of <app> that have to change:
-        type_subst = {'unknown': 'substantial'}
+        type_subst = {'unknown': 'substantial',
+                      '3elements3variants-subtype': 'substantial'}
         # @subtypes of <app> that have to change
         # (this is empty so far. I might populate it at some point):
         subtype_subst = {}
