@@ -126,7 +126,7 @@ Anno dominice incarnationis CMLXXXI defuncto Iohanne papa Benedictus ei in ponti
    <lem wit="#b #a">anno</lem>
    <rdg wit="#o">annum</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" subtype="num-word-subtype" type="orthographic">
    <lem wit="#b">uno</lem>
    <rdg wit="#a #o">I</rdg>
    </app> 
@@ -138,7 +138,7 @@ Anno dominice incarnationis CMLXXXI defuncto Iohanne papa Benedictus ei in ponti
    <lem wit="#b #a">mense</lem>
    <rdg wit="#o">mensem</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" subtype="num-word-subtype" type="orthographic">
    <lem wit="#b">uno</lem>
    <rdg wit="#a #o">I</rdg>
    </app>. Cui expulso Benedictus 
@@ -1107,7 +1107,7 @@ Anno
    <lem wit="#b #a">est</lem>
    <rdg wit="#o"></rdg>
 </app> papa Benedictus qui post mensem 
-<app cert="high" subtype="num-word-subtype" type="orthographic">
+<app cert="medium" subtype="unknown-subtype" type="unknown">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o">I</rdg>
 </app> et dies XX uendidit papatum Iohanni 

@@ -32,22 +32,23 @@ def numeralCheck(myStringOrig):
         {'isNumeral': True, 'words': ['tres', 'tribus', 'tria', 'trium']}
         The list can be incomplete'''
     numeralWordDict = {
-            1: ['unus', 'unum'], 2: ['duo', 'due', 'duobus'],
-            4: ['quattuor', 'quatuor'], 6: ['sex'],
+            1: ('unus', 'unum', 'uno'), 2: ('duo', 'due', 'duobus'),
+            # Skipping 'tribus' b/c it's ambiguous. Handling them with DB
+            4: ('quattuor', 'quatuor'), 6: ('sex'),
             # I am not including quinta (ordinal)
-            8: ['octo'], 10: ['decem'],  # not including octauo (ordinal)
-            17: ['decem et septem'],
-            40: ['quadraginta'],
-            47: ['quadraginta et septem'],
-            30: ['triginta'],
-            100: ['centum'],
-            # not including 164: ['centesimo sexagesimo quarto'] (ordinal)
-            200: ['ducentos'],
-            # not including 302: ['tricesimus secundus'] (ordinal)
-            310: ['trecentum decem'],
-            342: ['trecentum quadraginta duos'],
-            532: ['quingentorum triginta duorum'],
-            1000: ['mille'],
+            8: ('octo'), 10: ('decem'),  # not including octauo (ordinal)
+            17: ('decem et septem'),
+            40: ('quadraginta'),
+            47: ('quadraginta et septem'),
+            30: ('triginta'),
+            100: ('centum'),
+            # not including 164: ('centesimo sexagesimo quarto') (ordinal)
+            200: ('ducentos'),
+            # not including 302: ('tricesimus secundus') (ordinal)
+            310: ('trecentum decem'),
+            342: ('trecentum quadraginta duos'),
+            532: ('quingentorum triginta duorum'),
+            1000: ('mille'),
             }
     myString = myStringOrig.upper()
     numeralCheckDict = {'words': []}
@@ -64,10 +65,9 @@ def numeralCheck(myStringOrig):
                 print('String %s is a Roman numeral, corresponding to %d, but \
                       I have no Latin words for it' % (myStringOrig, myArabic))
             numeralCheckDict['words'] = ['noWord']
-    except roman.InvalidRomanNumeralError:
+    except roman.InvalidRomanNumeralError as error:
         if debug:
-            print('Ho beccato un errore roman.InvalidRomanNumeralError per \
-                    la stringa «%s»' % (myString))
+            print('Found error {} in srtring {}'.format(myString, error))
         numeralCheckDict['isNumeral'] = False
         numeralCheckDict['words'] = []
     return numeralCheckDict
