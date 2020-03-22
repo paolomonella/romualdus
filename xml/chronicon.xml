@@ -33,7 +33,7 @@
                         <biblScope unit="volume">7</biblScope>
                                         <biblScope unit="part">1</biblScope>
                 </series>
-                <note>Garufi's edition was the collation base until paragraph g163.6-163.7.</note>
+                <note>Garufi's edition was the collation base until (and including) paragraph g163.1-163.5.</note>
             </biblStruct>
             <biblStruct xml:id="b">
                 <monogr>
@@ -13787,7 +13787,7 @@
  <lb/>
  <p xml:id="b062heading">
  
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
    <lem wit="#b">Romoaldi II archiepiscopi salernitani annales</lem>
 <rdg wit="#a"> </rdg>
    </app> 
@@ -13795,7 +13795,7 @@
  
 <p xml:id="g163.6-163.7">
  
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Anno dominice incarnationis DCCCXCIII</lem>
 <rdg wit="#a">Anni domini DCCCLXXXXIV</rdg>
    </app> . Primus 
@@ -13915,7 +13915,7 @@
  
 <p xml:id="g165.8-165.9">
  
-<app cert="high" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Anno ab incarnatione</lem>
 <rdg wit="#a">Anni</rdg>
    </app> Domini CMXXXIII, alius Gisolfus factus est princeps in Salerno uixitque in principatu annis XLVIII. 
