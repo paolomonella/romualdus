@@ -22,8 +22,12 @@ import m_unifier
 # If true: suppress standard output messages to console
 quiet = True
 
+##########################################
+# ATTENZIONE: RIATTIVA PRE=TRUE A REGIME #
+##########################################
+# This is useful to reduce the execution process of juxta.py
 # If True, perform pre-collation operations
-pre = True
+pre = False
 # If True, perform post-collation operations
 post = True
 
@@ -108,7 +112,7 @@ if post:
     my_msa2_siglum = 'a2'
     my_mso_siglum = 'o'
 
-    parameters = [
+    complete_parameters = [
         {'siglum': 'm1',
          'ed': 'garufi',
          'printSiglum': 'g'},
@@ -123,6 +127,11 @@ if post:
          'printSiglum': 'b'},
     ]
 
+    # This is useful to reduce the execution process of juxta.py
+    chosen_ones = ('m2-bravo')
+    parameters = [x for x in complete_parameters
+                  if x['siglum'] in chosen_ones]
+
     for mp in parameters:
 
         ''' Post-processing of JuxtaCommons-generated files
@@ -135,12 +144,8 @@ if post:
                                                         my_msa2_siglum,
                                                         my_mso_siglum)
         myTree.replaceSigla()
-
-        myTree.findAndJoinIdenticalReadings()
+        myTree.findAndJoinIdenticalReadings()  # Only needed for 2-bravo
         myTree.removeEmptyParWrappingAllText()
-
-        ''' Set <lem>/<rdg> and set @type attributes for <app>s
-            (from module set_variant_types_in_appcrit_tei_file.py) '''
         newSiglum = mp['siglum'] + juxta_par_and_sigla_suffix
         myTree = philologist.treeWithAppElements(newSiglum,
                                                  mp['printSiglum'],
@@ -149,7 +154,6 @@ if post:
                                                  my_mso_siglum,
                                                  quiet=quiet)
         myTree.set_a2_for_additions()
-        myTree.variant_subtypes_count_print()
         myTree.set_all_lems_based_on_subtype()
         myTree.set_all_lems_based_on_db()
         myTree.edit_tei_header()
@@ -157,6 +161,7 @@ if post:
         myTree.checkout_checked_paragraphs()
         myTree.put_lem_as_1st_in_app_and_beautify_app()
         myTree.beautify_paragraphs()
+        myTree.remove_lb_between_paragraphs()
         myTree.write()
 
     m_unifier.unify()
