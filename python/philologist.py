@@ -75,12 +75,6 @@ class treeWithAppElements:
             'p': 'punctuation',
             'u': 'unknown'
         }
-        self.subtype_expansion = {
-            's': 'generic-substantial-subtype',
-            'o': 'generic-orthography-subtype',
-            'p': 'generic-punctuation-subtype',
-            'u': 'unknown-subtype'
-        }
 
     def set_a2_for_additions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
@@ -926,17 +920,35 @@ class treeWithAppElements:
         ''' For all paragraphs that in table 'paragraphs' of the DB
             have 'checked'=1, in <app>s
             - set cert to high for all
-            - set unknown(e 3elem3variants) subtype??? to ??? # §§§
+            - set @type and @subtype for those 'unknown' that I left unchanged
             '''
+        # @types of <app> that have to change:
+        type_subst = {'unknown': 'substantial'}
         # @subtypes of <app> that have to change
-        # temp_subtypes = ['unknown-subtype']
+        # (this is empty so far. I might populate it at some point):
+        subtype_subst = {}
+
         # Get a list with xmlids of checked paragraphes
         pars = [x['xmlid'] for x in self.paragraphs if x['checked'] == 1]
+
         for a in self.appdict():
             if a['xmlid'] in pars:
-                if debug:
-                    print(a['app'].attrib, a['printText'])
+
+                # Set <app cert="high">
                 a['app'].set('cert', 'high')
+
+                # Make the substitutions in the dictionaries above:
+                for x in type_subst:
+                    if x == a['app'].get('type'):
+                        a['app'].set('type', type_subst[x])
+                for y in type_subst:
+                    if y == a['app'].get('subtype'):
+                        a['app'].set('subtype', subtype_subst[y])
+
+                # If @subtype remained 'unknown-subtype' after the
+                # substitutions, remove it
+                if a['app'].get('subtype') == 'unknown-subtype':
+                    a['app'].attrib.pop('subtype')
 
     def put_lem_as_1st_in_app(self):
         ''' In the TEI DTD, <lem> must be the first child of <app>.
