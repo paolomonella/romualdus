@@ -950,16 +950,30 @@ class treeWithAppElements:
                 if a['app'].get('subtype') == 'unknown-subtype':
                     a['app'].attrib.pop('subtype')
 
-    def put_lem_as_1st_in_app(self):
-        ''' In the TEI DTD, <lem> must be the first child of <app>.
-            This method puts <lem> first '''
+    def put_lem_as_1st_in_app_and_pretty_print(self):
+        ''' 1. part: In the TEI DTD, <lem> must be the first child of <app>.
+                This method puts <lem> first
+            2. part: In the output, if opening tag <p> has no actual text
+                afterwards, but only an empty line '\n' and an opening tag
+                <app>, remove the '\n' (i.e. remove the empty line) '''
         for a in self.appdict():
             app = a['app']
+            # 1. part
             for child in app:
                 # If the child is a <lem>:
                 if child.tag == '{%s}lem' % ns['t']:
                     if app.index(child) > 0:
+                        # Move <lem> as first child of <app:
                         app.insert(0, child)
+                        # Pretty print:
+                        child.tail = '\n   '
+                        app[-1].tail = '\n'
+            # 2. part
+            # p = father paragraph; vedi se app è il suo 1. figlio
+            # poi vedi se il p.text è '\n\n' (correggi doc. iniziale
+            # di questo metodo)
+            if child:
+                pass
 
     def write(self):
         ''' Write my XML juxtaTree to an external file '''
