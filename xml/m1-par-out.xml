@@ -64,7 +64,8 @@
     
     <text>
         <body>
-            <p xml:id="g3.1-3.1">
+            <p>
+<p xml:id="g3.1-3.1">
 <app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
    <lem wit="#g">de etatibus</lem>
    <rdg wit="#a"></rdg>
@@ -1707,7 +1708,7 @@ Ioachim filius Iosie annis XI. Post Iosiam regnauit Ioachaz filius eius tribus m
    <lem wit="#g">scriptu</lem>
    <rdg wit="#a">scriptum</rdg>
 </app> regum Nabuchodonosor computat: quia ex eo non solum Iudeis, et Chaldeis, sed et Assyriis, Egyptiis, Moabitis, aliisque innumeris gentibus cepit regnare Ioachim, qui et Iechonias filius Ioachim mensibus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">tribus</lem>
    <rdg wit="#a">tres</rdg>
 </app> et diebus X. Hic circumdata a Chaldeis Hierusalem exiit ad regem 
@@ -13753,6 +13754,7 @@ Et Marinus ei successit qui sedit anno uno et mensibus V. Quo defuncto, successi
 </p>
  <lb/>
  <lb/>
- </body>
+ </p>
+        </body>
     </text>
 </TEI>

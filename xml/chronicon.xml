@@ -64,7 +64,8 @@
     
     <text>
         <body>
-            <p xml:id="g3.1-3.1">
+            <p>
+<p xml:id="g3.1-3.1">
 <app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
    <lem wit="#g">de etatibus</lem>
    <rdg wit="#a"/>
@@ -1707,7 +1708,7 @@ Ioachim filius Iosie annis XI. Post Iosiam regnauit Ioachaz filius eius tribus m
    <lem wit="#g">scriptu</lem>
    <rdg wit="#a">scriptum</rdg>
 </app> regum Nabuchodonosor computat: quia ex eo non solum Iudeis, et Chaldeis, sed et Assyriis, Egyptiis, Moabitis, aliisque innumeris gentibus cepit regnare Ioachim, qui et Iechonias filius Ioachim mensibus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">tribus</lem>
    <rdg wit="#a">tres</rdg>
 </app> et diebus X. Hic circumdata a Chaldeis Hierusalem exiit ad regem 
@@ -13753,7 +13754,8 @@ Et Marinus ei successit qui sedit anno uno et mensibus V. Quo defuncto, successi
 </p>
  <lb/>
  <lb/>
- <p xml:id="b062heading">
+ </p>
+        <p xml:id="b062heading">
 <app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
    <lem wit="#b">Romoaldi II archiepiscopi salernitani annales</lem>
    <rdg wit="#a"/>
@@ -13816,7 +13818,7 @@ Inter hec Formosus Romane sedis episcopus moritur et successit ei Bonifacius, se
    <lem wit="#a">uita</lem>
    <rdg wit="#b">uitam</rdg>
 </app> decedens sedem 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">reliquit</lem>
    <rdg wit="#a">dereliquit</rdg>
 </app> Romano episcopo qui sedit mensibus III. Defuncto autem Romano Theodorus sedit dies XX. Post hec uero Iohannes sedit annis II. Cui successit Benedictus papa qui sedit 
@@ -13844,7 +13846,7 @@ Eodem anno Landulfus princeps Beneuenti preliatus est cum Ursileone patricio Gre
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
 </app> At uero in Gallia Ludouicus Francorum rex captus est a 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Normannis</lem>
    <rdg wit="#a">Nordmannis</rdg>
 </app> dolo Ugonis Abbatis, qui postea dictus est Magnus, multis Francorum interfectis, qui rex totum tempus uite sue plenum ducens angustiarum et tribulationum diem clausit extremum 
@@ -13859,11 +13861,11 @@ Eodem anno Landulfus princeps Beneuenti preliatus est cum Ursileone patricio Gre
 </p>
  
 <p xml:id="g165.1-165.3">
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Anno</lem>
    <rdg wit="#a">Anni</rdg>
 </app> domini CMXXIII Anastasio papa defuncto, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Lando</lem>
    <rdg wit="#a">dando</rdg>
 </app> Romanum suscepit pontificatum seditque mensibus VI. Quo defuncto Iohannes sedem papalem sedit annis XIV mensibus II. 
@@ -13871,7 +13873,7 @@ Eodem anno Landulfus princeps Beneuenti preliatus est cum Ursileone patricio Gre
  
 <p xml:id="g165.4-165.7">
 Anno dominice incarnationis CMXXVI, uenerunt Sclaui in Apuliam et ciuitatem Sipontum hostili direptione et gladio uastauerunt. Non post multum uero temporis Ungri uenerunt in Apuliam et capta 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Auria</lem>
    <rdg wit="#a">Aerea</rdg>
 </app> ciuitate ceperunt Tarentum. Dehinc Campaniam ingressi non modicam ipsius prouincie partem igni ac direptioni dederunt. 
@@ -13885,7 +13887,7 @@ Anno dominice incarnationis CMXXVI, uenerunt Sclaui in Apuliam et ciuitatem Sipo
 </p>
  
 <p xml:id="g165.10-166.2">
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Anno dominice incarnationis</lem>
    <rdg wit="#a">Anni Domini</rdg>
 </app> CMXXXIX, Constantinus cum filio Constantino apud Constantinopolim post Romano Heliopolitanum cepit imperare, regnaueruntque annis XVI. Post quos filius eiusdem Constantini Romano cum filio suo Basilio annis 
@@ -13897,7 +13899,7 @@ Anno dominice incarnationis CMXXVI, uenerunt Sclaui in Apuliam et ciuitatem Sipo
  
 <p xml:id="g166.3-166.8">
 Inter hec 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" subtype="missing-in-print-subtype" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a">quoque</rdg>
 </app> Iohanne papa defuncto, Leo papa sedit mensibus VI. Cui successit Stephanus qui sedit annis II mense I. Huic uero Iohannes successit et sedit annis IV mensibus X. Hic autem fuit filius Sergii pape. Igitur Iohanni successit Leo qui sedit annis IV mensibus VI. Post quem Stephanus sedit annis III mensibus IV. Cui Marinus successit seditque in pontificatu Romano annis III mensibus VI. Quo uita decedente Agapitus sedit annis X mensibus VII. Huic itaque Iohannes successit, sedit annis nouem mensibus tribus. 
@@ -13905,31 +13907,31 @@ Inter hec
  
 <p xml:id="g166.9-166.25">
 Anno dominice incarnationis CMLIV, corpus beati Mathei apostoli et euangeliste de Pestana ciuitate Bricie in Salernum translatum est, principante tunc in eadem ciuitate Gisulfo. At uero in Gallia Carolus frater Lotharii Francorum regis euo iunior priuatis in rebus senuit. Fuerant autem Ugoni Magno filii Otto et Ugo atque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography" subtype="h-subtype">
    <lem wit="#b">Henricus</lem>
    <rdg wit="#a">Enricus</rdg>
 </app>, nati ex filia Ottonis regis Saxonum. Defuncto itaque Ugone Magno, successit ei 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" subtype="missing-in-print-subtype" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a">Otto</rdg>
 </app> filius eius 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
    <lem wit="#b">Otto</lem>
    <rdg wit="#a"/>
 </app> qui non post multum temporis mortuus est, et Ugo frater eius effectus est dux Francorum regis, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography" subtype="h-subtype">
    <lem wit="#b">Henricus</lem>
    <rdg wit="#a">Enricus</rdg>
 </app> quoque effectus est 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a">dux</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">dux</lem>
+   <rdg wit="#b"> </rdg>
 </app> regis Burgundionum. Non post multos uero dies Lotharius rex Francorum congregans exercitum ualde copiosum renouauit in dicione sua Lotharium regnum. Quod audiens Otto Saxonum rex qui Aquisgrani tunc commanebat, relicto palatio quod sibi uendicauerat, fugiit. Post hec Otto rex congregans exercitum suum uenit Parisius, ubi interfectus est nepos illius cum aliis quam pluribus ad portam ciuitatis, incenso suburbio illius. Lotharius igitur rex tribus diebus et tribus noctibus constanter persequens illos usque ad fluuium qui fluit iuxta Ardennam, interfecta hostium multitudine cum uictoria in Franciam reuersus est. Post hec non apposuit ultra Otto rex ut ueniret in Franciam. In ipso autem anno Lotharius rex consilio Ugonis ducis sui pacificatus est cum Ottone rege Remis ciuitate, deditque Lotharius rex Ottoni regi in beneficio Lotharium regnum in anno 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" subtype="missing-in-print-subtype" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a">. anno</rdg>
 </app> dominice incarnationis CMLXIII 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
    <lem wit="#b">, indictione VI</lem>
    <rdg wit="#a"/>
 </app>. 
@@ -13937,7 +13939,7 @@ Anno dominice incarnationis CMLIV, corpus beati Mathei apostoli et euangeliste d
  
 <p xml:id="g167.1-167.3">
 Sequente uero anno idem Otto Saxonum rex Romam uenit nobiliter cum exercitu et a Iohanne papa coronatus est, accipiens ab eo totius Italie uexillum cum imperii dignitate, professus iureiurando seruare fidem Romane ecclesie. 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Et</lem>
    <rdg wit="#a">Ex</rdg>
 </app> tunc itaque Otto rex appellatus est imperator. 
@@ -13945,22 +13947,21 @@ Sequente uero anno idem Otto Saxonum rex Romam uenit nobiliter cum exercitu et a
  
 <p xml:id="g167.4-168.4">
 Anno dominice incarnationis 
-<app cert="medium" subtype="num-num-subtype" type="substantial">
+<app cert="high" subtype="num-num-subtype" type="substantial">
    <lem wit="#b">CMLXVIII</lem>
    <rdg wit="#a">CMLXVII</rdg>
 </app>, hic in Apuliam uenit cum exercitu et oppidum Barum expugnando cepit, cepitque ciuitatem Bibinum atque Asculum, Grecos expellens. Interea apud Constantinopolim defuncto imperatore Niceforo, Iohannes cognomento Simiski tenuit imperium annis VI. Quo defuncto Basilius et Constantinus filii eius ceperunt imperare ab anno incarnationis domini CMLXX , regnaueruntque annis LV. At uero Rome defuncto Iohanne papa Benedictus papa sedit annis II, et post eum Leo sedit 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
    <lem wit="#b">anno uno mensibus II. Deinde uero Iohannes sedit</lem>
    <rdg wit="#a"/>
 </app> annis VI mensibus XI. Hic a Petro prefecto Romane urbis comprehensus et in castello sancti Angeli retrusus, deinde in Campaniam in exilium missus et post menses decem Romam reuersus est, et de persecutoribus eius ab Ottone imperatore in urbe Roma supplicium sumptum est. Iste quoque papa Iohannes coronam posuit imperii Ottoni imperatori, quique accepta corona Aquisgranum reuersus est. Hic etiam papa Iohannes nobilitauit Capuam archiepiscopatu, in qua ciuitate tunc principabatur Pandulfus cognomento Capudferreus. Eodem tempore 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Saraceni</lem>
    <rdg wit="#a">Sarraceni</rdg>
 </app> uenerunt in Apuliam et expugnauerunt ciuitatem Grauinam eamque ceperunt. Hinc quoque secundo anno post hec ceperunt ciuitatem Bibinum ignique combusserunt. 
 </p>
- <lb/>
- <lb/>
- <p xml:id="g168.5-168.7">
+
+<p xml:id="g168.5-168.7">
 Anno 
 <app cert="medium" subtype="unknown-subtype" type="unknown">
    <lem wit="#b #a">incarnationis</lem>
@@ -16124,9 +16125,9 @@ Anno
    <rdg wit="#o">menses</rdg>
 </app> VI. 
 </p>
- <lb/>
- <lb/>
- <p xml:id="g186.6-186.7">
+
+<p>
+<p xml:id="g186.6-186.7">
 <app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
@@ -21072,6 +21073,7 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
 </p>
  <lb/>
  <lb/>
- </body>
+ </p>
+        </body>
     </text>
 </TEI>

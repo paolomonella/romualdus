@@ -64,7 +64,8 @@
     
     <text>
         <body>
-            <p xml:id="g186.6-186.7">
+            <p>
+<p xml:id="g186.6-186.7">
 <app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
    <lem wit="#a"></lem>
    <rdg wit="#b">"</rdg>
@@ -5010,6 +5011,7 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
 </p>
  <lb/>
  <lb/>
- </body>
+ </p>
+        </body>
     </text>
 </TEI>
