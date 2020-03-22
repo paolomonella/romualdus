@@ -210,6 +210,9 @@ class msTree:
 
     def recapitalize(self):
         ''' Re-capitalize words included in <rs> or in <hi>.
+            I am now using .title(), which transforms 'sancti remigii'
+            to 'Sancti Remigii', instead of .capitalize(), as in a previous
+            version, which transformed it to 'Sancti remigii'.
             Then, transform text marked as <p type="ghead1"> or "ghead2"
             to all uppercase,
             because it was in G(arufi) head(s) '''
@@ -218,7 +221,7 @@ class msTree:
                 # If the content of <rs>/<hi> starts with a text node,
                 # capitalize it
                 if e.text:
-                    e.text = e.text.capitalize()
+                    e.text = e.text.title()
                 # If the content of <rs>/<hi> starts with an element...
                 else:
                     echild = e[0]
@@ -226,17 +229,17 @@ class msTree:
                     if echild.tag == myconst.tei_ns + 'choice':
                         # ...capitalize text of all children of <choice>
                         for alternative in echild:
-                            alternative.text = alternative.text.capitalize()
+                            alternative.text = alternative.text.title()
                     # If first child of <rs>/<hi> is not <choice>
                     # ...get the text of <rs>/<hi>'s first child and
                     # capitalize it
                     else:
                         if echild.text:
-                            echild.text = echild.text.capitalize()
+                            echild.text = echild.text.title()
                         # ... or capitalize the first child of the first
                         # child of <rs>/</hi>
                         else:
-                            echild[0].text = echild[0].text.capitalize()
+                            echild[0].text = echild[0].text.title()
         # Elements to transform in all uppercase:
         ER = []
         ER = ER + self.tree.findall('.//t:p[@type="ghead1"]', myconst.ns)
