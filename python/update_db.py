@@ -116,14 +116,13 @@ elif arg == '-mo2':
 # Set 1 to field 'checked' in DB table 'paragraphs'
 elif arg == '-p':
     sqlite_query = ('UPDATE paragraphs SET checked=1 '
-                    'WHERE xmlid=?);')
+                    'WHERE xmlid=?;')
 
     # Interpret text file lines
     xmlid = lines[0]
 
     # Update DB table
-    cur.execute(
-        sqlite_query, (xmlid))
+    cur.execute(sqlite_query, (xmlid,))
 
 connection.commit()
 cur.close()
