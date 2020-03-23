@@ -91,6 +91,33 @@ elif arg == '-s2':
             xmlid))  # field 'xmlid' (<p @xml:id> value)
 
 
+# Print reading is OK.
+# Only set type to substantial (app has 3 children)
+#   (so I ca possibly edit the DB table later)
+elif arg == '-s3':
+
+    sqlite_query = ('INSERT INTO decisions3 (origin, action, '
+                    'print, msa, mso, type, xmlid) '
+                    'VALUES (?, ?, ?, ?, ?, ?, ?);')
+
+    # (Re-)interpret text file lines
+    printrdg = lines[0]
+    msardg = lines[1]
+    msordg = lines[2]
+    xmlid = lines[3]
+
+    # Update DB table
+    cur.execute(
+        sqlite_query, (
+            'm',     # field 'origin' in the DB table (manual)
+            't',     # field 'action' (only change type)
+            printrdg,  # field 'print' (print reading)
+            msardg,   # field 'msa' (MS reading)
+            msordg,   # field 'mso' (MS reading)
+            's',     # field 'type' (substantial)
+            xmlid))  # field 'xmlid' (<p @xml:id> value)
+
+
 # Choose MS reading instead of print reading.
 # Set type to orthograph (app has 2 children)
 elif arg == '-mo2':

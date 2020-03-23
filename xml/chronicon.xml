@@ -14370,11 +14370,11 @@ Non post multum uero temporis
    <lem wit="#b #a">Henricus Burgundie</lem>
    <rdg wit="#o">Hanricus Burgundis</rdg>
 </app> dux 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial" subtype="illegible-in-ms-subtype">
    <lem wit="#b #a">qui Burgundionum quoque regnum sibi uendicauerat, mortuus est sine filiis, et</lem>
    <rdg wit="#o">Gap11IllegibleWords</rdg>
 </app> rebellauerunt Burgundiones in regem 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial" subtype="illegible-in-ms-subtype">
    <lem wit="#b #a">Robbertum nolentes eum recipere. Post tercium itaque annum Robbertus rex assumptis Normannis</lem>
    <rdg wit="#o">Gap12IllegibleWords</rdg>
 </app> cum duce suo 
@@ -14386,14 +14386,14 @@ Non post multum uero temporis
    <lem wit="#b #a">Burgundiam</lem>
    <rdg wit="#o">Burgundia</rdg>
 </app>. 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
-   <lem wit="#b">Rainaldus</lem>
+<app cert="high" type="orthography" subtype="y-subtype">
+   <rdg wit="#b">Rainaldus</rdg>
    <rdg wit="#a">Raynaldus</rdg>
-   <rdg wit="#o">Gap6IllegibleWords</rdg>
+   <rdg wit="#o">Gap1IllegibleWord</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="unknown-subtype" type="unknown">
    <lem wit="#b #a">comes Senonum post multa mala</lem>
-   <rdg wit="#o"/>
+   <rdg wit="#o">Gap5IllegibleWords</rdg>
 </app> defunctus est, cui 
 <app cert="medium" subtype="unknown-subtype" type="unknown">
    <lem wit="#b #a">successit</lem>
