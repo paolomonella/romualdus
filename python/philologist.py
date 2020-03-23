@@ -659,8 +659,6 @@ class treeWithAppElements:
                     a['app'].attrib.pop('subtype')
 
                 # Set @subtype
-                # (in most cases DB table decisions2 and decisions3
-                #  won't have a 'subtype')
                 # If there is a subtype in the DB, set it in <app>
                 if r['subtype'] is not None and r['subtype'] is not '':
                     a['app'].set('subtype', r['subtype'])
@@ -769,8 +767,6 @@ class treeWithAppElements:
                     a['app'].attrib.pop('subtype')
 
                 # Set @subtype
-                # (in most cases DB table decisions2 and decisions3
-                #  won't have a 'subtype')
                 # If there is a subtype in the DB, set it in <app>
                 if r['subtype'] is not None and r['subtype'] is not '':
                     a['app'].set('subtype', r['subtype'])
@@ -984,12 +980,13 @@ class treeWithAppElements:
                 if app.get('subtype') == 'unknown-subtype':
                     app.attrib.pop('subtype')
 
-                # Replace 'Gap1IllegibleWord' or the like
-                # with '{Gap in the MS: 1 illegible word}'
+                # Gap in the MS.
                 for child in app:
                     txt = child.text
                     # If the textual content is like 'Gap1IllegibleWord'
                     if (txt.startswith('Gap') and txt[3:4].isdigit()):
+                        # Replace 'Gap1IllegibleWord' or the like
+                        # with '{Gap in the MS: 1 illegible word}'
                         txt = txt.capitalize()
                         # Find the digit part ('1', in the example above)
                         dgt_list = [char for char in txt if char.isdigit()]
@@ -999,6 +996,7 @@ class treeWithAppElements:
                         txt = txt.replace('word', ' word')
                         txt = '{%s}' % txt
                         child.text = txt
+                        # I'll set type and subtype through the DB
 
     def put_lem_as_1st_in_app_and_beautify_app(self):
         ''' 1. part: In the TEI DTD, <lem> must be the first child of <app>.

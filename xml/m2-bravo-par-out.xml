@@ -440,38 +440,38 @@ Anno
  
 <p xml:id="g171.9-171.14">
 Anno dominice incarnationis 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="high" subtype="3elements3variants-subtype" type="substantial">
    <lem wit="#b">CMXCVII</lem>
    <rdg wit="#a">CMXLVII</rdg>
    <rdg wit="#o">CMXCVIII</rdg>
 </app>. Ugo dux Francorum obiit sepultusque est in basilica beati 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Dionisii</lem>
    <rdg wit="#o">Dionisi</rdg>
 </app> martiris Parisius. Cui 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">secesit</rdg>
 </app> filius eius Robbertus rex qui pius fuit et modestus. Hic 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial" subtype="illegible-in-ms-subtype">
    <lem wit="#b #a">autem post mortem patris</lem>
-   <rdg wit="#o">Gap4IllegibleWords</rdg>
+   <rdg wit="#o">{Gap in the MS: 4 illegible words}</rdg>
 </app> regnauit annis 
-<app cert="medium" subtype="num-num-subtype" type="substantial">
+<app cert="high" subtype="num-num-subtype" type="substantial">
    <lem wit="#b">XXIII</lem>
    <rdg wit="#a #o">XXXIII</rdg>
    </app>. Per idem tempus Mel catipanus primum in Apuliam 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial" subtype="illegible-in-ms-subtype">
    <lem wit="#b #a">conduxit Normannos quos secum habens bellum cum Grecis in</lem>
-   <rdg wit="#o">Gap9IllegibleWords</rdg>
+   <rdg wit="#o">{Gap in the MS: 9 illegible words}</rdg>
 </app> Apulia apud Basentellum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">commisit</lem>
    <rdg wit="#o">comisit</rdg>
 </app>, et non 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial" subtype="illegible-in-ms-subtype">
    <lem wit="#b #a">multo post temporis ipse Mel ciuitatem Ascolum</lem>
-   <rdg wit="#o">Gap7IllegibleWords</rdg>
+   <rdg wit="#o">{Gap in the MS: 7 illegible words}</rdg>
 </app> cepit. 
 </p>
  
