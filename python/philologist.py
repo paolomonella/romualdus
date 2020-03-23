@@ -78,50 +78,28 @@ class treeWithAppElements:
 
     def set_a2_for_additions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
-            wit="a2" '''
+            wit="a2" (consider that @wit may have more than on siglum
+            in <app> '''
 
-        # Create a list with the xml:id's of those <p>s
+        # A list with the xml:id's of those <p>s (from the DB)
         additions_xmlids = [x['xmlid'] for x in self.paragraphs
-                            if x['xmlid'] == 1]
+                            if x['a2'] == 1]
 
-        # All <p>s in the XML document
-        pars = self.juxtaBody.findall('.//t:%s' % ('p'), ns)
-
-        # Find the <p>s that include additions and include
-        # them in list pars_with_addition and put them
-        # in list pars_with_additions
-        pars_with_additions = []
-        additions_count = 0
-        for par in pars:
-            par_xmlid = par.get('{%s}id' % ns['xml'])
-            if par_xmlid in additions_xmlids:
-                additions_count += 1
-                pars_with_additions.append(par)
-
+        # A list with all <app> XML elements (not appdict
+        # dictionaries) that are in the right <p>s (from appdict)
+        apps_in_additions = [a['app'] for a in self.appdict()
+                             if a['xmlid'] in additions_xmlids]
         if debug:
-            print('found {} pars with adds in {}'.format(
-                self.juxtaSiglum, len(pars_with_additions)))
+            print([a['xmlid'] for a in apps_in_additions])
+            print(len(apps_in_additions))
 
-        # Set wit="#a2" if it was "#a"
-        #
-        # For each <p> with additions in the XML file:
-        for par_with_addition in pars_with_additions:
-            # All <app> children of that <p>:
-            apps_in_par = par_with_addition.findall('.//t:app', ns)
-            for app in apps_in_par:
-                # Get all <rdg> children of <app>
-                rdg_in_app = app.findall('.//t:rdg', ns)
-                # Get all <lem> children of <app>
-                lem_in_app = app.findall('.//t:lem', ns)
-                # All <lem> and <rdg> children of <app>
-                # (they should all be <rdg> in fact)
-                rdg_and_lem_in_app = rdg_in_app + lem_in_app
-                for child in rdg_and_lem_in_app:
-                    child_wit = child.get('wit')
-                    if child_wit == '#a':
-                        # Better not use namespaces when
-                        # setting TEI attributes!
-                        child.set('wit', '#a2')
+        # Replace "#a" with #a2" in @wit (including the "#b #a" case)
+        for app in apps_in_additions:  # <app> XML elements
+            for child in app:
+                old_wit_value = child.get('wit')
+                if '#a' in old_wit_value:
+                    new_wit_value = old_wit_value.replace('#a', '#a2')
+                    child.set('wit', new_wit_value)
 
     def edit_tei_header(self):
         ''' Set some basic elements in the teiHeader of m1.xml and m2.xml '''
@@ -228,6 +206,7 @@ class treeWithAppElements:
                 # Conjecture
                 wit_value = rdg.get('wit')
                 resp_value = rdg.get('resp')
+
                 if wit_value is None and resp_value is not None:
                     # This should be a conjecture, so <lem resp="#pm">
                     # (no @wit attribute)
@@ -242,14 +221,16 @@ class treeWithAppElements:
 
                 # Regular reading from a witness
                 else:
-                    wit = wit_value.split()  # A list
-                    if ('#%s' % self.printSiglum) in wit:
+                    wit_list = wit_value.split()  # A list
+                    if ('#%s' % self.printSiglum) in wit_list:
                         printReading = rdg
-                    if ('#%s' % self.msaSiglum) in wit:  # Not elif
+                    # Not elif, because @wit in <rdg> or <lem> can include
+                    # more than one MS (e.g. <rdg wit="#b #a")
+                    if ('#%s' % self.msaSiglum) in wit_list:
                         msaReading = rdg
-                    if ('#%s' % self.msa2Siglum) in wit:  # Not elif
+                    if ('#%s' % self.msa2Siglum) in wit_list:  # Not elif
                         msa2Reading = rdg
-                    if ('#%s' % self.msoSiglum) in wit:  # Not elif
+                    if ('#%s' % self.msoSiglum) in wit_list:  # Not elif
                         msoReading = rdg
 
             # Debug
