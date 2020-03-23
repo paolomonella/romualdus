@@ -128,7 +128,8 @@ if post:
     ]
 
     # This is useful to reduce the execution process of juxta.py
-    chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+    # chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+    chosen_ones = ('m2-bravo')
     parameters = [x for x in complete_parameters
                   if x['siglum'] in chosen_ones]
 
