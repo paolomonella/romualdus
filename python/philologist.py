@@ -962,7 +962,7 @@ class treeWithAppElements:
         # @types of <app> that have to change:
         type_subst = {'unknown': 'substantial'}
 
-        # Get a list with xmlids of checked paragraphes
+        # Get a list with xmlids of checked paragraphs
         pars = [x['xmlid'] for x in self.paragraphs if x['checked'] == 1]
 
         for a in self.appdict():
@@ -1029,6 +1029,53 @@ class treeWithAppElements:
                 '''If the first line of text in <p> starts with a space,
                 remove the space '''
                 p.text = p.text.replace('\n ', '\n')
+
+    def handle_no_collation_paragraphs(self):
+        ''' For those paragraphs (e.g. g179.10-179.11) that are only
+            in Bonetti and in no MS (neither A or O), just use the
+            text of Bonetti without any <app> and without quotes '''
+
+        # 1. Paragraphs missing in MSS
+        # Get a list with xmlids of paragraphs  missing in MSS
+        xmlids = [x['xmlid'] for x in self.paragraphs
+                  if x['no_collation'] == 'not_in_mss']
+        for x in xmlids:
+            # print('\nxmlid = ', x)  # debug
+            par = self.juxtaBody.find('.//t:p[@xml:id="%s"]' % (x), ns)
+            # par can be None (not found) because we are in the
+            # wrong chunk (e.g. the xmlid is in m2-alfa, but the script
+            # is processing m2-bravo
+            if par is not None:
+                if len(par) > 1:
+                    # Normally those <p>s should include no text
+                    # and only one <app>
+                    print(('[philologist.py handle_no_collation_paragraphs]'
+                           ' Attention: no-collation paragraph {} has more'
+                           ' than one <app> child').format(x))
+                else:
+                    # Get new text for <p>
+                    new_text = ''.join(par.itertext())
+                    # Strip existing '\n' (they are too many), then add '\n'
+                    # before and after
+                    new_text = '\n%s\n' % new_text.strip()
+                    # Remove Bonetti's quotes
+                    new_text = new_text.replace('"', '')
+                    # Empty <p> (remove <app> and its children)
+                    for c in par:
+                        par.remove(c)
+                    # Add '\n' before and after, then attribute new text
+                    # directly to <p>
+                    par.text = '\n%s\n' % new_text.strip()
+
+        # then handle 'heading' (finora solo 1 caso in m2-alfa, ma
+        # domani potrebbero essere tanti in m1, i titoli Garufi)
+        '''
+            except AttributeError as error:
+                print(('An error occured, of type {}\n while handling'
+                      ' <p xml:id="{}"').format(
+                          error, x))
+            print(par.get('{%s}id' % ns['xml']))
+            '''
 
     def remove_lb_between_paragraphs(self):
         ''' Sometimes JuxtaCommons inserts some useless <lb/> at the end
