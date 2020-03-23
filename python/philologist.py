@@ -966,22 +966,39 @@ class treeWithAppElements:
         pars = [x['xmlid'] for x in self.paragraphs if x['checked'] == 1]
 
         for a in self.appdict():
+            app = a['app']
             if a['xmlid'] in pars:
 
                 # Set <app cert="high">
-                a['app'].set('cert', 'high')
+                app.set('cert', 'high')
 
                 # Make the substitutions in the dictionaries above:
                 for x in type_subst:
-                    if x == a['app'].get('type'):
-                        a['app'].set('type', type_subst[x])
+                    if x == app.get('type'):
+                        app.set('type', type_subst[x])
 
                 # If @subtype remained 'unknown-subtype' after the
                 # substitutions, remove it (note that currently subtype
                 # '3elements3variants' remains with type 'substantial'
                 # also after the checkout
-                if a['app'].get('subtype') == 'unknown-subtype':
-                    a['app'].attrib.pop('subtype')
+                if app.get('subtype') == 'unknown-subtype':
+                    app.attrib.pop('subtype')
+
+                # Replace 'Gap1IllegibleWord' or the like
+                # with '{Gap in the MS: 1 illegible word}'
+                for child in app:
+                    txt = child.text
+                    # If the textual content is like 'Gap1IllegibleWord'
+                    if (txt.startswith('Gap') and txt[3:4].isdigit()):
+                        txt = txt.capitalize()
+                        # Find the digit part ('1', in the example above)
+                        dgt_list = [char for char in txt if char.isdigit()]
+                        dgt_string = ''.join(dgt_list)
+                        txt = txt.replace(
+                            dgt_string, ' in the MS: %s ' % dgt_string)
+                        txt = txt.replace('word', ' word')
+                        txt = '{%s}' % txt
+                        child.text = txt
 
     def put_lem_as_1st_in_app_and_beautify_app(self):
         ''' 1. part: In the TEI DTD, <lem> must be the first child of <app>.
