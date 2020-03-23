@@ -13845,7 +13845,7 @@ Eodem anno Landulfus princeps Beneuenti preliatus est cum Ursileone patricio Gre
 <app cert="high" type="substantial">
    <lem wit="#b">anno</lem>
    <rdg wit="#a">anni</rdg>
-</app> domini CMXXII, sepultusque Remis in basilica Sancti remigii. Hic autem duos liberos superstites reliquit, Lotharium atque Carolum, quos ex Giberga Ottonis Saxonum regis sorore genuerat. Defuncto igitur Ludouico Lotharius filius eius adhuc iuuenis unctus est in regem Remis et Ugo Magnus dux eius factus est 
+</app> domini CMXXII, sepultusque Remis in basilica Sancti Remigii. Hic autem duos liberos superstites reliquit, Lotharium atque Carolum, quos ex Giberga Ottonis Saxonum regis sorore genuerat. Defuncto igitur Ludouico Lotharius filius eius adhuc iuuenis unctus est in regem Remis et Ugo Magnus dux eius factus est 
 <app cert="high" type="punctuation">
    <lem wit="#a">.</lem>
    <rdg wit="#b">".</rdg>
@@ -13903,11 +13903,11 @@ Anno dominice incarnationis CMLIV, corpus beati Mathei apostoli et euangeliste d
    <lem wit="#b">Henricus</lem>
    <rdg wit="#a">Enricus</rdg>
 </app>, nati ex filia Ottonis regis Saxonum. Defuncto itaque Ugone Magno, successit ei 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b"> </lem>
    <rdg wit="#a">Otto</rdg>
 </app> filius eius 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b">Otto</lem>
    <rdg wit="#a"/>
 </app> qui non post multum temporis mortuus est, et Ugo frater eius effectus est dux Francorum regis, 
@@ -14092,11 +14092,11 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">uxore</lem>
    <rdg wit="#o">uxorem</rdg>
 </app> 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #o">filios</lem>
    <rdg wit="#a"/>
 </app> duos 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a">filios</rdg>
 </app> 
@@ -14233,11 +14233,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#o">tendebat</lem>
    <rdg wit="#b #a">tenebat</rdg>
 </app> contra meridiem quasi 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">unum</rdg>
 </app> passum 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o"/>
 </app>. Et post paucos dies iterum 
@@ -14249,11 +14249,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #o #a">occidentis</rdg>
 </app> et splendor eius 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">tendebat</rdg>
 </app> ad orientem 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a">tendebat</lem>
    <rdg wit="#o"/>
 </app>. Et non 
@@ -14293,23 +14293,23 @@ Anno dominice incarnationis CMXC stella a parte
  
 <p xml:id="g171.2-171.6">
 Preterea Rome defuncto papa Benedicto, Iohannes papa sedit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> IX. Hic autem in castello Sancti angeli 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">retrusus</lem>
    <rdg wit="#o">reclusus</rdg>
 </app> et per menses IV fame 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">afflictus mortuus</lem>
    <rdg wit="#o">aflictus mortus</rdg>
 </app> est. Et iterum superior Bonifacius qui expulsus fuerat sedit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> XI. Quo uita decedente Iohannes sedit mensibus IV. Post quem alius Iohannes sedit annis X 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> VI. Cuius temporibus Romani capitanei patriciatus sibi tirannidem uendicauere. 

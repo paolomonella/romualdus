@@ -114,6 +114,31 @@ elif arg == '-mo2':
             'all'))  # field 'xmlid' (in all paragraphs)
 
 
+# Print reading is OK. - new
+# Only set type to substantial and subtype to transposition
+# (app has 2 children)
+elif arg == '-t2':
+    sqlite_query = ('INSERT INTO decisions2 (origin, action, '
+                    'print, ms, type, subtype, xmlid) '
+                    'VALUES (?, ?, ?, ?, ?, ?, ?);')
+
+    # Interpret text file lines
+    printrdg = lines[0]
+    msrdg = lines[1]
+    xmlid = lines[2]
+
+    # Update DB table
+    cur.execute(
+        sqlite_query, (
+            'm',     # field 'origin' in the DB table (manual)
+            't',     # field 'action' (only change type)
+            printrdg,  # field 'print' (print reading)
+            msrdg,   # field 'ms' (MS reading)
+            's',     # field 'type' (substantial)
+            'transposition-subtype',  # field 'subtype'
+            xmlid))  # field 'xmlid' (<p @xml:id> value)
+
+
 # Set 1 to field 'checked' in DB table 'paragraphs'
 elif arg == '-p':
     sqlite_query = ('UPDATE paragraphs SET checked=1 '

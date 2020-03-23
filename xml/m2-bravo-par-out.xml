@@ -203,11 +203,11 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">uxore</lem>
    <rdg wit="#o">uxorem</rdg>
 </app> 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #o">filios</lem>
    <rdg wit="#a"></rdg>
 </app> duos 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a">filios</rdg>
 </app> 
@@ -344,11 +344,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#o">tendebat</lem>
    <rdg wit="#b #a">tenebat</rdg>
 </app> contra meridiem quasi 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">unum</rdg>
 </app> passum 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o"></rdg>
 </app>. Et post paucos dies iterum 
@@ -360,11 +360,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #o #a">occidentis</rdg>
 </app> et splendor eius 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">tendebat</rdg>
 </app> ad orientem 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b #a">tendebat</lem>
    <rdg wit="#o"></rdg>
 </app>. Et non 
@@ -404,23 +404,23 @@ Anno dominice incarnationis CMXC stella a parte
  
 <p xml:id="g171.2-171.6">
 Preterea Rome defuncto papa Benedicto, Iohannes papa sedit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> IX. Hic autem in castello Sancti angeli 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">retrusus</lem>
    <rdg wit="#o">reclusus</rdg>
 </app> et per menses IV fame 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">afflictus mortuus</lem>
    <rdg wit="#o">aflictus mortus</rdg>
 </app> est. Et iterum superior Bonifacius qui expulsus fuerat sedit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> XI. Quo uita decedente Iohannes sedit mensibus IV. Post quem alius Iohannes sedit annis X 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> VI. Cuius temporibus Romani capitanei patriciatus sibi tirannidem uendicauere. 

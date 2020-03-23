@@ -157,7 +157,7 @@ Eodem anno Landulfus princeps Beneuenti preliatus est cum Ursileone patricio Gre
 <app cert="high" type="substantial">
    <lem wit="#b">anno</lem>
    <rdg wit="#a">anni</rdg>
-</app> domini CMXXII, sepultusque Remis in basilica Sancti remigii. Hic autem duos liberos superstites reliquit, Lotharium atque Carolum, quos ex Giberga Ottonis Saxonum regis sorore genuerat. Defuncto igitur Ludouico Lotharius filius eius adhuc iuuenis unctus est in regem Remis et Ugo Magnus dux eius factus est 
+</app> domini CMXXII, sepultusque Remis in basilica Sancti Remigii. Hic autem duos liberos superstites reliquit, Lotharium atque Carolum, quos ex Giberga Ottonis Saxonum regis sorore genuerat. Defuncto igitur Ludouico Lotharius filius eius adhuc iuuenis unctus est in regem Remis et Ugo Magnus dux eius factus est 
 <app cert="high" type="punctuation">
    <lem wit="#a">.</lem>
    <rdg wit="#b">".</rdg>
@@ -215,11 +215,11 @@ Anno dominice incarnationis CMLIV, corpus beati Mathei apostoli et euangeliste d
    <lem wit="#b">Henricus</lem>
    <rdg wit="#a">Enricus</rdg>
 </app>, nati ex filia Ottonis regis Saxonum. Defuncto itaque Ugone Magno, successit ei 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b"> </lem>
    <rdg wit="#a">Otto</rdg>
 </app> filius eius 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" type="substantial" subtype="transposition-subtype">
    <lem wit="#b">Otto</lem>
    <rdg wit="#a"></rdg>
 </app> qui non post multum temporis mortuus est, et Ugo frater eius effectus est dux Francorum regis, 
