@@ -1067,15 +1067,24 @@ class treeWithAppElements:
                     # directly to <p>
                     par.text = '\n%s\n' % new_text.strip()
 
-        # then handle 'heading' (finora solo 1 caso in m2-alfa, ma
-        # domani potrebbero essere tanti in m1, i titoli Garufi)
-        '''
-            except AttributeError as error:
-                print(('An error occured, of type {}\n while handling'
-                      ' <p xml:id="{}"').format(
-                          error, x))
-            print(par.get('{%s}id' % ns['xml']))
-            '''
+    def handle_print_edition_headings(self):
+        ''' Empty those paragraphs (e.g. b062heading, v-b298a or v-b298b)
+            that only include Garufi's or Bonetti's headers (e.g.
+            "Romoaldi II archiepiscopi salernitani annales" '''
+        xmlids = [x['xmlid'] for x in self.paragraphs
+                  if x['no_collation'] == 'heading']
+        for x in xmlids:
+            # print('\nxmlid = ', x)  # debug
+            par = self.juxtaBody.find('.//t:p[@xml:id="%s"]' % (x), ns)
+            # par can be None (not found) because we are in the
+            # wrong chunk (e.g. the xmlid is in m2-alfa, but the script
+            # is processing m2-bravo
+            if par is not None:
+                # Empty <p> (remove <app> and its children)
+                for c in par:
+                    par.remove(c)
+                # Remove par.text, if any
+                par.text = ''
 
     def remove_lb_between_paragraphs(self):
         ''' Sometimes JuxtaCommons inserts some useless <lb/> at the end
