@@ -871,7 +871,60 @@ class treeWithAppElements:
                 self.set_lem_based_on_db_3elements(a)
 
     def handle_case_variants(self):
-        pass
+        ''' If the variant is of case-subtype, change its structure, from
+            <app subtype="case-subtype">
+                <lem wit="#a">Occidentis</lem>
+                <rdg wit="#b #o">occidentis</rdg>
+            </app>
+            to
+            <app subtype="case-subtype">
+                <lem resp="#pm">Occidentis</lem>
+                <rdg wit="#a #b #o">occidentis</rdg>
+            </app>
+            Assumptions: 1. <lem> has uppercase; 2. <lem> it is a MS reading;
+                3. print reading is in a <rdg>; 4. <app> only has 2 children
+                (though the MSS can be three, if we are in 2-bravo)
+        '''
+        apps_with_case_subtype = [a for a in self.appdict() if a['subtype'] ==
+                                  'case-subtype']
+        for a in apps_with_case_subtype:
+            app = a['app']
+            if len(app) > 2:
+                print(('[philologist.py/handle_case_variants] <app> {}'
+                       ' with @subtype=case-subtype has more than 2 children'
+                       ' and I can\'t handle it.').format(app.attrib))
+            else:
+                print_child = a['printReading']  # an XML element
+                non_print_child = self.find_non_print_child_in_two(
+                    app, print_child)  # another XML element
+                # Check that we are in the situation of the above assumptions
+                # (about 90 cases / 123 cases of case-subtype)
+                if (non_print_child.tag == '{%s}lem' % ns['t'] and
+                        non_print_child.text.istitle() and
+                        print_child.tag == '{%s}rdg' % ns['t']):
+                    # Change <rdg wit="#b #o">occidentis</rdg> to
+                    # <rdg wit="#b #o #a">occidentis</rdg>
+                    non_print_wit = non_print_child.get('wit')  # probably '#a'
+                    old_print_wit = print_child.get('wit')  # e.g. '#b #o'
+                    # It will become (e.g.) '#b #o #a':
+                    new_print_wit = ' '.join([old_print_wit, non_print_wit])
+                    print_child.set('wit', new_print_wit)
+                    # Change <lem wit=#a">Occidentis</rdg> to
+                    # <lem resp="#pm">Occidentis</rdg>
+                    non_print_child.attrib.pop('wit')  # remove @wit
+                    non_print_child.set('resp', '#pm')  # remove @wit
+
+                # If, instead, we're in a strange situation, do nothing
+                # (about 33 cases/123 cases of case-subtype: I'll handle them
+                #   manually)
+                else:
+                    if debug:
+                        print(('[philologist.py/handle_case_variants] <app>'
+                               ' {} has @subtype=case-subtype but I can\'t'
+                               ' handle it.\n\tPrint text: «{}»\n\tMS text:'
+                               ' «{}»').format(
+                                   app.attrib, print_child.text,
+                                   non_print_child.text))
 
     def set_type_and_subtype_xml_attrib_in_all_apps(self):
         ''' Set XML TEI @type and @subtype attributes in

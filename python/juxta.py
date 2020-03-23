@@ -128,11 +128,12 @@ if post:
     ]
 
     # This is useful to reduce the execution process of juxta.py
-    chosen_ones = ('m2-bravo')
+    chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
     parameters = [x for x in complete_parameters
                   if x['siglum'] in chosen_ones]
 
     for mp in parameters:
+        print('Chunk {}'.format(mp['siglum']))
 
         ''' Post-processing of JuxtaCommons-generated files
             (from module post_process_juxta_commons_file.py)'''
@@ -157,6 +158,7 @@ if post:
         myTree.set_all_lems_based_on_subtype()
         myTree.set_all_lems_based_on_db()
         myTree.edit_tei_header()
+        myTree.handle_case_variants()
         myTree.set_type_and_subtype_xml_attrib_in_all_apps()
         myTree.checkout_checked_paragraphs()
         myTree.put_lem_as_1st_in_app_and_beautify_app()
