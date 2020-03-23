@@ -352,13 +352,13 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o"></rdg>
 </app>. Et post paucos dies iterum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">apparuit</lem>
    <rdg wit="#o">aparuit</rdg>
 </app> eadem stella a parte 
-<app cert="high" subtype="case-subtype" type="orthographic">
-   <lem wit="#a">Occidentis</lem>
-   <rdg wit="#b #o">occidentis</rdg>
+<app cert="medium" subtype="case-subtype" type="orthographic">
+   <lem resp="#pm">Occidentis</lem>
+   <rdg wit="#b #o #a">occidentis</rdg>
 </app> et splendor eius 
 <app cert="medium" subtype="missing-in-print-subtype" type="substantial">
    <lem wit="#b #a"> </lem>
