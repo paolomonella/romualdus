@@ -163,6 +163,7 @@ if post:
         myTree.checkout_checked_paragraphs()
         myTree.put_lem_as_1st_in_app_and_beautify_app()
         myTree.beautify_paragraphs()
+        myTree.handle_paragraphs_in_no_ms()
         myTree.remove_lb_between_paragraphs()
         myTree.write()
 
