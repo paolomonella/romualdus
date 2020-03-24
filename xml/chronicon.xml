@@ -14833,11 +14833,11 @@ Anno
 Anno dominice incarnationis 
 <app cert="high" type="gap-in-ms">
    <lem wit="#b #a">MXXIV</lem>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app> indictione 
 <app cert="high" type="gap-in-ms">
    <lem wit="#b #a">VII.</lem>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app> Basilius imperator Constantinopolitanus diem obiit. 
 </p>
  
@@ -14845,13 +14845,13 @@ Anno dominice incarnationis
 Anno dominice incarnationis 
 <app cert="high" type="gap-in-ms">
    <lem wit="#b #a">MXXV</lem>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app> indictione 
 <app cert="high" type="gap-in-ms">
    <lem wit="#b #a">VIII</lem>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app>, Henricus Alamannorum imperator defunctus est, cui 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">successit Churradus</lem>
    <rdg wit="#o">succesit Chunradus</rdg>
 </app> qui dux eius fuerat. Eodem anno papa Benedictus obiit et 
@@ -14867,27 +14867,31 @@ Anno dominice incarnationis
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> seditque annos IX 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">et</lem>
    <rdg wit="#o"/>
 </app> dies IX. 
 </p>
  
 <p xml:id="g177.5-177.6">
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #o">Anno Domini</lem>
-   <rdg wit="#a">Anni domini</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#b #o">Anno</lem>
+   <rdg wit="#a">Anni</rdg>
+</app> 
+<app cert="high" subtype="case" type="orthographic">
+   <lem wit="#a">domini</lem>
+   <rdg wit="#b #o">Domini</rdg>
 </app> 
 <app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">MXXVII</rdg>
    <rdg wit="#a">MXXVIII</rdg>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app> indictione 
 <app cert="high" type="gap-in-ms">
    <lem wit="#b #a">X</lem>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app>; apud 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">Constantinopolim</lem>
    <rdg wit="#o">Constantinopoli</rdg>
 </app> Constantinus imperator obiit et 
@@ -14895,7 +14899,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei Romano gener eius una cum eius uxore Zoy imperatrice, regnauitque 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #o">annos</lem>
    <rdg wit="#a">annis</rdg>
 </app> V. 
@@ -14907,7 +14911,7 @@ Anno dominice incarnationis MXXX, indictione XIII; Iohannes princeps Salerni def
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Guaymarius filius</lem>
    <rdg wit="#o">Guaimarius fillius</rdg>
 </app> eius. 
@@ -14915,11 +14919,11 @@ Anno dominice incarnationis MXXX, indictione XIII; Iohannes princeps Salerni def
  
 <p xml:id="g177.9-178.3">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MXXXI, indictione XIV Romano 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">imperator</lem>
    <rdg wit="#o">imperatore</rdg>
 </app> Constantinopolitanus 
@@ -14931,11 +14935,11 @@ Anno
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">in</lem>
    <rdg wit="#o"/>
 </app> imperium 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Michael</lem>
    <rdg wit="#o">Miquel</rdg>
 </app> qui dicitur Catalactus cum 
@@ -14943,7 +14947,7 @@ Anno
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Ipso quoque anno defunctus est 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Robbertus</lem>
    <rdg wit="#o">Robertus</rdg>
 </app> Francorum rex cui 
@@ -14951,11 +14955,11 @@ Anno
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> filius eius Henricus. Cuius in tertio anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">urbs Parisii</lem>
    <rdg wit="#o">urbis Perisius</rdg>
 </app> flagrauit incendio; 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #o">regnauit autem</lem>
    <rdg wit="#a">regnauitque</rdg>
 </app> hic Henricus annis XXIX. 
@@ -14963,55 +14967,59 @@ Anno
  
 <p xml:id="g178.4-178.10">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MXXXIV, indictione II; fuit eclipsis solis in festiuitate sancti Petri. Quo anno Iohannes papa defunctus est et 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a">successit ei</lem>
+<app cert="high" type="orthography">
+   <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
+</app> 
+<app cert="high" subtype="missing-in-ms" type="substantial">
+   <lem wit="#b #a">ei</lem>
+   <rdg wit="#o"/>
 </app> Benedictus qui 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #o">uocabatur</lem>
    <rdg wit="#a">uocatur</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Theofilatus</lem>
    <rdg wit="#o">Theofilactus</rdg>
 </app>, seditque annis XIII. Iste quidem de pontificatu eiectus est et suscepit papatum Iohannes 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Sabinensis</lem>
    <rdg wit="#o">Sabiniensis</rdg>
 </app> episcopus cui nomen Siluester. Et 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">iste</lem>
    <rdg wit="#o">isto</rdg>
 </app> quidem eiectus 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">est. Post</lem>
    <rdg wit="#o">post</rdg>
 </app> dies 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">LVII</lem>
    <rdg wit="#a #o">LVI</rdg>
    </app> recuperatus 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">est</lem>
    <rdg wit="#o"/>
 </app> papa Benedictus qui post mensem 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o">I</rdg>
 </app> et dies XX uendidit papatum Iohanni 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #o">Rauennati</lem>
    <rdg wit="#a">Rauennanti</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">archipresbitero</lem>
    <rdg wit="#o">archiepiscopo</rdg>
 </app> sancti Iohannis ante portam Latinam, cui nomen positum est Gregorius, qui sedit anno I 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">et mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> VI. 

@@ -953,8 +953,12 @@
 <p xml:id="g177.5-177.6">
  
 <app>
-   <rdg wit="#b #o">Anno Domini</rdg>
-   <rdg wit="#a">Anni domini</rdg>
+   <rdg wit="#b #o">Anno</rdg>
+   <rdg wit="#a">Anni</rdg>
+</app> 
+<app>
+   <rdg wit="#b #o">Domini</rdg>
+   <rdg wit="#a">domini</rdg>
 </app> 
 <app>
    <rdg wit="#b">MXXVII</rdg>
@@ -1046,8 +1050,12 @@
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MXXXIV, indictione II; fuit eclipsis solis in festiuitate sancti Petri. Quo anno Iohannes papa defunctus est et 
 <app>
-   <rdg wit="#b #a">successit ei</rdg>
+   <rdg wit="#b #a">successit</rdg>
    <rdg wit="#o">succesit</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">ei</rdg>
+   <rdg wit="#o"/>
 </app> Benedictus qui 
 <app>
    <rdg wit="#b #o">uocabatur</rdg>

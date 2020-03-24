@@ -9,7 +9,7 @@
         '''
 
 from glob import iglob  # Needed for function entitize
-from myconst import xmlpath, juxta_par_and_sigla_suffix
+from myconst import xmlpath, juxta_par_and_sigla_suffix, dbpath, dbname
 import entitize
 # import a_unifier
 import splitter
@@ -18,6 +18,7 @@ import simplify_markup_for_collation
 import post_process_juxta_commons_file
 import philologist
 import m_unifier
+import my_database_import
 
 # If true: suppress standard output messages to console
 quiet = True
@@ -128,13 +129,14 @@ if post:
     ]
 
     # This is useful to reduce the execution process of juxta.py
-    chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
-    # chosen_ones = ('m2-bravo')
+    # chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+    chosen_ones = ('m2-bravo')
     parameters = [x for x in complete_parameters
                   if x['siglum'] in chosen_ones]
 
+    print('Working on ', end='')
     for mp in parameters:
-        print('Chunk {}'.format(mp['siglum']))
+        print('{}, '.format(mp['siglum']), end='')
 
         ''' Post-processing of JuxtaCommons-generated files
             (from module post_process_juxta_commons_file.py)'''
@@ -170,3 +172,13 @@ if post:
         myTree.write()
 
     m_unifier.unify()
+
+# Tell me how many paragraphs are left
+tot_par = my_database_import.import_table(dbpath, dbname, 'paragraphs')
+checked_par = [p for p in tot_par if p['checked'] == 1]
+done = len(checked_par)
+todo = len(tot_par) - 1
+percent = round(done / todo * 100, 2)
+print('checked {}/{}, {}%.'.format(
+    done, todo, percent
+))
