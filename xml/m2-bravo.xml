@@ -572,15 +572,11 @@
 <app>
    <rdg wit="#wit-42008 #wit-42007">prephato</rdg>
    <rdg wit="#wit-42006">prefato</rdg>
-</app> Crescentio et a Romanis capitur, tenetur et 
+</app> Crescentio et a Romanis capitur, tenetur et, 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">,</rdg>
+   <rdg wit="#wit-42008 #wit-42007">licet inuitus</rdg>
    <rdg wit="#wit-42006">ligatus inuictus</rdg>
-</app>  
-<app>
-   <rdg wit="#wit-42008 #wit-42007">licet inuitus,</rdg>
-   <rdg wit="#wit-42006"></rdg>
-</app> papa tamen infelix ordinatur Romanus. Quod audiens rex 
+</app>, papa tamen infelix ordinatur Romanus. Quod audiens rex 
 <app>
    <rdg wit="#wit-42008 #wit-42007">mente efferus</rdg>
    <rdg wit="#wit-42006">mete eferus</rdg>
@@ -605,28 +601,24 @@
    <rdg wit="#wit-42008">&quot;,</rdg>
    <rdg wit="#wit-42007">,</rdg>
    <rdg wit="#wit-42006">,</rdg>
-</app> anno dominice 
+</app> 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">incarnationis</rdg>
-   <rdg wit="#wit-42006">ab</rdg>
+   <rdg wit="#wit-42008 #wit-42007">anno dominice incarnationis</rdg>
+   <rdg wit="#wit-42006">anno dominice ab incarnatione Domini</rdg>
 </app> 
 <app>
    <rdg wit="#wit-42008">millesimo secundo</rdg>
-   <rdg wit="#wit-42007">M per</rdg>
-   <rdg wit="#wit-42006">incarnatione Domini</rdg>
-</app> 
-<app>
-   <rdg wit="#wit-42008 #wit-42007"></rdg>
+   <rdg wit="#wit-42007">M</rdg>
    <rdg wit="#wit-42006">MI</rdg>
 </app> 
 <app>
-   <rdg wit="#wit-42008 #wit-42006">indictione XIV</rdg>
-   <rdg wit="#wit-42007">indictionem XIII</rdg>
+	<rdg wit="#wit-42008 #wit-42006">indictione</rdg>
+	<rdg wit="#wit-42007">per indictionem</rdg>
 </app> 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">.</rdg>
-   <rdg wit="#wit-42006"></rdg>
-</app> Hic autem tertius 
+	<rdg wit="#wit-42008 #wit-42006">XIV</rdg>
+	<rdg wit="#wit-42007">XIII</rdg>
+</app>. Hic autem tertius 
 <app>
    <rdg wit="#wit-42008 #wit-42007">Otto</rdg>
    <rdg wit="#wit-42006">Occto</rdg>
@@ -670,11 +662,11 @@
 <app>
    <rdg wit="#wit-42008">MI</rdg>
    <rdg wit="#wit-42007">MXI</rdg>
-   <rdg wit="#wit-42006">Gap3MissingWords</rdg>
+   <rdg wit="#wit-42006">Gap1MissingWord</rdg>
 </app> 
 <app>
    <rdg wit="#wit-42008 #wit-42007">indictione XIV</rdg>
-   <rdg wit="#wit-42006"></rdg>
+   <rdg wit="#wit-42006">Gap2MissingWord</rdg>
 </app> fames ualida Italiam 
 <app>
    <rdg wit="#wit-42008 #wit-42007">optinuit</rdg>
@@ -687,20 +679,16 @@
 </app> Apuliam expugnabat. [/p] [p xml:id=&quot;g173.14-174.7&quot;] Anno 
 <app>
    <rdg wit="#wit-42008 #wit-42007">dominice incarnationis</rdg>
-   <rdg wit="#wit-42006">ab incarnatione</rdg>
+   <rdg wit="#wit-42006">ab incarnatione Domini</rdg>
 </app> 
 <app>
    <rdg wit="#wit-42008">MII</rdg>
    <rdg wit="#wit-42007">MXII</rdg>
-   <rdg wit="#wit-42006">Domini</rdg>
-</app> 
-<app>
-   <rdg wit="#wit-42008 #wit-42007"></rdg>
-   <rdg wit="#wit-42006">Gap2MissingWords</rdg>
+   <rdg wit="#wit-42006">Gap1MissingWord</rdg>
 </app> indictione 
 <app>
    <rdg wit="#wit-42008 #wit-42007">XV</rdg>
-   <rdg wit="#wit-42006"></rdg>
+   <rdg wit="#wit-42006">Gap1MissingWord</rdg>
 </app> Siluester papa defunctus est et Benedictus frater Alberici papalem suscepit 
 <app>
    <rdg wit="#wit-42008 #wit-42007">cathedram</rdg>
@@ -736,26 +724,33 @@
    <rdg wit="#wit-42006">componere</rdg>
 </app> . Qui ueniens cepit omnia tranquille agere atque strenue ordinare 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">.</rdg>
+   <rdg wit="#wit-42008 #wit-42007"></rdg>
    <rdg wit="#wit-42006">hic in Apulie finibus</rdg>
-</app> [/p] [p xml:id=&quot;g174.8-175.15&quot;] 
-<app>
+</app>. [/p] [p xml:id=&quot;g174.8-175.15&quot;] 
+<app> 
    <rdg wit="#wit-42008 #wit-42006">Anno</rdg>
    <rdg wit="#wit-42007">Anni</rdg>
-</app> domini 
+</app> 
+<app> 
+   <rdg wit="#wit-42008">domini</rdg>
+   <rdg wit="#wit-42007 #wit-42006">Domini</rdg>
+</app> 
 <app>
    <rdg wit="#wit-42008 #wit-42007">MXIII</rdg>
    <rdg wit="#wit-42006">Gap1MissingWord</rdg>
-</app> . indictione I. 
+</app> 
+<app> 
+   <rdg wit="#wit-42008">.</rdg>
+   <rdg wit="#wit-42007 #wit-42006">,</rdg>
+</app> indictione I. 
+<app> 
+   <rdg wit="#wit-42008 #wit-42007">Hic in Apulie finibus</rdg>
+   <rdg wit="#wit-42006"/>
+</app> 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">Hic in Apulie finibus rehedificauit</rdg>
+   <rdg wit="#wit-42008 #wit-42007">rehedificauit</rdg>
    <rdg wit="#wit-42006">Redificauit</rdg>
-</app> ciuitatem diu dirutam nuncupauitque eam Troiam, que antiquitus Ecana uocabatur 
-<app>
-   <rdg wit="#wit-42008">(1024)</rdg>
-   <rdg wit="#wit-42007"></rdg>
-   <rdg wit="#wit-42006"></rdg>
-</app> et iussu imperatorum fines per statutum priuilegium eidem stabiliuit ciuitati. In hanc ciuitatem olim tempore Adriani imperatoris, qui Traiano successerat, fuit ab apostolica sede 
+</app> ciuitatem diu dirutam nuncupauitque eam Troiam, que antiquitus Ecana uocabatur et iussu imperatorum fines per statutum priuilegium eidem stabiliuit ciuitati. In hanc ciuitatem olim tempore Adriani imperatoris, qui Traiano successerat, fuit ab apostolica sede 
 <app>
    <rdg wit="#wit-42008 #wit-42007">missus Eleutherius</rdg>
    <rdg wit="#wit-42006">misus Euletherius</rdg>
@@ -815,9 +810,13 @@
    <rdg wit="#wit-42007"></rdg>
 </app> dicitur. Quarto autem anno post predicte ciuitatis 
 <app>
-   <rdg wit="#wit-42008">Troie rehedificationem</rdg>
-   <rdg wit="#wit-42007">cet</rdg>
-   <rdg wit="#wit-42006">Troye rehedificacionem</rdg>
+   <rdg wit="#wit-42008">Troie</rdg>
+   <rdg wit="#wit-42007"/>
+   <rdg wit="#wit-42006">Troye</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">rehedificationem</rdg>
+   <rdg wit="#wit-42006">rehedificacionem</rdg>
 </app> 
 <app>
    <rdg wit="#wit-42008 #wit-42006">, in anno uidelicet</rdg>
@@ -845,8 +844,7 @@
 </app> per 
 <app>
    <rdg wit="#wit-42008">quatuor</rdg>
-   <rdg wit="#wit-42007">IIII</rdg>
-   <rdg wit="#wit-42006">IV</rdg>
+   <rdg wit="#wit-42007 #wit-42006">IV</rdg>
 </app> menses machinis illam fortiter expugnans. Imperator itaque uidens quod 
 <app>
    <rdg wit="#wit-42008 #wit-42007">eam</rdg>
