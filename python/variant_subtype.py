@@ -11,11 +11,10 @@ from myconst import dbpath
 
 debug = False
 
-# Import table of diff subtypes and subtypes from DB # §
+# Import table of diff subtypes and subtypes from DB
 variant_types_and_subtypes = my_database_import.import_table(
     dbpath,
     'romualdus.sqlite3',
-    # 'variant_types_and_subtypes')  # Old code §
     'diff')
 diff_subtypes = [v for v in variant_types_and_subtypes
                  if (v['diff1'] is not None and
@@ -224,7 +223,7 @@ def getVariantSubTypeBasedOnDiff(myDiffList, myString1, myString2):
     myDiff1, myDiff2 = myDiffList[0], myDiffList[1]
 
     my_subtype = 'unknown'
-    for t in diff_subtypes:  # § metti nuova table diff
+    for t in diff_subtypes:
         # sorted() makes the order of diffs in the MSS irrelevant:
         # if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]):
         if sorted([myDiff1, myDiff2]) == sorted([t['diff1'], t['diff2']]):
