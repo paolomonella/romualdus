@@ -1372,24 +1372,16 @@
 <p xml:id="g181.1-181.1">
  Anno 
 <app>
-   <rdg wit="#b #a"> </rdg>
-   <rdg wit="#o">ab incarnatione</rdg>
-</app> 
-<app>
-   <rdg wit="#b #o">Domini</rdg>
-   <rdg wit="#a">dominice</rdg>
+   <rdg wit="#b">Domini</rdg>
+   <rdg wit="#a">dominice incarnationis</rdg>
+   <rdg wit="#o">ab incarnatione Domini</rdg>
 </app>  
 <app>
-   <rdg wit="#b">MXLVIII</rdg>
-   <rdg wit="#a">incarnationis</rdg>
+   <rdg wit="#b #a">MXLVIII</rdg>
    <rdg wit="#o">Gap1MissingWord</rdg>
-</app> 
+</app> indictione I; 
 <app>
-   <rdg wit="#b #o"/>
-   <rdg wit="#a">MXLIII</rdg>
-</app> indictione I 
-<app>
-   <rdg wit="#b #a">; Zoy</rdg>
+   <rdg wit="#b #a">Zoy</rdg>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrix obiit. 
 </p>
