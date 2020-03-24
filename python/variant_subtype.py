@@ -90,7 +90,7 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
        and numeralCheck(myString2.strip())['isNumeral']:
         if debug:
             print('\n«%s»     «%s»' % (myString1, myString2))
-        my_subtype = 'num-num-subtype'
+        my_subtype = 'num-num'
     elif numeralCheck(myString1.strip())['isNumeral']:
         # Detect case 'VIII' / 'octo' (case-insensitive)
         if debug:
@@ -103,9 +103,9 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
             if myWord == myString2.strip().lower():
                 if debug:
                     print('EUREKA! This is a word/non-word numeral variant!')
-                my_subtype = 'num-word-subtype'
+                my_subtype = 'num-word'
             else:
-                my_subtype = 'unknown-subtype'
+                my_subtype = 'unknown'
 
     # Detect case 'octo' / 'VIII' (case-insensitive):
     elif numeralCheck(myString2.strip())['isNumeral']:
@@ -120,45 +120,45 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
                 if debug:
                         print('EUREKA! This is a word/non-word \
                               numeral variant!')
-                my_subtype = 'num-word-subtype'
+                my_subtype = 'num-word'
             else:
-                my_subtype = 'unknown-subtype'
+                my_subtype = 'unknown'
 
     elif myString1 != myString2 and myString1.lower() == myString2.lower():
         if debug:
             print(myString1.strip(), myString2.strip())
-        my_subtype = 'case-subtype'
+        my_subtype = 'case'
 
     elif myString1.strip() == '' and myString2.strip() in myPunctList:
-        my_subtype = 'missing-in-print-vs-punct-in-ms-subtype'
+        my_subtype = 'missing-in-print-vs-punct-in-ms'
 
     elif myString1.strip() in myPunctList and myString2.strip() == '':
-        my_subtype = 'punct-in-print-vs-missing-in-ms-subtype'
+        my_subtype = 'punct-in-print-vs-missing-in-ms'
 
     elif myString1.strip() == '' and myString2.strip() not in myPunctList \
             and myString2.strip() != '':
-        my_subtype = 'missing-in-print-subtype'
+        my_subtype = 'missing-in-print'
 
     elif myString1.strip() not in myPunctList and myString1.strip() != '' \
             and myString2.strip() == '':
-        my_subtype = 'missing-in-ms-subtype'
+        my_subtype = 'missing-in-ms'
 
     elif myString1.strip() in myPunctList and myString2.strip() \
             in myPunctList:
-        my_subtype = 'different-punct-subtype'
+        my_subtype = 'different-punct'
 
     # If first variant is only a punctuation sign and the second variant
     # has a punct plus at least one letter
     elif myString1.strip() in myPunctList \
             and any((j in myPunctString) for j in myString2.strip()) \
             and any(j.isalpha() for j in myString2.strip()):
-        my_subtype = 'punct-in-print-vs-punct-and-letters-in-ms-subtype'
+        my_subtype = 'punct-in-print-vs-punct-and-letters-in-ms'
 
     # The same, the other way around
     elif myString2.strip() in myPunctList \
             and any((j in myPunctString) for j in myString1.strip()) \
             and any(j.isalpha() for j in myString1.strip()):
-        my_subtype = 'punct-in-print-vs-missing-in-ms-subtype'
+        my_subtype = 'punct-in-print-vs-missing-in-ms'
 
     elif \
             any((j in myPunctString) for j in myString1) \
@@ -180,12 +180,12 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
                 print('%s «%s» | «%s» %30s «%s» | «%s»' %
                       ('Strings:', myString1, myString2, 'Stripped strings:',
                        myString1.strip(), myString2.strip()))
-            my_subtype = 'different-punct-subtype'
+            my_subtype = 'different-punct'
         else:
-            my_subtype = 'unknown-subtype'
+            my_subtype = 'unknown'
 
     else:
-        my_subtype = 'unknown-subtype'
+        my_subtype = 'unknown'
 
     return my_subtype
 
@@ -222,12 +222,12 @@ def getVariantSubTypeBasedOnDiff(myDiffList, myString1, myString2):
 
     myDiff1, myDiff2 = myDiffList[0], myDiffList[1]
 
-    my_subtype = 'unknown-subtype'
+    my_subtype = 'unknown'
     for t in diff_subtypes:
         # sorted() makes the order of diffs in the MSS irrelevant:
         # if sorted([myDiff1, myDiff2]) == sorted([t[0], t[1]]):
         if sorted([myDiff1, myDiff2]) == sorted([t['diff1'], t['diff2']]):
-            if my_subtype == 'unknown-subtype':
+            if my_subtype == 'unknown':
                 my_subtype = t['subtype']
                 if debug:
                     print('[getVariantSubTypeBasedOnDiff] The diff\
@@ -236,7 +236,7 @@ def getVariantSubTypeBasedOnDiff(myDiffList, myString1, myString2):
                           (myString1, myString2, myDiff1, myDiff2, my_subtype))
             else:
                 print(('Error! Diff «%s»/«%s» matched two different'
-                       'subtypes: {} and {}-subtype').format(
+                       'subtypes: {} and {}').format(
                            myDiff1, myDiff2, my_subtype, t[2]))
 
     if debug:
@@ -250,8 +250,8 @@ def variantComparison(myString1, myString2):
         This function returns a dictionary (whose values are all strings):
             "r1" = the variant characters in myString1 ("y")
             "r2" = the variant characters in myString2 ("i")
-            "subtype" is the subtype of variant (a string: e.g. "y-subtype"
-                in this example, or "j-subtype" etc., that will become
+            "subtype" is the subtype of variant (a string: e.g. "y"
+                in this example, or "j" etc., that will become
                 the @subtype value of element <app>)
         Source:
         https://stackoverflow.com/questions/30683463/comparing-two-strings-and-returning-the-difference-python-3#30683513
@@ -260,9 +260,9 @@ def variantComparison(myString1, myString2):
     myDiff = getDiff(myString1, myString2)
 
     if getVariantSubTypeBasedOnWholeVariant(myString1,
-                                            myString2) != 'unknown-subtype':
+                                            myString2) != 'unknown':
         # Function getVariantSubTypeBasedOnWholeVariant
-        # returns 'unknown-subtype' if it
+        # returns 'unknown' if it
         # doesn't detect a variant subtype
         myVariantSubType = getVariantSubTypeBasedOnWholeVariant(
             myString1, myString2)

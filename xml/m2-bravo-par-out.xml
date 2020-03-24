@@ -78,7 +78,7 @@ Anno
    <lem wit="#b #a">annis</lem>
    <rdg wit="#o">annum</rdg>
 </app> LIV, sepultusque 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">est</rdg>
 </app> in basilica Sancti Remigii 
@@ -86,7 +86,7 @@ Anno
    <lem wit="#b #a">Remis</lem>
    <rdg wit="#o">regnus</rdg>
 </app>. Cui successit Ludouicus filius eius 
-<app cert="high" type="orthography" subtype="h-subtype">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a">adhuc</lem>
    <rdg wit="#o">aduch</rdg>
 </app> iuuenis. 
@@ -118,7 +118,7 @@ Anno dominice incarnationis CMLXXXI defuncto Iohanne papa Benedictus ei in ponti
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> illi tercius Otto. Quo tempore Iohannes factus est princeps Salerni. Interea papa Benedictus postquam annum 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o"></rdg>
 </app> sedit, diem obiit, et successit ei Bonus qui sedit 
@@ -126,7 +126,7 @@ Anno dominice incarnationis CMLXXXI defuncto Iohanne papa Benedictus ei in ponti
    <lem wit="#b #a">anno</lem>
    <rdg wit="#o">annum</rdg>
 </app> 
-<app cert="high" subtype="num-word-subtype" type="orthographic">
+<app cert="high" subtype="num-word" type="orthographic">
    <lem wit="#b">uno</lem>
    <rdg wit="#a #o">I</rdg>
    </app> 
@@ -138,7 +138,7 @@ Anno dominice incarnationis CMLXXXI defuncto Iohanne papa Benedictus ei in ponti
    <lem wit="#b #a">mense</lem>
    <rdg wit="#o">mensem</rdg>
 </app> 
-<app cert="high" subtype="num-word-subtype" type="orthographic">
+<app cert="high" subtype="num-word" type="orthographic">
    <lem wit="#b">uno</lem>
    <rdg wit="#a #o">I</rdg>
    </app>. Cui expulso Benedictus 
@@ -178,7 +178,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">Ascelino</lem>
    <rdg wit="#o">Ascellino</rdg>
 </app> qui erat episcopus 
-<app cert="high" subtype="3elements3variants-subtype" type="substantial">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Laudunensis</lem>
    <rdg wit="#a">Laudum</rdg>
    <rdg wit="#o">Lauduni</rdg>
@@ -187,7 +187,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">traderet</lem>
    <rdg wit="#o">traderat</rdg>
 </app>. Qui dolis acquiescens tradidit eum Ugoni duci quadam nocte cunctis quiescentibus. 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> Uinctus est itaque Carolus rex cum uxore sua et positus in custodia Aurelianis ciuitate in turri 
@@ -203,11 +203,11 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">uxore</lem>
    <rdg wit="#o">uxorem</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #o">filios</lem>
    <rdg wit="#a"></rdg>
 </app> duos 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a">filios</rdg>
 </app> 
@@ -227,7 +227,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">descendentium</lem>
    <rdg wit="#o">descencium</rdg>
 </app> et 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">ex tunc</lem>
    <rdg wit="#o"></rdg>
 </app> Francorum reges regali tantum honore 
@@ -239,7 +239,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #o">amiserunt</lem>
    <rdg wit="#a">ammiserunt</rdg>
 </app>. 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> In illis diebus in Remensium ciuitate erat archiepiscopus, uir bonus et modestus, iam senex, frater 
@@ -272,7 +272,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">Gibberti</lem>
    <rdg wit="#o">Girberti</rdg>
 </app>, sed plus timens Deum quam terrenum regem, ipsum 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">regem</lem>
    <rdg wit="#o"></rdg>
 </app> in quantum potuit redarguit. Rex itaque cum magno dedecore expelli 
@@ -280,7 +280,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">iussit</lem>
    <rdg wit="#o">iusit</rdg>
 </app> Arnulfum de ecclesia et sic 
-<app cert="high" type="orthography" subtype="ll-subtype">
+<app cert="high" type="orthography" subtype="ll">
    <lem wit="#b #a">alligatum</lem>
    <rdg wit="#o">aligatum</rdg>
 </app> retrudi in carcere, ubi nepos eius Carolus detinebatur, mansitque ibi annis III. Nunciantur hec presuli Romano qui ualde indignans super hoc facto interdixit omnes episcopos qui iam dicto facinori consenserant, misitque Leonem abbatem a sede apostolica ad domnum Seguinum archiepiscopum Senonum qui uice sua in urbe 
@@ -320,7 +320,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #o">acclamabat</lem>
    <rdg wit="#a">acclamat</rdg>
 </app> domnum Gibbertum. Assumptus 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">est</rdg>
 </app> autem de urbe Rauenna ordinatus est pontifex in urbe Roma. 
@@ -344,11 +344,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#o">tendebat</lem>
    <rdg wit="#b #a">tenebat</rdg>
 </app> contra meridiem quasi 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">unum</rdg>
 </app> passum 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o"></rdg>
 </app>. Et post paucos dies iterum 
@@ -356,15 +356,15 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#b #a">apparuit</lem>
    <rdg wit="#o">aparuit</rdg>
 </app> eadem stella a parte 
-<app cert="high" subtype="case-subtype" type="orthographic">
+<app cert="high" subtype="case" type="orthographic">
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #o #a">occidentis</rdg>
 </app> et splendor eius 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">tendebat</rdg>
 </app> ad orientem 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a">tendebat</lem>
    <rdg wit="#o"></rdg>
 </app>. Et non 
@@ -440,7 +440,7 @@ Anno
  
 <p xml:id="g171.9-171.14">
 Anno dominice incarnationis 
-<app cert="high" type="substantial" subtype="num-num-subtype">
+<app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">CMXCVII</rdg>
    <rdg wit="#a">CMXLVII</rdg>
    <rdg wit="#o">CMXCVIII</rdg>
@@ -457,7 +457,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">autem post mortem patris</lem>
    <rdg wit="#o">{Gap in the MS: 4 illegible words}</rdg>
 </app> regnauit annis 
-<app cert="high" subtype="num-num-subtype" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">XXIII</lem>
    <rdg wit="#a #o">XXXIII</rdg>
    </app>. Per idem tempus Mel catipanus primum in Apuliam 
@@ -497,7 +497,7 @@ Non post multum uero temporis
    <lem wit="#b #a">Burgundiam</lem>
    <rdg wit="#o">Burgundia</rdg>
 </app>. 
-<app cert="high" type="orthography" subtype="y-subtype">
+<app cert="high" type="orthography" subtype="y">
    <rdg wit="#b">Rainaldus</rdg>
    <rdg wit="#a">Raynaldus</rdg>
    <rdg wit="#o">{Gap in the MS: 1 illegible word}</rdg>
@@ -514,7 +514,7 @@ Non post multum uero temporis
    <lem wit="#b #a">eius. Mortuo</lem>
    <rdg wit="#o">{Gap in the MS: 3 illegible words}</rdg>
 </app> 
-<app cert="high" subtype="3elements3variants-subtype" type="substantial">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">quoque</lem>
    <rdg wit="#a">itaque</rdg>
    <rdg wit="#o"></rdg>
@@ -523,12 +523,12 @@ Non post multum uero temporis
    <lem wit="#b #a">comite Senonum successit ei</lem>
    <rdg wit="#o">{Gap in the MS: 5 illegible wordsfilius}</rdg>
 </app> 
-<app cert="high" type="orthography" subtype="y-subtype">
+<app cert="high" type="orthography" subtype="y">
    <rdg wit="#b">Rainaldus</rdg>
    <rdg wit="#a">Raynaldus</rdg>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">filius</lem>
    <rdg wit="#o"></rdg>
 </app> eius nequissimus; 
@@ -536,12 +536,12 @@ Non post multum uero temporis
    <lem wit="#b #a">hic</lem>
    <rdg wit="#o">{Gap in the MS: 8 illegible words}</rdg>
 </app> 
-<app cert="high" type="orthography" subtype="tc-subtype">
+<app cert="high" type="orthography" subtype="tc">
    <rdg wit="#b">persecucionem</rdg>
    <rdg wit="#a">persecutionem</rdg>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">intulit ecclesiis Christi eiusque fidelibus quanta</lem>
    <rdg wit="#o"></rdg>
 </app> non est audita 
@@ -562,7 +562,7 @@ Non post multum uero temporis
    <rdg wit="#a">Saguino</rdg>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">, et regi tradita Robberto.</lem>
    <rdg wit="#o"></rdg>
 </app> 
@@ -605,17 +605,17 @@ Non post multum uero temporis
    <lem wit="#b #a">cathedram mensibus</lem>
    <rdg wit="#o">cathedra menses</rdg>
 </app> V. Quo defuncto Iohannes papa qui uocatur 
-<app cert="high" subtype="3elements3variants-subtype" type="substantial">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Fassanus</lem>
    <rdg wit="#a">Fanassus</rdg>
    <rdg wit="#o">Fanasus</rdg>
 </app> sedit anno I. Hic Ottonem regem Saxonum coronauit imperatorem. Post Iohannem uero Siluester Tiburtinus, qui uocatur Osporco, Romanum suscepit pontificatum qui sedit annis 
-<app cert="high" type="substantial" subtype="num-num-subtype">
+<app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">II</rdg>
    <rdg wit="#a">IIII</rdg>
    <rdg wit="#o">IV</rdg>
 </app>. Suo quidem tempore fuit pessima fames. Hic autem 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> mortuo Alberico qui patriciatus sibi nomen uendicauerat a Crescentio Numentano, qui patricius dicebatur, papa ordinatus est quique etiam Ottonem coronauit imperatorem, postea uero cum magno dedecore ab eodem Crescentio a papatu expulsus est. Et quidam Iohannes, Placentinus episcopus, Grecus genere, legatione functus Ottonis imperatoris a 
@@ -667,7 +667,7 @@ Non post multum uero temporis
    <lem wit="#b #a">anno dominice incarnationis</lem>
    <rdg wit="#o">anno dominice ab incarnatione Domini</rdg>
 </app> 
-<app cert="high" subtype="3elements3variants-subtype" type="substantial">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">millesimo secundo</lem>
    <rdg wit="#a">M</rdg>
    <rdg wit="#o">MI</rdg>
@@ -676,7 +676,7 @@ Non post multum uero temporis
 	<lem wit="#b #o">indictione</lem>
 	<rdg wit="#a">per indictionem</rdg>
 </app> 
-<app cert="high" subtype="num-num-subtype" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
 	<lem wit="#b #o">XIV</lem>
 	<rdg wit="#a">XIII</rdg>
 </app>. Hic autem tertius 
@@ -688,7 +688,7 @@ Non post multum uero temporis
    <lem wit="#b #a">scilicet</lem>
    <rdg wit="#o">scilice</rdg>
 </app> 
-<app cert="high" subtype="missing-in-print-subtype" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #o"></lem>
    <rdg wit="#a">anno uidelicet</rdg>
 </app> 
@@ -704,11 +704,11 @@ Non post multum uero temporis
    <lem wit="#b #a">ceperat</lem>
    <rdg wit="#o">cepit</rdg>
 </app>. Eo itaque mortuo frater eius Henricus maioris 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Octonis</rdg>
 </app> imperatoris 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a">Ottonis</lem>
    <rdg wit="#o"></rdg>
 </app> nepos fit rex, quique regnauit 
@@ -724,7 +724,7 @@ Non post multum uero temporis
  
 <p xml:id="g173.12-173.13">
 Anno dominice incarnationis 
-<app cert="high" type="substantial" subtype="num-num-subtype">
+<app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">MI</rdg>
    <rdg wit="#a">MXI</rdg>
    <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
@@ -749,7 +749,7 @@ Anno
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="num-num-subtype">
+<app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">MII</rdg>
    <rdg wit="#a">MXII</rdg>
    <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
@@ -790,7 +790,7 @@ Anno
    <lem wit="#b #a">componeret</lem>
    <rdg wit="#o">componere</rdg>
 </app>. Qui ueniens cepit omnia tranquille agere atque strenue ordinare 
-<app cert="high" type="substantial" subtype="transposition-subtype">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a"></lem>
    <rdg wit="#o">hic in Apulie finibus</rdg>
 </app>. 
@@ -801,7 +801,7 @@ Anno
    <lem wit="#b #o">Anno</lem>
    <rdg wit="#a">Anni</rdg>
 </app> 
-<app cert="high" subtype="case-subtype" type="orthographic"> 
+<app cert="high" subtype="case" type="orthographic"> 
    <lem resp="#pm">Domini</lem>
    <rdg wit="#b #a #o">domini</rdg>
 </app> 
@@ -809,15 +809,15 @@ Anno
    <lem wit="#b #a">MXIII</lem>
    <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app> 
-<app cert="high" subtype="different-punct-subtype" type="punctuation"> 
+<app cert="high" subtype="different-punct" type="punctuation"> 
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">.</rdg>
 </app> indictione I. 
-<app cert="high" type="substantial" subtype="transposition-subtype"> 
+<app cert="high" type="substantial" subtype="transposition"> 
    <lem wit="#b #a">Hic in Apulie finibus</lem>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="high" type="orthography" subtype="h-subtype">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a">rehedificauit</lem>
    <rdg wit="#o">Redificauit</rdg>
 </app> ciuitatem diu dirutam nuncupauitque eam Troiam, que antiquitus Ecana uocabatur et iussu imperatorum fines per statutum priuilegium eidem stabiliuit ciuitati. In hanc ciuitatem olim tempore Adriani imperatoris, qui Traiano successerat, fuit ab apostolica sede 
@@ -829,7 +829,7 @@ Anno
    <lem wit="#b #a">iussu</lem>
    <rdg wit="#o">iusu</rdg>
 </app> ipsius Adriani Rome ductus 
-<app cert="high" type="orthography" subtype="h-subtype">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a">ac passus</lem>
    <rdg wit="#o">ach pasus</rdg>
 </app> est. Tempore quoque 
@@ -849,7 +849,7 @@ Anno
    <lem wit="#b">qui</lem>
    <rdg wit="#a #o">quique</rdg>
    </app> 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a">martyrio</lem>
    <rdg wit="#o">martirio</rdg>
 </app> uitam finiuit. Et post 
@@ -861,7 +861,7 @@ Anno
    <lem wit="#b #a">confessor</lem>
    <rdg wit="#o">confesor</rdg>
 </app> et sanctus multas sanctorum ecclesias renouauit. Ipse etiam prenominatus catipanus in finibus Samnii et Apulie edificauit 
-<app cert="high" type="orthography" subtype="h-subtype">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a">ac</lem>
    <rdg wit="#o">ach</rdg>
 </app> constituit plures urbes et 
@@ -869,24 +869,24 @@ Anno
    <lem wit="#b #a">oppida</lem>
    <rdg wit="#o">opida</rdg>
 </app>; ipsaque regio usque 
-<app cert="high" type="orthography" subtype="h-subtype">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a">hodie</lem>
    <rdg wit="#o">odie</rdg>
 </app> Catipania 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">ex suo nomine</lem>
    <rdg wit="#a"></rdg>
 </app> dicitur. Quarto autem anno post predicte ciuitatis 
-<app cert="high" type="substantial" subtype="missing-in-ms-subtype">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <rdg wit="#b">Troie</rdg>
    <rdg wit="#a"></rdg>
    <rdg wit="#o">Troye</rdg>
 </app> 
-<app cert="high" type="orthography" subtype="tc-subtype">
+<app cert="high" type="orthography" subtype="tc">
    <lem wit="#b #a">rehedificationem</lem>
    <rdg wit="#o">rehedificacionem</rdg>
 </app> 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">, in anno uidelicet</lem>
    <rdg wit="#a"></rdg>
 </app> incarnationis Domini 
@@ -906,11 +906,11 @@ Anno
    <lem wit="#b #a">Benedicto</lem>
    <rdg wit="#o">Benedictus</rdg>
 </app> papa uenit super ipsam ciuitatem obseditque 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">eam</lem>
    <rdg wit="#o"></rdg>
 </app> per 
-<app cert="high" subtype="num-word-subtype" type="orthographic">
+<app cert="high" subtype="num-word" type="orthographic">
    <lem wit="#b">quatuor</lem>
    <rdg wit="#a #o">IV</rdg>
 </app> menses machinis illam fortiter expugnans. Imperator itaque uidens quod 
@@ -918,7 +918,7 @@ Anno
    <lem wit="#b #a">eam</lem>
    <rdg wit="#o">ea</rdg>
 </app> sine mora capere 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">non</lem>
    <rdg wit="#o"></rdg>
 </app> posset – dixerat enim iratus quod si eam 
@@ -926,7 +926,7 @@ Anno
    <lem wit="#b #a">ui cepisset</lem>
    <rdg wit="#o">non sine mora incepise</rdg>
 </app> statim destrueret – 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">timuit</lem>
    <rdg wit="#o"></rdg>
 </app> sibi suisque estiuum Apulie calorem, et sic composita pace cum ciuibus, obsidibusque ab eis 
@@ -934,7 +934,7 @@ Anno
    <lem wit="#b #a">receptis</lem>
    <rdg wit="#o">acceptis</rdg>
 </app> ad propria est reuersus. Pandulfum 
-<app cert="high" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">autem</lem>
    <rdg wit="#a"></rdg>
 </app> Capuanum principem secum in Alamanniam deduxit. 
@@ -962,7 +962,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">VIII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app>, Henricus Alamannorum imperator defunctus est, cui 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">successit Churradus</lem>
    <rdg wit="#o">succesit Chunradus</rdg>
 </app> qui dux eius fuerat. Eodem anno papa Benedictus obiit et 
@@ -970,7 +970,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei Iohannes frater eius, 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> qui uno eodemque die et laicus fuit et pontifex 
@@ -978,18 +978,18 @@ Anno dominice incarnationis
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> seditque annos IX 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">et</lem>
    <rdg wit="#o"></rdg>
 </app> dies IX. 
 </p>
  
 <p xml:id="g177.5-177.6">
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Anno Domini</lem>
    <rdg wit="#a">Anni domini</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="num-num-subtype">
+<app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">MXXVII</rdg>
    <rdg wit="#a">MXXVIII</rdg>
    <rdg wit="#o">Gap1MissingWord</rdg>
@@ -998,7 +998,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">X</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app>; apud 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Constantinopolim</lem>
    <rdg wit="#o">Constantinopoli</rdg>
 </app> Constantinus imperator obiit et 
@@ -1006,7 +1006,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei Romano gener eius una cum eius uxore Zoy imperatrice, regnauitque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">annos</lem>
    <rdg wit="#a">annis</rdg>
 </app> V. 
@@ -1018,7 +1018,7 @@ Anno dominice incarnationis MXXX, indictione XIII; Iohannes princeps Salerni def
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Guaymarius filius</lem>
    <rdg wit="#o">Guaimarius fillius</rdg>
 </app> eius. 
@@ -1026,11 +1026,11 @@ Anno dominice incarnationis MXXX, indictione XIII; Iohannes princeps Salerni def
  
 <p xml:id="g177.9-178.3">
 Anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MXXXI, indictione XIV Romano 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">imperator</lem>
    <rdg wit="#o">imperatore</rdg>
 </app> Constantinopolitanus 
@@ -1042,19 +1042,19 @@ Anno
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">in</lem>
    <rdg wit="#o"></rdg>
 </app> imperium 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Michael</lem>
    <rdg wit="#o">Miquel</rdg>
 </app> qui dicitur Catalactus cum 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Ipso quoque anno defunctus est 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Robbertus</lem>
    <rdg wit="#o">Robertus</rdg>
 </app> Francorum rex cui 
@@ -1062,11 +1062,11 @@ Anno
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> filius eius Henricus. Cuius in tertio anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">urbs Parisii</lem>
    <rdg wit="#o">urbis Perisius</rdg>
 </app> flagrauit incendio; 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">regnauit autem</lem>
    <rdg wit="#a">regnauitque</rdg>
 </app> hic Henricus annis XXIX. 
@@ -1074,55 +1074,55 @@ Anno
  
 <p xml:id="g178.4-178.10">
 Anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MXXXIV, indictione II; fuit eclipsis solis in festiuitate sancti Petri. Quo anno Iohannes papa defunctus est et 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">successit ei</lem>
    <rdg wit="#o">succesit</rdg>
 </app> Benedictus qui 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">uocabatur</lem>
    <rdg wit="#a">uocatur</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Theofilatus</lem>
    <rdg wit="#o">Theofilactus</rdg>
 </app>, seditque annis XIII. Iste quidem de pontificatu eiectus est et suscepit papatum Iohannes 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Sabinensis</lem>
    <rdg wit="#o">Sabiniensis</rdg>
 </app> episcopus cui nomen Siluester. Et 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">iste</lem>
    <rdg wit="#o">isto</rdg>
 </app> quidem eiectus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">est. Post</lem>
    <rdg wit="#o">post</rdg>
 </app> dies 
-<app cert="medium" subtype="num-num-subtype" type="substantial">
+<app cert="medium" subtype="num-num" type="substantial">
    <lem wit="#b">LVII</lem>
    <rdg wit="#a #o">LVI</rdg>
    </app> recuperatus 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">est</lem>
    <rdg wit="#o"></rdg>
 </app> papa Benedictus qui post mensem 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o">I</rdg>
 </app> et dies XX uendidit papatum Iohanni 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Rauennati</lem>
    <rdg wit="#a">Rauennanti</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">archipresbitero</lem>
    <rdg wit="#o">archiepiscopo</rdg>
 </app> sancti Iohannis ante portam Latinam, cui nomen positum est Gregorius, qui sedit anno I 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">et mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> VI. 
@@ -1130,27 +1130,27 @@ Anno
  
 <p xml:id="g178.11-178.12">
 Anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MXXXVII indictione V 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">mense Ianuarii</lem>
    <rdg wit="#o">mesem Ianuari</rdg>
 </app>; 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> mons Uesubius eructauit incendium ita 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> ut quasi flumen 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> usque ad mare 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">discurreret</lem>
    <rdg wit="#o">discurere</rdg>
 </app> 
@@ -1162,48 +1162,48 @@ Anno
  
 <p xml:id="g178.13-179.2">
 Anno dominice incarnationis 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Domini</rdg>
 </app> MXXXIX indictione VII apud Constantinopolim Michael imperator 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">cognomento Catalactus</lem>
    <rdg wit="#o">cognominato Cathactus</rdg>
 </app> diem obiit anno VII eius imperii. Cui Michael qui Etheriarchis dicebatur successit cum 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Eodem anno 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">in</rdg>
 </app> mense 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Februarii Normanni ingressi</lem>
    <rdg wit="#o">Febroari Nordinanni ingresi</rdg>
 </app> iam in Apuliam, ter 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">uno die</lem>
    <rdg wit="#o">I diem</rdg>
 </app> cum Grecis graui prelio 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">dimicarum</lem>
    <rdg wit="#a">dimicarunt</rdg>
    <rdg wit="#o">dimicare</rdg>
 </app> inter Aufidum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">amnem</lem>
    <rdg wit="#o">aminem</rdg>
 </app> et Oliuentem, et 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> uictores extiterunt. In ipso quidem prelio fuit Drogo 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes et 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">quattuor</lem>
    <rdg wit="#o">quatuor</rdg>
 </app> ex fratribus eius. In ipso quoque anno Chunradus imperator defunctus est anno eius imperii XV, et 
@@ -1215,11 +1215,11 @@ Anno dominice incarnationis
  
 <p xml:id="g179.3-179.7">
 Anno 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">dominice incarnationis</rdg>
 </app> Domini MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">secundo</lem>
    <rdg wit="#a">II</rdg>
 </app> postquam imperare ceperat. Et 
@@ -1227,36 +1227,36 @@ Anno
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei imperator Michael 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Archontopanthiu</lem>
    <rdg wit="#o">Arcontopanthiu</rdg>
 </app> cum 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Quo uita 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">decedente</lem>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">ipso</lem>
    <rdg wit="#a"></rdg>
 </app> eodem anno 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">X</lem>
    <rdg wit="#a"></rdg>
    <rdg wit="#o">decedente</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">successit ei</lem>
    <rdg wit="#o">succesit eius</rdg>
 </app> Constantinus Monomachus in imperium cum 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice, qui regnauit annis XII. Quo tempore fames ualida fuit in Italia 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">ad quem</rdg>
 </app> in Gallia per septem continuos annos. 
@@ -1264,19 +1264,19 @@ Anno
  
 <p xml:id="g179.8-179.9">
 Anno dominice incarnationis MXLII indictione X; luna 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">passa</lem>
    <rdg wit="#o">pasa</rdg>
 </app> est 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">eclipsim</lem>
    <rdg wit="#o">eclipsi</rdg>
 </app> V 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Idus</lem>
    <rdg wit="#o">Idem</rdg>
 </app> Ianuarii per 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">quinque horas</lem>
    <rdg wit="#o">V hore</rdg>
 </app> noctis. 
@@ -1288,15 +1288,15 @@ Anno ab incarnatione Domini MXLIV indictione XII; hoc autem tempore Guilelmus fi
  
 <p xml:id="g179.12-179.14">
 Anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">dominice incarnationis MXLV</lem>
    <rdg wit="#o">ab incarnatione Domini MXLIII</rdg>
 </app> indictione XIII; Drogo 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes cepit 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">ciuitatem</lem>
    <rdg wit="#a"></rdg>
 </app> Bibinum eamque depopulatus est; sequenti uero anno, postquam eadem ciuitas reedificata est, flagrauit incendio. 
@@ -1304,56 +1304,56 @@ Anno
  
 <p xml:id="g179.15-180.10">
 Anno Domini 
-<app cert="high" type="substantial" subtype="num-num-subtype">
+<app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">MXLVI</rdg>
    <rdg wit="#a">MXLVII</rdg>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
-<app cert="medium" subtype="num-num-subtype" type="substantial">
+<app cert="medium" subtype="num-num" type="substantial">
    <lem wit="#b #o">XIV</lem>
    <rdg wit="#a">XV</rdg>
 </app> Henricus imperator 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Romam</rdg>
 </app> uenit 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">Romam</lem>
    <rdg wit="#o"></rdg>
 </app> inuenitque sedem apostolicam ualde turbatam, nam 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> uno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">eodemque</lem>
    <rdg wit="#o">edemque</rdg>
 </app> tempore supradicti 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Theophilus</lem>
    <rdg wit="#o">Teophilus</rdg>
 </app> qui et Benedictus, et Siluester qui et Iohannes Sabinianus, et Gregorius qui et Iohannes Rauennas, Romanum non regebant 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">sed</lem>
    <rdg wit="#o">set</rdg>
 </app> uastabant pontificatum. Tunc imperator ipse conuocatis episcopis atque ordinis utriusque uiris religiosis ac catholicis, sinodum congregari 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">iussit</lem>
    <rdg wit="#o">fecit</rdg>
 </app>, in qua statim, canonibus exquisitis, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">hii</lem>
    <rdg wit="#o">hi</rdg>
 </app> tres 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">dampnati</lem>
    <rdg wit="#o">dabnati</rdg>
 </app> et exilio religati sunt, nullus enim eorum amplius iure poterat episcopari. Et tunc a clero et populo canonice Clemens electus est, ipso imperatore — quemadmodum in canonibus statutum est — 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">assensum</lem>
    <rdg wit="#o">asensum</rdg>
 </app> prebente. Qui consecratus sedit papalem cathedram 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> IX: iste quoque Henricum coronauit imperatorem. Defuncto itaque Clemente Damasus electus et consecratus est, cuius electioni predictus imperator assensum prebuit, seditque Damasus dies XX. Imperator autem 
@@ -1361,40 +1361,40 @@ Anno Domini
  
 <p xml:id="g180.10-180.12">
 ipse usque Capuam uenit 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">a</rdg>
 </app> terram pro tempore sibi componens, et sic reuersus est 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">anno Domini MXLVII</lem>
    <rdg wit="#a2">MXLII</rdg>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">, indictione XV</lem>
    <rdg wit="#o"></rdg>
 </app>. 
 </p>
  
 <p xml:id="g180.13-180.15">
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">Hoc autem tempore comprehensum est oppidum Stuni a Garangis in mense</lem>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Octobris</lem>
    <rdg wit="#a2">Octubris</rdg>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">et in mense Decembris</lem>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">depopulauerunt Liccie.</lem>
    <rdg wit="#a2 #o"></rdg>
    </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">Et in mense Iunii Benedictus papa per poculum ueneni occidit papam Clementem.</lem>
    <rdg wit="#o"></rdg>
 </app> 
@@ -1411,7 +1411,7 @@ Anno
    <lem wit="#b #a2">MXLVIII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione I; 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a2">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrix obiit. 
@@ -1419,11 +1419,11 @@ Anno
  
 <p xml:id="g181.2-181.5">
 Anno 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">ab incarnatione</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">domini</lem>
    <rdg wit="#a2">dominice incarnationis</rdg>
 </app>  
@@ -1431,48 +1431,48 @@ Anno
    <lem wit="#b #a2">MXLIX</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione II, Damaso 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">papa</lem>
    <rdg wit="#a2"></rdg>
 </app> uita decedente, Leo 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">sanctissimus</lem>
    <rdg wit="#o">sanctisimus</rdg>
 </app> qui uocatur 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Brunus</lem>
    <rdg wit="#a2">Bruno</rdg>
 </app>, a populo Romano expetitus, a clero electus, ab imperatore quoque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">commendatus</lem>
    <rdg wit="#o">comendatus</rdg>
 </app>, et ab episcopis, quibus 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b"> </lem>
    <rdg wit="#a2">officii huius</rdg>
    <rdg wit="#o">oficii huius</rdg>
 </app> auctoritas est 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">attributa</lem>
    <rdg wit="#o">atributa</rdg>
 </app>, consecratus est in pontificatus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">honore</lem>
    <rdg wit="#a2 #o">honorem</rdg>
    </app>, seditque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">annis</lem>
    <rdg wit="#o">annos</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">quinque</lem>
    <rdg wit="#a2">V</rdg>
 </app>, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">duobus</lem>
    <rdg wit="#a2">II</rdg>
    <rdg wit="#o">duos</rdg>
@@ -1481,61 +1481,61 @@ Anno
  
 <p xml:id="g181.6-181.10">
 Anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">Domini</lem>
    <rdg wit="#a2 #o">dominice</rdg>
    </app> 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #o"></lem>
    <rdg wit="#a2">incarnationis</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">MLI indictione</lem>
    <rdg wit="#o">incarnationis Gap1MissingWord indictionem</rdg>
 </app> III 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">mense</lem>
    <rdg wit="#o">mensis</rdg>
 </app> Augusti Drogo 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Normannorum</lem>
    <rdg wit="#o">Nordmannorum</rdg>
 </app> comes defunctus est. 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> Fuitque uir egregius, pius, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">strenuus</lem>
    <rdg wit="#o">strenus</rdg>
 </app> atque famosus, qui propter animi mansuetudinem et 
-<app cert="medium" subtype="tc-subtype" type="orthographic">
+<app cert="medium" subtype="tc" type="orthographic">
    <lem wit="#b #o">iusticie</lem>
    <rdg wit="#a2">iustitie</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">sertatam</lem>
    <rdg wit="#a2 #o">seruatam</rdg>
    </app> equitatem a cunctis 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">dilectus</rdg>
 </app> est 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">dilectus</lem>
    <rdg wit="#o">.</rdg>
 </app> 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">".</lem>
    <rdg wit="#a2">.</rdg>
    <rdg wit="#o"></rdg>
 </app> Cui 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Unfridus</lem>
    <rdg wit="#a2">Gofridus</rdg>
    <rdg wit="#o">Umfridus</rdg>
 </app> frater eius 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Normannorum</lem>
    <rdg wit="#o">Nordmannorum</rdg>
 </app> comes 
@@ -1543,15 +1543,15 @@ Anno
    <lem wit="#b #a2">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app>, tenuitque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">potestatem</lem>
    <rdg wit="#o">potestatis</rdg>
 </app> ipsius 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">honoris</lem>
    <rdg wit="#o">honorem</rdg>
 </app> per annos 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">septem</lem>
    <rdg wit="#a2 #o">VII</rdg>
    </app>. 
@@ -1563,11 +1563,11 @@ Anno dominice incarnationis
    <lem wit="#b #a2">MLII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">quinta Guaymarius</lem>
    <rdg wit="#o">V Gaymarius</rdg>
 </app> princeps Salerni a suis interfectus est anno principatus sui 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">uicesimo tercio</lem>
    <rdg wit="#a2 #o">XXIII</rdg>
    </app>. Cui 
@@ -1583,52 +1583,52 @@ Anno ab incarnatione Domini
    <lem wit="#b #a2">MLIII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione VI 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">mense</lem>
    <rdg wit="#o">mensis</rdg>
 </app> 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Iulio</lem>
    <rdg wit="#a2">Iulii</rdg>
    <rdg wit="#o">Iunii</rdg>
 </app>. Leo papa multis precibus ab 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Enrico</lem>
    <rdg wit="#o">Henrico</rdg>
 </app> monitus imperatore per 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">quorundam Sampnitum suggestionem</lem>
    <rdg wit="#o">corundam Sannitum sucgestionem</rdg>
 </app> uenit in Beneuentum ut 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Normannos</lem>
    <rdg wit="#o">Normanos</rdg>
 </app> Apulia expelleret. Inde mouens 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">gressum</lem>
    <rdg wit="#o">gresum</rdg>
 </app> simul cum Alamannis quos 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">imperator</lem>
    <rdg wit="#o">imperato</rdg>
 </app> cum eo 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">direxerat</lem>
    <rdg wit="#a2">duxerat</rdg>
 </app>, apud urbem nomine Ciuitatem, que in confinibus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Sampnii</lem>
    <rdg wit="#o">Samnii</rdg>
 </app> est et Apulie, cum Normannis acriter pugnauit. 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Commisso</lem>
    <rdg wit="#o">Comiso</rdg>
 </app> itaque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">bello</lem>
    <rdg wit="#a2">prelio</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> totum 
@@ -1636,52 +1636,52 @@ Anno ab incarnatione Domini
    <lem wit="#b #a2">Alamannorum</lem>
    <rdg wit="#o">Alamanorum</rdg>
 </app> exercitum in ore gladii 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">percusserunt</lem>
    <rdg wit="#o">percuserunt</rdg>
 </app>. In ipso quidem belli apparatu defecerunt 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Alamannis hi</lem>
    <rdg wit="#a2">Alamanni ii</rdg>
 </app> quorum uenerant suggestione, quique in auxilium eorum uenerunt. Leo autem papa minime propter quod uenerat perficere ualens reuersus est. Iste primus Romanorum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">pontificum</lem>
    <rdg wit="#o">pontificium</rdg>
 </app> a beato Petro ad se usque 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> cum manu armatorum in bellum 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">"</lem>
    <rdg wit="#a2"></rdg>
    <rdg wit="#o">procesit</rdg>
 </app>  
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">processit</lem>
    <rdg wit="#o"></rdg>
 </app>, qui quamuis sanctus fuerit et pio hoc animo egerit, tamen quia 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">non eius</rdg>
 </app> id 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">eius non</lem>
    <rdg wit="#o"></rdg>
 </app> erat 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">officii</lem>
    <rdg wit="#o">oficii</rdg>
 </app> 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> neque hoc illi 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">permissum</lem>
    <rdg wit="#o">permisum</rdg>
 </app> fuerat a Domino qui pati uenerat, suosque ut ab aliis magis paterentur quam ut alios persequerentur 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">premonuerat</lem>
    <rdg wit="#o">premouerat</rdg>
 </app> 
@@ -1689,40 +1689,40 @@ Anno ab incarnatione Domini
    <lem wit="#a2 #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> ideo 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> exercitus sui multitudo cesa est, ipso 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">perspiciente</lem>
    <rdg wit="#a2">perspicientem</rdg>
 </app>. Non enim Dominus discipulis suis 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> neque idem apostoli 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> suis 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">successoribus</lem>
    <rdg wit="#o">succesoribus</rdg>
 </app> 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> preceperunt ut curis secularibus, ueluti principes 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">,</lem>
    <rdg wit="#o">seculi</rdg>
 </app> materiali gladio Dei populum tuerentur 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">"</lem>
    <rdg wit="#a2">si</rdg>
    <rdg wit="#o"></rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">sed</lem>
    <rdg wit="#a2"></rdg>
 </app> uerbo doctrine monerent et pie conuersationis exemplo instruerent 
@@ -1730,31 +1730,31 @@ Anno ab incarnatione Domini
    <lem wit="#a2 #o">.</lem>
    <rdg wit="#b">".</rdg>
 </app> Eodem anno Constantinus Monomachus imperator Constantinopolitanus obiit, post quem Theodora, soror 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a2">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatricis uirgo 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">existens</lem>
    <rdg wit="#o">persistens</rdg>
 </app>, imperium Constantinopolitanum uiriliter biennio tenuit. Qua defuncta Michael Nouicius imperii honorem adeptus est, qui eodem anno fuit inuitus monachus factus. Cui 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Isachius Commiano imperator successit</lem>
    <rdg wit="#o">Michael Inscomiano imperatore succesit</rdg>
 </app>, qui post annos 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">quattuor</lem>
    <rdg wit="#a2 #o">IV</rdg>
    </app> ex quo imperauit imperio eiectus 
-<app cert="high" type="orthography" subtype="h-subtype">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a2">ac</lem>
    <rdg wit="#o">ach</rdg>
 </app> monachus factus est. Cui Constantinus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">cognomento</lem>
    <rdg wit="#o">cognomianatus</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">Dioclici</lem>
    <rdg wit="#a2 #o">Dioclizi</rdg>
    </app> in imperium 
@@ -1762,15 +1762,15 @@ Anno ab incarnatione Domini
    <lem wit="#b #a2">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app>. At uero Leo papa sequenti anno postquam cum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Normannis</lem>
    <rdg wit="#o">Normandis</rdg>
 </app> preliatus est diem obiit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">mense</lem>
    <rdg wit="#o">menses</rdg>
 </app> Aprilis 
-<app cert="medium" subtype="punct-in-print-vs-punct-and-letters-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="punct-in-print-vs-punct-and-letters-in-ms" type="substantial">
    <lem wit="#b #a2">.</lem>
    <rdg wit="#o">in anno ab incarnatione Domini MLV, indictionem VIII</rdg>
 </app> Et 
@@ -1778,62 +1778,62 @@ Anno ab incarnatione Domini
    <lem wit="#b #a2">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei Uictor 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">qui</lem>
    <rdg wit="#o"></rdg>
 </app> Gebeardus uocabatur 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">seditque</lem>
    <rdg wit="#a2">sedit</rdg>
 </app> annis 
-<app cert="high" subtype="num-word-subtype" type="orthographic">
+<app cert="high" subtype="num-word" type="orthographic">
    <lem wit="#b">duobus</lem>
    <rdg wit="#a2 #o">II</rdg>
    </app>, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> 
-<app cert="high" subtype="num-word-subtype" type="orthographic">
+<app cert="high" subtype="num-word" type="orthographic">
    <lem wit="#b">duobus</lem>
    <rdg wit="#a2 #o">II</rdg>
    </app>. Post cuius obitum Stephanus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Gondifridi</lem>
    <rdg wit="#o">Godifridii</rdg>
 </app> ducis germanus qui dictus est 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Fredericus</lem>
    <rdg wit="#a2">Fridericus</rdg>
    <rdg wit="#o">Ferdiricus</rdg>
 </app>, sedit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">septem</lem>
    <rdg wit="#a2">VII</rdg>
 </app>. Quo defuncto Benedictus 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Belliternensis</lem>
    <rdg wit="#a2">Beliternensis</rdg>
    <rdg wit="#o">Belniternensis</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">episcopus</lem>
    <rdg wit="#o"></rdg>
 </app> Romanum inuasit pontificatum, qui sedit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">mensibus</lem>
    <rdg wit="#o">mensis</rdg>
 </app> 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">nouem</lem>
    <rdg wit="#a2">IX</rdg>
    <rdg wit="#o">VIII</rdg>
 </app>. Quibus temporibus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Patarea idest Patareanorum secta</lem>
    <rdg wit="#o">Patarie</rdg>
 </app> apud Mediolanum exorta est. 
@@ -1841,181 +1841,181 @@ Anno ab incarnatione Domini
  
 <p xml:id="g183.1-184.6">
 Anno dominice incarnationis MLVII indictione 
-<app cert="medium" subtype="num-num-subtype" type="substantial">
+<app cert="medium" subtype="num-num" type="substantial">
    <lem wit="#b #o">X</lem>
    <rdg wit="#a2">VII</rdg>
 </app>; 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Unfridus</lem>
    <rdg wit="#a2">Gofridus</rdg>
    <rdg wit="#o">Umfridus</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"></lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">Normannorum</lem>
    <rdg wit="#o"></rdg>
 </app> diem clausit extremum, reliquens sibi 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">successorem</lem>
    <rdg wit="#o">succesorem</rdg>
 </app> Bagelardum filium eius militem 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">strenuum</lem>
    <rdg wit="#o">strenum</rdg>
 </app>. 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Set</lem>
    <rdg wit="#a2">Sed</rdg>
 </app> Robbertus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">cognomento Uiscardus</lem>
    <rdg wit="#o">cognominato Guiscardus</rdg>
 </app>, eiusdem 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Unfridi</lem>
    <rdg wit="#a2">Gofridi</rdg>
    <rdg wit="#o">Umfridi</rdg>
 </app> comitis frater, natus ex patre Tancredo, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Normannorum</lem>
    <rdg wit="#o">Nordmannorum</rdg>
 </app> comitatus honorem sibi arripuit, ipsum 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Baielardum</lem>
    <rdg wit="#a2">Bagelardum</rdg>
    <rdg wit="#o">Bayelardum</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">suum</lem>
    <rdg wit="#a2"></rdg>
 </app> nepotem 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a2">suum</rdg>
 </app> expellens. Tancredus autem fuit timoris Dei non immemor, qui bissenos habuit filios. Quorum primus quidem fuit Sarnus, qui miles insignis extitit. Secundus autem comes 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">Goffridus</lem>
    <rdg wit="#a2 #o">Gofridus</rdg>
    </app> pater Robberti 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">comitis de Lauritello</lem>
    <rdg wit="#o">comis Gap2MissingWords</rdg>
 </app>. 
-<app cert="medium" subtype="tc-subtype" type="orthographic">
+<app cert="medium" subtype="tc" type="orthographic">
    <lem wit="#b #o">Tercius</lem>
    <rdg wit="#a2">Tertius</rdg>
 </app> uero Drogo comes, de quo superius scriptum est. Quartus autem 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Willemus</lem>
    <rdg wit="#a2">Willelmus</rdg>
    <rdg wit="#o">Arlelmus</rdg>
 </app>, et ipse comes, qui propter fortitudinis sue 
-<app cert="medium" subtype="tc-subtype" type="orthographic">
+<app cert="medium" subtype="tc" type="orthographic">
    <lem wit="#b #o">prudenciam</lem>
    <rdg wit="#a2">prudentiam</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Brachiferreus</lem>
    <rdg wit="#o">Brachiferuens</rdg>
 </app> est 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">prenomine</lem>
    <rdg wit="#o">prenomina</rdg>
 </app> dictus 
-<app cert="high" subtype="missing-in-print-vs-punct-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="missing-in-print-vs-punct-in-ms" type="punctuation">
    <lem wit="#a2">:</lem>
    <rdg wit="#b #o"> </rdg>
 </app> erat enim astutissimus 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">et</lem>
    <rdg wit="#o"></rdg>
 </app> ferox fortisque uiribus. Quintus extitit comes 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Unfridus</lem>
    <rdg wit="#a2">Gonfridus</rdg>
    <rdg wit="#o">Umfridus</rdg>
 </app>. Sextus quoque Malgerius comes, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">probus atque</lem>
    <rdg wit="#o">quibus adque</rdg>
 </app> famosus. Septimus itaque fuit Robbertus Guiscardus. Hic autem propter animi 
-<app cert="medium" subtype="tc-subtype" type="orthographic">
+<app cert="medium" subtype="tc" type="orthographic">
    <lem wit="#b #o">astuciam</lem>
    <rdg wit="#a2">astutiam</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">ingeniique</lem>
    <rdg wit="#o">ingenumque</rdg>
 </app> 
-<app cert="medium" subtype="tc-subtype" type="orthographic">
+<app cert="medium" subtype="tc" type="orthographic">
    <lem wit="#b #o">prudenciam</lem>
    <rdg wit="#a2">prudentiam</rdg>
 </app> primus ex Gallorum genere in 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Apulia</lem>
    <rdg wit="#a2">Apuliam</rdg>
 </app> ducatus honorem adeptus est. Qui non multo post sibi subegit Apuliam et Calabriam, Lucaniam atque Siciliam, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">militarem</lem>
    <rdg wit="#o">millitarem</rdg>
 </app> namque disciplinam 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">gloriosissime rexit</lem>
    <rdg wit="#o">gloriosisime rex</rdg>
 </app>. Octauus autem 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">fuit</rdg>
 </app> Alberedus armis 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">strenuus</lem>
    <rdg wit="#o">strenus</rdg>
 </app>. Nonus Tancredus. Decimus Willelmus 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">comes</rdg>
 </app> de Sancto nicandro, pater Robberti comitis de Principatu. Fuit 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">autem</rdg>
 </app> ipse Willelmus acer ingenio, 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">inconstans</lem>
    <rdg wit="#a2">et</rdg>
    <rdg wit="#o">in</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #o"></lem>
    <rdg wit="#a2">constans</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">animo</lem>
    <rdg wit="#o">Constantino</rdg>
 </app>, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">seuusque</lem>
    <rdg wit="#a2">serenusque</rdg>
 </app> natura. Undecimus Frumentinus. Duodecimus 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">Roggerius</lem>
    <rdg wit="#a2 #o">Rogerius</rdg>
    </app> Sicilie comes, qui miles insignis extitit, 
-<app cert="medium" subtype="tc-subtype" type="orthographic">
+<app cert="medium" subtype="tc" type="orthographic">
    <lem wit="#b #o">iusticie</lem>
    <rdg wit="#a2">iustitie</rdg>
 </app> tenax, suis suorumque opibus studens, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">ecclesiarum</lem>
    <rdg wit="#o">ecclesie</rdg>
 </app> Dei 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> sacerdotum 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a2">honori</rdg>
 </app> consulens. Habuit quoque Tancredus horum pater et filias tres. 
@@ -2023,15 +2023,15 @@ Anno dominice incarnationis MLVII indictione
  
 <p xml:id="g184.7-184.9">
 Anno dominice incarnationis MLVIII, indictione XI. Benedictus papa defunctus est et successit ei Nicolaus qui et 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">Ierardus</lem>
    <rdg wit="#a2 #o">Gerardus</rdg>
    </app>. 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms-subtype" type="punctuation">
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> Eodem 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">anno Riccardus</lem>
    <rdg wit="#o">anni Ricardus</rdg>
 </app> cum Iordano filio eius effectus est Capue princeps 
@@ -2043,19 +2043,19 @@ Anno dominice incarnationis MLVIII, indictione XI. Benedictus papa defunctus est
  
 <p xml:id="g184.10-184.13">
 Anno 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">ab incarnatione</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Domini</lem>
    <rdg wit="#a2">dominice incarnationis</rdg>
 </app> MLX, indictione XIII. Henricus rex Francorum obiit, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">cui</lem>
    <rdg wit="#a2">et</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">Philippus</lem>
    <rdg wit="#o">Philipus</rdg>
 </app> filius eius 
@@ -2063,15 +2063,15 @@ Anno
    <lem wit="#b #a2">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> in regnum. Ipso quoque anno comes Robbertus Guiscardus uocatus 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">est</lem>
    <rdg wit="#a2 #o"></rdg>
    </app> a 
-<app cert="high" subtype="y-subtype" type="orthographic">
+<app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a2">Troianis</lem>
    <rdg wit="#o">Troyanis</rdg>
 </app> ciuibus, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a2">ipsam</lem>
    <rdg wit="#o">ipsa</rdg>
 </app> eorum ciuitatem in sua potestate ab eis accepit, qui non post multos dies 
@@ -2079,84 +2079,84 @@ Anno
  
 <p xml:id="g184.13-185.7">
 cum exercitu in 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Calabriam</lem>
    <rdg wit="#o">Calabria</rdg>
 </app> profectus, Regium ciuitatem cepit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> omnium 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> dux effectus est. Hic accepit uxorem nomine 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">Sikelgaitam</lem>
    <rdg wit="#a">Sigelgaytam</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Guaimarii</lem>
    <rdg wit="#o">Gaymarii</rdg>
 </app> principis filiam que sexu quidem mulier pudica fuit 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> honesta animum uero uirilem et 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">in</rdg>
 </app> consilium prouidum gerebat. Ex qua habuit filios 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Roggerium</lem>
    <rdg wit="#o">Rogerium</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">et</lem>
    <rdg wit="#a"></rdg>
 </app> Robbertum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> Guidonem et filias 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">quinque</lem>
    <rdg wit="#a">V</rdg>
 </app>. Ex alia quoque 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">uxore</lem>
    <rdg wit="#a"></rdg>
    <rdg wit="#o">uxorem</rdg>
 </app> nomine 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Alberada</lem>
    <rdg wit="#o">Abberada</rdg>
 </app> prius habuit filium nomine Boamundum. Set Robbertus Guiscardus instituit sibi heredem 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">filium</rdg>
 </app> suum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">filium Roggerium</lem>
    <rdg wit="#o">Rogerium</rdg>
 </app>. Interea Robbertus dux ad Nicolaum papam perrexit eiusque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">liggius</lem>
    <rdg wit="#o">ligirius</rdg>
 </app> homo effectus est, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">promittens</lem>
    <rdg wit="#o">promitens</rdg>
 </app> se iureiurando fidem seruaturum Romane ecclesie et eidem pape eiusque 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">successoribus</lem>
    <rdg wit="#o">succesoribus</rdg>
 </app> canonice intrantibus. Ipse autem papa Nicolaus statim 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">per uexillum</rdg>
 </app> inuestiuit eundem Robbertum 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Guiscardum per uexillum</lem>
    <rdg wit="#o">Guiscare</rdg>
 </app> de honore ducatus sui cum tota terra. 
@@ -2164,58 +2164,58 @@ cum exercitu in
  
 <p xml:id="g185.8-186.5">
 Anno 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MLXII indictione XV Nicolaus papa defungitur anno ordinationis sue 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">secundo</lem>
    <rdg wit="#a #o">II</rdg>
    </app>, mense 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b">octauo</lem>
    <rdg wit="#a #o">VIII</rdg>
    </app>. Et Alexander qui uocatus est Anselmus papa 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">ordinatur. Quo</rdg>
 </app> 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #o">anno</lem>
    <rdg wit="#a">ordinatur, quo tempore</rdg>
 </app> princeps 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">Riccardus</lem>
    <rdg wit="#o">Ricardus</rdg>
 </app> Capuam cepit sibique ordinauit. His autem diebus Robbertus dux ad Alexandrum papam proficiscens 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">"</lem>
    <rdg wit="#a"></rdg>
    <rdg wit="#o">ligius</rdg>
 </app>  
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a">liggius</lem>
    <rdg wit="#o"></rdg>
 </app>  
-<app cert="medium" subtype="missing-in-ms-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">eius</lem>
    <rdg wit="#a"></rdg>
 </app> homo 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">deuenitNicolao</lem>
    <rdg wit="#a">eius deuenit et sicut Nicolao</rdg>
    <rdg wit="#o">deuenit et sicut Nicolaus</rdg>
 </app> pape ita et huic iusiurandum fecit et per uexillum ab eo terram cum honore ducatus accepit. 
-<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+<app cert="medium" subtype="3elements3variants" type="unknown">
    <lem wit="#b">Sedique</lem>
    <rdg wit="#a">Seditque</rdg>
    <rdg wit="#o">Set</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-print-subtype" type="substantial">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"></lem>
    <rdg wit="#o">autem</rdg>
 </app> Alexander papa annis XI, 
-<app cert="medium" subtype="unknown-subtype" type="unknown">
+<app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> VI. 

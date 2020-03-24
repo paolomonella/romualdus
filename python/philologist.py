@@ -163,7 +163,7 @@ class treeWithAppElements:
                 'r2' = the variant characters in myString2 ('i'),
                     inherited from function variantComparison()
                 'subtype' = this will become the value of @subtype in <app>
-                    (e.g. 'y-subtype'), inherited from method
+                    (e.g. 'y'), inherited from method
                     variantComparison().
                     The value of @type will be set only at the end, by method
                     set_type_and_subtype_xml_attrib_in_all_apps()
@@ -378,7 +378,7 @@ class treeWithAppElements:
             elif app_struct == '3elements3variants':
                 myComp = {'r1': '',
                           'r2': '',
-                          'subtype': '3elements3variants-subtype'}
+                          'subtype': '3elements3variants'}
 
             # Set additional keys in dictionary myComp. See the documentation
             # of this method above for details.
@@ -416,8 +416,8 @@ class treeWithAppElements:
 
     def variant_subtypes_count(self):
         '''Return a dict like
-            {'missing-in-ms-subtype': 124,
-            'missing-in-print-vs-punct-in-ms-subtype': 252 etc.}
+            {'missing-in-ms': 124,
+            'missing-in-print-vs-punct-in-ms': 252 etc.}
             counting in how many <app> elements in the juxtaTree each
             variant subtype recurs '''
         myList = self.variant_subtypes_list()
@@ -553,7 +553,7 @@ class treeWithAppElements:
     def set_all_lems_based_on_subtype(self, setCert=True):
         '''For some subtype(s) of <app>, decide the <lem> automatically
             based on that @subtype. If the <app> has 3 children,
-            subtype is 3elements3variants-subtype, which has preferred
+            subtype is 3elements3variants, which has preferred
             reading 'p' (i.e. print), which is handled very simply and
             effectively, so this method also works in that case'''
 
@@ -563,7 +563,7 @@ class treeWithAppElements:
         for a in self.appdict():
             for myRow in self.variant_types_and_subtypes:
 
-                # E.g.: 'different-punct-subtype':
+                # E.g.: 'different-punct':
                 if a['subtype'] == myRow['subtype']:
                     # db_preferredRdg can be
                     # 'p (reading of the print edition) or
@@ -850,13 +850,13 @@ class treeWithAppElements:
                 self.set_lem_based_on_db_3elements(a)
 
     def handle_case_variants(self):
-        ''' If the variant is of case-subtype, change its structure, from
-            <app subtype="case-subtype">
+        ''' If the variant is of case, change its structure, from
+            <app subtype="case">
                 <lem wit="#a">Occidentis</lem>
                 <rdg wit="#b #o">occidentis</rdg>
             </app>
             to
-            <app subtype="case-subtype">
+            <app subtype="case">
                 <lem resp="#pm">Occidentis</lem>
                 <rdg wit="#a #b #o">occidentis</rdg>
             </app>
@@ -865,19 +865,19 @@ class treeWithAppElements:
                 (though the MSS can be three, if we are in 2-bravo)
         '''
         apps_with_case_subtype = [a for a in self.appdict() if a['subtype'] ==
-                                  'case-subtype']
+                                  'case']
         for a in apps_with_case_subtype:
             app = a['app']
             if len(app) > 2:
                 print(('[philologist.py/handle_case_variants] <app> {}'
-                       ' with @subtype=case-subtype has more than 2 children'
+                       ' with @subtype=case has more than 2 children'
                        ' and I can\'t handle it.').format(app.attrib))
             else:
                 print_child = a['printReading']  # an XML element
                 non_print_child = self.find_non_print_child_in_two(
                     app, print_child)  # another XML element
                 # Check that we are in the situation of the above assumptions
-                # (about 90 cases / 123 cases of case-subtype)
+                # (about 90 cases / 123 cases of case)
                 if (non_print_child.tag == '{%s}lem' % ns['t'] and
                         non_print_child.text.istitle() and
                         print_child.tag == '{%s}rdg' % ns['t']):
@@ -894,12 +894,12 @@ class treeWithAppElements:
                     non_print_child.set('resp', '#pm')  # remove @wit
 
                 # If, instead, we're in a strange situation, do nothing
-                # (about 33 cases/123 cases of case-subtype: I'll handle them
+                # (about 33 cases/123 cases of case: I'll handle them
                 #   manually)
                 else:
                     if debug:
                         print(('[philologist.py/handle_case_variants] <app>'
-                               ' {} has @subtype=case-subtype but I can\'t'
+                               ' {} has @subtype=case but I can\'t'
                                ' handle it.\n\tPrint text: «{}»\n\tMS text:'
                                ' «{}»').format(
                                    app.attrib, print_child.text,
@@ -917,8 +917,8 @@ class treeWithAppElements:
             '''
         # Read DB table variant_types_and_subtypes and create
         # a dict corresponding_type looking like:
-        # {'y-subtype': 'ortographic,
-        # 'different-punct-subtype': 'punctuation'} etc.
+        # {'y': 'ortographic',
+        # 'different-punct': 'punctuation'} etc.
         corresponding_type = {}
         for r in self.variant_types_and_subtypes:
             my_subtype = r['subtype']
@@ -975,11 +975,11 @@ class treeWithAppElements:
                     if x == app.get('type'):
                         app.set('type', type_subst[x])
 
-                # If @subtype remained 'unknown-subtype' after the
+                # If @subtype remained 'unknown' after the
                 # substitutions, remove it (note that currently subtype
                 # '3elements3variants' remains with type 'substantial'
                 # also after the checkout
-                if app.get('subtype') == 'unknown-subtype':
+                if app.get('subtype') == 'unknown':
                     app.attrib.pop('subtype')
 
                 # Gap in the MS.

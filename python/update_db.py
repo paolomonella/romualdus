@@ -69,7 +69,7 @@ elif arg == '-o2':
 # Only set type to substantial (app has 2 children)
 #   (This case can be used to insert the app in the DB,
 #    so it will be confirmed with @cert=high, or to change
-#    subtype e.g. from tc-subtype to substantial)
+#    subtype e.g. from "tc" to "y")
 elif arg == '-s2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
                     'print, ms, type, xmlid) '
@@ -187,7 +187,7 @@ elif arg == '-t2':
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
             's',     # field 'type' (substantial)
-            'transposition-subtype',  # field 'subtype'
+            'transposition',  # field 'subtype'
             xmlid))  # field 'xmlid' (<p @xml:id> value)
 
 
