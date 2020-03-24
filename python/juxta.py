@@ -178,7 +178,7 @@ tot_par = my_database_import.import_table(dbpath, dbname, 'paragraphs')
 checked_par = [p for p in tot_par if p['checked'] == 1]
 done = len(checked_par)
 todo = len(tot_par) - 1
-percent = round(done / todo * 100, 2)
+percent = round(done / todo * 100, 1)
 print('checked {}/{}, {}%.'.format(
     done, todo, percent
 ))

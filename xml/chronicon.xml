@@ -15027,13 +15027,17 @@ Anno
  
 <p xml:id="g178.11-178.12">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MXXXVII indictione V 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a">mense Ianuarii</lem>
-   <rdg wit="#o">mesem Ianuari</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#b #a">mense</lem>
+   <rdg wit="#o">mesem</rdg>
+</app> 
+<app cert="high" type="orthography">
+   <lem wit="#b #a">Ianuarii</lem>
+   <rdg wit="#o">Ianuari</rdg>
 </app>; 
 <app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a #o"/>
@@ -15047,7 +15051,7 @@ Anno
    <lem wit="#a #o"/>
    <rdg wit="#b">"</rdg>
 </app> usque ad mare 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">discurreret</lem>
    <rdg wit="#o">discurere</rdg>
 </app> 
@@ -15059,48 +15063,52 @@ Anno
  
 <p xml:id="g178.13-179.2">
 Anno dominice incarnationis 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Domini</rdg>
 </app> MXXXIX indictione VII apud Constantinopolim Michael imperator 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a">cognomento Catalactus</lem>
-   <rdg wit="#o">cognominato Cathactus</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#b #a">cognomento</lem>
+   <rdg wit="#o">cognominato</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b #a">Catalactus</lem>
+   <rdg wit="#o">Cathactus</rdg>
 </app> diem obiit anno VII eius imperii. Cui Michael qui Etheriarchis dicebatur successit cum 
 <app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Eodem anno 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">in</rdg>
 </app> mense 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Februarii Normanni ingressi</lem>
    <rdg wit="#o">Febroari Nordinanni ingresi</rdg>
 </app> iam in Apuliam, ter 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">uno die</lem>
    <rdg wit="#o">I diem</rdg>
 </app> cum Grecis graui prelio 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">dimicarum</lem>
    <rdg wit="#a">dimicarunt</rdg>
    <rdg wit="#o">dimicare</rdg>
 </app> inter Aufidum 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">amnem</lem>
    <rdg wit="#o">aminem</rdg>
 </app> et Oliuentem, et 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> uictores extiterunt. In ipso quidem prelio fuit Drogo 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes et 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">quattuor</lem>
    <rdg wit="#o">quatuor</rdg>
 </app> ex fratribus eius. In ipso quoque anno Chunradus imperator defunctus est anno eius imperii XV, et 
@@ -15189,7 +15197,7 @@ Anno
    <lem wit="#b #a">dominice incarnationis MXLV</lem>
    <rdg wit="#o">ab incarnatione Domini MXLIII</rdg>
 </app> indictione XIII; Drogo 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes cepit 
@@ -15525,7 +15533,7 @@ Anno ab incarnatione Domini
    <lem wit="#b #o">bello</lem>
    <rdg wit="#a2">prelio</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a2">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> totum 
@@ -15984,7 +15992,7 @@ cum exercitu in
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> omnium 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> dux effectus est. Hic accepit uxorem nomine 
