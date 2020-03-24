@@ -574,8 +574,12 @@ Non post multum uero temporis
    <rdg wit="#o">Gap2IllegibleWords</rdg>
 </app> autem Rome defuncto Iohanne papa successit ei Gregorius seditque anno 
 <app cert="high" type="illegible-in-ms">
-   <lem wit="#b #a">I mensibus V. Cui Iohannes papa successit</lem>
-   <rdg wit="#o">Gap6IllegibleWords succesit</rdg>
+   <lem wit="#b #a">I mensibus V. Cui Iohannes papa</lem>
+   <rdg wit="#o">Gap6IllegibleWords</rdg>
+</app> 
+<app cert="high" type="orthography">
+   <lem wit="#b #a">successit</lem>
+   <rdg wit="#o">succesit</rdg>
 </app> seditque 
 <app cert="medium" subtype="unknown-subtype" type="unknown">
    <lem wit="#b #a">mensibus</lem>
@@ -601,8 +605,8 @@ Non post multum uero temporis
    <lem wit="#b #a">cathedram mensibus</lem>
    <rdg wit="#o">cathedra menses</rdg>
 </app> V. Quo defuncto Iohannes papa qui uocatur 
-<app cert="high" type="substantial">
-   <rdg wit="#b">Fassanus</rdg>
+<app cert="medium" subtype="3elements3variants-subtype" type="unknown">
+   <lem wit="#b">Fassanus</lem>
    <rdg wit="#a">Fanassus</rdg>
    <rdg wit="#o">Fanasus</rdg>
 </app> sedit anno I. Hic Ottonem regem Saxonum coronauit imperatorem. Post Iohannem uero Siluester Tiburtinus, qui uocatur Osporco, Romanum suscepit pontificatum qui sedit annis 
@@ -758,7 +762,7 @@ Anno
    <rdg wit="#a">MXII</rdg>
    <rdg wit="#o">Domini</rdg>
 </app> 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a"></lem>
    <rdg wit="#o">Gap2MissingWords</rdg>
 </app> indictione 
@@ -809,7 +813,7 @@ Anno
    <lem wit="#b #o">Anno</lem>
    <rdg wit="#a">Anni</rdg>
 </app> domini 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">MXIII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app>. indictione I. 
@@ -886,11 +890,11 @@ Anno
    <lem wit="#b #o">, in anno uidelicet</lem>
    <rdg wit="#a"></rdg>
 </app> incarnationis Domini 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">millesimo uicesimo secundo</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">V</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> Henricus 
@@ -939,11 +943,11 @@ Anno
  
 <p xml:id="g176.1-176.2">
 Anno dominice incarnationis 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">MXXIV</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">VII.</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> Basilius imperator Constantinopolitanus diem obiit. 
@@ -951,11 +955,11 @@ Anno dominice incarnationis
  
 <p xml:id="g177.1-177.4">
 Anno dominice incarnationis 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">MXXV</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">VIII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app>, Henricus Alamannorum imperator defunctus est, cui 
@@ -991,7 +995,7 @@ Anno dominice incarnationis
    <rdg wit="#a">MXXVIII</rdg>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a">X</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app>; apud 
@@ -1404,7 +1408,7 @@ Anno
    <rdg wit="#a2">dominice incarnationis</rdg>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app>  
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a2">MXLVIII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione I; 
@@ -1424,7 +1428,7 @@ Anno
    <lem wit="#b #o">domini</lem>
    <rdg wit="#a2">dominice incarnationis</rdg>
 </app>  
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a2">MXLIX</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione II, Damaso 
@@ -1556,7 +1560,7 @@ Anno
  
 <p xml:id="g181.10-181.11">
 Anno dominice incarnationis 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a2">MLII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
@@ -1576,7 +1580,7 @@ Anno dominice incarnationis
  
 <p xml:id="g181.12-182.19">
 Anno ab incarnatione Domini 
-<app cert="high" type="illegible-in-ms">
+<app cert="high" type="gap-in-ms">
    <lem wit="#b #a2">MLIII</lem>
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione VI 

@@ -73,6 +73,7 @@ class treeWithAppElements:
             's': 'substantial',
             'o': 'orthography',
             'p': 'punctuation',
+            'g': 'gap-in-ms',
             'i': 'illegible-in-ms',
             'u': 'unknown'
         }
