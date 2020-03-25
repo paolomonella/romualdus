@@ -8,8 +8,9 @@ import json
 import re
 from lxml import etree
 from collatex import *
-from myconst import ns, tei_ns, xml_ns, html_ns
-from variant_type import variantComparison
+# from myconst import ns, tei_ns, xml_ns, html_ns
+from myconst import ns
+from variant_subtype import variantComparison
 # from itertools import combinations
 # from simplify_romualdus_for_collatex import myWitness
 
@@ -19,11 +20,11 @@ from variant_type import variantComparison
 
 debug = False
 
-afile = '../xml/gs-short.xml'
-bfile = '../xml/a1s-short.xml'
+a_siglum, afile = 'g', '../xml/ripostiglio/gs-very-short.xml'  # Print edition
+b_siglum, bfile = 'a', '../xml/ripostiglio/a1s-very-short.xml'  # MS
 
-aSiglum = afile.split('/')[-1].split('.')[0].upper()
-bSiglum = bfile.split('/')[-1].split('.')[0].upper()
+# a_siglum = afile.split('/')[-1].split('.')[0].upper()
+# b_siglum = bfile.split('/')[-1].split('.')[0].upper()
 
 
 ########
@@ -89,7 +90,7 @@ addWMilestones = etree.XML("""
 """)
 
 transformAddW = etree.XSLT(addWMilestones)
-                           
+
 xsltWrapW = etree.XML('''
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="xml" indent="no" omit-xml-declaration="yes"/>
@@ -212,35 +213,63 @@ def collateElements(xmlElementA, xmlElementB, myOutputType='json'):
 
 def jsonCollationsList(aParagraphList, bParagraphList):
     ''' Collate each paragraph in A with corresp. par. in B. Return a list.
-        Each element of list jsonOutputList has the (JSON-formatted) output of the collation of two
-        corresponding paragraphs (one from file A, the other from file B).
+        Each element of list jsonOutputList is a dictionary with two keys:
+            - xmlid: its value is a string with the <p> xmlid
+            - json: its value is a dictionary with the (JSON-formatted)
+              output of the collation of two corresponding paragraphs
+              (one from file A, the other from file B).
         '''
         # § To-do: If paragraph does not exist (= is empty, no text and no children) in one witness, don't collate but return a message
     jsonOutputList = []
     for par in aParagraphList:
-        print('Collating pagragraph ' + par.get('{%s}id' % ('http://www.w3.org/XML/1998/namespace')))  # debug
+        xmlid = par.get('{%s}id' % ('http://www.w3.org/XML/1998/namespace'))  # debug
+        print('[jsonCollationsList] Collating pagragraph {}\n\n'.format(xmlid))  # debug
         pi = aParagraphList.index(par)   # Get the index, so it can use the same index for A and B in next line
-        jsonOutputList.append(collateElements(aParagraphList[pi], bParagraphList[pi]))
-    #print(jsonOutputList) #debug
+        my_dict = {'xmlid': xmlid,
+                       'json': collateElements(aParagraphList[pi], bParagraphList[pi])
+                      }
+        jsonOutputList.append(my_dict)
+    ''' for x in jsonOutputList:  # debug
+        print('Item of jsonOutputList {}'.format(x), end='\n\n') '''
+    # print(jsonOutputList)  # debug
+    # The output is a list of dictionaries
     return jsonOutputList
 
-def visualizeVariantsInBrackets(jsonOutputList, onlyOutputVariants = False):
-    ''' Print to screen each word of the original text if there is no variant.
-        If a word has two variants, show this in brackets:
-        - the two variants with the siglum of their witness
-        - the variant characters
-        - the variant type.
-        If onlyOutputVariants = True, only output places in which there are differences
-
+def output_collated_tei(jsonOutputList, siglum_print, siglum_ms,
+                        output_variant_type = False, only_output_variants = False):
+    ''' Output each word of the original text if there is no variant.
+        In the new version of this script (25.03.2020), if I choose
+            output_variant_type (which I don't think I'll do), I have to make
+            sure that witness 'a' is print (g or bonetti)
+            and 'b' is MS (a, a2 or o).
+        If a word has two variants, show this in TEI elements:
+            - the two variants with the siglum of their witness
+            - the variant characters
+            - the variant type (only if only_output_variants is True)
+        If only_output_variants = True, only output places in which there are
+            differences.
+        Return a string.
         '''
-        # § To-do: rimuovi file name suffix (_simplified o simili; è in una variabile in myconst) dalla vers. in maiuscolo
 
-    for jout in jsonOutputList:
+    out = ''  # The output string
+    # TEI tree initial part
+    initial_part = ('<TEI'
+                    ' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'
+                    '\n<teiHeader/>\n<text>\n<body>')
+    out = ''.join([out, initial_part])  # Attach it to the output string
+
+    for jsonOutputLisItem in jsonOutputList:
+        xmlid = jsonOutputLisItem['xmlid']  # xml:id of that <p>
+        jout = jsonOutputLisItem['json']  # JSON output of CollateX collation
         j = json.loads(jout)
         #print(json.dumps(j, sort_keys=True, indent=4, separators=(',', ': '))  )    # debug
 
         cola = j['table'][0]    # Column of witness A
         colb = j['table'][1]    # Column of witness B
+
+        # Print <p> start tag
+        p_start_tag = '\n<p xml:id="%s">' % xmlid
+        out = ''.join([out, p_start_tag])  # Attach it to the output string
 
         for row in cola:
             ci = cola.index(row)
@@ -254,16 +283,25 @@ def visualizeVariantsInBrackets(jsonOutputList, onlyOutputVariants = False):
 
             missingA, missingB = False, False
             if rowMsA is None       and rowMsB is not None:
-                #print('\n«%s» only present in %s, missing in %s\n' % (rowMsB, bSiglum, aSiglum) )
+                #print('\n«%s» only present in %s, missing in %s\n' % (rowMsB, b_siglum, a_siglum) )
                 missingA = True
             elif rowMsA is not None   and rowMsB is None:
-                #print('\n«%s» only present in %s, missing in %s\n' % (rowMsA, aSiglum, bSiglum) )
+                #print('\n«%s» only present in %s, missing in %s\n' % (rowMsA, a_siglum, b_siglum) )
                 missingB = True
             elif rowMsA is None     and rowMsB is None:
-                print('\nStrange case\n')
+                print('\n[output_collated_tei] Strange case\n')
 
-            missingStr = '[[[[MISSING]]]]'
+            if output_variant_type:
+                # In this case, make sure that witness 'a' is print
+                # (g or bonetti) and 'b' is MS (a, a2 or o)!
+                subtype_string_missing_in_print = ' subtype="missing-in-print"'
+                subtype_string_missing_in_ms = ' subtype="missing-in-ms"'
+            else:
+                subtype_string_missing_in_print, subtype_string_missing_in_ms = '', ''
 
+            out_word = ''
+            out_app = ''
+            # Word is missing in one witness
             if not (missingA or missingB):
                 for word in row:
                     wi = row.index(word)
@@ -272,44 +310,77 @@ def visualizeVariantsInBrackets(jsonOutputList, onlyOutputVariants = False):
                     if wordMsA['n'] == wordMsB['n']:
                         '''Previous line: if normalized ('n') forms of
                             corresponding words in MS A and MS B are the same'''
-                        if not onlyOutputVariants:
-                            print(wordMsA['t'], end = ' ')  # Print the non-normalized ('t') form only once
+                        if not only_output_variants:
+                            # print(wordMsA['t'], end = ' ')  # Print the non-normalized ('t') form only once
+                            out_word = wordMsA['t']  # Output the non-normalized ('t') form only once
+                            out = ' '.join([out, out_word])  # with a space in between
                     else:
                         myComparison = variantComparison(wordMsA['t'], wordMsB['t'])
 
-                        if myComparison['type'] is 'unknown-type':
+                        if myComparison['subtype'] is 'unknown-type':
                             typeDeclaration = ''
                         else:
-                            typeDeclaration = ' type="' + myComparison['type'] + '"'
+                            typeDeclaration = ' type="' + myComparison['subtype'] + '"'
 
-                        print('\n\n <app' + 
-                                ' ana="' + myComparison['r1'] + '/' + myComparison['r2'] + '"' +
-                                typeDeclaration + '>' +
-                                '<rdg wit="' + aSiglum + '>' + wordMsA['t'] + '</rdg>' + 
-                                '<rdg wit="' + bSiglum + '">' + wordMsB['t'] + '</rdg>' +
-                                '</app> \n\n',
-                                end = '')
+                        # print('\n<app' + 
+                        out_app = '\n<app' + \
+                                ' ana="' + myComparison['r1'] + '/' + \
+                                myComparison['r2'] + '"' + \
+                                typeDeclaration + '>' + \
+                                '\n   <rdg wit="#' + a_siglum + '">' + \
+                                wordMsA['t'] + '</rdg>' + \
+                                '\n   <rdg wit="#' + b_siglum + '">' + \
+                                wordMsB['t'] + '</rdg>' + \
+                                '\n</app> \n'
+                        # Attach it to the output string:
+                        out = ''.join([out, out_app])
+
 
             elif missingA:
                 for word in colb[ci]:   # colb[ci] corresponds to cola[ci] (which is row)
                     wi = colb[ci].index(word)
-                    wordMsA = missingStr # = word
                     wordMsB = rowMsB[wi]
-                    print('\n\n <app type="missing">' +
-                            '<rdg wit="' + aSiglum + '"/>' +
-                            '<rdg wit="' + bSiglum + '">' + wordMsB['t'] + '</rdg>' +
-                            '</app> \n\n', end = '')
+                    out_app = '\n<app%s>' % subtype_string_missing_in_print + \
+                          '\n   <rdg wit="#' + a_siglum + '"/>' + \
+                          '\n   <rdg wit="#' + b_siglum + '">' + \
+                          wordMsB['t'] + '</rdg>' + \
+                          '\n</app> \n'
+                    # Attach it to the output string:
+                    out = ''.join([out, out_app])
+
             elif missingB:
                 for word in row:
                     wi = row.index(word)
                     wordMsA = rowMsA[wi] # = word
-                    wordMsB = missingStr
-                    print('\n\n <app type="missing">' +
-                            '<rdg wit="' + aSiglum + '">' + wordMsA['t'] + '</rdg>' +
-                            '<rdg wit="' + bSiglum + '"/>' +
-                            '</app> \n\n', end = '')
-            
-            
+                    out_app = '\n<app%s>' % subtype_string_missing_in_ms + \
+                            '\n   <rdg wit="#' + a_siglum + '">' + \
+                            wordMsA['t'] + '</rdg>' + \
+                            '\n   <rdg wit="#' + b_siglum + '"/>' + \
+                            '\n</app> \n'
+                    # Attach it to the output string:
+                    out = ''.join([out, out_app])
+
+        # Output <p> end tag
+        out = ''.join([out, '</p>'])
+
+    # Output TEI tree final part
+    final_part = '\n</body>\n</text>\n</TEI>'
+    out = ''.join([out, final_part])
+    return out
+
+def makeOutXML(input_string):
+    xml = etree.fromstring(input_string)
+    # p = xml.find('.//t:p', ns)
+    for child in xml:
+        print(child.tag)
+    p = xml.find('body')
+    p = xml.find('.//p')
+    print(p)
+    # print(root)
+    # Assumption: there is only one <p>
+    # print(root.tag)
+
+
 ##################
 # Define classes #
 ##################
@@ -371,7 +442,7 @@ class myWitness:
         parser = etree.XMLParser(load_dtd=True, resolve_entities=True)
         self.tree = etree.parse(xmlfile, parser=parser)
         #strip_ns_prefix(self.tree)
-    
+
     def body(self):
         ''' Find the <body> element of the XML tree of the witness '''
         if self.teiHasXmlns:
@@ -400,9 +471,13 @@ class myWitness:
 ###################################
 
 
-a = myWitness(afile, teiHasXmlns = True)
-b = myWitness(bfile, teiHasXmlns = True)
+a = myWitness(afile, teiHasXmlns = False)
+b = myWitness(bfile, teiHasXmlns = False)
 
-visualizeVariantsInBrackets(
+my_string = output_collated_tei(
     jsonCollationsList( a.paragraphs(), b.paragraphs() ),
-    onlyOutputVariants = False)
+    siglum_print = 'g', siglum_ms = 'a',
+    output_variant_type = False,
+    only_output_variants = False)
+
+makeOutXML(my_string)
