@@ -1199,9 +1199,9 @@
 <p xml:id="g179.3-179.7">
  Anno 
 <app>
-   <rdg wit="#b #a"> </rdg>
-   <rdg wit="#o">dominice incarnationis</rdg>
-</app> Domini MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
+   <rdg wit="#b #a">Domini</rdg>
+   <rdg wit="#o">dominice incarnationis Domini</rdg>
+</app> MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
 <app>
    <rdg wit="#b #o">secundo</rdg>
    <rdg wit="#a">II</rdg>
@@ -1228,12 +1228,19 @@
 </app> eodem anno 
 <app>
    <rdg wit="#b">X</rdg>
-   <rdg wit="#a"/>
+   <rdg wit="#a #o"/>
+</app> 
+<app>
+   <rdg wit="#b #a"/>
    <rdg wit="#o">decedente</rdg>
 </app> 
 <app>
-   <rdg wit="#b #a">successit ei</rdg>
-   <rdg wit="#o">succesit eius</rdg>
+   <rdg wit="#b #a">successit</rdg>
+   <rdg wit="#o">succesit</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">ei</rdg>
+   <rdg wit="#o">eius</rdg>
 </app> Constantinus Monomachus in imperium cum 
 <app>
    <rdg wit="#b #a">Zoy</rdg>

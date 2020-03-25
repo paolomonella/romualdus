@@ -1136,9 +1136,9 @@
    <rdg wit="#wit-42006">succesit</rdg>
 </app> ei Henricus filius eius. [/p] [p xml:id=&quot;g179.3-179.7&quot;] Anno 
 <app>
-   <rdg wit="#wit-42008 #wit-42007"> </rdg>
-   <rdg wit="#wit-42006">dominice incarnationis</rdg>
-</app> Domini MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
+   <rdg wit="#wit-42008 #wit-42007">Domini</rdg>
+   <rdg wit="#wit-42006">dominice incarnationis Domini</rdg>
+</app> MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
 <app>
    <rdg wit="#wit-42008 #wit-42006">secundo</rdg>
    <rdg wit="#wit-42007">II</rdg>
@@ -1165,12 +1165,19 @@
 </app> eodem anno 
 <app>
    <rdg wit="#wit-42008">X</rdg>
-   <rdg wit="#wit-42007"></rdg>
+   <rdg wit="#wit-42007 #wit-42006"></rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007"/>
    <rdg wit="#wit-42006">decedente</rdg>
 </app> 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">successit ei</rdg>
-   <rdg wit="#wit-42006">succesit eius</rdg>
+   <rdg wit="#wit-42008 #wit-42007">successit</rdg>
+   <rdg wit="#wit-42006">succesit</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">ei</rdg>
+   <rdg wit="#wit-42006">eius</rdg>
 </app> Constantinus Monomachus in imperium cum 
 <app>
    <rdg wit="#wit-42008 #wit-42007">Zoy</rdg>

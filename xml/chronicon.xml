@@ -15120,11 +15120,11 @@ Anno dominice incarnationis
  
 <p xml:id="g179.3-179.7">
 Anno 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b #a"> </lem>
-   <rdg wit="#o">dominice incarnationis</rdg>
-</app> Domini MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
+   <lem wit="#b #a">Domini</lem>
+   <rdg wit="#o">dominice incarnationis Domini</rdg>
+</app> MXL indictione VIII; defunctus est Michael Etheriarchis imperator Constantinopolitanus anno 
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b #o">secundo</lem>
    <rdg wit="#a">II</rdg>
 </app> postquam imperare ceperat. Et 
@@ -15132,7 +15132,7 @@ Anno
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei imperator Michael 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a">Archontopanthiu</lem>
    <rdg wit="#o">Arcontopanthiu</rdg>
 </app> cum 
@@ -15140,28 +15140,35 @@ Anno
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Quo uita 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a">decedente</lem>
    <rdg wit="#o"/>
 </app> 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">ipso</lem>
    <rdg wit="#a"/>
 </app> eodem anno 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">X</lem>
-   <rdg wit="#a"/>
+   <rdg wit="#a #o"/>
+</app> 
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#b #a"/>
    <rdg wit="#o">decedente</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a">successit ei</lem>
-   <rdg wit="#o">succesit eius</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#b #a">successit</lem>
+   <rdg wit="#o">succesit</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b #a">ei</lem>
+   <rdg wit="#o">eius</rdg>
 </app> Constantinus Monomachus in imperium cum 
 <app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice, qui regnauit annis XII. Quo tempore fames ualida fuit in Italia 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">ad quem</rdg>
 </app> in Gallia per septem continuos annos. 
@@ -16073,7 +16080,7 @@ Anno
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MLXII indictione XV Nicolaus papa defungitur anno ordinationis sue 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b">secundo</lem>
    <rdg wit="#a #o">II</rdg>
    </app>, mense 
