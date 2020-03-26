@@ -215,11 +215,11 @@ Anno dominice incarnationis CMLIV, corpus beati Mathei apostoli et euangeliste d
    <lem wit="#b">Henricus</lem>
    <rdg wit="#a">Enricus</rdg>
 </app>, nati ex filia Ottonis regis Saxonum. Defuncto itaque Ugone Magno, successit ei 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b"> </lem>
    <rdg wit="#a">Otto</rdg>
 </app> filius eius 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b">Otto</lem>
    <rdg wit="#a"></rdg>
 </app> qui non post multum temporis mortuus est, et Ugo frater eius effectus est dux Francorum regis, 
@@ -259,7 +259,7 @@ Anno dominice incarnationis
    <lem wit="#b">anno uno mensibus II. Deinde uero Iohannes sedit</lem>
    <rdg wit="#a"></rdg>
 </app> annis VI mensibus XI. Hic a Petro prefecto Romane urbis comprehensus et in castello sancti Angeli retrusus, deinde in Campaniam in exilium missus et post menses decem Romam reuersus est, et de persecutoribus eius ab Ottone imperatore in urbe Roma supplicium sumptum est. Iste quoque papa Iohannes coronam posuit imperii Ottoni imperatori, quique accepta corona Aquisgranum reuersus est. Hic etiam papa Iohannes nobilitauit Capuam archiepiscopatu, in qua ciuitate tunc principabatur Pandulfus cognomento Capudferreus. Eodem tempore 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Saraceni</lem>
    <rdg wit="#a">Sarraceni</rdg>
 </app> uenerunt in Apuliam et expugnauerunt ciuitatem Grauinam eamque ceperunt. Hinc quoque secundo anno post hec ceperunt ciuitatem Bibinum ignique combusserunt. 

@@ -203,11 +203,11 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">uxore</lem>
    <rdg wit="#o">uxorem</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o">filios</lem>
    <rdg wit="#a"></rdg>
 </app> duos 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a">filios</rdg>
 </app> 
@@ -344,11 +344,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#o">tendebat</lem>
    <rdg wit="#b #a">tenebat</rdg>
 </app> contra meridiem quasi 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">unum</rdg>
 </app> passum 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o"></rdg>
 </app>. Et post paucos dies iterum 
@@ -360,11 +360,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #o #a">occidentis</rdg>
 </app> et splendor eius 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">tendebat</rdg>
 </app> ad orientem 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">tendebat</lem>
    <rdg wit="#o"></rdg>
 </app>. Et non 
@@ -704,11 +704,11 @@ Non post multum uero temporis
    <lem wit="#b #a">ceperat</lem>
    <rdg wit="#o">cepit</rdg>
 </app>. Eo itaque mortuo frater eius Henricus maioris 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Octonis</rdg>
 </app> imperatoris 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">Ottonis</lem>
    <rdg wit="#o"></rdg>
 </app> nepos fit rex, quique regnauit 
@@ -790,7 +790,7 @@ Anno
    <lem wit="#b #a">componeret</lem>
    <rdg wit="#o">componere</rdg>
 </app>. Qui ueniens cepit omnia tranquille agere atque strenue ordinare 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"></lem>
    <rdg wit="#o">hic in Apulie finibus</rdg>
 </app>. 
@@ -813,7 +813,7 @@ Anno
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">.</rdg>
 </app> indictione I. 
-<app cert="high" type="substantial" subtype="transposition"> 
+<app cert="high" type="transposition"> 
    <lem wit="#b #a">Hic in Apulie finibus</lem>
    <rdg wit="#o"></rdg>
 </app> 
@@ -1251,7 +1251,7 @@ Anno
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Quo uita 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">decedente</lem>
    <rdg wit="#o"></rdg>
 </app> 
@@ -1263,7 +1263,7 @@ Anno
    <lem wit="#b">X</lem>
    <rdg wit="#a #o"></rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"></lem>
    <rdg wit="#o">decedente</rdg>
 </app> 
@@ -1344,11 +1344,11 @@ Anno Domini
    <lem wit="#b #o">XIV</lem>
    <rdg wit="#a">XV</rdg>
 </app> Henricus imperator 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Romam</rdg>
 </app> uenit 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">Romam</lem>
    <rdg wit="#o"></rdg>
 </app> inuenitque sedem apostolicam ualde turbatam, nam 
@@ -1542,11 +1542,11 @@ Anno
    <lem wit="#a2 #o">seruatam</lem>
    <rdg wit="#b">sertatam</rdg>
 </app> equitatem a cunctis 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">dilectus</rdg>
 </app> est 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2">dilectus</lem>
    <rdg wit="#o"> </rdg>
 </app> 
@@ -1692,11 +1692,11 @@ Anno ab incarnatione Domini
    <lem wit="#b #a2">processit</lem>
    <rdg wit="#o">procesit</rdg>
 </app>, qui quamuis sanctus fuerit et pio hoc animo egerit, tamen quia 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">non eius</rdg>
 </app> id 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2">eius non</lem>
    <rdg wit="#o"></rdg>
 </app> erat 
@@ -1892,11 +1892,11 @@ Anno dominice incarnationis MLVII indictione
    <rdg wit="#a2">Gofridus</rdg>
    <rdg wit="#o">Umfridus</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2"></lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2">Normannorum</lem>
    <rdg wit="#o"></rdg>
 </app> diem clausit extremum, reliquens sibi 
@@ -1934,11 +1934,11 @@ Anno dominice incarnationis MLVII indictione
    <rdg wit="#a2">Bagelardum</rdg>
    <rdg wit="#o">Bayelardum</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o">suum</lem>
    <rdg wit="#a2"></rdg>
 </app> nepotem 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a2">suum</rdg>
 </app> expellens. Tancredus autem fuit timoris Dei non immemor, qui bissenos habuit filios. Quorum primus quidem fuit Sarnus, qui miles insignis extitit. Secundus autem comes 

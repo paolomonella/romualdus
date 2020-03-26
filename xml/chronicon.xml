@@ -2051,7 +2051,7 @@ Anno XIV postquam percussa est ciuitas, qui est uicesimus quintus annus Ioachim,
    <lem wit="#g">Esquilinum</lem>
    <rdg wit="#a">Esquillinum</rdg>
 </app>, Uiminalem. Fossas circum muros duxit. Census ciuium Romanorum primus instituit, qui adhuc per orbem terrarum incognitus erat; tunc inuenta sunt capita Romanorum ciuium octoginta 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#g">quattuor</lem>
    <rdg wit="#a">IV</rdg>
 </app> milia 
@@ -8061,7 +8061,7 @@ Melciades natione Afer huic successit in episcopatu, seditque annis tribus mensi
    <lem wit="#a"/>
    <rdg wit="#g">,</rdg>
 </app> aut 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#g">quinta</lem>
    <rdg wit="#a">V</rdg>
 </app> feria ieiunium quis de fidelibus ageret. Et hic martyrio coronatus est, et appositus ad fratres suos. Passus est ea tempestate Petrus Alexandrinus episcopus, cum plurimis Egypti episcopis. Lucianus quoque uir moribus 
@@ -13678,7 +13678,7 @@ Rome uero Sergio papa defuncto, Leo quartus successit in Romanum pontificatum, s
    <lem wit="#g">hodie</lem>
    <rdg wit="#a"/>
 </app> nominatur, quam Leoninam de nomine suo appellauit. Hic fecit ciborium super altare sancti Petri argenteum et ante ipsum altare tabulam auream mira gemmarum uarietate distinctam, et iuxta altare crucem auream, et regulas confessionis argenteas et portas ecclesie argenteas. Hic edificauit ecclesiam Rome que hodie dicitur sancta Maria Noua, et ecclesiam sanctorum 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#g">quattuor</lem>
    <rdg wit="#a">IV</rdg>
 </app> Coronatorum. Hic idem, ut in pontificali legitur, inuidiose super quibusdam criminibus pulsatus synodum congregauit, et se iuramento innoxium demonstrauit. Hic quoque a Romanis orbatus est, qui licet orbatus, quandiu tamen uixit Romanam gubernauit ecclesiam. 
@@ -13903,11 +13903,11 @@ Anno dominice incarnationis CMLIV, corpus beati Mathei apostoli et euangeliste d
    <lem wit="#b">Henricus</lem>
    <rdg wit="#a">Enricus</rdg>
 </app>, nati ex filia Ottonis regis Saxonum. Defuncto itaque Ugone Magno, successit ei 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b"> </lem>
    <rdg wit="#a">Otto</rdg>
 </app> filius eius 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b">Otto</lem>
    <rdg wit="#a"/>
 </app> qui non post multum temporis mortuus est, et Ugo frater eius effectus est dux Francorum regis, 
@@ -13947,7 +13947,7 @@ Anno dominice incarnationis
    <lem wit="#b">anno uno mensibus II. Deinde uero Iohannes sedit</lem>
    <rdg wit="#a"/>
 </app> annis VI mensibus XI. Hic a Petro prefecto Romane urbis comprehensus et in castello sancti Angeli retrusus, deinde in Campaniam in exilium missus et post menses decem Romam reuersus est, et de persecutoribus eius ab Ottone imperatore in urbe Roma supplicium sumptum est. Iste quoque papa Iohannes coronam posuit imperii Ottoni imperatori, quique accepta corona Aquisgranum reuersus est. Hic etiam papa Iohannes nobilitauit Capuam archiepiscopatu, in qua ciuitate tunc principabatur Pandulfus cognomento Capudferreus. Eodem tempore 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Saraceni</lem>
    <rdg wit="#a">Sarraceni</rdg>
 </app> uenerunt in Apuliam et expugnauerunt ciuitatem Grauinam eamque ceperunt. Hinc quoque secundo anno post hec ceperunt ciuitatem Bibinum ignique combusserunt. 
@@ -14092,11 +14092,11 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">uxore</lem>
    <rdg wit="#o">uxorem</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o">filios</lem>
    <rdg wit="#a"/>
 </app> duos 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a">filios</rdg>
 </app> 
@@ -14233,11 +14233,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#o">tendebat</lem>
    <rdg wit="#b #a">tenebat</rdg>
 </app> contra meridiem quasi 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">unum</rdg>
 </app> passum 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">unum</lem>
    <rdg wit="#o"/>
 </app>. Et post paucos dies iterum 
@@ -14249,11 +14249,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #o #a">occidentis</rdg>
 </app> et splendor eius 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">tendebat</rdg>
 </app> ad orientem 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">tendebat</lem>
    <rdg wit="#o"/>
 </app>. Et non 
@@ -14593,11 +14593,11 @@ Non post multum uero temporis
    <lem wit="#b #a">ceperat</lem>
    <rdg wit="#o">cepit</rdg>
 </app>. Eo itaque mortuo frater eius Henricus maioris 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Octonis</rdg>
 </app> imperatoris 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">Ottonis</lem>
    <rdg wit="#o"/>
 </app> nepos fit rex, quique regnauit 
@@ -14679,7 +14679,7 @@ Anno
    <lem wit="#b #a">componeret</lem>
    <rdg wit="#o">componere</rdg>
 </app>. Qui ueniens cepit omnia tranquille agere atque strenue ordinare 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"/>
    <rdg wit="#o">hic in Apulie finibus</rdg>
 </app>. 
@@ -14702,7 +14702,7 @@ Anno
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">.</rdg>
 </app> indictione I. 
-<app cert="high" type="substantial" subtype="transposition"> 
+<app cert="high" type="transposition"> 
    <lem wit="#b #a">Hic in Apulie finibus</lem>
    <rdg wit="#o"/>
 </app> 
@@ -15140,7 +15140,7 @@ Anno
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Quo uita 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">decedente</lem>
    <rdg wit="#o"/>
 </app> 
@@ -15152,7 +15152,7 @@ Anno
    <lem wit="#b">X</lem>
    <rdg wit="#a #o"/>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"/>
    <rdg wit="#o">decedente</rdg>
 </app> 
@@ -15233,11 +15233,11 @@ Anno Domini
    <lem wit="#b #o">XIV</lem>
    <rdg wit="#a">XV</rdg>
 </app> Henricus imperator 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Romam</rdg>
 </app> uenit 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">Romam</lem>
    <rdg wit="#o"/>
 </app> inuenitque sedem apostolicam ualde turbatam, nam 
@@ -15431,11 +15431,11 @@ Anno
    <lem wit="#a2 #o">seruatam</lem>
    <rdg wit="#b">sertatam</rdg>
 </app> equitatem a cunctis 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">dilectus</rdg>
 </app> est 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2">dilectus</lem>
    <rdg wit="#o"> </rdg>
 </app> 
@@ -15581,11 +15581,11 @@ Anno ab incarnatione Domini
    <lem wit="#b #a2">processit</lem>
    <rdg wit="#o">procesit</rdg>
 </app>, qui quamuis sanctus fuerit et pio hoc animo egerit, tamen quia 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">non eius</rdg>
 </app> id 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2">eius non</lem>
    <rdg wit="#o"/>
 </app> erat 
@@ -15781,11 +15781,11 @@ Anno dominice incarnationis MLVII indictione
    <rdg wit="#a2">Gofridus</rdg>
    <rdg wit="#o">Umfridus</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2"/>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a2">Normannorum</lem>
    <rdg wit="#o"/>
 </app> diem clausit extremum, reliquens sibi 
@@ -15823,11 +15823,11 @@ Anno dominice incarnationis MLVII indictione
    <rdg wit="#a2">Bagelardum</rdg>
    <rdg wit="#o">Bayelardum</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o">suum</lem>
    <rdg wit="#a2"/>
 </app> nepotem 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a2">suum</rdg>
 </app> expellens. Tancredus autem fuit timoris Dei non immemor, qui bissenos habuit filios. Quorum primus quidem fuit Sarnus, qui miles insignis extitit. Secundus autem comes 
@@ -16648,7 +16648,7 @@ Anno dominice incarnationis MLXXXVII indictione X mense Maio corpus beati Nycola
    <lem wit="#b">Samnis</lem>
    <rdg wit="#a">Sampnis</rdg>
 </app>, post duos annos ex quo Gregorius papa obiit, papa est ipse ordinatus, qui post menses 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b">quattuor</lem>
    <rdg wit="#a">IV</rdg>
 </app> et dies VI ordinationis sue diem obiit. Cui successit in Romanum pontificatum Hostiensis episcopus nomine Otto ex 
@@ -17442,7 +17442,7 @@ Anno dominice incarnationis MCXXI indictione XIV
    <lem wit="#b">potuit</lem>
    <rdg wit="#a2"/>
 </app>. 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Set</lem>
    <rdg wit="#a2">Sed</rdg>
 </app> mense Februarii dux et 
@@ -17854,7 +17854,7 @@ Post hec Apuliam rediens obsedit Barum, que se ei
    <lem wit="#b">set</lem>
    <rdg wit="#a2">sed</rdg>
 </app> alios patibulis alios ignibus daret, alios uero uiuos sepeliret si capere illos aliquando posset. 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Set</lem>
    <rdg wit="#a2">Sed</rdg>
 </app> hoc 
@@ -18494,7 +18494,7 @@ Ut autem uniuersus mundus euidenter agnoscat, qualiter rex Rogerius tota fuerit
    <lem wit="#b">seruicii</lem>
    <rdg wit="#a2">seruitii</rdg>
 </app> sui recolenda memoria pro certo apud nos promereretur ueniam, et gratiam impetrasset. 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Set</lem>
    <rdg wit="#a2">Sed</rdg>
 </app> quia in facto suo principaliter offendit Deum, et aliis peccandi materiam prebuit et exemplum, 
