@@ -1267,8 +1267,12 @@
    <rdg wit="#o">Idem</rdg>
 </app> Ianuarii per 
 <app>
-   <rdg wit="#b #a">quinque horas</rdg>
-   <rdg wit="#o">V hore</rdg>
+   <rdg wit="#b #a">quinque</rdg>
+   <rdg wit="#o">V</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">horas</rdg>
+   <rdg wit="#o">hore</rdg>
 </app> noctis. 
 </p>
  
@@ -1283,8 +1287,12 @@
 <p xml:id="g179.12-179.14">
  Anno 
 <app>
-   <rdg wit="#b #a">dominice incarnationis MXLV</rdg>
-   <rdg wit="#o">ab incarnatione Domini MXLIII</rdg>
+   <rdg wit="#b #a">dominice incarnationis</rdg>
+   <rdg wit="#o">ab incarnatione Domini</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">MXLV</rdg>
+   <rdg wit="#o">MXLIII</rdg>
 </app> indictione XIII; Drogo 
 <app>
    <rdg wit="#b #a">Normannorum</rdg>
@@ -1360,7 +1368,11 @@
    <rdg wit="#o">a</rdg>
 </app> terram pro tempore sibi componens, et sic reuersus est 
 <app>
-   <rdg wit="#b">anno Domini MXLVII</rdg>
+   <rdg wit="#b">anno Domini</rdg>
+   <rdg wit="#a #o"/>
+</app> 
+<app>
+   <rdg wit="#b">MXLVII</rdg>
    <rdg wit="#a">MXLII</rdg>
    <rdg wit="#o"/>
 </app> 

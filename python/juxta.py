@@ -1,17 +1,14 @@
 #!/usr/bin/python3.6
+
 # -*- coding: utf-8 -*-
-
-''' This script triggers all functions and methods related with
-    collation with JuxtaCommons, that is:
+''' Trigger functions/methods related with collation with JuxtaCommons, i.e.:
         - the scripts for pre-processing the original transcriptions (a1.xml,
-        a2.xml, g.xml etc.), that are simplified to be fed to JuxtaCommons
-        - and the scripts for post-processing the output of JuxtaCommons
-        '''
+            a2.xml, g.xml etc.), that are simplified to be fed to JuxtaCommons
 
+        - and the scripts for post-processing the output of JuxtaCommons '''
 from glob import iglob  # Needed for function entitize
 from myconst import xmlpath, juxta_par_and_sigla_suffix, dbpath, dbname
 import entitize
-# import a_unifier
 import splitter
 import sort_a2
 import simplify_markup_for_collation
@@ -20,17 +17,11 @@ import philologist
 import m_unifier
 import my_database_import
 
-# If true: suppress standard output messages to console
-quiet = True
-
-##########################################
-# ATTENZIONE: RIATTIVA PRE=TRUE A REGIME #
-##########################################
-# This is useful to reduce the execution process of juxta.py
-# If True, perform pre-collation operations
-pre = False
-# If True, perform post-collation operations
-post = True
+quiet = True  # If true, suppress standard output messages to console
+# chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+chosen_ones = ('m2-bravo')
+pre = False  # Warning: re-activate it later
+post = True  # Perform post-collation operations
 
 #################
 # PRE-COLLATION #
@@ -128,9 +119,6 @@ if post:
          'printSiglum': 'b'},
     ]
 
-    # This is useful to reduce the execution process of juxta.py
-    # chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
-    chosen_ones = ('m2-bravo')
     parameters = [x for x in complete_parameters
                   if x['siglum'] in chosen_ones]
 

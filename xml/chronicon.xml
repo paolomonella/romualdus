@@ -15176,21 +15176,25 @@ Anno
  
 <p xml:id="g179.8-179.9">
 Anno dominice incarnationis MXLII indictione X; luna 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">passa</lem>
    <rdg wit="#o">pasa</rdg>
 </app> est 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">eclipsim</lem>
    <rdg wit="#o">eclipsi</rdg>
 </app> V 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">Idus</lem>
    <rdg wit="#o">Idem</rdg>
 </app> Ianuarii per 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a">quinque horas</lem>
-   <rdg wit="#o">V hore</rdg>
+<app cert="high" type="orthography" subtype="num-word">
+   <lem wit="#b #a">quinque</lem>
+   <rdg wit="#o">V</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b #a">horas</lem>
+   <rdg wit="#o">hore</rdg>
 </app> noctis. 
 </p>
  
@@ -15200,15 +15204,19 @@ Anno ab incarnatione Domini MXLIV indictione XII; hoc autem tempore Guilelmus fi
  
 <p xml:id="g179.12-179.14">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a">dominice incarnationis MXLV</lem>
-   <rdg wit="#o">ab incarnatione Domini MXLIII</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#b #a">dominice incarnationis</lem>
+   <rdg wit="#o">ab incarnatione Domini</rdg>
+</app> 
+<app cert="high" subtype="num-num" type="substantial">
+   <lem wit="#b #a">MXLV</lem>
+   <rdg wit="#o">MXLIII</rdg>
 </app> indictione XIII; Drogo 
 <app cert="high" type="orthography">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes cepit 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #o">ciuitatem</lem>
    <rdg wit="#a"/>
 </app> Bibinum eamque depopulatus est; sequenti uero anno, postquam eadem ciuitas reedificata est, flagrauit incendio. 
@@ -15219,17 +15227,17 @@ Anno Domini
 <app cert="high" type="substantial" subtype="num-num">
    <rdg wit="#b">MXLVI</rdg>
    <rdg wit="#a">MXLVII</rdg>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app> indictione 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b #o">XIV</lem>
    <rdg wit="#a">XV</rdg>
 </app> Henricus imperator 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">Romam</rdg>
 </app> uenit 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #a">Romam</lem>
    <rdg wit="#o"/>
 </app> inuenitque sedem apostolicam ualde turbatam, nam 
@@ -15237,35 +15245,35 @@ Anno Domini
    <lem wit="#a #o"/>
    <rdg wit="#b">"</rdg>
 </app> uno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">eodemque</lem>
    <rdg wit="#o">edemque</rdg>
 </app> tempore supradicti 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b #a">Theophilus</lem>
    <rdg wit="#o">Teophilus</rdg>
 </app> qui et Benedictus, et Siluester qui et Iohannes Sabinianus, et Gregorius qui et Iohannes Rauennas, Romanum non regebant 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">sed</lem>
    <rdg wit="#o">set</rdg>
 </app> uastabant pontificatum. Tunc imperator ipse conuocatis episcopis atque ordinis utriusque uiris religiosis ac catholicis, sinodum congregari 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">iussit</lem>
    <rdg wit="#o">fecit</rdg>
 </app>, in qua statim, canonibus exquisitis, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">hii</lem>
    <rdg wit="#o">hi</rdg>
 </app> tres 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">dampnati</lem>
    <rdg wit="#o">dabnati</rdg>
 </app> et exilio religati sunt, nullus enim eorum amplius iure poterat episcopari. Et tunc a clero et populo canonice Clemens electus est, ipso imperatore — quemadmodum in canonibus statutum est — 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a">assensum</lem>
    <rdg wit="#o">asensum</rdg>
 </app> prebente. Qui consecratus sedit papalem cathedram 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> IX: iste quoque Henricum coronauit imperatorem. Defuncto itaque Clemente Damasus electus et consecratus est, cuius electioni predictus imperator assensum prebuit, seditque Damasus dies XX. Imperator autem 
@@ -15273,16 +15281,20 @@ Anno Domini
  
 <p xml:id="g180.10-180.12">
 ipse usque Capuam uenit 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">a</rdg>
 </app> terram pro tempore sibi componens, et sic reuersus est 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b">anno Domini MXLVII</lem>
+<app cert="high" subtype="missing-in-ms" type="substantial">
+   <lem wit="#b">anno Domini</lem>
+   <rdg wit="#a2 #o"/>
+</app> 
+<app cert="high" type="substantial" subtype="num-num">
+   <rdg wit="#b">MXLVII</rdg>
    <rdg wit="#a2">MXLII</rdg>
    <rdg wit="#o"/>
 </app> 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">, indictione XV</lem>
    <rdg wit="#o"/>
 </app>. 
@@ -15376,7 +15388,7 @@ Anno
    <lem wit="#b #a2">annis</lem>
    <rdg wit="#o">annos</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b #o">quinque</lem>
    <rdg wit="#a2">V</rdg>
 </app>, 
@@ -16031,7 +16043,7 @@ cum exercitu in
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> Guidonem et filias 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b #o">quinque</lem>
    <rdg wit="#a">V</rdg>
 </app>. Ex alia quoque 
