@@ -1479,15 +1479,15 @@
  Anno 
 <app>
    <rdg wit="#b">Domini</rdg>
-   <rdg wit="#a #o">dominice</rdg>
-   </app> 
-<app>
-   <rdg wit="#b #o"/>
-   <rdg wit="#a">incarnationis</rdg>
+   <rdg wit="#a #o">dominice incarnationis</rdg>
 </app> 
 <app>
-   <rdg wit="#b #a">MLI indictione</rdg>
-   <rdg wit="#o">incarnationis Gap1MissingWord indictionem</rdg>
+   <rdg wit="#b #a">MLI</rdg>
+   <rdg wit="#o">Gap1MissingWord</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">indictione</rdg>
+   <rdg wit="#o">indictionem</rdg>
 </app> III 
 <app>
    <rdg wit="#b #a">mense</rdg>
@@ -1519,12 +1519,11 @@
 </app> est 
 <app>
    <rdg wit="#b #a">dilectus</rdg>
-   <rdg wit="#o">.</rdg>
+   <rdg wit="#o"> </rdg>
 </app> 
 <app>
    <rdg wit="#b">".</rdg>
-   <rdg wit="#a">.</rdg>
-   <rdg wit="#o"/>
+   <rdg wit="#a #o">.</rdg>
 </app> Cui 
 <app>
    <rdg wit="#b">Unfridus</rdg>
@@ -1560,8 +1559,12 @@
    <rdg wit="#o">Gap1MissingWord</rdg>
 </app> indictione 
 <app>
-   <rdg wit="#b #a">quinta Guaymarius</rdg>
-   <rdg wit="#o">V Gaymarius</rdg>
+   <rdg wit="#b #a">quinta</rdg>
+   <rdg wit="#o">V</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">Guaymarius</rdg>
+   <rdg wit="#o">Gaymarius</rdg>
 </app> princeps Salerni a suis interfectus est anno principatus sui 
 <app>
    <rdg wit="#b">uicesimo tercio</rdg>
@@ -1637,8 +1640,12 @@
    <rdg wit="#o">percuserunt</rdg>
 </app> . In ipso quidem belli apparatu defecerunt 
 <app>
-   <rdg wit="#b #o">Alamannis hi</rdg>
-   <rdg wit="#a">Alamanni ii</rdg>
+   <rdg wit="#b #o">Alamannis</rdg>
+   <rdg wit="#a">Alamanni</rdg>
+</app> 
+<app>
+   <rdg wit="#b #o">hi</rdg>
+   <rdg wit="#a">ii</rdg>
 </app> quorum uenerant suggestione, quique in auxilium eorum uenerunt. Leo autem papa minime propter quod uenerat perficere ualens reuersus est. Iste primus Romanorum 
 <app>
    <rdg wit="#b #a">pontificum</rdg>
@@ -1650,12 +1657,11 @@
    </app> cum manu armatorum in bellum 
 <app>
    <rdg wit="#b">"</rdg>
-   <rdg wit="#a"/>
-   <rdg wit="#o">procesit</rdg>
-</app>  
+   <rdg wit="#a #o"/>
+   </app> 
 <app>
    <rdg wit="#b #a">processit</rdg>
-   <rdg wit="#o"/>
+   <rdg wit="#o">procesit</rdg>
 </app> , qui quamuis sanctus fuerit et pio hoc animo egerit, tamen quia 
 <app>
    <rdg wit="#b #a"> </rdg>
@@ -1710,17 +1716,16 @@
    <rdg wit="#a #o"/>
    </app> preceperunt ut curis secularibus, ueluti principes 
 <app>
-   <rdg wit="#b #a">,</rdg>
+   <rdg wit="#b #a"/>
    <rdg wit="#o">seculi</rdg>
-</app> materiali gladio Dei populum tuerentur 
+</app>, materiali gladio Dei populum tuerentur 
 <app>
    <rdg wit="#b">"</rdg>
-   <rdg wit="#a">si</rdg>
-   <rdg wit="#o"/>
+   <rdg wit="#a #o"/>
 </app> 
 <app>
+   <rdg wit="#a">si</rdg>
    <rdg wit="#b #o">sed</rdg>
-   <rdg wit="#a"/>
 </app> uerbo doctrine monerent et pie conuersationis exemplo instruerent 
 <app>
    <rdg wit="#b">".</rdg>
@@ -1735,8 +1740,20 @@
    <rdg wit="#o">persistens</rdg>
 </app> , imperium Constantinopolitanum uiriliter biennio tenuit. Qua defuncta Michael Nouicius imperii honorem adeptus est, qui eodem anno fuit inuitus monachus factus. Cui 
 <app>
-   <rdg wit="#b #a">Isachius Commiano imperator successit</rdg>
-   <rdg wit="#o">Michael Inscomiano imperatore succesit</rdg>
+   <rdg wit="#b #a">Isachius</rdg>
+   <rdg wit="#o">Michael</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">Commiano</rdg>
+   <rdg wit="#o">Inscomiano</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">imperator</rdg>
+   <rdg wit="#o">imperatore</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">successit</rdg>
+   <rdg wit="#o">succesit</rdg>
 </app> , qui post annos 
 <app>
    <rdg wit="#b">quattuor</rdg>
@@ -1767,9 +1784,9 @@
    <rdg wit="#o">menses</rdg>
 </app> Aprilis 
 <app>
-   <rdg wit="#b #a">.</rdg>
+   <rdg wit="#b #a"/>
    <rdg wit="#o">in anno ab incarnatione Domini MLV, indictionem VIII</rdg>
-</app> Et 
+</app>. Et 
 <app>
    <rdg wit="#b #a">successit</rdg>
    <rdg wit="#o">succesit</rdg>
@@ -1867,8 +1884,12 @@
    <rdg wit="#a">Sed</rdg>
 </app> Robbertus 
 <app>
-   <rdg wit="#b #a">cognomento Uiscardus</rdg>
-   <rdg wit="#o">cognominato Guiscardus</rdg>
+   <rdg wit="#b #a">cognomento</rdg>
+   <rdg wit="#o">cognominato</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">Uiscardus</rdg>
+   <rdg wit="#o">Guiscardus</rdg>
 </app> , eiusdem 
 <app>
    <rdg wit="#b">Unfridi</rdg>

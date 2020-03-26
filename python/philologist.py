@@ -75,6 +75,7 @@ class treeWithAppElements:
             'p': 'punctuation',
             'g': 'gap-in-ms',
             'i': 'illegible-in-ms',
+            't': 'transposition',
             'u': 'unknown'
         }
 

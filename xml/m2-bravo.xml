@@ -1383,16 +1383,15 @@
 </app> . [/p] [p xml:id=&quot;g181.6-181.10&quot;] Anno 
 <app>
    <rdg wit="#wit-42008">Domini</rdg>
-   <rdg wit="#wit-42007">dominice</rdg>
-   <rdg wit="#wit-42006">dominice</rdg>
+   <rdg wit="#wit-42007 #wit-42006">dominice incarnationis</rdg>
 </app> 
 <app>
-   <rdg wit="#wit-42008 #wit-42006"></rdg>
-   <rdg wit="#wit-42007">incarnationis</rdg>
+   <rdg wit="#wit-42008 #wit-42007">MLI</rdg>
+   <rdg wit="#wit-42006">Gap1MissingWord</rdg>
 </app> 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">MLI indictione</rdg>
-   <rdg wit="#wit-42006">incarnationis Gap1MissingWord indictionem</rdg>
+   <rdg wit="#wit-42008 #wit-42007">indictione</rdg>
+   <rdg wit="#wit-42006">indictionem</rdg>
 </app> III 
 <app>
    <rdg wit="#wit-42008 #wit-42007">mense</rdg>
@@ -1426,12 +1425,11 @@
 </app> est 
 <app>
    <rdg wit="#wit-42008 #wit-42007">dilectus</rdg>
-   <rdg wit="#wit-42006">.</rdg>
+   <rdg wit="#wit-42006"> </rdg>
 </app> 
 <app>
    <rdg wit="#wit-42008">&quot;.</rdg>
-   <rdg wit="#wit-42007">.</rdg>
-   <rdg wit="#wit-42006"></rdg>
+   <rdg wit="#wit-42007 #wit-42006">.</rdg>
 </app> Cui 
 <app>
    <rdg wit="#wit-42008">Unfridus</rdg>
@@ -1464,8 +1462,12 @@
    <rdg wit="#wit-42006">Gap1MissingWord</rdg>
 </app> indictione 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">quinta Guaymarius</rdg>
-   <rdg wit="#wit-42006">V Gaymarius</rdg>
+   <rdg wit="#wit-42008 #wit-42007">quinta</rdg>
+   <rdg wit="#wit-42006">V</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">Guaymarius</rdg>
+   <rdg wit="#wit-42006">Gaymarius</rdg>
 </app> princeps Salerni a suis interfectus est anno principatus sui 
 <app>
    <rdg wit="#wit-42008">uicesimo tercio</rdg>
@@ -1538,8 +1540,12 @@
    <rdg wit="#wit-42006">percuserunt</rdg>
 </app> . In ipso quidem belli apparatu defecerunt 
 <app>
-   <rdg wit="#wit-42008 #wit-42006">Alamannis hi</rdg>
-   <rdg wit="#wit-42007">Alamanni ii</rdg>
+   <rdg wit="#wit-42008 #wit-42006">Alamannis</rdg>
+   <rdg wit="#wit-42007">Alamanni</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42006">hi</rdg>
+   <rdg wit="#wit-42007">ii</rdg>
 </app> quorum uenerant suggestione, quique in auxilium eorum uenerunt. Leo autem papa minime propter quod uenerat perficere ualens reuersus est. Iste primus Romanorum 
 <app>
    <rdg wit="#wit-42008 #wit-42007">pontificum</rdg>
@@ -1553,11 +1559,11 @@
 <app>
    <rdg wit="#wit-42008">&quot;</rdg>
    <rdg wit="#wit-42007"></rdg>
-   <rdg wit="#wit-42006">procesit</rdg>
-</app>  
+   <rdg wit="#wit-42006"></rdg>
+</app> 
 <app>
    <rdg wit="#wit-42008 #wit-42007">processit</rdg>
-   <rdg wit="#wit-42006"></rdg>
+   <rdg wit="#wit-42006">procesit</rdg>
 </app> , qui quamuis sanctus fuerit et pio hoc animo egerit, tamen quia 
 <app>
    <rdg wit="#wit-42008 #wit-42007"> </rdg>
@@ -1618,17 +1624,16 @@
    <rdg wit="#wit-42006"></rdg>
 </app> preceperunt ut curis secularibus, ueluti principes 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">,</rdg>
+   <rdg wit="#wit-42008 #wit-42007"/>
    <rdg wit="#wit-42006">seculi</rdg>
-</app> materiali gladio Dei populum tuerentur 
+</app>, materiali gladio Dei populum tuerentur 
 <app>
    <rdg wit="#wit-42008">&quot;</rdg>
-   <rdg wit="#wit-42007">si</rdg>
-   <rdg wit="#wit-42006"></rdg>
+   <rdg wit="#wit-42007 #wit-42006"></rdg>
 </app> 
 <app>
+   <rdg wit="#wit-42007">si</rdg>
    <rdg wit="#wit-42008 #wit-42006">sed</rdg>
-   <rdg wit="#wit-42007"></rdg>
 </app> uerbo doctrine monerent et pie conuersationis exemplo instruerent 
 <app>
    <rdg wit="#wit-42008">&quot;.</rdg>
@@ -1644,8 +1649,20 @@
    <rdg wit="#wit-42006">persistens</rdg>
 </app> , imperium Constantinopolitanum uiriliter biennio tenuit. Qua defuncta Michael Nouicius imperii honorem adeptus est, qui eodem anno fuit inuitus monachus factus. Cui 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">Isachius Commiano imperator successit</rdg>
-   <rdg wit="#wit-42006">Michael Inscomiano imperatore succesit</rdg>
+   <rdg wit="#wit-42008 #wit-42007">Isachius</rdg>
+   <rdg wit="#wit-42006">Michael</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">Commiano</rdg>
+   <rdg wit="#wit-42006">Inscomiano</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">imperator</rdg>
+   <rdg wit="#wit-42006">imperatore</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">successit</rdg>
+   <rdg wit="#wit-42006">succesit</rdg>
 </app> , qui post annos 
 <app>
    <rdg wit="#wit-42008">quattuor</rdg>
@@ -1678,9 +1695,9 @@
    <rdg wit="#wit-42006">menses</rdg>
 </app> Aprilis 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">.</rdg>
+   <rdg wit="#wit-42008 #wit-42007"/>
    <rdg wit="#wit-42006">in anno ab incarnatione Domini MLV, indictionem VIII</rdg>
-</app> Et 
+</app>. Et 
 <app>
    <rdg wit="#wit-42008 #wit-42007">successit</rdg>
    <rdg wit="#wit-42006">succesit</rdg>
@@ -1776,8 +1793,12 @@
    <rdg wit="#wit-42007">Sed</rdg>
 </app> Robbertus 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">cognomento Uiscardus</rdg>
-   <rdg wit="#wit-42006">cognominato Guiscardus</rdg>
+   <rdg wit="#wit-42008 #wit-42007">cognomento</rdg>
+   <rdg wit="#wit-42006">cognominato</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">Uiscardus</rdg>
+   <rdg wit="#wit-42006">Guiscardus</rdg>
 </app> , eiusdem 
 <app>
    <rdg wit="#wit-42008">Unfridi</rdg>

@@ -116,7 +116,7 @@ elif arg == '-s2':
 
 # Print reading is OK.
 # Only set type to substantial (app has 3 children)
-#   (so I ca possibly edit the DB table later)
+#   (so I can possibly edit the DB record later)
 elif arg == '-s3':
 
     sqlite_query = ('INSERT INTO decisions3 (origin, action, '
