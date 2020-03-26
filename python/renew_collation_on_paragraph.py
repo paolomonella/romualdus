@@ -22,52 +22,55 @@ debug = False
 dry = False
 chunk_file = '2-bravo'
 
+xml_folder = '../xml'
+backup_folder = '../xml/ripostiglio/renew_collation_on_paragraph_backup'
+
 if chunk_file == '1':
 
     print_siglum = 'wit-42000'  # Garufi
-    print_file = '../xml/g-simple.xml'
+    print_file = '%s/g-simple.xml' % xml_folder
 
     # MS A o A2 (Not taking MS O into account: I won't collate O)
     ms_siglum = 'wit-41999'
-    ms_file = '../xml/a1-simple.xml'
+    ms_file = '%s/a1-simple.xml' % xml_folder
 
-    juxta_file = '../xml/m1.xml'
-    juxta_file_out = '../xml/m1-collatex-out.xml'
+    juxta_file = '%s/m1.xml' % xml_folder
+    juxta_file_out = '%s/m1-collatex-out.xml' % xml_folder
 
 elif chunk_file == '2-alfa':
 
     print_siglum = 'wit-42040'  # Bonetti
-    print_file = '../xml/bonetti-2-alfa-simple.xml'
+    print_file = '%s/bonetti-2-alfa-simple.xml' % xml_folder
 
     # MS A o A2 (Not taking MS O into account: I won't collate O)
     ms_siglum = 'wit-42039'
-    ms_file = '../xml/a2-sorted-2-alfa-simple.xml'
+    ms_file = '%s/a2-sorted-2-alfa-simple.xml' % xml_folder
 
-    juxta_file = '../xml/m2-alfa.xml'
-    juxta_file_out = '../xml/m2-alfa-collatex-out.xml'
+    juxta_file = '%s/m2-alfa.xml' % xml_folder
+    juxta_file_out = '%s/m2-alfa-collatex-out.xml' % xml_folder
 
 elif chunk_file == '2-bravo':
 
     print_siglum = 'wit-42008'  # Bonetti
-    print_file = '../xml/bonetti-2-bravo-simple.xml'
+    print_file = '%s/bonetti-2-bravo-simple.xml' % xml_folder
 
     # MS A o A2 (Not taking MS O into account: I won't collate O)
     ms_siglum = 'wit-42007'
-    ms_file = '../xml/a2-sorted-2-bravo-simple.xml'
+    ms_file = '%s/a2-sorted-2-bravo-simple.xml' % xml_folder
 
-    juxta_file = '../xml/m2-bravo.xml'
-    juxta_file_out = '../xml/m2-bravo-collatex-out.xml'
+    juxta_file = '%s/m2-bravo.xml' % xml_folder
+    juxta_file_out = '%s/m2-bravo-collatex-out.xml' % xml_folder
 
 elif chunk_file == '2-charlie':
 
     print_siglum = 'wit-41981'  # Bonetti
-    print_file = '../xml/bonetti-2-charlie-simple.xml'
+    print_file = '%s/bonetti-2-charlie-simple.xml' % xml_folder
 
     ms_siglum = 'wit-41980'  # MS A (non so se anche A2)
-    ms_file = '../xml/a2-sorted-2-charlie-simple.xml'
+    ms_file = '%s/a2-sorted-2-charlie-simple.xml' % xml_folder
 
-    juxta_file = '../xml/m2-charlie.xml'
-    juxta_file_out = '../xml/m2-charlie-collatex-out.xml'
+    juxta_file = '%s/m2-charlie.xml' % xml_folder
+    juxta_file_out = '%s/m2-charlie-collatex-out.xml' % xml_folder
 
 
 ########################################
@@ -77,6 +80,7 @@ elif chunk_file == '2-charlie':
 now = datetime.now()
 time_stamp = now.strftime('_orig_%Y-%m-%d_%H-%M-%S')
 # os.rename(juxta_file, juxta_file + '_' + time_stamp)
+backup_filename = juxta_file.replace('xml/', '%s/' % backup_folder)
 backup_filename = juxta_file.replace('.xml', '%s.xml' % time_stamp)
 copyfile(juxta_file, backup_filename)
 
