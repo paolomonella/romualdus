@@ -2093,12 +2093,12 @@ Anno dominice incarnationis MLVIII, indictione XI. Benedictus papa defunctus est
  
 <p xml:id="g184.10-184.13">
 Anno 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Domini</lem>
    <rdg wit="#a2">dominice incarnationis</rdg>
    <rdg wit="#o">ab incarnatione</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #o">cui</lem>
    <rdg wit="#a2">et</rdg>
 </app> 
@@ -2110,7 +2110,7 @@ Anno
    <lem wit="#b #a2">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> in regnum. Ipso quoque anno comes Robbertus Guiscardus uocatus 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">est</lem>
    <rdg wit="#a2 #o"></rdg>
    </app> a 
@@ -2118,7 +2118,7 @@ Anno
    <lem wit="#b #a2">Troianis</lem>
    <rdg wit="#o">Troyanis</rdg>
 </app> ciuibus, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">ipsam</lem>
    <rdg wit="#o">ipsa</rdg>
 </app> eorum ciuitatem in sua potestate ab eis accepit, qui non post multos dies 
@@ -2219,7 +2219,7 @@ cum exercitu in
  
 <p xml:id="g185.8-186.5">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MLXII indictione XV Nicolaus papa defungitur anno ordinationis sue 
@@ -2230,47 +2230,45 @@ Anno
 <app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b">octauo</lem>
    <rdg wit="#a #o">VIII</rdg>
-   </app>. Et Alexander qui uocatus est Anselmus papa 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b #a"> </lem>
-   <rdg wit="#o">ordinatur. Quo</rdg>
-</app> 
-<app cert="medium" subtype="unknown" type="unknown">
+   </app>. Et Alexander qui uocatus est Anselmus papa ordinatur. Quo
+<app cert="high" type="substantial">
    <lem wit="#b #o">anno</lem>
-   <rdg wit="#a">ordinatur, quo tempore</rdg>
+   <rdg wit="#a">tempore</rdg>
 </app> princeps 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">Riccardus</lem>
    <rdg wit="#o">Ricardus</rdg>
 </app> Capuam cepit sibique ordinauit. His autem diebus Robbertus dux ad Alexandrum papam proficiscens 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b">"</lem>
-   <rdg wit="#a"></rdg>
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a #o"></lem>
+   <rdg wit="#b">"</rdg>
+</app>  
+<app cert="high" type="orthography" subtype="double">
+   <lem wit="#b #a">liggius</lem>
    <rdg wit="#o">ligius</rdg>
 </app>  
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b #a">liggius</lem>
-   <rdg wit="#o"></rdg>
-</app>  
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #o">eius</lem>
    <rdg wit="#a"></rdg>
-</app> homo 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b">deuenitNicolao</lem>
-   <rdg wit="#a">eius deuenit et sicut Nicolao</rdg>
-   <rdg wit="#o">deuenit et sicut Nicolaus</rdg>
+</app> homo
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#b #o"></lem>
+   <rdg wit="#a">eius</rdg>
+</app> deuenit et sicut
+<app cert="high" type="substantial">
+   <lem wit="#b #a">Nicolao</lem>
+   <rdg wit="#o">Nicolaus</rdg>
 </app> pape ita et huic iusiurandum fecit et per uexillum ab eo terram cum honore ducatus accepit. 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Sedique</lem>
    <rdg wit="#a">Seditque</rdg>
    <rdg wit="#o">Set</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"></lem>
    <rdg wit="#o">autem</rdg>
 </app> Alexander papa annis XI, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> VI. 

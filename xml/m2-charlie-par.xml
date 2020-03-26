@@ -72,7 +72,11 @@
 <app>
    <rdg wit="#b">III</rdg>
    <rdg wit="#a">IV</rdg>
-</app> mense aprilis stella cometis apparuit a parte orientis, cuius fumus per aliquot dies tendebat ad meridiem. Ipso quoque mense hec eadem stella apparuit a parte 
+</app> mense aprilis stella cometis apparuit a parte
+<app>
+   <rdg wit="#b">orientis</rdg>
+   <rdg wit="#a">Orientis</rdg>
+</app> , cuius fumus per aliquot dies tendebat ad meridiem. Ipso quoque mense hec eadem stella apparuit a parte 
 <app>
    <rdg wit="#b">occidentis</rdg>
    <rdg wit="#a">Occidentis</rdg>
@@ -110,7 +114,11 @@
 <p xml:id="g187.5-187.8">
  
 <app>
-   <rdg wit="#b">"Anno domini</rdg>
+   <rdg wit="#b">"</rdg>
+   <rdg wit="#a"/>
+</app> 
+<app>
+   <rdg wit="#b">Anno domini</rdg>
    <rdg wit="#a"/>
 </app> MLXVIII, indictione 
 <app>
@@ -150,11 +158,15 @@
 <p xml:id="g187.11-187.14">
  
 <app>
-   <rdg wit="#b">"Hoc</rdg>
+   <rdg wit="#b">"</rdg>
+   <rdg wit="#a"/>
+</app> 
+<app>
+   <rdg wit="#b">Hoc</rdg>
    <rdg wit="#a">MLXX indictione VIII hoc</rdg>
 </app> anno mense Ianuarii magnum homicidium actum est in Brundusii ciuitate. Nam Normanni uolentes eam comprehendere, tenti sunt ab eis quadraginta cum aliis eorum ministris 
 <app>
-   <rdg wit="#b"> </rdg>
+   <rdg wit="#b"/>
    <rdg wit="#a">XLIII</rdg>
 </app> et capita omnium predictorum ad imperatorem deportata sunt 
 <app>
@@ -176,7 +188,7 @@
 <app>
    <rdg wit="#b">per terram et per mare, duxitque ante eam naues LVIII</rdg>
    <rdg wit="#a"/>
-</app> ditissimam Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam. 
+</app> ditissimam Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam 
 </p>
  
 <p xml:id="g188.1-188.4">
@@ -202,11 +214,19 @@
    <rdg wit="#a"/>
 </app> Eodem anno Robbertus dux fecit fieri pontem in mari quatinus concluderet portum prephate urbis Bari, et in quintadecima die mensis Aprilis 
 <app>
-   <rdg wit="#b">cepit Robbertus</rdg>
+   <rdg wit="#b">cepit</rdg>
+   <rdg wit="#a"/>
+</app> 
+<app>
+   <rdg wit="#b">Robbertus</rdg>
    <rdg wit="#a">Robertus</rdg>
 </app> dux predictam ciuitatem 
 <app>
    <rdg wit="#b">,</rdg>
+   <rdg wit="#a"/>
+</app> 
+<app>
+   <rdg wit="#b"/>
    <rdg wit="#a">cepit</rdg>
 </app> et in sequenti predictus dux cepit ciuitatem Panormum in mense Ianuarii 
 <app>
@@ -264,7 +284,11 @@
 <app>
    <rdg wit="#b">traddit</rdg>
    <rdg wit="#a">tradidit</rdg>
-</app> , atque Turrim maiorem in qua se tutabatur. In eadem uero ciuitate ipse dux construxit eccelsiam in honore beati Mathei apostoli et euangeliste. In Panormo quoque fecit ecclesiam in 
+</app> , atque Turrim maiorem in qua se tutabatur. In eadem uero ciuitate ipse dux construxit 
+<app>
+   <rdg wit="#b">eccelsiam</rdg>
+   <rdg wit="#a">ecclesiam</rdg>
+</app> in honore beati Mathei apostoli et euangeliste. In Panormo quoque fecit ecclesiam in 
 <app>
    <rdg wit="#b">honore</rdg>
    <rdg wit="#a">honorem</rdg>
@@ -288,11 +312,15 @@
 <app>
    <rdg wit="#b">Iordanus</rdg>
    <rdg wit="#a"/>
-</app> in matrimonio accepit filiam Guaymarii principis Salernitani, ex qua habuit filios Riccardum et Robbertum atque Iordanum 
+</app> in matrimonio accepit filiam Guaymarii principis Salernitani, ex qua habuit filios Riccardum et Robbertum atque Iordanum. 
 <app>
-   <rdg wit="#b">". Hoc anno obsessa est Salernum a Robberto duce et comprehensa est ab eo</rdg>
+   <rdg wit="#b">"</rdg>
    <rdg wit="#a"/>
-</app> . 
+</app> 
+<app>
+   <rdg wit="#b">Hoc anno obsessa est Salernum a Robberto duce et comprehensa est ab eo.</rdg>
+   <rdg wit="#a"/>
+</app> 
 </p>
  
 <p xml:id="g190.9-191.2">

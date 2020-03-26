@@ -15982,12 +15982,12 @@ Anno dominice incarnationis MLVIII, indictione XI. Benedictus papa defunctus est
  
 <p xml:id="g184.10-184.13">
 Anno 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Domini</lem>
    <rdg wit="#a2">dominice incarnationis</rdg>
    <rdg wit="#o">ab incarnatione</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #o">cui</lem>
    <rdg wit="#a2">et</rdg>
 </app> 
@@ -15999,7 +15999,7 @@ Anno
    <lem wit="#b #a2">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> in regnum. Ipso quoque anno comes Robbertus Guiscardus uocatus 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">est</lem>
    <rdg wit="#a2 #o"/>
    </app> a 
@@ -16007,7 +16007,7 @@ Anno
    <lem wit="#b #a2">Troianis</lem>
    <rdg wit="#o">Troyanis</rdg>
 </app> ciuibus, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">ipsam</lem>
    <rdg wit="#o">ipsa</rdg>
 </app> eorum ciuitatem in sua potestate ab eis accepit, qui non post multos dies 
@@ -16108,7 +16108,7 @@ cum exercitu in
  
 <p xml:id="g185.8-186.5">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">dominice incarnationis</lem>
    <rdg wit="#o">ab incarnatione Domini</rdg>
 </app> MLXII indictione XV Nicolaus papa defungitur anno ordinationis sue 
@@ -16119,47 +16119,45 @@ Anno
 <app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b">octauo</lem>
    <rdg wit="#a #o">VIII</rdg>
-   </app>. Et Alexander qui uocatus est Anselmus papa 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b #a"> </lem>
-   <rdg wit="#o">ordinatur. Quo</rdg>
-</app> 
-<app cert="medium" subtype="unknown" type="unknown">
+   </app>. Et Alexander qui uocatus est Anselmus papa ordinatur. Quo
+<app cert="high" type="substantial">
    <lem wit="#b #o">anno</lem>
-   <rdg wit="#a">ordinatur, quo tempore</rdg>
+   <rdg wit="#a">tempore</rdg>
 </app> princeps 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">Riccardus</lem>
    <rdg wit="#o">Ricardus</rdg>
 </app> Capuam cepit sibique ordinauit. His autem diebus Robbertus dux ad Alexandrum papam proficiscens 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b">"</lem>
-   <rdg wit="#a"/>
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a #o"/>
+   <rdg wit="#b">"</rdg>
+</app>  
+<app cert="high" type="orthography" subtype="double">
+   <lem wit="#b #a">liggius</lem>
    <rdg wit="#o">ligius</rdg>
 </app>  
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b #a">liggius</lem>
-   <rdg wit="#o"/>
-</app>  
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b #o">eius</lem>
    <rdg wit="#a"/>
-</app> homo 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b">deuenitNicolao</lem>
-   <rdg wit="#a">eius deuenit et sicut Nicolao</rdg>
-   <rdg wit="#o">deuenit et sicut Nicolaus</rdg>
+</app> homo
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#b #o"/>
+   <rdg wit="#a">eius</rdg>
+</app> deuenit et sicut
+<app cert="high" type="substantial">
+   <lem wit="#b #a">Nicolao</lem>
+   <rdg wit="#o">Nicolaus</rdg>
 </app> pape ita et huic iusiurandum fecit et per uexillum ab eo terram cum honore ducatus accepit. 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Sedique</lem>
    <rdg wit="#a">Seditque</rdg>
    <rdg wit="#o">Set</rdg>
 </app> 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a"/>
    <rdg wit="#o">autem</rdg>
 </app> Alexander papa annis XI, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> VI. 
@@ -16170,7 +16168,7 @@ Anno
    <lem wit="#a2"/>
    <rdg wit="#b">"</rdg>
 </app> Hoc anno Riccardus princeps Capue intrauit terram Campanie obseditque Cipparanum et 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">cepit eam et</lem>
    <rdg wit="#a2"/>
 </app> usque Romam deuastando peruenit. 
@@ -16181,42 +16179,43 @@ Anno Domini MLXIII. Hoc anno comprehensa est Tarentum a Normannis.
 </p>
  
 <p xml:id="g186.9-186.9">
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">Anno Domini</lem>
    <rdg wit="#a2"/>
 </app> MLXIV. Hoc 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">anno</lem>
    <rdg wit="#a2">autem temporim</rdg>
 </app> comprehensa est Matera a Normannis mense 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Aprilis</lem>
    <rdg wit="#a2">Aprelis</rdg>
 </app>. 
 </p>
  
 <p xml:id="g186.10-186.11">
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">Anno Domini MLXV indictione III. Hoc anno Robbertus dux intrauit Siciliam et interfecit Agarenorum multitudinem et tulit obsides de ciuitate Panormo".</lem>
-   <rdg wit="#a"/>
-</app> 
+Anno Domini MLXV indictione III. Hoc anno Robbertus dux intrauit Siciliam et interfecit Agarenorum multitudinem et tulit obsides de ciuitate Panormo.
 </p>
  
 <p xml:id="g186.12-187.2">
 Anno dominice incarnationis MLXVI indictione 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">III</lem>
    <rdg wit="#a">IV</rdg>
-</app> mense aprilis stella cometis apparuit a parte orientis, cuius fumus per aliquot dies tendebat ad meridiem. Ipso quoque mense hec eadem stella apparuit a parte 
-<app cert="medium" subtype="case" type="orthographic">
+</app> mense aprilis stella cometis apparuit a parte
+<app cert="high" subtype="case" type="orthographic">
+   <lem resp="#pm">Orientis</lem>
+   <rdg wit="#b #a">orientis</rdg>
+</app>, cuius fumus per aliquot dies tendebat ad meridiem. Ipso quoque mense hec eadem stella apparuit a parte 
+<app cert="high" subtype="case" type="orthographic">
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #a">occidentis</rdg>
 </app>, cuius fumus ad meridiem 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">similiter</lem>
    <rdg wit="#a"/>
 </app> per aliquot dies tendebat. Quo anno apud Constantinopolim Constantinus Dioclizi imperator, anno eius imperii 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b">sexto</lem>
    <rdg wit="#a">VI</rdg>
 </app>, defunctus est, cui Romano Diogenes in imperium successit. 
@@ -16235,40 +16234,41 @@ Anno dominice incarnationis MLXVI indictione
 </p>
  
 <p xml:id="g187.3-187.4">
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">"Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit cum Araldo rege Anglorum et uicit eum, qui et factus est rex super gentem Anglorum".</lem>
-   <rdg wit="#a"/>
-</app> 
+Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit cum Araldo rege Anglorum et uicit eum, qui et factus est rex super gentem Anglorum.
 </p>
  
 <p xml:id="g187.5-187.8">
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">"Anno domini</lem>
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a2"/>
+   <rdg wit="#b">"</rdg>
+</app> 
+<app cert="high" subtype="missing-in-ms" type="substantial">
+   <lem wit="#b">Anno domini</lem>
    <rdg wit="#a2"/>
 </app> MLXVIII, indictione 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">V</lem>
    <rdg wit="#a2">VI</rdg>
 </app>. Hoc anno in sexto die mense Februarii Robbertus dux obsedit ciuitatem 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Montem-pilosum</lem>
-   <rdg wit="#a2">Montempilosum</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#a2">Montempilosum</lem>
+   <rdg wit="#b">Montem-pilosum</rdg>
 </app> et dimissa ibi 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">obsidione</lem>
    <rdg wit="#a2">obsidionem</rdg>
 </app> cum paucis 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">abiit</lem>
    <rdg wit="#a2">uenit</rdg>
 </app> Abianum et cepit eam, et tradicione cuiusdam 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Gothifrede</lem>
    <rdg wit="#a2">Gotthifrede</rdg>
 </app> intrauit ipse dux in prephatam 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Montem-pilosum</lem>
-   <rdg wit="#a2">Montempilosum</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#a2">Montempilosum</lem>
+   <rdg wit="#b">Montem-pilosum</rdg>
 </app> ciuitatem 
 <app cert="high" type="punctuation">
    <lem wit="#a2">.</lem>
@@ -16281,12 +16281,16 @@ Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano D
 </p>
  
 <p xml:id="g187.11-187.14">
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">"Hoc</lem>
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a2"/>
+   <rdg wit="#b">"</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b">Hoc</lem>
    <rdg wit="#a2">MLXX indictione VIII hoc</rdg>
 </app> anno mense Ianuarii magnum homicidium actum est in Brundusii ciuitate. Nam Normanni uolentes eam comprehendere, tenti sunt ab eis quadraginta cum aliis eorum ministris 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b"> </lem>
+<app cert="high" subtype="missing-in-print" type="substantial">
+   <lem wit="#b"/>
    <rdg wit="#a2">XLIII</rdg>
 </app> et capita omnium predictorum ad imperatorem deportata sunt 
 <app cert="high" type="punctuation">
@@ -16301,23 +16305,23 @@ Eodem anno Robbertus dux
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
 </app> cepit Barum ciuitatem longa obsidione fatigatam, indeque mouens exercitum, Siciliam properauit obseditque 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">" "</lem>
    <rdg wit="#a"/>
 </app> Panormum, 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">per terram et per mare, duxitque ante eam naues LVIII</lem>
    <rdg wit="#a"/>
-</app> ditissimam Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam. 
+</app> ditissimam Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam 
 </p>
  
 <p xml:id="g188.1-188.4">
 anno dominice incarnationis MLXXI, indictione 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">X</lem>
    <rdg wit="#a"/>
 </app>. Et exinde portas ferreas et columpnas marmoreas quam plures cum capitibus fecit afferri 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a">in</rdg>
 </app> Troiam causa uictorie sue. Anno autem subsequente ordinatis ibi in Panormo municipiis, ipse dux in Apuliam ueniens cepit Tranum Apulie ciuitatem 
@@ -16332,12 +16336,20 @@ anno dominice incarnationis MLXXI, indictione
    <lem wit="#a2"/>
    <rdg wit="#b">"</rdg>
 </app> Eodem anno Robbertus dux fecit fieri pontem in mari quatinus concluderet portum prephate urbis Bari, et in quintadecima die mensis Aprilis 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">cepit Robbertus</lem>
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#b">cepit</lem>
+   <rdg wit="#a2"/>
+</app> 
+<app cert="high" type="orthography" subtype="double">
+   <lem wit="#b">Robbertus</lem>
    <rdg wit="#a2">Robertus</rdg>
 </app> dux predictam ciuitatem 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">,</lem>
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a2"/>
+   <rdg wit="#b">,</rdg>
+</app> 
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#b"/>
    <rdg wit="#a2">cepit</rdg>
 </app> et in sequenti predictus dux cepit ciuitatem Panormum in mense Ianuarii 
 <app cert="high" type="punctuation">
@@ -16348,7 +16360,7 @@ anno dominice incarnationis MLXXI, indictione
  
 <p xml:id="g188.8-188.11">
 Anno dominice incarnationis MLXXV, indictione XIII, Alexander papa diem obiit, et archidiaconus eius nomine 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Ildebrandus</lem>
    <rdg wit="#a">Ildeprandus</rdg>
 </app> ipsa eadem die in ordine pontificali electus et papa Gregorius est nuncupatus, seditque annis XII, mense I. Hic autem pontifex amministrationem regni sibi primus ut rex assumpsit. 
@@ -16356,15 +16368,15 @@ Anno dominice incarnationis MLXXV, indictione XIII, Alexander papa diem obiit, e
  
 <p xml:id="g188.12-188.14">
 Anno dominice incarnationis 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">MLXXVI</lem>
    <rdg wit="#a">MLXXV</rdg>
 </app>, dux Robbertus Sanctam Seuerinam Calabrie 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a">cubrie</rdg>
 </app> ciuitatem loco munitissimam tertio anno postquam illam obsederat, cepit. 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Hic</lem>
    <rdg wit="#a">Hinc</rdg>
 </app> quoque cepit ciuitatem Comsanam obsesso castello Sancte Agathe, quod incessabili oppugnatione cepit. 
@@ -16383,51 +16395,59 @@ Anno dominice incarnationis
  
 <p xml:id="g189.2-189.5">
 His etiam diebus cum exercitu dux proficiscens obsedit Salernum, ciuitatem medicine utique artis diu famosam atque precipuam. 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Gisolfum</lem>
-   <rdg wit="#a">Gisolfus</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">Gisolfus</lem>
+   <rdg wit="#b">Gisolfum</rdg>
 </app> autem frater uxoris eiusdem ducis tunc in eadem ciuitate morabatur. Hanc incessanter terra marique expugnauit, nec destitit donec post VII menses obsidionis sue cepit illam mense Decembris. 
 </p>
  
 <p xml:id="g189.5-190.8">
 Anno dominice incarnationis MLXXVI, indictione XV; cepitque Gisulfum principem qui fame coactus se eidem duci 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">traddit</lem>
    <rdg wit="#a">tradidit</rdg>
-</app>, atque Turrim maiorem in qua se tutabatur. In eadem uero ciuitate ipse dux construxit eccelsiam in honore beati Mathei apostoli et euangeliste. In Panormo quoque fecit ecclesiam in 
-<app cert="medium" subtype="unknown" type="unknown">
+</app>, atque Turrim maiorem in qua se tutabatur. In eadem uero ciuitate ipse dux construxit 
+<app cert="high" type="substantial">
+   <lem wit="#a">ecclesiam</lem>
+   <rdg wit="#b">eccelsiam</rdg>
+</app> in honore beati Mathei apostoli et euangeliste. In Panormo quoque fecit ecclesiam in 
+<app cert="high" type="substantial">
    <lem wit="#b">honore</lem>
    <rdg wit="#a">honorem</rdg>
 </app> Dei genitricis semperque uirginis Marie, anno primo postquam cepit Salernum. Robbertus dux 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b"> </lem>
    <rdg wit="#a">Beneuentum</rdg>
 </app> obsedit 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b">Beneuentum</lem>
    <rdg wit="#a"/>
 </app>, acriter eam expugnans. Et nisi Romanus pontifex, cuius precepto parebat, hoc idem duci prohibuisset, nequaquam ab incepto desisteret donec eam caperet. Simili modo et Riccardus princeps Neapolim obsedit ipso eodem anno, fortiter illam ciuitatem expugnans undique ut eam ui caperet. Sed eodem anno in eadem obsidione princeps iste mortuus est anno principatus sui XX, indictione I. Fuit autem hic statura procerus, forti animo, ingenio astutus, largitate famosus, circa beniuolos et sibi fideles mansuetus atque benignus, rebellibus autem ac perfidis ualde terribilis. Cui 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b"> </lem>
    <rdg wit="#a">successit</rdg>
 </app> Iordanus filius eius 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b">successit</lem>
    <rdg wit="#a"/>
 </app>. Hic autem 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">Iordanus</lem>
    <rdg wit="#a"/>
-</app> in matrimonio accepit filiam Guaymarii principis Salernitani, ex qua habuit filios Riccardum et Robbertum atque Iordanum 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">". Hoc anno obsessa est Salernum a Robberto duce et comprehensa est ab eo</lem>
+</app> in matrimonio accepit filiam Guaymarii principis Salernitani, ex qua habuit filios Riccardum et Robbertum atque Iordanum. 
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a"/>
+   <rdg wit="#b">"</rdg>
+</app> 
+<app cert="high" subtype="missing-in-ms" type="substantial">
+   <lem wit="#b">Hoc anno obsessa est Salernum a Robberto duce et comprehensa est ab eo.</lem>
    <rdg wit="#a"/>
-</app>. 
+</app> 
 </p>
  
 <p xml:id="g190.9-191.2">
 Anno dominice incarnationis MLXXIX, indictione II, apud Constantinopolim Michael filius Constantini imperatoris anno eius imperii 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b">octauo</lem>
    <rdg wit="#a">VIII</rdg>
 </app> ipse cum filiis suis 
@@ -17487,7 +17507,7 @@ Anno
  
 <p xml:id="g212.12-212.13">
 Hoc tempore in mense Iunio 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Roggerius</lem>
    <rdg wit="#a2">Rogerius</rdg>
 </app> comes Sicilie cum turba non exigua equitum et peditum transfetauit in Calabriam et castellum Sancti mauri nomine cepit et cremauit 

@@ -2102,14 +2102,10 @@
    <rdg wit="#wit-42008">octauo</rdg>
    <rdg wit="#wit-42007">VIII</rdg>
    <rdg wit="#wit-42006">VIII</rdg>
-</app> . Et Alexander qui uocatus est Anselmus papa 
-<app>
-   <rdg wit="#wit-42008 #wit-42007"> </rdg>
-   <rdg wit="#wit-42006">ordinatur. Quo</rdg>
-</app> 
+</app> . Et Alexander qui uocatus est Anselmus papa ordinatur. Quo
 <app>
    <rdg wit="#wit-42008 #wit-42006">anno</rdg>
-   <rdg wit="#wit-42007">ordinatur, quo tempore</rdg>
+   <rdg wit="#wit-42007">tempore</rdg>
 </app> princeps 
 <app>
    <rdg wit="#wit-42008 #wit-42007">Riccardus</rdg>
@@ -2117,21 +2113,23 @@
 </app> Capuam cepit sibique ordinauit. His autem diebus Robbertus dux ad Alexandrum papam proficiscens 
 <app>
    <rdg wit="#wit-42008">&quot;</rdg>
-   <rdg wit="#wit-42007"></rdg>
-   <rdg wit="#wit-42006">ligius</rdg>
+   <rdg wit="#wit-42007 #wit-42006"></rdg>
 </app>  
 <app>
    <rdg wit="#wit-42008 #wit-42007">liggius</rdg>
-   <rdg wit="#wit-42006"></rdg>
+   <rdg wit="#wit-42006">ligius</rdg>
 </app>  
 <app>
    <rdg wit="#wit-42008 #wit-42006">eius</rdg>
    <rdg wit="#wit-42007"></rdg>
-</app> homo 
+</app> homo
 <app>
-   <rdg wit="#wit-42008">deuenitNicolao</rdg>
-   <rdg wit="#wit-42007">eius deuenit et sicut Nicolao</rdg>
-   <rdg wit="#wit-42006">deuenit et sicut Nicolaus</rdg>
+   <rdg wit="#wit-42008 #wit-42006"></rdg>
+   <rdg wit="#wit-42007">eius</rdg>
+</app> deuenit et sicut
+<app>
+   <rdg wit="#wit-42008 #wit-42007">Nicolao</rdg>
+   <rdg wit="#wit-42006">Nicolaus</rdg>
 </app> pape ita et huic iusiurandum fecit et per uexillum ab eo terram cum honore ducatus accepit. 
 <app>
    <rdg wit="#wit-42008">Sedique</rdg>
