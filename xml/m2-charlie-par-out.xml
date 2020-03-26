@@ -274,7 +274,7 @@ Anno dominice incarnationis
    <lem wit="#a2"></lem>
    <rdg wit="#b">"</rdg>
 </app> Hoc anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Robbertus</lem>
    <rdg wit="#a2">Robertus</rdg>
 </app> dux dedit filiam suam nurum ad imperatorem Constantinopolitanum. 
@@ -1809,7 +1809,7 @@ Post hec Apuliam rediens obsedit Barum, que se ei
    <lem wit="#b">grandi</lem>
    <rdg wit="#a2">grand</rdg>
 </app> exercitu, fertur enim tria 
-<app cert="low" subtype="ll" type="orthographic">
+<app cert="medium" subtype="double" type="orthographic">
    <lem wit="#b">milia</lem>
    <rdg wit="#a2">millia</rdg>
 </app> habuisse equites, pedites uero ac 

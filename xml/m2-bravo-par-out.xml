@@ -280,7 +280,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">iussit</lem>
    <rdg wit="#o">iusit</rdg>
 </app> Arnulfum de ecclesia et sic 
-<app cert="high" type="orthography" subtype="ll">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">alligatum</lem>
    <rdg wit="#o">aligatum</rdg>
 </app> retrudi in carcere, ubi nepos eius Carolus detinebatur, mansitque ibi annis III. Nunciantur hec presuli Romano qui ualde indignans super hoc facto interdixit omnes episcopos qui iam dicto facinori consenserant, misitque Leonem abbatem a sede apostolica ad domnum Seguinum archiepiscopum Senonum qui uice sua in urbe 
@@ -523,7 +523,7 @@ Non post multum uero temporis
    <lem wit="#b #a">comite Senonum successit ei</lem>
    <rdg wit="#o">{Gap in the MS: 5 illegible wordsfilius}</rdg>
 </app> 
-<app cert="high" type="orthography" subtype="y">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <rdg wit="#b">Rainaldus</rdg>
    <rdg wit="#a">Raynaldus</rdg>
    <rdg wit="#o"></rdg>
@@ -536,7 +536,7 @@ Non post multum uero temporis
    <lem wit="#b #a">hic</lem>
    <rdg wit="#o">{Gap in the MS: 8 illegible words}</rdg>
 </app> 
-<app cert="high" type="orthography">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <rdg wit="#b">persecucionem</rdg>
    <rdg wit="#a">persecutionem</rdg>
    <rdg wit="#o"></rdg>
@@ -557,7 +557,7 @@ Non post multum uero temporis
    <lem wit="#b #a">Leotherico, qui successit uenerabili</lem>
    <rdg wit="#o">{Gap in the MS: 9 illegible words}</rdg>
 </app> 
-<app cert="high" type="substantial">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <rdg wit="#b">Seguino</rdg>
    <rdg wit="#a">Saguino</rdg>
    <rdg wit="#o"></rdg>
@@ -1416,11 +1416,16 @@ Hoc autem tempore comprehensum est oppidum Stuni a Garangis in mense
 <app cert="high" type="orthography">
    <lem wit="#b">Octobris</lem>
    <rdg wit="#a2">Octubris</rdg>
-</app> et in mense Decembris
+</app>  et in mense 
+<app cert="high" type="substantial">
+   <lem wit="#b">Decembris</lem>
+   <rdg wit="#a2">Decembris</rdg>
+</app>  
 <app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">depopulauerunt Liccie</lem>
    <rdg wit="#a2"></rdg>
-</app>. Et in mense Iunii Benedictus papa per poculum ueneni occidit papam Clementem. 
+</app>. 
+  Et in mense Iunii Benedictus papa per poculum ueneni occidit papam Clementem. 
 </p>
  
 <p xml:id="g181.1-181.1">
@@ -1432,7 +1437,7 @@ Anno
 </app>  
 <app cert="high" type="gap-in-ms">
    <lem wit="#b #a2">MXLVIII</lem>
-   <rdg wit="#o">Gap1MissingWord</rdg>
+   <rdg wit="#o">{Gap in the MS: 1 missing word}</rdg>
 </app> indictione I; 
 <app cert="high" subtype="y" type="orthographic">
    <lem wit="#b #a2">Zoy</lem>
@@ -1442,13 +1447,10 @@ Anno
  
 <p xml:id="g181.2-181.5">
 Anno 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b #a2"> </lem>
-   <rdg wit="#o">ab incarnatione</rdg>
-</app> 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #o">domini</lem>
+<app cert="medium" subtype="3elements3variants" type="unknown">
+   <lem wit="#b">Domini</lem>
    <rdg wit="#a2">dominice incarnationis</rdg>
+   <rdg wit="#o">ab incarnatione Domini</rdg>
 </app>  
 <app cert="high" type="gap-in-ms">
    <lem wit="#b #a2">MXLIX</lem>
@@ -1458,7 +1460,7 @@ Anno
    <lem wit="#b #o">papa</lem>
    <rdg wit="#a2"></rdg>
 </app> uita decedente, Leo 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a2">sanctissimus</lem>
    <rdg wit="#o">sanctisimus</rdg>
 </app> qui uocatur 
@@ -1466,16 +1468,16 @@ Anno
    <lem wit="#b #o">Brunus</lem>
    <rdg wit="#a2">Bruno</rdg>
 </app>, a populo Romano expetitus, a clero electus, ab imperatore quoque 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a2">commendatus</lem>
    <rdg wit="#o">comendatus</rdg>
 </app>, et ab episcopis, quibus 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a2">officii huius</rdg>
+<app cert="high" type="substantial" subtype="missing-in-print">
+   <lem wit="#a2">officii huius</lem>
+   <rdg wit="#b"></rdg>
    <rdg wit="#o">oficii huius</rdg>
 </app> auctoritas est 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b #a2">attributa</lem>
    <rdg wit="#o">atributa</rdg>
 </app>, consecratus est in pontificatus 

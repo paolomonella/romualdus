@@ -1387,11 +1387,16 @@
 <app>
    <rdg wit="#a">Octubris</rdg>
    <rdg wit="#b">Octobris</rdg>
-</app> et in mense Decembris
+</app>  et in mense 
+<app>
+   <rdg wit="#a">Decembris</rdg>
+   <rdg wit="#b">Decembris</rdg>
+</app>  
 <app>
    <rdg wit="#b">depopulauerunt Liccie</rdg>
    <rdg wit="#a"/>
-</app>. Et in mense Iunii Benedictus papa per poculum ueneni occidit papam Clementem. 
+</app>. 
+  Et in mense Iunii Benedictus papa per poculum ueneni occidit papam Clementem. 
 </p>
  
 <p xml:id="g181.1-181.1">
@@ -1414,12 +1419,9 @@
 <p xml:id="g181.2-181.5">
  Anno 
 <app>
-   <rdg wit="#b #a"> </rdg>
-   <rdg wit="#o">ab incarnatione</rdg>
-</app> 
-<app>
-   <rdg wit="#b #o">domini</rdg>
+   <rdg wit="#b">Domini</rdg>
    <rdg wit="#a">dominice incarnationis</rdg>
+   <rdg wit="#o">ab incarnatione Domini</rdg>
 </app>  
 <app>
    <rdg wit="#b #a">MXLIX</rdg>
@@ -1442,7 +1444,7 @@
    <rdg wit="#o">comendatus</rdg>
 </app> , et ab episcopis, quibus 
 <app>
-   <rdg wit="#b"> </rdg>
+   <rdg wit="#b"/>
    <rdg wit="#a">officii huius</rdg>
    <rdg wit="#o">oficii huius</rdg>
 </app> auctoritas est 

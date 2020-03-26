@@ -1302,11 +1302,16 @@
 <app>
    <rdg wit="#wit-42007">Octubris</rdg>
    <rdg wit="#wit-42008">Octobris</rdg>
-</app> et in mense Decembris
+</app>  et in mense 
+<app>
+   <rdg wit="#wit-42007">Decembris</rdg>
+   <rdg wit="#wit-42008">Decembris</rdg>
+</app>  
 <app>
    <rdg wit="#wit-42008">depopulauerunt Liccie</rdg>
    <rdg wit="#wit-42007"/>
-</app>. Et in mense Iunii Benedictus papa per poculum ueneni occidit papam Clementem. [/p] [p xml:id=&quot;g181.1-181.1&quot;] Anno 
+</app>. 
+  Et in mense Iunii Benedictus papa per poculum ueneni occidit papam Clementem. [/p] [p xml:id=&quot;g181.1-181.1&quot;] Anno 
 <app>
    <rdg wit="#wit-42008">Domini</rdg>
    <rdg wit="#wit-42007">dominice incarnationis</rdg>
@@ -1321,12 +1326,9 @@
    <rdg wit="#wit-42006">Zoi</rdg>
 </app> imperatrix obiit. [/p] [p xml:id=&quot;g181.2-181.5&quot;] Anno 
 <app>
-   <rdg wit="#wit-42008 #wit-42007"> </rdg>
-   <rdg wit="#wit-42006">ab incarnatione</rdg>
-</app> 
-<app>
-   <rdg wit="#wit-42008 #wit-42006">domini</rdg>
+   <rdg wit="#wit-42008">Domini</rdg>
    <rdg wit="#wit-42007">dominice incarnationis</rdg>
+   <rdg wit="#wit-42006">ab incarnatione Domini</rdg>
 </app>  
 <app>
    <rdg wit="#wit-42008 #wit-42007">MXLIX</rdg>
@@ -1349,7 +1351,7 @@
    <rdg wit="#wit-42006">comendatus</rdg>
 </app> , et ab episcopis, quibus 
 <app>
-   <rdg wit="#wit-42008"> </rdg>
+   <rdg wit="#wit-42008"/>
    <rdg wit="#wit-42007">officii huius</rdg>
    <rdg wit="#wit-42006">oficii huius</rdg>
 </app> auctoritas est 

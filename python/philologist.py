@@ -788,7 +788,7 @@ class treeWithAppElements:
 
                     # Identify "correct" MS element and text
                     # based on on the 'lem' column in the decisions3 table
-                    db_lem = r['lem']
+                    db_lem = r['lem_if_not_print']
                     my_correct_ms_rdg = None
                     if db_lem == 'msa':
                         my_correct_ms_rdg = a['msaReading']
@@ -804,8 +804,10 @@ class treeWithAppElements:
                                ' in {},\nparagraph {}, \n<{}> {}.'
                                ' \nThe print reading is <{}> {}'
                                ' \nwith text «{}»\n').format(
-                                   self.juxtaSiglum, self.parent_xmlid(a),
-                                   etree.QName(a).localname, a.attrib,
+                                   self.juxtaSiglum,
+                                   self.parent_xmlid(a['app']),
+                                   etree.QName(a).localname,
+                                   a['app'].attrib,
                                    etree.QName(a['printReading']).localname,
                                    a['printReading'].attrib,
                                    a['printReading'].text))
