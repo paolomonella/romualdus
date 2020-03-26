@@ -106,6 +106,8 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
                 my_subtype = 'num-word'
             else:
                 my_subtype = 'unknown'
+        if myString2.strip() == '':
+            my_subtype = 'missing-in-ms'
 
     # Detect case 'octo' / 'VIII' (case-insensitive):
     elif numeralCheck(myString2.strip())['isNumeral']:
@@ -123,6 +125,8 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
                 my_subtype = 'num-word'
             else:
                 my_subtype = 'unknown'
+        if myString1.strip() == '':
+            my_subtype = 'missing-in-print'
 
     elif myString1 != myString2 and myString1.lower() == myString2.lower():
         if debug:
