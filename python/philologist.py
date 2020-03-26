@@ -636,12 +636,14 @@ class treeWithAppElements:
 
             # If the print reading text in <app> is the same
             # of the print reading text in the DB record...
-            if(r['print'] == my_print_text
+            # ('strip' is for readings/DB cells with space)
+            # ('str' is to cope with cases in which the DB cell is Null)
+            if(str(r['print']).strip() == my_print_text.strip()
 
                # and the MS reading text in the DB record is
                # the MS A reading text or MS A2 reading text
                # or MS O reading text in <app>
-               and r['ms'] == my_non_print_text
+               and str(r['ms']).strip() == my_non_print_text.strip()
 
                # and we are in the right <p>...
                and (r['xmlid'] == a['xmlid']
@@ -740,16 +742,19 @@ class treeWithAppElements:
 
             # If the print reading text in <app> is the same
             # of the print reading text in the DB record...
-            if(r['print'] == my_print_text
+            # ('strip' is for readings/DB cells with space)
+            if(str(r['print']).strip() == my_print_text.strip()
 
                # and the MS A or MS A2 text reading
                # matches that of the DB record
-               and (r['msa'] == a['msaText']
-                    or r['msa2'] == a['msa2Text'])
+               # I can't add .strip() to r['msa']/r['msa2']
+               # b/c many ar in the DB, Null)
+               and (str(r['msa2']).strip() == a['msaText'].strip()
+                    or str(r['msa2']).strip() == a['msa2Text'].strip())
 
                # and the MS O text reading
                # matches that of the DB record
-               and r['mso'] == a['msoText']
+               and str(r['mso']).strip() == a['msoText'].strip()
 
                # and we are in the right <p>...
                and (r['xmlid'] == a['xmlid']
