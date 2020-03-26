@@ -1022,7 +1022,7 @@ Anno dominice incarnationis MXXX, indictione XIII; Iohannes princeps Salerni def
    <lem wit="#b #a">successit</lem>
    <rdg wit="#o">succesit</rdg>
 </app> ei 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="y">
    <lem wit="#b #a">Guaymarius filius</lem>
    <rdg wit="#o">Guaimarius fillius</rdg>
 </app> eius. 
@@ -1058,7 +1058,7 @@ Anno
    <lem wit="#b #a">Zoy</lem>
    <rdg wit="#o">Zoi</rdg>
 </app> imperatrice. Ipso quoque anno defunctus est 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">Robbertus</lem>
    <rdg wit="#o">Robertus</rdg>
 </app> Francorum rex cui 
@@ -1211,15 +1211,15 @@ Anno dominice incarnationis
    <lem wit="#b #a">amnem</lem>
    <rdg wit="#o">aminem</rdg>
 </app> et Oliuentem, et 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> uictores extiterunt. In ipso quidem prelio fuit Drogo 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes et 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">quattuor</lem>
    <rdg wit="#o">quatuor</rdg>
 </app> ex fratribus eius. In ipso quoque anno Chunradus imperator defunctus est anno eius imperii XV, et 
@@ -1287,7 +1287,7 @@ Anno
  
 <p xml:id="g179.8-179.9">
 Anno dominice incarnationis MXLII indictione X; luna 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">passa</lem>
    <rdg wit="#o">pasa</rdg>
 </app> est 
@@ -1323,7 +1323,7 @@ Anno
    <lem wit="#b #a">MXLV</lem>
    <rdg wit="#o">MXLIII</rdg>
 </app> indictione XIII; Drogo 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> comes cepit 
@@ -1380,7 +1380,7 @@ Anno Domini
    <lem wit="#b #a">dampnati</lem>
    <rdg wit="#o">dabnati</rdg>
 </app> et exilio religati sunt, nullus enim eorum amplius iure poterat episcopari. Et tunc a clero et populo canonice Clemens electus est, ipso imperatore — quemadmodum in canonibus statutum est — 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">assensum</lem>
    <rdg wit="#o">asensum</rdg>
 </app> prebente. Qui consecratus sedit papalem cathedram 
@@ -1460,7 +1460,7 @@ Anno
    <lem wit="#b #o">papa</lem>
    <rdg wit="#a2"></rdg>
 </app> uita decedente, Leo 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a2">sanctissimus</lem>
    <rdg wit="#o">sanctisimus</rdg>
 </app> qui uocatur 
@@ -1468,7 +1468,7 @@ Anno
    <lem wit="#b #o">Brunus</lem>
    <rdg wit="#a2">Bruno</rdg>
 </app>, a populo Romano expetitus, a clero electus, ab imperatore quoque 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a2">commendatus</lem>
    <rdg wit="#o">comendatus</rdg>
 </app>, et ab episcopis, quibus 
@@ -1477,7 +1477,7 @@ Anno
    <rdg wit="#b"></rdg>
    <rdg wit="#o">oficii huius</rdg>
 </app> auctoritas est 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a2">attributa</lem>
    <rdg wit="#o">atributa</rdg>
 </app>, consecratus est in pontificatus 
@@ -1497,8 +1497,8 @@ Anno
    <lem wit="#b #a2">mensibus</lem>
    <rdg wit="#o">menses</rdg>
 </app> 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b">duobus</lem>
+<app cert="high" type="substantial">
+   <rdg wit="#b">duobus</rdg>
    <rdg wit="#a2">II</rdg>
    <rdg wit="#o">duos</rdg>
 </app>. 
@@ -1653,7 +1653,7 @@ Anno ab incarnatione Domini
    <lem wit="#b #o">bello</lem>
    <rdg wit="#a2">prelio</rdg>
 </app> 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a2">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> totum 
@@ -2112,7 +2112,7 @@ cum exercitu in
    <lem wit="#b #a">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> omnium 
-<app cert="high" type="orthography">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a">Normannorum</lem>
    <rdg wit="#o">Normanorum</rdg>
 </app> dux effectus est. Hic accepit uxorem nomine 

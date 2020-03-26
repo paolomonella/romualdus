@@ -18,8 +18,8 @@ import m_unifier
 import my_database_import
 
 quiet = True  # If true, suppress standard output messages to console
-chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
-# chosen_ones = ('m2-bravo')
+# chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+chosen_ones = ('m2-bravo')
 pre = False  # Warning: re-activate it later
 post = True  # Perform post-collation operations
 
