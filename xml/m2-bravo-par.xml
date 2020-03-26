@@ -2065,13 +2065,10 @@
 <p xml:id="g184.10-184.13">
  Anno 
 <app>
-   <rdg wit="#b #a"> </rdg>
+   <rdg wit="#b">Domini</rdg>
+   <rdg wit="#a">dominice incarnationis</rdg>
    <rdg wit="#o">ab incarnatione</rdg>
 </app> 
-<app>
-   <rdg wit="#b #o">Domini</rdg>
-   <rdg wit="#a">dominice incarnationis</rdg>
-</app> MLX, indictione XIII. Henricus rex Francorum obiit, 
 <app>
    <rdg wit="#b #o">cui</rdg>
    <rdg wit="#a">et</rdg>
@@ -2158,7 +2155,11 @@
    <rdg wit="#o">filium</rdg>
 </app> suum 
 <app>
-   <rdg wit="#b #a">filium Roggerium</rdg>
+   <rdg wit="#b #a">filium</rdg>
+   <rdg wit="#o"/>
+</app> 
+<app>
+   <rdg wit="#b #a">Roggerium</rdg>
    <rdg wit="#o">Rogerium</rdg>
 </app> . Interea Robbertus dux ad Nicolaum papam perrexit eiusque 
 <app>
@@ -2174,12 +2175,16 @@
    <rdg wit="#o">succesoribus</rdg>
 </app> canonice intrantibus. Ipse autem papa Nicolaus statim 
 <app>
-   <rdg wit="#b #a"> </rdg>
+   <rdg wit="#b #a"/>
    <rdg wit="#o">per uexillum</rdg>
 </app> inuestiuit eundem Robbertum 
 <app>
-   <rdg wit="#b #a">Guiscardum per uexillum</rdg>
+   <rdg wit="#b #a">Guiscardum</rdg>
    <rdg wit="#o">Guiscare</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">per uexillum</rdg>
+   <rdg wit="#o"/>
 </app> de honore ducatus sui cum tota terra. 
 </p>
  
