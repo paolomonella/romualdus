@@ -20,22 +20,55 @@ import sys
 
 debug = False
 dry = False
+chunk_file = '2-bravo'
 
-print_siglum = 'wit-41980'  # m2-charlie.xml
-print_file = '../xml/bonetti-2-charlie-simple.xml'
-ms_siglum = 'wit-41981'  # m2-charlie.xml (MS A)
-ms_file = '../xml/a2-sorted-2-charlie-simple.xml'
+if chunk_file == '1':
 
-juxta_file = '../xml/m2-charlie.xml'
-juxta_file_out = '../xml/m2-charlie-collatex-out.xml'
+    print_siglum = 'wit-42000'  # Garufi
+    print_file = '../xml/g-simple.xml'
 
-# Get xml:id as argument
-try:
-    xmlid = sys.argv[1]
-    print(xmlid)
-except IndexError as error:
-    print('{}: please provide the xml:id to re-collate'.format(
-        error))
+    # MS A o A2 (Not taking MS O into account: I won't collate O)
+    ms_siglum = 'wit-41999'
+    ms_file = '../xml/a1-simple.xml'
+
+    juxta_file = '../xml/m1.xml'
+    juxta_file_out = '../xml/m1-collatex-out.xml'
+
+elif chunk_file == '2-alfa':
+
+    print_siglum = 'wit-42040'  # Bonetti
+    print_file = '../xml/bonetti-2-alfa-simple.xml'
+
+    # MS A o A2 (Not taking MS O into account: I won't collate O)
+    ms_siglum = 'wit-42039'
+    ms_file = '../xml/a2-sorted-2-alfa-simple.xml'
+
+    juxta_file = '../xml/m2-alfa.xml'
+    juxta_file_out = '../xml/m2-alfa-collatex-out.xml'
+
+elif chunk_file == '2-bravo':
+
+    print_siglum = 'wit-42008'  # Bonetti
+    print_file = '../xml/bonetti-2-bravo-simple.xml'
+
+    # MS A o A2 (Not taking MS O into account: I won't collate O)
+    ms_siglum = 'wit-42007'
+    ms_file = '../xml/a2-sorted-2-bravo-simple.xml'
+
+    juxta_file = '../xml/m2-bravo.xml'
+    juxta_file_out = '../xml/m2-bravo-collatex-out.xml'
+
+elif chunk_file == '2-charlie':
+
+    print_siglum = 'wit-41981'  # Bonetti
+    print_file = '../xml/bonetti-2-charlie-simple.xml'
+
+    ms_siglum = 'wit-41980'  # MS A (non so se anche A2)
+    ms_file = '../xml/a2-sorted-2-charlie-simple.xml'
+
+    juxta_file = '../xml/m2-charlie.xml'
+    juxta_file_out = '../xml/m2-charlie-collatex-out.xml'
+
 
 ########################################
 # Create backup of original Juxta file #
@@ -46,6 +79,18 @@ time_stamp = now.strftime('_orig_%Y-%m-%d_%H-%M-%S')
 # os.rename(juxta_file, juxta_file + '_' + time_stamp)
 backup_filename = juxta_file.replace('.xml', '%s.xml' % time_stamp)
 copyfile(juxta_file, backup_filename)
+
+print('[renew_collation_on_paragraph.py]\n')
+print('Working on file {}\nCreated backup file in {}\n'.format(
+    juxta_file, backup_filename))
+
+# Get xml:id as argument
+try:
+    xmlid = sys.argv[1]
+    print('Working on paragraph with xmlid «{}»:\n'.format(xmlid))
+except IndexError as error:
+    print('Error ({}): please provide the xml:id to re-collate'.format(
+        error))
 
 
 ################
@@ -113,8 +158,13 @@ def chunk(in_file, xmlid):
     return chunk
 
 
-print_chunk = chunk(ms_file, xmlid)
-ms_chunk = chunk(print_file, xmlid)
+print_chunk = chunk(print_file, xmlid)
+ms_chunk = chunk(ms_file, xmlid)
+
+if print_chunk == '' and ms_chunk == '':
+    print(('\n\t[renew_collation_on_paragraph.py] Paragraph {}'
+          ' NOT FOUND in file {}\n\tIs {} the right file?\n\n').format(
+        xmlid, juxta_file, juxta_file))
 
 
 ###########
@@ -157,14 +207,13 @@ end_interedition = '</cx:apparatus>'
 output_str2 = output_str2.replace(start_interedition, '')
 output_str2 = output_str2.replace(end_interedition, '')
 output_str2 = output_str2.replace('\n', '')
-output_str2 = output_str2.replace('<app>', '\n<app>\n')
-output_str2 = output_str2.replace('<rdg', '   <rdg')
-output_str2 = output_str2.replace('</rdg>', '</rdg>\n')
+output_str2 = output_str2.replace('\n\n', '\n')  # Remove empty lines
+output_str2 = output_str2.replace('<app>', '\n<app>')
+output_str2 = output_str2.replace('<rdg', '\n   <rdg')
+# output_str2 = output_str2.replace('</rdg>', '</rdg>\n')
+output_str2 = output_str2.replace('</app>', '\n</app>')
 
 if True:
-    print('[re_collate_paragraph_collatex.py]')
-    print('Created backup file in {}'.format(
-        backup_filename))
     print(output_str2)
 
 
