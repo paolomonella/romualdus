@@ -61,10 +61,10 @@ class treeWithAppElements:
             dbpath,
             dbname,
             'paragraphs')
-        self.variant_types_and_subtypes = my_database_import.import_table(
+        self.variant_subtypes = my_database_import.import_table(
             dbpath,
             dbname,
-            'variant_types_and_subtypes')
+            'variant_subtypes')
 
         # This dictionary will be used by a method that will be
         # repeated many times. It expands abbreviations of 'type'
@@ -559,10 +559,10 @@ class treeWithAppElements:
             effectively, so this method also works in that case'''
 
         # Decide <lem> and set @cert based on DB
-        # table variant_types_and_subtypes:
+        # table variant_subtypes:
 
         for a in self.appdict():
-            for myRow in self.variant_types_and_subtypes:
+            for myRow in self.variant_subtypes:
 
                 # E.g.: 'different-punct':
                 if a['subtype'] == myRow['subtype']:
@@ -583,7 +583,7 @@ class treeWithAppElements:
 
                     else:
                         print(('\n[set_all_lems_based_on_subtype] I couln\'t'
-                               ' read table variant_types_and_subtypes'
+                               ' read table variant_subtypes'
                                ' from the DB properly. My db_preferredRdg'
                                ' is {}').format(db_preferredRdg))
 
@@ -913,17 +913,17 @@ class treeWithAppElements:
             <app> elements of the XML file.
             @subtype will be based on the 'subtype' key in appdict(),
             @type will be derive from subtype, based on DB table
-            variant_types_and_subtypes.
+            variant_subtypes.
             This method applies only if <app> (i.e. a['app']) does
             not have a @type (and possibly also @subtype) already set by
             methods such as set_lem_based_on_db_2elements.
             '''
-        # Read DB table variant_types_and_subtypes and create
+        # Read DB table variant_subtypes and create
         # a dict corresponding_type looking like:
         # {'y': 'ortographic',
         # 'different-punct': 'punctuation'} etc.
         corresponding_type = {}
-        for r in self.variant_types_and_subtypes:
+        for r in self.variant_subtypes:
             my_subtype = r['subtype']
             my_type = r['type']
             corresponding_type[my_subtype] = my_type
@@ -943,7 +943,7 @@ class treeWithAppElements:
                 # Set @subtype
                 a['app'].set('subtype', a['subtype'])
                 # ...and the corresponding @type derived from DB table
-                # variant_types_and_subtypes
+                # variant_subtypes
                 my_type = corresponding_type[a['subtype']]
                 a['app'].set('type', my_type)
 
