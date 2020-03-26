@@ -1883,11 +1883,11 @@ Anno ab incarnatione Domini
  
 <p xml:id="g183.1-184.6">
 Anno dominice incarnationis MLVII indictione 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b #o">X</lem>
    <rdg wit="#a2">VII</rdg>
 </app>; 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Unfridus</lem>
    <rdg wit="#a2">Gofridus</rdg>
    <rdg wit="#o">Umfridus</rdg>
@@ -1912,7 +1912,7 @@ Anno dominice incarnationis MLVII indictione
    <lem wit="#b #o">Set</lem>
    <rdg wit="#a2">Sed</rdg>
 </app> Robbertus 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">cognomento</lem>
    <rdg wit="#o">cognominato</rdg>
 </app> 
@@ -1920,7 +1920,7 @@ Anno dominice incarnationis MLVII indictione
    <lem wit="#b #a2">Uiscardus</lem>
    <rdg wit="#o">Guiscardus</rdg>
 </app>, eiusdem 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Unfridi</lem>
    <rdg wit="#a2">Gofridi</rdg>
    <rdg wit="#o">Umfridi</rdg>
@@ -1942,77 +1942,89 @@ Anno dominice incarnationis MLVII indictione
    <lem wit="#b #o"> </lem>
    <rdg wit="#a2">suum</rdg>
 </app> expellens. Tancredus autem fuit timoris Dei non immemor, qui bissenos habuit filios. Quorum primus quidem fuit Sarnus, qui miles insignis extitit. Secundus autem comes 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Goffridus</lem>
    <rdg wit="#a2 #o">Gofridus</rdg>
    </app> pater Robberti 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a2">comitis de Lauritello</lem>
-   <rdg wit="#o">comis Gap2MissingWords</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#b #a2">comitis</lem>
+   <rdg wit="#o">comis</rdg>
+</app> 
+<app cert="high" type="gap-in-ms">
+   <lem wit="#b #a2">de Lauritello</lem>
+   <rdg wit="#o">{Gap in the MS: 2 missing words}</rdg>
 </app>. 
-<app cert="medium" subtype="tc" type="orthographic">
+<app cert="high" subtype="tc" type="orthographic">
    <lem wit="#b #o">Tercius</lem>
    <rdg wit="#a2">Tertius</rdg>
 </app> uero Drogo comes, de quo superius scriptum est. Quartus autem 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Willemus</lem>
    <rdg wit="#a2">Willelmus</rdg>
    <rdg wit="#o">Arlelmus</rdg>
 </app>, et ipse comes, qui propter fortitudinis sue 
-<app cert="medium" subtype="tc" type="orthographic">
+<app cert="high" subtype="tc" type="orthographic">
    <lem wit="#b #o">prudenciam</lem>
    <rdg wit="#a2">prudentiam</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">Brachiferreus</lem>
    <rdg wit="#o">Brachiferuens</rdg>
 </app> est 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">prenomine</lem>
    <rdg wit="#o">prenomina</rdg>
 </app> dictus 
 <app cert="high" subtype="missing-in-print-vs-punct-in-ms" type="punctuation">
-   <lem wit="#a2">:</lem>
-   <rdg wit="#b #o"> </rdg>
+   <lem wit="#a2 #o">:</lem>
+   <rdg wit="#b"> </rdg>
 </app> erat enim astutissimus 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b #a2">et</lem>
    <rdg wit="#o"></rdg>
 </app> ferox fortisque uiribus. Quintus extitit comes 
-<app cert="medium" subtype="3elements3variants" type="unknown">
+<app cert="high" subtype="3elements3variants" type="substantial">
    <lem wit="#b">Unfridus</lem>
    <rdg wit="#a2">Gonfridus</rdg>
    <rdg wit="#o">Umfridus</rdg>
 </app>. Sextus quoque Malgerius comes, 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a2">probus atque</lem>
-   <rdg wit="#o">quibus adque</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#b #a2">probus</lem>
+   <rdg wit="#o">quibus</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b #a2">atque</lem>
+   <rdg wit="#o">adque</rdg>
 </app> famosus. Septimus itaque fuit Robbertus Guiscardus. Hic autem propter animi 
-<app cert="medium" subtype="tc" type="orthographic">
+<app cert="high" subtype="tc" type="orthographic">
    <lem wit="#b #o">astuciam</lem>
    <rdg wit="#a2">astutiam</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">ingeniique</lem>
    <rdg wit="#o">ingenumque</rdg>
 </app> 
-<app cert="medium" subtype="tc" type="orthographic">
+<app cert="high" subtype="tc" type="orthographic">
    <lem wit="#b #o">prudenciam</lem>
    <rdg wit="#a2">prudentiam</rdg>
 </app> primus ex Gallorum genere in 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #o">Apulia</lem>
    <rdg wit="#a2">Apuliam</rdg>
 </app> ducatus honorem adeptus est. Qui non multo post sibi subegit Apuliam et Calabriam, Lucaniam atque Siciliam, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b #a2">militarem</lem>
    <rdg wit="#o">millitarem</rdg>
 </app> namque disciplinam 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a2">gloriosissime rexit</lem>
-   <rdg wit="#o">gloriosisime rex</rdg>
+<app cert="high" type="orthography" subtype="double">
+   <lem wit="#b #a2">gloriosissime</lem>
+   <rdg wit="#o">gloriosisime</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b #a2">rexit</lem>
+   <rdg wit="#o">rex</rdg>
 </app>. Octauus autem 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">fuit</rdg>
 </app> Alberedus armis 
@@ -2020,48 +2032,40 @@ Anno dominice incarnationis MLVII indictione
    <lem wit="#b #a2">strenuus</lem>
    <rdg wit="#o">strenus</rdg>
 </app>. Nonus Tancredus. Decimus Willelmus 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">comes</rdg>
 </app> de Sancto nicandro, pater Robberti comitis de Principatu. Fuit 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #a2"> </lem>
    <rdg wit="#o">autem</rdg>
 </app> ipse Willelmus acer ingenio, 
-<app cert="medium" subtype="3elements3variants" type="unknown">
-   <lem wit="#b">inconstans</lem>
-   <rdg wit="#a2">et</rdg>
-   <rdg wit="#o">in</rdg>
-</app> 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b #o"></lem>
-   <rdg wit="#a2">constans</rdg>
-</app> 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b #a2">animo</lem>
-   <rdg wit="#o">Constantino</rdg>
+<app cert="high" subtype="3elements3variants" type="substantial">
+   <lem wit="#b">inconstans animo</lem>
+   <rdg wit="#a2">et constans</rdg>
+   <rdg wit="#o">in Constantino</rdg>
 </app>, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #o">seuusque</lem>
    <rdg wit="#a2">serenusque</rdg>
 </app> natura. Undecimus Frumentinus. Duodecimus 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Roggerius</lem>
    <rdg wit="#a2 #o">Rogerius</rdg>
    </app> Sicilie comes, qui miles insignis extitit, 
-<app cert="medium" subtype="tc" type="orthographic">
+<app cert="high" subtype="tc" type="orthographic">
    <lem wit="#b #o">iusticie</lem>
    <rdg wit="#a2">iustitie</rdg>
 </app> tenax, suis suorumque opibus studens, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">ecclesiarum</lem>
    <rdg wit="#o">ecclesie</rdg>
 </app> Dei 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #a2">atque</lem>
    <rdg wit="#o">adque</rdg>
 </app> sacerdotum 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b #o"> </lem>
    <rdg wit="#a2">honori</rdg>
 </app> consulens. Habuit quoque Tancredus horum pater et filias tres. 

@@ -1918,8 +1918,12 @@
    <rdg wit="#a #o">Gofridus</rdg>
    </app> pater Robberti 
 <app>
-   <rdg wit="#b #a">comitis de Lauritello</rdg>
-   <rdg wit="#o">comis Gap2MissingWords</rdg>
+   <rdg wit="#b #a">comitis</rdg>
+   <rdg wit="#o">comis</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">de Lauritello</rdg>
+   <rdg wit="#o">Gap2MissingWords</rdg>
 </app> . 
 <app>
    <rdg wit="#b #o">Tercius</rdg>
@@ -1943,8 +1947,8 @@
    <rdg wit="#o">prenomina</rdg>
 </app> dictus 
 <app>
-   <rdg wit="#b #o"> </rdg>
-   <rdg wit="#a">:</rdg>
+   <rdg wit="#b"> </rdg>
+   <rdg wit="#a #o">:</rdg>
 </app> erat enim astutissimus 
 <app>
    <rdg wit="#b #a">et</rdg>
@@ -1956,8 +1960,12 @@
    <rdg wit="#o">Umfridus</rdg>
 </app> . Sextus quoque Malgerius comes, 
 <app>
-   <rdg wit="#b #a">probus atque</rdg>
-   <rdg wit="#o">quibus adque</rdg>
+   <rdg wit="#b #a">probus</rdg>
+   <rdg wit="#o">quibus</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">atque</rdg>
+   <rdg wit="#o">adque</rdg>
 </app> famosus. Septimus itaque fuit Robbertus Guiscardus. Hic autem propter animi 
 <app>
    <rdg wit="#b #o">astuciam</rdg>
@@ -1980,8 +1988,12 @@
    <rdg wit="#o">millitarem</rdg>
 </app> namque disciplinam 
 <app>
-   <rdg wit="#b #a">gloriosissime rexit</rdg>
-   <rdg wit="#o">gloriosisime rex</rdg>
+   <rdg wit="#b #a">gloriosissime</rdg>
+   <rdg wit="#o">gloriosisime</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">rexit</rdg>
+   <rdg wit="#o">rex</rdg>
 </app> . Octauus autem 
 <app>
    <rdg wit="#b #a"> </rdg>
@@ -2000,18 +2012,10 @@
    <rdg wit="#o">autem</rdg>
 </app> ipse Willelmus acer ingenio, 
 <app>
-   <rdg wit="#b">inconstans</rdg>
-   <rdg wit="#a">et</rdg>
-   <rdg wit="#o">in</rdg>
-</app> 
-<app>
-   <rdg wit="#b #o"/>
-   <rdg wit="#a">constans</rdg>
-</app> 
-<app>
-   <rdg wit="#b #a">animo</rdg>
-   <rdg wit="#o">Constantino</rdg>
-</app> , 
+   <rdg wit="#b">inconstans animo</rdg>
+   <rdg wit="#a">et constans</rdg>
+   <rdg wit="#o">in Constantino</rdg>
+</app>, 
 <app>
    <rdg wit="#b #o">seuusque</rdg>
    <rdg wit="#a">serenusque</rdg>

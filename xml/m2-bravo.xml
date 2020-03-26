@@ -1828,8 +1828,12 @@
    <rdg wit="#wit-42006">Gofridus</rdg>
 </app> pater Robberti 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">comitis de Lauritello</rdg>
-   <rdg wit="#wit-42006">comis Gap2MissingWords</rdg>
+   <rdg wit="#wit-42008 #wit-42007">comitis</rdg>
+   <rdg wit="#wit-42006">comis</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">de Lauritello</rdg>
+   <rdg wit="#wit-42006">Gap2MissingWords</rdg>
 </app> . 
 <app>
    <rdg wit="#wit-42008 #wit-42006">Tercius</rdg>
@@ -1853,8 +1857,8 @@
    <rdg wit="#wit-42006">prenomina</rdg>
 </app> dictus 
 <app>
-   <rdg wit="#wit-42008 #wit-42006"> </rdg>
-   <rdg wit="#wit-42007">:</rdg>
+   <rdg wit="#wit-42008"> </rdg>
+   <rdg wit="#wit-42007 #wit-42006">:</rdg>
 </app> erat enim astutissimus 
 <app>
    <rdg wit="#wit-42008 #wit-42007">et</rdg>
@@ -1866,8 +1870,12 @@
    <rdg wit="#wit-42006">Umfridus</rdg>
 </app> . Sextus quoque Malgerius comes, 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">probus atque</rdg>
-   <rdg wit="#wit-42006">quibus adque</rdg>
+   <rdg wit="#wit-42008 #wit-42007">probus</rdg>
+   <rdg wit="#wit-42006">quibus</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">atque</rdg>
+   <rdg wit="#wit-42006">adque</rdg>
 </app> famosus. Septimus itaque fuit Robbertus Guiscardus. Hic autem propter animi 
 <app>
    <rdg wit="#wit-42008 #wit-42006">astuciam</rdg>
@@ -1890,8 +1898,12 @@
    <rdg wit="#wit-42006">millitarem</rdg>
 </app> namque disciplinam 
 <app>
-   <rdg wit="#wit-42008 #wit-42007">gloriosissime rexit</rdg>
-   <rdg wit="#wit-42006">gloriosisime rex</rdg>
+   <rdg wit="#wit-42008 #wit-42007">gloriosissime</rdg>
+   <rdg wit="#wit-42006">gloriosisime</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42008 #wit-42007">rexit</rdg>
+   <rdg wit="#wit-42006">rex</rdg>
 </app> . Octauus autem 
 <app>
    <rdg wit="#wit-42008 #wit-42007"> </rdg>
@@ -1910,18 +1922,10 @@
    <rdg wit="#wit-42006">autem</rdg>
 </app> ipse Willelmus acer ingenio, 
 <app>
-   <rdg wit="#wit-42008">inconstans</rdg>
-   <rdg wit="#wit-42007">et</rdg>
-   <rdg wit="#wit-42006">in</rdg>
-</app> 
-<app>
-   <rdg wit="#wit-42008 #wit-42006"></rdg>
-   <rdg wit="#wit-42007">constans</rdg>
-</app> 
-<app>
-   <rdg wit="#wit-42008 #wit-42007">animo</rdg>
-   <rdg wit="#wit-42006">Constantino</rdg>
-</app> , 
+   <rdg wit="#wit-42008">inconstans animo</rdg>
+   <rdg wit="#wit-42007">et constans</rdg>
+   <rdg wit="#wit-42006">in Constantino</rdg>
+</app>, 
 <app>
    <rdg wit="#wit-42008 #wit-42006">seuusque</rdg>
    <rdg wit="#wit-42007">serenusque</rdg>
