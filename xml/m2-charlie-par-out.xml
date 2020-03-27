@@ -352,9 +352,9 @@ Anno dominice incarnationis MLXXIX, indictione II, apud Constantinopolim Michael
    <lem wit="#b">octauo</lem>
    <rdg wit="#a">VIII</rdg>
 </app> ipse cum filiis suis 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Michael</lem>
-   <rdg wit="#a">Michaele</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">Michaele</lem>
+   <rdg wit="#b">Michael</rdg>
 </app>, Andronico et Constantino expulsus est. Et Niceforus Butanioth imperium sibi arripuit. 
 <app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
    <lem wit="#a"></lem>
@@ -375,7 +375,7 @@ Anno dominice incarnationis MLXXIX, indictione II, apud Constantinopolim Michael
  
 <p xml:id="g191.6-191.12">
 Anno Domini MLXXX, indictione III, dux Robbertus Guiscardus cepit Spinazolam. Paucis etiam euolutis diebus ipse dux cepit Ydrontum cepitque Tarentum. His autem diebus uenit ad eum uir quidam dicens se Michaelem imperatorem fuisse, conquerens se male tractatum a suis et expulsum poposcitque auxilium sibi dari. Dux itaque, ut ei mos erat, diligenter illum excipiens 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">hac</lem>
    <rdg wit="#a">te</rdg>
 </app> honorabiliter circa se habens secum duxit eum usque Salernum. Inde mouens gressum dux ipse perrexit ad Gregorium papam eiusque liggius homo iureiurando effectus apud Ciperanum, accipiens ab eo uexillum sancti Petri mense Iunio. 
@@ -383,7 +383,7 @@ Anno Domini MLXXX, indictione III, dux Robbertus Guiscardus cepit Spinazolam. Pa
  
 <p xml:id="g191.13-194.5">
 Anno dominice incarnationis 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">MLXXX</lem>
    <rdg wit="#a">MLXXXI</rdg>
 </app> indictione IV dux Robbertus magnum apud Ydrontum 
@@ -391,7 +391,7 @@ Anno dominice incarnationis
    <lem wit="#a"></lem>
    <rdg wit="#b">"</rdg>
 </app> assumpsit exercitum, super Constantinopolim ire cupiens. Qui mare transiens cum Boamundo filio suo 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">aplicuit</lem>
    <rdg wit="#a">applicuit</rdg>
 </app> Auelone 
@@ -399,15 +399,27 @@ Anno dominice incarnationis
    <lem wit="#a"></lem>
    <rdg wit="#b">"</rdg>
 </app> et eduxit exercitum suum necnon et predictum 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">Michaelem, qui se imperatorem fuisse conquerebatur. "Et mense Iulio ante Durrachium obsidionem posuit per terram et per mare, set stolus Uenencolum ueniens discipauit maris obsidionem aperuitque Dirrachenis mare".</lem>
+<app cert="high" subtype="missing-in-ms" type="substantial">
+   <lem wit="#b">Michaelem, qui se imperatorem fuisse conquerebatur.</lem>
    <rdg wit="#a"></rdg>
-</app> Rogerium 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+</app> 
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a"></lem>
+   <rdg wit="#b">"</rdg>
+</app> 
+<app cert="high" subtype="missing-in-ms" type="substantial">
+   <lem wit="#b">Et mense Iulio ante Durrachium obsidionem posuit per terram et per mare, set stolus Uenencolum ueniens discipauit maris obsidionem aperuitque Dirrachenis mare</lem>
+   <rdg wit="#a"></rdg>
+</app> 
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a"></lem>
+   <rdg wit="#b">"</rdg>
+</app>. Rogerium 
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">uero</lem>
    <rdg wit="#a"></rdg>
 </app> filium suum omnibus sibi conmissis in Apulia dimisit. Inter hec autem Niceforus Butanioth Constantinopolitanus imperator aduentum Robberti ducis audiens, direxit Alexium megadomesticum suum cui equo animo militiam totam commiserat, deditque sibi permaximam thesauri copiam, ut non solum christianorum uerum etiam paganorum exercitum congregaret, quatenus duci Robberto uiriliter resistere posset. Alexius ciuitatem Andropolim pergens, quoscumque poterat suscipiebat, susceptos 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">quotidie</lem>
    <rdg wit="#a">cotidie</rdg>
 </app> singulos seducens fidelitatis sacramentum occulte sibi facere studebat, quibus unicuique priuatim multa tribuebat et plurima iurando promittebat. Ceteris autem militibus quibus adhuc animum suum aperire timebat nil interim tribuebat, sed eos sepe sic alloquebatur dicens: 
@@ -419,7 +431,7 @@ Anno dominice incarnationis
    <lem wit="#a">.</lem>
    <rdg wit="#b">".</rdg>
 </app> Qui ut se suis auditoribus quasi ueridicum redderet, uasa propria 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">et</lem>
    <rdg wit="#a">ac</rdg>
 </app> uestes quibus utebatur quibusdam largiebatur dicens: 
@@ -447,43 +459,43 @@ Anno dominice incarnationis
    <lem wit="#a">.</lem>
    <rdg wit="#b">".</rdg>
 </app> Quorum omnium uoluntates dum sue uoluntati uidit concordes, statim cum omni exercitu armato super Constantinopolim perrexit. Imperator quippe supra quam credi potest stupefactus, se et ciuitatem, prout potuit muniuit. Alexius autem quendam magistrum militum imperatoris, Arnonem nomine, ex genere Alamannorum, promissionibus magnis seduxit ut sibi ciuitatem proderet. Qui dolis acquiescens per noctem aperuit sibi portam, que Uulgarorum dicitur. Alexius igitur cum omni christianorum 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">et</lem>
    <rdg wit="#a">ac</rdg>
 </app> paganorum exercitu ciuitatem ingressus nocte die Iouis, que cena Domini dicitur, totam exercitui suo predam ciuitatis triduo, quem admodum spoponderat, dono tribuit. Qui nulli indulgendo hostiliter queque inuenire poterant uastantes, depredati sunt. Non solum autem, uerum etiam ecclesias rebus omnibus spoliabant. Sacerdotes quoque diuina misteria celebrantes 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b"> </lem>
    <rdg wit="#a">truncabant</rdg>
 </app> capite 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b">truncabant</lem>
    <rdg wit="#a"></rdg>
 </app>, pedibus sacrificia conculcabant plerisque sanctimonialibus ac Deo dicatis ab eis stupratis. Imperator autem Butanioth, ut ciuitatem proditam uidit, statim e palatio fugiit et in ecclesia sancte Sophie monachum se fieri iussit. Alexius itaque palatium ingressus, Constantinopolitanum imperium arripuit. Ut autem 
-<app cert="medium" subtype="case" type="orthographic">
+<app cert="high" subtype="case" type="orthographic">
    <lem wit="#a">dominice</lem>
    <rdg wit="#b">Dominice</rdg>
 </app> resurrectionis die coronatus est, exercitum a preda et rapinis reuocari iussit. Qui ut se non quasi cupidum imperii magnatibus ostenderet, constituit secum in imperio Michaelem filium predicti 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Michaeli</lem>
-   <rdg wit="#a">Michaelis</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">Michaelis</lem>
+   <rdg wit="#b">Michaeli</rdg>
 </app> imperatoris, dicens omnibus: Non propter me sed propter hunc qui iure in solio residere debet hoc quod factum est peregi. Postquam Alexius, qui et Commiano dictus est, imperialia sibi iura composuit, statim cum ingenti copia exercitus undique collecta una cum imperatore quem sibi quasi socium statuerat, contra ducem Robbertum properauit. Ordinatis itaque non longe a 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Dirrachio</lem>
    <rdg wit="#a">Dirachio</rdg>
 </app> suis ad dimicandum, ipse imperator tuto in loco positus premisit in prima acie eum quem secum imperatorem fecerat, ut 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">in</lem>
    <rdg wit="#a"></rdg>
 </app> bello interiret, nam diu socium eum habere nolebat, solus enim imperare cupiebat. Quid multa? Commisso prelio 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a">dux</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">dux</lem>
+   <rdg wit="#b"> </rdg>
 </app> Robbertus Guiscardus imperatorem fugauit ac deuicit. Filius autem Michaelis imperatoris, non diu imperator, statim in primo conflictu interiit. In ipsa 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">namque</lem>
    <rdg wit="#a">nanque</rdg>
 </app> pugna imperator LX milia milites et X milia 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">sagittarios</lem>
    <rdg wit="#a">saggittarios</rdg>
 </app> Turchos habuit. Dux uero Robbertus habuit milites DCC. Alexius itaque imperator paucis secum assumptis usque Constantinopolim fugiendi moram non habuit. Qui cum solus imperaret, quoscumque ex imperatorum genere potuit inuenire aut eos lumine priuari fecit, aut ipsi tirannidem eius euadere cupientes exilium ceperunt. Interea Robbertus dux cepit Dirrachium ciuitatem et maximam partem regionis illius. 
@@ -3665,7 +3677,7 @@ Postquam Alexander papa suo sermoni finem imposuit, Lombardi in utraque militia 
    <lem wit="#b">adsciscitis</lem>
    <rdg wit="#a">asciscitis</rdg>
 </app>, gratum nobis residet plurimum et acceptum, quia eum amatorem pacis et cultorem iustitie recognoscimus. Ipse 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">namque</lem>
    <rdg wit="#a">nanque</rdg>
 </app> pre ceteris mundi principibus, suis et extraneis pacem tribuit et securitatem impendit, quod uiatores nostri per opera sentiunt et peregrini experimento testantur, qui in uiis et campis sine custode dormiunt et in nemoribus absque suarum rerum 
