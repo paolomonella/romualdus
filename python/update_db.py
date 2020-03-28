@@ -88,6 +88,33 @@ elif arg == '-double2':
             'o',     # field 'type' (orthography)
             'double',  # field 'subtype' (double)
             'all'))  # field 'xmlid' (in all paragraphs)
+
+
+# Print reading is OK.
+# Only set type to orthography and subtype to h
+# (app has 2 children)
+elif arg == '-h2':
+    sqlite_query = ('INSERT INTO decisions2 (origin, action, '
+                    'print, ms, type, subtype, xmlid) '
+                    'VALUES (?, ?, ?, ?, ?, ?, ?);')
+
+    # Interpret text file lines
+    printrdg = lines[0]
+    msrdg = lines[1]
+    xmlid = lines[2]
+
+    # Update DB table
+    cur.execute(
+        sqlite_query, (
+            'm',     # field 'origin' in the DB table (manual)
+            't',     # field 'action' (only change type)
+            printrdg,  # field 'print' (print reading)
+            msrdg,   # field 'ms' (MS reading)
+            'o',     # field 'type' (orthography)
+            'h',  # field 'subtype' (h)
+            'all'))  # field 'xmlid' (in all paragraphs)
+
+
 # Print reading is OK.
 # Only set type to substantial (app has 2 children)
 #   (This case can be used to insert the app in the DB,
