@@ -931,7 +931,7 @@ Pthola annis XXIII filius Phoa patrui Abimelech, uir de Ysachar, qui habitabat i
    <lem wit="#g">palefatus</lem>
    <rdg wit="#a">Palefactus</rdg>
 </app> primo de incredibilibus libro. Notabiles fuisse dicuntur equites Thessalorum. in Troia post Laomedontem regnauit Priamus 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#g">MMDCCLVII</lem>
    <rdg wit="#a"></rdg>
 </app>. 
@@ -2586,7 +2586,7 @@ Artabanus mensibus VIII. Socrates nascitur
  
 <p xml:id="g29.38-30.2">
 Darius, cognomento Nothus, annis 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#g">XIX</lem>
    <rdg wit="#a"></rdg>
 </app>. Egyptus recessit a Persis. Reuersis de captiuitate Iudeis non reges, sed pontifices prefuerunt, usque ad Aristobolum, qui cum dignitate pontificis, etiam regale sibi cepit usurpare uocabulum. 
@@ -2728,7 +2728,7 @@ Arses Ochi filius annis IV. Iudeorum pontifex maximus Iaddus clarus habetur, cui
  
 <p xml:id="g31.13-21">
 Darius Arsani filius annis 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#g">VI</lem>
    <rdg wit="#a"></rdg>
 </app>. Alexander autem aduersus Illicos, et 
@@ -2748,7 +2748,7 @@ Darius Arsani filius annis
  
 <p xml:id="g31.22-32.30">
 Alexander post mortem Darii annos 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#g">V</lem>
    <rdg wit="#a"></rdg>
 </app> regnauit, nam antea VII. Orosius. His autem post mortem Darii regno Persarum adepto 
@@ -4741,7 +4741,7 @@ Orosius: Anno ab urbe
    <lem wit="#g"> </lem>
    <rdg wit="#a">condita</rdg>
 </app> DCCCVIII Nero Cesar ab Augusto quintus principatum adeptus est mansitque in eo annis non plenis 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#g">XIV</lem>
    <rdg wit="#a"></rdg>
 </app>. Gaii 
@@ -5336,7 +5336,7 @@ Hic secundus post Neronem Christianos persequitur, sub quo Iohannes apostolus in
    <lem wit="#g">uispelliones</lem>
    <rdg wit="#a">uespiliones</rdg>
 </app> exportatum, atque ignominiosissime sepultum est. Cuius imperii anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#g">octauo</lem>
    <rdg wit="#a">VIII</rdg>
 </app> post Cletum Clemens 
@@ -10337,7 +10337,7 @@ Bonifacio autem papa uita decedente, Celestinus, natione Romanus, ex patre Prisc
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> ut Psalmi Dauid 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="medium" subtype="missing-in-ms" type="substantial">
    <lem wit="#g">CL</lem>
    <rdg wit="#a"></rdg>
 </app> antiphonatim cantarentur ante canonem, quod antea non fiebat, sed tantum epistole beati Pauli et euangelia legebantur. Et hic sepultus est in 
@@ -11037,7 +11037,7 @@ Anno dominice Incarnationis CDLVIII et anno ab urbis conditione MCCXI. Leo quint
    <lem wit="#g">Ricimer</lem>
    <rdg wit="#a">Riciner</rdg>
 </app> post 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="medium" subtype="missing-in-print" type="substantial">
    <lem wit="#g"> </lem>
    <rdg wit="#a">III</rdg>
 </app> menses excruciatus languoribus interiit. Olibrius quoque dum per 
@@ -12942,9 +12942,12 @@ Bonifacius natione Romanus ex parte Catadioce huic successit in pontificatu, sed
 <p xml:id="g123.21-124.15">
 Quo tempore Perse aduersus rempublicam grauissima bella gerentes multas Romanorum prouincias et ipsam Hierosolymam auferunt, et destruentes ecclesias, sancta quoque prophanantes inter ornamenta 
 <app cert="high" type="substantial">
-   <lem resp="#pm">locorum uel</lem>
-   <rdg wit="#g">locurum uel</rdg>
-   <rdg wit="#a">locorum atque</rdg>
+   <lem wit="#a">locorum</lem>
+   <rdg wit="#g">locurum</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#g">uel</lem>
+   <rdg wit="#a">atque</rdg>
 </app> sanctorum, que diripuerunt, etiam dominice crucis lignum de 
 <app cert="medium" subtype="unknown" type="unknown">
    <lem wit="#g">Hierosolyma abducunt</lem>
