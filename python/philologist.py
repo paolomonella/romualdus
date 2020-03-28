@@ -839,10 +839,31 @@ class treeWithAppElements:
                     # Make the "correct" MS element <lem>
                     self.make_lem(my_correct_ms_rdg)
 
-                # 'correct' rdg is my conjecture
+                # 'correct' rdg is my conjecture.
+                # I never tested this elif
                 elif r['action'] == 'conj':
-                    # If there will be such a case, I'll write the code for it
-                    pass
+
+                    # Make all readings <rdg>
+                    for child in a['app']:
+                        self.make_rdg(child)
+
+                    # Manifacture a new <lem> element
+                    # I am not sure if I should add
+                    # the namespace or not
+                    conj_lem = etree.SubElement(
+                        a['app'],  # 'lem')
+                        '{%s}lem' % ns['t'])
+                    conj_lem.text = r['conj']
+                    # Better not use namespaces when setting
+                    # TEI attributes!
+                    # conj_lem.set('{%s}resp' % ns['t'], '#pm')
+                    conj_lem.set('resp', '#pm')
+
+                else:
+                    print(('[philologist.py/set_lem_based_on_db_2elements] '
+                           'I don\'t understand the «{}» field '
+                           'in the DB record for app {} {}. ').format(
+                               r['action'], a['app'], a['app'].attrib))
 
     def set_all_lems_based_on_db(self):
         '''Read DB table and decide <lem> for the <app>s
@@ -879,7 +900,7 @@ class treeWithAppElements:
             if len(app) > 2:
                 print(('[philologist.py/handle_case_variants] <app> {}'
                        ' with @subtype=case has more than 2 children'
-                       ' and I can\'t handle it.').format(app.attrib))
+                       ' and I can\'t handle it.').format(a))
             else:
                 print_child = a['printReading']  # an XML element
                 non_print_child = self.find_non_print_child_in_two(
