@@ -1586,7 +1586,7 @@
    <rdg wit="#wit-41980">abiit</rdg>
 </app> Brundusium, posuitque 
 <app>
-   <rdg wit="#wit-41981">sibi</rdg>
+   <rdg wit="#wit-41981 #g">sibi</rdg>
    <rdg wit="#wit-41980">ibi</rdg>
 </app> obsidionem in mense Iunii per terram et mare, fecitque ante eam turrem fieri ex trabibus proceris et altissimis, ferreisque nexibus, coriis uiminibusque 
 <app>
@@ -1598,8 +1598,12 @@
    <rdg wit="#wit-41980">muros</rdg>
 </app> predicte urbis muros precelleret. 
 <app>
-   <rdg wit="#wit-41981">Set nichil</rdg>
-   <rdg wit="#wit-41980">Sed nihil</rdg>
+   <rdg wit="#wit-41981">Set</rdg>
+   <rdg wit="#wit-41980">Sed</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-41981">nichil</rdg>
+   <rdg wit="#wit-41980">nihil</rdg>
 </app> huiusmodi 
 <app>
    <rdg wit="#wit-41981">infermentum</rdg>
@@ -1611,11 +1615,12 @@
 </app> enim domni 
 <app>
    <rdg wit="#wit-41981">Alandri</rdg>
-   <rdg wit="#wit-41980">Alexandri</rdg>
+   <rdg wit="#wit-41980 #g">Alexandri</rdg>
 </app> comitis filius, et Riccardus 
 <app>
    <rdg wit="#wit-41981">Clerimonti</rdg>
    <rdg wit="#wit-41980">Clarimonti</rdg>
+   <rdg wit="#g">Clarimontis</rdg>
 </app> dominus qui de 
 <app>
    <rdg wit="#wit-41981">intus</rdg>
@@ -1634,8 +1639,14 @@
    <rdg wit="#wit-41980"></rdg>
 </app> omnem exercitum fame afflictum, ignem in 
 <app>
-   <rdg wit="#wit-41981">turrem missum suam Tarenti reuertitur</rdg>
-   <rdg wit="#wit-41980">turri misit, et cum illis pepigit</rdg>
+   <rdg wit="#wit-41981">turrem missum</rdg>
+   <rdg wit="#wit-41980">turri misit,</rdg>
+   <rdg wit="#g">turrem missum</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-41981">suam Tarenti reuertitur</rdg>
+   <rdg wit="#wit-41980">et cum illis pepigit</rdg>
+   <rdg wit="#g">suam Tarenti reuertitur cum illis pepiget facta autem pacem</rdg>
 </app> . [/p] [p xml:id=&quot;g219.8-221.14&quot;] Quo defuncto scisma in 
 <app>
    <rdg wit="#wit-41981">Romama</rdg>

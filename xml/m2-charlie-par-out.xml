@@ -1791,8 +1791,7 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
    <rdg wit="#a2"></rdg>
 </app> die 
 <app cert="high" type="substantial">
-   <lem resp="#pm">Natali</lem>
-   <rdg wit="#b">natali</rdg>
+   <lem wit="#b">natali</lem>
    <rdg wit="#a2">Natalis</rdg>
 </app> Domini prephatus dux Rogerius precepit 
 <app cert="high" type="substantial">
@@ -1869,15 +1868,15 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
 </p>
  
 <p xml:id="g217.n10-218.n16">
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">Anno Domini</lem>
    <rdg wit="#a2"></rdg>
 </app> MCXXIX, indictione VIII. 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a2">Hoc anno mense Madii</rdg>
 </app> Rogerius dux transfretauit a Sicilia, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">uenit</lem>
    <rdg wit="#a2">uenitque</rdg>
 </app> in Apuliam ac perrexit Tarentum. Deinde 
@@ -1885,15 +1884,15 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
    <lem wit="#b">habiit</lem>
    <rdg wit="#a2">abiit</rdg>
 </app> 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b #g">Nerito</lem>
    <rdg wit="#a2">Neriton</rdg>
 </app> cum 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">grandi</lem>
    <rdg wit="#a2">grand</rdg>
 </app> exercitu, fertur enim tria 
-<app cert="medium" subtype="double" type="orthographic">
+<app cert="high" subtype="double" type="orthographic">
    <lem wit="#b">milia</lem>
    <rdg wit="#a2">millia</rdg>
 </app> habuisse equites, pedites uero ac 
@@ -1901,15 +1900,15 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
    <lem wit="#b">sagittarios</lem>
    <rdg wit="#a2">sagitarios</rdg>
 </app> et Sarracenos usque ad sex milia, quam uacue factam inueniens cepit, prede ac 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">direptione</lem>
    <rdg wit="#a2">direptioni</rdg>
 </app> cuncta 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">permiscendo</lem>
    <rdg wit="#a2">permiscenda</rdg>
 </app>, quin etiam et christianorum sanguinem a Sarracenis crudeliter fundi precipiendo, nam senes interficiebant, pueros de sinu auferentes matrum allidebant gladiisque 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">findebant</lem>
    <rdg wit="#a2">fundebant</rdg>
 </app>, sacerdotes iuxta crucem et altare stantes interimebant, sacramenta ecclesie id est sanctum 
@@ -1917,58 +1916,63 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
    <lem wit="#b">crisma</lem>
    <rdg wit="#a2">chrisma</rdg>
 </app> in suius peronibus deridendo seu 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">culponibus</lem>
    <rdg wit="#a2">corporibus</rdg>
 </app> fundebant, mulieres coram maritis adulterantes, reliquos uero qui superfuerunt uinculatos Sicilie asportare precepit. Et exinde 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">amaro</lem>
-   <rdg wit="#a2">ammoto</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a2">ammoto</lem>
+   <rdg wit="#b">amaro</rdg>
    <rdg wit="#g">amato</rdg>
 </app> exercitu 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">adhiit</lem>
    <rdg wit="#a2">abiit</rdg>
 </app> Brundusium, posuitque 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">sibi</lem>
+<app cert="high" type="substantial">
+   <lem wit="#b #g">sibi</lem>
    <rdg wit="#a2">ibi</rdg>
 </app> obsidionem in mense Iunii per terram et mare, fecitque ante eam turrem fieri ex trabibus proceris et altissimis, ferreisque nexibus, coriis uiminibusque 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">muniuit</lem>
    <rdg wit="#a2">munitam</rdg>
 </app>, cuius altitudo 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a2">muros</rdg>
 </app> predicte urbis muros precelleret. 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Set nichil</lem>
-   <rdg wit="#a2">Sed nihil</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#b">Set</lem>
+   <rdg wit="#a2">Sed</rdg>
+</app> 
+<app cert="high" subtype="nichil" type="orthographic">
+   <lem wit="#b">nichil</lem>
+   <rdg wit="#a2">nihil</rdg>
 </app> huiusmodi 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">infermentum</lem>
    <rdg wit="#a2">instrumentum</rdg>
 </app> machine profuit sibi nec obfuit Brundusinis; 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Gofredus</lem>
    <rdg wit="#a2">Goffredus</rdg>
 </app> enim domni 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Alandri</lem>
-   <rdg wit="#a2">Alexandri</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a2 #g">Alexandri</lem>
+   <rdg wit="#b">Alandri</rdg>
 </app> comitis filius, et Riccardus 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Clerimonti</lem>
+<app cert="high" type="substantial">
+   <lem wit="#g">Clarimontis</lem>
+   <rdg wit="#b">Clerimonti</rdg>
    <rdg wit="#a2">Clarimonti</rdg>
 </app> dominus qui de 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">intus</lem>
    <rdg wit="#a2">ratus</rdg>
 </app> erant simili modo confecerunt balistas et machinas que totam subito destruxerunt turrem. Dux uero 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a2">uidens</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a2">uidens</lem>
+   <rdg wit="#b"> </rdg>
 </app> nullo modo suum preualere ingenium 
 <app cert="high" subtype="missing-in-print-vs-punct-in-ms" type="punctuation">
    <lem wit="#a2">,</lem>
@@ -1978,9 +1982,14 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
    <lem wit="#a2"></lem>
    <rdg wit="#b">,</rdg>
 </app> omnem exercitum fame afflictum, ignem in 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">turrem missum suam Tarenti reuertitur</lem>
-   <rdg wit="#a2">turri misit, et cum illis pepigit</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#b #g">turrem missum</lem>
+   <rdg wit="#a2">turri misit,</rdg>
+   </app> 
+<app cert="high" subtype="3elements3variants_bonetti_and_garufi" type="substantial">
+   <lem wit="#g">suam Tarenti reuertitur cum illis pepiget facta autem pacem</lem>
+   <rdg wit="#b">suam Tarenti reuertitur</rdg>
+   <rdg wit="#a2">et cum illis pepigit</rdg>
 </app>. 
 </p>
  

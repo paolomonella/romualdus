@@ -1939,7 +1939,7 @@
    <rdg wit="#a">abiit</rdg>
 </app> Brundusium, posuitque 
 <app>
-   <rdg wit="#b">sibi</rdg>
+   <rdg wit="#b #g">sibi</rdg>
    <rdg wit="#a">ibi</rdg>
 </app> obsidionem in mense Iunii per terram et mare, fecitque ante eam turrem fieri ex trabibus proceris et altissimis, ferreisque nexibus, coriis uiminibusque 
 <app>
@@ -1951,8 +1951,12 @@
    <rdg wit="#a">muros</rdg>
 </app> predicte urbis muros precelleret. 
 <app>
-   <rdg wit="#b">Set nichil</rdg>
-   <rdg wit="#a">Sed nihil</rdg>
+   <rdg wit="#b">Set</rdg>
+   <rdg wit="#a">Sed</rdg>
+</app> 
+<app>
+   <rdg wit="#b">nichil</rdg>
+   <rdg wit="#a">nihil</rdg>
 </app> huiusmodi 
 <app>
    <rdg wit="#b">infermentum</rdg>
@@ -1964,11 +1968,12 @@
 </app> enim domni 
 <app>
    <rdg wit="#b">Alandri</rdg>
-   <rdg wit="#a">Alexandri</rdg>
+   <rdg wit="#a #g">Alexandri</rdg>
 </app> comitis filius, et Riccardus 
 <app>
    <rdg wit="#b">Clerimonti</rdg>
    <rdg wit="#a">Clarimonti</rdg>
+   <rdg wit="#g">Clarimontis</rdg>
 </app> dominus qui de 
 <app>
    <rdg wit="#b">intus</rdg>
@@ -1987,8 +1992,13 @@
    <rdg wit="#a"/>
 </app> omnem exercitum fame afflictum, ignem in 
 <app>
-   <rdg wit="#b">turrem missum suam Tarenti reuertitur</rdg>
-   <rdg wit="#a">turri misit, et cum illis pepigit</rdg>
+   <rdg wit="#b #g">turrem missum</rdg>
+   <rdg wit="#a">turri misit,</rdg>
+   </app> 
+<app>
+   <rdg wit="#b">suam Tarenti reuertitur</rdg>
+   <rdg wit="#a">et cum illis pepigit</rdg>
+   <rdg wit="#g">suam Tarenti reuertitur cum illis pepiget facta autem pacem</rdg>
 </app> . 
 </p>
  
