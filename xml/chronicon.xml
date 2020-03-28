@@ -17012,7 +17012,7 @@ Anno dominice incarnationis MCI indictione IX mense Iunii, Roggerius Sicilie com
 </app> comitatus autem eius anno XLI 
 <app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b"/>
-   <rdg wit="#a">, anno ab incarnatione Domini MC primo, indictione IX.</rdg>
+   <rdg wit="#a">anno ab incarnatione Domini MC primo, indictione IX</rdg>
 </app>. Hic autem fuit miles egregius, moribus insignis atque famosus, iustitie tenax, suis suorumque opibus studens, suos enim ditabat. Fuitque pauperum nutritor, pius, in elemosinis largus, ecclesiarum Dei atque sacerdotum consulens. Huic 
 <app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">autem</lem>
@@ -17022,19 +17022,19 @@ Anno dominice incarnationis MCI indictione IX mense Iunii, Roggerius Sicilie com
  
 <p xml:id="g203.1-203.2">
 Hoc anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Raul Machabeo</lem>
    <rdg wit="#a2">a Mulmachabeo</rdg>
-</app> Mons caueosus mutatur. 
+</app> Mons Caueosus mutatur. 
 </p>
  
 <p xml:id="g203.3-203.5">
 Anno dominice incarnationis MCII indictione X Roggerius dux simul cum papa Paschali obsedit Beneuentum maximo cum exercitu, nec destitit donec eo qui tunc 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a">in</rdg>
 </app> eadem 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">ciuitate</lem>
    <rdg wit="#a">ciuitatem</rdg>
 </app> principabatur expulso, cepit ipsam ciuitatem et ipsius pape iuri ac potestati eam dimisit. 
@@ -17042,11 +17042,11 @@ Anno dominice incarnationis MCII indictione X Roggerius dux simul cum papa Pasch
  
 <p xml:id="g203.6-203.6">
 Hoc tempore Boamundus dimissus 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" subtype="missing-in-print" type="substantial">
    <lem wit="#b"> </lem>
    <rdg wit="#a2">est</rdg>
 </app> et rediit 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">in</lem>
    <rdg wit="#a2"/>
 </app> Antiochiam. 
@@ -17054,15 +17054,15 @@ Hoc tempore Boamundus dimissus
  
 <p xml:id="g203.7-203.12">
 Anno dominice incarnationis MCV, indictione 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">XIV</lem>
    <rdg wit="#a">XIII</rdg>
 </app>; dux Roggerius obsedit montem Sancti angeli cepitque ipsam ciuitatem et castellum eius mense 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Octubris</lem>
-   <rdg wit="#a">Octobris</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#a">Octobris</lem>
+   <rdg wit="#b">Octubris</rdg>
 </app>. Mense uero Decembris Boamundus a ciuitate 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b">Antiochia</lem>
    <rdg wit="#a">Antiocia</rdg>
 </app> in Apuliam rediit profectusque 
@@ -17074,15 +17074,15 @@ Anno dominice incarnationis MCV, indictione
  
 <p xml:id="g203.13-204.4">
 Anno dominice incarnationis MCVI indictione XIV Riccardus princeps Capuanus defunctus est mense 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Iunii</lem>
    <rdg wit="#a">Ianuarii</rdg>
 </app> anno sui principatus XIV. Cui princeps successit frater eius Robbertus. Eodem anno apparuit stella cometis magna a parte 
-<app cert="medium" subtype="case" type="orthographic">
+<app cert="high" subtype="case" type="orthographic">
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #a">occidentis</rdg>
 </app> sero per totum mensem 
-<app cert="medium" subtype="case" type="orthographic">
+<app cert="high" subtype="case" type="orthographic">
    <lem resp="#pm">Februarii</lem>
    <rdg wit="#b #a">februarii</rdg>
 </app>. Ipso quoque anno mense Iulii corpora sanctorum Pontiani pape et martyris et Eleutherii episcopi et martyris et Anastasii confessoris de Roma in Troiam Apulie ciuitatem translata sunt, quorum meritis uirtus Domini fuit ad sanandum multos infirmos. 
@@ -17094,19 +17094,19 @@ Anno dominice incarnationis MCVII indictione XV dux Roggerius obsedit Luceriam A
  
 <p xml:id="g204.7-204.15">
 Anno dominice incarnationis MCVIII indicione I Philippus Francorum rex obiit anno ex quo cepit regnare XLIX; cui Ludouicus filius eius successit in regnum. Eodem anno obiit Guido frater Roggerii ducis. Obiit quoque Guiscardus filius ipsius Roggerii ducis mense Augusti. Eo tempore Alexius Constantinopolitanus imperator mortuus est, et 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Calo-iohannes</lem>
-   <rdg wit="#a">Caloiohannes</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#a">Caloiohannes</lem>
+   <rdg wit="#b">Calo-iohannes</rdg>
 </app> filius eius 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b">illi</lem>
    <rdg wit="#a"/>
 </app> in imperio 
-<app cert="medium" subtype="missing-in-print" type="substantial">
+<app cert="high" type="substantial" subtype="transposition">
    <lem wit="#b"> </lem>
    <rdg wit="#a">illi</rdg>
 </app> successit. His autem temporibus Henricus filius Henrici imperatoris Alamanorum, monitus per legatos a Paschali papa, persecutus est eundem patrem suum, auferens ei omnem imperii potestatem. Quem postquam expulit obsedit. Non post multum uero temporis idem Henricus imperator mortuus est 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">et</lem>
    <rdg wit="#a"/>
 </app> obsessus anno imperii sui LXVII, et ipse filius eius regnum sibi suscepit. 
@@ -17114,11 +17114,11 @@ Anno dominice incarnationis MCVIII indicione I Philippus Francorum rex obiit ann
  
 <p xml:id="g204.16-205.2">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">domini</lem>
    <rdg wit="#a">dominice incarnationis</rdg>
 </app> MCX indictione III stella cometis a parte septemtrionali circa polum uisa est tota nocte a sero usque mane per totum mensem Iunii. 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">Eodem anno mense Septembris domnus Alexander comes fecit Miliolongum hedificare castellum.</lem>
    <rdg wit="#a"/>
 </app> 
@@ -17126,101 +17126,106 @@ Anno
  
 <p xml:id="g205.3-206.12">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">incarnati uerbi</lem>
    <rdg wit="#a">dominice incarnationis</rdg>
-</app> MCXI indictione IV Henricus filius Henrici imperatoris 
-<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
-   <lem wit="#a"/>
-   <rdg wit="#b">,</rdg>
-</app> Alamannorum 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+</app> MCXI indictione IV Henricus filius Henrici imperatoris, Alamannorum 
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">rex</lem>
    <rdg wit="#a"/>
 </app>, ingenti cum exercitu Alamannorum et Suauorum Italiam uenit, plurisque rebus sibi compositis Nouariam ciuitatem sibi resistentem cepit eamque depopulatus est. Similiter et Ariciam. Cumque uelud pacificus Romam ueniret, Paschalis papa simul cum clero et populo Romano honorabiliter illum excepit in ecclesia beati Petri. Rex autem suorum militum caterua stipatus, post pacis osculum benedictionemque ab eo acceptam, dum ab eodem papa quod ipse per legatos sibi promiserat, optinere se non posse uideret, cepit ipsum papam cum 
-<app cert="high" type="substantial">
-   <lem wit="#a">omnibus</lem>
-   <rdg wit="#b #g">omnnibus</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#a #g">omnibus</lem>
+   <rdg wit="#b">omnnibus</rdg>
 </app> qui cum eo illic erant, atque per duos menses in custodia 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">habere</lem>
-   <rdg wit="#a">haberi</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">haberi</lem>
+   <rdg wit="#b">habere</rdg>
 </app> fecit, propter inuestituram episcopatus per anulum et uirgam quam rex petebat. Et papa predecessoris sui Gregorii cognomento Ildeprandi, qui hoc inchoauerat negotium, statuta tenens, concedere sibi nullo modo uolebat. Tandem uero Paschalis, non tam terrore sui coactus, quam etiam suorum, eorum maxime qui sibi fideliores quidem esse uidebantur, suasu deceptus, sed et pro liberatione illorum qui cum ipso tenebantur, flexus, timens ne propter hoc rex ipse tirannice potestatis occasione inuenta et illos quos tenebat perimeret et plerumque Italie populum deuastaret, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">eam</lem>
    <rdg wit="#a">eandem</rdg>
 </app> inuestituram regi concessit et pariter cum eo comunicans imperii coronam capiti eius imposuit. Rex itaque dimisso papa cum omnibus qui 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">statim</lem>
-   <rdg wit="#a">cum</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a #g">cum</lem>
+   <rdg wit="#b"/>
+</app> 
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#a"/>
+   <rdg wit="#b #g">statim</rdg>
 </app> eo et pro eo capti erant 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a">statim</rdg>
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#a">statim</lem>
+   <rdg wit="#b"> </rdg>
 </app> accepta ab eo corona reuersus est. Eodem mense quo papa captus est, Roggerius dux morbo detentus Salerni diem clausit extremum mense Februarii anno ducatus sui 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">XXV</lem>
    <rdg wit="#a">XXVI</rdg>
 </app> mense VI, etatis uero sue L, sepultusque est in ecclesia beati Mathei apostoli, quam pater eius in eadem ciuitate construxerat. Fuit autem Roggerius dux corpore insignis, moribus illustris, moderata gloria, ciuilis, affabilis, ecclesiarum gubernator, Christi sacerdotibus 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">prebens</lem>
-   <rdg wit="#a"/>
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#a"/>
+   <rdg wit="#b">prebens</rdg>
 </app> humilem se 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a">prebens,</rdg>
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#a">prebens,</lem>
+   <rdg wit="#b"> </rdg>
 </app> clericos uehementer honorans, omnes ad se uenientes honorabiliter excipiens ac letos a se remittens, nutritor gentis, pacis amator, delinquentibus clemens, suis beneuolus, 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">pacatos</lem>
-   <rdg wit="#a">pacatus</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">pacatus</lem>
+   <rdg wit="#b #g">pacatos</rdg>
 </app> extraneis et cunctis amabilis atque largus in donis plurimis. Omnibus namque gratus ac commodus, et tam suis quam extraneis magis dilectioni quam timori se exhibere studebat. Eo quippe mortuo tantus luctus publicus fuit, ut omnes doluerint 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">tamquam</lem>
    <rdg wit="#a">tanquam</rdg>
 </app> in propria orbitate. Cui Willelmus filius eius in honore ducatus eius successit. Post obitum uero ducis Roggerii die quarta decima Boamundus frater ipsius Roggerii ducis simili infirmitate in Apulia mortuus est sepultusque iuxta ecclesiam beati Sabini confessoris in ciuitate Canusia. Fuit autem Boamundus miles strenuus, corpore deducto, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">honorabili</lem>
    <rdg wit="#a">honorabilis,</rdg>
 </app> animo constans, cautus eloquio, ingenio astutus, bellicosus, inquietus, semper impossibilia appetens, peritia atque uirtute in bello preualidus. Huic autem Boamundus filius eius una cum matre sua 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">domna</lem>
    <rdg wit="#a"/>
 </app> Constantia successit. 
 </p>
  
 <p xml:id="g206.n4-206.n5">
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">Anno Domini MCXII. Hoc anno mense Augusti Agerenum iterum ignis combustione uastatur.</lem>
-   <rdg wit="#a"/>
-</app> 
+Anno Domini MCXII. Hoc anno mense Augusti Agerenum iterum ignis combustione uastatur.
 </p>
  
 <p xml:id="g206.13-206.17">
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">"Anno Domini MCXIII</lem>
+<app cert="high" subtype="punct-in-print-vs-missing-in-ms" type="punctuation">
+   <lem wit="#a2"/>
+   <rdg wit="#b">"</rdg>
+</app> 
+<app cert="high" subtype="missing-in-ms" type="substantial">
+   <lem wit="#b">Anno Domini</lem>
+   <rdg wit="#a2"/>
+</app> 
+<app cert="high" subtype="num-num" type="substantial">
+   <lem wit="#b">MCXIII</lem>
    <rdg wit="#a2">MCXIV</rdg>
 </app> indictione 
-<app cert="medium" subtype="num-num" type="substantial">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">VI</lem>
    <rdg wit="#a2">VII</rdg>
 </app>. Hoc anno mense 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Ianuarii</lem>
    <rdg wit="#a2">Ianuario</rdg>
 </app> comprehensa 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">est</lem>
    <rdg wit="#a2"/>
 </app> a Barensibus equitibus mater 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Robberti</lem>
    <rdg wit="#a2">Roberti</rdg>
 </app> comitis et in 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">custodiam</lem>
    <rdg wit="#a2">custodia</rdg>
 </app> missa. Unde iratus comes Robertus fecit incidi oliuas et arbores 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">et</lem>
    <rdg wit="#a2">ac</rdg>
 </app> uineas Barenorum. Tunc Barenses fecerunt sibi caput et dominum Risonum archiepiscopum, et ceperunt habere guerram cum predicto Roberto comite 
@@ -17232,7 +17237,7 @@ Anno
  
 <p xml:id="g206.18-207.2">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Domini</lem>
    <rdg wit="#a">dominice incarnationis</rdg>
 </app> MCXIV indictione VII Tancredus Marcisi filius cui Boamundus commendauerat Antiochiam mortuus est, et Roggerius filius Riccardi accepit Antiochie procurationem. 
@@ -17240,13 +17245,13 @@ Anno
  
 <p xml:id="g207.3-207.15">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">ab incarnatione Domini</lem>
    <rdg wit="#a">dominice incarnationis</rdg>
 </app> MCXV indictione VIII apud Ciperanum in ecclesia sancti Paterni 
-<app cert="medium" subtype="unknown" type="unknown">
-   <lem wit="#b">Wilielmus</lem>
-   <rdg wit="#a">Willelmus</rdg>
+<app cert="high" type="orthography">
+   <lem wit="#a">Willelmus</lem>
+   <rdg wit="#b">Wilielmus</rdg>
 </app> dux deuenit liggius homo pape Paschalis qui tunc sinodum celebrabat, et ipse papa statim per uexillum tradidit eidem duci totam terram cum honore ducatus, quemadmodum Gregorius papa concessit et tradidit eam duci Robberto Guiscardo apud ipsum Ciperanum, et quemadmodum Urbanus papa concessit Roggerio duci in ciuitate Melfia, et sicut idem Paschalis papa concessit et tradidit eidem duci Roggerio apud sanctum Trophimenem per illud idem donum atque consensum. In predicta quidem 
 <app cert="high" subtype="y" type="orthographic">
    <lem wit="#b">synodo</lem>
@@ -17260,11 +17265,11 @@ Anno
    <lem wit="#b">Syria</lem>
    <rdg wit="#a">Siria</rdg>
 </app> ante 
-<app cert="medium" subtype="case" type="orthographic">
+<app cert="high" subtype="case" type="orthographic">
    <lem resp="#pm">Natalem</lem>
    <rdg wit="#b #a">natalem</rdg>
 </app> Domini terre motus ita fuit magnus, quod Manistra et Marais ad solum usque et alie quam plures ciuitates et castella attritis hominibus, sed et pars ciuitatis Antiochie ac usque 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Hierusalem</lem>
    <rdg wit="#a">Ierusalem</rdg>
 </app> prostrate ceciderunt. Eodem anno mense Aprilis Ala ducissa mater Willelmi ducis defuncta est. 
@@ -17272,50 +17277,50 @@ Anno
  
 <p xml:id="g207.16-207.17">
 Anno 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">incarnati uerbi</lem>
    <rdg wit="#a">dominice incarnationis</rdg>
 </app> MCXVI, indictione 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" subtype="num-num" type="substantial">
    <lem wit="#b">IV</lem>
-   <rdg wit="#a">VIX</rdg>
+   <rdg wit="#a">IX</rdg>
 </app>; 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Willelmus</lem>
    <rdg wit="#a">Wilielmus</rdg>
 </app> dux accepit uxorem 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">nomine</lem>
    <rdg wit="#a"/>
 </app> Gaitelgrimam filiam comitis Robberti de 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Ariola</lem>
    <rdg wit="#a">Airola</rdg>
 </app>. 
 </p>
  
 <p xml:id="g208.1-208.9">
-<app cert="medium" subtype="punct-in-print-vs-punct-and-letters-in-ms" type="substantial">
+<app cert="high" subtype="punct-in-print-vs-punct-and-letters-in-ms" type="substantial">
    <lem wit="#b">"</lem>
    <rdg wit="#a2">anno dominice incarnationis MCXVI;</rdg>
 </app> Eodem anno regina et Tancredus cum aliis multis, idest 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Goffrido</lem>
    <rdg wit="#a2">Goffredo</rdg>
 </app> Britton et Unfredo Grauina, dominio et equitibus ut fertur usus ad CXX peditumque non exigua manu, audacter pergebant iuxta flumen Bradanum. Quibus comes occurrens Alexander cum suis ita 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">detriuit</lem>
    <rdg wit="#a2">deteruit</rdg>
 </app> ac debellauit eos, ut Tancredus fuge liberaretur presidio et Britto 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Gofredus</lem>
    <rdg wit="#a2">Gofridus</rdg>
 </app>, regina uero 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">et</lem>
    <rdg wit="#a2">,</rdg>
 </app> Unfredus cum multis aliis caperentur equitibus, omniaque eorum direptioni predeque data sunt. Regina uero ducta sub custodia est in Materam ciuitatem, in qua aliquanto peracto tempore retenta, dimissa est sub iureiurando ut reuerteretur in Materam et in Alexandri comitis custodia; 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a2">sed</rdg>
 </app> minime hoc impleuit. Insuper mense Maio cum CC equitibus et peditum turba terram uastauit Alexandri comitis Barensis 
@@ -17327,15 +17332,15 @@ Anno
  
 <p xml:id="g208.10-208.14">
 Anno dominice incarnationis MCXVII, indictione X; mense Aprilis in Uenecia, Liguria, Emilia atque Flamminia Italie prouinciis, in Gallia quoque 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Transalpina</lem>
    <rdg wit="#a">Transalpinam</rdg>
 </app>, multorum domus contritis hominibus pluraque 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b">hedificia</lem>
    <rdg wit="#a">edificia</rdg>
 </app> simul et ecclesie ingenti terre motu concusse ceciderunt. Eodem anno mense Iulio, XVII kalendas Augusti, feria IIa, luna in signo aquarii passa est eclipsim ab hora octaua noctis usque 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
+<app cert="high" subtype="missing-in-ms" type="substantial">
    <lem wit="#b">in</lem>
    <rdg wit="#a"/>
 </app> matutinum. 
@@ -17351,20 +17356,20 @@ Anno
    <lem wit="#b">tercio</lem>
    <rdg wit="#a">tertio</rdg>
 </app> idus Decembris, feria IV, luna in signo geminorum passa est 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">eclipsim</lem>
    <rdg wit="#a">eclipsin</rdg>
 </app> a quinta hora 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a">noctis</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a #g">noctis</lem>
+   <rdg wit="#b"> </rdg>
 </app> usque in 
-<app cert="medium" subtype="missing-in-print" type="substantial">
-   <lem wit="#b"> </lem>
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#b #g"> </lem>
    <rdg wit="#a">horam</rdg>
 </app> nonam 
-<app cert="medium" subtype="missing-in-ms" type="substantial">
-   <lem wit="#b">horam</lem>
+<app cert="high" type="substantial" subtype="transposition">
+   <lem wit="#b #g">horam</lem>
    <rdg wit="#a"/>
 </app> noctis eiusdem. Eodem mense Decembris post solis occasum usque in tertiam horam noctis celum rubeum quasi ignis apparuit a septemtrionali parte usque ad arcton; sequenti uero mense Ianuarii 
 <app cert="medium" subtype="unknown" type="unknown">
@@ -17548,7 +17553,7 @@ Anno
    <lem wit="#b">Balduinus</lem>
    <rdg wit="#a2">Boamundus</rdg>
 </app> rex Hierosolime capitur a paganis dum rediret de Antiochia, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a2">sed</rdg>
 </app> breui tempore dimittitur. 
@@ -17928,7 +17933,7 @@ Post hec Apuliam rediens obsedit Barum, que se ei
    <lem wit="#b">turre</lem>
    <rdg wit="#a2">turri</rdg>
 </app> parceret 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a2">sed</rdg>
 </app> alios patibulis alios ignibus daret, alios uero uiuos sepeliret si capere illos aliquando posset. 
@@ -18615,7 +18620,7 @@ Ut autem uniuersus mundus euidenter agnoscat, qualiter rex Rogerius tota fuerit
    <lem wit="#b">sentenciam</lem>
    <rdg wit="#a2">sententiam</rdg>
 </app>. In hoc igitur facto manifestius elucessit, quod rex Rogerius fuit princeps christianissimus et catholicus, qui pro iniuria fidei uindicanda camerario et nutrito proprio non pepercit, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a2">sed</rdg>
 </app> pro eius honore et gloria incendio tradidit illum. 
@@ -18675,7 +18680,7 @@ Interea circa natiuitatem Domini Anastasius papa mortuus est anno
    <lem wit="#b">nuncios</lem>
    <rdg wit="#a">nuntios</rdg>
 </app> ad eum de pace componenda transmisit, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a">sed</rdg>
 </app> optinere non potuit. Postmodum circa quadragesimam rex Salernum uenit et ibi usque 
@@ -18687,7 +18692,7 @@ Interea circa natiuitatem Domini Anastasius papa mortuus est anno
    <lem wit="#b">.</lem>
    <rdg wit="#a">ad Pascha</rdg>
 </app> Quo cognito, Adrianus papa Henricum cardinalem Sanctorum Nerei et Achillei ad eum misit, quem rex recipere noluit, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a">sed</rdg>
 </app> Romam redire precepit, eo quod in litteris apostolicis, quas regi portabat, papa ipsum non regem, sed Wilhelmum dominum Sicilie nominabat. Pro quo facto Adrianus papa et tota Romana curia contra regem turbata est et commota. Rex autem celebrata festiuitate paschali 
@@ -19425,7 +19430,7 @@ Anno dominice incarnationis
    <lem wit="#b">firmus</lem>
    <rdg wit="#a"/>
 </app> perseuerans, noluit ab obsidione recedere, 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a">sed</rdg>
 </app> eam frequentibus preliis et insultibus uariis non destitit 
@@ -20674,7 +20679,7 @@ Cui papa satis benigne respondit:
    <lem wit="#b">carissime</lem>
    <rdg wit="#a">karissime</rdg>
 </app>, quam erga Romanam ecclesiam et personam nostram habuisse dinosceris, manifeste recolimus et ardorem fidei tue publice protestamur. Multum nostre parti uester aduentus contulit, multum nostra ecclesia de uestra societate profecit. Et nos quidem, Deo teste, pro utilitate uestra sumus ualde solliciti, et facere que uobis expediant, tenemur obnoxii. Nolumus honorem uestrum minuere 
-<app cert="medium" subtype="unknown" type="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">set</lem>
    <rdg wit="#a">sed</rdg>
 </app> augere, nolumus uobis inferre iniuriam, sed gloriam ministrare. Non debet autem a uestra memoria excidisse quod sepe nobis et nuntiis et literis significastis, quod si inter ecclesiam et imperium pax non posset aliter fieri, nisi Maguntino archiepiscopatu a uobis remisso, licet hoc uobis graue resideret plurimum et molestum, tamen pro bono pacis hanc iacturam equanimiter patiebamini, uolentes honorem ecclesie honori uestro et illius commodum uestris utilitatibus anteponere. Et ecce imperator cum magna instantia asseuerat, quod nullatenus in pace ecclesie remanebit, si Christianus cancellarius a Maguntine sedis fuerit prelatione deiectus. Nos autem absque uestra notitia nullum sue petitioni adhuc uoluimus dare consensum, nec, uobis ignorantibus, aliquod prebere responsum 

@@ -899,7 +899,7 @@
 </app> comitatus autem eius anno XLI 
 <app>
    <rdg wit="#b"/>
-   <rdg wit="#a">, anno ab incarnatione Domini MC primo, indictione IX.</rdg>
+   <rdg wit="#a">anno ab incarnatione Domini MC primo, indictione IX</rdg>
 </app> . Hic autem fuit miles egregius, moribus insignis atque famosus, iustitie tenax, suis suorumque opibus studens, suos enim ditabat. Fuitque pauperum nutritor, pius, in elemosinis largus, ecclesiarum Dei atque sacerdotum consulens. Huic 
 <app>
    <rdg wit="#b">autem</rdg>
@@ -912,7 +912,7 @@
 <app>
    <rdg wit="#b">Raul Machabeo</rdg>
    <rdg wit="#a">a Mulmachabeo</rdg>
-</app> Mons caueosus mutatur. 
+</app> Mons Caueosus mutatur. 
 </p>
  
 <p xml:id="g203.3-203.5">
@@ -1016,18 +1016,14 @@
 <app>
    <rdg wit="#b">incarnati uerbi</rdg>
    <rdg wit="#a">dominice incarnationis</rdg>
-</app> MCXI indictione IV Henricus filius Henrici imperatoris 
-<app>
-   <rdg wit="#b">,</rdg>
-   <rdg wit="#a"/>
-</app> Alamannorum 
+</app> MCXI indictione IV Henricus filius Henrici imperatoris, Alamannorum 
 <app>
    <rdg wit="#b">rex</rdg>
    <rdg wit="#a"/>
 </app> , ingenti cum exercitu Alamannorum et Suauorum Italiam uenit, plurisque rebus sibi compositis Nouariam ciuitatem sibi resistentem cepit eamque depopulatus est. Similiter et Ariciam. Cumque uelud pacificus Romam ueniret, Paschalis papa simul cum clero et populo Romano honorabiliter illum excepit in ecclesia beati Petri. Rex autem suorum militum caterua stipatus, post pacis osculum benedictionemque ab eo acceptam, dum ab eodem papa quod ipse per legatos sibi promiserat, optinere se non posse uideret, cepit ipsum papam cum 
 <app>
-   <rdg wit="#b #g">omnnibus</rdg>
-   <rdg wit="#a">omnibus</rdg>
+   <rdg wit="#b">omnnibus</rdg>
+   <rdg wit="#a #g">omnibus</rdg>
 </app> qui cum eo illic erant, atque per duos menses in custodia 
 <app>
    <rdg wit="#b">habere</rdg>
@@ -1038,8 +1034,12 @@
    <rdg wit="#a">eandem</rdg>
 </app> inuestituram regi concessit et pariter cum eo comunicans imperii coronam capiti eius imposuit. Rex itaque dimisso papa cum omnibus qui 
 <app>
-   <rdg wit="#b">statim</rdg>
-   <rdg wit="#a">cum</rdg>
+   <rdg wit="#b"/>
+   <rdg wit="#a #g">cum</rdg>
+</app> 
+<app>
+   <rdg wit="#b #g">statim</rdg>
+   <rdg wit="#a"/>
 </app> eo et pro eo capti erant 
 <app>
    <rdg wit="#b"> </rdg>
@@ -1058,7 +1058,7 @@
    <rdg wit="#a">prebens,</rdg>
 </app> clericos uehementer honorans, omnes ad se uenientes honorabiliter excipiens ac letos a se remittens, nutritor gentis, pacis amator, delinquentibus clemens, suis beneuolus, 
 <app>
-   <rdg wit="#b">pacatos</rdg>
+   <rdg wit="#b #g">pacatos</rdg>
    <rdg wit="#a">pacatus</rdg>
 </app> extraneis et cunctis amabilis atque largus in donis plurimis. Omnibus namque gratus ac commodus, et tam suis quam extraneis magis dilectioni quam timori se exhibere studebat. Eo quippe mortuo tantus luctus publicus fuit, ut omnes doluerint 
 <app>
@@ -1086,7 +1086,15 @@
 <p xml:id="g206.13-206.17">
  
 <app>
-   <rdg wit="#b">"Anno Domini MCXIII</rdg>
+   <rdg wit="#b">"</rdg>
+   <rdg wit="#a"/>
+</app> 
+<app>
+   <rdg wit="#b">Anno Domini</rdg>
+   <rdg wit="#a"/>
+</app> 
+<app>
+   <rdg wit="#b">MCXIII</rdg>
    <rdg wit="#a">MCXIV</rdg>
 </app> indictione 
 <app>
@@ -1167,7 +1175,7 @@
 </app> MCXVI, indictione 
 <app>
    <rdg wit="#b">IV</rdg>
-   <rdg wit="#a">VIX</rdg>
+   <rdg wit="#a">IX</rdg>
 </app> ; 
 <app>
    <rdg wit="#b">Willelmus</rdg>
@@ -1247,14 +1255,14 @@
 </app> a quinta hora 
 <app>
    <rdg wit="#b"> </rdg>
-   <rdg wit="#a">noctis</rdg>
+   <rdg wit="#a #g">noctis</rdg>
 </app> usque in 
 <app>
-   <rdg wit="#b"> </rdg>
+   <rdg wit="#b #g"> </rdg>
    <rdg wit="#a">horam</rdg>
 </app> nonam 
 <app>
-   <rdg wit="#b">horam</rdg>
+   <rdg wit="#b #g">horam</rdg>
    <rdg wit="#a"/>
 </app> noctis eiusdem. Eodem mense Decembris post solis occasum usque in tertiam horam noctis celum rubeum quasi ignis apparuit a septemtrionali parte usque ad arcton; sequenti uero mense Ianuarii 
 <app>
