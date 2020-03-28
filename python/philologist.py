@@ -938,7 +938,8 @@ class treeWithAppElements:
 
                # and the MS A or MS A2 text reading
                # matches that of the DB record
-               and str(r['msa2']).strip() == ms_text.strip()
+               and (str(r['msa']).strip() == ms_text.strip()
+                    or str(r['msa2']).strip() == ms_text.strip())
 
                # and the extra Garufi text reading
                # matches that of the DB record
@@ -989,7 +990,9 @@ class treeWithAppElements:
                     print(('[philologist.py/'
                            'set_lem_based_on_db_3elements_bonetti_and_garufi]'
                            ' I can\'t find the variant to choose in the DB'
-                           ' table. I\'m working on <app> {}').format(a))
+                           ' table. I\'m working on <app> {}. DB column'
+                           'lem_if_not_print has «{}»').format(
+                               a, r['lem_if_not_print']))
 
     def set_all_lems_based_on_db(self):
         '''Read DB table and decide <lem> for the <app>s
