@@ -151,6 +151,24 @@ class treeWithAppElements:
         text_front = self.juxtaTree.find('.//t:front', ns)
         text_front.getparent().remove(text_front)
 
+    def check_garufi_and_bonetti(self, app):
+        ''' Argument: an <app> element. Return True or False.
+            Check if the <app> is in the following case:
+                - Bonetti is collation exemplar (i.e. 'print' reading)
+                - there is only one MS (A or A2)
+                - but Garufi has a reading that's different than Bonetti's.
+            So we have 3 <rdg>s with 3 variants:
+                - 1 for Bonetti,
+                - 1 for MS A or A2,
+                - 1 for Garufi '''
+        response = False
+        witnesses = [child.get('wit') for child in app]
+        if (len(app) == 3
+                and '#b' in witnesses
+                and '#g' in witnesses):
+            response = True
+        return response
+
     def appdict(self):
         ''' Arguments:
             The function parses file myJuxtaXmlFile, finds all <app> elements,
@@ -321,9 +339,17 @@ class treeWithAppElements:
 
             # If we are not in the chunk in which I collated 3 sources:
             if xmlid not in pars_with_triple_collation:
-                app_struct = '2elements2variants'
+                # This is the case in which Bonetti is collation exemplar,
+                # there is only one MS (A or A2), but Garufi has a reading
+                # that's different than Bonetti's. So I have 3 <rdg>s with
+                # 3 variants: 1 for Bonetti, 1 for MS A or A2, 1 for Garufi
+                if self.check_garufi_and_bonetti(app):
+                    app_struct = '3elements3variants_bonetti_and_garufi'
+                else:
+                    app_struct = '2elements2variants'
             # If we are in that chunk, there must be 3 variants
-            # (1. print, 2. A or A2, 3. O)
+            # (1st variant = print;  2nd variant =  A or A2, 3. O),
+            # but they can be in 2 or 3 elements
             else:
                 if len(app) > 3:
                     print(('[philologist.py / setappStruct] An <app>'
@@ -374,12 +400,16 @@ class treeWithAppElements:
                     printText,
                     non_print_child.text)
 
-            # In this 3rd case, I'll do without function
+            # In the other cases, I'll do without function
             # variantComparison() and create the dict anew
             elif app_struct == '3elements3variants':
                 myComp = {'r1': '',
                           'r2': '',
                           'subtype': '3elements3variants'}
+            elif app_struct == '3elements3variants_bonetti_and_garufi':
+                myComp = {'r1': '',
+                          'r2': '',
+                          'subtype': '3elements3variants_bonetti_and_garufi'}
 
             # Set additional keys in dictionary myComp. See the documentation
             # of this method above for details.
@@ -597,7 +627,6 @@ class treeWithAppElements:
 
     def set_lem_based_on_db_2elements(self, a):
         ''' This manages two cases:
-
             1) a['appStruct'] = 2elements_2readings
                 <rdg wit="#a">
                 <rdg wit="#b">
@@ -609,6 +638,7 @@ class treeWithAppElements:
                 <rdg wit="#b">
                 <rdg wit="#a #o">
                 ... or the same with #a2 instead of #a
+            (see lines with if/elif r['action'] for details).
             '''
 
         #################################################
@@ -655,7 +685,7 @@ class treeWithAppElements:
                 ###################################
 
                 # Set @type
-                # (DB table decisions2 and decisions3 always have a 'type')
+                # (DB tables decisions2 and decisions3 always have a 'type')
                 expanded_type = self.type_expansion[r['type']]
                 a['app'].set('type', expanded_type)
 
@@ -747,8 +777,6 @@ class treeWithAppElements:
 
                # and the MS A or MS A2 text reading
                # matches that of the DB record
-               # I can't add .strip() to r['msa']/r['msa2']
-               # b/c many ar in the DB, Null)
                and (str(r['msa2']).strip() == a['msaText'].strip()
                     or str(r['msa2']).strip() == a['msa2Text'].strip())
 
@@ -766,7 +794,7 @@ class treeWithAppElements:
                 ###################################
 
                 # Set @type
-                # (DB table decisions2 and decisions3 always have a 'type')
+                # (DB tables decisions2 and decisions3 always have a 'type')
                 expanded_type = self.type_expansion[r['type']]
                 a['app'].set('type', expanded_type)
 
@@ -789,7 +817,8 @@ class treeWithAppElements:
                 # The print reading will always be set to <rdg>
                 self.make_rdg(my_print_rdg)
 
-                # 'correct' rdg is in one of the mss
+                # 'coris in one of the mss
+                print(r['print'])  # §§§
                 if r['action'] == 'm':
 
                     # Identify "correct" MS element and text
@@ -802,6 +831,8 @@ class treeWithAppElements:
                         my_correct_ms_rdg = a['msa2Reading']
                     elif db_lem == 'mso':
                         my_correct_ms_rdg = a['msoReading']
+                    elif db_lem == 'g':
+                        my_correct_ms_rdg = a['g']
                     if my_correct_ms_rdg is None:
                         # Good debug message:
                         print(('\n[philologist.py/'
@@ -865,6 +896,101 @@ class treeWithAppElements:
                            'in the DB record for app {} {}. ').format(
                                r['action'], a['app'], a['app'].attrib))
 
+    def set_lem_based_on_db_3elements_bonetti_and_garufi(self, a):
+        ''' See definition of method check_garufi_and_bonetti() for
+            details about this case '''
+
+        ##################################################################
+        # Identify print=Bonetti, MS and extra Garufi elements and texts #
+        ##################################################################
+
+        # I need to identify the 3 elements/texts with a different approach
+        app = a['app']
+        for child in app:
+            if child.get('wit') == '#b':
+                b_reading = child
+                b_text = b_reading.text
+            elif (child.get('wit') == '#a' or
+                    child.get('wit') == '#a2'):
+                ms_reading = child
+                ms_text = ms_reading.text
+            elif child.get('wit') == '#g':
+                g_reading = child
+                g_text = g_reading.text
+            else:
+                print(('[philologist.py/'
+                       'set_lem_based_on_db_3elements_bonetti_and_garufi]'
+                       ' I think that app <app> {} belongs to case'
+                       ' 3elements3variants_bonetti_and_garufi, but I can\'t'
+                       ' find the Bonetti, MS and Garufi readings in the'
+                       ' <app>').format(a))
+
+        ####################################################
+        # Decide if the <app> corresponds to the DB record #
+        ####################################################
+
+        for r in self.decisions3:
+
+            # If the print (Bonetti) reading text in <app> is the same
+            # of the print reading text in the DB record...
+            # ('strip' is for readings/DB cells with space)
+            if(str(r['print']).strip() == b_text.strip()
+
+               # and the MS A or MS A2 text reading
+               # matches that of the DB record
+               and str(r['msa2']).strip() == ms_text.strip()
+
+               # and the extra Garufi text reading
+               # matches that of the DB record
+               and str(r['g']).strip() == g_text.strip()
+
+               # and we are in the right <p>...
+               and (r['xmlid'] == a['xmlid']
+                    # ...or the DB decision is to be applied in all cases
+                    or r['xmlid'] == 'all')):
+
+                ###################################
+                # Set @subtype and @cert of <app> #
+                ###################################
+
+                # Set @type
+                # (DB tables decisions2 and decisions3 always have a 'type')
+                expanded_type = self.type_expansion[r['type']]
+                a['app'].set('type', expanded_type)
+
+                # Remove previous @subtype from <app>, if any
+                if 'subtype' in a['app'].attrib:
+                    a['app'].attrib.pop('subtype')
+
+                # Set @subtype
+                # If there is a subtype in the DB, set it in <app>
+                if r['subtype'] is not None and r['subtype'] is not '':
+                    print(a, end='\n\n\n')
+
+                # Set @cert="high"
+                a['app'].set('cert', 'high')
+
+                ############################
+                # Set <lem> and <rdg> tags #
+                ############################
+
+                # Set all children of <app> to <rdg> to start with:
+                for child in app:
+                    self.make_rdg(child)
+
+                if (r['lem_if_not_print'] == 'msa' or
+                        r['lem_if_not_print'] == 'msa2'):
+                    self.make_lem(ms_reading)
+                elif r['lem_if_not_print'] == 'g':
+                    self.make_lem(g_reading)
+                # This should never be the case:
+                #  if r['lem_is_not_print'] == 'mso':
+                else:
+                    print(('[philologist.py/'
+                           'set_lem_based_on_db_3elements_bonetti_and_garufi]'
+                           ' I can\'t find the variant to choose in the DB'
+                           ' table. I\'m working on <app> {}').format(a))
+
     def set_all_lems_based_on_db(self):
         '''Read DB table and decide <lem> for the <app>s
             that match a DB record '''
@@ -877,6 +1003,9 @@ class treeWithAppElements:
             elif a['appStruct'] == '3elements3variants':
                 # 42 cases
                 self.set_lem_based_on_db_3elements(a)
+            elif a['appStruct'] == '3elements3variants_bonetti_and_garufi':
+                # Very few cases
+                self.set_lem_based_on_db_3elements_bonetti_and_garufi(a)
 
     def handle_case_variants(self):
         ''' If the variant is of case, change its structure, from
