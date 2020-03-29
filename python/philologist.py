@@ -1173,7 +1173,7 @@ class treeWithAppElements:
 
         # This tuple includes punctuation chars before which
         # there should be no space
-        punct = ('!', ')', ',', '.', ':', ';', '?', ']', '}')
+        punct = ('!', ')', ',', '.', ':', ';', '?', ']', '}', '»')
 
         for a in self.appdict():
             app = a['app']
