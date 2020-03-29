@@ -1113,15 +1113,17 @@ class treeWithAppElements:
 
     def checkout_checked_paragraphs(self):
         ''' For all paragraphs that in table 'paragraphs' of the DB
-            have 'checked'=1, in <app>s
+            have 'checked'=1, 2 or any number higher than 0, in <app>s
             - set cert to high for all
             - set @type and @subtype for those 'unknown' that I left unchanged
+            See table 'check_levels' in the DB for the meaning of values of
+            field 'checked' in table 'paragraphs'
             '''
         # @types of <app> that have to change:
         type_subst = {'unknown': 'substantial'}
 
         # Get a list with xmlids of checked paragraphs
-        pars = [x['xmlid'] for x in self.paragraphs if x['checked'] == 1]
+        pars = [x['xmlid'] for x in self.paragraphs if x['checked'] > 0]
 
         for a in self.appdict():
             app = a['app']
