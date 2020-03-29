@@ -965,7 +965,7 @@ class treeWithAppElements:
                 # Set @subtype
                 # If there is a subtype in the DB, set it in <app>
                 if r['subtype'] is not None and r['subtype'] is not '':
-                    print(a, end='\n\n\n')
+                    a['app'].set('subtype', r['subtype'])
 
                 # Set @cert="high"
                 a['app'].set('cert', 'high')
