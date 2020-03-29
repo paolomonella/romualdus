@@ -741,9 +741,9 @@ class treeWithAppElements:
 
                 else:
                     print(('[philologist.py/set_lem_based_on_db_2elements] '
-                           'I don\'t understand the «{}» field '
-                           'in the DB record for app {} {}. ').format(
-                               r['action'], a['app'], a['app'].attrib))
+                           'I don\'t understand the «{}» in the «action» '
+                           'field in the DB record for app {}.').format(
+                               r['action'], a))
 
         # Debug
         if not self.quiet:
@@ -838,16 +838,8 @@ class treeWithAppElements:
                         print(('\n[philologist.py/'
                                'set_lem_based_on_db_3elements]'
                                ' I can\'t find the "correct" MS reading'
-                               ' in {},\nparagraph {}, \n<{}> {}.'
-                               ' \nThe print reading is <{}> {}'
-                               ' \nwith text «{}»\n').format(
-                                   self.juxtaSiglum,
-                                   self.parent_xmlid(a['app']),
-                                   etree.QName(a).localname,
-                                   a['app'].attrib,
-                                   etree.QName(a['printReading']).localname,
-                                   a['printReading'].attrib,
-                                   a['printReading'].text))
+                               ' in {}, <app> {}.').format(
+                                   self.juxtaSiglum, a))
 
                     my_correct_ms_text = my_correct_ms_rdg.text
                     if debug:
@@ -870,6 +862,13 @@ class treeWithAppElements:
                     # Make the "correct" MS element <lem>
                     self.make_lem(my_correct_ms_rdg)
 
+                # Only change subtype. Print is 'correct', so
+                # don't change <lem>/<rdg> (i.e. print reading stays <lem>),
+                # only set @subtype (based on the DB) and set @cert=high
+                # (both things were already done above)
+                elif r['action'] == 't':
+                    pass
+
                 # 'correct' rdg is my conjecture.
                 # I never tested this elif
                 elif r['action'] == 'conj':
@@ -891,10 +890,10 @@ class treeWithAppElements:
                     conj_lem.set('resp', '#pm')
 
                 else:
-                    print(('[philologist.py/set_lem_based_on_db_2elements] '
-                           'I don\'t understand the «{}» field '
-                           'in the DB record for app {} {}. ').format(
-                               r['action'], a['app'], a['app'].attrib))
+                    print(('[philologist.py/set_lem_based_on_db_3elements] '
+                           'I don\'t understand the «{}» in the «action»'
+                           'field in the DB record for app {}.').format(
+                               r['action'], a))
 
     def set_lem_based_on_db_3elements_bonetti_and_garufi(self, a):
         ''' See definition of method check_garufi_and_bonetti() for
