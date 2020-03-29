@@ -79,7 +79,7 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
         '''
     # Create my list of punctuation characters
     # long version; it generates 210 combinations:
-    myPunctString = '!"()*+,-.:;=?^_`{|}~' + "'"
+    myPunctString = '!"()*+,-.:;=?^_`{|}~«»' + "'"
 
     myPunctList = [p for p in myPunctString]  # transform the string to a list
     # punctCombList = [ [c[0], c[1], 'punct']
