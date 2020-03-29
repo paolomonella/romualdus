@@ -191,7 +191,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> Uinctus est itaque Carolus rex cum uxore sua et positus in custodia Aurelianis ciuitate in turri 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> in qua uitam finiuit. Habuit 
@@ -260,7 +260,7 @@ Anno dominice incarnationis CMLXXXV, obiit
    <lem wit="#b #a">Gibbertum</lem>
    <rdg wit="#o">Girbertum</rdg>
 </app> monachum philosophum 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a #o">.</lem>
    <rdg wit="#b">".</rdg>
 </app> Seguinus autem archiepiscopus Senonum non 
@@ -589,7 +589,7 @@ Non post multum uero temporis
    <lem wit="#b #a">Successit</lem>
    <rdg wit="#o">Succesit</rdg>
 </app> autem huic Siluester, uir omnium artium liberalium peritissimus, qui primitus abbas Bobiensis, postea archiepiscopus Rauennas, post uero Romanus papa effectus est 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> seditque annis IV 
@@ -659,7 +659,7 @@ Non post multum uero temporis
    <lem wit="#b #a">mortuus</lem>
    <rdg wit="#o">mortus</rdg>
 </app> est 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> 
@@ -974,7 +974,7 @@ Anno dominice incarnationis
    <lem wit="#a #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> qui uno eodemque die et laicus fuit et pontifex 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> seditque annos IX 
@@ -1166,7 +1166,7 @@ Anno
    <lem wit="#b #a">discurreret</lem>
    <rdg wit="#o">discurere</rdg>
 </app> 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a #o">.</lem>
    <rdg wit="#b">".</rdg>
 </app> 
@@ -1550,7 +1550,7 @@ Anno
    <lem wit="#b #a2">dilectus</lem>
    <rdg wit="#o"> </rdg>
 </app> 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a2 #o">.</lem>
    <rdg wit="#b">".</rdg>
 </app> Cui 
@@ -1716,7 +1716,7 @@ Anno ab incarnatione Domini
    <lem wit="#b #a2">premonuerat</lem>
    <rdg wit="#o">premouerat</rdg>
 </app> 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a2 #o">,</lem>
    <rdg wit="#b">",</rdg>
 </app> ideo 
@@ -1756,7 +1756,7 @@ Anno ab incarnatione Domini
    <lem wit="#b #o">sed</lem>
    <rdg wit="#a2">si</rdg>
 </app> uerbo doctrine monerent et pie conuersationis exemplo instruerent 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a2 #o">.</lem>
    <rdg wit="#b">".</rdg>
 </app> Eodem anno Constantinus Monomachus imperator Constantinopolitanus obiit, post quem Theodora, soror 
@@ -2085,7 +2085,7 @@ Anno dominice incarnationis MLVIII, indictione XI. Benedictus papa defunctus est
    <lem wit="#b #a2">anno Riccardus</lem>
    <rdg wit="#o">anni Ricardus</rdg>
 </app> cum Iordano filio eius effectus est Capue princeps 
-<app cert="high" type="punctuation">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a2 #o">.</lem>
    <rdg wit="#b">".</rdg>
 </app> 
@@ -2179,11 +2179,11 @@ cum exercitu in
    <lem wit="#b #a">Alberada</lem>
    <rdg wit="#o">Abberada</rdg>
 </app> prius habuit filium nomine Boamundum. Set Robbertus Guiscardus instituit sibi heredem 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"> </lem>
    <rdg wit="#o">filium</rdg>
 </app> suum 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">filium</lem>
    <rdg wit="#o"></rdg>
 </app> 
@@ -2203,7 +2203,7 @@ cum exercitu in
    <lem wit="#b #a">successoribus</lem>
    <rdg wit="#o">succesoribus</rdg>
 </app> canonice intrantibus. Ipse autem papa Nicolaus statim 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a"></lem>
    <rdg wit="#o">per uexillum</rdg>
 </app> inuestiuit eundem Robbertum 
@@ -2211,7 +2211,7 @@ cum exercitu in
    <lem wit="#b #a">Guiscardum</lem>
    <rdg wit="#o">Guiscare</rdg>
 </app> 
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #a">per uexillum</lem>
    <rdg wit="#o"></rdg>
 </app> de honore ducatus sui cum tota terra. 
@@ -2247,11 +2247,11 @@ Anno
    <lem wit="#b #a">liggius</lem>
    <rdg wit="#o">ligius</rdg>
 </app>  
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o">eius</lem>
    <rdg wit="#a"></rdg>
 </app> homo
-<app cert="high" type="substantial" subtype="transposition">
+<app cert="high" type="transposition">
    <lem wit="#b #o"></lem>
    <rdg wit="#a">eius</rdg>
 </app> deuenit et sicut
