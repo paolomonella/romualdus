@@ -217,12 +217,12 @@ elif arg == '-mo2':
 
 
 # Print reading is OK. - new
-# Only set type to substantial and subtype to transposition
+# Only set type to transposition
 # (app has 2 children)
 elif arg == '-t2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
-                    'print, ms, type, subtype, xmlid) '
-                    'VALUES (?, ?, ?, ?, ?, ?, ?);')
+                    'print, ms, type, xmlid) '
+                    'VALUES (?, ?, ?, ?, ?, ?);')
 
     # Interpret text file lines
     printrdg = lines[0]
@@ -236,8 +236,7 @@ elif arg == '-t2':
             't',     # field 'action' (only change type)
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
-            's',     # field 'type' (substantial)
-            'transposition',  # field 'subtype'
+            't',     # field 'type' (transposition)
             xmlid))  # field 'xmlid' (<p @xml:id> value)
 
 
