@@ -1210,14 +1210,22 @@ class treeWithAppElements:
                 p.text = p.text.replace('\n ', '\n')
 
     def handle_no_collation_paragraphs(self):
-        ''' For those paragraphs (e.g. g179.10-179.11) that are only
-            in Bonetti and in no MS (neither A or O), just use the
-            text of Bonetti without any <app> and without quotes '''
+        ''' Case 1: not_in_mss
+                Those paragraphs (e.g. g179.10-179.11) that are only
+                in Bonetti and in no MS (neither A or O): just use the
+                text of Bonetti without any <app> and without quotes
+            Case 2: not_in_print
+               Those paragraphs (g258.1-258.7surplus; i don't know if there
+               are others) that are only in the MS (in g258.1-258.7surplus, in
+               A2) but are not published by Bonetti: just use my
+               transcription from the MS without any <app>
+                '''
 
         # 1. Paragraphs missing in MSS
         # Get a list with xmlids of paragraphs  missing in MSS
         xmlids = [x['xmlid'] for x in self.paragraphs
-                  if x['no_collation'] == 'not_in_mss']
+                  if (x['no_collation'] == 'not_in_mss'
+                      or x['no_collation'] == 'not_in_print')]
         for x in xmlids:
             # print('\nxmlid = ', x)  # debug
             par = self.juxtaBody.find('.//t:p[@xml:id="%s"]' % (x), ns)
