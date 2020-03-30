@@ -71,7 +71,7 @@ class treeWithAppElements:
         # field in DB tables decisions2 and decisions3
         self.type_expansion = {
             's': 'substantial',
-            'o': 'orthography',
+            'o': 'orthographic',
             'p': 'punctuation',
             'g': 'gap-in-ms',
             'i': 'illegible-in-ms',
