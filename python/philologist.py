@@ -817,8 +817,7 @@ class treeWithAppElements:
                 # The print reading will always be set to <rdg>
                 self.make_rdg(my_print_rdg)
 
-                # 'coris in one of the mss
-                print(r['print'])  # §§§
+                # 'Correct' reading is one of the mss
                 if r['action'] == 'm':
 
                     # Identify "correct" MS element and text
