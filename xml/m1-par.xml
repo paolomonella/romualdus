@@ -58,12 +58,20 @@
    <rdg wit="#a"/>
 </app> decem, annos autem ducentos nonaginta duos 
 <app>
-   <rdg wit="#g">; porro</rdg>
-   <rdg wit="#a">. Porro</rdg>
+   <rdg wit="#g">;</rdg>
+   <rdg wit="#a">.</rdg>
+</app> 
+<app>
+   <rdg wit="#g">porro</rdg>
+   <rdg wit="#a">Porro</rdg>
 </app> iuxta Septuaginta interpretes anni MLXXII. Generationes uero XI 
 <app>
+   <rdg wit="#g"/>
+   <rdg wit="#a">.</rdg>
+</app> 
+<app>
    <rdg wit="#g">haec</rdg>
-   <rdg wit="#a">. hec</rdg>
+   <rdg wit="#a">Hec</rdg>
 </app> uero quasi pueritia fuit generationis populi Dei 
 <app>
    <rdg wit="#g">, et</rdg>
@@ -156,9 +164,9 @@
 </p>
  
 <p xml:id="g5.11-5.18">
- Creator omnium uisibilium et inuisibilium, qui trinus et unus Deus est, in principio creauit celum 
+ Creator omnium uisibilium et inuisibilium, qui trinus et unus Deus est, in principio creauit celum, 
 <app>
-   <rdg wit="#g">,</rdg>
+   <rdg wit="#g"/>
    <rdg wit="#a">et</rdg>
 </app> terram, mare, et omnia, que in eis sunt, tempora quoque instituit, nam prima die in lucis nomine condidit angelos, secunda die 
 <app>
@@ -172,11 +180,7 @@
 </p>
  
 <p xml:id="g5.19-5.19">
- 
-<app>
-   <rdg wit="#g">incipit</rdg>
-   <rdg wit="#a">Incipit</rdg>
-</app> prima etas. 
+ Incipit prima etas. 
 </p>
  
 <p xml:id="g5.20-5.25">
@@ -204,11 +208,7 @@
 <app>
    <rdg wit="#g">sue</rdg>
    <rdg wit="#a">suae</rdg>
-</app> fragilitatis memores, inuocent conditoris auxilium, eorum dumtaxat, qui in fide Christi uiuentes, filii resurrectionis sic esse letantur, secundum 
-<app>
-   <rdg wit="#g">Septuaginta</rdg>
-   <rdg wit="#a">septuaginta</rdg>
-</app> , annum DCXXV, Hebrei CCCXXV. 
+</app> fragilitatis memores, inuocent conditoris auxilium, eorum dumtaxat, qui in fide Christi uiuentes, filii resurrectionis sic esse letantur, secundum Septuaginta, annum DCXXV, Hebrei CCCXXV. 
 </p>
  
 <p xml:id="g6.7-6.10">
@@ -1246,9 +1246,13 @@
    <rdg wit="#a">filium</rdg>
 </app> Azarie, 
 <app>
+   <rdg wit="#g"/>
+   <rdg wit="#a">quem</rdg>
+</app> 
+<app>
    <rdg wit="#g">Isabeth</rdg>
-   <rdg wit="#a">quem Iosabeth</rdg>
-</app> soror Azarie uxor Ioade pontificis furata est de medio filiorum regis, cum interficerentur. in Septuaginta interpretibus VII annis regnasse Athalia narratur. 
+   <rdg wit="#a">Iosabeth</rdg>
+</app> soror Azarie uxor Ioade pontificis furata est de medio filiorum regis, cum interficerentur. In Septuaginta interpretibus VII annis regnasse Athalia narratur. 
 <app>
    <rdg wit="#g">Zaccharias</rdg>
    <rdg wit="#a">Zacharias</rdg>
@@ -1374,13 +1378,17 @@
 <p xml:id="g19.17-19.17">
  
 <app>
-   <rdg wit="#g">Item</rdg>
+   <rdg wit="#g"/>
    <rdg wit="#a">Hec</rdg>
+</app> 
+<app>
+   <rdg wit="#g">Item</rdg>
+   <rdg wit="#a"/>
 </app> Hieronimus 
 <app>
-   <rdg wit="#g">:</rdg>
+   <rdg wit="#g"/>
    <rdg wit="#a">item</rdg>
-</app> 
+</app> : 
 </p>
  
 <p xml:id="g19.18-19.24">
@@ -1388,11 +1396,7 @@
 <app>
    <rdg wit="#g">Barrachie</rdg>
    <rdg wit="#a">Barachie</rdg>
-</app> , quem prophetam fuisse dubium non est, sacerdos fuerit templi Domini, cui precepit Achaz, ut altare simile altari Damasci faceret, quod minime fecit. Et 
-<app>
-   <rdg wit="#g">Dierum</rdg>
-   <rdg wit="#a">dierum</rdg>
-</app> narrat liber, quod Ezechias filius 
+</app> , quem prophetam fuisse dubium non est, sacerdos fuerit templi Domini, cui precepit Achaz, ut altare simile altari Damasci faceret, quod minime fecit. Et Dierum narrat liber, quod Ezechias filius 
 <app>
    <rdg wit="#g">Achaz</rdg>
    <rdg wit="#a">Achat</rdg>
@@ -1478,8 +1482,12 @@
 <p xml:id="g20.5-20.24">
  Niniues Metropolis fuit Assyriorum, quorum reges Phul, et Thegat Phalassar, et Sennacherib decem tribus ceperant. Scriptum est enim, quod Thegat Phalassar rex Assyriorum sub rege 
 <app>
-   <rdg wit="#g">Achaz ascenderet</rdg>
-   <rdg wit="#a">Achat ascendit</rdg>
+   <rdg wit="#g">Achaz</rdg>
+   <rdg wit="#a">Achat</rdg>
+</app> 
+<app>
+   <rdg wit="#g">ascenderet</rdg>
+   <rdg wit="#a">ascendit</rdg>
 </app> in Damascum, et uastauerit eam, et transtulerit habitationes eius 
 <app>
    <rdg wit="#g">Cirenem</rdg>
@@ -1662,12 +1670,20 @@
 <p xml:id="g21.34-22.6">
  Ioachim filius Iosie annis XI. Post Iosiam regnauit Ioachaz filius eius tribus mensibus, quem Nechaon rex uictum ducens in Egyptum Ioachim constituit regem. Huius tertio anno Nabuchodonosor 
 <app>
-   <rdg wit="#g">capta Ierusalem</rdg>
-   <rdg wit="#a">tapta Iherusalem</rdg>
+   <rdg wit="#g">capta</rdg>
+   <rdg wit="#a">tapta</rdg>
+</app> 
+<app>
+   <rdg wit="#g">Ierusalem</rdg>
+   <rdg wit="#a">Iherusalem</rdg>
 </app> , et plurimis captiuitatis, in quibus erant 
 <app>
    <rdg wit="#g">Danielli</rdg>
-   <rdg wit="#a">Danihel,</rdg>
+   <rdg wit="#a">Danihel</rdg>
+</app> 
+<app>
+   <rdg wit="#g"/>
+   <rdg wit="#a">,</rdg>
 </app> Ananias, Azarias et Misahel, 
 <app>
    <rdg wit="#g">partem</rdg>
@@ -1678,9 +1694,9 @@
    <rdg wit="#a">Babyloniam</rdg>
 </app> transfert. A quarto Ioachim anno 
 <app>
-   <rdg wit="#g">scriptu</rdg>
-   <rdg wit="#a">scriptum</rdg>
-</app> regum Nabuchodonosor computat: quia ex eo non solum Iudeis, et Chaldeis, sed et Assyriis, Egyptiis, Moabitis, aliisque innumeris gentibus cepit regnare Ioachim, qui et Iechonias filius Ioachim mensibus 
+   <rdg wit="#g">scriptu regum</rdg>
+   <rdg wit="#a">scriptum regum</rdg>
+</app> Nabuchodonosor computat: quia ex eo non solum Iudeis, et Chaldeis, sed et Assyriis, Egyptiis, Moabitis, aliisque innumeris gentibus cepit regnare Ioachim, qui et Iechonias filius Ioachim mensibus 
 <app>
    <rdg wit="#g">tribus</rdg>
    <rdg wit="#a">tres</rdg>
@@ -1706,8 +1722,12 @@
    <rdg wit="#a">Babylonis</rdg>
 </app> nono decimo 
 <app>
+   <rdg wit="#g"/>
+   <rdg wit="#a">,</rdg>
+</app> 
+<app>
    <rdg wit="#g">Iude</rdg>
-   <rdg wit="#a">, Iudea</rdg>
+   <rdg wit="#a">Iudea</rdg>
 </app> capta est, in 
 <app>
    <rdg wit="#g">Babiloniam</rdg>
@@ -1774,8 +1794,12 @@
    <rdg wit="#a">Babylonem</rdg>
 </app> ductus ultra non reuersurus. In his tribus captis atque transductis regnum Iuda finitum est. Iechonias non fuit filius, sed nepos Iosie. Ioachim filius Iosie regis crudeliter regnauit, eiusque sepultura nec narratur: habente Scriptura sancta, ut omnes reges mortuos referat, et sepultos, quasi bene fuit eis in presenti et in futuro bene erit. Hunc autem proprie narrat mortuum, et non sepultum: insepultum quidem, hoc est, a bestiis auibusque lacerandum. Hec est 
 <app>
-   <rdg wit="#g">etenim Asini</rdg>
-   <rdg wit="#a">enim asini</rdg>
+   <rdg wit="#g">etenim</rdg>
+   <rdg wit="#a">enim</rdg>
+</app> 
+<app>
+   <rdg wit="#g">Asini</rdg>
+   <rdg wit="#a">asini</rdg>
 </app> sepultura. Hunc itaque per prophetam Dominus arguit superbie, et quod diuitiarum magnitudine 
 <app>
    <rdg wit="#g">abusus</rdg>
@@ -1838,8 +1862,12 @@
    <rdg wit="#a">furiosiorum</rdg>
 </app> gladiis interfecti sunt in circuitu templi, et sancta omnia impiorum manibus perquisita, ac sine more sublata sunt, ut in 
 <app>
-   <rdg wit="#g">Babilonem transferrentur</rdg>
-   <rdg wit="#a">Babylonem transferentur</rdg>
+   <rdg wit="#g">Babilonem</rdg>
+   <rdg wit="#a">Babylonem</rdg>
+</app> 
+<app>
+   <rdg wit="#g">transferrentur</rdg>
+   <rdg wit="#a">transferentur</rdg>
 </app> . 
 <app>
    <rdg wit="#g">Babilon</rdg>
@@ -1866,8 +1894,12 @@
    <rdg wit="#a">constituerant</rdg>
 </app> , eductus itaque de carcere beatus 
 <app>
-   <rdg wit="#g">Iheremias petiit</rdg>
-   <rdg wit="#a">Hieremias petiiit</rdg>
+   <rdg wit="#g">Iheremias</rdg>
+   <rdg wit="#a">Hieremias</rdg>
+</app> 
+<app>
+   <rdg wit="#g">petiit</rdg>
+   <rdg wit="#a">petiiit</rdg>
 </app> ab eis tabernaculum 
 <app>
    <rdg wit="#g">testimoni</rdg>
@@ -1924,11 +1956,11 @@
 <app>
    <rdg wit="#g">quem seruare</rdg>
    <rdg wit="#a">que seruari</rdg>
-</app> cupientes, absconderunt in spelunca: quem post septuaginta annis hi, qui reuersi sunt de captiuitate, requirentes, inuenerunt aquam 
+</app> cupientes, absconderunt in spelunca: quem post septuaginta annis hi, qui reuersi sunt de captiuitate, requirentes, inuenerunt aquam, et accipientes 
 <app>
-   <rdg wit="#g">, et accipientes eam, super holocaustum disperserunt</rdg>
-   <rdg wit="#a"/>
-</app> statim, ignis accensus est 
+   <rdg wit="#g">eam</rdg>
+   <rdg wit="#a">dum</rdg>
+</app> super holocaustum disperserunt statim, ignis accensus est 
 <app>
    <rdg wit="#g">est</rdg>
    <rdg wit="#a">et</rdg>
@@ -1938,8 +1970,12 @@
    <rdg wit="#a">liberauerunt</rdg>
 </app> . Principes uero Nabuchodonosor regis rogauerunt Hieremiam plurimum, ut ueniret 
 <app>
+   <rdg wit="#g"/>
+   <rdg wit="#a">in</rdg>
+</app> 
+<app>
    <rdg wit="#g">Babiloniam</rdg>
-   <rdg wit="#a">in Babyloniam</rdg>
+   <rdg wit="#a">Babyloniam</rdg>
 </app> , quo nolente, quid uellet agere permiserunt ei, et cum omni reuerentia cum donis, et muneribus dimiserunt eum. Sedit itaque sanctus Hieremias in medio eorum, qui remanserant in Masphat: quique iterum non desinentes a prauis et illicitis rebus, 
 <app>
    <rdg wit="#g">abominationes</rdg>
@@ -1954,8 +1990,12 @@
    <rdg wit="#a">contempnendo</rdg>
 </app> . Adiecerunt etiam, ut ipsum Hieremiam pertraherent secum sicut captiuum in Egypto 
 <app>
-   <rdg wit="#g"> </rdg>
-   <rdg wit="#a">, Et quod non fecerunt barbari Babylonis, hoc isti qui proximi uidebantur circa eum crudeliter perpetrauerunt, inuitumque eum in Egypto</rdg>
+   <rdg wit="#g"/>
+   <rdg wit="#a">,</rdg>
+</app> 
+<app>
+   <rdg wit="#g"/>
+   <rdg wit="#a">et quod non fecerunt barbari Babylonis, hoc isti qui proximi uidebantur circa eum crudeliter perpetrauerunt, inuitumque eum in Egypto</rdg>
 </app> secum deduxerunt, et ibi dicitur esse defunctus lapidibus obrutus. 
 </p>
  
@@ -1970,12 +2010,20 @@
    <rdg wit="#a">,</rdg>
 </app> Aggeus, et Zacharias. Hieremias uero et 
 <app>
-   <rdg wit="#g">Ezechiel imminente</rdg>
-   <rdg wit="#a">Iezechiel inminente</rdg>
+   <rdg wit="#g">Ezechiel</rdg>
+   <rdg wit="#a">Iezechiel</rdg>
+</app> 
+<app>
+   <rdg wit="#g">imminente</rdg>
+   <rdg wit="#a">inminente</rdg>
 </app> captiuitate uaticinium texuerunt; sed alter eorum in terra Iuda, alter in Babylone. Post exordium enim uaticinationis Hieremie prophete 
 <app>
-   <rdg wit="#g">Ierusalem trigesimo</rdg>
-   <rdg wit="#a">Hierusalem tricesimo</rdg>
+   <rdg wit="#g">Ierusalem</rdg>
+   <rdg wit="#a">Hierusalem</rdg>
+</app> 
+<app>
+   <rdg wit="#g">trigesimo</rdg>
+   <rdg wit="#a">tricesimo</rdg>
 </app> quinto eius anno 
 <app>
    <rdg wit="#g">Ezechiel</rdg>
@@ -1996,7 +2044,7 @@
 </p>
  
 <p xml:id="g24.16-24.16">
- incipit quinta etas. 
+ Incipit quinta etas. 
 </p>
  
 <p xml:id="g24.17-24.18">
@@ -2086,12 +2134,20 @@
    <rdg wit="#a">Perserum</rdg>
 </app> ad explendum sermonem Domini, quem locutus fuerat per os Hieremie suscitauit Dominus spiritum Ciri regis Persarum, et cetera. Quibus uerbis ostenditur quia uastata 
 <app>
-   <rdg wit="#g">Iudea Chaldei</rdg>
-   <rdg wit="#a">Iudei Chaldea non</rdg>
-</app> , 
+   <rdg wit="#g">Iudea</rdg>
+   <rdg wit="#a">Iudei</rdg>
+</app> 
 <app>
-   <rdg wit="#g">non</rdg>
+   <rdg wit="#g">Chaldei</rdg>
+   <rdg wit="#a">Chaldea</rdg>
+</app> 
+<app>
+   <rdg wit="#g">,</rdg>
    <rdg wit="#a"/>
+</app> non 
+<app>
+   <rdg wit="#g"/>
+   <rdg wit="#a">,</rdg>
 </app> ut 
 <app>
    <rdg wit="#g">Assyrii</rdg>
@@ -2102,8 +2158,12 @@
    <rdg wit="#a">ea</rdg>
 </app> rediere Iudei. Consentit 
 <app>
-   <rdg wit="#g">his Iosepus</rdg>
-   <rdg wit="#a">hic Iosephus</rdg>
+   <rdg wit="#g">his</rdg>
+   <rdg wit="#a">hic</rdg>
+</app> 
+<app>
+   <rdg wit="#g">Iosepus</rdg>
+   <rdg wit="#a">Iosephus</rdg>
 </app> in decimo antiquitatum libro scribens templum, et Hierusalem, et omnem Iudeam LXX annis permansisse desolatam: qui rursus enumerando reges Babylonis (si tamen ille sic scripsit, et non codex fallit mendosus) centum fere annos ab euersa Hierusalem usque ad euersionem regni Chaldeorum facit colligi. 
 <app>
    <rdg wit="#g">Scribit</rdg>
@@ -2126,8 +2186,12 @@
    <rdg wit="#a">transille</rdg>
 </app> imperium, qui cum iam decem et septem regnauerit annis, captam a Ciro Persarum, et Dario Medorum rege Assueri 
 <app>
-   <rdg wit="#g">filiis Babiloniam</rdg>
-   <rdg wit="#a">filio Babylonia</rdg>
+   <rdg wit="#g">filiis</rdg>
+   <rdg wit="#a">filio</rdg>
+</app> 
+<app>
+   <rdg wit="#g">Babiloniam</rdg>
+   <rdg wit="#a">Babylonia</rdg>
 </app> . Item Darius autem Astiagis filius qui 
 <app>
    <rdg wit="#g">Babiloniorum</rdg>
@@ -2178,8 +2242,12 @@
    <rdg wit="#a">cum</rdg>
 </app> Danihel scripturam misticam in pariete legit, et interpretatus est. Quod autem Balthasaris patrem Nabuchodonosor uocat non facit errorem scientibus Sancte Scripture consuetudinem: quia patres omnes proaui uocantur. Balthasar autem Chaldeus rex eadem nocte, qua Danihel arguit eum, interfectus est a Dario rege Medorum, et qui Ciri regis Persarum auunculus fuit, et a 
 <app>
-   <rdg wit="#g">Ciro Persa</rdg>
-   <rdg wit="#a">Cyro Perse</rdg>
+   <rdg wit="#g">Ciro</rdg>
+   <rdg wit="#a">Cyro</rdg>
+</app> 
+<app>
+   <rdg wit="#g">Persa</rdg>
+   <rdg wit="#a">Perse</rdg>
 </app> , que duo regna Ysayas ascensorem bige, cameli, et asini uocat. Darius igitur, quem Artarxersen dicunt 
 <app>
    <rdg wit="#g">Medi</rdg>
@@ -2218,8 +2286,12 @@
    <rdg wit="#a">Hebrorum</rdg>
 </app> captiuitate, quinquaginta ferme hominum milia regredi fecit in Iudeam, restituens eis uasa templi Domini aurea, et argentea quinque milia CD. Qui congregati in Hierusalem mense septimo edificauerunt altare, et a primo die mensis eiusdem ceperunt offerre holocaustum Domino; anno autem secundo aduentus sui, mense secundo templi fundamenta iecerunt anno incensionis iuxta Africanum LXXII iuxta 
 <app>
-   <rdg wit="#g">chronicam Eusebii</rdg>
-   <rdg wit="#a">cronicam Cusebii</rdg>
+   <rdg wit="#g">Chronicam</rdg>
+   <rdg wit="#a">Cronicam</rdg>
+</app> 
+<app>
+   <rdg wit="#g">Eusebii</rdg>
+   <rdg wit="#a">Cusebii</rdg>
 </app> XXXII. Sed, impedientibus Samaritis, intermissum est opus usque ad annum Darii secundum, qui etiam in regno Assueri, et 
 <app>
    <rdg wit="#g">Artaxersis</rdg>
@@ -2232,11 +2304,7 @@
 </p>
  
 <p xml:id="g26.24-26.32">
- Orosius: Anno post urbem 
-<app>
-   <rdg wit="#g">conditam CCLIV</rdg>
-   <rdg wit="#a">conditamCCLIV</rdg>
-</app> . 
+ Orosius: Anno post urbem conditam CCLIV. 
 <app>
    <rdg wit="#g">Bruto</rdg>
    <rdg wit="#a">Brutus</rdg>
