@@ -1097,12 +1097,15 @@ class treeWithAppElements:
             # by that method, so don't set them here.
             # If, instead, there is no @type...
             if 'type' not in a['app'].attrib:
-                # Set @subtype
-                a['app'].set('subtype', a['subtype'])
-                # ...and the corresponding @type derived from DB table
+                # Set the corresponding @type derived from DB table
                 # variant_subtypes
                 my_type = corresponding_type[a['subtype']]
                 a['app'].set('type', my_type)
+                # Set @subtype, unless it's 'generic-orthographic'.
+                # If, instead, subtype='generic-orthographic', the
+                # result will be <app type="orthographic> (no @subtype)
+                if 'subtype' != 'generic-orthographic':
+                    a['app'].set('subtype', a['subtype'])
 
             if debug:
                 print('\n')

@@ -215,6 +215,16 @@ def getDiff(myString1, myString2):
         if letter1 != letter2:
             result1 += letter1
             result2 += letter2
+
+    # Debug 30.03.2020: print out diffs
+    if False:
+        with open('diff.csv', 'a') as OUT:
+            print('I\'m saving diffs in diff.csv', end='. ')
+            # I'm only interested in orthographic  diffs within a word:
+            if (' ' not in myString1.strip() and ' ' not in myString2.strip()):
+                print('%s|%s|%s|%s' % (result1, result2, myString1, myString2),
+                      file=OUT)
+
     return [result1, result2]
 
 
