@@ -43,7 +43,7 @@ if arg == '-m2':
 
 
 # Print reading is OK.
-# Only set type to orthography (app has 2 children)
+# Only set type to orthographic (app has 2 children)
 elif arg == '-o2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
                     'print, ms, type, xmlid) '
@@ -61,12 +61,12 @@ elif arg == '-o2':
             't',     # field 'action' (only change type)
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
-            'o',     # field 'type' (orthography)
+            'o',     # field 'type' (orthographic)
             'all'))  # field 'xmlid' (in all paragraphs)
 
 
 # Print reading is OK.
-# Only set type to orthography and subtype to double
+# Only set type to orthographic and subtype to double
 # (app has 2 children)
 elif arg == '-double2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
@@ -85,13 +85,13 @@ elif arg == '-double2':
             't',     # field 'action' (only change type)
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
-            'o',     # field 'type' (orthography)
+            'o',     # field 'type' (orthograpic)
             'double',  # field 'subtype' (double)
             'all'))  # field 'xmlid' (in all paragraphs)
 
 
 # Print reading is OK.
-# Only set type to orthography and subtype to h
+# Only set type to orthographic and subtype to h
 # (app has 2 children)
 elif arg == '-h2':
     sqlite_query = ('INSERT INTO decisions2 (origin, action, '
@@ -110,7 +110,7 @@ elif arg == '-h2':
             't',     # field 'action' (only change type)
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
-            'o',     # field 'type' (orthography)
+            'o',     # field 'type' (orthograhic)
             'h',  # field 'subtype' (h)
             'all'))  # field 'xmlid' (in all paragraphs)
 
@@ -212,7 +212,7 @@ elif arg == '-mo2':
             'm',   # field 'action' (choose MS reading)
             printrdg,  # field 'print' (print reading)
             msrdg,   # field 'ms' (MS reading)
-            'o',     # field 'type' (orthography)
+            'o',     # field 'type' (orthograhic)
             'all'))  # field 'xmlid' (in all paragraphs)
 
 
