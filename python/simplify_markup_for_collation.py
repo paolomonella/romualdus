@@ -209,14 +209,14 @@ class msTree:
                 e.text = 'ee'
 
     def recapitalize(self):
-        ''' Re-capitalize words included in <rs> or in <hi>.
+        ''' Re-capitalize words included in <rs>, <hi> or <title>.
             I am now using .title(), which transforms 'sancti remigii'
             to 'Sancti Remigii', instead of .capitalize(), as in a previous
             version, which transformed it to 'Sancti remigii'.
             Then, transform text marked as <p type="ghead1"> or "ghead2"
             to all uppercase,
             because it was in G(arufi) head(s) '''
-        for mytagname in ['rs', 'hi']:
+        for mytagname in ['rs', 'hi', 'title']:
             for e in self.tree.findall('.//t:%s' % (mytagname), myconst.ns):
                 # If the content of <rs>/<hi> starts with a text node,
                 # capitalize it
