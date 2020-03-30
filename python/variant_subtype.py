@@ -151,6 +151,15 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
             in myPunctList:
         my_subtype = 'different-punct'
 
+    # E.g.: "id circo" vs "idcirco" (i.e.: the 2 strings are the same,
+    # except for spaces)
+    elif (myString1.strip() != myString2.strip() and
+          myString1.replace(' ', '').strip() ==
+          myString2.replace(' ', '').strip()):
+        my_subtype = 'word-segmentation'
+        if debug:
+            print('Found: «{}» / «{}»'.format(myString1, myString2))
+
     # If first variant is only a punctuation sign and the second variant
     # has a punct plus at least one letter
     elif myString1.strip() in myPunctList \
