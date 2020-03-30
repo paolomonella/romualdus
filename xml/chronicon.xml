@@ -20734,7 +20734,7 @@ Cui papa satis benigne respondit:
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
 </app> Deuotionem tuam, fili 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="ck">
    <lem wit="#b">carissime</lem>
    <rdg wit="#a">karissime</rdg>
 </app>, quam erga Romanam ecclesiam et personam nostram habuisse dinosceris, manifeste recolimus et ardorem fidei tue publice protestamur. Multum nostre parti uester aduentus contulit, multum nostra ecclesia de uestra societate profecit. Et nos quidem, Deo teste, pro utilitate uestra sumus ualde solliciti, et facere que uobis expediant, tenemur obnoxii. Nolumus honorem uestrum minuere 
@@ -20753,16 +20753,12 @@ Tunc Corradus benignam apostolici responsionem considerans, et uoluntatem eius r
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
-</app> Licet, reuerende pater, mihi iniuriosum sit pariter et molestum, ut ecclesiam meam debeam sine culpa dimittere, et locum mei regiminis, nulla offensa interueniente, mutare, tamen quia ad meum spectat officium non que mea sed que 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#b">Iesu Christi</lem>
-   <rdg wit="#a">IesuChristi</rdg>
-</app> sunt querere, nolo ut occasione mei pax inter uos et imperatorem facta remaneat et discordia sepulta resurgat. Pro pace ecclesie conseruanda, pro qua Christus uitam suam perdidit, libenter uolo meum honorem perdere et cum meo 
-<app cert="medium" type="orthographic" subtype="mpn">
+</app> Licet, reuerende pater, mihi iniuriosum sit pariter et molestum, ut ecclesiam meam debeam sine culpa dimittere, et locum mei regiminis, nulla offensa interueniente, mutare, tamen quia ad meum spectat officium non que mea sed que Iesu Christi sunt querere, nolo ut occasione mei pax inter uos et imperatorem facta remaneat et discordia sepulta resurgat. Pro pace ecclesie conseruanda, pro qua Christus uitam suam perdidit, libenter uolo meum honorem perdere et cum meo 
+<app cert="high" type="orthographic" subtype="mpn">
    <lem wit="#b">damno</lem>
    <rdg wit="#a">dampno</rdg>
 </app> utilitati ecclesie prouidere. Et 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">idcirco</lem>
    <rdg wit="#a">iccirco</rdg>
 </app> ut omnis materia discensionis et scandali auferatur e medio, Maguntinum archiepiscopatum in potestate uestra sponte relinquo, et me liberalitati uestre et patrocinio recommendo 
@@ -20774,7 +20770,7 @@ Tunc Corradus benignam apostolici responsionem considerans, et uoluntatem eius r
  
 <p xml:id="g289.8-289.18">
 Quo audito, papa letus effectus, habito cum imperatore consilio, prenominatum Corradum, cardinalatus illi et Sabinensis episcopatus dignitate seruata, in Salseburgensem ecclesiam honorifice fecit eligi. Nam filius regis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b">Bohemie</lem>
    <rdg wit="#a">Boemie</rdg>
 </app>, qui eidem ecclesie preerat, pro eo quod de simonia et quibusdam aliis criminibus coram papa fuisset accusatus, de merito sue cause diffidens, commissam sibi ecclesiam in manu pape spontanea uoluntate remisit. Sicque factum est, quod Alexander papa, sicut uir prouidus et discretus, pro conseruanda pace ecclesie utens dispensatione canonica, Corradum quondam Maguntinum archiepiscopum in Salseburgensi ecclesia sublimauit. Christiano autem cancellario Maguntinam ecclesiam auctoritate apostolica confirmauit, et tam ei quam Philippo Coloniensi archiepiscopo, qui a suis suffraganeis et catholicis fuerant consecrati, recepto ab utroque iuramento obedientie, pallia de more concessit. 
@@ -20782,15 +20778,15 @@ Quo audito, papa letus effectus, habito cum imperatore consilio, prenominatum Co
  
 <p xml:id="g289.19-289.31">
 Alexander autem papa prudentiam et literaturam Romoaldi Salernitani archiepiscopi diligenter attendens, et deuotionem quam erga Romanam ecclesiam semper habuerat recolens, ad petitionem ipsius archiepiscopi, communicato fratrum suorum consilio, ipsi et successoribus eius usum et dignitatem portande crucis per ciuitatem et totam suam parrochiam apostolica auctoritate concessit, et donum, quod exinde Salernitane ecclesie in perpetuum fecerat, sui priuilegii munimine roborauit. Hoc etiam silentio pretereundum non est, quod 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b">schismatici</lem>
    <rdg wit="#a">scismatici</rdg>
 </app>, qui in diuersis ecclesiis Tuscie et Lombardie auctoritate imperiali intrusi fuerant, et quidam dicti cardinales, qui Iohanni de Struma adheserant, audito, quod imperator cum ecclesia et papa Alexandro pacem fecisset, penitentia ducti, 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">Uenetias</lem>
    <rdg wit="#a">Uenecias</rdg>
 </app> festino gressu uenientes, primo 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b">schisma</lem>
    <rdg wit="#a">scisma</rdg>
 </app>, quod defenderant, abiurabant, dehinc per sancta Dei euangelia promittebant, quod de excessu, quem fecerant, domini pape Alexandri mandato starent, et eum et successores eius in catholicum papam reciperent. Et sic ab 
@@ -20802,7 +20798,7 @@ Alexander autem papa prudentiam et literaturam Romoaldi Salernitani archiepiscop
  
 <p xml:id="g290.1-290.32">
 Pace igitur, ut prediximus, inter imperatorem et regem Sicilie facta pariter et iurata, nuntii regis ad imperatoris palatium, ipsum ex parte regia salutaturi iuerunt. Quo cognito, imperator de camera sua egressus, eos, multis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">adstantibus</lem>
    <rdg wit="#a">astantibus</rdg>
 </app>, satis honorifice et benigne suscepit. Cumque Romoaldus Salernitanus archiepiscopus de faldestolio suo surgens, stans loqui uoluisset, imperator eum sedentem loqui precepit. Facto itaque silentio, archiepiscopus sic est exorsus: 
@@ -20822,11 +20818,11 @@ Archiepiscopus uerba finierat. Protinus imperator per Gottifridum cancellarium s
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
 </app> Salutes ex parte illustris regis Sicilie per uos magnificentie nostre transmissas, ea qua decet reuerentia et honore suscipimus, et eidem loco et tempore 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">opportuno</lem>
    <rdg wit="#a">oportuno</rdg>
 </app> rependere multiplices procuramus. Quod autem tam ydoneas et elegantes personas ad pacis nostre colloquium destinauit, nostre excellentie satis gratum residet et acceptum, quia ex legatorum suorum scientia, probitate simul et 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">facetia</lem>
    <rdg wit="#a">facecia</rdg>
 </app>, delegantis domini auctoritatem perpendimus, et a nobis merito in numero summorum principum reputatur, qui talibus et tantis personis preesse dinoscitur. Quod uero significastis, eum erga serenitatem nostram amicam gerere uoluntatem, hoc uerum esse rerum experientia comprobauimus. Nam licet popularis opinio nos ad inuicem esse crederet inimicos, tamen inter nos haberi pacem et concordiam operis exhibitio demonstrauit, quia eum et terram eius numquam offendimus, et nos ab eo in nullo offensos ueraciter profitemur. Et quia ipse pre uniuersis mundi principibus inimicos crucis Christi mari et terra persequitur, et cum hostibus christiane fidei guerram semper et discordiam habere dinoscitur, nos illi, 
@@ -20834,7 +20830,7 @@ Archiepiscopus uerba finierat. Protinus imperator per Gottifridum cancellarium s
    <lem wit="#b">tamquam</lem>
    <rdg wit="#a">tanquam</rdg>
 </app> catholico principi et pacis filio, pacem nostram gratanter offerimus et eum sincere caritatis brachiis amplexamur. Nam in ueritate cognoscimus quod ex hoc mutue dilectionis affectu ecclesiis Dei 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">proueniet</lem>
    <rdg wit="#a">prouenit</rdg>
 </app> non parua utilitas, christianis omnibus et precipue ad Domini sepulchrum euntibus magna securitas, infidelibus autem terror, confusio pariter et egestas 
@@ -20846,7 +20842,7 @@ Archiepiscopus uerba finierat. Protinus imperator per Gottifridum cancellarium s
  
 <p xml:id="g291.13-291.22">
 Quo audito, regis nuntii imperatori de bona uoluntate, quam erga regem se habere dicebat, gratias referentes, accepta ab eo licentia, ad sua hospitia alacres sunt reuersi. Ipsi autem, sicut uiri sapientes et prouidi, metuentes, ne pacis facte memoriam longeuitas temporis aboleret, dederunt studium et operam diligentem, ut forma pacis, que inter imperatorem et regem facta fuerat, imperiali iussione redigeretur in scripturis, ut eam de cetero non posset temporis uetustas destruere, quam imperialis priuilegii scriptura seruaret. Ad petitionem igitur eorum pacis inter imperatorem et regem inite scriptum est priuilegium sigilli aurei impressione munitum. Ut autem prenominati 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">priuilegi</lem>
    <rdg wit="#a">priuilegii</rdg>
 </app> notitiam semper habere possit secutura posteritas, eiusdem priuilegii exemplar huic nostro operi dignum duximus annotare: 
@@ -20861,19 +20857,19 @@ Quo audito, regis nuntii imperatori de bona uoluntate, quam erga regem se habere
    <lem wit="#a #g">firmam</lem>
    <rdg wit="#b">firman</rdg>
 </app> pacem. Et quod per nos uel per quoslibet alios, mari uel terra, uos predictum illustrem regem et heredes uestros aut regnum uestrum et terram dominationis uestre, sicut prescriptum et determinatum est, usque ad quindecim annos non inuademus nec inuadere faciemus, nec uobis aut regno uestro et iam dicte terre dominationis uestre guerram aliquo modo faciemus. Et ut hec omnia suprascripta firmiter et illibata a nobis supradicto Frederico Dei gratia Romanorum imperatore et semper augusto et Heinrico filio nostro rege et heredibus nostris tam uobis supradicto illustri regi Willelmo, quam heredibus uestris et regno uestro et toti terre dominationis uestre attendantur et obseruentur, nos predictus imperator bona fide, sine fraude et malo ingenio, in presentia beatissimi patris nostri pape Alexandri et cardinalium et legatorum uestrorum, Romoaldi uenerabilis Salernitani archiepiscopi et Roggerii egregii comitis Andrie, et principum ac fidelium nostrorum a comite Henrico de Diessa in anima nostra supra sancta Dei euangelia et sanctorum reliquias iurari fecimus, et 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Henricum</lem>
    <rdg wit="#a">Heinricum</rdg>
 </app> filium nostrum per interpositam dignam personam in anima sua id ipsum iurare faciemus usque ad medium futurum Septembrem indictionis undecime. Et principes nostros idem iurare fecimus, uidelicet Christianum Maguntinum archiepiscopum, Arnoldum Treuerensem archiepiscopum, Corradum Guormaciensem electum, Godefridum imperialis aule cancellarium, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">Guorwinum</lem>
    <rdg wit="#a">Guoruuinum</rdg>
 </app> protonotarium, markyonem Theodericum de Lusiz, Florentium comitem 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Holandie</lem>
    <rdg wit="#a">Hollandie</rdg>
 </app>, comitem Dedonem de Groyx, comitem Henricum de Diessa, comitem Roupertum de Durna. Ad huius autem pacti, promissionis et iuramenti nostri et Heinrici regis filii nostri et principum nostrorum memoriam et inuiolabile firmamentum presens priuilegium nostrum per manus Wortwini protonotarii nostri scribi fecimus, et imperiali sigillo nostro aureo sigillatum et predictorum principum iuramento communitum uobis suprascripto illustri regi Willelmo fecimus assignari. Anno dominice incarnationis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="num-word">
    <lem wit="#b">millesimo centesimo</lem>
    <rdg wit="#a">MC</rdg>
 </app> septuagesimo septimo, mense Augusti, decima indictione 
@@ -20893,11 +20889,11 @@ Aduenientibus autem uigiliis Assumptionis beate Uirginis, que eo tempore in die 
    <lem wit="#b">Alamannie</lem>
    <rdg wit="#a">Alammannie</rdg>
 </app>, Lombardie et Tuscie, cum imperatore et duce 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">Uenetie</lem>
    <rdg wit="#a">Uenecie</rdg>
 </app>, cum nuntiis regis Sicilie et magna populi multitudine in ecclesia beati Marci conueniens, 
-<app cert="medium" type="orthographic" subtype="mpn">
+<app cert="high" type="orthographic" subtype="mpn">
    <lem wit="#b">solempne</lem>
    <rdg wit="#a">sollempne</rdg>
 </app> ibidem concilium celebrauit. Dictis itaque orationibus et letaniis et aliis, que de more in concilio sunt dicenda, et longo sermone de pace habito, Alexander papa candelas accensas imperatori et clericis et laycis, qui ibi aderant, dari precepit. Et ipse 
@@ -20909,11 +20905,11 @@ Aduenientibus autem uigiliis Assumptionis beate Uirginis, que eo tempore in die 
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
 </app> Nos ex parte Dei omnipotentis et beate Marie semper uirginis et beatorum apostolorum Petri et Pauli et omnium sanctorum 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">excommunicamus</lem>
    <rdg wit="#a">excomunicamus</rdg>
 </app> et a gremio matris ecclesie separamus omnes personas tam ecclesiasticas quam seculares, quecumque pacem, que inter ecclesiam et imperium modo facta est, et pacem regis Sicilie usque ad annos quindecim, et treuguas Lombardorum usque ad annos sex, aliquo modo disturbare uel impedire presumpserint. Et sicut 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">he</lem>
    <rdg wit="#a">hee</rdg>
 </app> candele extinguuntur, sic eorum anime eterne uisionis lumine et claritate priuentur 
@@ -20941,7 +20937,7 @@ Eo autem die nuntii regis Sicilie, accepta a papa et imperatore licentia, cum ga
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
 </app> dicitur, peruenerunt. Celebrato ibidem festo Uirginis, altero die Adriaticum mare intrantes, aura flante secunda, nono die stante mensis Augusti, sani et incolumes cum omnibus suis Barolum descenderunt. Archiepiscopus itaque et comes Roggerius, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b">communicato</lem>
    <rdg wit="#a">comunicato</rdg>
 </app> consilio, nuntium suum cum litteris in Siciliam direxerunt, modum et ordinem geste pacis regi plenarie significantes. Et hoc facto, comes Andriam rediit, archiepiscopus autem Salernum uenit. Rex uero ex tenore litterarum pacem factam et iuratam esse cognoscens, letatus est ualde et per litteras suas archiepiscopo et comiti dedit in mandatis, ut ad eum festino gressu in Siciliam properarent. Sicque factum est, quod archiepiscopus et comes sexto die intrante mensis Nouembris Panormum ingressi, a dominis et familiaribus curie et reliquis magnatibus honorifice sunt 
@@ -20957,15 +20953,19 @@ Hec autem omnia, que prediximus, ita gesta fuisse, nulli dubitationis uel incred
  
 <p xml:id="g294.3-294.14">
 Interea dum imperator per totum mensem Augusti et aliquam partem Septembris esset 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#b">Uenetiis demoratus</lem>
-   <rdg wit="#a">Ueneciis demoraturus</rdg>
+<app cert="high" type="orthographic" subtype="tc">
+   <lem wit="#b">Uenetiis</lem>
+   <rdg wit="#a">Ueneciis</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b">demoratus</lem>
+   <rdg wit="#a">demoraturus</rdg>
 </app>, accepta a papa licentia, tertio decimo die eiusdem mensis a 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">Uenetiis</lem>
    <rdg wit="#a">Ueneciis</rdg>
 </app> recedens Rauennam uenit, per uallem Spolitinam in 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Tusciam</lem>
    <rdg wit="#a">Tuscia</rdg>
 </app> descensurus. Dominus autem papa omnibus, que in partibus illis facienda erant 
@@ -20973,11 +20973,11 @@ Interea dum imperator per totum mensem Augusti et aliquam partem Septembris esse
    <lem wit="#a"/>
    <rdg wit="#b">,</rdg>
 </app> rite dispositis, in mense Octubri cum quibusdam 
-<app cert="medium" type="substantial" subtype="missing-in-print">
-   <lem wit="#b"> </lem>
-   <rdg wit="#a">de</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a #g">de</lem>
+   <rdg wit="#b"> </rdg>
 </app> cardinalibus a 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">Uenetiis</lem>
    <rdg wit="#a">Ueneciis</rdg>
 </app> mouens, cum 
@@ -20993,27 +20993,23 @@ Interea dum imperator per totum mensem Augusti et aliquam partem Septembris esse
  
 <p xml:id="g294.15-194.17">
 Anno dominice incarnationis 
-<app cert="medium" type="substantial" subtype="num-num">
-   <lem wit="#b">M</lem>
+<app cert="high" type="orthography">
+   <lem wit="#b">M.C.</lem>
    <rdg wit="#a">MC</rdg>
-</app>. 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
-   <lem wit="#b">C.</lem>
-   <rdg wit="#a"/>
 </app> septuagesimo octauo, quinta die intrante mensis Martii, luna passa est eclisin in signo uirginis et incepit a fine prime hore et durauit usque ad principium quarte et obscurata est tota minus quarta. 
 </p>
  
 <p xml:id="g294.18-295.5">
 Comes autem Roggerius de Andria iuxta mandatum regium usque in carnis leuamen Panormum imperatoris nuntios expectauit. Quibus moram facientibus, accepta a rege licentia, in Apuliam rediit. Salernitanus archiepiscopus, precipiente rege, usque in mediam quadragesimam Panormi est demoratus. Cumque imperatoris nuntii iter suum differrent, simili modo impetrata licentia ad ecclesiam suam feliciter est reuersus. Papa uero Alexander aliquantis diebus apud Anagniam demoratus, inuitantibus eum Romanis, cum summo honore et gloria in festo beati Gregorii Urbem feliciter est ingressus, in qua iuxta morem Romanorum pontificum in diuersis ecclesiis, secundum stadia ab antiquo disposita, processionaliter et pompose procedens, missarum officia 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="mpn">
    <lem wit="#b">solempniter</lem>
    <rdg wit="#a">sollempniter</rdg>
 </app> celebrauit. Imperator uero a Rauenna usque in uallem Spolitinam descendens, per Tusciam et Ianuam usque in Lombardiam rediit, Maguntino archiepiscopo circa partes Urbis ad pape Alexandri obsequium derelicto. Cum autem prenominatus imperator in partibus Taurini in estate aliquanto fuisset tempore demoratus et cum Lombardis pacem pro uelle suo componere non 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">potuisset</lem>
    <rdg wit="#a">potuisse</rdg>
 </app>, cum suis in 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Alamanniam</lem>
    <rdg wit="#a">Alammannia</rdg>
 </app> rediit. 
@@ -21021,15 +21017,15 @@ Comes autem Roggerius de Andria iuxta mandatum regium usque in carnis leuamen Pa
  
 <p xml:id="g295.6-295.19">
 Iohannes uero de Struma, qui a suis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="double">
    <lem wit="#b">Callistus</lem>
    <rdg wit="#a">Calistus</rdg>
 </app> appellatus est, Alexandrum papam cum imperatore audiens concordatum, timore correptus, Biteruum deserens, prefecti consilio et auxilio Albanum montem intrauit. Quem Iohannes eiusdem castri dominus satis honeste recepit, credens se pro eo ab Alexandro papa pecuniam non modicam recepturum. Quo cognito, Maguntinus archiepiscopus idem castrum obsedit, uineas eius incidit et segetes deuastauit, et militum ac peditum circa ipsum custodia derelicta, Biteruum adiit, et populum eiusdem ciuitatis in manu sua pro parte Alexandri pape recepit. Nobiles uero eiusdem urbis, diuisi a populo, noluerunt pape subire dominium; sed adherentes Corrado filio markyonis de Monteferrato, diebus singulis Maguntinum archiepiscopum et populum impugnabant. Cumque eis resistere non ualerent, prefecti consilio Romani populi et senatorum auxilium postularunt. Romani uero more suo fidem apostolicis non seruantes, Alexandro papa dissuadente pariter et uetante, congregata militum et peditum multitudine Biteruum perrexerunt, ut eiusdem ciuitatis nobiles uiriliter 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">adiuuarent</lem>
    <rdg wit="#a">adiuuaret</rdg>
 </app>, Maguntinum archiepiscopum et 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#b">Biteruenses</lem>
    <rdg wit="#a">Biteruensium</rdg>
 </app> pro uiribus impugnarent. 
@@ -21045,11 +21041,11 @@ Alexander autem papa, hoc cognito, sicut uir religiosus et sanctus, metuens ne s
  
 <p xml:id="g295.27-295.34">
 Cum autem papa Alexander Rome pene usque ad medietatem Augusti demoratus fuisset, calorem aeris et distemperantiam metuens, Urbem cum suis cardinalibus egressus, Tusculanum uenit. Considerans uero quod occasione scismatis, quod, peccatis exigentibus, decem et nouem annis perdurauerat, multa mala in Dei ecclesia prouenissent, que correctione canonica indigerent, habito fratrum suorum consilio, 
-<app cert="medium" type="orthographic" subtype="case">
+<app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Orientis</lem>
    <rdg wit="#b #a">orientis</rdg>
 </app> et 
-<app cert="medium" type="orthographic" subtype="case">
+<app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Occidentis</lem>
    <rdg wit="#b #a">occidentis</rdg>
 </app> et totius Italie episcopos conuocauit, mandans eis per nuntios et litteras et apostolica auctoritate precipiens, ut in prima dominica quadragesime, in qua cantatur 
@@ -21065,7 +21061,7 @@ Cum autem papa Alexander Rome pene usque ad medietatem Augusti demoratus fuisset
  
 <p xml:id="g295.35-296.26">
 Imperator uero Fredericus, sicut cum Romoaldo Salernitano archiepiscopo et Roggerio comite Andrie apud 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">Uenetias</lem>
    <rdg wit="#a">Uenecias</rdg>
 </app> condixerat, nuntios suos, Hugolinum scilicet Boni comitis et Rodegarium magistrum camerarium suum pro recipiendis iuramentis de confirmanda pace ad regem Willelmum in Siciliam misit. Quos rex, sicut decuit, honorifice et honeste suscepit, et eis presentibus, comitem Roggerium de Auellino in anima sua iurare fecit, quod ipse et totum regnum eius imperatori Frederico et uniuerso eius imperio ueram et firmam pacem usque ad annos quindecim obseruaret, et undecim de principibus suis id ipsum iurare fecit, et priuilegium de confirmatione pacis iussit conscribi et bulla aurea insignitum eisdem fecit nuntiis assignari. Qui, accepta a rege licentia, reuersi sunt, quodam regis armigero eos, ut moris est, usque ad fines regni deducente. Cumque ad castrum quoddam, quod Lacusniger dicitur, peruenissent, inter rusticos eiusdem castri et regis armigerum rixa 
@@ -21073,11 +21069,11 @@ Imperator uero Fredericus, sicut cum Romoaldo Salernitano archiepiscopo et Rogge
    <lem wit="#b">exorta</lem>
    <rdg wit="#a">exhorta</rdg>
 </app> est. Cumque regis armiger rusticos metuens, ad nuntiorum 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">hospitium</lem>
    <rdg wit="#a">hospicium</rdg>
 </app> se contulisset, rustici, utpote superbi et temerarii, domum in qua erant nuntii, cum lapidibus sunt aggressi, et eos male et inhoneste tractantes, scrinium Hugolini Boni comitis fregerunt, et ex eo coppam unam argenteam et priuilegium, quod rex imperatori fecerat, asportarunt. Nuntii uero, recepta hac iniuria, indignati Salernum uenerunt, et Gualterio ammirato et archiepiscopo totius geste rei seriem exposuerunt. Quod cum ad regis Willelmi notitiam peruenisset, indignatus plurimum et turbatus, Dauid hostiarium suum cum litteris suis ad iustitiarios regionis illius transmisit, precipiens eis, ut huius mali factores et complices diligenter inquirerent, et inuentos cruce suspenderent. Cuius preceptum statim est executioni mandatum; nam uenientes iustitiarii cum hostiario regis, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">quoscumque</lem>
    <rdg wit="#a">quoscunque</rdg>
 </app> potuerunt de malefactoribus inuenire ceperunt, et iuxta mandatum regium quosdam ex eis apud Barolum, quosdam apud Troiam, unum Salerni, alium Capue, et duos apud Sanctum germanum suspendi fecerunt, ut uniuersus mundus euidenter agnosceret, quod rex 
@@ -21101,7 +21097,7 @@ Anno dominice incarnationis MCLXXVIII mense Augusti, undecima indictione, quarto
    <lem wit="#a"/>
    <rdg wit="#b">"</rdg>
 </app> Domine uenerande pater, peccatum meum manifeste confiteor, et me auctoritate imperiali contra Deum et sanctam ecclesiam et uos egisse cognosco. Sed nunc reuersus ad cor, delictum meum recolo et ueniam a uestra pietate deposco, omnem heresim et 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography" subtype="h">
    <lem wit="#b">schisma</lem>
    <rdg wit="#a">scisma</rdg>
 </app> abiuro, et uos in dominum et uniuersalem patrem totius ecclesie deuote recipio 
@@ -21121,7 +21117,7 @@ Anno dominice incarnationis MCLXXVIII mense Augusti, undecima indictione, quarto
  
 <p xml:id="g297.19-297.21">
 Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noctem passa est 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthography">
    <lem wit="#b">eclypsim</lem>
    <rdg wit="#a">eclypsin</rdg>
 </app>, et pene in tertia parte sui obscurata est. Tertio decimo uero die intrantis mensis Septembris, indictione XII, sol in signo uirginis circa horam… 

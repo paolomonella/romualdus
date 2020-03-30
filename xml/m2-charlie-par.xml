@@ -4668,11 +4668,7 @@
 <app>
    <rdg wit="#b">"</rdg>
    <rdg wit="#a"/>
-</app> Licet, reuerende pater, mihi iniuriosum sit pariter et molestum, ut ecclesiam meam debeam sine culpa dimittere, et locum mei regiminis, nulla offensa interueniente, mutare, tamen quia ad meum spectat officium non que mea sed que 
-<app>
-   <rdg wit="#b">Iesu Christi</rdg>
-   <rdg wit="#a">IesuChristi</rdg>
-</app> sunt querere, nolo ut occasione mei pax inter uos et imperatorem facta remaneat et discordia sepulta resurgat. Pro pace ecclesie conseruanda, pro qua Christus uitam suam perdidit, libenter uolo meum honorem perdere et cum meo 
+</app> Licet, reuerende pater, mihi iniuriosum sit pariter et molestum, ut ecclesiam meam debeam sine culpa dimittere, et locum mei regiminis, nulla offensa interueniente, mutare, tamen quia ad meum spectat officium non que mea sed que Iesu Christi sunt querere, nolo ut occasione mei pax inter uos et imperatorem facta remaneat et discordia sepulta resurgat. Pro pace ecclesie conseruanda, pro qua Christus uitam suam perdidit, libenter uolo meum honorem perdere et cum meo 
 <app>
    <rdg wit="#b">damno</rdg>
    <rdg wit="#a">dampno</rdg>
@@ -4874,8 +4870,12 @@
 <p xml:id="g294.3-294.14">
  Interea dum imperator per totum mensem Augusti et aliquam partem Septembris esset 
 <app>
-   <rdg wit="#b">Uenetiis demoratus</rdg>
-   <rdg wit="#a">Ueneciis demoraturus</rdg>
+   <rdg wit="#b">Uenetiis</rdg>
+   <rdg wit="#a">Ueneciis</rdg>
+</app> 
+<app>
+   <rdg wit="#b">demoratus</rdg>
+   <rdg wit="#a">demoraturus</rdg>
 </app> , accepta a papa licentia, tertio decimo die eiusdem mensis a 
 <app>
    <rdg wit="#b">Uenetiis</rdg>
@@ -4891,7 +4891,7 @@
 </app> rite dispositis, in mense Octubri cum quibusdam 
 <app>
    <rdg wit="#b"> </rdg>
-   <rdg wit="#a">de</rdg>
+   <rdg wit="#a #g">de</rdg>
 </app> cardinalibus a 
 <app>
    <rdg wit="#b">Uenetiis</rdg>
@@ -4910,12 +4910,8 @@
 <p xml:id="g294.15-194.17">
  Anno dominice incarnationis 
 <app>
-   <rdg wit="#b">M</rdg>
+   <rdg wit="#b">M.C.</rdg>
    <rdg wit="#a">MC</rdg>
-</app> . 
-<app>
-   <rdg wit="#b">C.</rdg>
-   <rdg wit="#a"/>
 </app> septuagesimo octauo, quinta die intrante mensis Martii, luna passa est eclisin in signo uirginis et incepit a fine prime hore et durauit usque ad principium quarte et obscurata est tota minus quarta. 
 </p>
  
