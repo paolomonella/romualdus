@@ -173,6 +173,8 @@ class msTree:
                 if my_xmlid is not None and 'add100' in my_xmlid:
                     pass
                 # In all other cases, delete the <add>
+                # ISSUE: with plain 'remove', the tail of the element
+                # is also removed
                 else:
                     e.getparent().remove(e)
         for e in self.tree.findall('.//t:%s' % ('del'), myconst.ns):
