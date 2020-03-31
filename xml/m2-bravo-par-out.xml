@@ -336,7 +336,7 @@ Anno dominice incarnationis CMLXXXVII. Sarraceni depopulati sunt Calabriam, a qu
  
 <p xml:id="g170.17-171.1">
 Anno dominice incarnationis CMXC stella a parte 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="mn">
    <lem wit="#b #o">septentrionis</lem>
    <rdg wit="#a">septemtrionis</rdg>
 </app> apparuit habens splendorem qui 
@@ -384,11 +384,11 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#b #a">ecclesias</lem>
    <rdg wit="#o">eclesias</rdg>
 </app> subuertit. Ciuitas quoque Frequentus pene media cecidit, ciuitatem uero 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="mn">
    <lem wit="#b #a">Consanam</lem>
    <rdg wit="#o">Comsanam</rdg>
 </app> prope mediam cum episcopo 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="pb">
    <lem wit="#b #a">subuertit</lem>
    <rdg wit="#o">supuertit</rdg>
 </app>, multosque homines 
@@ -396,7 +396,7 @@ Anno dominice incarnationis CMXC stella a parte
    <lem wit="#b #a">oppressit</lem>
    <rdg wit="#o">oppresit</rdg>
 </app>. Ronsem totam cum eius hominibus 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="pb">
    <lem wit="#b #a">submersit</lem>
    <rdg wit="#o">supmersit</rdg>
 </app>. 
@@ -733,7 +733,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">indictione XIV</lem>
    <rdg wit="#o">{Gap in the MS: 2 missing word}</rdg>
 </app> fames ualida Italiam 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="pb">
    <lem wit="#b #a">optinuit</lem>
    <rdg wit="#o">obtinuit</rdg>
 </app>. Quo tempore Mel catipanus cum 
@@ -762,7 +762,7 @@ Anno
    <lem wit="#b #a">cathedram</lem>
    <rdg wit="#o">chatedram</rdg>
 </app>. Eodem anno Henricus 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b #a">Alamannorum</lem>
    <rdg wit="#o">Alamanorum</rdg>
 </app> rex Romam uenit et ab eodem 
@@ -1211,7 +1211,7 @@ Anno dominice incarnationis
    <lem wit="#b #a">amnem</lem>
    <rdg wit="#o">aminem</rdg>
 </app> et Oliuentem, et 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b #a">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> uictores extiterunt. In ipso quidem prelio fuit Drogo 
@@ -1656,15 +1656,15 @@ Anno ab incarnatione Domini
    <lem wit="#b #o">bello</lem>
    <rdg wit="#a2">prelio</rdg>
 </app> 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b #a2">Normanni</lem>
    <rdg wit="#o">Normani</rdg>
 </app> totum 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b #a2">Alamannorum</lem>
    <rdg wit="#o">Alamanorum</rdg>
 </app> exercitum in ore gladii 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b #a2">percusserunt</lem>
    <rdg wit="#o">percuserunt</rdg>
 </app>. In ipso quidem belli apparatu defecerunt 
@@ -1708,7 +1708,7 @@ Anno ab incarnatione Domini
    <lem wit="#a2 #o"></lem>
    <rdg wit="#b">"</rdg>
 </app> neque hoc illi 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b #a2">permissum</lem>
    <rdg wit="#o">permisum</rdg>
 </app> fuerat a Domino qui pati uenerat, suosque ut ab aliis magis paterentur quam ut alios persequerentur 
@@ -1900,7 +1900,7 @@ Anno dominice incarnationis MLVII indictione
    <lem wit="#b #a2">Normannorum</lem>
    <rdg wit="#o"></rdg>
 </app> diem clausit extremum, reliquens sibi 
-<app cert="high" type="orthographic">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#b #a2">successorem</lem>
    <rdg wit="#o">succesorem</rdg>
 </app> Bagelardum filium eius militem 
