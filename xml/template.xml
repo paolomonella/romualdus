@@ -5320,11 +5320,15 @@ Anno ab incarnatione Domini LXXI. Anno ab urbe condita DCCCXXIV. Galba apud
  
 <p xml:id="g52.19-52.27">
 Anno dominice incarnationis LXXII et anno ab urbe condita DCCCXXV. Uespasianus huic successit. Hic apud Iudeam Palestine imperator ab exercitu appellatus et bellum Tito filio commendans, ipse Romam per Alexandriam imperator proficiscitur, qui secundo imperii eius anno Iudee regnum subuertit templumque solo strauit, post annos prime hedificationis MLXXXIX. Consumatumque hoc bellum annis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial" subtype="num-num">
    <lem wit="#g">IV</lem>
-   <rdg wit="#a">III,</rdg>
+   <rdg wit="#a">III</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> duobus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">,</lem>
    <rdg wit="#a">quidem iuuente Nerone et duobus</rdg>
 </app> aliis postea. Uespasianus autem obscure quidem natus, sed optimis comparatus, priuata uita illustris, qui inter alia magnorum opera, in priuata adhuc uita in Germaniam, ac deinde in 
@@ -5332,7 +5336,7 @@ Anno dominice incarnationis LXXII et anno ab urbe condita DCCCXXV. Uespasianus h
    <lem wit="#g">Britanniam</lem>
    <rdg wit="#a">Brittanniam</rdg>
 </app> a Claudio missus, tricies et bis cum hoste 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">conflixit</lem>
    <rdg wit="#a">conflexit</rdg>
 </app>: duas ualidissimas gentes, uiginti oppida, insulam Uectam Britannie proximam Romano adiecit imperio. 
