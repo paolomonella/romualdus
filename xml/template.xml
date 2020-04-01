@@ -5169,13 +5169,13 @@ Iste primus Rome Christianos suppliciis et mortibus affecit, ac per omnes
 </app> et secundi aduentus Domini nostri Iesu Christi, et ordinationes celebrauit per mensem 
 <app cert="high" type="substantial">
    <lem wit="#g">decembris</lem>
-   <rdg wit="#a">December</rdg>
+   <rdg wit="#a">december</rdg>
 </app>, quique uno die cum beato Paulo magistro gentium martyrio coronatur, post passionem Domini anno XXXVIII. Marcus autem obiit Alexandrie VIII Neronis anno. 
 </p>
  
 <p xml:id="g51.6-51.10">
 Orosius: Nero postquam 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Galbam</lem>
    <rdg wit="#a">Galbani</rdg>
 </app> in 
@@ -5183,7 +5183,7 @@ Orosius: Nero postquam
    <lem wit="#g">Hyspania</lem>
    <rdg wit="#a">Hispania</rdg>
 </app> imperatorem creatum ab exercitu cognouit, totus animo ac spe concidit. Cumque incredibilia perturbande, immo subruende reipublice mala moliretur, hostis a senatu 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#g">pronunciatus</lem>
    <rdg wit="#a">pronuntiatus</rdg>
 </app> et ignominiosissime a palatio fugiens 
@@ -5194,12 +5194,12 @@ Orosius: Nero postquam
 </p>
  
 <p xml:id="g51.11-51.17">
-Hieronymus: At uero beatus Clemens Spiritu sancto plenus, metuens, ne hec apostolica ordinatio posteris temporibus transiret in uitium, dum 
-<app cert="medium" type="unknown" subtype="unknown">
+Hieronymus: At uero beatus Clemens Spiritu Sancto plenus, metuens, ne hec apostolica ordinatio posteris temporibus transiret in uitium, dum 
+<app cert="high" type="substantial">
    <lem wit="#g">quidem</lem>
    <rdg wit="#a">quidam</rdg>
 </app> hereditarium munus putantes, munus de Dei 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">cogitarent</lem>
    <rdg wit="#a">cogitaret</rdg>
 </app> electione, Linum 
@@ -5207,9 +5207,13 @@ Hieronymus: At uero beatus Clemens Spiritu sancto plenus, metuens, ne hec aposto
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et Cletum priores sibi in episcopatu ante se coegit pontificari. Et sic Clemens primus est per Petri electionem, tertius uero per gradum. Linus itaque natione Tuscus, patre 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Herculano</lem>
-   <rdg wit="#a">Erculano,</rdg>
+   <rdg wit="#a">Erculano</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> sedit annis XI. Hic ex precepto beati Petri constituit 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -5231,75 +5235,84 @@ Anno ab incarnatione Domini LXXI. Anno ab urbe condita DCCCXXIV. Galba apud
    <lem wit="#a">,</lem>
    <rdg wit="#g"> </rdg>
 </app> sepe proconsul: frequenter dux grauissimis bellis. Qui mox ut Neronis mortem comperiens, Romam uenit, cumque omnes auaritia 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">, segnitieque</lem>
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
+</app> 
+<app cert="high" type="orthographic" subtype="tc">
+   <lem wit="#g">segnitieque</lem>
    <rdg wit="#a">segnicieque</rdg>
 </app> offenderet, et qui bonis 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#g">initiis</lem>
    <rdg wit="#a">iniciis</rdg>
 </app> ad seueritatem propensior rueret; insidiis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Othonis</lem>
    <rdg wit="#a">Ottonis</rdg>
 </app> in foro Rome iugulatus est, imperii sui mense septimo, anno uero etatis sue LXXIII. Quo occiso simul cum Pisone nobili industrioque adoloscente, quem sibi in filium atque in regnum adoptauerat, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Otho</lem>
    <rdg wit="#a">Otto</rdg>
 </app> Rome, Uitellius in Germania, Uespasianus in Syria imperia rapuerunt. Igitur 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Otho</lem>
    <rdg wit="#a">Otto</rdg>
 </app> materno genere nobilior, quam paterno, neutro tamen obscuro, in priuata uita mollis et Neronis familiaris, cum inter tumultus cedesque inuasisset imperium, bellum ciuile contra Uitellium molitus, cum tribus primum leuibus preliis, hoc est uno ad Alpes, alio circa Placentiam, tertio circa locum, quem 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Castoris</lem>
    <rdg wit="#a">Castores</rdg>
 </app> uocant, contra 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Uitellianos</lem>
    <rdg wit="#a">Uitellinos</rdg>
 </app> duces congressus uictor extitisset, quarto apud 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Bebriacum</lem>
    <rdg wit="#a">Periacum</rdg>
 </app> prelio, cum animaduertisset suos uinci, quamuis ingentes copias ad bellum haberet, sponte sese interfecit; petentibus militibus, ne tam cito de belli desperaret euentu. Obiit autem 
-<app cert="medium" type="substantial" subtype="num-num">
+<app cert="high" type="substantial" subtype="num-num">
    <lem wit="#g">XXXVIII</lem>
    <rdg wit="#a">XXXIX</rdg>
 </app> etatis sue anno, imperii uero mense tertio. Uitellius familia honorata magis, quam nobili ortus; nam pater eius non admodum clare natus: tres tamen ordinarios gesserat consulatus, uictor Romam ueniens imperio potitus est. Ubi cum multa crudeliter ac nequiter ageret, graui seuitia notabilis, incredibili etiam ingluuie, ac uoracitatis appetitu: quippe de die in diem, sepe quarto uel quinto feratur epulatus. Notissima certe 
-<app cert="medium" type="substantial" subtype="missing-in-print">
-   <lem wit="#g"> </lem>
-   <rdg wit="#a">in cena</rdg>
-</app> memorie 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
-   <lem wit="#g">cena in</lem>
-   <rdg wit="#a"></rdg>
-</app> mandata est, in qua super ceteros sumptus duo milia piscium, et septem milia auium apposita traduntur postquam de Uespasiano comperit, primum deponere molitus est imperium, postea a quibusdam animatus, Sabinum Uespasiani fratrem nichil dum mali suspicantem, cum ceteris Flauianis in Capitolium 
-<app cert="medium" type="orthographic" subtype="mn">
+<app cert="high" type="substantial">
+   <lem resp="#pm">cena memorie</lem>
+   <rdg wit="#g">memorie cena in</rdg>
+   <rdg wit="#a">in cena memorie</rdg>
+</app>  mandata est, in qua super ceteros sumptus duo milia piscium, et septem milia auium apposita traduntur postquam de Uespasiano comperit, primum deponere molitus est imperium, postea a quibusdam animatus, Sabinum Uespasiani fratrem nichil dum mali suspicantem, cum ceteris Flauianis in Capitolium 
+<app cert="high" type="orthographic" subtype="mn">
    <lem wit="#g">compulit</lem>
    <rdg wit="#a">conpulit</rdg>
 </app>, succensoque templo et mixta simul flamma ruinaque omnes in unum pariter 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">interitum</lem>
    <rdg wit="#a">interitu</rdg>
 </app> ac 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">tumulum</lem>
    <rdg wit="#a">tumulo</rdg>
 </app> dedit. Post deficiente in Uespesiani nomen exercitu suo destitutus, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">appropinquantibusque</lem>
    <rdg wit="#a">appropinquantibus</rdg>
 </app> iam hostibus, trepidus cum se in 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">quandam</lem>
    <rdg wit="#a">quadam</rdg>
 </app> proximam palatio cellulam contruxisset, turpissime inde protractus, per uiam sacram nudus duceretur, passim fimum in os eius coniectantibus, in forum deductus, octauo, quo regnum presumpserat, mense, 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">apud Gemonias scalas</lem>
-   <rdg wit="#a">aput Germanias scolas</rdg>
+<app cert="high" type="orthographic">
+   <lem wit="#g">apud</lem>
+   <rdg wit="#a">aput</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#g">Gemonias</lem>
+   <rdg wit="#a">Germanias</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#g">scalas</lem>
+   <rdg wit="#a">scolas</rdg>
 </app> minutissimorum ictuum 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic">
    <lem wit="#g">crebis</lem>
    <rdg wit="#a">crebris</rdg>
 </app> compunctionibus excarnificatus, ac deinde unco tractus et in Tiberim mersus, etiam communi caruit sepultura. 
