@@ -16,9 +16,14 @@ variant_subtypes = my_database_import.import_table(
     dbpath,
     'romualdus.sqlite3',
     'diff')
+
 diff_subtypes = [v for v in variant_subtypes
                  if (v['diff1'] is not None and
                      v['diff2'] is not None)]
+
+one_char_diff_subtypes = [v for v in diff_subtypes
+                          if (len(v['diff1']) == 1 and
+                              len(v['diff2']) == 1)]
 
 #######################
 # All other functions #
@@ -269,6 +274,49 @@ def getVariantSubTypeBasedOnDiff(myDiffList, myString1, myString2):
     return(my_subtype)
 
 
+def getVariantSubTypeBasedOnSetDifferenceDiff(myString1, myString2):
+    ''' Other way to detect differences, based on
+        https://www.geeksforgeeks.org/python-set-difference/
+        Warning: it will yield false positives with anagrams.  Also, it
+        won't detect case 'mana'/'mama' because there's another 'm'.
+        Generally speaking, this additional function is only really
+        good at detecting extra 'h' diffs ('cora'/'chora) '''
+
+    my_subtype = 'unknown'
+
+    set1 = set(myString1)
+    set2 = set(myString2)
+    diff1 = set1.difference(set2)
+    diff2 = set2.difference(set1)
+
+    # cora / chora, subtype 'h'
+    if (diff1 == set() and diff2 == {'h'} or
+            diff1 == {'h'} and diff2 == set()):
+        my_subtype = 'h'
+
+    for row in one_char_diff_subtypes:
+        char1 = row['diff1']
+        char2 = row['diff2']
+        db_table_subtype = row['subtype']
+        ''' With len(), I'm only considering words of the same
+            length. Also, I'm excluding cases in which there is a space,
+            i.e. longer phrases (e.g. "uniuersam Uenetiarum/uniuersas
+            Ueneciarum") to reduce false positives '''
+        if (len(myString1) == len(myString2) and
+            ' ' not in myString1 and ' ' not in myString2 and
+            (diff1 == {char1} and diff2 == {char2} or
+             diff1 == {char2} and diff2 == {char1})):
+            my_subtype = db_table_subtype
+
+    if debug:
+        if my_subtype != 'unknown' and my_subtype != 'h':
+            print(('[getVariantSubTypeBasedOnSetDifferenceDiff]'
+                  'Found type «{}» with strings «{}/{}»').format(
+                my_subtype, myString1, myString2))
+
+    return my_subtype
+
+
 def variantComparison(myString1, myString2):
     ''' Compare two strings and return the differences. Example:
         "sillaba" vs "syllaba".
@@ -283,7 +331,7 @@ def variantComparison(myString1, myString2):
     '''
 
     myDiff = getDiff(myString1, myString2)
-
+    ''' Old code:
     if getVariantSubTypeBasedOnWholeVariant(myString1,
                                             myString2) != 'unknown':
         # Function getVariantSubTypeBasedOnWholeVariant
@@ -291,12 +339,26 @@ def variantComparison(myString1, myString2):
         # doesn't detect a variant subtype
         myVariantSubType = getVariantSubTypeBasedOnWholeVariant(
             myString1, myString2)
-    else:
+            '''
+    # Function getVariantSubTypeBasedOnWholeVariant returns 'unknown' if it
+    # doesn't detect a variant subtype
+    myVariantSubType = getVariantSubTypeBasedOnWholeVariant(
+        myString1, myString2)
+
+    if myVariantSubType == 'unknown':
         ''' If function getVariantSubTypeBasedOnWholeVariant doesn't detect
         a variant subtype, try detecting one based on diff:
         print('Diffs: «%s» -- Strings: «%s» / «%s»'   %
         (myDiff, myString1, myString1)  )'''
         myVariantSubType = getVariantSubTypeBasedOnDiff(
             myDiff, myString1, myString2)
+        pass
+
+    if myVariantSubType == 'unknown':
+        ''' If also function getVariantSubTypeBasedOnDiff doesn't detect
+        a variant subtype, try detecting one based on another
+        diffing method: '''
+        myVariantSubType = getVariantSubTypeBasedOnSetDifferenceDiff(
+            myString1, myString2)
 
     return({'r1': myDiff[0], 'r2': myDiff[1], 'subtype': myVariantSubType})
