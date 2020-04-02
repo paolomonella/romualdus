@@ -5704,11 +5704,19 @@
 <app>
    <rdg wit="#g">mare</rdg>
    <rdg wit="#a">Mare</rdg>
-</app> rubrum accessit. Arabiam postea in prouincie formam redegit. In 
+</app> 
+<app>
+   <rdg wit="#g">rubrum</rdg>
+   <rdg wit="#a">Rubrum</rdg>
+</app> accessit. Arabiam postea in prouincie formam redegit. In 
 <app>
    <rdg wit="#g">mari</rdg>
    <rdg wit="#a">Mari</rdg>
-</app> rubro 
+</app> 
+<app>
+   <rdg wit="#g">rubro</rdg>
+   <rdg wit="#a">Rubro</rdg>
+</app> 
 <app>
    <rdg wit="#g">classem</rdg>
    <rdg wit="#a">clasem</rdg>
@@ -5795,7 +5803,7 @@
 </app> . Et hic martyrio coronatus, et septimo ab urbe miliario uia Numentana sepelitur, 
 <app>
    <rdg wit="#g"> </rdg>
-   <rdg wit="#a">Et</rdg>
+   <rdg wit="#a">et</rdg>
 </app> Traianus autem Rome 
 <app>
    <rdg wit="#g">,</rdg>
@@ -6152,11 +6160,7 @@
 <app>
    <rdg wit="#g">Marcus</rdg>
    <rdg wit="#a">Marchus</rdg>
-</app> Antonius Uerus cum Lucio Aurelio Commodo fratre quartus decimus ab Augusto regnum suscepit, mansitque in eo annis 
-<app>
-   <rdg wit="#g">XVIIII</rdg>
-   <rdg wit="#a">XIX</rdg>
-</app> . Hii primum equo iure imperium 
+</app> Antonius Uerus cum Lucio Aurelio Commodo fratre quartus decimus ab Augusto regnum suscepit, mansitque in eo annis XIX. Hii primum equo iure imperium 
 <app>
    <rdg wit="#g">administrauerunt</rdg>
    <rdg wit="#a">amministrauerunt</rdg>
@@ -6340,7 +6344,7 @@
 </app> Iulianus mox a Seuero apud 
 <app>
    <rdg wit="#g">Pontemmoluium</rdg>
-   <rdg wit="#a">Pontem moluium</rdg>
+   <rdg wit="#a">Pontem Moluium</rdg>
 </app> bello ciuili uictus, et interfectus est septimo mense, postquam ceperat imperare. Ita inter Pertinacem, et Iulianum annus unus assumptus est. 
 <app>
    <rdg wit="#g">Theodocion</rdg>
@@ -6363,8 +6367,12 @@
    <rdg wit="#a">genere</rdg>
 </app> Afer Tripolitanus ab oppido Lepti, qui se ex nomine imperatoris, quem occisum ultus fuerat, Pertinacem uoluit appellari, septimus decimus ab Augusto, destitutum adeptus imperium XVII tenuit annis. Hic autem prius fisci aduocatus, mox militaris tribunus 
 <app>
-   <rdg wit="#g">per</rdg>
+   <rdg wit="#g"/>
    <rdg wit="#a">,</rdg>
+</app> 
+<app>
+   <rdg wit="#g">per</rdg>
+   <rdg wit="#a"/>
 </app> multa deinde et uaria officia 
 <app>
    <rdg wit="#g">,</rdg>

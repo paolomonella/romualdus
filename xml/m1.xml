@@ -4955,11 +4955,19 @@
 <app>
    <rdg wit="#wit-42000">mare</rdg>
    <rdg wit="#wit-41999">Mare</rdg>
-</app> rubrum accessit. Arabiam postea in prouincie formam redegit. In 
+</app> 
+<app>
+   <rdg wit="#wit-42000">rubrum</rdg>
+   <rdg wit="#wit-41999">Rubrum</rdg>
+</app> accessit. Arabiam postea in prouincie formam redegit. In 
 <app>
    <rdg wit="#wit-42000">mari</rdg>
    <rdg wit="#wit-41999">Mari</rdg>
-</app> rubro 
+</app> 
+<app>
+   <rdg wit="#wit-42000">rubro</rdg>
+   <rdg wit="#wit-41999">Rubro</rdg>
+</app> 
 <app>
    <rdg wit="#wit-42000">classem</rdg>
    <rdg wit="#wit-41999">clasem</rdg>
@@ -5038,7 +5046,7 @@
 </app> . Et hic martyrio coronatus, et septimo ab urbe miliario uia Numentana sepelitur, 
 <app>
    <rdg wit="#wit-42000"> </rdg>
-   <rdg wit="#wit-41999">Et</rdg>
+   <rdg wit="#wit-41999">et</rdg>
 </app> Traianus autem Rome 
 <app>
    <rdg wit="#wit-42000">,</rdg>
@@ -5375,11 +5383,7 @@
 <app>
    <rdg wit="#wit-42000">Marcus</rdg>
    <rdg wit="#wit-41999">Marchus</rdg>
-</app> Antonius Uerus cum Lucio Aurelio Commodo fratre quartus decimus ab Augusto regnum suscepit, mansitque in eo annis 
-<app>
-   <rdg wit="#wit-42000">XVIIII</rdg>
-   <rdg wit="#wit-41999">XIX</rdg>
-</app> . Hii primum equo iure imperium 
+</app> Antonius Uerus cum Lucio Aurelio Commodo fratre quartus decimus ab Augusto regnum suscepit, mansitque in eo annis XIX. Hii primum equo iure imperium 
 <app>
    <rdg wit="#wit-42000">administrauerunt</rdg>
    <rdg wit="#wit-41999">amministrauerunt</rdg>
@@ -5551,7 +5555,7 @@
 </app> Iulianus mox a Seuero apud 
 <app>
    <rdg wit="#wit-42000">Pontemmoluium</rdg>
-   <rdg wit="#wit-41999">Pontem moluium</rdg>
+   <rdg wit="#wit-41999">Pontem Moluium</rdg>
 </app> bello ciuili uictus, et interfectus est septimo mense, postquam ceperat imperare. Ita inter Pertinacem, et Iulianum annus unus assumptus est. 
 <app>
    <rdg wit="#wit-42000">Theodocion</rdg>
@@ -5570,8 +5574,12 @@
    <rdg wit="#wit-41999">genere</rdg>
 </app> Afer Tripolitanus ab oppido Lepti, qui se ex nomine imperatoris, quem occisum ultus fuerat, Pertinacem uoluit appellari, septimus decimus ab Augusto, destitutum adeptus imperium XVII tenuit annis. Hic autem prius fisci aduocatus, mox militaris tribunus 
 <app>
-   <rdg wit="#wit-42000">per</rdg>
+   <rdg wit="#wit-42000"></rdg>
    <rdg wit="#wit-41999">,</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42000">per</rdg>
+   <rdg wit="#wit-41999"></rdg>
 </app> multa deinde et uaria officia 
 <app>
    <rdg wit="#wit-42000">,</rdg>
