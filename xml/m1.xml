@@ -5803,8 +5803,12 @@
 </app> , quod suo nomine dicitur Calixti. [/p] [p xml:id=&quot;g64.4-64.7&quot;] Post Bassianum nonusdecimus ab Augusto 
 <app>
    <rdg wit="#wit-42000">filius</rdg>
-   <rdg wit="#wit-41999">ofilius</rdg>
-</app> , Macrinus, qui prefectus pretorio erat 
+   <rdg wit="#wit-41999">Ofilius</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42000">,</rdg>
+   <rdg wit="#wit-41999"></rdg>
+</app> Macrinus, qui prefectus pretorio erat 
 <app>
    <rdg wit="#wit-42000"> </rdg>
    <rdg wit="#wit-41999">,</rdg>
@@ -5823,11 +5827,11 @@
 </app> templi 
 <app>
    <rdg wit="#wit-42000">,</rdg>
-   <rdg wit="#wit-41999">erat</rdg>
-</app>  
-<app>
-   <rdg wit="#wit-42000">erat</rdg>
    <rdg wit="#wit-41999"></rdg>
+</app> erat
+<app>
+   <rdg wit="#wit-42000"></rdg>
+   <rdg wit="#wit-41999">,</rdg>
 </app> qui cum Romam ingenti militum et senatus expectatione uenisset, stupris et probris omnibus se contaminauit, impudicissime et obscenissime uixit, et nullam sui, nisi flagitiorum 
 <app>
    <rdg wit="#wit-42000">,</rdg>
@@ -6322,13 +6326,18 @@
    <rdg wit="#wit-41999">inueuntur</rdg>
 </app> Germani ex Alpibus 
 <app>
-   <rdg wit="#wit-42000">Rhetia</rdg>
-   <rdg wit="#wit-41999"></rdg>
-</app> , 
+   <rdg wit="#wit-42000"></rdg>
+   <rdg wit="#wit-41999">;</rdg>
+</app> 
 <app>
-   <rdg wit="#wit-42000"> </rdg>
-   <rdg wit="#wit-41999">Grecia,</rdg>
-</app> totaque Italia penetrata, Rauennam usque 
+   <rdg wit="#wit-42000">Rhetia</rdg>
+   <rdg wit="#wit-41999">Grecia</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-42000">,</rdg>
+   <rdg wit="#wit-41999"></rdg>
+</app>
+totaque Italia penetrata, Rauennam usque 
 <app>
    <rdg wit="#wit-42000"> </rdg>
    <rdg wit="#wit-41999">perueniunt; Alamanni Gallias</rdg>

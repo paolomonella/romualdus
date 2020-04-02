@@ -6570,15 +6570,15 @@ Anno ab incarnatione Domini CCXI et anno ab urbe condita
  
 <p xml:id="g63.27-64.3">
 Item anno primo huius Antonini Caracalle, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic">
    <lem wit="#g">Calistus</lem>
    <rdg wit="#a">Calixtus</rdg>
 </app> natione Romanus ex patre 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#g">Domitio</lem>
    <rdg wit="#a">Domicio</rdg>
 </app> post Zepherinum episcopalem suscepit cathedram. Hic constituit ieiunium 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <lem wit="#g">die</lem>
    <rdg wit="#a"></rdg>
 </app> sabbati ter in anno fieri, frumenti, uini 
@@ -6586,9 +6586,9 @@ Item anno primo huius Antonini Caracalle,
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et olei secundum prophetiam. Ad hoc quoque iuxta quattuor anni tempora, quattuor indixit omni Ecclesie ieiunia, primum uernale, secundum estiuale, tertium autumpnale, quartum 
-<app cert="medium" type="orthographic" subtype="h">
-   <lem wit="#g">yemale</lem>
-   <rdg wit="#a">hyemale</rdg>
+<app cert="high" type="orthographic" subtype="h">
+   <lem wit="#a">hyemale</lem>
+   <rdg wit="#g">yemale</rdg>
 </app>; in quibus precepit etiam ordinationes fieri, quamquam nec ipse 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -6602,11 +6602,11 @@ Item anno primo huius Antonini Caracalle,
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> legitur celebrasse ordinationes, nisi in mense 
-<app cert="medium" type="orthographic" subtype="case">
+<app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Decembris</lem>
    <rdg wit="#g #a">decembris</rdg>
 </app>. Hic 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">item</lem>
    <rdg wit="#a">idem</rdg>
 </app> prohibuit, ut in accusatione presbyterorum infames 
@@ -6618,9 +6618,9 @@ Item anno primo huius Antonini Caracalle,
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et inimici non suscipiantur: eos uero hereticos 
-<app cert="medium" type="substantial" subtype="missing-in-print">
-   <lem wit="#g"> </lem>
-   <rdg wit="#a">nominauit</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">nominauit</lem>
+   <rdg wit="#g"> </rdg>
 </app> qui dicunt 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -6630,7 +6630,7 @@ Item anno primo huius Antonini Caracalle,
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et sepultus in 
-<app cert="medium" type="orthographic" subtype="case">
+<app cert="high" type="orthographic" subtype="case">
    <lem wit="#a">cimiterio</lem>
    <rdg wit="#g">Cimiterio</rdg>
 </app>, quod suo nomine dicitur Calixti. 
@@ -6638,15 +6638,19 @@ Item anno primo huius Antonini Caracalle,
  
 <p xml:id="g64.4-64.7">
 Post Bassianum nonusdecimus ab Augusto 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">filius</lem>
-   <rdg wit="#a">ofilius</rdg>
-</app>, Macrinus, qui prefectus pretorio erat 
+<app cert="high" type="substantial">
+   <lem wit="#a">Ofilius</lem>
+   <rdg wit="#g">filius</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
+</app> Macrinus, qui prefectus pretorio erat 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
    <rdg wit="#g"> </rdg>
 </app> cum filio Diadumedo inuasit imperium. Hi facti imperatores nichil memorabile ex temporis breuitate gesserunt, nam emenso anno, continuo apud Archelaidem militari tumultu ambo pariter occisi sunt. Abgarus uir sanctus regnabat 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Edesse</lem>
    <rdg wit="#a">Adesse</rdg>
 </app> ut uult Africanus. 
@@ -6658,17 +6662,17 @@ Anno ab incarnatione Domini CCXXIII
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et anno ab urbe condita CMLXX Marcus Aurelius Antoninus, qui Antonini Caracalle filius putabatur, uicesimus ab Augusto imperium adeptus, tenuit annis quattuor. Hic autem sacerdos 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Heliogabali</lem>
    <rdg wit="#a">Eliogabali</rdg>
 </app> templi 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">,</lem>
-   <rdg wit="#a">erat</rdg>
-</app>  
-<app cert="medium" type="substantial" subtype="missing-in-ms">
-   <lem wit="#g">erat</lem>
-   <rdg wit="#a"></rdg>
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
+</app> erat
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> qui cum Romam ingenti militum et senatus expectatione uenisset, stupris et probris omnibus se contaminauit, impudicissime et obscenissime uixit, et nullam sui, nisi flagitiorum 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -6678,7 +6682,7 @@ Anno ab incarnatione Domini CCXXIII
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> Rome ipse cum matre interfectus est. In Palestina Nicopolis, que prius Emmaus uocabatur, urbs condita est, legationis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">industriam</lem>
    <rdg wit="#a">industria</rdg>
 </app> pro ea suscipiente Iulio Africano scriptore temporum. Hyppolitus episcopus multorum conditor opusculorum, temporum canonem, que scripsit, hucusque perduxit. Quo tempore Urbanus papa, natione Romanus 
@@ -6686,7 +6690,7 @@ Anno ab incarnatione Domini CCXXIII
    <lem wit="#a">,</lem>
    <rdg wit="#g"> </rdg>
 </app> ex patre Pontiano post 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#g">Callixtum</lem>
    <rdg wit="#a">Calixtum</rdg>
 </app> ecclesie suscepit gubernacula. Hic precepit 
@@ -6710,55 +6714,55 @@ Anno ab incarnatione Domini CCXXIII et anno ab urbe condita CMLXXIV Aurelius Ale
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> ac militum uoluntate imperator creatus, 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <lem wit="#g">XIV</lem>
    <rdg wit="#a"></rdg>
 </app> 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">annis</lem>
    <rdg wit="#a">annus</rdg>
 </app> digno equitatis preconio fuit. Hic in Mammeam matrem suam, quia Cristiana erat, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">unice</lem>
    <rdg wit="#a">in nece</rdg>
 </app> pius fuit, et ob id omnibus amabilis, et quamplurimis benignus; qui expeditione in Persas facta, 
-<app cert="medium" type="orthographic" subtype="mn">
+<app cert="high" type="orthographic" subtype="mn">
    <lem wit="#g">Xersem</lem>
    <rdg wit="#a">Xersen</rdg>
 </app> regem eorum maximo bello uictum interfecit. Ulpiano usus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">assessore</lem>
    <rdg wit="#a">ascensore</rdg>
 </app> summam sui 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">moderationem</lem>
    <rdg wit="#a">moderaminem</rdg>
 </app> reipublice exhibuit, sed militari tumultu apud 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Moguntiacum</lem>
-   <rdg wit="#a">Mogonciacum</rdg>
+<app cert="high" type="orthographic">
+   <lem wit="#a">Mogonciacum</lem>
+   <rdg wit="#g">Moguntiacum</rdg>
 </app> interfectus est. 
 </p>
  
 <p xml:id="g65.1-65.12">
 His autem diebus Origenes presbiter Alexandrie, immo 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
-   <lem wit="#g">doctor</lem>
-   <rdg wit="#a"></rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">doctor</rdg>
 </app> toto orbi clarus habetur, quem Mammea mater Alexandri audire curauit, et 
 <app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Antiochiam</lem>
    <rdg wit="#a">Antiociam</rdg>
 </app> accitum summo honore habuit. Quo tempore Urbanus Rome episcopus martyrio uitam finiuit, et sepultus est cum fratribus suis. Huic successit Pontianus natione 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Romanus</lem>
    <rdg wit="#a">Romani</rdg>
 </app> ex patre Calpurnio, seditque annis quinque mensibus sex. Qui iussu Alexandri in exilio 
-<app cert="medium" type="orthographic" subtype="mpn">
+<app cert="high" type="orthographic" subtype="mpn">
    <lem wit="#g">damnatus</lem>
    <rdg wit="#a">dampnatus</rdg>
 </app> in insula Sardinia, ibique pro Christi nomine martyr effectus, quieuit in pace. Cuius corpus Anterus, qui ei successit, detulit in Romam, et sepeliuit in cimiterio Calixti uia Appia. 
-<app cert="medium" type="orthographic" subtype="h">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Antherus</lem>
    <rdg wit="#a">Anterus</rdg>
 </app> natione Grecus ex patre Romulo post hunc Romanam rexit ecclesiam, seditque annis undecim mense uno. Hic constituit 
@@ -6794,7 +6798,7 @@ Mox imperator creatus persecutiones in Christianos sextus a Nerone exercuit
    <lem wit="#a">,</lem>
    <rdg wit="#g">:</rdg>
 </app> uel precipue propter Origenem presbyterum 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <lem wit="#g">miserat</lem>
    <rdg wit="#a"></rdg>
 </app>. Hic autem tertio postquam regnauerat anno, a Pupieno interfectus, et persecutionis 
@@ -6806,7 +6810,7 @@ Mox imperator creatus persecutiones in Christianos sextus a Nerone exercuit
  
 <p xml:id="g65.22-65.27">
 Post 
-<app cert="medium" type="orthographic" subtype="h">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Antherum</lem>
    <rdg wit="#a">Anterum</rdg>
 </app> Fabianus natione Romanus ex patre Fabio Romanus episcopus factus est, seditque annis tredecim mensibus undecim. Hic constituit 
@@ -6814,7 +6818,7 @@ Post
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> ut omni anno in cena Domini 
-<app cert="medium" type="orthographic" subtype="h">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Chrisma</lem>
    <rdg wit="#a">Crisma</rdg>
 </app> ab episcopo consecraretur 
@@ -6822,7 +6826,7 @@ Post
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et uetus in ecclesiis concremaretur. Hic regiones diuisit septem diaconibus, qui a notariis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">gesta</lem>
    <rdg wit="#a">gestas</rdg>
 </app> Martyrum in integro colligerent. Et hic martyrio uitam finiuit 
@@ -6834,7 +6838,7 @@ Post
  
 <p xml:id="g65.28-66.13">
 Anno ab incarnatione Domini CCXXXIX et anno ab urbe condita CMXCI Gordianus uicesimus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">tertius</lem>
    <rdg wit="#a">quartus</rdg>
 </app> ab Augusto imperator creatus mansit in eo annis sex; quamuis cum eo duo alii Augusti essent creati obscurissimo genere, Pupienus uidelicet 
@@ -6842,43 +6846,43 @@ Anno ab incarnatione Domini CCXXXIX et anno ab urbe condita CMXCI Gordianus uice
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et Albinus. Gordianus autem genere nobilis, cum consensu militum, cum proconsulatum Africe ageret, Maximino 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">imperante</lem>
    <rdg wit="#a">imperatore</rdg>
 </app>, princeps 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">fuit</lem>
    <rdg wit="#a">fuisset</rdg>
 </app> electus. Hic cum Romam uenisset, Pupienus et Albinus in palatio interfecti sunt, soli Gordiano imperio reseruato. Gordianus itaque admodum puer ad bellum Parthicum profecturus, Iani portas aperit. Igitur Gordianus ingentibus preliis aduersus Parthos prospere gestis, suorum fraude rediens super 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="ph">
    <lem wit="#g">Euphratem</lem>
    <rdg wit="#a">Eufraten</rdg>
 </app> interfectus est. His temporibus Iulius Africanus inter scriptores ecclesiasticos nobilis habebatur, sicut in cronicis, quas conscripsit Alexandrie, ipsemet refert. Origenes in Cesarea Palestine Theodorum, cognomento Gregorium, et 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic">
    <lem wit="#g">Athenodorum</lem>
    <rdg wit="#a">Athenadorum</rdg>
 </app> adolescentulos fratres, Ponti postea nobilissimos episcopos, diuina philosophia imbuit. Sub hoc habebatur Porphyrius Plotini platonici philosophi auditor, Theopompus philosophus apud Cheroniam, et 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Nicanos</lem>
-   <rdg wit="#a">Nicanor</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">Nicanor</lem>
+   <rdg wit="#g">Nicanos</rdg>
 </app> sophista penes Athenam pollebat. 
 </p>
  
 <p xml:id="g66.14-67.8">
 Anno ab incarnatione Domini CCXLV et anno ab urbe condita CMXCVII Philippus uicesimus quartus ab Augusto, statim occiso Gordiano, imperator circa 
-<app cert="medium" type="orthographic" subtype="ph">
+<app cert="high" type="orthographic" subtype="ph">
    <lem wit="#g">Euphraten</lem>
    <rdg wit="#a">Eufraten</rdg>
 </app> creatus, Philippum filium suum consortem regni fecit, exercitumque ex Syria 
-<app cert="medium" type="orthographic" subtype="mn">
-   <lem wit="#g">incolumen</lem>
-   <rdg wit="#a">incolumem</rdg>
+<app cert="high" type="orthographic" subtype="mn">
+   <lem wit="#a">incolumem</lem>
+   <rdg wit="#g">incolumen</rdg>
 </app> ad Italiam reduxit, mansitque in 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">ea</lem>
    <rdg wit="#a">eo</rdg>
 </app> annis septem. Hic primus imperator omnium Christianus fuit, ac post tertium imperii eius annum, millesimus a conditione Rome annus expletus est. Ita magnificis ludis augustissimus omnium preteritorum hic natalis annus a Christiano 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <lem wit="#g">imperatore</lem>
    <rdg wit="#a"></rdg>
 </app> celebratus est. Nec dubium est, quin Philippus huius tante deuotionis gloriam et honorem ad Christum 
@@ -6898,7 +6902,7 @@ Anno ab incarnatione Domini CCXLV et anno ab urbe condita CMXCVII Philippus uice
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et Decii fraude interfecti sunt. E quibus iunior Philippus adeo seueri animi fuit, ut nullius cuiusquam 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#g">commento</lem>
    <rdg wit="#a">comento</rdg>
 </app> solui potuerit, patremque ludis secularibus concinnantem uultu annotauerit auersato. Origenes aduersus quemdam 
@@ -6910,7 +6914,7 @@ Anno ab incarnatione Domini CCXLV et anno ab urbe condita CMXCVII Philippus uice
    <lem wit="#g">Ieronymus</lem>
    <rdg wit="#a">Ieronimus</rdg>
 </app> quodam loco plusquam sex milia librorum eius se legisse 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">commemoret</lem>
    <rdg wit="#a">memorat</rdg>
 </app>. His quoque diebus, Decio iam Cesare existente, Cornelius natione Romanus ex patre Castino 
@@ -6922,17 +6926,17 @@ Anno ab incarnatione Domini CCXLV et anno ab urbe condita CMXCVII Philippus uice
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> seditque annis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">duobus</lem>
    <rdg wit="#a">duo</rdg>
 </app> mensibus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">duobus</lem>
    <rdg wit="#a">duo</rdg>
 </app>. Hic sacerdotibus concessit pro recta fide iurare. Huius tempore corpora apostolorum Petri et Pauli ab orientalibus uiris noctu furata sunt: quo facto terremotus 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">tantum</lem>
-   <rdg wit="#a">tantus</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">tantus</lem>
+   <rdg wit="#g">tantum</rdg>
 </app> Romanam concussit ciuitatem, ut pene omnes mori cogitarent. Sicque factum est, ut omnes 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
@@ -6958,15 +6962,15 @@ Anno ab incarnatione Domini CCXLV et anno ab urbe condita CMXCVII Philippus uice
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> ita factum est, ut et sanctorum corpora Rome cum honore reportata sunt et uiri religiosi, qui hoc amore pietatis fecerant, a cruciatu et morte Dei misericordia liberati 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">sint</lem>
-   <rdg wit="#a">sunt</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">sunt</lem>
+   <rdg wit="#g">sint</rdg>
 </app>. Sanctorum corpora per annum apud catacumbas inhumata iacuere. Interea ex precepto Decii Cesaris sub Philippis christianis imperatoribus 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et totius senatus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">consulto</lem>
    <rdg wit="#a">consultu</rdg>
 </app> concessum est Romano pontifici 
@@ -6974,30 +6978,30 @@ Anno ab incarnatione Domini CCXLV et anno ab urbe condita CMXCVII Philippus uice
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> ceterisque christianis libere ad sepulturas Apostolorum faciendas insudare, et ad id faciendum data sunt eis de fisco reipublice adiutoria. Primum quidem beati Pauli corpus leuatum de catacumba suscepit papa Cornelius, et sepeliuit una cum Lucina in predio eiusdem, uia 
-<app cert="medium" type="orthographic" subtype="h">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">Ostiensi</lem>
    <rdg wit="#a">Hostiensi</rdg>
 </app>, ad latus, ubi decollatus est. Beati uero Petri corpus accepit prefatus Episcopus, et posuit iuxta locum, ubi crucifixus est, inter corpora sanctorum episcoporum in templo Apollinis in monte aureo Uaticani Palatii Neroniani. Hic idem Cornelius post iussu Decii imperatoris effecti exilio Centumcellis 
-<app cert="medium" type="orthographic" subtype="mpn">
+<app cert="high" type="orthographic" subtype="mpn">
    <lem wit="#g">damnatus</lem>
    <rdg wit="#a">dampnatus</rdg>
 </app> est et martyrio uitam tiniuit. Quo tempore Antonius monachus claruit. 
 </p>
  
 <p xml:id="g67.9-67.12">
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Anno</lem>
    <rdg wit="#a">Anni</rdg>
 </app> Domini CCLII et anno ab urbe condita millesimo quarto Decius 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">a</lem>
-   <rdg wit="#a">e</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">e</lem>
+   <rdg wit="#g">a</rdg>
 </app> Pannonia inferiori, Budalie natus, ciuilis belli, quod in Gallia motum fuerat, 
 <app cert="high" type="substantial">
    <lem wit="#g">incentor</lem>
    <rdg wit="#a">intentor</rdg>
 </app> et repressor, occisis Philippis, uicesimus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">quintus</lem>
    <rdg wit="#a">quartus</rdg>
 </app> ab Augusto, simul cum filio suo, quem Cesarem fecit, inuasit imperium tenuitque annis tribus. 
@@ -7013,7 +7017,7 @@ Idemque continuo ad persequendum
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> interficiendosque Christianos, septimus post Neronem feralia dispersit edicta, plurimosque sanctorum ad coronas Christi de suis cruciatibus misit. Hic in medio barbarorum sinu interfectus est, filius autem eius gurgite paludis submersus est, ita ut nec cadauer eius potuerit inueniri. Digno 
-<app cert="medium" type="orthographic" subtype="mpn">
+<app cert="high" type="orthographic" subtype="mpn">
    <lem wit="#g">damnatus</lem>
    <rdg wit="#a">dampnatus</rdg>
 </app> iudicio qui persecutionem in Christianos mouens, beatum Laurentium leuitam et martyrem extinxit. 
@@ -7021,11 +7025,11 @@ Idemque continuo ad persequendum
  
 <p xml:id="g67.19-68.2">
 Beda: Decius regnauit annis duobus mensibus sex. Hic cum Philippos patrem et filium interfecisset, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">ob</lem>
    <rdg wit="#a">ab</rdg>
 </app> eorum odium rabido furore persecutionem in Christianos mouit, in 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">qua</lem>
    <rdg wit="#a">quo</rdg>
 </app> Fauianus in urbe Roma martyrio coronatur, post quem beatus Cornelius martyrio coronatur. Cui successit Lucius natione Romanus ex patre 
@@ -7049,9 +7053,9 @@ Beda: Decius regnauit annis duobus mensibus sex. Hic cum Philippos patrem et fil
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et leuite uasis et uestibus 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">sacris</lem>
-   <rdg wit="#a">sacratis</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">sacratis</lem>
+   <rdg wit="#g">sacris</rdg>
 </app> in usu cotidiano non utantur, nisi in ecclesia tantum. Et hic decollatus est ex precepto Decii intra missarum solempnia, quando communicabat, cum duodecim presbyteris et septem Diaconibus 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -7084,7 +7088,7 @@ Beda: Decius regnauit annis duobus mensibus sex. Hic cum Philippos patrem et fil
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et in eo loco decollatus est cum Felicissimo et Agapito et sepultus in 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic">
    <lem wit="#g">cemeterio</lem>
    <rdg wit="#a">cimeterio</rdg>
 </app> Calixti. 
@@ -7092,19 +7096,19 @@ Beda: Decius regnauit annis duobus mensibus sex. Hic cum Philippos patrem et fil
  
 <p xml:id="g68.9-68.14">
 Cui Dionisius ex monacho successit, seditque annis duobus mensibus tribus. Hic constituit in urbe 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Rome</lem>
-   <rdg wit="#a">Roma</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">Roma</lem>
+   <rdg wit="#g">Rome</rdg>
 </app> presbyteros in titulis singulis singulos propter 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">penitentiam</lem>
-   <rdg wit="#a">penitentes</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">penitentes</lem>
+   <rdg wit="#g">penitentiam</rdg>
 </app> suscipiendos 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et propter baptisma, et 
-<app cert="medium" type="orthographic" subtype="double">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#g">parochias</lem>
    <rdg wit="#a">parrochias</rdg>
 </app> diuisit. Interea Alexander Ierosolimorum episcopus apud Cesaream Palestine interficitur. Quidam autem uolunt Decium non solum imperii sui tempore, uerum sub quibusdam aliis ante se regnantibus, propter crudelitatem, quam in Christianos exagitabat, Cesar, ad id sequendum fuisse. 
@@ -7112,19 +7116,19 @@ Cui Dionisius ex monacho successit, seditque annis duobus mensibus tribus. Hic c
  
 <p xml:id="g68.15-68.19">
 Post interitum Decii, mox Gallus et 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic">
    <lem wit="#g">Uolusianus</lem>
    <rdg wit="#a">Bolusianus</rdg>
 </app> filius eius imperatores creati sunt. Sub his Emilianus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">in Moesia</lem>
    <rdg wit="#a">immo esia</rdg>
 </app> res nouas molitus est. Ad quem opprimendum cum ambo profecti essent, inter Danubium amnem interfecti sunt, non completo biennio. Hi 
-<app cert="medium" type="orthographic" subtype="ch">
+<app cert="high" type="orthographic" subtype="ch">
    <lem wit="#g">nihil</lem>
    <rdg wit="#a">nichil</rdg>
 </app> omnino clarum fecerunt: sola 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#g">pestilencia</lem>
    <rdg wit="#a">pestilentia</rdg>
 </app> et morbis atque egritudinibus notus eorum principatus fuit. Emilianus 
@@ -7136,7 +7140,7 @@ Post interitum Decii, mox Gallus et
  
 <p xml:id="g68.20-68.27">
 Beda: Gallus cum 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic">
    <lem wit="#g">Uolusiano</lem>
    <rdg wit="#a">Bolusiano</rdg>
 </app> filio regnauit annis duobus, mensibus quattuor. Huius imperii tempus 
@@ -7160,7 +7164,7 @@ Beda: Gallus cum
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et pacem. Origenes septuagesimo etatis sue anno 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">nondum ad</lem>
    <rdg wit="#a">non de</rdg>
 </app> integrum impleto defunctus et in urbe Tyri sepultus est. 
@@ -7176,7 +7180,7 @@ Anno ab incarnatione Domini CCLVII et anno ab urbe condita MX, duo imperatores, 
    <lem wit="#a">;</lem>
    <rdg wit="#g">.</rdg>
 </app> Rome autem a Senatu 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#g">Gallienus</lem>
    <rdg wit="#a">Galienus</rdg>
 </app> Cesar creatus, mansitque Gallienus in regno infeliciter annis quindecim, respirante Christianorum persecutione a Decio facta. 
@@ -7188,7 +7192,7 @@ Octaua persecutio in Ecclesia.
  
 <p xml:id="g68.33-69.35">
 Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta Christianos ad idolatriam, abnegantesque 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">eam</lem>
    <rdg wit="#a">eum</rdg>
 </app> 
@@ -7200,15 +7204,15 @@ Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta
    <lem wit="#a">ilico</lem>
    <rdg wit="#g">illico</rdg>
 </app> nefarii auctor edicti, a Sapore Persarum rege captus, imperator populi Romani ignominiosus, apud Persas seruitute consenuit, ac infamis officii continua, donec uixit, 
-<app cert="medium" type="orthographic" subtype="mpn">
+<app cert="high" type="orthographic" subtype="mpn">
    <lem wit="#g">damnatione</lem>
    <rdg wit="#a">dampnatione</rdg>
 </app> sortitus, ut ipse adclinis humi regem semper ascensurum in equum non manu sua, sed dorso attolleret. Et 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#g">Gallienus</lem>
    <rdg wit="#a">Galienus</rdg>
 </app> quidem tam preclaro Dei iudicio territus, tanquam misero college permotus exemplo, pacem ecclesie tepidam restituit. Sed non compensat iniurie, ultionisque mensuram unius impii quamuis perpetua, et supra modum 
-<app cert="medium" type="orthographic" subtype="h">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">abominanda</lem>
    <rdg wit="#a">abhominanda</rdg>
 </app> captiuitas: contra tot milia excruciata sanctorum 
@@ -7216,37 +7220,42 @@ Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">iustorum</lem>
-   <rdg wit="#a">iustorumque</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">iustorumque</lem>
+   <rdg wit="#g">iustorum</rdg>
 </app> sanguis ad Deum clamans, in eadem se terra, ubi fusus est, uindicari rogat. Non enim de solo constitutore precepti iustum supplicii iudicium flagitabatur, sed etiam executores, delatores, accusatores, spectatores 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> ac iudices, postremo omnes 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <lem wit="#g">, qui</lem>
    <rdg wit="#a"></rdg>
 </app> iniustissime crudelitati uel tacita uoluntate 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">assentiebantur</lem>
    <rdg wit="#a">assentabantur</rdg>
 </app>, quia Deus secretorum cognitor est, quorum maxima per omnes prouincias pars hominum uersabatur, eadem ultionis plaga corripi iustum erat. Soluuntur repente undique, permissu Dei, ad hoc circumposite, relicteque gentes, laxatisque habenis in omnes Romanorum fines 
-<app cert="medium" type="orthographic" subtype="h">
+<app cert="high" type="orthographic" subtype="h">
    <lem wit="#g">inuehuntur</lem>
    <rdg wit="#a">inueuntur</rdg>
 </app> Germani ex Alpibus 
-<app cert="medium" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">;</lem>
+   <rdg wit="#g"></rdg>
+</app> 
+<app cert="high" type="substantial">
    <lem wit="#g">Rhetia</lem>
-   <rdg wit="#a"></rdg>
-</app>, 
-<app cert="medium" type="substantial" subtype="missing-in-print">
-   <lem wit="#g"> </lem>
-   <rdg wit="#a">Grecia,</rdg>
-</app> totaque Italia penetrata, Rauennam usque 
-<app cert="medium" type="substantial" subtype="missing-in-print">
-   <lem wit="#g"> </lem>
-   <rdg wit="#a">perueniunt; Alamanni Gallias</rdg>
+   <rdg wit="#a">Grecia</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
+</app>
+totaque Italia penetrata, Rauennam usque 
+<app cert="high" type="substantial">
+   <lem wit="#a">perueniunt; Alamanni Gallias</lem>
+   <rdg wit="#g"> </rdg>
 </app> peruagantes, etiam in Italiam transierunt 
 <app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">;</lem>
@@ -7256,9 +7265,9 @@ Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et Asia Gothorum inundatione 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">deletur</lem>
-   <rdg wit="#a">delentur</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">delentur</lem>
+   <rdg wit="#g">deletur</rdg>
 </app>. Nam Dacia trans Danubium in perpetuum aufertur; Quadi 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -7268,19 +7277,19 @@ Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta
    <lem wit="#g">tyranni</lem>
    <rdg wit="#a">tiranni</rdg>
 </app>, consurgunt bella ciuilia, funditur ubique sanguis Romanorum, Romanis barbarisque seuientibus: sed cito ira Dei in 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">misericordia</lem>
-   <rdg wit="#a">misericordiam</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">misericordiam</lem>
+   <rdg wit="#g">misericordia</rdg>
 </app> uertitur. Igitur primus 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Genuus</lem>
    <rdg wit="#a">Eugenius</rdg>
 </app> qui purpuram imperii sumpserat, apud Nitriam occiditur. Postumus obscurissime natus inuasit tyrannidem, multo quidem reipublice commodo, nam per decem annos ingenti uirtute ac moderatione usus et dominantes hostes expulit et perditas prouincias in pristinam faciem reformauit; qui seditione militum interfectus est. Emilianus apud 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#g">Maguntiam</lem>
    <rdg wit="#a">Magunciam</rdg>
 </app>, cum res nouas moliretur, oppressus est. Post mortem 
-<app cert="medium" type="orthographic" subtype="mn">
+<app cert="high" type="orthographic" subtype="mn">
    <lem wit="#g">Postumii</lem>
    <rdg wit="#a">Postunii</rdg>
 </app> Marius uilissimus opifex purpuram sumpsit, et secunda imperii die interfectus est. Deinde Uictorinus a Gallis ultro creatus 
@@ -7296,7 +7305,7 @@ Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> Agrippine occisus est, imperii sui anno secundo. Huic successit Tetricius senator, qui tunc Aquitaniam honore presidis administrans, absens a militibus imperator 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">creatus</lem>
    <rdg wit="#a">electus</rdg>
 </app> est, et apud Burdigalem purpuram sumpsit, multasque seditiones militum pertulit. At uero in Oriente per 
@@ -7304,7 +7313,7 @@ Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta
    <lem wit="#g">Odenathum</lem>
    <rdg wit="#a">Odenachum</rdg>
 </app> quemdam collecta agresti manu, Perse uicti sunt ac repulsi, defensata Syria, recepta Mesopotamia, et usque ad 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">Ctesifontem</lem>
    <rdg wit="#a">Actesifontem</rdg>
 </app> rusticani Syrie cum 
@@ -7312,7 +7321,7 @@ Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta
    <lem wit="#g">Odenatho</lem>
    <rdg wit="#a">Odenacho</rdg>
 </app> suo uincendo uenerunt. 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic" subtype="double">
    <lem wit="#g">Gallienus</lem>
    <rdg wit="#a">Galienus</rdg>
 </app> autem cum rempublicam deseruisset 
