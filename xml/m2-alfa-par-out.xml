@@ -68,8 +68,12 @@
  
 <p xml:id="g163.6-163.7">
 <app cert="high" type="substantial">
-   <lem wit="#b">Anno dominice incarnationis DCCCXCIII</lem>
-   <rdg wit="#a">Anni domini DCCCLXXXXIV</rdg>
+   <lem wit="#b">Anno dominice incarnationis</lem>
+   <rdg wit="#a">Anni domini</rdg>
+</app> 
+<app cert="high" type="substantial">
+   <lem wit="#b">DCCCXCIII</lem>
+   <rdg wit="#a">DCCCLXXXXIV</rdg>
 </app>. Primus 
 <app cert="high" type="orthographic" subtype="y">
    <lem wit="#b">Guaimarius</lem>
