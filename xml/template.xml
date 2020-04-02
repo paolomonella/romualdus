@@ -892,9 +892,13 @@ Deborra prophetissa annos XL de tribu
    <lem wit="#g">Miletus</lem>
    <rdg wit="#a">Miltus</rdg>
 </app> condita. Et tunc Apollo cytharam 
-<app cert="high" type="substantial">
-   <lem wit="#g">repperlt</lem>
-   <rdg wit="#a">repperit.</rdg>
+<app cert="high" type="orthographic">
+   <lem wit="#a">repperit</lem>
+   <rdg wit="#g">repperlt</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">.</lem>
+   <rdg wit="#g"></rdg>
 </app> MMDCCXXX. 
 </p>
  
@@ -932,14 +936,10 @@ Pthola annis XXIII filius Phoa patrui Abimelech, uir de Ysachar, qui habitabat i
    <lem wit="#g">palefatus</lem>
    <rdg wit="#a">Palefactus</rdg>
 </app> primo de incredibilibus libro. Notabiles fuisse dicuntur equites Thessalorum. in Troia post Laomedontem regnauit Priamus 
-<app cert="high" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="substantial" subtype="num-num">
    <lem wit="#g">MMDCCLVII</lem>
-   <rdg wit="#a"></rdg>
+   <rdg wit="#a">MMDCCLXVII</rdg>
 </app>. 
-<app cert="high" type="substantial" subtype="missing-in-print">
-   <lem wit="#g"> </lem>
-   <rdg wit="#a">MMDCCLXVII.</rdg>
-</app> 
 </p>
  
 <p xml:id="g14.8-14.10">
@@ -1054,8 +1054,12 @@ Labdon de tribu Effraim annis VIII. Huius anno tertio Troia capta est, regnante 
 <p xml:id="g15.5-15.5">
 Mortuo autem Labdon, seruiuit Israhel Philisteis annis XL 
 <app cert="high" type="substantial" subtype="missing-in-print">
-   <lem wit="#g"> </lem>
-   <rdg wit="#a">. Sanson de tribu Dan.</rdg>
+   <lem wit="#g"></lem>
+   <rdg wit="#a">. Sanson de tribu Dan</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">.</lem>
+   <rdg wit="#g"></rdg>
 </app> MMDCCCXCIX. 
 </p>
  
@@ -2721,7 +2725,11 @@ Darius, cognomento Nothus, annis
 </app> Romam inuadunt, urbemque penetrando, excepto Capitolio, 
 <app cert="high" type="substantial">
    <lem wit="#g">incendunt</lem>
-   <rdg wit="#a">incendiunt,</rdg>
+   <rdg wit="#a">incendiunt</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> nam mille libris auri 
 <app cert="high" type="substantial">
    <lem wit="#g">discessionis</lem>
@@ -3031,8 +3039,12 @@ Egypto regnauit primus Ptolomeus Lagi filius annis XL
    <rdg wit="#a">aqua</rdg>
 </app> Claudiam induxit, et uiam Appiam strauit. Ptolomeus 
 <app cert="high" type="orthographic">
-   <lem wit="#g">Hierosolyma,</lem>
+   <lem wit="#g">Hierosolyma</lem>
    <rdg wit="#a">Hierusolima</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Iudea in 
 <app cert="high" type="orthographic" subtype="tc">
    <lem wit="#g">ditionem</lem>
@@ -3075,8 +3087,12 @@ Egypto regnauit primus Ptolomeus Lagi filius annis XL
    <rdg wit="#a">Epyri</rdg>
 </app>, 
 <app cert="high" type="orthographic" subtype="double">
-   <lem wit="#g">Thessalie,</lem>
+   <lem wit="#g">Thessalie</lem>
    <rdg wit="#a">Thesalie</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Macedonie, elefantis etiam uiginti 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
@@ -3104,7 +3120,11 @@ Egypto regnauit primus Ptolomeus Lagi filius annis XL
 </app> filio 
 <app cert="high" type="substantial">
    <lem wit="#g">Antignoni</lem>
-   <rdg wit="#a">Antigoni,</rdg>
+   <rdg wit="#a">Antigoni</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> Seleuco partem regni sui, que Antigono fuerat ablata, restitueret, Cariam quoque optineret, et multas insulas, urbesque, ac regiones, de quibus non est huius 
 <app cert="high" type="substantial">
    <lem wit="#a">temporis</lem>
@@ -3196,7 +3216,11 @@ Ptolomeus
 </app> farum in Alexandriam 
 <app cert="high" type="orthographic">
    <lem wit="#g">construxit</lem>
-   <rdg wit="#a">costruxit.</rdg>
+   <rdg wit="#a">costruxit</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">.</lem>
+   <rdg wit="#g"></rdg>
 </app> Aratus philosophus 
 <app cert="high" type="substantial">
    <lem wit="#g">agnoscitur</lem>
@@ -5010,7 +5034,11 @@ Orosius: Anno ab urbe
 </app> plebe compulsa. Quod ipse ex altissima illa Mecenatica turri prospectans letusque 
 <app cert="high" type="substantial">
    <lem wit="#g">flamme</lem>
-   <rdg wit="#a">flamine,</rdg>
+   <rdg wit="#a">flamine</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> ut aiebat 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
@@ -5143,9 +5171,13 @@ Iste primus Rome Christianos suppliciis et mortibus affecit, ac per omnes
    <lem wit="#a">seculares</lem>
    <rdg wit="#g">secolares</rdg>
 </app>: ad hoc enim solum uocatus es, ut 
-<app cert="high" type="orthographic">
-   <lem wit="#g">opportune,</lem>
+<app cert="high" type="orthographic" subtype="double">
+   <lem wit="#g">opportune</lem>
    <rdg wit="#a">oportune</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et sine intermissione doceas uerbum Dei. Et 
 <app cert="high" type="substantial">
    <lem wit="#a">hic</lem>
@@ -5552,11 +5584,11 @@ Anni Domini LXXXIII. Anno ab urbe condita DCCCXXX. Domitianus frater Titi iunior
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et fratris aboleret. Superbia quoque effera in eo execrabilis fuit. Consobrinos suos interfecit, nobilissimos ex senatu inuidie simul ac prede causa alios palam interfecit, alios in exilium transmisit, ibique trucidari imperauit. Libidinis intemperantia quicquid cogitari potest fecit. Plurimas urbis edes, destructis populi Romani rebus, 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="orthographic">
    <lem wit="#g">extruxit</lem>
    <rdg wit="#a">exstruxit</rdg>
 </app>. Bellum aduersus Germanos et Dacos gessit, pari reipublice pernicie, cum in urbe ipse 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">senatum</lem>
    <rdg wit="#a">sanatum</rdg>
 </app> populumque laniaret et foris male circumactum exercitum assidua hostes cede conficerent. Domitianus tamen prauissima elatus iactantia, sub nomine superatorum hostium, de extinctis in preliis Romanorum legionibus triumphauit. His in tantam suberbiam prolapsus fuit, ut Dominum sese ac Deum uocari, scribi, colique iusserit. 
@@ -5568,15 +5600,15 @@ Secunda persecutio in Ecclesia.
  
 <p xml:id="g55.2-55.13">
 Hic secundus post Neronem Christianos persequitur, sub quo Iohannes apostolus in Pathmos insulam exilio 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">relegatus</lem>
-   <rdg wit="#a">religatus</rdg>
+<app cert="high" type="orthographic">
+   <lem wit="#a">religatus</lem>
+   <rdg wit="#g">relegatus</rdg>
 </app> est, et Flauia Domitilla in insulam Pontianam ob fidei testimonium exiliatur. Qui et ipsum Iohannem apostolum in feruentis olei dolium iussit mergi, a quo omnino illesus exiuit. Domitianus quoque acerbitate tormentorum, et cruentissime questionis, exquiri genus Dauid inter Iudeos 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> atque interfici precepit. Cumque Domitianus 
-<app cert="medium" type="orthographic" subtype="tc">
+<app cert="high" type="orthographic" subtype="tc">
    <lem wit="#g">exitiabilis</lem>
    <rdg wit="#a">exiciabilis</rdg>
 </app> ob scelera uniuersis exosus esset, suorum coniuratione in palatio interfectus est, anno etatis sue XXX 
@@ -5592,9 +5624,9 @@ Hic secundus post Neronem Christianos persequitur, sub quo Iohannes apostolus in
    <lem wit="#a">,</lem>
    <rdg wit="#g"> </rdg>
 </app> cuius cadauer populari sandapila per 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">uispelliones</lem>
-   <rdg wit="#a">uespiliones</rdg>
+<app cert="high" type="orthographic">
+   <lem wit="#a">uespiliones</lem>
+   <rdg wit="#g">uispelliones</rdg>
 </app> exportatum, atque ignominiosissime sepultum est. Cuius imperii anno 
 <app cert="high" type="orthographic" subtype="num-word">
    <lem wit="#g">octauo</lem>
@@ -5604,15 +5636,15 @@ Hic secundus post Neronem Christianos persequitur, sub quo Iohannes apostolus in
    <lem wit="#a">,</lem>
    <rdg wit="#g"> </rdg>
 </app> natione Romanus, ex patre Faustino pontificalem cathedram gubernauit, seditque annos IX menses duos. Hic constituit canonem super 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">eucharistia</lem>
-   <rdg wit="#a">eucharistiam</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">eucharistiam</lem>
+   <rdg wit="#g">eucharistia</rdg>
 </app> decantari, et ut Episcopus electione cleri 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> et laude plebis constitueretur. Hic sub Traiano deportatus exilio trans Ellespontum, marinis fluctibus pro Christi nomine 
-<app cert="medium" type="orthographic" subtype="mn">
+<app cert="high" type="orthographic" subtype="mn">
    <lem wit="#g">immersus</lem>
    <rdg wit="#a">inmersus</rdg>
 </app> est. 
@@ -5620,7 +5652,7 @@ Hic secundus post Neronem Christianos persequitur, sub quo Iohannes apostolus in
  
 <p xml:id="g55.14-55.22">
 Anni Domini LXXXVIII et anno ab urbe condita DCCCXLVI quamuis Euthropius 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="high" type="substantial">
    <lem wit="#g">quingentesimum</lem>
    <rdg wit="#a">quingentissimum</rdg>
 </app> hunc annum esse scripserit: Nerua in priuata uita moderatus et strenuus, nobilitatis medie, senex admodum, imperator decimus ab Augusto creatus est. Equissimum se et utillimum reipublice prebuit: qui diuina prouisione consulens Traianum sibi adoptauit in regnum. Nerua siquidem primo edicto suo cunctos exules reuocauit. Unde et Ioannes apostolus hac indulgentia liberatus ad Ephesum rediit. Et quia concussam se absente per hereticos uidit ecclesie fidem, confestim hanc descriptam in euangelio suo uerbi Dei eternitatem stabiliuit. Nerua confectus morbo diem obiit, post annum et 
@@ -5640,9 +5672,9 @@ Anni Domini
    <lem wit="#g">XCIX</lem>
    <rdg wit="#a">XCVIII</rdg>
 </app> et anno ab urbe condita DCCCLI. Traianus genere hispanus, cognomento Ulpius Crinitus, 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">cuiusdem</lem>
-   <rdg wit="#a">cuiusdam</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">cuiusdam</lem>
+   <rdg wit="#g">cuiusdem</rdg>
 </app> Consulis filius, undecimus ab Augusto apud Agrippinam Gallie urbem 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -5656,9 +5688,9 @@ Anni Domini
    <lem wit="#a">;</lem>
    <rdg wit="#g"> </rdg>
 </app> Romani enim imperii, quod 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">ab Augusto</lem>
-   <rdg wit="#a">post Augustum</rdg>
+<app cert="high" type="substantial">
+   <lem wit="#a">post Augustum</lem>
+   <rdg wit="#g">ab Augusto</rdg>
 </app> defensum magis fuerat 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -5673,12 +5705,20 @@ Anni Domini
    <rdg wit="#g">,</rdg>
 </app> et multas trans Danubium gentes subegit. Parthos recepit. Albanis regem dedit. 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Carduenos,</lem>
+   <lem wit="#g">Carduenos</lem>
    <rdg wit="#a">Corduenos</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Marcomannos occupauit. Regiones trans 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Euphratem,</lem>
+<app cert="medium" type="orthographic" subtype="ph">
+   <lem wit="#g">Euphratem</lem>
    <rdg wit="#a">Eufratem</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Tigrin sitas, prouincias fecit. Armeniam, Assiriam, Mesopotamiam, 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Seleuciam</lem>
@@ -5914,7 +5954,11 @@ Et anno ab urbe condita DCCCLXVII.
 </app> Bizantius. Tertio quoque anno imperii Adriani, decedente Alexandro urbis Rome episcopo, 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Xistus</lem>
-   <rdg wit="#a">Christus,</rdg>
+   <rdg wit="#a">Christus</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> natione Romanus 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
@@ -6064,17 +6108,21 @@ Et anno ab urbe condita DCCCLXXXVIII.
    <lem wit="#a">,</lem>
    <rdg wit="#g"> </rdg>
 </app> morbo correptus interiit, uite anno LXXVII 
-<app cert="medium" type="substantial" subtype="punct-in-print-vs-punct-and-letters-in-ms">
-   <lem wit="#g">.</lem>
-   <rdg wit="#a">, imperii XXIII</rdg>
+<app cert="high" type="punctuation" subtype="different-punct">
+   <lem wit="#a">, imperii</lem>
+   <rdg wit="#g">. Imperii</rdg>
 </app>  
-<app cert="medium" type="substantial" subtype="missing-in-ms">
-   <lem wit="#g">Imperii XIII.</lem>
-   <rdg wit="#a"></rdg>
-</app> Huius tamen temporibus Ualentinus 
+<app cert="medium" type="substantial" subtype="num-num">
+   <lem wit="#g">XIII</lem>
+   <rdg wit="#a">XXIII</rdg>
+</app>. Huius tamen temporibus Ualentinus 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">heresiarcha,</lem>
+   <lem wit="#g">heresiarcha</lem>
    <rdg wit="#a">heresiarchis</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Cerdo magister Marcionis Romam uenerunt. Iustinus philosophus librum de christiana religione compositum 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Antonino</lem>
@@ -6153,9 +6201,14 @@ Anno ab incarnatione Domini CLXII et anno ab urbe condita
    <rdg wit="#a">laudari</rdg>
 </app> oportet. Adeo enim tranquillissimus fuit, ut ab infantia quoque uultum nec ex gaudio, nec ex merore mutauerit. Ipse etiam non solum uite moribus, sed etiam eruditione philosophus. Hic cum omnia Rome equo iure egisset, ad nullam insolentiam elatus imperii fastigio, 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">liberalitatis promptissime,</lem>
+   <lem wit="#g">liberalitatis</lem>
    <rdg wit="#a">libertatis</rdg>
-</app> prouincias ingenti benignitatis amore tractauit. Contra Germanos et Marcomannos, Quados, Glaucos, et Sarmatas pugnauit: quibus deuictis multique interfectis, ex eis ipse cum Commodo filio suo Antonino, que iam Cesarem fecerat, triumphauit. Ad huius belli sumptum, cum iam, erario 
+</app> 
+<app cert="medium" type="substantial" subtype="missing-in-ms">
+   <lem wit="#g">promptissime,</lem>
+   <rdg wit="#a"></rdg>
+</app> 
+ prouincias ingenti benignitatis amore tractauit. Contra Germanos et Marcomannos, Quados, Glaucos, et Sarmatas pugnauit: quibus deuictis multique interfectis, ex eis ipse cum Commodo filio suo Antonino, que iam Cesarem fecerat, triumphauit. Ad huius belli sumptum, cum iam, erario 
 <app cert="medium" type="orthographic" subtype="h">
    <lem wit="#g">exhausto</lem>
    <rdg wit="#a">exausto</rdg>
@@ -6229,8 +6282,12 @@ Cuius autem precepto persecutiones Christianorum, quarta post Neronem uice, grau
    <rdg wit="#a">Euletherium</rdg>
 </app> Rome episcopum epistola, ut Christianus efficeretur imperat. Apollinaris Asianus 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Ieropoli,</lem>
+   <lem wit="#g">Ieropoli</lem>
    <rdg wit="#a">Ierapoli</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et 
 <app cert="high" type="orthographic" subtype="y">
    <lem wit="#g">Dionysius</lem>
@@ -6281,8 +6338,12 @@ Anno ab
    <rdg wit="#g">,</rdg>
 </app> et palatium, plurimamque urbis partem solo coequauit. Colossi capite sublato, sue imaginis caput ei iussit imponi. Septembrem mensem ad nomen suum trasferre conatus, ut Commodus diceretur, sed ab omnibus id postea execratum fuit. Panthenus philosophus ex stoicis tunc in diuino uerbo fulgebat. Commodus cunctis incommodus in domo Uestaliani subita morte strangulatus interiit, cum post patrem annis duodecim et mensibus septem imperasset. In tanta quippe omnium execratione fuit, ut hostis humani generis etiam mortuus iudicaretur. Huic successit Elius Pertinax grandeuus iam septuagenarius, qui cum prefecturam urbium ageret, ex 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">senatusconsulto,</lem>
+   <lem wit="#g">senatusconsulto</lem>
    <rdg wit="#a">senatusconsultu</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> imperare iussus, sextus decimus ab Augusto, sexto mense, quo regnare ceperat, pretorianorum militum sedicione, et Iuliani iurisperiti scelere, in palatio occisus est, qui nil habet hystorie. Iulianus 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
@@ -7119,8 +7180,12 @@ Octaua persecutio in Ecclesia.
 <p xml:id="g68.33-69.35">
 Ualerianus siquidem mox ut arripuit imperium octauus a Nerone adigi per tormenta Christianos ad idolatriam, abnegantesque 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">eam,</lem>
+   <lem wit="#g">eam</lem>
    <rdg wit="#a">eum</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> interfici iussit, fuso per omnem Romanam solitudinem sanguine sanctorum. Ualerianus 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">illico</lem>
@@ -7346,9 +7411,13 @@ Anno Domini
    <lem wit="#a">,</lem>
    <rdg wit="#g"> </rdg>
 </app> iam per annos quindecim 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Illyricum,</lem>
+<app cert="high" type="orthographic" subtype="y">
+   <lem wit="#g">Illyricum</lem>
    <rdg wit="#a">Illiricum</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> Macedoniamque uastantes, bello adhortus, incredibili eos strage deleuit. Cum Alamannis 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">haud</lem>
@@ -7691,8 +7760,12 @@ Anno ab incarnatione Domini CCLXXXV et anno ab urbe condita
    <rdg wit="#a">criptis</rdg>
 </app> habitando per annos nouem, ab eodem Dioclitiano martyrio coronatur. Marcellinus, natione Romanus, ex patre 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Proiecto,</lem>
+   <lem wit="#g">Proiecto</lem>
    <rdg wit="#a">Piecto</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> post hunc in Romanum eligitur episcopum seditque annis octo, mensibus quattuor. Pierius presbyter Alexandrie 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -7710,9 +7783,13 @@ Anno ab incarnatione Domini CCLXXXV et anno ab urbe condita
  
 <p xml:id="g73.7-74.20">
 Anno ab incarnatione Domini 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">CCLXXXVII,</lem>
+<app cert="medium" type="substantial" subtype="num-num">
+   <lem wit="#g">CCLXXXVII</lem>
    <rdg wit="#a">CCLXXXV</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et anno ab urbe condita MXLI 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Diocletianus</lem>
@@ -7890,9 +7967,13 @@ Anno ab incarnatione Domini
    <lem wit="#g">quasi cote</lem>
    <rdg wit="#a">qua sicuti</rdg>
 </app> ad uirtutem usus est, mox per 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Illyricum,</lem>
+<app cert="high" type="orthographic" subtype="y">
+   <lem wit="#g">Illyricum</lem>
    <rdg wit="#a">Illiricum</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Mesiam</lem>
@@ -8015,8 +8096,12 @@ Interea
    <rdg wit="#a">cedibus</rdg>
 </app> martyrum 
 <app cert="medium" type="substantial" subtype="missing-in-ms">
-   <lem wit="#g">cedibus,</lem>
+   <lem wit="#g">cedibus</lem>
    <rdg wit="#a"></rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> incessabiliter acta est. Hec persecutio tam crudelis 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -8059,8 +8144,12 @@ Interea
    <rdg wit="#g">Idolatriam</rdg>
 </app>, quod infelix commisi, iudico me deponendum, anathematizo etiam quicumque corpus meum tradiderit sepulture; et accepto puluere flens posuit super caput suum, et dixit: heu me auarum, me corrupit aurum, et non possum in sacerdotio manere. Sicque pergens ad 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Diocletianum,</lem>
+   <lem wit="#g">Diocletianum</lem>
    <rdg wit="#a">Dioclitianum</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et grauissimis eum uerbis exasperans, ultro se professus christianum, cum Claudio et Quirino et Antonino capitalem accepit sententiam. Cuius corpus per trigintaquinque dies iacuit inhumatum; noctu uero apparuit apostolorum princeps in uisione Marcello sacerdoti, qui post eum episcopus effectus est, dicens: Marcelle 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
@@ -8211,8 +8300,12 @@ Marcellus natione Romanus
    <rdg wit="#a">aut</rdg>
 </app> procul a Salona est, preclaro otio senuit, qui dum ab 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Herculeo,</lem>
+   <lem wit="#g">Herculeo</lem>
    <rdg wit="#a">Herculio</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> atque 
 <app cert="medium" type="substantial" subtype="missing-in-print">
    <lem wit="#g"> </lem>
@@ -8308,7 +8401,11 @@ Marcellus natione Romanus
 </app>, quem orienti prefecit, et 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Seuerum</lem>
-   <rdg wit="#a">Seuerus,</rdg>
+   <rdg wit="#a">Seuerus</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> cui Italiam dedit: ipse in 
 <app cert="high" type="orthographic" subtype="y">
    <lem wit="#g">Illyrico</lem>
@@ -8519,8 +8616,12 @@ Ieronimus: Siluester natione Romanus ex patre Rufino
    <rdg wit="#g">,</rdg>
 </app> et 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Constantinopoli,</lem>
+   <lem wit="#g">Constantinopoli</lem>
    <rdg wit="#a">Constantinopolim</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> Dei iudicio turpissima morte multatum? Beatus autem Siluester priuilegium meruit a Constantino Augusto, ut omnes episcopi sint subiecti Romano pontifici, ut iudices imperatori. Huius temporibus factum est Concilium cum eius precepto in Nicea 
 <app cert="high" type="orthographic" subtype="y">
    <lem wit="#g">Bythinie</lem>
@@ -8651,8 +8752,12 @@ Beatus autem Siluester catholicus et confessor quieuit in pace, et sepultus est 
    <rdg wit="#a">eo</rdg>
 </app> genere ortus alitusque erat, satis 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">inutilis,</lem>
+   <lem wit="#g">inutilis</lem>
    <rdg wit="#a">utilis</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> ac malitie custos. Hic itaque repentina rabie suscitatus, omnes christianos e palatio suo iussit expelli. Mox bellum inter Constantinum 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -9330,8 +9435,12 @@ Felix autem episcopus natione Romanus
    <rdg wit="#a">Constantius</rdg>
 </app> predictus imperator, dum Constantem fratrem bello infectatur, incauta petulantia se offerens, a ducibus eius occisus est. Constans aduersus Persas, quid Mesopotamiam uastauerant, nouem preliis parum prospere decertauit. Nouissime 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">seditione,</lem>
+   <lem wit="#g">seditione</lem>
    <rdg wit="#a">sedictione</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> atque intemperantia militum, nocte adoriri 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">pugnam</lem>
@@ -9374,7 +9483,11 @@ Felix autem episcopus natione Romanus
 </app> arripuit imperium, quod continuo per Galliam, Africam, Italiamque porrexit. In Illirico autem 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Uetranionem</lem>
-   <rdg wit="#a">Ueternonem,</rdg>
+   <rdg wit="#a">Ueternonem</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> etate grandeuum, imperatorem sibi milites creauerunt, uirum natura simplicem, cunctisque 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">iucundum</lem>
@@ -9460,9 +9573,13 @@ Felix autem episcopus natione Romanus
    <lem wit="#g">eiusdem</lem>
    <rdg wit="#a">eius</rdg>
 </app> quem Cesarem Gallis prefecerat, apud Senonam laqueo uitam finiuit. Anno imperii sui quarto, Constantium Gallum patrui filium Cesarem legit; quem rursus crudeliter ac tirannice agentem, paulo postquam creauerat occidit. Siluanum quoque per Gallias rebus nouis 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="medium" type="orthographic" subtype="h">
    <lem wit="#g">inhiantem</lem>
-   <rdg wit="#a">iniantem,</rdg>
+   <rdg wit="#a">iniantem</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> mature circumuentum 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -9744,12 +9861,20 @@ O nimium dilecte Deo! tibi militat ether Et coniurati ueniunt ad classica uenti.
    <rdg wit="#g">,</rdg>
 </app> uel patrem aspero casu officia comprobasset. 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Uinolentiam,</lem>
+   <lem wit="#g">Uinolentiam</lem>
    <rdg wit="#a">Uiolentiam</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et cupiditatem detestatus est. Bella non mouit, sed inuenit. Ministeria 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">lasciua,</lem>
+   <lem wit="#g">lasciua</lem>
    <rdg wit="#a">lasciuia</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> saltariasque 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">comessationes</lem>
@@ -9883,9 +10008,13 @@ O nimium dilecte Deo! tibi militat ether Et coniurati ueniunt ad classica uenti.
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> ac tranquillatam utrisque filiis 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Arcadio,</lem>
+<app cert="medium" type="orthographic" subtype="h">
+   <lem wit="#g">Arcadio</lem>
    <rdg wit="#a">Archadio</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Honorio relinquens. Corpus eius eodem anno Constantinopolim translatum 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -9975,8 +10104,12 @@ His uero temporibus Siricio papa decedente, Anastasius natione Romanus ex patre 
    <rdg wit="#a">Archadius</rdg>
 </app> post patris excessum annis duodecim, imperiique summam Theodosio filio paruo admodum moriens reliquit. Eo tempore corpora sanctorum 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Abacuc,</lem>
+   <lem wit="#g">Abacuc</lem>
    <rdg wit="#a">Abbacuc</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Michee prophetarum, diuina reuelatione produntur. Quo tempore Pelagius Britto Dei ecclesiam impugnat. 
 </p>
  
@@ -10342,9 +10475,13 @@ His quoque diebus Anastasio papa diem obeunte, Innocentius natione Albanensis ex
    <lem wit="#g">substitueret</lem>
    <rdg wit="#a">subsisteret</rdg>
 </app>, ante biennium Romane irruptionis sollicitauit Alanos, Sueuos, 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Wandalos,</lem>
+<app cert="medium" type="orthographic" subtype="generic-orthographic">
+   <lem wit="#g">Wandalos</lem>
    <rdg wit="#a">Guandalos</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> atque Burgundiones 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">inuenire</lem>
@@ -10639,8 +10776,12 @@ Huic autem
    <rdg wit="#a">uite</rdg>
 </app> migrauit ad Christum. Honorius uero postquam cum minore, de quo premissum est, Theodosio Archadii germani sui filio, annis quindecim imperasset, cum iam antea cum fratre annis 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">tresdecim,</lem>
+   <lem wit="#g">tresdecim</lem>
    <rdg wit="#a">tredecim</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> ac sub patre ubique regnasset, rem publicam, cui preerat, pacatam relinquens, apud urbem Romam uita exemptus est. Fuit Honorius moribus 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -10714,9 +10855,13 @@ Anno dominice incarnationis CDXXIV, et anno ab Urbe condita
    <lem resp="#pm">Septembris</lem>
    <rdg wit="#g #a">septembris</rdg>
 </app>, cum uixisset annos 
-<app cert="medium" type="unknown" subtype="unknown">
+<app cert="medium" type="substantial" subtype="num-num">
    <lem wit="#g">LXVII</lem>
-   <rdg wit="#a">LXXVII,</rdg>
+   <rdg wit="#a">LXXVII</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> cum in clericatu, uel in episcopatu annos fere XL complesset. Sequenti uero anno 
 <app cert="medium" type="orthographic" subtype="generic-orthographic">
    <lem wit="#g">Wandali</lem>
@@ -10768,7 +10913,11 @@ Anno dominice incarnationis CDXXIV, et anno ab Urbe condita
 </app> ualuerunt expelli. At uero residui 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Britannorum</lem>
-   <rdg wit="#a">Brittannorum,</rdg>
+   <rdg wit="#a">Brittannorum</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> dum continue Scothorum impetus formidarent, ultra iam de Romanorum presidio diffidentes, Anglorum 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">gente</lem>
@@ -10776,7 +10925,11 @@ Anno dominice incarnationis CDXXIV, et anno ab Urbe condita
 </app> cum rege suo Uertigerno ad defensionem sue patrie inuitauere, quos amicali societate 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">exceptos</lem>
-   <rdg wit="#a">excepta,</rdg>
+   <rdg wit="#a">excepta</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> uersa in contrarium uice, hostes pro adiutoribus impugnatoresque sensere. At uero Theodosius, dum absque uiginti et uno superioribus anni, quibus cum Honorio patruo regnauerat, septem et uiginti annis imperium gessisset, ex quibus cum Ualentiniano XXV transegit, apud Constantinopolim morbo consumptus obiit. Cuius imperii 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">tempora</lem>
@@ -10802,9 +10955,13 @@ Anno dominice incarnationis CDXXIV, et anno ab Urbe condita
    <lem wit="#a"></lem>
    <rdg wit="#g">,</rdg>
 </app> multarumque gentium reges tunc 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Illyricum,</lem>
+<app cert="high" type="orthographic" subtype="y">
+   <lem wit="#g">Illyricum</lem>
    <rdg wit="#a">Illiricum</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> Thraciamque depopulati sunt. 
 </p>
  
@@ -11018,9 +11175,13 @@ Anno dominice Incarnationis CDLI et anno ab Urbe condita MCCIV
    <lem wit="#g">Brixiam</lem>
    <rdg wit="#a">Brexiam</rdg>
 </app>, 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Pergamum,</lem>
+<app cert="medium" type="orthographic" subtype="mn">
+   <lem wit="#g">Pergamum</lem>
    <rdg wit="#a">Perganum</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> seu reliquas ciuitates, nullo resistente Hunni 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">bacchabantur</lem>
@@ -11226,9 +11387,13 @@ Anno dominice Incarnationis CDLI et anno ab Urbe condita MCCIV
    <lem wit="#g">Carthaginem</lem>
    <rdg wit="#a">Cartaginem</rdg>
 </app> ducta sunt. Capta itaque a Geiserico Roma est, postquam eam primo Alaricus inuaserat, secunda iam uice, expletis ab eo tempore quadraginta quatuor annis, a conditione sua mille ducentis septem euolutis. Relicta itaque Roma, per Campaniam 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Wandali,</lem>
+<app cert="medium" type="orthographic" subtype="generic-orthographic">
+   <lem wit="#g">Wandali</lem>
    <rdg wit="#a">Guandali</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> Maurique sese infundentes, cuncta ferro 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -11439,8 +11604,12 @@ Anno dominice Incarnationis CDLVIII et anno ab urbis conditione MCCXI. Leo quint
    <rdg wit="#a">scripsit</rdg>
 </app> de uera incarnatione domini Saluatoris aduersus 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Eutychen,</lem>
+   <lem wit="#g">Eutychen</lem>
    <rdg wit="#a">Euticen</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et Dioscorum Alexandrie episcopum, qui humanam in Christo carnem negant 
 <app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">. Scripsit</lem>
@@ -11540,7 +11709,11 @@ Interea Rome Simplicio papa decedente, Felix natione Romanus ex patre Felice pre
 </app>. Sub huius episcopatu iterum relatio de Grecia uenit, Petrum Alexandrinum reuocatum ab Acatio episcopo Constantinopolitano. Tunc Felix uenerabilis archiepiscopus apostolice sedis Romane misit duos 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">episcopus</lem>
-   <rdg wit="#a">episcopos,</rdg>
+   <rdg wit="#a">episcopos</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> Mesenum 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -11943,8 +12116,12 @@ Interea Simmacho papa uita decedente, successit ei Hormisda natione Campanus, ex
    <rdg wit="#a">, Euthichianam</rdg>
 </app> heresiarcem sequens, denegaret, Hormisda papa direxit Enodium 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Ticinensem,</lem>
+   <lem wit="#g">Ticinensem</lem>
    <rdg wit="#a">Ticiniensem</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> episcopum 
 <app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
    <lem wit="#a"></lem>
@@ -12187,8 +12364,16 @@ Hic
    <rdg wit="#a">ammonet</rdg>
 </app> locus, ut et de 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">Langobardorum historiis,</lem>
-   <rdg wit="#a">Longobardorum ystoriis</rdg>
+   <lem wit="#g">Langobardorum</lem>
+   <rdg wit="#a">Longobardorum</rdg>
+</app> 
+<app cert="medium" type="unknown" subtype="unknown">
+   <lem wit="#g">historiis</lem>
+   <rdg wit="#a">ystoriis</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> Francorumque gestis, 
 <app cert="medium" type="orthographic" subtype="word-segmentation">
    <lem wit="#g">pro ut</lem>
@@ -12415,8 +12600,12 @@ Eo tempore defuncto Anastasio papa,
    <rdg wit="#a"></rdg>
 </app> papa Hormisde 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">successerat.</lem>
-   <rdg wit="#a">succeserat,</rdg>
+   <lem wit="#g">successerat</lem>
+   <rdg wit="#a">succeserat</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="different-punct">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g">.</rdg>
 </app> Constantinopolim ad imperatorem Iustinum a Theoderico 
 <app cert="medium" type="substantial" subtype="missing-in-print">
    <lem wit="#g"> </lem>
@@ -12564,7 +12753,11 @@ Cuius tempore Stella ex aduerso ueniens, in lunam ingressa est. Tunc quoque uue 
 </app> itaque, qui et 
 <app cert="medium" type="unknown" subtype="unknown">
    <lem wit="#g">Charibertus</lem>
-   <rdg wit="#a">Aribertus,</rdg>
+   <rdg wit="#a">Aribertus</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+   <lem wit="#a">,</lem>
+   <rdg wit="#g"></rdg>
 </app> rex Parisiorum 
 <app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
    <lem wit="#a">,</lem>
@@ -13055,12 +13248,12 @@ Preterea Guittingis Gothorum rex, coacto in unum iterum magno Gothorum exercitu,
    <rdg wit="#a"></rdg>
 </app>, honorati multis muneribus Longobardi uictores ad propria 
 <app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">remearunt,</lem>
+   <lem wit="#g">remearunt</lem>
    <rdg wit="#a">remeare</rdg>
 </app> 
-<app cert="medium" type="unknown" subtype="unknown">
-   <lem wit="#g">remearunt,</lem>
-   <rdg wit="#a">remeare</rdg>
+<app cert="high" type="punctuation" subtype="punct-in-print-vs-missing-in-ms">
+   <lem wit="#a"></lem>
+   <rdg wit="#g">,</rdg>
 </app> et omni tempore, quo Langobardi Pannoniam possederunt, Romane reipublice aduersus emulos adiutores fuerunt. Sicque Narsis uniuersam Italiam ad reipublice iura reduxit. Totila interfecto, qui iam ultra decem annos in ea regnauerat 
 <app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">, pari</lem>
