@@ -290,8 +290,10 @@ def getVariantSubTypeBasedOnSetDifferenceDiff(myString1, myString2):
     diff2 = set2.difference(set1)
 
     # cora / chora, subtype 'h'
-    if (diff1 == set() and diff2.lower() == {'h'} or
-            diff1.lower() == {'h'} and diff2 == set()):
+    if ((diff1 == set() and diff2 == {'h'}) or
+            (diff1 == set() and diff2 == {'H'}) or
+            (diff1 == {'H'} and diff2 == set()) or
+            (diff1 == {'h'} and diff2 == set())):
         my_subtype = 'h'
 
     for row in one_char_diff_subtypes:
