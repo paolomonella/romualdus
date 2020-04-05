@@ -324,11 +324,11 @@ Anno dominice incarnationis MLXXVI, indictione XV; cepitque Gisulfum principem q
    <lem wit="#b">Beneuentum</lem>
    <rdg wit="#a"></rdg>
 </app>, acriter eam expugnans. Et nisi Romanus pontifex, cuius precepto parebat, hoc idem duci prohibuisset, nequaquam ab incepto desisteret donec eam caperet. Simili modo et Riccardus princeps Neapolim obsedit ipso eodem anno, fortiter illam ciuitatem expugnans undique ut eam ui caperet. Sed eodem anno in eadem obsidione princeps iste mortuus est anno principatus sui XX, indictione I. Fuit autem hic statura procerus, forti animo, ingenio astutus, largitate famosus, circa beniuolos et sibi fideles mansuetus atque benignus, rebellibus autem ac perfidis ualde terribilis. Cui 
-<app cert="high" type="transposition">
+<app cert="high" type="substantial" subtype="missing-in-print">
    <lem wit="#b"> </lem>
    <rdg wit="#a">successit</rdg>
 </app> Iordanus filius eius 
-<app cert="high" type="transposition">
+<app cert="high" type="substantial" subtype="missing-in-ms">
    <lem wit="#b">successit</lem>
    <rdg wit="#a"></rdg>
 </app>. Hic autem 
@@ -811,8 +811,8 @@ Anno
    <rdg wit="#a">possidebant</rdg>
 </app>. Capta itaque Ierusalem, christiani statuerunt 
 <app cert="high" type="substantial">
-   <lem wit="#a">ibi</lem>
-   <rdg wit="#b #g">sibi</rdg>
+   <lem wit="#b #g">sibi</lem>
+   <rdg wit="#a">ibi</rdg>
 </app> 
 <app cert="high" type="orthographic">
    <lem wit="#b">Gothifredum</lem>
@@ -1078,7 +1078,11 @@ Anno
 </app> in propria orbitate. Cui Willelmus filius eius in honore ducatus eius successit. Post obitum uero ducis Roggerii die quarta decima Boamundus frater ipsius Roggerii ducis simili infirmitate in Apulia mortuus est sepultusque iuxta ecclesiam beati Sabini confessoris in ciuitate Canusia. Fuit autem Boamundus miles strenuus, corpore deducto, 
 <app cert="high" type="substantial">
    <lem wit="#b">honorabili</lem>
-   <rdg wit="#a">honorabilis,</rdg>
+   <rdg wit="#a">honorabilis</rdg>
+</app> 
+<app cert="high" type="punctuation" subtype="different-punct">
+   <lem wit="#a">,</lem>
+   <rdg wit="#b"></rdg>
 </app> animo constans, cautus eloquio, ingenio astutus, bellicosus, inquietus, semper impossibilia appetens, peritia atque uirtute in bello preualidus. Huic autem Boamundus filius eius una cum matre sua 
 <app cert="high" type="substantial" subtype="missing-in-ms">
    <lem wit="#b">domna</lem>
@@ -1282,11 +1286,11 @@ Anno
    <lem wit="#a">secuti</lem>
    <rdg wit="#b">sequti</rdg>
 </app> sunt ordinatus 
-<app cert="high" type="substantial" subtype="missing-in-ms">
+<app cert="high" type="transposition">
    <lem wit="#b">est</lem>
    <rdg wit="#a"></rdg>
 </app> et consecratus 
-<app cert="high" type="substantial" subtype="missing-in-print">
+<app cert="high" type="transposition">
    <lem wit="#b"></lem>
    <rdg wit="#a">est</rdg>
 </app>; spreuerat enim predicti imperatoris assensum eiusque communionem. Imperator autem hoc uidens, conuocato populo Romano cum quibusdam clericis, iussit eligi in ordine summi pontificis quemdam Burdinum nomine, cui nomen impositum est Gregorius papa seditque in ecclesia beati Petri. Hic autem Burdinus prius in Toletana ecclesia 
@@ -1930,8 +1934,8 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
    <rdg wit="#a2">abiit</rdg>
 </app> Brundusium, posuitque 
 <app cert="high" type="substantial">
-   <lem wit="#b #g">sibi</lem>
-   <rdg wit="#a2">ibi</rdg>
+   <lem wit="#a2">ibi</lem>
+   <rdg wit="#b #g">sibi</rdg>
 </app> obsidionem in mense Iunii per terram et mare, fecitque ante eam turrem fieri ex trabibus proceris et altissimis, ferreisque nexibus, coriis uiminibusque 
 <app cert="high" type="substantial">
    <lem wit="#b">muniuit</lem>
@@ -1974,7 +1978,7 @@ Anno dominice incarnationis MCXXVIII, indictione VII. Hoc anno mense Maii comes 
    <lem wit="#a2">uidens</lem>
    <rdg wit="#b"> </rdg>
 </app> nullo modo suum preualere ingenium 
-<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a2">,</lem>
    <rdg wit="#b"> </rdg>
 </app> uidens 
@@ -2089,8 +2093,8 @@ Interea Innocentius papa in Francia aliquantulum demoratus Alamanniam uenit et a
    <rdg wit="#a"></rdg>
 </app> uniuersis principibus eius cum summa est gloria et deuotione susceptus. Imperator autem tum predicti pape suggestione et ammonitione continua, tum exulum Apulie precibus et miseratione commotus cum magno esercitu Italiam intrauit et per partes Ancone simul cum papa Innocentio in Apuliam uenit, Robbertum uero Capuanum principem cum comite Raydulfo et aliis exulibus 
 <app cert="high" type="substantial">
-   <lem wit="#a">cum</lem>
-   <rdg wit="#b #g">et</rdg>
+   <lem wit="#b #g">et</lem>
+   <rdg wit="#a">cum</rdg>
 </app> quadam parte sui exercitus Terram Laboris intrare iussit, galeas etiam Pisanorum in eorum auxilio uenire precepit. Imperator autem totam Apuliam, resistente sibi nemine, occupauit. 
 </p>
  
@@ -2153,8 +2157,8 @@ Cumque de pace inter eos componenda, mediante
    <rdg wit="#a">Bernaldo</rdg>
 </app> 
 <app cert="high" type="orthographic" subtype="ae">
-   <lem wit="#b">Claraeuallensi</lem>
-   <rdg wit="#a">Clareuallensi</rdg>
+   <lem wit="#a">Clareuallensi</lem>
+   <rdg wit="#b">Claraeuallensi</rdg>
 </app> abbate, diutius esse tractatum nec potuisset, peccatis exigentibus, 
 <app cert="high" type="orthographic" subtype="double">
    <lem wit="#b">consumari</lem>
@@ -2257,8 +2261,8 @@ Cumque de pace inter eos componenda, mediante
    <rdg wit="#a">X</rdg>
 </app>. Huic successit Bernardus natione Pisanus, prius monachus 
 <app cert="high" type="orthographic" subtype="ae">
-   <lem wit="#b">Claraeuallensis</lem>
-   <rdg wit="#a #g">Clareuallensis</rdg>
+   <lem wit="#a #g">Clareuallensis</lem>
+   <rdg wit="#b">Claraeuallensis</rdg>
 </app> et abbas Sancti anastasii, deinde presbiter cardinalis, qui Eugenius tertius est 
 <app cert="high" type="substantial">
    <lem wit="#b #g">appellatus</lem>
@@ -2404,7 +2408,7 @@ Sic uir sapiens et discretus predictis deliciis, prout temporis expetebat qualit
  
 <p xml:id="g234.3-235.5">
 Nouissime Maionem iuuenem de Baro oriundum, uirum utique facundum 
-<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">,</lem>
    <rdg wit="#b"> </rdg>
 </app> satis prouidum et discretum, primo scriniarium, dehinc uicecancellarium, postremo cancellarium fecit. De nouo multos in regno suo comites ordinauit, ciuitatem Cephaludium ipse fecit edificari, in qua ecclesiam Sancti saluatoris 
@@ -2625,8 +2629,8 @@ Interea circa natiuitatem Domini Anastasius papa mortuus est anno
    <rdg wit="#a">Askittino</rdg>
 </app> Catheniensi archidiacono, quem cancellarium fecerat, Apulie amministrationem commisit, et ipse cum ammirato in Siciliam rediit. Cancellarius autem ex mandato eiusdem regis, congregato magno exercitu, Beneuentum obsedit et 
 <app cert="high" type="substantial">
-   <lem wit="#a">eam</lem>
-   <rdg wit="#b #g">eum</rdg>
+   <lem wit="#b #g">eum</lem>
+   <rdg wit="#a">eam</rdg>
 </app> usque ad menia deuastauit. Ciues autem eiusdem ciuitatis eidem uiriliter restiterunt et Petrum archiepiscopum, quem pro parte regis suspectum habebant, interfecerunt. Cumque ciuitas illa aliquanto tempore fuisset obsessa, quidam de baronibus rebelles effecti, ciuitatem ingressi hostibus adheserunt. Alii uero sine 
 <app cert="high" type="orthographic" subtype="tc">
    <lem wit="#b">licencia</lem>
@@ -2751,7 +2755,7 @@ Interea Adrianus papa apud Anagniam mortuus est, anno pontificatus sui quinto, m
    <lem wit="#b">Septembris</lem>
    <rdg wit="#a">Februarii</rdg>
 </app>. Corpus uero eius Rome ductum est et in ecclesia beati Petri cum honore sepultum. Omnes autem cardinales cum episcopis in eadem ecclesia congregati, primo unanimiter conuenerunt in electione Rolandi Romane ecclesie cancellarii et cardinalis Sancti Marci, qui 
-<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">,</lem>
    <rdg wit="#b"> </rdg>
 </app> uir religiosus et timens Deum, considerans tanti honoris sarcinam, pro posse restitit et repugnauit. Episcopi uero et cardinales 
@@ -2963,7 +2967,7 @@ Interea Alexander papa, cum apud
    <lem wit="#a"></lem>
    <rdg wit="#b">,</rdg>
 </app> moratus fuerat 
-<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">,</lem>
    <rdg wit="#b"></rdg>
 </app> cognito recessu Alexandri, in Lombardiam ad imperatorem uenit, a quo satis honorifice est receptus. Dehinc imperator, episcoporum conuentu apud Papiam sollempniter congregato, Octauianum, qui Uictor dicebatur, in catholicum papam recepit, promittens publice et legaliter, quod nec ipse nec successores eius Alexandro uel successoribus eius ulterius obedirent. Imperator uero, cum per quinquennium Mediolanum inpugnasset, et ciuitatem resistentibus bellicosis ciuibus expugnare non potuisset, tandem cum eis ad concordiam deuenit, promittens ciuitatem integram et ciues cum rebus suis permanere illesos. Qui postmodum sue promissionis oblitus 
@@ -3187,7 +3191,7 @@ Interea Guido Cremensis, qui et Paschalis dictus est, mortuus est. Cui successit
    <lem wit="#a #g">eandem</lem>
    <rdg wit="#b">eadem</rdg>
 </app> ciuitatem in sua protectione recepit, et ad illam cum cardinalibus et tota curia sua perrexit, et prenominato Ionathe de eadem ciuitate concambium tribuit. Quod factum Romanis multum displicuit, recolentes enim dampna, iniurias et mortes suorum ciuium, quas Tusculanenses cum Raynaldo imperatoris cancellario eis intulerant, indignati sunt plurimum et turbati, quod Alexander papa Tusculanum, quam ipsi dextruere nitebantur, in sua protectione receperat; et ob hoc inter eos et predictum papam guerra maxima est exorta. Que cum aliquando tempore perdurasset, Romani utpote callidi et dolosi, benignitatem Alexandri pape circumuenientes 
-<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">,</lem>
    <rdg wit="#b"> </rdg>
 </app> promiserunt, quod eum tamquam patrem et dominum in Urbe reciperent, et mandatis suis libenter obedirent, si prenominate ciuitatis muros dextrui pateretur. Alexander autem papa eorum promissionibus et uerbis fidem adhibens, muros predicte ciuitatis passus est dirui. Quo facto Romani uoto suo potiti, quod pape promiserant adimplere noluerunt. Papa uero a Romanis se circumuentum plurimum condolens, turrim Tusculanorum fossis et muris circumuallari fecit, et relicta ibi militum et peditum competenti custodia, Anagniam rediit, et ibi multo est tempore demoratus. 
@@ -3742,7 +3746,7 @@ Postquam Alexander papa suo sermoni finem imposuit, Lombardi in utraque militia 
    <lem wit="#a #g">libertatem</lem>
    <rdg wit="#b">liberatem</rdg>
 </app> autem nostram, quam a patribus nostris 
-<app cert="high" type="punctuation" subtype="missing-in-print-vs-punct-in-ms">
+<app cert="high" type="punctuation" subtype="different-punct">
    <lem wit="#a">,</lem>
    <rdg wit="#b"> </rdg>
 </app> auis et proauis hereditario iure contraximus, nequaquam relinquimus, quam 

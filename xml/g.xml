@@ -3466,7 +3466,7 @@ non penis, non exiliis, non ipso mortis discrimine pauefacti, numero centum quin
 <pb n="75" ed="#g"/> 
 &gl;ita res se haberet, ut fama retulerat. <rs>marcellinus</rs> uero rem omnem feriatim, confessus est, 
 &gl;et se reum esse professus est, adiciens etiam se paratum obedire quicquid illi sibi uoluissent 
-&gl;imponere. <hi>ad</hi> hec <said>absit, ut summus pontifex ab aliquo iudicetur; negasti tu, negauit et 
+&gl;imponere. <hi>ad</hi> hec illi: <said>absit, ut summus pontifex ab aliquo iudicetur; negasti tu, negauit et 
 &gl;<rs>petrus</rs> magister tuus. <hi>et</hi> quis <hi>apostolorum</hi> ausus fuit eum exinde iudicare? <hi>sed</hi> egressus 
 &gl;foras fleuit amare. <hi>tu</hi> igitur in sinu tuo collige causam tuam, tuo proprio ore te iudica</said>. 
 &gl;<hi>audiens</hi> hec <rs>marcellinus</rs>: <said>ob scelus</said>, inquit, <said>et <hi>idolatriam</hi>, quod infelix commisi, iudico me depo&gd;nendum, 
@@ -3651,7 +3651,7 @@ prestaret. <hi>multas</hi> leges abrogauit, quasdam bonas et equas, plerasque su
 &gl;statuit, extra ullam hominum cedem templa claudi, et <hi>christianorum</hi> ecclesias aperiri. <hi>mox</hi> 
 &gl;<rs>gothorum</rs> fortissimas, et copiosissimas gentes in ipso barbarici soli sinu, hoc est in <rs>sarma&gd;tarum</rs> 
 regione, deleuit. <hi>quemdam</hi> <rs>calocerum</rs> in <rs>cypro</rs> aspirantem nouis rebus oppressit 
-&gl;(cum) <rs>tricennalibus</rs> suis <rs>dalmatium</rs> <rs>cesarem</rs> legit. <hi>cumque</hi> bellum in <rs>persas</rs> moliretur, in 
+&gl;<surplus rend="parenthesis" resp="#g">cum</surplus> <rs>tricennalibus</rs> suis <rs>dalmatium</rs> <rs>cesarem</rs> legit. <hi>cumque</hi> bellum in <rs>persas</rs> moliretur, in 
 &gl;uilla publica iuxta <rs>nicomediam</rs>, dispositam bene rempublicam filiis tradens, diem obiit anno 
 &gl;imperii sui <num value="31">xxxi</num> etatis autem <num value="67">lxuii</num>. 
 </p> 
@@ -3873,7 +3873,7 @@ manu fretus, inuasit imperium; qui cum improbus, ac per hoc inuisus cunctis esse
 &gl;caput, sicut pila per urbem circulatum est. <hi>sequitur</hi> bellum illud orribile inter <rs>constan&gd;tium</rs>, 
 et <rs>magnentium</rs>, apud <rs>mursam</rs> urbem gestum, in quo multa <rs>romanarum</rs> uirium pro&gd;fligatio 
 etiam in posterum nocuit. <rs>magnentius</rs> tamen uictus aufugit, ac non multo post apud 
-&gl;<rs>lugdunum</rs>, propria se manu interfecit. <rs>decentius</rs> quoque fratrer eiusdem quem <rs>cesarem</rs> 
+&gl;<rs>lugdunum</rs>, propria se manu interfecit. <rs>decentius</rs> quoque <sic><rs>fratrer</rs></sic><corr resp="#pm" type="typo">frater</corr> eiusdem quem <rs>cesarem</rs> 
 &gl;<rs>gallis</rs> prefecerat, apud <rs>senonam</rs> laqueo uitam finiuit. <hi>anno</hi> imperii sui quarto, <rs>con&gd;stantium</rs> 
 <rs>gallum</rs> patrui filium <rs>cesarem</rs> legit; quem rursus crudeliter ac tirannice agentem, 
 &gl;paulo postquam creauerat occidit. <rs>siluanum</rs> <pb n="111v" facs="vat:119" ed="#a"/>quoque per <rs>gallias</rs> rebus nouis inhiantem 
@@ -3929,7 +3929,7 @@ completur, qui destructo <rs>serapis</rs> sepulchro, <rs>sancti</rs> <rs>ioannis
 </p> 
 
 
-<p xml:id="g85.12-85.30" decls="#ocr"> 
+<p xml:id="g85.12-85.20" decls="#ocr"> 
 &gl;<rs>orosius</rs> autem: 
 &gl;<hi>anno</hi> ab urbe condita <num value="1116">mcxui</num> <rs>iulianus</rs> dudum <rs>cesar</rs> post <supplied rend="squarebrackets" resp="#g">autem</supplied> <num value="36">xxxui</num> ab <rs>augusto</rs> 
 &gl;potitus est regno, anno uno et mensibus sex; imperii summam solum obtinuit christianam 
@@ -3938,7 +3938,12 @@ completur, qui destructo <rs>serapis</rs> sepulchro, <rs>sancti</rs> <rs>ioannis
 precepit edicto, ne quis christianus <supplied rend="squarebrackets" resp="#g">docendorum</supplied> liberalium studiorum professor esset. 
 &gl;<hi>sed</hi> tamen, sicut a maioribus nostris compertum habemus, omnes ubique propemodum pre&gd;cepti 
 conditiones amplexati, officium magis, quam fidem deserere maluerunt. <rs>iulianus</rs> autem 
-&gl;bellum aduersus <rs>parthos</rs> parans, cum <rs>romanas</rs> uires <!--at this point in ms a some pages are missing and are interpolated by hand2 --><pb n="112br" facs="vat:121" ed="#a"/> contractas undique ad destinatam 
+&gl;bellum aduersus <rs>parthos</rs> parans, cum <rs>romanas</rs> uires <!--at this point in ms a some pages are missing and are interpolated by hand2 --><pb n="112br" facs="vat:121" ed="#a"/>
+</p>
+
+
+<p xml:id="g85.20-85.30" decls="#al"> 
+contractas undique ad destinatam 
 &gl;secum traheret perditionem, christianorum sanguinem <hi>diis</hi> suis nouit, palam persecuturus 
 &gl;ecclesiam, si uictoriam potuisset adipisci; nam et amphiteatrum <rs>ierosolymis</rs> extrui iussit, in 
 &gl;quo, reuersus a <rs>parthis</rs>, episcopos, monachos, omnesque eius loci sanctos bestiis etiam arte 
@@ -4201,9 +4206,15 @@ lucrum, et uinci uincere fuit. <hi>ad</hi> cuius laudem ob insignem uictoriam, <
 </p> 
 
 
-<p xml:id="g92.8-93.4" decls="#ocr"> 
+<p xml:id="g92.8-92.9" decls="#al"> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from page 92 line 8 to page 93 line 4 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 8 to line 9 in page 92 is missing in manuscript <hi>a</hi>.</note>
 &gl;<hi>fuit</hi> autem <rs>theodosius</rs> propagator reipublice, atque defensor eximius, moribus, et cor&gd;pore 
-eminenti, <rs>traiano</rs> similis, a quo et originem traxit. <pb n="113r" facs="vat:130" ed="#a"/><rs>clemens</rs> animo, misericors, 
+eminenti, <rs>traiano</rs> similis, a quo et originem traxit. 
+</p>
+
+
+<p xml:id="g92.9-93.4" decls="#ocr"> 
+<pb n="113r" facs="vat:130" ed="#a"/><rs>clemens</rs> animo, misericors, 
 &gl;communis omnibus, solo habitu differri se a ceteris putans; in omnes homines honorificus, 
 &gl;uerum effusus in bonos, simplicia ingenia diligere, erudita mirari, sed innoxia, largiri ma&gd;gno 
 ac diligenti animo magna, amare ciues, uel priuatos contubernio, eosque honoribus, 
