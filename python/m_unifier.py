@@ -3,7 +3,7 @@
 
 ''' This module unifies m1.xml and m2.xml into one file '''
 
-from shutil import copyfile
+# from shutil import copyfile
 from lxml import etree
 from myconst import ns, xmlpath
 
