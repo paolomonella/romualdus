@@ -105,7 +105,10 @@ class treeWithAppElements:
                     child.set('wit', new_wit_value)
 
     def edit_tei_header(self):
-        ''' Set some basic elements in the teiHeader of m1.xml and m2.xml '''
+        ''' Set some basic elements in the teiHeader of m1.xml and m2.xml.
+            This should be needed to make also m1-par-out.xml TEI-valid,
+            but the teiHeader of chronicon.xml will be edited manually
+            in file template.xml '''
 
         # Title and editor in <titleStmt>
         title_stmt = self.juxtaTree.find('.//t:titleStmt', ns)
