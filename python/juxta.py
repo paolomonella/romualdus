@@ -18,8 +18,8 @@ import m_unifier
 import my_database_import
 
 quiet = True  # If true, suppress standard output messages to console
-# chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
-chosen_ones = ('m1')
+chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+# chosen_ones = ('m1')
 pre = False  # Warning: re-activate it later
 post = True  # Perform post-collation operations
 
@@ -166,7 +166,7 @@ def completion():
     ''' Tell me how many paragraphs are left '''
     tot_par = my_database_import.import_table(dbpath, dbname, 'paragraphs')
     checked_par = [p for p in tot_par if p['checked'] > 0]
-    done = len(checked_par)
+    done = len(checked_par) - 1  # - 1 b/c there is a 'all' record in the table
     todo = len(tot_par) - 1
     percent = round(done / todo * 100, 1)
     print('checked {}/{}, {}%.'.format(
