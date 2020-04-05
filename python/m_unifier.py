@@ -26,9 +26,12 @@ def unify():
     m2_charlie_file = '%s%s.xml' % (xmlpath, 'm2-charlie-par-out')
     m2_charlie_tree = etree.parse(m2_charlie_file)
 
+    # This is the file in which I edited the teiHeader by hand
+    template_file = '%s%s.xml' % (xmlpath, 'teiHeader_template.xml')
+
+    # Old code:
     # Copy m1-par-out.xml to template.xml
-    template_file = '%s%s.xml' % (xmlpath, 'template')
-    copyfile(m1_file, template_file)
+    # copyfile(m1_file, template_file)
 
     # Parse template.xml
     template_tree = etree.parse(template_file)
