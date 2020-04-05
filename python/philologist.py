@@ -1103,7 +1103,7 @@ class treeWithAppElements:
                 # Set @subtype, unless it's 'generic-orthographic'.
                 # If, instead, subtype='generic-orthographic', the
                 # result will be <app type="orthographic> (no @subtype)
-                if 'subtype' != 'generic-orthographic':
+                if a['subtype'] != 'generic-orthographic':
                     a['app'].set('subtype', a['subtype'])
 
             if debug:
