@@ -165,13 +165,6 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
         if debug:
             print('Found: «{}» / «{}»'.format(myString1, myString2))
 
-    # If first variant is only a punctuation sign and the second variant
-    # has a punct plus at least one letter
-    elif myString1.strip() in myPunctList \
-            and any((j in myPunctString) for j in myString2.strip()) \
-            and any(j.isalpha() for j in myString2.strip()):
-        my_subtype = 'punct-in-print-vs-punct-and-letters-in-ms'
-
     # The same, the other way around
     elif myString2.strip() in myPunctList \
             and any((j in myPunctString) for j in myString1.strip()) \
