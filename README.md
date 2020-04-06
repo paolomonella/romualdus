@@ -9,11 +9,11 @@ edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Pr
 ## Abbreviations
 
 - Manuscripts
-	- A: [Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973)
-	- B: [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
-	- C: [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p),
-	- O (Schwartz's Aa): [Ottobonianus Latinus 2940, 1st fragment](https://digi.vatlib.it/mss/detail/Ott.lat.2940),
-		folios 16r-18v = 168,5-188,1 of Garufi's edition
+	- A: [Vaticanus Latinus 3973](http://digi.vatlib.it/view/MSS_Vat.lat.3973)
+	- B: [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
+	- C: [Paris, Bibliothèque Nationale, Latinus 4933](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p),
+	- O (Schwartz's Aa): [Ottobonianus Latinus 2940](https://digi.vatlib.it/mss/detail/Ott.lat.2940),
+		1st fragment, folios 16r-18v = 168,5-188,1 of Garufi's edition
 - Print editions
 	- Garufi: _Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)_, ed. by 
 		Garufi, Carlo Alberto, Città di Castello, S. Lapi 1914
