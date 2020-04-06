@@ -43,7 +43,7 @@ This is the code (mostly TEI XML and Python) of my digital scholarly edition of 
 
 Files in the `xml` folder:
 
-### Transcriptions and OCR
+### Transcription and OCR files
 
 Original files:
 
@@ -59,7 +59,8 @@ Original files:
     - Bonetti's edition was the collation base
 - `g.xml`: reviewed OCR of Garufi's edition (1914)
 - `bonetti.xml`: reviewed OCR of Bonetti's edition (only the critical text, that Bonetti drew from Garufi 1914 and Arndt 1866),
-    reporting only the second part of the Chronicon (from Garufi page 163 to the end of the work, including the Peace of Venice)
+    reporting only the second part of the Chronicon (from Garufi page 163, i.e. par. g163.6-163.7,
+    to the end of the work, including the Peace of Venice)
 - `b.xml`: graphematic transcription of the first paragraphs of MS B
 - `c.xml`: graphematic transcription of the first paragraphs of MS C
 
@@ -67,14 +68,47 @@ Split and sorted versions of `a.xml`:
 
 - `a.xml` was split by script `python/splitter.py` into two chunks to facilitate collation:
     - `a1.xml` to be collated with `g.xml`
-    - `a2.xml` to be collated with `bonetti.xml`
+    - `a2.xml` to be collated with `bonetti.xml` (paragraphs g163.6-163.7 to the end of the work, including the Peace of Venice)
     - `a2-sorted.xml` is a version of `a2.xml` (created by script `python/sort_a2.py`) in which the order of paragraphs
     matches that of Bonetti's edition, to facilitate collation
 - `a2-sorted.xml` and `bonetti.xml` were further split (again, by script `python/splitter.py`)
     into three chunks, reporting the same portions of the Chronicon, to facilitate collation:
-    - `a2-sorted-2-alfa.xml`
-    - `a2-sorted-2-bravo.xml`
+    - `a2-sorted-2-alfa.xml` and `bonetti-2-alfa.xml`: paragraphs g163.6-163.7 through g167.4-168.4, for which only Bonetti and A must be collated
+    - `a2-sorted-2-bravo.xml` and `bonetti-2-bravo.xml`: par. g168.5-168.7 through g185.8-186.5, i.e. the part for which Bonetti, A and O must be collated
+    - `a2-sorted-2-charlie.xml` and `bonetti-2-charlie.xml`: par. g186.6-186.7 to the end of the work, inlcuding the Peace of Venice,
+    for which only Bonetti and A must be collated
 
-Those files have been further processed by a number of script in the `python` folder to produce simplified version 
+Those files have been further processed by a number of scripts in the `python` folder (mainly `python/simplify_markup_for_collation.py`)
+to produce simplified versions that have been fed to JuxtaCommons.org for collation. Most TEI XML markup was removed. For paragraph tags,
+&lt; and &gt; were replaced with brackets.
+The simplified version of each of the above file has a `-simple` suffix. E.g.:
 
-### Collations
+    - `a1-simple.xml` is the simplified version of `a1.xml`
+    - `a2-sorted-2-bravo-simple.xml`, of `a2-sorted-2-bravo.xml`
+    - `bonetti-2-charlie-simple.xml`, of `bonetti-2-charlie.xml` etc.
+
+### Collation files
+
+- `m1.xml`: the result of the (JuxtaCommons.org) collation between `g-simple.xml` and `a1-simple.xml`
+- `m2-alfa.xml`: result of collation between 
+- `m2-bravo.xml`: result of collation between
+- `m2-charlie.xml`: result of collation between
+
+`a2-sorted-2-alfa.xml` and `bonetti-2-alfa.xml`
+`a2-sorted-2-bravo.xml` and `bonetti-2-bravo.xml`
+`a2-sorted-2-charlie.xml` and `bonetti-2-charlie.xml`
+
+
+
+
+- `m1-par.xml`: 
+
+- `m1-par-out.xml`: 
+- `m2-alfa-par.xml`: 
+- `m2-alfa-par-out.xml`: 
+
+- `m2-bravo-par.xml`: 
+- `m2-bravo-par-out.xml`: 
+
+- `m2-charlie-par.xml`: 
+- `m2-charlie-par-out.xml`: 
