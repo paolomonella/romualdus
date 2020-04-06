@@ -87,9 +87,9 @@ to produce simplified versions that have been fed to JuxtaCommons.org for collat
 &lt; and &gt; were replaced with brackets.
 The simplified version of each of the above file has a `-simple` suffix. E.g.:
 
-    - `a1-simple.xml` is the simplified version of `a1.xml`
-    - `a2-sorted-2-bravo-simple.xml`, of `a2-sorted-2-bravo.xml`
-    - `bonetti-2-charlie-simple.xml`, of `bonetti-2-charlie.xml` etc.
+- `a1-simple.xml` is the simplified version of `a1.xml`
+- `a2-sorted-2-bravo-simple.xml`, of `a2-sorted-2-bravo.xml`
+- `bonetti-2-charlie-simple.xml`, of `bonetti-2-charlie.xml` etc.
 
 ### Collation files
 
