@@ -147,7 +147,7 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 - `myconst.py`: module including global variables to be used by other scripts
 - `my_database_import.py`: function to easily import sqlite3 DB tables
 - `names.py`: check named entities in transcription/OCR files
-- `non_rs.txt`: a list of named entities in transcription/OCR files
+- `non_rs.txt`: a list of words that are not named entities in transcription/OCR files
 - `numerals.py`: mark numerals in TEI XML and relative checks
 - `ocr.py`: post-process OCR txt files to produce TEI XML
 - `other.py`: modules utilized to visualize MS transcriptions at the graphematic layer
@@ -155,18 +155,15 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 - `philologist.py`: assist during the _constitutio textus_, working on collation files and the sqlite3 DB
 - `post_process_juxta_commons_file.py`: post-process JuxtaCommons files (see XML file description above)
 - `renew_collation_on_paragraph.py`: 
-- `replace.py`: 
-- `replace.pyc`: 
-- `ripostiglio`: 
-- `romanranges`: 
-- `rs_bonetti_all.txt`: 
-- `rs_garufi_pp_1-20.txt`: 
-- `rs.txt`: 
-- `simplify_markup_for_collation.py`: 
-- `sort_a2.py`: 
-- `splitter.py`: 
-- `strip_individual_node.py`: 
-- `update_db.py`: 
-- `variant_subtype.py`: 
-- `visualization.py`: 
-- `xmlns_collatex`: 
+- `replace.py`: produce the alphabetic representation of sequences of graphemes (for MS transcriptions at the graphematic layer)
+- `ripostiglio`: previous versions of Pyhon modules and scripts
+- `romanranges`: text files to help the processing of Roman numerals
+- `rs_bonetti_all.txt`, `rs_garufi_pp_1-20.txt`, `rs.txt`: lists of named entities in transcription/OCR files
+- `simplify_markup_for_collation.py`: simplify TEI XML markup (see XML file description above)
+- `sort_a2.py`: re-arrange paragraphs in the second part of the work (see XML file description above)
+- `splitter.py`: (see XML file description above)
+- `strip_individual_node.py`: strip an XML node and keep its text and tail textual content
+- `update_db.py`: extract the readings (deriving from `chronicon.xml`) from a temporary text file, then insert them in the DB
+- `variant_subtype.py`: detect the variant subtype (e.g. 'num-num', 'missing-in-print' etc.)
+- `visualization.py`: trigger for modules producing a HTML visualization of MS transcriptions at the graphematic layer
+- `xmlns_collatex`: originally used to store versions of the XML files compatible with CollateX
