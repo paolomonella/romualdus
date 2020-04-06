@@ -130,40 +130,62 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 `chronicon.xml`, the _textus constitutus_ of the edition.
 
 
+
 ## Python code in the `python` folder
 
 
-- `bonetti_and_o_splitter.py`: split transcription/OCR files of the second part of the work (see XML file description above)
-- `collatex_for_romualdus_xml.py`: collate transcriptions with CollateX
-- `detect_combinations.py`: find abbreviation combinations in transcriptions and compare them with the relevant CSV file
-- `diff`: spreadsheets to check the diffs found by module `variant_subtype.py`
-- `entitize.py`: replace long tags with XML entities
-- `id_fixer.py`: check that transcriptions of MSS A, B and C all have the same TEI XML paragraph tags with the same `xml:id`'s
-- `itertext.py`: module to easily get all textual content in an XML element
-- `juxta.py`: trigger for all other scripts (pre-processing before collation and post-procesing after collation)
-- `layers.py`: extract/divide the transcription layers from the TEI XML source file, producing HTML code for visualization
-- `lint.py`: check that only graphemes in the table of signs have been used in graphematic transcription
-- `m_unifier.py`: re-unify collation files (see XML file description above)
-- `myconst.py`: module including global variables to be used by other scripts
-- `my_database_import.py`: function to easily import sqlite3 DB tables
+### Transcription and OCR
+
 - `names.py`: check named entities in transcription/OCR files
 - `non_rs.txt`: a list of words that are not named entities in transcription/OCR files
 - `numerals.py`: mark numerals in TEI XML and relative checks
 - `ocr.py`: post-process OCR txt files to produce TEI XML
-- `other.py`: modules utilized to visualize MS transcriptions at the graphematic layer
-- `output.py`: produce HTML visualizations of MS transcriptions at the graphematic layer
-- `philologist.py`: assist during the _constitutio textus_, working on collation files and the sqlite3 DB
-- `post_process_juxta_commons_file.py`: post-process JuxtaCommons files (see XML file description above)
-- `renew_collation_on_paragraph.py`: 
-- `replace.py`: produce the alphabetic representation of sequences of graphemes (for MS transcriptions at the graphematic layer)
-- `ripostiglio`: previous versions of Pyhon modules and scripts
 - `romanranges`: text files to help the processing of Roman numerals
 - `rs_bonetti_all.txt`, `rs_garufi_pp_1-20.txt`, `rs.txt`: lists of named entities in transcription/OCR files
+
+
+### Original attempts to collate transcriptions with CollateX:
+
+- `collatex_for_romualdus_xml.py`: collate transcriptions with CollateX
+- `xmlns_collatex`: originally used to store versions of the XML files compatible with CollateX
+
+
+### Visualization of MS transcriptions at the graphematic layer
+
+- `detect_combinations.py`: find abbreviation combinations in transcriptions and compare them with the relevant CSV file
+- `id_fixer.py`: check that transcriptions of MSS A, B and C all have the same TEI XML paragraph tags with the same `xml:id`'s
+- `layers.py`: extract/divide the transcription layers from the TEI XML source file, producing HTML code for visualization
+- `lint.py`: check that only graphemes in the table of signs have been used in graphematic transcription
+- `other.py`: modules utilized to visualize MS transcriptions at the graphematic layer
+- `output.py`: produce HTML visualizations of MS transcriptions at the graphematic layer
+- `replace.py`: produce the alphabetic representation of sequences of graphemes (for MS transcriptions at the graphematic layer)
+- `visualization.py`: trigger for modules producing a HTML visualization of MS transcriptions at the graphematic layer
+
+### Pre-processing of transcription/OCR files before JuxtaCommons.org collation
+
+- `bonetti_and_o_splitter.py`: split transcription/OCR files of the second part of the work (see XML file description above)
+- `entitize.py`: replace long tags with XML entities
 - `simplify_markup_for_collation.py`: simplify TEI XML markup (see XML file description above)
 - `sort_a2.py`: re-arrange paragraphs in the second part of the work (see XML file description above)
 - `splitter.py`: (see XML file description above)
-- `strip_individual_node.py`: strip an XML node and keep its text and tail textual content
+
+
+### Post-processing of JuxtaCommons.org collation files
+
+- `diff`: spreadsheets to check the diffs found by module `variant_subtype.py`
+- `juxta.py`: trigger for all other scripts (pre-processing before collation and post-procesing after collation)
+- `m_unifier.py`: re-unify collation files (see XML file description above)
+- `my_database_import.py`: function to easily import sqlite3 DB tables
+- `renew_collation_on_paragraph.py`: repeat collation of a paragraph with CollateX (I planned to use it after JuxtaCommons collation)
+- `philologist.py`: assist during the _constitutio textus_, working on collation files and the sqlite3 DB
+- `post_process_juxta_commons_file.py`: post-process JuxtaCommons files (see XML file description above)
 - `update_db.py`: extract the readings (deriving from `chronicon.xml`) from a temporary text file, then insert them in the DB
 - `variant_subtype.py`: detect the variant subtype (e.g. 'num-num', 'missing-in-print' etc.)
-- `visualization.py`: trigger for modules producing a HTML visualization of MS transcriptions at the graphematic layer
-- `xmlns_collatex`: originally used to store versions of the XML files compatible with CollateX
+
+
+### General
+
+- `itertext.py`: module to easily get all textual content in an XML element
+- `myconst.py`: module including global variables to be used by other scripts
+- `ripostiglio`: previous versions of Pyhon modules and scripts
+- `strip_individual_node.py`: strip an XML node and keep its text and tail textual content
