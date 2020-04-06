@@ -55,6 +55,10 @@ def unify():
         for x in input_body:
             template_body.append(x)
 
+    # Move all <note> elements to the end of the <body>
+    for note in template_body.findall('.//t:note', ns):
+        template_body.append(note)
+
     # Write tree to output file template.xml:
     template_tree.write(chronicon_file,
                         encoding='UTF-8', method='xml',
