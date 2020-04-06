@@ -3,7 +3,7 @@
 This is the code (mostly TEI XML and Python) of my digital scholarly edition of the _Chronicon_ by Romualdus Salernitanus (or Romualdus Guarna), XII century.
 
 
-## Main folders of the repository
+## Repository structure
 
 - `csv` folder includes CSV tables:
     - tables of signs for each manuscript (MS) transcribed at the graphematic layer, such as `a-tos.csv` for MS A and `b-tos.csv` for MS B
@@ -29,12 +29,52 @@ This is the code (mostly TEI XML and Python) of my digital scholarly edition of 
 - `xml` folder includes the XML source files
 
 
-# Other files in the root of the repository
+- Other files in the root of the repository:
+    - `index.html`: the home page of the [http://www1.unipa.it/paolo.monella/romualdus/](project Website), including
+        - a brief MSS description
+        - links to the graphematic/alphabetic layer transcription visualization
+        
+    - `romualdus.png`: a screenshot to be possibly used in the Website
 
-- `index.html`: the home page of the [http://www1.unipa.it/paolo.monella/romualdus/](project Website), including
-    - a brief MSS description
-    - links to the graphematic/alphabetic layer transcription visualization
-    
-- `romualdus.png`: a screenshot to be possibly used in the Website
+    - `stylesheet.css`: CSS stylesheet associated to `index.html`
 
-- `stylesheet.css`: CSS stylesheet associated to `index.html`
+
+## XML files
+
+Files in the `xml` folder:
+
+### Transcriptions and OCR
+
+Original files:
+
+- `a.xml`: complete transcription of MS A
+    - only the first paragraphs have been transcribed at the graphematic layer
+    - the other have been transcribed at the alphabetic layer only
+    - for paragraphs from g116.6-118.8 through g163.1-163.5 I only transcribed major variants
+    - Garufi's edition was the collation base until (and including) paragraph g163.1-163.5
+    - Bonetti's edition was the collation base for the collation from (and including) paragraph g163.6-163.7
+- `o.xml`: transcription of the fragment of MS O (Schwartz's Aa) including the text of the "short version" of the Chronicon,
+    i.e. paragraphs g168.5-168.7 through g185.8-186.5
+    - the text has been transcribed at the alphabetic layer
+    - Bonetti's edition was the collation base
+- `g.xml`: reviewed OCR of Garufi's edition (1914)
+- `bonetti.xml`: reviewed OCR of Bonetti's edition (only the critical text, that Bonetti drew from Garufi 1914 and Arndt 1866),
+    reporting only the second part of the Chronicon (from Garufi page 163 to the end of the work, including the Peace of Venice)
+- `b.xml`: graphematic transcription of the first paragraphs of MS B
+- `c.xml`: graphematic transcription of the first paragraphs of MS C
+
+Split and sorted versions of `a.xml`:
+
+- `a.xml` was split by script `python/splitter.py` into two chunks to facilitate collation:
+    - `a1.xml` to be collated with `g.xml`
+    - `a2.xml` to be collated with `bonetti.xml`
+    - `a2-sorted.xml` is a version of `a2.xml` (created by script `python/sort_a2.py`) in which the order of paragraphs
+    matches that of Bonetti's edition, to facilitate collation
+- `a2-sorted.xml` and `bonetti.xml` were further split (again, by script `python/splitter.py`)
+    into three chunks, reporting the same portions of the Chronicon, to facilitate collation:
+    - `a2-sorted-2-alfa.xml`
+    - `a2-sorted-2-bravo.xml`
+
+Those files have been further processed by a number of script in the `python` folder to produce simplified version 
+
+### Collations
