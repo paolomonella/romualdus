@@ -1,9 +1,21 @@
 # Romualdus Project
 
 This is the source code (mostly TEI XML and Python) of the digital scholarly edition
-of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century) from codices
-[Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973), [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22) and [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
+of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century)
+edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
 
+
+
+# Abbreviations
+
+- Manuscripts
+	- [Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973)
+	- [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
+	- [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p),
+	- Aa 	Ottobonianus Latinus 2940, 1st fragment
+- Print editions
+
+Print editions
 
 ## Repository structure
 
