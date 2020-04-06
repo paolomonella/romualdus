@@ -134,7 +134,7 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 ## Python code in the `python` folder
 
 
-### Transcription and OCR
+Transcription and OCR:
 
 - `names.py`: check named entities in transcription/OCR files
 - `non_rs.txt`: a list of words that are not named entities in transcription/OCR files
@@ -144,13 +144,13 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 - `rs_bonetti_all.txt`, `rs_garufi_pp_1-20.txt`, `rs.txt`: lists of named entities in transcription/OCR files
 
 
-### Original attempts to collate transcriptions with CollateX:
+Original attempts to collate transcriptions with CollateX:
 
 - `collatex_for_romualdus_xml.py`: collate transcriptions with CollateX
 - `xmlns_collatex`: originally used to store versions of the XML files compatible with CollateX
 
 
-### Visualization of MS transcriptions at the graphematic layer
+Visualization of MS transcriptions at the graphematic layer:
 
 - `detect_combinations.py`: find abbreviation combinations in transcriptions and compare them with the relevant CSV file
 - `id_fixer.py`: check that transcriptions of MSS A, B and C all have the same TEI XML paragraph tags with the same `xml:id`'s
@@ -161,7 +161,7 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 - `replace.py`: produce the alphabetic representation of sequences of graphemes (for MS transcriptions at the graphematic layer)
 - `visualization.py`: trigger for modules producing a HTML visualization of MS transcriptions at the graphematic layer
 
-### Pre-processing of transcription/OCR files before JuxtaCommons.org collation
+Pre-processing of transcription/OCR files before JuxtaCommons.org collation:
 
 - `bonetti_and_o_splitter.py`: split transcription/OCR files of the second part of the work (see XML file description above)
 - `entitize.py`: replace long tags with XML entities
@@ -170,7 +170,7 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 - `splitter.py`: (see XML file description above)
 
 
-### Post-processing of JuxtaCommons.org collation files
+Post-processing of JuxtaCommons.org collation files:
 
 - `diff`: spreadsheets to check the diffs found by module `variant_subtype.py`
 - `juxta.py`: trigger for all other scripts (pre-processing before collation and post-procesing after collation)
@@ -183,7 +183,7 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 - `variant_subtype.py`: detect the variant subtype (e.g. 'num-num', 'missing-in-print' etc.)
 
 
-### General
+General:
 
 - `itertext.py`: module to easily get all textual content in an XML element
 - `myconst.py`: module including global variables to be used by other scripts
