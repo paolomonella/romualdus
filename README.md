@@ -6,16 +6,21 @@ edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Pr
 
 
 
-# Abbreviations
+## Abbreviations
 
 - Manuscripts
-	- [Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973)
-	- [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
-	- [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p),
-	- Aa 	Ottobonianus Latinus 2940, 1st fragment
+	- A: [Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973)
+	- B: [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
+	- C: [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p),
+	- O (Schwartz's Aa): [Ottobonianus Latinus 2940, 1st fragment](https://digi.vatlib.it/mss/detail/Ott.lat.2940),
+		folios 16r-18v = 168,5-188,1 of Garufi's edition
 - Print editions
-
-Print editions
+	- Garufi: _Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)_, ed. by 
+		Garufi, Carlo Alberto, Città di Castello, S. Lapi 1914
+		(Rerum italicarum scriptores: Nuova edizione, 7.1)
+	- Bonetti: _Romualdo II Guarna, Chronicon_, ed. by 
+		Bonetti, Cinzia, Salerno, Avagliano 2001
+		(ISBN 9788883090561)
 
 ## Repository structure
 
