@@ -61,6 +61,10 @@ class treeWithAppElements:
             dbpath,
             dbname,
             'paragraphs')
+        self.variant_types = my_database_import.import_table(
+            dbpath,
+            dbname,
+            'variant_types')
         self.variant_subtypes = my_database_import.import_table(
             dbpath,
             dbname,
@@ -68,16 +72,13 @@ class treeWithAppElements:
 
         # This dictionary will be used by a method that will be
         # repeated many times. It expands abbreviations of 'type'
-        # field in DB tables decisions2 and decisions3
-        self.type_expansion = {
-            's': 'substantial',
-            'o': 'orthographic',
-            'p': 'punctuation',
-            'g': 'gap-in-ms',
-            'i': 'illegible-in-ms',
-            't': 'transposition',
-            'u': 'unknown'
-        }
+        # field in DB tables decisions2 and decisions3. It is derived
+        # from DB table variant_types
+        self.type_expansion = {}
+        for row in self.variant_types:
+            type_abbr = row['abbr']
+            type_name = row['type']
+            self.type_expansion[type_abbr] = type_name
 
     def set_a2_for_additions(self):
         ''' In sections that are additions by hand2, replace wit="a" with
@@ -628,8 +629,42 @@ class treeWithAppElements:
                         # a['app'].set('{%s}cert' % ns['t'], myCert)
                         a['app'].set('cert', myCert)
 
+    def insert_note(self, app, db_record):
+        ''' Insert a <note> element if there is a note
+            in the 'note' field of DB table decisions2 '''
+        note_text = db_record['note']
+        if note_text is not None:
+
+            # Add a full stop at the end of the note, if there's none
+            if note_text[-1] not in ['.', '!', '?']:
+                note_text = ''.join([note_text, '.'])
+
+            # Insert @xml:id in the <app> element
+            #
+            # Get the index of the <app> within <p>
+            i = str(app.getparent().index(app) + 1)
+            # Get the parent <p>'s xml:id
+            x = self.parent_xmlid(app)
+            # If <p>'s xml:id is g170.17-171.1 and <app>
+            # is the 3rd child of <p>, app_xml_id will
+            # be app3-in-g170.17-171.1
+            app_xml_id = ''.join(['app', i, '-in-', x])
+            # app.set('key', app_xml_id)
+            app.set('{%s}id' % ns['xml'], app_xml_id)
+
+            # Create the <note> element
+            #
+            note_element = etree.SubElement(
+                self.juxtaBody,
+                '{%s}note' % ns['t'])
+            note_element.text = note_text
+            note_element.tail = '\n'
+            note_element.set('target', '#%s' % app_xml_id)
+            note_element.set('type', 'textcrit')
+
     def set_lem_based_on_db_2elements(self, a):
-        ''' This manages two cases:
+        ''' This manages <app> elements with two children.
+            There can be two cases:
             1) a['appStruct'] = 2elements_2readings
                 <rdg wit="#a">
                 <rdg wit="#b">
@@ -747,6 +782,9 @@ class treeWithAppElements:
                            'I don\'t understand the «{}» in the «action» '
                            'field in the DB record for app {}.').format(
                                r['action'], a))
+
+                # Insert <note> element from the DB
+                self.insert_note(a['app'], r)
 
         # Debug
         if not self.quiet:
@@ -897,6 +935,9 @@ class treeWithAppElements:
                            'field in the DB record for app {}.').format(
                                r['action'], a))
 
+                # Insert <note> element from the DB
+                self.insert_note(a['app'], r)
+
     def set_lem_based_on_db_3elements_bonetti_and_garufi(self, a):
         ''' See definition of method check_garufi_and_bonetti() for
             details about this case '''
@@ -994,6 +1035,9 @@ class treeWithAppElements:
                            ' table. I\'m working on <app> {}. DB column'
                            'lem_if_not_print has «{}»').format(
                                a, r['lem_if_not_print']))
+
+                # Insert <note> element from the DB
+                self.insert_note(a['app'], r)
 
     def set_all_lems_based_on_db(self):
         '''Read DB table and decide <lem> for the <app>s
@@ -1125,7 +1169,7 @@ class treeWithAppElements:
             field 'checked' in table 'paragraphs'
             '''
         # @types of <app> that have to change:
-        type_subst = {'unknown': 'substantial'}
+        type_subst = {'unknown': 'substantive'}
 
         # Get a list with xmlids of checked paragraphs
         pars = [x['xmlid'] for x in self.paragraphs if x['checked'] > 0]
@@ -1144,7 +1188,7 @@ class treeWithAppElements:
 
                 # If @subtype remained 'unknown' after the
                 # substitutions, remove it (note that currently subtype
-                # '3elements3variants' remains with type 'substantial'
+                # '3elements3variants' remains with type 'substantive'
                 # also after the checkout
                 if app.get('subtype') == 'unknown':
                     app.attrib.pop('subtype')
@@ -1197,6 +1241,47 @@ class treeWithAppElements:
             char2 = app.tail[1]  # 2st character after </app>
             if char1 == ' ' and char2 in punct:
                 app.tail = app.tail[1:]  # Remove 1st char (space)
+
+    def handle_punctuation_variants(self):
+        ''' If the @type of <app> is "punctuation", change its structure, from
+                <app cert="high" type="punctuation" subtype="different-punct">
+                    <lem wit="#a">.</lem>
+                    <rdg wit="#g">;</rdg>
+                </app>
+            to
+                <app cert="high" type="punctuation" subtype="different-punct">
+                    <lem resp="#pm">.</lem>
+                    <rdg wit="#g">;</rdg>
+                </app>
+            Assumptions:
+                - <app> only has 2 children (I checked; his always is the case)
+                - the <lem> (chosen text) always is the MS's text
+                    (A, A2 or O), and the <rdg> (not chosen text) always is
+                    the print edition's text.
+        '''
+        apps = self.juxtaBody.findall('.//t:%s' % ('app'), ns)
+        apps_with_punct_type = [a for a in apps if a.get('type') ==
+                                'punctuation']
+        for a in apps_with_punct_type:
+            lem = a.find('.//t:%s' % ('lem'), ns)
+            lem_wit = lem.get('wit')
+
+            # Change <lem wit=#a">,</rdg> to
+            # <lem resp="#pm">,</rdg>
+            lem.attrib.pop('wit')  # remove @wit
+            lem.set('resp', '#pm')  # remove @wit
+
+            if ('#g' in lem_wit or '#b' in lem_wit):
+                print(('[philologist.py/handle_punctuation_variants] in'
+                       ' paragraph {} there is an <app> with attributes {}'
+                       ' with type "punctuation" in which the chosen text'
+                       ' <lem> is that of the print edition').format(
+                           self.parent_xmlid(a), a.attrib))
+            elif len(a) > 2:
+                print(('[philologist.py/handle_punctuation_variants] in'
+                       ' paragraph {} there is an <app> with attributes {}'
+                       ' that has more than two children').format(
+                           self.parent_xmlid(a), a.attrib))
 
     def beautify_paragraphs(self):
         ''' Pretty print the beginning of each <p> (see below
