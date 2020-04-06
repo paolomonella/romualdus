@@ -1,6 +1,8 @@
 # Romualdus Project
 
-This is the code (mostly TEI XML and Python) of my digital scholarly edition of the _Chronicon_ by Romualdus Salernitanus (or Romualdus Guarna), XII century.
+This is the source code (mostly TEI XML and Python) of the digital scholarly edition
+of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century) from codices
+[Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973), [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22) and [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
 
 
 ## Repository structure
@@ -8,7 +10,7 @@ This is the code (mostly TEI XML and Python) of my digital scholarly edition of 
 - `csv` folder includes CSV tables:
     - tables of signs for each manuscript (MS) transcribed at the graphematic layer,
 	such as `a-tos.csv` for MS A and `b-tos.csv` for MS B
-    - tables of abbreviation combinations for those MSS (manuscripts),
+    - tables of common abbreviation combinations for those MSS (manuscripts),
 	such as `a-combi.csv` for MS A and `b-combi.csv` for MS B
     (note that the transcription has been done at the graphematic layer only
 	for the first paragraphs of MSS A, B and C;
@@ -47,9 +49,9 @@ This is the code (mostly TEI XML and Python) of my digital scholarly edition of 
 
 ### Transcription and OCR files
 
-Original files:
+Original files (all .xml files are valid TEI P5 XML):
 
-- `a.xml`: complete transcription of MS A
+- `a.xml`: complete TEI XML transcription of MS A
     - only the first paragraphs have been transcribed at the graphematic layer
     - the other have been transcribed at the alphabetic layer only
     - for paragraphs from g116.6-118.8 through g163.1-163.5 I only transcribed major variants
@@ -168,32 +170,3 @@ template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produce
 - `variant_subtype.py`: 
 - `visualization.py`: 
 - `xmlns_collatex`: 
-# Romualdus project
-
-An experimental scholarly digital edition of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century) from codices
-[Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973), [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22) and [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2018).
-
-Full documentation forthcoming in `documentation.md`.
-
-## Source files
-
-* `a.xml`: the source XML/TEI transcription of manuscript A
-* `b.xml`: the source XML/TEI transcription of manuscript B
-* `c.xml`: the source XML/TEI transcription of manuscript C
-* `a-tos.csv`: the table of signs of manuscript A
-* `b-tos.csv`: the table of signs of manuscript B
-* `c-tos.csv`: the table of signs of manuscript C
-* `a-combi.csv`: the table of common abbreviation combinations of manuscript A
-* `b-combi.csv`: the table of common abbreviation combinations of manuscript B
-* `c-combi.csv`: the table of common abbreviation combinations of manuscript C
-* All files ending with `.html` are the HTML visualizations of the edition
-
-## Visualization
-
-* `python`: this folder includes the Python modules that manage the whole edition
-* `stylesheet.css`: the CSS stylesheet for `.html` files
-
-
-## Other
-
-* `documentation.md`: The full documentation on this edition
