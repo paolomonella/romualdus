@@ -6,10 +6,14 @@ This is the code (mostly TEI XML and Python) of my digital scholarly edition of 
 ## Repository structure
 
 - `csv` folder includes CSV tables:
-    - tables of signs for each manuscript (MS) transcribed at the graphematic layer, such as `a-tos.csv` for MS A and `b-tos.csv` for MS B
-    - tables of abbreviation combinations for those MSS (manuscripts), such as `a-combi.csv` for MS A and `b-combi.csv` for MS B
-    (note that the transcription has been done at the graphematic layer only for the first paragraphs of MSS A, B and C;
-    MS A has been entirely transcribed at the alphabetic layer only; MSS B and C have not transcribed except for the first paragraphs)
+    - tables of signs for each manuscript (MS) transcribed at the graphematic layer,
+	such as `a-tos.csv` for MS A and `b-tos.csv` for MS B
+    - tables of abbreviation combinations for those MSS (manuscripts),
+	such as `a-combi.csv` for MS A and `b-combi.csv` for MS B
+    (note that the transcription has been done at the graphematic layer only
+	for the first paragraphs of MSS A, B and C;
+    	MS A has been entirely transcribed at the alphabetic layer only;
+	MSS B and C have not transcribed except for the first paragraphs)
 
 - `db` folder includes the Sqlite3 database file `romualdus.sqlite3` with tables on variant types and subtypes, textual decisions and on collation
 
@@ -89,26 +93,38 @@ The simplified version of each of the above file has a `-simple` suffix. E.g.:
 
 ### Collation files
 
-- `m1.xml`: the result of the (JuxtaCommons.org) collation between `g-simple.xml` and `a1-simple.xml`
+Direct ouput of JuxtaCommons.org (later edited manually to improve the result):
+
+- `m1.xml`: the result of the (JuxtaCommons.org) collation between
+	`g-simple.xml` and `a1-simple.xml`
 - `m2-alfa.xml`: result of collation between 
+	`a2-sorted-2-alfa-simple.xml` and `bonetti-2-alfa-simple.xml`
 - `m2-bravo.xml`: result of collation between
+	`a2-sorted-2-bravo-simple.xml` and `bonetti-2-bravo-simple.xml`
 - `m2-charlie.xml`: result of collation between
-
-`a2-sorted-2-alfa.xml` and `bonetti-2-alfa.xml`
-`a2-sorted-2-bravo.xml` and `bonetti-2-bravo.xml`
-`a2-sorted-2-charlie.xml` and `bonetti-2-charlie.xml`
+	`a2-sorted-2-charlie-simple.xml` and `bonetti-2-charlie-simple.xml`
 
 
+Script `python/post_process_juxta_commons_file.py` then processed those files
+to produce XML well-formed files in which the brackets for paragraph tags were re-transformed
+to &lt; and &gt;. The resulting files were respectively:
 
+- `m1-par.xml` 
+- `m2-alfa-par.xml` 
+- `m2-bravo-par.xml` 
+- `m2-charlie-par.xml` 
 
-- `m1-par.xml`: 
+Finally, with the help of script `python/philologist.py' and other modules imported by it
+(e.g. `python/variant_subtype.py`, to detect the variant subtype), I brought about the
+_constitutio textus_, by storing information in the `db/romualdus.sqlite3` database.
+The output files for each chunk were:
 
-- `m1-par-out.xml`: 
-- `m2-alfa-par.xml`: 
-- `m2-alfa-par-out.xml`: 
+- `m1-par-out.xml` 
+- `m2-alfa-par-out.xml` 
+- `m2-bravo-par-out.xml` 
+- `m2-charlie-par-out.xml` 
 
-- `m2-bravo-par.xml`: 
-- `m2-bravo-par-out.xml`: 
-
-- `m2-charlie-par.xml`: 
-- `m2-charlie-par-out.xml`: 
+Finally, script `python/m_unifier.py` 
+and re-unified the latter files, attaching their content to a
+template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produced file
+`chronicon.xml`, the _textus constitutus_ of the edition.
