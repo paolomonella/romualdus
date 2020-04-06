@@ -2,7 +2,8 @@
 
 This is the code (mostly TEI XML and Python) of my digital scholarly edition of the _Chronicon_ by Romualdus Salernitanus (or Romualdus Guarna), XII century.
 
-## Files and folders
+
+## Main folders of the repository
 
 - `csv` folder includes CSV tables:
     - tables of signs for each manuscript (MS) transcribed at the graphematic layer, such as `a-tos.csv` for MS A and `b-tos.csv` for MS B
@@ -23,4 +24,17 @@ This is the code (mostly TEI XML and Python) of my digital scholarly edition of 
     
 - `python` folder includes the Python 3 code used in this project
 
-- ...
+- `scan/ocr` folder includes .txt files resulting of the OCR, at different stages of manual revision
+
+- `xml` folder includes the XML source files
+
+
+# Other files in the root of the repository
+
+- `index.html`: the home page of the [http://www1.unipa.it/paolo.monella/romualdus/](project Website), including
+    - a brief MSS description
+    - links to the graphematic/alphabetic layer transcription visualization
+    
+- `romualdus.png`: a screenshot to be possibly used in the Website
+
+- `stylesheet.css`: CSS stylesheet associated to `index.html`
