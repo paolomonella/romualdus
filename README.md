@@ -43,9 +43,7 @@ This is the code (mostly TEI XML and Python) of my digital scholarly edition of 
     - `stylesheet.css`: CSS stylesheet associated to `index.html`
 
 
-## XML files
-
-Files in the `xml` folder:
+## Files in the `xml` folder
 
 ### Transcription and OCR files
 
@@ -128,3 +126,74 @@ Finally, script `python/m_unifier.py`
 and re-unified the latter files, attaching their content to a
 template teiHeader taken from file `xml/teiHeader_template.xml`. It thus produced file
 `chronicon.xml`, the _textus constitutus_ of the edition.
+
+
+## Python code in the `python` folder
+
+
+- `bonetti_and_o_splitter.py`: split transcription/OCR files of the second part of the work (see XML file description above)
+- `collatex_for_romualdus_xml.py`: collate transcriptions with CollateX
+- `detect_combinations.py`: find abbreviation combinations in transcriptions and compare them with the relevant CSV file
+- `diff`: spreadsheets to check the diffs found by module `variant_subtype.py`
+- `entitize.py`: replace long tags with XML entities
+- `id_fixer.py`: check that transcriptions of MSS A, B and C all have the same TEI XML paragraph tags with the same `xml:id`'s
+- `itertext.py`: module to easily get all textual content in an XML element
+- `juxta.py`: trigger for all other scripts (pre-processing before collation and post-procesing after collation)
+- `layers.py`: extract/divide the transcription layers from the TEI XML source file, producing HTML code for visualization
+- `lint.py`: check that only graphemes in the table of signs have been used in graphematic transcription
+- `m_unifier.py`: re-unify collation files (see XML file description above)
+- `myconst.py`: module including global variables to be used by other scripts
+- `my_database_import.py`: function to easily import sqlite3 DB tables
+- `names.py`: check named entities in transcription/OCR files
+- `non_rs.txt`: a list of named entities in transcription/OCR files
+- `numerals.py`: mark numerals in TEI XML and relative checks
+- `ocr.py`: post-process OCR txt files to produce TEI XML
+- `other.py`: modules utilized to visualize MS transcriptions at the graphematic layer
+- `output.py`: produce HTML visualizations of MS transcriptions at the graphematic layer
+- `philologist.py`: assist during the _constitutio textus_, working on collation files and the sqlite3 DB
+- `post_process_juxta_commons_file.py`: post-process JuxtaCommons files (see XML file description above)
+- `renew_collation_on_paragraph.py`: 
+- `replace.py`: 
+- `replace.pyc`: 
+- `ripostiglio`: 
+- `romanranges`: 
+- `rs_bonetti_all.txt`: 
+- `rs_garufi_pp_1-20.txt`: 
+- `rs.txt`: 
+- `simplify_markup_for_collation.py`: 
+- `sort_a2.py`: 
+- `splitter.py`: 
+- `strip_individual_node.py`: 
+- `update_db.py`: 
+- `variant_subtype.py`: 
+- `visualization.py`: 
+- `xmlns_collatex`: 
+# Romualdus project
+
+An experimental scholarly digital edition of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century) from codices
+[Vaticanus Latinus 3973 (A)](http://digi.vatlib.it/view/MSS_Vat.lat.3973), [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22 (B)](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22) and [Paris, Bibliothèque Nationale, Latinus 4933 (C)](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p), edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2018).
+
+Full documentation forthcoming in `documentation.md`.
+
+## Source files
+
+* `a.xml`: the source XML/TEI transcription of manuscript A
+* `b.xml`: the source XML/TEI transcription of manuscript B
+* `c.xml`: the source XML/TEI transcription of manuscript C
+* `a-tos.csv`: the table of signs of manuscript A
+* `b-tos.csv`: the table of signs of manuscript B
+* `c-tos.csv`: the table of signs of manuscript C
+* `a-combi.csv`: the table of common abbreviation combinations of manuscript A
+* `b-combi.csv`: the table of common abbreviation combinations of manuscript B
+* `c-combi.csv`: the table of common abbreviation combinations of manuscript C
+* All files ending with `.html` are the HTML visualizations of the edition
+
+## Visualization
+
+* `python`: this folder includes the Python modules that manage the whole edition
+* `stylesheet.css`: the CSS stylesheet for `.html` files
+
+
+## Other
+
+* `documentation.md`: The full documentation on this edition
