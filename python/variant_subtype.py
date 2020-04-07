@@ -139,10 +139,12 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
         my_subtype = 'case'
 
     elif myString1.strip() == '' and myString2.strip() in myPunctList:
-        my_subtype = 'missing-in-print-vs-punct-in-ms'
+        # my_subtype = 'missing-in-print-vs-punct-in-ms'
+        my_subtype = 'add-punctuation'
 
     elif myString1.strip() in myPunctList and myString2.strip() == '':
-        my_subtype = 'punct-in-print-vs-missing-in-ms'
+        # my_subtype = 'punct-in-print-vs-missing-in-ms'
+        my_subtype = 'remove-punctuation'
 
     elif myString1.strip() == '' and myString2.strip() not in myPunctList \
             and myString2.strip() != '':
@@ -154,7 +156,7 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
 
     elif myString1.strip() in myPunctList and myString2.strip() \
             in myPunctList:
-        my_subtype = 'different-punct'
+        my_subtype = 'change-punctuation'
 
     # E.g.: "id circo" vs "idcirco" (i.e.: the 2 strings are the same,
     # except for spaces)
@@ -164,12 +166,6 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
         my_subtype = 'word-segmentation'
         if debug:
             print('Found: «{}» / «{}»'.format(myString1, myString2))
-
-    # The same, the other way around
-    elif myString2.strip() in myPunctList \
-            and any((j in myPunctString) for j in myString1.strip()) \
-            and any(j.isalpha() for j in myString1.strip()):
-        my_subtype = 'punct-in-print-vs-missing-in-ms'
 
     elif \
             any((j in myPunctString) for j in myString1) \
@@ -191,7 +187,7 @@ def getVariantSubTypeBasedOnWholeVariant(myString1, myString2):
                 print('%s «%s» | «%s» %30s «%s» | «%s»' %
                       ('Strings:', myString1, myString2, 'Stripped strings:',
                        myString1.strip(), myString2.strip()))
-            my_subtype = 'different-punct'
+            my_subtype = 'change-punctuation'
         else:
             my_subtype = 'unknown'
 
