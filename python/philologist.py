@@ -451,8 +451,7 @@ class treeWithAppElements:
 
     def variant_subtypes_count(self):
         '''Return a dict like
-            {'missing-in-ms': 124,
-            'missing-in-print-vs-punct-in-ms': 252 etc.}
+            {'missing-in-ms': 124} etc.
             counting in how many <app> elements in the juxtaTree each
             variant subtype recurs '''
         myList = self.variant_subtypes_list()
@@ -598,7 +597,7 @@ class treeWithAppElements:
         for a in self.appdict():
             for myRow in self.variant_subtypes:
 
-                # E.g.: 'different-punct':
+                # E.g.: 'change-punctuation':
                 if a['subtype'] == myRow['subtype']:
                     # db_preferredRdg can be
                     # 'p (reading of the print edition) or
@@ -1124,7 +1123,7 @@ class treeWithAppElements:
         # Read DB table variant_subtypes and create
         # a dict corresponding_type looking like:
         # {'y': 'ortographic',
-        # 'different-punct': 'punctuation'} etc.
+        # 'change-punctuation': 'punctuation'} etc.
         corresponding_type = {}
         for r in self.variant_subtypes:
             my_subtype = r['subtype']
@@ -1244,12 +1243,14 @@ class treeWithAppElements:
 
     def handle_punctuation_variants(self):
         ''' If the @type of <app> is "punctuation", change its structure, from
-                <app cert="high" type="punctuation" subtype="different-punct">
+                <app cert="high" type="punctuation"
+                    subtype="change-punctuation">
                     <lem wit="#a">.</lem>
                     <rdg wit="#g">;</rdg>
                 </app>
             to
-                <app cert="high" type="punctuation" subtype="different-punct">
+                <app cert="high" type="punctuation"
+                    subtype="change-punctuation">
                     <lem resp="#pm">.</lem>
                     <rdg wit="#g">;</rdg>
                 </app>
