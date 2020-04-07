@@ -1301,22 +1301,14 @@ class treeWithAppElements:
                 p.text = p.text.replace('\n ', '\n')
 
     def handle_no_collation_paragraphs(self):
-        ''' Case 1: not_in_mss
-                Those paragraphs (e.g. g179.10-179.11) that are only
-                in Bonetti and in no MS (neither A or O): just use the
-                text of Bonetti without any <app> and without quotes
-            Case 2: not_in_print
-               Those paragraphs (g258.1-258.7surplus; i don't know if there
-               are others) that are only in the MS (in g258.1-258.7surplus, in
-               A2) but are not published by Bonetti: just use my
-               transcription from the MS without any <app>
+        '''These paragraphs (e.g. g179.10-179.11) that are only
+           in Bonetti and in no MS (neither A or O): just use the
+           text of Bonetti without any <app> and without quotes
                 '''
 
-        # 1. Paragraphs missing in MSS
         # Get a list with xmlids of paragraphs  missing in MSS
         xmlids = [x['xmlid'] for x in self.paragraphs
-                  if (x['no_collation'] == 'not_in_mss'
-                      or x['no_collation'] == 'not_in_print')]
+                  if x['no_collation'] == 'not_in_mss']
         for x in xmlids:
             # print('\nxmlid = ', x)  # debug
             par = self.juxtaBody.find('.//t:p[@xml:id="%s"]' % (x), ns)
@@ -1345,12 +1337,14 @@ class treeWithAppElements:
                     # directly to <p>
                     par.text = '\n%s\n' % new_text.strip()
 
-    def handle_print_edition_headings(self):
+    def empty_some_paragraphs(self):
         ''' Empty those paragraphs (e.g. b062heading, v-b298a or v-b298b)
             that only include Garufi's or Bonetti's headers (e.g.
-            "Romoaldi II archiepiscopi salernitani annales" '''
+            "Romoaldi II archiepiscopi salernitani annales"), and
+            the duplicate paragraph g258.1-258.7surplus'''
         xmlids = [x['xmlid'] for x in self.paragraphs
-                  if x['no_collation'] == 'heading']
+                  if (x['no_collation'] == 'heading' or
+                      x['no_collation'] == 'duplicate')]
         for x in xmlids:
             # print('\nxmlid = ', x)  # debug
             par = self.juxtaBody.find('.//t:p[@xml:id="%s"]' % (x), ns)
@@ -1363,6 +1357,7 @@ class treeWithAppElements:
                     par.remove(c)
                 # Remove par.text, if any
                 par.text = ''
+                print(' '.join(par.itertext()))
 
     def remove_lb_between_paragraphs(self):
         ''' Sometimes JuxtaCommons inserts some useless <lb/> at the end
