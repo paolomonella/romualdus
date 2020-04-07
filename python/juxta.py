@@ -156,7 +156,7 @@ if post:
         myTree.handle_punctuation_variants()
         myTree.beautify_paragraphs()
         myTree.handle_no_collation_paragraphs()
-        myTree.handle_print_edition_headings()
+        myTree.empty_some_paragraphs()
         myTree.remove_lb_between_paragraphs()
         myTree.write()
 
