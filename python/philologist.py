@@ -1343,10 +1343,8 @@ class treeWithAppElements:
             "Romoaldi II archiepiscopi salernitani annales"), and
             the duplicate paragraph g258.1-258.7surplus'''
         xmlids = [x['xmlid'] for x in self.paragraphs
-                  if (x['no_collation'] == 'heading' or
-                      x['no_collation'] == 'duplicate')]
+                  if x['no_collation'] in ['heading', 'duplicate', 'pax']]
         for x in xmlids:
-            # print('\nxmlid = ', x)  # debug
             par = self.juxtaBody.find('.//t:p[@xml:id="%s"]' % (x), ns)
             # par can be None (not found) because we are in the
             # wrong chunk (e.g. the xmlid is in m2-alfa, but the script
@@ -1357,7 +1355,6 @@ class treeWithAppElements:
                     par.remove(c)
                 # Remove par.text, if any
                 par.text = ''
-                print(' '.join(par.itertext()))
 
     def remove_lb_between_paragraphs(self):
         ''' Sometimes JuxtaCommons inserts some useless <lb/> at the end
