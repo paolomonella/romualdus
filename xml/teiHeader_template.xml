@@ -252,11 +252,13 @@
 <head>Manuscripts</head>
 <p>The three oldest witnesses of the work are:
 <list>
-	<item>A: Vaticanus Latinus 3973, available in
+	<item>A: Vaticanus Latinus 3973, of the late XII century, available in
 		https://digi.vatlib.it/mss/detail/Vat.lat.3973;</item>
 	<item>B: Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22,
+		of the XIV century,
 		available in http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22;</item>
-	<item>C: Paris, Bibliothèque Nationale, Latinus 4933; see Zabbia 2004, 385 and 
+	<item>C: Paris, Bibliothèque Nationale, Latinus 4933,
+		of the late XII-early XIII century, available in
 		https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p).</item>
 </list>
 </p>
@@ -278,13 +280,20 @@
 	with the other sigla (one letter only, not including
 	character 'A' already used for Vat. Lat. 3973), thus
 	facilitating the processing of XML files.</p>
+
+
 </div>
 
 <div>
 <head>Print editions</head>
 <p>The two most recent print editions of the Chronicon are Garufi 1914 and
 	Bonetti 2001, described in the 'sourceDesc' of this TEI XML file.
-</p>
+	The most important previous editions are those of Del Re 1875,
+	Arndt 1866.</p>
+
+<p>See the 'sourceDesc' element for complete bibliographical details
+	on A, O and the editions by Bonetti and Garufi. For the other
+	works cited, see the bibliography at the end of thisintroduction.</p>
 </div>
 
 <div>
@@ -310,36 +319,49 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 <p>MSS B and C present a number of textual passages absent in A and O.
 	We thus distinguish between a 'long' (MSS B and C)
 	and 'short' version of the work (A and O). Those additions
-	correspond to paragraphs:
-	§§§ insert list
-
+	correspond to the following paragraphs in the present edition:
+	g3.7-3.16, g10.n2-10.n5, g30.n1-30.n3, g179.10-179.11, g186.6-186.7, 
+	g186.8-186.8, g186.9-186.9, g186.10-186.11, g187.3-187.4, g187.5-187.8, 
+	g187.11-187.14, g188.5-188.7, g189.1-189.1, g191.3-191.5, g191.15-192.3, 
+	g195.6-195.8, g198.4-198.5, g198.12-198.13, g198.16-198.17, g199.5-199.8, 
+	g199.12-199.14, g200.17-200.21, g201.19-201.20, g202.7-202.10, g203.1-203.2, 
+	g203.6-203.6, g205.1-205.2, g206.n4-206.n5, g206.13-206.17, g208.1-208.9, 
+	g210.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, 
+	g214.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, 
+	g215.n14-216.n10, g216.n10-217.n1, g217.n4-217.n10, g218.n16-218.n23, 
+	g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10, 
 	</p>
 
 <p>The 'p' elements including these additions have been marked with attribute
 	@decls="#longversion", in this XML file, linking to the relevant
 	'editorialDecl'.</p>
 
-
-
 <div>
 <head>Second hand in A</head>
-<p>MS A, as mentioned above, has the 'short' version, and other parts that probably
-were originally present in the codex were later lost due to physical damage.
-Someone, probably in the XVII century, integrated MS A with the missing parts,
-by writing them in the marginal space or by adding extra folios.
-I transcribed and collated the following portions of MS A added by the second hand
-and marked their readings with siglum 'a2' in 'app' elements:
-g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
-81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g186.6-186.7, g186.8-186.8, 
-86.9-186.9, g187.5-187.8, g187.11-187.14, g188.5-188.7, g189.1-189.1, g191.3-191.5, 
-95.6-195.8, g198.4-198.5, g198.12-198.13, g198.16-198.17, g199.5-199.8, g200.17-200.21, 
-01.19-201.20, g202.7-202.10, g203.1-203.2, g203.6-203.6, g206.13-206.17, g208.1-208.9, 
-10.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, g213.1-213.8, 
-14.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, g216.n10-217.n1, g217.n4-217.n10, 
-18.n16-218.n23, g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10.</p>
+<p>Someone, probably in the XVII century, integrated MS A with most of the missing parts,
+	by writing them in the marginal space, drawing them from MS B.
+	I transcribed and collated the following portions of MS A added by the second hand
+	and marked their readings with siglum 'a2' in 'app' elements:
+	g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
+	81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g186.6-186.7, g186.8-186.8, 
+	86.9-186.9, g187.5-187.8, g187.11-187.14, g188.5-188.7, g189.1-189.1, g191.3-191.5, 
+	95.6-195.8, g198.4-198.5, g198.12-198.13, g198.16-198.17, g199.5-199.8, g200.17-200.21, 
+	01.19-201.20, g202.7-202.10, g203.1-203.2, g203.6-203.6, g206.13-206.17, g208.1-208.9, 
+	10.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, g213.1-213.8, 
+	14.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, g216.n10-217.n1, g217.n4-217.n10, 
+	18.n16-218.n23, g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10.</p>
 </div>
 
-
+<div>
+<head>Portion of the work in fragment O</head>
+<p>Witness O (i.e. folios 16r-18v of Ottobon. Lat. 2940) has the following paragraphs:
+g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16, g170.17-171.1, g171.2-171.6, 
+71.7-171.8, g171.9-171.14, g172.1-172.9, g172.10-173.11, g173.12-173.13, g173.14-174.7, 
+74.8-175.15, g176.1-176.2, g177.1-177.4, g177.5-177.6, g177.7-177.8, g177.9-178.3, 
+78.4-178.10, g178.11-178.12, g178.13-179.2, g179.3-179.7, g179.8-179.9, g179.12-179.14, 
+79.15-180.10, g180.10-180.12, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
+81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g184.13-185.7, g185.8-186.5.</p>
+</div>
 
 
 <div>
@@ -362,69 +384,25 @@ Vd. agenda con appunti completi su bibliografia
 the text of the Chronicon by Romualdus Salernitanus
 (Romualdus II Guarna) through a new collation of the text
 of the print editions of Garufi and Bonetti
-against A and O, the main witnesses of the 'short version' of the work
+against A and O, the main witnesses of the 'short version' of the work.
 </p>
 Full details on manuscripts and print editions of the work are in §
 [§§§ biblio su prine editions e MSS: vd. altro §§§]
 </div>
 
-<div>
-<head>Paragraphs in O</head>
-<p>Witness O (i.e. folios 16r-18v of Ottobon. Lat. 2940) has the following paragraphs:
-g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16, g170.17-171.1, g171.2-171.6, 
-71.7-171.8, g171.9-171.14, g172.1-172.9, g172.10-173.11, g173.12-173.13, g173.14-174.7, 
-74.8-175.15, g176.1-176.2, g177.1-177.4, g177.5-177.6, g177.7-177.8, g177.9-178.3, 
-78.4-178.10, g178.11-178.12, g178.13-179.2, g179.3-179.7, g179.8-179.9, g179.12-179.14, 
-79.15-180.10, g180.10-180.12, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
-81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g184.13-185.7, g185.8-186.5.</p>
-</div>
-
-<div>
-<head>Paragraphs in Garufi and Bonetti</head>
-<p>I already mentioned
-that portion of the work is included in Bonetti.
-Garufi has the wole text, including the additions that distinuish the 'long'
-from the 'short' version (though he mostly publishes those additions in apparatus notes),
-but does not have the report of the Peace of Venice, i.e. paragraphs
-from v-b298c through v-b306b. This is why their @xml:id does not start with 'g'.
-Bonetti includes the Peace of Venice, with Arndt's text. [sbagliato, cambiare §]</p>
-</div>
 
 <div>
 <head>Paragraphs missing in A and O</head>
 <p>Some paragraphs
-are missing both in MS A (first or second hand) and in MS O,
-so for them I am simply reporting the text of Garufi or Bonetti (i.e. Garufi/Arndt),
-without any 'app' elements.
-These paragraphs are those of the Peace of Venice, plus the following:
+are missing both in MS A (first or second hand) and in MS O.
+For them I am simply reporting the text of Garufi or Bonetti
+(i.e. Garufi/Arndt), without any 'app' elements.
+These paragraphs are:
 g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.28, 
 8.29-90.15, g90.16-90.20, g90.21-92.5, g92.6-92.7, g92.8-92.9, g179.10-179.11, 
 86.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
 </div>
 
-<div>
-<head>MSS Datation</head>
-<p>Complete</p>
-</div>
-
-<div>
-<head>Sources</head>
-<p>[§ rimanda ad altri]</p>
-</div>
-
-
-
-
-
-
-
-
-<div>
-<head>GitHub</head>
-<p>The source code of this edition, including transcriptions of the
-witnesses and Python software, is in the project GitHub repository
-https://github.com/paolomonella/romualdus.</p>
-</div>
 
 <div>
 <head>Collation exemplars</head>
@@ -466,6 +444,31 @@ I divided the text in four parts for collation:
 </list>
 </p>
 </div>
+
+<div>
+<head>MSS Datation</head>
+<p>Complete</p>
+</div>
+
+<div>
+<head>Sources</head>
+<p>[§ rimanda ad altri]</p>
+</div>
+
+
+
+
+
+
+
+
+<div>
+<head>GitHub</head>
+<p>The source code of this edition, including transcriptions of the
+witnesses and Python software, is in the project GitHub repository
+https://github.com/paolomonella/romualdus.</p>
+</div>
+
 
 <div>
 <head>Transpositions</head>
@@ -657,6 +660,211 @@ mostly by adopting MS A's spelling, in cases in which
 	e che per i fatti mi sono appoggiato alle print editions,
 	lavoro da storici, io ho visto usus scribendi; aim: migliorare
 	testo su base di nuova collaz. di O e soprattutto A</div>
+
+<listBibl>
+
+<head>Works cited in the introduction</head>
+
+<biblStruct xml:id="delre1845cronica">
+	<monogr>
+		<editor>Del Re, Giuseppe</editor>
+		<title>Cronica di Romualdo Guarna arcivescovo salernitano.
+			Versione di G. Del Re con note e dilucidazioni dello stesso</title>
+		<imprint>		
+				<publisher>Stamperia dell'Iride</publisher>
+					<date>1845</date>
+			</imprint>
+		</monogr>
+		<series>
+			<title level="s">Cronisti e scrittori sincroni napoletani
+				editi e inediti, ordinati per serie e pubblicati
+				da Giuseppe Del Re: storia della monarchia
+			</title>
+			<biblScope unit="volume">1: Normanni</biblScope>
+		</series>
+</biblStruct>
+
+<biblStruct xml:id="arndt1866romoaldi">
+	<monogr>
+		<editor>Arndt, Wilhelm</editor>
+		<title>Romoaldi II archiepiscopi Salernitani Annales</title>
+		<imprint>
+				<biblScope unit="page" from="387" to="461">387-461</biblScope>
+					<date>1866</date>
+			</imprint>
+		</monogr>
+		<series>
+			<title level="s">Monumenta Germaniae Historica</title>
+			<biblScope unit="volume">SS XIX</biblScope>
+		</series>
+</biblStruct>
+
+<biblStruct xml:id="garufi1914romualdo">
+	<monogr>
+		<editor>Garufi, Carlo Alberto</editor>		
+		<title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+		<imprint>
+			<publisher>S. Lapi</publisher>
+			<date>1914</date>
+		</imprint>
+	</monogr>
+	<series>
+		<title level="s">Rerum italicarum scriptores</title>
+		<biblScope unit="volume">127</biblScope>
+	</series>
+</biblStruct>
+
+<biblStruct xml:id="matthew1981chronicle">
+          <analytic>
+		<author>Matthew, Donald J. A.</author>
+		<title>The chronicle of Romuald of Salerno</title>
+          </analytic>
+          <monogr>
+		<title level="m">The Writing of History in the Middle Ages:
+			Essays Presented to Richard William Southern</title>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date>1981</date>
+			<biblScope unit="page" from="239" to="274">239-274</biblScope>
+            </imprint>
+          </monogr>
+</biblStruct>
+
+<biblStruct xml:id="bonetti2001romualdo">
+	<monogr>
+		<editor>Bonetti, Cinzia</editor>
+		<title>Romualdo II Guarna, Chronicon</title>
+		<imprint>
+			<publisher>Avagliano</publisher>
+			<date>2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2002cronista">
+          <analytic>
+		<author>Zabbia, Marino</author>
+		<title>Un cronista medievale e le sue fonti.
+			La storia del papato nel “Chronicon” di Romualdo Salernitano. </title>
+          </analytic>
+          <monogr>
+		<title level="j">Filologia Mediolatina</title>
+            <imprint>
+		<biblScope unit="vol">9</biblScope>
+		<date>2002</date>
+		<biblScope unit="page" from="229" to="250">229-250</biblScope>
+            </imprint>
+          </monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2004romualdo">
+          <analytic>
+		<author>Zabbia, Marino </author>
+		<title>Romualdo Guarna arcivescovo di Salerno e la sua cronaca</title>
+          </analytic>
+	<monogr>
+		<title level="m">Salerno nel XII secolo.
+			Istituzioni, società, cultura</title>
+		<imprint>
+			<publisher>Provincia di Salerno -
+				Centro studi salernitani "Raffaele Guariglia"</publisher>
+			<date>2004</date>
+			<biblScope unit="page" from="380" to="398">380-398</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2006nuova">
+          <analytic>
+		<author>Zabbia, Marino</author>
+		<title>Per la nuova edizione della cronaca di Romualdo Salernitano</title>
+	  </analytic>
+	<monogr>
+		<title level="j">Napoli Nobilissima</title>
+		<imprint>
+			<biblScope unit="vol">Vol. s. V, 7/1-2</biblScope>
+			<date>2006</date>
+			<biblScope unit="page" from="59" to="65">59-65</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2010damnatio">
+          <analytic>
+		<author>Zabbia, Marino </author>
+		<title>"Damnatio memoriae" o selezione storiografica?
+			I grandi assenti nel "Chronicon" di Romualdo Salernitano (Periodo normanno)</title>
+          </analytic>
+	<monogr>
+		<title level="m">Condannare all'oblio. Pratiche della "damnatio memoriae" nel medioevo</title>
+		<imprint>		
+			<publisher>Istituto storico italiano per il medio evo</publisher>		
+			<biblScope unit="page" from="21" to="64">21-64</biblScope>
+			<date>2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2012cultura">
+          <analytic>
+		<author>Zabbia, Marino</author>
+		<title>La cultura storiografica dell'Italia normanna
+			riflessa nel "Chronicon" di Romualdo Salernitano</title>
+	</analytic>
+	<monogr>
+		<title level="m">Contributi IV settimana di studi medievali</title>
+		<imprint>		
+			<biblScope unit="page" from="3" to="14">3-14</biblScope>
+			<date>2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="monella2018livelli">
+          <analytic>
+		<author>Monella, Paolo</author>
+		<title>Livelli di rappresentazione del testo nell'edizione del De nomine di Orso Beneventano</title>
+	</analytic>
+	<monogr>
+		<title level="j">Umanistica Digitale</title>
+		<imprint>		
+			<biblScope unit="vol">2</biblScope>
+			<date>2018</date>
+			<biblScope unit="page" from="67" to="91">67-91</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="monella2018sustainable">
+          <analytic>
+		<author>Monella, Paolo</author>
+		<title>A sustainable work flow for a multi-layer edition of the Chronicon by Romualdus Salernitanus</title>
+	</analytic>
+	<monogr>
+		<title level="m">AIUCD2018 - Book of Abstracts</title>
+		<imprint>		
+				<publisher>Alma DL UniBo</publisher>		
+					<biblScope unit="page" from="21" to="24">21-24</biblScope>
+						<date>2018</date>
+				</imprint>
+			</monogr>
+</biblStruct>
+
+<biblStruct xml:id="monella2019verso">
+          <analytic>
+		<author>Monella, Paolo</author>
+		<title>Verso un'edizione critica digitale del Chronicon di Romualdo Salernitano</title>
+          </analytic>
+	<monogr>
+				<title level="m">Giornata di studi normanno-sveva</title>
+		<imprint>		
+					<publisher>Università di Enna Kore</publisher>
+						<date>2019</date>
+				</imprint>
+			</monogr>
+</biblStruct>
+
+</listBibl>
 
 </front>
 
