@@ -9,7 +9,7 @@
 <teiHeader> 
     <fileDesc> 
       <titleStmt> 
-        <title>Romualdi Salernitani Chronicon, Bonetti edition</title> 
+        <title>Romualdi Salernitani Chronicon, Bonetti Edition</title> 
         <editor xml:id="pm">Paolo Monella</editor> 
       </titleStmt> 
       <publicationStmt> 
@@ -19,7 +19,7 @@
         <biblStruct xml:id="b"> 
             <monogr>    
                 <author>Guarna, Romualdus</author> 
-                <title>Romualdo II Guarna, Chronicon</title> 
+                <title>Romualdo Ii Guarna, Chronicon</title> 
                 <idno type="ISBN">9788883090561</idno> 
                 <editor>Bonetti, Cinzia</editor> 
                 <imprint> 
@@ -29,7 +29,7 @@
                 </imprint> 
             </monogr> 
             <series> 
-                <title level="s">Schola Salernitana. Studi e testi</title> 
+                <title level="s">Schola Salernitana. Studi E Testi</title> 
                 <biblScope unit="volume">6</biblScope> 
             </series> 
         </biblStruct> 
@@ -172,7 +172,7 @@ Eodem anno Robbertus dux
 "cepit Barum ciuitatem longa obsidione fatigatam, indeque 
 mouens exercitum, Siciliam properauit obseditque" "Panormum, 
 per terram et per mare, duxitque ante eam naues LVIII ditissimam 
-Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam. 
+Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam 
 [/p] 
 [p xml:id="g188.1-188.4"] 
 anno 
@@ -265,15 +265,21 @@ Salernum. Inde mouens gressum dux ipse perrexit ad Gregorium
 papam eiusque liggius homo iureiurando effectus apud Ciperanum, 
 accipiens ab eo uexillum sancti Petri mense Iunio. 
 [/p] 
-[p xml:id="g191.13-194.5"] 
+[p xml:id="g191.13-191.15"] 
 Anno dominice incarnationis MLXXX indictione IV dux Robbertus 
 magnum apud Ydrontum "assumpsit exercitum, super 
 Constantinopolim ire cupiens. Qui mare transiens cum Boamundo 
 filio suo aplicuit Auelone" et eduxit exercitum suum necnon 
-et predictum Michaelem, qui se imperatorem fuisse conquerebatur. 
+et predictum 
+[/p] 
+[p xml:id="g191.15-192.3"] 
+Michaelem, qui se imperatorem fuisse conquerebatur. 
 "Et mense Iulio ante Durrachium obsidionem posuit per 
 terram et per mare, set stolus Uenencolum ueniens discipauit 
-maris obsidionem aperuitque Dirrachenis mare". Rogerium uero 
+maris obsidionem aperuitque Dirrachenis mare". 
+[/p] 
+[p xml:id="g192.3-194.5"] 
+Rogerium uero 
 filium suum omnibus sibi conmissis in Apulia dimisit. Inter hec 
 autem Niceforus Butanioth Constantinopolitanus imperator 
 aduentum Robberti ducis audiens, direxit Alexium megadomesticum 
@@ -493,13 +499,13 @@ enim eodem uastata est igne, ut nulla domus, nullum inueniretur
 edificium quod non ab igne consumptum deperierit. Homines 
 etiam XXV eodem incendio mortui sunt. 
 [/p] 
-[p xml:id="g199.9-199.12"] 
+[p xml:id="g199.9-199.11"] 
 Anno Domini MXCI indictione XIII mense Februario 
 Iordanus Capue defunctus est anno XIII principatus eius. Hic 
 autem fuit uir egregius, consilio sagax, uirtute in bello preualidus. 
 Cui successit Riccardus filius eius princeps. 
 [/p] 
-[p xml:id="g199.13-199.15"] 
+[p xml:id="g199.12-199.14"] 
 "Eodem anno 
 dum obsideretur Oria ciuitas a Boamundo, auxilio Roberti de Anse, 
 Oritani dissipauerunt obsidionem eius, et ipso Boamundo fugam 
@@ -662,10 +668,13 @@ multum uero temporis idem Henricus imperator mortuus est et
 obsessus anno imperii sui LXVII, et ipse filius eius regnum sibi 
 suscepit. 
 [/p] 
-[p xml:id="g204.16-205.2"] 
+[p xml:id="g204.16-205.1"] 
 Anno domini MCX indictione III stella cometis a parte septemtrionali 
 circa polum uisa est tota nocte a sero usque mane 
-per totum mensem Iunii. Eodem anno mense Septembris domnus 
+per totum mensem Iunii. 
+[/p] 
+[p xml:id="g205.1-205.2"] 
+Eodem anno mense Septembris domnus 
 Alexander comes fecit Miliolongum hedificare castellum. 
 [/p] 
 [p xml:id="g205.3-206.12"] 
@@ -1526,7 +1535,7 @@ usurpata dignitate priuasset. Eo tempore Corradus Teutonicorum
 rex mortuus est, et ei Fredericus nepos eius in regno successit. 
 Non multo uero post Eugenius papa Rome mortuus est, 
 et apud Sanctum Petrum est sepultus, anno pontificatus sui 
-VIII, m. IV die XII. Huic successit Corradus natione Romanus, 
+VIII, mense IV die XII. Huic successit Corradus natione Romanus, 
 senex et plenus dierum, prius presbiter cardinalis deinde episcopus 
 Sauinensis et uicarius Romane ecclesie, qui et Anastasius est 
 appellatus, anno dominice incarnationis MCLIII. 
@@ -1872,7 +1881,7 @@ ordinatus inuitus, predictum cancellarium humiliter repugnantem
 elegerunt, et papam Alexandrum tercium nominarunt. Episcopus 
 uero Tusculanus cum Iohanne Pisano, cardinali Sancti 
 martini, et Guidone Cremense, auxilio quorundam laicorum et 
-falsagraui et comitis Blandacensis nunciorum imperatoris, qui 
+Falsagraui et comitis Blandacensis nunciorum imperatoris, qui 
 tunc Rome erant, Octauianum cardinalem Sancte Cecilie elegerunt 
 et eum papam Uictorem uocauerunt. Alexander autem cum 
 reliquis cardinalibus et episcopis in turri beati Petri se recepit. 
@@ -4025,7 +4034,7 @@ cardinalis Beneuenti est mortuus, Willelmus de Papia Portuensis
 episcopus apud Auersam obiit, Malfridus Penestrinus 
 episcopus apud Anagniam diem clausit extremum. 
 [/p] 
-[p xml:id="g294.15-194.17"] 
+[p xml:id="g294.15-294.17"] 
 Anno dominice incarnationis M.C. septuagesimo octauo, 
 quinta die intrante mensis Martii, luna passa est eclisin in signo 
 uirginis et incepit a fine prime hore et durauit usque ad principium 
@@ -4327,7 +4336,7 @@ illius deosculatus est. Mox igitur papa parumper assurgens ac
 utraque manu caput imperatoris amplectens ac deosculans, ad 
 dexteram suam consedere precepit ac demum sic ait: "Bene uenisti, 
 fili ecclesie"; statimque apprehensa manu illius duxit in ecclesiam, 
-imposuit etiam hymnum te deum laudamus cum pulsione 
+imposuit etiam hymnum Te Deum laudamus cum pulsione 
 signorum. His ita peractis simul per porticum ambo exierunt. 
 Deinde papa equum ascendit, imperator uero streuiam illius 
 tenuit ac deinde in palatium ducis sese recepit. Hec omnia 

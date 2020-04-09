@@ -9,7 +9,7 @@
 <teiHeader> 
     <fileDesc> 
       <titleStmt> 
-        <title>Romualdi Salernitani Chronicon, Bonetti edition</title> 
+        <title>Romualdi Salernitani Chronicon, Bonetti Edition</title> 
         <editor xml:id="pm">Paolo Monella</editor> 
       </titleStmt> 
       <publicationStmt> 
@@ -19,7 +19,7 @@
         <biblStruct xml:id="b"> 
             <monogr>    
                 <author>Guarna, Romualdus</author> 
-                <title>Romualdo II Guarna, Chronicon</title> 
+                <title>Romualdo Ii Guarna, Chronicon</title> 
                 <idno type="ISBN">9788883090561</idno> 
                 <editor>Bonetti, Cinzia</editor> 
                 <imprint> 
@@ -29,7 +29,7 @@
                 </imprint> 
             </monogr> 
             <series> 
-                <title level="s">Schola Salernitana. Studi e testi</title> 
+                <title level="s">Schola Salernitana. Studi E Testi</title> 
                 <biblScope unit="volume">6</biblScope> 
             </series> 
         </biblStruct> 
@@ -112,7 +112,7 @@
   <text> 
     <body> 
 [p xml:id="b062heading"] 
-Romoaldi II archiepiscopi salernitani annales 
+Romoaldi II archiepiscopi salernitani Annales 
 [/p] 
 [p xml:id="g163.6-163.7"] 
 Anno dominice incarnationis DCCCXCIII. Primus Guaimarius 

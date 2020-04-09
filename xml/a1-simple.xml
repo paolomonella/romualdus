@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?> 
-<!DOCTYPE TEI SYSTEM "romualdus.dtd" [ 
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" [ 
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'> 
 <!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'> 
 <!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'> 
@@ -9,7 +9,7 @@
 <teiHeader> 
     <fileDesc> 
       <titleStmt> 
-        <title>Romualdi Salernitani Chronicon, codex A</title> 
+        <title>Romualdi Salernitani Chronicon, Codex A</title> 
         <editor xml:id="pm">Paolo Monella</editor> 
       </titleStmt> 
       <publicationStmt> 
@@ -26,7 +26,7 @@
                  <biblStruct xml:id="g"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title> 
+                    <title>Romualdi Salernitani Chronicon (A.M. 130-A.C. 1178)</title> 
                     <editor>Garufi, Carlo Alberto</editor> 
                     <imprint> 
                         <publisher>S. Lapi</publisher> 
@@ -35,7 +35,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Rerum italicarum scriptores: Nuova edizione</title> 
+                        <title level="s">Rerum Italicarum Scriptores: Nuova Edizione</title> 
                         <biblScope unit="volume">7</biblScope> 
                                         <biblScope unit="part">1</biblScope> 
                 </series> 
@@ -43,7 +43,7 @@
             <biblStruct xml:id="b"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdo II Guarna, Chronicon</title> 
+                    <title>Romualdo Ii Guarna, Chronicon</title> 
                     <idno type="ISBN">9788883090561</idno> 
                     <editor>Bonetti, Cinzia</editor> 
                     <imprint> 
@@ -53,7 +53,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Schola Salernitana. Studi e testi</title> 
+                        <title level="s">Schola Salernitana. Studi E Testi</title> 
                         <biblScope unit="volume">6</biblScope> 
                     </series> 
             </biblStruct> 
@@ -235,7 +235,7 @@
 [p xml:id="g3.7-3.16"] 
 [/p] 
 [p xml:id="g3.17-4.2"] 
-Secunda etas a Noe usque ad Abraam generationes iuxta hebraicam ueritatem complexa  decem, annos autem ducentos nonaginta duos. Porro iuxta Septuaginta interpretes anni  MLXXII. Generationes uero XI. hec uero quasi pueritia fuit generationis populi Dei. Et  ideo in lingua inuenta est hebrea. A pueritia namque homo incipit nosse loqui, que idcirco  appellata est, quod fari non potest. Ab Adam itaque usque ad Abraham iuxta hebraicam    ueritatem computantur anni mille nungenti quadraginta octo, secundum Septuaginta interpretes fiunt anni tria milia trecenti XIV. 
+Secunda etas a Noe usque ad Abraam generationes iuxta hebraicam ueritatem complexa  decem, annos autem ducentos nonaginta duos. Porro iuxta Septuaginta interpretes anni  MLXXII. Generationes uero XI. Hec uero quasi pueritia fuit generationis populi Dei. Et  ideo in lingua inuenta est hebrea. A pueritia namque homo incipit nosse loqui, que idcirco  appellata est, quod fari non potest. Ab Adam itaque usque ad Abraham iuxta hebraicam    ueritatem computantur anni mille nungenti quadraginta octo, secundum Septuaginta interpretes fiunt anni tria milia trecenti XIV. 
 [/p] 
 [p xml:id="g4.3-4.10"] 
 Tertia ab Abraham usque ad Dauid, generationes iuxta utramque auctoritatem XIII annos  uero, secundum Hebreorum auctoritatem nungentos quadraginta duos complectens; iuxta  Septuaginta uero interpretes anni tria milia C XXXVII. Hec uelud quedam adolescentia fuit  populi Dei, a qua etate incipit homo posse generare, propterea Matheus euangelista generationum  ab Abraham sumpsit exordium, qui etiam pater multarum gentium constitutus est, quando mutatum nomen accepit. Ab Adam uero iuxta Hebreorum auctoritatem usque ad  Dauid fiunt anni duo milia octingenti nonaginta, secundum Septuaginta interpretes tria milia  CV. Cur autem annorum hec diuersitas sit, in sequentibus ostendetur. 
@@ -253,7 +253,7 @@ Sexta etas, que nunc agitur, nulla generationum, uel teporum serie certa, sed ut
 Etas quippe duobus modis dicitur: aut enim hominis, sicut a natiuitate infantia usque in  annos septem, pueritia usque ad annos quattuordecim, adolescentia a quinto decimo usque in  uicesimum octauum, iuuentus usque ad XLIX, senectus a quinquagesimo usque ad LXXIX,  decrepita ab anno octogesimo quousque uita finitur. Aut mundi, cuius prima etas ab Adam  usque ad Noe, secunda a Noe usque ad Abraham, tertia ab Abraham usque ad Dauid, quarta  a Dauid usque ad captiuitatem Iudeorum in Babiloniam, quinta deinde usque ad aduentum  Saluatoris, sexta, que nunc est usque quo mundus iste finiatur, quarum decursus per generationes,  et regna euidentius infra, prout inuenire potui, explicabo. 
 [/p] 
 [p xml:id="g5.11-5.18"] 
- Creator omnium uisibilium et inuisibilium, qui trinus et unus Deus est, in principio creauit  celum et terram, mare, et omnia, que in eis sunt, tempora quoque instituit, nam prima die in  lucis nomine condidit angelos, secunda die in  discretionis uocabulo speciem aquarum, quarta luminaria celi, uidelicet solem, et lunam, et  stellas, que temporum sunt ordinationes, quinta animantia ex aquis, sexta animantia ex terra,  et hominem, quem appellauit Adam, et posuit in paradiso, cuius de latere dormientis costam  tollens, mulierem edificauit, ut eius adiutorio genus propagaret humanum, septima autem die  requieuit Deus ab omni opere prime ac noue conditionis; hoc autem secundum licteram. 
+ Creator omnium uisibilium et inuisibilium, qui trinus et unus Deus est, in principio creauit  celum, et terram, mare, et omnia, que in eis sunt, tempora quoque instituit, nam prima die in  lucis nomine condidit angelos, secunda die in  discretionis uocabulo speciem aquarum, quarta luminaria celi, uidelicet solem, et lunam, et  stellas, que temporum sunt ordinationes, quinta animantia ex aquis, sexta animantia ex terra,  et hominem, quem appellauit Adam, et posuit in paradiso, cuius de latere dormientis costam  tollens, mulierem edificauit, ut eius adiutorio genus propagaret humanum, septima autem die  requieuit Deus ab omni opere prime ac noue conditionis; hoc autem secundum licteram. 
 [/p] 
 [p xml:id="g5.19-5.19"] 
 Incipit prima etas. 
@@ -265,7 +265,7 @@ Primo igitur anno, postquam de paradiso Adam ligni uetiti culpa proiectus est, c
 Adam uero cum CXXX esset annorum, genuit filium, nomine Seth. Hic fuit uir bonus,  et iustus, de cuius prosapia homines exorti, filii Dei dicti sunt. Superuixit autem Adam,  postquam genuit Seth, annis DCCC secundum hebraicam ueritatem, usque ad quinquagesimum  sextum annum natiuitatis Lamech. Uerum Septuaginta interpretes ante natum Seth posuere  annos CCCXXX, postea DCC. Seth interpretatur resurrectio, significans resurrectionem  Christi a mortuis, cuius mortem illatam a Iudeis significat Abel, qui dicitur iustus, a fratre  Cain occisus, secundum Septuaginta, annum CCCXXXV, secundum Hebreos CCXXXV. 
 [/p] 
 [p xml:id="g6.1-6.6"] 
- Seth habens annos CV genuit Enos, cui superuixit annos DCCCXVI usque ad CLXVII  annum natiuitatis Lamech, porro Septuaginta interpretes ante natum Enos annos CCV postea  posuere annos DCCVII. Enos interpretatur homo, de quo Deus benedicitur, iste cepit  inuocare nomen Domini, quia hominum est proprium, ut suae fragilitatis memores, inuocent  conditoris auxilium, eorum dumtaxat, qui in fide Christi  uiuentes, filii resurrectionis sic  esse letantur, secundum septuaginta, annum DCXXV, Hebrei CCCXXV. 
+ Seth habens annos CV genuit Enos, cui superuixit annos DCCCXVI usque ad CLXVII  annum natiuitatis Lamech, porro Septuaginta interpretes ante natum Enos annos CCV postea  posuere annos DCCVII. Enos interpretatur homo, de quo Deus benedicitur, iste cepit  inuocare nomen Domini, quia hominum est proprium, ut suae fragilitatis memores, inuocent  conditoris auxilium, eorum dumtaxat, qui in fide Christi  uiuentes, filii resurrectionis sic  esse letantur, secundum Septuaginta, annum DCXXV, Hebrei CCCXXV. 
 [/p] 
 [p xml:id="g6.7-6.10"] 
 Enos habens annos XC genuit Cainan, cui superuixit annos DCCCXV secundum Hebreos,  idest usque ad LXXXIV annum natiuitatis Noe, sed Septuaginta interpretes ante natum  Cainan CXC annos, postea DCCXV posuere, secundum LXX annum DCCXXV iuxta Hebreos  CCCXCV. 
@@ -287,8 +287,8 @@ Mathusalam annos CLXXXVII genuit Lamech, cui superuixit annos DCCLXXXII idest
 usque ad diluuium. Septuaginta interpretes ante natum Lamech CLXVII, ponunt annos, 
 postea DCCCII qui numerus, ut lector facillime uidebit, iuxta hebraicam ueritatem XX annos; 
 iuxta ipsorum uero auctoritatem XIV annis diluuii tempora transiit. De qua famosissima 
-questione doctissimi patres Ieronimus in libro questionum hebraicarum, Augustinus in 
-libro de ciuitate Dei quinto decimo plenissime disputant. Septuaginta MDCXLVI, Hebrei 
+questione doctissimi patres Ieronimus in libro Questionum Hebraicarum, Augustinus in 
+libro De Ciuitate Dei quinto decimo plenissime disputant. Septuaginta MDCXLVI, Hebrei 
 mille LVI. 
 [/p] 
 [p xml:id="g7.8-7.12"] 
@@ -407,7 +407,7 @@ Hebrei MCMXLVIII.
 [/p] 
 [p xml:id="g9.26-9.31"] 
 Thare annos LXX genuit Abraham cui superuixit annis CXXXV. Hactenus seculi secunda 
-etas protenditur, cuius tota series recensita, beatus Augustinus in libro de ciuitate Dei XVI 
+etas protenditur, cuius tota series recensita, beatus Augustinus in libro De Ciuitate Dei XVI 
 capitulo X hoc modo conclusit. Fiunt itaque anni a diluuio usque ad Abraham mille septuaginta 
 duo, secundum uulgatam editionem, hoc est interpretum Septuaginta. In Hebreis 
 autem codicibus longe pauciores annos uidelicet CCXCII perhibent inueniri, de quibus, rationem 
@@ -429,7 +429,14 @@ annorum esset, relicta gente et patria ad imperium Dei uenit in terram Canaan, a
 promissionem nascituro de semine suo saluatore, in quo benedicentur omnes gentes simul, 
 et se ipsum in gentem magnam esse futurum, quarum una spiritualis, altera promissio carnalis. 
 his temporibus Ninus, et Semiramis eius uxor Assiriis regnabant. Zaroas magicam 
-artem tunc primum inuenit. Otosius: 
+artem tunc primum inuenit. 
+[/p] 
+[p xml:id="g10.n2-10.n5"] 
+Hac etate regnum inchoatur grecorum ubi primus regnavit Inachus cuius filius Foroneus 
+rex in Grecia leges et iudicia scripsit. 
+[/p] 
+[p xml:id="g10.12-10.12"] 
+Otosius: 
 [/p] 
 [p xml:id="g10.13-10.18"] 
 Ante annos Urbis condite MCCC rex primus apud Assyrios, qui eminere ceteris potuit, 
@@ -531,13 +538,13 @@ Hebrei litteras habere ceperunt. His autem temporibus Iob de filiis Edom quintus
 Abraham, pronepos Ysaac in terra Us que est in regione Philistinorum, tunc patrie rector 
 principabatur. Esau namque ipse est. Edom, qui genuit Rahuel, Rahuel autem genuit Zara. Hic itaque Zara genuit 
 Iob, qui alio nomine dicitur Iobab. Hucusque ex libro Genesis prosecuti sumus. ex hoc 
-autem ex libro iosue, et iudicum usque ad regum tempora. MMDXIX. 
+autem ex libro Iosue, et Iudicum usque ad regum tempora. MMDXIX. 
 [/p] 
 [p xml:id="g12.27-13.14"] 
 Iosue annos XXVI regit populum, ut Ioseppus docet. Nam scriptura sancta quod fuerint 
-anni ducatus illius tacet. Quare autem Eusebius in chronicis XXVII annos posuerit infra 
+anni ducatus illius tacet. Quare autem Eusebius in Chronicis XXVII annos posuerit infra 
 dicemus. Primo namque ducatus sui anno decimo die primi mensis populum, patefacto 
-Iordanis alueo, in terram repromissionis induxit, quo uidelicet anno, ut in chronicis prefati 
+Iordanis alueo, in terram repromissionis induxit, quo uidelicet anno, ut in Chronicis prefati 
 Eusebii repperimus, principium erat quinquagesimi primi iobelei, secundum Hebreos: idest 
 anni duo milia quingenti erant ab initio mundi completi, singulis iobeleorum ordinibus per 
 quinquagenos deputatis. Constat enim a principio quia MDCLVI ad diluuium usque fuere 
@@ -586,8 +593,8 @@ uastat. uastat Saturnus in Italiam fugiens, ibi post Ianum regnauit. MMDCCXLV.
 [p xml:id="g14.4-14.7"] 
 Pthola annis XXIII filius Phoa patrui Abimelech, uir de Ysachar, qui habitabat in Sanir 
 montis Effraym. Fuitque his temporibus bellum Laphitarum, et Centaurorum, quod scribit 
-Palefactus primo de incredibilibus libro. Notabiles fuisse dicuntur equites Thessalorum. 
-in Troia post Laomedontem regnauit Priamus. MMDCCLXVII. 
+Palefactus primo De Incredibilibus libro. Notabiles fuisse dicuntur equites Thessalorum. 
+in Troia post Laomedontem regnauit Priamus MMDCCLXVII. 
 [/p] 
 [p xml:id="g14.8-14.10"] 
 Iahyr annis XXII ex tribu Manasse. His diebus Hercules agonem Olimpiacum constituit, 
@@ -596,7 +603,7 @@ latinas inuenit. MMDCCLXXIII.
 [/p] 
 [p xml:id="g14.11-14.14"] 
 Iepte Galaadites annis VI Philistim, et Ammanite deprimunt Israhel, ex quibus Ammanite 
-debellantur a Zepte, qui in libro iudicum ab ete Moysi usque ad semetipsum 
+debellantur a Zepte, qui in libro Iudicum ab ete Moysi usque ad semetipsum 
 ait supputari annos CCC. Hercules in flammis se iniecit. Amazonum tunc regnum uigebat, 
 quod usque ad Alexandri Magni tempora mansisse legimus MMDCCLXXX. 
 [/p] 
@@ -752,7 +759,7 @@ clarus sacerdos habetur, qui uixit annis CXXX. MMMLXXI.
 Athalia mater Azarie annis VI que uidens interfectum ab Ieu rege Israhel filium suum 
 Azariam, interfecit omnem stirpem regiam domus Ioram, preter solum Ioas filium Azarie, quem 
 Iosabeth soror Azarie uxor Ioade pontificis furata est de medio filiorum regis, cum interficerentur. 
-in Septuaginta interpretibus VII annis regnasse Athalia narratur. Zacharias 
+In Septuaginta interpretibus VII annis regnasse Athalia narratur. Zacharias 
 prophetauit MMMCII. 
 [/p] 
 [p xml:id="g17.23-17.30"] 
@@ -840,7 +847,7 @@ Hec Hieronimus item:
 [p xml:id="g19.18-19.24"] 
 Legimus, quod regnante Iohas, Zacharias filius Barachie, quem prophetam fuisse dubium 
 non est, sacerdos fuerit templi Domini, cui precepit Achaz, ut altare simile altari Damasci 
-faceret, quod minime fecit. Et dierum narrat liber, quod Ezechias filius Achat quesierit 
+faceret, quod minime fecit. Et Dierum narrat liber, quod Ezechias filius Achat quesierit 
 Dominum in diebus Zacharie erudiri in timore Domini. Achat filius Iohatham rex impiissimus, 
 qui clausit ianuas templi, et in ualle Gennon adorauit Baalmi, et filium suum ydolis consecrauit: 
 ab hoc conductus Thegath Falasar rex Assyriorum, et Rasin regem Syrie interfecit, 
@@ -988,9 +995,9 @@ et sepultos, quasi bene fuit eis in presenti et in futuro bene erit. Hunc autem 
 mortuum, et non sepultum: insepultum quidem, hoc est, a bestiis auibusque lacerandum. 
 Hec est enim asini sepultura. Hunc itaque per prophetam Dominus arguit superbie, et 
 quod diuitiarum magnitudine abuius sit in contemptum Domini, nec audierit uocem Dei. 
-Nemo putet eundem in Danihelis principio esse Ioachim qui in ezechielis exordio Ioachim 
+Nemo putet eundem in Danihelis principio esse Ioachim qui in Ezechielis exordio Ioachim 
 scribitur: iste enim extremam sillabam chim habet, ille chin habet: et ob hanc causam 
-in euangelio secundum Matheum una uidetur esse generatio, quia secunda tesseris ire decas 
+in Euangelio secundum Matheum una uidetur esse generatio, quia secunda tesseris ire decas 
 in Ioachim desinit filium Ozie, et tertia in a Ioachim filio Ioacham. Primo quidem 
 ueniente Nabuchodonosor super Hierusalem non omnes Iudei pariter in captiuitatem ducti 
 sunt; sed pars aliqua, et tertia uasorum sanctorum direpta est. Regem quoque Ioachim detentum 
@@ -1041,7 +1048,7 @@ agere permiserunt ei, et cum omni reuerentia cum donis, et muneribus dimiserunt 
 itaque sanctus Hieremias in medio eorum, qui remanserant in Masphat: quique iterum non 
 desinentes a prauis et illicitis rebus, abhominationes prohibitas ceperunt comittere Idolis 
 seruientes, et Dominum impie contempnendo. Adiecerunt etiam, ut ipsum Hieremiam pertraherent 
-secum sicut captiuum in Egypto, Et quod non fecerunt barbari Babylonis, hoc isti qui proximi uidebantur circa eum crudeliter perpetrauerunt, inuitumque eum in Egypto secum deduxerunt, et ibi dicitur esse defunctus lapidibus 
+secum sicut captiuum in Egypto, et quod non fecerunt barbari Babylonis, hoc isti qui proximi uidebantur circa eum crudeliter perpetrauerunt, inuitumque eum in Egypto secum deduxerunt, et ibi dicitur esse defunctus lapidibus 
 obrutus. 
 [/p] 
 [p xml:id="g24.6-24.14"] 
@@ -1059,7 +1066,7 @@ Eunuchos in Babylonem.
 Explicit quarta etas. 
 [/p] 
 [p xml:id="g24.16-24.16"] 
-incipit quinta etas. 
+Incipit quinta etas. 
 [/p] 
 [p xml:id="g24.17-24.18"] 
 Quinta etas ab exterminio cepit regni Iudacici, quod iuxta prophetiam Hieremie septuaginta 
@@ -1095,7 +1102,7 @@ complerentur septuaginta anni. Anno autem primo Ciri regis Perserum ad explendum
 Domini, quem locutus fuerat per os Hieremie suscitauit Dominus spiritum Ciri regis 
 Persarum, et cetera. Quibus uerbis ostenditur quia uastata Iudei Chaldea non, ut Assirii in 
 Samaria, alios misere colonos; sed desertam reliquere terram, donec post annos LXX in ea 
-rediere Iudei. Consentit hic Iosephus in decimo antiquitatum libro scribens templum, et 
+rediere Iudei. Consentit hic Iosephus in decimo Antiquitatum libro scribens templum, et 
 Hierusalem, et omnem Iudeam LXX annis permansisse desolatam: qui rursus enumerando reges 
 Babylonis (si tamen ille sic scripsit, et non codex fallit mendosus) centum fere annos ab 
 euersa Hierusalem usque ad euersionem regni Chaldeorum facit colligi. Scribi enim post 
@@ -1110,8 +1117,8 @@ ad se in Mediam duxit, et omni honore cum celebrauit. Huius Darii Danihel ipse i
 In anno primo Darii filii Assueri de semine Medorum, qui imperauit super regnum Chaldeorum, 
 ego Danihel, intellexi in libris numerum annorum, de quo factus est sermo Domini ad 
 Hieremiam prophetam ut complerentur desolationis Hierusalem septuaginta anni. Eusebius 
-in temporum libro XXX annos ab euersione Hierusalem usque ad initium Ciri Persarum, Iulius 
-autem Africanus LXX computat. Porro Ieronimus in expositione prophete Danihelis ita 
+in Temporum libro XXX annos ab euersione Hierusalem usque ad initium Ciri Persarum, Iulius 
+autem Africanus LXX computat. Porro Ieronimus in Expositione Prophete Danihelis ita 
 dicit: Tradunt Hebrei huiuscemodi fabulam usque ad septuagesimum annum, quo Hieremias 
 captiuitatem populi Iudeorum dixerat esse soluendam, de quo et Zacharias in principio uoluminis 
 sui loquitur, irritam putans Dei pollicitationem Balthasar, falsumque promissum, uersum 
@@ -1143,7 +1150,7 @@ milia regredi fecit in Iudeam, restituens eis uasa templi Domini aurea, et argen
 milia CD. Qui congregati in Hierusalem mense septimo edificauerunt altare, et a primo 
 die mensis eiusdem ceperunt offerre holocaustum Domino; anno autem secundo aduentus 
 sui, mense secundo templi fundamenta iecerunt anno incensionis iuxta Africanum LXXII 
-iuxta cronicam Cusebii XXXII. Sed, impedientibus Samaritis, intermissum est opus usque 
+iuxta Cronicam Cusebii XXXII. Sed, impedientibus Samaritis, intermissum est opus usque 
 ad annum Darii secundum, qui etiam in regno Assueri, et Artarxersis scripserunt accusationem 
 aduersus Iudeos, et remisit Artarxerses, ne edificaretur Hierusalem. Romanorum septimus 
 Tarquinius regnauit annis XXXV qui causa Tarquinii iunioris filii sui, qui Lucretiam 
@@ -1152,7 +1159,7 @@ carceres, compedes, catenas, exilia, atque metalla.
 [/p] 
 [p xml:id="g26.24-26.32"] 
 Orosius: 
-Anno post urbem conditamCCLIV. Brutus, expulso regis imperio, consul primum effectus 
+Anno post urbem conditam CCLIV. Brutus, expulso regis imperio, consul primum effectus 
 est. Eo tempore Cirus rex Persarum uicit Babiloniam; urbem tunc cunctis opulentiorem 
 cepit, subuertit atque destruxit, anno conditionis eius millesimo CLXIV. 
 Cyrus autem rex Persarum proximi temporis successu Scithis bellum intulit, quem Tamiris 
@@ -1170,14 +1177,14 @@ Crotone deguit, nouissime Metapontum addiit, ibique sepultus est. MMMCDLXVIII.
 [/p] 
 [p xml:id="g27.6-28.10"] 
 Darius Istaspis filius annis XXXVI. Inter Darium et Campisen regnasse duos fratres 
-magos in libris chronicorum Eusebii repperimus, uerum Hieronimus in expositione Danihelis 
+magos in libris Chronicorum Eusebii repperimus, uerum Hieronimus in Expositione Danihelis 
 scribit, quod interfecto apud Messegetas Cyro, qui XXX annis regnauit in Persis, Campises 
 successit in regnum: qui expletis octo annis duos Magos fratres habuit successores, quorum 
 quidem unus Sinerdes Magus Panthapten filiam Cambisis duxit uxorem. Occisis quippe a 
 populo magis, qui septem sDarius suscepit imperium: 
 eadem uero Panthapten nupsit Dario, qui ex ea Xersen filium genuit: Anno autem secundo 
 Darii regis filii Istaspis, factus est sermo Domini ad Aggeum Prophetam prius, et eodem 
-anno postea ad Zachariam filium Barachie filium Addo. Iste est Addo, qui iuxta paralippomenon 
+anno postea ad Zachariam filium Barachie filium Addo. Iste est Addo, qui iuxta Paralippomenon 
 missus est ad Ieroboam filium Nabath, sub quo altare dirruptum est, et manus Regis 
 aruit, rursumque ad preces illius restituta est. Igitur a primo anno Cyri regis, usque ad secundum 
 annum Darii filii Istaspis supputantur anni XL. Item Ieronymus. Secundo anno 
@@ -1195,23 +1202,23 @@ filius Salathiel, et Iosue filius Iosedech, et ceperunt edificare templum Dei in
 cum eis prophete Dei adiuuantes eos; Aggeus autem propheta, et Za, et Malachias, 
 Nahum, et Abacuch claruerunt sub Zorobabel principe gentis, et Iesu magno sacerdote. 
 Ieronimus. Sexto Darii anno templi edificatio completur die tertia mensis Adar, qui est 
-quadragesimus sextus annus eius sub Cyro fundamenta sunt iecta. Unde in euangelio 
+quadragesimus sextus annus eius sub Cyro fundamenta sunt iecta. Unde in Euangelio 
 dicunt Iudei: quadraginta et sex annis edificatum est templum hoc. Ceperunt autem edificare 
 anno secundo Darii mense sexto die uicesima quarta, et anno sexto, ut dictum est, mense 
 undecimo die tertia compleuerunt: ex quo apparet, opus templi et antea non parua ex 
 parte peractum; annos autem septuaginta a destructione illius, usque ad perfectam restaurandi 
 licentiam esse computandos. Quo tempore apud Romanos septimus a Romulo 
 Tarquinius Superbus regnabat, habens annum imperii uicesimum septimum, qui post anno VIII 
-pulsus est a Bruto. Pulsis denique ab urbe regibus, qui imperauerunt annis CCXLIV (Septem 
-namque fuerunt), Uix usque ad XV lapidem Roma sub eis tenebat Imperium. Post exactos 
+pulsus est a Bruto. Pulsis denique ab urbe regibus, qui imperauerunt annis CCXLIV (septem 
+namque fuerunt), uix usque ad XV lapidem Roma sub eis tenebat Imperium. Post exactos 
 reges, et nomen regie dignitatis, primum consules a Bruto esse ceperunt, deinde tribuni 
 plebis, quasi proprii iudices defensoresque populi: inde tribuni militares; hinc quoque dictatores, quorum 
 primus Largus nomine fuit maioris honoris, quam Consules: rursum quoque consules rem 
 publicam optinuerunt per annos CDLXIV usque ad Iulium Cesarem, qui primus singulare 
 arripuit imperium Olimpiade CLXXXIV. Orosius. Anno ab urbe condita CCLXXV. 
-Olimpiade LXXIIII. Xerses Dario patri in regnum successit. MMMCCCLXXXIX. 
+Olimpiade LXXIV. Xerses Dario patri in regnum successit. MMMCCCLXXXIX. 
 [/p] 
-      [p xml:id="g28.11-28.17"] 
+[p xml:id="g28.11-28.17"] 
 Xerses Darii filius annis XX. Hic Egyptum, que a Dario discesserat, capit, et aduersus 
 Greciam pugnaturus DCC milia armatorum de regno, et CCC milia de auxiliis, rostratas etiam 
 naues mille ducentas; onerarias autem tria milia ducentas habuisse narratur. Attamen uictus 
@@ -1269,7 +1276,7 @@ magno honore, et eos, qui cum eo egressi sunt. Exiit Neemias, qui in patrum
 laudibus commemoratus est. Hucusque diuina scriptura temporum seriem continet. Que 
 uero post hec apud Iudeos gesta sunt de libro Machabeorum et Iosepi atque Africani scriptis 
 exhibentur, qui deinceps hystoryam uniuersam usque ad Romana tempora prosecuti sunt. 
-Et quidem Africanus in quinto temporum uolumine, huius temporis ita meminit: mansit 
+Et quidem Africanus in quinto Temporum uolumine, huius temporis ita meminit: mansit 
 atque imperfectum opus usque ad Neemiam et XX annum Artarxersis. Quo tempore regni 
 Persarum centum et quindecim anni fuerant euoluti: capiuitatis autem Hierusalem centesimus 
 octogesimus et quintus annus erat. Et tunc primum Artarxerses iussit muros extrui 
@@ -1282,13 +1289,18 @@ Darius, cognomento Nothus, annis. Egyptus recessit a Persis. Reuersis de captiui
 Iudeis non reges, sed pontifices prefuerunt, usque ad Aristobolum, qui cum dignitate 
 pontificis, etiam regale sibi cepit usurpare uocabulum. MMMDLXVI. 
 [/p] 
-[p xml:id="g30.3-30.14"] 
+[p xml:id="g30.3-30.8"] 
 Artarxerses, qui cognominatus est Minenon, Darii et Parisathidis filius, annis. sub 
 hoc rege uidetur hystoria Ester completa; ipse quippe est, qui ab Hebreis Assuerus, et a 
 septuaginta interpretibus Artarxerses uocatur. Athenienses XXIV litteris uti ceperunt, cum 
 antea XVI tantum litteras haberent. Cartaginensium tunc inchoatur bellum famosum. 
 Orosius. Anno ab urbe condita CCCLXIV Galli Senones, duce Brenno, Romam inuadunt, 
-urbemque penetrando, excepto Capitolio, incendiunt, nam mille libris auri discensionis pretium 
+urbemque penetrando, excepto Capitolio, incendiunt, 
+[/p] 
+[p xml:id="g30.n1-30.n3"] 
+[/p] 
+[p xml:id="g30.8-30.14"] 
+nam mille libris auri discensionis pretium 
 paciscuntur. Ex tunc tribuni militares pro consulibus esse ceperunt. Orosius. Anno ab 
 urbe condita CD. Philippus Aminte filius Alexandri pater Macedonum regnum adeptus, 
 XXV tenuit annis. Eodem tempore dilatata est nox usque ad plurimam partem diei, saxa 
@@ -1462,7 +1474,7 @@ prouincias trans Eufratem. MMMDCCL.
 Ptolomeus Phylopator filius Euergetis annis XVII. Antiochus rex Syrie uicto Philopatore 
 Iudeam sibi sociat. Iudeorum pontifex maximus Onias filius Symonis insignis habetur: atque 
 Lacedemoniorum rex Darius legatos mittit. Huius tempore pontificis Iesus filius Syradach 
-sapientie librum componens, quem uocant parameton, etiam Symeonis in eo fecit 
+Sapientie librum componens, quem uocant Parameton, etiam Symeonis in eo fecit 
 mentionem. Ieronimus. Post fugam et mortem Seleucii Gallicini, duo filii eius Seleuchus 
 cognomento Ceraunos, et Antiochus, qui appellatus est Magnus, prouocati spe uictorie, et in 
 ultione parentis, exercitu congregato, aduersus Ptolomeum Phylopatorem arma corripiunt. 
@@ -1475,7 +1487,7 @@ audaciam contempta luxuria Phylopatoris, et magicis artibus, quibus inseruire di
 ultro Egiptiiis bellum conaretur inferre. Ptolomeus cognomento Phylopator, ammissa Syria, proditione 
 Theodoti, congregauit multitudinem plurimam multo maiorem, quam prius, properans 
 cum exercitu magno et opibus nimiis contra Ptolomeum Philopatorem. Quo mortuo Antiochus 
-mouit exercitum aduersus filium eiusdem Ptolomei, qui tunc QVATTVOR annorum erat, et uocabatur 
+mouit exercitum aduersus filium eiusdem Ptolomei, qui tunc quattuor annorum erat, et uocabatur 
 Ptolomeus Epyphanis. 
 [/p] 
 [p xml:id="g35.15-36.25"] 
@@ -1750,7 +1762,8 @@ subselliorum cremauit. Uictor ciuilis belli a ciuibus Cesar propter clementiam o
 Ac propter hoc certum erat, quia Cesar indigne peremptus plures postea habuit ultores. 
 [/p] 
 [p xml:id="g42.1-42.37"] 
-Orosius: Anno ab Urbe condita DCCX interfecto Iulio Cesare, Octauianus adolescens natus annos 
+Orosius: 
+Anno ab Urbe condita DCCX interfecto Iulio Cesare, Octauianus adolescens natus annos 
 XVII patre Octauio Senatore genitus, maternum genus ab Ena per Iuliam familiam sortitus, 
 Cesaris nepos, quem ille testamenti heredem reliquerat, idemque, qui postea Augustus 
 est dictus, et rerum potitus Romam uenit, et Consul indolem suam bellis ciuibus uouit, ut 
@@ -1801,7 +1814,7 @@ quam priuatus acceperat uxorem, et nato ex ea filio Antipatro, sociat sibi Maria
 Alexandri, neptem Aristoboli fratris Hyrcani, qui ante eum rex et summus sacerdos erat 
 Iudeorum. Hec quinque ei filios genuit, quorum duos, Alexandrum et Aristobolum, ipse necauit 
 in Samaria. Nec mora, post etiam matrem illorum, qua nil carius nouerat, simili scelere 
-peremit. E quibus Aristobolus Herodem ex Ueronice susceperat filium, quem in actibus 
+peremit. E quibus Aristobolus Herodem ex Ueronice susceperat filium, quem in Actibus 
 apostolorum ab angelo percussum legimus. Actenus qui uocabantur Lagidem in Egypto 
 regnauerunt annis ducentos nonaginta quinque. 
 [/p] 
@@ -1880,10 +1893,10 @@ et Libiadem. MMMCMLXXXII.
 [p xml:id="g45.16-45.23"] 
 Anno imperii Tyberii XV Dominus noster Iesus Christus post baptismum quod predicauit 
 Ioannes, mundo regnum celorum predicando cepit annuntiare, peractis a principio 
-mundi secundum Hebreos annis, ut Eusebius in chronicis suis signat, quattuor milibus, annotando 
+mundi secundum Hebreos annis, ut Eusebius in Chronicis suis signat, quattuor milibus, annotando 
 quod XVI Tyberii anno principium fuerit, LXXXI Iobelei secundum Hebreos. Quare 
 autem nostra supputatio unde XX minus ponendos estimauerit annos, qui superiora libelli 
-legerit, facile inueniet. Iuxta uero chronicam eandem, quam ipse Eusebius de utraque 
+legerit, facile inueniet. Iuxta uero Chronicam eandem, quam ipse Eusebius de utraque 
 edictione, ut sibi uidebatur, composuit, sunt annis quinque milia ducenti XXVIII. 
 [/p] 
 [p xml:id="g45.24-45.30"] 
@@ -1933,7 +1946,7 @@ Agrippa et usque ad exterminium Iudeorum annis XXVI perseuerat. Herodes Tetrarch
 et ipse Gaii amicitiam petens, cogente Herodiade Romam uenit: sed accusatus ab Agrippa, 
 et Tetrarcham perdidit, fugiensque in Ispaniam cum Herodiade, merore periit. Pilatus 
 autem, qui sententiam dampnationis in Christum dixerat, tantis irrogante Gaio angoribus 
-coartatus est, ut sua se manu perimeret: Matheus in Iudea predicans, eo tempore euangelium 
+coartatus est, ut sua se manu perimeret: Matheus in Iudea predicans, eo tempore Euangelium 
 scripsit. 
 [/p] 
 [p xml:id="g47.1-47.26"] 
@@ -1957,7 +1970,7 @@ anc fecit, tantis, irrogante Gaio, angoribus coartatus, ut sua se transuerberans
 compendium mortis celeritate quesierit. Gaius Callicula libidinibus suis, etiam illud 
 sceleris adiecit, ut sorores suas simul stupro pollueret, deinde exilio dampnauit. Qui postquam 
 omnes simul exules iussit occidi; ipse autem a suis proditoribus occisus est. Duo libelli 
-in secretis eius reperti sunt: equorum alteri pugio, alteri gladius pro signo nominis adscriptum 
+in secretis eius reperti sunt: equorum alteri Pugio, alteri Gladius pro signo nominis adscriptum 
 erat: ambo lectissimorum uirorum utriusque ordinis, senatorii et equestris, nomina 
 et notas continebant, morti destinatorum. Inuenta est et ingens archa uariorum uenenorum, 
 quibus mox Claudio Cesare iubente demersis, infecta maria traduntur, non sine magno piscium 
@@ -1985,7 +1998,7 @@ ita ut hunc ipso quoque Pitagora, Philostratus, et alii acrioris ingenii fuisse 
 Orosius: 
 Anno 
 ab Urbe condita DCCXCV Tyberius Claudius ab Augusto quartus Regnum adeptus 
-est. Mansit in eo annos XIV. Exordio regni eius Petrus apostolus Domini nostri Iesu 
+est mansit in eo annos XIV. Exordio regni eius Petrus apostolus Domini nostri Iesu 
 Christi Romam uenit et salutarem cunctis credentibus fidem, fideli uerbo docuit, potentissimisque 
 uirtutibus approbauit. Quinto anno eiusdem Tyberii principatus, inter Therar et 
 Thesariam, insula de profundo emicuit XXX stadiorum spatio extenta. Anno eius septimo 
@@ -2072,7 +2085,7 @@ maximo, ad Deum conuersus, Christum predicare cepit. Et post annos tres a conuer
 sua uenit Hierusolimam uidere Petrum, mansitque cum eo diebus XV ut, eius auctoritate 
 fultus, libere posset uerbum Dei ecclesiis predicare. Deinde post annos XIV assumpto 
 Barnaba et Tito, iterum uenit Hierusolimam, deferens secum euangelium suum, quod intitulatur 
-secundum Lucam, ut cum apostolis, maximeque cum Petro apostolorum principe, suam 
+Secundum Lucam, ut cum apostolis, maximeque cum Petro apostolorum principe, suam 
 conferret auctoritatem; sicque illorum auctoritate roboratus euangelium suum ecclesiis Dei 
 per totam Illiricum Italiamque, Gallias quoque et usque Hyspanias disseminauit. Sed priusquam 
 in Hyspanias iret, Romam a Festo preside ductus est secundo imperii Neronis anno. 
@@ -2082,7 +2095,7 @@ Antiocenam fundauit ecclesiam, ibique episcopus ordinatus sedit annos VII. Dehin
 sibi in Antiochia orRomanam Ecclesiam suo decorauit episcopatu. In qua per 
 XXV annos, et menses tres, a quarto uidelicet Claudii anno, usque ad ultimum Ueronis annum 
 residens, scripsit duas epistolas, que Canonice nominantur, et euangelium Marci; quia 
-Marcus discipulus eius fuit, et filius de baptismo. euangeliorum quoque libri, quorum alius 
+Marcus discipulus eius fuit, et filius de baptismo. Euangeliorum quoque libri, quorum alius 
 hebraicis, alius grecis, alius litteris latinis compositi fuerint, eius tamen sunt testimonio comprobati. 
 Constituitque duoLinum, et Cletum, cum quibus ceteros 
 episcopos ordinabat. Hic Marcum episcopum ordinans in Alexandriam misit, Apollinarem 
@@ -2094,7 +2107,7 @@ impietatis est, studia et sollicitudines suscipere seculares: ad hoc enim solum 
 ut oportune et sine intermissione doceas uerbum Dei. Et hic ante Pascha Domini quadragesimale 
 ieiunium ecclesiis tradidit. Et ante Natalem Domini tres ebdomadas et quartam 
 inperfectam ab omni christiano populo instituit uenerari in commemoratione primi et secundi 
-aduentus Domini nostri Iesu Christi, et ordinationes celebrauit per mensem december, 
+aduentus Domini nostri Iesu Christi, et ordinationes celebrauit per mensem December, 
 quique uno die cum beato Paulo magistro gentium martyrio coronatur, post passionem 
 Domini anno XXXVIII. Marcus autem obiit Alexandrie VIII Neronis anno. 
 [/p] 
@@ -2262,7 +2275,7 @@ nobilitatis medie, senex admodum, imperator decimus ab Augusto creatus est. Equi
 se et utillimum reipublice prebuit: qui diuina prouisione consulens Traianum sibi adoptauit 
 in regnum. Nerua siquidem primo edicto suo cunctos exules reuocauit. Unde et Ioannes 
 apostolus hac indulgentia liberatus ad Ephesum rediit. Et quia concussam se absente per 
-hereticos uidit ecclesie fidem, confestim hanc descriptam in euangelio suo uerbi Dei eternitatem 
+hereticos uidit ecclesie fidem, confestim hanc descriptam in Euangelio suo uerbi Dei eternitatem 
 stabiliuit. Nerua confectus morbo diem obiit, post annum et quattuor menses imperii 
 sui, etatis uero sue anno LXXXI. 
 [/p] 
@@ -2311,7 +2324,7 @@ propter Christi corporis ueritatem, et ut modica esset, dicens: Hec oblatio quan
 pautior. Precepit etiam omnibus Dominicis diebus aquam cum sale exorcizari, et mixtam 
 benedici, et ex ea populum aspergi, ad effugandas diabolicas insidias, et contrarias ualitudines. 
 Et hic martyrio coronatus, et septimo ab urbe miliario uia Numentana sepelitur, 
-Et Traianus autem Rome et per prouincias equalem se omnibus exhibens, egrotantes libenter 
+et Traianus autem Rome et per prouincias equalem se omnibus exhibens, egrotantes libenter 
 uisitans, amicos salutari causa frequentans, uel cum dies festos habuisset, conuiuia cum eisdem 
 indiscreta uicissim habens, sepe in uehiculis eorum sedens, nullum ledens senatorum, nichil 
 iniustum ad augendum fiscum agens; liberalitatis publice ac priuate, ditans omnes, et honoribus 
@@ -2449,7 +2462,7 @@ nec in ecclesia incensum poneret. Et hic martirio uitam finiuit, et iacet in sep
 cum fratribus suis. Eleuther natione grecus ex patre Habundio post hunc cathedram 
 suscepit pontificalem. Hic iterum firmauit, ut nulla esca a Christianis repudiaretur, 
 que rationalis, et humana esset. Et hic martirio coronatus, et positus est ad fratres suos. 
-Antonino imperatori Melitus Asianus Sardiensis episcopus apologeticum pro Christianis tradidit. 
+Antonino imperatori Melitus Asianus Sardiensis episcopus Apologeticum pro Christianis tradidit. 
 Lucius Britannie rex, missa ad Euletherium Rome episcopum epistola, ut Christianus 
 efficeretur imperat. Apollinaris Asianus Ierapoli et Dionisius Corynthi clarissimi habentur 
 episcopi. Sub hoc Galienus genere Pergamus optimus medicus pollebat. Iulianus Rome 
@@ -2554,7 +2567,7 @@ honores. Sed et hic martyrio coronatus est et sepultus in cimiterio, quod suo no
 dicitur Calixti. 
 [/p] 
 [p xml:id="g64.4-64.7"] 
-Post Bassianum nonusdecimus ab Augusto ofilius, Macrinus, qui prefectus pretorio erat, 
+	Post Bassianum nonusdecimus ab Augusto Ofilius Macrinus, qui prefectus pretorio erat, 
 cum filio Diadumedo inuasit imperium. Hi facti imperatores nichil memorabile ex temporis 
 breuitate gesserunt, nam emenso anno, continuo apud Archelaidem militari tumultu ambo 
 pariter occisi sunt. Abgarus uir sanctus regnabat Adesse ut uult Africanus. 
@@ -2608,7 +2621,7 @@ sola militum uoluntate, cum nulla senatus intercessisset auctoritas, postquam be
 gesserat. 
 [/p] 
 [p xml:id="g65.17-65.17"] 
-sexta persecutio in ecclesia 
+Sexta persecutio in ecclesia 
 [/p] 
 [p xml:id="g65.18-65.21"] 
 Mox imperator creatus persecutiones in Christianos sextus a Nerone exercuit; maxime 
@@ -2634,7 +2647,7 @@ in palatio interfecti sunt, soli Gordiano imperio reseruato. Gordianus itaque ad
 ad bellum Parthicum profecturus, Iani portas aperit. Igitur Gordianus ingentibus preliis aduersus 
 Parthos prospere gestis, suorum fraude rediens super Eufraten interfectus est. 
 His temporibus Iulius Africanus inter scriptores ecclesiasticos nobilis habebatur, sicut in 
-cronicis, quas conscripsit Alexandrie, ipsemet refert. Origenes in Cesarea Palestine Theodorum, 
+Cronicis, quas conscripsit Alexandrie, ipsemet refert. Origenes in Cesarea Palestine Theodorum, 
 cognomento Gregorium, et Athenadorum adolescentulos fratres, Ponti postea nobilissimos 
 episcopos, diuina philosophia imbuit. Sub hoc habebatur Porphyrius Plotini platonici 
 philosophi auditor, Theopompus philosophus apud Cheroniam, et Nicanor sophista 
@@ -2646,7 +2659,7 @@ uicesimus quartus ab Augusto, statim occiso Gordiano, imperator circa Eufraten
 creatus, Philippum filium suum consortem regni fecit, exercitumque ex Syria incolumem ad 
 Italiam reduxit, mansitque in eo annis septem. Hic primus imperator omnium Christianus 
 fuit, ac post tertium imperii eius annum, millesimus a conditione Rome annus expletus est. 
-Ita magnificis ludis augustissimus omnium preteritorum hic natalis annus a Christiano 
+Ita magnificis ludis augustissimus omnium preteritorum hic Natalis annus a Christiano 
 celebratus est. Nec dubium est, quin Philippus huius tante deuotionis gloriam et 
 honorem ad Christum et ecclesiam reportaret, quando ascensum in capitolium immolatasque 
 ex more hostias nullus auctor ostendit. Ambo tamen Philippi, quamuis diuersis locis, 
@@ -2764,7 +2777,7 @@ accusatores, spectatores ac iudices, postremo omnes iniustissime crudelitati uel
 uoluntate assentabantur, quia Deus secretorum cognitor est, quorum maxima per omnes prouincias 
 pars hominum uersabatur, eadem ultionis plaga corripi iustum erat. Soluuntur repente 
 undique, permissu Dei, ad hoc circumposite, relicteque gentes, laxatisque habenis in 
-omnes Romanorum fines inueuntur Germani ex Alpibus, Grecia, totaque Italia penetrata, 
+omnes Romanorum fines inueuntur Germani ex Alpibus Grecia; totaque Italia penetrata, 
 Rauennam usque perueniunt; Alamanni Gallias peruagantes, etiam in Italiam transierunt; Grecia, Macedonia, Pontus et 
 Asia Gothorum inundatione delentur. Nam Dacia trans Danubium in perpetuum aufertur; 
 Quadi et Sarmate Pannonias depopulantur; Germani ulteriores abrasa potiuntur Yspania; 
@@ -2810,7 +2823,7 @@ que usque hodie ecclesia sancti Marci dicitur in media Roma, in regione, que dic
 [/p] 
 [p xml:id="g70.20-70.32"] 
 Anno Domini CCLXXII et anno ab urbe condita MXXV Claudius uicesimus octauus 
-ab Augusto a militibus electus et a senatu appellatur Augustus; imperium sumpsit, et per 
+ab Augusto a militibus electus et a senatu appellatur Augustus, imperium sumpsit, et per 
 annum unum et menses nouem feliciter tenuit. Hic statim Gothos, iam per annos quindecim 
 Illiricum Macedoniamque uastantes, bello adhortus, incredibili eos strage deleuit. Cum 
 Alamannis aut procul a laco Uenaco in silua, que Linguona dicitur, dimicans, tantam multitudinem 
@@ -2880,14 +2893,14 @@ autem ciuitatem superaret. Interfectus est apud Sirmium tumultu militari in turr
 [/p] 
 [p xml:id="g72.14-72.19"] 
 Beda: 
-Secundo huius anno, ut in chronicis Eusebii legitur, iuxta Antiochenos CCCXXV anni, 
+Secundo huius anno, ut in Chronicis Eusebii legitur, iuxta Antiochenos CCCXXV anni, 
 iuxta Tyrios CDII, iuxta Laudicenos CCCXXIV, iuxta Edessenos DLXXXVIII, iuxta Ascalonitas 
 CCCLXXX, secundum Hebreos initium LXXXVI, Iobelei, quod significat annos quattuor milia CCL, 
 Archelaus Mesopotamie episcopus librum disputationis sue, quam habuit aduersus Manicheum 
 exeuntem de Perside Syro sermone composuit, qui translatus a Grecis habetur a multis. 
 [/p] 
 [p xml:id="g72.20-73.6"] 
-Anno ab incarnatione Domini CCLXXXV et anno ab urbe condita MXXXVIIII Carus 
+Anno ab incarnatione Domini CCLXXXV et anno ab urbe condita MXXXIX Carus 
 Narbonensis XXXII ab Augusto suscepit imperium ac biennio tenuit, qui dum 
 filios suos Carinum et Numerianum consortes regni esse fecisset, bellum aduersus Sarmatas 
 gessit, sed nuntiato Persarum tumultu ad Orientem profectus est; res contra Parthos nobiles 
@@ -2976,7 +2989,7 @@ non penis, non exiliis, non ipso mortis discrimine pauefacti, numero centum quin
 qui cum lacrimis et gemitu celebrantes Concilium siscitabant cum reuerentia episcopum, si 
 ita res se haberet, ut fama retulerat. Marcellinus uero rem omnem seriatim confessus est, 
 et se peccasse et se reum esse professus est, adiciens etiam se paratum obedire quicquid illi sibi uoluissent 
-imponere. Ad hec illi absit, ut summus pontifex ab aliquo iudicetur; negasti tu, negauit et 
+imponere. Ad hec illi: Absit, ut summus pontifex ab aliquo iudicetur; negasti tu, negauit et 
 Petrus magister tuus. Et quis Apostolorum ausus fuit eum exinde iudicare? Sed egressus 
 foras fleuit amare. Tu igitur in sinu tuo collige causam tuam, tuo proprio ore te iudica. 
 Audiens hec Marcellinus: ob scelus, inquit, et idolatriam, quod infelix commisi, iudico me deponendum, 
@@ -2989,7 +3002,7 @@ princeps in uisione Marcello sacerdoti, qui post eum episcopus effectus est, dic
 Marcelle, dormis? At ille: Quis es, Domine? Et ille: Ego sum princeps apostolorum magister tuus, 
 et adiecit: Marcelle, corpus meum, quod inhumatum est, quare non sepelis? At ille: Domine, corpus 
 tuum digno cum honore sepultum est. Et Petrus: Corpus Marcellini fratris mei, qui pro Christo 
-sanguinem fudit, quare non sepelis? Non legisti in euangelio sententiam Domini dicentis: 
+sanguinem fudit, quare non sepelis? Non legisti in Euangelio sententiam Domini dicentis: 
 omnis, qui se humiliat, exaltabitur? Multum se humiliauit, qui indignum sepultura se iudicauit. 
 Uade ergo, et sepeli eum iuxta me, ut quos non separauit martyrium, quosque iustificauit Dei 
 gratia, non diuidat sepultura. Sicque factum est et sepultus est secus pedes beati Petri. 
@@ -3090,7 +3103,7 @@ sunt cccx et uiii episcopi catholici, qui exposuerunt fidem integram
 catholicam immaculatam, et dampnauerunt Arrium et Fotinum et Sabellium hereticos uel 
 eorum sequaces. In Urbe uero Roma congregauit ipse cum consilio Augusti cc octoginta 
 episcopos, et dampnauit iterum Calixtum, Arrium et Fotinum ac Sabellium hereticos, 
-constituit crisma ab episcopo confici, et ut episcopus baptizatum consignet propter hereticam suasionem. constituit etiam ut baptizatum statim et a fonte leuatum liniat presbyter 
+constituit crisma ab episcopo confici, et ut episcopus baptizatum consignet propter hereticam suasionem. Constituit etiam ut baptizatum statim et a fonte leuatum liniat presbyter 
 crismate in uertice, propter occasionem transitus mortis. Hic constituit, ut Romanus 
 presul a nullo iudicetur, et ut presbyter non condempnaretur, nisi sub quadraginta testium 
 certa comprobatione. Et ut minoris ordinis aliquis maiorem se non posset accusare. Et ut 
@@ -3145,8 +3158,8 @@ Tunc beatus Nicolaus Mirensis  episcopus uirtutibus radiabat.
 Constantinus uero imperator primum iuxto ordine et pia uice uertit edictum, siquidem 
 statuit extra ullam hominum cedem templa claudi et Christianorum ecclesias aperiri. Mox 
 Gothorum fortissimas et copiosissimas gentes in ipso barbarici soli sinu, hoc est in Sarmatarum 
-regione, deleuit. Quemdam Calocerum in Cipro aspirantem nouis rebus oppressit 
-cum Tricennalibus suis. Dalmacium Cesarem legit. Cumque bellum in Persas moliretur, in 
+regione, deleuit. Quemdam Calocerum in Cipro aspirantem nouis rebus oppressit. 
+cum Tricennalibus suis Dalmacium Cesarem legit. Cumque bellum in Persas moliretur, in 
 uilla publica iuxta Nicomediam, dispositamm bene rempublicam filiis tradens, diem obiit anno 
 imperii sui XXXI, etatis autem LXVII. 
 [/p] 
@@ -3299,7 +3312,7 @@ in balnea haberent introitum, sed gladio necarentur, et martyrio coronarentur.
 [p xml:id="g83.11-83.22"] 
 Felix autem episcopus natione Romanus, ex patre Anastasio, sedit anno uno, mensibus sex. 
 Hic declarauit Constantium filium Constantini hereticum, et secundo baptizatum ab Eusebio 
-Nicomediense iuxta Nicomediam, et per hoc declaratum. Ab eodem Constantio depositus 
+Nicomediense iuxta Nicomediam; et per hoc declaratum Ab eodem Constantio depositus 
 de episcopatu, martyrio coronatur et capite truncatur IV kalendas augusti: dies itaque Felicis 
 omnes sub Liberii papatu dinumerantur. Sequitur terremotus orribilis per plurimas 
 Orientis urbes solo sternens. Constantius predictus imperator, dum Constantem fratrem 
@@ -3323,7 +3336,7 @@ uicesimo septimo die eius imperii, a Magnencianis ducibus oppressus est; cuius
 caput sicut pila per urbem circumlatum est. Sequitur bellum illud orribile inter Constantium, 
 et Magnentium, apud Mursam urbem gestum, in quo multa Romanorum uirium profligatio 
 etiam in posterum nocuit. Magnencius tamen uictus aufugit, ac non multo post apud 
-Lugdunum propria se manu interfecit. Decentius quoque fratrer eius quem Cesarem 
+Lugdunum propria se manu interfecit. Decentius quoque frater eius quem Cesarem 
 Gallis prefecerat, apud Senonam laqueo uitam finiuit. Anno imperii sui quarto, Constantium 
 Gallum patrui filium Cesarem legit; quem rursus crudeliter ac tirannice agentem, 
 paulo postquam creauerat occidit. Siluanum quoque per Gallias rebus nouis iniantem, 
@@ -3334,7 +3347,7 @@ strenuissime in integrum restituit, paruis copiis Alamannorum multitudinem fudit
 Germanos reuinxit. His elatus successibus, fastigium usurpauit Augusti, et mox Italiam 
 Illiricumque peruadens, Constantium, Parthicis preliis occupatum, regni parte priuauit. 
 Constantius, Iuliani scelere comperto, dimissa expedicione Parthorum, dum ad ciuile bellum 
-reuertitur, in itinere inter Ciliciam Capaciamque defunctus est, Anno imperii tricesimo 
+reuertitur, in itinere inter Ciliciam Capaciamque defunctus est, anno imperii tricesimo 
 octauo, etatis quadragesimo quinto. Ita ille, qui discissa pace et unitate fidei catholice, 
 christianos aduersus, christianos armans, ciuili, ut ita dicam, bello ecclesie membra 
 dilacerauerat, totum inquieti tempus imperii molestissimumque spacium uite sue bellis 
@@ -3370,7 +3383,7 @@ conseruauit. Cuius presagium sub Theodosio principe per Theophilum eiusdem urbis
 completur, qui, destructo Serapis sepulchro, Sancti Ioannis ibidem consecrauit ecclesiam. 
 Hec itaque Beda. 
 [/p] 
-[p xml:id="g85.12-85.30"] 
+[p xml:id="g85.12-85.20"] 
 Orosius autem: 
 Anno ab urbe condita MCXVI Iulianus dudum Cesar post XXXVI ab Augusto 
 potitus est regno, anno uno et mensibus sex; imperii summam solum obtinuit christianam 
@@ -3380,6 +3393,8 @@ precepit edicto, ne quis christianus liberalium studiorum professor esset.
 Sed tamen, sicut a maioribus nostris compertum habemus, omnes ubique propemodum precepta 
 condiciones amplexati, officium magis quam fidem deserere maluerunt. Iulianus autem 
 bellum aduersus Parthos parans, cum Romanas uires 
+[/p] 
+[p xml:id="g85.20-85.30"] 
 [/p] 
 [p xml:id="g85.31-86.12"] 
 [/p] 
@@ -3397,7 +3412,9 @@ bellum aduersus Parthos parans, cum Romanas uires
 [/p] 
 [p xml:id="g92.6-92.7"] 
 [/p] 
-[p xml:id="g92.8-93.4"] 
+[p xml:id="g92.8-92.9"] 
+[/p] 
+[p xml:id="g92.9-93.4"] 
 …Clemens animo, misericors, 
 communis omnibus, solo habitu differri se a ceteris putans; in omnes homines honorificus, 
 uerum effusus in bonis, simplicia ingenia diligere, erudita mirari, sed innoxia, largiri magno 
@@ -3434,7 +3451,7 @@ eius eodem anno Constantinopolim translatum ac sepultum est.
 [p xml:id="g93.5-93.11"] 
 His uero temporibus Siricio papa decedente, Anastasius natione Romanus ex patre Maximo 
 ei in pontificatu successit, seditque annis tribus, mensibus decem. Hic constituit ut 
-quotiescumque in eccesia euangelia recitantur, sacerdotes non sederent, sed curui starent. 
+quotiescumque in ecclesia euangelia recitantur, sacerdotes non sederent, sed curui starent. 
 Constituit etiam peregrinum aut transmarinum clericum nulla ratione in clericatu suscipi, 
 nisi proprii episcopi cirographum designaret. Qui etiam sepultus est in Cimiterio beati Petri. 
 Ieronimus sacre interpres ystorie apud Bethleem librum, quem de illustribus uiris 
@@ -3581,8 +3598,8 @@ superauit, merito sane in his diebus precipiente Honorio, fauente
 Constantio, sopitis apud Africam hereticis, pax catholicis reddita est, in qua fulgentissimus 
 apud Yponii regium, totiusque magister ecclesie florebat Augustinus. Tunc 
 quoque Lucianus presbyter, cui reuelauit Deus, septimo Honorii principis anno, locum sepulchri 
-et reliquiarum beati protomartyris Stephani, ac Gamalielis et Nichodemi, qui in euangelio 
-et in actibus apostolorum leguntur scripsit ipsam reuelationem greco sermone ad omnium 
+et reliquiarum beati protomartyris Stephani, ac Gamalielis et Nichodemi, qui in Euangelio 
+et in Actibus Apostolorum leguntur scripsit ipsam reuelationem greco sermone ad omnium 
 ecclesiarum personas; quam reuelationem Habitus presbyter, homo Hispanus genere in latinum 
 uertit eloquium, et adiecta epistola sua per Orosium presbyterum occidentalibus dedit. 
 Qui etiam Orosius ad loca sancta perueniens, quo eum Augustinus ad Ieronimum pro discenda 
@@ -3894,8 +3911,8 @@ ipso reuelante, reperitur.
 His autem diebus, Gelasio papa defuncto, Anastasius natione Romanus, ex patre Petro, 
 post hunc suscepit episcopatum, seditque anno I, mensibus XI. Hic Anastasium Constantinopolitanum 
 excommunicauit imperatorem. Eo tempore multi clerici et presbyteri se a 
-communione ipsius eduxerunt, eo quod sine consilio episcoporum presbyterorumque communicasset 
-V. Fotino Diacono Thesalonicensi, qui communis erat Acatio, et quia Acatium occulte reuocare 
+communione ipsius eduxerunt, eo quod sine consilio episcoporum presbyterorumque communicasset. 
+Fotino Diacono Thesalonicensi, qui communis erat Acatio, et quia Acatium occulte reuocare 
 uoluit, et non potuit, diuino nutu percussus est. Qui etiam sepultus est in ecclesia 
 beati Petri. Zeno itaque Augustus cum per annos XVII rei publice prefuisset, apud urbem 
 Constantinopolim uite terminum accepit. 
@@ -3907,7 +3924,7 @@ possit agnosci.
 [/p] 
 [p xml:id="g105.36-106.2"] 
 Anno dominice incarnationis CDXCII post Zenonis excessum Anastasius purpuram 
-induit, qui XLVII in imperii numero extitit. Hic Romani decus imperii, Euthiciana hereos 
+induit, qui XLVII in imperii numero extitit. Hic Romani decus imperii Euthiciana hereos 
 illuuione maculauit. 
 [/p] 
 [p xml:id="g106.3-106.33"] 
@@ -3936,8 +3953,8 @@ canonem decantari. Inter has tempestates Fulgentius in confessione fidei et scie
 His ipsis apud Africam diebus, dum Arrianus quidam Olimpius nomine, corpus aquis balnearibus 
 abluens, indigna quedam et blasphemia de sancte trinitatis fide uerba euomerat, 
 ueniente subito ignito celitus iaculo, uisibiliter combustus est. Barbas quoque Arrianus 
-episcopus, de nostre fidei regula, minorem scilicet patri filium sanctumque spiritum asserere 
-cupiens, cum baptizaturo dixisset: Baptizo te in nomine patris et filii in spiritu 
+episcopus, de nostre fidei regula, minorem scilicet Patri Filium Sanctumque Spiritum asserere 
+cupiens, cum baptizaturo dixisset: Baptizo te in nomine Patris et Filii in Spiritu 
 sancto, statim aqua, que baptizandum allata fuerat, nusquam comparuit. Quod aspiciens qui 
 baptizandus erat, confestim ad ecclesiam catholicam fugiens, iuxta morem fidei baptismum 
 suscepit Christi. Theodericus uero dum pacifice apud Italiam regnaret, per singula queque 
@@ -4001,7 +4018,7 @@ filium eius in regnum preficiunt.
 Rome uero post Iohannem Felix, natione Samnis, ex patre Castorio in ordine pontificali 
 constituitur, seditque annis tribus. Hic patriarcham Constantinopolitanum excomunicauit. 
 Tunc etiam beatissimus abbas Benedictus uirtutum gloria claruit, cuius gesta beatus papa Gregorius 
-in libro dialagorum scripsit. At uero Iustinus cum Augustalem dignitatem annos 
+in libro Dialagorum scripsit. At uero Iustinus cum Augustalem dignitatem annos 
 duodecim amministrasset, apud Constantinopolim in pace quieuit. His ipsis diebus Audoin 
 Longobardorum rex, Guacconis regis filius, Longobardos in Pannoniam deduxit. Tunc quoque 
 in Gallia Theodericus Francorum rex habebatur, qui Theoderico filio suo despondit uxorem, 
@@ -4085,7 +4102,7 @@ eumque cum filiis capite cesum in puteum proici iussit, quem sanctorum collegio 
 dominum connumerasse ideo non ambiguum habetur, quod febricitantes quique, si pro remedio 
 anime ipsius salutare fideliter offerre fecerint sacrificium, continuo ab infirmitatis sue liberantur 
 incommodo. Sed non multo post, idem Clodomirus a Burgundionibus est in bello 
-occisus. Cuius regni fortem Clotharius frater eius accepit, eius quoque filios gladio necauit. 
+occisus. Cuius regni sortem Clotharius frater eius accepit, eius quoque filios gladio necauit. 
 Theodericus igitur Francorum rex, quem supra meminimus, cum iam XXIV annis regnum tenuisset, 
 Theodeberto filio suo moriens reliquit. Qui, mansuetus cunctis atque modestus, 
 iustitie quoque fuit egregius moderator et cultor, eloquioque affabilis. Theodebertus autem 
@@ -4109,8 +4126,8 @@ quadraginta et unum regnauerat annos, diem clausit extremum, regnumque filiis su
 et Guthranno, Chilperico atque Sigiberto reliquit. Regnum itaque ii quattuor fratres 
 ex Chereberto quidem, qui et Aribertus est dictus, Parisiorum urbs quondam 
 Childeberti forte peruenit; Guthranno Aurelianis, regnum uidelicet Clodomiri; Chilperico 
-Suessonis assignatur ciuitas, caput et ipsa regni paterni: Sigeberto autem medio matricumque, 
-et Mettis, cessit, Theoderici patrui quondam subiecta dominatui, urbs formosa 
+Suessonis assignatur ciuitas, caput et ipsa regni paterni; Sigeberto autem medio matricum, 
+que et Mettis, cessit, Theoderici patrui quondam subiecta dominatui, urbs formosa 
 et inclita. Fuerat preterea Clothario filius alius, nomine Guthrannus, corpore quidem 
 elegans, mente leuis, dolis nulli uersutorum secundus; huic animus inquietus, prompta audatia, 
 effera uis animi, qui tirannica adactus crudelitate, res aliorum rapinis diripiebat, quem cum 
@@ -4259,13 +4276,13 @@ compressit. Quam ob causam propter horum omnium uictorias ut Alamannicus, Gothic
 Francicus, Germanicus, Alticus, Alanicus Africanusque diceretur, habere hec nomina 
 meruit. Leges quoque Romanorum, quarum prolixitas nimia erat, inutilisque dissonantia 
 mirabili breuitate correxit. Nam omnes constitutiones principum, que utique multis in uoluminibus 
-habebantur, intra duodecim libros coartauit, ipsumque uolumen codicem appellari 
+habebantur, intra duodecim libros coartauit, ipsumque uolumen Codicem appellari 
 precepit. Rursum singulorum magistratuum siue iudicum leges, que usque ad duo 
-milia pene libros erant extente, intra quinquaginta librorum numerum redegit eumque codicem 
-digestorum siue pandectarum uocabulo nuncupauit. Quattuor etiam institutionum 
+milia pene libros erant extente, intra quinquaginta librorum numerum redegit eumque Codicem 
+digestorum siue Pandectarum uocabulo nuncupauit. Quattuor etiam Institutionum 
 libros, in quibus breuiter uniuersarum legum textus comprehenditur, nouiter composuit. 
 Nouas quoque leges quas ipse statuerat in unum uolumen redactas, eumdem Codicem 
-nouellam nuncupare sanciuit. Construxit quoque idem princeps intra urbem Constantinopolim 
+Nouellam nuncupare sanciuit. Construxit quoque idem princeps intra urbem Constantinopolim 
 sanctum Dei patris templum, quod greco uocabulo Agian Sophian, idest Sanctam 
 Sapientiam, nominauit. Cuius opus adeo cuncta edificia excellit, ut in totis terrarum spatiis 
 huic simile non possit inueniri. Erat enim hic princeps fide catholicus, in operibus rectus, 
@@ -4486,7 +4503,7 @@ intende. Hic doctor eximius anno Mauricii imperii XIV, indictione XIII, synodum 
 XXIV ad corpus beati Petri XXIV apostoli congregans, de necessariis ecclesie 
 decernit. Idem missis in Britanniam Augustino, Melito et Iohanne, et aliis pluribus 
 cum eis monachis timentibus Deum, Anglos ad Christum conuertit. Beatus autem Gregorius 
-direxit Theodelinde regine Langobardorum librum qui dialogus nominatur, eo quod 
+direxit Theodelinde regine Langobardorum librum qui Dialogus nominatur, eo quod 
 religiosa erat, et ferocem uiri sui animum sepissime piis suggestionibus aduersus ecclesiam 
 mitigabat. Siquidem regina hec basilicam beati Iohannis Baptiste in Modicina construxit, 
 qui locus supra Mediolanum duodecim millibus abest, multisque ornamentis auri argentique 
@@ -4645,7 +4662,7 @@ est. Langobardorum regnum Rothari suscepit. Fuit autem uiribus fortis, et iustit
 tramitem sequens, Arriana tamen perfidia maculatus. Quo tempore pene per omnes ciuitates 
 regni eius duo episcopi erant, unus catholicus et alter Arrianus. Hic autem Rothari 
 rex Langobardorum leges, que sola memoria et usu retinebantur, scriptorum serie composuit, 
-codicemque ipsum edictum appellari precepit. Erat autem, ex quo Langobardi in Italiam 
+codicemque ipsum Edictum appellari precepit. Erat autem, ex quo Langobardi in Italiam 
 uenerant, annus LXXVII. Rothari uero Romanorum ciuitates ab urbe Tuscia, et uniuersas 
 que in litore maris site sunt usque ad Francorum fines sibi parere coegit; qui postquam 
 annis sex mensibus III regnum tenuerat, uita decedens, Langobardorum regnum Radoaldo 
@@ -4963,7 +4980,7 @@ seditque anno I. Uir ualde strenuus atque scientia preditus et omnimodo moderatu
 Hic autem iuxta pristinam consuetudinem in ecclesia Saluatoris, que appellatur Constantiniana, 
 electus est temporibus Iustiniani augusti atque in eodem episcopio consecratus a 
 tribus episcopis, uidelicet Hostiense, Portuense et Belliternense, sicut predecessor eius Leo 
-papa. Hic etiam librum de Pallii dignitate composuit. Qui sepultus est ad sanctum Petrum. 
+papa. Hic etiam librum De Pallii dignitate composuit. Qui sepultus est ad sanctum Petrum. 
 [/p] 
 [p xml:id="g133.32-134.4"] 
 Post hunc itaque Conon Thracia oriundus, educatus apud Siciliam, postmodum apud 
@@ -5332,7 +5349,7 @@ et largus in donis plurimis. Ad quem Zacharias papa missa relatione, continuo ob
 reuerentiam apostolorum eius precibus inclinatus, inita pace, uniuersus Italie quieuit populus. 
 Hic autem Rachis rex, postquam regnauit annis quatuor et mensibus IX, deuoto 
 animo regalem dignitatem relinquens, Deo seruiturus cum uxore et filiis monachus effectus 
-est. Iste quoque aliqua in edicto capitula legis adiunxit. 
+est. Iste quoque aliqua in Edicto capitula legis adiunxit. 
 [/p] 
 [p xml:id="g142.31-142.33"] 
 Huic itaque Aistulphus in Langobardorum regnum frater eiusdem Rachisis rex instituitur. 
@@ -5451,7 +5468,7 @@ Papiam detulit, construxitque eorum oracula, ubi monasterium uirginum dedicauit,
 filias ibidem consecrauit; fecit quoque et monasterium in fines Emilie, in quo multa donaria 
 largitus est. Qui ualde dilexit monachos et in eorum manibus mortuus est, postquam 
 regnauit annis VII et mensibus V. Fuit autem pernimium audax et ferox; hic etiam apposuit 
-leges in Langobardorum edicto. 
+leges in Langobardorum Edicto. 
 [/p] 
 [p xml:id="g145.30-146.12"] 
 Aistulpho autem successit in regnum Desiderius, qui comestabulus eius fuerat. Iste quidem 
@@ -5880,7 +5897,7 @@ suspectum fedus firmissimum statuit, ut nulla inter partes cuiuslibet scandali r
 occasio. Erat enim in amicitiis optime temperatus, ut eas et facile admitteret et constantissime 
 retineret. Ceterum per omne uite sue tempus ita cum summo omnium amore 
 atque fauore et domini et foris conuersatus est, ut numquam ei uel minima iniuste seueritatis a 
-quoquam fuisset obiecta. Religionem christianam, qua ab infantia fuerat imbutus, sanctissime 
+quoquam fuisset obiecta. Religionem christianam, quam ab infantia fuerat imbutus, sanctissime 
 et cum summa pietate coluit ecclesiam mane et uespere, item ac nocturnis horis et 
 sacrificii tempore, quo eum ualitudo permiserat, impigre frequentabat curabatque magnopere, 
 ut omnia que in ecclesia gerebantur, magna fierent honestate. Amabat peregrinos, et in 

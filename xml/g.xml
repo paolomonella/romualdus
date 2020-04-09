@@ -483,8 +483,19 @@ nullam, aut difficilem reddunt. <rs>orosius</rs>:
 &gl;promissionem nascituro de semine suo saluatore, in quo benedicentur omnes gentes simul, 
 &gl;et se ipsum in gentem magnam esse futurum, quarum una spiritualis, altera promissio car&gd;nalis. 
 his temporibus <rs>ninus</rs>, et <rs>semiramis</rs> eius uxor <rs>assiriis</rs> regnabant. <rs>zoroas</rs> magi&gd;cam 
-artem tunc primum inuenit. <rs>orosius</rs>: 
+artem tunc primum inuenit. 
 </p> 
+
+<p xml:id="g10.n2-10.n5" decls="#al"> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from line 7 to line 12 of page 10 (including <rs>orosius</rs> without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that this paragraph is an addition in manuscript <hi>a</hi>.</note>
+&gl;<hi>hac</hi> etate regnum inchoatur gr<seg ana="#ae">ae</seg>corum ubi primus regnavit <rs>inachus</rs> cuius filius <rs>foroneus</rs> 
+&gl;rex in <rs>gr<seg ana="#ae">ae</seg>cia</rs> leges et iudicia scripsit. 
+</p>
+
+<p xml:id="g10.12-10.12" decls="#al"> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from line 7 to line 12 of page 10 (including <rs>orosius</rs> without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph because there is an addition before <rs>orosius</rs>.</note>
+<rs>orosius</rs>: 
+</p>
 
 <p xml:id="g10.13-10.18" decls="#ocr"> 
 &gl;<hi>ante</hi> annos <rs>urbis</rs> condite <num value="1300">mccc</num> rex primum apud <rs>assirios</rs>, qui eminere ceteris po&gd;tuit, 
@@ -1492,13 +1503,24 @@ pontificis, etiam regale sibi cepit usurpare uocabulum. <num value="3556"><choic
 </p> 
 
 
-<p xml:id="g30.3-30.14" decls="#ocr"> 
+<p xml:id="g30.3-30.8" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from line 3 to line 14 of page 30 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that there is an addition in paragraph g30.n1-30.n3.</note>
 &gl;<rs>artaxerses</rs>, qui cognominatus est <rs>minenon</rs>, <rs>darii</rs> et <rs>parisathidis</rs> filius, annis <num value="40">xl</num> sub 
 &gl;hoc rege uidetur historia <rs>ester</rs> completa; ipse quippe est, qui ab <rs>hebreis</rs> <rs>assuerus</rs>, et a 
 &gl;septuaginta interpretibus <rs>artaxerses</rs> uocatur. <rs>athenienses</rs> <num value="24">xxiu</num> litteris uti ceperunt, cum 
 &gl;antea <num value="16">xui</num> tantum literas haberent. <rs>carthaginensium</rs> tunc inchoatur bellum famosum. 
 &gl;<rs>orosius</rs>. <hi>anno</hi> ab urbe condita <num value="364">ccclx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> <rs>galli</rs> <rs>senones</rs>, duce <rs>brenno</rs> <rs>romam</rs> inuadunt, 
-&gl;urbemque penetrando, excepto <rs>capitolio</rs>, incendunt nam mille libris auri discessionis pretium 
+&gl;urbemque penetrando, excepto <rs>capitolio</rs>, incendunt 
+</p>
+
+<p xml:id="g30.n1-30.n3" decls="#ocr"> 
+&gl;cunctosque crucidando sex 
+&gl;mensibus uastant. <hi>reliquos</hi> autem uniuersos in arce <rs>capitolii</rs> confugientes, quos constat uix mille hominum fuisse, 
+&gl;obsidione concludunt, eosque fame, peste, desperatione atque formidine terunt, ad postremum uendunt, 
+</p>
+
+<p xml:id="g30.8-30.14" decls="#ocr"> 
+nam mille libris auri discessionis pretium 
 &gl;paciscuntur, et tunc tribuni militares pro consulibus esse ceperunt. <rs>orosius</rs>. <hi>anno</hi> ab 
 &gl;urbe condita <num value="400"><choice><orig>cccc</orig><reg type="numeral">cd</reg></choice></num>. <rs>philippus</rs> <rs>aminte</rs> filius <rs>alexandri</rs> pater <rs>macedonum</rs> regnum adeptus, 
 &gl;<num value="25">xxu</num> tenuit annis. <hi>eodem</hi> tempore dilatata est nox usque ad plurimam partem diei, saxa 

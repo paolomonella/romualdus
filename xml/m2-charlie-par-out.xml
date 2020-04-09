@@ -64,7 +64,7 @@
     
     <text>
         <body>
-            <p xml:id="g186.6-186.7">
+            <p xml:id="g186.6-186.7" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -138,7 +138,7 @@ Anno dominice incarnationis MLXVI indictione
 Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit cum Araldo rege Anglorum et uicit eum, qui et factus est rex super gentem Anglorum.
 </p>
  
-<p xml:id="g187.5-187.8">
+<p xml:id="g187.5-187.8" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -181,7 +181,7 @@ Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit cum Araldo rege Ang
 Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi successit. 
 </p>
  
-<p xml:id="g187.11-187.14">
+<p xml:id="g187.11-187.14" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -232,7 +232,7 @@ anno dominice incarnationis MLXXI, indictione
 </app> 
 </p>
  
-<p xml:id="g188.5-188.7">
+<p xml:id="g188.5-188.7" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -283,7 +283,7 @@ Anno dominice incarnationis
 </app> quoque cepit ciuitatem Comsanam obsesso castello Sancte Agathe, quod incessabili oppugnatione cepit. 
 </p>
  
-<p xml:id="g189.1-189.1">
+<p xml:id="g189.1-189.1" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -362,7 +362,7 @@ Anno dominice incarnationis MLXXIX, indictione II, apud Constantinopolim Michael
 </app> Ipso anno dux Robbertus obsidens Uicum cepit ipsam ciuitatem, ibique Gradelonem nepotem suum capiens utroque statim priuari lumine fecit, eo quod ipse et alii plerique baronum rebelles ei extiterant. Ceteri uero metu perculsi ei se subdiderunt. 
 </p>
  
-<p xml:id="g191.3-191.5">
+<p xml:id="g191.3-191.5" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -381,7 +381,7 @@ Anno Domini MLXXX, indictione III, dux Robbertus Guiscardus cepit Spinazolam. Pa
 </app> honorabiliter circa se habens secum duxit eum usque Salernum. Inde mouens gressum dux ipse perrexit ad Gregorium papam eiusque liggius homo iureiurando effectus apud Ciperanum, accipiens ab eo uexillum sancti Petri mense Iunio. 
 </p>
  
-<p xml:id="g191.13-194.5">
+<p xml:id="g191.13-191.15">
 Anno dominice incarnationis 
 <app cert="high" type="substantive" subtype="num-num">
    <lem wit="#b">MLXXX</lem>
@@ -399,22 +399,14 @@ Anno dominice incarnationis
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
 </app> et eduxit exercitum suum necnon et predictum 
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#b">Michaelem, qui se imperatorem fuisse conquerebatur.</lem>
-   <rdg wit="#a"></rdg>
-</app> 
-<app cert="high" type="punctuation" subtype="remove-punctuation">
-   <lem resp="#pm"></lem>
-   <rdg wit="#b">"</rdg>
-</app> 
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#b">Et mense Iulio ante Durrachium obsidionem posuit per terram et per mare, set stolus Uenencolum ueniens discipauit maris obsidionem aperuitque Dirrachenis mare</lem>
-   <rdg wit="#a"></rdg>
-</app> 
-<app cert="high" type="punctuation" subtype="remove-punctuation">
-   <lem resp="#pm"></lem>
-   <rdg wit="#b">"</rdg>
-</app>. Rogerium 
+</p>
+ 
+<p xml:id="g191.15-192.3" decls="longversion">
+Michaelem, qui se imperatorem fuisse conquerebatur. Et mense Iulio ante Durrachium obsidionem posuit per terram et per mare, set stolus Uenencolum ueniens discipauit maris obsidionem aperuitque Dirrachenis mare.
+</p>
+ 
+<p xml:id="g192.3-194.5">
+Rogerium 
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">uero</lem>
    <rdg wit="#a"></rdg>
@@ -517,7 +509,7 @@ Eodem anno Henricus Alamannorum imperator uenit Romam cum exercitu, obseditque G
 </app> Capuam obsedit, et acriter ipsam ciuitatem expugnauit mense Iulio, indictione VI. Tandem ipse dux in Apuliam reuersus est, obseditque Cannas Apulie ciuitatem eo quod ciues ipsius rebelles ei extiterant, cepitque eam igne incendens. Superiori quoque anno priusquam dux Robbertus de ultramarinis esset reuersus, Roggerius eiusdem ducis filius destruxit Asculum combussitque eam igni. 
 </p>
  
-<p xml:id="g195.6-195.8">
+<p xml:id="g195.6-195.8" decls="longversion">
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">Anno domini</lem>
    <rdg wit="#a2"></rdg>
@@ -616,7 +608,7 @@ Anno dominice incarnationis MLXXXVII indictione X mense Maio corpus beati Nycola
 </app> et Urbanus est papa dictus seditque annis XII mensibus VIII. 
 </p>
  
-<p xml:id="g198.4-198.5">
+<p xml:id="g198.4-198.5" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -643,7 +635,7 @@ Anno dominice incarnationis MLXXXVIII indictione XI. Boamundus frater ducis Rogg
 </app> eidem Boamundo quandam partem terre sue in Apulie regionibus, cum pater eius nil sibi reliquit. 
 </p>
  
-<p xml:id="g198.12-198.13">
+<p xml:id="g198.12-198.13" decls="longversion">
 Eodem anno comprehensa est Siracusa, Sicilie quondam caput, 
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">a Rogerio comite,</lem>
@@ -659,7 +651,7 @@ Eodem anno comprehensa est Siracusa, Sicilie quondam caput,
 Anno dominice incarnationis MLXXXIX, indictione XII, luna in ortu suo passa est eclipsim. 
 </p>
  
-<p xml:id="g198.16-198.17">
+<p xml:id="g198.16-198.17" decls="longversion">
 <app cert="high" type="substantive">
    <lem wit="#b">Eodem anno</lem>
    <rdg wit="#a2">MLXXXIX, indictione XII,</rdg>
@@ -690,7 +682,7 @@ Anno dominice incarnationis MXC indictione XIII mense Septembris Urbanus papa si
 </app> ducissa, mater Roggeri ducis, defuncta est mense Aprilis. 
 </p>
  
-<p xml:id="g199.5-199.8">
+<p xml:id="g199.5-199.8" decls="longversion">
 Eodem anno Acherontia ciuitas cremata est mense 
 <app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Augusti</lem>
@@ -698,7 +690,7 @@ Eodem anno Acherontia ciuitas cremata est mense
 </app>, in tantum enim eodem uastata est igne, ut nulla domus, nullum inueniretur edificium quod non ab igne consumptum deperierit. Homines etiam XXV eodem incendio mortui sunt. 
 </p>
  
-<p xml:id="g199.9-199.12">
+<p xml:id="g199.9-199.11">
 <app cert="high" type="substantive">
    <lem wit="#b">Anno</lem>
    <rdg wit="#a">Anni</rdg>
@@ -709,7 +701,7 @@ Eodem anno Acherontia ciuitas cremata est mense
 </app> mense Februario Iordanus Capue defunctus est anno XIII principatus eius. Hic autem fuit uir egregius, consilio sagax, uirtute in bello preualidus. Cui successit Riccardus filius eius princeps. 
 </p>
  
-<p xml:id="g199.13-199.15">
+<p xml:id="g199.12-199.14">
 Eodem anno dum obsideretur Oria ciuitas a Boamundo, auxilio Roberti de Anse, Oritani dissipauerunt obsidionem eius, et ipso Boamundo fugam petente cuntum eius apparatum et signa ceperunt.
 </p>
  
@@ -740,7 +732,7 @@ Anno dominice incarnationis MXCIII indictione I mense Martio Urbanus papa Troie 
 </app> indictione IV, luna passa est eclipsim a prima hora noctis usque in tertiam horam eiusdem noctis. 
 </p>
  
-<p xml:id="g200.17-200.21">
+<p xml:id="g200.17-200.21" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -878,7 +870,7 @@ Anno dominice incarnationis MC, indictione VIII; dux Roggerius Canusiam obsedit,
 </app> in Hierusalem mortuus est et Balduinus frater eius rex est constituitus. 
 </p>
  
-<p xml:id="g202.7-202.10">
+<p xml:id="g202.7-202.10" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -937,7 +929,7 @@ Anno dominice incarnationis MCII indictione X Roggerius dux simul cum papa Pasch
 </app> principabatur expulso, cepit ipsam ciuitatem et ipsius pape iuri ac potestati eam dimisit. 
 </p>
  
-<p xml:id="g203.6-203.6">
+<p xml:id="g203.6-203.6" decls="longversion">
 Hoc tempore Boamundus dimissus 
 <app cert="high" type="substantive" subtype="missing-in-print">
    <lem wit="#b"> </lem>
@@ -1009,16 +1001,16 @@ Anno dominice incarnationis MCVIII indicione I Philippus Francorum rex obiit ann
 </app> obsessus anno imperii sui LXVII, et ipse filius eius regnum sibi suscepit. 
 </p>
  
-<p xml:id="g204.16-205.2">
+<p xml:id="g204.16-205.1">
 Anno 
 <app cert="high" type="substantive">
    <lem wit="#b">domini</lem>
    <rdg wit="#a">dominice incarnationis</rdg>
-</app> MCX indictione III stella cometis a parte septemtrionali circa polum uisa est tota nocte a sero usque mane per totum mensem Iunii. 
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#b">Eodem anno mense Septembris domnus Alexander comes fecit Miliolongum hedificare castellum.</lem>
-   <rdg wit="#a"></rdg>
-</app> 
+</app> MCX indictione III stella cometis a parte septemtrionali circa polum uisa est tota nocte a sero usque mane per totum mensem Iunii.  
+</p>
+ 
+<p xml:id="g205.1-205.2" decls="longversion">
+Eodem anno mense Septembris domnus Alexander comes fecit Miliolongum hedificare castellum.
 </p>
  
 <p xml:id="g205.3-206.12">
@@ -1089,11 +1081,11 @@ Anno
 </app> Constantia successit. 
 </p>
  
-<p xml:id="g206.n4-206.n5">
+<p xml:id="g206.n4-206.n5" decls="longversion">
 Anno Domini MCXII. Hoc anno mense Augusti Agerenum iterum ignis combustione uastatur.
 </p>
  
-<p xml:id="g206.13-206.17">
+<p xml:id="g206.13-206.17" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -1200,7 +1192,7 @@ Anno
 </app>. 
 </p>
  
-<p xml:id="g208.1-208.9">
+<p xml:id="g208.1-208.9" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -1327,7 +1319,7 @@ Anno dominice incarnationis MCXIX indictione XII pridie kalendas Decembris luna 
 </app> qui cum maxima militum manu ueniebat in auxilium christianorum. Non post multos uero dies ipse rex cum suis uenit in Antiochiam et cum predictis Sarracenis qui terram ipsam occupauerant, bellum commisit eosque deuicit et Antiochiam in sua manu accepit. 
 </p>
  
-<p xml:id="g210.23-210.24">
+<p xml:id="g210.23-210.24" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -1374,7 +1366,7 @@ Anno dominice incarnationis MCXX indictione XIII mense Iunio Robbertus Capuanoru
 </app> itaque Willelmus dux eiusdem pontificis aduentum obuius festinanter extra ciuitatem aduenit cum primatibus suis. Cui uice stratoris ipse pedes iuxta sellam usque ad ecclesiam episcopatus eiusdem ciuitatis ingenti cum honore deduxit. 
 </p>
  
-<p xml:id="g211.15-211.17">
+<p xml:id="g211.15-211.17" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
@@ -1401,7 +1393,7 @@ Anno dominice incarnationis MCXXI indictione XIV
 </app> papa destitit, donec Burdinum cepit, captumque direxit in monasterium Sancte Trinitatis de Caua. 
 </p>
  
-<p xml:id="g212.5-212.9">
+<p xml:id="g212.5-212.9" decls="longversion">
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">"Anno Domini</lem>
    <rdg wit="#a2"></rdg>
@@ -1444,7 +1436,7 @@ Anno dominice incarnationis MCXXI indictione XIV
 </app> septingentis equitibus exeredauit comitem Iordanum. 
 </p>
  
-<p xml:id="g212.10-212.11">
+<p xml:id="g212.10-212.11" decls="longversion">
 Anno 
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">Domini</lem>
@@ -1460,7 +1452,7 @@ Anno
 </app> breui tempore dimittitur. 
 </p>
  
-<p xml:id="g212.12-212.13">
+<p xml:id="g212.12-212.13" decls="longversion">
 Hoc tempore in mense Iunio 
 <app cert="high" type="orthographic" subtype="double">
    <lem wit="#b">Roggerius</lem>
@@ -4894,7 +4886,7 @@ Interea dum imperator per totum mensem Augusti et aliquam partem Septembris esse
 </app> cardinalis et Grecus subdiaconus cum Christiano cancellario in Romaniam descenderunt pro restauratione regalium, que imperator inuaserat, recipienda. Dum autem papa a Siponto Anagniam ueniret, ecclesie peccatis exigentibus, Hugo de Bononia cardinalis Beneuenti est mortuus, Willelmus de Papia Portuensis episcopus apud Auersam obiit, Malfridus Penestrinus episcopus apud Anagniam diem clausit extremum. 
 </p>
  
-<p xml:id="g294.15-194.17">
+<p xml:id="g294.15-294.17">
 Anno dominice incarnationis 
 <app cert="high" type="orthographic">
    <lem wit="#b">M.C.</lem>

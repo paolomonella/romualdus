@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE TEI SYSTEM "romualdus.dtd" [
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" [
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'>
 <!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'>
 <!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'>
@@ -285,7 +285,7 @@ in <rs>remensium</rs> ciuitate erat archiepiscopus, uir bonus et mo&bd;destus,
 iam senex, frater <rs>lotharii</rs> regis ex concubina nomine <rs>ar&bd;nulfus</rs>. 
 <rs>ugo</rs> autem dux inuidebat ei uolens exterminare proge&bd;niem 
 <rs>lotharii</rs> regis. <hi>congregansque</hi> in eadem ciuitate sinodum, 
-&bl;fecit degradare domnum <rs>arnulfum</rs>. in loco uero eius consecrare 
+&bl;fecit degradare domnum <rs>arnulfum</rs>; in loco uero eius consecrare 
 &bl;fecit domnum <rs>gibbertum</rs> monachum philosophum. <rs>seguinus</rs> 
 &bl;autem archiepiscopus <rs>senonum</rs> non consensit in degradatione 
 <pb n="72" ed="#b"/> 
@@ -392,7 +392,7 @@ qui primitus abbas <rs>bobiensis</rs>, postea archiepiscopus
 <pb n="76" ed="#b"/> 
 &bl;sedit anno <num value="1">i</num>. <hi>hic</hi> <rs>ottonem</rs> regem <rs>saxonum</rs> coronauit impera&bd;torem. 
 <hi>post</hi> <rs>iohannem</rs> uero <rs>siluester</rs> <rs>tiburtinus</rs>, qui uocatur 
-&bl;<hi>osporco</hi>, <rs>romanum</rs> suscepit pontificatum qui sedit annis <num value="4">iiii</num>. 
+&bl;<hi>osporco</hi>, <rs>romanum</rs> suscepit pontificatum qui sedit annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
 &bl;<hi>suo</hi> quidem tempore fuit pessima fa<pb break="no" n="201r" facs="vat:226" ed="#a"/>mes. <hi>hic</hi> autem mortuo 
 &bl;<rs>alberico</rs> qui patriciatus sibi nomen uendicauerat a <rs>crescentio</rs> 
 &bl;<rs>numentano</rs>, qui patricius dicebatur, papa ordinatus est quique 
@@ -442,7 +442,7 @@ cum circumquaque regionibus sibi uendicaret ac imperiali iuri
 
 
 <p xml:id="g174.8-175.15" decls="#al"> 
-&bl;<hi>anni</hi> domini <num value="1013">mxiii</num>. indictione <num value="1">i</num>. <hi>hic</hi> in <rs>apulie</rs> finibus rehedi&bd;ficauit 
+&bl;<hi>anni</hi> <rs>domini</rs> <num value="1013">mxiii</num>, indictione <num value="1">i</num>. <hi>hic</hi> in <rs>apulie</rs> finibus rehedi&bd;ficauit 
 ciuitatem diu dirutam nuncupauitque eam <rs>troiam</rs>, que 
 &bl;antiquitus <rs>ecana</rs> uocabatur <note resp="#b" type="year">1024</note> et iussu imperatorum fines 
 &bl;per statutum priuilegium eidem stabiliuit ciuitati. <hi>in</hi> hanc ciuita&bd;tem 
@@ -462,7 +462,7 @@ post predicte ciuitatis <add hand="#hand2" place="above"><rs>troie</rs></add> re
 incarnationis <rs>domini</rs> millesimo uicesimo secundo indictio&bd;ne 
 <num value="5">u</num> <rs>henricus</rs> <rs>alamannorum</rs> imperator ingenti cum exercitu, 
 &bl;simul et cum <rs>benedicto</rs> papa uenit super ipsam ciuitatem obse&bd;ditque 
-eam per <num value="4">iiii</num> menses machinis illam fortiter expu&bd;gnans. 
+eam per <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> menses machinis illam fortiter expu&bd;gnans. 
 <hi>imperator</hi> itaque uidens quod eam sine mora capere non 
 &bl;posset – dixerat enim iratus quod si eam ui cepisset statim de&bd;strueret 
 – timuit sibi suisque estiuum <rs>apulie</rs> calorem, et sic com&bd;posita 
@@ -789,7 +789,7 @@ per uexillum de honore ducatus sui cum tota terra.
 <p xml:id="g185.8-186.5" decls="#al"> 
 &bl;<hi>anno</hi> dominice incarnationis <num value="1062">mlxii</num> indictione <num value="15">xu</num> <rs>nicolaus</rs> 
 &bl;papa defungitur anno ordinationis sue <num value="2">ii</num>, mense <num value="8">uiii</num>. 
-&bl;<hi>et</hi> <rs>alexander</rs> qui uocatus est <rs>anselmus</rs> papa ordinatur, quo tempore 
+&bl;<hi>et</hi> <rs>alexander</rs> qui uocatus est <rs>anselmus</rs> papa ordinatur. <hi>quo</hi> tempore 
 princeps <rs>riccardus</rs> <rs>capuam</rs> cepit sibique ordinauit. <hi>his</hi> au<pb break="no" n="90" ed="#b"/>&bd;tem 
 &bl;diebus <rs>robbertus</rs> dux ad <rs>alexandrum</rs> papam proficiscens 
 &bl;liggius homo eius deuenit et sicut <rs>nicolao</rs> pape ita et huic 

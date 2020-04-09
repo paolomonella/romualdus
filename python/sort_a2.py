@@ -43,6 +43,9 @@ def sort_a2(pSiglum='bonetti', mSiglum='a2', quiet=False):
         myId = pPar.get(xmlid)
         # The corresponding <p> in a2.xml:
         mPar = mBody.find('.//t:%s[@%s="%s"]' % ('p', xmlid, myId), ns)
+        if False:
+            if mPar is None:
+                print('xml:id «%s» not found' % myId)
         mSortedPars.append(mPar)
 
     # Empty the <body> of a2.xml (delete all its children)

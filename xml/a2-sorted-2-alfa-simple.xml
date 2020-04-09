@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?> 
-<!DOCTYPE TEI SYSTEM "romualdus.dtd" [ 
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" [ 
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'> 
 <!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'> 
 <!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'> 
@@ -9,7 +9,7 @@
   <teiHeader> 
     <fileDesc> 
       <titleStmt> 
-        <title>Romualdi Salernitani Chronicon, codex A</title> 
+        <title>Romualdi Salernitani Chronicon, Codex A</title> 
         <editor xml:id="pm">Paolo Monella</editor> 
       </titleStmt> 
       <publicationStmt> 
@@ -26,7 +26,7 @@
                  <biblStruct xml:id="g"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title> 
+                    <title>Romualdi Salernitani Chronicon (A.M. 130-A.C. 1178)</title> 
                     <editor>Garufi, Carlo Alberto</editor> 
                     <imprint> 
                         <publisher>S. Lapi</publisher> 
@@ -35,7 +35,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Rerum italicarum scriptores: Nuova edizione</title> 
+                        <title level="s">Rerum Italicarum Scriptores: Nuova Edizione</title> 
                         <biblScope unit="volume">7</biblScope> 
                                         <biblScope unit="part">1</biblScope> 
                 </series> 
@@ -43,7 +43,7 @@
             <biblStruct xml:id="b"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdo II Guarna, Chronicon</title> 
+                    <title>Romualdo Ii Guarna, Chronicon</title> 
                     <idno type="ISBN">9788883090561</idno> 
                     <editor>Bonetti, Cinzia</editor> 
                     <imprint> 
@@ -53,7 +53,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Schola Salernitana. Studi e testi</title> 
+                        <title level="s">Schola Salernitana. Studi E Testi</title> 
                         <biblScope unit="volume">6</biblScope> 
                     </series> 
             </biblStruct> 

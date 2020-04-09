@@ -113,6 +113,9 @@
                 <ab type="level">ALIM2_3</ab>
                 <ab type="specific">[§ riassunto: born-digital edition etc.] See the 'front' element for details on this edition</ab>
             </editorialDecl>
+      	    <editorialDecl xml:id="longversion">
+                <ab type="specific">One of the additions distinguishing the 'short' from the 'long' version of the work</ab>
+            </editorialDecl>
             <variantEncoding location="internal" method="parallel-segmentation"/>
         </encodingDesc>
         <profileDesc>
@@ -138,27 +141,11 @@
 
 <front>
 <div>
-<head>Witnesses</head>
-<p>The present edition aims to improving
-the text of the Chronicon by Romualdus Salernitanus
-(Romualdus II Guarna) through a new collation of the text
-of the print editions of Garufi and Bonetti
-against the main witnesses of the 'short version' of the work, i.e.
-MS Vaticanus Latinus 3973 (siglum A; see Zabbia 2004 § [e tutti gli Zabbia], 385 and
-https://digi.vatlib.it/mss/detail/Vat.lat.3973)
-and a fragment of MS Ottobonianus Latinus 2940, 
-ios 16r-18v, that Schwartz § labelled as Aa, and I as O
-(see Zabbia 2004, footnote 27 and
-https://digi.vatlib.it/mss/detail/Ott.lat.2940).</p>
-</div>
-
-<div>
 <head>The Chronicon</head>
 <p>The Chronicon is a universal history composed by Archbishop of Salerno
 	Romualdus II Guarna shortly before his death (1181). For the
-	period going from Adam until 1125, when he was about 15 years old,
-	Romualdus compiled previous sources, possibly working on a previous
-	compilation (see Zabbia 2004, pp. 388-389),
+	period going from Adam until 1125, Romualdus compiled previous sources,
+	possibly working on a previous compilation (see paragraph 'Authenticity' below),
 	while for contemporary events his work is a first hand source.
 	In particular, Romualdus was one of the protagonists of the
 	"Peace of Venice" (1177), a treaty between Emperor Frederick I, Pope
@@ -168,7 +155,6 @@ https://digi.vatlib.it/mss/detail/Ott.lat.2940).</p>
 	William II of Sicily to the negotiations in Venice.
 	</p>
 </div>
-
 
 <div>
 <head>Structure of the work</head>
@@ -182,44 +168,262 @@ https://digi.vatlib.it/mss/detail/Ott.lat.2940).</p>
 	Italy, until it substantially becomes a chronicle of its Norman conquest and then
 	of the Kingdom of Sicily, ending with the detailed account of the Peace of Venice
 	(from par. v-b298a of the present edition to the end of the work).
-	On the structure and the sources of the work, see Zabbia 2004, pp. 380-383.</p>
+	On the structure and the sources of the work, see Zabbia 2004, 380-383.</p>
+</div>
+
+<div>
+<head>Authorship: textual evidence</head>
+<p>It is not the task of this introduction to examine in depth the question of the
+	authorship of the Chronicon. However, I will shortly summarize the issue.
+	The attribution of the work to Romualdus Salernitanus is based on two textual
+	notes in the handwritten tradition:
+<list>
+	<item>a sentence in manuscript C (Paris, Bibliothèque Nationale, Latinus 4933),
+		not present in the other main manuscripts,
+		probably a marginal note that later entered the text:
+		"Ab hoc loco adiunctum est huic chronice per Romualdum secundum
+		Salernatanum archiepiscopum".
+		The note (not included in the text of my edition)
+		is in par. g213.1-213.8, precisely in page 213, line 5 of Garufi's edition,
+		between "...iuramentum accepit" and "Dux autem Wilhelmus..." (events of year 1125).
+		Garufi reports the note in apparatus (see Matthew 1981, 255-256
+		and Zabbia 2004, 382, 388 and footnote 5);
+	</item>
+	<item>
+		a second sentence in par. g293.39-294.2: "Hec autem omnia, que prediximus,
+		ita gesta fuisse, nulli dubitationis uel incredulitatis scrupulum moueant,
+		quia Romoaldus secundus Salernitanus archiepiscopus, qui uidit et interfuit,
+		scripsit hec; et sciatis, quia uerum est testimonium eius" (see Mattew 1981, 239-240).
+	       	With "hec... omnia, que prediximus", the text refers to the Peace of Venice.
+	</item>
+</list>
+</p>
+</div>
+
+<div>
+<head>Authorship: hypotheses</head>
+<p>For Matthew 1981, the first note only proves that
+	the scribe who wrote it believed in Romualdus' authorship, and the second
+	that the report of the Peace of Venice was based on the archbishop's,
+	possibly written, testimony. Mattews discusses numerous arguments in favor
+	of the thesis that the author of the Chronicon is not Romualdus:
+	he suggests that around 1126 an anonymous compiler based in the
+	Apulian city of Troia wrote a compilation of universal history reporting
+	events until 1125 (see Matthew 1981, 239-256);
+	later, "a writer from Salerno decided to set down the events of the
+	reigns to Roger II and the two Williams in 1177",
+	while only the report of the Peace of Venice "is taken from
+	the written, eitiwness, and true account of Archbishop Romuald"
+	(Matthew 1981, 269-270).</p>
+<p>Zabbia 2004 confuted Mattew's arguments and suggested,
+	that Romualdus is the author of the whole work, though he does not
+	rule out the possibility, based on the first note mentioned above
+	("Ab hoc loco adiunctum est...', par. g213.1-213.8), that
+	the archbishop continued a previously existing universal chronicon.
+	In his view, the note "Ab hoc loco..." simply suggests that
+	"sino al 1125 l'arcivescono avrebbe condotto il suo lavoro sulle fonti;
+	dopo quella data – a partire cioè da quando Romualdo aveva all'incirca
+	quindici anni – il racconto sarebbe fondato sulla memoria dell'autore"
+	(§ metti qui la pag. di zabbia in cui la dice: mi pare, 389).</p>
+<p>Zabbia's arguments on balance out those of Matthew. This leaves the authorship
+	question open, at least for the part of the work before year 1125.
+	While internal evidence is not conclusive, the two notes mentioned 
+	above suggest quite clearly that:
+<list>
+	<item>The final part of the work – the account of the Peace of Venice –
+		was almost certainly either written by Romualdus himself,
+		or under his supervision (see second note above);</item>
+	<item>the section from year 1125 (par. g213.1-213.8) to the Peace of Venice
+		was added, 'adiunctum' by Romualdus as well (see first note);</item>
+	<item>the section from Adam to year 1125 constituted something that existed
+		before Romualdus (see first note: "adiunctum est huic chronice").</item>
+</list>
+</p>
+<p>For Zabbia, this pre-existing 'chronica' is a collective denomination
+	for the sources that Romualdus summarized or copied, though he adds:
+	"Tutto ciò non consente di escludere che l'arcivescono potesse disporre
+	di una cronaca in cui almeno parte del materiale fosse già organizzata"
+	(Zabbia 2004, 389). I incline towards the latter hypothesis, though
+	I agree with Zabbia that Romualdus himself probably conducted or coordinated
+	the final editorial work on the whole Chronicon.</p>
+</div>
+
+<div>
+<head>Manuscripts</head>
+<p>The three oldest witnesses of the work are:
+<list>
+	<item>A: Vaticanus Latinus 3973, available in
+		https://digi.vatlib.it/mss/detail/Vat.lat.3973;</item>
+	<item>B: Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22,
+		available in http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22;</item>
+	<item>C: Paris, Bibliothèque Nationale, Latinus 4933; see Zabbia 2004, 385 and 
+		https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p).</item>
+</list>
+</p>
+
+<p>Another important witness is:
+<list>
+	<item>O: a fragment of MS Ottobonianus Latinus 2940,
+		folios 16r-18v, available in
+		https://digi.vatlib.it/mss/detail/Ott.lat.2940.
+	</item>
+</list>
+</p>
+
+<p>The importance of O lies in the fact that Schwartz [§ add year] argued that
+	it might be copied from a lost MS, older than A.</p>
+
+<p>The siglum used by Schwartz and other scholars for it
+	is 'Aa'. I am modifying it to 'O' for consistency
+	with the other sigla (one letter only, not including
+	character 'A' already used for Vat. Lat. 3973), thus
+	facilitating the processing of XML files.</p>
+</div>
+
+<div>
+<head>Print editions</head>
+<p>The two most recent print editions of the Chronicon are Garufi 1914 and
+	Bonetti 2001, described in the 'sourceDesc' of this TEI XML file.
+</p>
+</div>
+
+<div>
+<head>Paragraph identifiers</head>
+<p>Paragraphs ('p' elements in the TEI XML source) have been labelled
+with @xml:id attributes based on Garufi. For instance, paragraph
+'g163.1-163.5' goes from page 163, line 1 to page 163, line 5 of
+the Garufi edition. In some cases, Garufi's paragraphs have been
+further broken into smaller 'p' elements to facilitate collation.</p>
+</div>
+
+<div>
+<head>Sigla</head>
+<p>As noted in the 'sourceDesc' element,
+	in the @wit attributes of 'lem' and 'rdg'
+	elements I used sigla 'g' for Garufi', 'b' for Bonetti,
+	'a' for MS A (first hand), 'a2' for the second hand of MS A
+	(probably XVII century) and 'o' for the fragment of MS O.</p>
+</div>
+
+<head>Long and short versions of the work</head>
+
+<p>MSS B and C present a number of textual passages absent in A and O.
+	We thus distinguish between a 'long' (MSS B and C)
+	and 'short' version of the work (A and O). Those additions
+	correspond to paragraphs:
+	§§§ insert list
+
+	</p>
+
+<p>The 'p' elements including these additions have been marked with attribute
+	@decls="#longversion", in this XML file, linking to the relevant
+	'editorialDecl'.</p>
+
+
+
+<div>
+<head>Second hand in A</head>
+<p>MS A, as mentioned above, has the 'short' version, and other parts that probably
+were originally present in the codex were later lost due to physical damage.
+Someone, probably in the XVII century, integrated MS A with the missing parts,
+by writing them in the marginal space or by adding extra folios.
+I transcribed and collated the following portions of MS A added by the second hand
+and marked their readings with siglum 'a2' in 'app' elements:
+g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
+81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g186.6-186.7, g186.8-186.8, 
+86.9-186.9, g187.5-187.8, g187.11-187.14, g188.5-188.7, g189.1-189.1, g191.3-191.5, 
+95.6-195.8, g198.4-198.5, g198.12-198.13, g198.16-198.17, g199.5-199.8, g200.17-200.21, 
+01.19-201.20, g202.7-202.10, g203.1-203.2, g203.6-203.6, g206.13-206.17, g208.1-208.9, 
+10.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, g213.1-213.8, 
+14.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, g216.n10-217.n1, g217.n4-217.n10, 
+18.n16-218.n23, g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10.</p>
+</div>
+
+
+
+
+<div>
+<head>Biblio</head>
+<p>
+#Biblio# 
+A complete discussion on the manuscript tradition can be found in
+Garufi 1914, XXXI-XXXVI; Matthew 1981, 241-[metti qui fine discuss. sui MSS di matthew]
+[metti tutta insieme bibliografia su MSS §§§]
+Zabbia ( Zabbia 2004, 385-388; Zabbia 2006; 
+[ §§§ cita qui intro garufi, zabbia 2004 e forse anche napoli nobilissima, e vd. altra biblio].
+Vd. agenda con appunti completi su bibliografia
+</p>
+</div>
+
+
+<div>
+<head>Aim</head>
+<p>The present edition aims at improving
+the text of the Chronicon by Romualdus Salernitanus
+(Romualdus II Guarna) through a new collation of the text
+of the print editions of Garufi and Bonetti
+against A and O, the main witnesses of the 'short version' of the work
+</p>
+Full details on manuscripts and print editions of the work are in §
+[§§§ biblio su prine editions e MSS: vd. altro §§§]
+</div>
+
+<div>
+<head>Paragraphs in O</head>
+<p>Witness O (i.e. folios 16r-18v of Ottobon. Lat. 2940) has the following paragraphs:
+g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16, g170.17-171.1, g171.2-171.6, 
+71.7-171.8, g171.9-171.14, g172.1-172.9, g172.10-173.11, g173.12-173.13, g173.14-174.7, 
+74.8-175.15, g176.1-176.2, g177.1-177.4, g177.5-177.6, g177.7-177.8, g177.9-178.3, 
+78.4-178.10, g178.11-178.12, g178.13-179.2, g179.3-179.7, g179.8-179.9, g179.12-179.14, 
+79.15-180.10, g180.10-180.12, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
+81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g184.13-185.7, g185.8-186.5.</p>
+</div>
+
+<div>
+<head>Paragraphs in Garufi and Bonetti</head>
+<p>I already mentioned
+that portion of the work is included in Bonetti.
+Garufi has the wole text, including the additions that distinuish the 'long'
+from the 'short' version (though he mostly publishes those additions in apparatus notes),
+but does not have the report of the Peace of Venice, i.e. paragraphs
+from v-b298c through v-b306b. This is why their @xml:id does not start with 'g'.
+Bonetti includes the Peace of Venice, with Arndt's text. [sbagliato, cambiare §]</p>
+</div>
+
+<div>
+<head>Paragraphs missing in A and O</head>
+<p>Some paragraphs
+are missing both in MS A (first or second hand) and in MS O,
+so for them I am simply reporting the text of Garufi or Bonetti (i.e. Garufi/Arndt),
+without any 'app' elements.
+These paragraphs are those of the Peace of Venice, plus the following:
+g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.28, 
+8.29-90.15, g90.16-90.20, g90.21-92.5, g92.6-92.7, g92.8-92.9, g179.10-179.11, 
+86.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
 </div>
 
 <div>
 <head>MSS Datation</head>
-<p>[§ add datation of MSS (see Zabbia)]</p>
+<p>Complete</p>
 </div>
 
 <div>
-<head>Short and long, MSS and edition details</head>
-<p>See Zabbia §
-for the distinction between 'short' and 'long' version,
-and element 'sourceDesc' of this file for bibliographical
-and manuscript details.</p>
+<head>Sources</head>
+<p>[§ rimanda ad altri]</p>
 </div>
+
+
+
+
+
+
+
 
 <div>
 <head>GitHub</head>
 <p>The source code of this edition, including transcriptions of the
 witnesses and Python software, is in the project GitHub repository
 https://github.com/paolomonella/romualdus.</p>
-</div>
-
-<div>
-<head>Sigla</head>
-<p>As noted in 'sourceDesc', in the @wit attributes of 'lem' and 'rdg'
-elements I used sigla 'g' for Garufi', 'b' for Bonetti,
-'a' for MS A (first hand), 'a2' for the second hand of MS A
-(probably XVII century) and 'o' for the fragment of MS O.</p>
-</div>
-
-<div>
-<head>Paragraphs</head>
-<p>Paragraphs ('p' elements in the TEI XML source) have been labelled
-with @xml:id attributes based on Garufi. For instance, paragraph
-'g163.1-163.5' goes from page 163, line 1 to page 163, line 5 of
-the Garufi edition. In some cases, Garufi's paragraphs have been
-further broken in smaller 'p' elements to facilitate collation.</p>
 </div>
 
 <div>
@@ -239,7 +443,7 @@ as collation exemplar for this part of the work.</p>
 <p>Bonetti uses Garufi's edition as "testo base",
 and Arndt (Arndt, W., ed. 1866, Romoaldi II archiepiscopi Salernitani Annales,
 Vol.  SS XIX, Hannover) as "elemento integrativo"
-(see 'Nota al testo', Bonetti p. 56).
+(see 'Nota al testo', Bonetti 2001, 56).
 Thus Bonetti's text can be considered mostly equivalent to that of Garufi. 
 However, in the part of the text collated against Bonetti
 (g163.1-163.5 to the end), whenever I chose the reading of a MS against
@@ -269,72 +473,6 @@ I divided the text in four parts for collation:
 diverges between Garufi, Bonetti and MS A, do to a number of large transpositions
 of those paragraphs in the manuscripts.
 I chose the order of Bonetti.</p>
-</div>
-
-<div>
-<head>Second hand in A</head>
-<p>The 'long' and 'short' versions
-of the work are differentiated by the presence of a number of additions in the long one.
-MS A, as mentioned above, has the 'short' version, and other parts that probably
-were originally present in the codex were later lost due to physical damage.
-Someone, probably in the XVII century, integrated MS A with the missing parts,
-by writing them in the marginal space or by adding extra folios.
-I transcribed and collated the following portions of MS A added by the second hand
-and marked their readings with siglum 'a2' in 'app' elements:
-g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
-81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g186.6-186.7, g186.8-186.8, 
-86.9-186.9, g187.5-187.8, g187.11-187.14, g188.5-188.7, g189.1-189.1, g191.3-191.5, 
-95.6-195.8, g198.4-198.5, g198.12-198.13, g198.16-198.17, g199.5-199.8, g200.17-200.21, 
-01.19-201.20, g202.7-202.10, g203.1-203.2, g203.6-203.6, g206.13-206.17, g208.1-208.9, 
-10.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, g213.1-213.8, 
-14.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, g216.n10-217.n1, g217.n4-217.n10, 
-18.n16-218.n23, g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10.</p>
-</div>
-
-<div>
-<head>Paragraphs in O</head>
-<p>Witness O (i.e. folios 16r-18v of Ottobon. Lat. 2940) has the following paragraphs:
-g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16, g170.17-171.1, g171.2-171.6, 
-71.7-171.8, g171.9-171.14, g172.1-172.9, g172.10-173.11, g173.12-173.13, g173.14-174.7, 
-74.8-175.15, g176.1-176.2, g177.1-177.4, g177.5-177.6, g177.7-177.8, g177.9-178.3, 
-78.4-178.10, g178.11-178.12, g178.13-179.2, g179.3-179.7, g179.8-179.9, g179.12-179.14, 
-79.15-180.10, g180.10-180.12, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
-81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g184.13-185.7, g185.8-186.5.</p>
-</div>
-
-<div>
-<head>Paragraphs in Garufi and Bonetti</head>
-<p>I already mentioned
-that portion of the work is included in Bonetti.
-Garufi has the wole text, including the additions that distinuish the 'long'
-from the 'short' version (though he mostly publishes those additions in apparatus notes),
-but does not have the report of the Peace of Venice, i.e. paragraphs
-from v-b298c through v-b306b. This is why their @xml:id does not start with 'g'.
-Bonetti includes the Peace of Venice, with Arndt's text.</p>
-</div>
-
-<div>
-<head>Paragraphs missing in A and O</head>
-<p>Some paragraphs
-are missing both in MS A (first or second hand) and in MS O,
-so for them I am simply reporting the text of Garufi or Bonetti (i.e. Garufi/Arndt),
-without any 'app' elements.
-These paragraphs are those of the Peace of Venice, plus the following:
-g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.28, 
-8.29-90.15, g90.16-90.20, g90.21-92.5, g92.6-92.7, g92.8-92.9, g179.10-179.11, 
-86.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
-</div>
-
-<div>
-<head>MSS with the long version</head>
-<p>The manuscripts bearing
-the "long" version of the work have not been collated,
-so they are not part of this edition: they are
-B (Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22;
-see Zabbia 2004, 354 n. 24; Garufi, Praef. XXXII; and
-http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
-and C (Paris, Bibliothèque Nationale, Latinus 4933; see Zabbia 2004, 385 and 
-tps://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p).</p>
 </div>
 
 <div>
@@ -515,6 +653,11 @@ mostly by adopting MS A's spelling, in cases in which
 </p>
 </div>
 
+<div>§ metti da qualche parte 'factual' / subst readings,
+	e che per i fatti mi sono appoggiato alle print editions,
+	lavoro da storici, io ho visto usus scribendi; aim: migliorare
+	testo su base di nuova collaz. di O e soprattutto A</div>
+
 </front>
 
 <body>
@@ -534,11 +677,8 @@ Prima mundi etas est ab Adam usque ad diluuium, continens annos, iuxta hebraicam
 </app> mille sexcentos quinquaginta sex, iuxta Septuaginta uero interpretes duo milia ducentos quadraginta duos; generationes uero iuxta utramque editionem numero decem, que uniuersali est deleta diluuio, sicut primam cuiusque hominis obliuio demergere consueuit etatem. 
 </p>
  
-<p xml:id="g3.7-3.16">
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#g">Fuerunt Noe filii tres ex quibus ita sunt orte gentes. De Iaphet quindecim, de Chan triginta, de Sem XXVII. Sem annos duos post diluuium genuit Arfaxad a quo sunt Chaldei. Arfaxad genuit Salem a quo Samarite et Indi. Salem genuit Heber, a quo Hebrei. Heber genuit Falech, cuius tempore turris edificatur et linguarum diuisio sit. In solo Heber prisca remansit lingua, quia in ea conspiratione non fuit. Turris uero altitudo duo milia CLXXIV dicitur passuum. Hanc Nebroth gigas construxit. Hac etate Scytarum regnum oritur ubi primus regnauit Thannus. Tunc et regnum Egiptiorum ubi primus regnauit Thoes. Dehinc regnum Assyriorum, ubi primus regnauit Belus, quem dicunt Saturnum quidam; deinde Ninus qui condidit' Niniuem. Hoc tempore Abraham nascitur, et post mortem Nini a Semiramide regina rehedificata est Babilonia, ubi regnauit annos quadraginta.</lem>
-   <rdg wit="#a"/>
-</app> 
+<p xml:id="g3.7-3.16" decls="longversion">
+Fuerunt Noe filii tres ex quibus ita sunt orte gentes. De Iaphet quindecim, de Chan triginta, de Sem XXVII. Sem annos duos post diluuium genuit Arfaxad a quo sunt Chaldei. Arfaxad genuit Salem a quo Samarite et Indi. Salem genuit Heber, a quo Hebrei. Heber genuit Falech, cuius tempore turris edificatur et linguarum diuisio sit. In solo Heber prisca remansit lingua, quia in ea conspiratione non fuit. Turris uero altitudo duo milia CLXXIV dicitur passuum. Hanc Nebroth gigas construxit. Hac etate Scytarum regnum oritur ubi primus regnauit Thannus. Tunc et regnum Egiptiorum ubi primus regnauit Thoes. Dehinc regnum Assyriorum, ubi primus regnauit Belus, quem dicunt Saturnum quidam; deinde Ninus qui condidit' Niniuem. Hoc tempore Abraham nascitur, et post mortem Nini a Semiramide regina rehedificata est Babilonia, ubi regnauit annos quadraginta.
 </p>
  
 <p xml:id="g3.17-4.2">
@@ -1013,6 +1153,13 @@ Tertia mundi etas a natiuitate
    <lem wit="#g">Zoroas</lem>
    <rdg wit="#a">Zaroas</rdg>
 </app> magicam artem tunc primum inuenit. 
+</p>
+ 
+<p xml:id="g10.n2-10.n5" decls="longversion">
+Hac etate regnum inchoatur grecorum ubi primus regnavit Inachus cuius filius Foroneus rex in Grecia leges et iudicia scripsit. 
+</p>
+ 
+<p xml:id="g10.12-10.12">
 <app cert="high" type="substantive">
    <lem wit="#g">Orosius</lem>
    <rdg wit="#a">Otosius</rdg>
@@ -3149,7 +3296,7 @@ Darius, cognomento Nothus, annis
 </app>. 
 </p>
  
-<p xml:id="g30.3-30.14">
+<p xml:id="g30.3-30.8">
 <app cert="high" type="orthographic">
    <lem wit="#g">Artaxerses</lem>
    <rdg wit="#a">Artarxerses</rdg>
@@ -3185,7 +3332,15 @@ Darius, cognomento Nothus, annis
 <app cert="high" type="punctuation" subtype="add-punctuation">
    <lem resp="#pm">,</lem>
    <rdg wit="#g"/>
-</app> nam mille libris auri 
+</app> 
+</p>
+ 
+<p xml:id="g30.n1-30.n3" decls="longversion">
+cunctosque crucidando sex mensibus uastant. Reliquos autem uniuersos in arce Capitolii confugientes, quos constat uix mille hominum fuisse, obsidione concludunt, eosque fame, peste, desperatione atque formidine terunt, ad postremum uendunt,
+</p>
+ 
+<p xml:id="g30.8-30.14">
+nam mille libris auri 
 <app cert="high" type="substantive">
    <lem wit="#g">discessionis</lem>
    <rdg wit="#a">discensionis</rdg>
@@ -17446,7 +17601,7 @@ Anno
 </app> VI. 
 </p>
 
-<p xml:id="g186.6-186.7">
+<p xml:id="g186.6-186.7" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -17520,7 +17675,7 @@ Anno dominice incarnationis MLXVI indictione
 Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit cum Araldo rege Anglorum et uicit eum, qui et factus est rex super gentem Anglorum.
 </p>
  
-<p xml:id="g187.5-187.8">
+<p xml:id="g187.5-187.8" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -17563,7 +17718,7 @@ Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit cum Araldo rege Ang
 Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi successit. 
 </p>
  
-<p xml:id="g187.11-187.14">
+<p xml:id="g187.11-187.14" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -17614,7 +17769,7 @@ anno dominice incarnationis MLXXI, indictione
 </app> 
 </p>
  
-<p xml:id="g188.5-188.7">
+<p xml:id="g188.5-188.7" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -17665,7 +17820,7 @@ Anno dominice incarnationis
 </app> quoque cepit ciuitatem Comsanam obsesso castello Sancte Agathe, quod incessabili oppugnatione cepit. 
 </p>
  
-<p xml:id="g189.1-189.1">
+<p xml:id="g189.1-189.1" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -17744,7 +17899,7 @@ Anno dominice incarnationis MLXXIX, indictione II, apud Constantinopolim Michael
 </app> Ipso anno dux Robbertus obsidens Uicum cepit ipsam ciuitatem, ibique Gradelonem nepotem suum capiens utroque statim priuari lumine fecit, eo quod ipse et alii plerique baronum rebelles ei extiterant. Ceteri uero metu perculsi ei se subdiderunt. 
 </p>
  
-<p xml:id="g191.3-191.5">
+<p xml:id="g191.3-191.5" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -17763,7 +17918,7 @@ Anno Domini MLXXX, indictione III, dux Robbertus Guiscardus cepit Spinazolam. Pa
 </app> honorabiliter circa se habens secum duxit eum usque Salernum. Inde mouens gressum dux ipse perrexit ad Gregorium papam eiusque liggius homo iureiurando effectus apud Ciperanum, accipiens ab eo uexillum sancti Petri mense Iunio. 
 </p>
  
-<p xml:id="g191.13-194.5">
+<p xml:id="g191.13-191.15">
 Anno dominice incarnationis 
 <app cert="high" type="substantive" subtype="num-num">
    <lem wit="#b">MLXXX</lem>
@@ -17781,22 +17936,14 @@ Anno dominice incarnationis
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
 </app> et eduxit exercitum suum necnon et predictum 
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#b">Michaelem, qui se imperatorem fuisse conquerebatur.</lem>
-   <rdg wit="#a"/>
-</app> 
-<app cert="high" type="punctuation" subtype="remove-punctuation">
-   <lem resp="#pm"/>
-   <rdg wit="#b">"</rdg>
-</app> 
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#b">Et mense Iulio ante Durrachium obsidionem posuit per terram et per mare, set stolus Uenencolum ueniens discipauit maris obsidionem aperuitque Dirrachenis mare</lem>
-   <rdg wit="#a"/>
-</app> 
-<app cert="high" type="punctuation" subtype="remove-punctuation">
-   <lem resp="#pm"/>
-   <rdg wit="#b">"</rdg>
-</app>. Rogerium 
+</p>
+ 
+<p xml:id="g191.15-192.3" decls="longversion">
+Michaelem, qui se imperatorem fuisse conquerebatur. Et mense Iulio ante Durrachium obsidionem posuit per terram et per mare, set stolus Uenencolum ueniens discipauit maris obsidionem aperuitque Dirrachenis mare.
+</p>
+ 
+<p xml:id="g192.3-194.5">
+Rogerium 
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">uero</lem>
    <rdg wit="#a"/>
@@ -17899,7 +18046,7 @@ Eodem anno Henricus Alamannorum imperator uenit Romam cum exercitu, obseditque G
 </app> Capuam obsedit, et acriter ipsam ciuitatem expugnauit mense Iulio, indictione VI. Tandem ipse dux in Apuliam reuersus est, obseditque Cannas Apulie ciuitatem eo quod ciues ipsius rebelles ei extiterant, cepitque eam igne incendens. Superiori quoque anno priusquam dux Robbertus de ultramarinis esset reuersus, Roggerius eiusdem ducis filius destruxit Asculum combussitque eam igni. 
 </p>
  
-<p xml:id="g195.6-195.8">
+<p xml:id="g195.6-195.8" decls="longversion">
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">Anno domini</lem>
    <rdg wit="#a2"/>
@@ -17998,7 +18145,7 @@ Anno dominice incarnationis MLXXXVII indictione X mense Maio corpus beati Nycola
 </app> et Urbanus est papa dictus seditque annis XII mensibus VIII. 
 </p>
  
-<p xml:id="g198.4-198.5">
+<p xml:id="g198.4-198.5" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -18025,7 +18172,7 @@ Anno dominice incarnationis MLXXXVIII indictione XI. Boamundus frater ducis Rogg
 </app> eidem Boamundo quandam partem terre sue in Apulie regionibus, cum pater eius nil sibi reliquit. 
 </p>
  
-<p xml:id="g198.12-198.13">
+<p xml:id="g198.12-198.13" decls="longversion">
 Eodem anno comprehensa est Siracusa, Sicilie quondam caput, 
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">a Rogerio comite,</lem>
@@ -18041,7 +18188,7 @@ Eodem anno comprehensa est Siracusa, Sicilie quondam caput,
 Anno dominice incarnationis MLXXXIX, indictione XII, luna in ortu suo passa est eclipsim. 
 </p>
  
-<p xml:id="g198.16-198.17">
+<p xml:id="g198.16-198.17" decls="longversion">
 <app cert="high" type="substantive">
    <lem wit="#b">Eodem anno</lem>
    <rdg wit="#a2">MLXXXIX, indictione XII,</rdg>
@@ -18072,7 +18219,7 @@ Anno dominice incarnationis MXC indictione XIII mense Septembris Urbanus papa si
 </app> ducissa, mater Roggeri ducis, defuncta est mense Aprilis. 
 </p>
  
-<p xml:id="g199.5-199.8">
+<p xml:id="g199.5-199.8" decls="longversion">
 Eodem anno Acherontia ciuitas cremata est mense 
 <app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Augusti</lem>
@@ -18080,7 +18227,7 @@ Eodem anno Acherontia ciuitas cremata est mense
 </app>, in tantum enim eodem uastata est igne, ut nulla domus, nullum inueniretur edificium quod non ab igne consumptum deperierit. Homines etiam XXV eodem incendio mortui sunt. 
 </p>
  
-<p xml:id="g199.9-199.12">
+<p xml:id="g199.9-199.11">
 <app cert="high" type="substantive">
    <lem wit="#b">Anno</lem>
    <rdg wit="#a">Anni</rdg>
@@ -18091,7 +18238,7 @@ Eodem anno Acherontia ciuitas cremata est mense
 </app> mense Februario Iordanus Capue defunctus est anno XIII principatus eius. Hic autem fuit uir egregius, consilio sagax, uirtute in bello preualidus. Cui successit Riccardus filius eius princeps. 
 </p>
  
-<p xml:id="g199.13-199.15">
+<p xml:id="g199.12-199.14">
 Eodem anno dum obsideretur Oria ciuitas a Boamundo, auxilio Roberti de Anse, Oritani dissipauerunt obsidionem eius, et ipso Boamundo fugam petente cuntum eius apparatum et signa ceperunt.
 </p>
  
@@ -18122,7 +18269,7 @@ Anno dominice incarnationis MXCIII indictione I mense Martio Urbanus papa Troie 
 </app> indictione IV, luna passa est eclipsim a prima hora noctis usque in tertiam horam eiusdem noctis. 
 </p>
  
-<p xml:id="g200.17-200.21">
+<p xml:id="g200.17-200.21" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -18260,7 +18407,7 @@ Anno dominice incarnationis MC, indictione VIII; dux Roggerius Canusiam obsedit,
 </app> in Hierusalem mortuus est et Balduinus frater eius rex est constituitus. 
 </p>
  
-<p xml:id="g202.7-202.10">
+<p xml:id="g202.7-202.10" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -18319,7 +18466,7 @@ Anno dominice incarnationis MCII indictione X Roggerius dux simul cum papa Pasch
 </app> principabatur expulso, cepit ipsam ciuitatem et ipsius pape iuri ac potestati eam dimisit. 
 </p>
  
-<p xml:id="g203.6-203.6">
+<p xml:id="g203.6-203.6" decls="longversion">
 Hoc tempore Boamundus dimissus 
 <app cert="high" type="substantive" subtype="missing-in-print">
    <lem wit="#b"> </lem>
@@ -18391,16 +18538,16 @@ Anno dominice incarnationis MCVIII indicione I Philippus Francorum rex obiit ann
 </app> obsessus anno imperii sui LXVII, et ipse filius eius regnum sibi suscepit. 
 </p>
  
-<p xml:id="g204.16-205.2">
+<p xml:id="g204.16-205.1">
 Anno 
 <app cert="high" type="substantive">
    <lem wit="#b">domini</lem>
    <rdg wit="#a">dominice incarnationis</rdg>
-</app> MCX indictione III stella cometis a parte septemtrionali circa polum uisa est tota nocte a sero usque mane per totum mensem Iunii. 
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#b">Eodem anno mense Septembris domnus Alexander comes fecit Miliolongum hedificare castellum.</lem>
-   <rdg wit="#a"/>
-</app> 
+</app> MCX indictione III stella cometis a parte septemtrionali circa polum uisa est tota nocte a sero usque mane per totum mensem Iunii.  
+</p>
+ 
+<p xml:id="g205.1-205.2" decls="longversion">
+Eodem anno mense Septembris domnus Alexander comes fecit Miliolongum hedificare castellum.
 </p>
  
 <p xml:id="g205.3-206.12">
@@ -18471,11 +18618,11 @@ Anno
 </app> Constantia successit. 
 </p>
  
-<p xml:id="g206.n4-206.n5">
+<p xml:id="g206.n4-206.n5" decls="longversion">
 Anno Domini MCXII. Hoc anno mense Augusti Agerenum iterum ignis combustione uastatur.
 </p>
  
-<p xml:id="g206.13-206.17">
+<p xml:id="g206.13-206.17" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -18582,7 +18729,7 @@ Anno
 </app>. 
 </p>
  
-<p xml:id="g208.1-208.9">
+<p xml:id="g208.1-208.9" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -18709,7 +18856,7 @@ Anno dominice incarnationis MCXIX indictione XII pridie kalendas Decembris luna 
 </app> qui cum maxima militum manu ueniebat in auxilium christianorum. Non post multos uero dies ipse rex cum suis uenit in Antiochiam et cum predictis Sarracenis qui terram ipsam occupauerant, bellum commisit eosque deuicit et Antiochiam in sua manu accepit. 
 </p>
  
-<p xml:id="g210.23-210.24">
+<p xml:id="g210.23-210.24" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -18756,7 +18903,7 @@ Anno dominice incarnationis MCXX indictione XIII mense Iunio Robbertus Capuanoru
 </app> itaque Willelmus dux eiusdem pontificis aduentum obuius festinanter extra ciuitatem aduenit cum primatibus suis. Cui uice stratoris ipse pedes iuxta sellam usque ad ecclesiam episcopatus eiusdem ciuitatis ingenti cum honore deduxit. 
 </p>
  
-<p xml:id="g211.15-211.17">
+<p xml:id="g211.15-211.17" decls="longversion">
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"/>
    <rdg wit="#b">"</rdg>
@@ -18783,7 +18930,7 @@ Anno dominice incarnationis MCXXI indictione XIV
 </app> papa destitit, donec Burdinum cepit, captumque direxit in monasterium Sancte Trinitatis de Caua. 
 </p>
  
-<p xml:id="g212.5-212.9">
+<p xml:id="g212.5-212.9" decls="longversion">
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">"Anno Domini</lem>
    <rdg wit="#a2"/>
@@ -18826,7 +18973,7 @@ Anno dominice incarnationis MCXXI indictione XIV
 </app> septingentis equitibus exeredauit comitem Iordanum. 
 </p>
  
-<p xml:id="g212.10-212.11">
+<p xml:id="g212.10-212.11" decls="longversion">
 Anno 
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">Domini</lem>
@@ -18842,7 +18989,7 @@ Anno
 </app> breui tempore dimittitur. 
 </p>
  
-<p xml:id="g212.12-212.13">
+<p xml:id="g212.12-212.13" decls="longversion">
 Hoc tempore in mense Iunio 
 <app cert="high" type="orthographic" subtype="double">
    <lem wit="#b">Roggerius</lem>
@@ -22276,7 +22423,7 @@ Interea dum imperator per totum mensem Augusti et aliquam partem Septembris esse
 </app> cardinalis et Grecus subdiaconus cum Christiano cancellario in Romaniam descenderunt pro restauratione regalium, que imperator inuaserat, recipienda. Dum autem papa a Siponto Anagniam ueniret, ecclesie peccatis exigentibus, Hugo de Bononia cardinalis Beneuenti est mortuus, Willelmus de Papia Portuensis episcopus apud Auersam obiit, Malfridus Penestrinus episcopus apud Anagniam diem clausit extremum. 
 </p>
  
-<p xml:id="g294.15-194.17">
+<p xml:id="g294.15-294.17">
 Anno dominice incarnationis 
 <app cert="high" type="orthographic">
    <lem wit="#b">M.C.</lem>

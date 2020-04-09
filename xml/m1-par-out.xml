@@ -79,11 +79,8 @@ Prima mundi etas est ab Adam usque ad diluuium, continens annos, iuxta hebraicam
 </app> mille sexcentos quinquaginta sex, iuxta Septuaginta uero interpretes duo milia ducentos quadraginta duos; generationes uero iuxta utramque editionem numero decem, que uniuersali est deleta diluuio, sicut primam cuiusque hominis obliuio demergere consueuit etatem. 
 </p>
  
-<p xml:id="g3.7-3.16">
-<app cert="high" type="substantive" subtype="missing-in-ms">
-   <lem wit="#g">Fuerunt Noe filii tres ex quibus ita sunt orte gentes. De Iaphet quindecim, de Chan triginta, de Sem XXVII. Sem annos duos post diluuium genuit Arfaxad a quo sunt Chaldei. Arfaxad genuit Salem a quo Samarite et Indi. Salem genuit Heber, a quo Hebrei. Heber genuit Falech, cuius tempore turris edificatur et linguarum diuisio sit. In solo Heber prisca remansit lingua, quia in ea conspiratione non fuit. Turris uero altitudo duo milia CLXXIV dicitur passuum. Hanc Nebroth gigas construxit. Hac etate Scytarum regnum oritur ubi primus regnauit Thannus. Tunc et regnum Egiptiorum ubi primus regnauit Thoes. Dehinc regnum Assyriorum, ubi primus regnauit Belus, quem dicunt Saturnum quidam; deinde Ninus qui condidit' Niniuem. Hoc tempore Abraham nascitur, et post mortem Nini a Semiramide regina rehedificata est Babilonia, ubi regnauit annos quadraginta.</lem>
-   <rdg wit="#a"></rdg>
-</app> 
+<p xml:id="g3.7-3.16" decls="longversion">
+Fuerunt Noe filii tres ex quibus ita sunt orte gentes. De Iaphet quindecim, de Chan triginta, de Sem XXVII. Sem annos duos post diluuium genuit Arfaxad a quo sunt Chaldei. Arfaxad genuit Salem a quo Samarite et Indi. Salem genuit Heber, a quo Hebrei. Heber genuit Falech, cuius tempore turris edificatur et linguarum diuisio sit. In solo Heber prisca remansit lingua, quia in ea conspiratione non fuit. Turris uero altitudo duo milia CLXXIV dicitur passuum. Hanc Nebroth gigas construxit. Hac etate Scytarum regnum oritur ubi primus regnauit Thannus. Tunc et regnum Egiptiorum ubi primus regnauit Thoes. Dehinc regnum Assyriorum, ubi primus regnauit Belus, quem dicunt Saturnum quidam; deinde Ninus qui condidit' Niniuem. Hoc tempore Abraham nascitur, et post mortem Nini a Semiramide regina rehedificata est Babilonia, ubi regnauit annos quadraginta.
 </p>
  
 <p xml:id="g3.17-4.2">
@@ -558,6 +555,13 @@ Tertia mundi etas a natiuitate
    <lem wit="#g">Zoroas</lem>
    <rdg wit="#a">Zaroas</rdg>
 </app> magicam artem tunc primum inuenit. 
+</p>
+ 
+<p xml:id="g10.n2-10.n5" decls="longversion">
+Hac etate regnum inchoatur grecorum ubi primus regnavit Inachus cuius filius Foroneus rex in Grecia leges et iudicia scripsit. 
+</p>
+ 
+<p xml:id="g10.12-10.12">
 <app cert="high" type="substantive">
    <lem wit="#g">Orosius</lem>
    <rdg wit="#a">Otosius</rdg>
@@ -2694,7 +2698,7 @@ Darius, cognomento Nothus, annis
 </app>. 
 </p>
  
-<p xml:id="g30.3-30.14">
+<p xml:id="g30.3-30.8">
 <app cert="high" type="orthographic">
    <lem wit="#g">Artaxerses</lem>
    <rdg wit="#a">Artarxerses</rdg>
@@ -2730,7 +2734,15 @@ Darius, cognomento Nothus, annis
 <app cert="high" type="punctuation" subtype="add-punctuation">
    <lem resp="#pm">,</lem>
    <rdg wit="#g"></rdg>
-</app> nam mille libris auri 
+</app> 
+</p>
+ 
+<p xml:id="g30.n1-30.n3" decls="longversion">
+cunctosque crucidando sex mensibus uastant. Reliquos autem uniuersos in arce Capitolii confugientes, quos constat uix mille hominum fuisse, obsidione concludunt, eosque fame, peste, desperatione atque formidine terunt, ad postremum uendunt,
+</p>
+ 
+<p xml:id="g30.8-30.14">
+nam mille libris auri 
 <app cert="high" type="substantive">
    <lem wit="#g">discessionis</lem>
    <rdg wit="#a">discensionis</rdg>

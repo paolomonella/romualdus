@@ -20,7 +20,7 @@ import my_database_import
 quiet = True  # If true, suppress standard output messages to console
 chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
 # chosen_ones = ('m1')
-pre = False  # Warning: re-activate it later
+pre = True  # Warning: re-activate it later
 post = True  # Perform post-collation operations
 
 #################
@@ -145,7 +145,8 @@ if post:
                                                  my_msa2_siglum,
                                                  my_mso_siglum,
                                                  quiet=quiet)
-        myTree.set_a2_for_additions()
+        myTree.set_decls_for_long_version_additions()
+        myTree.set_a2_for_some_paragraphs()
         myTree.set_all_lems_based_on_subtype()
         myTree.set_all_lems_based_on_db()
         myTree.edit_tei_header()

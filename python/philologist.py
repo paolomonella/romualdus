@@ -80,25 +80,39 @@ class treeWithAppElements:
             type_name = row['type']
             self.type_expansion[type_abbr] = type_name
 
-    def set_a2_for_additions(self):
-        ''' In sections that are additions by hand2, replace wit="a" with
-            wit="a2" (consider that @wit may have more than on siglum
-            in <app> '''
+    def set_decls_for_long_version_additions(self):
+        ''' In sections with those additions that differentiate
+            short (A and O) vs long (B and C) version, set
+            decls="#addition" '''
 
         # A list with the xml:id's of those <p>s (from the DB)
-        additions_xmlids = [x['xmlid'] for x in self.paragraphs
-                            if x['a2'] == 1]
+        addition_xmlids = [x['xmlid'] for x in self.paragraphs
+                           if x['longversion'] == 1]
+        pars = self.juxtaBody.findall('.//t:%s' % ('p'), ns)
+        for p in pars:
+            xmlid = p.get('{%s}id' % ns['xml'])
+            if xmlid in addition_xmlids:
+                p.set('decls', 'longversion')
+
+    def set_a2_for_some_paragraphs(self):
+        ''' In sections for which I have hand2 instead of the 1st hand of A,
+            replace wit="a" with wit="a2" (consider that @wit may have more
+            than on siglum in <app> '''
+
+        # A list with the xml:id's of those <p>s (from the DB)
+        a2_xmlids = [x['xmlid'] for x in self.paragraphs
+                     if x['a2'] == 1]
 
         # A list with all <app> XML elements (not appdict
         # dictionaries) that are in the right <p>s (from appdict)
-        apps_in_additions = [a['app'] for a in self.appdict()
-                             if a['xmlid'] in additions_xmlids]
+        apps_with_a2 = [a['app'] for a in self.appdict()
+                        if a['xmlid'] in a2_xmlids]
         if debug:
-            print([a['xmlid'] for a in apps_in_additions])
-            print(len(apps_in_additions))
+            print([a['xmlid'] for a in apps_with_a2])
+            print(len(apps_with_a2))
 
         # Replace "#a" with #a2" in @wit (including the "#b #a" case)
-        for app in apps_in_additions:  # <app> XML elements
+        for app in apps_with_a2:  # <app> XML elements
             for child in app:
                 old_wit_value = child.get('wit')
                 if '#a' in old_wit_value:

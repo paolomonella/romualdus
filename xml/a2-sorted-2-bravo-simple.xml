@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?> 
-<!DOCTYPE TEI SYSTEM "romualdus.dtd" [ 
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" [ 
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'> 
 <!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'> 
 <!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'> 
@@ -9,7 +9,7 @@
   <teiHeader> 
     <fileDesc> 
       <titleStmt> 
-        <title>Romualdi Salernitani Chronicon, codex A</title> 
+        <title>Romualdi Salernitani Chronicon, Codex A</title> 
         <editor xml:id="pm">Paolo Monella</editor> 
       </titleStmt> 
       <publicationStmt> 
@@ -26,7 +26,7 @@
                  <biblStruct xml:id="g"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title> 
+                    <title>Romualdi Salernitani Chronicon (A.M. 130-A.C. 1178)</title> 
                     <editor>Garufi, Carlo Alberto</editor> 
                     <imprint> 
                         <publisher>S. Lapi</publisher> 
@@ -35,7 +35,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Rerum italicarum scriptores: Nuova edizione</title> 
+                        <title level="s">Rerum Italicarum Scriptores: Nuova Edizione</title> 
                         <biblScope unit="volume">7</biblScope> 
                                         <biblScope unit="part">1</biblScope> 
                 </series> 
@@ -43,7 +43,7 @@
             <biblStruct xml:id="b"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdo II Guarna, Chronicon</title> 
+                    <title>Romualdo Ii Guarna, Chronicon</title> 
                     <idno type="ISBN">9788883090561</idno> 
                     <editor>Bonetti, Cinzia</editor> 
                     <imprint> 
@@ -53,7 +53,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Schola Salernitana. Studi e testi</title> 
+                        <title level="s">Schola Salernitana. Studi E Testi</title> 
                         <biblScope unit="volume">6</biblScope> 
                     </series> 
             </biblStruct> 
@@ -272,7 +272,7 @@ in Remensium ciuitate erat archiepiscopus, uir bonus et modestus,
 iam senex, frater Lotharii regis ex concubina nomine Arnulfus. 
 Ugo autem dux inuidebat ei uolens exterminare progeniem 
 Lotharii regis. Congregansque in eadem ciuitate sinodum, 
-fecit degradare domnum Arnulfum. in loco uero eius consecrare 
+fecit degradare domnum Arnulfum; in loco uero eius consecrare 
 fecit domnum Gibbertum monachum philosophum. Seguinus 
 autem archiepiscopus Senonum non consensit in degradatione 
 Arnulfi neque in ordinatione Gibberti, sed plus timens Deum 
@@ -362,7 +362,7 @@ obeunte, Iohannes qui uocatur Sigo papalem sedit cathedram
 mensibus V. Quo defuncto Iohannes papa qui uocatur Fanassus 
 sedit anno I. Hic Ottonem regem Saxonum coronauit imperatorem. 
 Post Iohannem uero Siluester Tiburtinus, qui uocatur 
-Osporco, Romanum suscepit pontificatum qui sedit annis IIII. 
+Osporco, Romanum suscepit pontificatum qui sedit annis IV. 
 Suo quidem tempore fuit pessima fames. Hic autem mortuo 
 Alberico qui patriciatus sibi nomen uendicauerat a Crescentio 
 Numentano, qui patricius dicebatur, papa ordinatus est quique 
@@ -405,7 +405,7 @@ componeret. Qui ueniens cepit omnia tranquille agere atque
 strenue ordinare. 
 [/p] 
 [p xml:id="g174.8-175.15"] 
-Anni domini MXIII. indictione I. Hic in Apulie finibus rehedificauit 
+Anni Domini MXIII, indictione I. Hic in Apulie finibus rehedificauit 
 ciuitatem diu dirutam nuncupauitque eam Troiam, que 
 antiquitus Ecana uocabatur  et iussu imperatorum fines 
 per statutum priuilegium eidem stabiliuit ciuitati. In hanc ciuitatem 
@@ -424,7 +424,7 @@ post predicte ciuitatis cet
 incarnationis Domini millesimo uicesimo secundo indictione 
 V Henricus Alamannorum imperator ingenti cum exercitu, 
 simul et cum Benedicto papa uenit super ipsam ciuitatem obseditque 
-eam per IIII menses machinis illam fortiter expugnans. 
+eam per IV menses machinis illam fortiter expugnans. 
 Imperator itaque uidens quod eam sine mora capere non 
 posset – dixerat enim iratus quod si eam ui cepisset statim destrueret 
 – timuit sibi suisque estiuum Apulie calorem, et sic composita 
@@ -666,7 +666,7 @@ per uexillum de honore ducatus sui cum tota terra.
 [p xml:id="g185.8-186.5"] 
 Anno dominice incarnationis MLXII indictione XV Nicolaus 
 papa defungitur anno ordinationis sue II, mense VIII. 
-Et Alexander qui uocatus est Anselmus papa ordinatur, quo tempore 
+Et Alexander qui uocatus est Anselmus papa ordinatur. Quo tempore 
 princeps Riccardus Capuam cepit sibique ordinauit. His autem 
 diebus Robbertus dux ad Alexandrum papam proficiscens 
 liggius homo eius deuenit et sicut Nicolao pape ita et huic 

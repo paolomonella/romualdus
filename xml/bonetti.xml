@@ -1048,16 +1048,25 @@ accipiens ab eo uexillum sancti <rs>petri</rs> mense <hi>iunio</hi>.
 </p> 
 
 
-<p xml:id="g191.13-194.5" decls="#ocr"> 
+<p xml:id="g191.13-191.15" decls="#ocr"> 
 <milestone type="no-par-break-in-bonetti-between-this-garufi-par-and-previous-one" unit="noparagraph" ed="#b"/> 
 &bl;<hi>anno</hi> dominice incarnationis <num value="1080">mlxxx</num> indictione <num value="4">i&uu;</num> dux <rs>rob&bd;bertus</rs> 
 magnum apud <rs>ydrontum</rs> "assumpsit exercitum, super 
 &bl;<rs>constantinopolim</rs> ire cupiens. <hi>qui</hi> mare transiens cum <rs>boamun&bd;do</rs> 
 filio suo aplicuit <rs>auelone</rs>" et eduxit exercitum suum necnon 
-&bl;et predictum <rs>michaelem</rs>, qui se imperatorem fuisse conquere&bd;batur. 
+&bl;et predictum 
+</p>
+
+
+<p xml:id="g191.15-192.3" decls="#ocr"> 
+<rs>michaelem</rs>, qui se imperatorem fuisse conquere&bd;batur. 
 "<hi>et</hi> mense <hi>iulio</hi> ante <rs>durrachium</rs> obsidionem posuit per 
 &bl;terram et per mare, set stolus <rs>uenencolum</rs> ueniens discipauit 
-&bl;maris obsidionem aperuitque <rs>dirrachenis</rs> mare". <rs>rogerium</rs> uero 
+&bl;maris obsidionem aperuitque <rs>dirrachenis</rs> mare". 
+</p>
+
+<p xml:id="g192.3-194.5" decls="#ocr"> 
+<rs>rogerium</rs> uero 
 &bl;filium suum omnibus sibi conmissis in <rs>apulia</rs> dimisit. <hi>inter</hi> hec 
 &bl;autem <rs>niceforus</rs> <rs>butanioth</rs> <rs>constantinopolitanus</rs> imperator 
 &bl;aduentum <rs>robberti</rs> ducis audiens, direxit <rs>alexium</rs> megadome&bd;sticum 
@@ -1313,7 +1322,7 @@ ab eo terram cum ducatus honore. <hi>eodem</hi> anno <rs>sikelgaita</rs>
 </p> 
 
 
-<p xml:id="g199.9-199.12" decls="#ocr"> 
+<p xml:id="g199.9-199.11" decls="#ocr"> 
 &bl;<hi>anno</hi> <rs>domini</rs> <num value="1091">m<choice><orig>lxxxx</orig><reg type="numeral">xc</reg></choice>&jj;</num> indictione <num value="13">xii&jj;</num> mense <hi>februario</hi> 
 &bl;<rs>iordanus</rs> <rs>capue</rs> defunctus est anno <num value="13">xii&jj;</num> principatus eius. <hi>hic</hi> 
 &bl;autem fuit uir egregius, consilio sagax, uirtute in bello preuali&bd;dus. 
@@ -1321,7 +1330,7 @@ ab eo terram cum ducatus honore. <hi>eodem</hi> anno <rs>sikelgaita</rs>
 </p> 
 
 
-<p xml:id="g199.13-199.15" decls="#ocr"> 
+<p xml:id="g199.12-199.14" decls="#ocr"> 
 &bl;"<hi>eodem</hi> anno 
 &bl;dum obsideretur <rs>oria</rs> ciuitas a <rs>boamundo</rs>, auxilio <rs>roberti</rs> de <rs>an&bd;se</rs>, 
 <rs>oritani</rs> dissipauerunt obsidionem eius, et ipso <rs>boamundo</rs> fu&bd;gam 
@@ -1524,10 +1533,15 @@ potestatem. <hi>quem</hi> postquam expulit obsedit. <hi>non</hi> post
 </p> 
 
 
-<p xml:id="g204.16-205.2" decls="#ocr"> 
+<p xml:id="g204.16-205.1" decls="#ocr"> 
 &bl;<hi>anno</hi> domini <num value="1110">mcx</num> indictione <num value="3">ii&jj;</num> stella cometis a parte sep&bd;temtrionali 
 circa polum uisa est tota nocte a sero usque mane 
-&bl;per totum mensem <hi>iunii</hi>. <hi>eodem</hi> anno mense <hi>septembris</hi> dom&bd;nus 
+&bl;per totum mensem <hi>iunii</hi>. 
+</p> 
+
+
+<p xml:id="g205.1-205.2" decls="#ocr"> 
+<hi>eodem</hi> anno mense <hi>septembris</hi> dom&bd;nus 
 <rs>alexander</rs> comes fecit <rs>miliolongum</rs> hedificare castellum. 
 </p> 
 
@@ -5264,7 +5278,7 @@ episcopus apud <rs>auersam</rs> obiit, <rs>malfridus</rs> <rs>penestrinus</rs>
 </p> 
 
 
-<p xml:id="g294.15-194.17" decls="#ocr"> 
+<p xml:id="g294.15-294.17" decls="#ocr"> 
 &bl;<hi>anno</hi> dominice incarnationis <num value="1100">m.c.</num> septuagesimo octa&uu;o, 
 &bl;quinta die intrante mensis <hi>martii</hi>, luna passa est eclisin in signo 
 &bl;uirginis et incepit a fine prime hore et durauit usque ad princi&bd;pium 

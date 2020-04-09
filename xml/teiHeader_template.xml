@@ -113,6 +113,9 @@
                 <ab type="level">ALIM2_3</ab>
                 <ab type="specific">[§ riassunto: born-digital edition etc.] See the 'front' element for details on this edition</ab>
             </editorialDecl>
+      	    <editorialDecl xml:id="longversion">
+                <ab type="specific">One of the additions distinguishing the 'short' from the 'long' version of the work</ab>
+            </editorialDecl>
             <variantEncoding location="internal" method="parallel-segmentation" />
         </encodingDesc>
         <profileDesc>
@@ -301,7 +304,6 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	'a' for MS A (first hand), 'a2' for the second hand of MS A
 	(probably XVII century) and 'o' for the fragment of MS O.</p>
 </div>
-§§§§§§§§§§§§
 
 <head>Long and short versions of the work</head>
 
@@ -309,11 +311,13 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	We thus distinguish between a 'long' (MSS B and C)
 	and 'short' version of the work (A and O). Those additions
 	correspond to paragraphs:
+	§§§ insert list
 
-	differentiated by the presence of a number of additions in the 'long' one
-	(see Garufi Matthew 1981, 241-242,  § ...</p>
-	...
+	</p>
 
+<p>The 'p' elements including these additions have been marked with attribute
+	@decls="#longversion", in this XML file, linking to the relevant
+	'editorialDecl'.</p>
 
 
 

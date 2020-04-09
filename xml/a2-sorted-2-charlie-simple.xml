@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?> 
-<!DOCTYPE TEI SYSTEM "romualdus.dtd" [ 
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" [ 
 <!ENTITY gd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#g"/>'> 
 <!ENTITY gl '<lb xmlns="http://www.tei-c.org/ns/1.0" ed="#g"/>'> 
 <!ENTITY bd '<lb xmlns="http://www.tei-c.org/ns/1.0" break="no" rend="-" ed="#b"/>'> 
@@ -9,7 +9,7 @@
   <teiHeader> 
     <fileDesc> 
       <titleStmt> 
-        <title>Romualdi Salernitani Chronicon, codex A</title> 
+        <title>Romualdi Salernitani Chronicon, Codex A</title> 
         <editor xml:id="pm">Paolo Monella</editor> 
       </titleStmt> 
       <publicationStmt> 
@@ -26,7 +26,7 @@
                  <biblStruct xml:id="g"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title> 
+                    <title>Romualdi Salernitani Chronicon (A.M. 130-A.C. 1178)</title> 
                     <editor>Garufi, Carlo Alberto</editor> 
                     <imprint> 
                         <publisher>S. Lapi</publisher> 
@@ -35,7 +35,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Rerum italicarum scriptores: Nuova edizione</title> 
+                        <title level="s">Rerum Italicarum Scriptores: Nuova Edizione</title> 
                         <biblScope unit="volume">7</biblScope> 
                                         <biblScope unit="part">1</biblScope> 
                 </series> 
@@ -43,7 +43,7 @@
             <biblStruct xml:id="b"> 
                 <monogr> 
                     <author>Guarna, Romualdus</author> 
-                    <title>Romualdo II Guarna, Chronicon</title> 
+                    <title>Romualdo Ii Guarna, Chronicon</title> 
                     <idno type="ISBN">9788883090561</idno> 
                     <editor>Bonetti, Cinzia</editor> 
                     <imprint> 
@@ -53,7 +53,7 @@
                     </imprint> 
                     </monogr> 
                     <series> 
-                        <title level="s">Schola Salernitana. Studi e testi</title> 
+                        <title level="s">Schola Salernitana. Studi E Testi</title> 
                         <biblScope unit="volume">6</biblScope> 
                     </series> 
             </biblStruct> 
@@ -245,7 +245,7 @@ Normannis mense Aprelis.
 [/p] 
 [p xml:id="g186.12-187.2"] 
 Anno dominice incarnationis MLXVI indictione IV mense 
-aprilis stella cometis apparuit a parte orientis, cuius fumus per 
+aprilis stella cometis apparuit a parte Orientis, cuius fumus per 
 aliquot dies tendebat ad meridiem. Ipso quoque mense hec 
 eadem stella apparuit a parte Occidentis, cuius fumus ad meridiem 
 per aliquot dies tendebat. Quo anno apud Constantinopolim 
@@ -329,7 +329,7 @@ donec post VII menses obsidionis sue cepit illam mense Decembris.
 Anno dominice incarnationis MLXXVI, indictione XV; cepitque 
 Gisulfum principem qui fame coactus se eidem duci tradidit, 
 atque Turrim maiorem in qua se tutabatur. In eadem uero ciuitate 
-ipse dux construxit eccelsiam in honore beati Mathei apostoli 
+ipse dux construxit ecclesiam in honore beati Mathei apostoli 
 et euangeliste. In Panormo quoque fecit ecclesiam in honorem 
 Dei genitricis semperque uirginis Marie, anno primo postquam 
 cepit Salernum. Robbertus dux Beneuentum obsedit, acriter 
@@ -373,12 +373,16 @@ Salernum. Inde mouens gressum dux ipse perrexit ad Gregorium
 papam eiusque liggius homo iureiurando effectus apud Ciperanum, 
 accipiens ab eo uexillum sancti Petri mense Iunio. 
 [/p] 
-[p xml:id="g191.13-194.5"] 
+[p xml:id="g191.13-191.15"] 
 Anno dominice incarnationis MLXXXI indictione IV dux Robbertus 
 magnum apud Ydrontum assumpsit exercitum, super 
 Constantinopolim ire cupiens. Qui mare transiens cum Boamundo 
 filio suo applicuit Auelone et eduxit exercitum suum necnon 
-et predictum Rogerium 
+et predictum 
+[/p] 
+[p xml:id="g191.15-192.3"] [/p] 
+[p xml:id="g192.3-194.5"] 
+Rogerium 
 filium suum omnibus sibi conmissis in Apulia dimisit. Inter hec 
 autem Niceforus Butanioth Constantinopolitanus imperator 
 aduentum Robberti ducis audiens, direxit Alexium megadomesticum 
@@ -598,13 +602,13 @@ enim eodem uastata est igne, ut nulla domus, nullum inueniretur
 edificium quod non ab igne consumptum deperierit. Homines 
 etiam XXV eodem incendio mortui sunt. 
 [/p] 
-[p xml:id="g199.9-199.12"] 
+[p xml:id="g199.9-199.11"] 
 Anni Domini MXCI indictione XIV mense Februario 
 Iordanus Capue defunctus est anno XIII principatus eius. Hic 
 autem fuit uir egregius, consilio sagax, uirtute in bello preualidus. 
 Cui successit Riccardus filius eius princeps. 
 [/p] 
-[p xml:id="g199.13-199.15"] 
+[p xml:id="g199.12-199.14"] 
 [/p] 
 [p xml:id="g200.1-200.5"] 
 Anno dominice incarnationis MXCII indictione XV Roggerius 
@@ -651,7 +655,7 @@ Ugo Magnus et Tancredus Marcisi filius, hii omnes unanimiter
 cum multitudine christianorum ultra mare perrexerunt ad aperiendum 
 iter sancti sepulchri. Et graui bello apud Niceam ciuitatem 
 preliati sunt cum Arabis et Turkis ac Persis, qui ipsam christianorum 
-terram occupauerant, et uicerunt eos. Capta quippe Nicea, 
+terram occupauerant, et uicerunt eos, Capta quippe Nicea, 
 Antiochiam obsederunt, ibique cum maximo paganorum ab 
 orientali parte undique populo collecto preliati sunt, quorum 
 erat innumera multitudo, eisque diuino auxilio deuictis ceperunt 
@@ -698,7 +702,7 @@ autem fuisse paganos CXXIII millia.
 [p xml:id="g202.11-203.1"] 
 Anno dominice incarnationis MCI indictione IX mense Iunii, 
 Roggerius Sicilie comes defunctus est anno uite sue LI 
-comitatus autem eius anno XLI, anno ab incarnatione Domini MC primo, indictione IX. Hic autem fuit 
+comitatus autem eius anno XLI anno ab incarnatione Domini MC primo, indictione IX. Hic autem fuit 
 miles egregius, moribus insignis atque famosus, iustitie tenax, 
 suis suorumque opibus studens, suos enim ditabat. Fuitque pauperum 
 nutritor, pius, in elemosinis largus, ecclesiarum Dei atque 
@@ -762,14 +766,15 @@ multum uero temporis idem Henricus imperator mortuus est
 obsessus anno imperii sui LXVII, et ipse filius eius regnum sibi 
 suscepit. 
 [/p] 
-[p xml:id="g204.16-205.2"] 
+[p xml:id="g204.16-205.1"] 
 Anno dominice incarnationis MCX indictione III stella cometis a parte septemtrionali 
 circa polum uisa est tota nocte a sero usque mane 
 per totum mensem Iunii. 
 [/p] 
+[p xml:id="g205.1-205.2"] [/p] 
 [p xml:id="g205.3-206.12"] 
 Anno dominice incarnationis MCXI indictione IV Henricus filius Henrici 
-imperatoris Alamannorum, ingenti cum exercitu Alamannorum 
+imperatoris, Alamannorum, ingenti cum exercitu Alamannorum 
 et Suauorum Italiam uenit, plurisque rebus sibi compositis 
 Nouariam ciuitatem sibi resistentem cepit eamque depopulatus 
 est. Similiter et Ariciam. Cumque uelud pacificus Romam 
@@ -853,7 +858,7 @@ ceciderunt. Eodem anno mense Aprilis Ala ducissa mater Willelmi
 ducis defuncta est. 
 [/p] 
 [p xml:id="g207.16-207.17"] 
-Anno dominice incarnationis MCXVI, indictione VIX; Wilielmus dux 
+Anno dominice incarnationis MCXVI, indictione IX; Wilielmus dux 
 accepit uxorem Gaitelgrimam filiam comitis Robberti 
 de Airola. 
 [/p] 
@@ -922,7 +927,7 @@ mense Martii indictione XI in ciuitate Gaieta ipso Gelasio cum
 cardinalibus residente in episcopali ecclesia eiusdem ciuitatis, 
 Willelmus dux liggius eius homo iure deuenit, et statim ipse 
 papa per uexillum tradidit eidem duci totam terram suam cum 
-honore sui ducatus dicens: QuemadmodumGregorius papa 
+honore sui ducatus dicens: Quemadmodum Gregorius papa 
 tradidit illam Robberto Guiscardo auo tuo et sicut Urbanus 
 papa eam Roggerio patri tuo tradidit et sicut Paschalis papa 
 eidem Roggerio patri tuo prius illam et postea tibi tradidit, sic 
@@ -964,7 +969,7 @@ et cum ea equites L traditione quorumdam ciuium.
 Anno dominice incarnationis MCXX indictione XIII mense 
 Iunio Robbertus Capuanorum princeps defunctus est cui Iordanus 
 frater eius successit in honore principatus ipsius. Mense 
-octobris indictione XIV in Beneuenti palatio Willelmus dux 
+Octobris indictione XIV in Beneuenti palatio Willelmus dux 
 deuenit liggius homo pape Calixti per directum contra omnes 
 homines. Et ipse papa statim eidem duci donauit et concessit ac 
 per uexillum tradidit omnem terram ipsius ducis cum toto honore 
@@ -1493,7 +1498,7 @@ maximum stolium imperatoris apud Capud Malee, et ibi uiriliter
 pugnauit, Grecos deuicit, et Angelum Despoti, magistrum 
 stolii et consanguineum imperatoris, cum multis aliis captiuos in 
 Siciliam duxit. 
-Interea RomeInnocentius papa mortuus est et sepultus apud 
+Interea Rome Innocentius papa mortuus est et sepultus apud 
 Lateranum anno pontificatus sui XIV, anno uero dominice incarnationis 
 MCXLIII indictione IX. Huic successit Guido, natione 
 Tuscus, prius presbiter cardinalis, qui et Celestinus secundus 
@@ -1583,7 +1588,7 @@ est anno dominice incarnationis MCXL nono indictione XIII, uir quidem
 speciosus et miles strenuus, pius, benignus, misericors et a 
 suo populo multum dilectus. Rex autem Roggerius tot flagellis 
 afflictus constanti animo pii patris flagella sustinuit, et sic se medium 
-inter prospera et aduersa exhibuit: nec eum prospera 
+inter prospera et aduersa exhibuit, nec eum prospera 
 plus iusto erigerent nec aduersa penitus inclinarent. Nam licet 
 multiplici dolorum stimulo perurgeretur in animo, foris tamen 
 consolatoriam speciem et doloris temperantiam pretendebat in 
@@ -1609,7 +1614,7 @@ rex mortuus est, et ei Fredericus nepos eius in regno successit.
 Non multo uero post Eugenius papa Rome mortuus est, 
 et apud Sanctum Petrum est sepultus, anno pontificatus sui… 
 anno dominice incarnationis M. 
-. Huic successit Corradus natione Romanus, 
+Huic successit Corradus natione Romanus, 
 senex et plenus dierum, prius presbiter cardinalis deinde episcopus 
 Sauinensis et uicarius Romane ecclesie, qui et Anastasius est 
 appellatus, anno dominice incarnationis M. 
@@ -1955,7 +1960,7 @@ ordinatus inuitus, predictum cancellarium humiliter repugnantem
 elegerunt, et papam Alexandrum tertium nominarunt. Episcopus 
 uero Tusculanus cum Iohanne Pisano, cardinali Sancti 
 martini, et Guidone Cremense, auxilio quorundam laicorum et 
-falsagraui et comitis Blandacensis nuntiorum imperatoris, qui 
+Falsagraui et comitis Blandacensis nuntiorum imperatoris, qui 
 tunc Rome erant, Octauianum cardinalem Sancte Cecilie elegerunt 
 et eum papam Uictorem uocauerunt. Alexander autem cum 
 reliquis cardinalibus et episcopis in turri beati Petri se recepit. 
@@ -2123,7 +2128,7 @@ fuisset aliquando tempore demoratus, suggestione Uillani Pisani
 archiepiscopi, qui ad eum cum una galea uenerat, acceptis etiam 
 galeis regiis, cum cardinalibus Ianuam uenit, et a Ianuensibus 
 cum summa est deuotione susceptus. Dehinc cum galeis eorum 
-usque Prouinciam perrexit. Octauianus autem, qui apud Segniam, 
+usque Prouinciam perrexit. Octauianus autem, qui apud Segniam 
 moratus fuerat cognito recessu Alexandri, in Lombardiam 
 ad imperatorem uenit, a quo satis honorifice est receptus. Dehinc 
 imperator, episcoporum conuentu apud Papiam sollempniter 
@@ -2533,7 +2538,7 @@ altare maioris ecclesie stantem pariter et orantem, ensibus
 percutientes in capite, occiderunt. Moxque nemine persequente, 
 sed sola illos commissi homicidii conscentia remordente, 
 sunt in fugam conuersi. Cum autem monasterium et ciuitatem 
-tanti sceleris fama replesset, cateruatim monachi, clerici, layci 
+tanti sceleris fama replesset, cateruatim monachi, clerici layci 
 ad maiorem ecclesiam concurrentes, quod dictu nefas est, pastorem 
 suum iuxta altare occisum crudeliter reppererunt. Tandem 
 copiosas lacrimas profundentes, dantes ex alto suspiria corde et gemitus, 
@@ -3833,7 +3838,7 @@ accepit. Habito itaque consilio, ad papam rediit et humili uoce
 respondit: Licet, reuerende pater, mihi iniuriosum sit pariter et 
 molestum, ut ecclesiam meam debeam sine culpa dimittere, et 
 locum mei regiminis, nulla offensa interueniente, mutare, tamen 
-quia ad meum spectat officium non que mea sed que IesuChristi 
+quia ad meum spectat officium non que mea sed que Iesu Christi 
 sunt querere, nolo ut occasione mei pax inter uos et imperatorem 
 facta remaneat et discordia sepulta resurgat. Pro pace ecclesie 
 conseruanda, pro qua Christus uitam suam perdidit, libenter 
@@ -4117,7 +4122,7 @@ cardinalis Beneuenti est mortuus, Willelmus de Papia Portuensis
 episcopus apud Auersam obiit, Malfridus Penestrinus 
 episcopus apud Anagniam diem clausit extremum. 
 [/p] 
-[p xml:id="g294.15-194.17"] 
+[p xml:id="g294.15-294.17"] 
 Anno dominice incarnationis MC. septuagesimo octauo, 
 quinta die intrante mensis Martii, luna passa est eclisin in signo 
 uirginis et incepit a fine prime hore et durauit usque ad principium 
