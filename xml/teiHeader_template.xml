@@ -220,12 +220,8 @@
 	In his view, the note "Ab hoc loco..." simply suggests that
 	"sino al 1125 l'arcivescono avrebbe condotto il suo lavoro sulle fonti;
 	dopo quella data – a partire cioè da quando Romualdo aveva all'incirca
-	quindici anni – il racconto sarebbe fondato sulla memoria dell'autore".
-	(Zabbia 2004, 389; see the same essay, p. 384 for further
-	bibliographical references).</p>
-
-<p>Further bibliography on the issue is in Zabbia 2004, 384 and
-	in Zabbia 2010, 21-24.</p>
+	quindici anni – il racconto sarebbe fondato sulla memoria dell'autore"
+	(§ metti qui la pag. di zabbia in cui la dice: mi pare, 389).</p>
 <p>Zabbia's arguments on balance out those of Matthew. This leaves the authorship
 	question open, at least for the part of the work before year 1125.
 	While internal evidence is not conclusive, the two notes mentioned 
@@ -250,47 +246,76 @@
 </div>
 
 <div>
-<head>Long and short versions of the work</head>
-<p>In the oldest witnesses we find two different versions of the Chronicon,
-	differentiated by the presence of a number of additions in the 'long' one
-	(see Garufi Matthew 1981, 241-242,  § ...</p>
-</div>
-
-<div>
-<head>Witnesses</head>
-<p>The present edition aims at improving
-the text of the Chronicon by Romualdus Salernitanus
-(Romualdus II Guarna) through a new collation of the text
-of the print editions of Garufi and Bonetti
-against the main witnesses of the 'short version' of the work, i.e.:
+<head>Manuscripts</head>
+<p>The three oldest witnesses of the work are:
 <list>
-	<item>MS A, Vaticanus Latinus 3973, available in
+	<item>A: Vaticanus Latinus 3973, available in
 		https://digi.vatlib.it/mss/detail/Vat.lat.3973;</item>
-	<item>a fragment of MS Ottobonianus Latinus 2940,
-		folios 16r-18v, available in
-		https://digi.vatlib.it/mss/detail/Ott.lat.2940.
-		Schwartz labelled it 'Aa',
-		but I am using siglum 'O' for this fragment.</item>
+	<item>B: Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22,
+		available in http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22;</item>
+	<item>C: Paris, Bibliothèque Nationale, Latinus 4933; see Zabbia 2004, 385 and 
+		https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p).</item>
 </list>
 </p>
-Full details on manuscripts and print editions of the work are in §
+
+<p>Another important witness is:
+<list>
+	<item>O: a fragment of MS Ottobonianus Latinus 2940,
+		folios 16r-18v, available in
+		https://digi.vatlib.it/mss/detail/Ott.lat.2940.
+	</item>
+</list>
+</p>
+
+<p>The importance of O lies in the fact that Schwartz [§ add year] argued that
+	it might be copied from a lost MS, older than A.</p>
+
+<p>The siglum used by Schwartz and other scholars for it
+	is 'Aa'. I am modifying it to 'O' for consistency
+	with the other sigla (one letter only, not including
+	character 'A' already used for Vat. Lat. 3973), thus
+	facilitating the processing of XML files.</p>
 </div>
 
 <div>
-<head>Short and long, MSS and edition details</head>
-<p>See Zabbia §
-for the distinction between 'short' and 'long' version,
-and element 'sourceDesc' of this file for bibliographical
-and manuscript details.</p>
+<head>Print editions</head>
+<p>The two most recent print editions of the Chronicon are Garufi 1914 and
+	Bonetti 2001, described in the 'sourceDesc' of this TEI XML file.
+</p>
+</div>
+
+<div>
+<head>Paragraph identifiers</head>
+<p>Paragraphs ('p' elements in the TEI XML source) have been labelled
+with @xml:id attributes based on Garufi. For instance, paragraph
+'g163.1-163.5' goes from page 163, line 1 to page 163, line 5 of
+the Garufi edition. In some cases, Garufi's paragraphs have been
+further broken into smaller 'p' elements to facilitate collation.</p>
 </div>
 
 <div>
 <head>Sigla</head>
-<p>As noted in 'sourceDesc', in the @wit attributes of 'lem' and 'rdg'
-elements I used sigla 'g' for Garufi', 'b' for Bonetti,
-'a' for MS A (first hand), 'a2' for the second hand of MS A
-(probably XVII century) and 'o' for the fragment of MS O.</p>
+<p>As noted in the 'sourceDesc' element,
+	in the @wit attributes of 'lem' and 'rdg'
+	elements I used sigla 'g' for Garufi', 'b' for Bonetti,
+	'a' for MS A (first hand), 'a2' for the second hand of MS A
+	(probably XVII century) and 'o' for the fragment of MS O.</p>
 </div>
+§§§§§§§§§§§§
+
+<head>Long and short versions of the work</head>
+
+<p>MSS B and C present a number of textual passages absent in A and O.
+	We thus distinguish between a 'long' (MSS B and C)
+	and 'short' version of the work (A and O). Those additions
+	correspond to paragraphs:
+
+	differentiated by the presence of a number of additions in the 'long' one
+	(see Garufi Matthew 1981, 241-242,  § ...</p>
+	...
+
+
+
 
 <div>
 <head>Second hand in A</head>
@@ -308,6 +333,35 @@ g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.
 10.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, g213.1-213.8, 
 14.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, g216.n10-217.n1, g217.n4-217.n10, 
 18.n16-218.n23, g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10.</p>
+</div>
+
+
+
+
+<div>
+<head>Biblio</head>
+<p>
+#Biblio# 
+A complete discussion on the manuscript tradition can be found in
+Garufi 1914, XXXI-XXXVI; Matthew 1981, 241-[metti qui fine discuss. sui MSS di matthew]
+[metti tutta insieme bibliografia su MSS §§§]
+Zabbia ( Zabbia 2004, 385-388; Zabbia 2006; 
+[ §§§ cita qui intro garufi, zabbia 2004 e forse anche napoli nobilissima, e vd. altra biblio].
+Vd. agenda con appunti completi su bibliografia
+</p>
+</div>
+
+
+<div>
+<head>Aim</head>
+<p>The present edition aims at improving
+the text of the Chronicon by Romualdus Salernitanus
+(Romualdus II Guarna) through a new collation of the text
+of the print editions of Garufi and Bonetti
+against A and O, the main witnesses of the 'short version' of the work
+</p>
+Full details on manuscripts and print editions of the work are in §
+[§§§ biblio su prine editions e MSS: vd. altro §§§]
 </div>
 
 <div>
@@ -329,7 +383,7 @@ Garufi has the wole text, including the additions that distinuish the 'long'
 from the 'short' version (though he mostly publishes those additions in apparatus notes),
 but does not have the report of the Peace of Venice, i.e. paragraphs
 from v-b298c through v-b306b. This is why their @xml:id does not start with 'g'.
-Bonetti includes the Peace of Venice, with Arndt's text.</p>
+Bonetti includes the Peace of Venice, with Arndt's text. [sbagliato, cambiare §]</p>
 </div>
 
 <div>
@@ -360,38 +414,12 @@ g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.
 
 
 
-<div>
-<head>MSS with the long version</head>
-<p>The manuscripts bearing
-the "long" version of the work have not been collated,
-so they are not part of this edition: they are
-B (Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22;
-see Zabbia 2004, 354 n. 24; Garufi, Praef. XXXII; and
-http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
-and C (Paris, Bibliothèque Nationale, Latinus 4933; see Zabbia 2004, 385 and 
-https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p).
-A complete discussion on the manuscript tradition can be found in
-Garufi 1914, XXXI-XXXVI; Matthew 1981, 241-[metti qui fine discuss. sui MSS di matthew]
-Zabbia ( Zabbia 2004, 385-388; Zabbia 2006; 
-[ §§§ cita qui intro garufi, zabbia 2004 e forse anche napoli nobilissima, e vd. altra biblio].
-</p>
-</div>
-
 
 <div>
 <head>GitHub</head>
 <p>The source code of this edition, including transcriptions of the
 witnesses and Python software, is in the project GitHub repository
 https://github.com/paolomonella/romualdus.</p>
-</div>
-
-<div>
-<head>Paragraphs</head>
-<p>Paragraphs ('p' elements in the TEI XML source) have been labelled
-with @xml:id attributes based on Garufi. For instance, paragraph
-'g163.1-163.5' goes from page 163, line 1 to page 163, line 5 of
-the Garufi edition. In some cases, Garufi's paragraphs have been
-further broken in smaller 'p' elements to facilitate collation.</p>
 </div>
 
 <div>
@@ -620,6 +648,11 @@ mostly by adopting MS A's spelling, in cases in which
 </list>
 </p>
 </div>
+
+<div>§ metti da qualche parte 'factual' / subst readings,
+	e che per i fatti mi sono appoggiato alle print editions,
+	lavoro da storici, io ho visto usus scribendi; aim: migliorare
+	testo su base di nuova collaz. di O e soprattutto A</div>
 
 </front>
 
