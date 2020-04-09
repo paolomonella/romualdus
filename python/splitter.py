@@ -107,7 +107,9 @@ def second_half_splitter(siglum_second_half,
 
     # Check that the three suffixes correspond to the 'chunks'
     # column of the DH table
-    db_chunk_list = [x['chunk'] for x in table if x['chunk'] is not '1']
+    db_chunk_list = [x['chunk'] for x in table if
+                     (x['chunk'] is not '1' and
+                      x['chunk'] is not None)]
     db_chunk_set = set(db_chunk_list)
     # chunk_list2 = [set(db_chunk_set)]  # Not needed
     if (sorted([suffix_pre_o, suffix_with_o, suffix_post_o]) !=
