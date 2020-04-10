@@ -215,20 +215,31 @@
 	while only the report of the Peace of Venice "is taken from
 	the written, eitiwness, and true account of Archbishop Romuald"
 	(Matthew 1981, 269-270).</p>
-<p>Zabbia 2004 confuted Mattew's arguments and suggested,
-	that Romualdus is the author of the whole work, though he does not
+<p>Zabbia 2004 confuted Mattew's arguments and suggested
+	that Romualdus is the author of the whole work, though he did not
 	rule out the possibility, based on the first note mentioned above
 	("Ab hoc loco adiunctum est...', par. g213.1-213.8), that
 	the archbishop continued a previously existing universal chronicon.
 	In his view, the note "Ab hoc loco..." simply suggests that
 	"sino al 1125 l'arcivescono avrebbe condotto il suo lavoro sulle fonti;
 	dopo quella data – a partire cioè da quando Romualdo aveva all'incirca
-	quindici anni – il racconto sarebbe fondato sulla memoria dell'autore"
-	(§ metti qui la pag. di zabbia in cui la dice: mi pare, 389).</p>
-<p>Zabbia's arguments on balance out those of Matthew. This leaves the authorship
-	question open, at least for the part of the work before year 1125.
-	While internal evidence is not conclusive, the two notes mentioned 
-	above suggest quite clearly that:
+	quindici anni – il racconto sarebbe fondato sulla memoria dell'autore",
+	though he adds:
+	"Tutto ciò non consente di escludere che l'arcivescono potesse disporre
+	di una cronaca in cui almeno parte del materiale fosse già organizzata"
+	(Zabbia 2004, 389). In a later essay (Zabbia 2010), the same scholar
+	proposed that for the period between 999 (the arrival of Normans
+	to Souther Italy) to 1125, the source of Romualdus was a pre-existing
+	short chronicle, written in Salerno within the first fourth of the XII
+	century. This short chronical, for Zabbia, was the common source of
+	Romualdus' Chronicon for this period and of the Chronicon Amalphitanum
+	(Zabbia 2010, 25-42). However, for Zabbia, a comparison with the latter
+	work shows that Romualdus did not copy his source, but integrated it
+	with other information, for example regarding the papacy.</p>
+<p>Zabbia's arguments on authorship balance out those of Matthew.
+	This leaves the question open, at least for the part of the work before
+	year 1125. While internal evidence is not conclusive, the two notes
+	mentioned above suggest quite clearly that:
 <list>
 	<item>The final part of the work – the account of the Peace of Venice –
 		was almost certainly either written by Romualdus himself,
@@ -236,16 +247,17 @@
 	<item>the section from year 1125 (par. g213.1-213.8) to the Peace of Venice
 		was added, 'adiunctum' by Romualdus as well (see first note);</item>
 	<item>the section from Adam to year 1125 constituted something that existed
-		before Romualdus (see first note: "adiunctum est huic chronice").</item>
+		before Romualdus (see note in g213.1-213.8: "adiunctum est huic chronice").</item>
 </list>
 </p>
-<p>For Zabbia, this pre-existing 'chronica' is a collective denomination
-	for the sources that Romualdus summarized or copied, though he adds:
-	"Tutto ciò non consente di escludere che l'arcivescono potesse disporre
-	di una cronaca in cui almeno parte del materiale fosse già organizzata"
-	(Zabbia 2004, 389). I incline towards the latter hypothesis, though
-	I agree with Zabbia that Romualdus himself probably conducted or coordinated
-	the final editorial work on the whole Chronicon.</p>
+<p>I incline towards the hypothesis proposed by Zabbia 2010 essay.
+	If Romualdus summarized and mixed different sources for the universal history until 999,
+	and mostly followed (with additions) the short chronicle postulated by Zabbia 2010
+	until 125, with additions from other sources, then a scribe could
+	reasonably write in the note in g213.1-213.8 that only from that point on
+	("ab hoc loco") Romualdus added up new information to the Chronicon. 
+	On the other side, this does not mean that Romualdus himself did not conduct
+	or coordinate the final editorial work on the whole work.</p>
 </div>
 
 <div>
@@ -314,6 +326,7 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	(probably XVII century) and 'o' for the fragment of MS O.</p>
 </div>
 
+<div>
 <head>Long and short versions of the work</head>
 
 <p>MSS B and C present a number of textual passages absent in A and O.
@@ -336,10 +349,16 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	@decls="#longversion", in this XML file, linking to the relevant
 	'editorialDecl'.</p>
 
+<p>The presence of this additions clearly complicates the authorship issue [...§]
+	ricomincia da qui;
+	- prima di tutto vd biblio, (a partire da garufi)
+	- poi vedi cosa propongono zabbia (e anche matthew)</p>
+</div>
+
 <div>
 <head>Second hand in A</head>
-<p>Someone, probably in the XVII century, integrated MS A with most of the missing parts,
-	by writing them in the marginal space, drawing them from MS B.
+<p>Someone, probably in the XVII century, copied most of the parts missing
+	in MS A to the marginal space of the manuscript, taking them from MS B.
 	I transcribed and collated the following portions of MS A added by the second hand
 	and marked their readings with siglum 'a2' in 'app' elements:
 	g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
