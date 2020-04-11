@@ -202,7 +202,7 @@
 
 <div>
 <head>Authorship: hypotheses</head>
-<p>For Matthew 1981, the first note only proves that
+<p>For Matthew 1981 (followed by Vitolo §, 54-551), the first note only proves that
 	the scribe who wrote it believed in Romualdus' authorship, and the second
 	that the report of the Peace of Venice was based on the archbishop's,
 	possibly written, testimony. Mattews discusses numerous arguments in favor
@@ -215,8 +215,8 @@
 	while only the report of the Peace of Venice "is taken from
 	the written, eitiwness, and true account of Archbishop Romuald"
 	(Matthew 1981, 269-270).</p>
-<p>Zabbia 2004 confuted Mattew's arguments and suggested,
-	that Romualdus is the author of the whole work, though he does not
+<p>Zabbia 2004 confuted Mattew's arguments and suggested
+	that Romualdus is the author of the whole work, though he did not
 	rule out the possibility, based on the first note mentioned above
 	("Ab hoc loco adiunctum est...', par. g213.1-213.8), that
 	the archbishop continued a previously existing universal chronicon.
@@ -224,11 +224,24 @@
 	"sino al 1125 l'arcivescono avrebbe condotto il suo lavoro sulle fonti;
 	dopo quella data – a partire cioè da quando Romualdo aveva all'incirca
 	quindici anni – il racconto sarebbe fondato sulla memoria dell'autore"
-	(§ metti qui la pag. di zabbia in cui la dice: mi pare, 389).</p>
-<p>Zabbia's arguments on balance out those of Matthew. This leaves the authorship
-	question open, at least for the part of the work before year 1125.
-	While internal evidence is not conclusive, the two notes mentioned 
-	above suggest quite clearly that:
+	(also see Pio 1996, 26 n. 26), though he adds:
+	"Tutto ciò non consente di escludere che l'arcivescono potesse disporre
+	di una cronaca in cui almeno parte del materiale fosse già organizzata"
+	(Zabbia 2004, 389). In a later essay (Zabbia 2010), the same scholar
+	proposed a theory closer to one of Matthew's: that for the period between 999
+	(the arrival of Normans to Southern Italy) to 1125, the source of Romualdus
+	was a pre-existing short chronicle, written in Salerno within the first
+	fourth of the XII century. For Zabbia, this short chronical was the common
+	source of Romualdus' Chronicon for this period and of the Chronicon Amalphitanum
+	(Zabbia 2010, 25-42), but comparison between the two works shows that
+	Romualdus did not copy his source, but integrated it with other information,
+	for example regarding the papacy. See Zabbia 2004, 384 and Zabbia 2010, 21-24
+	for further bibliography on the authorship issue.
+	</p>
+<p>Zabbia's arguments on authorship balance out those of Matthew.
+	This leaves the question open, at least for the part of the work before
+	year 1125. While internal evidence is not conclusive, the two notes
+	mentioned above suggest quite clearly that:
 <list>
 	<item>The final part of the work – the account of the Peace of Venice –
 		was almost certainly either written by Romualdus himself,
@@ -236,16 +249,16 @@
 	<item>the section from year 1125 (par. g213.1-213.8) to the Peace of Venice
 		was added, 'adiunctum' by Romualdus as well (see first note);</item>
 	<item>the section from Adam to year 1125 constituted something that existed
-		before Romualdus (see first note: "adiunctum est huic chronice").</item>
+		before Romualdus (see note in g213.1-213.8: "adiunctum est huic chronice").</item>
 </list>
 </p>
-<p>For Zabbia, this pre-existing 'chronica' is a collective denomination
-	for the sources that Romualdus summarized or copied, though he adds:
-	"Tutto ciò non consente di escludere che l'arcivescono potesse disporre
-	di una cronaca in cui almeno parte del materiale fosse già organizzata"
-	(Zabbia 2004, 389). I incline towards the latter hypothesis, though
-	I agree with Zabbia that Romualdus himself probably conducted or coordinated
-	the final editorial work on the whole Chronicon.</p>
+<p>The hypothesis proposed by Zabbia 2010 essay is economic, and entirely consistent with
+	this evidence. If Romualdus mixed and summarized different sources (directly or
+	supervising the work of his collaborators) for the universal history until 999,
+	and mostly followed and integrated the short chronicle postulated
+	by Zabbia until 1125, then a scribe could reasonably write in the note in
+	g213.1-213.8 that only from that point on ("ab hoc loco") Romualdus added up
+	new information to the Chronicon.</p>
 </div>
 
 <div>
@@ -266,34 +279,55 @@
 <p>Another important witness is:
 <list>
 	<item>O: a fragment of MS Ottobonianus Latinus 2940,
-		folios 16r-18v, available in
+		(XIV century), folios 16r-18v, available in
 		https://digi.vatlib.it/mss/detail/Ott.lat.2940.
 	</item>
 </list>
 </p>
 
-<p>The importance of O lies in the fact that Schwartz [§ add year] argued that
-	it might be copied from a lost MS, older than A.</p>
+<p>The importance of O lies in the fact that, as argued by Schwartz 1978, 139 n. 119,
+	it might have been copied from a lost MS, older than A.
+	Also see Matthews 1981, 250 n. 1; Zabbia 2004, 387, endnotes 26, 27 and 29;
+	Zabbia 2006, 62.</p>
 
-<p>The siglum used by Schwartz and other scholars for it
+<p>The siglum used by Garufi, Schwartz and other scholars for this manuscript
 	is 'Aa'. I am modifying it to 'O' for consistency
 	with the other sigla (one letter only, not including
 	character 'A' already used for Vat. Lat. 3973), thus
 	facilitating the processing of XML files.</p>
 
+<p>A detailed description and discussion of the manuscript tradition can be found in
+	Garufi 1914, XXXI-XXXVI; Matthew 1981, 241-242; Zabbia 2004, 385-388;
+	Zabbia 2006 and Zabbia 2010, 24-25</p>
 
 </div>
 
+
 <div>
 <head>Print editions</head>
-<p>The two most recent print editions of the Chronicon are Garufi 1914 and
-	Bonetti 2001, described in the 'sourceDesc' of this TEI XML file.
-	The most important previous editions are those of Del Re 1875,
-	Arndt 1866.</p>
+<p>The two most recent print editions of the Chronicon are Garufi 1914
+	(henceforth, simply "Garufi"; see the review by Erdmann 1930) and
+	Bonetti 2001, whose edition starts with paragraph g163.6-163.7
+	and includes and Italian translation (henceforth, "Bonetti").</p>
+	
+<p>Bonetti uses Garufi's edition as "testo base",
+	and Arndt 1866 as "elemento integrativo"
+	(see 'Nota al testo', Bonetti, 56).</p>
 
-<p>See the 'sourceDesc' element for complete bibliographical details
-	on A, O and the editions by Bonetti and Garufi. For the other
-	works cited, see the bibliography at the end of thisintroduction.</p>
+<p>Previously, the work had been published by Muratori 1725;
+	Del Re 1875 (with Italian translation); Arndt 1866
+	(also starting with g163.6-163.7).
+	See Garufi, XXVIII-XXXI for previous print editions, and
+	http://www.geschichtsquellen.de/werk/4214.</p>
+	on derivative or partial editions and translations.
+
+<p>Complete bibliographical information
+	on the editions by Bonetti and Garufi
+	is in the 'sourceDesc' element of this TEI XML file;
+	on the other works cited, in the
+	bibliography at the end of this introduction.
+</p>
+
 </div>
 
 <div>
@@ -314,6 +348,7 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	(probably XVII century) and 'o' for the fragment of MS O.</p>
 </div>
 
+<div>
 <head>Long and short versions of the work</head>
 
 <p>MSS B and C present a number of textual passages absent in A and O.
@@ -336,20 +371,34 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	@decls="#longversion", in this XML file, linking to the relevant
 	'editorialDecl'.</p>
 
+<p>Scholars are unanimously convinced that these are later additions to the
+	'short' version' (see Garufi 1914, XXXIV; Matthew 1981, 241-243,
+	Zabbia 2004, 386-387; Zabbia 2006, 59-61 and Zabbia 2010, 24-25, 27 and 43-49),
+	but Garufi himself includes some of them in his text. He therefore considers
+	these ones Romualdus' own additions (followed by Palumbo 1978, 76-78),
+	and Zabbia 2006, 60 suggests that the first ones
+	(g3.7-3.16, g10.n2-10.n5, g30.n1-30.n3) might actually be lacunae in A,
+	rather than additions in B and C.
+	Zabbia maintains that those additions are generally consistent with the style
+	of the whole Chronicon, that they have been written shortly after
+	the composition of the whole work (Zabbia 2004, 397: "interventi
+	databili a ridosso della stesura"), that it is not impossible
+	that Romualdus himself (Zabbia 2006, 60) or "uno dei suoi
+	collaboratori (Zabbia 2010, 25) added them to the Chronicon.</p>
+</div>
+
 <div>
 <head>Second hand in A</head>
-<p>Someone, probably in the XVII century, integrated MS A with most of the missing parts,
-	by writing them in the marginal space, drawing them from MS B.
+<p>Someone, probably in the XVII century, copied most of the parts missing
+	in MS A (the 'long version additions', plus some missing quires or folios)
+	into the marginal space of the manuscript, drawing them from MS B
+	(see Matthew 1981, 242).
+	In addition to the 'long version additions' mentioned in the previous paragraph,
 	I transcribed and collated the following portions of MS A added by the second hand
 	and marked their readings with siglum 'a2' in 'app' elements:
-	g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
-	81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g186.6-186.7, g186.8-186.8, 
-	86.9-186.9, g187.5-187.8, g187.11-187.14, g188.5-188.7, g189.1-189.1, g191.3-191.5, 
-	95.6-195.8, g198.4-198.5, g198.12-198.13, g198.16-198.17, g199.5-199.8, g200.17-200.21, 
-	01.19-201.20, g202.7-202.10, g203.1-203.2, g203.6-203.6, g206.13-206.17, g208.1-208.9, 
-	10.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, g213.1-213.8, 
-	14.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, g216.n10-217.n1, g217.n4-217.n10, 
-	18.n16-218.n23, g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10.</p>
+	g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10,
+	g181.10-181.11, g181.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13.
+</p>
 </div>
 
 <div>
@@ -365,20 +414,6 @@ g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16, g170.17-171.1, g171.2
 
 
 <div>
-<head>Biblio</head>
-<p>
-#Biblio# 
-A complete discussion on the manuscript tradition can be found in
-Garufi 1914, XXXI-XXXVI; Matthew 1981, 241-[metti qui fine discuss. sui MSS di matthew]
-[metti tutta insieme bibliografia su MSS §§§]
-Zabbia ( Zabbia 2004, 385-388; Zabbia 2006; 
-[ §§§ cita qui intro garufi, zabbia 2004 e forse anche napoli nobilissima, e vd. altra biblio].
-Vd. agenda con appunti completi su bibliografia
-</p>
-</div>
-
-
-<div>
 <head>Aim</head>
 <p>The present edition aims at improving
 the text of the Chronicon by Romualdus Salernitanus
@@ -386,8 +421,6 @@ the text of the Chronicon by Romualdus Salernitanus
 of the print editions of Garufi and Bonetti
 against A and O, the main witnesses of the 'short version' of the work.
 </p>
-Full details on manuscripts and print editions of the work are in §
-[§§§ biblio su prine editions e MSS: vd. altro §§§]
 </div>
 
 
@@ -406,28 +439,25 @@ g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.
 
 <div>
 <head>Collation exemplars</head>
+
 <p>Garufi was the collation exemplar for the first part of the work,
-from the incipit through paragraph g163.1-163.5. 
-Bonetti was the collation exemplar for the part of the text
-it includes, i.e. from paragraph g163.6-163.7 to the end of the text.
-The legibility of the print in Bonetti's edition is better
-than in Garufi's, so it lends itself to less error-prone OCR.
-This is the reason why I decided to use Bonetti
-as collation exemplar for this part of the work.</p>
+	from the incipit through paragraph g163.1-163.5. 
+</p>
+
+<p>Bonetti was the collation exemplar for the part of the text
+	it includes, i.e. from paragraph g163.6-163.7 to the end of the text.
+	The legibility of the print in Bonetti's edition is better
+	than in Garufi's, so it lends itself to less error-prone OCR:
+	this is the reason why I decided to use Bonetti
+	as collation exemplar for this part of the work.</p>
+
+<p>In the part of the text collated against Bonetti
+	(g163.1-163.5 to the end), whenever I chose the reading of a MS against
+	that of Bonetti, and the text of Garufi diverged from that fo Bonetti,
+	I recorded both Garufi's and Bonetti's readings in the 'app' element.</p>
+
 </div>
 
-<div>
-<head>Bonetti</head>
-<p>Bonetti uses Garufi's edition as "testo base",
-and Arndt (Arndt, W., ed. 1866, Romoaldi II archiepiscopi Salernitani Annales,
-Vol.  SS XIX, Hannover) as "elemento integrativo"
-(see 'Nota al testo', Bonetti 2001, 56).
-Thus Bonetti's text can be considered mostly equivalent to that of Garufi. 
-However, in the part of the text collated against Bonetti
-(g163.1-163.5 to the end), whenever I chose the reading of a MS against
-that of Bonetti, and the text of Garufi diverged from that fo Bonetti,
-I recorded both Garufi's and Bonetti's readings in the 'app' element.</p>
-</div>
 
 <div>
 <head>Parts for collation</head>
@@ -662,16 +692,207 @@ mostly by adopting MS A's spelling, in cases in which
 	testo su base di nuova collaz. di O e soprattutto A</div>
 
 <listBibl>
- <head>Works cited in the introduction</head>
- matthew
- del re
- arndt
- tutti gli zabbia
 
+<head>Works cited in the introduction</head>
 
+<biblStruct xml:id="delre1845cronica">
+	<monogr>
+		<editor>Del Re, Giuseppe</editor>
+		<title>Cronica di Romualdo Guarna arcivescovo salernitano.
+			Versione di G. Del Re con note e dilucidazioni dello stesso</title>
+		<imprint>		
+				<publisher>Stamperia dell'Iride</publisher>
+					<date>1845</date>
+			</imprint>
+		</monogr>
+		<series>
+			<title level="s">Cronisti e scrittori sincroni napoletani
+				editi e inediti, ordinati per serie e pubblicati
+				da Giuseppe Del Re: storia della monarchia
+			</title>
+			<biblScope unit="volume">1: Normanni</biblScope>
+		</series>
+</biblStruct>
 
+<biblStruct xml:id="arndt1866romoaldi">
+	<monogr>
+		<editor>Arndt, Wilhelm</editor>
+		<title>Romoaldi II archiepiscopi Salernitani Annales</title>
+		<imprint>
+				<biblScope unit="page" from="387" to="461">387-461</biblScope>
+					<date>1866</date>
+			</imprint>
+		</monogr>
+		<series>
+			<title level="s">Monumenta Germaniae Historica</title>
+			<biblScope unit="volume">SS XIX</biblScope>
+		</series>
+</biblStruct>
 
+<biblStruct xml:id="garufi1914romualdo">
+	<monogr>
+		<editor>Garufi, Carlo Alberto</editor>		
+		<title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+		<imprint>
+			<publisher>S. Lapi</publisher>
+			<date>1914</date>
+		</imprint>
+	</monogr>
+	<series>
+		<title level="s">Rerum italicarum scriptores</title>
+		<biblScope unit="volume">127</biblScope>
+	</series>
+</biblStruct>
 
+<biblStruct xml:id="matthew1981chronicle">
+          <analytic>
+		<author>Matthew, Donald J. A.</author>
+		<title>The chronicle of Romuald of Salerno</title>
+          </analytic>
+          <monogr>
+		<title level="m">The Writing of History in the Middle Ages:
+			Essays Presented to Richard William Southern</title>
+		<imprint>
+			<publisher>Oxford University Press</publisher>
+			<date>1981</date>
+			<biblScope unit="page" from="239" to="274">239-274</biblScope>
+            </imprint>
+          </monogr>
+</biblStruct>
+
+<biblStruct xml:id="bonetti2001romualdo">
+	<monogr>
+		<editor>Bonetti, Cinzia</editor>
+		<title>Romualdo II Guarna, Chronicon</title>
+		<imprint>
+			<publisher>Avagliano</publisher>
+			<date>2001</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2002cronista">
+          <analytic>
+		<author>Zabbia, Marino</author>
+		<title>Un cronista medievale e le sue fonti.
+			La storia del papato nel “Chronicon” di Romualdo Salernitano. </title>
+          </analytic>
+          <monogr>
+		<title level="j">Filologia Mediolatina</title>
+            <imprint>
+		<biblScope unit="vol">9</biblScope>
+		<date>2002</date>
+		<biblScope unit="page" from="229" to="250">229-250</biblScope>
+            </imprint>
+          </monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2004romualdo">
+          <analytic>
+		<author>Zabbia, Marino </author>
+		<title>Romualdo Guarna arcivescovo di Salerno e la sua cronaca</title>
+          </analytic>
+	<monogr>
+		<title level="m">Salerno nel XII secolo.
+			Istituzioni, società, cultura</title>
+		<imprint>
+			<publisher>Provincia di Salerno -
+				Centro studi salernitani "Raffaele Guariglia"</publisher>
+			<date>2004</date>
+			<biblScope unit="page" from="380" to="398">380-398</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2006nuova">
+          <analytic>
+		<author>Zabbia, Marino</author>
+		<title>Per la nuova edizione della cronaca di Romualdo Salernitano</title>
+	  </analytic>
+	<monogr>
+		<title level="j">Napoli Nobilissima</title>
+		<imprint>
+			<biblScope unit="vol">Vol. s. V, 7/1-2</biblScope>
+			<date>2006</date>
+			<biblScope unit="page" from="59" to="65">59-65</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2010damnatio">
+          <analytic>
+		<author>Zabbia, Marino </author>
+		<title>"Damnatio memoriae" o selezione storiografica?
+			I grandi assenti nel "Chronicon" di Romualdo Salernitano (Periodo normanno)</title>
+          </analytic>
+	<monogr>
+		<title level="m">Condannare all'oblio. Pratiche della "damnatio memoriae" nel medioevo</title>
+		<imprint>		
+			<publisher>Istituto storico italiano per il medio evo</publisher>		
+			<biblScope unit="page" from="21" to="64">21-64</biblScope>
+			<date>2010</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="zabbia2012cultura">
+          <analytic>
+		<author>Zabbia, Marino</author>
+		<title>La cultura storiografica dell'Italia normanna
+			riflessa nel "Chronicon" di Romualdo Salernitano</title>
+	</analytic>
+	<monogr>
+		<title level="m">Contributi IV settimana di studi medievali</title>
+		<imprint>		
+			<biblScope unit="page" from="3" to="14">3-14</biblScope>
+			<date>2012</date>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="monella2018livelli">
+          <analytic>
+		<author>Monella, Paolo</author>
+		<title>Livelli di rappresentazione del testo nell'edizione del De nomine di Orso Beneventano</title>
+	</analytic>
+	<monogr>
+		<title level="j">Umanistica Digitale</title>
+		<imprint>		
+			<biblScope unit="vol">2</biblScope>
+			<date>2018</date>
+			<biblScope unit="page" from="67" to="91">67-91</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="monella2018sustainable">
+          <analytic>
+		<author>Monella, Paolo</author>
+		<title>A sustainable work flow for a multi-layer edition of the Chronicon by Romualdus Salernitanus</title>
+	</analytic>
+	<monogr>
+		<title level="m">AIUCD2018 - Book of Abstracts</title>
+		<imprint>		
+				<publisher>Alma DL UniBo</publisher>		
+					<biblScope unit="page" from="21" to="24">21-24</biblScope>
+						<date>2018</date>
+				</imprint>
+			</monogr>
+</biblStruct>
+
+<biblStruct xml:id="monella2019verso">
+          <analytic>
+		<author>Monella, Paolo</author>
+		<title>Verso un'edizione critica digitale del Chronicon di Romualdo Salernitano</title>
+          </analytic>
+	<monogr>
+				<title level="m">Giornata di studi normanno-sveva</title>
+		<imprint>		
+					<publisher>Università di Enna Kore</publisher>
+						<date>2019</date>
+				</imprint>
+			</monogr>
+</biblStruct>
 
 </listBibl>
 
@@ -686,6 +907,7 @@ mostly by adopting MS A's spelling, in cases in which
 </app> 
 </p>
  
+
 <p xml:id="g3.2-3.6">
 Prima mundi etas est ab Adam usque ad diluuium, continens annos, iuxta hebraicam ueritatem 
 <app cert="high" type="punctuation" subtype="add-punctuation">
