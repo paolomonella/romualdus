@@ -16,6 +16,8 @@ juxta_par_and_sigla_suffix = '-par'  # outdated?
 juxta_par_suffix = '-par'
 juxta_sigla_suffix = '-sigla'
 update_db_tempfile = 'record.txt'
+biblio_file = 'biblio.xml'
+tei_header_template = 'teiHeader_template.xml'
 
 
 # Metatext markers
@@ -34,7 +36,9 @@ ns = {
     # for attributes like xml:id:
     'xml': 'http://www.w3.org/XML/1998/namespace',
     # for (X)HTML output
-    'h': 'http://www.w3.org/1999/xhtml'}
+    'h': 'http://www.w3.org/1999/xhtml',
+    # for bibtexml, ouput of Jabref
+    'b': 'http://bibtexml.sf.net/'}
 
 tei_ns = "{%s}" % ns['t']
 xml_ns = "{%s}" % ns['xml']
