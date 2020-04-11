@@ -5,7 +5,7 @@
 
 # from shutil import copyfile
 from lxml import etree
-from myconst import ns, xmlpath
+from myconst import ns, xmlpath, tei_header_template, chronicon_output_file
 
 debug = False
 
@@ -27,7 +27,7 @@ def unify():
     m2_charlie_tree = etree.parse(m2_charlie_file)
 
     # This is the file in which I edited the teiHeader by hand
-    template_file = '%s%s.xml' % (xmlpath, 'teiHeader_template')
+    template_file = '%s%s' % (xmlpath, tei_header_template)
 
     # Old code:
     # Copy m1-par-out.xml to template.xml
@@ -37,7 +37,7 @@ def unify():
     template_tree = etree.parse(template_file)
 
     # Set output file name chronicon.xml
-    chronicon_file = '%s%s.xml' % (xmlpath, 'chronicon')
+    chronicon_file = '%s%s' % (xmlpath, chronicon_output_file)
 
     # Find <body> elements
     m1_body = m1_tree.find('.//t:body', ns)

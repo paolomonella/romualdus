@@ -16,6 +16,7 @@ import post_process_juxta_commons_file
 import philologist
 import m_unifier
 import my_database_import
+import biblio
 
 quiet = True  # If true, suppress standard output messages to console
 chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
@@ -162,6 +163,7 @@ if post:
         myTree.write()
 
     m_unifier.unify()
+    biblio.biblio()
 
 
 def completion():
