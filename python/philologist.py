@@ -355,12 +355,6 @@ class treeWithAppElements:
                 r['xmlid'] for r in self.paragraphs
                 if r['chunk'] == '2-bravo']
 
-            # These are paragraphs that do not belong to chunk 2-bravo,
-            # (they belong to 2-charlie), but they also are present in O
-            for new_par in ['g186.12-187.2']:
-                pars_with_triple_collation.append(new_par)
-            print(pars_with_triple_collation)
-
             # If we are not in the chunk in which I collated 3 sources:
             if xmlid not in pars_with_triple_collation:
                 # This is the case in which Bonetti is collation exemplar,
