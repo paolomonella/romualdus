@@ -203,15 +203,6 @@
                     </tagUsage>
         </namespace>
       </tagsDecl>
-      <listPrefixDef>
-        <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
-          <p>In the context of this edition, private URIs with 
-                        the prefix "vat" point to a specific page of external 
-                        PDF file vat.lat.3973.pdf, including the digital images 
-                        of the A manuscript. For example, "vat:29"
-                        dereferences to "img/vat.lat.3973.pdf#page=29".</p>
-        </prefixDef>
-      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <handNotes>
@@ -249,7 +240,7 @@
 &bl;<hi>anno</hi> dominice incarnationis <num value="902"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>ii</num>. <hi>urbs</hi> 
 &bl;<rs>tauromenis</rs> a <rs>sarracenis</rs> capta est. <hi>eodem</hi> anno in nocte uisi 
 &bl;sunt igniculi in modum stellarum per aera discurrentes: qua 
-&bl;nocte rex <rs>africe</rs> residens <pb n="195v" facs="vat:221" ed="#a"/>super <rs>consentiam</rs> <rs>calabrie</rs> ciuitatem, 
+&bl;nocte rex <rs>africe</rs> residens <pb n="195v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0423" ed="#a"/>super <rs>consentiam</rs> <rs>calabrie</rs> ciuitatem, 
 &bl;<rs>dei</rs> iudicio, mortuus est. 
 </p>
 
@@ -284,7 +275,7 @@ tenuitque annis <num value="25">xxu</num>.
 
 <p xml:id="g164.12-164.19" decls="#al"> 
 <pb n="64" ed="#b"/> 
-&bl;<hi>inter</hi> hec <rs>formosus</rs> <pb n="169r" facs="vat:221" ed="#a"/><rs>romane</rs> sedis episcopus moritur et suc&bd;cessit 
+&bl;<hi>inter</hi> hec <rs>formosus</rs> <pb n="169r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0424" ed="#a"/><rs>romane</rs> sedis episcopus moritur et suc&bd;cessit 
 ei <rs>bonifacius</rs>, sedit annis <num value="12">xii</num>. <hi>quo</hi> defuncto <rs>stephanus</rs> ei 
 &bl;successit in sede pontificali; qui post anno <num value="1">i</num> et mensibus <num value="2">ii</num> 
 &bl;uita decedens sedem dereliquit <rs>romano</rs> episcopo qui sedit men&bd;sibus 
@@ -315,7 +306,7 @@ quos ex <rs>giberga</rs> <rs>ottonis</rs> <rs>saxonum</rs> regis sorore genuerat
 
 
 <p xml:id="g165.1-165.3" decls="#al"> 
-&bl;<hi>anni</hi> domini <num value="923"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxiii</num> <pb n="196v" facs="vat:222" ed="#a"/><rs>anastasio</rs> papa defuncto, dando 
+&bl;<hi>anni</hi> domini <num value="923"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>xxiii</num> <pb n="196v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0425" ed="#a"/><rs>anastasio</rs> papa defuncto, dando 
 &bl;<rs>romanum</rs> suscepit pontificatum seditque mensibus <num value="6">ui</num>. <hi>quo</hi> de&bd;functo 
 <rs>iohannes</rs> sedem papalem sedit annis <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> mensibus <num value="2">ii</num>. 
 </p>
@@ -354,7 +345,7 @@ optinuerunt annis <num value="9"><choice><orig>uiiii</orig><reg type="numeral">i
 &bl;<num value="6">ui</num>. <hi>cui</hi> successit <rs>stephanus</rs> qui sedit annis <num value="2">ii</num> mense <num value="1">i</num>. <hi>huic</hi> uero 
 &bl;<rs>iohannes</rs> successit et sedit annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> mensibus <num value="10">x</num>. <hi>hic</hi> autem fuit 
 &bl;filius <rs>sergii</rs> pape. <hi>igitur</hi> <rs>iohanni</rs> successit <rs>leo</rs> qui sedit annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> 
-&bl;mensibus <num value="6">ui</num>. <hi>post</hi> quem <rs>stephanus</rs> sedit <pb n="197r" facs="vat:222" ed="#a"/>annis <num value="3">iii</num> mensibus <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
+&bl;mensibus <num value="6">ui</num>. <hi>post</hi> quem <rs>stephanus</rs> sedit <pb n="197r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0426" ed="#a"/>annis <num value="3">iii</num> mensibus <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
 &bl;<hi>cui</hi> <rs>marinus</rs> successit seditque in pontificatu <rs>romano</rs> annis <num value="3">iii</num> 
 &bl;mensibus <num value="6">ui</num>. <hi>quo</hi> uita decedente <rs>agapitus</rs> sedit annis <num value="10">x</num> mensi&bd;bus 
 <num value="7">uii</num>. <hi>huic</hi> itaque <rs>iohannes</rs> successit, sedit annis nouem men&bd;sibus 
@@ -379,7 +370,7 @@ sua <rs>lotharium</rs> regnum. <hi>quod</hi> audiens <rs>otto</rs> <rs>saxonum</
 fugiit. <hi>post</hi> hec <rs>otto</rs> rex congregans exercitum suum 
 &bl;uenit <rs>parisius</rs>, ubi interfectus est nepos illius cum aliis quam plu&bd;ribus 
 ad portam ciuitatis, incenso suburbio illius. <rs>lotharius</rs> igitur 
-&bl;rex tribus diebus et tribus noctibus constanter <pb n="197v" facs="vat:223" ed="#a"/>persequens illos 
+&bl;rex tribus diebus et tribus noctibus constanter <pb n="197v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0427" ed="#a"/>persequens illos 
 &bl;usque ad fluuium qui fluit iuxta <rs>ardennam</rs>, interfecta hostium 
 &bl;multitudine cum uictoria in <rs>franciam</rs> reuersus est. <hi>post</hi> hec non 
 &bl;apposuit ultra <rs>otto</rs> rex ut ueniret in <rs>franciam</rs>. 
@@ -410,7 +401,7 @@ cognomento <rs>simiski</rs> tenuit imperium annis <num value="6">ui</num>. <hi>q
 incarnationis domini <num value="970"><choice><orig>dcccc</orig><reg type="numeral">cm</reg></choice>lxx</num> <note resp="#b" type="year">sed 976</note>, regnaueruntque 
 &bl;annis <num value="55">lu</num>. <hi>at</hi> uero <rs>rome</rs> defuncto <rs>iohanne</rs> papa <rs>benedictus</rs> papa 
 &bl;sedit annis <num value="2">ii</num>, et post eum <rs>leo</rs> sedit annis <num value="6">ui</num> mensibus <num value="11">xi</num>. <hi>hic</hi> a <rs>petro</rs> prefec&bd;to 
-<pb n="198r" facs="vat:223" ed="#a"/>
+<pb n="198r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0428" ed="#a"/>
 <rs>romane</rs> urbis comprehensus et in castello sancti <rs>angeli</rs> retru&bd;sus, 
 deinde in <rs>campaniam</rs> in exilium missus et post menses de&bd;cem 
 <rs>romam</rs> reuersus est, et de persecutoribus eius ab <rs>ottone</rs> 

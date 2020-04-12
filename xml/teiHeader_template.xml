@@ -33,7 +33,7 @@
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <witness xml:id="a">
+                    <witness xml:id="a" facs="https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json">
                         <msDesc>
                             <msIdentifier>
                                 <settlement>Biblioteca Apostolica Vaticana</settlement>
@@ -41,7 +41,7 @@
                             </msIdentifier>
                         </msDesc>
                     </witness>
-                    <witness xml:id="a2">
+                    <witness xml:id="a2" facs="https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json">
                         <msDesc>
                             <msIdentifier>
                                 <settlement>Biblioteca Apostolica Vaticana</settlement>
@@ -50,7 +50,7 @@
                             <ab>This siglum represents a later hand, probably of the XVII century, in this manuscript</ab>
                         </msDesc>
                     </witness>
-                    <witness xml:id="o">
+                    <witness xml:id="o" facs="https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json">
                         <msDesc>
                             <msIdentifier>
                                 <settlement>Ottobonianus</settlement>
@@ -58,7 +58,7 @@
                             </msIdentifier>
                         </msDesc>
                     </witness>
-                    <witness xml:id="g">
+                    <witness xml:id="g" facs="https://archive.org/details/p1rerumitalicarums07card/">
                         <biblStruct>
                             <monogr>
                                 <author>Guarna, Romualdus</author>
@@ -318,13 +318,24 @@
 <p>The three oldest witnesses of the work are:
 <list>
 	<item>A: Vaticanus Latinus 3973, of the late XII century, available in
-		https://digi.vatlib.it/mss/detail/Vat.lat.3973;</item>
+		<ref type="url" target="https://digi.vatlib.it/mss/detail/Vat.lat.3973">
+			https://digi.vatlib.it/mss/detail/Vat.lat.3973</ref>;
+		III manifest in
+		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json">
+			https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json</ref>;
+	</item>
 	<item>B: Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22,
-		of the XIV century,
-		available in http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22;</item>
+		of the XIV century, available in
+		<ref type="url" target="http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22">
+			http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22</ref>;
+		III manifest in
+		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.22/manifest.json">
+			https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.22/manifest.json</ref>;
+	</item>
 	<item>C: Paris, Bibliothèque Nationale, Latinus 4933,
 		of the late XII-early XIII century, available in
-		https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p).</item>
+		<ref type="url" target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p">
+			https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p</ref>.</item>
 </list>
 </p>
 
@@ -332,7 +343,11 @@
 <list>
 	<item>O: a fragment of MS Ottobonianus Latinus 2940,
 		(XIV century), folios 16r-18v, available in
-		https://digi.vatlib.it/mss/detail/Ott.lat.2940.
+		<ref type="url" target="https://digi.vatlib.it/mss/detail/Ott.lat.2940">
+			https://digi.vatlib.it/mss/detail/Ott.lat.2940</ref>;
+		III manifest in
+		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json">
+			https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json</ref>.
 	</item>
 </list>
 </p>

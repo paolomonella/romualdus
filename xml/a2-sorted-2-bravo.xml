@@ -203,15 +203,6 @@
                     </tagUsage>
         </namespace>
       </tagsDecl>
-      <listPrefixDef>
-        <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
-          <p>In the context of this edition, private URIs with 
-                        the prefix "vat" point to a specific page of external 
-                        PDF file vat.lat.3973.pdf, including the digital images 
-                        of the A manuscript. For example, "vat:29"
-                        dereferences to "img/vat.lat.3973.pdf#page=29".</p>
-        </prefixDef>
-      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <handNotes>
@@ -251,7 +242,7 @@ annis <num value="54">l<choice><orig>iiii</orig><reg type="numeral">iu</reg></ch
 &bl;<num value="18">xuiii</num> ex quo imperator appellatus est. <hi>successit</hi> autem ei <rs>otto</rs> 
 &bl;imperator, qui dictus est minor, qui postquam imperii coronam 
 &bl;accepit, ueniens <rs>salernum</rs> obsedit cepitque illam expugnans. 
-<pb n="198v" facs="vat:224" ed="#a"/>
+<pb n="198v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0429" ed="#a"/>
 &bl;<hi>dehinc</hi> per <rs>briciam</rs> et <rs>lucaniam</rs> in <rs>calabriam</rs> perrexit et apud 
 &bl;<rs>stilum</rs> <rs>calabrie</rs> oppidum cum <rs>sarracenis</rs> pugnauit eosque deui&bd;cit, 
 <rs>regium</rs> quoque cepit. <hi>regnauit</hi> autem annis <num value="2">ii</num>. <hi>eo</hi> itaque de&bd;functo 
@@ -277,7 +268,7 @@ rebellauit contra <rs>carolum</rs> regem consilioque habito cum
 &bl;itaque <rs>carolus</rs> rex cum uxore sua et positus in custodia <rs>aurelia&bd;nis</rs> 
 ciuitate in turri, in qua uitam finiuit. <hi>habuit</hi> tamen ex eadem 
 &bl;uxore duos filios <rs>ludouicum</rs> et <rs>carolum</rs>. <rs>ugo</rs> itaque dux re&bd;gnum 
-sibi <rs>francorum</rs> <pb n="199r" facs="vat:224" ed="#a"/>arripuit, constituitque  regem filium suum 
+sibi <rs>francorum</rs> <pb n="199r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0430" ed="#a"/>arripuit, constituitque  regem filium suum 
 &bl;nomine <rs>robbertum</rs>. <hi>sicque</hi> defecit prosapia regum a <rs>carolo</rs> im&bd;peratore 
 descendentium et ex tunc <rs>francorum</rs> reges regali tan&bd;tum 
 honore contenti imperii dignitatem ammiserunt. <hi>in</hi> illis die&bd;bus 
@@ -298,7 +289,7 @@ detinebatur, mansitque ibi annis <num value="3">iii</num>. <hi>nunciantur</hi> h
 &bl;episcopos qui iam dicto facinori consenserant, misitque <rs>leonem</rs> 
 &bl;abbatem a sede apostolica ad domnum <rs>seguinum</rs> archiepisco&bd;pum 
 <rs>senonum</rs> qui uice sua in urbe <rs>remensi</rs> sinodum congre&bd;garet, 
-mandans illi ut sine dilatione in pristino gradu reuoca<pb break="no" n="199v" facs="vat:225" ed="#a"/>ret 
+mandans illi ut sine dilatione in pristino gradu reuoca<pb break="no" n="199v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0431" ed="#a"/>ret 
 &bl;domnum <rs>arnulfum</rs> et degradaret <rs>gibbertum</rs>. <hi>quod</hi> et fecit. <rs>gib&bd;bertus</rs> 
 itaque intelligens quod iniuste pontificalem suscepisset 
 &bl;dignitatem penituit. <hi>post</hi> hec domnus <rs>gibbertus</rs> electus est pon&bd;tifex 
@@ -332,7 +323,7 @@ et in ciuitate <rs>apriano</rs> plures ecclesias subuertit. <hi>ciuitas</hi> quo
 
 
 <p xml:id="g171.2-171.6" decls="#al"> 
-<pb n="200r" facs="vat:225" ed="#a"/>
+<pb n="200r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0432" ed="#a"/>
 &bl;<hi>preterea</hi> <rs>rome</rs> defuncto papa <rs>benedicto</rs>, <rs>iohannes</rs> papa se&bd;dit 
 mensibus <num value="9"><choice><orig>uiiii</orig><reg type="numeral">ix</reg></choice></num>. <hi>hic</hi> autem in castello <rs>sancti angeli</rs> retrusus et 
 &bl;per menses <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> fame afflictus mortuus est. <hi>et</hi> iterum superior 
@@ -367,7 +358,7 @@ quos secum habens bellum cum <rs>grecis</rs> in <rs>apulia</rs> apud
 &bl;est sine filiis, et rebellauerunt <rs>burgundiones</rs> in regem <rs>robber&bd;tum</rs> 
 nolentes eum recipere. <hi>post</hi> tercium itaque annum <rs>rob&bd;bertus</rs> 
 rex assumptis <rs>normannis</rs> cum duce suo <rs>riccardo</rs> et exer&bd;citu 
-uastauit <pb n="200v" facs="vat:226" ed="#a"/><rs>burgundiam</rs>. <rs>raynaldus</rs> comes <rs>senonum</rs> post multa 
+uastauit <pb n="200v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0433" ed="#a"/><rs>burgundiam</rs>. <rs>raynaldus</rs> comes <rs>senonum</rs> post multa 
 &bl;mala defunctus est, cui successit <rs>fromundus</rs> filius eius. <hi>mortuo</hi> 
 &bl;itaque <rs>fromundo</rs> comite <rs>senonum</rs> successit ei <rs>raynaldus</rs> filius 
 &bl;eius nequissimus; hic persecutionem intulit ecclesiis <rs>christi</rs> eiu&bd;sque 
@@ -393,7 +384,7 @@ qui primitus abbas <rs>bobiensis</rs>, postea archiepiscopus
 &bl;sedit anno <num value="1">i</num>. <hi>hic</hi> <rs>ottonem</rs> regem <rs>saxonum</rs> coronauit impera&bd;torem. 
 <hi>post</hi> <rs>iohannem</rs> uero <rs>siluester</rs> <rs>tiburtinus</rs>, qui uocatur 
 &bl;<hi>osporco</hi>, <rs>romanum</rs> suscepit pontificatum qui sedit annis <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>. 
-&bl;<hi>suo</hi> quidem tempore fuit pessima fa<pb break="no" n="201r" facs="vat:226" ed="#a"/>mes. <hi>hic</hi> autem mortuo 
+&bl;<hi>suo</hi> quidem tempore fuit pessima fa<pb break="no" n="201r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0434" ed="#a"/>mes. <hi>hic</hi> autem mortuo 
 &bl;<rs>alberico</rs> qui patriciatus sibi nomen uendicauerat a <rs>crescentio</rs> 
 &bl;<rs>numentano</rs>, qui patricius dicebatur, papa ordinatus est quique 
 &bl;etiam <rs>ottonem</rs> coronauit imperatorem, postea uero cum magno 
@@ -413,7 +404,7 @@ imperator anno superiori obsederat <rs>beneuentum</rs> in anno sci&bd;licet
 anno uidelicet incarnationis <num value="1001">mi</num> indictione <num value="14">x<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> et acriter ipsam ciuitatem 
 &bl;expugnans ui ceperat. <hi>eo</hi> itaque mortuo frater eius <rs>henricus</rs> 
 &bl;maioris imperatoris <rs>ottonis</rs> nepos fit rex, quique regnauit annis 
-&bl;<num value="25">xxu</num>. <hi>cuius</hi> imperii anno secundo <pb n="201v" facs="vat:227" ed="#a"/><rs>sarraceni</rs> <rs>campaniam</rs> ingressi 
+&bl;<num value="25">xxu</num>. <hi>cuius</hi> imperii anno secundo <pb n="201v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0435" ed="#a"/><rs>sarraceni</rs> <rs>campaniam</rs> ingressi 
 &bl;<rs>capuam</rs> obsederunt. 
 </p>
 
@@ -448,7 +439,7 @@ ciuitatem diu dirutam nuncupauitque eam <rs>troiam</rs>, que
 &bl;per statutum priuilegium eidem stabiliuit ciuitati. <hi>in</hi> hanc ciuita&bd;tem 
 olim tempore <rs>adriani</rs> imperatoris, qui <rs>traiano</rs> successerat, 
 &bl;fuit ab apostolica sede missus <rs>eleutherius</rs> episcopus qui post 
-&bl;duos annos iussu ipsius <pb n="202r" facs="vat:227" ed="#a"/><rs>adriani</rs> <rs>rome</rs> ductus ac passus est. <hi>tem&bd;pore</hi> 
+&bl;duos annos iussu ipsius <pb n="202r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0436" ed="#a"/><rs>adriani</rs> <rs>rome</rs> ductus ac passus est. <hi>tem&bd;pore</hi> 
 quoque <rs>dioclitiani</rs> et <rs>maximiniani</rs> imperatorum extitit in 
 &bl;hac <rs>ecana</rs> ciuitate <rs>marcus</rs> episcopus, quique martyrio uitam finiuit. 
 &bl;<hi>et</hi> post aliquanta annorum curricula fuit in eadem urbe <rs>se&bd;cundinus</rs> 
@@ -479,7 +470,7 @@ pace cum ciuibus, obsidibusque ab eis receptis ad propria
 
 
 <p xml:id="g177.1-177.4" decls="#al"> 
-&bl;<hi>anno</hi> dominice incarnationis <num value="1025">mxxu</num> indictione <num value="8">uiii</num>, <pb n="202v" facs="vat:228" ed="#a"/><rs>henricus</rs> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="1025">mxxu</num> indictione <num value="8">uiii</num>, <pb n="202v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0437" ed="#a"/><rs>henricus</rs> 
 &bl;<rs>alamannorum</rs> imperator defunctus est, cui successit <rs>churradus</rs> 
 &bl;qui dux eius fuerat. <hi>eodem</hi> anno papa <rs>benedictus</rs> obiit et suc<pb break="no" n="80" ed="#b"/>&bd;cessit 
 &bl;ei <rs>iohannes</rs> frater eius, qui uno eodemque die et laicus 
@@ -520,7 +511,7 @@ est et successit ei <rs>benedictus</rs> qui uocatur <rs>theofilatus</rs>,
 &bl;seditque annis <num value="13">xiii</num>. <hi>iste</hi> quidem de pontificatu eiectus est et su&bd;scepit 
 papatum <rs>iohannes</rs> <rs>sabinensis</rs> episcopus cui nomen <rs>si&bd;luester</rs>. 
 <hi>et</hi> iste quidem eiectus est. <hi>post</hi> dies <num value="56">lui</num> recuperatus est 
-&bl;papa <rs>benedictus</rs> qui <pb n="203r" facs="vat:228" ed="#a"/>post mensem unum et dies <num value="20">xx</num> uendidit 
+&bl;papa <rs>benedictus</rs> qui <pb n="203r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0438" ed="#a"/>post mensem unum et dies <num value="20">xx</num> uendidit 
 &bl;papatum <rs>iohanni</rs> <rs>rauennanti</rs> archipresbitero sancti <rs>iohannis</rs> ante 
 &bl;portam <rs>latinam</rs>, cui nomen positum est <rs>gregorius</rs>, qui sedit an&bd;no 
 <num value="1">i</num> et mensibus <num value="6">ui</num>. 
@@ -556,7 +547,7 @@ graui prelio dimicarunt inter <rs>aufidum</rs> amnem et <rs>oliuentem</rs>,
 &bl;<rs>archontopanthiu</rs> cum <rs>zoy</rs> imperatrice. <hi>quo</hi> uita decedente 
 &bl;eodem anno successit ei <rs>constantinus</rs> <rs>monomachus</rs> in impe&bd;rium 
 cum <rs>zoy</rs> imperatrice, qui regnauit annis <num value="12">xii</num>. <hi>quo</hi> tempore 
-&bl;fames ualida fuit in <rs>italia</rs> atque in <rs>gallia</rs> per septem <pb n="203v" facs="vat:229" ed="#a"/>continuos 
+&bl;fames ualida fuit in <rs>italia</rs> atque in <rs>gallia</rs> per septem <pb n="203v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0439" ed="#a"/>continuos 
 &bl;annos. 
 </p>
 
@@ -603,7 +594,7 @@ seditque <rs>damasus</rs> dies <num value="20">xx</num>. <hi>imperator</hi> aute
 <p xml:id="g180.10-180.12" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s and <rs>bonetti</rs>'s paragraphs run from page 179 line 15 to page 180 line 12 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 10 to line 12 is an addition in manuscript <hi>a</hi>.</note>
 <add place="addedfolios" hand="#hand2" xml:id="g180.10-180.12add100">
-<pb n="204r" facs="vat:230" ed="#a"/>
+<pb n="204r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0440" ed="#a"/>
 ipse usque 
 &bl;<rs>capuam</rs> uenit terram pro tempore sibi componens, et sic reuer&bd;sus 
 est <num value="1042">mxlii</num>, indictione <num value="15">xu</num>. 
@@ -665,7 +656,7 @@ princeps <rs>salerni</rs> a suis interfectus est anno principatus sui
 <add place="addedfolios" hand="#hand2" xml:id="g181.12-182.19add100">
 &bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1053">mliii</num> indictione <num value="6">ui</num> mense 
 &bl;<hi>iulii</hi>. <rs>leo</rs> papa multis precibus ab <rs>enrico</rs> monitus imperatore 
-<pb n="204v" facs="vat:231" ed="#a"/>
+<pb n="204v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0441" ed="#a"/>
 &bl;per quorundam <rs>sampnitum</rs> suggestionem uenit in <rs>beneuentum</rs> 
 &bl;ut <rs>normannos</rs> <rs>apulia</rs> expelleret. <hi>inde</hi> mouens gressum simul 
 &bl;cum <rs>alamannis</rs> quos imperator cum eo duxerat, apud urbem 
@@ -691,7 +682,7 @@ c<seg ana="#ae">ae</seg>sa est, ipso perspicientem. <hi>non</hi> enim <rs>dominu
 &bl;<hi>eodem</hi> anno <rs>constantinus</rs> <rs>monomachus</rs> imperator <rs>constan&bd;tinopolitanus</rs> 
 obiit, post quem <rs>theodora</rs>, soror <rs>zoy</rs> imperatricis 
 &bl;uirgo existens, imperium <rs>constantinopolitanum</rs> uiriliter biennio 
-&bl;tenuit. <hi>qua</hi> <pb n="205r" facs="vat:231" ed="#a"/>defuncta <rs>michael</rs> <rs>nouicius</rs> imperii honorem adep&bd;tus 
+&bl;tenuit. <hi>qua</hi> <pb n="205r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0442" ed="#a"/>defuncta <rs>michael</rs> <rs>nouicius</rs> imperii honorem adep&bd;tus 
 est, qui eodem anno fuit inuitus monachus factus. <hi>cui</hi> <rs>isa&bd;chius</rs> 
 <rs>commiano</rs> imperator successit, qui post annos <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> 
 &bl;ex quo imperauit imperio eiectus ac monachus factus est. <hi>cui</hi> 
@@ -724,7 +715,7 @@ cognomento <rs>uiscardus</rs>, eiusdem <rs>gofridi</rs> comitis frater,
 &bl;<hi>secundus</hi> autem comes <rs>gofridus</rs> pater <rs>robberti</rs> comitis de <rs>lau&bd;ritello</rs>. 
 <hi>tertius</hi> uero <rs>drogo</rs> comes, de quo superius scriptum est. 
 &bl;<hi>quartus</hi> autem <rs>willelmus</rs>, et ipse comes, qui propter fortitudinis 
-&bl;su<seg ana="#ae">ae</seg> prudentiam <pb n="205v" facs="vat:232" ed="#a"/><rs>brachiferreus</rs> est pr<seg ana="#ae">ae</seg>nomine dictus: erat enim 
+&bl;su<seg ana="#ae">ae</seg> prudentiam <pb n="205v" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0443" ed="#a"/><rs>brachiferreus</rs> est pr<seg ana="#ae">ae</seg>nomine dictus: erat enim 
 &bl;astutissimus et ferox fortisque uiribus. <hi>quintus</hi> extitit comes <rs>gon&bd;fridus</rs>. 
 <hi>sextus</hi> quoque <rs>malgerius</rs> comes, probus atque famosus. 
 &bl;<hi>septimus</hi> itaque fuit <rs>robbertus</rs> <rs>guiscardus</rs>. <hi>hic</hi> autem propter 
@@ -768,7 +759,7 @@ ipsam eorum ciuitatem in sua potestate ab eis accepit, qui
 <p xml:id="g184.13-185.7" decls="#al"> 
 <note resp="#pm" type="segmentation"><rs>garufi</rs>'s and <rs>bonetti</rs>'s paragraphs run from page 184 line 10 to page 185 line 7 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph in order to highlight that the part of the text going from line 10 to line 13 of page 184 is an addition in manuscript <hi>a</hi>.</note>
 <note resp="#pm" type="segmentation"><hi>from</hi> this point, the text is due to the first hand of manuscript <hi>a</hi> again.</note>
-<pb n="206r" facs="vat:233" ed="#a"/>
+<pb n="206r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0444" ed="#a"/>
 cum exercitu in <rs>calabriam</rs> profectus, <rs>re&bd;gium</rs> 
 ciuitatem cepit atque omnium <rs>normannorum</rs> dux effec&bd;tus 
 est. <hi>hic</hi> accepit uxorem nomine <rs>sigelgaytam</rs> <rs>guaimarii</rs> prin&bd;cipis 

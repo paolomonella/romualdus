@@ -106,16 +106,6 @@
                 </tagUsage>
              </namespace>
          </tagsDecl>
-        <listPrefixDef>
-            <prefixDef ident="vat" matchPattern="([0-9]+)" replacementPattern="img/vat.lat.3973.pdf#page=$1">
-                <p> In the context of this edition, private URIs with 
-                    the prefix "vat" point to a specific page of external 
-                    PDF file vat.lat.3973.pdf, including the digital images 
-                    of the A manuscript. For example, 'vat:29'
-                    dereferences to 'img/vat.lat.3973.pdf#page=29'.
-                </p>
-            </prefixDef>
-        </listPrefixDef>
     </encodingDesc>
   </teiHeader>
   <text>
