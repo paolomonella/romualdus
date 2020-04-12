@@ -23,6 +23,7 @@
                 <listWit>
                     <witness xml:id="b">Bonetti</witness>
                     <witness xml:id="a">a</witness>
+                    <witness xml:id="o">o</witness>
                 </listWit>
             </div>
         </front>
@@ -71,11 +72,15 @@
  Anno dominice incarnationis MLXVI indictione 
 <app>
    <rdg wit="#b">III</rdg>
-   <rdg wit="#a">IV</rdg>
-</app> mense aprilis stella cometis apparuit a parte
+   <rdg wit="#a #o">IV</rdg>
+</app> mense aprilis stella cometis apparuit 
 <app>
-   <rdg wit="#b">orientis</rdg>
-   <rdg wit="#a">Orientis</rdg>
+   <rdg wit="#b #a">a parte</rdg>
+   <rdg wit="#o">in</rdg>
+</app> 
+<app>
+   <rdg wit="#b #a">Orientis</rdg>
+   <rdg wit="#o">oriente</rdg>
 </app> , cuius fumus per aliquot dies tendebat ad meridiem. Ipso quoque mense hec eadem stella apparuit a parte 
 <app>
    <rdg wit="#b">occidentis</rdg>
@@ -87,12 +92,20 @@
 </app> per aliquot dies tendebat. Quo anno apud Constantinopolim Constantinus Dioclizi imperator, anno eius imperii 
 <app>
    <rdg wit="#b">sexto</rdg>
-   <rdg wit="#a">VI</rdg>
-</app> , defunctus est, cui Romano Diogenes in imperium successit. 
+   <rdg wit="#a #o">VI</rdg>
+</app> , defunctus est, cui Romano Diogenes in imperium 
+<app>
+   <rdg wit="#b #a">successit</rdg>
+   <rdg wit="#o">succesit</rdg>
+</app> .
 <app>
    <rdg wit="#b">"</rdg>
    <rdg wit="#a"/>
-</app> Eodem anno dux Robbertus cepit ciuitatem Uestis apprehenditque ibi catipanum nomine Kuriacum. Hinc etiam ipse dux Barum obsedit Apulie ciuitatem et triennio eam incessanter oppugnauit 
+</app> Eodem anno dux Robbertus cepit ciuitatem Uestis apprehenditque ibi catipanum nomine Kuriacum. Hinc etiam ipse dux Barum obsedit Apulie ciuitatem et triennio eam incessanter 
+<app>
+   <rdg wit="#b #a">oppugnauit</rdg>
+   <rdg wit="#o">obpugnauit</rdg>
+</app> 
 <app>
    <rdg wit="#b"> </rdg>
    <rdg wit="#a">;</rdg>
@@ -152,7 +165,11 @@
 </p>
  
 <p xml:id="g187.9-187.11">
- Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi successit. 
+ Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi 
+<app>
+   <rdg wit="#b #a">successit</rdg>
+   <rdg wit="#o">succesit</rdg>
+</app> . 
 </p>
  
 <p xml:id="g187.11-187.14">
@@ -180,7 +197,11 @@
 <app>
    <rdg wit="#b">"</rdg>
    <rdg wit="#a"/>
-</app> cepit Barum ciuitatem longa obsidione fatigatam, indeque mouens exercitum, Siciliam properauit obseditque 
+</app> cepit Barum ciuitatem longa obsidione fatigatam, indeque 
+<app>
+   <rdg wit="#b #a">mouens</rdg>
+   <rdg wit="#o">monens</rdg>
+</app> exercitum, Siciliam properauit obseditque 
 <app>
    <rdg wit="#b">" "</rdg>
    <rdg wit="#a"/>

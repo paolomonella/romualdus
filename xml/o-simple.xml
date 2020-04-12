@@ -17,11 +17,18 @@
       </publicationStmt> 
       <sourceDesc> 
         <listBibl> 
-          <msDesc xml:id="o"> 
+          <msDesc xml:id="o" facs="https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json"> 
               <msIdentifier> 
                   <settlement>Ottobonianus</settlement> 
                   <idno>Latinus 2940, 1st fragment</idno> 
                 </msIdentifier> 
+		<p>Attribute @facs in 'pb' points to the URI of the viewer of the page in the 
+			website of the Vatical Library. The URI of the IIIF info.json file with 
+			metadata on that specific canvas can be easily derived from the viewer URI. 
+			For example, if the viewer URI is 
+			https://digi.vatlib.it/view/MSS_Vat.lat.3973/0500 
+			then the info.json file URI is 
+			https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/canvas/p0500</p> 
             </msDesc> 
         <biblStruct xml:id="b"> 
             <monogr>    
@@ -245,7 +252,7 @@ Suo quidem tempore fuit pessima fames. Hic autem mortuo
 Alberico qui patriciatus sibi nomen uendicauerat a Crescentio 
 Numentano, qui patricius dicebatur, papa ordinatus est quique 
 etiam Ottonem coronauit imperatorem, postea uero cum magno 
-dedecore ab eodem Crescentio a papatu expulsus est. Et quidam 
+decore ab eodem Crescentio a papatu expulsus est. Et quidam 
 Iohannes, Placentinus episcopus, Grecus genere, legatione functus 
 Ottonis imperatoris a Constantinopoli rediens dum Romam 
 causam orationis uenire, a prefato Crescentio et a Romanis 
@@ -546,6 +553,44 @@ diebus Robbertus dux ad Alexandrum papam proficiscens
 ligius eius homo deuenit et sicut Nicolaus pape ita et huic 
 iusiurandum fecit et per uexillum ab eo terram cum honore ducatus 
 accepit. Set autem Alexander papa annis XI, menses VI. 
+[/p] 
+[p xml:id="g186.6-186.7"] 
+[/p] 
+[p xml:id="g186.8-186.8"] 
+[/p] 
+[p xml:id="g186.9-186.9"] 
+[/p] 
+[p xml:id="g186.10-186.11"] 
+[/p] 
+[p xml:id="g186.12-187.2"] 
+Anno dominice incarnationis MLXVI indictione IV mense 
+aprilis stella cometis apparuit in oriente, cuius fumus per 
+aliquot dies tendebat ad meridiem. 
+similiter per aliquot dies tendebat. Quo anno apud Constantinopolim 
+Constantinus Dioclizi imperator, anno eius imperii 
+VI, defunctus est, cui Romano Diogenes in imperium succesit. 
+"Eodem anno dux Robbertus cepit ciuitatem Uestis apprehenditque 
+ibi catipanum nomine Kuriacum. Hinc etiam ipse 
+dux Barum obsedit Apulie ciuitatem et triennio eam incessanter 
+obpugnauit terra marique pontem quoque ibi in mari fecit". 
+[/p] 
+[p xml:id="g187.3-187.4"] 
+[/p] 
+[p xml:id="g187.5-187.8"] 
+[/p] 
+[p xml:id="g187.9-187.11"] 
+Anno dominice incarnationis MLXX indictione VIII, apud 
+Constantinopolim Romano Diogenes imperator transacto quarto 
+imperii eius anno defunctus est. Cui in imperio Michael filius 
+Constantini Dioclizi succesit. 
+[/p] 
+[p xml:id="g187.11-187.14"] 
+[/p] 
+[p xml:id="g187.14-188.1"] 
+Eodem anno Robbertus dux 
+"cepit Barum ciuitatem longa obsidione fatigatam, indeque 
+monens exercitum, Siciliam properauit obseditque" "Panormum, 
+ ditissimam 
 [/p] 
     </body> 
   </text> 

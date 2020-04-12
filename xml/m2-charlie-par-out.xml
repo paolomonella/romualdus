@@ -11,11 +11,18 @@
             <editor xml:id="pm">Paolo Monella</editor></titleStmt>
             <publicationStmt><p/></publicationStmt>
             <sourceDesc><listBibl>
-          <msDesc xml:id="a">
+          <msDesc xml:id="a" facs="https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json">
               <msIdentifier>
                   <settlement>Biblioteca Apostolica Vaticana</settlement>
                   <idno>Vat. lat. 3973</idno>
                 </msIdentifier>
+		<p>Attribute @facs in 'pb' points to the URI of the viewer of the page in the
+			website of the Vatical Library. The URI of the IIIF info.json file with
+			metadata on that specific canvas can be easily derived from the viewer URI.
+			For example, if the viewer URI is
+			https://digi.vatlib.it/view/MSS_Vat.lat.3973/0500
+			then the info.json file URI is
+			https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/canvas/p0500</p>
             </msDesc>
                  <biblStruct xml:id="g">
                 <monogr>
@@ -102,11 +109,15 @@ Anno Domini MLXV indictione III. Hoc anno Robbertus dux intrauit Siciliam et int
 Anno dominice incarnationis MLXVI indictione 
 <app cert="high" type="substantive" subtype="num-num">
    <lem wit="#b">III</lem>
-   <rdg wit="#a">IV</rdg>
-</app> mense aprilis stella cometis apparuit a parte
-<app cert="high" type="orthographic" subtype="case">
-   <lem resp="#pm">Orientis</lem>
-   <rdg wit="#b #a">orientis</rdg>
+   <rdg wit="#a #o">IV</rdg>
+</app> mense aprilis stella cometis apparuit 
+<app cert="high" type="substantive" xml:id="app2-in-g186.12-187.2">
+   <lem wit="#b #a">a parte</lem>
+   <rdg wit="#o">in</rdg>
+</app> 
+<app cert="high" type="substantive">
+   <lem wit="#b #a">Orientis</lem>
+   <rdg wit="#o">oriente</rdg>
 </app>, cuius fumus per aliquot dies tendebat ad meridiem. Ipso quoque mense hec eadem stella apparuit a parte 
 <app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Occidentis</lem>
@@ -118,12 +129,20 @@ Anno dominice incarnationis MLXVI indictione
 </app> per aliquot dies tendebat. Quo anno apud Constantinopolim Constantinus Dioclizi imperator, anno eius imperii 
 <app cert="high" type="orthographic" subtype="num-word">
    <lem wit="#b">sexto</lem>
-   <rdg wit="#a">VI</rdg>
-</app>, defunctus est, cui Romano Diogenes in imperium successit. 
+   <rdg wit="#a #o">VI</rdg>
+</app>, defunctus est, cui Romano Diogenes in imperium 
+<app cert="high" type="orthographic" subtype="double">
+   <lem wit="#b #a">successit</lem>
+   <rdg wit="#o">succesit</rdg>
+</app>.
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
-</app> Eodem anno dux Robbertus cepit ciuitatem Uestis apprehenditque ibi catipanum nomine Kuriacum. Hinc etiam ipse dux Barum obsedit Apulie ciuitatem et triennio eam incessanter oppugnauit 
+</app> Eodem anno dux Robbertus cepit ciuitatem Uestis apprehenditque ibi catipanum nomine Kuriacum. Hinc etiam ipse dux Barum obsedit Apulie ciuitatem et triennio eam incessanter 
+<app cert="high" type="orthographic" subtype="pb">
+   <lem wit="#b #a">oppugnauit</lem>
+   <rdg wit="#o">obpugnauit</rdg>
+</app> 
 <app cert="high" type="punctuation" subtype="add-punctuation">
    <lem resp="#pm">;</lem>
    <rdg wit="#b"> </rdg>
@@ -178,7 +197,11 @@ Anno MDXVII, indictione V, Guillelmus dux Normannie pugnauit cum Araldo rege Ang
 </p>
  
 <p xml:id="g187.9-187.11">
-Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi successit. 
+Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi 
+<app cert="high" type="orthographic" subtype="double">
+   <lem wit="#b #a">successit</lem>
+   <rdg wit="#o">succesit</rdg>
+</app>. 
 </p>
  
 <p xml:id="g187.11-187.14" decls="longversion">
@@ -205,12 +228,16 @@ Eodem anno Robbertus dux
 <app cert="high" type="punctuation" subtype="remove-punctuation">
    <lem resp="#pm"></lem>
    <rdg wit="#b">"</rdg>
-</app> cepit Barum ciuitatem longa obsidione fatigatam, indeque mouens exercitum, Siciliam properauit obseditque 
+</app> cepit Barum ciuitatem longa obsidione fatigatam, indeque 
+<app cert="high" type="substantive">
+   <lem wit="#b #a">mouens</lem>
+   <rdg wit="#o">monens</rdg>
+</app> exercitum, Siciliam properauit obseditque 
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#b">" "</lem>
    <rdg wit="#a"></rdg>
 </app> Panormum, 
-<app cert="high" type="substantive" subtype="missing-in-ms">
+<app cert="high" type="substantive" xml:id="app4-in-g187.14-188.1">
    <lem wit="#b">per terram et per mare, duxitque ante eam naues LVIII</lem>
    <rdg wit="#a"></rdg>
 </app> ditissimam Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam 
@@ -5052,6 +5079,8 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
  
 <p xml:id="v-b306b"></p>
 
+<note target="#app2-in-g186.12-187.2" type="textcrit">In MS O the following words are missing: 'Ipso quoque mense hec eadem stella apparuit a parte occidentis, cuius fumus ad meridiem'.</note>
+<note target="#app4-in-g187.14-188.1" type="textcrit">MS O doesn't have the final words of this paragraph, 'Sicilie ciuitatem, uiriliter eam expugnans, cepitque eam'. This is the end of the textual fragment of the Chronicon in folios 16r-18v of Ott. Lat. 2940.</note>
 <note target="#app11-in-g201.1-201.18" type="textcrit">Garufi has 'Troia'; Bonetti's latin text omits that word; but Bonetti's Italian translation has it.</note>
 <note target="#app7-in-g214.n8-215.n14" type="textcrit">In fact, Garufi has XIIII, not XIV (different orthography), but I didn't record it in the XML file. This is no big issue, though, since I 'normalized' orthography for all Roman numerals anyway.</note>
 <note target="#app13-in-g214.n8-215.n14" type="textcrit">Interesting variant.</note>

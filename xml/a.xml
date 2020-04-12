@@ -21,11 +21,18 @@
       </publicationStmt>
       <sourceDesc>
       <listBibl>
-          <msDesc xml:id="a">
+          <msDesc xml:id="a" facs="https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json">
               <msIdentifier>
                   <settlement>Biblioteca Apostolica Vaticana</settlement>
                   <idno>Vat. lat. 3973</idno>
                 </msIdentifier>
+		<p>Attribute @facs in 'pb' points to the URI of the viewer of the page in the
+			website of the Vatical Library. The URI of the IIIF info.json file with
+			metadata on that specific canvas can be easily derived from the viewer URI.
+			For example, if the viewer URI is
+			https://digi.vatlib.it/view/MSS_Vat.lat.3973/0500
+			then the info.json file URI is
+			https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/canvas/p0500</p>
             </msDesc>
                  <biblStruct xml:id="g">
                 <monogr>
