@@ -1250,8 +1250,18 @@ class treeWithAppElements:
                         child.tail = '\n   '
                         app[-1].tail = '\n'
             # 2. part
-            char1 = app.tail[0]  # 1st character after </app>
-            char2 = app.tail[1]  # 2st character after </app>
+            if len(app.tail) < 2:
+                print(('\n[philologist.py] <app> {} with variants {}'
+                       ' in par. {} has tail «{}»').format(
+                          app.attrib, ' '.join(app.itertext()),
+                          a['xmlid'], app.tail))
+            # 1st character after </app>
+            char1 = app.tail[0]
+            try:
+                # 2st character after </app> (it might be \n)
+                char2 = app.tail[1]
+            except IndexError:
+                print('<app> {} has tail «{}»'.format(app.attrib, app.tail))
             if char1 == ' ' and char2 in punct:
                 app.tail = app.tail[1:]  # Remove 1st char (space)
 
