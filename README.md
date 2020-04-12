@@ -161,7 +161,7 @@ Transcription and OCR:
 - `rs_bonetti_all.txt`, `rs_garufi_pp_1-20.txt`, `rs.txt`: lists of named entities in transcription/OCR files
 
 
-Original attempts to collate transcriptions with CollateX:
+Initial attempts to collate transcriptions with CollateX:
 
 - `collatex_for_romualdus_xml.py`: collate transcriptions with CollateX
 - `xmlns_collatex`: originally used to store versions of the XML files compatible with CollateX
@@ -189,6 +189,7 @@ Pre-processing of transcription/OCR files before JuxtaCommons.org collation:
 
 Post-processing of JuxtaCommons.org collation files:
 
+- `biblio.py`: import bibliography from a BibTeXML file to the 'front' element of chronicon.xml
 - `diff`: spreadsheets to check the diffs found by module `variant_subtype.py`
 - `juxta.py`: trigger for all other scripts (pre-processing before collation and post-procesing after collation)
 - `m_unifier.py`: re-unify collation files (see XML file description above)
