@@ -14,7 +14,7 @@ import sqlite3
 from my_database_import import import_table
 '''
 
-list_remove = ['language', 'lccn', 'keywords',
+list_remove = ['language', 'langid', 'lccn', 'keywords', 'bibtexkey',
                'note', 'abstract', 'isbn']
 
 
@@ -55,7 +55,7 @@ def createchild(tagname, parent):
 def process_pages(e, pages):
     myfrom = pages.text.split('-')[0]
     myto = pages.text.split('-')[1]
-    # renameto(e, oldname='pages', newtagname='biblScope')
+    pages.text = pages.text.replace('--', '-')
     pages.tag = '{%s}%s' % (ns['t'], 'biblScope')
     pages.set('unit', 'page')
     pages.set('from', myfrom)
@@ -77,26 +77,30 @@ def book(e):
 
     renameto(e, oldname='book', newtagname='monogr')
 
-    renameto(e, oldname='url', newtagname='ref',
-             attr='type', value='url')
-
-    if e.find('.//b:%s' % ('series'), ns) is not None:
+    if (e.find('.//b:%s' % ('series'), ns) is not None or
+            e.find('.//b:%s' % ('journal'), ns) is not None):
         teiseries = createchild('series', parent=e)
         moveinto('series', oldparent=e, newparent=teiseries)
-        moveinto('volume', oldparent=e, newparent=teiseries)
         renameto(e, oldname='series', newtagname='title',
                  attr='level', value='s')
+        moveinto('volume', oldparent=e, newparent=teiseries)
         renameto(e, oldname='volume', newtagname='biblScope',
                  attr='unit', value='volume')
+
+    url = e.find('.//b:%s' % ('url'), ns)
+    if url is not None:
+        e.append(url)
+    renameto(e, oldname='url', newtagname='ref',
+             attr='type', value='url')
 
     for tag in list_remove:
         remove_element(tag, e)
 
 
-def inproceedings(e):
+def miscellaneous(e, entrytype):
 
-    inproceedings = e.find('.//b:%s' % ('inproceedings'), ns)
-    imprint = createchild('imprint', parent=inproceedings)
+    miscellaneous = e.find('.//b:%s' % (entrytype), ns)
+    imprint = createchild('imprint', parent=miscellaneous)
     analytic = createchild('analytic', parent=e)
     e.insert(0, analytic)
 
@@ -108,10 +112,12 @@ def inproceedings(e):
     moveinto('location', oldparent=e, newparent=imprint)
     renameto(e, oldname='location', newtagname='pubPlace')
 
-    renameto(e, oldname='inproceedings', newtagname='monogr')
+    moveinto('pages', oldparent=e, newparent=imprint)
+    pages = e.find('.//b:%s' % ('pages'), ns)
+    if pages is not None:
+        process_pages(e, pages)
 
-    renameto(e, oldname='url', newtagname='ref',
-             attr='type', value='url')
+    renameto(e, oldname=entrytype, newtagname='monogr')
 
     moveinto('author', oldparent=e, newparent=analytic)
     moveinto('title', oldparent=e, newparent=analytic)
@@ -119,9 +125,58 @@ def inproceedings(e):
     renameto(e, oldname='booktitle', newtagname='title',
              attr='level', value='m')
 
+    if (e.find('.//b:%s' % ('series'), ns) is not None or
+            e.find('.//b:%s' % ('journal'), ns) is not None):
+        teiseries = createchild('series', parent=e)
+        moveinto('series', oldparent=e, newparent=teiseries)
+        renameto(e, oldname='series', newtagname='title',
+                 attr='level', value='s')
+        moveinto('volume', oldparent=e, newparent=teiseries)
+        renameto(e, oldname='volume', newtagname='biblScope',
+                 attr='unit', value='volume')
+
+    url = e.find('.//b:%s' % ('url'), ns)
+    if url is not None:
+        e.append(url)
+    renameto(e, oldname='url', newtagname='ref',
+             attr='type', value='url')
+
+
+def article(e):
+
+    article = e.find('.//b:%s' % ('article'), ns)
+    imprint = createchild('imprint', parent=article)
+    analytic = createchild('analytic', parent=e)
+    e.insert(0, analytic)
+
+    moveinto('publisher', oldparent=e, newparent=imprint)
+
+    moveinto('year', oldparent=e, newparent=imprint)
+    renameto(e, oldname='year', newtagname='date')
+
+    moveinto('location', oldparent=e, newparent=imprint)
+    renameto(e, oldname='location', newtagname='pubPlace')
+
+    moveinto('volume', oldparent=e, newparent=imprint)
+    renameto(e, oldname='volume', newtagname='biblScope',
+             attr='unit', value='vol')
+
+    moveinto('number', oldparent=e, newparent=imprint)
+    renameto(e, oldname='number', newtagname='biblScope',
+             attr='unit', value='issue')
+
+    moveinto('pages', oldparent=e, newparent=imprint)
     pages = e.find('.//b:%s' % ('pages'), ns)
     if pages is not None:
         process_pages(e, pages)
+
+    renameto(e, oldname='article', newtagname='monogr')
+
+    moveinto('author', oldparent=e, newparent=analytic)
+    moveinto('title', oldparent=e, newparent=analytic)
+
+    renameto(e, oldname='journal', newtagname='title',
+             attr='level', value='j')
 
     if e.find('.//b:%s' % ('series'), ns) is not None:
         teiseries = createchild('series', parent=e)
@@ -131,6 +186,12 @@ def inproceedings(e):
                  attr='level', value='s')
         renameto(e, oldname='volume', newtagname='biblScope',
                  attr='unit', value='volume')
+
+    url = e.find('.//b:%s' % ('url'), ns)
+    if url is not None:
+        e.append(url)
+    renameto(e, oldname='url', newtagname='ref',
+             attr='type', value='url')
 
 
 def biblio():
@@ -153,7 +214,11 @@ def biblio():
         if entry.find('.//b:%s' % ('book'), ns) is not None:
             book(entry)
         elif entry.find('.//b:%s' % ('inproceedings'), ns) is not None:
-            inproceedings(entry)
+            miscellaneous(entry, entrytype='inproceedings')
+        elif entry.find('.//b:%s' % ('inbook'), ns) is not None:
+            miscellaneous(entry, entrytype='inbook')
+        elif entry.find('.//b:%s' % ('article'), ns) is not None:
+            article(entry)
         entry.tag = '{%s}biblStruct' % ns['t']
         # Replace @id with @xml:id
         xmlid = entry.get('id')

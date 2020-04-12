@@ -75,7 +75,7 @@
                                 <biblScope unit="volume">7</biblScope>
                                 <biblScope unit="part">1</biblScope>
                             </series>
-                            <note>Garufi's edition was the collation base from the beginning of the text
+                            <note>Garufi's edition was the collation exemplar from the beginning of the text
 			    until (and including) paragraph g163.1-163.5.</note>
                         </biblStruct>
                     </witness>
@@ -96,7 +96,7 @@
                                 <title level="s">Schola Salernitana. Studi e testi</title>
                                 <biblScope unit="volume">6</biblScope>
                             </series>
-                            <note>Bonetti's edition was the collation base for the collation
+                            <note>Bonetti's edition was the collation exemplar for the collation
 			    from (and including) paragraph g163.6-163.7 to the end of the text.
 			</note>
                         </biblStruct>
@@ -736,7 +736,7 @@ mostly by adopting MS A's spelling, in cases in which
             <author>Pio, Berardo</author>
             <title>Guglielmo I d'Altavilla: gestione del potere e lotta politica nell'Italia normanna: 1154-1169</title>
             <imprint>
-                <publisher>P{\`a}tron</publisher>
+                <publisher>Pàtron</publisher>
             <date>1996</date>
             </imprint>
 </monogr>
@@ -760,8 +760,7 @@ mostly by adopting MS A's spelling, in cases in which
         <monogr>
             <editor>Arndt, Wilhelm</editor>
             <title>Romoaldi II archiepiscopi Salernitani Annales</title>
-            <ref type="url">http://www.mgh.de/dmgh/resolving/MGH_SS_19_S._387</ref>
-        <imprint>
+            <imprint>
                 <date>1866</date>
             <pubPlace>Hannover</pubPlace>
             </imprint>
@@ -770,7 +769,8 @@ mostly by adopting MS A's spelling, in cases in which
                 <title level="s">Monumenta Germaniae Historica</title>
             <biblScope unit="volume">SS XIX</biblScope>
             </series>
-</biblStruct>
+<ref type="url">http://www.mgh.de/dmgh/resolving/MGH_SS_19_S._387</ref>
+        </biblStruct>
     <biblStruct xml:id="garufi1914romualdo">
         <monogr>
             <editor>Garufi, Carlo Alberto</editor>
@@ -794,12 +794,12 @@ mostly by adopting MS A's spelling, in cases in which
 <monogr>
             <title level="m">The Writing of History in the Middle Ages: Essays Presented to Richard William Southern</title>
             <editor>Matthew, Donald J. A. and Davis, Ralph Henry Carless</editor>
-            <biblScope unit="page" from="239" to="274">239-274</biblScope>
             <imprint>
                 <publisher>Oxford University Press</publisher>
             <date>1981</date>
             <pubPlace>Oxford</pubPlace>
-        </imprint>
+        <biblScope unit="page" from="239" to="274">239-274</biblScope>
+            </imprint>
 </monogr>
     </biblStruct>
     <biblStruct xml:id="bonetti2001romualdo">
@@ -818,15 +818,20 @@ mostly by adopting MS A's spelling, in cases in which
             </series>
 </biblStruct>
     <biblStruct xml:id="zabbia2002cronista">
-        <article>
-            <author>Zabbia, Marino</author>
+        <analytic>
+                <author>Zabbia, Marino</author>
             <title>Un cronista medievale e le sue fonti. La storia del papato nel “Chronicon” di Romualdo Salernitano.</title>
-            <year>2002</year>
-            <volume>9</volume>
-            <pages>229-250</pages>
-            <url>http://hdl.handle.net/2318/80755</url>
-        </article>
-    </biblStruct>
+            </analytic>
+<monogr>
+            <title level="j">Filologia Mediolatina</title>
+            <imprint>
+                <date>2002</date>
+            <biblScope unit="vol">9</biblScope>
+            <biblScope unit="page" from="229" to="250">229-250</biblScope>
+            </imprint>
+</monogr>
+    <ref type="url">http://hdl.handle.net/2318/80755</ref>
+        </biblStruct>
     <biblStruct xml:id="zabbia2004romualdo">
         <analytic>
                 <author>Zabbia, Marino</author>
@@ -835,24 +840,29 @@ mostly by adopting MS A's spelling, in cases in which
 <monogr>
             <title level="m">Salerno nel XII secolo. Istituzioni, società, cultura</title>
             <editor>Delogu, Paolo and Peduto, Paolo</editor>
-            <biblScope unit="page" from="380" to="398">380-398</biblScope>
             <imprint>
                 <publisher>Provincia di Salerno - Centro studi salernitani "Raffaele Guariglia"</publisher>
             <date>2004</date>
             <pubPlace>Salerno</pubPlace>
-        </imprint>
+        <biblScope unit="page" from="380" to="398">380-398</biblScope>
+            </imprint>
 </monogr>
     </biblStruct>
     <biblStruct xml:id="zabbia2006nuova">
-        <article>
-            <author>Zabbia, Marino</author>
+        <analytic>
+                <author>Zabbia, Marino</author>
             <title>Per la nuova edizione della cronaca di Romualdo Salernitano</title>
-            <year>2006</year>
-            <volume>s. V, 7/1-2</volume>
-            <pages>59-65</pages>
-            <url>http://hdl.handle.net/2318/80673</url>
-        </article>
-    </biblStruct>
+            </analytic>
+<monogr>
+            <title level="j">Napoli Nobilissima</title>
+            <imprint>
+                <date>2006</date>
+            <biblScope unit="vol">s. V, 7/1-2</biblScope>
+            <biblScope unit="page" from="59" to="65">59-65</biblScope>
+            </imprint>
+</monogr>
+    <ref type="url">http://hdl.handle.net/2318/80673</ref>
+        </biblStruct>
     <biblStruct xml:id="zabbia2010damnatio">
         <analytic>
                 <author>Zabbia, Marino</author>
@@ -861,15 +871,15 @@ mostly by adopting MS A's spelling, in cases in which
 <monogr>
             <title level="m">Condannare all'oblio. Pratiche della "damnatio memoriae" nel medioevo</title>
             <editor>Sanfilippo, Isa Lori and Rigon, Antonio</editor>
-            <biblScope unit="page" from="21" to="64">21-64</biblScope>
-            <ref type="url">http://hdl.handle.net/2318/80975</ref>
-        <imprint>
+            <imprint>
                 <publisher>Istituto storico italiano per il medio evo</publisher>
             <date>2010</date>
             <pubPlace>Roma</pubPlace>
+            <biblScope unit="page" from="21" to="64">21-64</biblScope>
             </imprint>
 </monogr>
-    </biblStruct>
+    <ref type="url">http://hdl.handle.net/2318/80975</ref>
+        </biblStruct>
     <biblStruct xml:id="zabbia2012cultura">
         <analytic>
                 <author>Zabbia, Marino</author>
@@ -878,15 +888,15 @@ mostly by adopting MS A's spelling, in cases in which
 <monogr>
             <title level="m">Contributi IV settimana di studi medievali</title>
             <editor>De Fraja, Valeria and Sansone, Salvatore</editor>
-            <biblScope unit="page" from="3" to="14">3-14</biblScope>
-            <ref type="url">http://hdl.handle.net/2318/128183</ref>
-        <imprint>
+            <imprint>
                 <publisher>Istituto storico italiano per il medio evo</publisher>
             <date>2012</date>
             <pubPlace>Roma</pubPlace>
+            <biblScope unit="page" from="3" to="14">3-14</biblScope>
             </imprint>
 </monogr>
-    </biblStruct>
+    <ref type="url">http://hdl.handle.net/2318/128183</ref>
+        </biblStruct>
     <biblStruct xml:id="palumbo1978medio">
         <monogr>
             <author>Palumbo, Pier Fausto</author>
@@ -899,131 +909,157 @@ mostly by adopting MS A's spelling, in cases in which
 </monogr>
     </biblStruct>
     <biblStruct xml:id="schwarz1978chronicon">
-        <inbook>
+        <analytic>
+                <title>Chronicon Amalfitanum</title>
+            </analytic>
+<monogr>
             <editor>Schwarz, Ulrich</editor>
-            <year>1978</year>
-            <bibtexkey>schwarz1978chronicon</bibtexkey>
-            <location>Tübingen</location>
-            <title>Chronicon Amalfitanum</title>
-            <booktitle>Amalfi im frühen Mittelalter</booktitle>
-            <langid>German</langid>
-        </inbook>
+            <title level="m">Amalfi im frühen Mittelalter</title>
+            <imprint>
+                <date>1978</date>
+            <pubPlace>Tübingen</pubPlace>
+            </imprint>
+</monogr>
     </biblStruct>
     <biblStruct xml:id="erdmann1930garufi">
-        <article>
-            <author>Erdmann, C.</author>
+        <analytic>
+                <author>Erdmann, C.</author>
             <title>C. A. Garufi, Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
-            <year>1930</year>
-            <volume>48</volume>
-            <pages>510-512</pages>
-            <location>Berlin</location>
-        </article>
+            </analytic>
+<monogr>
+            <title level="j">Neues Archiv</title>
+            <imprint>
+                <date>1930</date>
+            <pubPlace>Berlin</pubPlace>
+        <biblScope unit="vol">48</biblScope>
+            <biblScope unit="page" from="510" to="512">510-512</biblScope>
+            </imprint>
+</monogr>
     </biblStruct>
     <biblStruct xml:id="muratori1725chronicon">
         <monogr>
             <editor>Muratori, Ludovico Antonio</editor>
             <title>Chronicon Romualdi II Archiepiscopi Salernitani</title>
-            <volume>7</volume>
-            <ref type="url">https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10868996_00029.html</ref>
-        <imprint>
+            <imprint>
                 <date>1725</date>
             <pubPlace>Milano</pubPlace>
             </imprint>
 </monogr>
-    </biblStruct>
+    <series>
+                <title level="s">Rerum Italicarum scriptores</title>
+            <biblScope unit="volume">7</biblScope>
+            </series>
+<ref type="url">https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10868996_00029.html</ref>
+        </biblStruct>
     <biblStruct xml:id="andenna2001romualdo">
-        <inbook>
-            <editor>Bonetti, Cinzia</editor>
-            <year>2001</year>
-            <author>Andenna, Giancarlo</author>
+        <analytic>
+                <author>Andenna, Giancarlo</author>
             <title>Romualdo Salernitano fonte per la storia politica delle città di Lombardia</title>
-            <volume>6</volume>
-            <pages>7--39</pages>
-            <series>Schola Salernitana. Studi e testi</series>
-            <publisher>Avagliano</publisher>
-            <bibtexkey>andenna2001romualdo</bibtexkey>
-            <location>Salerno</location>
-            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
-            <langid>Italian</langid>
-        </inbook>
-    </biblStruct>
+            </analytic>
+<monogr>
+            <editor>Bonetti, Cinzia</editor>
+            <title level="m">Romualdo II Guarna, Chronicon</title>
+            <imprint>
+                <publisher>Avagliano</publisher>
+            <date>2001</date>
+            <pubPlace>Salerno</pubPlace>
+            <biblScope unit="page" from="7" to="">7-39</biblScope>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+            <biblScope unit="volume">6</biblScope>
+            </series>
+</biblStruct>
     <biblStruct xml:id="houben2001amator">
-        <inbook>
-            <editor>Bonetti, Cinzia</editor>
-            <year>2001</year>
-            <author>Houben, Hubert</author>
+        <analytic>
+                <author>Houben, Hubert</author>
             <title>«Amator pacis et cultor iustitie»: il re di Sicilia secondo Romualdo di Salerno</title>
-            <volume>6</volume>
-            <pages>41--47</pages>
-            <series>Schola Salernitana. Studi e testi</series>
-            <publisher>Avagliano</publisher>
-            <bibtexkey>houben2001amator</bibtexkey>
-            <location>Salerno</location>
-            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
-            <langid>Italian</langid>
-        </inbook>
-    </biblStruct>
-    <biblStruct xml:id="oldoni2001modo">
-        <inbook>
+            </analytic>
+<monogr>
             <editor>Bonetti, Cinzia</editor>
-            <year>2001</year>
-            <author>Oldoni, Massimo</author>
+            <title level="m">Romualdo II Guarna, Chronicon</title>
+            <imprint>
+                <publisher>Avagliano</publisher>
+            <date>2001</date>
+            <pubPlace>Salerno</pubPlace>
+            <biblScope unit="page" from="41" to="">41-47</biblScope>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+            <biblScope unit="volume">6</biblScope>
+            </series>
+</biblStruct>
+    <biblStruct xml:id="oldoni2001modo">
+        <analytic>
+                <author>Oldoni, Massimo</author>
             <title>Un modo d'intendere la storia</title>
-            <volume>6</volume>
-            <pages>49-55</pages>
-            <series>Schola Salernitana. Studi e testi</series>
-            <publisher>Avagliano</publisher>
-            <bibtexkey>oldoni2001modo</bibtexkey>
-            <location>Salerno</location>
-            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
-            <langid>Italian</langid>
-        </inbook>
-    </biblStruct>
+            </analytic>
+<monogr>
+            <editor>Bonetti, Cinzia</editor>
+            <title level="m">Romualdo II Guarna, Chronicon</title>
+            <imprint>
+                <publisher>Avagliano</publisher>
+            <date>2001</date>
+            <pubPlace>Salerno</pubPlace>
+            <biblScope unit="page" from="49" to="55">49-55</biblScope>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+            <biblScope unit="volume">6</biblScope>
+            </series>
+</biblStruct>
     <biblStruct xml:id="hoffmann1967hugo">
-        <article>
-            <author>Hoffmann, Hartmut</author>
+        <analytic>
+                <author>Hoffmann, Hartmut</author>
             <title>Hugo Falcandus und Romuald von Salerno</title>
-            <journal>Deutsches Archiv f{\"u}r Erforschung des Mittelalters</journal>
-            <year>1967</year>
-            <volume>23</volume>
-            <number>1</number>
-            <pages>116--170</pages>
-            </article>
+            </analytic>
+<monogr>
+            <title level="j">Deutsches Archiv für Erforschung des Mittelalters</title>
+            <imprint>
+                <date>1967</date>
+            <biblScope unit="vol">23</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="116" to="">116-170</biblScope>
+            </imprint>
+</monogr>
     </biblStruct>
     <biblStruct xml:id="oldoni2004guarna">
-        <inbook>
-            <volume>60</volume>
-            <pages>400--403</pages>
-            <year>2004</year>
-            <author>Oldoni, Massimo</author>
-            <bibtexkey>oldoni2004guarna</bibtexkey>
-            <location>Roma</location>
+        <analytic>
+                <author>Oldoni, Massimo</author>
             <title>Guarna, Romualdo</title>
-            <booktitle>Dizionario biografico degli italiani</booktitle>
-            <langid>Italian</langid>
-        </inbook>
+            </analytic>
+<monogr>
+            <title level="m">Dizionario biografico degli italiani</title>
+            <imprint>
+                <date>2004</date>
+            <pubPlace>Roma</pubPlace>
+            <biblScope unit="page" from="400" to="">400-403</biblScope>
+            </imprint>
+</monogr>
     </biblStruct>
     <biblStruct xml:id="schmale1986italische">
         <monogr>
             <author>Schmale, F.J.</author>
-            <title>Italische Quellen {\"u}ber die Taten Kaiser Friedrichs I. In Italien und der Brief {\"u}ber den Kreuzzug Kaiser Friedrichs I.</title>
-            <ref type="url">https://books.google.it/books?id=PgtoAAAAMAAJ</ref>
-        <imprint>
+            <title>Italische Quellen über die Taten Kaiser Friedrichs I. In Italien und der Brief über den Kreuzzug Kaiser Friedrichs I.</title>
+            <imprint>
                 <publisher>Wissenschaftliche Buchgesellschaft</publisher>
             <date>1986</date>
             <pubPlace>Darmstadt</pubPlace>
             </imprint>
 </monogr>
     <series>
-                <title level="s">Ausgew{\"a}hlte Quellen zur deutschen Geschichte des Mittelalters</title>
+                <title level="s">Ausgewählte Quellen zur deutschen Geschichte des Mittelalters</title>
             </series>
-</biblStruct>
+<ref type="url">https://books.google.it/books?id=PgtoAAAAMAAJ</ref>
+        </biblStruct>
     <biblStruct xml:id="loud2012roger">
         <monogr>
             <author>Loud, G.</author>
             <title>Roger II and the Creation of the Kingdom of Sicily</title>
-            <ref type="url">https://books.google.it/books?id=SHyPZwEACAAJ</ref>
-        <imprint>
+            <imprint>
                 <publisher>Manchester University Press</publisher>
             <date>2012</date>
             <pubPlace>Manchester-New York</pubPlace>
@@ -1032,16 +1068,17 @@ mostly by adopting MS A's spelling, in cases in which
     <series>
                 <title level="s">Medieval Sources</title>
             </series>
-</biblStruct>
+<ref type="url">https://books.google.it/books?id=SHyPZwEACAAJ</ref>
+        </biblStruct>
     <biblStruct xml:id="carucci1996romualdo">
         <monogr>
             <author>Carucci, Arturo</author>
             <title>Romualdo II Guarna. Il Congresso di Venezia del 1177</title>
-            <address>Lancusi (Salerno)</address>
             <imprint>
                 <publisher>Ed. Gutemberg</publisher>
             <date>1996</date>
-            </imprint>
+            <pubPlace>Lancusi (Salerno)</pubPlace>
+        </imprint>
 </monogr>
     </biblStruct>
 </listBibl>

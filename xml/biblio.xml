@@ -4,7 +4,7 @@
         <book>
             <author>Pio, Berardo</author>
             <title>Guglielmo I d'Altavilla: gestione del potere e lotta politica nell'Italia normanna: 1154-1169</title>
-            <publisher>P{\`a}tron</publisher>
+            <publisher>Pàtron</publisher>
             <year>1996</year>
             <language>Italian</language>
         </book>
@@ -87,6 +87,7 @@
         <article>
             <author>Zabbia, Marino</author>
             <title>Un cronista medievale e le sue fonti. La storia del papato nel “Chronicon” di Romualdo Salernitano.</title>
+            <journal>Filologia Mediolatina</journal>
             <year>2002</year>
             <volume>9</volume>
             <pages>229-250</pages>
@@ -117,6 +118,7 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
         <article>
             <author>Zabbia, Marino</author>
             <title>Per la nuova edizione della cronaca di Romualdo Salernitano</title>
+            <journal>Napoli Nobilissima</journal>
             <year>2006</year>
             <volume>s. V, 7/1-2</volume>
             <pages>59-65</pages>
@@ -187,6 +189,7 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
         <article>
             <author>Erdmann, C.</author>
             <title>C. A. Garufi, Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+            <journal>Neues Archiv</journal>
             <year>1930</year>
             <volume>48</volume>
             <pages>510-512</pages>
@@ -199,6 +202,7 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <title>Chronicon Romualdi II Archiepiscopi Salernitani</title>
             <year>1725</year>
             <volume>7</volume>
+            <series>Rerum Italicarum scriptores</series>
             <language>Latin</language>
             <location>Milano</location>
             <url>https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10868996_00029.html</url>
@@ -216,8 +220,8 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <volume>6</volume>
             <pages>7--39</pages>
             <series>Schola Salernitana. Studi e testi</series>
-            <publisher>Avagliano</publisher>
             <bibtexkey>andenna2001romualdo</bibtexkey>
+            <publisher>Avagliano</publisher>
             <location>Salerno</location>
             <booktitle>Romualdo II Guarna, Chronicon</booktitle>
             <langid>Italian</langid>
@@ -235,8 +239,8 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <volume>6</volume>
             <pages>41--47</pages>
             <series>Schola Salernitana. Studi e testi</series>
-            <publisher>Avagliano</publisher>
             <bibtexkey>houben2001amator</bibtexkey>
+            <publisher>Avagliano</publisher>
             <location>Salerno</location>
             <booktitle>Romualdo II Guarna, Chronicon</booktitle>
             <langid>Italian</langid>
@@ -254,8 +258,8 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <volume>6</volume>
             <pages>49-55</pages>
             <series>Schola Salernitana. Studi e testi</series>
-            <publisher>Avagliano</publisher>
             <bibtexkey>oldoni2001modo</bibtexkey>
+            <publisher>Avagliano</publisher>
             <location>Salerno</location>
             <booktitle>Romualdo II Guarna, Chronicon</booktitle>
             <langid>Italian</langid>
@@ -265,7 +269,7 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
         <article>
             <author>Hoffmann, Hartmut</author>
             <title>Hugo Falcandus und Romuald von Salerno</title>
-            <journal>Deutsches Archiv f{\"u}r Erforschung des Mittelalters</journal>
+            <journal>Deutsches Archiv für Erforschung des Mittelalters</journal>
             <year>1967</year>
             <volume>23</volume>
             <number>1</number>
@@ -275,13 +279,12 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
     </entry>
     <entry id="oldoni2004guarna">
         <inbook>
-            <volume>60</volume>
             <pages>400--403</pages>
             <year>2004</year>
             <author>Oldoni, Massimo</author>
             <bibtexkey>oldoni2004guarna</bibtexkey>
-            <location>Roma</location>
             <language>Italian</language>
+            <location>Roma</location>
             <title>Guarna, Romualdo</title>
             <booktitle>Dizionario biografico degli italiani</booktitle>
             <langid>Italian</langid>
@@ -290,10 +293,10 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
     <entry id="schmale1986italische">
         <book>
             <author>Schmale, F.J.</author>
-            <title>Italische Quellen {\"u}ber die Taten Kaiser Friedrichs I. In Italien und der Brief {\"u}ber den Kreuzzug Kaiser Friedrichs I.</title>
+            <title>Italische Quellen über die Taten Kaiser Friedrichs I. In Italien und der Brief über den Kreuzzug Kaiser Friedrichs I.</title>
             <publisher>Wissenschaftliche Buchgesellschaft</publisher>
             <year>1986</year>
-            <series>Ausgew{\"a}hlte Quellen zur deutschen Geschichte des Mittelalters</series>
+            <series>Ausgewählte Quellen zur deutschen Geschichte des Mittelalters</series>
             <note>Zabbia 2010, p. 21 n. 2 dice che Schmale ha ripubblicato la Pace di Venezia alle pp. 308-371</note>
             <isbn>9783534080250</isbn>
             <location>Darmstadt</location>
@@ -320,9 +323,9 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <title>Romualdo II Guarna. Il Congresso di Venezia del 1177</title>
             <publisher>Ed. Gutemberg</publisher>
             <year>1996</year>
-            <address>Lancusi (Salerno)</address>
             <note>Mirabile http://www.mirabileweb.it/mel/il-congresso-di-venezia-del-1177/309657 dice: Antologia di alcuni brani del Chronicon, in particolare relativi al congresso veneziano del 1177 che segnò la fine dello scisma, iniziato con l'elezione dell'antipapa Vittore IV, e la fine del regno normanno. A. Baldi recensore di «Rassegna storica salernitana» 14, 1 (1997) 316-8 lamenta la mancanza del testo latino a fronte e alcune sviste tipografiche</note>
             <language>Italian</language>
+            <location>Lancusi (Salerno)</location>
         </book>
     </entry>
 </file>
