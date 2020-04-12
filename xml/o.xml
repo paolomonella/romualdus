@@ -25,11 +25,18 @@
       </publicationStmt>
       <sourceDesc>
         <listBibl>
-          <msDesc xml:id="o">
+          <msDesc xml:id="o" facs="https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json">
               <msIdentifier>
                   <settlement>Ottobonianus</settlement>
                   <idno>Latinus 2940, 1st fragment</idno>
                 </msIdentifier>
+		<p>Attribute @facs in 'pb' points to the URI of the viewer of the page in the
+			website of the Vatical Library. The URI of the IIIF info.json file with
+			metadata on that specific canvas can be easily derived from the viewer URI.
+			For example, if the viewer URI is
+			https://digi.vatlib.it/view/MSS_Vat.lat.3973/0500
+			then the info.json file URI is
+			https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/canvas/p0500</p>
             </msDesc>
         <biblStruct xml:id="b">
             <monogr>     
@@ -121,7 +128,7 @@
 
 
 <p xml:id="g168.5-168.7" decls="#al">
-<pb break="no" n="16r" ed="#o"/>
+<pb break="no" n="16r" facs="https://digi.vatlib.it/view/MSS_Ott.lat.2940/0018" ed="#o"/>
 <hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="976">dcccclxxui</num><note resp="#b" type="year">sed 986</note>, <rs>lotha&bd;rius</rs> 
 <rs>francorum</rs> rex senex plenus dierum obiit, postquam regnau&bd;it 
 annum <num value="54">l<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, sepultusque est in basilica <rs>sancti remigii</rs> regnus. <hi>cui</hi> 
@@ -162,7 +169,7 @@ rellauit contra <rs>carolum</rs> regem consilioque habito cum
 ciuitate in turri, in qua uitam finiuit. <hi>habuit</hi> autem ex eadem 
 &bl;uxorem filios duos <rs>lodouicum</rs> et <rs>carolum</rs>. <rs>ugo</rs> itaque dux re&bd;gnum 
 sibi <rs>francorum</rs> arripuit, constituitque regem filium suum 
-&bl;nomine <rs>robbertum</rs> qui defecit impium in <rs>francis</rs>. <hi>sicque</hi> defecit pro<pb break="no" n="16v" ed="#o"/>sapia regum a <rs>carolo</rs> im&bd;peratore 
+&bl;nomine <rs>robbertum</rs> qui defecit impium in <rs>francis</rs>. <hi>sicque</hi> defecit pro<pb break="no" n="16v" facs="https://digi.vatlib.it/view/MSS_Ott.lat.2940/0019" ed="#o"/>sapia regum a <rs>carolo</rs> im&bd;peratore 
 descencium et <rs>francorum</rs> reges regali tan&bd;tum 
 honore crescenti imperii dignitatem amiserunt. <hi>in</hi> illis die&bd;bus 
 in <rs>remensium</rs> ciuitate erat archiepiscopus, uir bonus et mo&bd;destus, 
@@ -278,7 +285,7 @@ qui primitus abbas <rs>bobiensis</rs>, postea archiepiscopus
 &bl;<rs>alberico</rs> qui patriciatus sibi nomen uendicauerat a <rs>crescentio</rs> 
 &bl;<rs>numentano</rs>, qui patricius dicebatur, papa ordinatus est quique 
 &bl;etiam <rs>ottonem</rs> coronauit imperatorem, postea uero cum magno 
-&bl;de<pb break="no" n="17r" ed="#o"/>decore ab eodem <rs>crescentio</rs> a papatu expulsus est. <hi>et</hi> quidam 
+&bl;de<pb break="no" n="17r" facs="https://digi.vatlib.it/view/MSS_Ott.lat.2940/0019" ed="#o"/>core ab eodem <rs>crescentio</rs> a papatu expulsus est. <hi>et</hi> quidam 
 &bl;<rs>iohannes</rs>, <rs>placentinus</rs> episcopus, <rs>grecus</rs> genere, legatione func&bd;tus 
 <rs>ottonis</rs> imperatoris a <rs>constantinopoli</rs> rediens dum <rs>ro&bd;mam</rs> 
 causam orationis uenire, a prefato <rs>crescentio</rs> et a <rs>roma&bd;nis</rs> 
@@ -394,7 +401,7 @@ imperatore <rs>constantinopolitanus</rs> mortus est, et succesit ei
 
 
 <p xml:id="g178.4-178.10" decls="#al"> 
-&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1034">mxxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, indictione <num value="2">ii</num>; fuit <pb break="no" n="17v" ed="#o"/>ecli&bd;psis 
+&bl;<hi>anno</hi> ab incarnatione <rs>domini</rs> <num value="1034">mxxx<choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num>, indictione <num value="2">ii</num>; fuit <pb break="no" n="17v" facs="https://digi.vatlib.it/view/MSS_Ott.lat.2940/0020" ed="#o"/>ecli&bd;psis 
 solis in festiuitate sancti <rs>petri</rs>. <hi>quo</hi> anno <rs>iohannes</rs> papa de&bd;functus 
 est et succesit <rs>benedictus</rs> qui uocabatur <rs>theofilactus</rs>, 
 &bl;seditque annis <num value="13">xiii</num>. <hi>iste</hi> quidem de pontificatu eiectus est et su&bd;scepit 
@@ -536,7 +543,7 @@ princeps <rs>salerni</rs> a suis interfectus est anno principatus sui
 &bl;totum <rs>alamanorum</rs> exercitum in ore gladii percuserunt. <hi>in</hi> 
 &bl;ipso quidem belli apparatu defecerunt <rs>alamannis</rs> hi quorum 
 &bl;uenerant suggestione, quique in auxilium eorum uenerunt. <rs>leo</rs> 
-&bl;autem papa minime <pb break="no" n="18r" ed="#o"/>propter quod uenerat perficere ualens 
+&bl;autem papa minime <pb break="no" n="18r" facs="https://digi.vatlib.it/view/MSS_Ott.lat.2940/0020" ed="#o"/>propter quod uenerat perficere ualens 
 &bl;reuersus est. <hi>iste</hi> primus <rs>romanorum</rs> pontificium a beato <rs>petro</rs> 
 &bl;ad se usque cum manu armatorum in bellum procesit, qui 
 &bl;quamuis sanctus fuerit et pio hoc animo egerit, tamen quia 
@@ -630,7 +637,7 @@ filiam que sexu quidem mulier pudica fuit adque honesta
 &bl;habuit filios <rs>rogerium</rs> et <rs>robbertum</rs> adque <rs>guidonem</rs> et filias 
 &bl;quinque. <hi>ex</hi> alia quoque uxorem nomine <rs>abberada</rs> prius habuit 
 &bl;filium nomine <rs>boamundum</rs>. <hi>set</hi> <rs>robbertus</rs> <rs>guiscardus</rs> instituit 
-&bl;sibi heredem <pb break="no" n="18v" ed="#o"/>filium suum <rs>rogerium</rs>. <hi>interea</hi> <rs>robbertus</rs> dux ad 
+&bl;sibi heredem <pb break="no" n="18v" facs="https://digi.vatlib.it/view/MSS_Ott.lat.2940/0021" ed="#o"/>filium suum <rs>rogerium</rs>. <hi>interea</hi> <rs>robbertus</rs> dux ad 
 &bl;<rs>nicolaum</rs> papam perrexit eiusque ligirius homo effectus est, 
 &bl;promitens se iureiurando fidem seruaturum <rs>romane</rs> ecclesie et 
 &bl;eidem pape eiusque succesoribus canonice intrantibus. <hi>ipse</hi> 
@@ -650,6 +657,70 @@ de honore ducatus sui cum tota terra.
 accepit. <hi>set</hi> autem <rs>alexander</rs> papa annis <num value="11">xi</num>, menses <num value="6">ui</num>. 
 </p> 
 
+<p xml:id="g186.6-186.7" decls="#al"> 
+<note resp="#pm" type="segmentation"><hi>the</hi> paragraph is missing in codex <hi>o</hi>.</note>
+</p>
+
+
+<p xml:id="g186.8-186.8" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><hi>the</hi> paragraph is missing in codex <hi>o</hi>.</note>
+</p>
+
+
+<p xml:id="g186.9-186.9" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><hi>the</hi> paragraph is missing in codex <hi>o</hi>.</note>
+</p>
+
+
+<p xml:id="g186.10-186.11" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><hi>the</hi> paragraph is missing in codex <hi>o</hi>.</note>
+</p>
+
+
+<p xml:id="g186.12-187.2" decls="#ocr"> 
+&bl;<hi>anno</hi> dominice incarnationis <num value="1066">mlxui</num> indictione <num value="4"><choice><orig>iiii</orig><reg type="numeral">iu</reg></choice></num> mense 
+&bl;aprilis stella cometis apparuit in oriente, cuius fumus per 
+&bl;aliquot dies tendebat ad meridiem. 
+similiter per aliquot dies tendebat. <hi>quo</hi> anno apud <rs>con&bd;stantinopolim</rs> 
+<rs>constantinus</rs> <rs>dioclizi</rs> imperator, anno eius impe&bd;rii 
+<num value="6">ui</num>, defunctus est, cui <rs>romano</rs> <rs>diogenes</rs> in imperium suc&bd;cesit. 
+"<hi>eodem</hi> anno dux <rs>robbertus</rs> cepit ciuitatem <rs>uestis</rs> ap&bd;prehenditque 
+ibi catipanum nomine <rs>kuriacum</rs>. <hi>hinc</hi> etiam ipse 
+&bl;dux <rs>barum</rs> obsedit <rs>apulie</rs> ciuitatem et triennio eam incessanter 
+&bl;obpugnauit terra marique pontem quoque ibi in mari fecit". 
+</p> 
+
+
+<p xml:id="g187.3-187.4" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><hi>the</hi> paragraph is missing in codex <hi>o</hi>.</note>
+</p>
+
+
+<p xml:id="g187.5-187.8" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><hi>the</hi> paragraph is missing in codex <hi>o</hi>.</note>
+</p>
+
+
+<p xml:id="g187.9-187.11" decls="#ocr"> 
+<note resp="#pm" type="segmentation"><rs>garufi</rs>'s paragraph runs from page 187 line 9 to page 188 line 4 without interruptions. <hi>i</hi> split <rs>garufi</rs>'s paragraph because the text segmentation in manuscript <hi>a</hi> and <hi>o</hi> is different than in <rs>garufi</rs>.</note>
+&bl;<hi>anno</hi> dominice incarnationis <num value="1070">mlxx</num> indictione <num value="8">uiii</num>, apud 
+&bl;<rs>constantinopolim</rs> <rs>romano</rs> <rs>diogenes</rs> imperator transacto quar&bd;to 
+imperii eius anno defunctus est. <hi>cui</hi> in imperio <rs>michael</rs> filius 
+<pb n="92" ed="#b"/> 
+&bl;<rs>constantini</rs> <rs>dioclizi</rs> succesit. 
+</p>
+
+
+<p xml:id="g187.11-187.14" decls="ocr">
+<note resp="#pm" type="segmentation"><hi>the</hi> paragraph is missing in codex <hi>o</hi>.</note>
+</p>
+
+<p xml:id="g187.14-188.1" decls="ocr"> 
+<hi>eodem</hi> anno <rs>robbertus</rs> dux 
+&bl;"cepit <rs>barum</rs> ciuitatem longa obsidione fatigatam, indeque 
+&bl;monens exercitum, <rs>siciliam</rs> properauit obseditque" "<rs>panormum</rs>, 
+&bl; ditissi&bd;mam 
+</p>
 
 
     </body>
