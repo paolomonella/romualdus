@@ -23,6 +23,7 @@
                 <listWit>
                     <witness xml:id="wit-41981">Bonetti</witness>
                     <witness xml:id="wit-41980">a</witness>
+                    <witness xml:id="o">o</witness>
                 </listWit>
             </div>
         </front>
@@ -54,11 +55,15 @@
 </app> [/p] [p xml:id=&quot;g186.12-187.2&quot;] Anno dominice incarnationis MLXVI indictione 
 <app>
    <rdg wit="#wit-41981">III</rdg>
-   <rdg wit="#wit-41980">IV</rdg>
-</app> mense aprilis stella cometis apparuit a parte
+   <rdg wit="#wit-41980 #o">IV</rdg>
+</app> mense aprilis stella cometis apparuit 
 <app>
-   <rdg wit="#wit-41981">orientis</rdg>
-   <rdg wit="#wit-41980">Orientis</rdg>
+   <rdg wit="#wit-41981 #wit-41980">a parte</rdg>
+   <rdg wit="#o">in</rdg>
+</app> 
+<app>
+   <rdg wit="#wit-41981 #wit-41980">Orientis</rdg>
+   <rdg wit="#o">oriente</rdg>
 </app> , cuius fumus per aliquot dies tendebat ad meridiem. Ipso quoque mense hec eadem stella apparuit a parte 
 <app>
    <rdg wit="#wit-41981">occidentis</rdg>
@@ -70,12 +75,20 @@
 </app> per aliquot dies tendebat. Quo anno apud Constantinopolim Constantinus Dioclizi imperator, anno eius imperii 
 <app>
    <rdg wit="#wit-41981">sexto</rdg>
-   <rdg wit="#wit-41980">VI</rdg>
-</app> , defunctus est, cui Romano Diogenes in imperium successit. 
+   <rdg wit="#wit-41980 #o">VI</rdg>
+</app> , defunctus est, cui Romano Diogenes in imperium 
+<app>
+   <rdg wit="#wit-41981 #wit-41980">successit</rdg>
+   <rdg wit="#o">succesit</rdg>
+</app> .
 <app>
    <rdg wit="#wit-41981">&quot;</rdg>
    <rdg wit="#wit-41980"></rdg>
-</app> Eodem anno dux Robbertus cepit ciuitatem Uestis apprehenditque ibi catipanum nomine Kuriacum. Hinc etiam ipse dux Barum obsedit Apulie ciuitatem et triennio eam incessanter oppugnauit 
+</app> Eodem anno dux Robbertus cepit ciuitatem Uestis apprehenditque ibi catipanum nomine Kuriacum. Hinc etiam ipse dux Barum obsedit Apulie ciuitatem et triennio eam incessanter 
+<app>
+   <rdg wit="#wit-41981 #wit-41980">oppugnauit</rdg>
+   <rdg wit="#o">obpugnauit</rdg>
+</app> 
 <app>
    <rdg wit="#wit-41981"> </rdg>
    <rdg wit="#wit-41980">;</rdg>
@@ -123,7 +136,11 @@
 <app>
    <rdg wit="#wit-41981">&quot;.</rdg>
    <rdg wit="#wit-41980">.</rdg>
-</app> [/p] [p xml:id=&quot;g187.9-187.11&quot;] Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi successit. [/p] [p xml:id=&quot;g187.11-187.14&quot;] 
+</app> [/p] [p xml:id=&quot;g187.9-187.11&quot;] Anno dominice incarnationis MLXX indictione VIII, apud Constantinopolim Romano Diogenes imperator transacto quarto imperii eius anno defunctus est. Cui in imperio Michael filius Constantini Dioclizi 
+<app>
+   <rdg wit="#wit-41981 #wit-41980">successit</rdg>
+   <rdg wit="#o">succesit</rdg>
+</app> . [/p] [p xml:id=&quot;g187.11-187.14&quot;] 
 <app>
    <rdg wit="#wit-41981">&quot;</rdg>
    <rdg wit="#wit-41980"></rdg>
@@ -143,7 +160,11 @@
 <app>
    <rdg wit="#wit-41981">&quot;</rdg>
    <rdg wit="#wit-41980"></rdg>
-</app> cepit Barum ciuitatem longa obsidione fatigatam, indeque mouens exercitum, Siciliam properauit obseditque 
+</app> cepit Barum ciuitatem longa obsidione fatigatam, indeque 
+<app>
+   <rdg wit="#wit-41981 #wit-41980">mouens</rdg>
+   <rdg wit="#o">monens</rdg>
+</app> exercitum, Siciliam properauit obseditque 
 <app>
    <rdg wit="#wit-41981">&quot; &quot;</rdg>
    <rdg wit="#wit-41980"></rdg>
