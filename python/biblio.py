@@ -1,18 +1,12 @@
 #!/usr/bin/python3.6
 # -*- coding: utf-8 -*-
-''' This module includes one big function, extracting/dividing
-    the layers from the TEI XML source file. See the documentation
-    of the function below for details.
+''' This module imports the bibliography from a file
+    in BibTeXML format to the 'front' element of the
+    final XML product of the edition (chronicon.xml)
     '''
 
 from lxml import etree
 from myconst import xmlpath, ns, biblio_file, chronicon_output_file
-
-'''
-from copy import deepcopy
-import sqlite3
-from my_database_import import import_table
-'''
 
 list_remove = ['language', 'langid', 'lccn', 'keywords', 'bibtexkey',
                'note', 'abstract', 'isbn']
