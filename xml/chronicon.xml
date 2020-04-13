@@ -1164,6 +1164,41 @@ mostly by adopting MS A's spelling, in cases in which
         </imprint>
 </monogr>
     </biblStruct>
+    <biblStruct xml:id="mordenti2001informatica">
+        <monogr>
+            <author>Mordenti, Raul</author>
+            <title>Informatica e critica dei testi</title>
+            <imprint>
+                <publisher>Bulzoni</publisher>
+            <date>2001</date>
+            <pubPlace>Roma</pubPlace>
+        </imprint>
+</monogr>
+    <series>
+                <title level="s">Informatica e discipline umanistiche</title>
+            </series>
+</biblStruct>
+    <biblStruct xml:id="avalle1972principi">
+        <monogr>
+            <author>Avalle, D'Arco Silvio</author>
+            <title>Principi di critica testuale</title>
+            <imprint>
+                <publisher>Antenore</publisher>
+            <date>1972</date>
+            <pubPlace>Padova</pubPlace>
+        </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="segre1979semiotica">
+        <monogr>
+            <author>Segre, Cesare</author>
+            <title>Semiotica filologica. Testo e modelli culturali</title>
+            <imprint>
+                <publisher>Torino, Einaudi</publisher>
+            <date>1979</date>
+            </imprint>
+</monogr>
+    </biblStruct>
 </listBibl>
 
 </front>

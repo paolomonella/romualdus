@@ -328,4 +328,38 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <location>Lancusi (Salerno)</location>
         </book>
     </entry>
+    <entry id="mordenti2001informatica">
+        <book>
+            <author>Mordenti, Raul</author>
+            <title>Informatica e critica dei testi</title>
+            <publisher>Bulzoni</publisher>
+            <year>2001</year>
+            <series>Informatica e discipline umanistiche</series>
+            <isbn>9788883196195</isbn>
+            <keywords>Babel,2006</keywords>
+            <language>Italian</language>
+            <lccn>2002397534</lccn>
+            <location>Roma</location>
+        </book>
+    </entry>
+    <entry id="avalle1972principi">
+        <book>
+            <author>Avalle, D'Arco Silvio</author>
+            <title>Principi di critica testuale</title>
+            <publisher>Antenore</publisher>
+            <year>1972</year>
+            <location>Padova</location>
+        </book>
+    </entry>
+    <entry id="segre1979semiotica">
+        <book>
+            <author>Segre, Cesare</author>
+            <title>Semiotica filologica. Testo e modelli culturali</title>
+            <publisher>Torino, Einaudi</publisher>
+            <year>1979</year>
+            <note>In Why ho citato di seconda mano la sua p. 53. Ho preso la citazione virgolettata da Oddone Longo, Critica del testo (che ho skimmed), p. 73. A Longo ero arrivato tramite il cap. 4 di Andrea, Tribù. T. Mancinelli lo ha citato in un workshop BIFLOW l'11.02.2020 come punto di partenza possibile per la filologia computazionale</note>
+            <keywords>Why</keywords>
+            <language>Italian</language>
+        </book>
+    </entry>
 </file>
