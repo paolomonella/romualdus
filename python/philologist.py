@@ -1324,6 +1324,21 @@ class treeWithAppElements:
                 remove the space '''
                 p.text = p.text.replace('\n ', '\n')
 
+    def reduce_breaks_and_remove_quotes(self, mystring):
+        ''' This function is useful for function
+            handle_no_collation_paragraphs. It reduces the \n
+            to one only and removes Bonettis' "quotes" '''
+
+        # Strip existing '\n' (they are too many), then add '\n'
+        # before and after (unless the string is empty)
+        if mystring.strip() == '':
+            mystring = '\n'
+        else:
+            mystring = '\n%s\n' % mystring.strip()
+        # Remove Bonetti's quotes
+        mystring = mystring.replace('"', '')
+        return mystring
+
     def handle_no_collation_paragraphs(self):
         '''These paragraphs (e.g. g179.10-179.11) that are only
            in Bonetti and in no MS (neither A or O): just use the
@@ -1340,26 +1355,16 @@ class treeWithAppElements:
             # wrong chunk (e.g. the xmlid is in m2-alfa, but the script
             # is processing m2-bravo
             if par is not None:
-                if len(par) > 1:
-                    # Normally those <p>s should include no text
-                    # and only one <app>
-                    print(('[philologist.py handle_no_collation_paragraphs]'
-                           ' Attention: no-collation paragraph {} has more'
-                           ' than one <app> child').format(x))
-                else:
-                    # Get new text for <p>
-                    new_text = ''.join(par.itertext())
-                    # Strip existing '\n' (they are too many), then add '\n'
-                    # before and after
-                    new_text = '\n%s\n' % new_text.strip()
-                    # Remove Bonetti's quotes
-                    new_text = new_text.replace('"', '')
-                    # Empty <p> (remove <app> and its children)
-                    for c in par:
-                        par.remove(c)
-                    # Add '\n' before and after, then attribute new text
-                    # directly to <p>
-                    par.text = '\n%s\n' % new_text.strip()
+                # Strip tags
+                for my_tag in ['lem', 'rdg', 'app']:
+                    etree.strip_tags(par, '{%s}%s' % (ns['t'], my_tag))
+                par.text = self.reduce_breaks_and_remove_quotes(par.text)
+
+                # Manage <pb>s into those paragraphs
+                no_coll_pbs = par.findall('.//t:pb', ns)
+                if len(no_coll_pbs) > 0:
+                    for pb in no_coll_pbs:
+                        pb.tail = self.reduce_breaks_and_remove_quotes(pb.tail)
 
     def empty_some_paragraphs(self):
         ''' Empty those paragraphs (e.g. b062heading, v-b298a or v-b298b)
