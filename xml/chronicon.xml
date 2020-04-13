@@ -111,10 +111,12 @@
             </projectDesc>
             <editorialDecl>
                 <ab type="level">ALIM2_3</ab>
-                <ab type="specific">[§ riassunto: born-digital edition etc.] See the 'front' element for details on this edition</ab>
+		<ab type="specific">Born-digital scholarly edition.
+			See the introduction in the 'front' element for editorial details</ab>
             </editorialDecl>
       	    <editorialDecl xml:id="longversion">
-                <ab type="specific">One of the additions distinguishing the 'short' from the 'long' version of the work</ab>
+		<ab type="specific">Paragraph including one of the additions
+			distinguishing the 'short' from the 'long' version of the work</ab>
             </editorialDecl>
             <variantEncoding location="internal" method="parallel-segmentation"/>
         </encodingDesc>
@@ -140,6 +142,19 @@
     <text>
 
 <front>
+
+<head>Introduction</head>
+
+<div>
+<head>Aim</head>
+<p>The present edition aims at improving
+the text of the Chronicon by Romualdus Salernitanus
+(Romualdus II Guarna) through a new collation of the text
+of the print editions by Garufi and Bonetti
+against A and O, the main witnesses of the 'short version' of the work.
+</p>
+</div>
+
 <div>
 <head>The Chronicon</head>
 <p>The Chronicon is a universal history composed by Archbishop of Salerno
@@ -174,11 +189,11 @@
 <div>
 <head>Sources</head>
 
-<p>Garufi has a very informative separate apparatus of footnotes presenting
-	the sources of each passage of the work. Detailed critical discussions
-	of the sources of Romualdus and his relationship with Norman historiography
-       	are in Arndt 1966 (footnotes); Garufi 1914, XXV-XXVIII (introduction); 
-	Hoffmann 1967, 165-170; Matthew 1981, 243-249; 258-267;
+<p>Garufi 1914 has a very informative separate apparatus of footnotes presenting
+	the sources of each passage of the work. Detailed information and critical
+	discussion on the sources of Romualdus and his relationship with Norman
+	historiography are in Arndt 1966 (running footnotes); Garufi 1914, XXV-XXVIII
+	(introduction); Hoffmann 1967, 165-170; Matthew 1981, 243-249; 258-267;
 	Zabbia 2002; Zabbia 2004, 380-382 and 392-394;
 	Zabbia 2010, 22 and 25-60.
 </p>
@@ -208,10 +223,7 @@
 		but a key source for this period are the <title>Annales</title> by
 		Lupus Protospatharius.</item>
 </list>
-
-
 </div>
-
 
 <div>
 <head>Authorship: textual evidence</head>
@@ -374,17 +386,17 @@
 <div>
 <head>Print editions and translations</head>
 <p>The two most recent print editions of the Chronicon are Garufi 1914
-	(henceforth, simply "Garufi"; see the review by Erdmann 1930) and
+	(henceforth "Garufi"; see the review by Erdmann 1930) and
 	Bonetti 2001, whose edition starts with paragraph g163.6-163.7
-	and includes and Italian translation (henceforth, "Bonetti").</p>
+	and includes and Italian translation (henceforth "Bonetti").</p>
 	
-<p>Bonetti uses Garufi's edition as "testo base",
+<p>Bonetti uses Garufi's edition as "testo base"
 	and Arndt 1866 as "elemento integrativo"
 	(see 'Nota al testo', Bonetti, 56).</p>
 
 <p>Previously, the work had been published by Muratori 1725;
 	Del Re 1875 (from g212.1-212.4, with Italian translation);
-	Arndt 1866 (starting with g163.6-163.7, like Bonetti).
+	Arndt 1866 (from g163.11-164.9).
 	Schmale 1986, 308-371 published the Peace of Venice, based
 	on Garufi's text, with a German translation.
 	Carucci 1996 is an Italian translation of select passages
@@ -416,7 +428,7 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 <head>Sigla</head>
 <p>As noted in the 'sourceDesc' element,
 	in the @wit attributes of 'lem' and 'rdg'
-	elements I used sigla 'g' for Garufi', 'b' for Bonetti,
+	elements I used abbreviations 'g' for Garufi, 'b' for Bonetti,
 	'a' for MS A (first hand), 'a2' for the second hand of MS A
 	(probably XVII century) and 'o' for the fragment of MS O.</p>
 </div>
@@ -499,16 +511,6 @@ g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.
 86.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
 </div>
 
-
-<div>
-<head>Aim</head>
-<p>The present edition aims at improving
-the text of the Chronicon by Romualdus Salernitanus
-(Romualdus II Guarna) through a new collation of the text
-of the print editions of Garufi and Bonetti
-against A and O, the main witnesses of the 'short version' of the work.
-</p>
-</div>
 
 
 <div>
@@ -742,6 +744,71 @@ mostly by adopting MS A's spelling, in cases in which
 </p>
 </div>
 
+<div>
+<head>Factual variants</head>
+
+<p>The aim of this edition is
+	to publish a text as close as possible
+	to what has been written by Romualdus or his collaborators,
+	not to what has actually happened in history, so I did not
+	correct fact, names or dates. Besides, such a task would have
+	required a historic competence that is beyond my skills.
+	The footnotes in the Garufi edition and the essays cited
+	in this introduction provide rich critical discussions
+	on this matter.</p>
+
+<p>Dates in particular are an aspect in which the Chronicon is often
+	imprecise and there is great variability among the witnesses:
+	when dates in A or O diverged from those in Garufi and Bonetti,
+	I systematically adhered to the print editions.</p>
+</div>
+
+<div>
+<head>The text before and after the author</head>
+
+<p>In some passages Romualdus follows a source very closely, but skips
+	some words. Garufi sometimes integrates the missing words.
+	For instance, in g100.6-103.2 the Chronicon
+	copies Paul the Deacon Hist. 14.116 "adest Geisericus
+	cum ualidissimo suae gentis exercitu", but skips the words
+	"suae gentis", which are found in no MS of the Chronicon.
+	In these cases I reject Garufi's integrations based on
+	the principle of considering the Chronicon an autonomous text,
+	rather than a copy of his sources.</p>
+
+<p>These cases, together with comples philological issues such as
+	the attitions differentiating the 'long' and 'short' version
+	of the Chronicon, raise interesting, very general questions on
+	the work of the philologist.
+	Paul the Deacon's text is 'before' Romualdus and his
+	(possible) collaborators, while that of the additions may
+	be 'after' him (or them).
+       	Where is the 'original text' that the philologist approximates?</p>
+
+<p>The 'original text', especially in cases of a complex editorial
+	work such as the Chronicon, looks as elusive as the elusive notion of
+	'present', at the sliding edge between past and future.</p>
+
+<p>These issues become more evident to us as we get closer to the author.
+	Mordenti 2001, par. 9.1 discusses the extreme case
+	of transcription and raises "[la] domanda fondamentale della filologia
+	[...] quella che riguarda il concetto di testo e, in particolare,
+	di testo originale" and quotes D'Arco Silvio Avalle and Cesare Segre:
+	"Il concetto di originale, nel senso di testo autentico esprimente
+	la volontà dell'autore, è uno dei più sfuggenti ed ambigui della
+	critica del testo. [...] le singole opere di uno scrittore costituiscono
+	a rigore una sezione a volte casuale e provvisoria – e non sempre
+	operata dall'autore stesso [...] di quel flusso continuo di adattamenti
+	e di spostamenti successivi attraverso cui si esprimono le tendenze
+	fondamentali di un sistema letterario" (Avalle 1972, 32-33); and
+	"Ogni testo scritto è in realtà trascritto: da un copista, da un tipografo.
+	Anche l'autografo è una trascrizione (dalla brutta copia); e la brutta copia
+	costituisce di norma un testo non definitivo. Insomma, ogni trascrizione è
+	anteriore o posteriore al testo; nessun testo può essere identificato col Testo"
+	Segre 1979, 36.</p>
+
+
+</div>
 
 <listBibl>
 
@@ -23897,35 +23964,35 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
 <note target="#app15-in-g78.22-79.21" type="textcrit">Vd. Orosius 7.28.21 'quamuis omnibus iam ministris nefariae persecutionis extinctis' and 7.28.23 'His diebus Arrius, Alexandrinae urbis presbyter, a ueritate fidei catholicae deuians'. Garufi's apparatus mentions A's reading 'Alexandrie', but not 'his diebus'.</note>
 <note target="#app26-in-g78.22-79.21" type="textcrit">Vd. Eutropius 10.7 'nihil occasionum praetermittens': the author has changed the syntactical construction ('pretermitto' governs the next sentence 'quo..'). I am preserving the agreement between 'nulla' and 'occasione'.</note>
 <note target="#app22-in-g83.23-84.19" type="textcrit">Vd. Eutropius 10.11: 'Caput eius pilo per urbem circumlatum est'. Romualdus misunderstands 'pilum'.</note>
-<note target="#app23-in-g92.9-93.4" type="textcrit">Vd. Paulus Diaconus, Hist. 12.98 'post auctam annis potentiam regalem'.</note>
+<note target="#app23-in-g92.9-93.4" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.98 'post auctam annis potentiam regalem'.</note>
 <note target="#app43-in-g92.9-93.4" type="textcrit">admissurum se diceret, et prohibitionem humiliter pertulit et satisfactionem non erubescens indictum ab episcopo.</note>
-<note target="#app16-in-g93.21-96.11" type="textcrit">The reading of MS A 'hostis' is the closest to Romualdus' source, Paulus Diaconus Hist. 12.100 'quam hosti contiguus fieret'.</note>
-<note target="#app21-in-g93.21-96.11" type="textcrit">Vd. Paulus Diaconus Hist. 12.100 'Gildo et ipse fugam arripiens'.</note>
-<note target="#app24-in-g93.21-96.11" type="textcrit">Vd. Paulus Diaconus Hist. 12.100 'secuta mox poena sacrilegium est'.</note>
+<note target="#app16-in-g93.21-96.11" type="textcrit">The reading of MS A 'hostis' is the closest to Romualdus' source, Paulus Diaconus Hist. Rom. 12.100 'quam hosti contiguus fieret'.</note>
+<note target="#app21-in-g93.21-96.11" type="textcrit">Vd. Paulus Diaconus Hist. Rom. 12.100 'Gildo et ipse fugam arripiens'.</note>
+<note target="#app24-in-g93.21-96.11" type="textcrit">Vd. Paulus Diaconus Hist. Rom. 12.100 'secuta mox poena sacrilegium est'.</note>
 <note target="#app49-in-g93.21-96.11" type="textcrit">Vd. Romualdus' source, Orosius Hist. 7.37 'in arido et aspero montis iugo, urguente undique timore concludit'.</note>
 <note target="#app82-in-g93.21-96.11" type="textcrit">Garufi's apparatus says that 'Bassentium' is the text of MSS A, B and C, while Paulus Diaconu has 'Basentum'. To me this means that the author knew 'Basentium' or 'Barsentium' as spelling of this toponym.</note>
 <note target="#app8-in-g96.17-98.14" type="textcrit">Reading of A and B.</note>
-<note target="#app23-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. 12.103 'virum strenuum et bellicosum'.</note>
-<note target="#app24-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. 12.103 'Constantium comitem ad Gallias cum exercitu mittit'.</note>
-<note target="#app28-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. 12.103 'Arelatem'. In constituting a text for this paragraph I am constantly taking the source (Paulus Diaconus) into account.</note>
-<note target="#app40-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. 12.103 'Constantium comitem ad Gallias cum exercitu mittit'.</note>
-<note target="#app57-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. 12.104 'ab Honorio missa'.</note>
+<note target="#app23-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'virum strenuum et bellicosum'.</note>
+<note target="#app24-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'Constantium comitem ad Gallias cum exercitu mittit'.</note>
+<note target="#app28-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'Arelatem'. In constituting a text for this paragraph I am constantly taking the source (Paulus Diaconus) into account.</note>
+<note target="#app40-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'Constantium comitem ad Gallias cum exercitu mittit'.</note>
+<note target="#app57-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.104 'ab Honorio missa'.</note>
 <note target="#app64-in-g96.17-98.14" type="textcrit">Beda, Hist. Eccl. 12.12 'valedicunt sociis'.</note>
-<note target="#app88-in-g100.6-103.2" type="textcrit">Paulus Diaconus, Hist. 14.116 has 'viginti quinque', but no MS has 'quinque': this must have been an authorial error. Garufi adds 'quinque' based on the source.</note>
-<note target="#app91-in-g100.6-103.2" type="textcrit">Paulus Diaconus, Hist. 14.116 has 'sue gentis' and Garufi restores Paulus' text, but I am keeping the text of all MSS.</note>
-<note target="#app92-in-g100.6-103.2" type="textcrit">Paulus Diaconus, Hist. 14.116 has 'cum adhuc Romanae ecclesiae beatissimus Leo ageret pontificatum', but Romualdus probably chose to write 'glorie' instead of 'ecclesie', since no MS has 'ecclesie'.</note>
-<note target="#app3-in-g103.8-104.3" type="textcrit">Paulus Diaconus, Hist. 14.116 has 'haud procul a Dertonensi civitate'. MS A, only 'aut procul a Ueronense ciuitate'. It is more likely that 'Ueronense' is an authorial error for Paulus' 'Detornensi', than an addition by Romualdus.</note>
-<note target="#app8-in-g104.12-104.22" type="textcrit">Paulus Diaconus, Hist. 15.122 has 'terrarum', but no MS has it and the sentence makes sense also without it.</note>
-<note target="#app9-in-g104.12-104.22" type="textcrit">Paulus Diaconus, Hist. 15.122 has 'quondam', but no MS has it and the sentence makes sense also without it.</note>
-<note target="#app10-in-g104.12-104.22" type="textcrit">Paulus Diaconus, Hist. 15.122 has 'cum hoc Augustulo periit', and 'hoc' also is in MS A.</note>
-<note target="#app9-in-g105.9-105.24" type="textcrit">Paulus Diaconus, Hist. 15.122 has 'Gothorum' (Garufi's text). Garufi's apparatus says that MSS A and B have Ostrogothorum (in fact, A has Astrogothorum). This is probably what the author meant to write.</note>
+<note target="#app88-in-g100.6-103.2" type="textcrit">Paulus Diaconus, Hist. Rom. 14.116 has 'viginti quinque', but no MS has 'quinque': this must have been an authorial error. Garufi adds 'quinque' based on the source.</note>
+<note target="#app91-in-g100.6-103.2" type="textcrit">Paulus Diaconus, Hist. Rom. 14.116 has 'sue gentis' and Garufi restores Paulus' text, but I am keeping the text of all MSS.</note>
+<note target="#app92-in-g100.6-103.2" type="textcrit">Paulus Diaconus, Hist. Rom. 14.116 has 'cum adhuc Romanae ecclesiae beatissimus Leo ageret pontificatum', but Romualdus probably chose to write 'glorie' instead of 'ecclesie', since no MS has 'ecclesie'.</note>
+<note target="#app3-in-g103.8-104.3" type="textcrit">Paulus Diaconus, Hist. Rom. 14.116 has 'haud procul a Dertonensi civitate'. MS A, only 'aut procul a Ueronense ciuitate'. It is more likely that 'Ueronense' is an authorial error for Paulus' 'Detornensi', than an addition by Romualdus.</note>
+<note target="#app8-in-g104.12-104.22" type="textcrit">Paulus Diaconus, Hist. Rom. 15.122 has 'terrarum', but no MS has it and the sentence makes sense also without it.</note>
+<note target="#app9-in-g104.12-104.22" type="textcrit">Paulus Diaconus, Hist. Rom. 15.122 has 'quondam', but no MS has it and the sentence makes sense also without it.</note>
+<note target="#app10-in-g104.12-104.22" type="textcrit">Paulus Diaconus, Hist. Rom. 15.122 has 'cum hoc Augustulo periit', and 'hoc' also is in MS A.</note>
+<note target="#app9-in-g105.9-105.24" type="textcrit">Paulus Diaconus, Hist. Rom. 15.122 has 'Gothorum' (Garufi's text). Garufi's apparatus says that MSS A and B have Ostrogothorum (in fact, A has Astrogothorum). This is probably what the author meant to write.</note>
 <note target="#app10-in-g105.9-105.24" type="textcrit">Garufi's integration 'Theodoricus', not extant in the MSS, would in fact be a repetition.</note>
-<note target="#app10-in-g106.3-106.33" type="textcrit">Paulus Diaconus, Hist. 16.127 has: 'plerosque ex sacerdotali numero, multos etiam clericorum'. I think tha the author used genitive with the same partitive function as ex with ablative in Paulus.</note>
-<note target="#app11-in-g107.1-107.14" type="textcrit">The words 'si respiceret/resipisceret, atque Acatium cum complicibus suis' are not in the source, i.e. Paulus Diaconus Hist. 16.128.</note>
+<note target="#app10-in-g106.3-106.33" type="textcrit">Paulus Diaconus, Hist. Rom. 16.127 has: 'plerosque ex sacerdotali numero, multos etiam clericorum'. I think tha the author used genitive with the same partitive function as ex with ablative in Paulus.</note>
+<note target="#app11-in-g107.1-107.14" type="textcrit">The words 'si respiceret/resipisceret, atque Acatium cum complicibus suis' are not in the source, i.e. Paulus Diaconus Hist. Rom. 16.128.</note>
 <note target="#app14-in-g107.1-107.14" type="textcrit">'Sed' is Garufi's integration, not in the MSS. I am only changing the punctuation.</note>
-<note target="#app10-in-g107.15-107.25" type="textcrit">Paulus Diaconus Hist. 16.128 has 'uita caruit', and Garufi chooses Paulus' reading against that of MSS A and B. I am choosing the MSS reading instead.</note>
+<note target="#app10-in-g107.15-107.25" type="textcrit">Paulus Diaconus Hist. Rom. 16.128 has 'uita caruit', and Garufi chooses Paulus' reading against that of MSS A and B. I am choosing the MSS reading instead.</note>
 <note target="#app12-in-g107.15-107.25" type="textcrit">Again, Garufi chooses Paulus' reading over that of the MSS. I am retoring Romualdus' MSS text.</note>
-<note target="#app20-in-g107.26-108.13" type="textcrit">Garufi restores 'octauo' from the source (Paulus Diaconus Hist. 16.130), but 'octauo' is in no MS, so I consider this an authorial error.</note>
+<note target="#app20-in-g107.26-108.13" type="textcrit">Garufi restores 'octauo' from the source (Paulus Diaconus Hist. Rom. 16.130), but 'octauo' is in no MS, so I consider this an authorial error.</note>
 <note target="#app8-in-g109.6-109.16" type="textcrit">Important variant. Guacco (or Wacco, in Paulus Diaconus' spelling), was in fact the son of the brother of Tato, and killed his own uncle. See Paulus Diaconus, Hist. Lang. 1.21 'At vero Tato post haec de belli triumpho non diu laetatus est. Inruit namque super eum Waccho, filius germani sui Zuchilonis, et eum ab hac luce privavit'.</note>
 <note target="#app17-in-g111.1-112.11" type="textcrit">Garufi apparatus reports that B has 'Mediomatricum' and B 'medlo matri cum que', so all MSS substantially have the same text, though probably corrupt. Gregorius Turonensis, Historiarum Francorum, 4.22 has 'Sygibertho quoque regnum Theuderici sedemque habere Remensim', which is not very useful. I consider this a crux, because even if 'Medimatricum' is a toponym, it will hardly be feminine and justify 'que' as a feminine relative pronoun.</note>
 <note target="#app2-in-g131.38-132.34" type="textcrit">'Latine' is Garufi's integration, not extant in the MSS. Romaldus' source is Beda, De sex aetatibus mundi.</note>

@@ -111,10 +111,12 @@
             </projectDesc>
             <editorialDecl>
                 <ab type="level">ALIM2_3</ab>
-                <ab type="specific">[§ riassunto: born-digital edition etc.] See the 'front' element for details on this edition</ab>
+		<ab type="specific">Born-digital scholarly edition.
+			See the introduction in the 'front' element for editorial details</ab>
             </editorialDecl>
       	    <editorialDecl xml:id="longversion">
-                <ab type="specific">One of the additions distinguishing the 'short' from the 'long' version of the work</ab>
+		<ab type="specific">Paragraph including one of the additions
+			distinguishing the 'short' from the 'long' version of the work</ab>
             </editorialDecl>
             <variantEncoding location="internal" method="parallel-segmentation" />
         </encodingDesc>
@@ -140,6 +142,19 @@
     <text>
 
 <front>
+
+<head>Introduction</head>
+
+<div>
+<head>Aim</head>
+<p>The present edition aims at improving
+the text of the Chronicon by Romualdus Salernitanus
+(Romualdus II Guarna) through a new collation of the text
+of the print editions by Garufi and Bonetti
+against A and O, the main witnesses of the 'short version' of the work.
+</p>
+</div>
+
 <div>
 <head>The Chronicon</head>
 <p>The Chronicon is a universal history composed by Archbishop of Salerno
@@ -174,11 +189,11 @@
 <div>
 <head>Sources</head>
 
-<p>Garufi has a very informative separate apparatus of footnotes presenting
-	the sources of each passage of the work. Detailed critical discussions
-	of the sources of Romualdus and his relationship with Norman historiography
-       	are in Arndt 1966 (footnotes); Garufi 1914, XXV-XXVIII (introduction); 
-	Hoffmann 1967, 165-170; Matthew 1981, 243-249; 258-267;
+<p>Garufi 1914 has a very informative separate apparatus of footnotes presenting
+	the sources of each passage of the work. Detailed information and critical
+	discussion on the sources of Romualdus and his relationship with Norman
+	historiography are in Arndt 1966 (running footnotes); Garufi 1914, XXV-XXVIII
+	(introduction); Hoffmann 1967, 165-170; Matthew 1981, 243-249; 258-267;
 	Zabbia 2002; Zabbia 2004, 380-382 and 392-394;
 	Zabbia 2010, 22 and 25-60.
 </p>
@@ -208,10 +223,7 @@
 		but a key source for this period are the <title>Annales</title> by
 		Lupus Protospatharius.</item>
 </list>
-
-
 </div>
-
 
 <div>
 <head>Authorship: textual evidence</head>
@@ -374,17 +386,17 @@
 <div>
 <head>Print editions and translations</head>
 <p>The two most recent print editions of the Chronicon are Garufi 1914
-	(henceforth, simply "Garufi"; see the review by Erdmann 1930) and
+	(henceforth "Garufi"; see the review by Erdmann 1930) and
 	Bonetti 2001, whose edition starts with paragraph g163.6-163.7
-	and includes and Italian translation (henceforth, "Bonetti").</p>
+	and includes and Italian translation (henceforth "Bonetti").</p>
 	
-<p>Bonetti uses Garufi's edition as "testo base",
+<p>Bonetti uses Garufi's edition as "testo base"
 	and Arndt 1866 as "elemento integrativo"
 	(see 'Nota al testo', Bonetti, 56).</p>
 
 <p>Previously, the work had been published by Muratori 1725;
 	Del Re 1875 (from g212.1-212.4, with Italian translation);
-	Arndt 1866 (starting with g163.6-163.7, like Bonetti).
+	Arndt 1866 (from g163.11-164.9).
 	Schmale 1986, 308-371 published the Peace of Venice, based
 	on Garufi's text, with a German translation.
 	Carucci 1996 is an Italian translation of select passages
@@ -416,7 +428,7 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 <head>Sigla</head>
 <p>As noted in the 'sourceDesc' element,
 	in the @wit attributes of 'lem' and 'rdg'
-	elements I used sigla 'g' for Garufi', 'b' for Bonetti,
+	elements I used abbreviations 'g' for Garufi, 'b' for Bonetti,
 	'a' for MS A (first hand), 'a2' for the second hand of MS A
 	(probably XVII century) and 'o' for the fragment of MS O.</p>
 </div>
@@ -499,16 +511,6 @@ g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.
 86.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
 </div>
 
-
-<div>
-<head>Aim</head>
-<p>The present edition aims at improving
-the text of the Chronicon by Romualdus Salernitanus
-(Romualdus II Guarna) through a new collation of the text
-of the print editions of Garufi and Bonetti
-against A and O, the main witnesses of the 'short version' of the work.
-</p>
-</div>
 
 
 <div>
@@ -742,6 +744,71 @@ mostly by adopting MS A's spelling, in cases in which
 </p>
 </div>
 
+<div>
+<head>Factual variants</head>
+
+<p>The aim of this edition is
+	to publish a text as close as possible
+	to what has been written by Romualdus or his collaborators,
+	not to what has actually happened in history, so I did not
+	correct fact, names or dates. Besides, such a task would have
+	required a historic competence that is beyond my skills.
+	The footnotes in the Garufi edition and the essays cited
+	in this introduction provide rich critical discussions
+	on this matter.</p>
+
+<p>Dates in particular are an aspect in which the Chronicon is often
+	imprecise and there is great variability among the witnesses:
+	when dates in A or O diverged from those in Garufi and Bonetti,
+	I systematically adhered to the print editions.</p>
+</div>
+
+<div>
+<head>The text before and after the author</head>
+
+<p>In some passages Romualdus follows a source very closely, but skips
+	some words. Garufi sometimes integrates the missing words.
+	For instance, in g100.6-103.2 the Chronicon
+	copies Paul the Deacon Hist. 14.116 "adest Geisericus
+	cum ualidissimo suae gentis exercitu", but skips the words
+	"suae gentis", which are found in no MS of the Chronicon.
+	In these cases I reject Garufi's integrations based on
+	the principle of considering the Chronicon an autonomous text,
+	rather than a copy of his sources.</p>
+
+<p>These cases, together with comples philological issues such as
+	the attitions differentiating the 'long' and 'short' version
+	of the Chronicon, raise interesting, very general questions on
+	the work of the philologist.
+	Paul the Deacon's text is 'before' Romualdus and his
+	(possible) collaborators, while that of the additions may
+	be 'after' him (or them).
+       	Where is the 'original text' that the philologist approximates?</p>
+
+<p>The 'original text', especially in cases of a complex editorial
+	work such as the Chronicon, looks as elusive as the elusive notion of
+	'present', at the sliding edge between past and future.</p>
+
+<p>These issues become more evident to us as we get closer to the author.
+	Mordenti 2001, par. 9.1 discusses the extreme case
+	of transcription and raises "[la] domanda fondamentale della filologia
+	[...] quella che riguarda il concetto di testo e, in particolare,
+	di testo originale" and quotes D'Arco Silvio Avalle and Cesare Segre:
+	"Il concetto di originale, nel senso di testo autentico esprimente
+	la volontà dell'autore, è uno dei più sfuggenti ed ambigui della
+	critica del testo. [...] le singole opere di uno scrittore costituiscono
+	a rigore una sezione a volte casuale e provvisoria – e non sempre
+	operata dall'autore stesso [...] di quel flusso continuo di adattamenti
+	e di spostamenti successivi attraverso cui si esprimono le tendenze
+	fondamentali di un sistema letterario" (Avalle 1972, 32-33); and
+	"Ogni testo scritto è in realtà trascritto: da un copista, da un tipografo.
+	Anche l'autografo è una trascrizione (dalla brutta copia); e la brutta copia
+	costituisce di norma un testo non definitivo. Insomma, ogni trascrizione è
+	anteriore o posteriore al testo; nessun testo può essere identificato col Testo"
+	Segre 1979, 36.</p>
+
+
+</div>
 
 <listBibl>
 
