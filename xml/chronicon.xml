@@ -256,7 +256,7 @@ against A and O, the main witnesses of the 'short version' of the work.
 
 <div>
 <head>Authorship: hypotheses</head>
-<p>For Matthew 1981 (followed by Vitolo §, 54-551), the first note only proves that
+<p>For Matthew 1981, the first note only proves that
 	the scribe who wrote it believed in Romualdus' authorship, and the second
 	that the report of the Peace of Venice was based on the archbishop's,
 	possibly written, testimony. Mattews discusses numerous arguments in favor
@@ -268,7 +268,7 @@ against A and O, the main witnesses of the 'short version' of the work.
 	reigns to Roger II and the two Williams in 1177",
 	while only the report of the Peace of Venice "is taken from
 	the written, eitiwness, and true account of Archbishop Romuald"
-	(Matthew 1981, 269-270). Vitolo 2004 follows Matthew, and stresses
+	(Matthew 1981, 269-270). Vitolo 2007, 549-551 follows Matthew, and stresses
 	the lack of attention to the famous medicine school of Salerno
 	(except for a short note in g189.2-189.5).
 	Oldoni (2001 and 2004) suggest that the text until year 893 may have been
@@ -814,29 +814,24 @@ mostly by adopting MS A's spelling, in cases in which
 
 <head>Works cited in the introduction</head>
 
-<biblStruct xml:id="pio1996guglielmo">
-        <monogr>
-            <author>Pio, Berardo</author>
-            <title>Guglielmo I d'Altavilla: gestione del potere e lotta politica nell'Italia normanna: 1154-1169</title>
+<biblStruct xml:id="andenna2001romualdo">
+        <analytic>
+                <author>Andenna, Giancarlo</author>
+            <title>Romualdo Salernitano fonte per la storia politica delle città di Lombardia</title>
+            </analytic>
+<monogr>
+            <editor>Bonetti, Cinzia</editor>
+            <title level="m">Romualdo II Guarna, Chronicon</title>
             <imprint>
-                <publisher>Pàtron</publisher>
-            <date>1996</date>
+                <publisher>Avagliano</publisher>
+            <date>2001</date>
+            <pubPlace>Salerno</pubPlace>
+            <biblScope unit="page" from="7" to="">7-39</biblScope>
             </imprint>
 </monogr>
-    </biblStruct>
-    <biblStruct xml:id="delre1845cronica">
-        <monogr>
-            <editor>Del Re, Giuseppe</editor>
-            <title>Cronica di Romualdo Guarna arcivescovo salernitano. Versione di G. Del Re con note e dilucidazioni dello stesso</title>
-            <imprint>
-                <publisher>Stamperia dell'Iride</publisher>
-            <date>1845</date>
-            <pubPlace>Napoli</pubPlace>
-        </imprint>
-</monogr>
     <series>
-                <title level="s">Cronisti e scrittori sincroni napoletani editi e inediti, ordinati per serie e pubblicati da Giuseppe Del Re: storia della monarchia</title>
-            <biblScope unit="volume">1: Normanni</biblScope>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+            <biblScope unit="volume">6</biblScope>
             </series>
 </biblStruct>
     <biblStruct xml:id="arndt1866romoaldi">
@@ -854,21 +849,108 @@ mostly by adopting MS A's spelling, in cases in which
             </series>
 <ref type="url">http://www.mgh.de/dmgh/resolving/MGH_SS_19_S._387</ref>
         </biblStruct>
-    <biblStruct xml:id="garufi1914romualdo">
+    <biblStruct xml:id="avalle1972principi">
         <monogr>
-            <editor>Garufi, Carlo Alberto</editor>
-            <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+            <author>Avalle, D'Arco Silvio</author>
+            <title>Principi di critica testuale</title>
             <imprint>
-                <publisher>S. Lapi</publisher>
-            <date>1914</date>
-            <pubPlace>Città di Castello</pubPlace>
+                <publisher>Antenore</publisher>
+            <date>1972</date>
+            <pubPlace>Padova</pubPlace>
+        </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="carucci1996romualdo">
+        <monogr>
+            <author>Carucci, Arturo</author>
+            <title>Romualdo II Guarna. Il Congresso di Venezia del 1177</title>
+            <imprint>
+                <publisher>Ed. Gutemberg</publisher>
+            <date>1996</date>
+            <pubPlace>Lancusi (Salerno)</pubPlace>
+        </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="delre1845cronica">
+        <monogr>
+            <editor>Del Re, Giuseppe</editor>
+            <title>Cronica di Romualdo Guarna arcivescovo salernitano. Versione di G. Del Re con note e dilucidazioni dello stesso</title>
+            <imprint>
+                <publisher>Stamperia dell'Iride</publisher>
+            <date>1845</date>
+            <pubPlace>Napoli</pubPlace>
         </imprint>
 </monogr>
     <series>
-                <title level="s">Rerum italicarum scriptores</title>
-            <biblScope unit="volume">127</biblScope>
+                <title level="s">Cronisti e scrittori sincroni napoletani editi e inediti, ordinati per serie e pubblicati da Giuseppe Del Re: storia della monarchia</title>
+            <biblScope unit="volume">1: Normanni</biblScope>
             </series>
 </biblStruct>
+    <biblStruct xml:id="erdmann1930garufi">
+        <analytic>
+                <author>Erdmann, C.</author>
+            <title>C. A. Garufi, Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+            </analytic>
+<monogr>
+            <title level="j">Neues Archiv</title>
+            <imprint>
+                <date>1930</date>
+            <pubPlace>Berlin</pubPlace>
+        <biblScope unit="vol">48</biblScope>
+            <biblScope unit="page" from="510" to="512">510-512</biblScope>
+            </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="hoffmann1967hugo">
+        <analytic>
+                <author>Hoffmann, Hartmut</author>
+            <title>Hugo Falcandus und Romuald von Salerno</title>
+            </analytic>
+<monogr>
+            <title level="j">Deutsches Archiv für Erforschung des Mittelalters</title>
+            <imprint>
+                <date>1967</date>
+            <biblScope unit="vol">23</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="116" to="">116-170</biblScope>
+            </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="houben2001amator">
+        <analytic>
+                <author>Houben, Hubert</author>
+            <title>«Amator pacis et cultor iustitie»: il re di Sicilia secondo Romualdo di Salerno</title>
+            </analytic>
+<monogr>
+            <editor>Bonetti, Cinzia</editor>
+            <title level="m">Romualdo II Guarna, Chronicon</title>
+            <imprint>
+                <publisher>Avagliano</publisher>
+            <date>2001</date>
+            <pubPlace>Salerno</pubPlace>
+            <biblScope unit="page" from="41" to="">41-47</biblScope>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Schola Salernitana. Studi e testi</title>
+            <biblScope unit="volume">6</biblScope>
+            </series>
+</biblStruct>
+    <biblStruct xml:id="loud2012roger">
+        <monogr>
+            <author>Loud, G.</author>
+            <title>Roger II and the Creation of the Kingdom of Sicily</title>
+            <imprint>
+                <publisher>Manchester University Press</publisher>
+            <date>2012</date>
+            <pubPlace>Manchester-New York</pubPlace>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Medieval Sources</title>
+            </series>
+<ref type="url">https://books.google.it/books?id=SHyPZwEACAAJ</ref>
+        </biblStruct>
     <biblStruct xml:id="matthew1981chronicle">
         <analytic>
                 <author>Matthew, Donald J. A.</author>
@@ -885,21 +967,145 @@ mostly by adopting MS A's spelling, in cases in which
             </imprint>
 </monogr>
     </biblStruct>
-    <biblStruct xml:id="bonetti2001romualdo">
+    <biblStruct xml:id="mordenti2001informatica">
         <monogr>
+            <author>Mordenti, Raul</author>
+            <title>Informatica e critica dei testi</title>
+            <imprint>
+                <publisher>Bulzoni</publisher>
+            <date>2001</date>
+            <pubPlace>Roma</pubPlace>
+        </imprint>
+</monogr>
+    <series>
+                <title level="s">Informatica e discipline umanistiche</title>
+            </series>
+</biblStruct>
+    <biblStruct xml:id="muratori1725chronicon">
+        <monogr>
+            <editor>Muratori, Ludovico Antonio</editor>
+            <title>Chronicon Romualdi II Archiepiscopi Salernitani</title>
+            <imprint>
+                <date>1725</date>
+            <pubPlace>Milano</pubPlace>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Rerum Italicarum scriptores</title>
+            <biblScope unit="volume">7</biblScope>
+            </series>
+<ref type="url">https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10868996_00029.html</ref>
+        </biblStruct>
+    <biblStruct xml:id="oldoni2001modo">
+        <analytic>
+                <author>Oldoni, Massimo</author>
+            <title>Un modo d'intendere la storia</title>
+            </analytic>
+<monogr>
             <editor>Bonetti, Cinzia</editor>
-            <title>Romualdo II Guarna, Chronicon</title>
+            <title level="m">Romualdo II Guarna, Chronicon</title>
             <imprint>
                 <publisher>Avagliano</publisher>
             <date>2001</date>
             <pubPlace>Salerno</pubPlace>
-        </imprint>
+            <biblScope unit="page" from="49" to="55">49-55</biblScope>
+            </imprint>
 </monogr>
     <series>
                 <title level="s">Schola Salernitana. Studi e testi</title>
             <biblScope unit="volume">6</biblScope>
             </series>
 </biblStruct>
+    <biblStruct xml:id="oldoni2004guarna">
+        <analytic>
+                <author>Oldoni, Massimo</author>
+            <title>Guarna, Romualdo</title>
+            </analytic>
+<monogr>
+            <title level="m">Dizionario biografico degli italiani</title>
+            <imprint>
+                <date>2004</date>
+            <pubPlace>Roma</pubPlace>
+            <biblScope unit="page" from="400" to="">400-403</biblScope>
+            </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="palumbo1978medio">
+        <monogr>
+            <author>Palumbo, Pier Fausto</author>
+            <title>Medio Evo meridionale: fonti e letteratura storica dalle invasioni alla fine del periodo aragonese</title>
+            <imprint>
+                <publisher>Ed. del Lavoro</publisher>
+            <date>1978</date>
+            <pubPlace>Roma</pubPlace>
+        </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="pio1996guglielmo">
+        <monogr>
+            <author>Pio, Berardo</author>
+            <title>Guglielmo I d'Altavilla: gestione del potere e lotta politica nell'Italia normanna: 1154-1169</title>
+            <imprint>
+                <publisher>Pàtron</publisher>
+            <date>1996</date>
+            </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="schmale1986italische">
+        <monogr>
+            <author>Schmale, F.J.</author>
+            <title>Italische Quellen über die Taten Kaiser Friedrichs I. In Italien und der Brief über den Kreuzzug Kaiser Friedrichs I.</title>
+            <imprint>
+                <publisher>Wissenschaftliche Buchgesellschaft</publisher>
+            <date>1986</date>
+            <pubPlace>Darmstadt</pubPlace>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Ausgewählte Quellen zur deutschen Geschichte des Mittelalters</title>
+            </series>
+<ref type="url">https://books.google.it/books?id=PgtoAAAAMAAJ</ref>
+        </biblStruct>
+    <biblStruct xml:id="schwarz1978chronicon">
+        <analytic>
+                <title>Chronicon Amalfitanum</title>
+            </analytic>
+<monogr>
+            <editor>Schwarz, Ulrich</editor>
+            <title level="m">Amalfi im frühen Mittelalter</title>
+            <imprint>
+                <date>1978</date>
+            <pubPlace>Tübingen</pubPlace>
+            </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="segre1979semiotica">
+        <monogr>
+            <author>Segre, Cesare</author>
+            <title>Semiotica filologica. Testo e modelli culturali</title>
+            <imprint>
+                <publisher>Einaudi</publisher>
+            <date>1979</date>
+            <pubPlace>Torino</pubPlace>
+        </imprint>
+</monogr>
+    </biblStruct>
+    <biblStruct xml:id="vitolo2007scuola">
+        <analytic>
+                <author>Vitolo, Giovanni</author>
+            <title>La scuola medica salernitana come metafora della storia del Mezzogiorno</title>
+            </analytic>
+<monogr>
+            <title level="m">La scuola medica salernitana. Gli autori e i testi. Atti del convegno internazionale, Salerno 3-5 novembre 2004</title>
+            <editor>Jaquart, Danielle and Paravicini Bagliani, Agostino</editor>
+            <imprint>
+                <publisher>SISMEL, Edizioni del Galluzzo</publisher>
+            <date>2007</date>
+            <pubPlace>Firenze</pubPlace>
+        <biblScope unit="page" from="535" to="">535-559</biblScope>
+            </imprint>
+</monogr>
+    </biblStruct>
     <biblStruct xml:id="zabbia2002cronista">
         <analytic>
                 <author>Zabbia, Marino</author>
@@ -980,226 +1186,6 @@ mostly by adopting MS A's spelling, in cases in which
 </monogr>
     <ref type="url">http://hdl.handle.net/2318/128183</ref>
         </biblStruct>
-    <biblStruct xml:id="palumbo1978medio">
-        <monogr>
-            <author>Palumbo, Pier Fausto</author>
-            <title>Medio Evo meridionale: fonti e letteratura storica dalle invasioni alla fine del periodo aragonese</title>
-            <imprint>
-                <publisher>Ed. del Lavoro</publisher>
-            <date>1978</date>
-            <pubPlace>Roma</pubPlace>
-        </imprint>
-</monogr>
-    </biblStruct>
-    <biblStruct xml:id="schwarz1978chronicon">
-        <analytic>
-                <title>Chronicon Amalfitanum</title>
-            </analytic>
-<monogr>
-            <editor>Schwarz, Ulrich</editor>
-            <title level="m">Amalfi im frühen Mittelalter</title>
-            <imprint>
-                <date>1978</date>
-            <pubPlace>Tübingen</pubPlace>
-            </imprint>
-</monogr>
-    </biblStruct>
-    <biblStruct xml:id="erdmann1930garufi">
-        <analytic>
-                <author>Erdmann, C.</author>
-            <title>C. A. Garufi, Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
-            </analytic>
-<monogr>
-            <title level="j">Neues Archiv</title>
-            <imprint>
-                <date>1930</date>
-            <pubPlace>Berlin</pubPlace>
-        <biblScope unit="vol">48</biblScope>
-            <biblScope unit="page" from="510" to="512">510-512</biblScope>
-            </imprint>
-</monogr>
-    </biblStruct>
-    <biblStruct xml:id="muratori1725chronicon">
-        <monogr>
-            <editor>Muratori, Ludovico Antonio</editor>
-            <title>Chronicon Romualdi II Archiepiscopi Salernitani</title>
-            <imprint>
-                <date>1725</date>
-            <pubPlace>Milano</pubPlace>
-            </imprint>
-</monogr>
-    <series>
-                <title level="s">Rerum Italicarum scriptores</title>
-            <biblScope unit="volume">7</biblScope>
-            </series>
-<ref type="url">https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10868996_00029.html</ref>
-        </biblStruct>
-    <biblStruct xml:id="andenna2001romualdo">
-        <analytic>
-                <author>Andenna, Giancarlo</author>
-            <title>Romualdo Salernitano fonte per la storia politica delle città di Lombardia</title>
-            </analytic>
-<monogr>
-            <editor>Bonetti, Cinzia</editor>
-            <title level="m">Romualdo II Guarna, Chronicon</title>
-            <imprint>
-                <publisher>Avagliano</publisher>
-            <date>2001</date>
-            <pubPlace>Salerno</pubPlace>
-            <biblScope unit="page" from="7" to="">7-39</biblScope>
-            </imprint>
-</monogr>
-    <series>
-                <title level="s">Schola Salernitana. Studi e testi</title>
-            <biblScope unit="volume">6</biblScope>
-            </series>
-</biblStruct>
-    <biblStruct xml:id="houben2001amator">
-        <analytic>
-                <author>Houben, Hubert</author>
-            <title>«Amator pacis et cultor iustitie»: il re di Sicilia secondo Romualdo di Salerno</title>
-            </analytic>
-<monogr>
-            <editor>Bonetti, Cinzia</editor>
-            <title level="m">Romualdo II Guarna, Chronicon</title>
-            <imprint>
-                <publisher>Avagliano</publisher>
-            <date>2001</date>
-            <pubPlace>Salerno</pubPlace>
-            <biblScope unit="page" from="41" to="">41-47</biblScope>
-            </imprint>
-</monogr>
-    <series>
-                <title level="s">Schola Salernitana. Studi e testi</title>
-            <biblScope unit="volume">6</biblScope>
-            </series>
-</biblStruct>
-    <biblStruct xml:id="oldoni2001modo">
-        <analytic>
-                <author>Oldoni, Massimo</author>
-            <title>Un modo d'intendere la storia</title>
-            </analytic>
-<monogr>
-            <editor>Bonetti, Cinzia</editor>
-            <title level="m">Romualdo II Guarna, Chronicon</title>
-            <imprint>
-                <publisher>Avagliano</publisher>
-            <date>2001</date>
-            <pubPlace>Salerno</pubPlace>
-            <biblScope unit="page" from="49" to="55">49-55</biblScope>
-            </imprint>
-</monogr>
-    <series>
-                <title level="s">Schola Salernitana. Studi e testi</title>
-            <biblScope unit="volume">6</biblScope>
-            </series>
-</biblStruct>
-    <biblStruct xml:id="hoffmann1967hugo">
-        <analytic>
-                <author>Hoffmann, Hartmut</author>
-            <title>Hugo Falcandus und Romuald von Salerno</title>
-            </analytic>
-<monogr>
-            <title level="j">Deutsches Archiv für Erforschung des Mittelalters</title>
-            <imprint>
-                <date>1967</date>
-            <biblScope unit="vol">23</biblScope>
-            <biblScope unit="issue">1</biblScope>
-            <biblScope unit="page" from="116" to="">116-170</biblScope>
-            </imprint>
-</monogr>
-    </biblStruct>
-    <biblStruct xml:id="oldoni2004guarna">
-        <analytic>
-                <author>Oldoni, Massimo</author>
-            <title>Guarna, Romualdo</title>
-            </analytic>
-<monogr>
-            <title level="m">Dizionario biografico degli italiani</title>
-            <imprint>
-                <date>2004</date>
-            <pubPlace>Roma</pubPlace>
-            <biblScope unit="page" from="400" to="">400-403</biblScope>
-            </imprint>
-</monogr>
-    </biblStruct>
-    <biblStruct xml:id="schmale1986italische">
-        <monogr>
-            <author>Schmale, F.J.</author>
-            <title>Italische Quellen über die Taten Kaiser Friedrichs I. In Italien und der Brief über den Kreuzzug Kaiser Friedrichs I.</title>
-            <imprint>
-                <publisher>Wissenschaftliche Buchgesellschaft</publisher>
-            <date>1986</date>
-            <pubPlace>Darmstadt</pubPlace>
-            </imprint>
-</monogr>
-    <series>
-                <title level="s">Ausgewählte Quellen zur deutschen Geschichte des Mittelalters</title>
-            </series>
-<ref type="url">https://books.google.it/books?id=PgtoAAAAMAAJ</ref>
-        </biblStruct>
-    <biblStruct xml:id="loud2012roger">
-        <monogr>
-            <author>Loud, G.</author>
-            <title>Roger II and the Creation of the Kingdom of Sicily</title>
-            <imprint>
-                <publisher>Manchester University Press</publisher>
-            <date>2012</date>
-            <pubPlace>Manchester-New York</pubPlace>
-            </imprint>
-</monogr>
-    <series>
-                <title level="s">Medieval Sources</title>
-            </series>
-<ref type="url">https://books.google.it/books?id=SHyPZwEACAAJ</ref>
-        </biblStruct>
-    <biblStruct xml:id="carucci1996romualdo">
-        <monogr>
-            <author>Carucci, Arturo</author>
-            <title>Romualdo II Guarna. Il Congresso di Venezia del 1177</title>
-            <imprint>
-                <publisher>Ed. Gutemberg</publisher>
-            <date>1996</date>
-            <pubPlace>Lancusi (Salerno)</pubPlace>
-        </imprint>
-</monogr>
-    </biblStruct>
-    <biblStruct xml:id="mordenti2001informatica">
-        <monogr>
-            <author>Mordenti, Raul</author>
-            <title>Informatica e critica dei testi</title>
-            <imprint>
-                <publisher>Bulzoni</publisher>
-            <date>2001</date>
-            <pubPlace>Roma</pubPlace>
-        </imprint>
-</monogr>
-    <series>
-                <title level="s">Informatica e discipline umanistiche</title>
-            </series>
-</biblStruct>
-    <biblStruct xml:id="avalle1972principi">
-        <monogr>
-            <author>Avalle, D'Arco Silvio</author>
-            <title>Principi di critica testuale</title>
-            <imprint>
-                <publisher>Antenore</publisher>
-            <date>1972</date>
-            <pubPlace>Padova</pubPlace>
-        </imprint>
-</monogr>
-    </biblStruct>
-    <biblStruct xml:id="segre1979semiotica">
-        <monogr>
-            <author>Segre, Cesare</author>
-            <title>Semiotica filologica. Testo e modelli culturali</title>
-            <imprint>
-                <publisher>Einaudi</publisher>
-            <date>1979</date>
-            <pubPlace>Torino</pubPlace>
-        </imprint>
-</monogr>
-    </biblStruct>
 </listBibl>
 
 </front>
