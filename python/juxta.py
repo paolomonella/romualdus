@@ -21,8 +21,9 @@ import biblio
 quiet = True  # If true, suppress standard output messages to console
 chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
 # chosen_ones = ('m1')
-pre = True  # Warning: re-activate it later
-post = True  # Perform post-collation operations
+pre = True  # Do pre-processing (before collation)
+post = True  # Do post-processing (after collation)
+
 
 #################
 # PRE-COLLATION #
