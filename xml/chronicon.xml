@@ -150,7 +150,7 @@
 <p>The present edition aims at improving
 the text of the Chronicon by Romualdus Salernitanus
 (Romualdus II Guarna) through a new collation of the text
-of the print editions by Garufi and Bonetti
+of the print editions by Garufi 1914 and Bonetti 2001
 against A and O, the main witnesses of the 'short version' of the work.
 </p>
 </div>
@@ -176,9 +176,8 @@ against A and O, the main witnesses of the 'short version' of the work.
 <p> The Chronicon initially follows ancient Jewish, Greek and and Roman
 	ancient history, then European (continental and Byzantine) events.
 	It then includes a digression on the the story of the Lombards and the Franks
-	until Louis the Pious 
-	(from paragraph g108.24-109.5 i.e. page 108 of Garufi's edition, line 24,
-	to par. g159.9-159.25). From this point on, the scope of the narrative
+	until Louis the Pious, from paragraph g108.24-109.5 i.e. page 108 of Garufi's edition,
+	line 24, to par. g159.9-159.25. From this point on, the scope of the narrative
 	returns to be wide, continental, but it progressively focusses on Southern
 	Italy, until it substantially becomes a chronicle of its Norman conquest and then
 	of the Kingdom of Sicily, ending with the detailed account of the Peace of Venice
@@ -189,10 +188,10 @@ against A and O, the main witnesses of the 'short version' of the work.
 <div>
 <head>Sources</head>
 
-<p>Garufi 1914 has a very informative separate apparatus of footnotes presenting
-	the sources of each passage of the work. Detailed information and critical
+<p>Garufi 1914 (henceforth "Garufi") has a very informative separate apparatus of footnotes
+	providing the sources of each passage of the work. Detailed information and critical
 	discussion on the sources of Romualdus and his relationship with Norman
-	historiography are in Arndt 1966 (running footnotes); Garufi 1914, XXV-XXVIII
+	historiography are in Arndt 1966 (running footnotes); Garufi, XXV-XXVIII
 	(introduction); Hoffmann 1967, 165-170; Matthew 1981, 243-249; 258-267;
 	Zabbia 2002; Zabbia 2004, 380-382 and 392-394;
 	Zabbia 2010, 22 and 25-60.
@@ -238,7 +237,7 @@ against A and O, the main witnesses of the 'short version' of the work.
 		"Ab hoc loco adiunctum est huic chronice per Romualdum secundum
 		Salernatanum archiepiscopum".
 		The note (not included in the text of my edition)
-		is in par. g213.1-213.8, precisely in page 213, line 5 of Garufi's edition,
+		is in par. g213.1-213.8, precisely in page 213, line 5 of Garufi,
 		between "...iuramentum accepit" and "Dux autem Wilhelmus..." (events of year 1125).
 		Garufi reports the note in apparatus (see Matthew 1981, 255-256
 		and Zabbia 2004, 382, 388 and footnote 5);
@@ -376,7 +375,7 @@ against A and O, the main witnesses of the 'short version' of the work.
 	facilitating the processing of XML files.</p>
 
 <p>A detailed description and discussion of the manuscript tradition can be found in
-	Garufi 1914, XXXI-XXXVI; Hoffmann 1967, 156-165 (mostly on MS A);
+	Garufi, XXXI-XXXVI; Hoffmann 1967, 156-165 (mostly on MS A);
 	Matthew 1981, 241-242; Zabbia 2004, 385-388;
 	Zabbia 2006 and Zabbia 2010, 24-25</p>
 
@@ -385,13 +384,12 @@ against A and O, the main witnesses of the 'short version' of the work.
 
 <div>
 <head>Print editions and translations</head>
-<p>The two most recent print editions of the Chronicon are Garufi 1914
-	(henceforth "Garufi"; see the review by Erdmann 1930) and
-	Bonetti 2001, whose edition starts with paragraph g163.6-163.7
-	and includes and Italian translation (henceforth "Bonetti").</p>
+<p>The two most recent print editions of the Chronicon are Garufi
+	(for which see the review in Erdmann 1930) and Bonetti 2001
+	(henceforth "Bonetti"). The latter starts with paragraph g163.6-163.7
+	and includes and Italian translation.</p>
 	
-<p>Bonetti uses Garufi's edition as "testo base"
-	and Arndt 1866 as "elemento integrativo"
+<p>Bonetti uses Garufi as "testo base" and Arndt 1866 as "elemento integrativo"
 	(see 'Nota al testo', Bonetti, 56).</p>
 
 <p>Previously, the work had been published by Muratori 1725;
@@ -457,7 +455,7 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	'editorialDecl'.</p>
 
 <p>Scholars are unanimously convinced that these are later additions to the
-	'short' version' (see Garufi 1914, XXXIV; Matthew 1981, 241-243,
+	'short' version' (see Garufi, XXXIV; Matthew 1981, 241-243,
 	Zabbia 2004, 386-387; Zabbia 2006, 59-61 and Zabbia 2010, 24-25, 27 and 43-49),
 	but Garufi himself includes some of them in his text. He therefore considers
 	these ones Romualdus' own additions (followed by Palumbo 1978, 76-78),
@@ -479,15 +477,15 @@ further broken into smaller 'p' elements to facilitate collation.</p>
 	into the marginal space of the manuscript, drawing them from MS B
 	(see Matthew 1981, 242).
 	In addition to the 'long version additions' mentioned in the previous paragraph,
-	I transcribed and collated the following portions of MS A added by the second hand
-	and marked their readings with siglum 'a2' in 'app' elements:
+	I transcribed and collated also the following portions of MS A added by the
+	second hand and marked their readings with siglum 'a2' in 'app' elements:
 	g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10,
 	g181.10-181.11, g181.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13.
 </p>
 </div>
 
 <div>
-<head>Portion of the work in fragment O</head>
+<head>Portions of the work included in fragment O</head>
 <p>Witness O (i.e. folios 16r-18v of Ottobon. Lat. 2940) has the following paragraphs:
 g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16, g170.17-171.1, g171.2-171.6, 
 71.7-171.8, g171.9-171.14, g172.1-172.9, g172.10-173.11, g173.12-173.13, g173.14-174.7, 
@@ -500,15 +498,33 @@ g186.12-187.2, g187.9-187.11 and g187.14-188.1.</p>
 
 
 <div>
-<head>Paragraphs missing in A and O</head>
-<p>Some paragraphs
-are missing both in MS A (first or second hand) and in MS O.
-For them I am simply reporting the text of Garufi or Bonetti
-(i.e. Garufi/Arndt), without any 'app' elements.
-These paragraphs are:
-g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.28, 
-8.29-90.15, g90.16-90.20, g90.21-92.5, g92.6-92.7, g92.8-92.9, g179.10-179.11, 
-86.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
+<head>Paragraphs missing in A and O (no variants)</head>
+
+<p>Some paragraphs are missing both in MS A (first or second hand) and in MS O.
+	For them I am simply reporting the text of Garufi or Bonetti (i.e. Garufi/Arndt),
+	without any 'app' elements. These paragraphs are:
+	g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.28, 
+	.29-90.15, g90.16-90.20, g90.21-92.5, g92.6-92.7, g92.8-92.9, g179.10-179.11, 
+	6.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
+</div>
+
+<div>
+<head>Empty paragraphs (relics of automatic collation)</head>
+
+<p>This XML file includes a small number of empty 'p' elements, i.e. do not include
+	any text or child elements. These paragraphs are relics of the automatic
+	collation process: it was useful, to facilitate collation, that all witnesses
+	had exactly the same sequence of 'p' elements with the same @xml:id attributes,
+	even if they included no text in that specific witness (for example, headers
+	introduced by Garufi or Bonetti in their edition did not correspond to any text
+	in the MSS).
+	(§ list here)                  
+	'no_collation'] in ['heading', 'duplicate', 'pax']]
+
+	do
+	not include
+</p>
+
 </div>
 
 
@@ -16282,8 +16298,6 @@ Anno dominice incarnationis DCCCLXXXIII. Iohannes papa, postquam decem annos et 
 Et Marinus ei successit qui sedit anno uno et mensibus V. Quo defuncto, successit Hadrianus in Romanum pontificatum, seditique anno uno, mensibus IV; post cuius obitum Stephanus papalem cathedram gubernauit annis VI. Eo autem uita decedente, successit ei Formosus qui sedit annis V mensibus VI; cuius temporibus Langobardis repellentibus, Franci Italicum perdiderunt imperium. 
 </p>
 
-<p xml:id="b062heading"/>
- 
 <p xml:id="g163.6-163.7">
 <app cert="high" type="substantive">
    <lem wit="#b">Anno dominice incarnationis</lem>
@@ -21939,8 +21953,6 @@ et de
 </app> gratie plenioris comitatum Conuersani illi adiecit. 
 </p>
  
-<p xml:id="g258.1-258.7surplus"/>
- 
 <p xml:id="g258.14-258.19">
 Eo tempore in Sicilia terremotus factus est maximus, ita quod castrum Siracusanum pro maxima parte cecidit. Ciuitas etiam Catheniensium a fundamentis euersa ruit. Ecclesia etiam sancte 
 <app cert="high" type="substantive">
@@ -23923,40 +23935,6 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
    <rdg wit="#a">eclypsin</rdg>
 </app>, et pene in tertia parte sui obscurata est. Tertio decimo uero die intrantis mensis Septembris, indictione XII, sol in signo uirginis circa horam… 
 </p>
- 
-<p xml:id="v-b298a"/>
- 
-<p xml:id="v-b298b"/>
- 
-<p xml:id="v-b298c"/>
- 
-<p xml:id="v-b298d"/>
- 
-<p xml:id="v-b300a"/>
- 
-<p xml:id="v-b300b"/>
- 
-<p xml:id="v-b300c"/>
- 
-<p xml:id="v-b302a"/>
- 
-<p xml:id="v-b302b"/>
- 
-<p xml:id="v-b302c"/>
- 
-<p xml:id="v-b302d"/>
- 
-<p xml:id="v-b304a"/>
- 
-<p xml:id="v-b304b"/>
- 
-<p xml:id="v-b304c"/>
- 
-<p xml:id="v-b304d"/>
- 
-<p xml:id="v-b306a"/>
- 
-<p xml:id="v-b306b"/>
 
 <note target="#app8-in-g21.34-22.6" type="textcrit">Interesting reading: Garufi has 'scriptu regum' and has this footnote: 'Lege scriptura regnum come leggesi anche in Beda'. Bedes text makes perfect sense, but the matter here is what Romualdus wanted to write. He, or a scribe, probably made a mistake from the beginning, and the scribe of A tried to make sense of this passage by writing 'regnum'. I am conjecturing and restoring Bede's text, but I have strong doubts on this. I should probably keep the - probably original - scriptu regum.</note>
 <note target="#app69-in-g22.11-24.5" type="textcrit">Important variant. Garufi does not report thie sentences, not even in the apparatus.</note>
