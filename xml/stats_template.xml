@@ -46,34 +46,120 @@
      </item>
      <item>Of all variants (V):
          <list>
-            <num n="s-perc-subst"/>%  are substantive (SV)
-            <num n="s-perc-trans"/>%  are transpositions (TV)
-            <num n="s-perc-orth"/>%  are orthographic (OV)
+            <num n="s-perc-subst"/>%  are substantive
+            <num n="s-perc-orth"/>%  are orthographic
+            <num n="s-perc-trans"/>%  are transpositions
          </list>
      </item>
-     <item>Of all substantive variants (SV):
+     <item>Of all substantive variants:
 	     <list>
 		     <item>
 			     <num n="s-num-num"/>
-			     (<num n="s-perc-num-num"/>% of SV)
+			     (<num n="s-perc-num-num"/>% of all substantive variants)
 			     have @subtype 'num-num' (two different numerals)
 		     </item>
 		     <item>
 			     <num n="s-missing-in-ms"/>
-			     (<num n="s-perc-missing-in-ms"/>% of SV)
+			     (<num n="s-perc-missing-in-ms"/>%)
 			     have @subtype 'missing-in-ms' (integrations)
 		     </item>
 		     <item>
 			     <num n="s-missing-in-print"/>
-			     (<num n="s-perc-missing-in-print"/>% of SV)
+			     (<num n="s-perc-missing-in-print"/>%)
 			     have @subtype 'missing-in-print' (expunctions)
 		     </item>
 		     <item>
 			     <num n="s-fs"/>
-			     (<num n="s-perc-fs"/> of SV)
+			     (<num n="s-perc-fs"/>)
 			     have @subtype 'fs' (confusion between 'f' and 's')
 		     </item>
      		</list>
+    </item>
+     <item>Of all orthographic variants:
+         <list>
+               <item>
+                   <num n="s-double"/> (<num n="s-perc-double"/>%
+                   of all orthographic variants)
+               have @subtype="double"
+           </item>
+               <item>
+                   <num n="s-h"/> (<num n="s-perc-h"/>%) 
+                   have @subtype="h"
+           </item>
+             <item>
+                 <num n="s-y"/> (<num n="s-perc-y"/>%) 
+                 have @subtype="y"
+           </item>
+               <item>
+                   <num n="s-tc"/> (<num n="s-perc-tc"/>%) 
+                   have @subtype="tc"
+           </item>
+               <item>
+                   <num n="s-case"/> (<num n="s-perc-case"/>%) 
+                   have @subtype="case"
+           </item>
+               <item>
+                   <num n="s-mn"/> (<num n="s-perc-mn"/>%) 
+                   have @subtype="mn"
+           </item>
+               <item>
+                   <num n="s-num-word"/> (<num n="s-perc-num-word"/>%) 
+                   have @subtype="num-word"
+           </item>
+               <item>
+                   <num n="s-mpn"/> (<num n="s-perc-mpn"/>%) 
+                   have @subtype="mpn"
+           </item>
+               <item>
+                   <num n="s-pb"/> (<num n="s-perc-pb"/>%) 
+                   have @subtype="pb"
+           </item>
+               <item>
+                   <num n="s-word-segmentation"/> (<num n="s-perc-word-segmentation"/>%)
+                   
+                   have @subtype="word-segmentation"
+           </item>
+               <item>
+                   <num n="s-ph"/> (<num n="s-perc-ph"/>%) 
+                   have @subtype="ph"
+           </item>
+               <item>
+                   <num n="s-ae"/> (<num n="s-perc-ae"/>%) 
+                   have @subtype="a"
+           </item>
+               <item>
+                   <num n="s-ch"/> (<num n="s-perc-ch"/>%) 
+                   have @subtype="ch"
+           </item>
+               <item>
+                   <num n="s-dm-mm"/> (<num n="s-perc-dm-mm"/>%) 
+                   have @subtype="dm-mm"
+           </item>
+               <item>
+                   <num n="s-hi-y"/> (<num n="s-perc-hi-y"/>%) 
+                   have @subtype="hi-y"
+           </item>
+               <item>
+                   <num n="s-ncx"/> (<num n="s-perc-ncx"/>%) 
+                   have @subtype="ncx"
+           </item>
+               <item>
+                   <num n="s-cz"/> (<num n="s-perc-cz"/>%) 
+                   have @subtype="cz"
+           </item>
+               <item>
+                   <num n="s-cq"/> (<num n="s-perc-cq"/>%) 
+                   have @subtype="cq"
+           </item>
+               <item>
+                   <num n="s-tz"/> (<num n="s-perc-tz"/>%) 
+                   have @subtype="tz"
+           </item>
+               <item>
+                   <num n="s-ck"/> (<num n="s-perc-ck"/>%) 
+                   have @subtype="ck"
+           </item>
+          </list>
     </item>
 </list>
 

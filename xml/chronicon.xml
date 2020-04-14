@@ -805,34 +805,120 @@ mostly by adopting MS A's spelling, in cases in which
      </item>
      <item>Of all variants (V):
          <list>
-            <num n="s-perc-subst" value="50.7">50.7</num>%  are substantive (SV)
-            <num n="s-perc-trans" value="2.2">2.2</num>%  are transpositions (TV)
-            <num n="s-perc-orth" value="47.1">47.1</num>%  are orthographic (OV)
+            <num n="s-perc-subst" value="50.7">50.7</num>%  are substantive
+            <num n="s-perc-orth" value="47.1">47.1</num>%  are orthographic
+            <num n="s-perc-trans" value="2.2">2.2</num>%  are transpositions
          </list>
      </item>
-     <item>Of all substantive variants (SV):
+     <item>Of all substantive variants:
 	     <list>
 		     <item>
 			     <num n="s-num-num" value="88">88</num>
-			     (<num n="s-perc-num-num" value="2.5">2.5</num>% of SV)
+			     (<num n="s-perc-num-num" value="2.5">2.5</num>% of all substantive variants)
 			     have @subtype 'num-num' (two different numerals)
 		     </item>
 		     <item>
 			     <num n="s-missing-in-ms" value="210">210</num>
-			     (<num n="s-perc-missing-in-ms"/>% of SV)
+			     (<num n="s-perc-missing-in-ms" value="6.0">6.0</num>%)
 			     have @subtype 'missing-in-ms' (integrations)
 		     </item>
 		     <item>
-			     <num n="s-missing-in-print"/>
-			     (<num n="s-perc-missing-in-print"/>% of SV)
+			     <num n="s-missing-in-print" value="75">75</num>
+			     (<num n="s-perc-missing-in-print" value="2.1">2.1</num>%)
 			     have @subtype 'missing-in-print' (expunctions)
 		     </item>
 		     <item>
-			     <num n="s-fs"/>
-			     (<num n="s-perc-fs"/> of SV)
+			     <num n="s-fs" value="10">10</num>
+			     (<num n="s-perc-fs" value="0.3">0.3</num>)
 			     have @subtype 'fs' (confusion between 'f' and 's')
 		     </item>
      		</list>
+    </item>
+     <item>Of all orthographic variants:
+         <list>
+               <item>
+                   <num n="s-double" value="244">244</num> (<num n="s-perc-double" value="6.9">6.9</num>%
+                   of all orthographic variants)
+               have @subtype="double"
+           </item>
+               <item>
+                   <num n="s-h" value="217">217</num> (<num n="s-perc-h" value="6.2">6.2</num>%) 
+                   have @subtype="h"
+           </item>
+             <item>
+                 <num n="s-y" value="212">212</num> (<num n="s-perc-y" value="6.0">6.0</num>%) 
+                 have @subtype="y"
+           </item>
+               <item>
+                   <num n="s-tc" value="163">163</num> (<num n="s-perc-tc" value="4.6">4.6</num>%) 
+                   have @subtype="tc"
+           </item>
+               <item>
+                   <num n="s-case" value="138">138</num> (<num n="s-perc-case" value="3.9">3.9</num>%) 
+                   have @subtype="case"
+           </item>
+               <item>
+                   <num n="s-mn" value="81">81</num> (<num n="s-perc-mn" value="2.3">2.3</num>%) 
+                   have @subtype="mn"
+           </item>
+               <item>
+                   <num n="s-num-word" value="62">62</num> (<num n="s-perc-num-word" value="1.8">1.8</num>%) 
+                   have @subtype="num-word"
+           </item>
+               <item>
+                   <num n="s-mpn" value="26">26</num> (<num n="s-perc-mpn" value="0.7">0.7</num>%) 
+                   have @subtype="mpn"
+           </item>
+               <item>
+                   <num n="s-pb" value="23">23</num> (<num n="s-perc-pb" value="0.7">0.7</num>%) 
+                   have @subtype="pb"
+           </item>
+               <item>
+                   <num n="s-word-segmentation" value="16">16</num> (<num n="s-perc-word-segmentation" value="0.5">0.5</num>%)
+                   
+                   have @subtype="word-segmentation"
+           </item>
+               <item>
+                   <num n="s-ph" value="14">14</num> (<num n="s-perc-ph" value="0.4">0.4</num>%) 
+                   have @subtype="ph"
+           </item>
+               <item>
+                   <num n="s-ae" value="10">10</num> (<num n="s-perc-ae" value="0.3">0.3</num>%) 
+                   have @subtype="a"
+           </item>
+               <item>
+                   <num n="s-ch" value="9">9</num> (<num n="s-perc-ch" value="0.3">0.3</num>%) 
+                   have @subtype="ch"
+           </item>
+               <item>
+                   <num n="s-dm-mm" value="8">8</num> (<num n="s-perc-dm-mm" value="0.2">0.2</num>%) 
+                   have @subtype="dm-mm"
+           </item>
+               <item>
+                   <num n="s-hi-y" value="5">5</num> (<num n="s-perc-hi-y" value="0.1">0.1</num>%) 
+                   have @subtype="hi-y"
+           </item>
+               <item>
+                   <num n="s-ncx" value="5">5</num> (<num n="s-perc-ncx" value="0.1">0.1</num>%) 
+                   have @subtype="ncx"
+           </item>
+               <item>
+                   <num n="s-cz" value="2">2</num> (<num n="s-perc-cz" value="0.1">0.1</num>%) 
+                   have @subtype="cz"
+           </item>
+               <item>
+                   <num n="s-cq" value="1">1</num> (<num n="s-perc-cq" value="0.0">0.0</num>%) 
+                   have @subtype="cq"
+           </item>
+               <item>
+                   <num n="s-tz" value="1">1</num> (<num n="s-perc-tz" value="0.0">0.0</num>%) 
+                   have @subtype="tz"
+           </item>
+               <item>
+                   <num n="s-ck" value="1">1</num> (<num n="s-perc-ck" value="0.0">0.0</num>%) 
+                   have @subtype="ck"
+           </item>
+          </list>
     </item>
 </list>
 
