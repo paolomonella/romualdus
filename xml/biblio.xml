@@ -1,12 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <file xmlns="http://bibtexml.sf.net/">
-    <entry id="pio1996guglielmo">
-        <book>
-            <author>Pio, Berardo</author>
-            <title>Guglielmo I d'Altavilla: gestione del potere e lotta politica nell'Italia normanna: 1154-1169</title>
-            <publisher>Pàtron</publisher>
-            <year>1996</year>
+    <entry id="andenna2001romualdo">
+        <inbook>
+            <editor>Bonetti, Cinzia</editor>
+            <keywords>Romualdus</keywords>
+            <year>2001</year>
+            <author>Andenna, Giancarlo</author>
+            <isbn>88-8309-056-X, 9788883090561</isbn>
             <language>Italian</language>
+            <title>Romualdo Salernitano fonte per la storia politica delle città di Lombardia</title>
+            <volume>6</volume>
+            <pages>7--39</pages>
+            <series>Schola Salernitana. Studi e testi</series>
+            <bibtexkey>andenna2001romualdo</bibtexkey>
+            <publisher>Avagliano</publisher>
+            <location>Salerno</location>
+            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
+            <langid>Italian</langid>
+        </inbook>
+    </entry>
+    <entry id="arndt1866romoaldi">
+        <book>
+            <editor>Arndt, Wilhelm</editor>
+            <title>Romoaldi II archiepiscopi Salernitani Annales</title>
+            <year>1866</year>
+            <volume>SS XIX</volume>
+            <series>Monumenta Germaniae Historica</series>
+            <note>Testo del Chronicon di Romualdo Salernitano</note>
+            <keywords>Romualdus</keywords>
+            <language>German</language>
+            <location>Hannover</location>
+            <url>http://www.mgh.de/dmgh/resolving/MGH_SS_19_S._387</url>
+        </book>
+    </entry>
+    <entry id="avalle1972principi">
+        <book>
+            <author>Avalle, D'Arco Silvio</author>
+            <title>Principi di critica testuale</title>
+            <publisher>Antenore</publisher>
+            <year>1972</year>
+            <location>Padova</location>
+        </book>
+    </entry>
+    <entry id="carucci1996romualdo">
+        <book>
+            <author>Carucci, Arturo</author>
+            <title>Romualdo II Guarna. Il Congresso di Venezia del 1177</title>
+            <publisher>Ed. Gutemberg</publisher>
+            <year>1996</year>
+            <note>Mirabile http://www.mirabileweb.it/mel/il-congresso-di-venezia-del-1177/309657 dice: Antologia di alcuni brani del Chronicon, in particolare relativi al congresso veneziano del 1177 che segnò la fine dello scisma, iniziato con l'elezione dell'antipapa Vittore IV, e la fine del regno normanno. A. Baldi recensore di «Rassegna storica salernitana» 14, 1 (1997) 316-8 lamenta la mancanza del testo latino a fronte e alcune sviste tipografiche</note>
+            <language>Italian</language>
+            <location>Lancusi (Salerno)</location>
         </book>
     </entry>
     <entry id="delre1845cronica">
@@ -23,33 +67,60 @@
             <location>Napoli</location>
         </book>
     </entry>
-    <entry id="arndt1866romoaldi">
-        <book>
-            <editor>Arndt, Wilhelm</editor>
-            <title>Romoaldi II archiepiscopi Salernitani Annales</title>
-            <year>1866</year>
-            <volume>SS XIX</volume>
-            <series>Monumenta Germaniae Historica</series>
-            <note>Testo del Chronicon di Romualdo Salernitano</note>
-            <keywords>Romualdus</keywords>
-            <language>German</language>
-            <location>Hannover</location>
-            <url>http://www.mgh.de/dmgh/resolving/MGH_SS_19_S._387</url>
-        </book>
+    <entry id="erdmann1930garufi">
+        <article>
+            <author>Erdmann, C.</author>
+            <title>C. A. Garufi, Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
+            <journal>Neues Archiv</journal>
+            <year>1930</year>
+            <volume>48</volume>
+            <pages>510-512</pages>
+            <location>Berlin</location>
+        </article>
     </entry>
-    <entry id="garufi1914romualdo">
-        <book>
-            <editor>Garufi, Carlo Alberto</editor>
-            <title>Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
-            <publisher>S. Lapi</publisher>
-            <year>1914</year>
-            <volume>127</volume>
-            <series>Rerum italicarum scriptores</series>
-            <note>Volume 7,Parte 1 di Rerum italicarum scriptores: Nuova ed, Rerum italicarum scriptores: Nuova ed Volume 7,Parte 1, Edizioni 3-5 di Romualdi Salernitani Chronicon, Romualdi Salernitani Chronicon.</note>
+    <entry id="hoffmann1967hugo">
+        <article>
+            <author>Hoffmann, Hartmut</author>
+            <title>Hugo Falcandus und Romuald von Salerno</title>
+            <journal>Deutsches Archiv für Erforschung des Mittelalters</journal>
+            <year>1967</year>
+            <volume>23</volume>
+            <number>1</number>
+            <pages>116--170</pages>
+            <abstract>Parla di Romualdo da pag. 142 in poi, e della tradiz. manoscritta di Romualdo alle pp. 156-165 (sopratt. di A, però); poi delle fonti di Romualdo pp. 165-170.</abstract>
+        </article>
+    </entry>
+    <entry id="houben2001amator">
+        <inbook>
+            <editor>Bonetti, Cinzia</editor>
             <keywords>Romualdus</keywords>
-            <language>Latin</language>
-            <lccn>ac35002823</lccn>
-            <location>Città di Castello</location>
+            <year>2001</year>
+            <author>Houben, Hubert</author>
+            <isbn>88-8309-056-X, 9788883090561</isbn>
+            <language>Italian</language>
+            <title>«Amator pacis et cultor iustitie»: il re di Sicilia secondo Romualdo di Salerno</title>
+            <volume>6</volume>
+            <pages>41--47</pages>
+            <series>Schola Salernitana. Studi e testi</series>
+            <bibtexkey>houben2001amator</bibtexkey>
+            <publisher>Avagliano</publisher>
+            <location>Salerno</location>
+            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
+            <langid>Italian</langid>
+        </inbook>
+    </entry>
+    <entry id="loud2012roger">
+        <book>
+            <author>Loud, G.</author>
+            <title>Roger II and the Creation of the Kingdom of Sicily</title>
+            <publisher>Manchester University Press</publisher>
+            <year>2012</year>
+            <series>Medieval Sources</series>
+            <note>http://www.geschichtsquellen.de/werk/4214 dice che allle pp. 250-268 dà una traduz. in ingl. del Chron. di Romualdo, ma solo per gli anni 1125-1154. Il titolo sul sito web è leggerente sbagliato (il sito dice 'making', ma è 'creation'</note>
+            <isbn>9780719082023</isbn>
+            <lccn>2011278989</lccn>
+            <location>Manchester-New York</location>
+            <url>https://books.google.it/books?id=SHyPZwEACAAJ</url>
         </book>
     </entry>
     <entry id="matthew1981chronicle">
@@ -68,20 +139,134 @@
             <location>Oxford</location>
         </inproceedings>
     </entry>
-    <entry id="bonetti2001romualdo">
+    <entry id="mordenti2001informatica">
         <book>
-            <editor>Bonetti, Cinzia</editor>
-            <title>Romualdo II Guarna, Chronicon</title>
-            <publisher>Avagliano</publisher>
+            <author>Mordenti, Raul</author>
+            <title>Informatica e critica dei testi</title>
+            <publisher>Bulzoni</publisher>
             <year>2001</year>
-            <volume>6</volume>
-            <series>Schola Salernitana. Studi e testi</series>
-            <note>Saggi introduttivi di G. Andenna, Hubert Houben, M. Oldoni.</note>
-            <isbn>88-8309-056-X, 9788883090561</isbn>
-            <keywords>Romualdus</keywords>
-            <language>Latin</language>
-            <location>Salerno</location>
+            <series>Informatica e discipline umanistiche</series>
+            <isbn>9788883196195</isbn>
+            <keywords>Babel,2006</keywords>
+            <language>Italian</language>
+            <lccn>2002397534</lccn>
+            <location>Roma</location>
         </book>
+    </entry>
+    <entry id="muratori1725chronicon">
+        <book>
+            <editor>Muratori, Ludovico Antonio</editor>
+            <title>Chronicon Romualdi II Archiepiscopi Salernitani</title>
+            <year>1725</year>
+            <volume>7</volume>
+            <series>Rerum Italicarum scriptores</series>
+            <language>Latin</language>
+            <location>Milano</location>
+            <url>https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10868996_00029.html</url>
+        </book>
+    </entry>
+    <entry id="oldoni2001modo">
+        <inbook>
+            <editor>Bonetti, Cinzia</editor>
+            <keywords>Romualdus</keywords>
+            <year>2001</year>
+            <author>Oldoni, Massimo</author>
+            <isbn>88-8309-056-X, 9788883090561</isbn>
+            <language>Italian</language>
+            <title>Un modo d'intendere la storia</title>
+            <volume>6</volume>
+            <pages>49-55</pages>
+            <series>Schola Salernitana. Studi e testi</series>
+            <bibtexkey>oldoni2001modo</bibtexkey>
+            <publisher>Avagliano</publisher>
+            <location>Salerno</location>
+            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
+            <langid>Italian</langid>
+        </inbook>
+    </entry>
+    <entry id="oldoni2004guarna">
+        <inbook>
+            <pages>400--403</pages>
+            <year>2004</year>
+            <author>Oldoni, Massimo</author>
+            <bibtexkey>oldoni2004guarna</bibtexkey>
+            <language>Italian</language>
+            <location>Roma</location>
+            <title>Guarna, Romualdo</title>
+            <booktitle>Dizionario biografico degli italiani</booktitle>
+            <langid>Italian</langid>
+        </inbook>
+    </entry>
+    <entry id="palumbo1978medio">
+        <book>
+            <author>Palumbo, Pier Fausto</author>
+            <title>Medio Evo meridionale: fonti e letteratura storica dalle invasioni alla fine del periodo aragonese</title>
+            <publisher>Ed. del Lavoro</publisher>
+            <year>1978</year>
+            <note>Zabbia 2004, n. 21, dice che Garufi considera alcune additions di mano romualdiana, seguito in questo da Palumbo, p. 76-78. Cito testualmente Zabbia 2004, n. 21: "Il Garufi, seguito da P. F. Palumbo [...] pp. 76-78 "credeva che alcune di queste note fossero dovute a Romualdo stesso, altre le riteneva più tarde, persino di metà Duecento".</note>
+            <language>Italian</language>
+            <location>Roma</location>
+        </book>
+    </entry>
+    <entry id="pio1996guglielmo">
+        <book>
+            <author>Pio, Berardo</author>
+            <title>Guglielmo I d'Altavilla: gestione del potere e lotta politica nell'Italia normanna: 1154-1169</title>
+            <publisher>Pàtron</publisher>
+            <year>1996</year>
+            <language>Italian</language>
+        </book>
+    </entry>
+    <entry id="schmale1986italische">
+        <book>
+            <author>Schmale, F.J.</author>
+            <title>Italische Quellen über die Taten Kaiser Friedrichs I. In Italien und der Brief über den Kreuzzug Kaiser Friedrichs I.</title>
+            <publisher>Wissenschaftliche Buchgesellschaft</publisher>
+            <year>1986</year>
+            <series>Ausgewählte Quellen zur deutschen Geschichte des Mittelalters</series>
+            <note>Zabbia 2010, p. 21 n. 2 dice che Schmale ha ripubblicato la Pace di Venezia alle pp. 308-371</note>
+            <isbn>9783534080250</isbn>
+            <location>Darmstadt</location>
+            <url>https://books.google.it/books?id=PgtoAAAAMAAJ</url>
+        </book>
+    </entry>
+    <entry id="schwarz1978chronicon">
+        <inbook>
+            <editor>Schwarz, Ulrich</editor>
+            <note>Matthew 1981 p. 250 n. 1 dice che Schwartz p. 139 n. 10 dice che O viene da un MS dei tempi di Romualdo, un MS più vecchio di A (info bibliografiche su Schwarz sono in Matt. 249 n. 2)</note>
+            <year>1978</year>
+            <bibtexkey>schwarz1978chronicon</bibtexkey>
+            <language>German</language>
+            <location>Tübingen</location>
+            <title>Chronicon Amalfitanum</title>
+            <booktitle>Amalfi im frühen Mittelalter</booktitle>
+            <langid>German</langid>
+        </inbook>
+    </entry>
+    <entry id="segre1979semiotica">
+        <book>
+            <author>Segre, Cesare</author>
+            <title>Semiotica filologica. Testo e modelli culturali</title>
+            <publisher>Einaudi</publisher>
+            <year>1979</year>
+            <note>In Why ho citato di seconda mano la sua p. 53. Ho preso la citazione virgolettata da Oddone Longo, Critica del testo (che ho skimmed), p. 73. A Longo ero arrivato tramite il cap. 4 di Andrea, Tribù. T. Mancinelli lo ha citato in un workshop BIFLOW l'11.02.2020 come punto di partenza possibile per la filologia computazionale</note>
+            <keywords>Why</keywords>
+            <language>Italian</language>
+            <location>Torino</location>
+        </book>
+    </entry>
+    <entry id="vitolo2007scuola">
+        <inproceedings>
+            <author>Vitolo, Giovanni</author>
+            <title>La scuola medica salernitana come metafora della storia del Mezzogiorno</title>
+            <booktitle>La scuola medica salernitana. Gli autori e i testi. Atti del convegno internazionale, Salerno 3-5 novembre 2004</booktitle>
+            <year>2007</year>
+            <editor>Jaquart, Danielle and Paravicini Bagliani, Agostino</editor>
+            <pages>535--559</pages>
+            <publisher>SISMEL, Edizioni del Galluzzo</publisher>
+            <note>Citato tra l'altro in Zabbia 2020 n. 3; invece Zabbia 2020 n. 59 lo contesta. Zabbia dice che Vitolo a pp. 549-551 dice che il Chronicon non è di Romualdo perché non parla molto della scuola medica salernitana. Io avevo scaricato e visto una versione precedente, pubblicata nella rivista 'Studi storici'Studi Storici, Anno 45, No. 3 (Jul. - Sep., 2004), pp. 633-650, disponibile in https://www.jstor.org/stable/20567262. Nella nota iniziale di questo articolo su rivista del 2004 dice che poi (evidentemente nel 2007) una versione ampliata dell'articolo apparirà negli atti. Io cito la versione degli atti (2007), ma ho potuto dare un'occhiata (in PDF, da JSTOR) la versione su rivista (del 2004), in cui non parla affatto del Chronicon di Romualdo (è in effetti una versione più breve). Avevo scaricato il PDF, ma poi l'ho cancellato, perché comunque è disponibile online su JSTOR, e non dice niente sul Chronicon</note>
+            <location>Firenze</location>
+        </inproceedings>
     </entry>
     <entry id="zabbia2002cronista">
         <article>
@@ -160,207 +345,5 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <location>Roma</location>
             <url>http://hdl.handle.net/2318/128183</url>
         </inproceedings>
-    </entry>
-    <entry id="palumbo1978medio">
-        <book>
-            <author>Palumbo, Pier Fausto</author>
-            <title>Medio Evo meridionale: fonti e letteratura storica dalle invasioni alla fine del periodo aragonese</title>
-            <publisher>Ed. del Lavoro</publisher>
-            <year>1978</year>
-            <note>Zabbia 2004, n. 21, dice che Garufi considera alcune additions di mano romualdiana, seguito in questo da Palumbo, p. 76-78. Cito testualmente Zabbia 2004, n. 21: "Il Garufi, seguito da P. F. Palumbo [...] pp. 76-78 "credeva che alcune di queste note fossero dovute a Romualdo stesso, altre le riteneva più tarde, persino di metà Duecento".</note>
-            <language>Italian</language>
-            <location>Roma</location>
-        </book>
-    </entry>
-    <entry id="schwarz1978chronicon">
-        <inbook>
-            <editor>Schwarz, Ulrich</editor>
-            <note>Matthew 1981 p. 250 n. 1 dice che Schwartz p. 139 n. 10 dice che O viene da un MS dei tempi di Romualdo, un MS più vecchio di A (info bibliografiche su Schwarz sono in Matt. 249 n. 2)</note>
-            <year>1978</year>
-            <bibtexkey>schwarz1978chronicon</bibtexkey>
-            <language>German</language>
-            <location>Tübingen</location>
-            <title>Chronicon Amalfitanum</title>
-            <booktitle>Amalfi im frühen Mittelalter</booktitle>
-            <langid>German</langid>
-        </inbook>
-    </entry>
-    <entry id="erdmann1930garufi">
-        <article>
-            <author>Erdmann, C.</author>
-            <title>C. A. Garufi, Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)</title>
-            <journal>Neues Archiv</journal>
-            <year>1930</year>
-            <volume>48</volume>
-            <pages>510-512</pages>
-            <location>Berlin</location>
-        </article>
-    </entry>
-    <entry id="muratori1725chronicon">
-        <book>
-            <editor>Muratori, Ludovico Antonio</editor>
-            <title>Chronicon Romualdi II Archiepiscopi Salernitani</title>
-            <year>1725</year>
-            <volume>7</volume>
-            <series>Rerum Italicarum scriptores</series>
-            <language>Latin</language>
-            <location>Milano</location>
-            <url>https://reader.digitale-sammlungen.de/de/fs1/object/display/bsb10868996_00029.html</url>
-        </book>
-    </entry>
-    <entry id="andenna2001romualdo">
-        <inbook>
-            <editor>Bonetti, Cinzia</editor>
-            <keywords>Romualdus</keywords>
-            <year>2001</year>
-            <author>Andenna, Giancarlo</author>
-            <isbn>88-8309-056-X, 9788883090561</isbn>
-            <language>Italian</language>
-            <title>Romualdo Salernitano fonte per la storia politica delle città di Lombardia</title>
-            <volume>6</volume>
-            <pages>7--39</pages>
-            <series>Schola Salernitana. Studi e testi</series>
-            <bibtexkey>andenna2001romualdo</bibtexkey>
-            <publisher>Avagliano</publisher>
-            <location>Salerno</location>
-            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
-            <langid>Italian</langid>
-        </inbook>
-    </entry>
-    <entry id="houben2001amator">
-        <inbook>
-            <editor>Bonetti, Cinzia</editor>
-            <keywords>Romualdus</keywords>
-            <year>2001</year>
-            <author>Houben, Hubert</author>
-            <isbn>88-8309-056-X, 9788883090561</isbn>
-            <language>Italian</language>
-            <title>«Amator pacis et cultor iustitie»: il re di Sicilia secondo Romualdo di Salerno</title>
-            <volume>6</volume>
-            <pages>41--47</pages>
-            <series>Schola Salernitana. Studi e testi</series>
-            <bibtexkey>houben2001amator</bibtexkey>
-            <publisher>Avagliano</publisher>
-            <location>Salerno</location>
-            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
-            <langid>Italian</langid>
-        </inbook>
-    </entry>
-    <entry id="oldoni2001modo">
-        <inbook>
-            <editor>Bonetti, Cinzia</editor>
-            <keywords>Romualdus</keywords>
-            <year>2001</year>
-            <author>Oldoni, Massimo</author>
-            <isbn>88-8309-056-X, 9788883090561</isbn>
-            <language>Italian</language>
-            <title>Un modo d'intendere la storia</title>
-            <volume>6</volume>
-            <pages>49-55</pages>
-            <series>Schola Salernitana. Studi e testi</series>
-            <bibtexkey>oldoni2001modo</bibtexkey>
-            <publisher>Avagliano</publisher>
-            <location>Salerno</location>
-            <booktitle>Romualdo II Guarna, Chronicon</booktitle>
-            <langid>Italian</langid>
-        </inbook>
-    </entry>
-    <entry id="hoffmann1967hugo">
-        <article>
-            <author>Hoffmann, Hartmut</author>
-            <title>Hugo Falcandus und Romuald von Salerno</title>
-            <journal>Deutsches Archiv für Erforschung des Mittelalters</journal>
-            <year>1967</year>
-            <volume>23</volume>
-            <number>1</number>
-            <pages>116--170</pages>
-            <abstract>Parla di Romualdo da pag. 142 in poi, e della tradiz. manoscritta di Romualdo alle pp. 156-165 (sopratt. di A, però); poi delle fonti di Romualdo pp. 165-170.</abstract>
-        </article>
-    </entry>
-    <entry id="oldoni2004guarna">
-        <inbook>
-            <pages>400--403</pages>
-            <year>2004</year>
-            <author>Oldoni, Massimo</author>
-            <bibtexkey>oldoni2004guarna</bibtexkey>
-            <language>Italian</language>
-            <location>Roma</location>
-            <title>Guarna, Romualdo</title>
-            <booktitle>Dizionario biografico degli italiani</booktitle>
-            <langid>Italian</langid>
-        </inbook>
-    </entry>
-    <entry id="schmale1986italische">
-        <book>
-            <author>Schmale, F.J.</author>
-            <title>Italische Quellen über die Taten Kaiser Friedrichs I. In Italien und der Brief über den Kreuzzug Kaiser Friedrichs I.</title>
-            <publisher>Wissenschaftliche Buchgesellschaft</publisher>
-            <year>1986</year>
-            <series>Ausgewählte Quellen zur deutschen Geschichte des Mittelalters</series>
-            <note>Zabbia 2010, p. 21 n. 2 dice che Schmale ha ripubblicato la Pace di Venezia alle pp. 308-371</note>
-            <isbn>9783534080250</isbn>
-            <location>Darmstadt</location>
-            <url>https://books.google.it/books?id=PgtoAAAAMAAJ</url>
-        </book>
-    </entry>
-    <entry id="loud2012roger">
-        <book>
-            <author>Loud, G.</author>
-            <title>Roger II and the Creation of the Kingdom of Sicily</title>
-            <publisher>Manchester University Press</publisher>
-            <year>2012</year>
-            <series>Medieval Sources</series>
-            <note>http://www.geschichtsquellen.de/werk/4214 dice che allle pp. 250-268 dà una traduz. in ingl. del Chron. di Romualdo, ma solo per gli anni 1125-1154. Il titolo sul sito web è leggerente sbagliato (il sito dice 'making', ma è 'creation'</note>
-            <isbn>9780719082023</isbn>
-            <lccn>2011278989</lccn>
-            <location>Manchester-New York</location>
-            <url>https://books.google.it/books?id=SHyPZwEACAAJ</url>
-        </book>
-    </entry>
-    <entry id="carucci1996romualdo">
-        <book>
-            <author>Carucci, Arturo</author>
-            <title>Romualdo II Guarna. Il Congresso di Venezia del 1177</title>
-            <publisher>Ed. Gutemberg</publisher>
-            <year>1996</year>
-            <note>Mirabile http://www.mirabileweb.it/mel/il-congresso-di-venezia-del-1177/309657 dice: Antologia di alcuni brani del Chronicon, in particolare relativi al congresso veneziano del 1177 che segnò la fine dello scisma, iniziato con l'elezione dell'antipapa Vittore IV, e la fine del regno normanno. A. Baldi recensore di «Rassegna storica salernitana» 14, 1 (1997) 316-8 lamenta la mancanza del testo latino a fronte e alcune sviste tipografiche</note>
-            <language>Italian</language>
-            <location>Lancusi (Salerno)</location>
-        </book>
-    </entry>
-    <entry id="mordenti2001informatica">
-        <book>
-            <author>Mordenti, Raul</author>
-            <title>Informatica e critica dei testi</title>
-            <publisher>Bulzoni</publisher>
-            <year>2001</year>
-            <series>Informatica e discipline umanistiche</series>
-            <isbn>9788883196195</isbn>
-            <keywords>Babel,2006</keywords>
-            <language>Italian</language>
-            <lccn>2002397534</lccn>
-            <location>Roma</location>
-        </book>
-    </entry>
-    <entry id="avalle1972principi">
-        <book>
-            <author>Avalle, D'Arco Silvio</author>
-            <title>Principi di critica testuale</title>
-            <publisher>Antenore</publisher>
-            <year>1972</year>
-            <location>Padova</location>
-        </book>
-    </entry>
-    <entry id="segre1979semiotica">
-        <book>
-            <author>Segre, Cesare</author>
-            <title>Semiotica filologica. Testo e modelli culturali</title>
-            <publisher>Einaudi</publisher>
-            <year>1979</year>
-            <note>In Why ho citato di seconda mano la sua p. 53. Ho preso la citazione virgolettata da Oddone Longo, Critica del testo (che ho skimmed), p. 73. A Longo ero arrivato tramite il cap. 4 di Andrea, Tribù. T. Mancinelli lo ha citato in un workshop BIFLOW l'11.02.2020 come punto di partenza possibile per la filologia computazionale</note>
-            <keywords>Why</keywords>
-            <language>Italian</language>
-            <location>Torino</location>
-        </book>
     </entry>
 </file>
