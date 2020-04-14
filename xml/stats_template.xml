@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<div n="statistics">
+<head>Statistics</head>
+
+<p>These are some statistics on variant types, generated
+    through a Python script that processes the XML code:
+</p>
+
+<list>
+     <item>Total &lt;app&gt; elements:
+        <num n="s-app"/>, of which:
+        <list>
+            <item><num n="s-subst"/> 
+                have @type="substantive"</item>
+            <item><num n="s-trans-double"/> 
+                @type="transposition"
+                (note that each transposition is recorded
+                in two 'app' elements, so the actual number
+                of transpositions is
+                <num n="s-trans-single"/>)
+            </item>
+            <item><num n="s-orth"/> 
+                @type="orthographic"</item>
+            <item><num n="s-gap"/> 
+                @type="gap-in-ms"</item>
+            <item><num n="s-ill"/> 
+                @type="illegible-in-ms"</item>
+            <item><num n="s-punct"/> 
+                @type="punctuation"</item>
+        </list>
+     </item>
+     <item>'App' elements with @type="punctuation"
+         cannot be considered actual MS variants
+         (see paragraph 'Punctuation variants' above).
+         Also 'app' elements with @type="gap-in-ms"
+         and @type="illegible-in-ms" do not correspond
+         to actual variants: they mark gaps or illegible text
+         in the MS.
+     </item>
+     <item>This leaves us with a total of
+            <num n="s-var"/> 
+         actual variants (V), only counting types "substantive",
+         "transposition" (counted once, henceforth) and "orthographic".
+     </item>
+     <item>Of all variants (V):
+         <list>
+            <num n="s-perc-subst"/>%  are substantive (SV)
+            <num n="s-perc-trans"/>%  are transpositions (TV)
+            <num n="s-perc-orth"/>%  are orthographic (OV)
+         </list>
+     </item>
+     <item>Of all substantive variants (SV):
+	     <list>
+		     <item>
+			     <num n="s-num-num"/>
+			     (<num n="s-perc-num-num"/>% of SV)
+			     have @subtype 'num-num' (two different numerals)
+		     </item>
+		     <item>
+			     <num n="s-missing-in-ms"/>
+			     (<num n="s-perc-missing-in-ms"/>% of SV)
+			     have @subtype 'missing-in-ms' (integrations)
+		     </item>
+		     <item>
+			     <num n="s-missing-in-print"/>
+			     (<num n="s-perc-missing-in-print"/>% of SV)
+			     have @subtype 'missing-in-print' (expunctions)
+		     </item>
+		     <item>
+			     <num n="s-fs"/>
+			     (<num n="s-perc-fs"/> of SV)
+			     have @subtype 'fs' (confusion between 'f' and 's')
+		     </item>
+     		</list>
+    </item>
+</list>
+
+</div>
+
+</TEI>
