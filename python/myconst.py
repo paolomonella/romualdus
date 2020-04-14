@@ -19,6 +19,8 @@ update_db_tempfile = 'record.txt'
 biblio_file = 'biblio.xml'
 tei_header_template = 'teiHeader_template.xml'
 chronicon_output_file = 'chronicon.xml'
+stats_template = 'stats_template.xml'
+stats_filled = 'stats_filled.xml'
 
 # Metatext markers
 # The e.text of HTML elements having @class="pb">, @class="garufi" etc.

@@ -1366,11 +1366,15 @@ class treeWithAppElements:
                     for pb in no_coll_pbs:
                         pb.tail = self.reduce_breaks_and_remove_quotes(pb.tail)
 
-    def empty_some_paragraphs(self):
-        ''' Empty those paragraphs (e.g. b062heading, v-b298a or v-b298b)
+    def exclude_paragraphs(self, action='remove'):
+        ''' Empty or remove those paragraphs (e.g. b062heading, v-b298a or v-b298b)
             that only include Garufi's or Bonetti's headers (e.g.
-            "Romoaldi II archiepiscopi salernitani annales"), and
-            the duplicate paragraph g258.1-258.7surplus'''
+            "Romoaldi II archiepiscopi salernitani annales"),
+            the duplicate paragraph g258.1-258.7surplus and the second report
+            of the Peace of Venice in Bonetti.
+            If action=empty, empty the paragraph but leave the element
+            If action=remove, remove the element entirely
+            '''
         xmlids = [x['xmlid'] for x in self.paragraphs
                   if x['no_collation'] in ['heading', 'duplicate', 'pax']]
         for x in xmlids:
@@ -1379,11 +1383,14 @@ class treeWithAppElements:
             # wrong chunk (e.g. the xmlid is in m2-alfa, but the script
             # is processing m2-bravo
             if par is not None:
-                # Empty <p> (remove <app> and its children)
-                for c in par:
-                    par.remove(c)
-                # Remove par.text, if any
-                par.text = ''
+                if action == 'empty':
+                    # Empty <p> (remove <app> and its children)
+                    for c in par:
+                        par.remove(c)
+                    # Remove par.text, if any
+                    par.text = ''
+                elif action == 'remove':
+                    par.getparent().remove(par)
 
     def remove_lb_between_paragraphs(self):
         ''' Sometimes JuxtaCommons inserts some useless <lb/> at the end

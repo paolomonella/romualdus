@@ -17,10 +17,11 @@ import philologist
 import m_unifier
 import my_database_import
 import biblio
+import statistics
 
 quiet = True  # If true, suppress standard output messages to console
-chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
-# chosen_ones = ('m1')
+# chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+chosen_ones = ('m2-alfa')
 pre = True  # Do pre-processing (before collation)
 post = True  # Do post-processing (after collation)
 
@@ -159,11 +160,13 @@ if post:
         myTree.handle_punctuation_variants()
         myTree.beautify_paragraphs()
         myTree.handle_no_collation_paragraphs()
-        myTree.exclude_paragraphs()
+        myTree.exclude_paragraphs(action='remove')
         myTree.remove_lb_between_paragraphs()
         myTree.write()
 
     m_unifier.unify()
+    statistics.recalculate_statistics()
+    statistics.import_statistics()
     biblio.biblio()
 
 
@@ -177,6 +180,3 @@ def completion():
     print('checked {}/{}, {}%.'.format(
         done, todo, percent
     ))
-
-
-completion()

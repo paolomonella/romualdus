@@ -199,7 +199,7 @@ def biblio():
 
     # Import chronicon.xml
     chronicon_path = '%s%s' % (xmlpath, chronicon_output_file)
-    out_tree = etree.parse('%s%s' % (xmlpath, chronicon_path))
+    out_tree = etree.parse(chronicon_path)
     list_bibl = out_tree.find('.//t:%s' % ('listBibl'), ns)
 
     for entry in entries:

@@ -509,27 +509,6 @@ g186.12-187.2, g187.9-187.11 and g187.14-188.1.</p>
 </div>
 
 <div>
-<head>Empty paragraphs (relics of automatic collation)</head>
-
-<p>This XML file includes a small number of empty 'p' elements, i.e. do not include
-	any text or child elements. These paragraphs are relics of the automatic
-	collation process: it was useful, to facilitate collation, that all witnesses
-	had exactly the same sequence of 'p' elements with the same @xml:id attributes,
-	even if they included no text in that specific witness (for example, headers
-	introduced by Garufi or Bonetti in their edition did not correspond to any text
-	in the MSS).
-	(§ list here)                  
-	'no_collation'] in ['heading', 'duplicate', 'pax']]
-
-	do
-	not include
-</p>
-
-</div>
-
-
-
-<div>
 <head>Collation exemplars</head>
 
 <p>Garufi was the collation exemplar for the first part of the work,
@@ -779,6 +758,87 @@ mostly by adopting MS A's spelling, in cases in which
 	I systematically adhered to the print editions.</p>
 </div>
 
+
+<div n="statistics">
+
+<head>Statistics</head>
+
+<p>These are some statistics on variant types, generated
+    through a Python script that processes the XML code:
+</p>
+
+<list>
+     <item>Total &lt;app&gt; elements:
+        <num n="s-app" value="4817">4817</num>, of which:
+        <list>
+            <item><num n="s-subst" value="1786">1786</num> 
+                have @type="substantive"</item>
+            <item><num n="s-trans-double" value="156">156</num> 
+                @type="transposition"
+                (note that each transposition is recorded
+                in two 'app' elements, so the actual number
+                of transpositions is
+                <num n="s-trans-single" value="78">78</num>)
+            </item>
+            <item><num n="s-orth" value="1662">1662</num> 
+                @type="orthographic"</item>
+            <item><num n="s-gap" value="15">15</num> 
+                @type="gap-in-ms"</item>
+            <item><num n="s-ill" value="14">14</num> 
+                @type="illegible-in-ms"</item>
+            <item><num n="s-punct" value="1184">1184</num> 
+                @type="punctuation"</item>
+        </list>
+     </item>
+     <item>'App' elements with @type="punctuation"
+         cannot be considered actual MS variants
+         (see paragraph 'Punctuation variants' above).
+         Also 'app' elements with @type="gap-in-ms"
+         and @type="illegible-in-ms" do not correspond
+         to actual variants: they mark gaps or illegible text
+         in the MS.
+     </item>
+     <item>This leaves us with a total of
+            <num n="s-var" value="3526">3526</num> 
+         actual variants (V), only counting types "substantive",
+         "transposition" (counted once, henceforth) and "orthographic".
+     </item>
+     <item>Of all variants (V):
+         <list>
+            <num n="s-perc-subst" value="50.7">50.7</num>%  are substantive (SV)
+            <num n="s-perc-trans" value="2.2">2.2</num>%  are transpositions (TV)
+            <num n="s-perc-orth" value="47.1">47.1</num>%  are orthographic (OV)
+         </list>
+     </item>
+     <item>Of all substantive variants (SV):
+	     <list>
+		     <item>
+			     <num n="s-num-num" value="88">88</num>
+			     (<num n="s-perc-num-num" value="2.5">2.5</num>% of SV)
+			     have @subtype 'num-num' (two different numerals)
+		     </item>
+		     <item>
+			     <num n="s-missing-in-ms" value="210">210</num>
+			     (<num n="s-perc-missing-in-ms"/>% of SV)
+			     have @subtype 'missing-in-ms' (integrations)
+		     </item>
+		     <item>
+			     <num n="s-missing-in-print"/>
+			     (<num n="s-perc-missing-in-print"/>% of SV)
+			     have @subtype 'missing-in-print' (expunctions)
+		     </item>
+		     <item>
+			     <num n="s-fs"/>
+			     (<num n="s-perc-fs"/> of SV)
+			     have @subtype 'fs' (confusion between 'f' and 's')
+		     </item>
+     		</list>
+    </item>
+</list>
+
+</div>
+
+
 <div>
 <head>The text before and after the author</head>
 
@@ -822,9 +882,8 @@ mostly by adopting MS A's spelling, in cases in which
 	costituisce di norma un testo non definitivo. Insomma, ogni trascrizione è
 	anteriore o posteriore al testo; nessun testo può essere identificato col Testo"
 	Segre 1979, 36.</p>
-
-
 </div>
+
 
 <listBibl>
 
