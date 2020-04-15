@@ -20,8 +20,8 @@ import biblio
 import statistics
 
 quiet = True  # If true, suppress standard output messages to console
-# chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
-chosen_ones = ('m2-alfa')
+chosen_ones = ('m1', 'm2-alfa', 'm2-bravo', 'm2-charlie')
+# chosen_ones = ('m2-alfa')
 pre = True  # Do pre-processing (before collation)
 post = True  # Do post-processing (after collation)
 
