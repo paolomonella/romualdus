@@ -868,11 +868,11 @@ class treeWithAppElements:
                 # Set <lem> and <rdg> tags #
                 ############################
 
-                # The print reading will always be set to <rdg>
-                self.make_rdg(my_print_rdg)
-
                 # 'Correct' reading is one of the mss
                 if r['action'] == 'm':
+
+                    # Set the print reading to <rdg>
+                    self.make_rdg(my_print_rdg)
 
                     # Identify "correct" MS element and text
                     # based on on the 'lem' column in the decisions3 table
