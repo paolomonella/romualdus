@@ -4,12 +4,10 @@
 ''' This module makes textual statistics,
     then appends them to the <front> of chronicon.xml'''
 
-# import my_database_import
-# import variant_subtype
-# import operator
 from lxml import etree
 from myconst import ns, xmlpath, chronicon_output_file
 from myconst import stats_template, stats_filled
+from string import punctuation
 
 
 def insertnum(ancestor, number, n):
@@ -20,16 +18,28 @@ def insertnum(ancestor, number, n):
         insert(tree, 4, 's-subst')
         then change <num n="s-subst"/> to <num n="s-subst">4</seg> '''
 
-    e = ancestor.find('.//t:num[@n="%s"]' % n, ns)
-    if e is None:
+    elements = ancestor.findall('.//t:num[@n="%s"]' % n, ns)
+    if elements is []:
         print(('Subtype {} not found'
               '').format(n))
     number_str = str(number)
-    e.text = number_str
-    e.set('value', number_str)
+    for e in elements:
+        e.text = number_str
+        e.set('value', number_str)
+
+
+def text_strip_punct(element):
+    text_in_el = ' '.join(element.itertext())
+    for punct in punctuation:
+        text_in_el = text_in_el.replace(punct, '')
+    return text_in_el
 
 
 def recalculate_statistics():
+
+    ################
+    # Initializing #
+    ################
 
     # Parse stats_template file and find div
     template_path = '%s%s' % (xmlpath, stats_template)
@@ -59,8 +69,9 @@ def recalculate_statistics():
     tree = etree.parse('%s%s' % (xmlpath, chronicon_path))
 
     # Total of <app> elements
-    number = len(tree.findall('.//t:app', ns))
-    insertnum(div, number, 's-app')
+    apps = tree.findall('.//t:app', ns)
+    s_apps = len(apps)
+    insertnum(div, s_apps, 's-apps')
 
     #################################
     # Total variants (V) and types #
@@ -87,7 +98,14 @@ def recalculate_statistics():
     # Orthographic
     s_orth = len(tree.findall('.//t:app[@type="%s"]' % 'orthographic', ns))
     insertnum(div, s_orth, 's-orth')
-    v = v + s_orth
+
+    # Subtype="case"
+    s_case = len(tree.findall('.//t:app[@subtype="%s"]' % 'case', ns))
+
+    # Orthographic except case
+    s_orth_except_case = s_orth - s_case
+    insertnum(div, s_orth_except_case, 's-orth-except-case')
+    v = v + s_orth_except_case
 
     # Gap-in-ms
     s_gap = len(tree.findall('.//t:app[@type="%s"]' % 'gap-in-ms', ns))
@@ -109,8 +127,9 @@ def recalculate_statistics():
     insertnum(div, s_perc_subst, 's-perc-subst')
     s_perc_trans = "%.1f" % (s_trans_single / v * 100)
     insertnum(div, s_perc_trans, 's-perc-trans')
-    s_perc_orth = "%.1f" % (s_orth / v * 100)
-    insertnum(div, s_perc_orth, 's-perc-orth')
+    s_perc_orth_except_case = "%.1f" % (s_orth_except_case / v * 100)
+    insertnum(div, s_perc_orth_except_case,
+              's-perc-orth-except-case')
 
     ############
     # Subtypes #
@@ -177,8 +196,7 @@ def recalculate_statistics():
     s_perc_num_word = "%.1f" % (s_num_word / v * 100)
     insertnum(div, s_perc_num_word, 's-perc-num-word')
 
-    s_case = len(tree.findall('.//t:app[@subtype="%s"]' % 'case', ns))
-    insertnum(div, s_case, 's-case')
+    # I already calculated s_case above (find 's_case' in this file)
 
     s_perc_case = "%.1f" % (s_case / v * 100)
     insertnum(div, s_perc_case, 's-perc-case')
@@ -268,8 +286,206 @@ def recalculate_statistics():
     s_perc_ncx = "%.1f" % (s_ncx / v * 100)
     insertnum(div, s_perc_ncx, 's-perc-ncx')
 
-    # Write tree to output file stats_filled.xml
-    # (warning: I'm overwriting the file)
+    # Total of orthographic variants excluding case (OVEC)
+    s_ovec = s_orth - s_case
+    insertnum(div, s_ovec, 's-ovec')
+
+    ######################################
+    # @subtype identified/not identified #
+    ######################################
+
+    # @type="substantive"
+    subst_elements = tree.findall(
+        './/t:app[@type="substantive"]', ns)
+    subst_with_subtype = [a for a in subst_elements
+                          if a.get('subtype') is not None]
+    s_subst_with_subtype = len(subst_with_subtype)
+    insertnum(div, s_subst_with_subtype, 's-subst-with-subtype')
+
+    # ...% on SV
+    s_perc_subst_with_subtype_on_sv = "%.1f" % (
+        s_subst_with_subtype / s_subst * 100)
+    insertnum(div, s_perc_subst_with_subtype_on_sv,
+              's-perc-subst-with-subtype-on-sv')
+
+    # ...% on V
+    s_perc_subst_with_subtype_on_v = "%.1f" % (
+        s_subst_with_subtype / v * 100)
+    insertnum(div, s_perc_subst_with_subtype_on_v,
+              's-perc-subst-with-subtype-on-v')
+
+    # @type="ortographic"
+    orth_elements = tree.findall(
+        './/t:app[@type="orthographic"]', ns)
+    orth_withsubtype_except_case = [
+        a for a in orth_elements
+        if (a.get('subtype') is not None and
+            a.get('subtype') != 'case')]
+    s_orth_withsubtype_except_case = len(
+        orth_withsubtype_except_case)
+    insertnum(div, s_orth_withsubtype_except_case,
+              's-orth-withsubtype-except-case')
+
+    # ...% on OVEC
+    s_perc_orth_withsubtype_except_case_on_ovec = "%.1f" % (
+        s_orth_withsubtype_except_case / s_ovec * 100)
+    insertnum(div, s_perc_orth_withsubtype_except_case_on_ovec,
+              's-perc-orth-withsubtype-except-case-on-ovec')
+
+    # ...% on V
+    s_perc_orth_withsubtype_except_case_on_v = "%.1f" % (
+        s_orth_withsubtype_except_case / v * 100)
+    insertnum(div, s_perc_orth_withsubtype_except_case_on_v,
+              's-perc-orth-withsubtype-except-case-on-v')
+
+    # Total @subtypes for subst and orth, except "case"
+    s_found_subtypes = s_subst_with_subtype + \
+        s_orth_withsubtype_except_case
+    insertnum(div, s_found_subtypes, 's-found-subtypes')
+
+    # ...% on V
+    s_perc_found_subtypes = "%.1f" % (
+        s_found_subtypes / v * 100)
+    insertnum(div, s_perc_found_subtypes, 's-perc-found-subtypes')
+
+    #####################
+    # Textual decisions #
+    #####################
+
+    s_two_children = s_three_children = 0
+    s_lem_print = s_lem_not_print = 0
+    s_apps_with_o = s_lems_only_o = 0
+
+    # Actual variant elements (avel)
+    bad_types = ['punctuation', 'gap-in-ms', 'illegible-in-ms',
+                 'transposition']
+    avel = [a for a in apps
+            if a.get('type') not in bad_types and
+            (a.get('type') != 'orthography' and a.get('subtype') != 'case')]
+    # Only add every second transposition (transpositions come in pairs)
+    transpositions = tree.findall('.//t:app[@type="transposition"]', ns)
+    for t in transpositions:
+        i = transpositions.index(t)  # Index
+        if (i % 2) == 0:  # Only even numbers
+            avel.append(t)
+
+    for a in avel:
+
+        # 2 or 3 children of <app>
+        if len(a) == 2:
+            s_two_children += 1
+        elif len(a) == 3:
+            s_three_children += 1
+
+        lem = a.find('.//t:lem', ns)
+        # When there are 3 children, this will only find the 1st rdg
+        rdg = a.find('.//t:rdg', ns)
+
+        lem_wit = lem.get('wit')
+        rdg_wit = rdg.get('wit')
+
+        # <app>s in which MS O is involved
+        if (lem_wit is not None and
+                ('#o' in lem_wit or '#o' in rdg_wit)):
+            s_apps_with_o += 1
+
+        # <lem> is print reading
+        if (lem_wit is not None and
+                ('#g' in lem_wit or '#b' in lem_wit)):
+            s_lem_print += 1
+        # <lem> is not print reading, but MS reading
+        else:
+            s_lem_not_print += 1
+
+    # 2 children in <app>
+    insertnum(div, s_two_children, 's-two-children')
+    s_perc_two_children = "%.1f" % (
+        s_two_children / v * 100)
+    insertnum(div, s_perc_two_children, 's-perc-two-children')
+
+    # 3 children in <app>
+    insertnum(div, s_three_children, 's-three-children')
+    s_perc_three_children = "%.1f" % (
+        s_three_children / v * 100)
+    insertnum(div, s_perc_three_children, 's-perc-three-children')
+
+    # print/non-print <lem>s
+    insertnum(div, s_lem_print, 's-lem-print')
+    insertnum(div, s_lem_not_print, 's-lem-not-print')
+
+    # ...and % on V
+
+    s_perc_lem_print = "%.1f" % (
+        s_lem_print / v * 100)
+    insertnum(div, s_perc_lem_print, 's-perc-lem-print')
+
+    s_perc_lem_not_print = "%.1f" % (
+        s_lem_not_print / v * 100)
+    insertnum(div, s_perc_lem_not_print, 's-perc-lem-not-print')
+
+    # <app>s including #o somewhere
+    insertnum(div, s_apps_with_o, 's-apps-with-o')
+
+    # <app>s in which only MS O provides the 'correct' reading
+    lems_only_o = tree.findall('.//t:lem[@wit="#o"]', ns)
+    s_lems_only_o = len(lems_only_o)
+    insertnum(div, s_lems_only_o, 's-lems-only-o')
+
+    # ...% on all <app>s including #o somewhere
+    s_perc_lems_only_o = "%.1f" % (
+        s_lems_only_o / s_apps_with_o * 100)
+    insertnum(div, s_perc_lems_only_o,
+              's-perc-lems-only-o')
+
+    ######################
+    # General statistics #
+    ######################
+
+    all_words = []
+    app_words = []
+    pars = tree.findall('.//t:p', ns)
+
+    for p in pars:
+        p_text = text_strip_punct(p)
+        p_words = p_text.split()  # A list
+        for word in p_words:
+            all_words.append(word)
+    s_all_words = len(all_words)
+
+    for a in apps:
+        a_text = text_strip_punct(a)
+        a_words = a_text.split()  # A list
+        for word in a_words:
+            app_words.append(word)
+    s_app_words = len(app_words)
+
+    # Each <app> reduplicates words (more or less)
+    s_app_words_half = int(s_app_words / 2)
+
+    # Correct the reduplication
+    s_all_words_corr = s_all_words - s_app_words_half
+
+    s_perc_app_words = "%.1f" % (
+        s_app_words_half / s_all_words_corr * 100)
+
+    insertnum(div, s_all_words_corr, 's-all-words-corr')
+    insertnum(div, s_app_words_half, 's-app-words-half')
+    insertnum(div, s_perc_app_words, 's-perc-app-words')
+
+    # Meno interessanti:
+    # Add very general stats for words and characters?
+    # Forse anche 'num' e 'rs' (e 'hi'?) nelle trascrizioni.
+    # <pb>: quante parole per pagina
+    # Quante parole dentro <app> in media
+
+    # Dire in questa sez. <div> che i numeri qui sono
+    # stati inseriti dallo script statistics.py
+
+    ##############################################
+    # Write tree to output file stats_filled.xml #
+    # (warning: I'm overwriting the file)        #
+    ##############################################
+
     filled_tree.write(filled_path,
                       encoding='UTF-8', method='xml',
                       pretty_print=True, xml_declaration=True)
