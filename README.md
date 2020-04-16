@@ -206,4 +206,5 @@ General:
 - `itertext.py`: module to easily get all textual content in an XML element
 - `myconst.py`: module including global variables to be used by other scripts
 - `ripostiglio`: previous versions of Pyhon modules and scripts
+- `statistics.py`: create textual statistics and insert them in the `front` element of `chronicon.xml`
 - `strip_individual_node.py`: strip an XML node and keep its text and tail textual content
