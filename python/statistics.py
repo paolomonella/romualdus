@@ -2,7 +2,13 @@
 # -*- coding: utf-8 -*-
 
 ''' This module makes textual statistics,
-    then appends them to the <front> of chronicon.xml'''
+    then appends them to the <front> of chronicon.xml
+
+     Possible to-do's:
+    - Add characters count? (already in the teiHeader)
+    - Count 'num' and 'rs' (and 'hi'?) in transcription files
+    - <pb>: how many words per page
+    '''
 
 from lxml import etree
 from myconst import ns, xmlpath, chronicon_output_file
@@ -35,11 +41,28 @@ def text_strip_punct(element):
     return text_in_el
 
 
-def recalculate_statistics():
+'''
+def count_words_in_tagname(my_tree, tagname):
+'''
+''' Example: if tagname is '<lem>, count how
+        many words are in the text are tagged with <lem>
+        in all document '''
+'''
+    my_words = []
+    my_elements = my_tree.findall('.//t:%s' % tagname, ns)
+    for my_element in my_elements:
+        my_text = text_strip_punct(my_element)
+        my_words = my_text.split()  # A list
+        for my_word in my_words:
+            my_words.append(my_word)
+    length_my_words = len(my_words)
+    return length_my_words
+'''
 
-    ################
-    # Initializing #
-    ################
+
+def recalculate_statistics(include_general=False):
+    ''' tree is the tree of the chronicon.xml file
+        div is the <div> in which statistics must be written '''
 
     # Parse stats_template file and find div
     template_path = '%s%s' % (xmlpath, stats_template)
@@ -53,20 +76,15 @@ def recalculate_statistics():
     old_filled_div.getparent().remove(old_filled_div)
     filled_root = filled_tree.getroot()
 
-    '''
-    # Empty <div> of stats_filled
-    for child in div:
-        div.getparent().remove(div)
-    # Move contents of template <div>
-    # into <div> of stats_filled
-    for child in template_div:
-        div.append(child)
-        '''
     filled_root.append(div)
 
     # Import chronicon.xml
     chronicon_path = '%s%s' % (xmlpath, chronicon_output_file)
     tree = etree.parse('%s%s' % (xmlpath, chronicon_path))
+
+    ################
+    # Initializing #
+    ################
 
     # Total of <app> elements
     apps = tree.findall('.//t:app', ns)
@@ -441,45 +459,63 @@ def recalculate_statistics():
     # General statistics #
     ######################
 
-    all_words = []
-    app_words = []
-    pars = tree.findall('.//t:p', ns)
+    if not include_general:
+        # Remove the <div> (child of <div="statistics"> for
+        # general statistics from the template file
+        gener_subdiv = div.find('.//t:div[@n="general-statistics"]', ns)
+        gener_subdiv.getparent().remove(gener_subdiv)
 
-    for p in pars:
-        p_text = text_strip_punct(p)
-        p_words = p_text.split()  # A list
-        for word in p_words:
-            all_words.append(word)
-    s_all_words = len(all_words)
+    else:
 
-    for a in apps:
-        a_text = text_strip_punct(a)
-        a_words = a_text.split()  # A list
-        for word in a_words:
-            app_words.append(word)
-    s_app_words = len(app_words)
+        all_words = rdg_words = lem_words = []
 
-    # Each <app> reduplicates words (more or less)
-    s_app_words_half = int(s_app_words / 2)
+        pars = tree.findall('.//t:p', ns)
+        for p in pars:
+            p_text = text_strip_punct(p)
+            p_words = p_text.split()  # A list
+            for word in p_words:
+                all_words.append(word)
 
-    # Correct the reduplication
-    s_all_words_corr = s_all_words - s_app_words_half
+        # s_all_words = count_words_in_tagname(tree, 'p')
+        s_all_words = len(all_words)
 
-    s_perc_app_words = "%.1f" % (
-        s_app_words_half / s_all_words_corr * 100)
+        # Find words in <lem>
+        lems = tree.findall('.//t:lem', ns)
+        for l in lems:
+            l_text = text_strip_punct(l)
+            l_words = l_text.split()  # A list
+            for word in l_words:
+                l_words.append(word)
 
-    insertnum(div, s_all_words_corr, 's-all-words-corr')
-    insertnum(div, s_app_words_half, 's-app-words-half')
-    insertnum(div, s_perc_app_words, 's-perc-app-words')
+        # s_lem_words = count_words_in_tagname(tree, 'lem')
+        s_lem_words = len(lem_words)
 
-    # Meno interessanti:
-    # Add very general stats for words and characters?
-    # Forse anche 'num' e 'rs' (e 'hi'?) nelle trascrizioni.
-    # <pb>: quante parole per pagina
-    # Quante parole dentro <app> in media
+        # Remove words in <rdg> elements from total count
+        rdgs = tree.findall('.//t:rdg', ns)
+        for r in rdgs:
+            r_text = text_strip_punct(r)
+            r_words = r_text.split()  # A list
+            for word in r_words:
+                rdg_words.append(word)
 
-    # Dire in questa sez. <div> che i numeri qui sono
-    # stati inseriti dallo script statistics.py
+        # s_rdg_words = count_words_in_tagname(tree, 'rdg')
+        s_rdg_words = len(rdg_words)
+
+        # Correct the reduplication
+        s_all_words_corr = s_all_words - s_rdg_words
+
+        s_perc_lem_words = "%.1f" % (
+            s_lem_words / s_all_words_corr * 100)
+
+        if True:
+            print(('All words: {}\nIn <lem>: {}\n'
+                   'In <rdg>: {}\nWords-lem: {}\n').format(
+                       s_all_words, s_lem_words,
+                       s_rdg_words, s_all_words_corr))
+
+        insertnum(div, s_all_words_corr, 's-all-words-corr')
+        insertnum(div, s_perc_lem_words, 's-lem-words')
+        insertnum(div, s_perc_lem_words, 's-perc-lem-words')
 
     ##############################################
     # Write tree to output file stats_filled.xml #

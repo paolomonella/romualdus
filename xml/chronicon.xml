@@ -764,11 +764,13 @@ mostly by adopting MS A's spelling, in cases in which
 <head>Statistics</head>
 
 
-<div n="statistics-variant-types">
-<head>On variant types and subtypes</head>
+<div n="variant-types-statistics">
+<head>Statistics on variant types and subtypes</head>
 
-<p>These are some statistics on variant types, generated
-    through a Python script that processes the XML code:
+<p>These are some statistics on variant types,
+	generated dynamically by my Python script
+	statistics.py, that processes the XML code
+	of the edition:
 </p>
 
 <list>
@@ -991,8 +993,8 @@ mostly by adopting MS A's spelling, in cases in which
 
 </div>
 
-<div n="statistics-decisions">
-<head>On textual decisions</head>
+<div n="textcrit-statistics">
+<head>Statistics on textual-critical decisions</head>
 
 <p>Out of a total of <num n="s-var" value="3388">3388</num>
     'actual' loci variantes (V, as defined above):</p>
@@ -1040,23 +1042,6 @@ mostly by adopting MS A's spelling, in cases in which
 </list>
 
 </div>
-
-
-<div n="statistics-general">
-<head>General statistics</head>
-
-<list>
-    <item>Of <num n="s-all-words-corr" value="101094">101094</num>
-        total words in the text,
-        <num n="s-app-words-half" value="3842">3842</num>
-        (<num n="s-perc-app-words" value="3.8">3.8</num>%)
-        are part of a locus varians
-        (approximately)
-    </item>
-</list>
-
-</div>
-
 
 
 </div>

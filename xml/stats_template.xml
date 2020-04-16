@@ -5,11 +5,13 @@
 <head>Statistics</head>
 
 
-<div n="statistics-variant-types">
-<head>On variant types and subtypes</head>
+<div n="variant-types-statistics">
+<head>Statistics on variant types and subtypes</head>
 
-<p>These are some statistics on variant types, generated
-    through a Python script that processes the XML code:
+<p>These are some statistics on variant types,
+	generated dynamically by my Python script
+	statistics.py, that processes the XML code
+	of the edition:
 </p>
 
 <list>
@@ -232,8 +234,8 @@
 
 </div>
 
-<div n="statistics-decisions">
-<head>On textual decisions</head>
+<div n="textcrit-statistics">
+<head>Statistics on textual-critical decisions</head>
 
 <p>Out of a total of <num n="s-var"/>
     'actual' loci variantes (V, as defined above):</p>
@@ -283,16 +285,17 @@
 </div>
 
 
-<div n="statistics-general">
+<div n="general-statistics">
 <head>General statistics</head>
 
 <list>
     <item>Of <num n="s-all-words-corr"/>
-        total words in the text,
-        <num n="s-app-words-half"/>
-        (<num n="s-perc-app-words"/>%)
+        total words in the text (calculated
+        excluding words in 'rdg' elements')
+        <num n="s-lem-words"/>
+        (<num n="s-perc-lem-words"/>%)
         are part of a locus varians
-        (approximately)
+        (i.e. are in 'lem' elements)
     </item>
 </list>
 
