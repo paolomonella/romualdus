@@ -127,7 +127,13 @@ if post:
 
     print('Working on ', end='')
     for mp in parameters:
-        print('{}, '.format(mp['siglum']), end='')
+        myend = ', '
+        # Second from last in list
+        if len(parameters) > 1 and mp == parameters[-2]:
+            myend = ' and '
+        elif mp == parameters[-1]:  # Last in list
+            myend = '.\n'
+        print('{}'.format(mp['siglum']), end=myend)
 
         ''' Post-processing of JuxtaCommons-generated files
             (from module post_process_juxta_commons_file.py)'''
