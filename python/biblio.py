@@ -9,7 +9,7 @@ from lxml import etree
 from myconst import xmlpath, ns, biblio_file, chronicon_output_file
 
 list_remove = ['language', 'langid', 'lccn', 'keywords', 'bibtexkey',
-               'note', 'abstract', 'isbn']
+               'note', 'abstract', 'month']
 
 
 def moveinto(child_tagname, oldparent, newparent):
@@ -56,7 +56,15 @@ def process_pages(e, pages):
     pages.set('to', myto)
 
 
+def remove_curly_from_title(e):
+    title = e.find('.//b:%s' % ('title'), ns)
+    title.text = title.text.replace('{', '')
+    title.text = title.text.replace('}', '')
+
+
 def book(e):
+
+    remove_curly_from_title(e)
 
     book = e.find('.//b:%s' % ('book'), ns)
     imprint = createchild('imprint', parent=book)
@@ -68,6 +76,12 @@ def book(e):
 
     moveinto('location', oldparent=e, newparent=imprint)
     renameto(e, oldname='location', newtagname='pubPlace')
+
+    renameto(e, oldname='isbn', newtagname='idno',
+             attr='type', value='ISBN')
+
+    renameto(e, oldname='issn', newtagname='idno',
+             attr='type', value='ISSN')
 
     renameto(e, oldname='book', newtagname='monogr')
 
@@ -93,6 +107,8 @@ def book(e):
 
 def miscellaneous(e, entrytype):
 
+    remove_curly_from_title(e)
+
     miscellaneous = e.find('.//b:%s' % (entrytype), ns)
     imprint = createchild('imprint', parent=miscellaneous)
     analytic = createchild('analytic', parent=e)
@@ -116,6 +132,16 @@ def miscellaneous(e, entrytype):
     moveinto('author', oldparent=e, newparent=analytic)
     moveinto('title', oldparent=e, newparent=analytic)
 
+    moveinto('doi', oldparent=e, newparent=analytic)
+    renameto(e, oldname='doi', newtagname='idno',
+             attr='type', value='DOI')
+
+    renameto(e, oldname='isbn', newtagname='idno',
+             attr='type', value='ISBN')
+
+    renameto(e, oldname='issn', newtagname='idno',
+             attr='type', value='ISSN')
+
     renameto(e, oldname='booktitle', newtagname='title',
              attr='level', value='m')
 
@@ -137,6 +163,8 @@ def miscellaneous(e, entrytype):
 
 
 def article(e):
+
+    remove_curly_from_title(e)
 
     article = e.find('.//b:%s' % ('article'), ns)
     imprint = createchild('imprint', parent=article)
@@ -168,6 +196,16 @@ def article(e):
 
     moveinto('author', oldparent=e, newparent=analytic)
     moveinto('title', oldparent=e, newparent=analytic)
+
+    moveinto('doi', oldparent=e, newparent=analytic)
+    renameto(e, oldname='doi', newtagname='idno',
+             attr='type', value='DOI')
+
+    renameto(e, oldname='isbn', newtagname='idno',
+             attr='type', value='ISBN')
+
+    renameto(e, oldname='issn', newtagname='idno',
+             attr='type', value='ISSN')
 
     renameto(e, oldname='journal', newtagname='title',
              attr='level', value='j')
