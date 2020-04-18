@@ -9,7 +9,7 @@ from lxml import etree
 from myconst import xmlpath, ns, biblio_file, chronicon_output_file
 
 list_remove = ['language', 'langid', 'lccn', 'keywords', 'bibtexkey',
-               'note', 'abstract', 'month']
+               'note', 'abstract', 'month', 'organization', 'issn', 'isbn']
 
 
 def moveinto(child_tagname, oldparent, newparent):
