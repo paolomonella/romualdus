@@ -259,7 +259,7 @@
 </div>
 
 
-<div>
+<div n="xmlid">
 <head>Paragraph identifiers</head>
 <p>Paragraphs ('p' elements in the TEI XML source) have been labelled
 	with @xml:id attributes based on Garufi. For instance, paragraph
@@ -271,7 +271,7 @@
 </div>
 
 
-<div>
+<div n="sigla">
 <head>Sigla</head>
 <p>As noted in the 'sourceDesc' element,
 	in the @wit attributes of 'lem' and 'rdg'
@@ -281,21 +281,23 @@
 </div>
 
 
-<div>
+<div n="structure">
 <head>Structure of the work</head>
 <list>
 	<item>Universal history:
 		the <title>Chronicon</title> initially follows ancient Jewish,
-		Greek and and Roman history, then European (continental and Byzantine)
-		events.</item>
+		Greek and and Roman history, then European (continental and
+		Byzantine) events.</item>
 	<item>Digression on Lombards and Franks:
-		from paragraph g108.24-109.5 (i.e. page 108 of Garufi's edition, line 24)
-		to par. g159.9-159.25, the text includes a long digression on the the
-		history of the Lombards and the Franks until Louis the Pious.</item>
+		from paragraph g108.24-109.5 (i.e. page 108 of Garufi's
+		edition, line 24) to par. g159.9-159.25, the text includes
+		a long digression on the the history of the Lombards and the
+		Franks until Louis the Pious.</item>
 	<item>Southern Italian section:
-		Then, the scope of the narrative returns to be wide, continental, but it
-		progressively focusses on Southern Italy, until it substantially becomes
-		a chronicle of the Norman conquest of this geographical area.
+		Then, the scope of the narrative returns to be wide, continental,
+		but it progressively focusses on Southern Italy, until it
+		substantially becomes a chronicle of the Norman conquest of this
+		geographical area.
 		The initial part of this section (roughly years 999-1125)
 		is centered on peninsular Southern Italy
 		(see Zabbia 2010, 25-42).
@@ -311,7 +313,7 @@
 </list>
 </div>
 
-<div>
+<div n="sources">
 <head>Sources</head>
 <p>Garufi 1914 has a very informative separate apparatus
 	of footnotes identifying the sources of each passage of the work.
@@ -353,43 +355,44 @@
 </list>
 </div>
 
-<div>
+<div n="authorship-evidence">
 <head>Authorship: textual evidence</head>
-<p>It is not the task of this introduction to examine in depth the question
-	of the authorship of the <title>Chronicon</title>. However, I will
-	shortly summarize the issue. The attribution of the work to Romualdus
-	Salernitanus originates from two textual notes in the handwritten tradition:
+<p>It is not the task of this introduction to examine in depth the
+	question of the authorship of the <title>Chronicon</title>.
+	However, I will shortly summarize the issue. The attribution
+	of the work to Romualdus Salernitanus originates from
+	two textual notes in the handwritten tradition:</p>
 <list>
 	<item>Note A:
-		a sentence in manuscript C (Paris, Bibliothèque Nationale, Latinus 4933),
-		not present in the other main manuscripts,
-		probably a marginal note that later entered the text:
-		"Ab hoc loco adiunctum est huic chronice per Romualdum secundum
-		Salernatanum archiepiscopum".
-		The note (not included in the text of my edition)
-		is in par. g213.1-213.8, precisely in page 213, line 5 of Garufi,
-		between "...iuramentum accepit" and "Dux autem Wilhelmus..." (events of year 1125).
-		Garufi reports the note in apparatus (see Matthew 1981, 255-256
-		and Zabbia 2004, 382, 388 and footnote 5);
+		a sentence in MS C, not present in the other main manuscripts,
+		probably originating from a a marginal note: "Ab hoc loco
+		adiunctum est huic chronice per Romualdum secundum Salernatanum
+		archiepiscopum".
+		The note (not included in the text of my edition) is in par.
+		g213.1-213.8, precisely in page 213, line 5 of Garufi, between
+		"...iuramentum accepit" and "Dux autem Wilhelmus..." (events
+		of year 1125). Garufi reports the note in apparatus (see
+		Matthew 1981, 255-256 and Zabbia 2004, 382, 388 and footnote 5);
 	</item>
 	<item>Note B:
-		a second sentence in par. g293.39-294.2: "Hec autem omnia, que prediximus,
-		ita gesta fuisse, nulli dubitationis uel incredulitatis scrupulum moueant,
-		quia Romoaldus secundus Salernitanus archiepiscopus, qui uidit et interfuit,
-		scripsit hec; et sciatis, quia uerum est testimonium eius" (see Mattew 1981, 239-240).
-	       	With "hec... omnia, que prediximus", the text refers to the Peace of Venice.
+		a sentence in par. g293.39-294.2: "Hec autem omnia, que prediximus,
+		ita gesta fuisse, nulli dubitationis uel incredulitatis scrupulum
+		moueant, quia Romoaldus secundus Salernitanus archiepiscopus,
+		qui uidit et interfuit, scripsit hec; et sciatis, quia uerum est
+		testimonium eius" (see Mattew 1981, 239-240). With "hec... omnia,
+		que prediximus", the text refers to the Peace of Venice.
 	</item>
 </list>
-</p>
 </div>
 
-<div>
+
+<div n="authorship-hypotheses">
 <head>Authorship: hypotheses</head>
-<p>For Matthew 1981, the first note only proves that
-	the scribe who wrote it believed in Romualdus' authorship, and the second
-	that the report of the Peace of Venice was based on the archbishop's,
-	possibly written, testimony. Mattews discusses numerous arguments in favor
-	of the thesis that the author of the <title>Chronicon</title> is not Romualdus:
+<p>For Matthew 1981, note A only proves that the scribe who wrote it believed
+	in Romualdus' authorship, and the second that the report of the
+	Peace of Venice was based on the archbishop's, possibly written, testimony.
+	Mattews discusses numerous arguments in favor of the thesis that
+	the author of the <title>Chronicon</title> is not Romualdus:
 	he suggests that around 1126 an anonymous compiler based in the
 	Apulian city of Troia wrote a compilation of universal history reporting
 	events until 1125 (see Matthew 1981, 239-256);
@@ -397,68 +400,68 @@
 	reigns to Roger II and the two Williams in 1177",
 	while only the report of the Peace of Venice "is taken from
 	the written, eyewitness, and true account of Archbishop Romuald"
-	(Matthew 1981, 269-270). Vitolo 2007, 549-551 follows Matthew, and stresses
-	the lack of attention to the famous medicine school of Salerno
-	(except for a short note in g189.2-189.5).
-	Oldoni (2001 and 2004) suggest that the text until year 893 may have been
+	(Matthew 1981, 269-270). Vitolo 2007, 549-551 follows Matthew,
+	and highlights the lack of attention to the famous medical school
+	of Salerno (except for a short note in g189.2-189.5).
+	For Oldoni (2001 and 2004), the text until year 893 may have been
 	written by Romualdus; the section on years 893-1127 shows "una scrittura
 	a più mani ove intervengono, con Romualdo, almeno altri due scribi"; 
 	years 1127-1173 were entrusted to Romualdus' collaborators; finally,
 	only the section after 1173 was "forse [l]'unica parte certamente 
-	originale dell'opera sua".
-	</p>
-<p>Zabbia 2004 confuted Mattew's arguments and suggested
-	that Romualdus is the author of the whole work, though he did not
-	rule out the possibility, based on the first note mentioned above
-	("Ab hoc loco adiunctum est...', par. g213.1-213.8), that
-	the archbishop continued a previously existing universal chronicon.
-	In his view, the note "Ab hoc loco..." simply suggests that
-	"sino al 1125 l'arcivescono avrebbe condotto il suo lavoro sulle fonti;
-	dopo quella data – a partire cioè da quando Romualdo aveva all'incirca
-	quindici anni – il racconto sarebbe fondato sulla memoria dell'autore"
+	originale dell'opera sua".</p>
+<p>Zabbia 2004 confutes Mattew's arguments and suggests
+	that Romualdus is the author of the whole work, though he does not
+	rule out the possibility, based on note A, that the archbishop
+	continued a previously existing universal chronicle.
+	In his view, note A simply suggests that "sino al 1125 l'arcivescovo
+	avrebbe condotto il suo lavoro sulle fonti; dopo quella data
+	– a partire cioè da quando Romualdo aveva all'incirca quindici anni –
+	il racconto sarebbe fondato sulla memoria dell'autore"
 	(also see Pio 1996, 26 n. 26), though he adds:
-	"Tutto ciò non consente di escludere che l'arcivescono potesse disporre
+	"Tutto ciò non consente di escludere che l'arcivescovo potesse disporre
 	di una cronaca in cui almeno parte del materiale fosse già organizzata"
-	(Zabbia 2004, 389 and 392, where he writes of a "codice miscellaneo").
-	In a later essay (Zabbia 2010), the same scholar
-	proposed a theory closer to one of Matthew's: that for the period between 999
+	(Zabbia 2004, 389 and 392, where he hypothesizes the existence of a
+	previous "codice miscellaneo" as source of Romualdus).
+	In a later essay (Zabbia 2010), the same scholar proposes a theory
+	closer to one of Matthew's: for the period between 999
 	(the arrival of Normans to Southern Italy) to 1125, the source of Romualdus
 	was a pre-existing short chronicle, written in Salerno within the first
-	fourth of the XII century. For Zabbia, this short chronical was the common
+	fourth of the XII century. For Zabbia, this short chronicle was the common
 	source of Romualdus' <title>Chronicon</title> for this period and of the
-	<title>Chronicon Amalphitanum</title> (Zabbia 2010, 25-42),
-	but comparison between the two works shows that
-	Romualdus did not copy his source, but integrated it with other information,
-	for example regarding the papacy. See Zabbia 2004, 384 and Zabbia 2010, 21-24
-	for further bibliography on the authorship issue.
-	</p>
-<p>Zabbia's arguments on authorship balance out those of Matthew.
-	This leaves the question open, at least for the part of the work before
-	year 1125. While internal evidence is not conclusive, the two notes
-	mentioned above suggest quite clearly that:
+	<title>Chronicon Amalphitanum</title> (Zabbia 2010, 25-42), however a
+	comparison between the two works shows that Romualdus did not simply copy
+	from his source, but integrated it with other information, for example
+	on the papacy. See Zabbia 2004, 384 and Zabbia 2010, 21-24
+	for further bibliography on the authorship issue.</p>
+<p>Zabbia's arguments on the authorship of the <title>Chronicon</title>
+	balance out those of Matthew. This leaves the question open, at least
+	for the part of the work before year 1125.
+	While evidence is not conclusive, notes A and B suggest quite clearly
+	at least that:</p>
 <list>
 	<item>The final part of the work – the account of the Peace of Venice –
 		was almost certainly either written by Romualdus himself,
-		or under his supervision (see second note above);</item>
+		or under his supervision (see note B);</item>
 	<item>the section from year 1125 (par. g213.1-213.8) to the Peace of Venice
-		was added, 'adiunctum' by Romualdus as well (see first note);</item>
-	<item>the section from Adam to year 1125 constituted something that existed
-		before Romualdus (see note in g213.1-213.8: "adiunctum est huic chronice").</item>
+		was "adiunctum" by Romualdus as well (note A);</item>
+	<item>the section from Adam to year 1125 originated from something
+		that existed before Romualdus (note A again: "adiunctum est
+		huic chronice").</item>
 </list>
-</p>
-<p>The hypothesis proposed by Zabbia 2010 essay is economic and entirely consistent with
-	this evidence. If Romualdus mixed and summarized different sources (directly or
-	supervising the work of his collaborators) for the universal history until 999,
-	and mostly followed and integrated the short chronicle postulated
-	by Zabbia until 1125, then a scribe could reasonably write in the note in
-	g213.1-213.8 that only from that point on ("ab hoc loco") Romualdus added up
-	new information to the <title>Chronicon</title>.</p>
+<p>The hypothesis proposed by Zabbia 2010 essay is economic and entirely consistent
+	with this evidence. If Romualdus mixed and summarized different sources
+	(directly or supervising the work of his collaborators) for the universal
+	history and the digression on Lombards and Franks until 999, and hence
+	mostly followed and integrated the short chronicle postulated by Zabbia
+	until 1125, then a scribe could reasonably write in note A that only
+	from that point on ("ab hoc loco") Romualdus added up new information
+	to the <title>Chronicon</title>.</p>
 </div>
 
-<div>
-<head>Long and short versions of the work</head>
 
-<p>MSS B and C present a number of textual passages absent in A and O.
+<div n="long">
+<head>Long and short versions of the work</head>
+<p>Manuscripts B and C present a number of textual passages absent in A and O.
 	We thus distinguish between a 'long' (MSS B and C)
 	and 'short' version of the work (A and O). Those additions
 	correspond to the following paragraphs in the present edition:
@@ -471,257 +474,354 @@
 	g210.23-210.24, g211.15-211.17, g212.5-212.9, g212.10-212.11, g212.12-212.13, 
 	g214.12-214.14, g214.14-215.3, g219.3-219.4, g214.n8-215.n14, 
 	g215.n14-216.n10, g216.n10-217.n1, g217.n4-217.n10, g218.n16-218.n23, 
-	g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10, 
-	</p>
-
-<p>The 'p' elements including these additions have been marked with attribute
-	@decls="#longversion", in this XML file, linking to the relevant
-	'editorialDecl'.</p>
-
+	g219.n1-219.n13, g217.n10-218.n16, g234.n1-236.n10.</p>
+<p>In this XML file, the 'p' elements including these additions have been
+	marked with attribute @decls="#longversion", linking to the relevant
+	'editorialDecl' in the TEI header.</p>
 <p>Scholars are unanimously convinced that these are later additions to the
 	'short' version' (see Garufi, XXXIV; Matthew 1981, 241-243,
-	Zabbia 2004, 386-387; Zabbia 2006, 59-61 and Zabbia 2010, 24-25, 27 and 43-49),
-	but Garufi himself includes some of them in his text. He therefore considers
-	these ones Romualdus' own additions (followed by Palumbo 1978, 76-78),
-	and Zabbia 2006, 60 suggests that the first ones
-	(g3.7-3.16, g10.n2-10.n5, g30.n1-30.n3) might actually be lacunae in A,
-	rather than additions in B and C.
-	Zabbia maintains that those additions are generally consistent with the style
-	of the whole <title>Chronicon</title>, that they have been written shortly after
-	the composition of the whole work (Zabbia 2004, 397: "interventi
-	databili a ridosso della stesura"), that it is not impossible
-	that Romualdus himself (Zabbia 2006, 60) or "uno dei suoi
-	collaboratori (Zabbia 2010, 25) added them to the <title>Chronicon</title>.</p>
+	Zabbia 2004, 386-387; Zabbia 2006, 59-61 and Zabbia 2010, 24-25, 27
+	and 43-49), but Garufi himself includes some of them in his text.
+	He therefore seem to imply (like Palumbo 1978, 76-78) that Romualdus
+	himself was the author of those specific additions. Zabbia 2006, 60
+	suggests that the first ones (g3.7-3.16, g10.n2-10.n5, g30.n1-30.n3)
+	might actually be authorial, and therefore constitute lacunae in A,
+	rather than later additions in B and C.</p>
+<p>Zabbia maintains that all additions are generally consistent with
+	the style of the whole <title>Chronicon</title>, that they have been
+	written shortly after the composition of the whole work (Zabbia 2004, 397:
+	"interventi databili a ridosso della stesura"), and that it is not impossible
+	that Romualdus himself (Zabbia 2006, 60) or "uno dei suoi collaboratori
+	(Zabbia 2010, 25) added them to the <title>Chronicon</title>.</p>
 </div>
 
-<div>
+
+<div n="second-hand">
 <head>Second hand in A</head>
 <p>Someone, probably in the XVII century, copied most of the parts missing
-	in MS A (the 'long version additions', plus some missing quires or folios)
-	into the marginal space of the manuscript, drawing them from MS B
-	(see Matthew 1981, 242).
-	In addition to the 'long version additions' mentioned in the previous paragraph,
-	I transcribed and collated also the following portions of MS A added by the
-	second hand and marked their readings with siglum 'a2' in 'app' elements:
-	g180.10-180.12, g180.13-180.15, g181.1-181.1, g181.2-181.5, g181.6-181.10,
-	g181.10-181.11, g181.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13.
-</p>
+	in MS A (the 'long version additions', plus some quires or folios
+	that had been lost due to physical damage) into the marginal space
+	of the manuscript, drawing them from MS B (see Matthew 1981, 242).</p>
+<p>In addition to the 'long version additions' mentioned in the previous
+	paragraph, I transcribed and collated also the following portions
+	of MS A added by the second hand and marked their readings with
+	siglum 'a2' in 'app' elements: g180.10-180.12, g180.13-180.15,
+	g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11,
+	g181.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13.</p>
 </div>
 
-<div>
+<div n="portions-in-o">
 <head>Portions of the work included in fragment O</head>
-<p>Witness O (i.e. folios 16r-18v of Ottobon. Lat. 2940) has the following paragraphs:
-g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16, g170.17-171.1, g171.2-171.6, 
-71.7-171.8, g171.9-171.14, g172.1-172.9, g172.10-173.11, g173.12-173.13, g173.14-174.7, 
-74.8-175.15, g176.1-176.2, g177.1-177.4, g177.5-177.6, g177.7-177.8, g177.9-178.3, 
-78.4-178.10, g178.11-178.12, g178.13-179.2, g179.3-179.7, g179.8-179.9, g179.12-179.14, 
-79.15-180.10, g180.10-180.12, g181.1-181.1, g181.2-181.5, g181.6-181.10, g181.10-181.11, 
-81.12-182.19, g183.1-184.6, g184.7-184.9, g184.10-184.13, g184.13-185.7, g185.8-186.5,
-g186.12-187.2, g187.9-187.11 and g187.14-188.1.</p>
+<p>Witness O (i.e. folios 16r-18v of Ottobon. Lat. 2940)
+	has the following paragraphs:
+	g168.5-168.7, g168.8-169.4, g169.5-170.14, g170.15-170.16,
+	g170.17-171.1, g171.2-171.6, 1.7-171.8, g171.9-171.14,
+	g172.1-172.9, g172.10-173.11, g173.12-173.13, g173.14-174.7,
+	4.8-175.15, g176.1-176.2, g177.1-177.4, g177.5-177.6,
+	g177.7-177.8, g177.9-178.3, 8.4-178.10, g178.11-178.12,
+	g178.13-179.2, g179.3-179.7, g179.8-179.9, g179.12-179.14,
+	9.15-180.10, g180.10-180.12, g181.1-181.1, g181.2-181.5,
+	g181.6-181.10, g181.10-181.11, 1.12-182.19, g183.1-184.6,
+	g184.7-184.9, g184.10-184.13, g184.13-185.7, g185.8-186.5,
+	g186.12-187.2, g187.9-187.11 and g187.14-188.1.</p>
 </div>
 
 
-<div>
+<div n="missing-a-o">
 <head>Paragraphs missing in A and O (no variants)</head>
-
-<p>Some paragraphs are missing both in MS A (first or second hand) and in MS O.
-	For them I am simply reporting the text of Garufi or Bonetti (i.e. Garufi/Arndt),
-	without any 'app' elements. These paragraphs are:
-	g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29, g87.30-88.28, 
-	.29-90.15, g90.16-90.20, g90.21-92.5, g92.6-92.7, g92.8-92.9, g179.10-179.11, 
-	6.10-186.11, g187.3-187.4, g199.13-199.15, g206.n4-206.n5, g215.n14-216.n10.</p>
+<p>Some paragraphs are missing both in MS A (first or second hand) and in
+	MS O. For them I am simply reporting the text of Garufi or Bonetti
+	(i.e. Garufi/Arndt), without any 'app' elements. These paragraphs are:
+	g74.21-74.21, g85.20-85.30, g85.31-86.12, g86.13-86.25, g86.26-87.29,
+	g87.30-88.28, .29-90.15, g90.16-90.20, g90.21-92.5, g92.6-92.7,
+	g92.8-92.9, g179.10-179.11, 6.10-186.11, g187.3-187.4, g199.13-199.15,
+	g206.n4-206.n5, g215.n14-216.n10.</p>
 </div>
 
-<div>
+
+<div n="collation-exemplars">
 <head>Collation exemplars</head>
-
 <p>Garufi was the collation exemplar for the first part of the work,
-	from the incipit through paragraph g163.1-163.5. 
-</p>
-
+	from the incipit through paragraph g163.1-163.5.</p>
 <p>Bonetti was the collation exemplar for the part of the text
-	it includes, i.e. from paragraph g163.6-163.7 to the end of the text.
-	The legibility of the print in Bonetti's edition is better
-	than in Garufi's, so it lends itself to less error-prone OCR:
-	this is the reason why I decided to use Bonetti
-	as collation exemplar for this part of the work.</p>
-
-<p>In the part of the text collated against Bonetti
-	(g163.1-163.5 to the end), whenever I chose the reading of a MS against
-	that of Bonetti, and the text of Garufi diverged from that fo Bonetti,
-	I recorded both Garufi's and Bonetti's readings in the 'app' element.</p>
-
+	it includes, i.e. from paragraph g163.6-163.7 to the end
+	of the text. The legibility of the print in Bonetti's edition
+	is better than in Garufi's, so it lends itself to less
+	error-prone OCR: this is the reason why I decided to use Bonetti
+	as collation exemplar whenever possible.</p>
+<p>In the part of the text collated against Bonetti (g163.1-163.5 to the end),
+	whenever I chose the reading of a MS against that of Bonetti,
+	and the text of Garufi diverged from that fo Bonetti, I recorded
+	both Garufi's and Bonetti's readings in the 'app' element.</p>
 </div>
 
 
-<div>
-<head>Parts for collation</head>
-<p>I transcribed A and O in TEI XML
-using Garufi or Bonetti as noted above,
-then performed an automatic collation of the transcriptions using
-juxtacommons.org and edited the XML output files file manually.
-I divided the text in four parts for collation:
+<div n="collation-procedure">
+<head>Collation procedure</head>
+<p>I transcribed A and O in TEI XML starting from the OCR of Garufi
+	or Bonetti as noted above and editing it to make the transcription
+	adhere to the text of the manuscript, then performed an automatic
+	collation of the OCR/transcription files using
+	<ref type="url" target="http://juxtacommons.org/">Juxta Commons</ref>	
+	and edited the XML output files file manually.
+       	I divided the text in four parts for collation:</p>
 <list>
-	<item>for part '1' (incipit to g163.1-163.5), I collated Garufi against A;</item>
-	<item>for part '2-alfa' (g163.6-163.7 through g167.4-168.4), Bonetti against A;</item>
-	<item>for part '2-bravo' (g168.5-168.7 through g185.8-186.5), I collated Bonetti, A and O;</item>
-	<item>for part '2-charlie' (g186.6-186.7 to the end), Bonetti against A.</item>
+	<item>for part '1' (incipit to g163.1-163.5),
+		I collated Garufi against A;</item>
+	<item>for part '2-alfa' (g163.6-163.7 through g167.4-168.4),
+		Bonetti against A;</item>
+	<item>for part '2-bravo' (g168.5-168.7 through g185.8-186.5),
+		I collated Bonetti, A and O;</item>
+	<item>for part '2-charlie' (g186.6-186.7 to the end),
+		Bonetti against A.</item>
 </list>
-</p>
 </div>
 
-<div>
-<head>Transpositions</head>
-<p>In part 2-bravo, the order of the paragraphs
-diverges between Garufi, Bonetti and MS A, do to a number of large transpositions
-of those paragraphs in the manuscripts.
-I chose the order of Bonetti.</p>
-</div>
 
 <div>
 <head>GitHub</head>
-<p>The source code of this edition, including transcriptions of the
-witnesses and Python software, is in the project GitHub repository
-https://github.com/paolomonella/romualdus.</p>
+<p>The source code of this edition, including OCR/transcription files,
+	working files and Python software, is in the project GitHub repository
+	<ref type="url" target="https://github.com/paolomonella/romualdus">
+		GitHub repository</ref>.</p>
 </div>
 
-<div>
+
+<div n="transpositions">
+<head>Transpositions</head>
+<p>In part 2-bravo, the order of the paragraphs diverges between Garufi,
+	Bonetti and MS A, do to a number of large transpositions
+	of those paragraphs in the manuscripts. In this edition,
+	I adhered to the paragraph order in Bonetti.</p>
+</div>
+
+
+<div n="layers">
 <head>Transcription layers</head>
-<p>I transcribed all witnesses
-at the 'alphabetic layer', but I provided a sample
-'graphematic layer' transcription of the first paragraphs of MSS A, B and C,
-available in the edition GitHub repository.
-See Monella 2018 (DOI: 10.6092/issn.2532-8816/7286) for a definition of
-those layers of representation of the text in primary sources.
-For paragraphs from g116.6-118.8 through g163.1-163.5 I only transcribed major variants.</p>
+<p>I transcribed all witnesses at the 'alphabetic layer' (this also applies
+	to my editing of the OCR files), but I provided a sample
+	'graphematic layer' transcription of the first paragraphs of
+	MSS A, B and C, available in the GitHub repository of the edition.
+	See Monella 2018a and 2018b for a definition of
+	those layers of representation of the text in primary sources.
+	For paragraphs from g116.6-118.8 through g163.1-163.5
+	I only transcribed major variants.</p>
 </div>
 
-<div>
+
+<div n="normalization">
 <head>Normalization</head>
-<p>The OCR files of print editions
-and the transcriptions of manuscripts have been marked
-according to module '11 Representation of Primary Sources' of TEI P5.
-Provided that quite surprisingly, there are yet no collation tools that compare
-XML trees, i.e. that compare TEI transcriptions taking the markup into account,
-I had to normalize the TEI transcriptions to prepare them for collation with
-juxtacommons.org. I normalized transcriptions through custom Python scripts, which:
+<p>The OCR files of print editions and the transcriptions of manuscripts
+	have been marked according to module 
+	<ref type="url"
+		target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html">
+		11 Representation of Primary Sources</ref>
+	of TEI P5.</p>
+<p>Quite surprisingly, there are yet no collation tools that compare XML trees,
+	i.e. that compare TEI XML transcriptions also taking markup into account
+	(<ref type="url"
+		target="http://variance-viewer.informatik.uni-wuerzburg.de/Variance-Viewer/">
+		Variance Viewer</ref>
+	is a partial exception, as it only takes @rend attributes into account;
+	see review in Roeder 2020). Therefore, I had to 'normalize' the
+	TEI transcriptions to prepare them for collation with juxtacommons.org.
+	I 'normalized' transcriptions (i.e. removed transcribed information from them)
+	through custom Python scripts, which:</p>
 <list>
 	<item>extracted an 'alphabetic' transcription from those
 		paragraphs that had been transcribed 
-		he graphematic layer;</item>
+		at the graphematic layer;</item>
 	<item>deleted the following tags with their textual content:
-		'interp', 'abbr', 'surplus', 'note', 'milestone'.</item>
+		'abbr', 'interp', 'milestone', 'note', 'surplus';</item>
 	<item>normalized numerals, e.g. 'xiiii' from MS A to 'XIV';</item>
-	<item>introduced standard text for gaps in the MSS,
-		e.g. {Gap in the MS: 1 illegible word};</item>
+	<item>replaced gaps in the MSS with placeholder text, e.g.
+		{Gap in the MS: 1 illegible word};</item>
 	<item>chose between 'sic'/'corr', 'reg'/'orig' elements;</item>
 	<item>in particular, regularized 'j' to 'i' and 'v' to 'u'
 		in all print and handwritten sources;</item>
 	<item>capitalized proper nouns and words at the beginning
-		of sentences also for MS text
-		(e.g. 'pompeius' from MS A to 'Pompeius');</item>
+		of sentences (e.g. 'pompeius' from MS A to 'Pompeius');</item>
 	<item>stripped the markup for the following TEI tags
 		(keeping their textual content, if any):
-		'rs', 'hi', 'w', 'choice', 'orig', 'reg', 'num',
-		'subst', 'add', 'del', 'expan', 'sic', 'seg',
-		'lb', 'pb', 'quote', 'title', 'said', 'soCalled',
-		'surplus', 'supplied', 'gap', 'l';</item>
+		'add', 'choice', 'del', 'expan', 'gap', 'hi', 'l',
+		'lb', 'num', 'orig', 'pb', 'quote', 'reg', 's', 'said',
+		'seg', 'sic', 'soCalled', 'subst', 'supplied', 'surplus',
+		'title', 'w';</item>
 	<item>replaced XML angle brackets with [square brackets]
 		for 'p' start- and end-tags, thus producing an output
-		such as [p xml:id="g3.2-3.6"]: another script then
-		restored the angle brackets in the output
+		such as [p xml:id="g3.2-3.6"]: another script later
+		restored the angle brackets in the files output
 		of the juxtacommons.org collation;</item>
 </list>
-</p>
 </div>
 
-<div>
+
+<div n="variants">
 <head>Variant types and subtypes</head>
-<p>I added a @type attribute
-to all 'app' elements, and a @subtype attribute to some.
-Custom Python scripts proposed the values of those attributes,
-then I reviewed them all manually.</p>
+<p>I added a @type attribute to all 'app' elements, and a @subtype
+	attribute to many: see paragraph 'Statistics' below in this
+	introduction for the numbers.
+	Custom Python scripts proposed the values of those attributes,
+	then I reviewed them all manually.</p>
 </div>
 
-<div>
+
+<div n="variant-types">
 <head>List of variant types</head>
-<p>Attribute @type
-of 'app' can take one of the following values:
+<p>Attribute @type of 'app' can take one of the following values:</p>
 <list>
 	<item>'substantive'</item>
 	<item>'orthographic'</item>
+	<item>'transposition'</item>
 	<item>'punctuation'</item>
 	<item>'gap-in-ms'</item>
 	<item>'illegible-in-ms'</item>
-	<item>'transposition'</item>
 </list>
-</p>
 </div>
 
-<div>
-<head>Variant subtypes</head>
-<p>In combination with each @type,
-@subtype can take one of the following values:
+<div n="substantive-variant-subtypes">
+<head>Substantive variant subtypes</head>
+<p>In combination with @type='substantive', attribute @subtype,
+	if present, can take one of the following values:</p>
 <list>
-	<item>In combination with @type='substantive',
-		@subtype (if present) can be:
-		'missing-in-print', 'num-num', 'missing-in-ms',
-		'transposition', 'fs';</item>
-	<item>In combination with @type='orthographic':
-		'y' (e.g. martirio/martyrio), 'v', 'j', 'ae',
-		'h' (e.g. hodie/odie), 'n-pn', 'hi-y',
-		'num-word' (e.g. III/tria), 'case',
-		'tc' (e.g. iustitia/iusticia),
-		'double' (e.g.  successit/succesit),
-		'ph', 'cq', 'mpn', 'tz', 'cz', 'ck',
-		'word-segmentation', 'ch', 
-		', 'dm-mm', 'mn', 'ncx';</item>
-	<item>In combination with @type="punctuation":
-		"change-punctuation", "add-punctuation",
-		"remove-punctuation".</item>
+	<item>'fs' (confusion between 'f' and 's'),</item>
+	<item>'missing-in-ms' (integration),</item>
+	<item>'missing-in-print' (expunction),</item>
+	<item>'num-num' (two different numerals),</item>
 </list>
-</p>
+<p>Plus the additional more generic @subtypes:</p>
+<list>
+	<item>'3elements3variants_bonetti_and_garufi'
+		(there are three variants in this 'app',
+		however two of them are Bonetti's and
+		Garufi's readings)</item>
+	<item>'3elements3variants'
+		(three variants in this app, that may
+		have different nature if compared to
+		one another)</item>
+</list>
 </div>
 
-<div>
+
+<div n="orthographic-variant-subtypes">
+<head>Orthographic variant subtypes</head>
+<p>In combination with @type='orthographic', attribute @subtype,
+	if present, can take one of the following values
+	(I shall provide an example for each subtype):</p>
+<list>
+	<item>'ae' (Roma/Romae)</item>
+	<item>'case' (Domini/domini, but see paragraph
+		'Case variants' below) </item>
+	<item>'ch' (nihil/nichil)</item>
+	<item>'ck' (carissime/karissime)</item>
+	<item>'cq' (secuti/sequti)</item>
+	<item>'cz' (Barcilonem/Barzilonem)</item>
+	<item>'dm-mm' (admonet/ammonet)</item>
+	<item>'double' (successit/succesit),</item>
+	<item>'h' (hodie/odie),</item>
+	<item>'hi-y' (historiis/ystoriis)</item>
+	<item>'j' (jam/iam, never actually occurring
+		in the XML file because I normalized 'j'
+		to 'i' before collation)</item>
+	<item>'mn' (consumenda/comsumenda)</item>
+	<item>'mpn' (contemnendo/contempnendo)</item>
+	<item>'ncx' (unxit/uncxit)</item>
+	<item>'num-word' (III/tria),</item>
+	<item>'pb' (obtinuit/optinuit)</item>
+	<item>'ph' (prephato/prefato)</item>
+	<item>'tc' (iustitia/iusticia),</item>
+	<item>'tz' (Brizie/Britie)</item>
+	<item>'v' (vel/uel, never actually occurring
+		in the XML file because I normalized 'v'
+		to 'u' before collation)</item>
+	<item>'word-segmentation' (idest/id est)</item>
+	<item>'y' (martirio/martyrio);</item>
+</list>
+</div>
+
+
+<div n="punctuation-variant-subtypes">
+<head>Punctuation variant subtypes</head>
+<p>In combination with @type='punctuation', attribute @subtype,
+	if present, can take one of the following values
+	(see paragraph 'Punctuation variants' below for
+	further details):</p>
+<list>
+	<item>'add-punctuation' (no punctuation in the
+		print edition used as collation exemplar:
+		I add a punctuation character),</item>
+	<item>'change-punctuation' (I change the punctuation
+		of the print edition),</item>
+	<item>'remove-punctuation' (I remove a punctuation
+		character of the print edition).</item>
+</list>
+</div>
+
+
+<div n="many-variant-subtypes">
 <head>Variants for which many subtypes apply</head>
-<p>For some variants
-(i.e. for some 'app' elements), it is impossible
-to determine one subtype, either because two subtypes apply
-(e.g., for Symmachus/Simachus 'y' and 'double')
-or because there are three readings with different types and/or subtypes
-(e.g.  Pisa, Bonetti / Pysas, MS A / Pisas, MS O: Pisa/Pysas is 
-ubstantive' variant, but Pysas/Pisas is an 'orthographic'/'y' variant).
-I took a pragmatic (and certainly debatable) approach to this issue,
-as I chose what I thought was the most relevant type/subtype:
-for example, I chose subtype 'y' for Symmachus/Simachus
-and type 'substantive' for Pisa/Pysas/Pisas.</p>
+<p>For some variants (i.e. for some 'app' elements), it is impossible
+	to determine one subtype</p>
+<list>
+	<item>either because two subtypes apply: e.g., for
+		Symmachus/Simachus, both 'y' and 'double'
+		subtypes apply</item>
+	<item>or because there are three readings with different
+		types and/or subtypes: e.g.
+		Pisa (in Bonetti) / Pysas (in MS A) / Pisas (in MS O).
+		In this case, Pisa/Pysas is a 'substantive' variant
+		(change in case and number), but Pysas/Pisas
+		is an 'orthographic'/'y' variant).</item>
+</list>
+<p>As far as the fist issue is concerned,
+	I took the oversimplifying (and certainly questionable)
+	approach of choosing what I thought was the most relevant
+	type/subtype: for example, I chose subtype 'y' for
+	Symmachus/Simachus and type 'substantive'
+	for Pisa/Pysas/Pisas.</p>
+<p>As to the second issue, in fact a 'variant' is such only
+	in relationship with a specific other reading (in the TEI
+	guidelines, in relationship with the lemma). Therefore the
+	@type and @subtype attributes should rather be attributed
+	to each 'rdg' element, not to the whole 'app' element'.</p>
+<p>However, since almost all 'app's only include two readings,
+	for practical reasons I decided to dive @type and @subtype
+	to the whole 'app' and add
+	@subtype="3elements3variants" or
+	@subtype="3elements3variants_bonetti_and_garufi"
+	to those 'app's to signal that we are in a peculiar case.</p>
 </div>
 
-<div>
+
+<div n="substantive-orthographic">
 <head>Distinction between substantive and orthographic</head>
-<p>Also, the line
-between 'substantive' and 'orthographic' variants is thin.
-This is particularly evident for proper nouns, for which the change of one
-letter can be considered meaningful. This is why for proper nouns I tended
-to choose @type='substantive', except for the most common orthographic
-subtypes, such as 'double' (Callixtus/Calixtus), 'y' (Babyloniam/Babiloniam)
-or 'h' (Hieronymo/Ieronimo).</p>
+<p>Also, the line between 'substantive' and 'orthographic' variants
+	is thin, somewhat arbitrary and conceptually complex.
+	This is particularly evident for proper nouns, for which the
+	change or reduplication of one letter can be considered meaningful.
+	This is why for proper nouns I tended to choose @type='substantive'
+	except for the most common orthographic subtypes, such as 'double'
+	(Callixtus/Calixtus), 'y' (Babyloniam/Babiloniam)
+	or 'h' (Hieronymo/Ieronimo).</p>
 </div>
 
-<div>
+
+<div n="case-variants">
 <head>Case variants</head>
 <p>Some 'app' elements mark a distinction between
-the lowercase and capitalized spelling of the same word:
-these elements have @type="orthographic" with @subtype="case".
-For example, 'Cainan' (my lemma) vs cainan (reading of Garufi and of MS A).
-MSS will always have the lowercase spelling by convention,
-because capitalization does not have graphematic value in them.
-Those 'app' elements mean that I capitalize a word that was in lowercase
-in the print edition, or vice versa.</p>
+	the lowercase and capitalized spelling of the same
+	word: these elements have @type="orthographic" with
+	@subtype="case". For example, 'Cainan' (my lemma) vs 'cainan'
+	(reading of Garufi and in my TEI XML transcription of MS A).</p>
+<p>In my transcriptions MSS will always have the lowercase spelling
+	by convention, because capitalization does not have graphematic
+	value in them.</p>
+<p>Therefore, those 'app' elements simply signal that I capitalize a word
+	that was in lowercase in the print edition, or vice versa.</p>
 </div>
 
-<div>
+
+<div n="punctuation-variants">
 <head>Punctuation variants</head>
 <p>The case of punctuation is similar to the preceding one.
 I chose not to transcribe the MSS punctuation, so all 'app'
