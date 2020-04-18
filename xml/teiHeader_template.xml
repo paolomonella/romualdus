@@ -145,20 +145,17 @@
 
 <head>Introduction</head>
 
-<div>
-<head>Aim</head>
-
+<div n="aim">
+<head>Aim of this edition</head>
 <p>The present edition aims at providing a better text
 	of the <title>Chronicon</title> by Romualdus Salernitanus
 	through a new collation of the text of the print editions
 	by Garufi 1914 and Bonetti 2001 against A and O,
-	the main witnesses of the 'short version' of the work.
-</p>
-
+	the main witnesses of the 'short version' of the work.</p>
 </div>
 
 
-<div>
+<div n="chronicon">
 <head>The Chronicon</head>
 <p>The <title>Chronicon</title> is a universal history, believed to have been
 	composed by the Archbishop of Salerno Romualdus II Guarna shortly before
@@ -174,66 +171,197 @@
 	William II of Sicily to the negotiations in Venice.</p>
 </div>
 
-<div>
-<head>Structure of the work</head>
-<p>The <title>Chronicon</title> initially follows ancient Jewish, Greek and and Roman
-	history, then European (continental and Byzantine) events.
-	It then includes a digression on the the story of the Lombards and the Franks
-	until Louis the Pious, from paragraph g108.24-109.5 i.e. page 108 of Garufi's edition,
-	line 24, to par. g159.9-159.25. From this point on, the scope of the narrative
-	returns to be wide, continental, but it progressively focusses on Southern
-	Italy, until it substantially becomes a chronicle of its Norman conquest and then
-	of the Kingdom of Sicily, ending with the detailed account of the Peace of Venice
-	(from par. v-b298a of the present edition to the end of the work).</p>
+
+<div n="manuscripts">
+<head>Manuscripts</head>
+<p>The three oldest witnesses of the work are:
+<list>
+	<item>A: Vaticanus Latinus 3973, of the late XII century; available in
+		<ref type="url" target="https://digi.vatlib.it/mss/detail/Vat.lat.3973">
+			https://digi.vatlib.it/mss/detail/Vat.lat.3973</ref>;
+		III manifest in
+		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json">
+			https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json</ref>;
+	</item>
+	<item>B: Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22,
+		of the XIV century; available in
+		<ref type="url" target="http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22">
+			http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22</ref>;
+		III manifest in
+		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.22/manifest.json">
+			https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.22/manifest.json</ref>;
+	</item>
+	<item>C: Paris, Bibliothèque Nationale, Latinus 4933,
+		of the late XII-early XIII century; available in
+		<ref type="url" target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p">
+			https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p</ref>;
+		<ref type="IIIF" target="https://gallica.bnf.fr/iiif/ark:/12148/cc63823p/manifest.json">
+			https://gallica.bnf.fr/iiif/ark:/12148/cc63823p/manifest.json</ref>.
+	</item>
+</list>
+</p>
+<p>Another interesting witness is
+<list>
+	<item>O: a fragment of MS Ottobonianus Latinus 2940,
+		(XIV century), namely folios 16r-18v, available in
+		<ref type="url" target="https://digi.vatlib.it/mss/detail/Ott.lat.2940">
+			https://digi.vatlib.it/mss/detail/Ott.lat.2940</ref>;
+		III manifest in
+		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json">
+			https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json</ref>.
+	</item>
+</list>
+</p>
+<p>The specific interest of O lies in the fact that, as argued by
+	Schwarz 1978, 139 n. 119, it might have been copied from a lost MS,
+	older than A (also see Matthews 1981, 250 n. 1; Zabbia 2004, 387,
+	endnotes 26, 27 and 29; Zabbia 2006, 62.</p>
+<p>The siglum used by Garufi 1914, Schwarz 1978 and other scholars for
+	this manuscript is 'Aa'. I am modifying it to 'O' for
+	consistency with the other sigla (one letter only, not
+	including character 'A' already used for Vat. Lat. 3973),
+	thus facilitating the processing of XML files.</p>
+<p>A detailed description and discussion of the manuscript tradition can be found in
+	Garufi 1914, XXXI-XXXVI; Hoffmann 1967, 156-165 (mostly on MS A);
+	Matthew 1981, 241-242; Zabbia 2004, 385-388;
+	Zabbia 2006 and Zabbia 2010, 24-25.</p>
+</div>
+
+
+<div n="print">
+<head>Print editions and translations</head>
+<p>The two most recent print editions of the <title>Chronicon</title> are
+	Garufi 1914 (henceforth "Garufi"; see Erdmann 1930 for a review)
+	and Bonetti 2001 (henceforth "Bonetti"). The latter starts with
+	paragraph g163.6-163.7 and includes an Italian translation.</p>
+<p>Bonetti uses Garufi as "testo base" and Arndt 1866 as "elemento
+	integrativo" (see 'Nota al testo', Bonetti, 56), so, although
+	the book has been published in 2001, its Latin text is taken
+	from editions no longer covered by copright.</p>
+<p>Previously, the <title>Chronicon</title> had been published by Muratori 1725;
+	Del Re 1875 (from paragraph g212.1-212.4, with Italian
+	translation); Arndt 1866 (from g163.11-164.9).
+	Schmale 1986, 308-371 publishes the section on the Peace of
+	Venice, based on Garufi's text, with a German translation.
+	Carucci 1996 is an Italian translation of selected passages
+	of the same section.
+	Loud 2012, 250-268 provides an English translation covering
+	years 1125-1154.
+	See Garufi, XXVIII-XXXI for previous print editions and
+	<ref type="url" target="http://www.geschichtsquellen.de/werk/4214">
+		http://www.geschichtsquellen.de/werk/4214</ref>
+	for other translations and general bibliography
+	on the <title>Chronicon</title>.</p>
+<p>Bibliographical details on the editions by Bonetti and Garufi
+	are in the 'sourceDesc' element of this TEI XML file;
+	on the other works cited, in the
+	bibliography at the end of this introduction.</p>
 </div>
 
 
 <div>
-<head>Sources</head>
-<p>Garufi 1914 (henceforth "Garufi") has a very informative separate apparatus of footnotes
-	providing the sources of each passage of the work. Detailed information and critical
-	discussion on the sources of Romualdus and his relationship with Norman
-	historiography are in Arndt 1966 (running footnotes); Garufi, XXV-XXVIII
-	(introduction); Hoffmann 1967, 165-170; Matthew 1981, 243-249; 258-267;
-	Zabbia 2002; Zabbia 2004, 380-382 and 392-394;
-	Zabbia 2010, 22 and 25-60.
-</p>
+<head>Paragraph identifiers</head>
+<p>Paragraphs ('p' elements in the TEI XML source) have been labelled
+	with @xml:id attributes based on Garufi. For instance, paragraph
+	'g163.1-163.5' goes from page 163, line 1 to page 163, line 5 of
+	the Garufi edition. In some cases, Garufi's paragraphs have been
+	further broken into smaller 'p' elements to facilitate collation.
+	In these cases, the @xml:id still reflects the extent of the
+	textual portion in the Garufi edition.</p>
+</div>
 
+
+<div>
+<head>Sigla</head>
+<p>As noted in the 'sourceDesc' element,
+	in the @wit attributes of 'lem' and 'rdg'
+	elements I used abbreviations 'g' for Garufi, 'b' for Bonetti,
+	'a' for MS A (first hand), 'a2' for the second hand of MS A
+	(probably XVII century) and 'o' for the fragment of MS O.</p>
+</div>
+
+
+<div>
+<head>Structure of the work</head>
 <list>
-	<item>The main source for the first part of the work (the universal history)
-		is Bede, <title>De sex aetatibus mundi</title>,
-		integrated mostly with
+	<item>Universal history:
+		the <title>Chronicon</title> initially follows ancient Jewish,
+		Greek and and Roman history, then European (continental and Byzantine)
+		events.</item>
+	<item>Digression on Lombards and Franks:
+		from paragraph g108.24-109.5 (i.e. page 108 of Garufi's edition, line 24)
+		to par. g159.9-159.25, the text includes a long digression on the the
+		history of the Lombards and the Franks until Louis the Pious.</item>
+	<item>Southern Italian section:
+		Then, the scope of the narrative returns to be wide, continental, but it
+		progressively focusses on Southern Italy, until it substantially becomes
+		a chronicle of the Norman conquest of this geographical area.
+		The initial part of this section (roughly years 999-1125)
+		is centered on peninsular Southern Italy
+		(see Zabbia 2010, 25-42).
+	</item>
+	<item>Sicilian section:
+		the second part of the 'Norman' section (from year 1125
+		to the Peace of Venice) is centered on Palermo and Sicily
+		(see Zabbia 2010, 42-60.</item>
+	<item>Peace of Venice:
+		the work, as mentioned above, ends with the detailed account
+		of the Peace of Venice (from par. v-b298a of the present edition
+		to the end of the work).</item>
+</list>
+</div>
+
+<div>
+<head>Sources</head>
+<p>Garufi 1914 has a very informative separate apparatus
+	of footnotes identifying the sources of each passage of the work.
+	Detailed information and critical discussion on the sources
+	of Romualdus and his relationship with Norman historiography are in
+	Arndt 1866 (running footnotes); Garufi, XXV-XXVIII (introduction);
+	Hoffmann 1967, 165-170; Matthew 1981, 243-249; 258-267;
+	Zabbia 2002; Zabbia 2004, 380-382 and 392-394;
+	Zabbia 2010, 22 and 25-60.</p>
+<list>
+	<item>The main source for the first part of the work
+		(the universal history) is
+		Beda, <title>De sex aetatibus mundi</title>,
+		integrated mostly with the Bible;
 		Eutropius, <title>Breviarium ab urbe condita</title>;
 		Orosius, <title>Historia adversum paganos</title>; 
-		Paul the Deacon, <title>Historia Romana</title>;
-		Jerome's <title>Chronicon</title> and <title>Commentary on Daniel</title>;
+		Paulus Diaconus, <title>Historia Romana</title>;
+		Hieronymus (Saint Jerome), <title>Chronicon</title>
+		and <title>Commentary on Daniel</title>;
 		the <title>Liber Pontificalis</title> and
-		Bonizo of Sutri (see Matthew 1981, 245 n. 2);
+		Bonizo of Sutri (see Matthew 1981, 245 n. 2).
 	</item>
 	<item>For the digression on Franks and Lombards, the main sources are
-		Paul the Deacon, <title>Historia Langobardorum</title>
-		with the related <title>Continuatio Casinensis</title>;
-		Gregory of Tours, <title>Historia Francorum</title>;
-		Einhard, <title>Vita Karoli</title>;
-		Aimoin of Fleury and his continuation
-		(see Matthew 1981, 245 n. 3);
+		Paulus Diaconus, <title>Historia Langobardorum</title>
+		possibly with the related <title>Continuatio Casinensis</title>;
+		Gregorius Turonensis (Gregory of Tours),
+		<title>Historia Francorum</title>;
+		Einhardus (Einhard), <title>Vita Karoli</title>;
+		Aimoinus Floriacensis (Aimoin of Fleury),
+		<title>Historia Francorum</title>
+		and his continuation (see Matthew 1981, 245 n. 3).
 	</item>
-	<item>The question of his sources for the Norman period (roughly after 999)
+	<item>The question of the sources of the <title>Chronicon</title>
+		for the Norman period (roughly after 999)
 		is intertwined with the authorship issue, on which see
-		next paragraph and the bibliography cited above,
-		but a key source for this period are the <title>Annales</title> by
-		Lupus Protospatharius.</item>
+		the next paragraphs and the bibliography cited above on sources.
+		Anyway, a key source for this period are the <title>Annales</title>
+		by Lupus Protospatharius.</item>
 </list>
 </div>
 
 <div>
 <head>Authorship: textual evidence</head>
-<p>It is not the task of this introduction to examine in depth the question of the
-	authorship of the <title>Chronicon</title>. However, I will shortly summarize the issue.
-	The attribution of the work to Romualdus Salernitanus is based on two textual
-	notes in the handwritten tradition:
+<p>It is not the task of this introduction to examine in depth the question
+	of the authorship of the <title>Chronicon</title>. However, I will
+	shortly summarize the issue. The attribution of the work to Romualdus
+	Salernitanus originates from two textual notes in the handwritten tradition:
 <list>
-	<item>a sentence in manuscript C (Paris, Bibliothèque Nationale, Latinus 4933),
+	<item>Note A:
+		a sentence in manuscript C (Paris, Bibliothèque Nationale, Latinus 4933),
 		not present in the other main manuscripts,
 		probably a marginal note that later entered the text:
 		"Ab hoc loco adiunctum est huic chronice per Romualdum secundum
@@ -244,7 +372,7 @@
 		Garufi reports the note in apparatus (see Matthew 1981, 255-256
 		and Zabbia 2004, 382, 388 and footnote 5);
 	</item>
-	<item>
+	<item>Note B:
 		a second sentence in par. g293.39-294.2: "Hec autem omnia, que prediximus,
 		ita gesta fuisse, nulli dubitationis uel incredulitatis scrupulum moueant,
 		quia Romoaldus secundus Salernitanus archiepiscopus, qui uidit et interfuit,
@@ -268,7 +396,7 @@
 	later, "a writer from Salerno decided to set down the events of the
 	reigns to Roger II and the two Williams in 1177",
 	while only the report of the Peace of Venice "is taken from
-	the written, eitiwness, and true account of Archbishop Romuald"
+	the written, eyewitness, and true account of Archbishop Romuald"
 	(Matthew 1981, 269-270). Vitolo 2007, 549-551 follows Matthew, and stresses
 	the lack of attention to the famous medicine school of Salerno
 	(except for a short note in g189.2-189.5).
@@ -325,113 +453,6 @@
 	by Zabbia until 1125, then a scribe could reasonably write in the note in
 	g213.1-213.8 that only from that point on ("ab hoc loco") Romualdus added up
 	new information to the <title>Chronicon</title>.</p>
-</div>
-
-<div>
-<head>Manuscripts</head>
-<p>The three oldest witnesses of the work are:
-<list>
-	<item>A: Vaticanus Latinus 3973, of the late XII century, available in
-		<ref type="url" target="https://digi.vatlib.it/mss/detail/Vat.lat.3973">
-			https://digi.vatlib.it/mss/detail/Vat.lat.3973</ref>;
-		III manifest in
-		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json">
-			https://digi.vatlib.it/iiif/MSS_Vat.lat.3973/manifest.json</ref>;
-	</item>
-	<item>B: Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22,
-		of the XIV century, available in
-		<ref type="url" target="http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22">
-			http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22</ref>;
-		III manifest in
-		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.22/manifest.json">
-			https://digi.vatlib.it/iiif/MSS_Arch.Cap.S.Pietro.E.22/manifest.json</ref>;
-	</item>
-	<item>C: Paris, Bibliothèque Nationale, Latinus 4933,
-		of the late XII-early XIII century, available in
-		<ref type="url" target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p">
-			https://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p</ref>.</item>
-</list>
-</p>
-
-<p>Another important witness is
-<list>
-	<item>O: a fragment of MS Ottobonianus Latinus 2940,
-		(XIV century), folios 16r-18v, available in
-		<ref type="url" target="https://digi.vatlib.it/mss/detail/Ott.lat.2940">
-			https://digi.vatlib.it/mss/detail/Ott.lat.2940</ref>;
-		III manifest in
-		<ref type="IIIF" target="https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json">
-			https://digi.vatlib.it/iiif/MSS_Ott.lat.2940/manifest.json</ref>.
-	</item>
-</list>
-</p>
-
-<p>The importance of O lies in the fact that, as argued by Schwartz 1978, 139 n. 119,
-	it might have been copied from a lost MS, older than A.
-	Also see Matthews 1981, 250 n. 1; Zabbia 2004, 387, endnotes 26, 27 and 29;
-	Zabbia 2006, 62.</p>
-
-<p>The siglum used by Garufi, Schwartz and other scholars for this manuscript
-	is 'Aa'. I am modifying it to 'O' for consistency
-	with the other sigla (one letter only, not including
-	character 'A' already used for Vat. Lat. 3973), thus
-	facilitating the processing of XML files.</p>
-
-<p>A detailed description and discussion of the manuscript tradition can be found in
-	Garufi, XXXI-XXXVI; Hoffmann 1967, 156-165 (mostly on MS A);
-	Matthew 1981, 241-242; Zabbia 2004, 385-388;
-	Zabbia 2006 and Zabbia 2010, 24-25</p>
-
-</div>
-
-
-<div>
-<head>Print editions and translations</head>
-<p>The two most recent print editions of the <title>Chronicon</title> are Garufi
-	(for which see the review in Erdmann 1930) and Bonetti 2001
-	(henceforth "Bonetti"). The latter starts with paragraph g163.6-163.7
-	and includes and Italian translation.</p>
-	
-<p>Bonetti uses Garufi as "testo base" and Arndt 1866 as "elemento integrativo"
-	(see 'Nota al testo', Bonetti, 56).</p>
-
-<p>Previously, the work had been published by Muratori 1725;
-	Del Re 1875 (from g212.1-212.4, with Italian translation);
-	Arndt 1866 (from g163.11-164.9).
-	Schmale 1986, 308-371 published the Peace of Venice, based
-	on Garufi's text, with a German translation.
-	Carucci 1996 is an Italian translation of select passages
-	of the <title>Chronicon</title> about the Peace of Venice.
-	Loud 2012, 250-268 provides an English translation of the
-	narrative of years 1125-1154.
-	See Garufi, XXVIII-XXXI for previous print editions, and
-	http://www.geschichtsquellen.de/werk/4214
-	for other translations and general bibliography.</p>
-
-<p>Bibliographical details on the editions by Bonetti and Garufi
-	are in the 'sourceDesc' element of this TEI XML file;
-	on the other works cited, in the
-	bibliography at the end of this introduction.
-</p>
-
-</div>
-
-<div>
-<head>Paragraph identifiers</head>
-<p>Paragraphs ('p' elements in the TEI XML source) have been labelled
-with @xml:id attributes based on Garufi. For instance, paragraph
-'g163.1-163.5' goes from page 163, line 1 to page 163, line 5 of
-the Garufi edition. In some cases, Garufi's paragraphs have been
-further broken into smaller 'p' elements to facilitate collation.</p>
-</div>
-
-<div>
-<head>Sigla</head>
-<p>As noted in the 'sourceDesc' element,
-	in the @wit attributes of 'lem' and 'rdg'
-	elements I used abbreviations 'g' for Garufi, 'b' for Bonetti,
-	'a' for MS A (first hand), 'a2' for the second hand of MS A
-	(probably XVII century) and 'o' for the fragment of MS O.</p>
 </div>
 
 <div>
@@ -775,9 +796,10 @@ mostly by adopting MS A's spelling, in cases in which
 	but skips some words. In some of these passages, Garufi
 	integrates the missing words.
 	For instance, in g100.6-103.2 the <title>Chronicon</title>
-	copies Paul the Deacon Hist. 14.116 "adest Geisericus
-	cum ualidissimo suae gentis exercitu", but skips the words
-	"suae gentis", which are found in no MS of the <title>Chronicon</title>.
+	copies Paulus Diaconus, <title>Hist. Rom.</title> 14.116
+	"adest Geisericus cum ualidissimo suae gentis exercitu",
+	but skips the words "suae gentis", which are found in no MS
+	of the <title>Chronicon</title>.
 	In these cases I reject Garufi's integrations based on
 	the principle of considering the <title>Chronicon</title>
 	an autonomous text, rather than a copy of his sources.</p>
@@ -786,9 +808,9 @@ mostly by adopting MS A's spelling, in cases in which
 	the attitions differentiating the 'long' and 'short' version
 	of the <title>Chronicon</title>, raise interesting, very
 	general questions on the work of the philologist.
-	Paul the Deacon's text is 'before' Romualdus and his
-	(possible) collaborators, while that of the additions may
-	be 'after' him (or them).
+	The text of Paulus Diaconus came 'before' Romualdus and his
+	(possible) collaborators, while that of the additions
+	probably arose 'after' him (or them).
        	Where is the 'original text' that the philologist approximates?</p>
 
 <p>The 'original text', especially in cases of a complex editorial work such
