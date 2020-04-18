@@ -119,6 +119,7 @@ def recalculate_statistics(include_general=False):
 
     # Subtype="case"
     s_case = len(tree.findall('.//t:app[@subtype="%s"]' % 'case', ns))
+    insertnum(div, s_case, 's-case')
 
     # Orthographic except case
     s_orth_except_case = s_orth - s_case
