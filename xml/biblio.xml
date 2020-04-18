@@ -346,4 +346,54 @@ Fonte: http://www.mirabileweb.it/edgalluzzo_leaf.aspx?tipo=articoli&amp;id_madre
             <url>http://hdl.handle.net/2318/128183</url>
         </inproceedings>
     </entry>
+    <entry id="monella2018livelli">
+        <article>
+            <author>Monella, Paolo</author>
+            <title>Livelli di rappresentazione del testo nell'edizione del {D}e nomine di {O}rso {B}eneventano</title>
+            <journal>Umanistica Digitale</journal>
+            <year>2018</year>
+            <volume>2</volume>
+            <pages>67-91</pages>
+            <month>#may#</month>
+            <doi>10.6092/issn.2532-8816/7286</doi>
+            <issn>2532-8816</issn>
+            <keywords>DH, Graphematics, rank3</keywords>
+            <language>Italian</language>
+            <url>https://umanisticadigitale.unibo.it/article/view/7286</url>
+        </article>
+    </entry>
+    <entry id="monella2018sustainable">
+        <inproceedings>
+            <author>Monella, Paolo</author>
+            <title>A sustainable work flow for a multi-layer edition of the {C}hronicon by {R}omualdus {S}alernitanus</title>
+            <booktitle>AIUCD2018 - Book of Abstracts</booktitle>
+            <year>2018</year>
+            <editor>Spampinato, Daria</editor>
+            <series>AMS Acta</series>
+            <pages>21--24</pages>
+            <month>#sep#</month>
+            <organization>AIUCD</organization>
+            <publisher>Alma DL UniBo</publisher>
+            <doi>10.6092/unibo/amsacta/5997</doi>
+            <isbn>9788894253528</isbn>
+            <issn>2038-7954</issn>
+            <keywords>DH,Graphematics</keywords>
+            <language>English</language>
+            <location>Bologna</location>
+            <url>http://amsacta.unibo.it/5997/</url>
+        </inproceedings>
+    </entry>
+    <entry id="roeder2020review">
+        <article>
+            <author>Roeder, Torsten</author>
+            <title>Review of 'Juxta Web Service, LERA, and Variance Viewer. Web based collation tools for TEI'</title>
+            <journal>RIDE</journal>
+            <year>2020</year>
+            <volume>11</volume>
+            <doi>10.18716/ride.a.11.5</doi>
+            <keywords>Collation</keywords>
+            <language>English</language>
+            <url>https://ride.i-d-e.de/issues/issue-11/web-based-collation-tools/</url>
+        </article>
+    </entry>
 </file>
