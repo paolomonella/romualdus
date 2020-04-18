@@ -602,10 +602,10 @@
 	to my editing of the OCR files), but I provided a sample
 	'graphematic layer' transcription of the first paragraphs of
 	MSS A, B and C, available in the GitHub repository of the edition.
-	See Monella 2018a and 2018b for a definition of
-	those layers of representation of the text in primary sources.
-	For paragraphs from g116.6-118.8 through g163.1-163.5
-	I only transcribed major variants.</p>
+	See Monella 2018 (Livelli...) and Monella 2018 (A Sustainable...)
+	for a definition of those layers of representation of the text
+	in primary sources. For paragraphs from g116.6-118.8 through
+	g163.1-163.5 I only transcribed major variants.</p>
 </div>
 
 
@@ -659,7 +659,7 @@
 <div n="variants">
 <head>Variant types and subtypes</head>
 <p>I added a @type attribute to all 'app' elements, and a @subtype
-	attribute to many: see paragraph 'Statistics' below in this
+	attribute to many: see appendix 'Statistics' below in this
 	introduction for the numbers.
 	Custom Python scripts proposed the values of those attributes,
 	then I reviewed them all manually.</p>
@@ -671,17 +671,17 @@
 <p>Attribute @type of 'app' can take one of the following values:</p>
 <list>
 	<item>'substantive'</item>
-	<item>'orthographic'</item>
 	<item>'transposition'</item>
-	<item>'punctuation'</item>
+	<item>'orthographic'</item>
 	<item>'gap-in-ms'</item>
 	<item>'illegible-in-ms'</item>
+	<item>'punctuation'</item>
 </list>
 </div>
 
 <div n="substantive-variant-subtypes">
 <head>Substantive variant subtypes</head>
-<p>In combination with @type='substantive', attribute @subtype,
+<p>In combination with @type="substantive", attribute @subtype,
 	if present, can take one of the following values:</p>
 <list>
 	<item>'fs' (confusion between 'f' and 's'),</item>
@@ -705,7 +705,7 @@
 
 <div n="orthographic-variant-subtypes">
 <head>Orthographic variant subtypes</head>
-<p>In combination with @type='orthographic', attribute @subtype,
+<p>In combination with @type="orthographic", attribute @subtype,
 	if present, can take one of the following values
 	(I shall provide an example for each subtype):</p>
 <list>
@@ -742,7 +742,7 @@
 
 <div n="punctuation-variant-subtypes">
 <head>Punctuation variant subtypes</head>
-<p>In combination with @type='punctuation', attribute @subtype,
+<p>In combination with @type="punctuation", attribute @subtype,
 	if present, can take one of the following values
 	(see paragraph 'Punctuation variants' below for
 	further details):</p>
@@ -799,7 +799,7 @@
 	is thin, somewhat arbitrary and conceptually complex.
 	This is particularly evident for proper nouns, for which the
 	change or reduplication of one letter can be considered meaningful.
-	This is why for proper nouns I tended to choose @type='substantive'
+	This is why for proper nouns I tended to choose @type="substantive"
 	except for the most common orthographic subtypes, such as 'double'
 	(Callixtus/Calixtus), 'y' (Babyloniam/Babiloniam)
 	or 'h' (Hieronymo/Ieronimo).</p>
@@ -824,74 +824,66 @@
 <div n="punctuation-variants">
 <head>Punctuation variants</head>
 <p>The case of punctuation is similar to the preceding one.
-I chose not to transcribe the MSS punctuation, so all 'app'
-elements with type="punctuation" mean that I am modifying
-the punctuation of the print edition (of the collation exemplar
-for that part of the text). For example, I deleted all
-quotation marks from the Bonetti edition, but sometimes
-punctuation modification implies significant differences
-in phrase and sentence segmentation, therefore in syntax
-and text interpretation.</p>
+	I chose not to transcribe the punctuation in the MSS, so all
+	'app' elements with @type="punctuation" simply mean that
+	I am modifying the punctuation of the print edition
+	(of the collation exemplar for that part of the text).</p>
+<p>Sometimes such changes are not particularly relevant:
+	for example, I deleted all quotation marks from the Bonetti
+	edition and many commas before "et" from the Garufi edition.
+	However, sometimes punctuation modification implies
+	significant differences in phrase and sentence segmentation,
+	therefore in syntax and text interpretation.</p>
 </div>
 
-<div>
+
+<div n="orthographic-variants">
 <head>Orthographic variants</head>
-<p>In orthographic variants
-(i.e. 'app' elements with type="orthographic"), I generally tended
-not to modify the print edition spelling. I did modify it,
-mostly by adopting MS A's spelling, in cases in which 
+<p>In orthographic variants (i.e. 'app' elements with
+	@type="orthographic"), I generally tended not to modify
+	the print edition spelling. I only modified it, mostly
+	by adopting MS A's spelling, in cases in which</p>
 <list>
 	<item>the print edition has an evident typo, which the MS
-		does not have (e.g. 'eorem' Garufi / 'eorum MS A
-		in g26.12-26.23);</item>
-	<item>the MS's form clearly is more standard both in classical 
-		dieval Latin and, most of all, more adherent
-		to the usus scribendi of the rest of the work
-		(e.g. 'espers' in Garufi / 'expers' in A,
-		or omicidia G / homicidia A);</item>
+		does not have: e.g. 'eorem' (Garufi) / 'eorum'
+		(MS A) in g26.12-26.23;</item>
+	<item>the MS's form is clearly more standard both in classical 
+		and medieval Latin and, most of all, more adherent
+		to the usus scribendi of the rest of the work:
+		e.g. 'espers' (Garufi) / 'expers' (A),
+		or 'omicidia' (Garufi) / 'homicidia' (A);</item>
 	<item>the print edition has a classical diphthong ('ae' or 'oe')
-		while the MS has the monophthongized spelling, which
-		I preferred, since monophthongized forms are standard
-		in the text. For example, in g70.1-70.19 I chose
-		A's 'Rome' over Garufi's 'Romae'. This is a sub-case
-		of the previous principle, and in 'ae'/'e' variants
-		it is marked with @subtype='ae';</item>
-	<item>I eliminated a dash distinguishing a composed word
-		in the print edition (e.g. in g80.1-80.4 I chose spelling
-		'Primiscrinium' over 'Primi-scrinium' of Garufi).</item>
+		while the MS has the monophthongized spelling ('e'),
+		which I preferred, since monophthongized forms
+		are standard in the text: e.g. in g70.1-70.19
+		I chose A's 'Rome' over Garufi's 'Romae'. In fact, this is
+		a particular case of the previous principle. 'App's with
+		'ae'/'e' variants are marked with @subtype="ae";</item>
+	<item>a composed word in the print edition had a dash in the middle,
+		which I eliminated: e.g. in g80.1-80.4 I chose spelling
+		'Primiscrinium' over Garufi's 'Primi-scrinium'.</item>
 </list>
-</p>
 </div>
 
-<div>
-<head>Factual variants</head>
-
-<p>The aim of this edition is
-	to publish a text as close as possible
-	to what has been written by Romualdus or his collaborators,
-	not to what has actually happened in history, so I did not
-	correct fact, names or dates. Besides, such a task would have
+<div n="factual">
+<head>Factual variants and dates</head>
+<p>The aim of this edition is to publish a text as close as possible
+	to what has likely been written by Romualdus or his collaborators,
+	not to what has actually happened in history, so I did not try
+	to correct fact, names or dates. Besides, such a task would have
 	required a historic competence that is beyond my skills.
 	The footnotes in the Garufi edition and the essays cited
 	in this introduction provide rich critical discussions
 	on this matter.</p>
-
-<p>Dates in particular are an aspect in which the <title>Chronicon</title> is often
-	imprecise and there is great variability among the witnesses:
-	when dates in A or O diverged from those in Garufi and Bonetti,
-	I systematically adhered to the print editions.</p>
+<p>Dates in particular are an aspect in which the <title>Chronicon</title>
+	is often imprecise and there is great variability among the
+	witnesses: when dates in A or O diverged from those in Garufi
+	and Bonetti, I systematically adhered to the print editions.</p>
 </div>
 
 
-<div n="statistics">
-
-
-</div>
-
-
-<div>
-<head>The text before and after the author</head>
-
+<div n="difference-source">
+<head>Minor differences with the source</head>
 <p>There are passages in which Romualdus follows a source very closely,
 	but skips some words. In some of these passages, Garufi
 	integrates the missing words.
@@ -899,41 +891,63 @@ mostly by adopting MS A's spelling, in cases in which
 	copies Paulus Diaconus, <title>Hist. Rom.</title> 14.116
 	"adest Geisericus cum ualidissimo suae gentis exercitu",
 	but skips the words "suae gentis", which are found in no MS
-	of the <title>Chronicon</title>.
-	In these cases I reject Garufi's integrations based on
+	of the <title>Chronicon</title>.</p>
+<p>In these passages I reject Garufi's integrations, based on
 	the principle of considering the <title>Chronicon</title>
 	an autonomous text, rather than a copy of his sources.</p>
+</div>
 
-<p>These cases, together with complex philological issues such as
-	the attitions differentiating the 'long' and 'short' version
+
+<div n="conclusion">
+<head>Conclusion: the text before and after the author</head>
+<p>These cases, as well as the philological question of
+	the additions differentiating the 'long' and 'short' version
 	of the <title>Chronicon</title>, raise interesting, very
-	general questions on the work of the philologist.
-	The text of Paulus Diaconus came 'before' Romualdus and his
-	(possible) collaborators, while that of the additions
-	probably arose 'after' him (or them).
-       	Where is the 'original text' that the philologist approximates?</p>
-
-<p>The 'original text', especially in cases of a complex editorial work such
-	as the <title>Chronicon</title>, looks as elusive as the elusive notion
+	general questions on the work of the philologist.</p>
+<p>The text of Paulus Diaconus came 'before' Romualdus and his
+	(possible) collaborators, might have been copied and slightly
+	modified (intentionally or not) by a scribe executing directions
+	given by Romualdus. Instead, the text of the additions
+	probably arose 'after' him (or them), but may have been
+	approved by Romualdus himself.
+       	Where is 'original text' that the philologist approximates?</p>
+<p>Especially in cases of a complex editorial work such as the
+	<title>Chronicon</title>, it looks as elusive as the elusive notion
 	of 'present', at the sliding edge between past and future.</p>
-
 <p>These issues become more evident to us as we get closer to the author.
-	Mordenti 2001, par. 9.1 discusses the extreme case
-	of transcription and raises "[la] domanda fondamentale della filologia
-	[...] quella che riguarda il concetto di testo e, in particolare,
-	di testo originale" and quotes D'Arco Silvio Avalle and Cesare Segre:
+	Classical philology, for example, may risk to gain a false sense
+	of confidence on the 'stability' and the authoriality of texts
+	because these have arrived to us after a long process of
+	normalization and canonization (see Monella 2018 "Why...").
+	However, the complexity of the process the brought to the creation
+	of these texts must not have been much different from what we often
+	observe in medieval philology and in the "filologia d'autore".</p>
+<p>Philologists working on primary sources (inscriptions, papyri,
+	non-canonical texts with a long evolution, medieval or modern
+	manuscripts relatively close to the author) are too close to
+	the composition process to fall into this illusion.</p>
+<p>Mordenti 2001, par. 9.1 discusses the extreme case of the transcription
+	of 'originals' and raises "[la] domanda fondamentale della filologia
+	[...] quella che riguarda il concetto di testo e, in particolare, di
+	testo originale". Mordenti quotes D'Arco Silvio Avalle and Cesare Segre:
 	"Il concetto di originale, nel senso di testo autentico esprimente
-	la volontà dell'autore, è uno dei più sfuggenti ed ambigui della
-	critica del testo. [...] le singole opere di uno scrittore costituiscono
+	la volontà dell'autore, è uno dei più sfuggenti ed ambigui della critica
+	del testo. [...] [L]e singole opere di uno scrittore costituiscono
 	a rigore una sezione a volte casuale e provvisoria – e non sempre
 	operata dall'autore stesso [...] di quel flusso continuo di adattamenti
 	e di spostamenti successivi attraverso cui si esprimono le tendenze
-	fondamentali di un sistema letterario" (Avalle 1972, 32-33); and
-	"Ogni testo scritto è in realtà trascritto: da un copista, da un tipografo.
-	Anche l'autografo è una trascrizione (dalla brutta copia); e la brutta copia
-	costituisce di norma un testo non definitivo. Insomma, ogni trascrizione è
-	anteriore o posteriore al testo; nessun testo può essere identificato col Testo"
-	Segre 1979, 36.</p>
+	fondamentali di un sistema letterario" (Avalle 1972, 32-33);
+	and "Ogni testo scritto è in realtà trascritto: da un copista, da
+	un tipografo. Anche l'autografo è una trascrizione (dalla brutta copia);
+	e la brutta copia costituisce di norma un testo non definitivo. Insomma,
+	ogni trascrizione è anteriore o posteriore al testo;
+	nessun testo può essere identificato col Testo" (Segre 1979, 36).</p>
+</div>
+
+
+<div n="statistics">
+
+
 </div>
 
 

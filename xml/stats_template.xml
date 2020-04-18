@@ -2,52 +2,49 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 <div n="statistics">
-<head>Statistics</head>
+<head>Appendix: statistics</head>
 
+<p>All statistics in this appendix are generated dynamically 
+	by my Python script statistics.py, which processes
+	the XML code of the edition.</p>
 
 <div n="variant-types-statistics">
 <head>Statistics on variant types and subtypes</head>
 
-<p>These are some statistics on variant types,
-	generated dynamically by my Python script
-	statistics.py, that processes the XML code
-	of the edition:
-</p>
-
 <list>
-     <item>Total 'app' elements:
-        <num n="s-apps"/>, of which:
+     <item>This TEI XML file has
+        <num n="s-apps"/> 'app' elements, of which:
         <list>
             <item><num n="s-subst"/> 
-                have @type="substantive"</item>
+                have @type="substantive";</item>
             <item><num n="s-trans-double"/> 
                 @type="transposition"
                 (note that each transposition is recorded
                 in two 'app's, so the actual number
                 of transpositions is
-                <num n="s-trans-single"/>)
+                <num n="s-trans-single"/>);
             </item>
             <item><num n="s-orth"/> 
-                @type="orthographic". However, this number
-                includes <num n="s-case"/> 'app's with
-                @type="orthographic" and @subtype="case", which
-                are no actual MS variants
-                (see paragraph 'Case variants' above).
+		@type="orthographic". However, this number includes
+		<num n="s-case"/>
+		'app's with @type="orthographic" and @subtype="case", which
+                are no actual MS variants (see paragraph 'Case variants' above).
                 If we subtract them from <num n="s-orth"/>,
-                the  total of actual MS orthographic variants
-                excluding case is
-                <num n="s-orth-except-case"/>
+                the total of actual MS orthographic variants excluding case is
+                <num n="s-orth-except-case"/>;
             </item>
             <item><num n="s-gap"/> 
-                @type="gap-in-ms"</item>
+                @type="gap-in-ms";</item>
             <item><num n="s-ill"/> 
-                @type="illegible-in-ms"</item>
+                @type="illegible-in-ms";</item>
             <item><num n="s-punct"/> 
-                @type="punctuation"</item>
+		@type="punctuation" (see paragraph
+		'Punctuation variants' above).</item>
         </list>
      </item>
-     <item>The actual variants are <num n="s-var"/>.
-         In this number
+     <item>The 'actual' variants ('V', henceforth)
+	     are <num n="s-var"/>.
+	     In this number
          <list>
              <item>I count types "substantive",
                  "transposition" (counted once, henceforth) and
@@ -55,16 +52,18 @@
              <item>I do not count types
                  "punctuation", "gap-in-ms", "illegible-in-ms",
                  or the special case
-                 @type="orthography"/@subtype="case"</item>
+                 @type="orthography"/@subtype="case".</item>
           </list>
      </item>
      <item>Of all actual variants (V):
          <list>
-             <num n="s-perc-subst"/>%  are substantive
-             (SV henceforth)
-            <num n="s-perc-orth-except-case"/>%  are orthographic
-            (not counting @subtype="case"; OVEC henceforth)
-            <num n="s-perc-trans"/>%  are transpositions
+		 <item><num n="s-perc-subst"/>%
+			 are substantive (SV henceforth)</item>
+		 <item><num n="s-perc-orth-except-case"/>%
+			 are orthographic (not counting
+			 @subtype="case"; OVEC henceforth)</item>
+		 <item><num n="s-perc-trans"/>% 
+			 are transpositions.</item>
          </list>
      </item>
      <item>The following subtypes have been identified for
@@ -72,26 +71,26 @@
 	     <list>
 		     <item>
 			     <num n="s-missing-in-ms"/>, i.e.
-                    <num n="s-perc-missing-in-ms"/>%
-                    of all actual variants (V),
-			     have @subtype 'missing-in-ms' (integrations)
-		     </item>
-		     <item>
-			     <num n="s-num-num"/>
-			     (<num n="s-perc-num-num"/>% of V)
-			     have @subtype 'num-num' (two different numerals)
+			     <num n="s-perc-missing-in-ms"/>%
+			     of all actual variants (V),
+			     have @subtype="missing-in-ms" (integrations)
 		     </item>
 		     <item>
 			     <num n="s-missing-in-print"/>
 			     (<num n="s-perc-missing-in-print"/>% of V)
-			     have @subtype 'missing-in-print' (expunctions)
+			     have @subtype="missing-in-print" (expunctions)
+		     </item>
+		     <item>
+			     <num n="s-num-num"/>
+			     (<num n="s-perc-num-num"/>% of V)
+			     have @subtype="num-num" (two different numerals)
 		     </item>
 		     <item>
 			     <num n="s-fs"/>
 			     (<num n="s-perc-fs"/>% of V)
-			     have @subtype 'fs' (confusion between 'f' and 's')
+			     have @subtype="fs" (confusion between 'f' and 's').
 		     </item>
-		     <item>§
+		     <item>
 		     </item>
      		</list>
     </item>
@@ -99,136 +98,147 @@
         orthographic variants (@type="orthographic"):
          <list>
                <item>
-                   <num n="s-double"/>,
-                   <num n="s-perc-double"/>% of all
-                   actual variants (V),
-               have @subtype="double"
+		       <num n="s-double"/>,
+		       <num n="s-perc-double"/>% of all
+		       actual variants (V),
+		       have @subtype="double"
            </item>
                <item>
-                   <num n="s-h"/> (<num n="s-perc-h"/>% of V) 
-                   have @subtype="h"
+		       <num n="s-h"/> 
+		       (<num n="s-perc-h"/>% of V)
+		       have @subtype="h"
            </item>
              <item>
-                 <num n="s-y"/> (<num n="s-perc-y"/>% of V) 
-                 have @subtype="y"
+		     <num n="s-y"/>
+		     (<num n="s-perc-y"/>% of V)
+		     have @subtype="y"
            </item>
                <item>
-                   <num n="s-tc"/> (<num n="s-perc-tc"/>% of V) 
-                   have @subtype="tc"
+		       <num n="s-tc"/>
+		       (<num n="s-perc-tc"/>% of V)
+		       have @subtype="tc"
            </item>
                <item>
-                   <num n="s-case"/> (<num n="s-perc-case"/>% of V) 
-                   have @subtype="case". In fact, these are no
-                   actual MS variants, since in MSS case does
-                   not have graphematic value. They are
-                   just cases in which I am modifying the case
-                   of the print edition used as collation
-                   exemplar
+		       <num n="s-case"/>
+		       (<num n="s-perc-case"/>% of V)  
+		       have @subtype="case" (however, these are
+		       no actual MS variants: see paragraph
+		       'Case variants' above)
            </item>
                <item>
-                   <num n="s-mn"/> (<num n="s-perc-mn"/>% of V) 
-                   have @subtype="mn"
+		       <num n="s-mn"/>
+		       (<num n="s-perc-mn"/>% of V) 
+		       have @subtype="mn"
            </item>
                <item>
-                   <num n="s-num-word"/> (<num n="s-perc-num-word"/>% of V) 
-                   have @subtype="num-word"
+		       <num n="s-num-word"/>
+		       (<num n="s-perc-num-word"/>% of V) 
+		       have @subtype="num-word"
            </item>
                <item>
-                   <num n="s-mpn"/> (<num n="s-perc-mpn"/>% of V) 
-                   have @subtype="mpn"
+		       <num n="s-mpn"/>
+		       (<num n="s-perc-mpn"/>% of V) 
+		       have @subtype="mpn"
            </item>
                <item>
-                   <num n="s-pb"/> (<num n="s-perc-pb"/>% of V) 
-                   have @subtype="pb"
+		       <num n="s-pb"/>
+		       (<num n="s-perc-pb"/>% of V) 
+		       have @subtype="pb"
            </item>
                <item>
-                   <num n="s-word-segmentation"/> (<num n="s-perc-word-segmentation"/>% of V)
-                   
-                   have @subtype="word-segmentation"
+		       <num n="s-word-segmentation"/>
+		       (<num n="s-perc-word-segmentation"/>% of V)
+		       have @subtype="word-segmentation"
+	       </item>
+               <item>
+		       <num n="s-ph"/>
+		       (<num n="s-perc-ph"/>% of V) 
+		       have @subtype="ph"
            </item>
                <item>
-                   <num n="s-ph"/> (<num n="s-perc-ph"/>% of V) 
-                   have @subtype="ph"
+		       <num n="s-ae"/>
+		       (<num n="s-perc-ae"/>% of V) 
+		       have @subtype="ae"
            </item>
                <item>
-                   <num n="s-ae"/> (<num n="s-perc-ae"/>% of V) 
-                   have @subtype="a"
+		       <num n="s-ch"/>
+		       (<num n="s-perc-ch"/>% of V) 
+		       have @subtype="ch"
            </item>
                <item>
-                   <num n="s-ch"/> (<num n="s-perc-ch"/>% of V) 
-                   have @subtype="ch"
+		       <num n="s-dm-mm"/>
+		       (<num n="s-perc-dm-mm"/>% of V) 
+		       have @subtype="dm-mm"
            </item>
                <item>
-                   <num n="s-dm-mm"/> (<num n="s-perc-dm-mm"/>% of V) 
-                   have @subtype="dm-mm"
-           </item>
+		       <num n="s-hi-y"/>
+		       (<num n="s-perc-hi-y"/>% of V) 
+		       have @subtype="hi-y"
+	       </item>
                <item>
-                   <num n="s-hi-y"/> (<num n="s-perc-hi-y"/>% of V) 
-                   have @subtype="hi-y"
-           </item>
+		       <num n="s-ncx"/>
+		       (<num n="s-perc-ncx"/>% of V) 
+		       have @subtype="ncx"
+	       </item>
                <item>
-                   <num n="s-ncx"/> (<num n="s-perc-ncx"/>% of V) 
-                   have @subtype="ncx"
-           </item>
+		       <num n="s-cz"/>
+		       (<num n="s-perc-cz"/>% of V) 
+		       have @subtype="cz"
+	       </item>
                <item>
-                   <num n="s-cz"/> (<num n="s-perc-cz"/>% of V) 
-                   have @subtype="cz"
-           </item>
+		       <num n="s-cq"/>
+		       (<num n="s-perc-cq"/>% of V) 
+		       have @subtype="cq"
+	       </item>
                <item>
-                   <num n="s-cq"/> (<num n="s-perc-cq"/>% of V) 
-                   have @subtype="cq"
-           </item>
+		       <num n="s-tz"/>
+		       (<num n="s-perc-tz"/>% of V) 
+		       have @subtype="tz"
+	       </item>
                <item>
-                   <num n="s-tz"/> (<num n="s-perc-tz"/>% of V) 
-                   have @subtype="tz"
-           </item>
-               <item>
-                   <num n="s-ck"/> (<num n="s-perc-ck"/>% of V) 
-                   have @subtype="ck"
-           </item>
+		       <num n="s-ck"/>
+		       (<num n="s-perc-ck"/>% of V) 
+		       have @subtype="ck".
+	       </item>
           </list>
     </item>
     <item>
-        A @subtype has been identified
-        for <num n="s-subst-with-subtype"/>
-        substantive 'app's.
-        This corresponds to
-        <num n="s-perc-subst-with-subtype-on-sv"/>%
-        of all substantial variants (SV) and
-        <num n="s-perc-subst-with-subtype-on-v"/>%
-        of all actual variants (V)
+        A @subtype has been identified:
+          <list>
+		  <item>for <num n="s-subst-with-subtype"/>
+			  substantive 'app's. This corresponds to
+			  <num n="s-perc-subst-with-subtype-on-sv"/>%
+			  of all substantial variants (SV) and
+			  <num n="s-perc-subst-with-subtype-on-v"/>%
+			  of all actual variants (V);</item>
+		  <item>for <num n="s-orth-withsubtype-except-case"/>
+			  orthographic 'app's. This corresponds to
+			  <num n="s-perc-orth-withsubtype-except-case-on-ovec"/>%
+			  of all orthographic variants (OVEC) and
+			  <num n="s-perc-orth-withsubtype-except-case-on-v"/>%
+			  of all actual variants (V).
+			  Note that I am not including 'app's with @subtype="case"
+			  in these calculations);</item>
+          </list>
     </item>
-    <item>
-        A @subtype has been identified
-        for <num n="s-orth-withsubtype-except-case"/>
-        orthographic 'app's.
-        This corresponds to
-        <num n="s-perc-orth-withsubtype-except-case-on-ovec"/>%
-        of all orthographic variants (OVEC) and
-        <num n="s-perc-orth-withsubtype-except-case-on-v"/>%
-        of all actual variants (V)
-        (I am not including 'app's with @subtype="case"
-        in these calculations)
-    </item>
-    <item>There is no subtype of type "transposition"</item>
-    <item>So, including both substantive and
-        orthographic variants (except @subtype="case"),
-        for <num n="s-found-subtypes"/> 'app's a @subtype
-        has been identified, corresponding to
-        <num n="s-perc-found-subtypes"/>%
-        of all actual variants (V)
-    </item>
+    <item>There are no subtypes of @type="transposition".
+	    So, including both substantive and
+	    orthographic variants (except @subtype="case"),
+	    for <num n="s-found-subtypes"/> 'app's a @subtype
+	    has been identified, corresponding to
+	    <num n="s-perc-found-subtypes"/>%
+	    of all actual variants (V). </item>
     <item>The typization of variants was an experimental
-        feature of this digital edition. A higher percentage
-        of subtypes could be identified, especially for
-        orthographic variants, by further improving
-        the string comparison algorithms used, but these initial
-        results seem encouraging. Please keep in mind
-        that algorithms (Python software) tentatively identified
-        types and subtypes for app elements, then
-        I reviewed them one by one manually. However,
-        the more accurate the algorithms became, the easier
-        and quicker the review was.
+	    feature of this digital edition. A higher percentage
+	    of subtypes could be identified, especially for
+	    orthographic variants, by further improving
+	    the string comparison algorithms used, but these initial
+	    results seem encouraging. Please keep in mind
+	    that algorithms (Python software) tentatively identified
+	    types and subtypes for app elements, then
+	    I reviewed them one by one manually.
+	    However, the more accurate the algorithms became,
+	    the easier and faster the review was.
     </item>
 </list>
 
@@ -247,12 +257,12 @@
             <item>
                 <num n='s-two-children'/>
                 (<num n='s-perc-two-children'/>% of V)
-                have 2 readings (variants)
+                have 2 readings (variants);
             </item>
             <item>
                 <num n='s-three-children'/>
                 (<num n='s-perc-three-children'/>% of V)
-                have 3 readings (variants)
+                have 3 readings (variants).
             </item>
         </list>
     </item>
@@ -260,25 +270,19 @@
         In <num n="s-lem-print"/> cases
         (<num n="s-perc-lem-print"/>% of V)
         I agreed with the reading of the print edition
-        used as collation exemplar (Garufi or Bonetti)
+        used as collation exemplar (Garufi or Bonetti).
     </item>
     <item>
         In <num n="s-lem-not-print"/> cases
         (<num n="s-perc-lem-not-print"/>% of V)
-        I chose a MS reading over that of the print edition 
+        I chose a MS reading over that of the print edition.
     </item>
     <item>
-        As for the utility of witness O in this edition:
-        in only <num n="s-lems-only-o"/> cases O
-        is the only witness providing a reading that I chose
+        In only <num n="s-lems-only-o"/> cases
+        O is the only witness providing a reading that I chose
         over the print edition reading. This corresponds to
         <num n="s-perc-lems-only-o"/>%
-        of all loci variantes in which O
-        is one of the witnesses.
-        Although this calculation is based on a subjective
-        parameter (i.e. my own textual choices), this
-        is an argument against the actual utility of O
-        for the constitutio textus of the Chronicon.
+        of all loci variantes in which O is one of the witnesses.
     </item>
 </list>
 
@@ -295,7 +299,7 @@
         <num n="s-lem-words"/>
         (<num n="s-perc-lem-words"/>%)
         are part of a locus varians
-        (i.e. are in 'lem' elements)
+        (i.e. are in 'lem' elements).
     </item>
 </list>
 

@@ -562,7 +562,7 @@
 	or Bonetti as noted above and editing it to make the transcription
 	adhere to the text of the manuscript, then performed an automatic
 	collation of the OCR/transcription files using
-	<ref target="http://juxtacommons.org/">Juxta Commons</ref>	
+	<ref type="url" target="http://juxtacommons.org/">Juxta Commons</ref>	
 	and edited the XML output files file manually.
        	I divided the text in four parts for collation:</p>
 <list>
@@ -582,7 +582,7 @@
 <head>GitHub</head>
 <p>The source code of this edition, including OCR/transcription files,
 	working files and Python software, is in the project GitHub repository
-	<ref target="https://github.com/paolomonella/romualdus">
+	<ref type="url" target="https://github.com/paolomonella/romualdus">
 		GitHub repository</ref>.</p>
 </div>
 
@@ -602,248 +602,392 @@
 	to my editing of the OCR files), but I provided a sample
 	'graphematic layer' transcription of the first paragraphs of
 	MSS A, B and C, available in the GitHub repository of the edition.
-	See Monella 2018a and 2018b for a definition of
-	those layers of representation of the text in primary sources.
-	For paragraphs from g116.6-118.8 through g163.1-163.5
-	I only transcribed major variants.</p>
+	See Monella 2018 (Livelli...) and Monella 2018 (A Sustainable...)
+	for a definition of those layers of representation of the text
+	in primary sources. For paragraphs from g116.6-118.8 through
+	g163.1-163.5 I only transcribed major variants.</p>
 </div>
 
 
 <div n="normalization">
 <head>Normalization</head>
 <p>The OCR files of print editions and the transcriptions of manuscripts
-	have been marked according to module '11 Representation
-	of Primary Sources' of TEI P5. Provided that, quite surprisingly,
-	there are yet no collation tools that compare XML trees, i.e.
-	that compare TEI XML transcriptions and take the markup into account,
-	I had to normalize the TEI transcriptions to prepare them for collation with
-	juxtacommons.org. I normalized transcriptions through custom Python scripts, which:
+	have been marked according to module 
+	<ref type="url" target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html">
+		11 Representation of Primary Sources</ref>
+	of TEI P5.</p>
+<p>Quite surprisingly, there are yet no collation tools that compare XML trees,
+	i.e. that compare TEI XML transcriptions also taking markup into account
+	(<ref type="url" target="http://variance-viewer.informatik.uni-wuerzburg.de/Variance-Viewer/">
+		Variance Viewer</ref>
+	is a partial exception, as it only takes @rend attributes into account;
+	see review in Roeder 2020). Therefore, I had to 'normalize' the
+	TEI transcriptions to prepare them for collation with juxtacommons.org.
+	I 'normalized' transcriptions (i.e. removed transcribed information from them)
+	through custom Python scripts, which:</p>
 <list>
 	<item>extracted an 'alphabetic' transcription from those
 		paragraphs that had been transcribed 
-		he graphematic layer;</item>
+		at the graphematic layer;</item>
 	<item>deleted the following tags with their textual content:
-		'interp', 'abbr', 'surplus', 'note', 'milestone'.</item>
+		'abbr', 'interp', 'milestone', 'note', 'surplus';</item>
 	<item>normalized numerals, e.g. 'xiiii' from MS A to 'XIV';</item>
-	<item>introduced standard text for gaps in the MSS,
-		e.g. {Gap in the MS: 1 illegible word};</item>
+	<item>replaced gaps in the MSS with placeholder text, e.g.
+		{Gap in the MS: 1 illegible word};</item>
 	<item>chose between 'sic'/'corr', 'reg'/'orig' elements;</item>
 	<item>in particular, regularized 'j' to 'i' and 'v' to 'u'
 		in all print and handwritten sources;</item>
 	<item>capitalized proper nouns and words at the beginning
-		of sentences also for MS text
-		(e.g. 'pompeius' from MS A to 'Pompeius');</item>
+		of sentences (e.g. 'pompeius' from MS A to 'Pompeius');</item>
 	<item>stripped the markup for the following TEI tags
 		(keeping their textual content, if any):
-		'rs', 'hi', 'w', 'choice', 'orig', 'reg', 'num',
-		'subst', 'add', 'del', 'expan', 'sic', 'seg',
-		'lb', 'pb', 'quote', 'title', 'said', 'soCalled',
-		'surplus', 'supplied', 'gap', 'l';</item>
+		'add', 'choice', 'del', 'expan', 'gap', 'hi', 'l',
+		'lb', 'num', 'orig', 'pb', 'quote', 'reg', 's', 'said',
+		'seg', 'sic', 'soCalled', 'subst', 'supplied', 'surplus',
+		'title', 'w';</item>
 	<item>replaced XML angle brackets with [square brackets]
 		for 'p' start- and end-tags, thus producing an output
-		such as [p xml:id="g3.2-3.6"]: another script then
-		restored the angle brackets in the output
+		such as [p xml:id="g3.2-3.6"]: another script later
+		restored the angle brackets in the files output
 		of the juxtacommons.org collation;</item>
 </list>
-</p>
 </div>
 
-<div>
+
+<div n="variants">
 <head>Variant types and subtypes</head>
-<p>I added a @type attribute
-to all 'app' elements, and a @subtype attribute to some.
-Custom Python scripts proposed the values of those attributes,
-then I reviewed them all manually.</p>
+<p>I added a @type attribute to all 'app' elements, and a @subtype
+	attribute to many: see appendix 'Statistics' below in this
+	introduction for the numbers.
+	Custom Python scripts proposed the values of those attributes,
+	then I reviewed them all manually.</p>
 </div>
 
-<div>
+
+<div n="variant-types">
 <head>List of variant types</head>
-<p>Attribute @type
-of 'app' can take one of the following values:
+<p>Attribute @type of 'app' can take one of the following values:</p>
 <list>
 	<item>'substantive'</item>
+	<item>'transposition'</item>
 	<item>'orthographic'</item>
-	<item>'punctuation'</item>
 	<item>'gap-in-ms'</item>
 	<item>'illegible-in-ms'</item>
-	<item>'transposition'</item>
+	<item>'punctuation'</item>
 </list>
-</p>
 </div>
 
-<div>
-<head>Variant subtypes</head>
-<p>In combination with each @type,
-@subtype can take one of the following values:
+<div n="substantive-variant-subtypes">
+<head>Substantive variant subtypes</head>
+<p>In combination with @type="substantive", attribute @subtype,
+	if present, can take one of the following values:</p>
 <list>
-	<item>In combination with @type='substantive',
-		@subtype (if present) can be:
-		'missing-in-print', 'num-num', 'missing-in-ms',
-		'transposition', 'fs';</item>
-	<item>In combination with @type='orthographic':
-		'y' (e.g. martirio/martyrio), 'v', 'j', 'ae',
-		'h' (e.g. hodie/odie), 'n-pn', 'hi-y',
-		'num-word' (e.g. III/tria), 'case',
-		'tc' (e.g. iustitia/iusticia),
-		'double' (e.g.  successit/succesit),
-		'ph', 'cq', 'mpn', 'tz', 'cz', 'ck',
-		'word-segmentation', 'ch', 
-		', 'dm-mm', 'mn', 'ncx';</item>
-	<item>In combination with @type="punctuation":
-		"change-punctuation", "add-punctuation",
-		"remove-punctuation".</item>
+	<item>'fs' (confusion between 'f' and 's'),</item>
+	<item>'missing-in-ms' (integration),</item>
+	<item>'missing-in-print' (expunction),</item>
+	<item>'num-num' (two different numerals),</item>
 </list>
-</p>
+<p>Plus the additional more generic @subtypes:</p>
+<list>
+	<item>'3elements3variants_bonetti_and_garufi'
+		(there are three variants in this 'app',
+		however two of them are Bonetti's and
+		Garufi's readings)</item>
+	<item>'3elements3variants'
+		(three variants in this app, that may
+		have different nature if compared to
+		one another)</item>
+</list>
 </div>
 
-<div>
+
+<div n="orthographic-variant-subtypes">
+<head>Orthographic variant subtypes</head>
+<p>In combination with @type="orthographic", attribute @subtype,
+	if present, can take one of the following values
+	(I shall provide an example for each subtype):</p>
+<list>
+	<item>'ae' (Roma/Romae)</item>
+	<item>'case' (Domini/domini, but see paragraph
+		'Case variants' below) </item>
+	<item>'ch' (nihil/nichil)</item>
+	<item>'ck' (carissime/karissime)</item>
+	<item>'cq' (secuti/sequti)</item>
+	<item>'cz' (Barcilonem/Barzilonem)</item>
+	<item>'dm-mm' (admonet/ammonet)</item>
+	<item>'double' (successit/succesit),</item>
+	<item>'h' (hodie/odie),</item>
+	<item>'hi-y' (historiis/ystoriis)</item>
+	<item>'j' (jam/iam, never actually occurring
+		in the XML file because I normalized 'j'
+		to 'i' before collation)</item>
+	<item>'mn' (consumenda/comsumenda)</item>
+	<item>'mpn' (contemnendo/contempnendo)</item>
+	<item>'ncx' (unxit/uncxit)</item>
+	<item>'num-word' (III/tria),</item>
+	<item>'pb' (obtinuit/optinuit)</item>
+	<item>'ph' (prephato/prefato)</item>
+	<item>'tc' (iustitia/iusticia),</item>
+	<item>'tz' (Brizie/Britie)</item>
+	<item>'v' (vel/uel, never actually occurring
+		in the XML file because I normalized 'v'
+		to 'u' before collation)</item>
+	<item>'word-segmentation' (idest/id est)</item>
+	<item>'y' (martirio/martyrio);</item>
+</list>
+</div>
+
+
+<div n="punctuation-variant-subtypes">
+<head>Punctuation variant subtypes</head>
+<p>In combination with @type="punctuation", attribute @subtype,
+	if present, can take one of the following values
+	(see paragraph 'Punctuation variants' below for
+	further details):</p>
+<list>
+	<item>'add-punctuation' (no punctuation in the
+		print edition used as collation exemplar:
+		I add a punctuation character),</item>
+	<item>'change-punctuation' (I change the punctuation
+		of the print edition),</item>
+	<item>'remove-punctuation' (I remove a punctuation
+		character of the print edition).</item>
+</list>
+</div>
+
+
+<div n="many-variant-subtypes">
 <head>Variants for which many subtypes apply</head>
-<p>For some variants
-(i.e. for some 'app' elements), it is impossible
-to determine one subtype, either because two subtypes apply
-(e.g., for Symmachus/Simachus 'y' and 'double')
-or because there are three readings with different types and/or subtypes
-(e.g.  Pisa, Bonetti / Pysas, MS A / Pisas, MS O: Pisa/Pysas is 
-ubstantive' variant, but Pysas/Pisas is an 'orthographic'/'y' variant).
-I took a pragmatic (and certainly debatable) approach to this issue,
-as I chose what I thought was the most relevant type/subtype:
-for example, I chose subtype 'y' for Symmachus/Simachus
-and type 'substantive' for Pisa/Pysas/Pisas.</p>
+<p>For some variants (i.e. for some 'app' elements), it is impossible
+	to determine one subtype</p>
+<list>
+	<item>either because two subtypes apply: e.g., for
+		Symmachus/Simachus, both 'y' and 'double'
+		subtypes apply</item>
+	<item>or because there are three readings with different
+		types and/or subtypes: e.g.
+		Pisa (in Bonetti) / Pysas (in MS A) / Pisas (in MS O).
+		In this case, Pisa/Pysas is a 'substantive' variant
+		(change in case and number), but Pysas/Pisas
+		is an 'orthographic'/'y' variant).</item>
+</list>
+<p>As far as the fist issue is concerned,
+	I took the oversimplifying (and certainly questionable)
+	approach of choosing what I thought was the most relevant
+	type/subtype: for example, I chose subtype 'y' for
+	Symmachus/Simachus and type 'substantive'
+	for Pisa/Pysas/Pisas.</p>
+<p>As to the second issue, in fact a 'variant' is such only
+	in relationship with a specific other reading (in the TEI
+	guidelines, in relationship with the lemma). Therefore the
+	@type and @subtype attributes should rather be attributed
+	to each 'rdg' element, not to the whole 'app' element'.</p>
+<p>However, since almost all 'app's only include two readings,
+	for practical reasons I decided to dive @type and @subtype
+	to the whole 'app' and add
+	@subtype="3elements3variants" or
+	@subtype="3elements3variants_bonetti_and_garufi"
+	to those 'app's to signal that we are in a peculiar case.</p>
 </div>
 
-<div>
+
+<div n="substantive-orthographic">
 <head>Distinction between substantive and orthographic</head>
-<p>Also, the line
-between 'substantive' and 'orthographic' variants is thin.
-This is particularly evident for proper nouns, for which the change of one
-letter can be considered meaningful. This is why for proper nouns I tended
-to choose @type='substantive', except for the most common orthographic
-subtypes, such as 'double' (Callixtus/Calixtus), 'y' (Babyloniam/Babiloniam)
-or 'h' (Hieronymo/Ieronimo).</p>
+<p>Also, the line between 'substantive' and 'orthographic' variants
+	is thin, somewhat arbitrary and conceptually complex.
+	This is particularly evident for proper nouns, for which the
+	change or reduplication of one letter can be considered meaningful.
+	This is why for proper nouns I tended to choose @type="substantive"
+	except for the most common orthographic subtypes, such as 'double'
+	(Callixtus/Calixtus), 'y' (Babyloniam/Babiloniam)
+	or 'h' (Hieronymo/Ieronimo).</p>
 </div>
 
-<div>
+
+<div n="case-variants">
 <head>Case variants</head>
 <p>Some 'app' elements mark a distinction between
-the lowercase and capitalized spelling of the same word:
-these elements have @type="orthographic" with @subtype="case".
-For example, 'Cainan' (my lemma) vs cainan (reading of Garufi and of MS A).
-MSS will always have the lowercase spelling by convention,
-because capitalization does not have graphematic value in them.
-Those 'app' elements mean that I capitalize a word that was in lowercase
-in the print edition, or vice versa.</p>
+	the lowercase and capitalized spelling of the same
+	word: these elements have @type="orthographic" with
+	@subtype="case". For example, 'Cainan' (my lemma) vs 'cainan'
+	(reading of Garufi and in my TEI XML transcription of MS A).</p>
+<p>In my transcriptions MSS will always have the lowercase spelling
+	by convention, because capitalization does not have graphematic
+	value in them.</p>
+<p>Therefore, those 'app' elements simply signal that I capitalize a word
+	that was in lowercase in the print edition, or vice versa.</p>
 </div>
 
-<div>
+
+<div n="punctuation-variants">
 <head>Punctuation variants</head>
 <p>The case of punctuation is similar to the preceding one.
-I chose not to transcribe the MSS punctuation, so all 'app'
-elements with type="punctuation" mean that I am modifying
-the punctuation of the print edition (of the collation exemplar
-for that part of the text). For example, I deleted all
-quotation marks from the Bonetti edition, but sometimes
-punctuation modification implies significant differences
-in phrase and sentence segmentation, therefore in syntax
-and text interpretation.</p>
+	I chose not to transcribe the punctuation in the MSS, so all
+	'app' elements with @type="punctuation" simply mean that
+	I am modifying the punctuation of the print edition
+	(of the collation exemplar for that part of the text).</p>
+<p>Sometimes such changes are not particularly relevant:
+	for example, I deleted all quotation marks from the Bonetti
+	edition and many commas before "et" from the Garufi edition.
+	However, sometimes punctuation modification implies
+	significant differences in phrase and sentence segmentation,
+	therefore in syntax and text interpretation.</p>
 </div>
 
-<div>
+
+<div n="orthographic-variants">
 <head>Orthographic variants</head>
-<p>In orthographic variants
-(i.e. 'app' elements with type="orthographic"), I generally tended
-not to modify the print edition spelling. I did modify it,
-mostly by adopting MS A's spelling, in cases in which 
+<p>In orthographic variants (i.e. 'app' elements with
+	@type="orthographic"), I generally tended not to modify
+	the print edition spelling. I only modified it, mostly
+	by adopting MS A's spelling, in cases in which</p>
 <list>
 	<item>the print edition has an evident typo, which the MS
-		does not have (e.g. 'eorem' Garufi / 'eorum MS A
-		in g26.12-26.23);</item>
-	<item>the MS's form clearly is more standard both in classical 
-		dieval Latin and, most of all, more adherent
-		to the usus scribendi of the rest of the work
-		(e.g. 'espers' in Garufi / 'expers' in A,
-		or omicidia G / homicidia A);</item>
+		does not have: e.g. 'eorem' (Garufi) / 'eorum'
+		(MS A) in g26.12-26.23;</item>
+	<item>the MS's form is clearly more standard both in classical 
+		and medieval Latin and, most of all, more adherent
+		to the usus scribendi of the rest of the work:
+		e.g. 'espers' (Garufi) / 'expers' (A),
+		or 'omicidia' (Garufi) / 'homicidia' (A);</item>
 	<item>the print edition has a classical diphthong ('ae' or 'oe')
-		while the MS has the monophthongized spelling, which
-		I preferred, since monophthongized forms are standard
-		in the text. For example, in g70.1-70.19 I chose
-		A's 'Rome' over Garufi's 'Romae'. This is a sub-case
-		of the previous principle, and in 'ae'/'e' variants
-		it is marked with @subtype='ae';</item>
-	<item>I eliminated a dash distinguishing a composed word
-		in the print edition (e.g. in g80.1-80.4 I chose spelling
-		'Primiscrinium' over 'Primi-scrinium' of Garufi).</item>
+		while the MS has the monophthongized spelling ('e'),
+		which I preferred, since monophthongized forms
+		are standard in the text: e.g. in g70.1-70.19
+		I chose A's 'Rome' over Garufi's 'Romae'. In fact, this is
+		a particular case of the previous principle. 'App's with
+		'ae'/'e' variants are marked with @subtype="ae";</item>
+	<item>a composed word in the print edition had a dash in the middle,
+		which I eliminated: e.g. in g80.1-80.4 I chose spelling
+		'Primiscrinium' over Garufi's 'Primi-scrinium'.</item>
 </list>
-</p>
 </div>
 
-<div>
-<head>Factual variants</head>
-
-<p>The aim of this edition is
-	to publish a text as close as possible
-	to what has been written by Romualdus or his collaborators,
-	not to what has actually happened in history, so I did not
-	correct fact, names or dates. Besides, such a task would have
+<div n="factual">
+<head>Factual variants and dates</head>
+<p>The aim of this edition is to publish a text as close as possible
+	to what has likely been written by Romualdus or his collaborators,
+	not to what has actually happened in history, so I did not try
+	to correct fact, names or dates. Besides, such a task would have
 	required a historic competence that is beyond my skills.
 	The footnotes in the Garufi edition and the essays cited
 	in this introduction provide rich critical discussions
 	on this matter.</p>
+<p>Dates in particular are an aspect in which the <title>Chronicon</title>
+	is often imprecise and there is great variability among the
+	witnesses: when dates in A or O diverged from those in Garufi
+	and Bonetti, I systematically adhered to the print editions.</p>
+</div>
 
-<p>Dates in particular are an aspect in which the <title>Chronicon</title> is often
-	imprecise and there is great variability among the witnesses:
-	when dates in A or O diverged from those in Garufi and Bonetti,
-	I systematically adhered to the print editions.</p>
+
+<div n="difference-source">
+<head>Minor differences with the source</head>
+<p>There are passages in which Romualdus follows a source very closely,
+	but skips some words. In some of these passages, Garufi
+	integrates the missing words.
+	For instance, in g100.6-103.2 the <title>Chronicon</title>
+	copies Paulus Diaconus, <title>Hist. Rom.</title> 14.116
+	"adest Geisericus cum ualidissimo suae gentis exercitu",
+	but skips the words "suae gentis", which are found in no MS
+	of the <title>Chronicon</title>.</p>
+<p>In these passages I reject Garufi's integrations, based on
+	the principle of considering the <title>Chronicon</title>
+	an autonomous text, rather than a copy of his sources.</p>
+</div>
+
+
+<div n="conclusion">
+<head>Conclusion: the text before and after the author</head>
+<p>These cases, as well as the philological question of
+	the additions differentiating the 'long' and 'short' version
+	of the <title>Chronicon</title>, raise interesting, very
+	general questions on the work of the philologist.</p>
+<p>The text of Paulus Diaconus came 'before' Romualdus and his
+	(possible) collaborators, might have been copied and slightly
+	modified (intentionally or not) by a scribe executing directions
+	given by Romualdus. Instead, the text of the additions
+	probably arose 'after' him (or them), but may have been
+	approved by Romualdus himself.
+       	Where is 'original text' that the philologist approximates?</p>
+<p>Especially in cases of a complex editorial work such as the
+	<title>Chronicon</title>, it looks as elusive as the elusive notion
+	of 'present', at the sliding edge between past and future.</p>
+<p>These issues become more evident to us as we get closer to the author.
+	Classical philology, for example, may risk to gain a false sense
+	of confidence on the 'stability' and the authoriality of texts
+	because these have arrived to us after a long process of
+	normalization and canonization (see Monella 2018 "Why...").
+	However, the complexity of the process the brought to the creation
+	of these texts must not have been much different from what we often
+	observe in medieval philology and in the "filologia d'autore".</p>
+<p>Philologists working on primary sources (inscriptions, papyri,
+	non-canonical texts with a long evolution, medieval or modern
+	manuscripts relatively close to the author) are too close to
+	the composition process to fall into this illusion.</p>
+<p>Mordenti 2001, par. 9.1 discusses the extreme case of the transcription
+	of 'originals' and raises "[la] domanda fondamentale della filologia
+	[...] quella che riguarda il concetto di testo e, in particolare, di
+	testo originale". Mordenti quotes D'Arco Silvio Avalle and Cesare Segre:
+	"Il concetto di originale, nel senso di testo autentico esprimente
+	la volontà dell'autore, è uno dei più sfuggenti ed ambigui della critica
+	del testo. [...] [L]e singole opere di uno scrittore costituiscono
+	a rigore una sezione a volte casuale e provvisoria – e non sempre
+	operata dall'autore stesso [...] di quel flusso continuo di adattamenti
+	e di spostamenti successivi attraverso cui si esprimono le tendenze
+	fondamentali di un sistema letterario" (Avalle 1972, 32-33);
+	and "Ogni testo scritto è in realtà trascritto: da un copista, da
+	un tipografo. Anche l'autografo è una trascrizione (dalla brutta copia);
+	e la brutta copia costituisce di norma un testo non definitivo. Insomma,
+	ogni trascrizione è anteriore o posteriore al testo;
+	nessun testo può essere identificato col Testo" (Segre 1979, 36).</p>
 </div>
 
 
 <div n="statistics">
 
-<head>Statistics</head>
+<head>Appendix: statistics</head>
 
+<p>All statistics in this appendix are generated dynamically 
+	by my Python script statistics.py, which processes
+	the XML code of the edition.</p>
 
 <div n="variant-types-statistics">
 <head>Statistics on variant types and subtypes</head>
 
-<p>These are some statistics on variant types,
-	generated dynamically by my Python script
-	statistics.py, that processes the XML code
-	of the edition:
-</p>
-
 <list>
-     <item>Total 'app' elements:
-        <num n="s-apps" value="4817">4817</num>, of which:
+     <item>This TEI XML file has
+        <num n="s-apps" value="4817">4817</num> 'app' elements, of which:
         <list>
             <item><num n="s-subst" value="1786">1786</num> 
-                have @type="substantive"</item>
+                have @type="substantive";</item>
             <item><num n="s-trans-double" value="156">156</num> 
                 @type="transposition"
                 (note that each transposition is recorded
                 in two 'app's, so the actual number
                 of transpositions is
-                <num n="s-trans-single" value="78">78</num>)
+                <num n="s-trans-single" value="78">78</num>);
             </item>
             <item><num n="s-orth" value="1662">1662</num> 
-                @type="orthographic". However, this number
-                includes <num n="s-case"/> 'app's with
-                @type="orthographic" and @subtype="case", which
-                are no actual MS variants
-                (see paragraph 'Case variants' above).
+		@type="orthographic". However, this number includes
+		<num n="s-case" value="138">138</num>
+		'app's with @type="orthographic" and @subtype="case", which
+                are no actual MS variants (see paragraph 'Case variants' above).
                 If we subtract them from <num n="s-orth" value="1662">1662</num>,
-                the  total of actual MS orthographic variants
-                excluding case is
-                <num n="s-orth-except-case" value="1524">1524</num>
+                the total of actual MS orthographic variants excluding case is
+                <num n="s-orth-except-case" value="1524">1524</num>;
             </item>
             <item><num n="s-gap" value="15">15</num> 
-                @type="gap-in-ms"</item>
+                @type="gap-in-ms";</item>
             <item><num n="s-ill" value="14">14</num> 
-                @type="illegible-in-ms"</item>
+                @type="illegible-in-ms";</item>
             <item><num n="s-punct" value="1184">1184</num> 
-                @type="punctuation"</item>
+		@type="punctuation" (see paragraph
+		'Punctuation variants' above).</item>
         </list>
      </item>
-     <item>The actual variants are <num n="s-var" value="3388">3388</num>.
-         In this number
+     <item>The 'actual' variants ('V', henceforth)
+	     are <num n="s-var" value="3388">3388</num>.
+	     In this number
          <list>
              <item>I count types "substantive",
                  "transposition" (counted once, henceforth) and
@@ -851,16 +995,18 @@ mostly by adopting MS A's spelling, in cases in which
              <item>I do not count types
                  "punctuation", "gap-in-ms", "illegible-in-ms",
                  or the special case
-                 @type="orthography"/@subtype="case"</item>
+                 @type="orthography"/@subtype="case".</item>
           </list>
      </item>
      <item>Of all actual variants (V):
          <list>
-             <num n="s-perc-subst" value="52.7">52.7</num>%  are substantive
-             (SV henceforth)
-            <num n="s-perc-orth-except-case" value="45.0">45.0</num>%  are orthographic
-            (not counting @subtype="case"; OVEC henceforth)
-            <num n="s-perc-trans" value="2.3">2.3</num>%  are transpositions
+		 <item><num n="s-perc-subst" value="52.7">52.7</num>%
+			 are substantive (SV henceforth)</item>
+		 <item><num n="s-perc-orth-except-case" value="45.0">45.0</num>%
+			 are orthographic (not counting
+			 @subtype="case"; OVEC henceforth)</item>
+		 <item><num n="s-perc-trans" value="2.3">2.3</num>% 
+			 are transpositions.</item>
          </list>
      </item>
      <item>The following subtypes have been identified for
@@ -868,26 +1014,26 @@ mostly by adopting MS A's spelling, in cases in which
 	     <list>
 		     <item>
 			     <num n="s-missing-in-ms" value="210">210</num>, i.e.
-                    <num n="s-perc-missing-in-ms" value="6.2">6.2</num>%
-                    of all actual variants (V),
-			     have @subtype 'missing-in-ms' (integrations)
-		     </item>
-		     <item>
-			     <num n="s-num-num" value="88">88</num>
-			     (<num n="s-perc-num-num" value="2.6">2.6</num>% of V)
-			     have @subtype 'num-num' (two different numerals)
+			     <num n="s-perc-missing-in-ms" value="6.2">6.2</num>%
+			     of all actual variants (V),
+			     have @subtype="missing-in-ms" (integrations)
 		     </item>
 		     <item>
 			     <num n="s-missing-in-print" value="75">75</num>
 			     (<num n="s-perc-missing-in-print" value="2.2">2.2</num>% of V)
-			     have @subtype 'missing-in-print' (expunctions)
+			     have @subtype="missing-in-print" (expunctions)
+		     </item>
+		     <item>
+			     <num n="s-num-num" value="88">88</num>
+			     (<num n="s-perc-num-num" value="2.6">2.6</num>% of V)
+			     have @subtype="num-num" (two different numerals)
 		     </item>
 		     <item>
 			     <num n="s-fs" value="10">10</num>
 			     (<num n="s-perc-fs" value="0.3">0.3</num>% of V)
-			     have @subtype 'fs' (confusion between 'f' and 's')
+			     have @subtype="fs" (confusion between 'f' and 's').
 		     </item>
-		     <item>§
+		     <item>
 		     </item>
      		</list>
     </item>
@@ -895,136 +1041,147 @@ mostly by adopting MS A's spelling, in cases in which
         orthographic variants (@type="orthographic"):
          <list>
                <item>
-                   <num n="s-double" value="244">244</num>,
-                   <num n="s-perc-double" value="7.2">7.2</num>% of all
-                   actual variants (V),
-               have @subtype="double"
+		       <num n="s-double" value="244">244</num>,
+		       <num n="s-perc-double" value="7.2">7.2</num>% of all
+		       actual variants (V),
+		       have @subtype="double"
            </item>
                <item>
-                   <num n="s-h" value="217">217</num> (<num n="s-perc-h" value="6.4">6.4</num>% of V) 
-                   have @subtype="h"
+		       <num n="s-h" value="217">217</num> 
+		       (<num n="s-perc-h" value="6.4">6.4</num>% of V)
+		       have @subtype="h"
            </item>
              <item>
-                 <num n="s-y" value="212">212</num> (<num n="s-perc-y" value="6.3">6.3</num>% of V) 
-                 have @subtype="y"
+		     <num n="s-y" value="212">212</num>
+		     (<num n="s-perc-y" value="6.3">6.3</num>% of V)
+		     have @subtype="y"
            </item>
                <item>
-                   <num n="s-tc" value="163">163</num> (<num n="s-perc-tc" value="4.8">4.8</num>% of V) 
-                   have @subtype="tc"
+		       <num n="s-tc" value="163">163</num>
+		       (<num n="s-perc-tc" value="4.8">4.8</num>% of V)
+		       have @subtype="tc"
            </item>
                <item>
-                   <num n="s-case"/> (<num n="s-perc-case" value="4.1">4.1</num>% of V) 
-                   have @subtype="case". In fact, these are no
-                   actual MS variants, since in MSS case does
-                   not have graphematic value. They are
-                   just cases in which I am modifying the case
-                   of the print edition used as collation
-                   exemplar
+		       <num n="s-case" value="138">138</num>
+		       (<num n="s-perc-case" value="4.1">4.1</num>% of V)  
+		       have @subtype="case" (however, these are
+		       no actual MS variants: see paragraph
+		       'Case variants' above)
            </item>
                <item>
-                   <num n="s-mn" value="81">81</num> (<num n="s-perc-mn" value="2.4">2.4</num>% of V) 
-                   have @subtype="mn"
+		       <num n="s-mn" value="81">81</num>
+		       (<num n="s-perc-mn" value="2.4">2.4</num>% of V) 
+		       have @subtype="mn"
            </item>
                <item>
-                   <num n="s-num-word" value="62">62</num> (<num n="s-perc-num-word" value="1.8">1.8</num>% of V) 
-                   have @subtype="num-word"
+		       <num n="s-num-word" value="62">62</num>
+		       (<num n="s-perc-num-word" value="1.8">1.8</num>% of V) 
+		       have @subtype="num-word"
            </item>
                <item>
-                   <num n="s-mpn" value="26">26</num> (<num n="s-perc-mpn" value="0.8">0.8</num>% of V) 
-                   have @subtype="mpn"
+		       <num n="s-mpn" value="26">26</num>
+		       (<num n="s-perc-mpn" value="0.8">0.8</num>% of V) 
+		       have @subtype="mpn"
            </item>
                <item>
-                   <num n="s-pb" value="23">23</num> (<num n="s-perc-pb" value="0.7">0.7</num>% of V) 
-                   have @subtype="pb"
+		       <num n="s-pb" value="23">23</num>
+		       (<num n="s-perc-pb" value="0.7">0.7</num>% of V) 
+		       have @subtype="pb"
            </item>
                <item>
-                   <num n="s-word-segmentation" value="16">16</num> (<num n="s-perc-word-segmentation" value="0.5">0.5</num>% of V)
-                   
-                   have @subtype="word-segmentation"
+		       <num n="s-word-segmentation" value="16">16</num>
+		       (<num n="s-perc-word-segmentation" value="0.5">0.5</num>% of V)
+		       have @subtype="word-segmentation"
+	       </item>
+               <item>
+		       <num n="s-ph" value="14">14</num>
+		       (<num n="s-perc-ph" value="0.4">0.4</num>% of V) 
+		       have @subtype="ph"
            </item>
                <item>
-                   <num n="s-ph" value="14">14</num> (<num n="s-perc-ph" value="0.4">0.4</num>% of V) 
-                   have @subtype="ph"
+		       <num n="s-ae" value="10">10</num>
+		       (<num n="s-perc-ae" value="0.3">0.3</num>% of V) 
+		       have @subtype="ae"
            </item>
                <item>
-                   <num n="s-ae" value="10">10</num> (<num n="s-perc-ae" value="0.3">0.3</num>% of V) 
-                   have @subtype="a"
+		       <num n="s-ch" value="9">9</num>
+		       (<num n="s-perc-ch" value="0.3">0.3</num>% of V) 
+		       have @subtype="ch"
            </item>
                <item>
-                   <num n="s-ch" value="9">9</num> (<num n="s-perc-ch" value="0.3">0.3</num>% of V) 
-                   have @subtype="ch"
+		       <num n="s-dm-mm" value="8">8</num>
+		       (<num n="s-perc-dm-mm" value="0.2">0.2</num>% of V) 
+		       have @subtype="dm-mm"
            </item>
                <item>
-                   <num n="s-dm-mm" value="8">8</num> (<num n="s-perc-dm-mm" value="0.2">0.2</num>% of V) 
-                   have @subtype="dm-mm"
-           </item>
+		       <num n="s-hi-y" value="5">5</num>
+		       (<num n="s-perc-hi-y" value="0.1">0.1</num>% of V) 
+		       have @subtype="hi-y"
+	       </item>
                <item>
-                   <num n="s-hi-y" value="5">5</num> (<num n="s-perc-hi-y" value="0.1">0.1</num>% of V) 
-                   have @subtype="hi-y"
-           </item>
+		       <num n="s-ncx" value="5">5</num>
+		       (<num n="s-perc-ncx" value="0.1">0.1</num>% of V) 
+		       have @subtype="ncx"
+	       </item>
                <item>
-                   <num n="s-ncx" value="5">5</num> (<num n="s-perc-ncx" value="0.1">0.1</num>% of V) 
-                   have @subtype="ncx"
-           </item>
+		       <num n="s-cz" value="2">2</num>
+		       (<num n="s-perc-cz" value="0.1">0.1</num>% of V) 
+		       have @subtype="cz"
+	       </item>
                <item>
-                   <num n="s-cz" value="2">2</num> (<num n="s-perc-cz" value="0.1">0.1</num>% of V) 
-                   have @subtype="cz"
-           </item>
+		       <num n="s-cq" value="1">1</num>
+		       (<num n="s-perc-cq" value="0.0">0.0</num>% of V) 
+		       have @subtype="cq"
+	       </item>
                <item>
-                   <num n="s-cq" value="1">1</num> (<num n="s-perc-cq" value="0.0">0.0</num>% of V) 
-                   have @subtype="cq"
-           </item>
+		       <num n="s-tz" value="1">1</num>
+		       (<num n="s-perc-tz" value="0.0">0.0</num>% of V) 
+		       have @subtype="tz"
+	       </item>
                <item>
-                   <num n="s-tz" value="1">1</num> (<num n="s-perc-tz" value="0.0">0.0</num>% of V) 
-                   have @subtype="tz"
-           </item>
-               <item>
-                   <num n="s-ck" value="1">1</num> (<num n="s-perc-ck" value="0.0">0.0</num>% of V) 
-                   have @subtype="ck"
-           </item>
+		       <num n="s-ck" value="1">1</num>
+		       (<num n="s-perc-ck" value="0.0">0.0</num>% of V) 
+		       have @subtype="ck".
+	       </item>
           </list>
     </item>
     <item>
-        A @subtype has been identified
-        for <num n="s-subst-with-subtype" value="408">408</num>
-        substantive 'app's.
-        This corresponds to
-        <num n="s-perc-subst-with-subtype-on-sv" value="22.8">22.8</num>%
-        of all substantial variants (SV) and
-        <num n="s-perc-subst-with-subtype-on-v" value="12.0">12.0</num>%
-        of all actual variants (V)
+        A @subtype has been identified:
+          <list>
+		  <item>for <num n="s-subst-with-subtype" value="408">408</num>
+			  substantive 'app's. This corresponds to
+			  <num n="s-perc-subst-with-subtype-on-sv" value="22.8">22.8</num>%
+			  of all substantial variants (SV) and
+			  <num n="s-perc-subst-with-subtype-on-v" value="12.0">12.0</num>%
+			  of all actual variants (V);</item>
+		  <item>for <num n="s-orth-withsubtype-except-case" value="1101">1101</num>
+			  orthographic 'app's. This corresponds to
+			  <num n="s-perc-orth-withsubtype-except-case-on-ovec" value="72.2">72.2</num>%
+			  of all orthographic variants (OVEC) and
+			  <num n="s-perc-orth-withsubtype-except-case-on-v" value="32.5">32.5</num>%
+			  of all actual variants (V).
+			  Note that I am not including 'app's with @subtype="case"
+			  in these calculations);</item>
+          </list>
     </item>
-    <item>
-        A @subtype has been identified
-        for <num n="s-orth-withsubtype-except-case" value="1101">1101</num>
-        orthographic 'app's.
-        This corresponds to
-        <num n="s-perc-orth-withsubtype-except-case-on-ovec" value="72.2">72.2</num>%
-        of all orthographic variants (OVEC) and
-        <num n="s-perc-orth-withsubtype-except-case-on-v" value="32.5">32.5</num>%
-        of all actual variants (V)
-        (I am not including 'app's with @subtype="case"
-        in these calculations)
-    </item>
-    <item>There is no subtype of type "transposition"</item>
-    <item>So, including both substantive and
-        orthographic variants (except @subtype="case"),
-        for <num n="s-found-subtypes" value="1509">1509</num> 'app's a @subtype
-        has been identified, corresponding to
-        <num n="s-perc-found-subtypes" value="44.5">44.5</num>%
-        of all actual variants (V)
-    </item>
+    <item>There are no subtypes of @type="transposition".
+	    So, including both substantive and
+	    orthographic variants (except @subtype="case"),
+	    for <num n="s-found-subtypes" value="1509">1509</num> 'app's a @subtype
+	    has been identified, corresponding to
+	    <num n="s-perc-found-subtypes" value="44.5">44.5</num>%
+	    of all actual variants (V). </item>
     <item>The typization of variants was an experimental
-        feature of this digital edition. A higher percentage
-        of subtypes could be identified, especially for
-        orthographic variants, by further improving
-        the string comparison algorithms used, but these initial
-        results seem encouraging. Please keep in mind
-        that algorithms (Python software) tentatively identified
-        types and subtypes for app elements, then
-        I reviewed them one by one manually. However,
-        the more accurate the algorithms became, the easier
-        and quicker the review was.
+	    feature of this digital edition. A higher percentage
+	    of subtypes could be identified, especially for
+	    orthographic variants, by further improving
+	    the string comparison algorithms used, but these initial
+	    results seem encouraging. Please keep in mind
+	    that algorithms (Python software) tentatively identified
+	    types and subtypes for app elements, then
+	    I reviewed them one by one manually.
+	    However, the more accurate the algorithms became,
+	    the easier and faster the review was.
     </item>
 </list>
 
@@ -1043,12 +1200,12 @@ mostly by adopting MS A's spelling, in cases in which
             <item>
                 <num n="s-two-children" value="3343">3343</num>
                 (<num n="s-perc-two-children" value="98.7">98.7</num>% of V)
-                have 2 readings (variants)
+                have 2 readings (variants);
             </item>
             <item>
                 <num n="s-three-children" value="45">45</num>
                 (<num n="s-perc-three-children" value="1.3">1.3</num>% of V)
-                have 3 readings (variants)
+                have 3 readings (variants).
             </item>
         </list>
     </item>
@@ -1056,79 +1213,25 @@ mostly by adopting MS A's spelling, in cases in which
         In <num n="s-lem-print" value="2971">2971</num> cases
         (<num n="s-perc-lem-print" value="87.7">87.7</num>% of V)
         I agreed with the reading of the print edition
-        used as collation exemplar (Garufi or Bonetti)
+        used as collation exemplar (Garufi or Bonetti).
     </item>
     <item>
         In <num n="s-lem-not-print" value="417">417</num> cases
         (<num n="s-perc-lem-not-print" value="12.3">12.3</num>% of V)
-        I chose a MS reading over that of the print edition 
+        I chose a MS reading over that of the print edition.
     </item>
     <item>
-        As for the utility of witness O in this edition:
-        in only <num n="s-lems-only-o" value="4">4</num> cases O
-        is the only witness providing a reading that I chose
+        In only <num n="s-lems-only-o" value="4">4</num> cases
+        O is the only witness providing a reading that I chose
         over the print edition reading. This corresponds to
         <num n="s-perc-lems-only-o" value="1.0">1.0</num>%
-        of all loci variantes in which O
-        is one of the witnesses.
-        Although this calculation is based on a subjective
-        parameter (i.e. my own textual choices), this
-        is an argument against the actual utility of O
-        for the constitutio textus of the Chronicon.
+        of all loci variantes in which O is one of the witnesses.
     </item>
 </list>
 
 </div>
 
 
-</div>
-
-
-<div>
-<head>The text before and after the author</head>
-
-<p>There are passages in which Romualdus follows a source very closely,
-	but skips some words. In some of these passages, Garufi
-	integrates the missing words.
-	For instance, in g100.6-103.2 the <title>Chronicon</title>
-	copies Paulus Diaconus, <title>Hist. Rom.</title> 14.116
-	"adest Geisericus cum ualidissimo suae gentis exercitu",
-	but skips the words "suae gentis", which are found in no MS
-	of the <title>Chronicon</title>.
-	In these cases I reject Garufi's integrations based on
-	the principle of considering the <title>Chronicon</title>
-	an autonomous text, rather than a copy of his sources.</p>
-
-<p>These cases, together with complex philological issues such as
-	the attitions differentiating the 'long' and 'short' version
-	of the <title>Chronicon</title>, raise interesting, very
-	general questions on the work of the philologist.
-	The text of Paulus Diaconus came 'before' Romualdus and his
-	(possible) collaborators, while that of the additions
-	probably arose 'after' him (or them).
-       	Where is the 'original text' that the philologist approximates?</p>
-
-<p>The 'original text', especially in cases of a complex editorial work such
-	as the <title>Chronicon</title>, looks as elusive as the elusive notion
-	of 'present', at the sliding edge between past and future.</p>
-
-<p>These issues become more evident to us as we get closer to the author.
-	Mordenti 2001, par. 9.1 discusses the extreme case
-	of transcription and raises "[la] domanda fondamentale della filologia
-	[...] quella che riguarda il concetto di testo e, in particolare,
-	di testo originale" and quotes D'Arco Silvio Avalle and Cesare Segre:
-	"Il concetto di originale, nel senso di testo autentico esprimente
-	la volontà dell'autore, è uno dei più sfuggenti ed ambigui della
-	critica del testo. [...] le singole opere di uno scrittore costituiscono
-	a rigore una sezione a volte casuale e provvisoria – e non sempre
-	operata dall'autore stesso [...] di quel flusso continuo di adattamenti
-	e di spostamenti successivi attraverso cui si esprimono le tendenze
-	fondamentali di un sistema letterario" (Avalle 1972, 32-33); and
-	"Ogni testo scritto è in realtà trascritto: da un copista, da un tipografo.
-	Anche l'autografo è una trascrizione (dalla brutta copia); e la brutta copia
-	costituisce di norma un testo non definitivo. Insomma, ogni trascrizione è
-	anteriore o posteriore al testo; nessun testo può essere identificato col Testo"
-	Segre 1979, 36.</p>
 </div>
 
 
@@ -1143,7 +1246,6 @@ mostly by adopting MS A's spelling, in cases in which
             </analytic>
 <monogr>
             <editor>Bonetti, Cinzia</editor>
-            <idno type="ISBN">88-8309-056-X, 9788883090561</idno>
             <title level="m">Romualdo II Guarna, Chronicon</title>
             <imprint>
                 <publisher>Avagliano</publisher>
@@ -1246,7 +1348,6 @@ mostly by adopting MS A's spelling, in cases in which
             </analytic>
 <monogr>
             <editor>Bonetti, Cinzia</editor>
-            <idno type="ISBN">88-8309-056-X, 9788883090561</idno>
             <title level="m">Romualdo II Guarna, Chronicon</title>
             <imprint>
                 <publisher>Avagliano</publisher>
@@ -1264,7 +1365,6 @@ mostly by adopting MS A's spelling, in cases in which
         <monogr>
             <author>Loud, G.</author>
             <title>Roger II and the Creation of the Kingdom of Sicily</title>
-            <idno type="ISBN">9780719082023</idno>
             <imprint>
                 <publisher>Manchester University Press</publisher>
             <date>2012</date>
@@ -1296,7 +1396,6 @@ mostly by adopting MS A's spelling, in cases in which
         <monogr>
             <author>Mordenti, Raul</author>
             <title>Informatica e critica dei testi</title>
-            <idno type="ISBN">9788883196195</idno>
             <imprint>
                 <publisher>Bulzoni</publisher>
             <date>2001</date>
@@ -1329,7 +1428,6 @@ mostly by adopting MS A's spelling, in cases in which
             </analytic>
 <monogr>
             <editor>Bonetti, Cinzia</editor>
-            <idno type="ISBN">88-8309-056-X, 9788883090561</idno>
             <title level="m">Romualdo II Guarna, Chronicon</title>
             <imprint>
                 <publisher>Avagliano</publisher>
@@ -1382,7 +1480,6 @@ mostly by adopting MS A's spelling, in cases in which
         <monogr>
             <author>Schmale, F.J.</author>
             <title>Italische Quellen über die Taten Kaiser Friedrichs I. In Italien und der Brief über den Kreuzzug Kaiser Friedrichs I.</title>
-            <idno type="ISBN">9783534080250</idno>
             <imprint>
                 <publisher>Wissenschaftliche Buchgesellschaft</publisher>
             <date>1986</date>
@@ -1488,7 +1585,6 @@ mostly by adopting MS A's spelling, in cases in which
 <monogr>
             <title level="m">Condannare all'oblio. Pratiche della "damnatio memoriae" nel medioevo</title>
             <editor>Sanfilippo, Isa Lori and Rigon, Antonio</editor>
-            <idno type="ISBN">9788889190739</idno>
             <imprint>
                 <publisher>Istituto storico italiano per il medio evo</publisher>
             <date>2010</date>
@@ -1506,7 +1602,6 @@ mostly by adopting MS A's spelling, in cases in which
 <monogr>
             <title level="m">Contributi IV settimana di studi medievali</title>
             <editor>De Fraja, Valeria and Sansone, Salvatore</editor>
-            <idno type="ISBN">9788898079001</idno>
             <imprint>
                 <publisher>Istituto storico italiano per il medio evo</publisher>
             <date>2012</date>
@@ -1524,7 +1619,6 @@ mostly by adopting MS A's spelling, in cases in which
             </analytic>
 <monogr>
             <title level="j">Umanistica Digitale</title>
-            <idno type="ISSN">2532-8816</idno>
             <imprint>
                 <date>2018</date>
             <biblScope unit="vol">2</biblScope>
@@ -1542,9 +1636,6 @@ mostly by adopting MS A's spelling, in cases in which
 <monogr>
             <title level="m">AIUCD2018 - Book of Abstracts</title>
             <editor>Spampinato, Daria</editor>
-            <organization>AIUCD</organization>
-            <idno type="ISBN">9788894253528</idno>
-            <idno type="ISSN">2038-7954</idno>
             <imprint>
                 <publisher>Alma DL UniBo</publisher>
             <date>2018</date>
@@ -1556,6 +1647,27 @@ mostly by adopting MS A's spelling, in cases in which
                 <title level="s">AMS Acta</title>
             </series>
 <ref type="url">http://amsacta.unibo.it/5997/</ref>
+        </biblStruct>
+    <biblStruct xml:id="monella2018why">
+        <analytic>
+                <author>Monella, Paolo</author>
+            <title>Why are there no comprehensively digital scholarly editions of classical texts?</title>
+            </analytic>
+<monogr>
+            <title level="m">Digital Philology: New Thoughts on Old Questions</title>
+            <editor>Cipolla, Adele</editor>
+            <imprint>
+                <publisher>libreriauniversitaria.it edizioni</publisher>
+            <date>2018</date>
+            <pubPlace>Padova</pubPlace>
+            <biblScope unit="page" from="141" to="159">141-159</biblScope>
+            </imprint>
+</monogr>
+    <series>
+                <title level="s">Storie e linguaggi</title>
+            <biblScope unit="volume">27</biblScope>
+            </series>
+<ref type="url">http://hdl.handle.net/10447/294132</ref>
         </biblStruct>
     <biblStruct xml:id="roeder2020review">
         <analytic>
