@@ -83,7 +83,7 @@ class treeWithAppElements:
     def set_decls_for_long_version_additions(self):
         ''' In sections with those additions that differentiate
             short (A and O) vs long (B and C) version, set
-            decls="#addition" '''
+            decls="#longversion" '''
 
         # A list with the xml:id's of those <p>s (from the DB)
         addition_xmlids = [x['xmlid'] for x in self.paragraphs
