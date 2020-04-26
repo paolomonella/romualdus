@@ -5,7 +5,7 @@ of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century)
 edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
 
 The _textus constitutus_ of the edition, including an introduction and some textual statistics,
-is the TEI XML P5 file `XML/chronicon.xml` in this repository.
+is in the TEI XML P5 file `XML/chronicon.xml` in this repository.
 
 The edition has been published in the ALIM digital library at <http://alim.unisi.it/dl/resource/299> in 2020.
 At this URL you can read a HTML visualization of the edition and download it in XML (the original source),
@@ -18,8 +18,8 @@ HTML, PDF and plain text format.
 	- A: [Vaticanus Latinus 3973](http://digi.vatlib.it/view/MSS_Vat.lat.3973)
 	- B: [Biblioteca Apostolica Vaticana, Archivio di San Pietro, E 22](http://digi.vatlib.it/mss/detail/Arch.Cap.S.Pietro.E.22)
 	- C: [Paris, Bibliothèque Nationale, Latinus 4933](http://archivesetmanuscrits.bnf.fr/ark:/12148/cc63823p),
-	- O (Schwartz's Aa): [Ottobonianus Latinus 2940](https://digi.vatlib.it/mss/detail/Ott.lat.2940),
-		1st fragment, folios 16r-18v = 168,5-188,1 of Garufi's edition
+	- O: (Schwartz's Aa): [Ottobonianus Latinus 2940](https://digi.vatlib.it/mss/detail/Ott.lat.2940),
+		1st fragment, i.e. folios 16r-18v = 168,5-188,1 of Garufi's edition
 - Print editions
 	- Garufi: _Romualdi Salernitani Chronicon (A.m. 130-A.C. 1178)_, ed. by 
 		Garufi, Carlo Alberto, Città di Castello, S. Lapi 1914
