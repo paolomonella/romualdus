@@ -92,7 +92,7 @@ class treeWithAppElements:
         for p in pars:
             xmlid = p.get('{%s}id' % ns['xml'])
             if xmlid in addition_xmlids:
-                p.set('decls', 'longversion')
+                p.set('decls', '#longversion')
 
     def set_a2_for_some_paragraphs(self):
         ''' In sections for which I have hand2 instead of the 1st hand of A,
