@@ -12,7 +12,7 @@ At this URL you can read a HTML visualization of the edition and download it in 
 HTML, PDF and plain text format.
 
 
-## Abbreviations
+## Sigla and editions
 
 - Manuscripts
 	- A: [Vaticanus Latinus 3973](http://digi.vatlib.it/view/MSS_Vat.lat.3973)
