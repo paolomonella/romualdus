@@ -284,32 +284,32 @@
 <div n="structure">
 <head>Structure of the work</head>
 <list>
-	<item>Universal history:
+	<item>Universal history
+                (roughly pagragraphs g3.1-3.1 to g108.14-108.23):
 		the <title>Chronicon</title> initially follows ancient Jewish,
 		Greek and and Roman history, then European (continental and
 		Byzantine) events.</item>
-	<item>Digression on Lombards and Franks:
-		from paragraph g108.24-109.5 (i.e. page 108 of Garufi's
-		edition, line 24) to par. g159.9-159.25, the text includes
+        <item>History of the Lombards and the Franks
+                (g108.24-109.5 to g159.9-159.25):
 		a long digression on the the history of the Lombards and the
 		Franks until Louis the Pious.</item>
-	<item>Southern Italian section:
-		Then, the scope of the narrative returns to be wide, continental,
+        <item>History of the Normans, Southern Italian section
+                (g159.26-159.28 to g212.14-212.16):
+		the scope of the narrative returns to be wide, continental,
 		but it progressively focusses on Southern Italy, until it
 		substantially becomes a chronicle of the Norman conquest of this
-		geographical area.
-		The initial part of this section (roughly years 999-1125)
-		is centered on peninsular Southern Italy
-		(see Zabbia 2010, 25-42).
-	</item>
-	<item>Sicilian section:
+                geographical area covering years 999-1125 (roughly from par.
+                g173.12-173.13 on; see Zabbia 2010, 25-42).</item>
+	<item>History of the Normans, Sicilian section
+                (g213.1-213.8 to g262.17-266.4):
 		the second part of the 'Norman' section (from year 1125
-		to the Peace of Venice) is centered on Palermo and Sicily
+                to the Peace of Venice) is centered on Sicily and the
+                Norman court in Palermo
 		(see Zabbia 2010, 42-60.</item>
-	<item>Peace of Venice:
+	<item>Peace of Venice
+                (g266.5-267.12 to g297.19-297.21):
 		the work, as mentioned above, ends with the detailed account
-		of the Peace of Venice (from par. v-b298a of the present edition
-		to the end of the work).</item>
+		of the Peace of Venice.</item>
 </list>
 </div>
 
@@ -960,6 +960,41 @@
 </front>
 
 <body>
+
+<div n="1" xml:id="universal-history-bc">
+    <head>Universal history (BC)</head>
+
+</div>
+
+<div n="2" xml:id="universal-history-ce">
+    <head>Universal history (CE)</head>
+
+</div>
+
+<div n="3" xml:id="lombards-franks">
+    <head>History of the Lombards and the Franks</head>
+
+</div>
+
+<div n="4" xml:id="normans-southern">
+    <head>History of the Normans, Southern Italian section</head>
+
+</div>
+
+<div n="5" xml:id="normans-sicilian">
+    <head>History of the Normans, Sicilian section</head>
+
+</div>
+
+<div n="6" xml:id="peace">
+    <head>Peace of Venice</head>
+
+</div>
+
+<div n="notes" xml:id="notes">
+    <head>Textual critical notes</head>
+
+</div>
 
 </body>
 

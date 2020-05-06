@@ -284,32 +284,32 @@
 <div n="structure">
 <head>Structure of the work</head>
 <list>
-	<item>Universal history:
+	<item>Universal history
+                (roughly pagragraphs g3.1-3.1 to g108.14-108.23):
 		the <title>Chronicon</title> initially follows ancient Jewish,
 		Greek and and Roman history, then European (continental and
 		Byzantine) events.</item>
-	<item>Digression on Lombards and Franks:
-		from paragraph g108.24-109.5 (i.e. page 108 of Garufi's
-		edition, line 24) to par. g159.9-159.25, the text includes
+        <item>History of the Lombards and the Franks
+                (g108.24-109.5 to g159.9-159.25):
 		a long digression on the the history of the Lombards and the
 		Franks until Louis the Pious.</item>
-	<item>Southern Italian section:
-		Then, the scope of the narrative returns to be wide, continental,
+        <item>History of the Normans, Southern Italian section
+                (g159.26-159.28 to g212.14-212.16):
+		the scope of the narrative returns to be wide, continental,
 		but it progressively focusses on Southern Italy, until it
 		substantially becomes a chronicle of the Norman conquest of this
-		geographical area.
-		The initial part of this section (roughly years 999-1125)
-		is centered on peninsular Southern Italy
-		(see Zabbia 2010, 25-42).
-	</item>
-	<item>Sicilian section:
+                geographical area covering years 999-1125 (roughly from par.
+                g173.12-173.13 on; see Zabbia 2010, 25-42).</item>
+	<item>History of the Normans, Sicilian section
+                (g213.1-213.8 to g262.17-266.4):
 		the second part of the 'Norman' section (from year 1125
-		to the Peace of Venice) is centered on Palermo and Sicily
+                to the Peace of Venice) is centered on Sicily and the
+                Norman court in Palermo
 		(see Zabbia 2010, 42-60.</item>
-	<item>Peace of Venice:
+	<item>Peace of Venice
+                (g266.5-267.12 to g297.19-297.21):
 		the work, as mentioned above, ends with the detailed account
-		of the Peace of Venice (from par. v-b298a of the present edition
-		to the end of the work).</item>
+		of the Peace of Venice.</item>
 </list>
 </div>
 
@@ -956,9 +956,9 @@
 
 <list>
      <item>This TEI XML file has
-        <num n="s-apps" value="4817">4817</num> 'app' elements, of which:
+        <num n="s-apps" value="4816">4816</num> 'app' elements, of which:
         <list>
-            <item><num n="s-subst" value="1786">1786</num> 
+            <item><num n="s-subst" value="1785">1785</num> 
                 have @type="substantive";</item>
             <item><num n="s-trans-double" value="156">156</num> 
                 @type="transposition"
@@ -986,7 +986,7 @@
         </list>
      </item>
      <item>The 'actual' variants ('V', henceforth)
-	     are <num n="s-var" value="3388">3388</num>.
+	     are <num n="s-var" value="3387">3387</num>.
 	     In this number
          <list>
              <item>I count types "substantive",
@@ -1019,7 +1019,7 @@
 			     have @subtype="missing-in-ms" (integrations)
 		     </item>
 		     <item>
-			     <num n="s-missing-in-print" value="75">75</num>
+			     <num n="s-missing-in-print" value="74">74</num>
 			     (<num n="s-perc-missing-in-print" value="2.2">2.2</num>% of V)
 			     have @subtype="missing-in-print" (expunctions)
 		     </item>
@@ -1148,7 +1148,7 @@
     <item>
         A @subtype has been identified:
           <list>
-		  <item>for <num n="s-subst-with-subtype" value="408">408</num>
+		  <item>for <num n="s-subst-with-subtype" value="407">407</num>
 			  substantive 'app's. This corresponds to
 			  <num n="s-perc-subst-with-subtype-on-sv" value="22.8">22.8</num>%
 			  of all substantial variants (SV) and
@@ -1167,7 +1167,7 @@
     <item>There are no subtypes of @type="transposition".
 	    So, including both substantive and
 	    orthographic variants (except @subtype="case"),
-	    for <num n="s-found-subtypes" value="1509">1509</num> 'app's a @subtype
+	    for <num n="s-found-subtypes" value="1508">1508</num> 'app's a @subtype
 	    has been identified, corresponding to
 	    <num n="s-perc-found-subtypes" value="44.5">44.5</num>%
 	    of all actual variants (V). </item>
@@ -1190,7 +1190,7 @@
 <div n="textcrit-statistics">
 <head>Statistics on textual-critical decisions</head>
 
-<p>Out of a total of <num n="s-var" value="3388">3388</num>
+<p>Out of a total of <num n="s-var" value="3387">3387</num>
     'actual' loci variantes (V, as defined above):</p>
 
 <list>
@@ -1198,7 +1198,7 @@
     <item>
         <list>
             <item>
-                <num n="s-two-children" value="3343">3343</num>
+                <num n="s-two-children" value="3342">3342</num>
                 (<num n="s-perc-two-children" value="98.7">98.7</num>% of V)
                 have 2 readings (variants);
             </item>
@@ -1210,7 +1210,7 @@
         </list>
     </item>
     <item>
-        In <num n="s-lem-print" value="2971">2971</num> cases
+        In <num n="s-lem-print" value="2970">2970</num> cases
         (<num n="s-perc-lem-print" value="87.7">87.7</num>% of V)
         I agreed with the reading of the print edition
         used as collation exemplar (Garufi or Bonetti).
@@ -1689,6 +1689,9 @@
 </front>
 
 <body>
+
+<div n="1" xml:id="universal-history-bc">
+    <head>Universal history (BC)</head>
 
 <p xml:id="g3.1-3.1">
 <pb n="15r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0041" ed="#a"/> 
@@ -6171,6 +6174,11 @@ deficiente
 </app> ducentos nonaginta quinque. 
 </p>
  
+</div>
+
+<div n="2" xml:id="universal-history-ce">
+    <head>Universal history (CE)</head>
+
 <p xml:id="g43.17-43.17">
 <app cert="high" type="substantive" subtype="missing-in-ms">
    <lem wit="#g">Sexta etas.</lem>
@@ -12694,7 +12702,7 @@ sine merito uirtutis eligitur; qui ad Gallias transiens, sepe a barbaris incerto
    <lem wit="#a">Gallias</lem>
    <rdg wit="#g">Galliam</rdg>
 </app> cum exercitu mittit. Is mox 
-<app cert="high" type="substantive" subtype="missing-in-print">
+<app cert="high" type="substantive" xml:id="app27-in-g96.17-98.14">
    <lem wit="#g"> </lem>
    <rdg wit="#a">ut</rdg>
 </app> Gallias ingressus est, Constantinum tyrannum apud 
@@ -14569,6 +14577,11 @@ Rome uero post Iohannem
 </app> et alteram filiam, nomine Gualderadam, quam Theobaldus Francorum rex Theodeberti filius sibi in matrimonium sociauit. 
 </p>
  
+</div>
+
+<div n="3" xml:id="lombards-franks">
+    <head>History of the Lombards and the Franks</head>
+
 <p xml:id="g108.24-109.5">
 Hic 
 <app cert="high" type="orthographic" subtype="dm-mm">
@@ -16666,6 +16679,11 @@ singula cenobia ordinauit stipendia monachorum,
 </app> etiam largitione plurimarum sed et seruorum Christi orationum instantiam, quibus semper se commendabat, quotidie diuinitatem sibi placare studebat. Hic anno eius imperii XVI indictione VII, sed et anno dominice incarnationis DCCCXXX. apud Aquisgranum iussit congregari synodum episcoporum catholicorumque et laudatorum uirorum clericorum ac laicorum propter statum atque utilitatem fidei, maxime regiminis ecclesiarum Dei, presidente Gregorio papa, et inter multa que iuste et pie ibi statuta sunt, in mandatis decretum est ut episcopi et clerici pretiosas exquisitasque uestes ac sericas, aut bracteis aureis seu gemmis cultis oneratas deponerent, nec ulterius talibus ornamentis uterentur: similiter et pretiosa cingula, siue huiusmodi pretiosa ac deaurata calciamenta; monstro namque simili dicitur et impietatis crimini deputatur, si ecclesiastice familie deputatus aspirare conetur ad huiusmodi pompe secularis gloriam. 
 </p>
  
+</div>
+
+<div n="4" xml:id="normans-southern">
+    <head>History of the Normans, Southern Italian section</head>
+
 <p xml:id="g159.26-159.28">
 Anno dominice incarnationis DCCCXXXVIII, indictione II, corpus beati Bartholomei apostoli de Lypari insula in Beneuentum translatum est, principante tunc in eadem ciuitate Sicardo quinto iam Beneuentanorum principe filio Siconis principis. 
 </p>
@@ -16988,11 +17006,7 @@ Anno
 <app cert="high" type="substantive">
    <lem wit="#b #a">incarnationis</lem>
    <rdg wit="#o">ab incarnatione</rdg>
-</app> Domini 
-<app cert="high" type="substantive">
-   <lem wit="#b #a">CMLXXVI</lem>
-   <rdg wit="#o">DCCCCLXXVI</rdg>
-</app>, Lotharius Francorum rex senex plenus dierum obiit, postquam regnauit 
+</app> Domini CMLXXVI, Lotharius Francorum rex senex plenus dierum obiit, postquam regnauit 
 <app cert="high" type="substantive">
    <lem wit="#b #a">annis</lem>
    <rdg wit="#o">annum</rdg>
@@ -20667,6 +20681,11 @@ Hic autem Calixtus papatum Romanum in pace et tranquillitate possedit et urbem
 </app> est et honorifice sepultus. 
 </p>
  
+</div>
+
+<div n="5" xml:id="normans-sicilian">
+    <head>History of the Normans, Sicilian section</head>
+
 <p xml:id="g213.1-213.8">
 Anno dominice incarnationis 
 <app cert="high" type="substantive" subtype="num-num">
@@ -22748,6 +22767,11 @@ uir prouidus et discretus, partim uiribus, partim precibus Tusciam pacificauit, 
 tulit et multum ad animum reuocauit. Sed non multo post imperatoris filia est defuncta. 
 </p>
  
+</div>
+
+<div n="6" xml:id="peace">
+    <head>Peace of Venice</head>
+
 <p xml:id="g266.5-267.12">
 Adueniente autem estate, Philippus Coloniensis archiepiscopus cum quibusdam principibus Alamannie et magna multitudine strenuorum militum per montana Cumarum Italiam intrantes, imperatori succurrere festinabant. Quo cognito, imperator eis obuiam perrexit, et simul cum illis uersus partes Mediolani ad deuastandum eorum segetes ire disponebat. Quo audito Lombardi, licet omnes suos nullatenus expectassent, imperatori obuiam ire ceperunt. Cumque exeuntes quoddam nemus 
 <app cert="high" type="punctuation" subtype="remove-punctuation">
@@ -24418,6 +24442,11 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
 </app>, et pene in tertia parte sui obscurata est. Tertio decimo uero die intrantis mensis Septembris, indictione XII, sol in signo uirginis circa horam… 
 </p>
 
+</div>
+
+<div n="notes" xml:id="notes">
+    <head>Textual critical notes</head>
+
 <note target="#app8-in-g21.34-22.6" type="textcrit">Interesting reading: Garufi has 'scriptu regum' and has this footnote: 'Lege scriptura regnum come leggesi anche in Beda'. Bedes text makes perfect sense, but the matter here is what Romualdus wanted to write. He, or a scribe, probably made a mistake from the beginning, and the scribe of A tried to make sense of this passage by writing 'regnum'. I am conjecturing and restoring Bede's text, but I have strong doubts on this. I should probably keep the - probably original - scriptu regum.</note>
 <note target="#app69-in-g22.11-24.5" type="textcrit">Important variant. Garufi does not report thie sentences, not even in the apparatus.</note>
 <note target="#app25-in-g24.26-26.11" type="textcrit">Important variant. Garufi does not report thie sentences, not even in the apparatus. In MS A, this corresponds to the end of a folio, so Garufi or others might have skipped those words.</note>
@@ -24456,6 +24485,7 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
 <note target="#app8-in-g96.17-98.14" type="textcrit">Reading of A and B.</note>
 <note target="#app23-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'virum strenuum et bellicosum'.</note>
 <note target="#app24-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'Constantium comitem ad Gallias cum exercitu mittit'.</note>
+<note target="#app27-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'is mox Galliam ingressus est'.</note>
 <note target="#app28-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'Arelatem'. In constituting a text for this paragraph I am constantly taking the source (Paulus Diaconus) into account.</note>
 <note target="#app40-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.103 'Constantium comitem ad Gallias cum exercitu mittit'.</note>
 <note target="#app57-in-g96.17-98.14" type="textcrit">Vd. Paulus Diaconus, Hist. Rom. 12.104 'ab Honorio missa'.</note>
@@ -24490,6 +24520,8 @@ Secundo autem die stante eiusdem mensis, luna in signo uirginis post mediam noct
 <note target="#app14-in-g214.n8-215.n14" type="textcrit">Interesting variant.</note>
 <note target="#app11-in-g266.5-267.12" type="textcrit">Interesting reading. Delituit, from delitesco, to hide; delicuit from deliquesco, to melt away (metaphorically, possibly also to hide). I am choosing Bonetti's and Garufi's simpler reading 'delituit', but also the lectio difficilior 'delicuit' might be possible.</note>
 <note target="#app11-in-g272.5-273.10" type="textcrit">Interesting variant. Garufi's apparatus says that B, C, Sasso and Arndt have Hierusalem, but the iunctura 'domo Israhel', only found in A, is more common that "domo Ierusalem".</note>
+</div>
+
 </body>
 
 </text>

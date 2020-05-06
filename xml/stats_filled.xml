@@ -13,9 +13,9 @@
 
 <list>
      <item>This TEI XML file has
-        <num n="s-apps" value="4817">4817</num> 'app' elements, of which:
+        <num n="s-apps" value="4816">4816</num> 'app' elements, of which:
         <list>
-            <item><num n="s-subst" value="1786">1786</num> 
+            <item><num n="s-subst" value="1785">1785</num> 
                 have @type="substantive";</item>
             <item><num n="s-trans-double" value="156">156</num> 
                 @type="transposition"
@@ -43,7 +43,7 @@
         </list>
      </item>
      <item>The 'actual' variants ('V', henceforth)
-	     are <num n="s-var" value="3388">3388</num>.
+	     are <num n="s-var" value="3387">3387</num>.
 	     In this number
          <list>
              <item>I count types "substantive",
@@ -76,7 +76,7 @@
 			     have @subtype="missing-in-ms" (integrations)
 		     </item>
 		     <item>
-			     <num n="s-missing-in-print" value="75">75</num>
+			     <num n="s-missing-in-print" value="74">74</num>
 			     (<num n="s-perc-missing-in-print" value="2.2">2.2</num>% of V)
 			     have @subtype="missing-in-print" (expunctions)
 		     </item>
@@ -205,7 +205,7 @@
     <item>
         A @subtype has been identified:
           <list>
-		  <item>for <num n="s-subst-with-subtype" value="408">408</num>
+		  <item>for <num n="s-subst-with-subtype" value="407">407</num>
 			  substantive 'app's. This corresponds to
 			  <num n="s-perc-subst-with-subtype-on-sv" value="22.8">22.8</num>%
 			  of all substantial variants (SV) and
@@ -224,7 +224,7 @@
     <item>There are no subtypes of @type="transposition".
 	    So, including both substantive and
 	    orthographic variants (except @subtype="case"),
-	    for <num n="s-found-subtypes" value="1509">1509</num> 'app's a @subtype
+	    for <num n="s-found-subtypes" value="1508">1508</num> 'app's a @subtype
 	    has been identified, corresponding to
 	    <num n="s-perc-found-subtypes" value="44.5">44.5</num>%
 	    of all actual variants (V). </item>
@@ -247,7 +247,7 @@
 <div n="textcrit-statistics">
 <head>Statistics on textual-critical decisions</head>
 
-<p>Out of a total of <num n="s-var" value="3388">3388</num>
+<p>Out of a total of <num n="s-var" value="3387">3387</num>
     'actual' loci variantes (V, as defined above):</p>
 
 <list>
@@ -255,7 +255,7 @@
     <item>
         <list>
             <item>
-                <num n="s-two-children" value="3343">3343</num>
+                <num n="s-two-children" value="3342">3342</num>
                 (<num n="s-perc-two-children" value="98.7">98.7</num>% of V)
                 have 2 readings (variants);
             </item>
@@ -267,7 +267,7 @@
         </list>
     </item>
     <item>
-        In <num n="s-lem-print" value="2971">2971</num> cases
+        In <num n="s-lem-print" value="2970">2970</num> cases
         (<num n="s-perc-lem-print" value="87.7">87.7</num>% of V)
         I agreed with the reading of the print edition
         used as collation exemplar (Garufi or Bonetti).

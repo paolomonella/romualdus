@@ -543,7 +543,7 @@ def import_statistics():
     for child in filled_div:
         out_div.append(child)
 
-    # Write tree to output file template.xml
+    # Write tree to output file teiHeader_template.xml
     # (warning: I'm overwriting the file)
     chronicon_tree.write(chronicon_path,
                          encoding='UTF-8', method='xml',
