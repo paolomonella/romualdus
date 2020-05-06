@@ -1690,8 +1690,8 @@
 
 <body>
 
-<div n="1" xml:id="universal-history-bc">
-    <head>Universal history (BC)</head>
+<div n="0" xml:id="universal-history-ages">
+    <head>Universal history, the division of the ages</head>
 
 <p xml:id="g3.1-3.1">
 <pb n="15r" facs="https://digi.vatlib.it/view/MSS_Vat.lat.3973/0041" ed="#a"/> 
@@ -1848,6 +1848,11 @@ Creator omnium uisibilium et inuisibilium, qui trinus et unus Deus est, in princ
 </app> discretionis uocabulo speciem aquarum, quarta luminaria celi, uidelicet solem, et lunam, et stellas, que temporum sunt ordinationes, quinta animantia ex aquis, sexta animantia ex terra, et hominem, quem appellauit Adam, et posuit in paradiso, cuius de latere dormientis costam tollens, mulierem edificauit, ut eius adiutorio genus propagaret humanum, septima autem die requieuit Deus ab omni opere prime ac noue conditionis; hoc autem secundum licteram. 
 </p>
  
+</div>
+
+<div n="1" xml:id="universal-history-1">
+    <head>Universal history, prima etas</head>
+
 <p xml:id="g5.19-5.19">
 Incipit prima etas. 
 </p>
@@ -2014,6 +2019,11 @@ ubi pater eius Enoch Deo uolente seruatus fuerit, posteaque in hoc mundo XX anni
 Explicit prima etas. 
 </p>
  
+</div>
+
+<div n="2" xml:id="universal-history-2">
+    <head>Universal history, secunda etas</head>
+
 <p xml:id="g7.29-7.29">
 <app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Incipit</lem>
@@ -2189,6 +2199,11 @@ Ab Adam primo homine usque ad Ninum magnum regem, cuius anno XLII natus est Abra
 </app> usque ad natiuitatem Christi, que fuit anno imperii Cesaris XLII cum facta pace cum Parthis, Iani porte clause sunt et bella toto orbe cessarent, colliguntur anni duo milia XV. 
 </p>
  
+</div>
+
+<div n="3" xml:id="universal-history-3">
+    <head>Universal history, tertia etas</head>
+
 <p xml:id="g10.6-10.6">
 <app cert="high" type="orthographic" subtype="case">
    <lem resp="#pm">Incipit</lem>
@@ -2815,6 +2830,11 @@ Saul primus Hebreorum rex annos XX et huius quia in canonica scriptura non habet
 </app> annos XLII. Corinthi primus Arethis annis XXXV. 
 </p>
  
+</div>
+
+<div n="4" xml:id="universal-history-4">
+    <head>Universal history, quarta etas</head>
+
 <p xml:id="g15.27-15.27">
 Quarta etas. 
 </p>
@@ -3794,6 +3814,11 @@ Iuda, alter in Babylone. Post exordium enim uaticinationis Hieremie prophete
 Explicit quarta etas. 
 </p>
  
+</div>
+
+<div n="5" xml:id="universal-history-5">
+    <head>Universal history, quinta etas</head>
+
 <p xml:id="g24.16-24.16">
 Incipit quinta etas. 
 </p>
@@ -6176,8 +6201,8 @@ deficiente
  
 </div>
 
-<div n="2" xml:id="universal-history-ce">
-    <head>Universal history (CE)</head>
+<div n="6" xml:id="universal-history-6">
+    <head>Universal history, sexta etas</head>
 
 <p xml:id="g43.17-43.17">
 <app cert="high" type="substantive" subtype="missing-in-ms">
@@ -14579,7 +14604,7 @@ Rome uero post Iohannem
  
 </div>
 
-<div n="3" xml:id="lombards-franks">
+<div n="7" xml:id="lombards-franks">
     <head>History of the Lombards and the Franks</head>
 
 <p xml:id="g108.24-109.5">
@@ -16681,7 +16706,7 @@ singula cenobia ordinauit stipendia monachorum,
  
 </div>
 
-<div n="4" xml:id="normans-southern">
+<div n="8" xml:id="normans-southern">
     <head>History of the Normans, Southern Italian section</head>
 
 <p xml:id="g159.26-159.28">
@@ -20683,7 +20708,7 @@ Hic autem Calixtus papatum Romanum in pace et tranquillitate possedit et urbem
  
 </div>
 
-<div n="5" xml:id="normans-sicilian">
+<div n="9" xml:id="normans-sicilian">
     <head>History of the Normans, Sicilian section</head>
 
 <p xml:id="g213.1-213.8">
@@ -22769,7 +22794,7 @@ tulit et multum ad animum reuocauit. Sed non multo post imperatoris filia est de
  
 </div>
 
-<div n="6" xml:id="peace">
+<div n="10" xml:id="peace">
     <head>Peace of Venice</head>
 
 <p xml:id="g266.5-267.12">
