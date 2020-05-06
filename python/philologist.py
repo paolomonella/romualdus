@@ -746,7 +746,7 @@ class treeWithAppElements:
 
                 # Set @subtype
                 # If there is a subtype in the DB, set it in <app>
-                if r['subtype'] is not None and r['subtype'] is not '':
+                if r['subtype'] is not None and r['subtype'] != '':
                     a['app'].set('subtype', r['subtype'])
 
                 # Set @cert="high"
@@ -858,7 +858,7 @@ class treeWithAppElements:
 
                 # Set @subtype
                 # If there is a subtype in the DB, set it in <app>
-                if r['subtype'] is not None and r['subtype'] is not '':
+                if r['subtype'] is not None and r['subtype'] != '':
                     a['app'].set('subtype', r['subtype'])
 
                 # Set @cert="high"
@@ -1020,7 +1020,7 @@ class treeWithAppElements:
 
                 # Set @subtype
                 # If there is a subtype in the DB, set it in <app>
-                if r['subtype'] is not None and r['subtype'] is not '':
+                if r['subtype'] is not None and r['subtype'] != '':
                     a['app'].set('subtype', r['subtype'])
 
                 # Set @cert="high"
