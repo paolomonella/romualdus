@@ -1,0 +1,1 @@
+In this XML file, I deleted the whole introduction included in `front`, and included in `editorialDecl/ab @type="specific"` a note that links to another version of the XML file which includes the whole `front`.
