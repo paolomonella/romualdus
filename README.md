@@ -4,6 +4,8 @@ This repository includes the source code (mostly TEI XML and Python) of the digi
 of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century)
 edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
 
+The home page of the edition is http://www1.unipa.it/paolo.monella/romualdus/
+
 The _textus constitutus_ of the edition, including an introduction and some textual statistics,
 is in the TEI XML P5 file `XML/chronicon.xml` in this repository.
 
