@@ -1,1 +1,2 @@
 In this XML file, I deleted the whole introduction included in `front`, and included in `editorialDecl/ab @type="specific"` a note that links to another version of the XML file which includes the whole `front`.
+I tried to upload it to alim.unisi.it on Nov. 23, 2020, but unsuccessfully: the XML file has been uploaded and is now available from the website, but the website has not generated the new HTML.
