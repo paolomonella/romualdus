@@ -5,7 +5,9 @@
         - the scripts for pre-processing the original transcriptions (a1.xml,
             a2.xml, g.xml etc.), that are simplified to be fed to JuxtaCommons
 
-        - and the scripts for post-processing the output of JuxtaCommons '''
+        - and the scripts for post-processing the output of JuxtaCommons
+    This is the script to run to re-generate the whole edition (file
+    chronicon.xml). '''
 from glob import iglob  # Needed for function entitize
 from myconst import xmlpath, juxta_par_and_sigla_suffix, dbpath, dbname
 import entitize
