@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
 
 ''' This module manages strings (e.g. "syllaba" vs "sillaba"), not <app> or

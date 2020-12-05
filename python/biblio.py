@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
 ''' This module imports the bibliography from a file
     in BibTeXML format to the 'front' element of the

@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
 
 ''' This module manages <app> elements from a TEI XML file '''

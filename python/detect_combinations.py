@@ -1,4 +1,4 @@
-# facs="img/vat.lat.3973.pdf#page=29"!/usr/python3.6
+# facs="img/vat.lat.3973.pdf#page=29"!/usr/python3.8
 # -*- coding: utf-8 -*-
 
 import myconst

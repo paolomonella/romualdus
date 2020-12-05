@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
 ''' This module includes one big function, extracting/dividing
     the layers from the TEI XML source file. See the documentation

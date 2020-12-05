@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
 ''' This script re-collates paragraph xmlid and replaces
     its collation in juxta_file (e.g. m1.xml or m2-charlie.xml

@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
 ''' Post-process the output of JuxtaCommons before inspecting variant types:
     See documentations of methods below '''
