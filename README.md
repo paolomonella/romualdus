@@ -1,5 +1,7 @@
 # Romualdus Project
 
+[![DOI](https://zenodo.org/badge/133493153.svg)](https://zenodo.org/badge/latestdoi/133493153)
+
 This repository includes the source code (mostly TEI XML and Python) of the digital scholarly edition
 of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century)
 edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
