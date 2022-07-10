@@ -5,7 +5,7 @@ import re
 
 import myconst
 
-def metatext (mySuspectElement):
+def metatext(mySuspectElement):
     
     ''' Check if one of the values of the "class" attribute of element e is
     in the metatextlist. Return True or False.
