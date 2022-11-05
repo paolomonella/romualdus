@@ -4,9 +4,9 @@
 
 This repository includes the source code (mostly TEI XML and Python) of the digital scholarly edition
 of the _Chronicon_ by Romualdus Salernitanus (Romualdus Guarna, XII century)
-edited by [Paolo Monella](http://www.unipa.it/paolo.monella) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
+edited by [Paolo Monella](http://www.paolomonella.it) within the [ALIM Project](http://it.alim.unisi.it/) (2017-2020).
 
-The home page of this edition is http://www1.unipa.it/paolo.monella/romualdus/
+The home page of this edition is [http://www.paolomonella.it/romualdus](http://www.paolomonella.it/romualdus)
 
 The _textus constitutus_ of the edition, including an introduction and some textual statistics,
 is in the TEI XML P5 file `XML/chronicon.xml` in this repository.
@@ -63,7 +63,7 @@ HTML, PDF and plain text format.
 
 
 - Other files in the root of the repository:
-    - `index.html`: the home page of the [http://www1.unipa.it/paolo.monella/romualdus/](project Website), including
+    - `index.html`: the home page of the [project website](http://www.paolomonella.it/romualdus), including
         - a brief MSS description
         - links to the graphematic/alphabetic layer transcription visualization
         
